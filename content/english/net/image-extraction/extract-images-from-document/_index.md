@@ -1,0 +1,52 @@
+---
+title: Extract Images from Document
+linktitle: Extract Images from Document
+second_title: GroupDocs.Parser .NET API
+description: 
+type: docs
+weight: 11
+url: /net/image-extraction/extract-images-from-document/
+---
+
+## Complete Source Code
+```csharp
+// <copyright company="Aspose Pty Ltd">
+//   Copyright (C) 2011-2024 GroupDocs. All Rights Reserved.
+// </copyright>
+namespace GroupDocs.Parser.Examples.CSharp.AdvancedUsage.WorkingWithImages
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+    using GroupDocs.Parser.Data;
+
+    /// <summary>
+    /// This example shows how to extract all images from the whole document.
+    /// </summary>
+    static class ExtractImagesFromDocument
+    {
+        public static void Run()
+        {
+            // Create an instance of Parser class
+            using (Parser parser = new Parser("Your Sample File"))
+            {
+                // Extract images
+                IEnumerable<PageImageArea> images = parser.GetImages();
+                // Check if images extraction is supported
+                if (images == null)
+                {
+                    Console.WriteLine("Images extraction isn't supported");
+                    return;
+                }
+                // Iterate over images
+                foreach (PageImageArea image in images)
+                {
+                    // Print a page index, rectangle and image type:
+                    Console.WriteLine(string.Format("Page: {0}, R: {1}, Type: {2}", image.Page.Index, image.Rectangle, image.FileType));
+                }
+            }
+        }
+    }
+}
+
+```

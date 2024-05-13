@@ -1,0 +1,53 @@
+---
+title: Extract Images from Word Document
+linktitle: Extract Images from Word Document
+second_title: GroupDocs.Parser .NET API
+description: 
+type: docs
+weight: 11
+url: /net/word-document-processing/extract-images-from-word-document/
+---
+
+## Complete Source Code
+```csharp
+// <copyright company="Aspose Pty Ltd">
+//   Copyright (C) 2011-2024 GroupDocs. All Rights Reserved.
+// </copyright>
+namespace GroupDocs.Parser.Examples.CSharp.AdvancedUsage.ExtractDataFromVariousFormats.Email
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+    using GroupDocs.Parser.Data;
+    using GroupDocs.Parser.Options;
+
+    /// <summary>
+    /// This example shows how to extract images from an email.
+    /// </summary>
+    static class ExtractImages
+    {
+        public static void Run()
+        {
+            // Create an instance of Parser class
+            using (Parser parser = new Parser("Your Sample File"))
+            {
+                // Extract images from the email
+                IEnumerable<PageImageArea> images = parser.GetImages();
+
+                // Create the options to save images in PNG format
+                ImageOptions options = new ImageOptions(ImageFormat.Png);
+
+                int imageNumber = 0;
+                // Iterate over images
+                foreach (PageImageArea image in images)
+                {
+                    // Save the image to the png file
+                    image.Save(imageNumber.ToString() + ".png", options);
+                    imageNumber++;
+                }
+            }
+        }
+    }
+}
+
+```

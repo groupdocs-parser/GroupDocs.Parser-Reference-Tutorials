@@ -1,0 +1,54 @@
+---
+title: Loading Specific File Formats
+linktitle: Loading Specific File Formats
+second_title: GroupDocs.Parser .NET API
+description: 
+type: docs
+weight: 14
+url: /net/document-loading/loading-specific-file-formats/
+---
+
+## Complete Source Code
+```csharp
+// <copyright company="Aspose Pty Ltd">
+//   Copyright (C) 2011-2024 GroupDocs. All Rights Reserved.
+// </copyright>
+namespace GroupDocs.Parser.Examples.CSharp.AdvancedUsage.Loading
+{
+    using System;
+    using System.Collections.Generic;
+    using System.IO;
+    using System.Text;
+    using GroupDocs.Parser.Options;
+
+    /// <summary>
+    /// This example how to specify the file format when loading the document.
+    /// </summary>
+    static class LoadingSpecificFileFormats
+    {
+        public static void Run()
+        {
+            using (Stream stream = File.OpenRead("Your Sample File"))
+            {
+                // Create an instance of Parser class for markdown document
+                using (Parser parser = new Parser(stream, new LoadOptions(Options.FileFormat.Markup)))
+                {
+                    // Check if text extraction is supported
+                    if (!parser.Features.Text)
+                    {
+                        Console.WriteLine("Text extraction isn't supported.");
+                        return;
+                    }
+                    using (TextReader reader = parser.GetText())
+                    {
+                        // Print the document text
+                        // Markdown is detected; text without special symbols is printed
+                        Console.WriteLine(reader.ReadToEnd());
+                    }
+                }
+            }
+        }
+    }
+}
+
+```

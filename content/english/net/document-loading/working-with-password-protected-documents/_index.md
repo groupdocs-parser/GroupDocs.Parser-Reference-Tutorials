@@ -1,0 +1,61 @@
+---
+title: Working with Password Protected Documents
+linktitle: Working with Password Protected Documents
+second_title: GroupDocs.Parser .NET API
+description: 
+type: docs
+weight: 15
+url: /net/document-loading/working-with-password-protected-documents/
+---
+
+## Complete Source Code
+```csharp
+// <copyright company="Aspose Pty Ltd">
+//   Copyright (C) 2011-2024 GroupDocs. All Rights Reserved.
+// </copyright>
+namespace GroupDocs.Parser.Examples.CSharp.AdvancedUsage.Loading
+{
+    using System;
+    using System.Collections.Generic;
+    using System.IO;
+    using System.Text;
+    using GroupDocs.Parser.Exceptions;
+    using GroupDocs.Parser.Options;
+
+    /// <summary>
+    /// This example shows how to process password protected documents.
+    /// </summary>
+    static class PasswordProtectedDocuments
+    {
+        public static void Run()
+        {
+            try
+            {
+                string password = "123456";
+
+                // Create an instance of Parser class with the password:
+                using (Parser parser = new Parser("Your Sample File", new LoadOptions(password)))
+                {
+                    // Check if text extraction is supported
+                    if (!parser.Features.Text)
+                    {
+                        Console.WriteLine("Text extraction isn't supported.");
+                        return;
+                    }
+                    // Print the document text
+                    using (TextReader reader = parser.GetText())
+                    {
+                        Console.WriteLine(reader.ReadToEnd());
+                    }
+                }
+            }
+            catch (InvalidPasswordException)
+            {
+                // Print the message if the password is incorrect or empty
+                Console.WriteLine("Invalid password");
+            }
+        }
+    }
+}
+
+```
