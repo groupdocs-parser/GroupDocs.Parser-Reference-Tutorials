@@ -9,7 +9,6 @@ url: /net/ocr-extraction/
 ---
 
 ## Optical Character Recognition (OCR) Extraction Tutorials
-### [Aspose OCR On-Premise Usage](./aspose-ocr-on-premise-usage/)
 ### [Handling OCR](./handling-ocr/)
 Learn how to handle OCR using GroupDocs.Parser for .NET. Extract text from images and scanned documents efficiently.
 ### [Recognizing Text](./recognizing-text/)
