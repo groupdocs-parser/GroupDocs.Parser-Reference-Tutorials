@@ -10,6 +10,7 @@ url: /net/word-document-processing/
 
 ## Word Document Processing Tutorials
 ### [Extract Hyperlinks from Word Document](./extract-hyperlinks-from-word-document/)
+Learn how to extract hyperlinks from Word documents using GroupDocs.Parser for .NET. Step-by-step guide with code examples.
 ### [Extract Images from Word Document](./extract-images-from-word-document/)
 ### [Extract Metadata from Word Document](./extract-metadata-from-word-document/)
 ### [Extract Table of Contents from Word Document](./extract-table-of-contents-from-word-document/)
