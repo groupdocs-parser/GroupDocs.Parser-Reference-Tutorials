@@ -3,7 +3,6 @@ title: दस्तावेज़ पृष्ठ से बारकोड न
 linktitle: दस्तावेज़ पृष्ठ से बारकोड निकालें
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके दस्तावेज़ पृष्ठों से बारकोड निकालने का तरीका जानें। यह ट्यूटोरियल बारकोड निष्कर्षण के लिए चरण-दर-चरण मार्गदर्शन प्रदान करता है।
-type: docs
 weight: 12
 url: /hi/net/barcode-extraction/extract-barcodes-from-document-page/
 ---
@@ -79,7 +78,7 @@ foreach (PageBarcodeArea barcode in barcodes)
 ### अक्सर पूछे जाने वाले प्रश्न
 
 ### प्रश्न: GroupDocs.Parser किस दस्तावेज़ प्रारूप का समर्थन करता है?
- GroupDocs.Parser कई तरह के प्रारूपों का समर्थन करता है, जिसमें DOCX, PDF, XLSX, PPTX आदि शामिल हैं।[प्रलेखन](https://reference.groupdocs.com/parser/net/)पूरी सूची के लिए यहां क्लिक करें.
+ GroupDocs.Parser कई तरह के प्रारूपों का समर्थन करता है, जिसमें DOCX, PDF, XLSX, PPTX आदि शामिल हैं।[प्रलेखन](https://tutorials.groupdocs.com/parser/net/)पूरी सूची के लिए यहां क्लिक करें.
 
 ### प्रश्न: क्या मैं GroupDocs.Parser का उपयोग करके बारकोड के साथ मेटाडेटा निकाल सकता हूं?
 हां, GroupDocs.Parser आपको दस्तावेजों से मेटाडेटा, पाठ, चित्र और बारकोड निकालने की अनुमति देता है, जिससे व्यापक दस्तावेज़ पार्सिंग क्षमताएं प्रदान होती हैं।

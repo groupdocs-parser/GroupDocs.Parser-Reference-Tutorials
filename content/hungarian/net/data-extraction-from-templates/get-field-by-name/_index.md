@@ -3,7 +3,6 @@ title: Mező lekérése név szerint
 linktitle: Mező lekérése név szerint
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki meghatározott adatmezőket a dokumentumokból a GroupDocs.Parser for .NET segítségével. Útmutató lépésről lépésre kódpéldákkal.
-type: docs
 weight: 10
 url: /hu/net/data-extraction-from-templates/get-field-by-name/
 ---

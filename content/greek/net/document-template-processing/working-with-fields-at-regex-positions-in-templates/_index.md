@@ -3,7 +3,6 @@ title: Εργασία με πεδία σε θέσεις Regex σε πρότυπ�
 linktitle: Εργασία με πεδία σε θέσεις Regex σε πρότυπα
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε δεδομένα από πρότυπα εγγράφων χρησιμοποιώντας θέσεις regex με το GroupDocs.Parser για .NET. Αυτοματοποιήστε αποτελεσματικά τις εργασίες εξαγωγής δεδομένων σας.
-type: docs
 weight: 13
 url: /el/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---

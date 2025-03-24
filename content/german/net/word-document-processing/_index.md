@@ -3,7 +3,6 @@ title: Word-Dokumentverarbeitung
 linktitle: Word-Dokumentverarbeitung
 second_title: GroupDocs.Parser .NET API
 description: Entdecken Sie eine Reihe von Tutorials zur Word-Dokumentenverarbeitung mit GroupDocs.Parser für .NET. Extrahieren Sie Hyperlinks, Bilder, Metadaten und mehr.
-type: docs
 weight: 30
 url: /de/net/word-document-processing/
 ---

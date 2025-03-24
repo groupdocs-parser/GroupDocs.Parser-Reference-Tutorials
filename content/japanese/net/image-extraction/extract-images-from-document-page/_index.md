@@ -3,7 +3,6 @@ title: ドキュメントページから画像を抽出する
 linktitle: ドキュメントページから画像を抽出する
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用してドキュメントから画像を抽出する方法を学習します。ドキュメント処理機能を強化します。
-type: docs
 weight: 12
 url: /ja/net/image-extraction/extract-images-from-document-page/
 ---

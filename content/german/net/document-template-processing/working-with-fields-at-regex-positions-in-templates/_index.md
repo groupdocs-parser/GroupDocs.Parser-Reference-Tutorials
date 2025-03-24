@@ -3,7 +3,6 @@ title: Arbeiten mit Feldern an Regex-Positionen in Vorlagen
 linktitle: Arbeiten mit Feldern an Regex-Positionen in Vorlagen
 second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Daten aus Dokumentvorlagen mithilfe von Regex-Positionen extrahieren. Automatisieren Sie Ihre Datenextraktionsaufgaben effizient.
-type: docs
 weight: 13
 url: /de/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---

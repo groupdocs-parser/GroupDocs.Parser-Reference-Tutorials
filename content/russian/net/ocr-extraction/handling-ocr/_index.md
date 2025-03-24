@@ -3,7 +3,6 @@ title: Обработка оптического распознавания си
 linktitle: Обработка оптического распознавания символов
 second_title: GroupDocs.Parser .NET API
 description: Узнайте, как обрабатывать OCR с помощью GroupDocs.Parser для .NET. Эффективно извлекайте текст из изображений и отсканированных документов.
-type: docs
 weight: 11
 url: /ru/net/ocr-extraction/handling-ocr/
 ---

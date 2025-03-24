@@ -3,7 +3,6 @@ title: 文件模板處理
 linktitle: 文件模板處理
 second_title: GroupDocs.Parser .NET API
 description: 使用 GroupDocs.Parser for .NET 輕鬆從文件範本中擷取結構化資料。學習使用條碼、欄位、正規表示式和表格佈局。
-type: docs
 weight: 22
 url: /zh-hant/net/document-template-processing/
 ---

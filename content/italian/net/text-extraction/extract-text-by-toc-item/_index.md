@@ -3,7 +3,6 @@ title: Estrai testo per elemento Sommario (TOC).
 linktitle: Estrai testo per elemento Sommario (TOC).
 second_title: API GroupDocs.Parser .NET
 description: Estrai il testo in base al sommario (TOC) utilizzando GroupDocs.Parser per .NET. Apprendi tecniche efficienti di analisi dei documenti per l'estrazione di dati strutturati.
-type: docs
 weight: 15
 url: /it/net/text-extraction/extract-text-by-toc-item/
 ---

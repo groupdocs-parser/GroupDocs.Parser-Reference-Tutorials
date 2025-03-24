@@ -3,7 +3,6 @@ title: Extraiga texto de áreas específicas con opciones
 linktitle: Extraiga texto de áreas específicas con opciones
 second_title: API GroupDocs.Parser .NET
 description: Aprenda a extraer texto de áreas específicas de documentos utilizando GroupDocs.Parser para .NET. Explore opciones avanzadas de extracción de texto con este tutorial.
-type: docs
 weight: 14
 url: /es/net/text-extraction/extract-text-from-specific-areas-with-options/
 ---

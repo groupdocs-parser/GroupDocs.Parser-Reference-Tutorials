@@ -3,7 +3,6 @@ title: Excel दस्तावेज़ से HTML के रूप में 
 linktitle: Excel दस्तावेज़ से HTML के रूप में पाठ निकालें
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके Excel दस्तावेज़ों से टेक्स्ट निकालना और उसे HTML में परिवर्तित करना सीखें।
-type: docs
 weight: 13
 url: /hi/net/excel-document-processing/extract-text-from-excel-document-as-html/
 ---

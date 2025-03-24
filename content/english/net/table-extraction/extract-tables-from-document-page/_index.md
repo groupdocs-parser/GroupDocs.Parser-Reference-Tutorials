@@ -3,7 +3,6 @@ title: Extract Tables from Document Page
 linktitle: Extract Tables from Document Page
 second_title: GroupDocs.Parser .NET API
 description: Learn how to extract tables from documents programmatically using GroupDocs.Parser for .NET. This comprehensive tutorial provides step-by-step guidance.
-type: docs
 weight: 11
 url: /net/table-extraction/extract-tables-from-document-page/
 ---

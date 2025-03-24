@@ -3,7 +3,6 @@ title: استخراج الباركود من الوثيقة
 linktitle: استخراج الباركود من الوثيقة
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج الرموز الشريطية من المستندات باستخدام GroupDocs.Parser لـ .NET. تعزيز قدرات معالجة المستندات الخاصة بك دون عناء.
-type: docs
 weight: 10
 url: /ar/net/barcode-extraction/extract-barcodes-from-document/
 ---

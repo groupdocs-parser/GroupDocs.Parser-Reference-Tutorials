@@ -3,7 +3,6 @@ title: โหลดเอกสารจากสตรีม
 linktitle: โหลดเอกสารจากสตรีม
 second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกข้อความจากเอกสารรูปแบบต่างๆ ใน .NET โดยใช้ GroupDocs.Parser คำแนะนำทีละขั้นตอนพร้อมตัวอย่างโค้ด
-type: docs
 weight: 12
 url: /th/net/document-loading/load-document-from-stream/
 ---
@@ -61,4 +60,4 @@ GroupDocs.Parser รองรับรูปแบบเอกสารที่
 ### ฉันจะขอรับใบอนุญาตชั่วคราวสำหรับ GroupDocs.Parser ได้อย่างไร
  คุณสามารถขอรับใบอนุญาตชั่วคราวได้จาก[ที่นี่](https://purchase.groupdocs.com/temporary-license/).
 ### ฉันจะหาการสนับสนุนหรือเอกสารเพิ่มเติมสำหรับ GroupDocs.Parser ได้ที่ไหน
- สำหรับการสนับสนุนเพิ่มเติม โปรดไปที่[ฟอรัม GroupDocs.Parser](https://forum.groupdocs.com/c/parser/17) หรืออ้างถึง[เอกสารประกอบ](https://reference.groupdocs.com/parser/net/).
+ สำหรับการสนับสนุนเพิ่มเติม โปรดไปที่[ฟอรัม GroupDocs.Parser](https://forum.groupdocs.com/c/parser/17) หรืออ้างถึง[เอกสารประกอบ](https://tutorials.groupdocs.com/parser/net/).

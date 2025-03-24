@@ -3,7 +3,6 @@ title: PDF'den Görüntüleri Çıkartın
 linktitle: PDF'den Görüntüleri Çıkartın
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak PDF belgelerinden görüntüleri nasıl çıkaracağınızı öğrenin. Kod örnekleri içeren adım adım kılavuz.
-type: docs
 weight: 12
 url: /tr/net/pdf-processing/extract-images-from-pdf/
 ---

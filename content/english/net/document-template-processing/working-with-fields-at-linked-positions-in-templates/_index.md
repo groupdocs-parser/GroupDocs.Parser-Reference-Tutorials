@@ -3,7 +3,6 @@ title: Working with Fields at Linked Positions in Templates
 linktitle: Working with Fields at Linked Positions in Templates
 second_title: GroupDocs.Parser .NET API
 description: Learn how to extract data efficiently from documents using GroupDocs.Parser for .NET. Step-by-step tutorial with code examples.
-type: docs
 weight: 12
 url: /net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
 ---

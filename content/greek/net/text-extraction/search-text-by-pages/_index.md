@@ -3,7 +3,6 @@ title: Αναζήτηση κειμένου ανά σελίδες
 linktitle: Αναζήτηση κειμένου ανά σελίδες
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε να αναζητάτε κείμενο ανά σελίδες χρησιμοποιώντας το GroupDocs.Parser για .NET. Εξάγετε αποτελεσματικά συγκεκριμένο περιεχόμενο από έγγραφα στις εφαρμογές σας .NET.
-type: docs
 weight: 22
 url: /el/net/text-extraction/search-text-by-pages/
 ---
@@ -64,7 +63,7 @@ foreach (SearchResult result in searchResults)
 ### Μπορώ να εξαγάγω εικόνες και μεταδεδομένα από έγγραφα χρησιμοποιώντας το GroupDocs.Parser;
 Οπωσδήποτε, το GroupDocs.Parser επιτρέπει την εξαγωγή εικόνων, μεταδεδομένων και κειμένου από έγγραφα.
 ### Πού μπορώ να βρω λεπτομερή τεκμηρίωση για το GroupDocs.Parser;
- Μπορείτε να αποκτήσετε πρόσβαση στην τεκμηρίωση[εδώ](https://reference.groupdocs.com/parser/net/).
+ Μπορείτε να αποκτήσετε πρόσβαση στην τεκμηρίωση[εδώ](https://tutorials.groupdocs.com/parser/net/).
 ### Πώς μπορώ να αποκτήσω μια προσωρινή άδεια για το GroupDocs.Parser;
  Μπορείτε να ζητήσετε μια προσωρινή άδεια[εδώ](https://purchase.groupdocs.com/temporary-license/).
 ### Πού μπορώ να λάβω υποστήριξη ή βοήθεια με το GroupDocs.Parser;

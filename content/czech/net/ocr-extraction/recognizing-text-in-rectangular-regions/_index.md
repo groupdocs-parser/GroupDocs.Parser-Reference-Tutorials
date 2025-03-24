@@ -3,7 +3,6 @@ title: Rozpoznávání textu v pravoúhlých oblastech
 linktitle: Rozpoznávání textu v pravoúhlých oblastech
 second_title: GroupDocs.Parser .NET API
 description: Naučte se rozpoznávat text v určitých oblastech dokumentů pomocí GroupDocs.Parser for .NET s funkcemi OCR.
-type: docs
 weight: 14
 url: /cs/net/ocr-extraction/recognizing-text-in-rectangular-regions/
 ---

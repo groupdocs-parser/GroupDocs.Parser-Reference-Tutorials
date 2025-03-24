@@ -3,7 +3,6 @@ title: Ekstrak Teks dari Halaman dalam Mode Akurat
 linktitle: Ekstrak Teks dari Halaman dalam Mode Akurat
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak teks secara akurat dari dokumen menggunakan GroupDocs.Parser untuk .NET dalam tutorial komprehensif ini.
-type: docs
 weight: 16
 url: /id/net/text-extraction/extract-text-from-page-in-accurate-mode/
 ---

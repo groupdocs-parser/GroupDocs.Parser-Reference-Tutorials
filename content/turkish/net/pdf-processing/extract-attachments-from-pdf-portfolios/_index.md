@@ -3,7 +3,6 @@ title: PDF Portföylerinden Ekleri Çıkarma
 linktitle: PDF Portföylerinden Ekleri Çıkarma
 second_title: GroupDocs.Parser .NET API'si
 description: Bu kapsamlı eğitimde GroupDocs.Parser for .NET'i kullanarak PDF portföylerinden ekleri nasıl çıkaracağınızı öğrenin.
-type: docs
 weight: 10
 url: /tr/net/pdf-processing/extract-attachments-from-pdf-portfolios/
 ---

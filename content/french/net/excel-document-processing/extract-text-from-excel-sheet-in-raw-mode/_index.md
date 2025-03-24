@@ -3,7 +3,6 @@ title: Extraire le texte d'une feuille Excel en mode brut
 linktitle: Extraire le texte d'une feuille Excel en mode brut
 second_title: API GroupDocs.Parser .NET
 description: Découvrez comment extraire du texte de feuilles Excel à l'aide de GroupDocs.Parser pour .NET dans ce didacticiel complet. Téléchargez et commencez l'analyse.
-type: docs
 weight: 15
 url: /fr/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
 ---
@@ -66,7 +65,7 @@ Oui, GroupDocs.Parser prend en charge un large éventail de formats de documents
 ### GroupDocs.Parser est-il adapté au traitement de gros fichiers Excel ?
 Oui, GroupDocs.Parser est conçu pour gérer efficacement des documents volumineux.
 ### Où puis-je trouver plus de documentation sur GroupDocs.Parser ?
- Vous pouvez vous référer au[Documentation](https://reference.groupdocs.com/parser/net/) pour des informations détaillées et des exemples.
+ Vous pouvez vous référer au[Documentation](https://tutorials.groupdocs.com/parser/net/) pour des informations détaillées et des exemples.
 ### Comment puis-je obtenir une licence temporaire pour GroupDocs.Parser ?
  Visite[ce lien](https://purchase.groupdocs.com/temporary-license/) pour demander une licence temporaire.
 ### GroupDocs.Parser offre-t-il un support client ?

@@ -3,7 +3,6 @@ title: Afbeeldingen uit de documentpagina extraheren
 linktitle: Afbeeldingen uit de documentpagina extraheren
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u afbeeldingen uit documenten kunt extraheren met GroupDocs.Parser voor .NET. Verbeter uw documentverwerkingsmogelijkheden.
-type: docs
 weight: 12
 url: /nl/net/image-extraction/extract-images-from-document-page/
 ---

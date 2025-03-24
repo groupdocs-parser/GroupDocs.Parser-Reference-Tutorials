@@ -3,7 +3,6 @@ title: Обработка шаблонов документов
 linktitle: Обработка шаблонов документов
 second_title: GroupDocs.Parser .NET API
 description: Легко извлекайте структурированные данные из шаблонов документов с помощью GroupDocs.Parser для .NET. Научитесь работать со штрих-кодами, полями, регулярными выражениями и макетами таблиц.
-type: docs
 weight: 22
 url: /ru/net/document-template-processing/
 ---

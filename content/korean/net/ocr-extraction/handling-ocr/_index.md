@@ -3,7 +3,6 @@ title: OCR 처리
 linktitle: OCR 처리
 second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 OCR을 처리하는 방법을 알아보세요. 이미지와 스캔한 문서에서 텍스트를 효율적으로 추출합니다.
-type: docs
 weight: 11
 url: /ko/net/ocr-extraction/handling-ocr/
 ---

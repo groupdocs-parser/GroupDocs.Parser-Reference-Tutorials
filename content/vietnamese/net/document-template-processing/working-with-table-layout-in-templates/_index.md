@@ -3,7 +3,6 @@ title: Làm việc với Bố cục bảng trong Mẫu
 linktitle: Làm việc với Bố cục bảng trong Mẫu
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách làm việc với bố cục bảng trong mẫu bằng GroupDocs.Parser cho .NET. Trích xuất dữ liệu có cấu trúc hiệu quả từ các tài liệu.
-type: docs
 weight: 14
 url: /vi/net/document-template-processing/working-with-table-layout-in-templates/
 ---

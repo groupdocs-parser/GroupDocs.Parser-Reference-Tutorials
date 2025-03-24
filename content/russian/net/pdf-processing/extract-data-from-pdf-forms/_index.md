@@ -3,7 +3,6 @@ title: Извлечение данных из PDF-форм
 linktitle: Извлечение данных из PDF-форм
 second_title: GroupDocs.Parser .NET API
 description: Узнайте, как извлекать данные из форм PDF с помощью GroupDocs.Parser для .NET. Пошаговое руководство с примерами кода и часто задаваемыми вопросами.
-type: docs
 weight: 11
 url: /ru/net/pdf-processing/extract-data-from-pdf-forms/
 ---
@@ -79,7 +78,7 @@ Console.WriteLine("Description: {0}", rec.Description);
 ### Могу ли я извлечь изображения и метаданные с помощью GroupDocs.Parser?
 Да, GroupDocs.Parser позволяет извлекать изображения, метаданные и текст из документов.
 ### Где я могу найти дополнительную поддержку или документацию для GroupDocs.Parser?
- Вы можете посетить[Документация GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) для получения подробной информации и примеров.
+ Вы можете посетить[Документация GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) для получения подробной информации и примеров.
 ### Доступна ли бесплатная пробная версия GroupDocs.Parser?
  Да, вы можете получить доступ к[бесплатная пробная версия GroupDocs.Parser](https://releases.groupdocs.com/) изучить его особенности.
 ### Как получить временную лицензию на GroupDocs.Parser?

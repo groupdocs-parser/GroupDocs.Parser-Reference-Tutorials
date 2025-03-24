@@ -3,7 +3,6 @@ title: 通过关键字搜索 PDF 中的文本
 linktitle: 通过关键字搜索 PDF 中的文本
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 在 PDF 文档中搜索特定文本。将强大的文本搜索功能高效地集成到您的 .NET 中。
-type: docs
 weight: 18
 url: /zh/net/pdf-processing/search-text-in-pdf-by-keyword/
 ---

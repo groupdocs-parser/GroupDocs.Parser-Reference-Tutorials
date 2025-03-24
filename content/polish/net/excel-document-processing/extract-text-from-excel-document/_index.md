@@ -3,7 +3,6 @@ title: Wyodrębnij tekst z dokumentu Excel
 linktitle: Wyodrębnij tekst z dokumentu Excel
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak w prostych krokach wyodrębnić tekst z dokumentów Excel za pomocą GroupDocs.Parser dla .NET.
-type: docs
 weight: 12
 url: /pl/net/excel-document-processing/extract-text-from-excel-document/
 ---
@@ -58,7 +57,7 @@ Tak, GroupDocs.Parser obsługuje szeroką gamę formatów dokumentów, w tym Wor
 ### Czy dostępna jest bezpłatna wersja próbna programu GroupDocs.Parser?
  Tak, możesz pobrać bezpłatną wersję próbną GroupDocs.Parser ze strony[Tutaj](https://releases.groupdocs.com/).
 ### Gdzie mogę znaleźć dokumentację GroupDocs.Parser?
- Możesz znaleźć szczegółową dokumentację GroupDocs.Parser[Tutaj](https://reference.groupdocs.com/parser/net/).
+ Możesz znaleźć szczegółową dokumentację GroupDocs.Parser[Tutaj](https://tutorials.groupdocs.com/parser/net/).
 ### Jak mogę uzyskać pomoc dotyczącą GroupDocs.Parser?
 Aby uzyskać wsparcie i pomoc dotyczącą GroupDocs.Parser, odwiedź stronę[Forum GroupDocs](https://forum.groupdocs.com/c/parser/17).
 ### Gdzie mogę kupić licencję na GroupDocs.Parser?

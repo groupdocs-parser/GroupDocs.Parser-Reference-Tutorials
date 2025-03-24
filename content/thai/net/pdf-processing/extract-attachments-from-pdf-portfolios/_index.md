@@ -3,7 +3,6 @@ title: แยกไฟล์แนบจากพอร์ตโฟลิโอ 
 linktitle: แยกไฟล์แนบจากพอร์ตโฟลิโอ PDF
 second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกไฟล์แนบจากพอร์ตโฟลิโอ PDF โดยใช้ GroupDocs.Parser สำหรับ .NET ในบทช่วยสอนที่ครอบคลุมนี้
-type: docs
 weight: 10
 url: /th/net/pdf-processing/extract-attachments-from-pdf-portfolios/
 ---

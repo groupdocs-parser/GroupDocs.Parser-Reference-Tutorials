@@ -3,7 +3,6 @@ title: Работа с полями в фиксированных позиция
 linktitle: Работа с полями в фиксированных позициях в шаблонах
 second_title: GroupDocs.Parser .NET API
 description: Узнайте, как извлекать данные из документов с помощью GroupDocs.Parser для .NET. Подробное руководство с примерами кода.
-type: docs
 weight: 11
 url: /ru/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
@@ -69,7 +68,7 @@ using (Parser parser = new Parser("YourSampleFile.pdf"))
 
 ## Часто задаваемые вопросы
 ### Совместим ли GroupDocs.Parser со всеми форматами документов?
- GroupDocs.Parser поддерживает широкий спектр форматов файлов, включая PDF, Microsoft Word, Excel, PowerPoint и другие. Обратитесь к[документация](https://reference.groupdocs.com/parser/net/) для подробного списка.
+ GroupDocs.Parser поддерживает широкий спектр форматов файлов, включая PDF, Microsoft Word, Excel, PowerPoint и другие. Обратитесь к[документация](https://tutorials.groupdocs.com/parser/net/) для подробного списка.
 ### Как получить временную лицензию на GroupDocs.Parser?
  Вы можете получить временную лицензию для целей тестирования на сайте[здесь](https://purchase.groupdocs.com/temporary-license/).
 ### Где я могу найти поддержку GroupDocs.Parser?

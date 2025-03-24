@@ -3,7 +3,6 @@ title: ドキュメントページから表を抽出する
 linktitle: ドキュメントページから表を抽出する
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して、プログラムによってドキュメントからテーブルを抽出する方法を学習します。この包括的なチュートリアルでは、ステップバイステップのガイダンスを提供します。
-type: docs
 weight: 11
 url: /ja/net/table-extraction/extract-tables-from-document-page/
 ---

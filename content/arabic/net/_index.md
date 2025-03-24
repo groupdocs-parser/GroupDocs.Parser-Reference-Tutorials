@@ -1,7 +1,6 @@
 ---
 title: دروس وأمثلة لـ GroupDocs.Parser لـ .NET
 linktitle: GroupDocs.Parser لبرامج .NET التعليمية
-type: docs
 weight: 10
 url: /ar/net/
 description: أطلق العنان لتقنيات استخراج النص الفعالة باستخدام GroupDocs.Parser لـ .NET. قم باستخراج النص وتمييزه والبحث فيه بسلاسة لتحسين معالجة المستندات.

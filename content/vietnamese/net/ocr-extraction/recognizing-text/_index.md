@@ -3,7 +3,6 @@ title: Nhận dạng văn bản
 linktitle: Nhận dạng văn bản
 second_title: API GroupDocs.Parser .NET
 description: Trích xuất văn bản từ nhiều định dạng tài liệu khác nhau một cách hiệu quả với GroupDocs.Parser cho .NET. Tích hợp dễ dàng và khả năng OCR mạnh mẽ.
-type: docs
 weight: 12
 url: /vi/net/ocr-extraction/recognizing-text/
 ---
@@ -57,7 +56,7 @@ Trong đoạn trích này:
 - `TextOptions` được định cấu hình để bật OCR và tối ưu hóa việc trích xuất văn bản.
 
 ## Phần kết luận
- Chúc mừng! Bạn đã học cách tích hợp GroupDocs.Parser cho .NET vào dự án của mình để trích xuất văn bản một cách hiệu quả. Khám phá rộng rãi[tài liệu](https://reference.groupdocs.com/parser/net/) để biết các tính năng nâng cao và tối ưu hóa.
+ Chúc mừng! Bạn đã học cách tích hợp GroupDocs.Parser cho .NET vào dự án của mình để trích xuất văn bản một cách hiệu quả. Khám phá rộng rãi[tài liệu](https://tutorials.groupdocs.com/parser/net/) để biết các tính năng nâng cao và tối ưu hóa.
 
 ## Câu hỏi thường gặp
 ### GroupDocs.Parser có phù hợp để trích xuất văn bản từ tệp PDF không?

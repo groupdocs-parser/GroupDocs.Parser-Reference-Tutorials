@@ -3,7 +3,6 @@ title: Zpracování dokumentů Excel
 linktitle: Zpracování dokumentů Excel
 second_title: GroupDocs.Parser .NET API
 description: Master Excelové zpracování dokumentů v .NET s GroupDocs.Parser. Naučte se efektivně extrahovat obrázky, metadata a text pomocí podrobných průvodců.
-type: docs
 weight: 32
 url: /cs/net/excel-document-processing/
 ---

@@ -3,7 +3,6 @@ title: Analisar páginas usando modelos
 linktitle: Analisar páginas usando modelos
 second_title: API GroupDocs.Parser .NET
 description: Aprenda como analisar páginas de documentos usando modelos em .NET com GroupDocs.Parser. Extraia conteúdo específico de forma eficiente para suas aplicações.
-type: docs
 weight: 16
 url: /pt/net/document-template-processing/parse-pages-using-templates/
 ---
@@ -67,7 +66,7 @@ Sim, GroupDocs.Parser oferece suporte a vários formatos, incluindo PDF, DOCX, X
 ### O GroupDocs.Parser é adequado para extrair dados específicos, como códigos de barras?
 Absolutamente! GroupDocs.Parser oferece recursos de extração precisos para extração de conteúdo direcionado.
 ### Onde posso encontrar documentação detalhada para GroupDocs.Parser?
- Visite a[documentação](https://reference.groupdocs.com/parser/net/) para orientação abrangente.
+ Visite a[documentação](https://tutorials.groupdocs.com/parser/net/) para orientação abrangente.
 ### Como posso obter licenciamento temporário para GroupDocs.Parser?
  Obter um[licença temporária](https://purchase.groupdocs.com/temporary-license/) para fins de avaliação ou desenvolvimento.
 ### GroupDocs fornece suporte para solução de problemas?

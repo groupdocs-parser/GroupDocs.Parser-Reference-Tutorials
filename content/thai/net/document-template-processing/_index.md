@@ -3,7 +3,6 @@ title: การประมวลผลเทมเพลตเอกสาร
 linktitle: การประมวลผลเทมเพลตเอกสาร
 second_title: GroupDocs.Parser .NET API
 description: แยกข้อมูลที่มีโครงสร้างออกจากเทมเพลตเอกสารได้อย่างง่ายดายด้วย GroupDocs.Parser for .NET เรียนรู้การทำงานกับบาร์โค้ด ฟิลด์ regex และเค้าโครงตาราง
-type: docs
 weight: 22
 url: /th/net/document-template-processing/
 ---

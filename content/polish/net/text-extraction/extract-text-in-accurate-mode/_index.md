@@ -3,7 +3,6 @@ title: Wyodrębnij tekst w trybie dokładnym
 linktitle: Wyodrębnij tekst w trybie dokładnym
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak dokładnie wyodrębniać tekst z dokumentów w platformie .NET przy użyciu programu GroupDocs.Parser w celu bezproblemowego przetwarzania danych.
-type: docs
 weight: 18
 url: /pl/net/text-extraction/extract-text-in-accurate-mode/
 ---

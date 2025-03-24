@@ -3,7 +3,6 @@ title: Εξαγωγή κειμένου με ανίχνευση κωδικοπο�
 linktitle: Εξαγωγή κειμένου με ανίχνευση κωδικοποίησης
 second_title: GroupDocs.Parser .NET API
 description: Εξαγωγή κειμένου από έγγραφα με εντοπισμό κωδικοποίησης χρησιμοποιώντας GroupDocs.Parser για .NET. Αναλύστε αποτελεσματικά διάφορες μορφές στις εφαρμογές σας .NET.
-type: docs
 weight: 10
 url: /el/net/text-extraction/extract-text-with-encoding-detection/
 ---

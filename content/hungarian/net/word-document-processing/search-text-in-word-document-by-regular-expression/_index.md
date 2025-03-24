@@ -3,7 +3,6 @@ title: Szöveg keresése a Word dokumentumban reguláris kifejezéssel
 linktitle: Szöveg keresése a Word dokumentumban reguláris kifejezéssel
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan kereshet szöveget Word dokumentumokban reguláris kifejezések használatával a GroupDocs.Parser for .NET segítségével. Hatékonyan bontsa ki az adott tartalmat.
-type: docs
 weight: 19
 url: /hu/net/word-document-processing/search-text-in-word-document-by-regular-expression/
 ---

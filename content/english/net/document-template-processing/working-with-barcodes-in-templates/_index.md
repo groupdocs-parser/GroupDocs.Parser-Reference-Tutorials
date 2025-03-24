@@ -3,7 +3,6 @@ title: Working with Barcodes in Templates
 linktitle: Working with Barcodes in Templates
 second_title: GroupDocs.Parser .NET API
 description: Learn how to use GroupDocs.Parser for .NET to extract structured data from documents using templates. Simplify data extraction with barcode fields.
-type: docs
 weight: 10
 url: /net/document-template-processing/working-with-barcodes-in-templates/
 ---

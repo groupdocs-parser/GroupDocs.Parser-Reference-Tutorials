@@ -3,7 +3,6 @@ title: Wyodrębnij kody kreskowe z uszkodzonego dokumentu
 linktitle: Wyodrębnij kody kreskowe z uszkodzonego dokumentu
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić kody kreskowe z uszkodzonych dokumentów za pomocą GroupDocs.Parser dla .NET. Obszerny samouczek z instrukcjami krok po kroku.
-type: docs
 weight: 11
 url: /pl/net/barcode-extraction/extract-barcodes-from-corrupted-document/
 ---

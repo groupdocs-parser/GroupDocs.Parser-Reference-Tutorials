@@ -3,7 +3,6 @@ title: 按页搜索文本
 linktitle: 按页搜索文本
 second_title: GroupDocs.Parser .NET API
 description: 学习使用 GroupDocs.Parser for .NET 按页面搜索文本。从 .NET 应用程序中的文档中高效提取特定内容。
-type: docs
 weight: 22
 url: /zh/net/text-extraction/search-text-by-pages/
 ---
@@ -64,7 +63,7 @@ foreach (SearchResult result in searchResults)
 ### 我可以使用 GroupDocs.Parser 从文档中提取图像和元数据吗？
 当然，GroupDocs.Parser 允许从文档中提取图像、元数据和文本。
 ### 在哪里可以找到 GroupDocs.Parser 的详细文档？
-您可以访问文档[这里](https://reference.groupdocs.com/parser/net/).
+您可以访问文档[这里](https://tutorials.groupdocs.com/parser/net/).
 ### 如何获得 GroupDocs.Parser 的临时许可证？
 您可以申请临时执照[这里](https://purchase.groupdocs.com/temporary-license/).
 ### 我可以在哪里获得有关 GroupDocs.Parser 的支持或帮助？

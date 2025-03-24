@@ -3,7 +3,6 @@ title: 光学字符识别 (OCR) 提取
 linktitle: 光学字符识别 (OCR) 提取
 second_title: GroupDocs.Parser .NET API
 description: 使用 GroupDocs.Parser for .NET 高效处理 OCR 并从图像和文档中提取文本。立即增强您的 OCR 功能！
-type: docs
 weight: 28
 url: /zh/net/ocr-extraction/
 ---

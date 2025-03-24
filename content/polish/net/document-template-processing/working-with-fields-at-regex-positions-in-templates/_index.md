@@ -3,7 +3,6 @@ title: Praca z polami w pozycjach wyrażeń regularnych w szablonach
 linktitle: Praca z polami w pozycjach wyrażeń regularnych w szablonach
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębniać dane z szablonów dokumentów przy użyciu pozycji wyrażeń regularnych za pomocą GroupDocs.Parser dla platformy .NET. Efektywnie automatyzuj zadania ekstrakcji danych.
-type: docs
 weight: 13
 url: /pl/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---

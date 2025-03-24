@@ -3,7 +3,6 @@ title: Word Belgesi İşleme
 linktitle: Word Belgesi İşleme
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak Word belgesi işlemeye ilişkin çeşitli eğitimleri keşfedin. Köprüleri, görüntüleri, meta verileri ve daha fazlasını çıkarın.
-type: docs
 weight: 30
 url: /tr/net/word-document-processing/
 ---

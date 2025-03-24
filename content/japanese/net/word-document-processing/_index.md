@@ -3,7 +3,6 @@ title: Word文書処理
 linktitle: Word文書処理
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用した Word ドキュメント処理に関するさまざまなチュートリアルをご覧ください。ハイパーリンク、画像、メタデータなどを抽出します。
-type: docs
 weight: 30
 url: /ja/net/word-document-processing/
 ---

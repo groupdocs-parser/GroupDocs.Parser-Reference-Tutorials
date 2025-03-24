@@ -1,7 +1,6 @@
 ---
 title: Návody a příklady GroupDocs.Parser pro .NET
 linktitle: GroupDocs.Parser pro .NET výukové programy
-type: docs
 weight: 10
 url: /cs/net/
 description: Odemkněte efektivní techniky extrakce textu s GroupDocs.Parser pro .NET. Bezproblémově extrahujte, zvýrazňujte a prohledávejte text pro lepší zpracování dokumentů.

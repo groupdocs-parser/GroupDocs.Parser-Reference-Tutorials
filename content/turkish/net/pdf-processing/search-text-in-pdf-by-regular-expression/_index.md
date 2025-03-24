@@ -3,7 +3,6 @@ title: Normal İfade ile PDF'de Metin Arama
 linktitle: Normal İfade ile PDF'de Metin Arama
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser ile normal ifadeleri kullanarak PDF belgelerinde belirli bir metni arayın. PDF metnini zahmetsizce çıkarın, analiz edin ve değiştirin.
-type: docs
 weight: 19
 url: /tr/net/pdf-processing/search-text-in-pdf-by-regular-expression/
 ---
@@ -52,7 +51,7 @@ Bu öğreticide, düzenli ifadeler kullanarak PDF belgelerinde metin aramak içi
 ### GroupDocs.Parser, PDF'lerin yanı sıra diğer belge formatlarını da işleyebilir mi?
 Evet, GroupDocs.Parser, DOCX, XLSX, PPTX ve daha fazlası gibi çeşitli belge formatlarını destekler.
 ### GroupDocs.Parser için daha fazla kaynağı ve desteği nerede bulabilirim?
- Ziyaret edebilirsiniz[GroupDocs.Parser belgeleri](https://reference.groupdocs.com/parser/net/) ve yardım isteyin[GroupDocs forumu](https://forum.groupdocs.com/c/parser/17).
+ Ziyaret edebilirsiniz[GroupDocs.Parser belgeleri](https://tutorials.groupdocs.com/parser/net/) ve yardım isteyin[GroupDocs forumu](https://forum.groupdocs.com/c/parser/17).
 ### GroupDocs.Parser'ın ücretsiz deneme sürümü var mı?
  Evet, şu adrese erişebilirsiniz:[ücretsiz deneme sürümü](https://releases.groupdocs.com/) Özelliklerini keşfetmek için GroupDocs.Parser'a bakın.
 ### GroupDocs.Parser için nasıl geçici lisans alabilirim?

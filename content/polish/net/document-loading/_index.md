@@ -3,7 +3,6 @@ title: Ładowanie dokumentu
 linktitle: Ładowanie dokumentu
 second_title: GroupDocs.Parser API .NET
 description: Efektywnie obsługuj ładowanie dokumentów w .NET za pomocą GroupDocs.Parser. Dowiedz się, jak wyodrębniać tekst z dysków lokalnych, strumieni, adresów URL i nie tylko.
-type: docs
 weight: 29
 url: /pl/net/document-loading/
 ---

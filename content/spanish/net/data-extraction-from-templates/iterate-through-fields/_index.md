@@ -3,7 +3,6 @@ title: Iterar a través de campos
 linktitle: Iterar a través de campos
 second_title: API GroupDocs.Parser .NET
 description: Aprenda a extraer datos estructurados de documentos utilizando GroupDocs.Parser para .NET. Mejore sus aplicaciones .NET con capacidades de extracción de datos de documentos.
-type: docs
 weight: 11
 url: /es/net/data-extraction-from-templates/iterate-through-fields/
 ---

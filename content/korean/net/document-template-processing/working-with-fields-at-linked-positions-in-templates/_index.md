@@ -3,7 +3,6 @@ title: 템플릿의 연결된 위치에서 필드 작업
 linktitle: 템플릿의 연결된 위치에서 필드 작업
 second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 문서에서 데이터를 효율적으로 추출하는 방법을 알아보세요. 코드 예제가 포함된 단계별 튜토리얼입니다.
-type: docs
 weight: 12
 url: /ko/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
 ---

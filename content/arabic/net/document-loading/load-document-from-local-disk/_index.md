@@ -3,7 +3,6 @@ title: تحميل المستند من القرص المحلي
 linktitle: تحميل المستند من القرص المحلي
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج النص من تنسيقات المستندات المختلفة باستخدام GroupDocs.Parser لـ .NET. استخراج النص بسهولة وفعالية باستخدام لغة C#.
-type: docs
 weight: 11
 url: /ar/net/document-loading/load-document-from-local-disk/
 ---
@@ -57,7 +56,7 @@ using (Parser parser = new Parser(filePath))
 ### هل يمكنني استخراج بيانات التعريف مع النص باستخدام GroupDocs.Parser؟
 نعم، يسمح GroupDocs.Parser باستخراج كل من محتوى النص وبيانات التعريف من تنسيقات المستندات المدعومة.
 ### أين يمكنني العثور على المزيد من الموارد والدعم لـ GroupDocs.Parser؟
- قم بزيارة[وثائق GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) للحصول على مرجع تفصيلي لواجهة برمجة التطبيقات (API) واستكشاف[منتدى مستندات المجموعة](https://forum.groupdocs.com/c/parser/17) لدعم المجتمع.
+ قم بزيارة[وثائق GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) للحصول على مرجع تفصيلي لواجهة برمجة التطبيقات (API) واستكشاف[منتدى مستندات المجموعة](https://forum.groupdocs.com/c/parser/17) لدعم المجتمع.
 ### كيف يمكنني الحصول على ترخيص مؤقت لـ GroupDocs.Parser؟
  يمكنك طلب أ[ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/) لأغراض التقييم والاختبار.
 ### هل هناك نسخة تجريبية مجانية متاحة لـ GroupDocs.Parser؟

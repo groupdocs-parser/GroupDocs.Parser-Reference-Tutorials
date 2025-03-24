@@ -3,7 +3,6 @@ title: ページからテキストをRawモードで抽出する
 linktitle: ページからテキストをRawモードで抽出する
 second_title: GroupDocs.Parser .NET API
 description: この包括的なチュートリアルでは、Groupdocs.Parser for .NET を使用してドキュメント ページから効率的にテキストを抽出する方法を学習します。
-type: docs
 weight: 17
 url: /ja/net/text-extraction/extract-text-from-page-in-raw-mode/
 ---

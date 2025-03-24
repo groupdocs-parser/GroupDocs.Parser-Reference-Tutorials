@@ -3,7 +3,6 @@ title: استخراج البيانات التعريفية من مستند Word
 linktitle: استخراج البيانات التعريفية من مستند Word
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج بيانات التعريف من مستندات Word باستخدام GroupDocs.Parser لـ .NET. خطوات سهلة لتحليل واسترجاع معلومات الوثيقة.
-type: docs
 weight: 12
 url: /ar/net/word-document-processing/extract-metadata-from-word-document/
 ---
@@ -55,7 +54,7 @@ foreach (MetadataItem item in metadata)
 ### ما هو GroupDocs.Parser لـ .NET؟
 GroupDocs.Parser for .NET عبارة عن مكتبة لتحليل المستندات تسمح للمطورين باستخراج النص وبيانات التعريف من تنسيقات المستندات المختلفة برمجيًا.
 ### أين يمكنني العثور على وثائق GroupDocs.Parser؟
- يمكنك الرجوع إلى[توثيق](https://reference.groupdocs.com/parser/net/) للحصول على معلومات تفصيلية حول استخدام GroupDocs.Parser لـ .NET.
+ يمكنك الرجوع إلى[توثيق](https://tutorials.groupdocs.com/parser/net/) للحصول على معلومات تفصيلية حول استخدام GroupDocs.Parser لـ .NET.
 ### كيف يمكنني الحصول على نسخة تجريبية مجانية من GroupDocs.Parser؟
  يمكنك تنزيل نسخة تجريبية مجانية من GroupDocs.Parser من[صفحة الإصدارات](https://releases.groupdocs.com/).
 ### هل GroupDocs.Parser مناسب للاستخدام التجاري؟

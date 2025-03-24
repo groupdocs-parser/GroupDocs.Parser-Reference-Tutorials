@@ -3,7 +3,6 @@ title: Trích xuất văn bản từ bảng Excel ở chế độ thô
 linktitle: Trích xuất văn bản từ bảng Excel ở chế độ thô
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất văn bản từ trang tính Excel bằng GroupDocs.Parser cho .NET trong hướng dẫn toàn diện này. Tải xuống và bắt đầu phân tích cú pháp.
-type: docs
 weight: 15
 url: /vi/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
 ---
@@ -66,7 +65,7 @@ Có, GroupDocs.Parser hỗ trợ nhiều định dạng tài liệu bao gồm Wo
 ### GroupDocs.Parser có phù hợp để xử lý các tệp Excel lớn không?
 Có, GroupDocs.Parser được thiết kế để xử lý các tài liệu lớn một cách hiệu quả.
 ### Tôi có thể tìm thêm tài liệu về GroupDocs.Parser ở đâu?
- Bạn có thể tham khảo các[tài liệu](https://reference.groupdocs.com/parser/net/) để biết thông tin chi tiết và ví dụ.
+ Bạn có thể tham khảo các[tài liệu](https://tutorials.groupdocs.com/parser/net/) để biết thông tin chi tiết và ví dụ.
 ### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho GroupDocs.Parser?
  Thăm nom[liên kết này](https://purchase.groupdocs.com/temporary-license/) để yêu cầu giấy phép tạm thời.
 ### GroupDocs.Parser có cung cấp hỗ trợ khách hàng không?

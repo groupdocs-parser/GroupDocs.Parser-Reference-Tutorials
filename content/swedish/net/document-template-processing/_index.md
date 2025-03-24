@@ -3,7 +3,6 @@ title: Bearbetning av dokumentmall
 linktitle: Bearbetning av dokumentmall
 second_title: GroupDocs.Parser .NET API
 description: Extrahera strukturerad data enkelt från dokumentmallar med GroupDocs.Parser för .NET. Lär dig att arbeta med streckkoder, fält, regex och tabelllayouter.
-type: docs
 weight: 22
 url: /sv/net/document-template-processing/
 ---

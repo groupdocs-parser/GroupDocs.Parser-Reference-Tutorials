@@ -3,7 +3,6 @@ title: एक्सेल दस्तावेज़ से छवियाँ 
 linktitle: एक्सेल दस्तावेज़ से छवियाँ निकालें
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके Excel दस्तावेज़ों से छवियाँ निकालने का तरीका जानें। कोड उदाहरणों के साथ चरण-दर-चरण मार्गदर्शिका।
-type: docs
 weight: 10
 url: /hi/net/excel-document-processing/extract-images-from-excel-document/
 ---
@@ -66,4 +65,4 @@ A: हां, GroupDocs.Parser Word, PowerPoint, PDF, और अधिक सह
 ### प्रश्न: क्या मैं लाइसेंस खरीदने से पहले GroupDocs.Parser आज़मा सकता हूं?
  उत्तर: हां, आप प्राप्त कर सकते हैं[मुफ्त परीक्षण](https://releases.groupdocs.com/) GroupDocs.Parser का मूल्यांकन करने के लिए.
 ### प्रश्न: मैं GroupDocs.Parser के लिए विस्तृत दस्तावेज़ कहां पा सकता हूं?
- उत्तर: विस्तृत विवरण देखें[प्रलेखन](https://reference.groupdocs.com/parser/net/) GroupDocs.Parser का उपयोग करने के बारे में विस्तृत जानकारी के लिए.
+ उत्तर: विस्तृत विवरण देखें[प्रलेखन](https://tutorials.groupdocs.com/parser/net/) GroupDocs.Parser का उपयोग करने के बारे में विस्तृत जानकारी के लिए.

@@ -3,7 +3,6 @@ title: 從 Word 文件中提取目錄
 linktitle: 從 Word 文件中提取目錄
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 以程式設計方式從 Word 文件中擷取目錄 (TOC)。
-type: docs
 weight: 13
 url: /zh-hant/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
@@ -64,7 +63,7 @@ using (TextReader reader = tocItem.ExtractText())
 ### GroupDocs.Parser適合處理大文件嗎？
 是的，GroupDocs.Parser 針對高效處理大型文件進行了最佳化，具有文字擷取、元資料擷取和結構化資料擷取等功能。
 ### 在哪裡可以找到有關 GroupDocs.Parser 的更多文件和教學？
-參觀[GroupDocs.Parser 文檔](https://reference.groupdocs.com/parser/net/)取得詳細的 API 參考和教學。
+參觀[GroupDocs.Parser 文檔](https://tutorials.groupdocs.com/parser/net/)取得詳細的 API 參考和教學。
 ### 如何獲得 GroupDocs.Parser 的支援？
 加入[GroupDocs.Parser 論壇](https://forum.groupdocs.com/c/parser/17)提出問題並與社區互動。
 ### GroupDocs.Parser 是否有試用版？

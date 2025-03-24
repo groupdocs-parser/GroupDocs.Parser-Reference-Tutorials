@@ -3,7 +3,6 @@ title: Extrahujte text z dokumentu aplikace Word
 linktitle: Extrahujte text z dokumentu aplikace Word
 second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat text z dokumentů aplikace Word pomocí GroupDocs.Parser for .NET. Podrobný průvodce s příklady kódu.
-type: docs
 weight: 15
 url: /cs/net/word-document-processing/extract-text-from-word-document/
 ---

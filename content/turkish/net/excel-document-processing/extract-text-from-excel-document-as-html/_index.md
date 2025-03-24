@@ -3,7 +3,6 @@ title: Excel Belgesinden Metni HTML Olarak Çıkarma
 linktitle: Excel Belgesinden Metni HTML Olarak Çıkarma
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak Excel belgelerinden nasıl metin ayıklayacağınızı ve bunu HTML'ye nasıl dönüştüreceğinizi öğrenin.
-type: docs
 weight: 13
 url: /tr/net/excel-document-processing/extract-text-from-excel-document-as-html/
 ---

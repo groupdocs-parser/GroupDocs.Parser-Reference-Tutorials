@@ -3,7 +3,6 @@ title: Mezőkkel való munkavégzés reguláris kifejezési pozíciókban a sabl
 linktitle: Mezőkkel való munkavégzés reguláris kifejezési pozíciókban a sablonokban
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan nyerhet ki adatokat dokumentumsablonokból regex pozíciók használatával a GroupDocs.Parser for .NET segítségével. Hatékonyan automatizálja adatkinyerési feladatait.
-type: docs
 weight: 13
 url: /hu/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---

@@ -3,7 +3,6 @@ title: Extraer estructura de texto
 linktitle: Extraer estructura de texto
 second_title: API GroupDocs.Parser .NET
 description: Aprenda a extraer la estructura del texto de varios formatos de documentos usando GroupDocs.Parser para .NET. Un tutorial paso a paso con ejemplos de código.
-type: docs
 weight: 20
 url: /es/net/text-extraction/extract-text-structure/
 ---

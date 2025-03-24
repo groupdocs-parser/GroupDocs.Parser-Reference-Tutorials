@@ -3,7 +3,6 @@ title: 使用模板中的表格布局
 linktitle: 使用模板中的表格布局
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 处理模板中的表格布局。从文档中高效提取结构化数据。
-type: docs
 weight: 14
 url: /zh/net/document-template-processing/working-with-table-layout-in-templates/
 ---

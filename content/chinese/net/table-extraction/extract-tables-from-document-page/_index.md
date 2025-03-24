@@ -3,7 +3,6 @@ title: 从文档页面提取表格
 linktitle: 从文档页面提取表格
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 以编程方式从文档中提取表格。本综合教程提供分步指导。
-type: docs
 weight: 11
 url: /zh/net/table-extraction/extract-tables-from-document-page/
 ---

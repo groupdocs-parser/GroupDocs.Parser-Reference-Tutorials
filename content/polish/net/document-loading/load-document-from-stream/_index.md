@@ -3,7 +3,6 @@ title: Załaduj dokument ze strumienia
 linktitle: Załaduj dokument ze strumienia
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić tekst z różnych formatów dokumentów w .NET przy użyciu GroupDocs.Parser. Przewodnik krok po kroku z przykładami kodu.
-type: docs
 weight: 12
 url: /pl/net/document-loading/load-document-from-stream/
 ---
@@ -61,4 +60,4 @@ Tak, GroupDocs.Parser jest kompatybilny zarówno z aplikacjami .NET Framework, j
 ### Jak mogę uzyskać tymczasową licencję na GroupDocs.Parser?
  Licencję tymczasową można uzyskać od[Tutaj](https://purchase.groupdocs.com/temporary-license/).
 ### Gdzie mogę znaleźć dodatkowe wsparcie lub dokumentację dotyczącą GroupDocs.Parser?
- Aby uzyskać dodatkowe wsparcie, odwiedź stronę[Forum GroupDocs.Parser](https://forum.groupdocs.com/c/parser/17) lub zapoznaj się z[dokumentacja](https://reference.groupdocs.com/parser/net/).
+ Aby uzyskać dodatkowe wsparcie, odwiedź stronę[Forum GroupDocs.Parser](https://forum.groupdocs.com/c/parser/17) lub zapoznaj się z[dokumentacja](https://tutorials.groupdocs.com/parser/net/).

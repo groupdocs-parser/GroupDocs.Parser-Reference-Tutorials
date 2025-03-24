@@ -3,7 +3,6 @@ title: Parsing Data dari Dokumen PDF
 linktitle: Parsing Data dari Dokumen PDF
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak data dari dokumen PDF menggunakan GroupDocs.Parser untuk .NET. Ikuti panduan langkah demi langkah kami untuk mengurai dan memproses file PDF secara efisien.
-type: docs
 weight: 17
 url: /id/net/pdf-processing/parse-data-from-pdf-documents/
 ---
@@ -81,6 +80,6 @@ GroupDocs.Parser terutama berfokus pada file PDF tetapi juga mendukung format la
 ### Apakah ada versi uji coba yang tersedia untuk GroupDocs.Parser?
  Ya, Anda bisa mendapatkan uji coba gratis GroupDocs.Parser[Di Sini](https://releases.groupdocs.com/).
 ### Di mana saya dapat menemukan dokumentasi dan dukungan untuk GroupDocs.Parser?
- Mengacu kepada[dokumentasi](https://reference.groupdocs.com/parser/net/) Dan[forum dukungan](https://forum.groupdocs.com/c/parser/17) untuk GroupDocs.Parser.
+ Mengacu kepada[dokumentasi](https://tutorials.groupdocs.com/parser/net/) Dan[forum dukungan](https://forum.groupdocs.com/c/parser/17) untuk GroupDocs.Parser.
 ### Bagaimana saya bisa mendapatkan lisensi sementara untuk GroupDocs.Parser?
  Anda dapat memperoleh lisensi sementara[Di Sini](https://purchase.groupdocs.com/temporary-license/).

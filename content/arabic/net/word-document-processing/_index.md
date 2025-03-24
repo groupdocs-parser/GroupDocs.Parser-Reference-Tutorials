@@ -3,7 +3,6 @@ title: معالجة مستندات Word
 linktitle: معالجة مستندات Word
 second_title: GroupDocs.Parser .NET API
 description: اكتشف مجموعة من البرامج التعليمية حول معالجة مستندات Word باستخدام GroupDocs.Parser لـ .NET. قم باستخراج الارتباطات التشعبية والصور والبيانات التعريفية والمزيد.
-type: docs
 weight: 30
 url: /ar/net/word-document-processing/
 ---

@@ -3,7 +3,6 @@ title: Hledat text podle stránek
 linktitle: Hledat text podle stránek
 second_title: GroupDocs.Parser .NET API
 description: Naučte se prohledávat text podle stránek pomocí GroupDocs.Parser for .NET. Efektivně extrahujte konkrétní obsah z dokumentů ve vašich aplikacích .NET.
-type: docs
 weight: 22
 url: /cs/net/text-extraction/search-text-by-pages/
 ---
@@ -64,7 +63,7 @@ Ano, GroupDocs.Parser podporuje širokou škálu formátů dokumentů včetně D
 ### Mohu extrahovat obrázky a metadata z dokumentů pomocí GroupDocs.Parser?
 GroupDocs.Parser rozhodně umožňuje extrakci obrázků, metadat a textu z dokumentů.
 ### Kde najdu podrobnou dokumentaci k GroupDocs.Parser?
- Máte přístup k dokumentaci[tady](https://reference.groupdocs.com/parser/net/).
+ Máte přístup k dokumentaci[tady](https://tutorials.groupdocs.com/parser/net/).
 ### Jak mohu získat dočasnou licenci pro GroupDocs.Parser?
  Můžete požádat o dočasnou licenci[tady](https://purchase.groupdocs.com/temporary-license/).
 ### Kde mohu získat podporu nebo pomoc s GroupDocs.Parser?

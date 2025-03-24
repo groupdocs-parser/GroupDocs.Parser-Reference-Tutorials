@@ -3,7 +3,6 @@ title: Estrai testo da un foglio Excel in modalità Raw
 linktitle: Estrai testo da un foglio Excel in modalità Raw
 second_title: API GroupDocs.Parser .NET
 description: Scopri come estrarre testo da fogli Excel utilizzando GroupDocs.Parser per .NET in questo tutorial completo. Scarica e inizia l'analisi.
-type: docs
 weight: 15
 url: /it/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
 ---
@@ -66,7 +65,7 @@ Sì, GroupDocs.Parser supporta un'ampia gamma di formati di documenti tra cui Wo
 ### GroupDocs.Parser è adatto per l'elaborazione di file Excel di grandi dimensioni?
 Sì, GroupDocs.Parser è progettato per gestire documenti di grandi dimensioni in modo efficiente.
 ### Dove posso trovare ulteriore documentazione su GroupDocs.Parser?
- Puoi fare riferimento a[documentazione](https://reference.groupdocs.com/parser/net/) per informazioni dettagliate ed esempi.
+ Puoi fare riferimento a[documentazione](https://tutorials.groupdocs.com/parser/net/) per informazioni dettagliate ed esempi.
 ### Come posso ottenere una licenza temporanea per GroupDocs.Parser?
  Visita[questo link](https://purchase.groupdocs.com/temporary-license/) per richiedere una licenza temporanea.
 ### GroupDocs.Parser offre assistenza clienti?

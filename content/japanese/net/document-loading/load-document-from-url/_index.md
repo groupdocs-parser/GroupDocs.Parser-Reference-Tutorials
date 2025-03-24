@@ -3,7 +3,6 @@ title: URLからドキュメントを読み込む
 linktitle: URLからドキュメントを読み込む
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用してドキュメントからテキストを抽出する方法を学習します。このチュートリアルでは、URL からドキュメントを読み込み、テキストを抽出する手順を段階的に説明します。
-type: docs
 weight: 13
 url: /ja/net/document-loading/load-document-from-url/
 ---
@@ -64,6 +63,6 @@ Console.WriteLine(reader == null ? "Text extraction isn't supported" : reader.Re
 ### GroupDocs.Parser の試用版はありますか?
 はい、GroupDocs.Parserの無料試用版は以下から入手できます。[ここ](https://releases.groupdocs.com/).
 ### GroupDocs.Parser のドキュメントはどこにありますか?
- GroupDocs.Parserの詳細なドキュメントが利用可能です[ここ](https://reference.groupdocs.com/parser/net/).
+ GroupDocs.Parserの詳細なドキュメントが利用可能です[ここ](https://tutorials.groupdocs.com/parser/net/).
 ### GroupDocs.Parser のテクニカル サポートを受けるにはどうすればよいですか?
 GroupDocs.Parserフォーラムで技術サポートを求めたり質問したりできます。[ここ](https://forum.groupdocs.com/c/parser/17).

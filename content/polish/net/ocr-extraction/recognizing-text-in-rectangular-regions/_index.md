@@ -3,7 +3,6 @@ title: Rozpoznawanie tekstu w obszarach prostokątnych
 linktitle: Rozpoznawanie tekstu w obszarach prostokątnych
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak rozpoznawać tekst w określonych obszarach dokumentów za pomocą GroupDocs.Parser dla .NET z funkcjami OCR.
-type: docs
 weight: 14
 url: /pl/net/ocr-extraction/recognizing-text-in-rectangular-regions/
 ---

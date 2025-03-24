@@ -3,7 +3,6 @@ title: تحليل البيانات من وثائق PDF
 linktitle: تحليل البيانات من وثائق PDF
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج البيانات من مستندات PDF باستخدام GroupDocs.Parser لـ .NET. اتبع دليلنا خطوة بخطوة لتحليل ملفات PDF ومعالجتها بكفاءة.
-type: docs
 weight: 17
 url: /ar/net/pdf-processing/parse-data-from-pdf-documents/
 ---
@@ -81,6 +80,6 @@ for (int i = 0; i < data.Count; i++)
 ### هل هناك نسخة تجريبية متاحة لـ GroupDocs.Parser؟
  نعم، يمكنك الحصول على نسخة تجريبية مجانية من GroupDocs.Parser[هنا](https://releases.groupdocs.com/).
 ### أين يمكنني العثور على الوثائق والدعم الخاص بـ GroupDocs.Parser؟
- الرجوع إلى[توثيق](https://reference.groupdocs.com/parser/net/) و[منتدى الدعم](https://forum.groupdocs.com/c/parser/17) لـ GroupDocs.Parser.
+ الرجوع إلى[توثيق](https://tutorials.groupdocs.com/parser/net/) و[منتدى الدعم](https://forum.groupdocs.com/c/parser/17) لـ GroupDocs.Parser.
 ### كيف يمكنني الحصول على ترخيص مؤقت لـ GroupDocs.Parser؟
  يمكنك الحصول على ترخيص مؤقت[هنا](https://purchase.groupdocs.com/temporary-license/).

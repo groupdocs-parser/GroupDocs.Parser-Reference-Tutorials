@@ -3,7 +3,6 @@ title: Kodlama Algılamayla Metni Çıkarma
 linktitle: Kodlama Algılamayla Metni Çıkarma
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak kodlama algılamayla belgelerden metin çıkarın. .NET uygulamalarınızda çeşitli formatları verimli bir şekilde ayrıştırın.
-type: docs
 weight: 10
 url: /tr/net/text-extraction/extract-text-with-encoding-detection/
 ---

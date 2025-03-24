@@ -3,7 +3,6 @@ title: HTML सामग्री निकालें
 linktitle: HTML सामग्री निकालें
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके दस्तावेज़ों से HTML सामग्री निकालने का तरीका जानें। कोड उदाहरणों और चरण-दर-चरण मार्गदर्शन के साथ आसान-से-अनुसरण ट्यूटोरियल।
-type: docs
 weight: 12
 url: /hi/net/formatted-text-extraction/extract-html-content/
 ---

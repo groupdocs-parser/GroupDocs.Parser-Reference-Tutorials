@@ -3,7 +3,6 @@ title: Werken met met wachtwoord beveiligde documenten
 linktitle: Werken met met wachtwoord beveiligde documenten
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u tekst kunt extraheren uit met een wachtwoord beveiligde documenten met GroupDocs.Parser voor .NET. Verbeter uw documentverwerkingsmogelijkheden.
-type: docs
 weight: 15
 url: /nl/net/document-loading/working-with-password-protected-documents/
 ---
@@ -77,7 +76,7 @@ Ja, GroupDocs.Parser ondersteunt het extraheren van tekst uit met een wachtwoord
 ### Is GroupDocs.Parser compatibel met verschillende documentformaten zoals DOCX, XLSX en PPTX?
 Absoluut, GroupDocs.Parser kan een breed scala aan documentformaten verwerken naast PDF, inclusief Microsoft Office-formaten.
 ### Waar kan ik gedetailleerde documentatie vinden voor GroupDocs.Parser voor .NET?
- Ontdek de volledige documentatie[hier](https://reference.groupdocs.com/parser/net/).
+ Ontdek de volledige documentatie[hier](https://tutorials.groupdocs.com/parser/net/).
 ### Hoe kan ik ondersteuning krijgen of vragen stellen met betrekking tot GroupDocs.Parser voor .NET?
  Bezoek het GroupDocs-communityforum[hier](https://forum.groupdocs.com/c/parser/17) Voor assistentie.
 ### Is er een proefversie beschikbaar voor GroupDocs.Parser voor .NET?

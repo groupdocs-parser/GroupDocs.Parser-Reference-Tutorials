@@ -3,7 +3,6 @@ title: Εξαγωγή κειμένου από Φύλλο Excel σε Raw Mode
 linktitle: Εξαγωγή κειμένου από Φύλλο Excel σε Raw Mode
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε κείμενο από φύλλα Excel χρησιμοποιώντας το GroupDocs.Parser για .NET σε αυτό το περιεκτικό σεμινάριο. Κάντε λήψη και ξεκινήστε την ανάλυση.
-type: docs
 weight: 15
 url: /el/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
 ---
@@ -66,7 +65,7 @@ using (TextReader reader = parser.GetText(p, new TextOptions(true)))
 ### Είναι το GroupDocs.Parser κατάλληλο για την επεξεργασία μεγάλων αρχείων Excel;
 Ναι, το GroupDocs.Parser έχει σχεδιαστεί για να χειρίζεται μεγάλα έγγραφα αποτελεσματικά.
 ### Πού μπορώ να βρω περισσότερη τεκμηρίωση σχετικά με το GroupDocs.Parser;
- Μπορείτε να ανατρέξετε στο[τεκμηρίωση](https://reference.groupdocs.com/parser/net/) για λεπτομερείς πληροφορίες και παραδείγματα.
+ Μπορείτε να ανατρέξετε στο[τεκμηρίωση](https://tutorials.groupdocs.com/parser/net/) για λεπτομερείς πληροφορίες και παραδείγματα.
 ### Πώς μπορώ να αποκτήσω μια προσωρινή άδεια για το GroupDocs.Parser;
  Επίσκεψη[αυτός ο σύνδεσμος](https://purchase.groupdocs.com/temporary-license/) να ζητήσει προσωρινή άδεια.
 ### Το GroupDocs.Parser προσφέρει υποστήριξη πελατών;

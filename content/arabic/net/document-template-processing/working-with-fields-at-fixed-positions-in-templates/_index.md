@@ -3,7 +3,6 @@ title: العمل مع الحقول في المواضع الثابتة في ال
 linktitle: العمل مع الحقول في المواضع الثابتة في القوالب
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج البيانات من المستندات باستخدام GroupDocs.Parser لـ .NET. برنامج تعليمي شامل مع أمثلة التعليمات البرمجية.
-type: docs
 weight: 11
 url: /ar/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
@@ -69,7 +68,7 @@ using (Parser parser = new Parser("YourSampleFile.pdf"))
 
 ## الأسئلة الشائعة
 ### هل GroupDocs.Parser متوافق مع كافة تنسيقات المستندات؟
- يدعم GroupDocs.Parser مجموعة واسعة من تنسيقات الملفات، بما في ذلك PDF وMicrosoft Word وExcel وPowerPoint والمزيد. الرجوع إلى[توثيق](https://reference.groupdocs.com/parser/net/) للحصول على قائمة مفصلة.
+ يدعم GroupDocs.Parser مجموعة واسعة من تنسيقات الملفات، بما في ذلك PDF وMicrosoft Word وExcel وPowerPoint والمزيد. الرجوع إلى[توثيق](https://tutorials.groupdocs.com/parser/net/) للحصول على قائمة مفصلة.
 ### كيف يمكنني الحصول على ترخيص مؤقت لـ GroupDocs.Parser؟
  يمكنك الحصول على ترخيص مؤقت لأغراض الاختبار من[هنا](https://purchase.groupdocs.com/temporary-license/).
 ### أين يمكنني العثور على الدعم لـ GroupDocs.Parser؟

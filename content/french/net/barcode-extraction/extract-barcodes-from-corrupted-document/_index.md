@@ -3,7 +3,6 @@ title: Extraire les codes-barres d'un document corrompu
 linktitle: Extraire les codes-barres d'un document corrompu
 second_title: API GroupDocs.Parser .NET
 description: Découvrez comment extraire les codes-barres de documents corrompus à l'aide de GroupDocs.Parser pour .NET. Tutoriel complet avec des instructions étape par étape.
-type: docs
 weight: 11
 url: /fr/net/barcode-extraction/extract-barcodes-from-corrupted-document/
 ---

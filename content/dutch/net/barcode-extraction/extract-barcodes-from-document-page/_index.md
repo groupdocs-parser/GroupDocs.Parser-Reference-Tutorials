@@ -3,7 +3,6 @@ title: Extraheer streepjescodes uit de documentpagina
 linktitle: Extraheer streepjescodes uit de documentpagina
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u streepjescodes uit documentpagina's kunt extraheren met GroupDocs.Parser voor .NET. Deze tutorial biedt stapsgewijze begeleiding voor het extraheren van streepjescodes.
-type: docs
 weight: 12
 url: /nl/net/barcode-extraction/extract-barcodes-from-document-page/
 ---
@@ -79,7 +78,7 @@ In deze zelfstudie hebt u geleerd hoe u GroupDocs.Parser voor .NET kunt gebruike
 ### Veelgestelde vragen
 
 ### Vraag: Welke documentformaten ondersteunt GroupDocs.Parser?
- GroupDocs.Parser ondersteunt een breed scala aan formaten, waaronder DOCX, PDF, XLSX, PPTX en meer. Verwijs naar de[documentatie](https://reference.groupdocs.com/parser/net/)voor een volledige lijst.
+ GroupDocs.Parser ondersteunt een breed scala aan formaten, waaronder DOCX, PDF, XLSX, PPTX en meer. Verwijs naar de[documentatie](https://tutorials.groupdocs.com/parser/net/)voor een volledige lijst.
 
 ### Vraag: Kan ik metagegevens samen met streepjescodes extraheren met GroupDocs.Parser?
 Ja, met GroupDocs.Parser kunt u metagegevens, tekst, afbeeldingen en streepjescodes uit documenten extraheren, waardoor u uitgebreide mogelijkheden voor het parseren van documenten krijgt.

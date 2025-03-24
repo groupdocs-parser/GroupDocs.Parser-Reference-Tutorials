@@ -3,7 +3,6 @@ title: 从文档页面提取条形码
 linktitle: 从文档页面提取条形码
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从文档页面中提取条形码。本教程提供条形码提取的分步指导。
-type: docs
 weight: 12
 url: /zh/net/barcode-extraction/extract-barcodes-from-document-page/
 ---
@@ -79,7 +78,7 @@ foreach (PageBarcodeArea barcode in barcodes)
 ### 常见问题解答
 
 ### 问：GroupDocs.Parser 支持哪些文档格式？
- GroupDocs.Parser 支持多种格式，包括 DOCX、PDF、XLSX、PPTX 等。请参阅[文档](https://reference.groupdocs.com/parser/net/)以获取完整列表。
+ GroupDocs.Parser 支持多种格式，包括 DOCX、PDF、XLSX、PPTX 等。请参阅[文档](https://tutorials.groupdocs.com/parser/net/)以获取完整列表。
 
 ### 问：我可以使用 GroupDocs.Parser 提取元数据和条形码吗？
 是的，GroupDocs.Parser 允许您从文档中提取元数据、文本、图像和条形码，提供全面的文档解析功能。

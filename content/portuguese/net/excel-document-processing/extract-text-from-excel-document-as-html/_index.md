@@ -3,7 +3,6 @@ title: Extraia texto de documento Excel como HTML
 linktitle: Extraia texto de documento Excel como HTML
 second_title: API GroupDocs.Parser .NET
 description: Aprenda como extrair texto de documentos Excel e convertê-lo em HTML usando GroupDocs.Parser for .NET.
-type: docs
 weight: 13
 url: /pt/net/excel-document-processing/extract-text-from-excel-document-as-html/
 ---

@@ -3,7 +3,6 @@ title: Extração de código de barras
 linktitle: Extração de código de barras
 second_title: API GroupDocs.Parser .NET
 description: Aprenda como extrair códigos de barras sem esforço com os tutoriais do GroupDocs.Parser for .NET. Aprimore seus recursos de processamento de documentos agora!
-type: docs
 weight: 27
 url: /pt/net/barcode-extraction/
 ---

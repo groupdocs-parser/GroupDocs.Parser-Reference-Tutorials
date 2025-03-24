@@ -3,7 +3,6 @@ title: 通过正则表达式搜索PDF中的文本
 linktitle: 通过正则表达式搜索PDF中的文本
 second_title: GroupDocs.Parser .NET API
 description: 使用 GroupDocs.Parser 的正则表达式搜索 PDF 文档中的特定文本。轻松提取、分析和操作 PDF 文本。
-type: docs
 weight: 19
 url: /zh/net/pdf-processing/search-text-in-pdf-by-regular-expression/
 ---
@@ -52,7 +51,7 @@ foreach (SearchResult result in searchResults)
 ### GroupDocs.Parser 除了处理 PDF 之外还能处理其他文档格式吗？
 是的，GroupDocs.Parser 支持各种文档格式，例如 DOCX、XLSX、PPTX 等。
 ### 在哪里可以找到有关 GroupDocs.Parser 的更多资源和支持？
-您可以访问[GroupDocs.Parser 文档](https://reference.groupdocs.com/parser/net/)并寻求帮助[GroupDocs 论坛](https://forum.groupdocs.com/c/parser/17).
+您可以访问[GroupDocs.Parser 文档](https://tutorials.groupdocs.com/parser/net/)并寻求帮助[GroupDocs 论坛](https://forum.groupdocs.com/c/parser/17).
 ### GroupDocs.Parser 有免费试用版吗？
 是的，您可以访问[免费试用版](https://releases.groupdocs.com/)GroupDocs.Parser 来探索其功能。
 ### 如何获得 GroupDocs.Parser 的临时许可证？

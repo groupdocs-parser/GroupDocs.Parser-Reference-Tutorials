@@ -3,7 +3,6 @@ title: Ham Modda Metni Çıkart
 linktitle: Ham Modda Metni Çıkart
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belgelerden nasıl metin ayıklayacağınızı öğrenin. .NET uygulamalarınızda kolay, verimli ve kusursuz metin çıkarma.
-type: docs
 weight: 19
 url: /tr/net/text-extraction/extract-text-in-raw-mode/
 ---

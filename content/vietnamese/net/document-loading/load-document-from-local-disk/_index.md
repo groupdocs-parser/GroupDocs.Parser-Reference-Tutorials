@@ -3,7 +3,6 @@ title: Tải tài liệu từ đĩa cục bộ
 linktitle: Tải tài liệu từ đĩa cục bộ
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất văn bản từ các định dạng tài liệu khác nhau bằng GroupDocs.Parser cho .NET. Trích xuất văn bản dễ dàng và hiệu quả với C#.
-type: docs
 weight: 11
 url: /vi/net/document-loading/load-document-from-local-disk/
 ---
@@ -57,7 +56,7 @@ GroupDocs.Parser hỗ trợ nhiều định dạng bao gồm PDF, tài liệu Mi
 ### Tôi có thể trích xuất siêu dữ liệu cùng với văn bản bằng GroupDocs.Parser không?
 Có, GroupDocs.Parser cho phép trích xuất cả nội dung văn bản và siêu dữ liệu từ các định dạng tài liệu được hỗ trợ.
 ### Tôi có thể tìm thêm tài nguyên và hỗ trợ cho GroupDocs.Parser ở đâu?
- Tham quan[Tài liệu GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) để tham khảo API chi tiết và khám phá[Diễn đàn GroupDocs](https://forum.groupdocs.com/c/parser/17) để hỗ trợ cộng đồng.
+ Tham quan[Tài liệu GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) để tham khảo API chi tiết và khám phá[Diễn đàn GroupDocs](https://forum.groupdocs.com/c/parser/17) để hỗ trợ cộng đồng.
 ### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho GroupDocs.Parser?
  Bạn có thể yêu cầu một[giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/) cho mục đích đánh giá và thử nghiệm.
 ### Có bản dùng thử miễn phí cho GroupDocs.Parser không?

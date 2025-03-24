@@ -3,7 +3,6 @@ title: Belge Sayfasından Barkodları Çıkarma
 linktitle: Belge Sayfasından Barkodları Çıkarma
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belge sayfalarından barkodları nasıl çıkaracağınızı öğrenin. Bu eğitimde barkod çıkarma için adım adım rehberlik sağlanmaktadır.
-type: docs
 weight: 12
 url: /tr/net/barcode-extraction/extract-barcodes-from-document-page/
 ---
@@ -79,7 +78,7 @@ Bu öğreticide, bir belge sayfasından barkodları verimli bir şekilde çıkar
 ### SSS'ler
 
 ### S: GroupDocs.Parser hangi belge formatlarını destekliyor?
- GroupDocs.Parser, DOCX, PDF, XLSX, PPTX ve daha fazlasını içeren çok çeşitli formatları destekler. Bakın[dokümantasyon](https://reference.groupdocs.com/parser/net/)tam bir liste için.
+ GroupDocs.Parser, DOCX, PDF, XLSX, PPTX ve daha fazlasını içeren çok çeşitli formatları destekler. Bakın[dokümantasyon](https://tutorials.groupdocs.com/parser/net/)tam bir liste için.
 
 ### S: GroupDocs.Parser'ı kullanarak barkodlarla birlikte meta verileri çıkarabilir miyim?
 Evet, GroupDocs.Parser, kapsamlı belge ayrıştırma yetenekleri sunarak belgelerden meta verileri, metinleri, görüntüleri ve barkodları çıkarmanıza olanak tanır.

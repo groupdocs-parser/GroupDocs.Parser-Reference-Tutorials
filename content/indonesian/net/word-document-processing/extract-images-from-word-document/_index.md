@@ -3,7 +3,6 @@ title: Ekstrak Gambar dari Dokumen Word
 linktitle: Ekstrak Gambar dari Dokumen Word
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak gambar dari dokumen Word menggunakan GroupDocs.Parser untuk .NET. Tutorial ini memberikan panduan langkah demi langkah untuk mengintegrasikan gambar ke .NET Anda.
-type: docs
 weight: 11
 url: /id/net/word-document-processing/extract-images-from-word-document/
 ---
@@ -62,7 +61,7 @@ Ya, GroupDocs.Parser mendukung berbagai format dokumen termasuk PDF, PowerPoint,
 ### Bagaimana saya bisa mendapatkan lisensi sementara untuk GroupDocs.Parser?
  Anda dapat memperoleh lisensi sementara untuk tujuan pengujian dari[Di Sini](https://purchase.groupdocs.com/temporary-license/).
 ### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang GroupDocs.Parser untuk .NET?
- Anda dapat merujuk ke dokumentasi lengkapnya[Di Sini](https://reference.groupdocs.com/parser/net/).
+ Anda dapat merujuk ke dokumentasi lengkapnya[Di Sini](https://tutorials.groupdocs.com/parser/net/).
 ### Apakah ada uji coba gratis yang tersedia untuk GroupDocs.Parser?
  Ya, Anda dapat menjelajahi fitur GroupDocs.Parser dengan uji coba gratis yang tersedia[Di Sini](https://releases.groupdocs.com/).
 ### Bagaimana saya bisa mendapatkan dukungan atau mengajukan pertanyaan terkait GroupDocs.Parser?

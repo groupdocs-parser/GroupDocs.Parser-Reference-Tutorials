@@ -3,7 +3,6 @@ title: PDF'deki Metni Anahtar Kelimeye Göre Ara
 linktitle: PDF'deki Metni Anahtar Kelimeye Göre Ara
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak PDF belgelerinde belirli bir metni nasıl arayacağınızı öğrenin. Güçlü metin arama yeteneklerini .NET'inize verimli bir şekilde entegre edin.
-type: docs
 weight: 18
 url: /tr/net/pdf-processing/search-text-in-pdf-by-keyword/
 ---

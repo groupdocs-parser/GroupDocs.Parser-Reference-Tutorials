@@ -3,7 +3,6 @@ title: 表格提取
 linktitle: 表格提取
 second_title: GroupDocs.Parser .NET API
 description: 掌握如何使用 GroupDocs.Parser for .NET 从文档中提取表格。学习以编程方式提取表格以实现高效的数据处理。
-type: docs
 weight: 23
 url: /zh/net/table-extraction/
 ---

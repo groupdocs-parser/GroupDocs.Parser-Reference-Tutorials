@@ -3,7 +3,6 @@ title: Search Text in Word Document by Keyword
 linktitle: Search Text in Word Document by Keyword
 second_title: GroupDocs.Parser .NET API
 description: Learn how to search for text in Word documents using GroupDocs.Parser for .NET. Extract specific keywords efficiently.
-type: docs
 weight: 18
 url: /net/word-document-processing/search-text-in-word-document-by-keyword/
 ---

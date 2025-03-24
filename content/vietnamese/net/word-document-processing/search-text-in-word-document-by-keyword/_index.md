@@ -3,7 +3,6 @@ title: Tìm kiếm văn bản trong tài liệu Word theo từ khóa
 linktitle: Tìm kiếm văn bản trong tài liệu Word theo từ khóa
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách tìm kiếm văn bản trong tài liệu Word bằng GroupDocs.Parser cho .NET. Trích xuất các từ khóa cụ thể một cách hiệu quả.
-type: docs
 weight: 18
 url: /vi/net/word-document-processing/search-text-in-word-document-by-keyword/
 ---

@@ -3,7 +3,6 @@ title: 从 Excel 文档中提取图像
 linktitle: 从 Excel 文档中提取图像
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从 Excel 文档中提取图像。带有代码示例的分步指南。
-type: docs
 weight: 10
 url: /zh/net/excel-document-processing/extract-images-from-excel-document/
 ---
@@ -66,4 +65,4 @@ foreach (PageImageArea image in images)
 ### 问：在购买许可证之前我可以试用 GroupDocs.Parser 吗？
 答：是的，您可以获得[免费试用](https://releases.groupdocs.com/)评估 GroupDocs.Parser。
 ### 问：在哪里可以找到 GroupDocs.Parser 的详细文档？
-答：请参阅综合[文档](https://reference.groupdocs.com/parser/net/)有关使用 GroupDocs.Parser 的详细信息。
+答：请参阅综合[文档](https://tutorials.groupdocs.com/parser/net/)有关使用 GroupDocs.Parser 的详细信息。

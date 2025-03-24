@@ -3,7 +3,6 @@ title: Afbeeldingen uit document extraheren
 linktitle: Afbeeldingen uit document extraheren
 second_title: GroupDocs.Parser .NET API
 description: Extraheer moeiteloos afbeeldingen uit documenten met GroupDocs.Parser voor .NET. Uw documentverwerkingsmogelijkheden en het efficiënt stroomlijnen van beeldextractietaken.
-type: docs
 weight: 11
 url: /nl/net/image-extraction/extract-images-from-document/
 ---
@@ -67,7 +66,7 @@ GroupDocs.Parser ondersteunt het extraheren van afbeeldingen uit verschillende f
 ### Is er een gratis proefversie beschikbaar voor GroupDocs.Parser?
  Ja, u heeft toegang tot een gratis proefversie van GroupDocs.Parser via de[website](https://releases.groupdocs.com/).
 ### Waar kan ik documentatie voor GroupDocs.Parser vinden?
- Gedetailleerde documentatie voor GroupDocs.Parser is te vinden[hier](https://reference.groupdocs.com/parser/net/).
+ Gedetailleerde documentatie voor GroupDocs.Parser is te vinden[hier](https://tutorials.groupdocs.com/parser/net/).
 ### Hoe kan ik een tijdelijke licentie voor GroupDocs.Parser verkrijgen?
  Een tijdelijke licentie kunt u verkrijgen bij de[tijdelijke licentiepagina](https://purchase.groupdocs.com/temporary-license/).
 ### Waar kan ik ondersteuning krijgen voor GroupDocs.Parser?

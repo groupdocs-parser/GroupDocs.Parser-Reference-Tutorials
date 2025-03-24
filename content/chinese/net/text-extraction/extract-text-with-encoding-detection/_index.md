@@ -3,7 +3,6 @@ title: 使用编码检测提取文本
 linktitle: 使用编码检测提取文本
 second_title: GroupDocs.Parser .NET API
 description: 使用 GroupDocs.Parser for .NET 从带有编码检测的文档中提取文本。高效解析 .NET 应用程序中的各种格式。
-type: docs
 weight: 10
 url: /zh/net/text-extraction/extract-text-with-encoding-detection/
 ---

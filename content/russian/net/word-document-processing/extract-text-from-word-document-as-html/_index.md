@@ -3,7 +3,6 @@ title: Извлечь текст из документа Word в формате 
 linktitle: Извлечь текст из документа Word в формате HTML
 second_title: GroupDocs.Parser .NET API
 description: Узнайте, как использовать GroupDocs.Parser для .NET для извлечения текста из документов Word и сохранения его в формате HTML. Пошаговое руководство с примерами кода.
-type: docs
 weight: 16
 url: /ru/net/word-document-processing/extract-text-from-word-document-as-html/
 ---
@@ -67,7 +66,7 @@ using (Parser parser = new Parser("YourSampleFile.docx"))
 ### Как получить временную лицензию на GroupDocs.Parser?
  Вы можете запросить временную лицензию у[здесь](https://purchase.groupdocs.com/temporary-license/).
 ### Где я могу найти дополнительную документацию для GroupDocs.Parser?
- Подробная документация доступна[здесь](https://reference.groupdocs.com/parser/net/).
+ Подробная документация доступна[здесь](https://tutorials.groupdocs.com/parser/net/).
 ### Доступна ли бесплатная пробная версия GroupDocs.Parser?
  Да, вы можете получить доступ к бесплатной пробной версии[здесь](https://releases.groupdocs.com/).
 ### Как мне получить поддержку для GroupDocs.Parser?

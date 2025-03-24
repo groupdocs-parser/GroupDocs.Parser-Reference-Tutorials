@@ -1,7 +1,6 @@
 ---
 title: Handledningar och exempel på GroupDocs.Parser för .NET
 linktitle: GroupDocs.Parser för .NET självstudier
-type: docs
 weight: 10
 url: /sv/net/
 description: Lås upp effektiva textextraktionstekniker med GroupDocs.Parser för .NET. Extrahera, markera och sök text sömlöst för förbättrad dokumentbehandling.

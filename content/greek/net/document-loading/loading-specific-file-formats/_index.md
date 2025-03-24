@@ -3,7 +3,6 @@ title: Φόρτωση συγκεκριμένων μορφών αρχείων
 linktitle: Φόρτωση συγκεκριμένων μορφών αρχείων
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε κείμενο από διάφορες μορφές αρχείων στο .NET χρησιμοποιώντας το GroupDocs.Parser. Οδηγός βήμα προς βήμα για αποτελεσματική επεξεργασία εγγράφων.
-type: docs
 weight: 14
 url: /el/net/document-loading/loading-specific-file-formats/
 ---
@@ -71,7 +70,7 @@ using (TextReader reader = parser.GetText())
 ### Είναι το GroupDocs.Parser για .NET δωρεάν;
 Το GroupDocs.Parser για .NET προσφέρει δωρεάν και επί πληρωμή επιλογές αδειοδότησης. Μπορείτε να τα εξερευνήσετε[εδώ](https://purchase.groupdocs.com/buy).
 ### Ποιες μορφές αρχείων υποστηρίζονται από το GroupDocs.Parser για .NET;
- Το GroupDocs.Parser υποστηρίζει ένα ευρύ φάσμα μορφών αρχείων, συμπεριλαμβανομένων των Word, PDF, Excel, PowerPoint, Markdown και άλλων. Ανατρέξτε στην τεκμηρίωση[εδώ](https://reference.groupdocs.com/parser/net/) για την πλήρη λίστα.
+ Το GroupDocs.Parser υποστηρίζει ένα ευρύ φάσμα μορφών αρχείων, συμπεριλαμβανομένων των Word, PDF, Excel, PowerPoint, Markdown και άλλων. Ανατρέξτε στην τεκμηρίωση[εδώ](https://tutorials.groupdocs.com/parser/net/) για την πλήρη λίστα.
 ### Μπορώ να δοκιμάσω το GroupDocs.Parser για .NET πριν το αγοράσω;
  Ναι, μπορείτε να έχετε πρόσβαση σε μια δωρεάν δοκιμαστική έκδοση[εδώ](https://releases.groupdocs.com/).
 ### Πού μπορώ να βρω υποστήριξη ή να κάνω ερωτήσεις σχετικά με το GroupDocs.Parser για .NET;

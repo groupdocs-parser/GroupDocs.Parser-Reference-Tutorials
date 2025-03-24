@@ -3,7 +3,6 @@ title: Phân tích dữ liệu từ tài liệu PDF
 linktitle: Phân tích dữ liệu từ tài liệu PDF
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất dữ liệu từ tài liệu PDF bằng GroupDocs.Parser cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để phân tích và xử lý tệp PDF một cách hiệu quả.
-type: docs
 weight: 17
 url: /vi/net/pdf-processing/parse-data-from-pdf-documents/
 ---
@@ -81,6 +80,6 @@ GroupDocs.Parser chủ yếu tập trung vào các tệp PDF nhưng cũng hỗ t
 ### Có phiên bản dùng thử cho GroupDocs.Parser không?
  Có, bạn có thể dùng thử miễn phí GroupDocs.Parser[đây](https://releases.groupdocs.com/).
 ### Tôi có thể tìm tài liệu và hỗ trợ cho GroupDocs.Parser ở đâu?
- Tham khảo đến[tài liệu](https://reference.groupdocs.com/parser/net/) Và[diễn đàn hỗ trợ](https://forum.groupdocs.com/c/parser/17) cho GroupDocs.Parser.
+ Tham khảo đến[tài liệu](https://tutorials.groupdocs.com/parser/net/) Và[diễn đàn hỗ trợ](https://forum.groupdocs.com/c/parser/17) cho GroupDocs.Parser.
 ### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho GroupDocs.Parser?
  Bạn có thể có được giấy phép tạm thời[đây](https://purchase.groupdocs.com/temporary-license/).

@@ -3,7 +3,6 @@ title: Belgeyi Akıştan Yükle
 linktitle: Belgeyi Akıştan Yükle
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser'ı kullanarak .NET'teki çeşitli belge biçimlerinden nasıl metin ayıklayacağınızı öğrenin. Kod örnekleri içeren adım adım kılavuz.
-type: docs
 weight: 12
 url: /tr/net/document-loading/load-document-from-stream/
 ---
@@ -61,4 +60,4 @@ Evet, GroupDocs.Parser hem .NET Framework hem de .NET Core uygulamalarıyla uyum
 ### GroupDocs.Parser için nasıl geçici lisans alabilirim?
  adresinden geçici lisans alabilirsiniz.[Burada](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Parser için daha fazla desteği veya belgeyi nerede bulabilirim?
- Ek destek için şu adresi ziyaret edin:[GroupDocs.Parser Forumu](https://forum.groupdocs.com/c/parser/17) veya şuraya bakın:[dokümantasyon](https://reference.groupdocs.com/parser/net/).
+ Ek destek için şu adresi ziyaret edin:[GroupDocs.Parser Forumu](https://forum.groupdocs.com/c/parser/17) veya şuraya bakın:[dokümantasyon](https://tutorials.groupdocs.com/parser/net/).

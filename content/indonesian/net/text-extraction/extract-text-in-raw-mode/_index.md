@@ -3,7 +3,6 @@ title: Ekstrak Teks dalam Mode Mentah
 linktitle: Ekstrak Teks dalam Mode Mentah
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak teks dari dokumen menggunakan GroupDocs.Parser untuk .NET. Ekstraksi teks yang mudah, efisien, dan lancar dalam aplikasi .NET Anda.
-type: docs
 weight: 19
 url: /id/net/text-extraction/extract-text-in-raw-mode/
 ---

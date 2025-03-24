@@ -3,7 +3,6 @@ title: Recognizing Text
 linktitle: Recognizing Text
 second_title: GroupDocs.Parser .NET API
 description: Extract text from various document formats efficiently with GroupDocs.Parser for .NET. Easy integration and powerful OCR capabilities.
-type: docs
 weight: 12
 url: /net/ocr-extraction/recognizing-text/
 ---
@@ -13,7 +12,7 @@ In the realm of .NET development, efficient text extraction from various documen
 Before we dive into using GroupDocs.Parser, ensure you have the following prerequisites:
 - Basic understanding of C# programming
 - Visual Studio installed on your machine
-- Access to the internet for package downloads and documentation references
+- Access to the internet for package downloads and documentation tutorialss
 
 ## Import Namespaces
 Begin by importing the necessary namespaces to leverage GroupDocs.Parser functionalities:
@@ -57,7 +56,7 @@ In this snippet:
 - `TextOptions` is configured to enable OCR and optimize text extraction.
 
 ## Conclusion
-Congratulations! You've learned how to integrate GroupDocs.Parser for .NET into your projects to extract text efficiently. Explore the extensive [documentation](https://reference.groupdocs.com/parser/net/) for advanced features and optimizations.
+Congratulations! You've learned how to integrate GroupDocs.Parser for .NET into your projects to extract text efficiently. Explore the extensive [documentation](https://tutorials.groupdocs.com/parser/net/) for advanced features and optimizations.
 
 ## FAQ's
 ### Is GroupDocs.Parser suitable for extracting text from PDF files?

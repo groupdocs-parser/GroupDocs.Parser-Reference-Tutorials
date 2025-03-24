@@ -3,7 +3,6 @@ title: Распознавание текста
 linktitle: Распознавание текста
 second_title: GroupDocs.Parser .NET API
 description: Эффективно извлекайте текст из документов различных форматов с помощью GroupDocs.Parser для .NET. Простая интеграция и мощные возможности оптического распознавания символов.
-type: docs
 weight: 12
 url: /ru/net/ocr-extraction/recognizing-text/
 ---
@@ -57,7 +56,7 @@ using (Parser parser = new Parser("YourSampleFile.docx", settings))
 - `TextOptions` настроен на включение оптического распознавания символов и оптимизацию извлечения текста.
 
 ## Заключение
- Поздравляем! Вы узнали, как интегрировать GroupDocs.Parser для .NET в свои проекты для эффективного извлечения текста. Исследуйте обширный[документация](https://reference.groupdocs.com/parser/net/) для расширенных функций и оптимизации.
+ Поздравляем! Вы узнали, как интегрировать GroupDocs.Parser для .NET в свои проекты для эффективного извлечения текста. Исследуйте обширный[документация](https://tutorials.groupdocs.com/parser/net/) для расширенных функций и оптимизации.
 
 ## Часто задаваемые вопросы
 ### Подходит ли GroupDocs.Parser для извлечения текста из PDF-файлов?

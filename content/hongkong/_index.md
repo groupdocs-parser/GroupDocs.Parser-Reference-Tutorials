@@ -3,7 +3,6 @@ title: 使用 GroupDocs.Parser 解鎖文件解析能力
 linktitle: GroupDocs.Parser 教學課程
 additionalTitle: GroupDocs API 參考
 description: 使用適用於 .NET 和 Java 的 GroupDocs.Parser 解鎖高效的資料擷取技術。探索有關文字、表格、圖像提取等的教程。
-type: docs
 weight: 11
 url: /zh-hant/
 is_root: true

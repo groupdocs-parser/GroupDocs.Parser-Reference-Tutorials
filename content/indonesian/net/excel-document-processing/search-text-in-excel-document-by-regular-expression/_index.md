@@ -3,7 +3,6 @@ title: Cari Teks di Dokumen Excel dengan Ekspresi Reguler
 linktitle: Cari Teks di Dokumen Excel dengan Ekspresi Reguler
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mencari teks di dokumen Excel menggunakan ekspresi reguler dengan GroupDocs.Parser untuk .NET. Lakukan pencarian teks tingkat lanjut secara efisien.
-type: docs
 weight: 17
 url: /id/net/excel-document-processing/search-text-in-excel-document-by-regular-expression/
 ---

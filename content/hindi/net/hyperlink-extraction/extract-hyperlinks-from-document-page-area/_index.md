@@ -3,7 +3,6 @@ title: दस्तावेज़ पृष्ठ क्षेत्र से 
 linktitle: दस्तावेज़ पृष्ठ क्षेत्र से हाइपरलिंक निकालें
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके विशिष्ट दस्तावेज़ क्षेत्रों से हाइपरलिंक निकालने का तरीका जानें। अपनी दस्तावेज़ प्रसंस्करण क्षमताओं को बढ़ाएँ।
-type: docs
 weight: 12
 url: /hi/net/hyperlink-extraction/extract-hyperlinks-from-document-page-area/
 ---

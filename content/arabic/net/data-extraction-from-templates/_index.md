@@ -3,7 +3,6 @@ title: استخراج البيانات من القوالب
 linktitle: استخراج البيانات من القوالب
 second_title: GroupDocs.Parser .NET API
 description: استخرج البيانات بسهولة باستخدام GroupDocs.Parser لـ .NET. تعلم كيفية استرداد حقول معينة، وتكرار البيانات، والعمل مع الجداول في المحتوى المستخرج.
-type: docs
 weight: 26
 url: /ar/net/data-extraction-from-templates/
 ---

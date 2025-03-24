@@ -3,7 +3,6 @@ title: التعرف على النص في المناطق المستطيلة
 linktitle: التعرف على النص في المناطق المستطيلة
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية التعرف على النص في مناطق معينة من المستندات باستخدام GroupDocs.Parser لـ .NET مع إمكانيات التعرف الضوئي على الحروف.
-type: docs
 weight: 14
 url: /ar/net/ocr-extraction/recognizing-text-in-rectangular-regions/
 ---

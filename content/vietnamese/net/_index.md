@@ -1,7 +1,6 @@
 ---
 title: Hướng dẫn và ví dụ về GroupDocs.Parser cho .NET
 linktitle: Hướng dẫn GroupDocs.Parser cho .NET
-type: docs
 weight: 10
 url: /vi/net/
 description: Mở khóa các kỹ thuật trích xuất văn bản hiệu quả với GroupDocs.Parser cho .NET. Trích xuất, đánh dấu và tìm kiếm văn bản một cách liền mạch để nâng cao khả năng xử lý tài liệu.

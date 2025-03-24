@@ -3,7 +3,6 @@ title: Hämta fält efter namn
 linktitle: Hämta fält efter namn
 second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du extraherar specifika datafält från dokument med GroupDocs.Parser för .NET. Steg-för-steg guide med kodexempel.
-type: docs
 weight: 10
 url: /sv/net/data-extraction-from-templates/get-field-by-name/
 ---

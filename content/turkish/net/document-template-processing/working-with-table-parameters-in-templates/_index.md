@@ -3,7 +3,6 @@ title: Şablonlarda Tablo Parametreleriyle Çalışmak
 linktitle: Şablonlarda Tablo Parametreleriyle Çalışmak
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belgelerdeki tablolardan nasıl veri ayıklayacağınızı öğrenin. Tablo parametresi kullanımı için adım adım kılavuz.
-type: docs
 weight: 15
 url: /tr/net/document-template-processing/working-with-table-parameters-in-templates/
 ---

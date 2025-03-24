@@ -3,7 +3,6 @@ title: Ανάλυση δεδομένων από έγγραφα PDF
 linktitle: Ανάλυση δεδομένων από έγγραφα PDF
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε δεδομένα από έγγραφα PDF χρησιμοποιώντας το GroupDocs.Parser για .NET. Ακολουθήστε τον αναλυτικό οδηγό μας για την αποτελεσματική ανάλυση και επεξεργασία αρχείων PDF.
-type: docs
 weight: 17
 url: /el/net/pdf-processing/parse-data-from-pdf-documents/
 ---
@@ -81,6 +80,6 @@ for (int i = 0; i < data.Count; i++)
 ### Υπάρχει διαθέσιμη δοκιμαστική έκδοση για το GroupDocs.Parser;
  Ναι, μπορείτε να λάβετε μια δωρεάν δοκιμή του GroupDocs.Parser[εδώ](https://releases.groupdocs.com/).
 ### Πού μπορώ να βρω τεκμηρίωση και υποστήριξη για το GroupDocs.Parser;
- Αναφέρομαι στο[τεκμηρίωση](https://reference.groupdocs.com/parser/net/) και[φόρουμ υποστήριξης](https://forum.groupdocs.com/c/parser/17) για GroupDocs.Parser.
+ Αναφέρομαι στο[τεκμηρίωση](https://tutorials.groupdocs.com/parser/net/) και[φόρουμ υποστήριξης](https://forum.groupdocs.com/c/parser/17) για GroupDocs.Parser.
 ### Πώς μπορώ να αποκτήσω μια προσωρινή άδεια για το GroupDocs.Parser;
  Μπορείτε να αποκτήσετε μια προσωρινή άδεια[εδώ](https://purchase.groupdocs.com/temporary-license/).

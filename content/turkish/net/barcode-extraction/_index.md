@@ -3,7 +3,6 @@ title: Barkod Çıkarma
 linktitle: Barkod Çıkarma
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET eğitimleriyle barkodları zahmetsizce nasıl çıkaracağınızı öğrenin. Belge işleme yeteneklerinizi şimdi geliştirin!
-type: docs
 weight: 27
 url: /tr/net/barcode-extraction/
 ---

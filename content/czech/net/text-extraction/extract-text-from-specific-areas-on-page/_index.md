@@ -3,7 +3,6 @@ title: Extrahujte text ze specifických oblastí na stránce
 linktitle: Extrahujte text ze specifických oblastí na stránce
 second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat text z konkrétních oblastí dokumentu pomocí GroupDocs.Parser for .NET. Cílená a přesná extrakce textu pro vaše aplikace.
-type: docs
 weight: 13
 url: /cs/net/text-extraction/extract-text-from-specific-areas-on-page/
 ---

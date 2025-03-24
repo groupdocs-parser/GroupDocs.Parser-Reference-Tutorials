@@ -3,7 +3,6 @@ title: Tekst uit PDF extraheren
 linktitle: Tekst uit PDF extraheren
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u tekst uit PDF-documenten kunt extraheren met GroupDocs.Parser voor .NET. Stap-voor-stap handleiding voor ontwikkelaars.
-type: docs
 weight: 14
 url: /nl/net/pdf-processing/extract-text-from-pdf/
 ---
@@ -58,7 +57,7 @@ Ja, GroupDocs.Parser ondersteunt een breed scala aan formaten, waaronder DOCX, X
 ### Kan ik GroupDocs.Parser uitproberen voordat ik een licentie aanschaf?
  Ja, u kunt een gratis proefversie krijgen[hier](https://releases.groupdocs.com/).
 ### Waar kan ik documentatie voor GroupDocs.Parser vinden?
- Gedetailleerde documentatie is beschikbaar[hier](https://reference.groupdocs.com/parser/net/).
+ Gedetailleerde documentatie is beschikbaar[hier](https://tutorials.groupdocs.com/parser/net/).
 ### Hoe kan ik technische ondersteuning krijgen voor GroupDocs.Parser?
  U kunt hulp zoeken op het ondersteuningsforum[hier](https://forum.groupdocs.com/c/parser/17).
 ### Hoe verkrijg ik een tijdelijke licentie voor GroupDocs.Parser?

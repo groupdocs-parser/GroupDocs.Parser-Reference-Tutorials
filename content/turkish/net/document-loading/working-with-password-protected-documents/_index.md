@@ -3,7 +3,6 @@ title: Parola Korumalı Belgelerle Çalışma
 linktitle: Parola Korumalı Belgelerle Çalışma
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak parola korumalı belgelerden nasıl metin ayıklayacağınızı öğrenin. Belge işleme yeteneklerinizi geliştirin.
-type: docs
 weight: 15
 url: /tr/net/document-loading/working-with-password-protected-documents/
 ---
@@ -77,7 +76,7 @@ Evet, GroupDocs.Parser parola korumalı PDF dosyalarından metin çıkarmayı de
 ### GroupDocs.Parser, DOCX, XLSX ve PPTX gibi çeşitli belge formatlarıyla uyumlu mudur?
 Kesinlikle GroupDocs.Parser, Microsoft Office formatları da dahil olmak üzere PDF'nin ötesinde çok çeşitli belge formatlarını işleyebilir.
 ### GroupDocs.Parser for .NET'e ilişkin ayrıntılı belgeleri nerede bulabilirim?
- Belgelerin tamamını inceleyin[Burada](https://reference.groupdocs.com/parser/net/).
+ Belgelerin tamamını inceleyin[Burada](https://tutorials.groupdocs.com/parser/net/).
 ### GroupDocs.Parser for .NET ile ilgili nasıl destek alabilirim veya soru sorabilirim?
  GroupDocs topluluk forumunu ziyaret edin[Burada](https://forum.groupdocs.com/c/parser/17) yardım için.
 ### GroupDocs.Parser for .NET'in deneme sürümü mevcut mu?

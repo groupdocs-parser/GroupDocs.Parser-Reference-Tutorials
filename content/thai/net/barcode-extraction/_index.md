@@ -3,7 +3,6 @@ title: การสกัดบาร์โค้ด
 linktitle: การสกัดบาร์โค้ด
 second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีการแยกบาร์โค้ดอย่างง่ายดายด้วยบทเรียน GroupDocs.Parser สำหรับ .NET เพิ่มความสามารถในการประมวลผลเอกสารของคุณทันที!
-type: docs
 weight: 27
 url: /th/net/barcode-extraction/
 ---

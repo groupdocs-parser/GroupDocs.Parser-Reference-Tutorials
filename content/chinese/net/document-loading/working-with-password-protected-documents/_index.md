@@ -3,7 +3,6 @@ title: 使用受密码保护的文档
 linktitle: 使用受密码保护的文档
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从受密码保护的文档中提取文本。增强您的文档处理能力。
-type: docs
 weight: 15
 url: /zh/net/document-loading/working-with-password-protected-documents/
 ---
@@ -77,7 +76,7 @@ catch (InvalidPasswordException)
 ### GroupDocs.Parser 是否兼容各种文档格式，如 DOCX、XLSX 和 PPTX？
 当然，GroupDocs.Parser 可以处理 PDF 之外的各种文档格式，包括 Microsoft Office 格式。
 ### 在哪里可以找到有关 .NET 的 GroupDocs.Parser 的详细文档？
-探索完整文档[这里](https://reference.groupdocs.com/parser/net/).
+探索完整文档[这里](https://tutorials.groupdocs.com/parser/net/).
 ### 如何获得支持或询问与 GroupDocs.Parser for .NET 相关的问题？
 访问 GroupDocs 社区论坛[这里](https://forum.groupdocs.com/c/parser/17)寻求帮助。
 ### GroupDocs.Parser for .NET 有试用版吗？

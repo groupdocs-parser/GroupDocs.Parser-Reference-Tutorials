@@ -3,7 +3,6 @@ title: استخراج الباركود من صفحة الوثيقة
 linktitle: استخراج الباركود من صفحة الوثيقة
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج الرموز الشريطية من صفحات المستندات باستخدام GroupDocs.Parser لـ .NET. يوفر هذا البرنامج التعليمي إرشادات خطوة بخطوة لاستخراج الباركود.
-type: docs
 weight: 12
 url: /ar/net/barcode-extraction/extract-barcodes-from-document-page/
 ---
@@ -79,7 +78,7 @@ foreach (PageBarcodeArea barcode in barcodes)
 ### الأسئلة الشائعة
 
 ### س: ما هي تنسيقات المستندات التي يدعمها GroupDocs.Parser؟
- يدعم GroupDocs.Parser مجموعة واسعة من التنسيقات، بما في ذلك DOCX وPDF وXLSX وPPTX والمزيد. الرجوع إلى[توثيق](https://reference.groupdocs.com/parser/net/)للحصول على قائمة كاملة.
+ يدعم GroupDocs.Parser مجموعة واسعة من التنسيقات، بما في ذلك DOCX وPDF وXLSX وPPTX والمزيد. الرجوع إلى[توثيق](https://tutorials.groupdocs.com/parser/net/)للحصول على قائمة كاملة.
 
 ### س: هل يمكنني استخراج بيانات التعريف مع الرموز الشريطية باستخدام GroupDocs.Parser؟
 نعم، يتيح لك GroupDocs.Parser استخراج بيانات التعريف والنصوص والصور والرموز الشريطية من المستندات، مما يوفر إمكانات تحليل شاملة للمستندات.

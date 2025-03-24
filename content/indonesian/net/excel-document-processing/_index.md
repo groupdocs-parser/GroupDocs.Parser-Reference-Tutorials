@@ -3,7 +3,6 @@ title: Pemrosesan Dokumen Excel
 linktitle: Pemrosesan Dokumen Excel
 second_title: GroupDocs.Parser .NET API
 description: Kuasai pemrosesan dokumen Excel di .NET dengan GroupDocs.Parser. Pelajari cara mengekstrak gambar, metadata, dan teks secara efisien dengan panduan langkah demi langkah.
-type: docs
 weight: 32
 url: /id/net/excel-document-processing/
 ---

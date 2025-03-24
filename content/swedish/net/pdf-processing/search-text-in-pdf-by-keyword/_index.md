@@ -3,7 +3,6 @@ title: Sök text i PDF efter nyckelord
 linktitle: Sök text i PDF efter nyckelord
 second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du söker efter specifik text i PDF-dokument med GroupDocs.Parser för .NET. Integrera kraftfulla textsökningsfunktioner i ditt .NET effektivt.
-type: docs
 weight: 18
 url: /sv/net/pdf-processing/search-text-in-pdf-by-keyword/
 ---

@@ -3,7 +3,6 @@ title: Word Belgesindeki Metni Normal İfadeyle Arama
 linktitle: Word Belgesindeki Metni Normal İfadeyle Arama
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET ile normal ifadeleri kullanarak Word belgelerinde metin aramayı öğrenin. Belirli içerikleri verimli bir şekilde çıkarın.
-type: docs
 weight: 19
 url: /tr/net/word-document-processing/search-text-in-word-document-by-regular-expression/
 ---

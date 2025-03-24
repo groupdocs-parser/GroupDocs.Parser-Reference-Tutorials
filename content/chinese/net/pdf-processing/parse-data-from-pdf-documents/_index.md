@@ -3,7 +3,6 @@ title: 解析 PDF 文档的数据
 linktitle: 解析 PDF 文档的数据
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从 PDF 文档中提取数据。按照我们的分步指南高效地解析和处理 PDF 文件。
-type: docs
 weight: 17
 url: /zh/net/pdf-processing/parse-data-from-pdf-documents/
 ---
@@ -81,6 +80,6 @@ GroupDocs.Parser 主要关注 PDF 文件，但也支持其他格式，如 DOCX�
 ### GroupDocs.Parser 有试用版吗？
 是的，您可以免费试用 GroupDocs.Parser[这里](https://releases.groupdocs.com/).
 ### 在哪里可以找到 GroupDocs.Parser 的文档和支持？
-请参阅[文档](https://reference.groupdocs.com/parser/net/)和[支持论坛](https://forum.groupdocs.com/c/parser/17)对于 GroupDocs.Parser。
+请参阅[文档](https://tutorials.groupdocs.com/parser/net/)和[支持论坛](https://forum.groupdocs.com/c/parser/17)对于 GroupDocs.Parser。
 ### 如何获得 GroupDocs.Parser 的临时许可证？
 您可以获得临时驾照[这里](https://purchase.groupdocs.com/temporary-license/).

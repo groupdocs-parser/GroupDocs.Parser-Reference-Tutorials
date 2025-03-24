@@ -3,7 +3,6 @@ title: Αναζήτηση κειμένου με λέξη-κλειδί
 linktitle: Αναζήτηση κειμένου με λέξη-κλειδί
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να κάνετε αναζήτηση κειμένου με λέξη-κλειδί σε έγγραφα χρησιμοποιώντας το GroupDocs.Parser για .NET. Εξάγετε αποτελεσματικά σχετικό περιεχόμενο με ευκολία.
-type: docs
 weight: 21
 url: /el/net/text-extraction/search-text-by-keyword/
 ---
@@ -63,7 +62,7 @@ foreach (SearchResult result in searchResults)
 ### Μπορώ να εκτελέσω προηγμένες λειτουργίες εξαγωγής κειμένου χρησιμοποιώντας το GroupDocs.Parser;
 Απολύτως! Εκτός από την αναζήτηση κειμένου, το GroupDocs.Parser επιτρέπει την εξαγωγή μεταδεδομένων, την εξαγωγή δομημένου κειμένου και πολλά άλλα.
 ### Πού μπορώ να βρω λεπτομερή τεκμηρίωση για το GroupDocs.Parser;
-Εξερευνήστε την πλήρη τεκμηρίωση[εδώ](https://reference.groupdocs.com/parser/net/).
+Εξερευνήστε την πλήρη τεκμηρίωση[εδώ](https://tutorials.groupdocs.com/parser/net/).
 ### Πώς μπορώ να λάβω υποστήριξη ή βοήθεια με ερωτήματα που σχετίζονται με το GroupDocs.Parser;
  Επισκεφτείτε το φόρουμ του GroupDocs για υποστήριξη και συζητήσεις[εδώ](https://forum.groupdocs.com/c/parser/17).
 ### Υπάρχει διαθέσιμη δοκιμαστική έκδοση για την αξιολόγηση του GroupDocs.Parser πριν από την αγορά;

@@ -3,7 +3,6 @@ title: Text mit Kodierungserkennung extrahieren
 linktitle: Text mit Kodierungserkennung extrahieren
 second_title: GroupDocs.Parser .NET API
 description: Extrahieren Sie Text aus Dokumenten mit Kodierungserkennung mithilfe von GroupDocs.Parser für .NET. Analysieren Sie effizient verschiedene Formate in Ihren .NET-Anwendungen.
-type: docs
 weight: 10
 url: /de/net/text-extraction/extract-text-with-encoding-detection/
 ---

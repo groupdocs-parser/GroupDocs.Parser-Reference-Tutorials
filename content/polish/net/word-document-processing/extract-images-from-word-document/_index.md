@@ -3,7 +3,6 @@ title: Wyodrębnij obrazy z dokumentu programu Word
 linktitle: Wyodrębnij obrazy z dokumentu programu Word
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić obrazy z dokumentu programu Word za pomocą GroupDocs.Parser dla .NET. Ten samouczek zawiera wskazówki krok po kroku dotyczące integracji obrazu z platformą .NET.
-type: docs
 weight: 11
 url: /pl/net/word-document-processing/extract-images-from-word-document/
 ---
@@ -62,7 +61,7 @@ Tak, GroupDocs.Parser obsługuje różne formaty dokumentów, w tym PDF, PowerPo
 ### Jak mogę uzyskać tymczasową licencję na GroupDocs.Parser?
  Licencję tymczasową do celów testowych można uzyskać od[Tutaj](https://purchase.groupdocs.com/temporary-license/).
 ### Gdzie mogę znaleźć więcej dokumentacji dotyczącej GroupDocs.Parser dla .NET?
- Można zapoznać się z pełną dokumentacją[Tutaj](https://reference.groupdocs.com/parser/net/).
+ Można zapoznać się z pełną dokumentacją[Tutaj](https://tutorials.groupdocs.com/parser/net/).
 ### Czy dostępna jest bezpłatna wersja próbna programu GroupDocs.Parser?
  Tak, możesz poznać funkcje GroupDocs.Parser w ramach bezpłatnej wersji próbnej[Tutaj](https://releases.groupdocs.com/).
 ### Jak mogę uzyskać pomoc lub zadać pytania związane z GroupDocs.Parser?

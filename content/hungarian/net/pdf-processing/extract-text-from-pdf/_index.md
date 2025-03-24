@@ -3,7 +3,6 @@ title: Szöveg kibontása PDF-ből
 linktitle: Szöveg kibontása PDF-ből
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki szöveget PDF-dokumentumokból a GroupDocs.Parser for .NET segítségével. Lépésről lépésre bemutató fejlesztőknek.
-type: docs
 weight: 14
 url: /hu/net/pdf-processing/extract-text-from-pdf/
 ---
@@ -58,7 +57,7 @@ Igen, a GroupDocs.Parser a formátumok széles skáláját támogatja, beleértv
 ### Kipróbálhatom a GroupDocs.Parser-t a licenc megvásárlása előtt?
  Igen, beszerezhet egy ingyenes próbaverziót[itt](https://releases.groupdocs.com/).
 ### Hol találom a GroupDocs.Parser dokumentációját?
- A részletes dokumentáció elérhető[itt](https://reference.groupdocs.com/parser/net/).
+ A részletes dokumentáció elérhető[itt](https://tutorials.groupdocs.com/parser/net/).
 ### Hogyan kaphatok technikai támogatást a GroupDocs.Parser számára?
  A támogatási fórumon kérhet segítséget[itt](https://forum.groupdocs.com/c/parser/17).
 ### Hogyan szerezhetek ideiglenes licencet a GroupDocs.Parser számára?

@@ -3,7 +3,6 @@ title: 透過正規表示式搜尋Word文件中的文本
 linktitle: 透過正規表示式搜尋Word文件中的文本
 second_title: GroupDocs.Parser .NET API
 description: 了解如何透過 GroupDocs.Parser for .NET 使用正規表示式在 Word 文件中搜尋文字。有效率地提取特定內容。
-type: docs
 weight: 19
 url: /zh-hant/net/word-document-processing/search-text-in-word-document-by-regular-expression/
 ---

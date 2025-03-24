@@ -3,7 +3,6 @@ title: Extract Images from Document Page Area
 linktitle: Extract Images from Document Page Area
 second_title: GroupDocs.Parser .NET API
 description: Discover how to precisely extract images from documents using Groupdocs.Parser for .NET. Learn to target specific areas for accurate image extraction.
-type: docs
 weight: 10
 url: /net/image-extraction/extract-images-from-document-page-area/
 ---

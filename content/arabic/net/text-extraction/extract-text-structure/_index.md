@@ -3,7 +3,6 @@ title: استخراج بنية النص
 linktitle: استخراج بنية النص
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج بنية النص من تنسيقات المستندات المختلفة باستخدام GroupDocs.Parser لـ .NET. برنامج تعليمي خطوة بخطوة مع أمثلة التعليمات البرمجية.
-type: docs
 weight: 20
 url: /ar/net/text-extraction/extract-text-structure/
 ---

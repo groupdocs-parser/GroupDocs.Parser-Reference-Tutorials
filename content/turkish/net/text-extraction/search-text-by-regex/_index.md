@@ -3,7 +3,6 @@ title: Normal İfadeye Göre Metin Arama (Regex)
 linktitle: Normal İfadeye Göre Metin Arama (Regex)
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belgelerde normal ifadeleri kullanarak nasıl metin arayacağınızı öğrenin. Belirli içerikleri zahmetsizce çıkarın.
-type: docs
 weight: 23
 url: /tr/net/text-extraction/search-text-by-regex/
 ---

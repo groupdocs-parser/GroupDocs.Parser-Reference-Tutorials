@@ -3,7 +3,6 @@ title: Text aus Excel-Tabelle extrahieren
 linktitle: Text aus Excel-Tabelle extrahieren
 second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Text aus Excel-Tabellen extrahieren. Einfache Schritte zur effektiven Textextraktion.
-type: docs
 weight: 14
 url: /de/net/excel-document-processing/extract-text-from-excel-sheet/
 ---

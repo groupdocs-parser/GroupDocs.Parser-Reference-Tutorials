@@ -3,7 +3,6 @@ title: Search Text by Pages
 linktitle: Search Text by Pages
 second_title: GroupDocs.Parser .NET API
 description: Learn to search text by pages using GroupDocs.Parser for .NET. Extract specific content efficiently from documents in your .NET applications.
-type: docs
 weight: 22
 url: /net/text-extraction/search-text-by-pages/
 ---
@@ -64,7 +63,7 @@ Yes, GroupDocs.Parser supports a wide range of document formats including DOCX, 
 ### Can I extract images and metadata from documents using GroupDocs.Parser?
 Absolutely, GroupDocs.Parser allows extraction of images, metadata, and text from documents.
 ### Where can I find detailed documentation for GroupDocs.Parser?
-You can access the documentation [here](https://reference.groupdocs.com/parser/net/).
+You can access the documentation [here](https://tutorials.groupdocs.com/parser/net/).
 ### How can I obtain a temporary license for GroupDocs.Parser?
 You can request a temporary license [here](https://purchase.groupdocs.com/temporary-license/).
 ### Where can I get support or assistance with GroupDocs.Parser?

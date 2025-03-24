@@ -3,7 +3,6 @@ title: Estrai testo da aree specifiche
 linktitle: Estrai testo da aree specifiche
 second_title: API GroupDocs.Parser .NET
 description: Scopri come estrarre testo da aree specifiche di documenti utilizzando GroupDocs.Parser per .NET. Facile guida passo passo.
-type: docs
 weight: 12
 url: /it/net/text-extraction/extract-text-from-specific-areas/
 ---

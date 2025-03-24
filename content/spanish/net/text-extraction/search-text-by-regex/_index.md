@@ -3,7 +3,6 @@ title: Buscar texto por expresión regular (Regex)
 linktitle: Buscar texto por expresión regular (Regex)
 second_title: API GroupDocs.Parser .NET
 description: Aprenda a buscar texto usando expresiones regulares en documentos usando GroupDocs.Parser para .NET. Extraiga contenido específico sin esfuerzo.
-type: docs
 weight: 23
 url: /es/net/text-extraction/search-text-by-regex/
 ---

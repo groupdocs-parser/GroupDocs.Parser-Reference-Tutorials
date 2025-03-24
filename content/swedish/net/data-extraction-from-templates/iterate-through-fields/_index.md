@@ -3,7 +3,6 @@ title: Iterera genom fält
 linktitle: Iterera genom fält
 second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du extraherar strukturerad data från dokument med GroupDocs.Parser för .NET. Förbättra dina .NET-applikationer med extraheringsmöjligheter för dokumentdata.
-type: docs
 weight: 11
 url: /sv/net/data-extraction-from-templates/iterate-through-fields/
 ---

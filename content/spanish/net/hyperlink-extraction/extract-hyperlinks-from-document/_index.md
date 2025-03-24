@@ -3,7 +3,6 @@ title: Extraer hipervínculos del documento
 linktitle: Extraer hipervínculos del documento
 second_title: API GroupDocs.Parser .NET
 description: Aprenda a extraer hipervínculos de documentos utilizando GroupDocs.Parser para .NET. Mejore sus aplicaciones C# con esta sencilla guía.
-type: docs
 weight: 10
 url: /es/net/hyperlink-extraction/extract-hyperlinks-from-document/
 ---
@@ -73,7 +72,7 @@ Sí, GroupDocs.Parser admite la extracción de hipervínculos de una amplia gama
 ### ¿Existe una prueba gratuita disponible para GroupDocs.Parser?
  Sí, puedes acceder a una prueba gratuita de GroupDocs.Parser[aquí](https://releases.groupdocs.com/).
 ### ¿Dónde puedo encontrar documentación para GroupDocs.Parser?
- Puede encontrar documentación detallada para GroupDocs.Parser[aquí](https://reference.groupdocs.com/parser/net/).
+ Puede encontrar documentación detallada para GroupDocs.Parser[aquí](https://tutorials.groupdocs.com/parser/net/).
 ### ¿Cómo puedo obtener una licencia temporal para GroupDocs.Parser?
  Puede obtener una licencia temporal para GroupDocs.Parser[aquí](https://purchase.groupdocs.com/temporary-license/).
 ### ¿GroupDocs ofrece soporte para la resolución de problemas?

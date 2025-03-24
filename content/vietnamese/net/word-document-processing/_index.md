@@ -3,7 +3,6 @@ title: Xử lý tài liệu Word
 linktitle: Xử lý tài liệu Word
 second_title: API GroupDocs.Parser .NET
 description: Khám phá nhiều hướng dẫn về xử lý tài liệu Word bằng GroupDocs.Parser cho .NET. Trích xuất siêu liên kết, hình ảnh, siêu dữ liệu, v.v.
-type: docs
 weight: 30
 url: /vi/net/word-document-processing/
 ---

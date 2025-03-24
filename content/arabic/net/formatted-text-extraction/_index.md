@@ -3,7 +3,6 @@ title: استخراج النص المنسق
 linktitle: استخراج النص المنسق
 second_title: GroupDocs.Parser .NET API
 description: قم باستخراج النص المنسق بكفاءة من المستندات الموجودة في .NET باستخدام GroupDocs.Parser. تعلم كيفية استخراج HTML وMarkdown والنص العادي بسلاسة.
-type: docs
 weight: 21
 url: /ar/net/formatted-text-extraction/
 ---

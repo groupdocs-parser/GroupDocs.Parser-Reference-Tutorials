@@ -3,7 +3,6 @@ title: Wyodrębnij obrazy z obszaru strony dokumentu
 linktitle: Wyodrębnij obrazy z obszaru strony dokumentu
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak precyzyjnie wyodrębniać obrazy z dokumentów za pomocą Groupdocs.Parser dla .NET. Dowiedz się, jak celować w określone obszary, aby uzyskać dokładną ekstrakcję obrazu.
-type: docs
 weight: 10
 url: /pl/net/image-extraction/extract-images-from-document-page-area/
 ---

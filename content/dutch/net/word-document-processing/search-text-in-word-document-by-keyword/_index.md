@@ -3,7 +3,6 @@ title: Zoek tekst in Word-document op trefwoord
 linktitle: Zoek tekst in Word-document op trefwoord
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u naar tekst in Word-documenten kunt zoeken met GroupDocs.Parser voor .NET. Extraheer specifieke trefwoorden efficiënt.
-type: docs
 weight: 18
 url: /nl/net/word-document-processing/search-text-in-word-document-by-keyword/
 ---

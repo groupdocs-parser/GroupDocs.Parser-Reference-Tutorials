@@ -3,7 +3,6 @@ title: Praca z polami w połączonych pozycjach w szablonach
 linktitle: Praca z polami w połączonych pozycjach w szablonach
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak efektywnie wyodrębniać dane z dokumentów za pomocą GroupDocs.Parser dla .NET. Samouczek krok po kroku z przykładami kodu.
-type: docs
 weight: 12
 url: /pl/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
 ---

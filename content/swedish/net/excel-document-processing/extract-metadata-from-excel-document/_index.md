@@ -3,7 +3,6 @@ title: Extrahera metadata från Excel-dokument
 linktitle: Extrahera metadata från Excel-dokument
 second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du extraherar metadata från Excel-dokument med GroupDocs.Parser för .NET. Följ denna steg-för-steg handledning.
-type: docs
 weight: 11
 url: /sv/net/excel-document-processing/extract-metadata-from-excel-document/
 ---

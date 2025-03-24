@@ -3,7 +3,6 @@ title: Извлечь штрих-коды со страницы документ
 linktitle: Извлечь штрих-коды со страницы документа
 second_title: GroupDocs.Parser .NET API
 description: Узнайте, как извлекать штрих-коды со страниц документов с помощью GroupDocs.Parser для .NET. В этом руководстве представлены пошаговые инструкции по извлечению штрих-кода.
-type: docs
 weight: 12
 url: /ru/net/barcode-extraction/extract-barcodes-from-document-page/
 ---
@@ -79,7 +78,7 @@ foreach (PageBarcodeArea barcode in barcodes)
 ### Часто задаваемые вопросы
 
 ### Вопрос: Какие форматы документов поддерживает GroupDocs.Parser?
- GroupDocs.Parser поддерживает широкий спектр форматов, включая DOCX, PDF, XLSX, PPTX и другие. Обратитесь к[документация](https://reference.groupdocs.com/parser/net/)для полного списка.
+ GroupDocs.Parser поддерживает широкий спектр форматов, включая DOCX, PDF, XLSX, PPTX и другие. Обратитесь к[документация](https://tutorials.groupdocs.com/parser/net/)для полного списка.
 
 ### Вопрос: Могу ли я извлечь метаданные вместе со штрих-кодами с помощью GroupDocs.Parser?
 Да, GroupDocs.Parser позволяет извлекать метаданные, текст, изображения и штрих-коды из документов, предоставляя комплексные возможности анализа документов.

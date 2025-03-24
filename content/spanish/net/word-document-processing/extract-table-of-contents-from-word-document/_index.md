@@ -3,7 +3,6 @@ title: Extraer tabla de contenidos de un documento de Word
 linktitle: Extraer tabla de contenidos de un documento de Word
 second_title: API GroupDocs.Parser .NET
 description: Aprenda a extraer tablas de contenido (TOC) de documentos de Word mediante programación utilizando GroupDocs.Parser para .NET.
-type: docs
 weight: 13
 url: /es/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
@@ -64,7 +63,7 @@ Sí, GroupDocs.Parser admite una amplia gama de formatos de documentos, incluido
 ### ¿GroupDocs.Parser es adecuado para procesar documentos grandes?
 Sí, GroupDocs.Parser está optimizado para manejar documentos grandes de manera eficiente, con funciones como extracción de texto, extracción de metadatos y extracción de datos estructurados.
 ### ¿Dónde puedo encontrar más documentación y tutoriales para GroupDocs.Parser?
- Visita el[Documentación de GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) para obtener referencias detalladas de API y tutoriales.
+ Visita el[Documentación de GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) para obtener referencias detalladas de API y tutoriales.
 ### ¿Cómo puedo obtener soporte para GroupDocs.Parser?
  Disfruta el[Foro GroupDocs.Parser](https://forum.groupdocs.com/c/parser/17) para hacer preguntas e interactuar con la comunidad.
 ### ¿Existe una versión de prueba disponible para GroupDocs.Parser?

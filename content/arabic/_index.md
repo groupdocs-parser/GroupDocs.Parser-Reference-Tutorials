@@ -3,7 +3,6 @@ title: فتح إتقان تحليل المستندات باستخدام GroupDoc
 linktitle: دروس GroupDocs.Parser
 additionalTitle: مراجع واجهة برمجة تطبيقات GroupDocs
 description: أطلق العنان لتقنيات استخراج البيانات الفعالة باستخدام GroupDocs.Parser لـ .NET وJava. استكشف البرامج التعليمية حول النص والجدول واستخراج الصور والمزيد.
-type: docs
 weight: 11
 url: /ar/
 is_root: true

@@ -3,7 +3,6 @@ title: Excel 문서에서 텍스트를 HTML로 추출
 linktitle: Excel 문서에서 텍스트를 HTML로 추출
 second_title: GroupDocs.Parser .NET API
 description: Excel 문서에서 텍스트를 추출하고 .NET용 GroupDocs.Parser를 사용하여 HTML로 변환하는 방법을 알아보세요.
-type: docs
 weight: 13
 url: /ko/net/excel-document-processing/extract-text-from-excel-document-as-html/
 ---

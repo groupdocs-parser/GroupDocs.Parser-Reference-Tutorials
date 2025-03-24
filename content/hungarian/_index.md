@@ -3,7 +3,6 @@ title: GroupDocs.Parser segítségével feloldhatja a dokumentumelemzési mester
 linktitle: GroupDocs.Parser oktatóanyagok
 additionalTitle: GroupDocs API referenciák
 description: Oldja fel a hatékony adatkinyerési technikákat a GroupDocs.Parser for .NET és Java segítségével. Fedezze fel az oktatóanyagokat a szövegről, táblázatról, képkivonásról és sok másról.
-type: docs
 weight: 11
 url: /hu/
 is_root: true

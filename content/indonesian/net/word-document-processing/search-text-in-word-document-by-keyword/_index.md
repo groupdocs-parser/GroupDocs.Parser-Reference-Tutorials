@@ -3,7 +3,6 @@ title: Cari Teks di Dokumen Word berdasarkan Kata Kunci
 linktitle: Cari Teks di Dokumen Word berdasarkan Kata Kunci
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mencari teks di dokumen Word menggunakan GroupDocs.Parser untuk .NET. Ekstrak kata kunci tertentu secara efisien.
-type: docs
 weight: 18
 url: /id/net/word-document-processing/search-text-in-word-document-by-keyword/
 ---

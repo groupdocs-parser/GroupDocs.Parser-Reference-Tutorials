@@ -3,7 +3,6 @@ title: 文档加载
 linktitle: 文档加载
 second_title: GroupDocs.Parser .NET API
 description: 使用 GroupDocs.Parser 高效处理 .NET 中的文档加载。学习从本地磁盘、流、URL 等中提取文本。
-type: docs
 weight: 29
 url: /zh/net/document-loading/
 ---

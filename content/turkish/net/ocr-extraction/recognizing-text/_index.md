@@ -3,7 +3,6 @@ title: Metni Tanıma
 linktitle: Metni Tanıma
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET ile çeşitli belge biçimlerinden metni verimli bir şekilde çıkarın. Kolay entegrasyon ve güçlü OCR yetenekleri.
-type: docs
 weight: 12
 url: /tr/net/ocr-extraction/recognizing-text/
 ---
@@ -57,7 +56,7 @@ Bu kesitte:
 - `TextOptions` OCR'yi etkinleştirecek ve metin çıkarmayı optimize edecek şekilde yapılandırılmıştır.
 
 ## Çözüm
- Tebrikler! Metni verimli bir şekilde ayıklamak için GroupDocs.Parser for .NET'i projelerinize nasıl entegre edeceğinizi öğrendiniz. Kapsamlı olanı keşfedin[dokümantasyon](https://reference.groupdocs.com/parser/net/) Gelişmiş özellikler ve optimizasyonlar için.
+ Tebrikler! Metni verimli bir şekilde ayıklamak için GroupDocs.Parser for .NET'i projelerinize nasıl entegre edeceğinizi öğrendiniz. Kapsamlı olanı keşfedin[dokümantasyon](https://tutorials.groupdocs.com/parser/net/) Gelişmiş özellikler ve optimizasyonlar için.
 
 ## SSS'ler
 ### GroupDocs.Parser, PDF dosyalarından metin çıkarmak için uygun mu?

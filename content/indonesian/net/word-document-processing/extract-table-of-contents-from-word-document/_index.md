@@ -3,7 +3,6 @@ title: Ekstrak Daftar Isi dari Dokumen Word
 linktitle: Ekstrak Daftar Isi dari Dokumen Word
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak Daftar Isi (TOC) dari dokumen Word secara terprogram menggunakan GroupDocs.Parser untuk .NET.
-type: docs
 weight: 13
 url: /id/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
@@ -64,7 +63,7 @@ Ya, GroupDocs.Parser mendukung berbagai format dokumen, termasuk PDF, EPUB, Word
 ### Apakah GroupDocs.Parser cocok untuk memproses dokumen berukuran besar?
 Ya, GroupDocs.Parser dioptimalkan untuk menangani dokumen besar secara efisien, dengan fitur seperti ekstraksi teks, ekstraksi metadata, dan ekstraksi data terstruktur.
 ### Di mana saya dapat menemukan lebih banyak dokumentasi dan tutorial untuk GroupDocs.Parser?
- Mengunjungi[Dokumentasi GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) untuk referensi dan tutorial API terperinci.
+ Mengunjungi[Dokumentasi GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) untuk referensi dan tutorial API terperinci.
 ### Bagaimana saya bisa mendapatkan dukungan untuk GroupDocs.Parser?
  Bergabunglah dengan[Forum GroupDocs.Parser](https://forum.groupdocs.com/c/parser/17) untuk bertanya dan berinteraksi dengan masyarakat.
 ### Apakah ada versi uji coba yang tersedia untuk GroupDocs.Parser?

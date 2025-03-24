@@ -3,7 +3,6 @@ title: Εργασία με πεδία σε σταθερές θέσεις σε π
 linktitle: Εργασία με πεδία σε σταθερές θέσεις σε πρότυπα
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε δεδομένα από έγγραφα χρησιμοποιώντας το GroupDocs.Parser για .NET. Ολοκληρωμένο σεμινάριο με παραδείγματα κώδικα.
-type: docs
 weight: 11
 url: /el/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
@@ -69,7 +68,7 @@ using (Parser parser = new Parser("YourSampleFile.pdf"))
 
 ## Συχνές ερωτήσεις
 ### Είναι το GroupDocs.Parser συμβατό με όλες τις μορφές εγγράφων;
- Το GroupDocs.Parser υποστηρίζει ένα ευρύ φάσμα μορφών αρχείων, συμπεριλαμβανομένων των PDF, Microsoft Word, Excel, PowerPoint και άλλων. Αναφέρομαι στο[τεκμηρίωση](https://reference.groupdocs.com/parser/net/) για αναλυτική λίστα.
+ Το GroupDocs.Parser υποστηρίζει ένα ευρύ φάσμα μορφών αρχείων, συμπεριλαμβανομένων των PDF, Microsoft Word, Excel, PowerPoint και άλλων. Αναφέρομαι στο[τεκμηρίωση](https://tutorials.groupdocs.com/parser/net/) για αναλυτική λίστα.
 ### Πώς μπορώ να αποκτήσω μια προσωρινή άδεια για το GroupDocs.Parser;
  Μπορείτε να λάβετε μια προσωρινή άδεια για σκοπούς δοκιμής από[εδώ](https://purchase.groupdocs.com/temporary-license/).
 ### Πού μπορώ να βρω υποστήριξη για το GroupDocs.Parser;

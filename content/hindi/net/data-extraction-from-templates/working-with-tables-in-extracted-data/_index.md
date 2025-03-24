@@ -3,7 +3,6 @@ title: निकाले गए डेटा में तालिकाओं
 linktitle: निकाले गए डेटा में तालिकाओं के साथ कार्य करना
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके दस्तावेज़ों से तालिका डेटा निकालने का तरीका जानें। पूर्वनिर्धारित टेम्प्लेट के साथ संरचित सामग्री को कुशलतापूर्वक पार्स करें।
-type: docs
 weight: 12
 url: /hi/net/data-extraction-from-templates/working-with-tables-in-extracted-data/
 ---

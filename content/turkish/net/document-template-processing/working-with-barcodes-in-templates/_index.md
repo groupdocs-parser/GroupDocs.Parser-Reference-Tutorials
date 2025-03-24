@@ -3,7 +3,6 @@ title: Şablonlarda Barkodlarla Çalışmak
 linktitle: Şablonlarda Barkodlarla Çalışmak
 second_title: GroupDocs.Parser .NET API'si
 description: Şablonları kullanarak belgelerden yapılandırılmış verileri ayıklamak için GroupDocs.Parser for .NET'i nasıl kullanacağınızı öğrenin. Barkod alanlarıyla veri çıkarmayı basitleştirin.
-type: docs
 weight: 10
 url: /tr/net/document-template-processing/working-with-barcodes-in-templates/
 ---

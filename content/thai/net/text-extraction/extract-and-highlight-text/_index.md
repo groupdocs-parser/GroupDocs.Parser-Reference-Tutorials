@@ -3,7 +3,6 @@ title: แยกและเน้นข้อความ
 linktitle: แยกและเน้นข้อความ
 second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกและเน้นข้อความจากเอกสารโดยใช้ GroupDocs.Parser สำหรับ .NET ขั้นตอนง่ายๆ สำหรับการแยกข้อความอย่างมีประสิทธิภาพในโครงการ .NET ของคุณ
-type: docs
 weight: 11
 url: /th/net/text-extraction/extract-and-highlight-text/
 ---

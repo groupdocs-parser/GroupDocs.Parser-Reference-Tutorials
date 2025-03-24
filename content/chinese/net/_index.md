@@ -1,7 +1,6 @@
 ---
 title: GroupDocs.Parser for .NET 的教程和示例
 linktitle: GroupDocs.Parser for .NET 教程
-type: docs
 weight: 10
 url: /zh/net/
 description: 使用 GroupDocs.Parser for .NET 解锁高效的文本提取技术。无缝提取、突出显示和搜索文本以增强文档处理能力。

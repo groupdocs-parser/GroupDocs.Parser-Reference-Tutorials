@@ -3,7 +3,6 @@ title: Pemrosesan PDF
 linktitle: Pemrosesan PDF
 second_title: GroupDocs.Parser .NET API
 description: Kuasai pemrosesan PDF dengan GroupDocs.Parser untuk .NET. Pelajari cara mengekstrak lampiran, data, gambar, metadata, dan teks secara efisien dari PDF.
-type: docs
 weight: 31
 url: /id/net/pdf-processing/
 ---

@@ -3,7 +3,6 @@ title: Trích xuất văn bản thuần túy
 linktitle: Trích xuất văn bản thuần túy
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất văn bản thuần túy từ tài liệu bằng GroupDocs.Parser cho .NET. Các bước dễ dàng để tích hợp trích xuất văn bản trong ứng dụng của bạn.
-type: docs
 weight: 14
 url: /vi/net/formatted-text-extraction/extract-plain-text/
 ---

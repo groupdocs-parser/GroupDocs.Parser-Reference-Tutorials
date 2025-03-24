@@ -3,7 +3,6 @@ title: Dokumente laden
 linktitle: Dokumente laden
 second_title: GroupDocs.Parser .NET API
 description: Mit GroupDocs.Parser können Sie das Laden von Dokumenten in .NET effizient bewältigen. Erfahren Sie, wie Sie Text von lokalen Datenträgern, Streams, URLs und mehr extrahieren.
-type: docs
 weight: 29
 url: /de/net/document-loading/
 ---

@@ -3,7 +3,6 @@ title: استخراج النص من الصفحة في PDF في الوضع الخ
 linktitle: استخراج النص من الصفحة في PDF في الوضع الخام
 second_title: GroupDocs.Parser .NET API
 description: استخرج النص من ملفات PDF باستخدام GroupDocs.Parser في C#. تعلم استخراج نص PDF بكفاءة باستخدام مكتبة .NET القوية هذه.
-type: docs
 weight: 16
 url: /ar/net/pdf-processing/extract-text-from-page-in-pdf-in-raw-mode/
 ---

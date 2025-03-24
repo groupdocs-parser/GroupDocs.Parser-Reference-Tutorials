@@ -3,7 +3,6 @@ title: Tabelextractie
 linktitle: Tabelextractie
 second_title: GroupDocs.Parser .NET API
 description: Extractie van hoofdtabellen uit documenten met GroupDocs.Parser voor .NET. Leer hoe u tabellen programmatisch kunt extraheren voor efficiënte gegevensverwerking.
-type: docs
 weight: 23
 url: /nl/net/table-extraction/
 ---

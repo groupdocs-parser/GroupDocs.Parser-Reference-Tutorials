@@ -3,7 +3,6 @@ title: Belirli Alanlardaki Metni Tanıma
 linktitle: Belirli Alanlardaki Metni Tanıma
 second_title: GroupDocs.Parser .NET API'si
 description: OCR özelliklerine sahip belgelerdeki belirli alanlardan metin çıkarmak için GroupDocs.Parser for .NET'i nasıl kullanacağınızı öğrenin.
-type: docs
 weight: 13
 url: /tr/net/ocr-extraction/recognizing-text-in-specific-areas/
 ---

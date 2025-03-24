@@ -3,7 +3,6 @@ title: Belgeden Tabloları Çıkart
 linktitle: Belgeden Tabloları Çıkart
 second_title: GroupDocs.Parser .NET API'si
 description: Groupdocs.Parser for .NET'i kullanarak belgelerden tabloları nasıl çıkaracağınızı öğrenin. Bu işlevselliği entegre etmeye ilişkin ayrıntılı bir kılavuz için takip edin.
-type: docs
 weight: 10
 url: /tr/net/table-extraction/extract-tables-from-document/
 ---

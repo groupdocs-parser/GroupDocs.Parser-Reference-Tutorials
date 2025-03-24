@@ -3,7 +3,6 @@ title: 提取 HTML 內容
 linktitle: 提取 HTML 內容
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 從文件中擷取 HTML 內容。易於理解的教程，包含程式碼範例和逐步指導。
-type: docs
 weight: 12
 url: /zh-hant/net/formatted-text-extraction/extract-html-content/
 ---

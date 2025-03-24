@@ -3,7 +3,6 @@ title: एक्सेल शीट से टेक्स्ट निकाल
 linktitle: एक्सेल शीट से टेक्स्ट निकालें
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके Excel शीट से टेक्स्ट निकालना सीखें। प्रभावी टेक्स्ट निष्कर्षण के लिए सरल चरण।
-type: docs
 weight: 14
 url: /hi/net/excel-document-processing/extract-text-from-excel-sheet/
 ---

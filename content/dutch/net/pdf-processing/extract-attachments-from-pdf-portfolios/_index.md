@@ -3,7 +3,6 @@ title: Bijlagen extraheren uit PDF-portfolio's
 linktitle: Bijlagen extraheren uit PDF-portfolio's
 second_title: GroupDocs.Parser .NET API
 description: Leer in deze uitgebreide zelfstudie hoe u bijlagen uit PDF-portfolio's kunt extraheren met GroupDocs.Parser voor .NET.
-type: docs
 weight: 10
 url: /nl/net/pdf-processing/extract-attachments-from-pdf-portfolios/
 ---

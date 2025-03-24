@@ -3,7 +3,6 @@ title: Extraire le texte d'une page dans un PDF en mode brut
 linktitle: Extraire le texte d'une page dans un PDF en mode brut
 second_title: API GroupDocs.Parser .NET
 description: Extrayez le texte des PDF à l'aide de GroupDocs.Parser en C#. Apprenez à extraire efficacement du texte PDF avec cette puissante bibliothèque .NET.
-type: docs
 weight: 16
 url: /fr/net/pdf-processing/extract-text-from-page-in-pdf-in-raw-mode/
 ---

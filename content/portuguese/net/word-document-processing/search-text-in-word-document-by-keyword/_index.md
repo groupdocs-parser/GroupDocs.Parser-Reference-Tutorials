@@ -3,7 +3,6 @@ title: Pesquisar texto em documento do Word por palavra-chave
 linktitle: Pesquisar texto em documento do Word por palavra-chave
 second_title: API GroupDocs.Parser .NET
 description: Aprenda como pesquisar texto em documentos do Word usando GroupDocs.Parser for .NET. Extraia palavras-chave específicas com eficiência.
-type: docs
 weight: 18
 url: /pt/net/word-document-processing/search-text-in-word-document-by-keyword/
 ---

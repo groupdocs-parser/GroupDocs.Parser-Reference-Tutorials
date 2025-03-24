@@ -3,7 +3,6 @@ title: Bekerja dengan Parameter Tabel di Templat
 linktitle: Bekerja dengan Parameter Tabel di Templat
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak data dari tabel dalam dokumen menggunakan GroupDocs.Parser untuk .NET. Panduan langkah demi langkah untuk penggunaan parameter tabel.
-type: docs
 weight: 15
 url: /id/net/document-template-processing/working-with-table-parameters-in-templates/
 ---

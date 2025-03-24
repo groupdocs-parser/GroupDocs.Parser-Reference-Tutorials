@@ -3,7 +3,6 @@ title: استخراج الارتباط التشعبي
 linktitle: استخراج الارتباط التشعبي
 second_title: GroupDocs.Parser .NET API
 description: قم باستخراج الارتباطات التشعبية من المستندات الموجودة في .NET بسهولة باستخدام GroupDocs.Parser. قم بتحسين تطبيقات C# الخاصة بك باستخدام أدلة خطوة بخطوة لاستخراج الارتباط التشعبي.
-type: docs
 weight: 25
 url: /ar/net/hyperlink-extraction/
 ---

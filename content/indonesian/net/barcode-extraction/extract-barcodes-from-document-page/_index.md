@@ -3,7 +3,6 @@ title: Ekstrak Barcode dari Halaman Dokumen
 linktitle: Ekstrak Barcode dari Halaman Dokumen
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak kode batang dari halaman dokumen menggunakan GroupDocs.Parser untuk .NET. Tutorial ini memberikan panduan langkah demi langkah untuk ekstraksi barcode.
-type: docs
 weight: 12
 url: /id/net/barcode-extraction/extract-barcodes-from-document-page/
 ---
@@ -79,7 +78,7 @@ Dalam tutorial ini, Anda telah mempelajari cara menggunakan GroupDocs.Parser unt
 ### FAQ
 
 ### T: Format dokumen apa yang didukung GroupDocs.Parser?
- GroupDocs.Parser mendukung berbagai format, termasuk DOCX, PDF, XLSX, PPTX, dan banyak lagi. Mengacu kepada[dokumentasi](https://reference.groupdocs.com/parser/net/)untuk daftar lengkap.
+ GroupDocs.Parser mendukung berbagai format, termasuk DOCX, PDF, XLSX, PPTX, dan banyak lagi. Mengacu kepada[dokumentasi](https://tutorials.groupdocs.com/parser/net/)untuk daftar lengkap.
 
 ### T: Dapatkah saya mengekstrak metadata beserta kode batang menggunakan GroupDocs.Parser?
 Ya, GroupDocs.Parser memungkinkan Anda mengekstrak metadata, teks, gambar, dan kode batang dari dokumen, memberikan kemampuan penguraian dokumen yang komprehensif.

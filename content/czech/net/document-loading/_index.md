@@ -3,7 +3,6 @@ title: Načítání dokumentu
 linktitle: Načítání dokumentu
 second_title: GroupDocs.Parser .NET API
 description: Efektivně zvládejte načítání dokumentů v .NET pomocí GroupDocs.Parser. Naučte se extrahovat text z místních disků, streamů, adres URL a dalších.
-type: docs
 weight: 29
 url: /cs/net/document-loading/
 ---

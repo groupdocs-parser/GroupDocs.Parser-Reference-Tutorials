@@ -3,7 +3,6 @@ title: वर्ड दस्तावेज़ से पाठ निकाल
 linktitle: वर्ड दस्तावेज़ से पाठ निकालें
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके Word दस्तावेज़ों से टेक्स्ट निकालने का तरीका जानें। कोड उदाहरणों के साथ चरण-दर-चरण मार्गदर्शिका।
-type: docs
 weight: 15
 url: /hi/net/word-document-processing/extract-text-from-word-document/
 ---

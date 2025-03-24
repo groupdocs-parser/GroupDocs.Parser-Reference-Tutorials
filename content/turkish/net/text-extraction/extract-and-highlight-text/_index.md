@@ -3,7 +3,6 @@ title: Metni Çıkarma ve Vurgulama
 linktitle: Metni Çıkarma ve Vurgulama
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belgelerden metin çıkarmayı ve vurgulamayı öğrenin. .NET projelerinizde etkili metin çıkarma için kolay adımlar.
-type: docs
 weight: 11
 url: /tr/net/text-extraction/extract-and-highlight-text/
 ---

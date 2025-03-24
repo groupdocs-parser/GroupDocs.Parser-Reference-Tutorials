@@ -3,7 +3,6 @@ title: सटीक मोड में टेक्स्ट निकाले
 linktitle: सटीक मोड में टेक्स्ट निकालें
 second_title: GroupDocs.Parser .NET एपीआई
 description: सहज डेटा प्रोसेसिंग के लिए GroupDocs.Parser का उपयोग करके .NET में दस्तावेज़ों से टेक्स्ट को सटीक रूप से निकालने का तरीका जानें।
-type: docs
 weight: 18
 url: /hi/net/text-extraction/extract-text-in-accurate-mode/
 ---

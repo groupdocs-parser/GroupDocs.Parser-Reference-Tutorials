@@ -3,7 +3,6 @@ title: OCR'yi yönetme
 linktitle: OCR'yi yönetme
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak OCR'yi nasıl işleyeceğinizi öğrenin. Görüntülerden ve taranan belgelerden metni verimli bir şekilde çıkarın.
-type: docs
 weight: 11
 url: /tr/net/ocr-extraction/handling-ocr/
 ---

@@ -3,7 +3,6 @@ title: Document uit stroom laden
 linktitle: Document uit stroom laden
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u tekst uit verschillende documentformaten in .NET kunt extraheren met GroupDocs.Parser. Stapsgewijze handleiding met codevoorbeelden.
-type: docs
 weight: 12
 url: /nl/net/document-loading/load-document-from-stream/
 ---
@@ -61,4 +60,4 @@ Ja, GroupDocs.Parser is compatibel met zowel .NET Framework- als .NET Core-appli
 ### Hoe kan ik een tijdelijke licentie voor GroupDocs.Parser verkrijgen?
  Een tijdelijke licentie kunt u verkrijgen bij[hier](https://purchase.groupdocs.com/temporary-license/).
 ### Waar kan ik meer ondersteuning of documentatie vinden voor GroupDocs.Parser?
- Voor aanvullende ondersteuning kunt u terecht op de[GroupDocs.Parser-forum](https://forum.groupdocs.com/c/parser/17) of raadpleeg de[documentatie](https://reference.groupdocs.com/parser/net/).
+ Voor aanvullende ondersteuning kunt u terecht op de[GroupDocs.Parser-forum](https://forum.groupdocs.com/c/parser/17) of raadpleeg de[documentatie](https://tutorials.groupdocs.com/parser/net/).

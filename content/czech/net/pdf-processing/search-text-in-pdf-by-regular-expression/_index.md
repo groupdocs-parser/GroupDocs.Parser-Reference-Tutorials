@@ -3,7 +3,6 @@ title: Hledání textu v PDF regulárním výrazem
 linktitle: Hledání textu v PDF regulárním výrazem
 second_title: GroupDocs.Parser .NET API
 description: Vyhledejte konkrétní text v dokumentech PDF pomocí regulárních výrazů pomocí GroupDocs.Parser. Extrahujte, analyzujte a manipulujte s textem PDF bez námahy.
-type: docs
 weight: 19
 url: /cs/net/pdf-processing/search-text-in-pdf-by-regular-expression/
 ---
@@ -52,7 +51,7 @@ V tomto tutoriálu jsme prozkoumali, jak využít GroupDocs.Parser pro .NET k vy
 ### Dokáže GroupDocs.Parser zpracovat jiné formáty dokumentů kromě PDF?
 Ano, GroupDocs.Parser podporuje různé formáty dokumentů, jako je DOCX, XLSX, PPTX a další.
 ### Kde najdu další zdroje a podporu pro GroupDocs.Parser?
- Můžete navštívit[GroupDocs.Parser dokumentace](https://reference.groupdocs.com/parser/net/) a vyhledat pomoc od[fórum GroupDocs](https://forum.groupdocs.com/c/parser/17).
+ Můžete navštívit[GroupDocs.Parser dokumentace](https://tutorials.groupdocs.com/parser/net/) a vyhledat pomoc od[fórum GroupDocs](https://forum.groupdocs.com/c/parser/17).
 ### Je k dispozici bezplatná zkušební verze pro GroupDocs.Parser?
  Ano, máte přístup k a[zkušební verze zdarma](https://releases.groupdocs.com/) GroupDocs.Parser k prozkoumání jeho funkcí.
 ### Jak mohu získat dočasnou licenci pro GroupDocs.Parser?

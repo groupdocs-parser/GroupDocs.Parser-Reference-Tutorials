@@ -3,7 +3,6 @@ title: แยกรูปภาพออกจากเอกสาร
 linktitle: แยกรูปภาพออกจากเอกสาร
 second_title: GroupDocs.Parser .NET API
 description: แยกรูปภาพออกจากเอกสารได้อย่างง่ายดายโดยใช้ GroupDocs.Parser สำหรับ .NET ความสามารถในการประมวลผลเอกสารของคุณและปรับปรุงงานการแยกภาพได้อย่างมีประสิทธิภาพ
-type: docs
 weight: 11
 url: /th/net/image-extraction/extract-images-from-document/
 ---
@@ -67,7 +66,7 @@ GroupDocs.Parser รองรับการแยกรูปภาพจาก
 ### GroupDocs.Parser มีรุ่นทดลองใช้ฟรีหรือไม่
  ใช่ คุณสามารถเข้าถึง GroupDocs.Parser รุ่นทดลองใช้ฟรีได้จาก[เว็บไซต์](https://releases.groupdocs.com/).
 ### ฉันจะหาเอกสารสำหรับ GroupDocs.Parser ได้ที่ไหน
- สามารถดูเอกสารประกอบโดยละเอียดสำหรับ GroupDocs.Parser ได้[ที่นี่](https://reference.groupdocs.com/parser/net/).
+ สามารถดูเอกสารประกอบโดยละเอียดสำหรับ GroupDocs.Parser ได้[ที่นี่](https://tutorials.groupdocs.com/parser/net/).
 ### ฉันจะขอรับใบอนุญาตชั่วคราวสำหรับ GroupDocs.Parser ได้อย่างไร
  คุณสามารถขอรับใบอนุญาตชั่วคราวได้จาก[หน้าใบอนุญาตชั่วคราว](https://purchase.groupdocs.com/temporary-license/).
 ### ฉันจะรับการสนับสนุนสำหรับ GroupDocs.Parser ได้ที่ไหน

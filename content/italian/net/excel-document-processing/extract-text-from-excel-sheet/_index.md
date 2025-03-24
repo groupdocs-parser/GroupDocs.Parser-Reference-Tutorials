@@ -3,7 +3,6 @@ title: Estrai testo da un foglio Excel
 linktitle: Estrai testo da un foglio Excel
 second_title: API GroupDocs.Parser .NET
 description: Scopri come estrarre testo da fogli Excel utilizzando GroupDocs.Parser per .NET. Semplici passaggi per un'estrazione efficace del testo.
-type: docs
 weight: 14
 url: /it/net/excel-document-processing/extract-text-from-excel-sheet/
 ---

@@ -3,7 +3,6 @@ title: 画像をファイルに抽出する
 linktitle: 画像をファイルに抽出する
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して、PDF や DOCX などのさまざまなドキュメント タイプから画像を簡単に抽出します。ドキュメント解析タスクを簡素化します。
-type: docs
 weight: 13
 url: /ja/net/image-extraction/extract-images-to-files/
 ---

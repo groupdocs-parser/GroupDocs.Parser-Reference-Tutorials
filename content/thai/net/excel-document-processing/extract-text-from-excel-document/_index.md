@@ -3,7 +3,6 @@ title: แยกข้อความจากเอกสาร Excel
 linktitle: แยกข้อความจากเอกสาร Excel
 second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกข้อความจากเอกสาร Excel โดยใช้ GroupDocs.Parser สำหรับ .NET ในขั้นตอนง่ายๆ
-type: docs
 weight: 12
 url: /th/net/excel-document-processing/extract-text-from-excel-document/
 ---
@@ -58,7 +57,7 @@ Console.WriteLine(reader.ReadToEnd());
 ### GroupDocs.Parser มีรุ่นทดลองใช้ฟรีหรือไม่
  ใช่ คุณสามารถดาวน์โหลด GroupDocs.Parser รุ่นทดลองใช้ฟรีได้จาก[ที่นี่](https://releases.groupdocs.com/).
 ### ฉันจะหาเอกสารสำหรับ GroupDocs.Parser ได้ที่ไหน
- คุณสามารถดูเอกสารประกอบโดยละเอียดสำหรับ GroupDocs.Parser[ที่นี่](https://reference.groupdocs.com/parser/net/).
+ คุณสามารถดูเอกสารประกอบโดยละเอียดสำหรับ GroupDocs.Parser[ที่นี่](https://tutorials.groupdocs.com/parser/net/).
 ### ฉันจะรับการสนับสนุนสำหรับ GroupDocs.Parser ได้อย่างไร
 สำหรับการสนับสนุนและความช่วยเหลือเกี่ยวกับ GroupDocs.Parser โปรดไปที่[ฟอรัม GroupDocs](https://forum.groupdocs.com/c/parser/17).
 ### ฉันจะซื้อใบอนุญาตสำหรับ GroupDocs.Parser ได้ที่ไหน

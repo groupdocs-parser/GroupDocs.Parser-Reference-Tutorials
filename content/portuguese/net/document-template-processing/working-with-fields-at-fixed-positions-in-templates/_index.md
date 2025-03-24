@@ -3,7 +3,6 @@ title: Trabalhando com campos em posições fixas em modelos
 linktitle: Trabalhando com campos em posições fixas em modelos
 second_title: API GroupDocs.Parser .NET
 description: Aprenda como extrair dados de documentos usando GroupDocs.Parser for .NET. Tutorial abrangente com exemplos de código.
-type: docs
 weight: 11
 url: /pt/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
@@ -69,7 +68,7 @@ Neste tutorial, abordamos o processo de trabalhar com campos em posições fixas
 
 ## Perguntas frequentes
 ### O GroupDocs.Parser é compatível com todos os formatos de documento?
- GroupDocs.Parser oferece suporte a uma ampla variedade de formatos de arquivo, incluindo PDF, Microsoft Word, Excel, PowerPoint e muito mais. Consulte o[documentação](https://reference.groupdocs.com/parser/net/) para obter uma lista detalhada.
+ GroupDocs.Parser oferece suporte a uma ampla variedade de formatos de arquivo, incluindo PDF, Microsoft Word, Excel, PowerPoint e muito mais. Consulte o[documentação](https://tutorials.groupdocs.com/parser/net/) para obter uma lista detalhada.
 ### Como posso obter uma licença temporária para GroupDocs.Parser?
  Você pode obter uma licença temporária para fins de teste em[aqui](https://purchase.groupdocs.com/temporary-license/).
 ### Onde posso encontrar suporte para GroupDocs.Parser?

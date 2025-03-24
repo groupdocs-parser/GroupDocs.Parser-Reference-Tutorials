@@ -3,7 +3,6 @@ title: 정규식으로 PDF에서 텍스트 검색
 linktitle: 정규식으로 PDF에서 텍스트 검색
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser의 정규식을 사용하여 PDF 문서에서 특정 텍스트를 검색합니다. PDF 텍스트를 쉽게 추출, 분석 및 조작할 수 있습니다.
-type: docs
 weight: 19
 url: /ko/net/pdf-processing/search-text-in-pdf-by-regular-expression/
 ---
@@ -52,7 +51,7 @@ foreach (SearchResult result in searchResults)
 ### GroupDocs.Parser는 PDF 외에 다른 문서 형식을 처리할 수 있습니까?
 예, GroupDocs.Parser는 DOCX, XLSX, PPTX 등과 같은 다양한 문서 형식을 지원합니다.
 ### GroupDocs.Parser에 대한 추가 리소스와 지원은 어디서 찾을 수 있나요?
- 당신은 방문 할 수 있습니다[GroupDocs.Parser 문서](https://reference.groupdocs.com/parser/net/) 그리고 해당 기관의 도움을 구하세요.[GroupDocs 포럼](https://forum.groupdocs.com/c/parser/17).
+ 당신은 방문 할 수 있습니다[GroupDocs.Parser 문서](https://tutorials.groupdocs.com/parser/net/) 그리고 해당 기관의 도움을 구하세요.[GroupDocs 포럼](https://forum.groupdocs.com/c/parser/17).
 ### GroupDocs.Parser에 대한 무료 평가판이 있습니까?
  예, 액세스할 수 있습니다[무료 평가판](https://releases.groupdocs.com/) GroupDocs.Parser의 기능을 살펴보세요.
 ### GroupDocs.Parser의 임시 라이센스를 얻으려면 어떻게 해야 합니까?

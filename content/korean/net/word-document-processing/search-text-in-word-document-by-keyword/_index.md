@@ -3,7 +3,6 @@ title: 키워드로 Word 문서의 텍스트 검색
 linktitle: 키워드로 Word 문서의 텍스트 검색
 second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 Word 문서에서 텍스트를 검색하는 방법을 알아보세요. 특정 키워드를 효율적으로 추출합니다.
-type: docs
 weight: 18
 url: /ko/net/word-document-processing/search-text-in-word-document-by-keyword/
 ---

@@ -3,7 +3,6 @@ title: Ekstrak Teks dengan Deteksi Pengkodean
 linktitle: Ekstrak Teks dengan Deteksi Pengkodean
 second_title: GroupDocs.Parser .NET API
 description: Ekstrak teks dari dokumen dengan deteksi pengkodean menggunakan GroupDocs.Parser untuk .NET. Parsing berbagai format secara efisien di aplikasi .NET Anda.
-type: docs
 weight: 10
 url: /id/net/text-extraction/extract-text-with-encoding-detection/
 ---

@@ -3,7 +3,6 @@ title: Word文書からテキストを抽出する
 linktitle: Word文書からテキストを抽出する
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して Word 文書からテキストを抽出する方法を学習します。コード例を使用したステップバイステップ ガイド。
-type: docs
 weight: 15
 url: /ja/net/word-document-processing/extract-text-from-word-document/
 ---

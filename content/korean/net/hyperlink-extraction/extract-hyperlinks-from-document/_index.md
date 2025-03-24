@@ -3,7 +3,6 @@ title: 문서에서 하이퍼링크 추출
 linktitle: 문서에서 하이퍼링크 추출
 second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 문서에서 하이퍼링크를 추출하는 방법을 알아보세요. 이 간단한 가이드를 통해 C# 애플리케이션을 향상하세요.
-type: docs
 weight: 10
 url: /ko/net/hyperlink-extraction/extract-hyperlinks-from-document/
 ---
@@ -73,7 +72,7 @@ foreach (PageHyperlinkArea hyperlink in hyperlinks)
 ### GroupDocs.Parser에 대한 무료 평가판이 있습니까?
  예, GroupDocs.Parser 무료 평가판에 액세스할 수 있습니다.[여기](https://releases.groupdocs.com/).
 ### GroupDocs.Parser에 대한 설명서는 어디서 찾을 수 있나요?
- GroupDocs.Parser에 대한 자세한 문서를 찾을 수 있습니다.[여기](https://reference.groupdocs.com/parser/net/).
+ GroupDocs.Parser에 대한 자세한 문서를 찾을 수 있습니다.[여기](https://tutorials.groupdocs.com/parser/net/).
 ### GroupDocs.Parser의 임시 라이센스를 얻으려면 어떻게 해야 합니까?
  GroupDocs.Parser에 대한 임시 라이센스를 얻을 수 있습니다.[여기](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs는 문제 해결을 위한 지원을 제공합니까?

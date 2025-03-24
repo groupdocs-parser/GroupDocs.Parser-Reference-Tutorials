@@ -3,7 +3,6 @@ title: Arbeiten mit Feldern an verknüpften Positionen in Vorlagen
 linktitle: Arbeiten mit Feldern an verknüpften Positionen in Vorlagen
 second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET effizient Daten aus Dokumenten extrahieren. Schritt-für-Schritt-Anleitung mit Codebeispielen.
-type: docs
 weight: 12
 url: /de/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
 ---

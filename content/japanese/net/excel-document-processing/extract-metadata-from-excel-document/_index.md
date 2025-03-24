@@ -3,7 +3,6 @@ title: Excel ドキュメントからメタデータを抽出する
 linktitle: Excel ドキュメントからメタデータを抽出する
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して Excel ドキュメントからメタデータを抽出する方法を学習します。このステップバイステップのチュートリアルに従ってください。
-type: docs
 weight: 11
 url: /ja/net/excel-document-processing/extract-metadata-from-excel-document/
 ---

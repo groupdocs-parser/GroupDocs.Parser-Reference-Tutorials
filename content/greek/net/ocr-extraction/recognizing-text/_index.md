@@ -3,7 +3,6 @@ title: Αναγνώριση κειμένου
 linktitle: Αναγνώριση κειμένου
 second_title: GroupDocs.Parser .NET API
 description: Εξαγωγή κειμένου από διάφορες μορφές εγγράφων αποτελεσματικά με το GroupDocs.Parser για .NET. Εύκολη ενσωμάτωση και ισχυρές δυνατότητες OCR.
-type: docs
 weight: 12
 url: /el/net/ocr-extraction/recognizing-text/
 ---
@@ -57,7 +56,7 @@ using (Parser parser = new Parser("YourSampleFile.docx", settings))
 - `TextOptions` έχει ρυθμιστεί ώστε να ενεργοποιεί το OCR και να βελτιστοποιεί την εξαγωγή κειμένου.
 
 ## συμπέρασμα
- Συγχαρητήρια! Έχετε μάθει πώς να ενσωματώνετε το GroupDocs.Parser για .NET στα έργα σας για την αποτελεσματική εξαγωγή κειμένου. Εξερευνήστε το εκτενές[τεκμηρίωση](https://reference.groupdocs.com/parser/net/) για προηγμένες δυνατότητες και βελτιστοποιήσεις.
+ Συγχαρητήρια! Έχετε μάθει πώς να ενσωματώνετε το GroupDocs.Parser για .NET στα έργα σας για την αποτελεσματική εξαγωγή κειμένου. Εξερευνήστε το εκτενές[τεκμηρίωση](https://tutorials.groupdocs.com/parser/net/) για προηγμένες δυνατότητες και βελτιστοποιήσεις.
 
 ## Συχνές ερωτήσεις
 ### Είναι το GroupDocs.Parser κατάλληλο για εξαγωγή κειμένου από αρχεία PDF;

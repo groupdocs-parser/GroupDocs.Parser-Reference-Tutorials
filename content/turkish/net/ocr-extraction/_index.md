@@ -3,7 +3,6 @@ title: Optik Karakter Tanıma (OCR) Çıkarma
 linktitle: Optik Karakter Tanıma (OCR) Çıkarma
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET ile OCR'yi verimli bir şekilde işleyin ve görüntülerden ve belgelerden metin çıkarın. OCR yeteneklerinizi bugün geliştirin!
-type: docs
 weight: 28
 url: /tr/net/ocr-extraction/
 ---

@@ -3,7 +3,6 @@ title: Załaduj dokument z adresu URL
 linktitle: Załaduj dokument z adresu URL
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić tekst z dokumentów za pomocą GroupDocs.Parser dla .NET. W tym samouczku opisano krok po kroku ładowanie dokumentu z adresu URL i wyodrębnianie tekstu.
-type: docs
 weight: 13
 url: /pl/net/document-loading/load-document-from-url/
 ---
@@ -64,6 +63,6 @@ Tak, GroupDocs.Parser umożliwia wyodrębnianie metadanych, tekstu i innych info
 ### Czy dostępna jest wersja próbna programu GroupDocs.Parser?
  Tak, możesz pobrać bezpłatną wersję próbną GroupDocs.Parser ze strony[Tutaj](https://releases.groupdocs.com/).
 ### Gdzie mogę znaleźć dokumentację GroupDocs.Parser?
- Dostępna jest szczegółowa dokumentacja GroupDocs.Parser[Tutaj](https://reference.groupdocs.com/parser/net/).
+ Dostępna jest szczegółowa dokumentacja GroupDocs.Parser[Tutaj](https://tutorials.groupdocs.com/parser/net/).
 ### Jak mogę uzyskać pomoc techniczną dla GroupDocs.Parser?
 Możesz szukać pomocy technicznej i zadawać pytania na forum GroupDocs.Parser[Tutaj](https://forum.groupdocs.com/c/parser/17).

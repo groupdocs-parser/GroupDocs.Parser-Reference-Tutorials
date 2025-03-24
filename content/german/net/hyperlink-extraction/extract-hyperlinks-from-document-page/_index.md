@@ -3,7 +3,6 @@ title: Extrahieren Sie Hyperlinks aus der Dokumentseite
 linktitle: Extrahieren Sie Hyperlinks aus der Dokumentseite
 second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Hyperlinks aus Dokumenten extrahieren. Schritt-für-Schritt-Anleitung zur Hyperlink-Extraktion in C#.
-type: docs
 weight: 11
 url: /de/net/hyperlink-extraction/extract-hyperlinks-from-document-page/
 ---

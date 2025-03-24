@@ -3,7 +3,6 @@ title: Hledání textu v dokumentu aplikace Excel podle klíčového slova
 linktitle: Hledání textu v dokumentu aplikace Excel podle klíčového slova
 second_title: GroupDocs.Parser .NET API
 description: Naučte se vyhledávat text v dokumentech aplikace Excel pomocí GroupDocs.Parser for .NET. Integrujte pokročilé možnosti textového vyhledávání do svých aplikací .NET.
-type: docs
 weight: 16
 url: /cs/net/excel-document-processing/search-text-in-excel-document-by-keyword/
 ---
@@ -56,7 +55,7 @@ Ano, GroupDocs.Parser podporuje širokou škálu formátů dokumentů včetně W
 ### Je GroupDocs.Parser vhodný pro rozsáhlé úlohy zpracování dokumentů?
 Absolutně! GroupDocs.Parser je navržen tak, aby efektivně zpracovával velké dokumenty a umožňuje robustní funkce extrakce textu a vyhledávání.
 ### Kde najdu další dokumentaci a podporu pro GroupDocs.Parser pro .NET?
- Navštivte[GroupDocs.Parser dokumentace](https://reference.groupdocs.com/parser/net/) pro podrobnou referenci API a prozkoumejte[Fórum GroupDocs](https://forum.groupdocs.com/c/parser/17) za podporu komunity.
+ Navštivte[GroupDocs.Parser dokumentace](https://tutorials.groupdocs.com/parser/net/) pro podrobnou referenci API a prozkoumejte[Fórum GroupDocs](https://forum.groupdocs.com/c/parser/17) za podporu komunity.
 ### Mohu GroupDocs.Parser for .NET vyzkoušet před nákupem?
  Ano, funkce můžete prozkoumat pomocí a[zkušební verze zdarma](https://releases.groupdocs.com/) před nákupem.
 ### Jak mohu získat dočasnou licenci pro GroupDocs.Parser?

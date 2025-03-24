@@ -3,7 +3,6 @@ title: Düz Metni Çıkart
 linktitle: Düz Metni Çıkart
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belgelerden düz metin çıkarmayı öğrenin. Metin çıkarmayı uygulamalarınıza entegre etmek için kolay adımlar.
-type: docs
 weight: 14
 url: /tr/net/formatted-text-extraction/extract-plain-text/
 ---

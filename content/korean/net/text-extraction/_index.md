@@ -3,7 +3,6 @@ title: 텍스트 추출
 linktitle: 텍스트 추출
 second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 효율적인 텍스트 추출 기술을 활용하세요. 손쉽게 텍스트를 추출하고 강조 표시하고 검색하는 방법을 알아보세요.
-type: docs
 weight: 20
 url: /ko/net/text-extraction/
 ---

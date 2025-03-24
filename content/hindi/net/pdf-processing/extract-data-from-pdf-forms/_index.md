@@ -3,7 +3,6 @@ title: पीडीएफ फॉर्म से डेटा निकाले
 linktitle: पीडीएफ फॉर्म से डेटा निकालें
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके PDF फ़ॉर्म से डेटा निकालने का तरीका जानें। कोड उदाहरणों और FAQ के साथ चरण-दर-चरण मार्गदर्शिका।
-type: docs
 weight: 11
 url: /hi/net/pdf-processing/extract-data-from-pdf-forms/
 ---
@@ -79,7 +78,7 @@ Console.WriteLine("Description: {0}", rec.Description);
 ### क्या मैं GroupDocs.Parser का उपयोग करके छवियां और मेटाडेटा निकाल सकता हूं?
 हां, GroupDocs.Parser दस्तावेज़ों से छवियों, मेटाडेटा और पाठ को निकालने की अनुमति देता है।
 ### मैं GroupDocs.Parser के लिए अतिरिक्त सहायता या दस्तावेज़ कहां पा सकता हूं?
- आप यहां जा सकते हैं[GroupDocs.Parser दस्तावेज़ीकरण](https://reference.groupdocs.com/parser/net/) विस्तृत जानकारी और उदाहरण के लिए.
+ आप यहां जा सकते हैं[GroupDocs.Parser दस्तावेज़ीकरण](https://tutorials.groupdocs.com/parser/net/) विस्तृत जानकारी और उदाहरण के लिए.
 ### क्या GroupDocs.Parser के लिए कोई निःशुल्क परीक्षण उपलब्ध है?
  हां, आप इसका उपयोग कर सकते हैं[GroupDocs.Parser का निःशुल्क परीक्षण](https://releases.groupdocs.com/) इसकी विशेषताओं का पता लगाने के लिए।
 ### मैं GroupDocs.Parser के लिए अस्थायी लाइसेंस कैसे प्राप्त कर सकता हूं?

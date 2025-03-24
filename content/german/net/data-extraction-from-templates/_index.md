@@ -3,7 +3,6 @@ title: Datenextraktion aus Vorlagen
 linktitle: Datenextraktion aus Vorlagen
 second_title: GroupDocs.Parser .NET API
 description: Extrahieren Sie Daten mühelos mit GroupDocs.Parser für .NET. Erfahren Sie, wie Sie bestimmte Felder abrufen, Daten durchlaufen und mit Tabellen in extrahierten Inhalten arbeiten.
-type: docs
 weight: 26
 url: /de/net/data-extraction-from-templates/
 ---

@@ -3,7 +3,6 @@ title: Αναγνώριση κειμένου σε συγκεκριμένες π�
 linktitle: Αναγνώριση κειμένου σε συγκεκριμένες περιοχές
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να χρησιμοποιείτε το GroupDocs.Parser για .NET για εξαγωγή κειμένου από συγκεκριμένες περιοχές σε έγγραφα με δυνατότητες OCR.
-type: docs
 weight: 13
 url: /el/net/ocr-extraction/recognizing-text-in-specific-areas/
 ---

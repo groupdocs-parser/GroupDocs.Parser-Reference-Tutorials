@@ -3,7 +3,6 @@ title: Word Belgesinden İçindekiler Tablosunu Çıkarma
 linktitle: Word Belgesinden İçindekiler Tablosunu Çıkarma
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak Word belgelerinden İçindekiler Tablosunu (TOC) program aracılığıyla nasıl ayıklayacağınızı öğrenin.
-type: docs
 weight: 13
 url: /tr/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
@@ -64,7 +63,7 @@ Evet, GroupDocs.Parser, PDF, EPUB, Word, Excel, PowerPoint ve daha fazlasını i
 ### GroupDocs.Parser büyük belgeleri işlemeye uygun mu?
 Evet, GroupDocs.Parser, metin çıkarma, meta veri çıkarma ve yapılandırılmış veri çıkarma gibi özelliklerle büyük belgeleri verimli bir şekilde işlemek için optimize edilmiştir.
 ### GroupDocs.Parser için daha fazla belge ve öğreticiyi nerede bulabilirim?
- Ziyaret edin[GroupDocs.Parser belgeleri](https://reference.groupdocs.com/parser/net/) ayrıntılı API referansları ve eğitimleri için.
+ Ziyaret edin[GroupDocs.Parser belgeleri](https://tutorials.groupdocs.com/parser/net/) ayrıntılı API referansları ve eğitimleri için.
 ### GroupDocs.Parser için nasıl destek alabilirim?
  Katılmak[GroupDocs.Parser forumu](https://forum.groupdocs.com/c/parser/17) Soru sormak ve toplulukla etkileşime geçmek.
 ### GroupDocs.Parser'ın deneme sürümü mevcut mu?

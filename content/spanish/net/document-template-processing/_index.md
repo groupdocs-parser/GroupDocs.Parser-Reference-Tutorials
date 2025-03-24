@@ -3,7 +3,6 @@ title: Procesamiento de plantillas de documentos
 linktitle: Procesamiento de plantillas de documentos
 second_title: API GroupDocs.Parser .NET
 description: Extraiga sin esfuerzo datos estructurados de plantillas de documentos con GroupDocs.Parser para .NET. Aprenda a trabajar con códigos de barras, campos, expresiones regulares y diseños de tablas.
-type: docs
 weight: 22
 url: /es/net/document-template-processing/
 ---

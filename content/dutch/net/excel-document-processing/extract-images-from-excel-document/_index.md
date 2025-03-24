@@ -3,7 +3,6 @@ title: Afbeeldingen uit Excel-document extraheren
 linktitle: Afbeeldingen uit Excel-document extraheren
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u afbeeldingen uit Excel-documenten kunt extraheren met GroupDocs.Parser voor .NET. Stapsgewijze handleiding met codevoorbeelden.
-type: docs
 weight: 10
 url: /nl/net/excel-document-processing/extract-images-from-excel-document/
 ---
@@ -66,4 +65,4 @@ A: Ja, GroupDocs.Parser ondersteunt een breed scala aan documentformaten, waaron
 ### Vraag: Kan ik GroupDocs.Parser uitproberen voordat ik een licentie aanschaf?
  A: Ja, u kunt een[gratis proefperiode](https://releases.groupdocs.com/) om GroupDocs.Parser te evalueren.
 ### Vraag: Waar kan ik gedetailleerde documentatie voor GroupDocs.Parser vinden?
- A: Raadpleeg de uitgebreide[documentatie](https://reference.groupdocs.com/parser/net/) voor gedetailleerde informatie over het gebruik van GroupDocs.Parser.
+ A: Raadpleeg de uitgebreide[documentatie](https://tutorials.groupdocs.com/parser/net/) voor gedetailleerde informatie over het gebruik van GroupDocs.Parser.

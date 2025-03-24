@@ -3,7 +3,6 @@ title: Tải tài liệu từ luồng
 linktitle: Tải tài liệu từ luồng
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất văn bản từ các định dạng tài liệu khác nhau trong .NET bằng GroupDocs.Parser. Hướng dẫn từng bước với các ví dụ về mã.
-type: docs
 weight: 12
 url: /vi/net/document-loading/load-document-from-stream/
 ---
@@ -61,4 +60,4 @@ Có, GroupDocs.Parser tương thích với cả ứng dụng .NET Framework và 
 ### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho GroupDocs.Parser?
  Bạn có thể xin giấy phép tạm thời từ[đây](https://purchase.groupdocs.com/temporary-license/).
 ### Tôi có thể tìm thêm hỗ trợ hoặc tài liệu cho GroupDocs.Parser ở đâu?
- Để được hỗ trợ thêm, hãy truy cập[Diễn đàn GroupDocs.Parser](https://forum.groupdocs.com/c/parser/17) hoặc tham khảo[tài liệu](https://reference.groupdocs.com/parser/net/).
+ Để được hỗ trợ thêm, hãy truy cập[Diễn đàn GroupDocs.Parser](https://forum.groupdocs.com/c/parser/17) hoặc tham khảo[tài liệu](https://tutorials.groupdocs.com/parser/net/).

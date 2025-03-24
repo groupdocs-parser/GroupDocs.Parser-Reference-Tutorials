@@ -3,7 +3,6 @@ title: Extrahera innehållsförteckning från Word-dokument
 linktitle: Extrahera innehållsförteckning från Word-dokument
 second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du extraherar innehållsförteckning (TOC) från Word-dokument programmatiskt med GroupDocs.Parser för .NET.
-type: docs
 weight: 13
 url: /sv/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
@@ -64,7 +63,7 @@ Ja, GroupDocs.Parser stöder ett brett utbud av dokumentformat, inklusive PDF, E
 ### Är GroupDocs.Parser lämplig för behandling av stora dokument?
 Ja, GroupDocs.Parser är optimerad för att hantera stora dokument effektivt, med funktioner som textextraktion, metadataextraktion och strukturerad dataextraktion.
 ### Var kan jag hitta mer dokumentation och handledning för GroupDocs.Parser?
- Besök[GroupDocs.Parser dokumentation](https://reference.groupdocs.com/parser/net/) för detaljerade API-referenser och handledning.
+ Besök[GroupDocs.Parser dokumentation](https://tutorials.groupdocs.com/parser/net/) för detaljerade API-referenser och handledning.
 ### Hur kan jag få support för GroupDocs.Parser?
  Gå med i[GroupDocs.Parser-forum](https://forum.groupdocs.com/c/parser/17) att ställa frågor och interagera med samhället.
 ### Finns det en testversion tillgänglig för GroupDocs.Parser?

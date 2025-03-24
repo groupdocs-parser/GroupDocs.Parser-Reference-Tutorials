@@ -3,7 +3,6 @@ title: 일반 텍스트 추출
 linktitle: 일반 텍스트 추출
 second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 문서에서 일반 텍스트를 추출하는 방법을 알아보세요. 애플리케이션에 텍스트 추출을 통합하는 쉬운 단계입니다.
-type: docs
 weight: 14
 url: /ko/net/formatted-text-extraction/extract-plain-text/
 ---

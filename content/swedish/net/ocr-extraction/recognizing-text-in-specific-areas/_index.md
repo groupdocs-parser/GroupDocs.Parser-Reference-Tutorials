@@ -3,7 +3,6 @@ title: Känna igen text i specifika områden
 linktitle: Känna igen text i specifika områden
 second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du använder GroupDocs.Parser för .NET för att extrahera text från specifika områden i dokument med OCR-funktioner.
-type: docs
 weight: 13
 url: /sv/net/ocr-extraction/recognizing-text-in-specific-areas/
 ---

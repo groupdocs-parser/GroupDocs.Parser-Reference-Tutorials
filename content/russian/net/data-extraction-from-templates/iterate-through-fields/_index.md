@@ -3,7 +3,6 @@ title: Перебор полей
 linktitle: Перебор полей
 second_title: GroupDocs.Parser .NET API
 description: Узнайте, как извлекать структурированные данные из документов с помощью GroupDocs.Parser для .NET. Расширьте возможности своих .NET-приложений с помощью возможностей извлечения данных из документов.
-type: docs
 weight: 11
 url: /ru/net/data-extraction-from-templates/iterate-through-fields/
 ---

@@ -3,7 +3,6 @@ title: 超链接提取
 linktitle: 超链接提取
 second_title: GroupDocs.Parser .NET API
 description: 使用 GroupDocs.Parser 轻松从 .NET 中的文档中提取超链接。使用超链接提取的分步指南增强您的 C# 应用程序。
-type: docs
 weight: 25
 url: /zh/net/hyperlink-extraction/
 ---

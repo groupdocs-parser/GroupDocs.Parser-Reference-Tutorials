@@ -3,7 +3,6 @@ title: पाठ निष्कर्षण
 linktitle: पाठ निष्कर्षण
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser के साथ कुशल टेक्स्ट निष्कर्षण तकनीकों को अनलॉक करें। आसानी से टेक्स्ट निकालना, हाइलाइट करना और खोजना सीखें।
-type: docs
 weight: 20
 url: /hi/net/text-extraction/
 ---

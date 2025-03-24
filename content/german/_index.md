@@ -3,7 +3,6 @@ title: Erlangen Sie Meisterschaft in der Dokumentanalyse mit GroupDocs.Parser
 linktitle: GroupDocs.Parser-Tutorials
 additionalTitle: GroupDocs API-Referenzen
 description: Schalten Sie effiziente Datenextraktionstechniken mit GroupDocs.Parser für .NET und Java frei. Entdecken Sie Tutorials zur Text-, Tabellen- und Bildextraktion und mehr.
-type: docs
 weight: 11
 url: /de/
 is_root: true

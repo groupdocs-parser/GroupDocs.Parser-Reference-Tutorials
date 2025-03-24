@@ -3,7 +3,6 @@ title: Extrahujte tabulky z dokumentu
 linktitle: Extrahujte tabulky z dokumentu
 second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat tabulky z dokumentů pomocí Groupdocs.Parser for .NET. Postupujte podle podrobného průvodce integrací této funkce.
-type: docs
 weight: 10
 url: /cs/net/table-extraction/extract-tables-from-document/
 ---

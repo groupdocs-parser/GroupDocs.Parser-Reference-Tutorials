@@ -3,7 +3,6 @@ title: プレーンテキストの抽出
 linktitle: プレーンテキストの抽出
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用してドキュメントからプレーン テキストを抽出する方法を学びます。テキスト抽出をアプリケーションに統合するための簡単な手順です。
-type: docs
 weight: 14
 url: /ja/net/formatted-text-extraction/extract-plain-text/
 ---

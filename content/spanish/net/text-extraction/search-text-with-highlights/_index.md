@@ -3,7 +3,6 @@ title: Buscar texto con resaltados
 linktitle: Buscar texto con resaltados
 second_title: API GroupDocs.Parser .NET
 description: Aprenda a buscar y resaltar texto en documentos usando GroupDocs.Parser para .NET. Extraiga información valiosa de manera eficiente.
-type: docs
 weight: 24
 url: /es/net/text-extraction/search-text-with-highlights/
 ---

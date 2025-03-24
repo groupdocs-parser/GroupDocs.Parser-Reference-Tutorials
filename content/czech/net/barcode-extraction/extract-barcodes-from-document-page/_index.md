@@ -3,7 +3,6 @@ title: Extrahujte čárové kódy ze stránky dokumentu
 linktitle: Extrahujte čárové kódy ze stránky dokumentu
 second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat čárové kódy ze stránek dokumentů pomocí GroupDocs.Parser for .NET. Tento tutoriál poskytuje podrobné pokyny pro extrakci čárového kódu.
-type: docs
 weight: 12
 url: /cs/net/barcode-extraction/extract-barcodes-from-document-page/
 ---
@@ -79,7 +78,7 @@ V tomto tutoriálu jste se naučili, jak používat GroupDocs.Parser pro .NET k 
 ### FAQ
 
 ### Otázka: Jaké formáty dokumentů podporuje GroupDocs.Parser?
- GroupDocs.Parser podporuje širokou škálu formátů, včetně DOCX, PDF, XLSX, PPTX a dalších. Odkazovat na[dokumentace](https://reference.groupdocs.com/parser/net/)pro úplný seznam.
+ GroupDocs.Parser podporuje širokou škálu formátů, včetně DOCX, PDF, XLSX, PPTX a dalších. Odkazovat na[dokumentace](https://tutorials.groupdocs.com/parser/net/)pro úplný seznam.
 
 ### Otázka: Mohu extrahovat metadata spolu s čárovými kódy pomocí GroupDocs.Parser?
 Ano, GroupDocs.Parser umožňuje extrahovat metadata, text, obrázky a čárové kódy z dokumentů a poskytuje tak komplexní možnosti analýzy dokumentů.

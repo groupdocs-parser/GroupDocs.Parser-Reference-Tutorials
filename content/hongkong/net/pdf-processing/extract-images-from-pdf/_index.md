@@ -3,7 +3,6 @@ title: 從 PDF 中提取圖像
 linktitle: 從 PDF 中提取圖像
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 從 PDF 文件中擷取影像。帶有程式碼範例的分步指南。
-type: docs
 weight: 12
 url: /zh-hant/net/pdf-processing/extract-images-from-pdf/
 ---

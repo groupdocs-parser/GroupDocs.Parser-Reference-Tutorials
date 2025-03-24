@@ -3,7 +3,6 @@ title: Excel 문서에서 메타데이터 추출
 linktitle: Excel 문서에서 메타데이터 추출
 second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 Excel 문서에서 메타데이터를 추출하는 방법을 알아보세요. 이 단계별 튜토리얼을 따르십시오.
-type: docs
 weight: 11
 url: /ko/net/excel-document-processing/extract-metadata-from-excel-document/
 ---

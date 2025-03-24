@@ -3,7 +3,6 @@ title: Szöveg kibontása egy adott oldalról a Word-dokumentumban
 linktitle: Szöveg kibontása egy adott oldalról a Word-dokumentumban
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki szöveget a Word dokumentumok adott oldalairól a GroupDocs.Parser for .NET segítségével. Szövegkivonatolási képességek integrálása a .NET-be.
-type: docs
 weight: 17
 url: /hu/net/word-document-processing/extract-text-from-specific-page-in-word-document/
 ---

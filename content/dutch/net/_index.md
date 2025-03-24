@@ -1,7 +1,6 @@
 ---
 title: Zelfstudies en voorbeelden van GroupDocs.Parser voor .NET
 linktitle: GroupDocs.Parser voor .NET-zelfstudies
-type: docs
 weight: 10
 url: /nl/net/
 description: Ontgrendel efficiënte technieken voor tekstextractie met GroupDocs.Parser voor .NET. Extraheer, markeer en zoek tekst naadloos voor een betere documentverwerking.

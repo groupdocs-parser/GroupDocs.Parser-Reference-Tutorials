@@ -3,7 +3,6 @@ title: HTML 콘텐츠 추출
 linktitle: HTML 콘텐츠 추출
 second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 문서에서 HTML 콘텐츠를 추출하는 방법을 알아보세요. 코드 예제와 단계별 지침이 포함된 따라하기 쉬운 튜토리얼입니다.
-type: docs
 weight: 12
 url: /ko/net/formatted-text-extraction/extract-html-content/
 ---

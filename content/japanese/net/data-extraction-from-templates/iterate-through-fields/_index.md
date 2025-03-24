@@ -3,7 +3,6 @@ title: フィールドを反復処理する
 linktitle: フィールドを反復処理する
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用してドキュメントから構造化データを抽出する方法を学習します。ドキュメント データ抽出機能を使用して .NET アプリケーションを強化します。
-type: docs
 weight: 11
 url: /ja/net/data-extraction-from-templates/iterate-through-fields/
 ---

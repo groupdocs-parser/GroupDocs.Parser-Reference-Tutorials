@@ -3,7 +3,6 @@ title: 通过正则表达式 (Regex) 搜索文本
 linktitle: 通过正则表达式 (Regex) 搜索文本
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 在文档中使用正则表达式搜索文本。轻松提取特定内容。
-type: docs
 weight: 23
 url: /zh/net/text-extraction/search-text-by-regex/
 ---

@@ -3,7 +3,6 @@ title: 處理 OCR
 linktitle: 處理 OCR
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 處理 OCR。有效率地從圖像和掃描文件中提取文字。
-type: docs
 weight: 11
 url: /zh-hant/net/ocr-extraction/handling-ocr/
 ---

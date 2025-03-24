@@ -3,7 +3,6 @@ title: Извлечь текст с определенной страницы в
 linktitle: Извлечь текст с определенной страницы в документе Word
 second_title: GroupDocs.Parser .NET API
 description: Узнайте, как извлечь текст из определенных страниц в документах Word с помощью GroupDocs.Parser для .NET. Интегрируйте возможности извлечения текста в свою .NET.
-type: docs
 weight: 17
 url: /ru/net/word-document-processing/extract-text-from-specific-page-in-word-document/
 ---

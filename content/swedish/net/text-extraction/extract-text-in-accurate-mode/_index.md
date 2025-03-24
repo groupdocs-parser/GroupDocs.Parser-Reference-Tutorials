@@ -3,7 +3,6 @@ title: Extrahera text i exakt läge
 linktitle: Extrahera text i exakt läge
 second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du exakt extraherar text från dokument i .NET med GroupDocs.Parser för sömlös databearbetning.
-type: docs
 weight: 18
 url: /sv/net/text-extraction/extract-text-in-accurate-mode/
 ---

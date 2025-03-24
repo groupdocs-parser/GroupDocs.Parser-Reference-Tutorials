@@ -3,7 +3,6 @@ title: 從 URL 載入文檔
 linktitle: 從 URL 載入文檔
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 從文件中擷取文字。本教學介紹從 URL 載入文件並逐步提取文字。
-type: docs
 weight: 13
 url: /zh-hant/net/document-loading/load-document-from-url/
 ---
@@ -64,6 +63,6 @@ Console.WriteLine(reader == null ? "Text extraction isn't supported" : reader.Re
 ### GroupDocs.Parser 是否有試用版？
 是的，您可以從以下位置取得 GroupDocs.Parser 的免費試用版[這裡](https://releases.groupdocs.com/).
 ### 在哪裡可以找到 GroupDocs.Parser 的文檔？
-提供了 GroupDocs.Parser 的詳細文檔[這裡](https://reference.groupdocs.com/parser/net/).
+提供了 GroupDocs.Parser 的詳細文檔[這裡](https://tutorials.groupdocs.com/parser/net/).
 ### 如何獲得 GroupDocs.Parser 的技術支援？
 您可以在 GroupDocs.Parser 論壇上尋求技術支援並提出問題[這裡](https://forum.groupdocs.com/c/parser/17).

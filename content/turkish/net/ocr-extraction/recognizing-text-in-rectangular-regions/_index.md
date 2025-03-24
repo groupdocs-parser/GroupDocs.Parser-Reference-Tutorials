@@ -3,7 +3,6 @@ title: Dikdörtgen Bölgelerdeki Metni Tanıma
 linktitle: Dikdörtgen Bölgelerdeki Metni Tanıma
 second_title: GroupDocs.Parser .NET API'si
 description: OCR özelliklerine sahip GroupDocs.Parser for .NET'i kullanarak belgelerin belirli bölgelerindeki metni nasıl tanıyacağınızı öğrenin.
-type: docs
 weight: 14
 url: /tr/net/ocr-extraction/recognizing-text-in-rectangular-regions/
 ---

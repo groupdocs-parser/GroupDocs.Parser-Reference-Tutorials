@@ -3,7 +3,6 @@ title: Word Belgesinden Meta Verileri Çıkarma
 linktitle: Word Belgesinden Meta Verileri Çıkarma
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak Word belgelerinden meta verileri nasıl çıkaracağınızı öğrenin. Belge bilgilerini ayrıştırmak ve almak için kolay adımlar.
-type: docs
 weight: 12
 url: /tr/net/word-document-processing/extract-metadata-from-word-document/
 ---
@@ -55,7 +54,7 @@ Bu öğreticide, Word belgelerinden meta verileri basit ve verimli bir şekilde 
 ### .NET için GroupDocs.Parser nedir?
 GroupDocs.Parser for .NET, geliştiricilerin program aracılığıyla çeşitli belge biçimlerinden metin ve meta verileri ayıklamasına olanak tanıyan bir belge ayrıştırma kitaplığıdır.
 ### GroupDocs.Parser belgelerini nerede bulabilirim?
- Şuraya başvurabilirsiniz:[dokümantasyon](https://reference.groupdocs.com/parser/net/) .NET için GroupDocs.Parser'ın kullanımına ilişkin ayrıntılı bilgi için.
+ Şuraya başvurabilirsiniz:[dokümantasyon](https://tutorials.groupdocs.com/parser/net/) .NET için GroupDocs.Parser'ın kullanımına ilişkin ayrıntılı bilgi için.
 ### GroupDocs.Parser'ın ücretsiz deneme sürümünü nasıl edinebilirim?
  GroupDocs.Parser'ın ücretsiz deneme sürümünü şu adresten indirebilirsiniz:[sürümler sayfası](https://releases.groupdocs.com/).
 ### GroupDocs.Parser ticari kullanıma uygun mu?

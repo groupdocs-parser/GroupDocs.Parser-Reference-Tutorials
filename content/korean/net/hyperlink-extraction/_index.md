@@ -3,7 +3,6 @@ title: 하이퍼링크 추출
 linktitle: 하이퍼링크 추출
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser를 사용하면 .NET 문서에서 하이퍼링크를 쉽게 추출할 수 있습니다. 하이퍼링크 추출을 위한 단계별 가이드를 통해 C# 애플리케이션을 향상하세요.
-type: docs
 weight: 25
 url: /ko/net/hyperlink-extraction/
 ---

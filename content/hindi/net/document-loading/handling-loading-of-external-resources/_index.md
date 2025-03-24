@@ -3,7 +3,6 @@ title: बाह्य संसाधनों का लोडिंग प्
 linktitle: बाह्य संसाधनों का लोडिंग प्रबंधन
 second_title: GroupDocs.Parser .NET एपीआई
 description: कुशल दस्तावेज़ पार्सिंग और निष्कर्षण के लिए GroupDocs.Parser का उपयोग करके .NET में बाहरी संसाधनों को संभालना सीखें।
-type: docs
 weight: 10
 url: /hi/net/document-loading/handling-loading-of-external-resources/
 ---
@@ -66,7 +65,7 @@ GroupDocs.Parser for .NET दस्तावेजों के भीतर ब
 ### क्या मैं GroupDocs.Parser का उपयोग करके छवियों के साथ पाठ निकाल सकता हूँ?
 बिल्कुल, GroupDocs.Parser समर्थित दस्तावेज़ प्रारूपों से पाठ और छवियों दोनों को निकालने की अनुमति देता है।
 ### मैं GroupDocs.Parser के लिए विस्तृत दस्तावेज़ कहां पा सकता हूं?
- पता लगाएं[प्रलेखन](https://reference.groupdocs.com/parser/net/) व्यापक गाइड और एपीआई संदर्भ के लिए.
+ पता लगाएं[प्रलेखन](https://tutorials.groupdocs.com/parser/net/) व्यापक गाइड और एपीआई संदर्भ के लिए.
 ### मैं GroupDocs.Parser के लिए अस्थायी लाइसेंस कैसे प्राप्त करूं?
  आप अस्थायी लाइसेंस प्राप्त कर सकते हैं[ग्रुपडॉक्स खरीद पृष्ठ](https://purchase.groupdocs.com/temporary-license/).
 ### अगर मुझे GroupDocs.Parser के साथ समस्या आती है तो मैं सहायता कहां से प्राप्त कर सकता हूं?

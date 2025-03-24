@@ -3,7 +3,6 @@ title: GroupDocs.Parser でドキュメント解析のスキルを習得
 linktitle: GroupDocs.Parser チュートリアル
 additionalTitle: GroupDocs API リファレンス
 description: GroupDocs.Parser for .NET & Java で効率的なデータ抽出テクニックを習得しましょう。テキスト、表、画像抽出などに関するチュートリアルをご覧ください。
-type: docs
 weight: 11
 url: /ja/
 is_root: true

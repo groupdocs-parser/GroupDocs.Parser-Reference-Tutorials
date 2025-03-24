@@ -3,7 +3,6 @@ title: 以原始模式從頁面中提取文本
 linktitle: 以原始模式從頁面中提取文本
 second_title: GroupDocs.Parser .NET API
 description: 在這個綜合教程中學習使用 Groupdocs.Parser for .NET 從文件頁面中高效提取文字。
-type: docs
 weight: 17
 url: /zh-hant/net/text-extraction/extract-text-from-page-in-raw-mode/
 ---

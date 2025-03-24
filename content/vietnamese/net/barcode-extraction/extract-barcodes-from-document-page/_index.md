@@ -3,7 +3,6 @@ title: Trích xuất mã vạch từ trang tài liệu
 linktitle: Trích xuất mã vạch từ trang tài liệu
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất mã vạch từ các trang tài liệu bằng GroupDocs.Parser cho .NET. Hướng dẫn này cung cấp hướng dẫn từng bước để trích xuất mã vạch.
-type: docs
 weight: 12
 url: /vi/net/barcode-extraction/extract-barcodes-from-document-page/
 ---
@@ -79,7 +78,7 @@ Trong hướng dẫn này, bạn đã học cách sử dụng GroupDocs.Parser c
 ### Câu hỏi thường gặp
 
 ### Câu hỏi: GroupDocs.Parser hỗ trợ những định dạng tài liệu nào?
- GroupDocs.Parser hỗ trợ nhiều định dạng, bao gồm DOCX, PDF, XLSX, PPTX, v.v. Tham khảo đến[tài liệu](https://reference.groupdocs.com/parser/net/)để có danh sách đầy đủ.
+ GroupDocs.Parser hỗ trợ nhiều định dạng, bao gồm DOCX, PDF, XLSX, PPTX, v.v. Tham khảo đến[tài liệu](https://tutorials.groupdocs.com/parser/net/)để có danh sách đầy đủ.
 
 ### Câu hỏi: Tôi có thể trích xuất siêu dữ liệu cùng với mã vạch bằng GroupDocs.Parser không?
 Có, GroupDocs.Parser cho phép bạn trích xuất siêu dữ liệu, văn bản, hình ảnh và mã vạch từ tài liệu, cung cấp khả năng phân tích tài liệu toàn diện.

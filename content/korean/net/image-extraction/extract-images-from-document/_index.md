@@ -3,7 +3,6 @@ title: 문서에서 이미지 추출
 linktitle: 문서에서 이미지 추출
 second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 문서에서 이미지를 쉽게 추출할 수 있습니다. 문서 처리 기능과 이미지 추출 작업을 효율적으로 간소화합니다.
-type: docs
 weight: 11
 url: /ko/net/image-extraction/extract-images-from-document/
 ---
@@ -67,7 +66,7 @@ GroupDocs.Parser는 PDF, DOCX, XLSX 등을 포함한 다양한 형식의 이미�
 ### GroupDocs.Parser에 대한 무료 평가판이 있습니까?
  예, 다음에서 GroupDocs.Parser 무료 평가판에 액세스할 수 있습니다.[웹사이트](https://releases.groupdocs.com/).
 ### GroupDocs.Parser에 대한 설명서는 어디서 찾을 수 있나요?
- GroupDocs.Parser에 대한 자세한 문서를 찾을 수 있습니다.[여기](https://reference.groupdocs.com/parser/net/).
+ GroupDocs.Parser에 대한 자세한 문서를 찾을 수 있습니다.[여기](https://tutorials.groupdocs.com/parser/net/).
 ### GroupDocs.Parser의 임시 라이센스를 얻으려면 어떻게 해야 합니까?
  임시면허를 취득할 수 있습니다.[임시 라이센스 페이지](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Parser에 대한 지원은 어디서 받을 수 있나요?

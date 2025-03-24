@@ -3,7 +3,6 @@ title: Extraia hiperlinks do documento
 linktitle: Extraia hiperlinks do documento
 second_title: API GroupDocs.Parser .NET
 description: Aprenda como extrair hiperlinks de documentos usando GroupDocs.Parser for .NET. Aprimore seus aplicativos C# com este guia simples.
-type: docs
 weight: 10
 url: /pt/net/hyperlink-extraction/extract-hyperlinks-from-document/
 ---
@@ -73,7 +72,7 @@ Sim, GroupDocs.Parser oferece suporte à extração de hiperlinks de uma ampla v
 ### Existe um teste gratuito disponível para GroupDocs.Parser?
  Sim, você pode acessar uma avaliação gratuita do GroupDocs.Parser[aqui](https://releases.groupdocs.com/).
 ### Onde posso encontrar documentação para GroupDocs.Parser?
- Documentação detalhada para GroupDocs.Parser pode ser encontrada[aqui](https://reference.groupdocs.com/parser/net/).
+ Documentação detalhada para GroupDocs.Parser pode ser encontrada[aqui](https://tutorials.groupdocs.com/parser/net/).
 ### Como posso obter uma licença temporária para GroupDocs.Parser?
  Você pode obter uma licença temporária para GroupDocs.Parser[aqui](https://purchase.groupdocs.com/temporary-license/).
 ### O GroupDocs oferece suporte para solução de problemas?

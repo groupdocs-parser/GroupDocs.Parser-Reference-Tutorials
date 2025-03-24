@@ -3,7 +3,6 @@ title: Hantera laddning av externa resurser
 linktitle: Hantera laddning av externa resurser
 second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du hanterar externa resurser i .NET med GroupDocs.Parser för effektiv dokumentanalys och extrahering.
-type: docs
 weight: 10
 url: /sv/net/document-loading/handling-loading-of-external-resources/
 ---
@@ -66,7 +65,7 @@ Ja, GroupDocs.Parser stöder ett brett utbud av filformat inklusive DOCX, PDF, X
 ### Kan jag extrahera text tillsammans med bilder med GroupDocs.Parser?
 Absolut, GroupDocs.Parser tillåter extrahering av både text och bilder från dokumentformat som stöds.
 ### Var kan jag hitta detaljerad dokumentation för GroupDocs.Parser?
- Utforska[dokumentation](https://reference.groupdocs.com/parser/net/) för omfattande guider och API-referenser.
+ Utforska[dokumentation](https://tutorials.groupdocs.com/parser/net/) för omfattande guider och API-referenser.
 ### Hur får jag en tillfällig licens för GroupDocs.Parser?
  Du kan få en tillfällig licens från[GroupDocs köpsida](https://purchase.groupdocs.com/temporary-license/).
 ### Var kan jag söka hjälp om jag stöter på problem med GroupDocs.Parser?

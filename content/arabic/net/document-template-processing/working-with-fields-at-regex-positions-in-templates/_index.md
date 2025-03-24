@@ -3,7 +3,6 @@ title: العمل مع الحقول في مواضع Regex في القوالب
 linktitle: العمل مع الحقول في مواضع Regex في القوالب
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج البيانات من قوالب المستندات باستخدام مواضع التعبير العادي باستخدام GroupDocs.Parser لـ .NET. أتمتة مهام استخراج البيانات الخاصة بك بكفاءة.
-type: docs
 weight: 13
 url: /ar/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---

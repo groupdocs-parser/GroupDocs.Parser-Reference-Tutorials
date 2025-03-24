@@ -3,7 +3,6 @@ title: バーコード抽出
 linktitle: バーコード抽出
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET チュートリアルを使用して、バーコードを簡単に抽出する方法を学びます。今すぐドキュメント処理機能を強化しましょう。
-type: docs
 weight: 27
 url: /ja/net/barcode-extraction/
 ---

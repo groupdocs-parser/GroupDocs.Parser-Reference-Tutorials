@@ -3,7 +3,6 @@ title: Cargar documento desde URL
 linktitle: Cargar documento desde URL
 second_title: API GroupDocs.Parser .NET
 description: Aprenda a extraer texto de documentos usando GroupDocs.Parser para .NET. Este tutorial cubre la carga de un documento desde una URL y la extracción de texto paso a paso.
-type: docs
 weight: 13
 url: /es/net/document-loading/load-document-from-url/
 ---
@@ -64,6 +63,6 @@ Sí, GroupDocs.Parser le permite extraer metadatos, texto y otra información de
 ### ¿Existe una versión de prueba disponible para GroupDocs.Parser?
  Sí, puede obtener una versión de prueba gratuita de GroupDocs.Parser en[aquí](https://releases.groupdocs.com/).
 ### ¿Dónde puedo encontrar documentación para GroupDocs.Parser?
- La documentación detallada para GroupDocs.Parser está disponible[aquí](https://reference.groupdocs.com/parser/net/).
+ La documentación detallada para GroupDocs.Parser está disponible[aquí](https://tutorials.groupdocs.com/parser/net/).
 ### ¿Cómo puedo obtener soporte técnico para GroupDocs.Parser?
 Puede buscar soporte técnico y hacer preguntas en el foro GroupDocs.Parser[aquí](https://forum.groupdocs.com/c/parser/17).

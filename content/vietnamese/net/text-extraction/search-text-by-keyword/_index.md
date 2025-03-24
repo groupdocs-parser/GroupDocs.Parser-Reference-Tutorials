@@ -3,7 +3,6 @@ title: Tìm kiếm văn bản theo từ khóa
 linktitle: Tìm kiếm văn bản theo từ khóa
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách tìm kiếm văn bản theo từ khóa trong tài liệu bằng GroupDocs.Parser cho .NET. Trích xuất hiệu quả nội dung có liên quan một cách dễ dàng.
-type: docs
 weight: 21
 url: /vi/net/text-extraction/search-text-by-keyword/
 ---
@@ -63,7 +62,7 @@ Có, GroupDocs.Parser hỗ trợ nhiều định dạng tệp, bao gồm PDF, DO
 ### Tôi có thể thực hiện các thao tác trích xuất văn bản nâng cao bằng GroupDocs.Parser không?
 Tuyệt đối! Ngoài tìm kiếm văn bản, GroupDocs.Parser còn cho phép trích xuất siêu dữ liệu, trích xuất văn bản có cấu trúc, v.v.
 ### Tôi có thể tìm tài liệu chi tiết về GroupDocs.Parser ở đâu?
-Khám phá tài liệu đầy đủ[đây](https://reference.groupdocs.com/parser/net/).
+Khám phá tài liệu đầy đủ[đây](https://tutorials.groupdocs.com/parser/net/).
 ### Làm cách nào tôi có thể nhận được hỗ trợ hoặc trợ giúp với các truy vấn liên quan đến GroupDocs.Parser?
  Truy cập diễn đàn GroupDocs để được hỗ trợ và thảo luận[đây](https://forum.groupdocs.com/c/parser/17).
 ### Có phiên bản dùng thử nào để đánh giá GroupDocs.Parser trước khi mua không?

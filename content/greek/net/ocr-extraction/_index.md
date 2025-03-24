@@ -3,7 +3,6 @@ title: Εξαγωγή οπτικής αναγνώρισης χαρακτήρων
 linktitle: Εξαγωγή οπτικής αναγνώρισης χαρακτήρων (OCR).
 second_title: GroupDocs.Parser .NET API
 description: Χειριστείτε αποτελεσματικά το OCR και εξάγετε κείμενο από εικόνες και έγγραφα με το GroupDocs.Parser για .NET. Βελτιώστε τις δυνατότητές σας OCR σήμερα!
-type: docs
 weight: 28
 url: /el/net/ocr-extraction/
 ---

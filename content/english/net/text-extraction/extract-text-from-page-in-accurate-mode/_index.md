@@ -3,7 +3,6 @@ title: Extract Text from Page in Accurate Mode
 linktitle: Extract Text from Page in Accurate Mode
 second_title: GroupDocs.Parser .NET API
 description: Learn how to extract text accurately from documents using GroupDocs.Parser for .NET in this comprehensive tutorial.
-type: docs
 weight: 16
 url: /net/text-extraction/extract-text-from-page-in-accurate-mode/
 ---

@@ -3,7 +3,6 @@ title: 從文件中提取超鏈接
 linktitle: 從文件中提取超鏈接
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 從文件中提取超連結。透過這個簡單的指南增強您的 C# 應用程式。
-type: docs
 weight: 10
 url: /zh-hant/net/hyperlink-extraction/extract-hyperlinks-from-document/
 ---
@@ -73,7 +72,7 @@ foreach (PageHyperlinkArea hyperlink in hyperlinks)
 ### GroupDocs.Parser 是否有免費試用版？
 是的，您可以免費試用 GroupDocs.Parser[這裡](https://releases.groupdocs.com/).
 ### 在哪裡可以找到 GroupDocs.Parser 的文檔？
-可以找到 GroupDocs.Parser 的詳細文檔[這裡](https://reference.groupdocs.com/parser/net/).
+可以找到 GroupDocs.Parser 的詳細文檔[這裡](https://tutorials.groupdocs.com/parser/net/).
 ### 如何獲得 GroupDocs.Parser 的臨時許可證？
 您可以獲得 GroupDocs.Parser 的臨時許可證[這裡](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs 是否提供故障排除支援？

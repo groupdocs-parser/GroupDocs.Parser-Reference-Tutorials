@@ -3,7 +3,6 @@ title: Εξαγωγή δεδομένων από φόρμες PDF
 linktitle: Εξαγωγή δεδομένων από φόρμες PDF
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε δεδομένα από φόρμες PDF χρησιμοποιώντας το GroupDocs.Parser για .NET. Οδηγός βήμα προς βήμα με παραδείγματα κώδικα και συχνές ερωτήσεις.
-type: docs
 weight: 11
 url: /el/net/pdf-processing/extract-data-from-pdf-forms/
 ---
@@ -79,7 +78,7 @@ Console.WriteLine("Description: {0}", rec.Description);
 ### Μπορώ να εξαγάγω εικόνες και μεταδεδομένα χρησιμοποιώντας το GroupDocs.Parser;
 Ναι, το GroupDocs.Parser επιτρέπει την εξαγωγή εικόνων, μεταδεδομένων και κειμένου από έγγραφα.
 ### Πού μπορώ να βρω πρόσθετη υποστήριξη ή τεκμηρίωση για το GroupDocs.Parser;
- Μπορείτε να επισκεφθείτε το[Τεκμηρίωση GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) για λεπτομερείς πληροφορίες και παραδείγματα.
+ Μπορείτε να επισκεφθείτε το[Τεκμηρίωση GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) για λεπτομερείς πληροφορίες και παραδείγματα.
 ### Υπάρχει διαθέσιμη δωρεάν δοκιμή για το GroupDocs.Parser;
  Ναι, μπορείτε να έχετε πρόσβαση σε ένα[δωρεάν δοκιμή του GroupDocs.Parser](https://releases.groupdocs.com/) για να εξερευνήσετε τα χαρακτηριστικά του.
 ### Πώς μπορώ να αποκτήσω μια προσωρινή άδεια για το GroupDocs.Parser;

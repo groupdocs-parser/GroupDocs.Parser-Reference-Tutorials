@@ -3,7 +3,6 @@ title: Cari Teks dalam PDF dengan Ekspresi Reguler
 linktitle: Cari Teks dalam PDF dengan Ekspresi Reguler
 second_title: GroupDocs.Parser .NET API
 description: Cari teks tertentu dalam dokumen PDF menggunakan ekspresi reguler dengan GroupDocs.Parser. Ekstrak, analisis, dan manipulasi teks PDF dengan mudah.
-type: docs
 weight: 19
 url: /id/net/pdf-processing/search-text-in-pdf-by-regular-expression/
 ---
@@ -52,7 +51,7 @@ Dalam tutorial ini, kita telah mempelajari cara memanfaatkan GroupDocs.Parser un
 ### Bisakah GroupDocs.Parser menangani format dokumen lain selain PDF?
 Ya, GroupDocs.Parser mendukung berbagai format dokumen seperti DOCX, XLSX, PPTX, dan lainnya.
 ### Di mana saya dapat menemukan lebih banyak sumber daya dan dukungan untuk GroupDocs.Parser?
- Anda dapat mengunjungi[Dokumentasi GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) dan mencari bantuan dari[Forum Grup Dokumen](https://forum.groupdocs.com/c/parser/17).
+ Anda dapat mengunjungi[Dokumentasi GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) dan mencari bantuan dari[Forum Grup Dokumen](https://forum.groupdocs.com/c/parser/17).
 ### Apakah ada uji coba gratis yang tersedia untuk GroupDocs.Parser?
  Ya, Anda dapat mengakses a[versi percobaan gratis](https://releases.groupdocs.com/) dari GroupDocs.Parser untuk menjelajahi fitur-fiturnya.
 ### Bagaimana saya bisa mendapatkan lisensi sementara untuk GroupDocs.Parser?

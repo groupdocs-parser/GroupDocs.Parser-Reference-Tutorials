@@ -3,7 +3,6 @@ title: Vyhledejte text v dokumentu aplikace Word regulárním výrazem
 linktitle: Vyhledejte text v dokumentu aplikace Word regulárním výrazem
 second_title: GroupDocs.Parser .NET API
 description: Naučte se vyhledávat text v dokumentech aplikace Word pomocí regulárních výrazů pomocí GroupDocs.Parser for .NET. Extrahujte konkrétní obsah efektivně.
-type: docs
 weight: 19
 url: /cs/net/word-document-processing/search-text-in-word-document-by-regular-expression/
 ---

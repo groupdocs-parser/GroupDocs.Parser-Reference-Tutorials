@@ -3,7 +3,6 @@ title: Extrahera bilder från dokument
 linktitle: Extrahera bilder från dokument
 second_title: GroupDocs.Parser .NET API
 description: Extrahera bilder från dokument utan ansträngning med GroupDocs.Parser för .NET. Dina dokumentbearbetningsmöjligheter och effektivisera bildextraheringsuppgifterna effektivt.
-type: docs
 weight: 11
 url: /sv/net/image-extraction/extract-images-from-document/
 ---
@@ -67,7 +66,7 @@ GroupDocs.Parser stöder extrahering av bilder från olika format, inklusive PDF
 ### Finns det en gratis testversion tillgänglig för GroupDocs.Parser?
  Ja, du kan få tillgång till en gratis provversion av GroupDocs.Parser från[hemsida](https://releases.groupdocs.com/).
 ### Var kan jag hitta dokumentation för GroupDocs.Parser?
- Detaljerad dokumentation för GroupDocs.Parser finns[här](https://reference.groupdocs.com/parser/net/).
+ Detaljerad dokumentation för GroupDocs.Parser finns[här](https://tutorials.groupdocs.com/parser/net/).
 ### Hur kan jag få en tillfällig licens för GroupDocs.Parser?
  Du kan få en tillfällig licens från[sida för tillfällig licens](https://purchase.groupdocs.com/temporary-license/).
 ### Var kan jag få support för GroupDocs.Parser?

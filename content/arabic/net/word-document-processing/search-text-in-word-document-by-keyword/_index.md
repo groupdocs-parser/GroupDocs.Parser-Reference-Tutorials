@@ -3,7 +3,6 @@ title: البحث عن نص في مستند Word عن طريق الكلمة ال
 linktitle: البحث عن نص في مستند Word عن طريق الكلمة الأساسية
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية البحث عن نص في مستندات Word باستخدام GroupDocs.Parser لـ .NET. استخراج كلمات رئيسية محددة بكفاءة.
-type: docs
 weight: 18
 url: /ar/net/word-document-processing/search-text-in-word-document-by-keyword/
 ---

@@ -3,7 +3,6 @@ title: Parse Pages Using Templates
 linktitle: Parse Pages Using Templates
 second_title: GroupDocs.Parser .NET API
 description: Learn how to parse document pages using templates in .NET with GroupDocs.Parser. Extract specific content efficiently for your applications.
-type: docs
 weight: 16
 url: /net/document-template-processing/parse-pages-using-templates/
 ---
@@ -67,7 +66,7 @@ Yes, GroupDocs.Parser supports various formats including PDF, DOCX, XLSX, and mo
 ### Is GroupDocs.Parser suitable for extracting specific data like barcodes?
 Absolutely! GroupDocs.Parser offers precise extraction capabilities for targeted content extraction.
 ### Where can I find detailed documentation for GroupDocs.Parser?
-Visit the [documentation](https://reference.groupdocs.com/parser/net/) for comprehensive guidance.
+Visit the [documentation](https://tutorials.groupdocs.com/parser/net/) for comprehensive guidance.
 ### How can I get temporary licensing for GroupDocs.Parser?
 Obtain a [temporary license](https://purchase.groupdocs.com/temporary-license/) for evaluation or development purposes.
 ### Does GroupDocs provide support for troubleshooting?

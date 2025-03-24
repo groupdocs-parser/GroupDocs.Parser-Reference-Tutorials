@@ -3,7 +3,6 @@ title: 원시 모드의 Excel 시트에서 텍스트 추출
 linktitle: 원시 모드의 Excel 시트에서 텍스트 추출
 second_title: GroupDocs.Parser .NET API
 description: 이 포괄적인 튜토리얼에서 .NET용 GroupDocs.Parser를 사용하여 Excel 시트에서 텍스트를 추출하는 방법을 알아보세요. 다운로드하고 구문 분석을 시작하세요.
-type: docs
 weight: 15
 url: /ko/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
 ---
@@ -66,7 +65,7 @@ using (TextReader reader = parser.GetText(p, new TextOptions(true)))
 ### GroupDocs.Parser는 대용량 Excel 파일 처리에 적합합니까?
 예, GroupDocs.Parser는 대용량 문서를 효율적으로 처리하도록 설계되었습니다.
 ### GroupDocs.Parser에 대한 추가 문서는 어디서 찾을 수 있나요?
- 당신은[선적 서류 비치](https://reference.groupdocs.com/parser/net/) 자세한 정보와 예시를 확인하세요.
+ 당신은[선적 서류 비치](https://tutorials.groupdocs.com/parser/net/) 자세한 정보와 예시를 확인하세요.
 ### GroupDocs.Parser의 임시 라이센스를 얻으려면 어떻게 해야 합니까?
  방문하다[이 링크](https://purchase.groupdocs.com/temporary-license/) 임시 라이센스를 요청합니다.
 ### GroupDocs.Parser는 고객 지원을 제공합니까?

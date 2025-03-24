@@ -1,7 +1,6 @@
 ---
 title: .NET용 GroupDocs.Parser의 자습서 및 예
 linktitle: .NET 자습서용 GroupDocs.Parser
-type: docs
 weight: 10
 url: /ko/net/
 description: .NET용 GroupDocs.Parser를 사용하여 효율적인 텍스트 추출 기술을 활용하세요. 향상된 문서 처리를 위해 텍스트를 원활하게 추출, 강조 표시 및 검색합니다.

@@ -3,7 +3,6 @@ title: การดึงข้อมูลจากเทมเพลต
 linktitle: การดึงข้อมูลจากเทมเพลต
 second_title: GroupDocs.Parser .NET API
 description: แยกข้อมูลได้อย่างง่ายดายด้วย GroupDocs.Parser สำหรับ .NET เรียนรู้วิธีดึงข้อมูลช่องเฉพาะ วนซ้ำข้อมูล และทำงานกับตารางในเนื้อหาที่แยกออกมา
-type: docs
 weight: 26
 url: /th/net/data-extraction-from-templates/
 ---

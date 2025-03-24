@@ -3,7 +3,6 @@ title: Hledat text podle regulárního výrazu (regex)
 linktitle: Hledat text podle regulárního výrazu (regex)
 second_title: GroupDocs.Parser .NET API
 description: Naučte se vyhledávat text pomocí regulárních výrazů v dokumentech pomocí GroupDocs.Parser for .NET. Extrahujte konkrétní obsah bez námahy.
-type: docs
 weight: 23
 url: /cs/net/text-extraction/search-text-by-regex/
 ---

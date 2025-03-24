@@ -3,7 +3,6 @@ title: 格式化文本提取
 linktitle: 格式化文本提取
 second_title: GroupDocs.Parser .NET API
 description: 使用 GroupDocs.Parser 从 .NET 中的文档中高效提取格式化文本。学习无缝提取 HTML、Markdown 和纯文本。
-type: docs
 weight: 21
 url: /zh/net/formatted-text-extraction/
 ---

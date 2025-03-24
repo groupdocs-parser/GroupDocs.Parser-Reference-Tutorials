@@ -3,7 +3,6 @@ title: Szöveg kibontása az Excel munkalapról
 linktitle: Szöveg kibontása az Excel munkalapról
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki szöveget Excel-lapokból a GroupDocs.Parser for .NET segítségével. Egyszerű lépések a hatékony szövegkivonáshoz.
-type: docs
 weight: 14
 url: /hu/net/excel-document-processing/extract-text-from-excel-sheet/
 ---

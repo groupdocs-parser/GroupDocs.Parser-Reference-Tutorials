@@ -3,7 +3,6 @@ title: 페이지의 특정 영역에서 텍스트 추출
 linktitle: 페이지의 특정 영역에서 텍스트 추출
 second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 특정 문서 영역에서 텍스트를 추출하는 방법을 알아보세요. 귀하의 애플리케이션을 위한 타겟이 명확하고 정확한 텍스트 추출.
-type: docs
 weight: 13
 url: /ko/net/text-extraction/extract-text-from-specific-areas-on-page/
 ---

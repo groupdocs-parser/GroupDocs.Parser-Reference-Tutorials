@@ -3,7 +3,6 @@ title: Táblázatok kibontása a dokumentumoldalról
 linktitle: Táblázatok kibontása a dokumentumoldalról
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan lehet programozottan táblákat kivonni dokumentumokból a GroupDocs.Parser for .NET segítségével. Ez az átfogó oktatóanyag lépésről lépésre nyújt útmutatást.
-type: docs
 weight: 11
 url: /hu/net/table-extraction/extract-tables-from-document-page/
 ---

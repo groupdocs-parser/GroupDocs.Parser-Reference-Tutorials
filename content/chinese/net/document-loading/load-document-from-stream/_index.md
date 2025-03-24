@@ -3,7 +3,6 @@ title: 从流加载文档
 linktitle: 从流加载文档
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser 从 .NET 中的各种文档格式中提取文本。带有代码示例的分步指南。
-type: docs
 weight: 12
 url: /zh/net/document-loading/load-document-from-stream/
 ---
@@ -61,4 +60,4 @@ GroupDocs.Parser 支持多种文档格式，包括 DOCX、PDF、XLSX、PPTX、EP
 ### 如何获得 GroupDocs.Parser 的临时许可证？
 您可以从[这里](https://purchase.groupdocs.com/temporary-license/).
 ### 在哪里可以找到有关 GroupDocs.Parser 的更多支持或文档？
-如需更多支持，请访问[GroupDocs.Parser 论坛](https://forum.groupdocs.com/c/parser/17)或参考[文档](https://reference.groupdocs.com/parser/net/).
+如需更多支持，请访问[GroupDocs.Parser 论坛](https://forum.groupdocs.com/c/parser/17)或参考[文档](https://tutorials.groupdocs.com/parser/net/).

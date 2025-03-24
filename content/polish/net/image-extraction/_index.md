@@ -3,7 +3,6 @@ title: Ekstrakcja obrazu
 linktitle: Ekstrakcja obrazu
 second_title: GroupDocs.Parser API .NET
 description: Bez wysiłku wyodrębniaj obrazy z dokumentów w .NET za pomocą GroupDocs.Parser. Zwiększ swoje możliwości przetwarzania dokumentów dzięki dokładnym technikom ekstrakcji obrazów.
-type: docs
 weight: 24
 url: /pl/net/image-extraction/
 ---

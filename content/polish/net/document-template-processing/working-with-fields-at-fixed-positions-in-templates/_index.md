@@ -3,7 +3,6 @@ title: Praca z polami w ustalonych pozycjach w szablonach
 linktitle: Praca z polami w ustalonych pozycjach w szablonach
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębniać dane z dokumentów za pomocą GroupDocs.Parser dla .NET. Obszerny samouczek z przykładami kodu.
-type: docs
 weight: 11
 url: /pl/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
@@ -69,7 +68,7 @@ W tym samouczku omówiliśmy proces pracy z polami w ustalonych pozycjach w szab
 
 ## Często zadawane pytania
 ### Czy GroupDocs.Parser jest kompatybilny ze wszystkimi formatami dokumentów?
- GroupDocs.Parser obsługuje szeroką gamę formatów plików, w tym PDF, Microsoft Word, Excel, PowerPoint i inne. Patrz[dokumentacja](https://reference.groupdocs.com/parser/net/) aby uzyskać szczegółową listę.
+ GroupDocs.Parser obsługuje szeroką gamę formatów plików, w tym PDF, Microsoft Word, Excel, PowerPoint i inne. Patrz[dokumentacja](https://tutorials.groupdocs.com/parser/net/) aby uzyskać szczegółową listę.
 ### Jak mogę uzyskać tymczasową licencję na GroupDocs.Parser?
  Licencję tymczasową do celów testowych można uzyskać od[Tutaj](https://purchase.groupdocs.com/temporary-license/).
 ### Gdzie mogę znaleźć pomoc dotyczącą GroupDocs.Parser?

@@ -3,7 +3,6 @@ title: قم بتحميل المستند من الدفق
 linktitle: قم بتحميل المستند من الدفق
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج النص من تنسيقات المستندات المختلفة في .NET باستخدام GroupDocs.Parser. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية.
-type: docs
 weight: 12
 url: /ar/net/document-loading/load-document-from-stream/
 ---
@@ -61,4 +60,4 @@ using (Stream stream = File.OpenRead("YourSampleFile.docx"))
 ### كيف يمكنني الحصول على ترخيص مؤقت لـ GroupDocs.Parser؟
  يمكنك الحصول على ترخيص مؤقت من[هنا](https://purchase.groupdocs.com/temporary-license/).
 ### أين يمكنني العثور على المزيد من الدعم أو الوثائق الخاصة بـ GroupDocs.Parser؟
- للحصول على دعم إضافي، قم بزيارة[GroupDocs.منتدى المحلل](https://forum.groupdocs.com/c/parser/17) أو الرجوع إلى[توثيق](https://reference.groupdocs.com/parser/net/).
+ للحصول على دعم إضافي، قم بزيارة[GroupDocs.منتدى المحلل](https://forum.groupdocs.com/c/parser/17) أو الرجوع إلى[توثيق](https://tutorials.groupdocs.com/parser/net/).

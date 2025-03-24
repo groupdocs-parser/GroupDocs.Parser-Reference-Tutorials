@@ -3,7 +3,6 @@ title: 文件載入
 linktitle: 文件載入
 second_title: GroupDocs.Parser .NET API
 description: 使用 GroupDocs.Parser 高效處理 .NET 中的文件載入。學習從本機磁碟、串流、URL 等提取文字。
-type: docs
 weight: 29
 url: /zh-hant/net/document-loading/
 ---

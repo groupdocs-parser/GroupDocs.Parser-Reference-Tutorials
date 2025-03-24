@@ -3,7 +3,6 @@ title: Veld op naam ophalen
 linktitle: Veld op naam ophalen
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u specifieke gegevensvelden uit documenten kunt extraheren met GroupDocs.Parser voor .NET. Stapsgewijze handleiding met codevoorbeelden.
-type: docs
 weight: 10
 url: /nl/net/data-extraction-from-templates/get-field-by-name/
 ---

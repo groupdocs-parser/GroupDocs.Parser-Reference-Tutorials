@@ -3,7 +3,6 @@ title: Dokumentum sablon feldolgozása
 linktitle: Dokumentum sablon feldolgozása
 second_title: GroupDocs.Parser .NET API
 description: Könnyedén kinyerhet strukturált adatokat dokumentumsablonokból a GroupDocs.Parser for .NET segítségével. Tanuljon meg dolgozni vonalkódokkal, mezőkkel, szabályos kifejezésekkel és táblázatelrendezésekkel.
-type: docs
 weight: 22
 url: /hu/net/document-template-processing/
 ---

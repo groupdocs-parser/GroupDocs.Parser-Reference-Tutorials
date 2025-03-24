@@ -3,7 +3,6 @@ title: استخراج الجدول
 linktitle: استخراج الجدول
 second_title: GroupDocs.Parser .NET API
 description: استخراج الجدول الرئيسي من المستندات باستخدام GroupDocs.Parser لـ .NET. تعلم كيفية استخراج الجداول برمجياً لمعالجة البيانات بكفاءة.
-type: docs
 weight: 23
 url: /ar/net/table-extraction/
 ---

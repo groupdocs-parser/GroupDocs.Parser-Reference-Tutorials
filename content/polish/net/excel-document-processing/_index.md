@@ -3,7 +3,6 @@ title: Przetwarzanie dokumentów w Excelu
 linktitle: Przetwarzanie dokumentów w Excelu
 second_title: GroupDocs.Parser API .NET
 description: Opanuj przetwarzanie dokumentów Excel w .NET za pomocą GroupDocs.Parser. Dowiedz się, jak efektywnie wyodrębniać obrazy, metadane i tekst, korzystając z przewodników krok po kroku.
-type: docs
 weight: 32
 url: /pl/net/excel-document-processing/
 ---

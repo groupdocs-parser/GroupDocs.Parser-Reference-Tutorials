@@ -3,7 +3,6 @@ title: 从 PDF 表单提取数据
 linktitle: 从 PDF 表单提取数据
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从 PDF 表单中提取数据。包含代码示例和常见问题解答的分步指南。
-type: docs
 weight: 11
 url: /zh/net/pdf-processing/extract-data-from-pdf-forms/
 ---
@@ -79,7 +78,7 @@ Console.WriteLine("Description: {0}", rec.Description);
 ### 我可以使用 GroupDocs.Parser 提取图像和元数据吗？
 是的，GroupDocs.Parser 允许从文档中提取图像、元数据和文本。
 ### 在哪里可以找到有关 GroupDocs.Parser 的更多支持或文档？
-您可以访问[GroupDocs.Parser 文档](https://reference.groupdocs.com/parser/net/)了解详细信息和示例。
+您可以访问[GroupDocs.Parser 文档](https://tutorials.groupdocs.com/parser/net/)了解详细信息和示例。
 ### GroupDocs.Parser 有免费试用版吗？
 是的，您可以访问[GroupDocs.Parser 免费试用](https://releases.groupdocs.com/)探索其特征。
 ### 如何获得 GroupDocs.Parser 的临时许可证？

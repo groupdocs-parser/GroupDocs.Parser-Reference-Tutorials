@@ -3,7 +3,6 @@ title: Arbeta med fält på fasta positioner i mallar
 linktitle: Arbeta med fält på fasta positioner i mallar
 second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du extraherar data från dokument med GroupDocs.Parser för .NET. Omfattande handledning med kodexempel.
-type: docs
 weight: 11
 url: /sv/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
@@ -69,7 +68,7 @@ I den här handledningen täckte vi processen att arbeta med fält på fasta pos
 
 ## FAQ's
 ### Är GroupDocs.Parser kompatibel med alla dokumentformat?
- GroupDocs.Parser stöder ett brett utbud av filformat, inklusive PDF, Microsoft Word, Excel, PowerPoint och mer. Referera till[dokumentation](https://reference.groupdocs.com/parser/net/) för en detaljerad lista.
+ GroupDocs.Parser stöder ett brett utbud av filformat, inklusive PDF, Microsoft Word, Excel, PowerPoint och mer. Referera till[dokumentation](https://tutorials.groupdocs.com/parser/net/) för en detaljerad lista.
 ### Hur kan jag få en tillfällig licens för GroupDocs.Parser?
  Du kan få en tillfällig licens för teständamål från[här](https://purchase.groupdocs.com/temporary-license/).
 ### Var kan jag hitta support för GroupDocs.Parser?

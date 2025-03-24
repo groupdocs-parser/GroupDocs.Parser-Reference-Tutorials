@@ -3,7 +3,6 @@ title: PDF 처리
 linktitle: PDF 처리
 second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용한 마스터 PDF 처리. PDF에서 첨부 파일, 데이터, 이미지, 메타데이터 및 텍스트를 효율적으로 추출하는 방법을 알아보세요.
-type: docs
 weight: 31
 url: /ko/net/pdf-processing/
 ---

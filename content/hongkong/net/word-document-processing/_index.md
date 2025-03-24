@@ -3,7 +3,6 @@ title: Word文件處理
 linktitle: Word文件處理
 second_title: GroupDocs.Parser .NET API
 description: 了解一系列使用 GroupDocs.Parser for .NET 處理 Word 文件的教學。提取超連結、圖像、元資料等。
-type: docs
 weight: 30
 url: /zh-hant/net/word-document-processing/
 ---

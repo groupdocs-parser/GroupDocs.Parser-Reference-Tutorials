@@ -3,7 +3,6 @@ title: 从 Word 文档中提取文本作为 HTML
 linktitle: 从 Word 文档中提取文本作为 HTML
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从 Word 文档中提取文本并将其保存为 HTML。带有代码示例的分步教程。
-type: docs
 weight: 16
 url: /zh/net/word-document-processing/extract-text-from-word-document-as-html/
 ---
@@ -67,7 +66,7 @@ using (Parser parser = new Parser("YourSampleFile.docx"))
 ### 如何获得 GroupDocs.Parser 的临时许可证？
 您可以从申请临时许可证[这里](https://purchase.groupdocs.com/temporary-license/).
 ### 在哪里可以找到有关 GroupDocs.Parser 的更多文档？
-有详细文档可供查阅[这里](https://reference.groupdocs.com/parser/net/).
+有详细文档可供查阅[这里](https://tutorials.groupdocs.com/parser/net/).
 ### GroupDocs.Parser 有免费试用版吗？
 是的，您可以访问免费试用版[这里](https://releases.groupdocs.com/).
 ### 如何获得 GroupDocs.Parser 的支持？

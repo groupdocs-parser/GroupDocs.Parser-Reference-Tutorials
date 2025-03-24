@@ -3,7 +3,6 @@ title: Εξαγωγή κειμένου σε Raw Mode
 linktitle: Εξαγωγή κειμένου σε Raw Mode
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε κείμενο από έγγραφα χρησιμοποιώντας το GroupDocs.Parser για .NET. Εύκολη, αποτελεσματική και απρόσκοπτη εξαγωγή κειμένου στις εφαρμογές σας .NET.
-type: docs
 weight: 19
 url: /el/net/text-extraction/extract-text-in-raw-mode/
 ---

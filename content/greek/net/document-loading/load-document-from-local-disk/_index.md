@@ -3,7 +3,6 @@ title: Φόρτωση εγγράφου από τοπικό δίσκο
 linktitle: Φόρτωση εγγράφου από τοπικό δίσκο
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε κείμενο από διάφορες μορφές εγγράφων χρησιμοποιώντας το GroupDocs.Parser για .NET. Εύκολη και αποτελεσματική εξαγωγή κειμένου με C#.
-type: docs
 weight: 11
 url: /el/net/document-loading/load-document-from-local-disk/
 ---
@@ -57,7 +56,7 @@ using (Parser parser = new Parser(filePath))
 ### Μπορώ να εξαγάγω μεταδεδομένα μαζί με κείμενο χρησιμοποιώντας το GroupDocs.Parser;
 Ναι, το GroupDocs.Parser επιτρέπει την εξαγωγή τόσο του περιεχομένου κειμένου όσο και των μεταδεδομένων από υποστηριζόμενες μορφές εγγράφων.
 ### Πού μπορώ να βρω περισσότερους πόρους και υποστήριξη για το GroupDocs.Parser;
- Επισκέψου το[GroupDocs.Parser Documentation](https://reference.groupdocs.com/parser/net/) για λεπτομερή αναφορά API και εξερευνήστε το[Φόρουμ GroupDocs](https://forum.groupdocs.com/c/parser/17) για κοινοτική υποστήριξη.
+ Επισκέψου το[GroupDocs.Parser Documentation](https://tutorials.groupdocs.com/parser/net/) για λεπτομερή αναφορά API και εξερευνήστε το[Φόρουμ GroupDocs](https://forum.groupdocs.com/c/parser/17) για κοινοτική υποστήριξη.
 ### Πώς μπορώ να αποκτήσω μια προσωρινή άδεια για το GroupDocs.Parser;
  Μπορείτε να ζητήσετε α[προσωρινή άδεια](https://purchase.groupdocs.com/temporary-license/) για σκοπούς αξιολόγησης και δοκιμών.
 ### Υπάρχει διαθέσιμη δωρεάν δοκιμή για το GroupDocs.Parser;

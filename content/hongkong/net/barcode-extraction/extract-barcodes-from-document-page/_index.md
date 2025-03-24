@@ -3,7 +3,6 @@ title: 從文件頁面提取條碼
 linktitle: 從文件頁面提取條碼
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 從文件頁面中提取條碼。本教學提供條碼擷取的逐步指導。
-type: docs
 weight: 12
 url: /zh-hant/net/barcode-extraction/extract-barcodes-from-document-page/
 ---
@@ -79,7 +78,7 @@ foreach (PageBarcodeArea barcode in barcodes)
 ### 常見問題解答
 
 ### Q：GroupDocs.Parser 支援哪些文檔格式？
- GroupDocs.Parser 支援多種格式，包括 DOCX、PDF、XLSX、PPTX 等。請參閱[文件](https://reference.groupdocs.com/parser/net/)以獲得完整清單。
+ GroupDocs.Parser 支援多種格式，包括 DOCX、PDF、XLSX、PPTX 等。請參閱[文件](https://tutorials.groupdocs.com/parser/net/)以獲得完整清單。
 
 ### Q：我可以使用 GroupDocs.Parser 提取元資料和條碼嗎？
 是的，GroupDocs.Parser 可讓您從文件中提取元資料、文字、圖像和條碼，提供全面的文件解析功能。

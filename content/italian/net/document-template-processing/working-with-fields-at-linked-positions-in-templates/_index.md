@@ -3,7 +3,6 @@ title: Lavorare con i campi nelle posizioni collegate nei modelli
 linktitle: Lavorare con i campi nelle posizioni collegate nei modelli
 second_title: API GroupDocs.Parser .NET
 description: Scopri come estrarre i dati in modo efficiente dai documenti utilizzando GroupDocs.Parser per .NET. Tutorial passo passo con esempi di codice.
-type: docs
 weight: 12
 url: /it/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
 ---

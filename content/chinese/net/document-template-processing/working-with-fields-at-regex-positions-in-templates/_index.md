@@ -3,7 +3,6 @@ title: 使用模板中正则表达式位置的字段
 linktitle: 使用模板中正则表达式位置的字段
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 的正则表达式位置从文档模板中提取数据。高效地自动执行数据提取任务。
-type: docs
 weight: 13
 url: /zh/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---

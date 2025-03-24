@@ -3,7 +3,6 @@ title: Bilder aus Word-Dokument extrahieren
 linktitle: Bilder aus Word-Dokument extrahieren
 second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Bilder aus einem Word-Dokument extrahieren. Dieses Tutorial bietet eine Schritt-für-Schritt-Anleitung zum Integrieren von Bildern in Ihr .NET.
-type: docs
 weight: 11
 url: /de/net/word-document-processing/extract-images-from-word-document/
 ---
@@ -62,7 +61,7 @@ Ja, GroupDocs.Parser unterstützt verschiedene Dokumentformate, darunter PDF, Po
 ### Wie kann ich eine temporäre Lizenz für GroupDocs.Parser erhalten?
  Eine temporäre Lizenz zu Testzwecken erhalten Sie bei[Hier](https://purchase.groupdocs.com/temporary-license/).
 ### Wo finde ich weitere Dokumentation zu GroupDocs.Parser für .NET?
- Die vollständige Dokumentation finden Sie[Hier](https://reference.groupdocs.com/parser/net/).
+ Die vollständige Dokumentation finden Sie[Hier](https://tutorials.groupdocs.com/parser/net/).
 ### Gibt es eine kostenlose Testversion für GroupDocs.Parser?
  Ja, Sie können die Funktionen von GroupDocs.Parser mit einer kostenlosen Testversion erkunden[Hier](https://releases.groupdocs.com/).
 ### Wie kann ich Support erhalten oder Fragen zu GroupDocs.Parser stellen?

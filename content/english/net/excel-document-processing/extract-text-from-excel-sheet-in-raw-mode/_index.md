@@ -3,7 +3,6 @@ title: Extract Text from Excel Sheet in Raw Mode
 linktitle: Extract Text from Excel Sheet in Raw Mode
 second_title: GroupDocs.Parser .NET API
 description: Learn how to extract text from Excel sheets using GroupDocs.Parser for .NET in this comprehensive tutorial. Download and start parsing.
-type: docs
 weight: 15
 url: /net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
 ---
@@ -66,7 +65,7 @@ Yes, GroupDocs.Parser supports a wide range of document formats including Word, 
 ### Is GroupDocs.Parser suitable for processing large Excel files?
 Yes, GroupDocs.Parser is designed to handle large documents efficiently.
 ### Where can I find more documentation about GroupDocs.Parser?
-You can refer to the [documentation](https://reference.groupdocs.com/parser/net/) for detailed information and examples.
+You can refer to the [documentation](https://tutorials.groupdocs.com/parser/net/) for detailed information and examples.
 ### How can I obtain a temporary license for GroupDocs.Parser?
 Visit [this link](https://purchase.groupdocs.com/temporary-license/) to request a temporary license.
 ### Does GroupDocs.Parser offer customer support?

@@ -3,7 +3,6 @@ title: Ekstraksi Data dari Template
 linktitle: Ekstraksi Data dari Template
 second_title: GroupDocs.Parser .NET API
 description: Ekstrak data dengan mudah menggunakan GroupDocs.Parser untuk .NET. Pelajari cara mengambil bidang tertentu, melakukan iterasi melalui data, dan bekerja dengan tabel dalam konten yang diekstraksi.
-type: docs
 weight: 26
 url: /id/net/data-extraction-from-templates/
 ---

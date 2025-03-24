@@ -3,7 +3,6 @@ title: 识别特定区域中的文本
 linktitle: 识别特定区域中的文本
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从具有 OCR 功能的文档中的特定区域提取文本。
-type: docs
 weight: 13
 url: /zh/net/ocr-extraction/recognizing-text-in-specific-areas/
 ---

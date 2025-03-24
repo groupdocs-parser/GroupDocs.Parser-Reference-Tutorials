@@ -3,7 +3,6 @@ title: Dış Kaynakların Yüklenmesinin İşlenmesi
 linktitle: Dış Kaynakların Yüklenmesinin İşlenmesi
 second_title: GroupDocs.Parser .NET API'si
 description: Verimli belge ayrıştırma ve çıkarma için GroupDocs.Parser'ı kullanarak .NET'te harici kaynakları nasıl kullanacağınızı öğrenin.
-type: docs
 weight: 10
 url: /tr/net/document-loading/handling-loading-of-external-resources/
 ---
@@ -66,7 +65,7 @@ Evet, GroupDocs.Parser, DOCX, PDF, XLSX, PPTX ve daha fazlasını içeren çok �
 ### GroupDocs.Parser'ı kullanarak resimlerle birlikte metni de çıkarabilir miyim?
 Kesinlikle GroupDocs.Parser, desteklenen belge formatlarından hem metin hem de görsellerin çıkarılmasına olanak tanır.
 ### GroupDocs.Parser'a ilişkin ayrıntılı belgeleri nerede bulabilirim?
- Keşfedin[dokümantasyon](https://reference.groupdocs.com/parser/net/) kapsamlı kılavuzlar ve API referansları için.
+ Keşfedin[dokümantasyon](https://tutorials.groupdocs.com/parser/net/) kapsamlı kılavuzlar ve API referansları için.
 ### GroupDocs.Parser için nasıl geçici lisans edinebilirim?
  Geçici lisansı şu adresten alabilirsiniz:[GroupDocs satın alma sayfası](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Parser ile ilgili sorunlarla karşılaşırsam nereden yardım alabilirim?

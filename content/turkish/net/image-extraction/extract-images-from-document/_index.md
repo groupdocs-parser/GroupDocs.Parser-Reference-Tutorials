@@ -3,7 +3,6 @@ title: Belgeden Görüntüleri Çıkartın
 linktitle: Belgeden Görüntüleri Çıkartın
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belgelerdeki görüntüleri zahmetsizce çıkarın. Belge işleme yetenekleriniz ve görüntü çıkarma görevlerinizi verimli bir şekilde kolaylaştırın.
-type: docs
 weight: 11
 url: /tr/net/image-extraction/extract-images-from-document/
 ---
@@ -67,7 +66,7 @@ GroupDocs.Parser, PDF, DOCX, XLSX ve daha fazlası dahil olmak üzere çeşitli 
 ### GroupDocs.Parser'ın ücretsiz deneme sürümü var mı?
  Evet, GroupDocs.Parser'ın ücretsiz deneme sürümüne şu adresten erişebilirsiniz:[İnternet sitesi](https://releases.groupdocs.com/).
 ### GroupDocs.Parser belgelerini nerede bulabilirim?
- GroupDocs.Parser için ayrıntılı belgeler bulunabilir[Burada](https://reference.groupdocs.com/parser/net/).
+ GroupDocs.Parser için ayrıntılı belgeler bulunabilir[Burada](https://tutorials.groupdocs.com/parser/net/).
 ### GroupDocs.Parser için nasıl geçici lisans alabilirim?
  Geçici lisansı adresinden alabilirsiniz.[geçici lisans sayfası](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Parser için nereden destek alabilirim?

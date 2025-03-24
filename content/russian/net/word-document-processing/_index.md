@@ -3,7 +3,6 @@ title: Обработка документов Word
 linktitle: Обработка документов Word
 second_title: GroupDocs.Parser .NET API
 description: Откройте для себя ряд руководств по обработке документов Word с помощью GroupDocs.Parser для .NET. Извлекайте гиперссылки, изображения, метаданные и многое другое.
-type: docs
 weight: 30
 url: /ru/net/word-document-processing/
 ---

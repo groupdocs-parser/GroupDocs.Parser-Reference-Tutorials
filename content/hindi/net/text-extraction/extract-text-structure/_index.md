@@ -3,7 +3,6 @@ title: पाठ संरचना निकालें
 linktitle: पाठ संरचना निकालें
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके विभिन्न दस्तावेज़ प्रारूपों से टेक्स्ट संरचना को निकालने का तरीका जानें। कोड उदाहरणों के साथ चरण-दर-चरण ट्यूटोरियल।
-type: docs
 weight: 20
 url: /hi/net/text-extraction/extract-text-structure/
 ---

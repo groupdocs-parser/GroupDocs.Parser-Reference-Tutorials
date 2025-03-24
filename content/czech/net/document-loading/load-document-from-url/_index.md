@@ -3,7 +3,6 @@ title: Načíst dokument z adresy URL
 linktitle: Načíst dokument z adresy URL
 second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat text z dokumentů pomocí GroupDocs.Parser for .NET. Tento tutoriál popisuje načítání dokumentu z adresy URL a extrahování textu krok za krokem.
-type: docs
 weight: 13
 url: /cs/net/document-loading/load-document-from-url/
 ---
@@ -64,6 +63,6 @@ Ano, GroupDocs.Parser umožňuje extrahovat metadata, text a další informace z
 ### Je k dispozici zkušební verze pro GroupDocs.Parser?
  Ano, můžete získat bezplatnou zkušební verzi GroupDocs.Parser od[tady](https://releases.groupdocs.com/).
 ### Kde najdu dokumentaci k GroupDocs.Parser?
- K dispozici je podrobná dokumentace pro GroupDocs.Parser[tady](https://reference.groupdocs.com/parser/net/).
+ K dispozici je podrobná dokumentace pro GroupDocs.Parser[tady](https://tutorials.groupdocs.com/parser/net/).
 ### Jak mohu získat technickou podporu pro GroupDocs.Parser?
 Na fóru GroupDocs.Parser můžete vyhledat technickou podporu a klást otázky[tady](https://forum.groupdocs.com/c/parser/17).

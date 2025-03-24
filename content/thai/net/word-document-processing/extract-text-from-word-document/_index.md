@@ -3,7 +3,6 @@ title: แยกข้อความจากเอกสาร Word
 linktitle: แยกข้อความจากเอกสาร Word
 second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกข้อความจากเอกสาร Word โดยใช้ GroupDocs.Parser สำหรับ .NET คำแนะนำทีละขั้นตอนพร้อมตัวอย่างโค้ด
-type: docs
 weight: 15
 url: /th/net/word-document-processing/extract-text-from-word-document/
 ---

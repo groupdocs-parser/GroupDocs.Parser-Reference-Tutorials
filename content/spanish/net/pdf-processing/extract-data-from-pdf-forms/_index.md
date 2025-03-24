@@ -3,7 +3,6 @@ title: Extraer datos de formularios PDF
 linktitle: Extraer datos de formularios PDF
 second_title: API GroupDocs.Parser .NET
 description: Aprenda a extraer datos de formularios PDF utilizando GroupDocs.Parser para .NET. Guía paso a paso con ejemplos de código y preguntas frecuentes.
-type: docs
 weight: 11
 url: /es/net/pdf-processing/extract-data-from-pdf-forms/
 ---
@@ -79,7 +78,7 @@ Sí, GroupDocs.Parser admite varios formatos, incluidos DOCX, XLSX, PPTX y más.
 ### ¿Puedo extraer imágenes y metadatos usando GroupDocs.Parser?
 Sí, GroupDocs.Parser permite la extracción de imágenes, metadatos y texto de documentos.
 ### ¿Dónde puedo encontrar soporte o documentación adicional para GroupDocs.Parser?
- Puedes visitar el[Documentación de GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) para obtener información detallada y ejemplos.
+ Puedes visitar el[Documentación de GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) para obtener información detallada y ejemplos.
 ### ¿Existe una prueba gratuita disponible para GroupDocs.Parser?
  Sí, puedes acceder a un[prueba gratuita de GroupDocs.Parser](https://releases.groupdocs.com/) para explorar sus características.
 ### ¿Cómo puedo obtener una licencia temporal para GroupDocs.Parser?

@@ -3,7 +3,6 @@ title: Wyodrębnij hiperłącza z dokumentu
 linktitle: Wyodrębnij hiperłącza z dokumentu
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić hiperłącza z dokumentów za pomocą GroupDocs.Parser dla .NET. Ulepsz swoje aplikacje w języku C# dzięki temu prostemu przewodnikowi.
-type: docs
 weight: 10
 url: /pl/net/hyperlink-extraction/extract-hyperlinks-from-document/
 ---
@@ -73,7 +72,7 @@ Tak, GroupDocs.Parser obsługuje wyodrębnianie hiperłączy z szerokiej gamy fo
 ### Czy dostępna jest bezpłatna wersja próbna programu GroupDocs.Parser?
  Tak, możesz uzyskać dostęp do bezpłatnej wersji próbnej GroupDocs.Parser[Tutaj](https://releases.groupdocs.com/).
 ### Gdzie mogę znaleźć dokumentację GroupDocs.Parser?
- Szczegółową dokumentację GroupDocs.Parser można znaleźć[Tutaj](https://reference.groupdocs.com/parser/net/).
+ Szczegółową dokumentację GroupDocs.Parser można znaleźć[Tutaj](https://tutorials.groupdocs.com/parser/net/).
 ### Jak mogę uzyskać tymczasową licencję na GroupDocs.Parser?
  Możesz uzyskać tymczasową licencję na GroupDocs.Parser[Tutaj](https://purchase.groupdocs.com/temporary-license/).
 ### Czy GroupDocs oferuje pomoc w rozwiązywaniu problemów?

@@ -3,7 +3,6 @@ title: Szöveg felismerése téglalap alakú területeken
 linktitle: Szöveg felismerése téglalap alakú területeken
 second_title: GroupDocs.Parser .NET API
 description: Tanulja meg, hogyan lehet szöveget felismerni a dokumentumok meghatározott régióiban az OCR-képességekkel rendelkező GroupDocs.Parser for .NET segítségével.
-type: docs
 weight: 14
 url: /hu/net/ocr-extraction/recognizing-text-in-rectangular-regions/
 ---

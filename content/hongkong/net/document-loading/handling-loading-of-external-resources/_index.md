@@ -3,7 +3,6 @@ title: 處理外部資源的加載
 linktitle: 處理外部資源的加載
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser 處理 .NET 中的外部資源，以實現高效的文件解析和提取。
-type: docs
 weight: 10
 url: /zh-hant/net/document-loading/handling-loading-of-external-resources/
 ---
@@ -66,7 +65,7 @@ GroupDocs.Parser for .NET 簡化了處理文件中的外部資源的過程，從
 ### 我可以使用 GroupDocs.Parser 提取文字和圖像嗎？
 當然，GroupDocs.Parser 允許從支援的文件格式中提取文字和圖像。
 ### 在哪裡可以找到 GroupDocs.Parser 的詳細文件？
-探索[文件](https://reference.groupdocs.com/parser/net/)取得全面的指南和 API 參考。
+探索[文件](https://tutorials.groupdocs.com/parser/net/)取得全面的指南和 API 參考。
 ### 如何獲得 GroupDocs.Parser 的臨時許可證？
 您可以從以下機構獲得臨時許可證[GroupDocs 購買頁面](https://purchase.groupdocs.com/temporary-license/).
 ### 如果我遇到 GroupDocs.Parser 問題，我可以在哪裡尋求協助？

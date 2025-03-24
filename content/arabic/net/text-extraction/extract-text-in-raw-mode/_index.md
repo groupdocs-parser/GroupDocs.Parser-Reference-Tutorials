@@ -3,7 +3,6 @@ title: استخراج النص في الوضع الخام
 linktitle: استخراج النص في الوضع الخام
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج النص من المستندات باستخدام GroupDocs.Parser لـ .NET. استخراج نص سهل وفعال وسلس داخل تطبيقات .NET الخاصة بك.
-type: docs
 weight: 19
 url: /ar/net/text-extraction/extract-text-in-raw-mode/
 ---

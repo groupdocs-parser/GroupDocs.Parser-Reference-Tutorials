@@ -3,7 +3,6 @@ title: استخراج الارتباطات التشعبية من المستند
 linktitle: استخراج الارتباطات التشعبية من المستند
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج الارتباطات التشعبية من المستندات باستخدام GroupDocs.Parser لـ .NET. قم بتحسين تطبيقات C# الخاصة بك باستخدام هذا الدليل المباشر.
-type: docs
 weight: 10
 url: /ar/net/hyperlink-extraction/extract-hyperlinks-from-document/
 ---
@@ -73,7 +72,7 @@ foreach (PageHyperlinkArea hyperlink in hyperlinks)
 ### هل هناك نسخة تجريبية مجانية متاحة لـ GroupDocs.Parser؟
  نعم، يمكنك الوصول إلى النسخة التجريبية المجانية من GroupDocs.Parser[هنا](https://releases.groupdocs.com/).
 ### أين يمكنني العثور على وثائق GroupDocs.Parser؟
- يمكن العثور على الوثائق التفصيلية لـ GroupDocs.Parser[هنا](https://reference.groupdocs.com/parser/net/).
+ يمكن العثور على الوثائق التفصيلية لـ GroupDocs.Parser[هنا](https://tutorials.groupdocs.com/parser/net/).
 ### كيف يمكنني الحصول على ترخيص مؤقت لـ GroupDocs.Parser؟
  يمكنك الحصول على ترخيص مؤقت لـ GroupDocs.Parser[هنا](https://purchase.groupdocs.com/temporary-license/).
 ### هل يقدم GroupDocs الدعم لاستكشاف الأخطاء وإصلاحها؟

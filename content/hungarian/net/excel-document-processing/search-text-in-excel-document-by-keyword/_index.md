@@ -3,7 +3,6 @@ title: Szöveg keresése az Excel dokumentumban kulcsszó szerint
 linktitle: Szöveg keresése az Excel dokumentumban kulcsszó szerint
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan kereshet szöveget az Excel dokumentumokban a GroupDocs.Parser for .NET segítségével. Integrálja a fejlett szöveges keresési lehetőségeket .NET-alkalmazásaiba.
-type: docs
 weight: 16
 url: /hu/net/excel-document-processing/search-text-in-excel-document-by-keyword/
 ---
@@ -56,7 +55,7 @@ Igen, a GroupDocs.Parser a dokumentumformátumok széles skáláját támogatja,
 ### A GroupDocs.Parser alkalmas nagyméretű dokumentumfeldolgozási feladatokra?
 Teljesen! A GroupDocs.Parser nagyméretű dokumentumok hatékony kezelésére készült, lehetővé téve az erőteljes szövegkivonási és keresési funkciókat.
 ### Hol találok további dokumentációt és támogatást a GroupDocs.Parser for .NET-hez?
- Meglátogatni a[GroupDocs.Parser dokumentáció](https://reference.groupdocs.com/parser/net/) részletes API-referenciáért és fedezze fel a[GroupDocs fórum](https://forum.groupdocs.com/c/parser/17) közösségi támogatásért.
+ Meglátogatni a[GroupDocs.Parser dokumentáció](https://tutorials.groupdocs.com/parser/net/) részletes API-referenciáért és fedezze fel a[GroupDocs fórum](https://forum.groupdocs.com/c/parser/17) közösségi támogatásért.
 ### Kipróbálhatom a GroupDocs.Parser for .NET-et vásárlás előtt?
  Igen, felfedezheti a funkciókat a[ingyenes próbaverzió](https://releases.groupdocs.com/) vásárlás előtt.
 ### Hogyan szerezhetek ideiglenes licencet a GroupDocs.Parser számára?

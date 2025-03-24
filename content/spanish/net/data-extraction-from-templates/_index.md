@@ -3,7 +3,6 @@ title: Extracción de datos de plantillas
 linktitle: Extracción de datos de plantillas
 second_title: API GroupDocs.Parser .NET
 description: Extraiga datos sin esfuerzo con GroupDocs.Parser para .NET. Aprenda a recuperar campos específicos, iterar datos y trabajar con tablas en contenido extraído.
-type: docs
 weight: 26
 url: /es/net/data-extraction-from-templates/
 ---

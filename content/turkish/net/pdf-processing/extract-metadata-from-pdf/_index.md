@@ -3,7 +3,6 @@ title: Meta Verileri PDF'den Çıkarın
 linktitle: Meta Verileri PDF'den Çıkarın
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak PDF belgelerinden meta verileri nasıl çıkaracağınızı öğrenin. Bu kapsamlı kılavuz, adım adım talimatları ve önkoşulları kapsar.
-type: docs
 weight: 13
 url: /tr/net/pdf-processing/extract-metadata-from-pdf/
 ---

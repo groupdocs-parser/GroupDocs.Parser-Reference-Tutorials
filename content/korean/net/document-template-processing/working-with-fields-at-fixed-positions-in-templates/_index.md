@@ -3,7 +3,6 @@ title: 템플릿의 고정 위치에 있는 필드 작업
 linktitle: 템플릿의 고정 위치에 있는 필드 작업
 second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 문서에서 데이터를 추출하는 방법을 알아보세요. 코드 예제가 포함된 종합 튜토리얼입니다.
-type: docs
 weight: 11
 url: /ko/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
@@ -69,7 +68,7 @@ using (Parser parser = new Parser("YourSampleFile.pdf"))
 
 ## FAQ
 ### GroupDocs.Parser는 모든 문서 형식과 호환됩니까?
- GroupDocs.Parser는 PDF, Microsoft Word, Excel, PowerPoint 등을 포함한 광범위한 파일 형식을 지원합니다. 다음을 참조하세요.[선적 서류 비치](https://reference.groupdocs.com/parser/net/) 자세한 목록을 보려면.
+ GroupDocs.Parser는 PDF, Microsoft Word, Excel, PowerPoint 등을 포함한 광범위한 파일 형식을 지원합니다. 다음을 참조하세요.[선적 서류 비치](https://tutorials.groupdocs.com/parser/net/) 자세한 목록을 보려면.
 ### GroupDocs.Parser의 임시 라이센스를 얻으려면 어떻게 해야 합니까?
  다음에서 테스트 목적으로 임시 라이센스를 얻을 수 있습니다.[여기](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Parser에 대한 지원은 어디서 찾을 수 있나요?

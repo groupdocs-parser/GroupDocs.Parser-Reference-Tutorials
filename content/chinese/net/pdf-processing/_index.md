@@ -3,7 +3,6 @@ title: PDF 处理
 linktitle: PDF 处理
 second_title: GroupDocs.Parser .NET API
 description: 掌握使用 GroupDocs.Parser for .NET 进行 PDF 处理。学习如何高效地从 PDF 中提取附件、数据、图像、元数据和文本。
-type: docs
 weight: 31
 url: /zh/net/pdf-processing/
 ---

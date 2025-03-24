@@ -3,7 +3,6 @@ title: Odemkněte ovládání analýzy dokumentů pomocí GroupDocs.Parser
 linktitle: Výukové programy GroupDocs.Parser
 additionalTitle: Reference API GroupDocs
 description: Odemkněte efektivní techniky extrakce dat s GroupDocs.Parser pro .NET a Java. Prozkoumejte výukové programy pro text, tabulku, extrakci obrázků a další.
-type: docs
 weight: 11
 url: /cs/
 is_root: true

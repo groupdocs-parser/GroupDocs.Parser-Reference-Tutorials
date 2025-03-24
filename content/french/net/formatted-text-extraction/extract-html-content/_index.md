@@ -3,7 +3,6 @@ title: Extraire le contenu HTML
 linktitle: Extraire le contenu HTML
 second_title: API GroupDocs.Parser .NET
 description: Découvrez comment extraire le contenu HTML de documents à l'aide de GroupDocs.Parser pour .NET. Tutoriel facile à suivre avec des exemples de code et des conseils étape par étape.
-type: docs
 weight: 12
 url: /fr/net/formatted-text-extraction/extract-html-content/
 ---

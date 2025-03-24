@@ -3,7 +3,6 @@ title: टेक्स्ट निकालें और हाइलाइट 
 linktitle: टेक्स्ट निकालें और हाइलाइट करें
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके दस्तावेज़ों से टेक्स्ट निकालना और हाइलाइट करना सीखें। अपने .NET प्रोजेक्ट में कुशल टेक्स्ट निष्कर्षण के लिए आसान चरण।
-type: docs
 weight: 11
 url: /hi/net/text-extraction/extract-and-highlight-text/
 ---

@@ -3,7 +3,6 @@ title: 이미지를 파일로 추출
 linktitle: 이미지를 파일로 추출
 second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 PDF 및 DOCX와 같은 다양한 문서 유형에서 이미지를 쉽게 추출할 수 있습니다. 문서 구문 분석 작업을 단순화하세요.
-type: docs
 weight: 13
 url: /ko/net/image-extraction/extract-images-to-files/
 ---

@@ -3,7 +3,6 @@ title: Adatok elemzése PDF dokumentumokból
 linktitle: Adatok elemzése PDF dokumentumokból
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan nyerhet ki adatokat PDF-dokumentumokból a GroupDocs.Parser for .NET segítségével. Kövesse lépésenkénti útmutatónkat a PDF-fájlok hatékony elemzéséhez és feldolgozásához.
-type: docs
 weight: 17
 url: /hu/net/pdf-processing/parse-data-from-pdf-documents/
 ---
@@ -81,6 +80,6 @@ A GroupDocs.Parser elsősorban a PDF-fájlokra összpontosít, de más formátum
 ### Elérhető a GroupDocs.Parser próbaverziója?
  Igen, megkaphatja a GroupDocs.Parser ingyenes próbaverzióját[itt](https://releases.groupdocs.com/).
 ### Hol találom a GroupDocs.Parser dokumentációját és támogatását?
- Utal[dokumentáció](https://reference.groupdocs.com/parser/net/) és[támogatói fórum](https://forum.groupdocs.com/c/parser/17) a GroupDocs.Parser számára.
+ Utal[dokumentáció](https://tutorials.groupdocs.com/parser/net/) és[támogatói fórum](https://forum.groupdocs.com/c/parser/17) a GroupDocs.Parser számára.
 ### Hogyan szerezhetek ideiglenes licencet a GroupDocs.Parser számára?
  Ideiglenes jogosítványt szerezhet[itt](https://purchase.groupdocs.com/temporary-license/).

@@ -3,7 +3,6 @@ title: Word dokumentum feldolgozás
 linktitle: Word dokumentum feldolgozás
 second_title: GroupDocs.Parser .NET API
 description: Fedezze fel a Word dokumentumfeldolgozásról szóló oktatóanyagok sorát a GroupDocs.Parser for .NET használatával. Kivonja a hiperhivatkozásokat, képeket, metaadatokat és egyebeket.
-type: docs
 weight: 30
 url: /hu/net/word-document-processing/
 ---

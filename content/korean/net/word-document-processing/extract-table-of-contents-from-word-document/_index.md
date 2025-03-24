@@ -3,7 +3,6 @@ title: Word 문서에서 목차 추출
 linktitle: Word 문서에서 목차 추출
 second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 프로그래밍 방식으로 Word 문서에서 목차(TOC)를 추출하는 방법을 알아보세요.
-type: docs
 weight: 13
 url: /ko/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
@@ -64,7 +63,7 @@ using (TextReader reader = tocItem.ExtractText())
 ### GroupDocs.Parser는 대용량 문서 처리에 적합합니까?
 예, GroupDocs.Parser는 텍스트 추출, 메타데이터 추출, 구조화된 데이터 추출과 같은 기능을 통해 대용량 문서를 효율적으로 처리하는 데 최적화되어 있습니다.
 ### GroupDocs.Parser에 대한 추가 문서와 자습서는 어디에서 찾을 수 있습니까?
- 방문하다[GroupDocs.Parser 문서](https://reference.groupdocs.com/parser/net/) 자세한 API 참조 및 튜토리얼을 확인하세요.
+ 방문하다[GroupDocs.Parser 문서](https://tutorials.groupdocs.com/parser/net/) 자세한 API 참조 및 튜토리얼을 확인하세요.
 ### GroupDocs.Parser에 대한 지원을 받으려면 어떻게 해야 합니까?
  가입하다[GroupDocs.Parser 포럼](https://forum.groupdocs.com/c/parser/17) 질문을 하고 커뮤니티와 상호작용할 수 있습니다.
 ### GroupDocs.Parser에 사용할 수 있는 평가판이 있습니까?

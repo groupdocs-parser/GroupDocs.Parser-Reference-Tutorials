@@ -3,7 +3,6 @@ title: Extrahujte text z dokumentu aplikace Excel
 linktitle: Extrahujte text z dokumentu aplikace Excel
 second_title: GroupDocs.Parser .NET API
 description: Naučte se, jak extrahovat text z dokumentů aplikace Excel pomocí GroupDocs.Parser for .NET v jednoduchých krocích.
-type: docs
 weight: 12
 url: /cs/net/excel-document-processing/extract-text-from-excel-document/
 ---
@@ -58,7 +57,7 @@ Ano, GroupDocs.Parser podporuje širokou škálu formátů dokumentů včetně W
 ### Je k dispozici bezplatná zkušební verze pro GroupDocs.Parser?
  Ano, můžete si stáhnout bezplatnou zkušební verzi GroupDocs.Parser z[tady](https://releases.groupdocs.com/).
 ### Kde najdu dokumentaci k GroupDocs.Parser?
- Můžete najít podrobnou dokumentaci k GroupDocs.Parser[tady](https://reference.groupdocs.com/parser/net/).
+ Můžete najít podrobnou dokumentaci k GroupDocs.Parser[tady](https://tutorials.groupdocs.com/parser/net/).
 ### Jak mohu získat podporu pro GroupDocs.Parser?
 Pro podporu a pomoc s GroupDocs.Parser navštivte[fórum GroupDocs](https://forum.groupdocs.com/c/parser/17).
 ### Kde si mohu zakoupit licenci pro GroupDocs.Parser?

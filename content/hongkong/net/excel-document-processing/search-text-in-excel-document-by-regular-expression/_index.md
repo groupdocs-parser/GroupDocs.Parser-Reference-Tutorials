@@ -3,7 +3,6 @@ title: 透過正規表示式搜尋 Excel 文件中的文本
 linktitle: 透過正規表示式搜尋 Excel 文件中的文本
 second_title: GroupDocs.Parser .NET API
 description: 了解如何透過 GroupDocs.Parser for .NET 使用正規表示式在 Excel 文件中搜尋文字。高效率執行高級文字搜尋。
-type: docs
 weight: 17
 url: /zh-hant/net/excel-document-processing/search-text-in-excel-document-by-regular-expression/
 ---

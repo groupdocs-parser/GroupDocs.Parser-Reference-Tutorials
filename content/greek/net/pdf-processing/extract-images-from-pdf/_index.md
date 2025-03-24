@@ -3,7 +3,6 @@ title: Εξαγωγή εικόνων από PDF
 linktitle: Εξαγωγή εικόνων από PDF
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε εικόνες από έγγραφα PDF χρησιμοποιώντας το GroupDocs.Parser για .NET. Οδηγός βήμα προς βήμα με παραδείγματα κώδικα.
-type: docs
 weight: 12
 url: /el/net/pdf-processing/extract-images-from-pdf/
 ---

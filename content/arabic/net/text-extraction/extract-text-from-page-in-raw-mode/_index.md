@@ -3,7 +3,6 @@ title: استخراج النص من الصفحة في الوضع الخام
 linktitle: استخراج النص من الصفحة في الوضع الخام
 second_title: GroupDocs.Parser .NET API
 description: تعلم استخراج النص بكفاءة من صفحات المستندات باستخدام Groupdocs.Parser لـ .NET في هذا البرنامج التعليمي الشامل.
-type: docs
 weight: 17
 url: /ar/net/text-extraction/extract-text-from-page-in-raw-mode/
 ---

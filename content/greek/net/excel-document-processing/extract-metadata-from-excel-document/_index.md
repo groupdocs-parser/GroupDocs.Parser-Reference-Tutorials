@@ -3,7 +3,6 @@ title: Εξαγωγή Μεταδεδομένων από Έγγραφο Excel
 linktitle: Εξαγωγή Μεταδεδομένων από Έγγραφο Excel
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε μεταδεδομένα από έγγραφα του Excel χρησιμοποιώντας το GroupDocs.Parser για .NET. Ακολουθήστε αυτό το σεμινάριο βήμα προς βήμα.
-type: docs
 weight: 11
 url: /el/net/excel-document-processing/extract-metadata-from-excel-document/
 ---

@@ -3,7 +3,6 @@ title: Bekerja dengan Bidang pada Posisi Tetap di Templat
 linktitle: Bekerja dengan Bidang pada Posisi Tetap di Templat
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak data dari dokumen menggunakan GroupDocs.Parser untuk .NET. Tutorial komprehensif dengan contoh kode.
-type: docs
 weight: 11
 url: /id/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
@@ -69,7 +68,7 @@ Dalam tutorial ini, kami membahas proses bekerja dengan bidang pada posisi tetap
 
 ## FAQ
 ### Apakah GroupDocs.Parser kompatibel dengan semua format dokumen?
- GroupDocs.Parser mendukung berbagai format file, termasuk PDF, Microsoft Word, Excel, PowerPoint, dan banyak lagi. Mengacu kepada[dokumentasi](https://reference.groupdocs.com/parser/net/) untuk daftar rinci.
+ GroupDocs.Parser mendukung berbagai format file, termasuk PDF, Microsoft Word, Excel, PowerPoint, dan banyak lagi. Mengacu kepada[dokumentasi](https://tutorials.groupdocs.com/parser/net/) untuk daftar rinci.
 ### Bagaimana saya bisa mendapatkan lisensi sementara untuk GroupDocs.Parser?
  Anda bisa mendapatkan lisensi sementara untuk tujuan pengujian dari[Di Sini](https://purchase.groupdocs.com/temporary-license/).
 ### Di mana saya dapat menemukan dukungan untuk GroupDocs.Parser?

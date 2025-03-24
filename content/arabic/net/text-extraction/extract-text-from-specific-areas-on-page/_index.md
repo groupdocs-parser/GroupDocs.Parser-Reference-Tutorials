@@ -3,7 +3,6 @@ title: استخراج النص من مناطق محددة على الصفحة
 linktitle: استخراج النص من مناطق محددة على الصفحة
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج النص من مناطق محددة بالمستندات باستخدام GroupDocs.Parser لـ .NET. استخراج نص مستهدف ودقيق لتطبيقاتك.
-type: docs
 weight: 13
 url: /ar/net/text-extraction/extract-text-from-specific-areas-on-page/
 ---

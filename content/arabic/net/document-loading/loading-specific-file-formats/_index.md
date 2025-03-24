@@ -3,7 +3,6 @@ title: تحميل تنسيقات ملفات محددة
 linktitle: تحميل تنسيقات ملفات محددة
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج النص من تنسيقات الملفات المختلفة في .NET باستخدام GroupDocs.Parser. برنامج تعليمي خطوة بخطوة لمعالجة المستندات بكفاءة.
-type: docs
 weight: 14
 url: /ar/net/document-loading/loading-specific-file-formats/
 ---
@@ -71,7 +70,7 @@ using (TextReader reader = parser.GetText())
 ### هل GroupDocs.Parser لـ .NET مجاني للاستخدام؟
 يقدم GroupDocs.Parser for .NET خيارات الترخيص المجانية والمدفوعة. يمكنك استكشافها[هنا](https://purchase.groupdocs.com/buy).
 ### ما تنسيقات الملفات التي يدعمها GroupDocs.Parser لـ .NET؟
- يدعم GroupDocs.Parser مجموعة واسعة من تنسيقات الملفات، بما في ذلك Word وPDF وExcel وPowerPoint وMarkdown والمزيد. الرجوع إلى الوثائق[هنا](https://reference.groupdocs.com/parser/net/) للحصول على القائمة الكاملة.
+ يدعم GroupDocs.Parser مجموعة واسعة من تنسيقات الملفات، بما في ذلك Word وPDF وExcel وPowerPoint وMarkdown والمزيد. الرجوع إلى الوثائق[هنا](https://tutorials.groupdocs.com/parser/net/) للحصول على القائمة الكاملة.
 ### هل يمكنني تجربة GroupDocs.Parser لـ .NET قبل الشراء؟
  نعم، يمكنك الوصول إلى نسخة تجريبية مجانية[هنا](https://releases.groupdocs.com/).
 ### أين يمكنني العثور على الدعم أو طرح الأسئلة حول GroupDocs.Parser لـ .NET؟

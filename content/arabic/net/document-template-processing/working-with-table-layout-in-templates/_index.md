@@ -3,7 +3,6 @@ title: العمل مع تخطيط الجدول في القوالب
 linktitle: العمل مع تخطيط الجدول في القوالب
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية العمل مع تخطيطات الجدول في القوالب باستخدام GroupDocs.Parser لـ .NET. استخراج البيانات المنظمة بكفاءة من المستندات.
-type: docs
 weight: 14
 url: /ar/net/document-template-processing/working-with-table-layout-in-templates/
 ---

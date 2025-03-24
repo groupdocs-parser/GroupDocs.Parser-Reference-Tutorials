@@ -3,7 +3,6 @@ title: Trích xuất mã vạch từ tài liệu
 linktitle: Trích xuất mã vạch từ tài liệu
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất mã vạch từ tài liệu bằng GroupDocs.Parser cho .NET. Nâng cao khả năng xử lý tài liệu của bạn một cách dễ dàng.
-type: docs
 weight: 10
 url: /vi/net/barcode-extraction/extract-barcodes-from-document/
 ---

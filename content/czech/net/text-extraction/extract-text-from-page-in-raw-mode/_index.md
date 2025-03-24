@@ -3,7 +3,6 @@ title: Extrahujte text ze stránky v režimu Raw
 linktitle: Extrahujte text ze stránky v režimu Raw
 second_title: GroupDocs.Parser .NET API
 description: Naučte se efektivní extrakci textu ze stránek dokumentu pomocí Groupdocs.Parser for .NET v tomto komplexním tutoriálu.
-type: docs
 weight: 17
 url: /cs/net/text-extraction/extract-text-from-page-in-raw-mode/
 ---

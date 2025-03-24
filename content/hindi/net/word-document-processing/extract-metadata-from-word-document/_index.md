@@ -3,7 +3,6 @@ title: वर्ड दस्तावेज़ से मेटाडेटा 
 linktitle: वर्ड दस्तावेज़ से मेटाडेटा निकालें
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके Word दस्तावेज़ों से मेटाडेटा निकालने का तरीका जानें। दस्तावेज़ जानकारी को पार्स करने और पुनः प्राप्त करने के आसान चरण।
-type: docs
 weight: 12
 url: /hi/net/word-document-processing/extract-metadata-from-word-document/
 ---
@@ -55,7 +54,7 @@ foreach (MetadataItem item in metadata)
 ### .NET के लिए GroupDocs.Parser क्या है?
 GroupDocs.Parser for .NET एक दस्तावेज़ पार्सिंग लाइब्रेरी है जो डेवलपर्स को प्रोग्रामेटिक रूप से विभिन्न दस्तावेज़ प्रारूपों से पाठ और मेटाडेटा निकालने की अनुमति देता है।
 ### मैं GroupDocs.Parser दस्तावेज़ कहां पा सकता हूं?
- आप इसका संदर्भ ले सकते हैं[प्रलेखन](https://reference.groupdocs.com/parser/net/) .NET के लिए GroupDocs.Parser का उपयोग करने के बारे में विस्तृत जानकारी के लिए देखें।
+ आप इसका संदर्भ ले सकते हैं[प्रलेखन](https://tutorials.groupdocs.com/parser/net/) .NET के लिए GroupDocs.Parser का उपयोग करने के बारे में विस्तृत जानकारी के लिए देखें।
 ### मैं GroupDocs.Parser का निःशुल्क परीक्षण कैसे प्राप्त कर सकता हूँ?
  आप GroupDocs.Parser का निःशुल्क परीक्षण संस्करण यहाँ से डाउनलोड कर सकते हैं[विज्ञप्ति पृष्ठ](https://releases.groupdocs.com/).
 ### क्या GroupDocs.Parser व्यावसायिक उपयोग के लिए उपयुक्त है?

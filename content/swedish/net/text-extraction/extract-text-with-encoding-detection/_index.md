@@ -3,7 +3,6 @@ title: Extrahera text med kodningsdetektering
 linktitle: Extrahera text med kodningsdetektering
 second_title: GroupDocs.Parser .NET API
 description: Extrahera text från dokument med kodningsdetektering med GroupDocs.Parser för .NET. Analysera effektivt olika format i dina .NET-applikationer.
-type: docs
 weight: 10
 url: /sv/net/text-extraction/extract-text-with-encoding-detection/
 ---

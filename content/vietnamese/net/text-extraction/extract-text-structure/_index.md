@@ -3,7 +3,6 @@ title: Trích xuất cấu trúc văn bản
 linktitle: Trích xuất cấu trúc văn bản
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất cấu trúc văn bản từ các định dạng tài liệu khác nhau bằng GroupDocs.Parser cho .NET. Hướng dẫn từng bước với các ví dụ về mã.
-type: docs
 weight: 20
 url: /vi/net/text-extraction/extract-text-structure/
 ---

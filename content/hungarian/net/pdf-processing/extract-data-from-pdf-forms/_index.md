@@ -3,7 +3,6 @@ title: Adatok kinyerése PDF-űrlapokból
 linktitle: Adatok kinyerése PDF-űrlapokból
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan nyerhet ki adatokat PDF-űrlapokból a GroupDocs.Parser for .NET segítségével. Lépésről lépésre, kódpéldákkal és GYIK-vel.
-type: docs
 weight: 11
 url: /hu/net/pdf-processing/extract-data-from-pdf-forms/
 ---
@@ -79,7 +78,7 @@ Igen, a GroupDocs.Parser különféle formátumokat támogat, beleértve a DOCX,
 ### Kivonhatok képeket és metaadatokat a GroupDocs.Parser segítségével?
 Igen, a GroupDocs.Parser lehetővé teszi képek, metaadatok és szövegek kinyerését a dokumentumokból.
 ### Hol találok további támogatást vagy dokumentációt a GroupDocs.Parser számára?
- Meglátogathatja a[GroupDocs.Parser dokumentáció](https://reference.groupdocs.com/parser/net/) részletes információkért és példákért.
+ Meglátogathatja a[GroupDocs.Parser dokumentáció](https://tutorials.groupdocs.com/parser/net/) részletes információkért és példákért.
 ### Van ingyenes próbaverzió a GroupDocs.Parser számára?
  Igen, hozzáférhet a[a GroupDocs.Parser ingyenes próbaverziója](https://releases.groupdocs.com/) jellemzőinek feltárására.
 ### Hogyan szerezhetek ideiglenes licencet a GroupDocs.Parser számára?

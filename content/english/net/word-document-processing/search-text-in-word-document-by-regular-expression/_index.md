@@ -3,7 +3,6 @@ title: Search Text in Word Document by Regular Expression
 linktitle: Search Text in Word Document by Regular Expression
 second_title: GroupDocs.Parser .NET API
 description: Learn how to search text in Word documents using regular expressions with GroupDocs.Parser for .NET. Extract specific content efficiently.
-type: docs
 weight: 19
 url: /net/word-document-processing/search-text-in-word-document-by-regular-expression/
 ---

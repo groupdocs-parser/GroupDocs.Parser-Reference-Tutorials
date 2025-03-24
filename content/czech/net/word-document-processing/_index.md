@@ -3,7 +3,6 @@ title: Zpracování textových dokumentů
 linktitle: Zpracování textových dokumentů
 second_title: GroupDocs.Parser .NET API
 description: Objevte řadu výukových programů pro zpracování dokumentů Word pomocí GroupDocs.Parser pro .NET. Extrahujte hypertextové odkazy, obrázky, metadata a další.
-type: docs
 weight: 30
 url: /cs/net/word-document-processing/
 ---

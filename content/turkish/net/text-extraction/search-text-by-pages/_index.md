@@ -3,7 +3,6 @@ title: Metinleri Sayfalara Göre Ara
 linktitle: Metinleri Sayfalara Göre Ara
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak sayfalara göre metin aramayı öğrenin. .NET uygulamalarınızdaki belgelerden belirli içerikleri verimli bir şekilde çıkarın.
-type: docs
 weight: 22
 url: /tr/net/text-extraction/search-text-by-pages/
 ---
@@ -64,7 +63,7 @@ Evet, GroupDocs.Parser, DOCX, PDF, XLSX, PPTX ve daha fazlasını içeren çok �
 ### GroupDocs.Parser'ı kullanarak belgelerden görselleri ve meta verileri çıkarabilir miyim?
 GroupDocs.Parser kesinlikle belgelerden görsellerin, meta verilerin ve metnin çıkarılmasına olanak tanır.
 ### GroupDocs.Parser'a ilişkin ayrıntılı belgeleri nerede bulabilirim?
- Dokümantasyona ulaşabilirsiniz[Burada](https://reference.groupdocs.com/parser/net/).
+ Dokümantasyona ulaşabilirsiniz[Burada](https://tutorials.groupdocs.com/parser/net/).
 ### GroupDocs.Parser için nasıl geçici lisans alabilirim?
  Geçici lisans talebinde bulunabilirsiniz[Burada](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Parser ile ilgili nereden destek veya yardım alabilirim?

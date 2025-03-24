@@ -3,7 +3,6 @@ title: Extrahera text från sidan i råläge
 linktitle: Extrahera text från sidan i råläge
 second_title: GroupDocs.Parser .NET API
 description: Lär dig effektiv textextraktion från dokumentsidor med Groupdocs.Parser för .NET i den här omfattande självstudien.
-type: docs
 weight: 17
 url: /sv/net/text-extraction/extract-text-from-page-in-raw-mode/
 ---

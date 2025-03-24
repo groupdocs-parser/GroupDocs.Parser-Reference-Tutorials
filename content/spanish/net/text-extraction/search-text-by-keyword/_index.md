@@ -3,7 +3,6 @@ title: Buscar texto por palabra clave
 linktitle: Buscar texto por palabra clave
 second_title: API GroupDocs.Parser .NET
 description: Aprenda a buscar texto por palabra clave en documentos utilizando GroupDocs.Parser para .NET. Extraiga eficientemente contenido relevante con facilidad.
-type: docs
 weight: 21
 url: /es/net/text-extraction/search-text-by-keyword/
 ---
@@ -63,7 +62,7 @@ Sí, GroupDocs.Parser admite una amplia gama de formatos de archivo, incluidos P
 ### ¿Puedo realizar operaciones avanzadas de extracción de texto usando GroupDocs.Parser?
 ¡Absolutamente! Además de la búsqueda de texto, GroupDocs.Parser permite la extracción de metadatos, la extracción de texto estructurado y más.
 ### ¿Dónde puedo encontrar documentación detallada para GroupDocs.Parser?
-Explora la documentación completa[aquí](https://reference.groupdocs.com/parser/net/).
+Explora la documentación completa[aquí](https://tutorials.groupdocs.com/parser/net/).
 ### ¿Cómo puedo obtener soporte o asistencia con consultas relacionadas con GroupDocs.Parser?
  Visite el foro de GroupDocs para obtener soporte y debates.[aquí](https://forum.groupdocs.com/c/parser/17).
 ### ¿Existe una versión de prueba disponible para evaluar GroupDocs.Parser antes de comprarlo?

@@ -3,7 +3,6 @@ title: Lavorare con le tabelle nei dati estratti
 linktitle: Lavorare con le tabelle nei dati estratti
 second_title: API GroupDocs.Parser .NET
 description: Scopri come estrarre i dati delle tabelle dai documenti utilizzando GroupDocs.Parser per .NET. Analizza in modo efficiente contenuti strutturati con modelli predefiniti.
-type: docs
 weight: 12
 url: /it/net/data-extraction-from-templates/working-with-tables-in-extracted-data/
 ---

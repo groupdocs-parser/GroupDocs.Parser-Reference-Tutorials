@@ -3,7 +3,6 @@ title: Textsuche nach regulären Ausdrücken (Regex)
 linktitle: Textsuche nach regulären Ausdrücken (Regex)
 second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET mithilfe regulärer Ausdrücke nach Text in Dokumenten suchen. Extrahieren Sie mühelos spezifische Inhalte.
-type: docs
 weight: 23
 url: /de/net/text-extraction/search-text-by-regex/
 ---

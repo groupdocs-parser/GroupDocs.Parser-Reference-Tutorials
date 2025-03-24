@@ -3,7 +3,6 @@ title: 通过正则表达式在Word文档中搜索文本
 linktitle: 通过正则表达式在Word文档中搜索文本
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 使用正则表达式在 Word 文档中搜索文本。高效提取特定内容。
-type: docs
 weight: 19
 url: /zh/net/word-document-processing/search-text-in-word-document-by-regular-expression/
 ---

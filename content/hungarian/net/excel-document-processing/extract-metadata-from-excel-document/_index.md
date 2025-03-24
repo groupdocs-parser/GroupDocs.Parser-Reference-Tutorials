@@ -3,7 +3,6 @@ title: Metaadatok kibontása az Excel dokumentumból
 linktitle: Metaadatok kibontása az Excel dokumentumból
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki metaadatokat Excel-dokumentumokból a GroupDocs.Parser for .NET segítségével. Kövesse ezt a lépésenkénti oktatóanyagot.
-type: docs
 weight: 11
 url: /hu/net/excel-document-processing/extract-metadata-from-excel-document/
 ---

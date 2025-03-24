@@ -3,7 +3,6 @@ title: 辨識文字
 linktitle: 辨識文字
 second_title: GroupDocs.Parser .NET API
 description: 使用 GroupDocs.Parser for .NET 從各種文件格式中高效提取文字。輕鬆整合和強大的 OCR 功能。
-type: docs
 weight: 12
 url: /zh-hant/net/ocr-extraction/recognizing-text/
 ---
@@ -57,7 +56,7 @@ using (Parser parser = new Parser("YourSampleFile.docx", settings))
 - `TextOptions`配置為啟用 OCR 並優化文字擷取。
 
 ## 結論
-恭喜！您已經了解如何將 GroupDocs.Parser for .NET 整合到您的專案中以有效地提取文字。探索廣泛[文件](https://reference.groupdocs.com/parser/net/)用於高級功能和優化。
+恭喜！您已經了解如何將 GroupDocs.Parser for .NET 整合到您的專案中以有效地提取文字。探索廣泛[文件](https://tutorials.groupdocs.com/parser/net/)用於高級功能和優化。
 
 ## 常見問題解答
 ### GroupDocs.Parser 適合從 PDF 文件中提取文字嗎？

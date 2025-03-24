@@ -3,7 +3,6 @@ title: URL से दस्तावेज़ लोड करें
 linktitle: URL से दस्तावेज़ लोड करें
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके दस्तावेज़ों से टेक्स्ट निकालना सीखें। यह ट्यूटोरियल URL से दस्तावेज़ लोड करना और चरण दर चरण टेक्स्ट निकालना सिखाता है।
-type: docs
 weight: 13
 url: /hi/net/document-loading/load-document-from-url/
 ---
@@ -64,6 +63,6 @@ Console.WriteLine(reader == null ? "Text extraction isn't supported" : reader.Re
 ### क्या GroupDocs.Parser के लिए कोई परीक्षण संस्करण उपलब्ध है?
  हां, आप GroupDocs.Parser का निःशुल्क परीक्षण संस्करण यहां से प्राप्त कर सकते हैं[यहाँ](https://releases.groupdocs.com/).
 ### मैं GroupDocs.Parser के लिए दस्तावेज़ कहां पा सकता हूं?
- GroupDocs.Parser के लिए विस्तृत दस्तावेज़ उपलब्ध है[यहाँ](https://reference.groupdocs.com/parser/net/).
+ GroupDocs.Parser के लिए विस्तृत दस्तावेज़ उपलब्ध है[यहाँ](https://tutorials.groupdocs.com/parser/net/).
 ### मैं GroupDocs.Parser के लिए तकनीकी सहायता कैसे प्राप्त कर सकता हूं?
 आप GroupDocs.Parser फ़ोरम पर तकनीकी सहायता प्राप्त कर सकते हैं और प्रश्न पूछ सकते हैं[यहाँ](https://forum.groupdocs.com/c/parser/17).

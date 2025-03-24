@@ -3,7 +3,6 @@ title: 외부 리소스 로드 처리
 linktitle: 외부 리소스 로드 처리
 second_title: GroupDocs.Parser .NET API
 description: 효율적인 문서 구문 분석 및 추출을 위해 GroupDocs.Parser를 사용하여 .NET에서 외부 리소스를 처리하는 방법을 알아보세요.
-type: docs
 weight: 10
 url: /ko/net/document-loading/handling-loading-of-external-resources/
 ---
@@ -66,7 +65,7 @@ foreach (PageImageArea image in images)
 ### GroupDocs.Parser를 사용하여 이미지와 함께 텍스트를 추출할 수 있나요?
 물론, GroupDocs.Parser를 사용하면 지원되는 문서 형식에서 텍스트와 이미지를 모두 추출할 수 있습니다.
 ### GroupDocs.Parser에 대한 자세한 문서는 어디서 찾을 수 있나요?
- 탐색[선적 서류 비치](https://reference.groupdocs.com/parser/net/) 포괄적인 가이드 및 API 참조를 확인하세요.
+ 탐색[선적 서류 비치](https://tutorials.groupdocs.com/parser/net/) 포괄적인 가이드 및 API 참조를 확인하세요.
 ### GroupDocs.Parser에 대한 임시 라이센스를 얻으려면 어떻게 해야 합니까?
  임시면허를 발급받으실 수 있습니다.[GroupDocs 구매 페이지](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Parser에 문제가 발생하면 어디서 도움을 구할 수 있나요?

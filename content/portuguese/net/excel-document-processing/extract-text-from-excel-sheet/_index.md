@@ -3,7 +3,6 @@ title: Extraia texto da planilha Excel
 linktitle: Extraia texto da planilha Excel
 second_title: API GroupDocs.Parser .NET
 description: Aprenda como extrair texto de planilhas do Excel usando GroupDocs.Parser for .NET. Etapas simples para extração de texto eficaz.
-type: docs
 weight: 14
 url: /pt/net/excel-document-processing/extract-text-from-excel-sheet/
 ---

@@ -3,7 +3,6 @@ title: Analysera sidor med mallar
 linktitle: Analysera sidor med mallar
 second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du analyserar dokumentsidor med mallar i .NET med GroupDocs.Parser. Extrahera specifikt innehåll effektivt för dina applikationer.
-type: docs
 weight: 16
 url: /sv/net/document-template-processing/parse-pages-using-templates/
 ---
@@ -67,7 +66,7 @@ Ja, GroupDocs.Parser stöder olika format inklusive PDF, DOCX, XLSX och mer.
 ### Är GroupDocs.Parser lämplig för att extrahera specifik data som streckkoder?
 Absolut! GroupDocs.Parser erbjuder exakta extraheringsmöjligheter för riktad innehållsextraktion.
 ### Var kan jag hitta detaljerad dokumentation för GroupDocs.Parser?
- Besök[dokumentation](https://reference.groupdocs.com/parser/net/) för omfattande vägledning.
+ Besök[dokumentation](https://tutorials.groupdocs.com/parser/net/) för omfattande vägledning.
 ### Hur kan jag få tillfällig licensiering för GroupDocs.Parser?
  Skaffa en[tillfällig licens](https://purchase.groupdocs.com/temporary-license/) i utvärderings- eller utvecklingssyfte.
 ### Ger GroupDocs stöd för felsökning?

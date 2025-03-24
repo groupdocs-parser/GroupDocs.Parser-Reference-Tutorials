@@ -3,7 +3,6 @@ title: Excel 文档处理
 linktitle: Excel 文档处理
 second_title: GroupDocs.Parser .NET API
 description: 使用 GroupDocs.Parser 掌握 .NET 中的 Excel 文档处理。通过分步指南学习如何高效地提取图像、元数据和文本。
-type: docs
 weight: 32
 url: /zh/net/excel-document-processing/
 ---

@@ -3,7 +3,6 @@ title: Đang tải các định dạng tệp cụ thể
 linktitle: Đang tải các định dạng tệp cụ thể
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất văn bản từ các định dạng tệp khác nhau trong .NET bằng GroupDocs.Parser. Hướng dẫn từng bước để xử lý tài liệu hiệu quả.
-type: docs
 weight: 14
 url: /vi/net/document-loading/loading-specific-file-formats/
 ---
@@ -71,7 +70,7 @@ GroupDocs.Parser dành cho .NET đơn giản hóa việc trích xuất văn bả
 ### GroupDocs.Parser cho .NET có được sử dụng miễn phí không?
 GroupDocs.Parser for .NET cung cấp cả tùy chọn cấp phép miễn phí và trả phí. Bạn có thể khám phá chúng[đây](https://purchase.groupdocs.com/buy).
 ### Những định dạng tệp nào được GroupDocs.Parser hỗ trợ cho .NET?
- GroupDocs.Parser hỗ trợ nhiều định dạng tệp, bao gồm Word, PDF, Excel, PowerPoint, Markdown, v.v. Tham khảo tài liệu[đây](https://reference.groupdocs.com/parser/net/) để có danh sách đầy đủ.
+ GroupDocs.Parser hỗ trợ nhiều định dạng tệp, bao gồm Word, PDF, Excel, PowerPoint, Markdown, v.v. Tham khảo tài liệu[đây](https://tutorials.groupdocs.com/parser/net/) để có danh sách đầy đủ.
 ### Tôi có thể dùng thử GroupDocs.Parser cho .NET trước khi mua không?
  Có, bạn có thể truy cập phiên bản dùng thử miễn phí[đây](https://releases.groupdocs.com/).
 ### Tôi có thể tìm hỗ trợ hoặc đặt câu hỏi về GroupDocs.Parser cho .NET ở đâu?

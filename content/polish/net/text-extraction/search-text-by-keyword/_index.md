@@ -3,7 +3,6 @@ title: Wyszukaj tekst według słowa kluczowego
 linktitle: Wyszukaj tekst według słowa kluczowego
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyszukiwać tekst według słów kluczowych w dokumentach przy użyciu programu GroupDocs.Parser dla platformy .NET. Wydajnie i z łatwością wyodrębniaj istotne treści.
-type: docs
 weight: 21
 url: /pl/net/text-extraction/search-text-by-keyword/
 ---
@@ -63,7 +62,7 @@ Tak, GroupDocs.Parser obsługuje szeroką gamę formatów plików, w tym PDF, DO
 ### Czy mogę wykonywać zaawansowane operacje wyodrębniania tekstu przy użyciu GroupDocs.Parser?
 Absolutnie! Oprócz wyszukiwania tekstu GroupDocs.Parser umożliwia wyodrębnianie metadanych, wyodrębnianie tekstu strukturalnego i nie tylko.
 ### Gdzie mogę znaleźć szczegółową dokumentację GroupDocs.Parser?
-Zapoznaj się z pełną dokumentacją[Tutaj](https://reference.groupdocs.com/parser/net/).
+Zapoznaj się z pełną dokumentacją[Tutaj](https://tutorials.groupdocs.com/parser/net/).
 ### Jak mogę uzyskać pomoc dotyczącą zapytań związanych z GroupDocs.Parser?
  Odwiedź forum GroupDocs, aby uzyskać pomoc i dyskusje[Tutaj](https://forum.groupdocs.com/c/parser/17).
 ### Czy dostępna jest wersja próbna umożliwiająca przetestowanie programu GroupDocs.Parser przed zakupem?

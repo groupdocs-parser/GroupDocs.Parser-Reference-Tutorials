@@ -3,7 +3,6 @@ title: Alanlar Arasında Yineleme
 linktitle: Alanlar Arasında Yineleme
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belgelerden yapılandırılmış verileri nasıl çıkaracağınızı öğrenin. .NET uygulamalarınızı belge veri çıkarma yetenekleriyle geliştirin.
-type: docs
 weight: 11
 url: /tr/net/data-extraction-from-templates/iterate-through-fields/
 ---

@@ -3,7 +3,6 @@ title: Práce s poli na propojených pozicích v šablonách
 linktitle: Práce s poli na propojených pozicích v šablonách
 second_title: GroupDocs.Parser .NET API
 description: Naučte se, jak efektivně extrahovat data z dokumentů pomocí GroupDocs.Parser for .NET. Výukový program krok za krokem s příklady kódu.
-type: docs
 weight: 12
 url: /cs/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
 ---

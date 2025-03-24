@@ -3,7 +3,6 @@ title: Képek kibontása PDF-ből
 linktitle: Képek kibontása PDF-ből
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki képeket PDF-dokumentumokból a GroupDocs.Parser for .NET segítségével. Lépésről lépésre útmutató kódpéldákkal.
-type: docs
 weight: 12
 url: /hu/net/pdf-processing/extract-images-from-pdf/
 ---

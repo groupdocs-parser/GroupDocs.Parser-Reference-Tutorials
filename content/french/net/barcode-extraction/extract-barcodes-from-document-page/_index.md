@@ -3,7 +3,6 @@ title: Extraire les codes-barres de la page du document
 linktitle: Extraire les codes-barres de la page du document
 second_title: API GroupDocs.Parser .NET
 description: Découvrez comment extraire les codes-barres des pages de documents à l'aide de GroupDocs.Parser pour .NET. Ce didacticiel fournit des conseils étape par étape pour l'extraction de codes-barres.
-type: docs
 weight: 12
 url: /fr/net/barcode-extraction/extract-barcodes-from-document-page/
 ---
@@ -79,7 +78,7 @@ Dans ce didacticiel, vous avez appris à utiliser GroupDocs.Parser pour .NET pou
 ### FAQ
 
 ### Q : Quels formats de documents GroupDocs.Parser prend-il en charge ?
- GroupDocs.Parser prend en charge une large gamme de formats, notamment DOCX, PDF, XLSX, PPTX, etc. Se référer au[Documentation](https://reference.groupdocs.com/parser/net/)pour une liste complète.
+ GroupDocs.Parser prend en charge une large gamme de formats, notamment DOCX, PDF, XLSX, PPTX, etc. Se référer au[Documentation](https://tutorials.groupdocs.com/parser/net/)pour une liste complète.
 
 ### Q : Puis-je extraire des métadonnées ainsi que des codes-barres à l'aide de GroupDocs.Parser ?
 Oui, GroupDocs.Parser vous permet d'extraire des métadonnées, du texte, des images et des codes-barres à partir de documents, offrant ainsi des capacités complètes d'analyse de documents.

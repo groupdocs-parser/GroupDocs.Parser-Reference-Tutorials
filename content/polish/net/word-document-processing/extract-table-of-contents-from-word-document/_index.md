@@ -3,7 +3,6 @@ title: Wyodrębnij spis treści z dokumentu Word
 linktitle: Wyodrębnij spis treści z dokumentu Word
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak programowo wyodrębnić spis treści (TOC) z dokumentów programu Word przy użyciu narzędzia GroupDocs.Parser dla platformy .NET.
-type: docs
 weight: 13
 url: /pl/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
@@ -64,7 +63,7 @@ Tak, GroupDocs.Parser obsługuje szeroką gamę formatów dokumentów, w tym PDF
 ### Czy GroupDocs.Parser nadaje się do przetwarzania dużych dokumentów?
 Tak, GroupDocs.Parser jest zoptymalizowany pod kątem wydajnej obsługi dużych dokumentów i oferuje takie funkcje, jak wyodrębnianie tekstu, ekstrakcja metadanych i ekstrakcja danych strukturalnych.
 ### Gdzie mogę znaleźć więcej dokumentacji i samouczków dotyczących GroupDocs.Parser?
- Odwiedzić[Dokumentacja GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) szczegółowe odniesienia do API i samouczki.
+ Odwiedzić[Dokumentacja GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) szczegółowe odniesienia do API i samouczki.
 ### Jak mogę uzyskać pomoc dotyczącą GroupDocs.Parser?
  Dołącz[Forum GroupDocs.Parser](https://forum.groupdocs.com/c/parser/17) do zadawania pytań i interakcji ze społecznością.
 ### Czy dostępna jest wersja próbna programu GroupDocs.Parser?

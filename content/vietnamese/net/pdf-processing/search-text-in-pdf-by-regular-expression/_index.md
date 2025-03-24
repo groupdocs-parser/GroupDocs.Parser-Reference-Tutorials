@@ -3,7 +3,6 @@ title: Tìm kiếm văn bản trong PDF bằng biểu thức chính quy
 linktitle: Tìm kiếm văn bản trong PDF bằng biểu thức chính quy
 second_title: API GroupDocs.Parser .NET
 description: Tìm kiếm văn bản cụ thể trong tài liệu PDF bằng cách sử dụng biểu thức thông thường với GroupDocs.Parser. Trích xuất, phân tích và thao tác văn bản PDF một cách dễ dàng.
-type: docs
 weight: 19
 url: /vi/net/pdf-processing/search-text-in-pdf-by-regular-expression/
 ---
@@ -52,7 +51,7 @@ Trong hướng dẫn này, chúng ta đã khám phá cách sử dụng GroupDocs
 ### GroupDocs.Parser có thể xử lý các định dạng tài liệu khác ngoài PDF không?
 Có, GroupDocs.Parser hỗ trợ nhiều định dạng tài liệu khác nhau như DOCX, XLSX, PPTX, v.v.
 ### Tôi có thể tìm thêm tài nguyên và hỗ trợ cho GroupDocs.Parser ở đâu?
- Bạn có thể ghé thăm[Tài liệu GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) và tìm kiếm sự giúp đỡ từ[diễn đàn GroupDocs](https://forum.groupdocs.com/c/parser/17).
+ Bạn có thể ghé thăm[Tài liệu GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) và tìm kiếm sự giúp đỡ từ[diễn đàn GroupDocs](https://forum.groupdocs.com/c/parser/17).
 ### Có bản dùng thử miễn phí cho GroupDocs.Parser không?
  Có, bạn có thể truy cập một[phiên bản dùng thử miễn phí](https://releases.groupdocs.com/) của GroupDocs.Parser để khám phá các tính năng của nó.
 ### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho GroupDocs.Parser?

@@ -3,7 +3,6 @@ title: Hledání textu v dokumentu aplikace Excel pomocí regulárních výrazů
 linktitle: Hledání textu v dokumentu aplikace Excel pomocí regulárních výrazů
 second_title: GroupDocs.Parser .NET API
 description: Naučte se vyhledávat text v dokumentech aplikace Excel pomocí regulárních výrazů pomocí GroupDocs.Parser for .NET. Efektivně provádějte pokročilé vyhledávání textu.
-type: docs
 weight: 17
 url: /cs/net/excel-document-processing/search-text-in-excel-document-by-regular-expression/
 ---

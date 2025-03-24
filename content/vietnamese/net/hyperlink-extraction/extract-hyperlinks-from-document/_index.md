@@ -3,7 +3,6 @@ title: Trích xuất siêu liên kết từ tài liệu
 linktitle: Trích xuất siêu liên kết từ tài liệu
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất siêu liên kết từ tài liệu bằng GroupDocs.Parser cho .NET. Nâng cao ứng dụng C# của bạn với hướng dẫn đơn giản này.
-type: docs
 weight: 10
 url: /vi/net/hyperlink-extraction/extract-hyperlinks-from-document/
 ---
@@ -73,7 +72,7 @@ Có, GroupDocs.Parser hỗ trợ trích xuất siêu liên kết từ nhiều đ
 ### Có bản dùng thử miễn phí cho GroupDocs.Parser không?
  Có, bạn có thể truy cập bản dùng thử miễn phí của GroupDocs.Parser[đây](https://releases.groupdocs.com/).
 ### Tôi có thể tìm tài liệu về GroupDocs.Parser ở đâu?
- Tài liệu chi tiết về GroupDocs.Parser có thể được tìm thấy[đây](https://reference.groupdocs.com/parser/net/).
+ Tài liệu chi tiết về GroupDocs.Parser có thể được tìm thấy[đây](https://tutorials.groupdocs.com/parser/net/).
 ### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho GroupDocs.Parser?
  Bạn có thể xin giấy phép tạm thời cho GroupDocs.Parser[đây](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs có hỗ trợ khắc phục sự cố không?

@@ -3,7 +3,6 @@ title: 目次 (TOC) 項目によるテキストの抽出
 linktitle: 目次 (TOC) 項目によるテキストの抽出
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して目次 (TOC) でテキストを抽出します。構造化データの抽出のための効率的なドキュメント解析手法を学習します。
-type: docs
 weight: 15
 url: /ja/net/text-extraction/extract-text-by-toc-item/
 ---

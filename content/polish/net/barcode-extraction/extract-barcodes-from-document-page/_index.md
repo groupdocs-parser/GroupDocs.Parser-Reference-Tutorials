@@ -3,7 +3,6 @@ title: Wyodrębnij kody kreskowe ze strony dokumentu
 linktitle: Wyodrębnij kody kreskowe ze strony dokumentu
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić kody kreskowe ze stron dokumentów za pomocą GroupDocs.Parser dla .NET. Ten samouczek zawiera wskazówki krok po kroku dotyczące wyodrębniania kodów kreskowych.
-type: docs
 weight: 12
 url: /pl/net/barcode-extraction/extract-barcodes-from-document-page/
 ---
@@ -79,7 +78,7 @@ W tym samouczku nauczyłeś się, jak używać programu GroupDocs.Parser dla pla
 ### Często zadawane pytania
 
 ### P: Jakie formaty dokumentów obsługuje GroupDocs.Parser?
- GroupDocs.Parser obsługuje szeroką gamę formatów, w tym DOCX, PDF, XLSX, PPTX i inne. Patrz[dokumentacja](https://reference.groupdocs.com/parser/net/)aby uzyskać pełną listę.
+ GroupDocs.Parser obsługuje szeroką gamę formatów, w tym DOCX, PDF, XLSX, PPTX i inne. Patrz[dokumentacja](https://tutorials.groupdocs.com/parser/net/)aby uzyskać pełną listę.
 
 ### P: Czy mogę wyodrębnić metadane wraz z kodami kreskowymi za pomocą GroupDocs.Parser?
 Tak, GroupDocs.Parser umożliwia wyodrębnianie metadanych, tekstu, obrazów i kodów kreskowych z dokumentów, zapewniając kompleksowe możliwości analizowania dokumentów.

@@ -3,7 +3,6 @@ title: Обработка PDF-файлов
 linktitle: Обработка PDF-файлов
 second_title: GroupDocs.Parser .NET API
 description: Освойте обработку PDF с помощью GroupDocs.Parser для .NET. Научитесь эффективно извлекать вложения, данные, изображения, метаданные и текст из PDF-файлов.
-type: docs
 weight: 31
 url: /ru/net/pdf-processing/
 ---

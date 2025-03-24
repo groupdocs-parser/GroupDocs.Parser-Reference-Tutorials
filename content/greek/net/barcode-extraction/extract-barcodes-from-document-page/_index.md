@@ -3,7 +3,6 @@ title: Εξαγωγή γραμμωτών κωδίκων από τη σελίδα
 linktitle: Εξαγωγή γραμμωτών κωδίκων από τη σελίδα εγγράφου
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε γραμμικούς κώδικες από σελίδες εγγράφων χρησιμοποιώντας το GroupDocs.Parser για .NET. Αυτό το σεμινάριο παρέχει οδηγίες βήμα προς βήμα για την εξαγωγή γραμμωτού κώδικα.
-type: docs
 weight: 12
 url: /el/net/barcode-extraction/extract-barcodes-from-document-page/
 ---
@@ -79,7 +78,7 @@ foreach (PageBarcodeArea barcode in barcodes)
 ### Συχνές ερωτήσεις
 
 ### Ε: Ποιες μορφές εγγράφων υποστηρίζει το GroupDocs.Parser;
- Το GroupDocs.Parser υποστηρίζει ένα ευρύ φάσμα μορφών, συμπεριλαμβανομένων των DOCX, PDF, XLSX, PPTX και άλλων. Αναφέρομαι στο[τεκμηρίωση](https://reference.groupdocs.com/parser/net/)για μια πλήρη λίστα.
+ Το GroupDocs.Parser υποστηρίζει ένα ευρύ φάσμα μορφών, συμπεριλαμβανομένων των DOCX, PDF, XLSX, PPTX και άλλων. Αναφέρομαι στο[τεκμηρίωση](https://tutorials.groupdocs.com/parser/net/)για μια πλήρη λίστα.
 
 ### Ε: Μπορώ να εξαγάγω μεταδεδομένα μαζί με γραμμωτούς κώδικες χρησιμοποιώντας το GroupDocs.Parser;
 Ναι, το GroupDocs.Parser σάς επιτρέπει να εξάγετε μεταδεδομένα, κείμενο, εικόνες και γραμμωτούς κώδικες από έγγραφα, παρέχοντας ολοκληρωμένες δυνατότητες ανάλυσης εγγράφων.

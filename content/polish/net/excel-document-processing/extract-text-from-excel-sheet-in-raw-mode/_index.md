@@ -3,7 +3,6 @@ title: Wyodrębnij tekst z arkusza Excel w trybie surowym
 linktitle: Wyodrębnij tekst z arkusza Excel w trybie surowym
 second_title: GroupDocs.Parser API .NET
 description: Z tego obszernego samouczka dowiesz się, jak wyodrębnić tekst z arkuszy programu Excel przy użyciu programu GroupDocs.Parser dla platformy .NET. Pobierz i rozpocznij analizowanie.
-type: docs
 weight: 15
 url: /pl/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
 ---
@@ -66,7 +65,7 @@ Tak, GroupDocs.Parser obsługuje szeroką gamę formatów dokumentów, w tym Wor
 ### Czy GroupDocs.Parser nadaje się do przetwarzania dużych plików Excel?
 Tak, GroupDocs.Parser został zaprojektowany do wydajnej obsługi dużych dokumentów.
 ### Gdzie mogę znaleźć więcej dokumentacji dotyczącej GroupDocs.Parser?
- Możesz odwołać się do[dokumentacja](https://reference.groupdocs.com/parser/net/) szczegółowe informacje i przykłady.
+ Możesz odwołać się do[dokumentacja](https://tutorials.groupdocs.com/parser/net/) szczegółowe informacje i przykłady.
 ### Jak mogę uzyskać tymczasową licencję na GroupDocs.Parser?
  Odwiedzać[ten link](https://purchase.groupdocs.com/temporary-license/) ubiegać się o licencję tymczasową.
 ### Czy GroupDocs.Parser oferuje obsługę klienta?

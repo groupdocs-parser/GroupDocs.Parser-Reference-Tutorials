@@ -3,7 +3,6 @@ title: GroupDocs.Parser ile Belge Ayrıştırma Ustalığının Kilidini Açın
 linktitle: GroupDocs.Parser Eğitimleri
 additionalTitle: GroupDocs API Referansları
 description: .NET ve Java için GroupDocs.Parser ile verimli veri çıkarma tekniklerinin kilidini açın. Metin, tablo, görüntü çıkarma ve daha fazlasıyla ilgili eğitimleri keşfedin.
-type: docs
 weight: 11
 url: /tr/
 is_root: true

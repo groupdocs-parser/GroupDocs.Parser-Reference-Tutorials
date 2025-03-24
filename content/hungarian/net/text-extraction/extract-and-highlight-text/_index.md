@@ -3,7 +3,6 @@ title: Szöveg kibontása és kiemelése
 linktitle: Szöveg kibontása és kiemelése
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki és jelölhet ki szöveget dokumentumokból a GroupDocs.Parser for .NET segítségével. Egyszerű lépések a hatékony szövegkivonáshoz .NET-projektjeiben.
-type: docs
 weight: 11
 url: /hu/net/text-extraction/extract-and-highlight-text/
 ---

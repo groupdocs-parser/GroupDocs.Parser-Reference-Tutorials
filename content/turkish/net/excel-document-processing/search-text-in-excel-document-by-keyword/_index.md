@@ -3,7 +3,6 @@ title: Excel Belgesindeki Metni Anahtar Kelimeye Göre Arama
 linktitle: Excel Belgesindeki Metni Anahtar Kelimeye Göre Arama
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak Excel belgelerinde nasıl metin arayacağınızı öğrenin. Gelişmiş metin arama yeteneklerini .NET uygulamalarınıza entegre edin.
-type: docs
 weight: 16
 url: /tr/net/excel-document-processing/search-text-in-excel-document-by-keyword/
 ---
@@ -56,7 +55,7 @@ Evet, GroupDocs.Parser, Word, PDF, PowerPoint ve daha fazlasını içeren çok �
 ### GroupDocs.Parser büyük ölçekli belge işleme görevlerine uygun mu?
 Kesinlikle! GroupDocs.Parser, büyük belgeleri verimli bir şekilde işlemek için tasarlanmış olup güçlü metin çıkarma ve arama işlevlerine olanak tanır.
 ### GroupDocs.Parser for .NET için daha fazla belge ve desteği nerede bulabilirim?
- Ziyaret edin[GroupDocs.Parser belgeleri](https://reference.groupdocs.com/parser/net/) ayrıntılı API referansı için[GroupDocs Forumu](https://forum.groupdocs.com/c/parser/17) topluluk desteği için.
+ Ziyaret edin[GroupDocs.Parser belgeleri](https://tutorials.groupdocs.com/parser/net/) ayrıntılı API referansı için[GroupDocs Forumu](https://forum.groupdocs.com/c/parser/17) topluluk desteği için.
 ### Satın almadan önce GroupDocs.Parser for .NET'i deneyebilir miyim?
  Evet, özellikleri bir[ücretsiz deneme](https://releases.groupdocs.com/) bir satın alma işlemi yapmadan önce.
 ### GroupDocs.Parser için nasıl geçici lisans alabilirim?

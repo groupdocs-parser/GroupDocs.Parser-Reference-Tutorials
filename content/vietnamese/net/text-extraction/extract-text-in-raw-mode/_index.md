@@ -3,7 +3,6 @@ title: Trích xuất văn bản ở chế độ thô
 linktitle: Trích xuất văn bản ở chế độ thô
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất văn bản từ tài liệu bằng GroupDocs.Parser cho .NET. Trích xuất văn bản dễ dàng, hiệu quả và liền mạch trong các ứng dụng .NET của bạn.
-type: docs
 weight: 19
 url: /vi/net/text-extraction/extract-text-in-raw-mode/
 ---

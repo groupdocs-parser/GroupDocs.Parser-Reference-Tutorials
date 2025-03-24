@@ -3,7 +3,6 @@ title: Barkodları Belgeden Çıkarma
 linktitle: Barkodları Belgeden Çıkarma
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belgelerden barkodları nasıl çıkaracağınızı öğrenin. Belge işleme yeteneklerinizi zahmetsizce geliştirin.
-type: docs
 weight: 10
 url: /tr/net/barcode-extraction/extract-barcodes-from-document/
 ---

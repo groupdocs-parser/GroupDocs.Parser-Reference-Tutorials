@@ -3,7 +3,6 @@ title: Estrai allegati da portfolio PDF
 linktitle: Estrai allegati da portfolio PDF
 second_title: API GroupDocs.Parser .NET
 description: Scopri come estrarre gli allegati dai portfolio PDF utilizzando GroupDocs.Parser per .NET in questo tutorial completo.
-type: docs
 weight: 10
 url: /it/net/pdf-processing/extract-attachments-from-pdf-portfolios/
 ---

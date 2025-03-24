@@ -3,7 +3,6 @@ title: ドキュメントから画像を抽出する
 linktitle: ドキュメントから画像を抽出する
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用すると、ドキュメントから画像を簡単に抽出できます。ドキュメント処理機能と画像抽出タスクを効率的に合理化します。
-type: docs
 weight: 11
 url: /ja/net/image-extraction/extract-images-from-document/
 ---
@@ -67,7 +66,7 @@ GroupDocs.Parser は、PDF、DOCX、XLSX など、さまざまな形式から画
 ### GroupDocs.Parser の無料トライアルはありますか?
 はい、GroupDocs.Parserの無料トライアルは以下からご利用いただけます。[Webサイト](https://releases.groupdocs.com/).
 ### GroupDocs.Parser のドキュメントはどこにありますか?
- GroupDocs.Parserの詳細なドキュメントは以下にあります。[ここ](https://reference.groupdocs.com/parser/net/).
+ GroupDocs.Parserの詳細なドキュメントは以下にあります。[ここ](https://tutorials.groupdocs.com/parser/net/).
 ### GroupDocs.Parser の一時ライセンスを取得するにはどうすればよいですか?
 臨時免許証は、[一時ライセンスページ](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Parser のサポートはどこで受けられますか?

@@ -3,7 +3,6 @@ title: Λήψη πεδίου με όνομα
 linktitle: Λήψη πεδίου με όνομα
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε συγκεκριμένα πεδία δεδομένων από έγγραφα χρησιμοποιώντας το GroupDocs.Parser για .NET. Οδηγός βήμα προς βήμα με παραδείγματα κώδικα.
-type: docs
 weight: 10
 url: /el/net/data-extraction-from-templates/get-field-by-name/
 ---

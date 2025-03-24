@@ -3,7 +3,6 @@ title: Estrai collegamenti ipertestuali dal documento
 linktitle: Estrai collegamenti ipertestuali dal documento
 second_title: API GroupDocs.Parser .NET
 description: Scopri come estrarre collegamenti ipertestuali dai documenti utilizzando GroupDocs.Parser per .NET. Migliora le tue applicazioni C# con questa guida semplice.
-type: docs
 weight: 10
 url: /it/net/hyperlink-extraction/extract-hyperlinks-from-document/
 ---
@@ -73,7 +72,7 @@ Sì, GroupDocs.Parser supporta l'estrazione di collegamenti ipertestuali da un'a
 ### È disponibile una prova gratuita per GroupDocs.Parser?
  Sì, puoi accedere a una prova gratuita di GroupDocs.Parser[Qui](https://releases.groupdocs.com/).
 ### Dove posso trovare la documentazione per GroupDocs.Parser?
- È possibile trovare la documentazione dettagliata per GroupDocs.Parser[Qui](https://reference.groupdocs.com/parser/net/).
+ È possibile trovare la documentazione dettagliata per GroupDocs.Parser[Qui](https://tutorials.groupdocs.com/parser/net/).
 ### Come posso ottenere una licenza temporanea per GroupDocs.Parser?
  È possibile ottenere una licenza temporanea per GroupDocs.Parser[Qui](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs offre supporto per la risoluzione dei problemi?

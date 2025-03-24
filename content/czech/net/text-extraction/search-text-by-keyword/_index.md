@@ -3,7 +3,6 @@ title: Hledat text podle klíčového slova
 linktitle: Hledat text podle klíčového slova
 second_title: GroupDocs.Parser .NET API
 description: Naučte se vyhledávat text podle klíčových slov v dokumentech pomocí GroupDocs.Parser for .NET. Snadno efektivně extrahujte relevantní obsah.
-type: docs
 weight: 21
 url: /cs/net/text-extraction/search-text-by-keyword/
 ---
@@ -63,7 +62,7 @@ Ano, GroupDocs.Parser podporuje širokou škálu formátů souborů, včetně PD
 ### Mohu provádět pokročilé operace extrakce textu pomocí GroupDocs.Parser?
 Absolutně! Kromě textového vyhledávání umožňuje GroupDocs.Parser extrakci metadat, extrakci strukturovaného textu a další.
 ### Kde najdu podrobnou dokumentaci k GroupDocs.Parser?
-Prozkoumejte kompletní dokumentaci[tady](https://reference.groupdocs.com/parser/net/).
+Prozkoumejte kompletní dokumentaci[tady](https://tutorials.groupdocs.com/parser/net/).
 ### Jak mohu získat podporu nebo pomoc s dotazy týkajícími se GroupDocs.Parser?
  Navštivte fórum GroupDocs pro podporu a diskuse[tady](https://forum.groupdocs.com/c/parser/17).
 ### Je k dispozici zkušební verze pro vyhodnocení GroupDocs.Parser před zakoupením?

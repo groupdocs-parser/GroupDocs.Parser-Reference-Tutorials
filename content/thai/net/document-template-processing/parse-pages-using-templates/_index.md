@@ -3,7 +3,6 @@ title: แยกหน้าโดยใช้เทมเพลต
 linktitle: แยกหน้าโดยใช้เทมเพลต
 second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกวิเคราะห์หน้าเอกสารโดยใช้เทมเพลตใน .NET ด้วย GroupDocs.Parser แยกเนื้อหาเฉพาะอย่างมีประสิทธิภาพสำหรับแอปพลิเคชันของคุณ
-type: docs
 weight: 16
 url: /th/net/document-template-processing/parse-pages-using-templates/
 ---
@@ -67,7 +66,7 @@ using (Parser parser = new Parser("YourSampleFile.docx"))
 ### GroupDocs.Parser เหมาะสำหรับการดึงข้อมูลเฉพาะ เช่น บาร์โค้ด หรือไม่
 อย่างแน่นอน! GroupDocs.Parser นำเสนอความสามารถในการแยกข้อมูลที่แม่นยำสำหรับการแยกเนื้อหาเป้าหมาย
 ### ฉันจะหาเอกสารโดยละเอียดสำหรับ GroupDocs.Parser ได้ที่ไหน
- เยี่ยมชม[เอกสารประกอบ](https://reference.groupdocs.com/parser/net/) เพื่อรับคำแนะนำอย่างครอบคลุม
+ เยี่ยมชม[เอกสารประกอบ](https://tutorials.groupdocs.com/parser/net/) เพื่อรับคำแนะนำอย่างครอบคลุม
 ### ฉันจะได้รับใบอนุญาตชั่วคราวสำหรับ GroupDocs.Parser ได้อย่างไร
  ได้รับ[ใบอนุญาตชั่วคราว](https://purchase.groupdocs.com/temporary-license/) เพื่อวัตถุประสงค์ในการประเมินหรือการพัฒนา
 ### GroupDocs ให้การสนับสนุนในการแก้ไขปัญหาหรือไม่

@@ -3,7 +3,6 @@ title: Vonalkódok használata sablonokban
 linktitle: Vonalkódok használata sablonokban
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan használhatja a GroupDocs.Parser for .NET-et strukturált adatok kinyerésére a dokumentumokból sablonok segítségével. Egyszerűsítse az adatkinyerést vonalkódmezőkkel.
-type: docs
 weight: 10
 url: /hu/net/document-template-processing/working-with-barcodes-in-templates/
 ---

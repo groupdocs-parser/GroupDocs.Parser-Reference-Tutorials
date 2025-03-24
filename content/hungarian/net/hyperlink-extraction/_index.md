@@ -3,7 +3,6 @@ title: Hiperhivatkozás kibontása
 linktitle: Hiperhivatkozás kibontása
 second_title: GroupDocs.Parser .NET API
 description: Könnyedén kivonhatja a hiperhivatkozásokat a .NET-ben található dokumentumokból a GroupDocs.Parser segítségével. Bővítse C#-alkalmazásait a hiperhivatkozások kinyeréséhez szükséges lépésenkénti útmutatókkal.
-type: docs
 weight: 25
 url: /hu/net/hyperlink-extraction/
 ---

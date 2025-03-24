@@ -3,7 +3,6 @@ title: Εξαγωγή κειμένου από τη σελίδα σε PDF σε Ra
 linktitle: Εξαγωγή κειμένου από τη σελίδα σε PDF σε Raw Mode
 second_title: GroupDocs.Parser .NET API
 description: Εξαγωγή κειμένου από αρχεία PDF χρησιμοποιώντας GroupDocs.Parser σε C#. Μάθετε αποτελεσματική εξαγωγή κειμένου PDF με αυτήν την ισχυρή βιβλιοθήκη .NET.
-type: docs
 weight: 16
 url: /el/net/pdf-processing/extract-text-from-page-in-pdf-in-raw-mode/
 ---

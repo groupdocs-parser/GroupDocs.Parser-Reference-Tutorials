@@ -3,7 +3,6 @@ title: استخراج البيانات من نماذج PDF
 linktitle: استخراج البيانات من نماذج PDF
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج البيانات من نماذج PDF باستخدام GroupDocs.Parser لـ .NET. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية والأسئلة الشائعة.
-type: docs
 weight: 11
 url: /ar/net/pdf-processing/extract-data-from-pdf-forms/
 ---
@@ -79,7 +78,7 @@ Console.WriteLine("Description: {0}", rec.Description);
 ### هل يمكنني استخراج الصور والبيانات التعريفية باستخدام GroupDocs.Parser؟
 نعم، يسمح GroupDocs.Parser باستخراج الصور وبيانات التعريف والنص من المستندات.
 ### أين يمكنني العثور على دعم أو وثائق إضافية لـ GroupDocs.Parser؟
- يمكنك زيارة[وثائق GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) للحصول على معلومات وأمثلة مفصلة.
+ يمكنك زيارة[وثائق GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) للحصول على معلومات وأمثلة مفصلة.
 ### هل هناك نسخة تجريبية مجانية متاحة لـ GroupDocs.Parser؟
  نعم يمكنك الوصول إلى[نسخة تجريبية مجانية من GroupDocs.Parser](https://releases.groupdocs.com/) لاستكشاف ميزاته.
 ### كيف يمكنني الحصول على ترخيص مؤقت لـ GroupDocs.Parser؟

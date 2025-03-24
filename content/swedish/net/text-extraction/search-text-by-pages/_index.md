@@ -3,7 +3,6 @@ title: Sök text efter sidor
 linktitle: Sök text efter sidor
 second_title: GroupDocs.Parser .NET API
 description: Lär dig att söka text på sidor med GroupDocs.Parser för .NET. Extrahera specifikt innehåll effektivt från dokument i dina .NET-applikationer.
-type: docs
 weight: 22
 url: /sv/net/text-extraction/search-text-by-pages/
 ---
@@ -64,7 +63,7 @@ Ja, GroupDocs.Parser stöder ett brett utbud av dokumentformat inklusive DOCX, P
 ### Kan jag extrahera bilder och metadata från dokument med GroupDocs.Parser?
 Absolut, GroupDocs.Parser tillåter extrahering av bilder, metadata och text från dokument.
 ### Var kan jag hitta detaljerad dokumentation för GroupDocs.Parser?
- Du kan komma åt dokumentationen[här](https://reference.groupdocs.com/parser/net/).
+ Du kan komma åt dokumentationen[här](https://tutorials.groupdocs.com/parser/net/).
 ### Hur kan jag få en tillfällig licens för GroupDocs.Parser?
  Du kan begära en tillfällig licens[här](https://purchase.groupdocs.com/temporary-license/).
 ### Var kan jag få support eller hjälp med GroupDocs.Parser?

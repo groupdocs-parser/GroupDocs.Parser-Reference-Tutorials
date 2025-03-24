@@ -3,7 +3,6 @@ title: Extraer texto sin formato
 linktitle: Extraer texto sin formato
 second_title: API GroupDocs.Parser .NET
 description: Aprenda a extraer texto sin formato de documentos utilizando GroupDocs.Parser para .NET. Pasos sencillos para integrar la extracción de texto en sus aplicaciones.
-type: docs
 weight: 14
 url: /es/net/formatted-text-extraction/extract-plain-text/
 ---

@@ -3,7 +3,6 @@ title: Mezőkkel végzett munka fix pozíciókban a sablonokban
 linktitle: Mezőkkel végzett munka fix pozíciókban a sablonokban
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan nyerhet ki adatokat dokumentumokból a GroupDocs.Parser for .NET segítségével. Átfogó oktatóanyag kódpéldákkal.
-type: docs
 weight: 11
 url: /hu/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
@@ -69,7 +68,7 @@ Ebben az oktatóanyagban a GroupDocs.Parser for .NET segítségével rögzített
 
 ## GYIK
 ### A GroupDocs.Parser kompatibilis az összes dokumentumformátummal?
- A GroupDocs.Parser a fájlformátumok széles skáláját támogatja, beleértve a PDF, Microsoft Word, Excel, PowerPoint és egyebeket. Utal[dokumentáció](https://reference.groupdocs.com/parser/net/) a részletes listáért.
+ A GroupDocs.Parser a fájlformátumok széles skáláját támogatja, beleértve a PDF, Microsoft Word, Excel, PowerPoint és egyebeket. Utal[dokumentáció](https://tutorials.groupdocs.com/parser/net/) a részletes listáért.
 ### Hogyan szerezhetek ideiglenes licencet a GroupDocs.Parser számára?
  Ideiglenes licencet tesztelési célból szerezhet be[itt](https://purchase.groupdocs.com/temporary-license/).
 ### Hol találok támogatást a GroupDocs.Parser számára?

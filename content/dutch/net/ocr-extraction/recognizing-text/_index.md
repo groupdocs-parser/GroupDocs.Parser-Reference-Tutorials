@@ -3,7 +3,6 @@ title: Herkennen van tekst
 linktitle: Herkennen van tekst
 second_title: GroupDocs.Parser .NET API
 description: Extraheer tekst efficiënt uit verschillende documentformaten met GroupDocs.Parser voor .NET. Eenvoudige integratie en krachtige OCR-mogelijkheden.
-type: docs
 weight: 12
 url: /nl/net/ocr-extraction/recognizing-text/
 ---
@@ -57,7 +56,7 @@ In dit fragment:
 - `TextOptions` is geconfigureerd om OCR in te schakelen en tekstextractie te optimaliseren.
 
 ## Conclusie
- Gefeliciteerd! U hebt geleerd hoe u GroupDocs.Parser voor .NET in uw projecten kunt integreren om tekst efficiënt te extraheren. Ontdek het uitgebreide[documentatie](https://reference.groupdocs.com/parser/net/) voor geavanceerde functies en optimalisaties.
+ Gefeliciteerd! U hebt geleerd hoe u GroupDocs.Parser voor .NET in uw projecten kunt integreren om tekst efficiënt te extraheren. Ontdek het uitgebreide[documentatie](https://tutorials.groupdocs.com/parser/net/) voor geavanceerde functies en optimalisaties.
 
 ## Veelgestelde vragen
 ### Is GroupDocs.Parser geschikt voor het extraheren van tekst uit PDF-bestanden?

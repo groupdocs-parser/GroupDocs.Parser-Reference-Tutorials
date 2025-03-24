@@ -3,7 +3,6 @@ title: Traitement PDF
 linktitle: Traitement PDF
 second_title: API GroupDocs.Parser .NET
 description: Maîtrisez le traitement PDF avec GroupDocs.Parser pour .NET. Apprenez à extraire efficacement des pièces jointes, des données, des images, des métadonnées et du texte à partir de PDF.
-type: docs
 weight: 31
 url: /fr/net/pdf-processing/
 ---

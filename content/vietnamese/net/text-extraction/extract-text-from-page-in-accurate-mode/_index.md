@@ -3,7 +3,6 @@ title: Trích xuất văn bản từ trang ở chế độ chính xác
 linktitle: Trích xuất văn bản từ trang ở chế độ chính xác
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất văn bản chính xác từ tài liệu bằng GroupDocs.Parser cho .NET trong hướng dẫn toàn diện này.
-type: docs
 weight: 16
 url: /vi/net/text-extraction/extract-text-from-page-in-accurate-mode/
 ---

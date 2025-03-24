@@ -3,7 +3,6 @@ title: Загрузить документ по URL
 linktitle: Загрузить документ по URL
 second_title: GroupDocs.Parser .NET API
 description: Узнайте, как извлечь текст из документов с помощью GroupDocs.Parser для .NET. В этом руководстве рассматривается пошаговая загрузка документа по URL-адресу и извлечение текста.
-type: docs
 weight: 13
 url: /ru/net/document-loading/load-document-from-url/
 ---
@@ -64,6 +63,6 @@ Console.WriteLine(reader == null ? "Text extraction isn't supported" : reader.Re
 ### Доступна ли пробная версия для GroupDocs.Parser?
  Да, вы можете получить бесплатную пробную версию GroupDocs.Parser на сайте[здесь](https://releases.groupdocs.com/).
 ### Где я могу найти документацию для GroupDocs.Parser?
- Подробная документация для GroupDocs.Parser доступна.[здесь](https://reference.groupdocs.com/parser/net/).
+ Подробная документация для GroupDocs.Parser доступна.[здесь](https://tutorials.groupdocs.com/parser/net/).
 ### Как я могу получить техническую поддержку для GroupDocs.Parser?
 Вы можете обратиться в техническую поддержку и задать вопросы на форуме GroupDocs.Parser.[здесь](https://forum.groupdocs.com/c/parser/17).

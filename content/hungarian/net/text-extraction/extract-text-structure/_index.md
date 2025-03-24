@@ -3,7 +3,6 @@ title: Szövegszerkezet kivonat
 linktitle: Szövegszerkezet kivonat
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki szövegszerkezetet különböző dokumentumformátumokból a GroupDocs.Parser for .NET segítségével. Lépésről lépésre bemutató oktatóprogram kódpéldákkal.
-type: docs
 weight: 20
 url: /hu/net/text-extraction/extract-text-structure/
 ---

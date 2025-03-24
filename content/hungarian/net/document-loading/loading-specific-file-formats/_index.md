@@ -3,7 +3,6 @@ title: Meghatározott fájlformátumok betöltése
 linktitle: Meghatározott fájlformátumok betöltése
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki szöveget különböző fájlformátumokból a .NET-ben a GroupDocs.Parser segítségével. Lépésről lépésre bemutató útmutató a hatékony dokumentumfeldolgozáshoz.
-type: docs
 weight: 14
 url: /hu/net/document-loading/loading-specific-file-formats/
 ---
@@ -71,7 +70,7 @@ A GroupDocs.Parser for .NET leegyszerűsíti a szövegek kinyerését a különb
 ### Ingyenesen használható a GroupDocs.Parser for .NET?
  GroupDocs.Parser for .NET ingyenes és fizetős licencelési lehetőségeket is kínál. Felfedezheti őket[itt](https://purchase.groupdocs.com/buy).
 ### Mely fájlformátumokat támogatja a GroupDocs.Parser for .NET?
- A GroupDocs.Parser a fájlformátumok széles skáláját támogatja, beleértve a Word, PDF, Excel, PowerPoint, Markdown stb. Lásd a dokumentációt[itt](https://reference.groupdocs.com/parser/net/) a teljes listához.
+ A GroupDocs.Parser a fájlformátumok széles skáláját támogatja, beleértve a Word, PDF, Excel, PowerPoint, Markdown stb. Lásd a dokumentációt[itt](https://tutorials.groupdocs.com/parser/net/) a teljes listához.
 ### Kipróbálhatom a GroupDocs.Parser for .NET-et vásárlás előtt?
  Igen, hozzáférhet az ingyenes próbaverzióhoz[itt](https://releases.groupdocs.com/).
 ### Hol találhatok támogatást, vagy hol tehetek fel kérdéseket a GroupDocs.Parser for .NET-hez kapcsolódóan?

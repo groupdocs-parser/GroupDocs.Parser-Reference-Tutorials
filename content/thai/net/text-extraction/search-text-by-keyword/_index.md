@@ -3,7 +3,6 @@ title: ค้นหาข้อความด้วยคำสำคัญ
 linktitle: ค้นหาข้อความด้วยคำสำคัญ
 second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีค้นหาข้อความด้วยคำสำคัญในเอกสารโดยใช้ GroupDocs.Parser สำหรับ .NET แยกเนื้อหาที่เกี่ยวข้องอย่างมีประสิทธิภาพได้อย่างง่ายดาย
-type: docs
 weight: 21
 url: /th/net/text-extraction/search-text-by-keyword/
 ---
@@ -63,7 +62,7 @@ foreach (SearchResult result in searchResults)
 ### ฉันสามารถดำเนินการแยกข้อความขั้นสูงโดยใช้ GroupDocs.Parser ได้หรือไม่
 อย่างแน่นอน! นอกเหนือจากการค้นหาข้อความแล้ว GroupDocs.Parser ยังเปิดใช้งานการแยกข้อมูลเมตา การแยกข้อความที่มีโครงสร้าง และอื่นๆ อีกมากมาย
 ### ฉันจะหาเอกสารโดยละเอียดสำหรับ GroupDocs.Parser ได้ที่ไหน
-สำรวจเอกสารฉบับสมบูรณ์[ที่นี่](https://reference.groupdocs.com/parser/net/).
+สำรวจเอกสารฉบับสมบูรณ์[ที่นี่](https://tutorials.groupdocs.com/parser/net/).
 ### ฉันจะรับการสนับสนุนหรือความช่วยเหลือเกี่ยวกับคำถามที่เกี่ยวข้องกับ GroupDocs.Parser ได้อย่างไร
  เยี่ยมชมฟอรัม GroupDocs เพื่อรับการสนับสนุนและการสนทนา[ที่นี่](https://forum.groupdocs.com/c/parser/17).
 ### มีเวอร์ชันทดลองใช้งานเพื่อประเมิน GroupDocs.Parser ก่อนซื้อหรือไม่

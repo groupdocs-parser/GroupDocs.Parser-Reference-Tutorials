@@ -3,7 +3,6 @@ title: Lavorare con il layout della tabella nei modelli
 linktitle: Lavorare con il layout della tabella nei modelli
 second_title: API GroupDocs.Parser .NET
 description: Scopri come lavorare con i layout di tabella nei modelli utilizzando GroupDocs.Parser per .NET. Estrai dati strutturati in modo efficiente dai documenti.
-type: docs
 weight: 14
 url: /it/net/document-template-processing/working-with-table-layout-in-templates/
 ---

@@ -3,7 +3,6 @@ title: Szöveg kibontása az oldalról nyers módban
 linktitle: Szöveg kibontása az oldalról nyers módban
 second_title: GroupDocs.Parser .NET API
 description: Ebben az átfogó oktatóanyagban tanulhat meg hatékony szövegkivonást a dokumentumoldalakról a Groupdocs.Parser for .NET segítségével.
-type: docs
 weight: 17
 url: /hu/net/text-extraction/extract-text-from-page-in-raw-mode/
 ---

@@ -3,7 +3,6 @@ title: Extrahujte metadata z dokumentu aplikace Excel
 linktitle: Extrahujte metadata z dokumentu aplikace Excel
 second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat metadata z dokumentů aplikace Excel pomocí GroupDocs.Parser for .NET. Postupujte podle tohoto podrobného návodu.
-type: docs
 weight: 11
 url: /cs/net/excel-document-processing/extract-metadata-from-excel-document/
 ---

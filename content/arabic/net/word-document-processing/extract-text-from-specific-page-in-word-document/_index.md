@@ -3,7 +3,6 @@ title: استخراج النص من صفحة معينة في مستند Word
 linktitle: استخراج النص من صفحة معينة في مستند Word
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج النص من صفحات معينة في مستندات Word باستخدام GroupDocs.Parser لـ .NET. دمج قدرات استخراج النص في .NET الخاص بك.
-type: docs
 weight: 17
 url: /ar/net/word-document-processing/extract-text-from-specific-page-in-word-document/
 ---

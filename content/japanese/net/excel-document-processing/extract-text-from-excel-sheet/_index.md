@@ -3,7 +3,6 @@ title: Excelシートからテキストを抽出する
 linktitle: Excelシートからテキストを抽出する
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して Excel シートからテキストを抽出する方法を学びます。効果的なテキスト抽出のための簡単な手順。
-type: docs
 weight: 14
 url: /ja/net/excel-document-processing/extract-text-from-excel-sheet/
 ---

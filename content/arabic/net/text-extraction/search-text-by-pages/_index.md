@@ -3,7 +3,6 @@ title: البحث عن النص حسب الصفحات
 linktitle: البحث عن النص حسب الصفحات
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية البحث عن النص حسب الصفحات باستخدام GroupDocs.Parser لـ .NET. قم باستخراج محتوى محدد بكفاءة من المستندات الموجودة في تطبيقات .NET الخاصة بك.
-type: docs
 weight: 22
 url: /ar/net/text-extraction/search-text-by-pages/
 ---
@@ -64,7 +63,7 @@ foreach (SearchResult result in searchResults)
 ### هل يمكنني استخراج الصور وبيانات التعريف من المستندات باستخدام GroupDocs.Parser؟
 بالتأكيد، يسمح GroupDocs.Parser باستخراج الصور وبيانات التعريف والنص من المستندات.
 ### أين يمكنني العثور على وثائق مفصلة عن GroupDocs.Parser؟
- يمكنك الوصول إلى الوثائق[هنا](https://reference.groupdocs.com/parser/net/).
+ يمكنك الوصول إلى الوثائق[هنا](https://tutorials.groupdocs.com/parser/net/).
 ### كيف يمكنني الحصول على ترخيص مؤقت لـ GroupDocs.Parser؟
  يمكنك طلب ترخيص مؤقت[هنا](https://purchase.groupdocs.com/temporary-license/).
 ### أين يمكنني الحصول على الدعم أو المساعدة فيما يتعلق بـ GroupDocs.Parser؟

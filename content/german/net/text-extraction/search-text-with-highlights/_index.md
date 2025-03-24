@@ -3,7 +3,6 @@ title: Text mit Hervorhebungen durchsuchen
 linktitle: Text mit Hervorhebungen durchsuchen
 second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Text in Dokumenten suchen und hervorheben. Extrahieren Sie effizient wertvolle Erkenntnisse.
-type: docs
 weight: 24
 url: /de/net/text-extraction/search-text-with-highlights/
 ---

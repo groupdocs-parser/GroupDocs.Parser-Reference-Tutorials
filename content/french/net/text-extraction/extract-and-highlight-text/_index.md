@@ -3,7 +3,6 @@ title: Extraire et surligner du texte
 linktitle: Extraire et surligner du texte
 second_title: API GroupDocs.Parser .NET
 description: Découvrez comment extraire et surligner du texte à partir de documents à l'aide de GroupDocs.Parser pour .NET. Étapes simples pour une extraction de texte efficace dans vos projets .NET.
-type: docs
 weight: 11
 url: /fr/net/text-extraction/extract-and-highlight-text/
 ---

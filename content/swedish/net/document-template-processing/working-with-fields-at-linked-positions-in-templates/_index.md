@@ -3,7 +3,6 @@ title: Arbeta med fält på länkade positioner i mallar
 linktitle: Arbeta med fält på länkade positioner i mallar
 second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du extraherar data effektivt från dokument med GroupDocs.Parser för .NET. Steg-för-steg handledning med kodexempel.
-type: docs
 weight: 12
 url: /sv/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
 ---

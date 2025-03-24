@@ -3,7 +3,6 @@ title: 从文档页面区域提取超链接
 linktitle: 从文档页面区域提取超链接
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从特定文档区域提取超链接。增强您的文档处理能力。
-type: docs
 weight: 12
 url: /zh/net/hyperlink-extraction/extract-hyperlinks-from-document-page-area/
 ---

@@ -3,7 +3,6 @@ title: Wyodrębnij tabele ze strony dokumentu
 linktitle: Wyodrębnij tabele ze strony dokumentu
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak programowo wyodrębniać tabele z dokumentów przy użyciu programu GroupDocs.Parser dla platformy .NET. Ten kompleksowy samouczek zawiera wskazówki krok po kroku.
-type: docs
 weight: 11
 url: /pl/net/table-extraction/extract-tables-from-document-page/
 ---

@@ -3,7 +3,6 @@ title: 提取纯文本
 linktitle: 提取纯文本
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从文档中提取纯文本。在应用程序中集成文本提取的简单步骤。
-type: docs
 weight: 14
 url: /zh/net/formatted-text-extraction/extract-plain-text/
 ---

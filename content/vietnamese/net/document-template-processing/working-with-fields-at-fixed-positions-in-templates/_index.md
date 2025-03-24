@@ -3,7 +3,6 @@ title: Làm việc với các trường ở vị trí cố định trong mẫu
 linktitle: Làm việc với các trường ở vị trí cố định trong mẫu
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất dữ liệu từ tài liệu bằng GroupDocs.Parser cho .NET. Hướng dẫn toàn diện với các ví dụ về mã.
-type: docs
 weight: 11
 url: /vi/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
@@ -69,7 +68,7 @@ Trong hướng dẫn này, chúng tôi đã đề cập đến quá trình làm 
 
 ## Câu hỏi thường gặp
 ### GroupDocs.Parser có tương thích với tất cả các định dạng tài liệu không?
- GroupDocs.Parser hỗ trợ nhiều định dạng tệp, bao gồm PDF, Microsoft Word, Excel, PowerPoint, v.v. Tham khảo đến[tài liệu](https://reference.groupdocs.com/parser/net/) để biết danh sách chi tiết.
+ GroupDocs.Parser hỗ trợ nhiều định dạng tệp, bao gồm PDF, Microsoft Word, Excel, PowerPoint, v.v. Tham khảo đến[tài liệu](https://tutorials.groupdocs.com/parser/net/) để biết danh sách chi tiết.
 ### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho GroupDocs.Parser?
  Bạn có thể nhận được giấy phép tạm thời cho mục đích thử nghiệm từ[đây](https://purchase.groupdocs.com/temporary-license/).
 ### Tôi có thể tìm hỗ trợ cho GroupDocs.Parser ở đâu?

@@ -3,7 +3,6 @@ title: Extraer imágenes a archivos
 linktitle: Extraer imágenes a archivos
 second_title: API GroupDocs.Parser .NET
 description: Extraiga imágenes sin esfuerzo de varios tipos de documentos como PDF y DOCX utilizando GroupDocs.Parser para .NET. Simplifique sus tareas de análisis de documentos.
-type: docs
 weight: 13
 url: /es/net/image-extraction/extract-images-to-files/
 ---

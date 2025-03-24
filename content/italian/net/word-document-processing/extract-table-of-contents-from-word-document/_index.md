@@ -3,7 +3,6 @@ title: Estrai il sommario dal documento di Word
 linktitle: Estrai il sommario dal documento di Word
 second_title: API GroupDocs.Parser .NET
 description: Scopri come estrarre il sommario (TOC) dai documenti Word a livello di codice utilizzando GroupDocs.Parser per .NET.
-type: docs
 weight: 13
 url: /it/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
@@ -64,7 +63,7 @@ Sì, GroupDocs.Parser supporta un'ampia gamma di formati di documenti, inclusi P
 ### GroupDocs.Parser è adatto all'elaborazione di documenti di grandi dimensioni?
 Sì, GroupDocs.Parser è ottimizzato per gestire documenti di grandi dimensioni in modo efficiente, con funzionalità come l'estrazione di testo, l'estrazione di metadati e l'estrazione di dati strutturati.
 ### Dove posso trovare ulteriore documentazione ed esercitazioni per GroupDocs.Parser?
- Visitare il[Documentazione GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) per riferimenti API dettagliati ed esercitazioni.
+ Visitare il[Documentazione GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) per riferimenti API dettagliati ed esercitazioni.
 ### Come posso ottenere supporto per GroupDocs.Parser?
  Aderire al[Forum GroupDocs.Parser](https://forum.groupdocs.com/c/parser/17) porre domande e interagire con la comunità.
 ### È disponibile una versione di prova per GroupDocs.Parser?

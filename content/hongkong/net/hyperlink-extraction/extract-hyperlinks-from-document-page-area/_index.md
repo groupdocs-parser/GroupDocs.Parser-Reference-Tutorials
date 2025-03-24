@@ -3,7 +3,6 @@ title: 從文檔頁面區域提取超鏈接
 linktitle: 從文檔頁面區域提取超鏈接
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 從特定文件區域提取超連結。增強您的文件處理能力。
-type: docs
 weight: 12
 url: /zh-hant/net/hyperlink-extraction/extract-hyperlinks-from-document-page-area/
 ---

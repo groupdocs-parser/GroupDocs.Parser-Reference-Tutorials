@@ -3,7 +3,6 @@ title: पीडीएफ से पाठ निकालें
 linktitle: पीडीएफ से पाठ निकालें
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके PDF दस्तावेज़ों से टेक्स्ट निकालना सीखें। डेवलपर्स के लिए चरण-दर-चरण ट्यूटोरियल।
-type: docs
 weight: 14
 url: /hi/net/pdf-processing/extract-text-from-pdf/
 ---
@@ -58,7 +57,7 @@ Console.WriteLine(reader.ReadToEnd());
 ### क्या मैं लाइसेंस खरीदने से पहले GroupDocs.Parser आज़मा सकता हूँ?
  हां, आप निःशुल्क परीक्षण संस्करण प्राप्त कर सकते हैं[यहाँ](https://releases.groupdocs.com/).
 ### मैं GroupDocs.Parser के लिए दस्तावेज़ कहां पा सकता हूं?
- विस्तृत दस्तावेज उपलब्ध है[यहाँ](https://reference.groupdocs.com/parser/net/).
+ विस्तृत दस्तावेज उपलब्ध है[यहाँ](https://tutorials.groupdocs.com/parser/net/).
 ### मैं GroupDocs.Parser के लिए तकनीकी सहायता कैसे प्राप्त कर सकता हूं?
  आप सहायता फ़ोरम पर सहायता ले सकते हैं[यहाँ](https://forum.groupdocs.com/c/parser/17).
 ### मैं GroupDocs.Parser के लिए अस्थायी लाइसेंस कैसे प्राप्त करूं?

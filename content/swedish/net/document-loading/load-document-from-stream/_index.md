@@ -3,7 +3,6 @@ title: Ladda dokument från Stream
 linktitle: Ladda dokument från Stream
 second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du extraherar text från olika dokumentformat i .NET med GroupDocs.Parser. Steg-för-steg guide med kodexempel.
-type: docs
 weight: 12
 url: /sv/net/document-loading/load-document-from-stream/
 ---
@@ -61,4 +60,4 @@ Ja, GroupDocs.Parser är kompatibel med både .NET Framework och .NET Core-appli
 ### Hur kan jag få en tillfällig licens för GroupDocs.Parser?
  Du kan få en tillfällig licens från[här](https://purchase.groupdocs.com/temporary-license/).
 ### Var kan jag hitta mer support eller dokumentation för GroupDocs.Parser?
- För ytterligare support, besök[GroupDocs.Parser Forum](https://forum.groupdocs.com/c/parser/17) eller hänvisa till[dokumentation](https://reference.groupdocs.com/parser/net/).
+ För ytterligare support, besök[GroupDocs.Parser Forum](https://forum.groupdocs.com/c/parser/17) eller hänvisa till[dokumentation](https://tutorials.groupdocs.com/parser/net/).

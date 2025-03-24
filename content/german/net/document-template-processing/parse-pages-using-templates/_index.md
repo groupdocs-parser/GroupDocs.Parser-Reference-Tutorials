@@ -3,7 +3,6 @@ title: Seiten mithilfe von Vorlagen analysieren
 linktitle: Seiten mithilfe von Vorlagen analysieren
 second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser Dokumentseiten mithilfe von Vorlagen in .NET analysieren. Extrahieren Sie effizient spezifischen Inhalt für Ihre Anwendungen.
-type: docs
 weight: 16
 url: /de/net/document-template-processing/parse-pages-using-templates/
 ---
@@ -67,7 +66,7 @@ Ja, GroupDocs.Parser unterstützt verschiedene Formate, darunter PDF, DOCX, XLSX
 ### Ist GroupDocs.Parser zum Extrahieren spezifischer Daten wie Barcodes geeignet?
 Auf jeden Fall! GroupDocs.Parser bietet präzise Extraktionsfunktionen für die gezielte Inhaltsextraktion.
 ### Wo finde ich eine ausführliche Dokumentation für GroupDocs.Parser?
- Besuche den[Dokumentation](https://reference.groupdocs.com/parser/net/) für eine umfassende Beratung.
+ Besuche den[Dokumentation](https://tutorials.groupdocs.com/parser/net/) für eine umfassende Beratung.
 ### Wie kann ich eine vorübergehende Lizenz für GroupDocs.Parser erhalten?
  Erhalten ein[vorläufige Lizenz](https://purchase.groupdocs.com/temporary-license/) für Evaluierungs- oder Entwicklungszwecke.
 ### Bietet GroupDocs Unterstützung bei der Fehlerbehebung?

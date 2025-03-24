@@ -3,7 +3,6 @@ title: Vonja ki a vonalkódokat a dokumentumból az opciókkal
 linktitle: Vonja ki a vonalkódokat a dokumentumból az opciókkal
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan vonhat ki vonalkódokat dokumentumokból a GroupDocs.Parser for .NET segítségével. Átfogó oktatóanyag kódpéldákkal és GYIK-vel.
-type: docs
 weight: 14
 url: /hu/net/barcode-extraction/extract-barcodes-from-document-with-options/
 ---

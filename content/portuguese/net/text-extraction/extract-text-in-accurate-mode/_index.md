@@ -3,7 +3,6 @@ title: Extraia texto em modo preciso
 linktitle: Extraia texto em modo preciso
 second_title: API GroupDocs.Parser .NET
 description: Aprenda como extrair texto com precisão de documentos em .NET usando GroupDocs.Parser para processamento de dados contínuo.
-type: docs
 weight: 18
 url: /pt/net/text-extraction/extract-text-in-accurate-mode/
 ---

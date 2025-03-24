@@ -3,7 +3,6 @@ title: पीडीएफ प्रसंस्करण
 linktitle: पीडीएफ प्रसंस्करण
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser के साथ PDF प्रोसेसिंग में महारत हासिल करें। PDF से अटैचमेंट, डेटा, इमेज, मेटाडेटा और टेक्स्ट को कुशलतापूर्वक निकालना सीखें।
-type: docs
 weight: 31
 url: /hi/net/pdf-processing/
 ---

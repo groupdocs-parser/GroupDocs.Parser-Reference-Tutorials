@@ -3,7 +3,6 @@ title: Working with Fields at Regex Positions in Templates
 linktitle: Working with Fields at Regex Positions in Templates
 second_title: GroupDocs.Parser .NET API
 description: Learn how to extract data from document templates using regex positions with GroupDocs.Parser for .NET. Automate your data extraction tasks efficiently.
-type: docs
 weight: 13
 url: /net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---

@@ -3,7 +3,6 @@ title: العمل مع الجداول في البيانات المستخرجة
 linktitle: العمل مع الجداول في البيانات المستخرجة
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج بيانات الجدول من المستندات باستخدام GroupDocs.Parser لـ .NET. تحليل المحتوى المنظم بكفاءة باستخدام قوالب محددة مسبقًا.
-type: docs
 weight: 12
 url: /ar/net/data-extraction-from-templates/working-with-tables-in-extracted-data/
 ---

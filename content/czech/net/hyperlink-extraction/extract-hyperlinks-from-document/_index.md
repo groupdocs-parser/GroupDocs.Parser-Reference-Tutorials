@@ -3,7 +3,6 @@ title: Extrahujte hypertextové odkazy z dokumentu
 linktitle: Extrahujte hypertextové odkazy z dokumentu
 second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat hypertextové odkazy z dokumentů pomocí GroupDocs.Parser for .NET. Vylepšete své C# aplikace pomocí tohoto jednoduchého průvodce.
-type: docs
 weight: 10
 url: /cs/net/hyperlink-extraction/extract-hyperlinks-from-document/
 ---
@@ -73,7 +72,7 @@ Ano, GroupDocs.Parser podporuje extrakci hypertextových odkazů z celé řady f
 ### Je k dispozici bezplatná zkušební verze pro GroupDocs.Parser?
  Ano, máte přístup k bezplatné zkušební verzi GroupDocs.Parser[tady](https://releases.groupdocs.com/).
 ### Kde najdu dokumentaci k GroupDocs.Parser?
- Podrobnou dokumentaci k GroupDocs.Parser lze nalézt[tady](https://reference.groupdocs.com/parser/net/).
+ Podrobnou dokumentaci k GroupDocs.Parser lze nalézt[tady](https://tutorials.groupdocs.com/parser/net/).
 ### Jak mohu získat dočasnou licenci pro GroupDocs.Parser?
  Můžete získat dočasnou licenci pro GroupDocs.Parser[tady](https://purchase.groupdocs.com/temporary-license/).
 ### Nabízí GroupDocs podporu pro odstraňování problémů?

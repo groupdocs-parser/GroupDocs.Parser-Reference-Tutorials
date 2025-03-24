@@ -3,7 +3,6 @@ title: Excel-documentverwerking
 linktitle: Excel-documentverwerking
 second_title: GroupDocs.Parser .NET API
 description: Beheers Excel-documentverwerking in .NET met GroupDocs.Parser. Leer hoe u afbeeldingen, metagegevens en tekst efficiënt kunt extraheren met stapsgewijze handleidingen.
-type: docs
 weight: 32
 url: /nl/net/excel-document-processing/
 ---

@@ -1,7 +1,6 @@
 ---
 title: GroupDocs.Parser for .NET のチュートリアルと例
 linktitle: GroupDocs.Parser for .NET チュートリアル
-type: docs
 weight: 10
 url: /ja/net/
 description: GroupDocs.Parser for .NET で効率的なテキスト抽出テクニックを活用できます。テキストをシームレスに抽出、強調表示、検索して、ドキュメント処理を強化します。

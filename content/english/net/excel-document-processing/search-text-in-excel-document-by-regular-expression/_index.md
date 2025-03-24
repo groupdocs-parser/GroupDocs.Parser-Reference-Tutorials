@@ -3,7 +3,6 @@ title: Search Text in Excel Document by Regular Expression
 linktitle: Search Text in Excel Document by Regular Expression
 second_title: GroupDocs.Parser .NET API
 description: Learn how to search text in Excel documents using regular expressions with GroupDocs.Parser for .NET. Perform advanced text searches efficiently.
-type: docs
 weight: 17
 url: /net/excel-document-processing/search-text-in-excel-document-by-regular-expression/
 ---

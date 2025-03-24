@@ -3,7 +3,6 @@ title: 從特定區域提取文本
 linktitle: 從特定區域提取文本
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 從文件的特定區域提取文字。簡單的逐步指南。
-type: docs
 weight: 12
 url: /zh-hant/net/text-extraction/extract-text-from-specific-areas/
 ---

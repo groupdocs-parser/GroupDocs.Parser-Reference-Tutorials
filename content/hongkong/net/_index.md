@@ -1,7 +1,6 @@
 ---
 title: 適用於 .NET 的 GroupDocs.Parser 教學與範例
 linktitle: .NET 教學的 GroupDocs.Parser
-type: docs
 weight: 10
 url: /zh-hant/net/
 description: 使用 GroupDocs.Parser for .NET 解鎖高效能的文字擷取技術。無縫提取、突出顯示和搜尋文字以增強文件處理。

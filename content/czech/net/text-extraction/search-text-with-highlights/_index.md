@@ -3,7 +3,6 @@ title: Hledat text se zvýrazněním
 linktitle: Hledat text se zvýrazněním
 second_title: GroupDocs.Parser .NET API
 description: Naučte se vyhledávat a zvýrazňovat text v dokumentech pomocí GroupDocs.Parser for .NET. Extrahujte cenné poznatky efektivně.
-type: docs
 weight: 24
 url: /cs/net/text-extraction/search-text-with-highlights/
 ---

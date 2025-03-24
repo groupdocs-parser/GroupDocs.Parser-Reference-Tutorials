@@ -3,7 +3,6 @@ title: Carga de documentos
 linktitle: Carga de documentos
 second_title: API GroupDocs.Parser .NET
 description: Maneje eficientemente la carga de documentos en .NET con GroupDocs.Parser. Aprenda a extraer texto de discos locales, transmisiones, URL y más.
-type: docs
 weight: 29
 url: /es/net/document-loading/
 ---

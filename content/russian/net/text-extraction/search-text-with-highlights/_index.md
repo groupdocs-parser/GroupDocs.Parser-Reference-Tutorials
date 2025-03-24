@@ -3,7 +3,6 @@ title: Поиск текста с выделением
 linktitle: Поиск текста с выделением
 second_title: GroupDocs.Parser .NET API
 description: Узнайте, как искать и выделять текст в документах с помощью GroupDocs.Parser для .NET. Эффективно извлекайте ценную информацию.
-type: docs
 weight: 24
 url: /ru/net/text-extraction/search-text-with-highlights/
 ---

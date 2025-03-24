@@ -3,7 +3,6 @@ title: 정확한 모드에서 텍스트 추출
 linktitle: 정확한 모드에서 텍스트 추출
 second_title: GroupDocs.Parser .NET API
 description: 원활한 데이터 처리를 위해 GroupDocs.Parser를 사용하여 .NET 문서에서 텍스트를 정확하게 추출하는 방법을 알아보세요.
-type: docs
 weight: 18
 url: /ko/net/text-extraction/extract-text-in-accurate-mode/
 ---

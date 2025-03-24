@@ -3,7 +3,6 @@ title: Search Text with Highlights
 linktitle: Search Text with Highlights
 second_title: GroupDocs.Parser .NET API
 description: Learn how to search and highlight text in documents using GroupDocs.Parser for .NET. Extract valuable insights efficiently.
-type: docs
 weight: 24
 url: /net/text-extraction/search-text-with-highlights/
 ---

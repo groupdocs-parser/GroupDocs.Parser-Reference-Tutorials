@@ -3,7 +3,6 @@ title: Αναζήτηση κειμένου σε έγγραφο Word κατά λ�
 linktitle: Αναζήτηση κειμένου σε έγγραφο Word κατά λέξη-κλειδί
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να αναζητάτε κείμενο σε έγγραφα του Word χρησιμοποιώντας το GroupDocs.Parser για .NET. Εξαγωγή συγκεκριμένων λέξεων-κλειδιών αποτελεσματικά.
-type: docs
 weight: 18
 url: /el/net/word-document-processing/search-text-in-word-document-by-keyword/
 ---

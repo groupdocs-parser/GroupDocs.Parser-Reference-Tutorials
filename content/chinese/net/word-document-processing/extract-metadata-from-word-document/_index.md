@@ -3,7 +3,6 @@ title: 从 Word 文档中提取元数据
 linktitle: 从 Word 文档中提取元数据
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从 Word 文档中提取元数据。解析和检索文档信息的简单步骤。
-type: docs
 weight: 12
 url: /zh/net/word-document-processing/extract-metadata-from-word-document/
 ---
@@ -55,7 +54,7 @@ foreach (MetadataItem item in metadata)
 ### 什么是适用于 .NET 的 GroupDocs.Parser？
 GroupDocs.Parser for .NET 是一个文档解析库，允许开发人员以编程方式从各种文档格式中提取文本和元数据。
 ### 我在哪里可以找到 GroupDocs.Parser 文档？
-您可以参考[文档](https://reference.groupdocs.com/parser/net/)有关使用 GroupDocs.Parser for .NET 的详细信息。
+您可以参考[文档](https://tutorials.groupdocs.com/parser/net/)有关使用 GroupDocs.Parser for .NET 的详细信息。
 ### 如何免费试用 GroupDocs.Parser？
 您可以从以下网址下载 GroupDocs.Parser 的免费试用版：[发布页面](https://releases.groupdocs.com/).
 ### GroupDocs.Parser 适合商业用途吗？

@@ -3,7 +3,6 @@ title: Работа с полями в связанных позициях в ш
 linktitle: Работа с полями в связанных позициях в шаблонах
 second_title: GroupDocs.Parser .NET API
 description: Узнайте, как эффективно извлекать данные из документов с помощью GroupDocs.Parser для .NET. Пошаговое руководство с примерами кода.
-type: docs
 weight: 12
 url: /ru/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
 ---

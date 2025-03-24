@@ -3,7 +3,6 @@ title: การจัดการ OCR
 linktitle: การจัดการ OCR
 second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีจัดการ OCR โดยใช้ GroupDocs.Parser สำหรับ .NET แยกข้อความจากรูปภาพและเอกสารที่สแกนได้อย่างมีประสิทธิภาพ
-type: docs
 weight: 11
 url: /th/net/ocr-extraction/handling-ocr/
 ---

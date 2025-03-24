@@ -3,7 +3,6 @@ title: Optikai karakterfelismerő (OCR) kivonás
 linktitle: Optikai karakterfelismerő (OCR) kivonás
 second_title: GroupDocs.Parser .NET API
 description: Hatékonyan kezelheti az OCR-t, és kivonhatja a szöveget képekből és dokumentumokból a GroupDocs.Parser for .NET segítségével. Növelje OCR képességeit még ma!
-type: docs
 weight: 28
 url: /hu/net/ocr-extraction/
 ---

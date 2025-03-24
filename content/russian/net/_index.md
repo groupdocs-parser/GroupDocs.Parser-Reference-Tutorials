@@ -1,7 +1,6 @@
 ---
 title: Учебники и примеры GroupDocs.Parser для .NET
 linktitle: GroupDocs.Parser для .NET Учебные пособия
-type: docs
 weight: 10
 url: /ru/net/
 description: Откройте для себя эффективные методы извлечения текста с помощью GroupDocs.Parser для .NET. Легко извлекайте, выделяйте и ищите текст для улучшения обработки документов.

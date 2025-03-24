@@ -3,7 +3,6 @@ title: Extraer texto de una hoja de Excel en modo sin formato
 linktitle: Extraer texto de una hoja de Excel en modo sin formato
 second_title: API GroupDocs.Parser .NET
 description: Aprenda a extraer texto de hojas de Excel usando GroupDocs.Parser para .NET en este completo tutorial. Descargue y comience a analizar.
-type: docs
 weight: 15
 url: /es/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
 ---
@@ -66,7 +65,7 @@ Sí, GroupDocs.Parser admite una amplia gama de formatos de documentos, incluido
 ### ¿GroupDocs.Parser es adecuado para procesar archivos Excel de gran tamaño?
 Sí, GroupDocs.Parser está diseñado para manejar documentos grandes de manera eficiente.
 ### ¿Dónde puedo encontrar más documentación sobre GroupDocs.Parser?
- Puedes consultar el[documentación](https://reference.groupdocs.com/parser/net/) para obtener información detallada y ejemplos.
+ Puedes consultar el[documentación](https://tutorials.groupdocs.com/parser/net/) para obtener información detallada y ejemplos.
 ### ¿Cómo puedo obtener una licencia temporal para GroupDocs.Parser?
  Visita[este enlace](https://purchase.groupdocs.com/temporary-license/) para solicitar una licencia temporal.
 ### ¿GroupDocs.Parser ofrece soporte al cliente?

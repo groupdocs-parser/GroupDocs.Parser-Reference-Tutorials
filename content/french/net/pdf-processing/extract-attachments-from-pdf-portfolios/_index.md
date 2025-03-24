@@ -3,7 +3,6 @@ title: Extraire les pièces jointes des portefeuilles PDF
 linktitle: Extraire les pièces jointes des portefeuilles PDF
 second_title: API GroupDocs.Parser .NET
 description: Découvrez comment extraire des pièces jointes de portefeuilles PDF à l'aide de GroupDocs.Parser pour .NET dans ce didacticiel complet.
-type: docs
 weight: 10
 url: /fr/net/pdf-processing/extract-attachments-from-pdf-portfolios/
 ---

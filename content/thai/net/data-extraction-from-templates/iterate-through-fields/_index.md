@@ -3,7 +3,6 @@ title: ทำซ้ำผ่านฟิลด์
 linktitle: ทำซ้ำผ่านฟิลด์
 second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกข้อมูลที่มีโครงสร้างออกจากเอกสารโดยใช้ GroupDocs.Parser สำหรับ .NET ปรับปรุงแอปพลิเคชัน .NET ของคุณด้วยความสามารถในการแยกข้อมูลเอกสาร
-type: docs
 weight: 11
 url: /th/net/data-extraction-from-templates/iterate-through-fields/
 ---

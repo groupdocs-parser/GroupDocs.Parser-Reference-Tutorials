@@ -3,7 +3,6 @@ title: Táblázat kivonás
 linktitle: Táblázat kivonás
 second_title: GroupDocs.Parser .NET API
 description: Master tábla kivonat dokumentumokból a GroupDocs.Parser for .NET segítségével. Tanulja meg a táblázatok programozott kibontását a hatékony adatfeldolgozás érdekében.
-type: docs
 weight: 23
 url: /hu/net/table-extraction/
 ---

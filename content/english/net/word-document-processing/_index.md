@@ -3,7 +3,6 @@ title: Word Document Processing
 linktitle: Word Document Processing
 second_title: GroupDocs.Parser .NET API
 description: Discover a range of tutorials on Word document processing using GroupDocs.Parser for .NET. Extract hyperlinks, images, metadata, and more.
-type: docs
 weight: 30
 url: /net/word-document-processing/
 ---

@@ -3,7 +3,6 @@ title: Mengenali Teks pada Daerah Persegi Panjang
 linktitle: Mengenali Teks pada Daerah Persegi Panjang
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengenali teks di wilayah dokumen tertentu menggunakan GroupDocs.Parser untuk .NET dengan kemampuan OCR.
-type: docs
 weight: 14
 url: /id/net/ocr-extraction/recognizing-text-in-rectangular-regions/
 ---

@@ -3,7 +3,6 @@ title: ค้นหาข้อความตามหน้า
 linktitle: ค้นหาข้อความตามหน้า
 second_title: GroupDocs.Parser .NET API
 description: เรียนรู้การค้นหาข้อความตามหน้าโดยใช้ GroupDocs.Parser สำหรับ .NET แยกเนื้อหาเฉพาะอย่างมีประสิทธิภาพจากเอกสารในแอปพลิเคชัน .NET ของคุณ
-type: docs
 weight: 22
 url: /th/net/text-extraction/search-text-by-pages/
 ---
@@ -64,7 +63,7 @@ foreach (SearchResult result in searchResults)
 ### ฉันสามารถแยกรูปภาพและข้อมูลเมตาจากเอกสารโดยใช้ GroupDocs.Parser ได้หรือไม่
 GroupDocs.Parser ช่วยให้สามารถแยกรูปภาพ ข้อมูลเมตา และข้อความจากเอกสารได้อย่างแน่นอน
 ### ฉันจะหาเอกสารโดยละเอียดสำหรับ GroupDocs.Parser ได้ที่ไหน
- คุณสามารถเข้าถึงเอกสารประกอบ[ที่นี่](https://reference.groupdocs.com/parser/net/).
+ คุณสามารถเข้าถึงเอกสารประกอบ[ที่นี่](https://tutorials.groupdocs.com/parser/net/).
 ### ฉันจะขอรับใบอนุญาตชั่วคราวสำหรับ GroupDocs.Parser ได้อย่างไร
  คุณสามารถขอใบอนุญาตชั่วคราวได้[ที่นี่](https://purchase.groupdocs.com/temporary-license/).
 ### ฉันจะรับการสนับสนุนหรือความช่วยเหลือเกี่ยวกับ GroupDocs.Parser ได้ที่ไหน

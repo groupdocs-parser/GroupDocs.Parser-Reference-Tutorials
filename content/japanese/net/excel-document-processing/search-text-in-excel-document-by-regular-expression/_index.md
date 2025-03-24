@@ -3,7 +3,6 @@ title: 正規表現で Excel ドキュメント内のテキストを検索する
 linktitle: 正規表現で Excel ドキュメント内のテキストを検索する
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET で正規表現を使用して Excel ドキュメント内のテキストを検索する方法を学習します。高度なテキスト検索を効率的に実行します。
-type: docs
 weight: 17
 url: /ja/net/excel-document-processing/search-text-in-excel-document-by-regular-expression/
 ---

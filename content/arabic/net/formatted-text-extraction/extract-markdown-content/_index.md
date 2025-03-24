@@ -3,7 +3,6 @@ title: استخراج محتوى تخفيض السعر
 linktitle: استخراج محتوى تخفيض السعر
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج محتوى Markdown من المستندات باستخدام GroupDocs.Parser لـ .NET. يوفر هذا البرنامج التعليمي إرشادات خطوة بخطوة لاستخراج النص بسلاسة.
-type: docs
 weight: 13
 url: /ar/net/formatted-text-extraction/extract-markdown-content/
 ---

@@ -3,7 +3,6 @@ title: استخراج وتسليط الضوء على النص
 linktitle: استخراج وتسليط الضوء على النص
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج النص وتمييزه من المستندات باستخدام GroupDocs.Parser لـ .NET. خطوات سهلة لاستخراج النص بكفاءة في مشاريع .NET الخاصة بك.
-type: docs
 weight: 11
 url: /ar/net/text-extraction/extract-and-highlight-text/
 ---

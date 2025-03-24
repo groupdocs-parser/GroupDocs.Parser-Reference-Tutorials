@@ -3,7 +3,6 @@ title: Obter campo por nome
 linktitle: Obter campo por nome
 second_title: API GroupDocs.Parser .NET
 description: Aprenda como extrair campos de dados específicos de documentos usando GroupDocs.Parser for .NET. Guia passo a passo com exemplos de código.
-type: docs
 weight: 10
 url: /pt/net/data-extraction-from-templates/get-field-by-name/
 ---

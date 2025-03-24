@@ -3,7 +3,6 @@ title: การประมวลผลเอกสารคำ
 linktitle: การประมวลผลเอกสารคำ
 second_title: GroupDocs.Parser .NET API
 description: ค้นพบบทช่วยสอนมากมายเกี่ยวกับการประมวลผลเอกสาร Word โดยใช้ GroupDocs.Parser for .NET แยกไฮเปอร์ลิงก์ รูปภาพ ข้อมูลเมตา และอื่นๆ
-type: docs
 weight: 30
 url: /th/net/word-document-processing/
 ---

@@ -3,7 +3,6 @@ title: Χειρισμός Φόρτωσης Εξωτερικών Πόρων
 linktitle: Χειρισμός Φόρτωσης Εξωτερικών Πόρων
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να χειρίζεστε εξωτερικούς πόρους στο .NET χρησιμοποιώντας το GroupDocs.Parser για αποτελεσματική ανάλυση και εξαγωγή εγγράφων.
-type: docs
 weight: 10
 url: /el/net/document-loading/handling-loading-of-external-resources/
 ---
@@ -66,7 +65,7 @@ foreach (PageImageArea image in images)
 ### Μπορώ να εξαγάγω κείμενο μαζί με εικόνες χρησιμοποιώντας το GroupDocs.Parser;
 Οπωσδήποτε, το GroupDocs.Parser επιτρέπει την εξαγωγή κειμένου και εικόνων από υποστηριζόμενες μορφές εγγράφων.
 ### Πού μπορώ να βρω λεπτομερή τεκμηρίωση για το GroupDocs.Parser;
- Εξερευνήστε το[τεκμηρίωση](https://reference.groupdocs.com/parser/net/) για αναλυτικούς οδηγούς και αναφορές API.
+ Εξερευνήστε το[τεκμηρίωση](https://tutorials.groupdocs.com/parser/net/) για αναλυτικούς οδηγούς και αναφορές API.
 ### Πώς μπορώ να αποκτήσω μια προσωρινή άδεια για το GroupDocs.Parser;
  Μπορείτε να πάρετε μια προσωρινή άδεια από το[Σελίδα αγοράς GroupDocs](https://purchase.groupdocs.com/temporary-license/).
 ### Πού μπορώ να αναζητήσω βοήθεια εάν αντιμετωπίσω προβλήματα με το GroupDocs.Parser;

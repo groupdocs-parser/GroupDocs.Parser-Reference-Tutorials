@@ -3,7 +3,6 @@ title: Extrahera streckkoder från dokumentsidan
 linktitle: Extrahera streckkoder från dokumentsidan
 second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du extraherar streckkoder från dokumentsidor med GroupDocs.Parser för .NET. Den här handledningen ger steg-för-steg-guide för streckkodsextraktion.
-type: docs
 weight: 12
 url: /sv/net/barcode-extraction/extract-barcodes-from-document-page/
 ---
@@ -79,7 +78,7 @@ I den här handledningen har du lärt dig hur du använder GroupDocs.Parser för
 ### FAQ's
 
 ### F: Vilka dokumentformat stöder GroupDocs.Parser?
- GroupDocs.Parser stöder ett brett utbud av format, inklusive DOCX, PDF, XLSX, PPTX och mer. Referera till[dokumentation](https://reference.groupdocs.com/parser/net/)för en komplett lista.
+ GroupDocs.Parser stöder ett brett utbud av format, inklusive DOCX, PDF, XLSX, PPTX och mer. Referera till[dokumentation](https://tutorials.groupdocs.com/parser/net/)för en komplett lista.
 
 ### F: Kan jag extrahera metadata tillsammans med streckkoder med GroupDocs.Parser?
 Ja, GroupDocs.Parser låter dig extrahera metadata, text, bilder och streckkoder från dokument, vilket ger omfattande dokumentanalysfunktioner.

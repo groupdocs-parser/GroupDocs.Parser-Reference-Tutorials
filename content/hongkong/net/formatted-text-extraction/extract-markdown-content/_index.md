@@ -3,7 +3,6 @@ title: 擷取 Markdown 內容
 linktitle: 擷取 Markdown 內容
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 從文件中擷取 Markdown 內容。本教程提供了無縫文字擷取的逐步說明。
-type: docs
 weight: 13
 url: /zh-hant/net/formatted-text-extraction/extract-markdown-content/
 ---

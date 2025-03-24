@@ -3,7 +3,6 @@ title: Extractie-inhoud uitpakken
 linktitle: Extractie-inhoud uitpakken
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u Markdown-inhoud uit documenten kunt extraheren met GroupDocs.Parser voor .NET. Deze tutorial biedt stapsgewijze instructies voor naadloze tekstextractie.
-type: docs
 weight: 13
 url: /nl/net/formatted-text-extraction/extract-markdown-content/
 ---

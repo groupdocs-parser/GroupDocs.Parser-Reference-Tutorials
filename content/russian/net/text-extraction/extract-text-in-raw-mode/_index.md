@@ -3,7 +3,6 @@ title: Извлечь текст в необработанном режиме
 linktitle: Извлечь текст в необработанном режиме
 second_title: GroupDocs.Parser .NET API
 description: Узнайте, как извлечь текст из документов с помощью GroupDocs.Parser для .NET. Простое, эффективное и плавное извлечение текста в ваших приложениях .NET.
-type: docs
 weight: 19
 url: /ru/net/text-extraction/extract-text-in-raw-mode/
 ---

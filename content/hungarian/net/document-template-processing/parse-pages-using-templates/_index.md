@@ -3,7 +3,6 @@ title: Oldalak elemzése sablonok segítségével
 linktitle: Oldalak elemzése sablonok segítségével
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan lehet dokumentumoldalakat elemezni sablonok használatával a .NET-ben a GroupDocs.Parser segítségével. Hatékonyan nyerhet ki konkrét tartalmat alkalmazásaihoz.
-type: docs
 weight: 16
 url: /hu/net/document-template-processing/parse-pages-using-templates/
 ---
@@ -67,7 +66,7 @@ Igen, a GroupDocs.Parser különféle formátumokat támogat, beleértve a PDF, 
 ### A GroupDocs.Parser alkalmas bizonyos adatok, például vonalkódok kinyerésére?
 Teljesen! A GroupDocs.Parser precíz kinyerési képességeket kínál a célzott tartalomkivonáshoz.
 ### Hol találom a GroupDocs.Parser részletes dokumentációját?
- Meglátogatni a[dokumentáció](https://reference.groupdocs.com/parser/net/) átfogó útmutatásért.
+ Meglátogatni a[dokumentáció](https://tutorials.groupdocs.com/parser/net/) átfogó útmutatásért.
 ### Hogyan szerezhetek ideiglenes licencet a GroupDocs.Parser számára?
  Szerezzen be a[ideiglenes engedély](https://purchase.groupdocs.com/temporary-license/) értékelési vagy fejlesztési célokra.
 ### GroupDocs nyújt támogatást a hibaelhárításhoz?

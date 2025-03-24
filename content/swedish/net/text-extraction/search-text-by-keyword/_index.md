@@ -3,7 +3,6 @@ title: Sök text efter nyckelord
 linktitle: Sök text efter nyckelord
 second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du söker efter text med nyckelord i dokument med GroupDocs.Parser för .NET. Extrahera effektivt relevant innehåll med lätthet.
-type: docs
 weight: 21
 url: /sv/net/text-extraction/search-text-by-keyword/
 ---
@@ -63,7 +62,7 @@ Ja, GroupDocs.Parser stöder ett brett utbud av filformat, inklusive PDF, DOCX, 
 ### Kan jag utföra avancerade textextraktionsoperationer med GroupDocs.Parser?
 Absolut! Förutom textsökning, möjliggör GroupDocs.Parser extrahering av metadata, strukturerad textextraktion och mer.
 ### Var kan jag hitta detaljerad dokumentation för GroupDocs.Parser?
-Utforska hela dokumentationen[här](https://reference.groupdocs.com/parser/net/).
+Utforska hela dokumentationen[här](https://tutorials.groupdocs.com/parser/net/).
 ### Hur kan jag få support eller hjälp med GroupDocs.Parser-relaterade frågor?
  Besök GroupDocs forum för support och diskussioner[här](https://forum.groupdocs.com/c/parser/17).
 ### Finns det en testversion tillgänglig för att utvärdera GroupDocs.Parser innan du köper?

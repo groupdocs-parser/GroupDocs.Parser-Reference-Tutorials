@@ -3,7 +3,6 @@ title: ドキュメントからハイパーリンクを抽出する
 linktitle: ドキュメントからハイパーリンクを抽出する
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用してドキュメントからハイパーリンクを抽出する方法を学びます。このわかりやすいガイドを使用して、C# アプリケーションを強化します。
-type: docs
 weight: 10
 url: /ja/net/hyperlink-extraction/extract-hyperlinks-from-document/
 ---
@@ -73,7 +72,7 @@ foreach (PageHyperlinkArea hyperlink in hyperlinks)
 ### GroupDocs.Parser の無料トライアルはありますか?
 はい、GroupDocs.Parserの無料トライアルをご利用いただけます。[ここ](https://releases.groupdocs.com/).
 ### GroupDocs.Parser のドキュメントはどこにありますか?
- GroupDocs.Parserの詳細なドキュメントは以下にあります。[ここ](https://reference.groupdocs.com/parser/net/).
+ GroupDocs.Parserの詳細なドキュメントは以下にあります。[ここ](https://tutorials.groupdocs.com/parser/net/).
 ### GroupDocs.Parser の一時ライセンスを取得するにはどうすればよいですか?
  GroupDocs.Parserの一時ライセンスを取得できます[ここ](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs はトラブルシューティングのサポートを提供していますか?

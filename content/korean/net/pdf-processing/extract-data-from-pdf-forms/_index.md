@@ -3,7 +3,6 @@ title: PDF 양식에서 데이터 추출
 linktitle: PDF 양식에서 데이터 추출
 second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 PDF 양식에서 데이터를 추출하는 방법을 알아보세요. 코드 예제와 FAQ가 포함된 단계별 가이드입니다.
-type: docs
 weight: 11
 url: /ko/net/pdf-processing/extract-data-from-pdf-forms/
 ---
@@ -79,7 +78,7 @@ Console.WriteLine("Description: {0}", rec.Description);
 ### GroupDocs.Parser를 사용하여 이미지와 메타데이터를 추출할 수 있나요?
 예, GroupDocs.Parser를 사용하면 문서에서 이미지, 메타데이터 및 텍스트를 추출할 수 있습니다.
 ### GroupDocs.Parser에 대한 추가 지원이나 문서는 어디서 찾을 수 있나요?
- 당신은 방문 할 수 있습니다[GroupDocs.Parser 문서](https://reference.groupdocs.com/parser/net/) 자세한 정보와 예시를 확인하세요.
+ 당신은 방문 할 수 있습니다[GroupDocs.Parser 문서](https://tutorials.groupdocs.com/parser/net/) 자세한 정보와 예시를 확인하세요.
 ### GroupDocs.Parser에 대한 무료 평가판이 있습니까?
  예, 액세스할 수 있습니다[GroupDocs.Parser 무료 평가판](https://releases.groupdocs.com/) 그 특징을 탐구합니다.
 ### GroupDocs.Parser의 임시 라이센스를 얻으려면 어떻게 해야 합니까?

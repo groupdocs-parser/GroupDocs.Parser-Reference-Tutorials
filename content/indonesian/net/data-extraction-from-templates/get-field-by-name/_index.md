@@ -3,7 +3,6 @@ title: Dapatkan Bidang berdasarkan Nama
 linktitle: Dapatkan Bidang berdasarkan Nama
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak bidang data tertentu dari dokumen menggunakan GroupDocs.Parser untuk .NET. Panduan langkah demi langkah dengan contoh kode.
-type: docs
 weight: 10
 url: /id/net/data-extraction-from-templates/get-field-by-name/
 ---

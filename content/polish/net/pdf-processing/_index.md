@@ -3,7 +3,6 @@ title: Przetwarzanie plików PDF
 linktitle: Przetwarzanie plików PDF
 second_title: GroupDocs.Parser API .NET
 description: Opanuj przetwarzanie plików PDF za pomocą GroupDocs.Parser dla .NET. Dowiedz się, jak efektywnie wyodrębniać załączniki, dane, obrazy, metadane i tekst z plików PDF.
-type: docs
 weight: 31
 url: /pl/net/pdf-processing/
 ---

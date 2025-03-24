@@ -3,7 +3,6 @@ title: التعامل مع تحميل الموارد الخارجية
 linktitle: التعامل مع تحميل الموارد الخارجية
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية التعامل مع الموارد الخارجية في .NET باستخدام GroupDocs.Parser لتحليل المستندات واستخراجها بكفاءة.
-type: docs
 weight: 10
 url: /ar/net/document-loading/handling-loading-of-external-resources/
 ---
@@ -66,7 +65,7 @@ foreach (PageImageArea image in images)
 ### هل يمكنني استخراج النص مع الصور باستخدام GroupDocs.Parser؟
 بالتأكيد، يسمح GroupDocs.Parser باستخراج كل من النصوص والصور من تنسيقات المستندات المدعومة.
 ### أين يمكنني العثور على وثائق مفصلة عن GroupDocs.Parser؟
- اكتشف ال[توثيق](https://reference.groupdocs.com/parser/net/) للحصول على أدلة شاملة ومراجع API.
+ اكتشف ال[توثيق](https://tutorials.groupdocs.com/parser/net/) للحصول على أدلة شاملة ومراجع API.
 ### كيف يمكنني الحصول على ترخيص مؤقت لـ GroupDocs.Parser؟
  يمكنك الحصول على ترخيص مؤقت من[صفحة شراء GroupDocs](https://purchase.groupdocs.com/temporary-license/).
 ### أين يمكنني طلب المساعدة إذا واجهت مشاكل مع GroupDocs.Parser؟

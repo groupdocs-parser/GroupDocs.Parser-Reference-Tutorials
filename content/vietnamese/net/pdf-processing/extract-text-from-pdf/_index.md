@@ -3,7 +3,6 @@ title: Trích xuất văn bản từ PDF
 linktitle: Trích xuất văn bản từ PDF
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất văn bản từ tài liệu PDF bằng GroupDocs.Parser cho .NET. Hướng dẫn từng bước dành cho nhà phát triển.
-type: docs
 weight: 14
 url: /vi/net/pdf-processing/extract-text-from-pdf/
 ---
@@ -58,7 +57,7 @@ Có, GroupDocs.Parser hỗ trợ nhiều định dạng bao gồm DOCX, XLSX, PP
 ### Tôi có thể dùng thử GroupDocs.Parser trước khi mua giấy phép không?
  Có, bạn có thể tải phiên bản dùng thử miễn phí[đây](https://releases.groupdocs.com/).
 ### Tôi có thể tìm tài liệu về GroupDocs.Parser ở đâu?
- Tài liệu chi tiết có sẵn[đây](https://reference.groupdocs.com/parser/net/).
+ Tài liệu chi tiết có sẵn[đây](https://tutorials.groupdocs.com/parser/net/).
 ### Làm cách nào tôi có thể nhận được hỗ trợ kỹ thuật cho GroupDocs.Parser?
  Bạn có thể tìm kiếm sự trợ giúp trên diễn đàn hỗ trợ[đây](https://forum.groupdocs.com/c/parser/17).
 ### Làm cách nào để có được giấy phép tạm thời cho GroupDocs.Parser?

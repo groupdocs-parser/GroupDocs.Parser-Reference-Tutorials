@@ -3,7 +3,6 @@ title: Extraire les codes-barres du document avec des options
 linktitle: Extraire les codes-barres du document avec des options
 second_title: API GroupDocs.Parser .NET
 description: Découvrez comment extraire des codes-barres de documents à l'aide de GroupDocs.Parser pour .NET. Tutoriel complet avec des exemples de code et des FAQ.
-type: docs
 weight: 14
 url: /fr/net/barcode-extraction/extract-barcodes-from-document-with-options/
 ---

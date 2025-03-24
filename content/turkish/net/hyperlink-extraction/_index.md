@@ -3,7 +3,6 @@ title: Köprü Çıkarma
 linktitle: Köprü Çıkarma
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser ile .NET'teki belgelerden köprü bağlantılarını zahmetsizce çıkarın. Köprü çıkarmaya yönelik adım adım kılavuzlarla C# uygulamalarınızı geliştirin.
-type: docs
 weight: 25
 url: /tr/net/hyperlink-extraction/
 ---

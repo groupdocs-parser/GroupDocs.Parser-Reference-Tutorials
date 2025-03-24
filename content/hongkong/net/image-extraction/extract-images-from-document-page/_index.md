@@ -3,7 +3,6 @@ title: 從文件頁面提取圖像
 linktitle: 從文件頁面提取圖像
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 從文件中擷取映像。增強您的文件處理能力。
-type: docs
 weight: 12
 url: /zh-hant/net/image-extraction/extract-images-from-document-page/
 ---

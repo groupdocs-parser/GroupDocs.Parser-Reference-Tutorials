@@ -3,7 +3,6 @@ title: Χειρισμός OCR
 linktitle: Χειρισμός OCR
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να χειρίζεστε το OCR χρησιμοποιώντας το GroupDocs.Parser για .NET. Εξαγωγή κειμένου από εικόνες και σαρωμένα έγγραφα αποτελεσματικά.
-type: docs
 weight: 11
 url: /el/net/ocr-extraction/handling-ocr/
 ---

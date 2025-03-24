@@ -3,7 +3,6 @@ title: PDF 문서의 데이터 구문 분석
 linktitle: PDF 문서의 데이터 구문 분석
 second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 PDF 문서에서 데이터를 추출하는 방법을 알아보세요. PDF 파일을 효율적으로 구문 분석하고 처리하려면 단계별 가이드를 따르세요.
-type: docs
 weight: 17
 url: /ko/net/pdf-processing/parse-data-from-pdf-documents/
 ---
@@ -81,6 +80,6 @@ GroupDocs.Parser는 주로 PDF 파일에 중점을 두고 있지만 DOCX, XLSX �
 ### GroupDocs.Parser에 사용할 수 있는 평가판이 있습니까?
  예, GroupDocs.Parser의 무료 평가판을 받을 수 있습니다.[여기](https://releases.groupdocs.com/).
 ### GroupDocs.Parser에 대한 설명서와 지원은 어디서 찾을 수 있나요?
- 다음을 참조하세요.[선적 서류 비치](https://reference.groupdocs.com/parser/net/) 그리고[지원 포럼](https://forum.groupdocs.com/c/parser/17) GroupDocs.Parser용.
+ 다음을 참조하세요.[선적 서류 비치](https://tutorials.groupdocs.com/parser/net/) 그리고[지원 포럼](https://forum.groupdocs.com/c/parser/17) GroupDocs.Parser용.
 ### GroupDocs.Parser의 임시 라이센스를 얻으려면 어떻게 해야 합니까?
  임시면허를 취득할 수 있습니다.[여기](https://purchase.groupdocs.com/temporary-license/).
