@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak İçindekiler Tablosuna (TOC
 weight: 15
 url: /tr/net/text-extraction/extract-text-by-toc-item/
 ---
+
+# İçindekiler Tablosu (TOC) Öğesine Göre Metni Çıkart
+
 ## giriiş
 Bu öğreticide, belgelerden İçindekiler Tablosu (TOC) öğelerine dayalı olarak metin çıkarmak için GroupDocs.Parser for .NET'in nasıl kullanılacağını keşfedeceğiz. GroupDocs.Parser, verimli belge ayrıştırma ve çıkarmaya olanak tanıyan güçlü bir araçtır.
 ## Önkoşullar

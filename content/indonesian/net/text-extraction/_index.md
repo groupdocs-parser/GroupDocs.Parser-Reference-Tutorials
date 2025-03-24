@@ -7,6 +7,9 @@ weight: 20
 url: /id/net/text-extraction/
 ---
 
+# Ekstraksi Teks
+
+
 ## Perkenalan
 
 Selamat datang di koleksi lengkap tutorial ekstraksi teks yang didukung oleh GroupDocs.Parser untuk .NET. Dalam rangkaian tutorial ini, kita akan menjelajahi berbagai metode dan teknik untuk mengekstrak, menyorot, dan mencari teks dari dokumen di aplikasi .NET Anda.

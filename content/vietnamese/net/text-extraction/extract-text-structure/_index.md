@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất cấu trúc văn bản từ các đ
 weight: 20
 url: /vi/net/text-extraction/extract-text-structure/
 ---
+
+# Trích xuất cấu trúc văn bản
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Parser cho .NET để trích xuất cấu trúc văn bản từ các định dạng tài liệu khác nhau. GroupDocs.Parser là một thư viện mạnh mẽ cho phép các nhà phát triển trích xuất nội dung văn bản có cấu trúc từ các tài liệu, chẳng hạn như tệp PDF, tài liệu Word, trang tính Excel, v.v. Hướng dẫn này sẽ hướng dẫn bạn qua quá trình thiết lập GroupDocs.Parser, nhập các không gian tên cần thiết và trích xuất cấu trúc văn bản theo từng bước.
 ## Điều kiện tiên quyết

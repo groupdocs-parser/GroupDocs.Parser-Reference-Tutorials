@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębniać tabele z dokumentów za pomocą Gro
 weight: 10
 url: /pl/net/table-extraction/extract-tables-from-document/
 ---
+
+# Wyodrębnij tabele z dokumentu
+
 ## Wstęp
 Groupdocs.Parser dla .NET to obszerna biblioteka ułatwiająca analizowanie dokumentów, umożliwiająca wyodrębnianie z dokumentów cennych informacji, takich jak tabele, tekst, metadane i inne. W tym samouczku skupimy się szczególnie na wyodrębnianiu tabel z dokumentów przy użyciu interfejsu API Groupdocs.Parser.
 ## Warunki wstępne

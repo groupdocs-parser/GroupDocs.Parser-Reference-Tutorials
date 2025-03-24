@@ -6,6 +6,9 @@ description: Découvrez comment extraire la structure du texte de différents fo
 weight: 20
 url: /fr/net/text-extraction/extract-text-structure/
 ---
+
+# Extraire la structure du texte
+
 ## Introduction
 Dans ce didacticiel, nous explorerons comment utiliser GroupDocs.Parser pour .NET pour extraire la structure du texte de différents formats de document. GroupDocs.Parser est une bibliothèque puissante qui permet aux développeurs d'extraire du contenu textuel structuré à partir de documents, tels que des PDF, des documents Word, des feuilles Excel, etc. Ce didacticiel vous guidera tout au long du processus de configuration de GroupDocs.Parser, d'importation des espaces de noms nécessaires et d'extraction de la structure du texte étape par étape.
 ## Conditions préalables

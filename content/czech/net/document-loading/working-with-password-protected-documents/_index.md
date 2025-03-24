@@ -6,6 +6,9 @@ description: Naučte se extrahovat text z dokumentů chráněných heslem pomoc�
 weight: 15
 url: /cs/net/document-loading/working-with-password-protected-documents/
 ---
+
+# Práce s dokumenty chráněnými heslem
+
 ## Úvod
 Ve světě zpracování dokumentů je efektivní nakládání se soubory chráněnými heslem zásadní. GroupDocs.Parser for .NET nabízí robustní možnosti pro bezproblémovou práci s takovými dokumenty. Tento tutoriál vás provede procesem extrahování textu z dokumentů chráněných heslem pomocí GroupDocs.Parser.
 ## Předpoklady

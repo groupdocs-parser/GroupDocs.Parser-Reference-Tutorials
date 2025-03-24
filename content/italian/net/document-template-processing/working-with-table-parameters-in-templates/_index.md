@@ -6,6 +6,9 @@ description: Scopri come estrarre dati dalle tabelle nei documenti utilizzando G
 weight: 15
 url: /it/net/document-template-processing/working-with-table-parameters-in-templates/
 ---
+
+# Lavorare con i parametri di tabella nei modelli
+
 ## introduzione
 In questa esercitazione esploreremo come utilizzare GroupDocs.Parser per .NET per lavorare con i parametri di tabella nei modelli. Questa guida suddividerà il processo in istruzioni dettagliate per aiutarti ad analizzare ed estrarre in modo efficace i dati dalle tabelle all'interno dei documenti.
 ## Prerequisiti

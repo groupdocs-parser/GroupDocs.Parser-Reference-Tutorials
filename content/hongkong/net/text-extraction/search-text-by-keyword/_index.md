@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 在文件中按關鍵�
 weight: 21
 url: /zh-hant/net/text-extraction/search-text-by-keyword/
 ---
+
+# 按關鍵字搜尋文本
+
 ## 介紹
 在本教程中，我們將深入研究使用 GroupDocs.Parser for .NET 在文件中按關鍵字搜尋文字。 GroupDocs.Parser 是一個功能強大的程式庫，可讓開發人員從各種文件格式（例如 PDF、Microsoft Office 文件等）中提取文字、元資料和其他資訊。對於處理大量文字資料的應用程式來說，在這些文件中搜尋特定關鍵字至關重要。
 ## 先決條件

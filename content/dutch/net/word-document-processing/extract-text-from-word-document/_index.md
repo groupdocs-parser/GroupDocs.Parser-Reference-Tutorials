@@ -6,6 +6,9 @@ description: Leer hoe u tekst uit Word-documenten kunt extraheren met GroupDocs.
 weight: 15
 url: /nl/net/word-document-processing/extract-text-from-word-document/
 ---
+
+# Extraheer tekst uit een Word-document
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u tekst uit Word-documenten kunt extraheren met GroupDocs.Parser voor .NET. GroupDocs.Parser is een krachtige .NET-bibliotheek waarmee ontwikkelaars met verschillende documentformaten kunnen werken, waaronder Word-documenten, PDF's en meer. Aan het einde van deze handleiding kunt u efficiënt tekst uit Word-bestanden extraheren met behulp van eenvoudige C#-code.
 ## Vereisten

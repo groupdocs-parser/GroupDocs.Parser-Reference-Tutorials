@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET mithilfe regul
 weight: 19
 url: /de/net/word-document-processing/search-text-in-word-document-by-regular-expression/
 ---
+
+# Textsuche im Word-Dokument mit regulären Ausdrücken
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie GroupDocs.Parser für .NET nutzen, um mithilfe regulärer Ausdrücke Text aus Word-Dokumenten zu extrahieren. Diese Schritt-für-Schritt-Anleitung hilft Ihnen bei der effektiven Implementierung dieser Funktion.
 ## Voraussetzungen

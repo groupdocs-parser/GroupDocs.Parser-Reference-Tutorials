@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak data dari dokumen menggunakan GroupDocs.P
 weight: 11
 url: /id/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
+
+# Bekerja dengan Bidang pada Posisi Tetap di Templat
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara bekerja dengan bidang pada posisi tetap dalam templat menggunakan GroupDocs.Parser untuk .NET. GroupDocs.Parser adalah pustaka penguraian dokumen canggih yang memungkinkan pengembang mengekstrak data dari berbagai format dokumen seperti PDF, Word, Excel, dan banyak lagi. Secara khusus, kami akan fokus pada pendefinisian dan pemanfaatan bidang templat untuk mengekstrak informasi yang ditargetkan berdasarkan posisi tetapnya.
 ## Prasyarat

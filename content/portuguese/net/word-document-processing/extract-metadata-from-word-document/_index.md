@@ -6,6 +6,9 @@ description: Aprenda como extrair metadados de documentos do Word usando GroupDo
 weight: 12
 url: /pt/net/word-document-processing/extract-metadata-from-word-document/
 ---
+
+# Extraia metadados de documento do Word
+
 ## Introdução
 Na era digital de hoje, analisar e extrair dados de documentos de forma eficiente é crucial para diversas aplicações, desde a análise de conteúdo até a recuperação de dados. GroupDocs.Parser for .NET é uma biblioteca poderosa que permite aos desenvolvedores extrair metadados e texto de documentos com facilidade. Neste tutorial, exploraremos como usar GroupDocs.Parser for .NET para extrair metadados de documentos do Word passo a passo.
 ## Pré-requisitos

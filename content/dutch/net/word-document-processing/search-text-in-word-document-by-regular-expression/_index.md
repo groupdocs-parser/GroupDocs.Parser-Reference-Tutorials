@@ -6,6 +6,9 @@ description: Leer hoe u tekst in Word-documenten kunt doorzoeken met behulp van 
 weight: 19
 url: /nl/net/word-document-processing/search-text-in-word-document-by-regular-expression/
 ---
+
+# Zoek tekst in Word-document op reguliere expressie
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u GroupDocs.Parser voor .NET kunt gebruiken om tekst uit Word-documenten te extraheren met behulp van reguliere expressies. Deze stapsgewijze handleiding helpt u deze functie effectief te implementeren.
 ## Vereisten

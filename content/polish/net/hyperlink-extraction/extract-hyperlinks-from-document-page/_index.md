@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić hiperłącza z dokumentów za pomoc�
 weight: 11
 url: /pl/net/hyperlink-extraction/extract-hyperlinks-from-document-page/
 ---
+
+# Wyodrębnij hiperłącza ze strony dokumentu
+
 ## Wstęp
 W tym samouczku pokażemy, jak krok po kroku używać programu GroupDocs.Parser dla platformy .NET do wyodrębniania hiperłączy z dokumentów. GroupDocs.Parser to potężna biblioteka, która umożliwia programistom analizowanie różnych formatów dokumentów i wyodrębnianie tekstu, metadanych i innych elementów.
 ## Warunki wstępne

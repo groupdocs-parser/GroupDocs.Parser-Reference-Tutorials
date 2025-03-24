@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用してドキュメントから�
 weight: 11
 url: /ja/net/hyperlink-extraction/extract-hyperlinks-from-document-page/
 ---
+
+# ドキュメントページからハイパーリンクを抽出する
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を使用してドキュメントからハイパーリンクを抽出する方法を段階的に説明します。GroupDocs.Parser は、開発者がさまざまなドキュメント形式を解析し、テキスト、メタデータ、その他の要素を抽出できるようにする強力なライブラリです。
 ## 前提条件

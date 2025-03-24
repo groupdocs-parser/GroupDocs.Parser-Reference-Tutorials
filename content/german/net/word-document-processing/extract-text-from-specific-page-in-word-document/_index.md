@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Text aus besti
 weight: 17
 url: /de/net/word-document-processing/extract-text-from-specific-page-in-word-document/
 ---
+
+# Extrahieren Sie Text aus einer bestimmten Seite im Word-Dokument
+
 ## Einführung
 Im Bereich der .NET-Entwicklung ist das Extrahieren von Text aus Dokumenten eine häufige Anforderung für verschiedene Anwendungen. GroupDocs.Parser für .NET bietet eine robuste Lösung zum nahtlosen Parsen und Extrahieren von Text aus verschiedenen Dokumentformaten. In diesem Tutorial wird GroupDocs.Parser zum Extrahieren von Text aus einer bestimmten Seite innerhalb eines Word-Dokuments genutzt. In dieser Anleitung lernen Sie die notwendigen Schritte, um diese Funktionalität effektiv in Ihre .NET-Projekte zu integrieren.
 ## Voraussetzungen

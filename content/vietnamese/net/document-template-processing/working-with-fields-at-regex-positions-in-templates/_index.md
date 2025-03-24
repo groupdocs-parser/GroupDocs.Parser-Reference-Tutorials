@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất dữ liệu từ các mẫu tài li
 weight: 13
 url: /vi/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---
+
+# Làm việc với các trường tại vị trí Regex trong mẫu
+
 ## Giới thiệu
 Trong hướng dẫn này, bạn sẽ tìm hiểu cách sử dụng GroupDocs.Parser cho .NET để trích xuất các trường dựa trên các biểu thức chính quy (regex) được chỉ định trong các mẫu tài liệu. Thư viện này cung cấp các tính năng mạnh mẽ để phân tích cú pháp và trích xuất tài liệu, khiến nó trở nên lý tưởng để xử lý các tác vụ trích xuất dữ liệu có cấu trúc một cách hiệu quả.
 ## Điều kiện tiên quyết

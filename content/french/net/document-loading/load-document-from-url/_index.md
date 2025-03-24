@@ -6,6 +6,9 @@ description: Découvrez comment extraire du texte à partir de documents à l'ai
 weight: 13
 url: /fr/net/document-loading/load-document-from-url/
 ---
+
+# Charger le document à partir de l'URL
+
 ## Introduction
 Dans ce didacticiel, nous verrons comment utiliser GroupDocs.Parser pour .NET pour extraire du texte à partir de documents. GroupDocs.Parser est un outil puissant pour extraire du texte, des métadonnées et d'autres informations à partir de divers formats de documents, tels que PDF, Word, Excel, etc. Nous aborderons le processus de chargement d'un document à partir d'une URL et d'extraction de son contenu textuel étape par étape.
 ## Conditions préalables

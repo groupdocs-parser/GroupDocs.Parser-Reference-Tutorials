@@ -6,6 +6,9 @@ description: Naučte se vyhledávat text pomocí regulárních výrazů v dokume
 weight: 23
 url: /cs/net/text-extraction/search-text-by-regex/
 ---
+
+# Hledat text podle regulárního výrazu (regex)
+
 ## Úvod
 V tomto tutoriálu se ponoříme do používání GroupDocs.Parser pro .NET k vyhledávání textu podle regulárního výrazu (Regex) v dokumentech. GroupDocs.Parser je výkonná knihovna, která umožňuje vývojářům extrahovat text a metadata z různých formátů souborů, jako jsou PDF, DOCX, XLSX a další. Hledání textu pomocí regulárních výrazů je zvláště užitečné pro efektivní vyhledávání vzorů nebo specifického obsahu v dokumentech.
 ## Předpoklady

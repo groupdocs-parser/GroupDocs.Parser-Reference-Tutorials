@@ -6,6 +6,9 @@ description: Scopri come estrarre collegamenti ipertestuali dai documenti utiliz
 weight: 11
 url: /it/net/hyperlink-extraction/extract-hyperlinks-from-document-page/
 ---
+
+# Estrai collegamenti ipertestuali dalla pagina del documento
+
 ## introduzione
 In questo tutorial esploreremo come utilizzare GroupDocs.Parser per .NET per estrarre collegamenti ipertestuali dai documenti passo dopo passo. GroupDocs.Parser è una potente libreria che consente agli sviluppatori di analizzare vari formati di documenti ed estrarre testo, metadati e altri elementi.
 ## Prerequisiti

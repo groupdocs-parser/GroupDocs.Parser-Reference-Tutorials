@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 從 Word 文件中提�
 weight: 12
 url: /zh-hant/net/word-document-processing/extract-metadata-from-word-document/
 ---
+
+# 從 Word 文件中提取元數據
+
 ## 介紹
 在當今的數位時代，有效地從文件中解析和提取資料對於從內容分析到資料檢索的各種應用程式至關重要。 GroupDocs.Parser for .NET 是一個功能強大的程式庫，可讓開發人員輕鬆從文件中提取元資料和文字。在本教學中，我們將逐步探索如何使用 GroupDocs.Parser for .NET 從 Word 文件中提取元資料。
 ## 先決條件

@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất văn bản từ các trang cụ th�
 weight: 17
 url: /vi/net/word-document-processing/extract-text-from-specific-page-in-word-document/
 ---
+
+# Trích xuất văn bản từ trang cụ thể trong tài liệu Word
+
 ## Giới thiệu
 Trong lĩnh vực phát triển .NET, trích xuất văn bản từ tài liệu là yêu cầu chung cho nhiều ứng dụng khác nhau. GroupDocs.Parser cho .NET cung cấp một giải pháp mạnh mẽ để phân tích cú pháp và trích xuất văn bản từ các định dạng tài liệu khác nhau một cách liền mạch. Hướng dẫn này tập trung vào việc tận dụng GroupDocs.Parser để trích xuất văn bản từ một trang cụ thể trong tài liệu Word. Bằng cách làm theo hướng dẫn này, bạn sẽ tìm hiểu các bước cần thiết để tích hợp chức năng này vào các dự án .NET của mình một cách hiệu quả.
 ## Điều kiện tiên quyết

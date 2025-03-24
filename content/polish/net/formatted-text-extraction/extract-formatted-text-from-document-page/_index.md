@@ -6,6 +6,9 @@ description: Wyodrębnij sformatowany tekst ze stron dokumentu za pomocą GroupD
 weight: 11
 url: /pl/net/formatted-text-extraction/extract-formatted-text-from-document-page/
 ---
+
+# Wyodrębnij sformatowany tekst ze strony dokumentu
+
 ## Wstęp
 W tym samouczku przeprowadzimy Cię przez proces wyodrębniania sformatowanego tekstu ze stron dokumentu za pomocą GroupDocs.Parser dla .NET. Ta biblioteka umożliwia wydajne analizowanie i wyodrębnianie tekstu z różnych formatów dokumentów, takich jak PDF, Word, Excel i innych.
 ## Warunki wstępne

@@ -7,6 +7,9 @@ weight: 27
 url: /nl/net/barcode-extraction/
 ---
 
+# Barcode-extractie
+
+
 Op het gebied van documentverwerking is het extraheren van streepjescodes een cruciale taak. Of het nu gaat om voorraadbeheer, documentcategorisatie of automatisering van gegevensinvoer, de mogelijkheid om snel en nauwkeurig streepjescodes uit documenten te extraheren is van onschatbare waarde. Met GroupDocs.Parser voor .NET wordt het beheersen van dit proces niet alleen haalbaar, maar ook gestroomlijnd.
 
 ## Barcode-extractie begrijpen:

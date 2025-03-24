@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar text från lösenordsskyddade dokument m
 weight: 15
 url: /sv/net/document-loading/working-with-password-protected-documents/
 ---
+
+# Arbeta med lösenordsskyddade dokument
+
 ## Introduktion
 en värld av dokumentbehandling är det avgörande att hantera lösenordsskyddade filer effektivt. GroupDocs.Parser för .NET erbjuder robusta möjligheter att arbeta med sådana dokument sömlöst. Denna handledning guidar dig genom processen att extrahera text från lösenordsskyddade dokument med GroupDocs.Parser.
 ## Förutsättningar

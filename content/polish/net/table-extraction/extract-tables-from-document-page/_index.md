@@ -6,6 +6,9 @@ description: Dowiedz się, jak programowo wyodrębniać tabele z dokumentów prz
 weight: 11
 url: /pl/net/table-extraction/extract-tables-from-document-page/
 ---
+
+# Wyodrębnij tabele ze strony dokumentu
+
 ## Wstęp
 W tym samouczku przyjrzymy się, jak wyodrębnić tabele ze strony dokumentu za pomocą GroupDocs.Parser dla .NET. GroupDocs.Parser to potężna biblioteka, która umożliwia programistom pracę z różnymi formatami dokumentów, takimi jak PDF, DOCX, XLSX i innymi. Wykorzystując jego funkcje, możemy skutecznie wyodrębniać z dokumentów ustrukturyzowane dane, takie jak tabele, co pozwala nam programowo manipulować i analizować informacje.
 ## Warunki wstępne

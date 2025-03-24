@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak metadata dari dokumen Word menggunakan Gr
 weight: 12
 url: /id/net/word-document-processing/extract-metadata-from-word-document/
 ---
+
+# Ekstrak Metadata dari Dokumen Word
+
 ## Perkenalan
 Di era digital saat ini, penguraian dan ekstraksi data dari dokumen secara efisien sangat penting untuk berbagai aplikasi, mulai dari analisis konten hingga pengambilan data. GroupDocs.Parser untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang mengekstrak metadata dan teks dari dokumen dengan mudah. Dalam tutorial ini, kita akan mempelajari cara menggunakan GroupDocs.Parser untuk .NET untuk mengekstrak metadata dari dokumen Word langkah demi langkah.
 ## Prasyarat

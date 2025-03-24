@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 템플릿을 사용하여 
 weight: 10
 url: /ko/net/document-template-processing/working-with-barcodes-in-templates/
 ---
+
+# 템플릿에서 바코드 작업
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser가 포함된 템플릿을 사용하여 문서에서 데이터를 효율적으로 추출하는 방법을 살펴보겠습니다. GroupDocs.Parser는 바코드와 같은 특정 데이터 유형에 대한 템플릿을 정의한 다음 이러한 템플릿에 따라 문서를 구문 분석할 수 있도록 하여 데이터 추출 프로세스를 단순화합니다.
 ## 전제 조건

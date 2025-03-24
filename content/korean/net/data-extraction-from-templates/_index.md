@@ -7,6 +7,9 @@ weight: 26
 url: /ko/net/data-extraction-from-templates/
 ---
 
+# 템플릿에서 데이터 추출
+
+
 ## 소개
 
 .NET 개발 영역에서 GroupDocs.Parser는 다양한 문서 형식에서 데이터를 추출하는 강력한 도구로 돋보입니다. PDF, Word 문서, 스프레드시트 등 무엇을 처리하든 GroupDocs.Parser는 추출 프로세스를 단순화하여 시간과 노력을 절약해 줍니다.

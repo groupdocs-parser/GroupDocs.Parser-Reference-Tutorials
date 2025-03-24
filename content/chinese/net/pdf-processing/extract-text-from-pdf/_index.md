@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 从 PDF 文档中提�
 weight: 14
 url: /zh/net/pdf-processing/extract-text-from-pdf/
 ---
+
+# 从 PDF 中提取文本
+
 ## 介绍
 在本教程中，我们将探讨如何使用 GroupDocs.Parser for .NET 从 PDF 文档中提取文本。GroupDocs.Parser 是一个功能强大的 API，允许开发人员从各种文档格式（包括 PDF、Microsoft Office 等）中提取文本、元数据和结构化数据。
 ## 先决条件

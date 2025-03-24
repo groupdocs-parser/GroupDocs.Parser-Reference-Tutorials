@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 从文档中提取文�
 weight: 13
 url: /zh/net/document-loading/load-document-from-url/
 ---
+
+# 从 URL 加载文档
+
 ## 介绍
 在本教程中，我们将探讨如何利用 GroupDocs.Parser for .NET 从文档中提取文本。GroupDocs.Parser 是一个功能强大的工具，可以从各种文档格式（如 PDF、Word、Excel 等）中提取文本、元数据和其他信息。我们将逐步介绍从 URL 加载文档并提取其文本内容的过程。
 ## 先决条件

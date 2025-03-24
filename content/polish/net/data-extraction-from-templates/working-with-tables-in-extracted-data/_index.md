@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić dane tabeli z dokumentów za pomocą
 weight: 12
 url: /pl/net/data-extraction-from-templates/working-with-tables-in-extracted-data/
 ---
+
+# Praca z tabelami w wyodrębnionych danych
+
 ## Wstęp
 tym samouczku omówimy, jak używać GroupDocs.Parser dla .NET do wyodrębniania danych z tabel w dokumentach. GroupDocs.Parser to potężne narzędzie, które umożliwia programistom analizowanie i wyodrębnianie tekstu, metadanych i treści strukturalnych z różnych formatów plików, takich jak PDF, DOCX, XLSX i innych. W szczególności skupimy się na wydajnym wyodrębnianiu danych z tabeli przy użyciu predefiniowanych szablonów.
 ## Warunki wstępne

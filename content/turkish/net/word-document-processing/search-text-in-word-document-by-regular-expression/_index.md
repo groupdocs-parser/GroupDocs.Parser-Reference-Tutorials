@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET ile normal ifadeleri kullanarak Word belg
 weight: 19
 url: /tr/net/word-document-processing/search-text-in-word-document-by-regular-expression/
 ---
+
+# Word Belgesindeki Metni Normal İfadeyle Arama
+
 ## giriiş
 Bu öğreticide, düzenli ifadeler kullanarak Word belgelerinden metin çıkarmak için GroupDocs.Parser for .NET'in nasıl kullanılacağını keşfedeceğiz. Bu adım adım kılavuz, bu özelliği etkili bir şekilde uygulamanıza yardımcı olacaktır.
 ## Önkoşullar

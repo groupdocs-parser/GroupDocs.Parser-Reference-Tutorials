@@ -6,6 +6,9 @@ description: Aprenda a trabajar con diseños de tablas en plantillas usando Grou
 weight: 14
 url: /es/net/document-template-processing/working-with-table-layout-in-templates/
 ---
+
+# Trabajar con diseño de tabla en plantillas
+
 ## Introducción
 En este tutorial, exploraremos cómo trabajar con el diseño de tablas en plantillas usando GroupDocs.Parser para .NET. GroupDocs.Parser es una potente API de análisis de documentos que permite a los desarrolladores extraer texto y metadatos de varios formatos de documentos, incluidos PDF, Microsoft Office y más.
 ## Requisitos previos

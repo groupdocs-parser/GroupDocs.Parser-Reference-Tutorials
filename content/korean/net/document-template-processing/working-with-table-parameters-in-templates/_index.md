@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 문서의 테이블에서 
 weight: 15
 url: /ko/net/document-template-processing/working-with-table-parameters-in-templates/
 ---
+
+# 템플릿에서 테이블 매개변수 작업
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser를 사용하여 템플릿의 테이블 매개 변수로 작업하는 방법을 살펴보겠습니다. 이 가이드는 프로세스를 단계별 지침으로 나누어 문서 내의 테이블에서 데이터를 효과적으로 구문 분석하고 추출하는 데 도움을 줍니다.
 ## 전제 조건

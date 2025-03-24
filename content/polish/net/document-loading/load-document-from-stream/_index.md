@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić tekst z różnych formatów dokument
 weight: 12
 url: /pl/net/document-loading/load-document-from-stream/
 ---
+
+# Załaduj dokument ze strumienia
+
 ## Wstęp
 W obszarze przetwarzania dokumentów w aplikacjach .NET powszechnym wymogiem jest wyodrębnianie tekstu z plików o różnych formatach. GroupDocs.Parser dla .NET oferuje zaawansowane rozwiązanie do płynnego analizowania i wyodrębniania tekstu z różnorodnych dokumentów. Ten samouczek poprowadzi Cię krok po kroku przez proces wykorzystania GroupDocs.Parser do wyodrębniania tekstu z dokumentów.
 ## Warunki wstępne

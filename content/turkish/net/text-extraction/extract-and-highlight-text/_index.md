@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak belgelerden metin çıkarmay
 weight: 11
 url: /tr/net/text-extraction/extract-and-highlight-text/
 ---
+
+# Metni Çıkarma ve Vurgulama
+
 ## giriiş
 Bu öğreticide, belgelerden metin ayıklamak ve vurgulamak için GroupDocs.Parser for .NET'in nasıl kullanılacağını keşfedeceğiz. GroupDocs.Parser, çeşitli belge formatlarını ayrıştırmanıza ve gelişmiş metin çıkarma işlemlerini gerçekleştirmenize olanak tanıyan güçlü bir kitaplıktır.
 ## Önkoşullar

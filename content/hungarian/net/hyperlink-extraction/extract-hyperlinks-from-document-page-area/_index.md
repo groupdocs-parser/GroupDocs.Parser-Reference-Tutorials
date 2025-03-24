@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthat ki hiperhivatkozásokat adott dokumentu
 weight: 12
 url: /hu/net/hyperlink-extraction/extract-hyperlinks-from-document-page-area/
 ---
+
+# Kivonja a hiperhivatkozásokat a dokumentumoldal területéről
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet hiperhivatkozásokat kivonni egy dokumentum adott oldalterületéről a GroupDocs.Parser for .NET könyvtár használatával. A GroupDocs.Parser hatékony szolgáltatásokat nyújt a dokumentumfeldolgozáshoz, beleértve a hiperhivatkozások kibontását is. Lépésről lépésre végigvezetjük a folyamaton, bemutatva, hogyan implementálhatja ezt a funkciót .NET-alkalmazásaiban.
 ## Előfeltételek

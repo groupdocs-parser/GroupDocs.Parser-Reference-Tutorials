@@ -6,6 +6,9 @@ description: Ekstrak gambar dengan mudah dari dokumen di .NET dengan GroupDocs.P
 weight: 24
 url: /id/net/image-extraction/
 ---
+
+# Ekstraksi Gambar
+
 ## Perkenalan
 
 Selami dunia ekstraksi gambar di .NET dengan tutorial GroupDocs.Parser. Tutorial ini memberikan panduan komprehensif dalam mengekstraksi gambar dari dokumen, baik dari area dokumen tertentu, keseluruhan dokumen, atau halaman individual. Baik Anda seorang pemula atau pengembang berpengalaman, tutorial ini menawarkan petunjuk langkah demi langkah yang jelas dan contoh kode untuk membantu Anda mengintegrasikan ekstraksi gambar dengan lancar ke dalam aplikasi .NET Anda.

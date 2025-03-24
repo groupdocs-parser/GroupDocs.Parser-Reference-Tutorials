@@ -6,6 +6,9 @@ description: Leer hoe u afbeeldingen uit PDF-documenten kunt extraheren met Grou
 weight: 12
 url: /nl/net/pdf-processing/extract-images-from-pdf/
 ---
+
+# Afbeeldingen extraheren uit PDF
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u GroupDocs.Parser voor .NET kunt gebruiken om afbeeldingen uit PDF-documenten te extraheren. GroupDocs.Parser is een krachtige bibliotheek waarmee ontwikkelaars met verschillende documentformaten kunnen werken, waaronder PDF, DOCX, PPTX en meer, in een .NET-omgeving. Door deze stappen te volgen, kunt u moeiteloos afbeeldingen uit PDF-bestanden extraheren.
 ## Vereisten

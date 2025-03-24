@@ -6,6 +6,9 @@ description: Naučte se extrahovat data z dokumentů pomocí GroupDocs.Parser fo
 weight: 11
 url: /cs/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
+
+# Práce s poli na pevných pozicích v šablonách
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak pracovat s poli na pevných pozicích v šablonách pomocí GroupDocs.Parser for .NET. GroupDocs.Parser je výkonná knihovna pro analýzu dokumentů, která umožňuje vývojářům extrahovat data z různých formátů dokumentů, jako jsou PDF, Word, Excel a další. Konkrétně se zaměříme na definování a využití polí šablony k extrahování cílených informací na základě jejich pevných pozic.
 ## Předpoklady

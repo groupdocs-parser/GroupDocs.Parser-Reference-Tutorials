@@ -7,6 +7,9 @@ weight: 20
 url: /tr/net/text-extraction/
 ---
 
+# Metin Çıkarma
+
+
 ## giriiş
 
 GroupDocs.Parser for .NET tarafından desteklenen kapsamlı metin çıkarma eğitimleri koleksiyonuna hoş geldiniz. Bu eğitim serisinde, .NET uygulamalarınızdaki belgelerden metin çıkarmak, vurgulamak ve aramak için çeşitli yöntem ve teknikleri keşfedeceğiz.

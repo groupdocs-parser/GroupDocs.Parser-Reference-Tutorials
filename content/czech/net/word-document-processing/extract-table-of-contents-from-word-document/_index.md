@@ -6,6 +6,9 @@ description: Naučte se, jak extrahovat obsah (TOC) z dokumentů aplikace Word p
 weight: 13
 url: /cs/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
+
+# Extrahujte obsah z dokumentu aplikace Word
+
 ## Úvod
 V tomto tutoriálu se naučíte, jak používat GroupDocs.Parser for .NET k extrahování obsahu (TOC) z dokumentu aplikace Word krok za krokem. GroupDocs.Parser je výkonná knihovna, která umožňuje programově pracovat s různými formáty dokumentů.
 ## Předpoklady

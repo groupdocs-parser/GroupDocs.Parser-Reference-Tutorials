@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất văn bản từ tài liệu bằng 
 weight: 19
 url: /vi/net/text-extraction/extract-text-in-raw-mode/
 ---
+
+# Trích xuất văn bản ở chế độ thô
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Parser cho .NET để trích xuất văn bản từ các định dạng tài liệu khác nhau một cách hiệu quả. GroupDocs.Parser là một thư viện mạnh mẽ cho phép các nhà phát triển trích xuất văn bản và siêu dữ liệu từ các tài liệu như PDF, Word, Excel, PowerPoint, v.v., đơn giản hóa các tác vụ trích xuất văn bản trong các ứng dụng .NET.
 ## Điều kiện tiên quyết

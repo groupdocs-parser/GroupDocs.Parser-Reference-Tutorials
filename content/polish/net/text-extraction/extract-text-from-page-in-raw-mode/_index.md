@@ -6,6 +6,9 @@ description: W tym kompleksowym samouczku naucz się wydajnego wyodrębniania te
 weight: 17
 url: /pl/net/text-extraction/extract-text-from-page-in-raw-mode/
 ---
+
+# Wyodrębnij tekst ze strony w trybie surowym
+
 ## Wstęp
 W tym samouczku dowiesz się, jak używać Groupdocs.Parser dla .NET do wyodrębniania tekstu ze stron dokumentów w trybie nieprzetworzonym. Ta biblioteka zapewnia wydajne narzędzia do analizowania i wyodrębniania zawartości z różnych formatów plików, umożliwiając programistom włączenie wyodrębniania tekstu dokumentu do swoich aplikacji .NET.
 ## Warunki wstępne

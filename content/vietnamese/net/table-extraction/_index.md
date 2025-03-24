@@ -6,6 +6,9 @@ description: Trích xuất bảng chính từ tài liệu bằng GroupDocs.Parse
 weight: 23
 url: /vi/net/table-extraction/
 ---
+
+# Trích xuất bảng
+
 ## Giới thiệu
 
 Chào mừng bạn đến với thế giới hướng dẫn trích xuất bảng với GroupDocs.Parser cho .NET. Trong hướng dẫn toàn diện này, chúng tôi sẽ đi sâu vào sự phức tạp của việc trích xuất bảng từ tài liệu bằng cách sử dụng các khả năng mạnh mẽ của GroupDocs.Parser. Cho dù bạn là người mới bắt đầu hay nhà phát triển có kinh nghiệm, những hướng dẫn này đều cung cấp hướng dẫn từng bước rõ ràng, ví dụ về mã và hiểu biết thực tế để giúp bạn khai thác toàn bộ tiềm năng của việc trích xuất bảng trong các ứng dụng .NET của mình.

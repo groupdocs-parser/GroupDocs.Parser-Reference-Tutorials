@@ -6,6 +6,9 @@ description: Kesintisiz veri işleme için GroupDocs.Parser'ı kullanarak .NET't
 weight: 18
 url: /tr/net/text-extraction/extract-text-in-accurate-mode/
 ---
+
+# Doğru Modda Metni Çıkart
+
 ## giriiş
 Bu öğreticide, GroupDocs.Parser for .NET'i kullanarak çeşitli belge biçimlerinden doğru şekilde nasıl metin ayıklanacağını keşfedeceğiz. GroupDocs.Parser, PDF, DOCX, PPTX, XLSX ve daha fazlası gibi belgelerden metin çıkarmayı sağlayan güçlü bir kitaplıktır ve bu da onu veri işleme uygulamaları için değerli bir araç haline getirir.
 ## Önkoşullar

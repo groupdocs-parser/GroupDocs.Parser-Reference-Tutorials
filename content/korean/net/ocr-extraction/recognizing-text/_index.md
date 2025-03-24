@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 다양한 문서 형식에
 weight: 12
 url: /ko/net/ocr-extraction/recognizing-text/
 ---
+
+# 텍스트 인식
+
 ## 소개
 .NET 개발 영역에서는 다양한 문서 형식에서 효율적인 텍스트 추출이 가장 중요합니다. .NET용 GroupDocs.Parser는 텍스트를 원활하게 추출할 수 있는 강력한 솔루션을 제공합니다. 이 튜토리얼에서는 GroupDocs.Parser를 사용하여 문서에서 텍스트를 인식하고 추출하는 방법을 단계별로 살펴보겠습니다.
 ## 전제 조건

@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất siêu dữ liệu từ tài liệu 
 weight: 13
 url: /vi/net/pdf-processing/extract-metadata-from-pdf/
 ---
+
+# Trích xuất siêu dữ liệu từ PDF
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng tôi sẽ đi sâu vào cách sử dụng GroupDocs.Parser cho .NET để trích xuất siêu dữ liệu từ tài liệu PDF. GroupDocs.Parser là một thư viện mạnh mẽ cho phép các nhà phát triển làm việc với nhiều định dạng tài liệu khác nhau, bao gồm PDF, DOCX, v.v., để trích xuất văn bản, siêu dữ liệu và dữ liệu có cấu trúc. Việc trích xuất siêu dữ liệu từ các tệp PDF có thể hữu ích cho nhiều ứng dụng, từ quản lý tài liệu đến truy xuất thông tin.
 ## Điều kiện tiên quyết

@@ -6,6 +6,9 @@ description: Pelajari cara menggunakan GroupDocs.Parser untuk .NET untuk mengeks
 weight: 10
 url: /id/net/document-template-processing/working-with-barcodes-in-templates/
 ---
+
+# Bekerja dengan Barcode di Templat
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara mengekstrak data dari dokumen secara efisien menggunakan templat dengan GroupDocs.Parser untuk .NET. GroupDocs.Parser menyederhanakan proses ekstraksi data dengan memungkinkan Anda menentukan templat untuk tipe data tertentu, seperti kode batang, lalu mengurai dokumen sesuai dengan templat tersebut.
 ## Prasyarat

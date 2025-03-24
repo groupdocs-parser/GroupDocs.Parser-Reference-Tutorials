@@ -6,6 +6,9 @@ description: Extrayez sans effort des images de documents dans .NET avec GroupDo
 weight: 24
 url: /fr/net/image-extraction/
 ---
+
+# Extraction d'images
+
 ## Introduction
 
 Plongez dans le domaine de l'extraction d'images dans .NET avec les didacticiels GroupDocs.Parser. Ces didacticiels fournissent des conseils complets sur l'extraction d'images à partir de documents, qu'il s'agisse de zones de document spécifiques, de documents entiers ou de pages individuelles. Que vous soyez un développeur débutant ou expérimenté, ces didacticiels proposent des instructions claires étape par étape et des exemples de code pour vous aider à intégrer l'extraction d'images de manière transparente dans vos applications .NET.

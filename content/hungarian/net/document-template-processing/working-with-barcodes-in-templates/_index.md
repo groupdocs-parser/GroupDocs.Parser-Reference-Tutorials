@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan használhatja a GroupDocs.Parser for .NET-et st
 weight: 10
 url: /hu/net/document-template-processing/working-with-barcodes-in-templates/
 ---
+
+# Vonalkódok használata sablonokban
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet hatékonyan kinyerni az adatokat a dokumentumokból sablonok segítségével a GroupDocs.Parser for .NET segítségével. A GroupDocs.Parser leegyszerűsíti az adatkinyerési folyamatot azáltal, hogy lehetővé teszi sablonok meghatározását bizonyos adattípusokhoz, például vonalkódokhoz, majd ezeknek a sablonoknak megfelelően elemzi a dokumentumokat.
 ## Előfeltételek

@@ -6,6 +6,9 @@ description: 効率的なドキュメント解析と抽出のために GroupDocs
 weight: 10
 url: /ja/net/document-loading/handling-loading-of-external-resources/
 ---
+
+# 外部リソースの読み込みの処理
+
 ## 導入
 .NET 開発の世界では、さまざまなファイル形式からコンテンツを解析および抽出することが一般的な要件です。GroupDocs.Parser for .NET は、ドキュメント解析タスクを効率的に処理するための堅牢なソリューションを提供します。このチュートリアルでは、GroupDocs.Parser を使用して、.NET アプリケーションで画像などの外部リソースを操作する方法について説明します。必要な前提条件、インポート名前空間について説明し、例を詳細な手順に分解して説明します。
 ## 前提条件

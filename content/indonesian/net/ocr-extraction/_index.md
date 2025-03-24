@@ -7,6 +7,9 @@ weight: 28
 url: /id/net/ocr-extraction/
 ---
 
+# Ekstraksi Pengenalan Karakter Optik (OCR).
+
+
 ## Perkenalan
 
 Buka kekuatan ekstraksi Pengenalan Karakter Optik (OCR) di .NET dengan tutorial GroupDocs.Parser. Tutorial ini memberikan panduan komprehensif tentang penanganan OCR, mengenali teks, dan mengekstraksi konten dari area tertentu atau area persegi panjang dalam dokumen. Baik Anda seorang pemula atau pengembang berpengalaman, tutorial ini menawarkan petunjuk langkah demi langkah yang jelas dan contoh kode untuk membantu Anda mengintegrasikan ekstraksi OCR dengan lancar ke dalam aplikasi .NET Anda.

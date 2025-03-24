@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 從 Word 文件中提�
 weight: 16
 url: /zh-hant/net/word-document-processing/extract-text-from-word-document-as-html/
 ---
+
+# 從 Word 文件中提取文字為 HTML
+
 ## 介紹
 GroupDocs.Parser for .NET 是一個功能強大的文件解析庫，使開發人員能夠從各種文件格式中無縫提取文字和元資料。在本教程中，我們將重點介紹如何利用 GroupDocs.Parser 從 Word 文件中提取文字並將其另存為 HTML。此過程對於內容分析、索引或將文件轉換為網路友善格式等任務至關重要。閱讀本指南後，您將清楚地了解如何在 .NET 應用程式中有效地使用 GroupDocs.Parser。
 ## 先決條件

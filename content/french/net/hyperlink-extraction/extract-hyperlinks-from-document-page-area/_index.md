@@ -6,6 +6,9 @@ description: Découvrez comment extraire des hyperliens à partir de zones de do
 weight: 12
 url: /fr/net/hyperlink-extraction/extract-hyperlinks-from-document-page-area/
 ---
+
+# Extraire les hyperliens de la zone de la page du document
+
 ## Introduction
 Dans ce didacticiel, nous allons explorer comment extraire des hyperliens d'une zone de page spécifique d'un document à l'aide de la bibliothèque GroupDocs.Parser pour .NET. GroupDocs.Parser fournit des fonctionnalités puissantes pour le traitement des documents, notamment l'extraction de liens hypertexte. Nous vous guiderons pas à pas tout au long du processus, en vous montrant comment implémenter cette fonctionnalité dans vos applications .NET.
 ## Conditions préalables

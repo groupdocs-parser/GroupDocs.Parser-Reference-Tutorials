@@ -6,6 +6,9 @@ description: Dowiedz się, jak rozpoznawać tekst w określonych obszarach dokum
 weight: 14
 url: /pl/net/ocr-extraction/recognizing-text-in-rectangular-regions/
 ---
+
+# Rozpoznawanie tekstu w obszarach prostokątnych
+
 ## Wstęp
 W tym samouczku omówimy, jak używać programu GroupDocs.Parser dla platformy .NET do rozpoznawania tekstu w określonych prostokątnych obszarach dokumentów. GroupDocs.Parser to potężna biblioteka, która umożliwia programistom wyodrębnianie tekstu, metadanych i innych danych z różnych formatów plików, w tym PDF, Word, Excel i PowerPoint.
 ## Warunki wstępne

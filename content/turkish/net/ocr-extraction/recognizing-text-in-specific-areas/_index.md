@@ -6,6 +6,9 @@ description: OCR özelliklerine sahip belgelerdeki belirli alanlardan metin çı
 weight: 13
 url: /tr/net/ocr-extraction/recognizing-text-in-specific-areas/
 ---
+
+# Belirli Alanlardaki Metni Tanıma
+
 ## giriiş
 Bu öğreticide, bir belgedeki belirli alanlardaki metni tanımak ve çıkarmak için GroupDocs.Parser for .NET'in nasıl kullanılacağını keşfedeceğiz. GroupDocs.Parser, geliştiricilerin PDF, Word, Excel, PowerPoint ve daha fazlası dahil olmak üzere çeşitli belge formatlarıyla çalışmasına olanak tanıyan güçlü bir belge ayrıştırma kitaplığıdır. Özellikle, bir belge içindeki tanımlı alanlardan metin çıkarmak için GroupDocs.Parser'ın OCR (Optik Karakter Tanıma) özelliklerinden yararlanmaya odaklanacağız.
 ## Önkoşullar

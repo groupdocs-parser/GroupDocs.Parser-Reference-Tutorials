@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar bilagor från PDF-portföljer med GroupD
 weight: 10
 url: /sv/net/pdf-processing/extract-attachments-from-pdf-portfolios/
 ---
+
+# Extrahera bilagor från PDF-portföljer
+
 ## Introduktion
 en värld av dokumentbehandling och analys kan det vara avgörande att hantera PDF-portföljer effektivt. GroupDocs.Parser för .NET erbjuder en kraftfull lösning för att extrahera bilagor från PDF-portföljer, vilket gör det möjligt för utvecklare att komma åt och hantera innehållet med lätthet. Denna handledning guidar dig genom processen steg för steg, med hjälp av GroupDocs.Parser för att extrahera bilagor sömlöst.
 ## Förutsättningar

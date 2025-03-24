@@ -6,6 +6,9 @@ description: Scopri come estrarre i codici a barre dalle pagine dei documenti ut
 weight: 12
 url: /it/net/barcode-extraction/extract-barcodes-from-document-page/
 ---
+
+# Estrai codici a barre dalla pagina del documento
+
 ## introduzione
 In questo tutorial ti guideremo attraverso il processo di estrazione dei codici a barre da una pagina di documento utilizzando GroupDocs.Parser per .NET. GroupDocs.Parser è una potente libreria di analisi dei documenti che consente agli sviluppatori di estrarre testo, metadati e persino codici a barre da vari formati di documenti.
 ## Prerequisiti

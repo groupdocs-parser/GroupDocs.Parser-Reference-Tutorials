@@ -6,6 +6,9 @@ description: Leer hoe u gestructureerde gegevens uit documenten kunt extraheren 
 weight: 11
 url: /nl/net/data-extraction-from-templates/iterate-through-fields/
 ---
+
+# Herhaal de velden
+
 ## Invoering
 GroupDocs.Parser voor .NET is een krachtige bibliotheek waarmee ontwikkelaars gegevens kunnen extraheren uit verschillende documentformaten zoals PDF, Microsoft Word, Excel en PowerPoint. Deze tutorial begeleidt u bij het gebruik van GroupDocs.Parser om documentvelden te doorlopen en specifieke gegevens te extraheren met behulp van sjablonen. Aan het einde van deze zelfstudie kunt u op efficiënte wijze gestructureerde gegevens uit documenten in uw .NET-toepassingen extraheren.
 ## Vereisten

@@ -6,6 +6,9 @@ description: Scopri come estrarre testo da fogli Excel utilizzando GroupDocs.Par
 weight: 15
 url: /it/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
 ---
+
+# Estrai testo da un foglio Excel in modalità Raw
+
 ## introduzione
 In questo tutorial esploreremo come estrarre testo da fogli Excel utilizzando GroupDocs.Parser per .NET in modalità raw. GroupDocs.Parser è una potente API che consente agli sviluppatori di lavorare con vari formati di documenti, inclusi file Excel, per l'estrazione e l'analisi del testo. Esamineremo i prerequisiti, importeremo gli spazi dei nomi e analizzeremo ogni passaggio per dimostrare il processo di estrazione del testo dai fogli Excel.
 ## Prerequisiti

@@ -6,6 +6,9 @@ description: Extraiga texto formateado de páginas de documentos utilizando Grou
 weight: 11
 url: /es/net/formatted-text-extraction/extract-formatted-text-from-document-page/
 ---
+
+# Extraer texto formateado de la página del documento
+
 ## Introducción
 En este tutorial, lo guiaremos a través del proceso de extracción de texto formateado de páginas de documentos usando GroupDocs.Parser para .NET. Esta biblioteca le permite analizar y extraer texto de manera eficiente desde varios formatos de documentos como PDF, Word, Excel y más.
 ## Requisitos previos

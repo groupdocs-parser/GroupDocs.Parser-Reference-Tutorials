@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 암호로 보호된 문서
 weight: 15
 url: /ko/net/document-loading/working-with-password-protected-documents/
 ---
+
+# 비밀번호로 보호된 문서 작업
+
 ## 소개
 문서 처리 세계에서는 비밀번호로 보호된 파일을 효율적으로 처리하는 것이 중요합니다. .NET용 GroupDocs.Parser는 이러한 문서를 원활하게 작업할 수 있는 강력한 기능을 제공합니다. 이 튜토리얼은 GroupDocs.Parser를 사용하여 비밀번호로 보호된 문서에서 텍스트를 추출하는 과정을 안내합니다.
 ## 전제 조건

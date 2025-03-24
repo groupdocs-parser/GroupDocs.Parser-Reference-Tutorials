@@ -6,6 +6,9 @@ description: Scopri come estrarre dati da moduli PDF utilizzando GroupDocs.Parse
 weight: 11
 url: /it/net/pdf-processing/extract-data-from-pdf-forms/
 ---
+
+# Estrai dati da moduli PDF
+
 ## introduzione
 In questo tutorial esploreremo come utilizzare GroupDocs.Parser per .NET per estrarre dati da moduli PDF. GroupDocs.Parser è una potente libreria che consente agli sviluppatori di lavorare in modo efficiente con vari formati di documenti, inclusi PDF, DOCX, XLSX e altri. Esamineremo i passaggi necessari per estrarre campi specifici da un modulo PDF e gestire i dati estratti.
 ## Prerequisiti

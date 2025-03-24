@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak Word belgelerinden köprüle
 weight: 10
 url: /tr/net/word-document-processing/extract-hyperlinks-from-word-document/
 ---
+
+# Word Belgesinden Köprüleri Çıkarma
+
 ## giriiş
 GroupDocs.Parser for .NET, geliştiricilerin Word, Excel, PowerPoint, PDF ve daha fazlası gibi çeşitli belge formatlarından yapılandırılmış metin ve meta verileri çıkarmasına olanak tanıyan güçlü bir araçtır. Belge işlemede yaygın bir gereksinim, Word belgelerinden köprü bağlantılarının program aracılığıyla çıkarılmasıdır. Bu eğitim, bir Word belgesinden köprüleri adım adım çıkarmak için GroupDocs.Parser'ı kullanma sürecinde size rehberlik edecektir.
 ## Önkoşullar

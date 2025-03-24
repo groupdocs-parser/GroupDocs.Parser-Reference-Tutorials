@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất văn bản từ tài liệu Excel b
 weight: 12
 url: /vi/net/excel-document-processing/extract-text-from-excel-document/
 ---
+
+# Trích xuất văn bản từ tài liệu Excel
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình trích xuất văn bản từ tài liệu Excel bằng GroupDocs.Parser cho .NET. GroupDocs.Parser là một thư viện .NET mạnh mẽ cho phép bạn phân tích các định dạng tài liệu khác nhau, bao gồm các tệp Excel, để trích xuất văn bản và siêu dữ liệu.
 ## Điều kiện tiên quyết

@@ -6,6 +6,9 @@ description: Scopri come estrarre gli allegati dai portfolio PDF utilizzando Gro
 weight: 10
 url: /it/net/pdf-processing/extract-attachments-from-pdf-portfolios/
 ---
+
+# Estrai allegati da portfolio PDF
+
 ## introduzione
 Nel mondo dell'elaborazione e dell'analisi dei documenti, gestire i portfolio PDF in modo efficiente può essere cruciale. GroupDocs.Parser per .NET offre una potente soluzione per estrarre allegati da portfolio PDF, consentendo agli sviluppatori di accedere e gestire i contenuti con facilità. Questo tutorial ti guiderà attraverso il processo passo dopo passo, utilizzando GroupDocs.Parser per estrarre gli allegati senza problemi.
 ## Prerequisiti

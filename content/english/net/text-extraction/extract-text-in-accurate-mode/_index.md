@@ -6,6 +6,9 @@ description: Learn how to accurately extract text from documents in .NET using G
 weight: 18
 url: /net/text-extraction/extract-text-in-accurate-mode/
 ---
+
+# Extract Text in Accurate Mode
+
 ## Introduction
 In this tutorial, we'll explore how to extract text accurately from various document formats using GroupDocs.Parser for .NET. GroupDocs.Parser is a powerful library that enables text extraction from documents like PDF, DOCX, PPTX, XLSX, and more, making it a valuable tool for data processing applications.
 ## Prerequisites

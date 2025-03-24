@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 從各種文件格式�
 weight: 20
 url: /zh-hant/net/text-extraction/extract-text-structure/
 ---
+
+# 提取文字結構
+
 ## 介紹
 在本教學中，我們將探討如何使用 GroupDocs.Parser for .NET 從各種文件格式中擷取文字結構。 GroupDocs.Parser 是一個功能強大的程式庫，可讓開發人員從 PDF、Word 文件、Excel 工作表等文件中提取結構化文字內容。本教學將指導您逐步完成設定 GroupDocs.Parser、匯入必要的命名空間以及提取文字結構的過程。
 ## 先決條件

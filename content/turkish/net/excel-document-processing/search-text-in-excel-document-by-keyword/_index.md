@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak Excel belgelerinde nasıl me
 weight: 16
 url: /tr/net/excel-document-processing/search-text-in-excel-document-by-keyword/
 ---
+
+# Excel Belgesindeki Metni Anahtar Kelimeye Göre Arama
+
 ## giriiş
 GroupDocs.Parser for .NET, geliştiricilerin .NET uygulamalarındaki belge ayrıştırma görevleriyle verimli bir şekilde çalışmasına olanak tanıyan güçlü bir kitaplıktır. Bu derste, anahtar kelimeleri kullanarak bir Excel belgesinde belirli bir metni nasıl arayacağımıza odaklanacağız. Bu kılavuzu takip ederek GroupDocs.Parser kitaplığını projenize nasıl entegre edeceğinizi ve Excel dosyalarında hedeflenen metin aramalarını nasıl gerçekleştireceğinizi öğreneceksiniz.
 ## Önkoşullar

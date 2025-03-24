@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 문서 페이지에서 서
 weight: 11
 url: /ko/net/formatted-text-extraction/extract-formatted-text-from-document-page/
 ---
+
+# 문서 페이지에서 서식 있는 텍스트 추출
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser를 사용하여 문서 페이지에서 서식 있는 텍스트를 추출하는 과정을 안내합니다. 이 라이브러리를 사용하면 PDF, Word, Excel 등과 같은 다양한 문서 형식에서 텍스트를 효율적으로 구문 분석하고 추출할 수 있습니다.
 ## 전제 조건

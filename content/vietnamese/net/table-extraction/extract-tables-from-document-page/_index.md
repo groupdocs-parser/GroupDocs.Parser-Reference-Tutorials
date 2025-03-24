@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất bảng từ tài liệu theo chươ
 weight: 11
 url: /vi/net/table-extraction/extract-tables-from-document-page/
 ---
+
+# Trích xuất bảng từ trang tài liệu
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách trích xuất bảng từ một trang tài liệu bằng GroupDocs.Parser cho .NET. GroupDocs.Parser là một thư viện mạnh mẽ cho phép các nhà phát triển làm việc với nhiều định dạng tài liệu khác nhau như PDF, DOCX, XLSX, v.v. Bằng cách tận dụng các tính năng của nó, chúng tôi có thể trích xuất dữ liệu có cấu trúc như bảng từ các tài liệu này một cách hiệu quả, cho phép chúng tôi thao tác và phân tích thông tin theo chương trình.
 ## Điều kiện tiên quyết

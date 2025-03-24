@@ -6,6 +6,9 @@ description: Leer hoe u tabellen programmatisch uit documenten kunt extraheren m
 weight: 11
 url: /nl/net/table-extraction/extract-tables-from-document-page/
 ---
+
+# Haal tabellen uit de documentpagina
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u tabellen uit een documentpagina kunt extraheren met GroupDocs.Parser voor .NET. GroupDocs.Parser is een krachtige bibliotheek waarmee ontwikkelaars met verschillende documentformaten kunnen werken, zoals PDF, DOCX, XLSX en meer. Door gebruik te maken van de functies ervan kunnen we op efficiënte wijze gestructureerde gegevens zoals tabellen uit deze documenten extraheren, waardoor we de informatie programmatisch kunnen manipuleren en analyseren.
 ## Vereisten

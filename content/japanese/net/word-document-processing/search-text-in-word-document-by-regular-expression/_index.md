@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET で正規表現を使用して Word 文�
 weight: 19
 url: /ja/net/word-document-processing/search-text-in-word-document-by-regular-expression/
 ---
+
+# 正規表現で Word 文書内のテキストを検索する
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を使用して、正規表現を使用して Word 文書からテキストを抽出する方法について説明します。このステップバイステップ ガイドは、この機能を効果的に実装するのに役立ちます。
 ## 前提条件

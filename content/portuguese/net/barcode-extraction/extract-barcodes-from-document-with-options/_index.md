@@ -6,6 +6,9 @@ description: Aprenda como extrair códigos de barras de documentos usando GroupD
 weight: 14
 url: /pt/net/barcode-extraction/extract-barcodes-from-document-with-options/
 ---
+
+# Extraia códigos de barras do documento com opções
+
 ## Introdução
 Neste tutorial, percorreremos o processo de extração de códigos de barras de um documento usando GroupDocs.Parser for .NET. GroupDocs.Parser é uma biblioteca poderosa que permite extrair texto, metadados e códigos de barras de vários formatos de documentos, como PDF, Microsoft Word, Excel e muito mais.
 ## Pré-requisitos

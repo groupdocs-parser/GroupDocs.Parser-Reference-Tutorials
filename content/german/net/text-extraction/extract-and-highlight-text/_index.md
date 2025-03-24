@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Text aus Dokum
 weight: 11
 url: /de/net/text-extraction/extract-and-highlight-text/
 ---
+
+# Text extrahieren und hervorheben
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Text aus Dokumenten extrahieren und hervorheben können. GroupDocs.Parser ist eine leistungsstarke Bibliothek, mit der Sie verschiedene Dokumentformate analysieren und erweiterte Textextraktionsvorgänge durchführen können.
 ## Voraussetzungen

@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 從文件中有效擷�
 weight: 12
 url: /zh-hant/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
 ---
+
+# 使用模板中連結位置處的字段
+
 ## 介紹
 GroupDocs.Parser for .NET 是一個強大的程式庫，旨在促進文件解析和資料擷取任務。它支援多種文件格式，包括 PDF、DOCX、XLSX 等。其主要功能之一是基於模板的資料提取，它允許您定義文件中的欄位並根據這些預先定義的模板提取特定資料。
 ## 先決條件

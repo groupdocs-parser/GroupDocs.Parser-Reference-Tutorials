@@ -6,6 +6,9 @@ description: Learn how to extract formatted text from documents using GroupDocs.
 weight: 10
 url: /net/formatted-text-extraction/extract-formatted-text-from-document/
 ---
+
+# Extract Formatted Text from Document
+
 ## Introduction
 In this tutorial, we'll explore how to use GroupDocs.Parser for .NET to extract formatted text from various types of documents. GroupDocs.Parser is a powerful library that allows developers to work with documents in a simplified and efficient manner. By the end of this guide, you'll be able to seamlessly integrate text extraction capabilities into your .NET applications.
 ## Prerequisites

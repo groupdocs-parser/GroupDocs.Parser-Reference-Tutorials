@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Tabellendaten 
 weight: 12
 url: /de/net/data-extraction-from-templates/working-with-tables-in-extracted-data/
 ---
+
+# Arbeiten mit Tabellen in extrahierten Daten
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Daten aus Tabellen in Dokumenten extrahieren. GroupDocs.Parser ist ein leistungsstarkes Tool, mit dem Entwickler Text, Metadaten und strukturierte Inhalte aus verschiedenen Dateiformaten wie PDF, DOCX, XLSX und mehr analysieren und extrahieren können. Insbesondere konzentrieren wir uns auf das effiziente Extrahieren von Tabellendaten mithilfe vordefinierter Vorlagen.
 ## Voraussetzungen

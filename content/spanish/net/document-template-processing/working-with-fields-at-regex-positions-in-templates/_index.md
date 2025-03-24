@@ -6,6 +6,9 @@ description: Aprenda a extraer datos de plantillas de documentos utilizando posi
 weight: 13
 url: /es/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---
+
+# Trabajar con campos en posiciones Regex en plantillas
+
 ## Introducción
 En este tutorial, aprenderá cómo utilizar GroupDocs.Parser para .NET para extraer campos basados en expresiones regulares específicas (regex) dentro de plantillas de documentos. Esta biblioteca ofrece potentes funciones para el análisis y la extracción de documentos, lo que la hace ideal para manejar tareas de extracción de datos estructurados de manera eficiente.
 ## Requisitos previos

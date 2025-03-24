@@ -6,6 +6,9 @@ description: Learn how to extract barcodes from document pages using GroupDocs.P
 weight: 13
 url: /net/barcode-extraction/extract-barcodes-from-document-page-area/
 ---
+
+# Extract Barcodes from Document Page Area
+
 ## Introduction
 In this tutorial, we'll explore how to extract barcodes from specific areas of a document using GroupDocs.Parser for .NET. GroupDocs.Parser is a powerful library that allows you to parse and extract data from various document formats like PDF, DOCX, XLSX, and more, including extracting barcodes. We'll cover the prerequisites, required namespaces, and provide a step-by-step guide with code examples to demonstrate the process.
 ## Prerequisites

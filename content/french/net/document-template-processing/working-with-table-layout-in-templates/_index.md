@@ -6,6 +6,9 @@ description: Découvrez comment utiliser les dispositions de tableau dans les mo
 weight: 14
 url: /fr/net/document-template-processing/working-with-table-layout-in-templates/
 ---
+
+# Travailler avec la disposition des tableaux dans les modèles
+
 ## Introduction
 Dans ce didacticiel, nous verrons comment utiliser la disposition des tableaux dans les modèles à l'aide de GroupDocs.Parser pour .NET. GroupDocs.Parser est une puissante API d'analyse de documents qui permet aux développeurs d'extraire du texte et des métadonnées de divers formats de documents, notamment PDF, Microsoft Office, etc.
 ## Conditions préalables

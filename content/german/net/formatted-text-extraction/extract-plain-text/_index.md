@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Klartext aus D
 weight: 14
 url: /de/net/formatted-text-extraction/extract-plain-text/
 ---
+
+# Reinen Text extrahieren
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie mit GroupDocs.Parser für .NET einfachen Text aus verschiedenen Dokumentformaten extrahieren. GroupDocs.Parser ist eine leistungsstarke Bibliothek, die es Entwicklern ermöglicht, nahtlos mit Dokumenten zu arbeiten und Text und Metadaten effizient zu extrahieren. Diese Anleitung führt Sie durch die notwendigen Schritte, um diese Bibliothek in Ihre .NET-Anwendungen zu integrieren und zu nutzen.
 ## Voraussetzungen

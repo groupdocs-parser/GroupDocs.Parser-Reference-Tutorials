@@ -6,6 +6,9 @@ description: Extrahieren Sie mit GroupDocs.Parser für .NET effizient Text aus v
 weight: 12
 url: /de/net/ocr-extraction/recognizing-text/
 ---
+
+# Text erkennen
+
 ## Einführung
 Im Bereich der .NET-Entwicklung ist die effiziente Textextraktion aus verschiedenen Dokumentformaten von größter Bedeutung. GroupDocs.Parser für .NET bietet eine robuste Lösung zum nahtlosen Extrahieren von Text. In diesem Tutorial werden wir uns Schritt für Schritt mit der Verwendung von GroupDocs.Parser zum Erkennen und Extrahieren von Text aus Dokumenten befassen.
 ## Voraussetzungen

@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用してドキュメントから H
 weight: 12
 url: /ja/net/formatted-text-extraction/extract-html-content/
 ---
+
+# HTML コンテンツを抽出する
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を使用してさまざまなドキュメント形式から HTML コンテンツを抽出する方法について説明します。GroupDocs.Parser は、開発者がドキュメントからテキストをシームレスに解析および抽出できるようにする強力なライブラリです。Word ドキュメント、PDF、またはその他の形式のいずれを扱う場合でも、GroupDocs.Parser を使用すると、構造化コンテンツの抽出プロセスが簡素化されます。
 ## 前提条件

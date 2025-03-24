@@ -7,6 +7,9 @@ weight: 20
 url: /nl/net/text-extraction/
 ---
 
+# Tekstextractie
+
+
 ## Invoering
 
 Welkom bij de uitgebreide verzameling zelfstudies over tekstextractie, mogelijk gemaakt door GroupDocs.Parser voor .NET. In deze reeks zelfstudies verkennen we verschillende methoden en technieken om tekst uit documenten in uw .NET-toepassingen te extraheren, markeren en doorzoeken.

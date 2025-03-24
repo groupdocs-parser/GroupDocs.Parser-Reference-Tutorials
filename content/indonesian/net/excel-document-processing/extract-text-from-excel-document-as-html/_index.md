@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak teks dari dokumen Excel dan mengubahnya m
 weight: 13
 url: /id/net/excel-document-processing/extract-text-from-excel-document-as-html/
 ---
+
+# Ekstrak Teks dari Dokumen Excel sebagai HTML
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggunakan GroupDocs.Parser untuk .NET untuk mengekstrak teks dari dokumen Excel dan mengubahnya menjadi format HTML. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan pengembang bekerja dengan berbagai format dokumen, mengekstraksi teks dan metadata secara efisien.
 ## Prasyarat

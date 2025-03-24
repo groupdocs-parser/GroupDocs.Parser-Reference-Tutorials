@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用して Word 文書からメタ�
 weight: 12
 url: /ja/net/word-document-processing/extract-metadata-from-word-document/
 ---
+
+# Word文書からメタデータを抽出する
+
 ## 導入
 今日のデジタル時代では、コンテンツ分析からデータ取得まで、さまざまなアプリケーションでドキュメントからデータを効率的に解析して抽出することが非常に重要です。GroupDocs.Parser for .NET は、開発者がドキュメントからメタデータとテキストを簡単に抽出できるようにする強力なライブラリです。このチュートリアルでは、GroupDocs.Parser for .NET を使用して Word ドキュメントからメタデータを抽出する方法を段階的に説明します。
 ## 前提条件

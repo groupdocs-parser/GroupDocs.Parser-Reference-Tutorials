@@ -6,6 +6,9 @@ description: Learn how to extract data from PDF documents using GroupDocs.Parser
 weight: 17
 url: /net/pdf-processing/parse-data-from-pdf-documents/
 ---
+
+# Parse Data from PDF Documents
+
 ## Introduction
 In this tutorial, we'll explore how to efficiently extract data from PDF documents using the GroupDocs.Parser library for .NET. GroupDocs.Parser provides powerful functionalities to parse and analyze PDF files, making it easier to extract structured data for further processing. We'll delve into the essential steps required to set up, parse, and extract data using the library.
 ## Prerequisites

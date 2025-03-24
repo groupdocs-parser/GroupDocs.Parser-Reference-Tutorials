@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak bidang data tertentu dari dokumen menggun
 weight: 10
 url: /id/net/data-extraction-from-templates/get-field-by-name/
 ---
+
+# Dapatkan Bidang berdasarkan Nama
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara memanfaatkan GroupDocs.Parser untuk .NET untuk mengekstrak bidang data tertentu seperti harga dan email dari dokumen. Pustaka canggih ini menyederhanakan tugas penguraian dokumen, menjadikannya ideal untuk berbagai kebutuhan ekstraksi data.
 ## Prasyarat

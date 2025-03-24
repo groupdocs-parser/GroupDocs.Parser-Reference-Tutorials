@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak belgelerden verileri verimli
 weight: 12
 url: /tr/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
 ---
+
+# Şablonlarda Bağlantılı Konumlardaki Alanlarla Çalışma
+
 ## giriiş
 GroupDocs.Parser for .NET, belge ayrıştırma ve veri çıkarma görevlerini kolaylaştırmak için tasarlanmış güçlü bir kitaplıktır. PDF, DOCX, XLSX ve daha fazlasını içeren çok çeşitli dosya formatlarını destekler. Temel özelliklerinden biri, bir belge içindeki alanları tanımlamanıza ve bu önceden tanımlanmış şablonlara dayalı olarak belirli verileri çıkarmanıza olanak tanıyan şablon tabanlı veri çıkarmadır.
 ## Önkoşullar

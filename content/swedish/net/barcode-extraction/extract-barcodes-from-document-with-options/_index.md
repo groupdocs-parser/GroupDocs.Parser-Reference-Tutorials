@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar streckkoder från dokument med GroupDocs
 weight: 14
 url: /sv/net/barcode-extraction/extract-barcodes-from-document-with-options/
 ---
+
+# Extrahera streckkoder från dokument med alternativ
+
 ## Introduktion
 I den här handledningen går vi igenom processen att extrahera streckkoder från ett dokument med GroupDocs.Parser för .NET. GroupDocs.Parser är ett kraftfullt bibliotek som låter dig extrahera text, metadata och streckkoder från olika dokumentformat som PDF, Microsoft Word, Excel och mer.
 ## Förutsättningar

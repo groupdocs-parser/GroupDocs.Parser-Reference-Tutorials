@@ -6,6 +6,9 @@ description: Aprenda como extrair o Índice (TOC) de documentos do Word programa
 weight: 13
 url: /pt/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
+
+# Extraia o índice do documento do Word
+
 ## Introdução
 Neste tutorial, você aprenderá como usar GroupDocs.Parser for .NET para extrair o índice (TOC) de um documento do Word passo a passo. GroupDocs.Parser é uma biblioteca poderosa que permite trabalhar programaticamente com vários formatos de documentos.
 ## Pré-requisitos

@@ -6,6 +6,9 @@ description: Ekstrak hyperlink dari dokumen di .NET dengan mudah menggunakan Gro
 weight: 25
 url: /id/net/hyperlink-extraction/
 ---
+
+# Ekstraksi Hyperlink
+
 ## Perkenalan
 
 Selidiki dunia ekstraksi hyperlink di .NET dengan tutorial GroupDocs.Parser. Tutorial ini menawarkan panduan komprehensif dalam mengekstraksi hyperlink dari dokumen, baik dari keseluruhan dokumen, halaman tertentu, atau area yang ditentukan. Baik Anda seorang pemula atau pengembang berpengalaman, tutorial ini memberikan petunjuk langkah demi langkah yang jelas dan contoh kode untuk membantu Anda mengintegrasikan ekstraksi hyperlink dengan lancar ke dalam aplikasi C# Anda.

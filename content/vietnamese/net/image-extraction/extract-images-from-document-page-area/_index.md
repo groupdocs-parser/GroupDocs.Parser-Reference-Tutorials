@@ -6,6 +6,9 @@ description: Khám phá cách trích xuất chính xác hình ảnh từ tài li
 weight: 10
 url: /vi/net/image-extraction/extract-images-from-document-page-area/
 ---
+
+# Trích xuất hình ảnh từ khu vực trang tài liệu
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ tìm hiểu cách sử dụng Groupdocs.Parser cho .NET để trích xuất hình ảnh từ các khu vực cụ thể của trang tài liệu. Quá trình này cho phép bạn nhắm mục tiêu và truy xuất chính xác hình ảnh dựa trên tọa độ và kích thước được xác định trong tài liệu.
 ## Điều kiện tiên quyết

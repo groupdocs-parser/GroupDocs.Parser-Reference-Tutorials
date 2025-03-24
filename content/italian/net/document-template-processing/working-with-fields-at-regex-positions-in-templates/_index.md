@@ -6,6 +6,9 @@ description: Scopri come estrarre dati da modelli di documenti utilizzando posiz
 weight: 13
 url: /it/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---
+
+# Lavorare con i campi nelle posizioni regex nei modelli
+
 ## introduzione
 In questo tutorial imparerai come utilizzare GroupDocs.Parser per .NET per estrarre campi in base alle espressioni regolari specificate (regex) all'interno dei modelli di documento. Questa libreria offre potenti funzionalità per l'analisi e l'estrazione dei documenti, rendendola ideale per gestire in modo efficiente le attività di estrazione dei dati strutturati.
 ## Prerequisiti

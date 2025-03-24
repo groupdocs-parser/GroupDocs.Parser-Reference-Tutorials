@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak teks dari berbagai format dokumen menggun
 weight: 11
 url: /id/net/document-loading/load-document-from-local-disk/
 ---
+
+# Muat Dokumen dari Disk Lokal
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggunakan GroupDocs.Parser untuk .NET untuk mengekstrak teks dari dokumen. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan pengembang mengurai berbagai format dokumen dan mengekstrak konten teks secara terprogram. Kami akan membahas langkah-langkah yang diperlukan untuk memulai ekstraksi teks menggunakan perpustakaan ini.
 ## Prasyarat

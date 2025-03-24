@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 從 Excel 文件中提
 weight: 13
 url: /zh-hant/net/excel-document-processing/extract-text-from-excel-document-as-html/
 ---
+
+# 從 Excel 文件中擷取文字為 HTML
+
 ## 介紹
 在本教學中，我們將探討如何使用 GroupDocs.Parser for .NET 從 Excel 文件中擷取文字並將其轉換為 HTML 格式。 GroupDocs.Parser 是一個功能強大的程式庫，可讓開發人員使用各種文件格式，有效地提取文字和元資料。
 ## 先決條件

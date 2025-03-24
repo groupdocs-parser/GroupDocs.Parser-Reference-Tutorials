@@ -6,6 +6,9 @@ description: Leer hoe u tekst uit specifieke gebieden in documenten kunt extrahe
 weight: 14
 url: /nl/net/text-extraction/extract-text-from-specific-areas-with-options/
 ---
+
+# Extraheer tekst uit specifieke gebieden met opties
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u GroupDocs.Parser voor .NET kunt gebruiken om tekst uit specifieke gebieden in een document te extraheren met behulp van aanpasbare opties. GroupDocs.Parser is een krachtige bibliotheek waarmee ontwikkelaars moeiteloos tekst uit verschillende documentformaten kunnen ontleden en extraheren.
 ## Vereisten

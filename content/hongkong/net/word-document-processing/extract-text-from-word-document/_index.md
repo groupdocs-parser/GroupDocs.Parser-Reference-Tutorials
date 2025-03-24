@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 從 Word 文件中提�
 weight: 15
 url: /zh-hant/net/word-document-processing/extract-text-from-word-document/
 ---
+
+# 從 Word 文件中提取文本
+
 ## 介紹
 在本教學中，我們將探討如何使用 GroupDocs.Parser for .NET 從 Word 文件中擷取文字。 GroupDocs.Parser 是一個功能強大的 .NET 程式庫，可讓開發人員處理各種文件格式，包括 Word 文件、PDF 等。在本指南結束時，您將能夠使用簡單的 C# 程式碼有效地從 Word 文件中提取文字。
 ## 先決條件

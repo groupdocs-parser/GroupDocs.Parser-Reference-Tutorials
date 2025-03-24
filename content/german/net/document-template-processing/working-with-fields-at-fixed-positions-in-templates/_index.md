@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Daten aus Doku
 weight: 11
 url: /de/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
+
+# Arbeiten mit Feldern an festen Positionen in Vorlagen
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie mit Feldern an festen Positionen in Vorlagen mithilfe von GroupDocs.Parser für .NET arbeiten. GroupDocs.Parser ist eine leistungsstarke Dokumentanalysebibliothek, mit der Entwickler Daten aus verschiedenen Dokumentformaten wie PDF, Word, Excel und mehr extrahieren können. Insbesondere konzentrieren wir uns auf das Definieren und Verwenden von Vorlagenfeldern, um gezielte Informationen basierend auf ihren festen Positionen zu extrahieren.
 ## Voraussetzungen

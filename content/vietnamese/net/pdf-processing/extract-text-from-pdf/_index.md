@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất văn bản từ tài liệu PDF b�
 weight: 14
 url: /vi/net/pdf-processing/extract-text-from-pdf/
 ---
+
+# Trích xuất văn bản từ PDF
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách trích xuất văn bản từ tài liệu PDF bằng GroupDocs.Parser cho .NET. GroupDocs.Parser là một API mạnh mẽ cho phép các nhà phát triển trích xuất văn bản, siêu dữ liệu và dữ liệu có cấu trúc từ nhiều định dạng tài liệu khác nhau bao gồm PDF, Microsoft Office, v.v.
 ## Điều kiện tiên quyết

@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić tekst z dokumentów PDF za pomocą G
 weight: 14
 url: /pl/net/pdf-processing/extract-text-from-pdf/
 ---
+
+# Wyodrębnij tekst z pliku PDF
+
 ## Wstęp
 tym samouczku przyjrzymy się, jak wyodrębnić tekst z dokumentów PDF za pomocą GroupDocs.Parser dla .NET. GroupDocs.Parser to potężny interfejs API, który umożliwia programistom wyodrębnianie tekstu, metadanych i danych strukturalnych z różnych formatów dokumentów, w tym PDF, pakietu Microsoft Office i innych.
 ## Warunki wstępne

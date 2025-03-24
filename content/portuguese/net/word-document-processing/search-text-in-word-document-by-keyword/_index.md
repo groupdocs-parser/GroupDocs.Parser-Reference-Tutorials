@@ -6,6 +6,9 @@ description: Aprenda como pesquisar texto em documentos do Word usando GroupDocs
 weight: 18
 url: /pt/net/word-document-processing/search-text-in-word-document-by-keyword/
 ---
+
+# Pesquisar texto em documento do Word por palavra-chave
+
 ## Introdução
 Neste tutorial, exploraremos como usar GroupDocs.Parser for .NET para pesquisar texto específico em um documento do Word usando C#. GroupDocs.Parser é uma biblioteca poderosa que permite aos desenvolvedores extrair texto e metadados de vários formatos de documentos, incluindo documentos do Word.
 ## Pré-requisitos

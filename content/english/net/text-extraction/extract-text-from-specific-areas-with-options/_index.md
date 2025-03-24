@@ -6,6 +6,9 @@ description: Learn how to extract text from specific areas in documents using Gr
 weight: 14
 url: /net/text-extraction/extract-text-from-specific-areas-with-options/
 ---
+
+# Extract Text from Specific Areas with Options
+
 ## Introduction
 In this tutorial, we'll explore how to use GroupDocs.Parser for .NET to extract text from specific areas within a document using customizable options. GroupDocs.Parser is a powerful library that enables developers to parse and extract text from various document formats effortlessly.
 ## Prerequisites

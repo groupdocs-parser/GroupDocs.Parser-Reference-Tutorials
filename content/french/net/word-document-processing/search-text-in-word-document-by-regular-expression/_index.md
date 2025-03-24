@@ -6,6 +6,9 @@ description: Découvrez comment rechercher du texte dans des documents Word à l
 weight: 19
 url: /fr/net/word-document-processing/search-text-in-word-document-by-regular-expression/
 ---
+
+# Rechercher du texte dans un document Word par expression régulière
+
 ## Introduction
 Dans ce didacticiel, nous explorerons comment utiliser GroupDocs.Parser pour .NET pour extraire du texte de documents Word à l'aide d'expressions régulières. Ce guide étape par étape vous aidera à mettre en œuvre cette fonctionnalité efficacement.
 ## Conditions préalables

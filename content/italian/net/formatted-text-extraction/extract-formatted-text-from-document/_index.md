@@ -6,6 +6,9 @@ description: Scopri come estrarre testo formattato dai documenti utilizzando Gro
 weight: 10
 url: /it/net/formatted-text-extraction/extract-formatted-text-from-document/
 ---
+
+# Estrai testo formattato dal documento
+
 ## introduzione
 In questo tutorial esploreremo come utilizzare GroupDocs.Parser per .NET per estrarre testo formattato da vari tipi di documenti. GroupDocs.Parser è una potente libreria che consente agli sviluppatori di lavorare con i documenti in modo semplificato ed efficiente. Al termine di questa guida sarai in grado di integrare perfettamente le funzionalità di estrazione del testo nelle tue applicazioni .NET.
 ## Prerequisiti

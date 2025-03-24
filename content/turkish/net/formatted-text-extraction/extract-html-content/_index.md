@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak belgelerden HTML içeriğini
 weight: 12
 url: /tr/net/formatted-text-extraction/extract-html-content/
 ---
+
+# HTML İçeriğini Çıkart
+
 ## giriiş
 Bu öğreticide, çeşitli belge biçimlerinden HTML içeriğini ayıklamak için GroupDocs.Parser for .NET'in nasıl kullanılacağını keşfedeceğiz. GroupDocs.Parser, geliştiricilerin belgelerdeki metni sorunsuz bir şekilde ayrıştırmasına ve ayıklamasına olanak tanıyan güçlü bir kitaplıktır. Word belgeleriyle, PDF'lerle veya diğer formatlarla çalışıyor olsanız da, GroupDocs.Parser, yapılandırılmış içeriğin çıkarılması sürecini basitleştirir.
 ## Önkoşullar

@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthat ki képeket Excel-dokumentumokból a Gr
 weight: 10
 url: /hu/net/excel-document-processing/extract-images-from-excel-document/
 ---
+
+# Képek kibontása Excel dokumentumból
+
 ## Bevezetés
 Ebből az oktatóanyagból megtudhatja, hogyan bonthat ki képeket Excel-dokumentumból a GroupDocs.Parser for .NET segítségével. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi szövegek, metaadatok és képek elemzését és kinyerését különféle dokumentumformátumokból, beleértve az Excel fájlokat is.
 ## Előfeltételek

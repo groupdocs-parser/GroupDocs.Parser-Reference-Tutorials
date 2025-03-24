@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak teks dari dokumen Excel menggunakan Group
 weight: 12
 url: /id/net/excel-document-processing/extract-text-from-excel-document/
 ---
+
+# Ekstrak Teks dari Dokumen Excel
+
 ## Perkenalan
 Dalam tutorial ini, kami akan memandu Anda melalui proses mengekstraksi teks dari dokumen Excel menggunakan GroupDocs.Parser untuk .NET. GroupDocs.Parser adalah perpustakaan .NET yang kuat yang memungkinkan Anda mengurai berbagai format dokumen, termasuk file Excel, untuk mengekstrak teks dan metadata.
 ## Prasyarat

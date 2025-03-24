@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak Daftar Isi (TOC) dari dokumen Word secara
 weight: 13
 url: /id/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
+
+# Ekstrak Daftar Isi dari Dokumen Word
+
 ## Perkenalan
 Dalam tutorial ini, Anda akan mempelajari cara menggunakan GroupDocs.Parser untuk .NET untuk mengekstrak Daftar Isi (TOC) dari dokumen Word langkah demi langkah. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan Anda bekerja dengan berbagai format dokumen secara terprogram.
 ## Prasyarat

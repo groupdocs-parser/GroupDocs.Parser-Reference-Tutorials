@@ -6,6 +6,9 @@ description: Learn how to use GroupDocs.Parser for .NET to extract structured da
 weight: 10
 url: /net/document-template-processing/working-with-barcodes-in-templates/
 ---
+
+# Working with Barcodes in Templates
+
 ## Introduction
 In this tutorial, we'll explore how to efficiently extract data from documents using templates with GroupDocs.Parser for .NET. GroupDocs.Parser simplifies the process of data extraction by allowing you to define templates for specific data types, such as barcodes, and then parse documents according to these templates.
 ## Prerequisites

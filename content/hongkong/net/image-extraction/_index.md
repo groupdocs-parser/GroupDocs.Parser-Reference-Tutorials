@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Parser 輕鬆從 .NET 文件中擷取映像。透�
 weight: 24
 url: /zh-hant/net/image-extraction/
 ---
+
+# 影像擷取
+
 ## 介紹
 
 透過 GroupDocs.Parser 教學深入了解 .NET 中的圖像擷取領域。這些教程提供了有關從文件中提取圖像的全面指導，無論是來自特定文件區域、整個文件還是單一頁面。無論您是初學者還是經驗豐富的開發人員，這些教程都提供清晰的逐步說明和程式碼範例，幫助您將圖像提取無縫整合到 .NET 應用程式中。

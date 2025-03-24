@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak belge sayfalarından biçiml
 weight: 11
 url: /tr/net/formatted-text-extraction/extract-formatted-text-from-document-page/
 ---
+
+# Biçimlendirilmiş Metni Belge Sayfasından Çıkart
+
 ## giriiş
 Bu öğreticide, GroupDocs.Parser for .NET'i kullanarak belge sayfalarından biçimlendirilmiş metni çıkarma sürecinde size rehberlik edeceğiz. Bu kitaplık, PDF, Word, Excel ve daha fazlası gibi çeşitli belge formatlarındaki metinleri verimli bir şekilde ayrıştırmanıza ve çıkarmanıza olanak tanır.
 ## Önkoşullar

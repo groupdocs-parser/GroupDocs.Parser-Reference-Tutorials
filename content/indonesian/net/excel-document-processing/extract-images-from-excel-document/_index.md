@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak gambar dari dokumen Excel menggunakan Gro
 weight: 10
 url: /id/net/excel-document-processing/extract-images-from-excel-document/
 ---
+
+# Ekstrak Gambar dari Dokumen Excel
+
 ## Perkenalan
 Dalam tutorial ini, Anda akan mempelajari cara mengekstrak gambar dari dokumen Excel menggunakan GroupDocs.Parser untuk .NET. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan Anda mengurai dan mengekstrak teks, metadata, dan gambar dari berbagai format dokumen termasuk file Excel.
 ## Prasyarat

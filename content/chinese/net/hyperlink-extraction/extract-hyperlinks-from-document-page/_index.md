@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 从文档中提取超�
 weight: 11
 url: /zh/net/hyperlink-extraction/extract-hyperlinks-from-document-page/
 ---
+
+# 从文档页面提取超链接
+
 ## 介绍
 在本教程中，我们将逐步探索如何使用 GroupDocs.Parser for .NET 从文档中提取超链接。GroupDocs.Parser 是一个功能强大的库，使开发人员能够解析各种文档格式并提取文本、元数据和其他元素。
 ## 先决条件

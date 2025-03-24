@@ -6,6 +6,9 @@ description: Aprenda a extraer datos estructurados de documentos utilizando Grou
 weight: 11
 url: /es/net/data-extraction-from-templates/iterate-through-fields/
 ---
+
+# Iterar a través de campos
+
 ## Introducción
 GroupDocs.Parser para .NET es una potente biblioteca que permite a los desarrolladores extraer datos de varios formatos de documentos como PDF, Microsoft Word, Excel y PowerPoint. Este tutorial lo guiará a través del proceso de uso de GroupDocs.Parser para recorrer los campos del documento y extraer datos específicos usando plantillas. Al final de este tutorial, podrá extraer de manera eficiente datos estructurados de documentos en sus aplicaciones .NET.
 ## Requisitos previos

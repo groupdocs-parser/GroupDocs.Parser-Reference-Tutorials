@@ -7,6 +7,9 @@ weight: 20
 url: /hu/net/text-extraction/
 ---
 
+# Szövegkivonás
+
+
 ## Bevezetés
 
 Üdvözöljük a GroupDocs.Parser for .NET által működtetett átfogó szövegkivonási oktatóanyagok gyűjteményében. Ebben az oktatóanyag-sorozatban különféle módszereket és technikákat fedezünk fel a .NET-alkalmazások dokumentumaiban található szövegek kinyerésére, kiemelésére és keresésére.

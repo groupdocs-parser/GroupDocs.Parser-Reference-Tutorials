@@ -6,6 +6,9 @@ description: Naučte se extrahovat strukturu textu z různých formátů dokumen
 weight: 20
 url: /cs/net/text-extraction/extract-text-structure/
 ---
+
+# Extrahujte strukturu textu
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak pomocí GroupDocs.Parser for .NET extrahovat strukturu textu z různých formátů dokumentů. GroupDocs.Parser je výkonná knihovna, která umožňuje vývojářům extrahovat strukturovaný textový obsah z dokumentů, jako jsou soubory PDF, dokumenty aplikace Word, listy aplikace Excel a další. Tento tutoriál vás krok za krokem provede procesem nastavení GroupDocs.Parser, importu potřebných jmenných prostorů a extrahování struktury textu.
 ## Předpoklady

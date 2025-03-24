@@ -6,6 +6,9 @@ description: Leer hoe u naar specifieke tekst in PDF-documenten kunt zoeken met 
 weight: 18
 url: /nl/net/pdf-processing/search-text-in-pdf-by-keyword/
 ---
+
+# Zoek tekst in PDF op trefwoord
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u GroupDocs.Parser voor .NET kunt gebruiken om met behulp van trefwoorden naar specifieke tekst in PDF-documenten te zoeken. GroupDocs.Parser is een krachtige API voor het parseren van documenten waarmee ontwikkelaars tekst, metagegevens, afbeeldingen en meer kunnen extraheren uit verschillende documentformaten in .NET-toepassingen. Zoeken naar tekst in PDF's is een veel voorkomende vereiste in documentverwerkingstoepassingen, en GroupDocs.Parser vereenvoudigt deze taak met zijn intuïtieve API.
 ## Vereisten

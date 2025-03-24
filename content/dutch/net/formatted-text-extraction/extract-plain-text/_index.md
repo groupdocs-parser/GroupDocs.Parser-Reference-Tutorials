@@ -6,6 +6,9 @@ description: Leer hoe u platte tekst uit documenten kunt extraheren met GroupDoc
 weight: 14
 url: /nl/net/formatted-text-extraction/extract-plain-text/
 ---
+
+# Platte tekst extraheren
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u platte tekst uit verschillende documentindelingen kunt extraheren met behulp van GroupDocs.Parser voor .NET. GroupDocs.Parser is een krachtige bibliotheek waarmee ontwikkelaars naadloos met documenten kunnen werken en tekst en metagegevens efficiënt kunnen extraheren. Deze handleiding leidt u door de noodzakelijke stappen om deze bibliotheek te integreren en te gebruiken in uw .NET-toepassingen.
 ## Vereisten

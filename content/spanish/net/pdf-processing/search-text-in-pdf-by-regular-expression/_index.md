@@ -6,6 +6,9 @@ description: Busque texto específico en documentos PDF utilizando expresiones r
 weight: 19
 url: /es/net/pdf-processing/search-text-in-pdf-by-regular-expression/
 ---
+
+# Buscar texto en PDF por expresión regular
+
 ## Introducción
 En este tutorial, exploraremos cómo extraer texto de manera eficiente de documentos PDF usando GroupDocs.Parser para .NET. GroupDocs.Parser es una potente biblioteca que permite a los desarrolladores analizar y extraer texto, metadatos y datos estructurados de varios formatos de documentos, incluidos los PDF. Ya sea que esté trabajando en extracción de datos, análisis de contenido o funcionalidades de búsqueda dentro de sus aplicaciones .NET, GroupDocs.Parser proporciona un conjunto completo de herramientas para manejar estas tareas sin problemas.
 ## Requisitos previos

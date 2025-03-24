@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan nyerhet ki HTML-tartalmat dokumentumokból a Gr
 weight: 12
 url: /hu/net/formatted-text-extraction/extract-html-content/
 ---
+
+# HTML tartalom kibontása
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan használható a GroupDocs.Parser for .NET HTML-tartalom kinyerésére különböző dokumentumformátumokból. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen elemezzenek és bontsanak ki szöveget a dokumentumokból. Akár Word-dokumentumokkal, PDF-ekkel vagy más formátumokkal dolgozik, a GroupDocs.Parser leegyszerűsíti a strukturált tartalom kinyerésének folyamatát.
 ## Előfeltételek

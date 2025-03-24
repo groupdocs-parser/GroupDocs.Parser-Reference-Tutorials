@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar hyperlänkar från dokument med GroupDoc
 weight: 10
 url: /sv/net/hyperlink-extraction/extract-hyperlinks-from-document/
 ---
+
+# Extrahera hyperlänkar från dokument
+
 ## Introduktion
 I den här handledningen kommer vi att fördjupa oss i de kraftfulla funktionerna hos GroupDocs.Parser för .NET, ett mångsidigt bibliotek som gör det möjligt för utvecklare att extrahera hyperlänkar från dokument med lätthet. Hyperlänksextraktion är ett vanligt krav vid dokumentbehandling, särskilt när man hanterar textbaserade filer som PDF-filer eller Word-dokument. Genom att använda GroupDocs.Parser kan du effektivt identifiera och extrahera hyperlänkar tillsammans med deras tillhörande webbadresser från olika dokumentformat.
 ## Förutsättningar

@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 PDF 문서에서 데이터
 weight: 17
 url: /ko/net/pdf-processing/parse-data-from-pdf-documents/
 ---
+
+# PDF 문서의 데이터 구문 분석
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser 라이브러리를 사용하여 PDF 문서에서 데이터를 효율적으로 추출하는 방법을 살펴보겠습니다. GroupDocs.Parser는 PDF 파일을 구문 분석하고 분석하는 강력한 기능을 제공하므로 추가 처리를 위해 구조화된 데이터를 더 쉽게 추출할 수 있습니다. 라이브러리를 사용하여 데이터를 설정, 구문 분석 및 추출하는 데 필요한 필수 단계를 자세히 살펴보겠습니다.
 ## 전제 조건

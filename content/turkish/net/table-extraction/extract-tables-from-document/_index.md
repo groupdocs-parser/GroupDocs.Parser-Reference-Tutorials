@@ -6,6 +6,9 @@ description: Groupdocs.Parser for .NET'i kullanarak belgelerden tabloları nası
 weight: 10
 url: /tr/net/table-extraction/extract-tables-from-document/
 ---
+
+# Belgeden Tabloları Çıkart
+
 ## giriiş
 Groupdocs.Parser for .NET, belge ayrıştırmayı kolaylaştıran, belgelerden tablolar, metin, meta veriler ve daha fazlası gibi değerli bilgileri çıkarmanıza olanak tanıyan kapsamlı bir kitaplıktır. Bu öğreticide özellikle Groupdocs.Parser API'sini kullanarak belgelerden tablo çıkarmaya odaklanıyoruz.
 ## Önkoşullar

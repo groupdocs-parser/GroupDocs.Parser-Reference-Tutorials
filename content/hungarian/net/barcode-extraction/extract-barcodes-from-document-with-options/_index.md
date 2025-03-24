@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan vonhat ki vonalkódokat dokumentumokból a Grou
 weight: 14
 url: /hu/net/barcode-extraction/extract-barcodes-from-document-with-options/
 ---
+
+# Vonja ki a vonalkódokat a dokumentumból az opciókkal
+
 ## Bevezetés
 Ebben az oktatóanyagban végigvezetjük a vonalkódok dokumentumból történő kinyerésének folyamatát a GroupDocs.Parser for .NET segítségével. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi szövegek, metaadatok és vonalkódok kinyerését különféle dokumentumformátumokból, például PDF, Microsoft Word, Excel és egyebekből.
 ## Előfeltételek

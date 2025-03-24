@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębniać obrazy z dokumentów PDF za pomocą
 weight: 12
 url: /pl/net/pdf-processing/extract-images-from-pdf/
 ---
+
+# Wyodrębnij obrazy z pliku PDF
+
 ## Wstęp
 W tym samouczku omówimy, jak używać GroupDocs.Parser dla .NET do wyodrębniania obrazów z dokumentów PDF. GroupDocs.Parser to potężna biblioteka, która umożliwia programistom pracę z różnymi formatami dokumentów, w tym PDF, DOCX, PPTX i innymi, w środowisku .NET. Wykonując poniższe kroki, będziesz mógł bez wysiłku wyodrębnić obrazy z plików PDF.
 ## Warunki wstępne

@@ -6,6 +6,9 @@ description: In diesem umfassenden Tutorial erfahren Sie, wie Sie mit GroupDocs.
 weight: 15
 url: /de/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
 ---
+
+# Extrahieren Sie Text aus einer Excel-Tabelle im Raw-Modus
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie mit GroupDocs.Parser für .NET im Raw-Modus Text aus Excel-Tabellen extrahieren. GroupDocs.Parser ist eine leistungsstarke API, mit der Entwickler mit verschiedenen Dokumentformaten, einschließlich Excel-Dateien, arbeiten können, um Text zu extrahieren und zu analysieren. Wir gehen die Voraussetzungen durch, importieren Namespaces und analysieren jeden Schritt, um den Prozess des Extrahierens von Text aus Excel-Tabellen zu demonstrieren.
 ## Voraussetzungen

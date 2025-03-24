@@ -6,6 +6,9 @@ description: Naučte se extrahovat konkrétní datová pole z dokumentů pomocí
 weight: 10
 url: /cs/net/data-extraction-from-templates/get-field-by-name/
 ---
+
+# Získat pole podle názvu
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak využít GroupDocs.Parser pro .NET k extrahování konkrétních datových polí, jako jsou ceny a e-maily z dokumentů. Tato výkonná knihovna zjednodušuje úlohy analýzy dokumentů, takže je ideální pro různé potřeby extrakce dat.
 ## Předpoklady

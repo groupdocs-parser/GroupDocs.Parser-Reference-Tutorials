@@ -6,6 +6,9 @@ description: Ebből az átfogó oktatóanyagból megtudhatja, hogyan lehet ponto
 weight: 16
 url: /hu/net/text-extraction/extract-text-from-page-in-accurate-mode/
 ---
+
+# Szöveg kibontása az oldalról Pontos módban
+
 ## Bevezetés
 Ebben az oktatóanyagban azt fogjuk megvizsgálni, hogyan használható a GroupDocs.Parser for .NET a szöveg pontos módban történő kinyerésére a dokumentumból. A GroupDocs.Parser egy hatékony API, amely lehetővé teszi a fejlesztők számára, hogy különféle dokumentumformátumokkal dolgozzanak .NET-alkalmazásaikban, lehetővé téve a szöveg precíz és egyszerű kinyerését. Az útmutató végére készen lesz arra, hogy kihasználja a GroupDocs.Parser képességeit, hogy hatékonyan kinyerhessen szöveget a dokumentumokból.
 ## Előfeltételek

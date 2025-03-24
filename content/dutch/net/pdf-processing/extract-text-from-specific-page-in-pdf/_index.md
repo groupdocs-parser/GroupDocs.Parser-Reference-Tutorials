@@ -6,6 +6,9 @@ description: Extraheer tekst uit PDF's met GroupDocs.Parser voor .NET. Haal moei
 weight: 15
 url: /nl/net/pdf-processing/extract-text-from-specific-page-in-pdf/
 ---
+
+# Extraheer tekst van een specifieke pagina in PDF
+
 ## Invoering
 In deze zelfstudie leert u hoe u GroupDocs.Parser voor .NET kunt gebruiken om tekst uit een specifieke pagina in een PDF-document te extraheren. GroupDocs.Parser is een krachtige bibliotheek waarmee ontwikkelaars met verschillende documentformaten kunnen werken, waaronder PDF, Microsoft Word, Excel en meer. Volg deze stappen om tekstextractie te integreren in uw .NET-toepassing.
 ## Vereisten

@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak bir Word belgesinden görün
 weight: 11
 url: /tr/net/word-document-processing/extract-images-from-word-document/
 ---
+
+# Word Belgesinden Görüntüleri Çıkarma
+
 ## giriiş
 Bu öğreticide, GroupDocs.Parser for .NET'i kullanarak bir Word belgesinden görüntülerin nasıl çıkarılacağını öğreneceksiniz. GroupDocs.Parser, Word (DOCX) dahil olmak üzere çeşitli belge biçimlerinden metin, meta veriler, görüntüler ve daha fazlasını ayrıştırmanıza ve çıkarmanıza olanak tanıyan güçlü bir .NET kitaplığıdır.
 ## Önkoşullar

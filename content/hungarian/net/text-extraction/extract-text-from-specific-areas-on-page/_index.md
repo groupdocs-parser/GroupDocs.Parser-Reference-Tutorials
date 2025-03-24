@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthat ki szöveget adott dokumentumterületek
 weight: 13
 url: /hu/net/text-extraction/extract-text-from-specific-areas-on-page/
 ---
+
+# Szöveg kinyerése az oldal meghatározott területeiről
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet szöveget kivonni egy oldal meghatározott területeiről a GroupDocs.Parser for .NET könyvtár használatával. A GroupDocs.Parser leegyszerűsíti a szövegek kinyerését a dokumentumokból, lehetővé téve a fejlesztők számára, hogy megcélozzák a dokumentumon belül az érdeklődésre számot tartó területeket a szöveg kinyerése céljából. Ez különösen hasznos lehet összetett dokumentumok kezelésekor, ahol a további feldolgozáshoz vagy elemzéshez pontos szövegkivonat szükséges.
 ## Előfeltételek

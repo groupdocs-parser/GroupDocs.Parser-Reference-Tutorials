@@ -6,6 +6,9 @@ description: 원활한 데이터 처리를 위해 GroupDocs.Parser를 사용하�
 weight: 18
 url: /ko/net/text-extraction/extract-text-in-accurate-mode/
 ---
+
+# 정확한 모드에서 텍스트 추출
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser를 사용하여 다양한 문서 형식에서 텍스트를 정확하게 추출하는 방법을 살펴보겠습니다. GroupDocs.Parser는 PDF, DOCX, PPTX, XLSX 등과 같은 문서에서 텍스트를 추출할 수 있는 강력한 라이브러리로, 데이터 처리 응용 프로그램에 유용한 도구입니다.
 ## 전제 조건

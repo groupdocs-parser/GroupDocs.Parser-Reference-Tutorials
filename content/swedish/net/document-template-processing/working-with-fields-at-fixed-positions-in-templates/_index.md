@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar data från dokument med GroupDocs.Parser
 weight: 11
 url: /sv/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
+
+# Arbeta med fält på fasta positioner i mallar
+
 ## Introduktion
 I den här handledningen kommer vi att utforska hur man arbetar med fält på fasta positioner inom mallar med hjälp av GroupDocs.Parser för .NET. GroupDocs.Parser är ett kraftfullt dokumentanalysbibliotek som gör det möjligt för utvecklare att extrahera data från olika dokumentformat som PDF, Word, Excel och mer. Specifikt kommer vi att fokusera på att definiera och använda mallfält för att extrahera riktad information baserat på deras fasta positioner.
 ## Förutsättningar

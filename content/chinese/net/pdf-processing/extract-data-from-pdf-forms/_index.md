@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 从 PDF 表单中提�
 weight: 11
 url: /zh/net/pdf-processing/extract-data-from-pdf-forms/
 ---
+
+# 从 PDF 表单提取数据
+
 ## 介绍
 在本教程中，我们将探讨如何利用 GroupDocs.Parser for .NET 从 PDF 表单中提取数据。GroupDocs.Parser 是一个功能强大的库，允许开发人员高效地处理各种文档格式，包括 PDF、DOCX、XLSX 等。我们将介绍从 PDF 表单中提取特定字段并处理提取的数据的必要步骤。
 ## 先决条件

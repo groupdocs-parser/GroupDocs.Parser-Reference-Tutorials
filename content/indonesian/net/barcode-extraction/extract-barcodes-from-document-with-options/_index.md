@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak kode batang dari dokumen menggunakan Grou
 weight: 14
 url: /id/net/barcode-extraction/extract-barcodes-from-document-with-options/
 ---
+
+# Ekstrak Barcode dari Dokumen dengan Opsi
+
 ## Perkenalan
 Dalam tutorial ini, kita akan memandu proses mengekstraksi kode batang dari dokumen menggunakan GroupDocs.Parser untuk .NET. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan Anda mengekstrak teks, metadata, dan kode batang dari berbagai format dokumen seperti PDF, Microsoft Word, Excel, dan banyak lagi.
 ## Prasyarat

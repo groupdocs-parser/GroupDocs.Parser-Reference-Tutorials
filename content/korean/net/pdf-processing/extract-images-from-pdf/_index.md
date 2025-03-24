@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 PDF 문서에서 이미지
 weight: 12
 url: /ko/net/pdf-processing/extract-images-from-pdf/
 ---
+
+# PDF에서 이미지 추출
+
 ## 소개
 이 튜토리얼에서는 .NET용 GroupDocs.Parser를 사용하여 PDF 문서에서 이미지를 추출하는 방법을 살펴보겠습니다. GroupDocs.Parser는 개발자가 .NET 환경에서 PDF, DOCX, PPTX 등을 포함한 다양한 문서 형식으로 작업할 수 있도록 하는 강력한 라이브러리입니다. 다음 단계를 따르면 PDF 파일에서 이미지를 쉽게 추출할 수 있습니다.
 ## 전제 조건

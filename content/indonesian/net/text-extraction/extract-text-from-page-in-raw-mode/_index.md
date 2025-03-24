@@ -6,6 +6,9 @@ description: Pelajari ekstraksi teks yang efisien dari halaman dokumen menggunak
 weight: 17
 url: /id/net/text-extraction/extract-text-from-page-in-raw-mode/
 ---
+
+# Ekstrak Teks dari Halaman dalam Mode Mentah
+
 ## Perkenalan
 Dalam tutorial ini, Anda akan mempelajari cara menggunakan Groupdocs.Parser untuk .NET untuk mengekstrak teks dari halaman dokumen dalam mode mentah. Pustaka ini menyediakan alat yang efisien untuk mengurai dan mengekstrak konten dari berbagai format file, memungkinkan pengembang untuk memasukkan ekstraksi teks dokumen ke dalam aplikasi .NET mereka.
 ## Prasyarat

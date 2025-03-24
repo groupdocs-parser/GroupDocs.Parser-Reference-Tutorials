@@ -6,6 +6,9 @@ description: Estrai il testo in base al sommario (TOC) utilizzando GroupDocs.Par
 weight: 15
 url: /it/net/text-extraction/extract-text-by-toc-item/
 ---
+
+# Estrai testo per elemento Sommario (TOC).
+
 ## introduzione
 In questo tutorial esploreremo come utilizzare GroupDocs.Parser per .NET per estrarre testo in base agli elementi del sommario (TOC) dai documenti. GroupDocs.Parser è un potente strumento che consente l'analisi e l'estrazione efficienti dei documenti.
 ## Prerequisiti

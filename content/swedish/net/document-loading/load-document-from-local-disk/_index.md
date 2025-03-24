@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar text från olika dokumentformat med Grou
 weight: 11
 url: /sv/net/document-loading/load-document-from-local-disk/
 ---
+
+# Ladda dokument från lokal disk
+
 ## Introduktion
 I den här handledningen kommer vi att utforska hur man använder GroupDocs.Parser för .NET för att extrahera text från dokument. GroupDocs.Parser är ett kraftfullt bibliotek som tillåter utvecklare att analysera olika dokumentformat och extrahera textinnehåll programmatiskt. Vi kommer att täcka de nödvändiga stegen för att komma igång med textextraktion med det här biblioteket.
 ## Förutsättningar

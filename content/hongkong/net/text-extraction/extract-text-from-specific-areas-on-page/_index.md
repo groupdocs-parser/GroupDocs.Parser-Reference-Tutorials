@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 從特定文件區域�
 weight: 13
 url: /zh-hant/net/text-extraction/extract-text-from-specific-areas-on-page/
 ---
+
+# 從頁面上的特定區域提取文本
+
 ## 介紹
 在本教學中，我們將探討如何使用 GroupDocs.Parser for .NET 函式庫從頁面上的特定區域擷取文字。 GroupDocs.Parser 簡化了從文件中提取文字的過程，使開發人員能夠針對文件中感興趣的特定區域進行文字擷取。在處理需要精確文字擷取以進行進一步處理或分析的複雜文件時，這尤其有用。
 ## 先決條件

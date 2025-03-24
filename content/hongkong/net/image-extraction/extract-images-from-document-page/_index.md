@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 從文件中擷取映�
 weight: 12
 url: /zh-hant/net/image-extraction/extract-images-from-document-page/
 ---
+
+# 從文件頁面提取圖像
+
 ## 介紹
 在本教程中，我們將學習如何使用 GroupDocs.Parser for .NET 從文件頁面中提取圖像。 GroupDocs.Parser 是一個功能強大的程式庫，可讓您從各種文件格式（如 PDF、Microsoft Word、Excel、PowerPoint 等）中提取文字、元資料、圖像等。我們將逐步完成使用此庫從文件頁面中提取圖像的必要步驟。
 ## 先決條件

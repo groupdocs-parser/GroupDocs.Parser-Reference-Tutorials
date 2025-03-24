@@ -6,6 +6,9 @@ description: Tìm hiểu cách sử dụng GroupDocs.Parser cho .NET để tríc
 weight: 10
 url: /vi/net/document-template-processing/working-with-barcodes-in-templates/
 ---
+
+# Làm việc với mã vạch trong mẫu
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách trích xuất dữ liệu từ tài liệu một cách hiệu quả bằng cách sử dụng các mẫu với GroupDocs.Parser cho .NET. GroupDocs.Parser đơn giản hóa quá trình trích xuất dữ liệu bằng cách cho phép bạn xác định mẫu cho các loại dữ liệu cụ thể, chẳng hạn như mã vạch, sau đó phân tích cú pháp tài liệu theo các mẫu này.
 ## Điều kiện tiên quyết

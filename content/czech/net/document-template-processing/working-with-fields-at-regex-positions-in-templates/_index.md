@@ -6,6 +6,9 @@ description: Naučte se extrahovat data ze šablon dokumentů pomocí pozic regu
 weight: 13
 url: /cs/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---
+
+# Práce s poli na Regex pozicích v šablonách
+
 ## Úvod
 V tomto tutoriálu se naučíte, jak využít GroupDocs.Parser pro .NET k extrahování polí na základě zadaných regulárních výrazů (regex) v šablonách dokumentů. Tato knihovna nabízí výkonné funkce pro analýzu a extrakci dokumentů, díky čemuž je ideální pro efektivní zpracování úloh extrakce strukturovaných dat.
 ## Předpoklady

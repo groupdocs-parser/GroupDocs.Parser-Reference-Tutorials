@@ -6,6 +6,9 @@ description: Aprenda como extrair campos de dados específicos de documentos usa
 weight: 10
 url: /pt/net/data-extraction-from-templates/get-field-by-name/
 ---
+
+# Obter campo por nome
+
 ## Introdução
 Neste tutorial, exploraremos como aproveitar o GroupDocs.Parser for .NET para extrair campos de dados específicos, como preços e e-mails de documentos. Esta poderosa biblioteca simplifica as tarefas de análise de documentos, tornando-a ideal para diversas necessidades de extração de dados.
 ## Pré-requisitos

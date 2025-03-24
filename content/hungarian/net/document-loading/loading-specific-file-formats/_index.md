@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthat ki szöveget különböző fájlformát
 weight: 14
 url: /hu/net/document-loading/loading-specific-file-formats/
 ---
+
+# Meghatározott fájlformátumok betöltése
+
 ## Bevezetés
 A .NET-fejlesztés világában általános követelmény a szöveg elemzése és a különféle fájlformátumokból való kibontása. A GroupDocs.Parser for .NET hatékony eszközöket kínál a feladat egyszerűsítésére. Ez az oktatóanyag lépésről lépésre végigvezeti Önt a GroupDocs.Parser használatával, amellyel szöveget tölthet be és bonthat ki bizonyos fájlformátumokból.
 ## Előfeltételek

@@ -6,6 +6,9 @@ description: Leer hoe u specifieke gegevensvelden uit documenten kunt extraheren
 weight: 10
 url: /nl/net/data-extraction-from-templates/get-field-by-name/
 ---
+
+# Veld op naam ophalen
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u GroupDocs.Parser voor .NET kunt gebruiken om specifieke gegevensvelden zoals prijzen en e-mails uit documenten te extraheren. Deze krachtige bibliotheek vereenvoudigt het parseren van documenten, waardoor deze ideaal is voor verschillende behoeften op het gebied van gegevensextractie.
 ## Vereisten

@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 PDF 문서에서 특정 �
 weight: 18
 url: /ko/net/pdf-processing/search-text-in-pdf-by-keyword/
 ---
+
+# 키워드로 PDF의 텍스트 검색
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser를 활용하여 키워드를 사용하여 PDF 문서 내의 특정 텍스트를 검색하는 방법을 살펴보겠습니다. GroupDocs.Parser는 개발자가 .NET 애플리케이션의 다양한 문서 형식에서 텍스트, 메타데이터, 이미지 등을 추출할 수 있는 강력한 문서 구문 분석 API입니다. PDF 내의 텍스트 검색은 문서 처리 응용 프로그램의 일반적인 요구 사항이며 GroupDocs.Parser는 직관적인 API를 통해 이 작업을 단순화합니다.
 ## 전제 조건

@@ -6,6 +6,9 @@ description: Scopri come estrarre immagini da documenti Excel utilizzando GroupD
 weight: 10
 url: /it/net/excel-document-processing/extract-images-from-excel-document/
 ---
+
+# Estrai immagini da un documento Excel
+
 ## introduzione
 In questo tutorial imparerai come estrarre immagini da un documento Excel utilizzando GroupDocs.Parser per .NET. GroupDocs.Parser è una potente libreria che ti consente di analizzare ed estrarre testo, metadati e immagini da vari formati di documenti, inclusi i file Excel.
 ## Prerequisiti

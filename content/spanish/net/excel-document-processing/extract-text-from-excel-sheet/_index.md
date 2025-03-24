@@ -6,6 +6,9 @@ description: Aprenda a extraer texto de hojas de Excel usando GroupDocs.Parser p
 weight: 14
 url: /es/net/excel-document-processing/extract-text-from-excel-sheet/
 ---
+
+# Extraer texto de una hoja de Excel
+
 ## Introducción
 En este tutorial, exploraremos cómo extraer texto de hojas de Excel usando la biblioteca GroupDocs.Parser para .NET. Esta poderosa herramienta nos permite analizar de manera eficiente varios formatos de documentos, incluidas hojas de cálculo de Excel, para extraer datos textuales.
 ## Requisitos previos

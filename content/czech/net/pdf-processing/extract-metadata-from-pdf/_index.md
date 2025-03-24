@@ -6,6 +6,9 @@ description: Naučte se extrahovat metadata z dokumentů PDF pomocí GroupDocs.P
 weight: 13
 url: /cs/net/pdf-processing/extract-metadata-from-pdf/
 ---
+
+# Extrahujte metadata z PDF
+
 ## Úvod
 tomto tutoriálu se ponoříme do používání GroupDocs.Parser pro .NET k extrahování metadat z dokumentů PDF. GroupDocs.Parser je výkonná knihovna, která umožňuje vývojářům pracovat s různými formáty dokumentů, včetně PDF, DOCX a dalších, pro extrakci textu, metadat a strukturovaných dat. Extrahování metadat z PDF může být užitečné pro řadu aplikací, od správy dokumentů až po vyhledávání informací.
 ## Předpoklady

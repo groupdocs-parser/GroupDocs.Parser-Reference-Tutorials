@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthat ki szöveget Excel-dokumentumokból a G
 weight: 12
 url: /hu/net/excel-document-processing/extract-text-from-excel-document/
 ---
+
+# Szöveg kibontása az Excel dokumentumból
+
 ## Bevezetés
 Ebben az oktatóanyagban végigvezetjük Önt egy Excel-dokumentumból a GroupDocs.Parser for .NET segítségével történő szöveg kinyerésének folyamatán. A GroupDocs.Parser egy hatékony .NET-könyvtár, amely lehetővé teszi különböző dokumentumformátumok elemzését, beleértve az Excel-fájlokat is, szövegek és metaadatok kinyeréséhez.
 ## Előfeltételek

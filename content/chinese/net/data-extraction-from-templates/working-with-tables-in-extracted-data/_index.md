@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 从文档中提取表�
 weight: 12
 url: /zh/net/data-extraction-from-templates/working-with-tables-in-extracted-data/
 ---
+
+# 使用提取数据中的表格
+
 ## 介绍
 在本教程中，我们将探索如何使用 GroupDocs.Parser for .NET 从文档中的表中提取数据。GroupDocs.Parser 是一个功能强大的工具，可让开发人员从各种文件格式（如 PDF、DOCX、XLSX 等）解析和提取文本、元数据和结构化内容。具体来说，我们将重点介绍如何使用预定义模板高效地提取表数据。
 ## 先决条件

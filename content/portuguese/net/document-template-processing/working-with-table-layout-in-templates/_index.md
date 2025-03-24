@@ -6,6 +6,9 @@ description: Aprenda como trabalhar com layouts de tabela em modelos usando Grou
 weight: 14
 url: /pt/net/document-template-processing/working-with-table-layout-in-templates/
 ---
+
+# Trabalhando com layout de tabela em modelos
+
 ## Introdução
 Neste tutorial, exploraremos como trabalhar com layout de tabela em modelos usando GroupDocs.Parser for .NET. GroupDocs.Parser é uma API poderosa de análise de documentos que permite aos desenvolvedores extrair texto e metadados de vários formatos de documentos, incluindo PDF, Microsoft Office e muito mais.
 ## Pré-requisitos

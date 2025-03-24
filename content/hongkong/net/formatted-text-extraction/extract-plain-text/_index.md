@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 從文件中提取純�
 weight: 14
 url: /zh-hant/net/formatted-text-extraction/extract-plain-text/
 ---
+
+# 擷取純文字
+
 ## 介紹
 在本教學中，我們將探討如何使用 GroupDocs.Parser for .NET 從各種文件格式中擷取純文字。 GroupDocs.Parser 是一個功能強大的程式庫，可讓開發人員無縫地處理文檔，有效地提取文字和元資料。本指南將引導您完成在 .NET 應用程式中整合和使用該程式庫的必要步驟。
 ## 先決條件

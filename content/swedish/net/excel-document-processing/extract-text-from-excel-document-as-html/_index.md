@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar text från Excel-dokument och konvertera
 weight: 13
 url: /sv/net/excel-document-processing/extract-text-from-excel-document-as-html/
 ---
+
+# Extrahera text från Excel-dokument som HTML
+
 ## Introduktion
 I den här handledningen kommer vi att utforska hur du använder GroupDocs.Parser för .NET för att extrahera text från ett Excel-dokument och konvertera det till HTML-format. GroupDocs.Parser är ett kraftfullt bibliotek som låter utvecklare arbeta med olika dokumentformat, extrahera text och metadata effektivt.
 ## Förutsättningar

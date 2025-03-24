@@ -6,6 +6,9 @@ description: Aprenda como extrair texto de documentos Excel usando GroupDocs.Par
 weight: 12
 url: /pt/net/excel-document-processing/extract-text-from-excel-document/
 ---
+
+# Extraia texto de documento Excel
+
 ## Introdução
 Neste tutorial, orientaremos você no processo de extração de texto de um documento Excel usando GroupDocs.Parser for .NET. GroupDocs.Parser é uma biblioteca .NET poderosa que permite analisar vários formatos de documentos, incluindo arquivos Excel, para extrair texto e metadados.
 ## Pré-requisitos

@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất văn bản từ tài liệu đượ
 weight: 15
 url: /vi/net/document-loading/working-with-password-protected-documents/
 ---
+
+# Làm việc với các tài liệu được bảo vệ bằng mật khẩu
+
 ## Giới thiệu
 Trong thế giới xử lý tài liệu, việc xử lý các tệp được bảo vệ bằng mật khẩu một cách hiệu quả là rất quan trọng. GroupDocs.Parser cho .NET cung cấp các khả năng mạnh mẽ để làm việc liền mạch với các tài liệu như vậy. Hướng dẫn này sẽ hướng dẫn bạn quy trình trích xuất văn bản từ các tài liệu được bảo vệ bằng mật khẩu bằng GroupDocs.Parser.
 ## Điều kiện tiên quyết

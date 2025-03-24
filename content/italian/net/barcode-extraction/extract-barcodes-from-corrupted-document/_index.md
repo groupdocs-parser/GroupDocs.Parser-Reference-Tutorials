@@ -6,6 +6,9 @@ description: Scopri come estrarre codici a barre da documenti danneggiati utiliz
 weight: 11
 url: /it/net/barcode-extraction/extract-barcodes-from-corrupted-document/
 ---
+
+# Estrai codici a barre da un documento danneggiato
+
 ## introduzione
 In questo tutorial ti guideremo attraverso il processo di estrazione dei codici a barre da documenti danneggiati utilizzando GroupDocs.Parser per .NET. GroupDocs.Parser è una potente API di analisi dei documenti che consente agli sviluppatori di estrarre testo, metadati, immagini e ora codici a barre da vari formati di file. Analizzeremo i passaggi necessari per eseguire questa attività in modo efficace.
 ## Prerequisiti

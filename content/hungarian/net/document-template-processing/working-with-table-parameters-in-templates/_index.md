@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan nyerhet ki adatokat dokumentumok tábláiból a
 weight: 15
 url: /hu/net/document-template-processing/working-with-table-parameters-in-templates/
 ---
+
+# Táblázatparaméterek használata sablonokban
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan használható a GroupDocs.Parser for .NET a táblaparaméterekkel való munkavégzéshez a sablonokban. Ez az útmutató a folyamatot lépésről lépésre lebontja, hogy segítsen hatékonyan elemezni és kivonni az adatokat a dokumentumokon belüli táblázatokból.
 ## Előfeltételek

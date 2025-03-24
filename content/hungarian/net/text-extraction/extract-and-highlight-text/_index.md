@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthat ki és jelölhet ki szöveget dokumentu
 weight: 11
 url: /hu/net/text-extraction/extract-and-highlight-text/
 ---
+
+# Szöveg kibontása és kiemelése
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan használhatja a GroupDocs.Parser for .NET-et a dokumentumokból szövegek kinyerésére és kiemelésére. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi különböző dokumentumformátumok elemzését és speciális szövegkivonási műveletek végrehajtását.
 ## Előfeltételek

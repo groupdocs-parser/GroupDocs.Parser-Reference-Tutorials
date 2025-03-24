@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 從 PDF 文件中提�
 weight: 13
 url: /zh-hant/net/pdf-processing/extract-metadata-from-pdf/
 ---
+
+# 從 PDF 提取元數據
+
 ## 介紹
 在本教程中，我們將深入研究使用 GroupDocs.Parser for .NET 從 PDF 文件中提取元資料。 GroupDocs.Parser 是一個功能強大的程式庫，可讓開發人員使用各種文件格式（包括 PDF、DOCX 等）來提取文字、元資料和結構化資料。從 PDF 中提取元資料可用於從文件管理到資訊檢索的一系列應用。
 ## 先決條件

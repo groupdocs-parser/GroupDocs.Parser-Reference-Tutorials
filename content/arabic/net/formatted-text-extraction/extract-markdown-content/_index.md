@@ -6,6 +6,9 @@ description: تعرف على كيفية استخراج محتوى Markdown من 
 weight: 13
 url: /ar/net/formatted-text-extraction/extract-markdown-content/
 ---
+
+# استخراج محتوى تخفيض السعر
+
 ## مقدمة
 في هذا البرنامج التعليمي، سنستكشف كيفية استخدام GroupDocs.Parser لـ .NET لاستخراج محتوى Markdown من المستندات. GroupDocs.Parser هي مكتبة قوية تسمح للمطورين بتحليل واستخراج النص من تنسيقات الملفات المختلفة بسلاسة.
 ## المتطلبات الأساسية

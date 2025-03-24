@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Parser for .NET 從文件中擷取表格。學習�
 weight: 23
 url: /zh-hant/net/table-extraction/
 ---
+
+# 表提取
+
 ## 介紹
 
 歡迎來到使用 GroupDocs.Parser for .NET 進行表格擷取教學的世界。在本綜合指南中，我們將深入研究使用 GroupDocs.Parser 的強大功能從文件中提取表格的複雜性。無論您是初學者還是經驗豐富的開發人員，這些教程都提供了清晰的逐步說明、程式碼範例和實用見解，可協助您在 .NET 應用程式中充分發揮表格提取的潛力。

@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthat ki szövegszerkezetet különböző dok
 weight: 20
 url: /hu/net/text-extraction/extract-text-structure/
 ---
+
+# Szövegszerkezet kivonat
+
 ## Bevezetés
 Ebben az oktatóanyagban azt fogjuk megvizsgálni, hogyan használható a GroupDocs.Parser for .NET a szövegstruktúra kinyerésére különböző dokumentumformátumokból. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy strukturált szöveges tartalmat nyerjenek ki dokumentumokból, például PDF-ekből, Word-dokumentumokból, Excel-lapokból és egyebekből. Ez az oktatóanyag lépésről lépésre végigvezeti a GroupDocs.Parser beállításán, a szükséges névterek importálásán és a szövegstruktúra kibontásán.
 ## Előfeltételek

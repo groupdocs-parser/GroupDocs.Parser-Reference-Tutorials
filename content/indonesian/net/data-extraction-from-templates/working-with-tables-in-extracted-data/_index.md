@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak data tabel dari dokumen menggunakan Group
 weight: 12
 url: /id/net/data-extraction-from-templates/working-with-tables-in-extracted-data/
 ---
+
+# Bekerja dengan Tabel dalam Data yang Diekstraksi
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggunakan GroupDocs.Parser untuk .NET untuk mengekstrak data dari tabel di dokumen. GroupDocs.Parser adalah alat canggih yang memungkinkan pengembang mengurai dan mengekstrak teks, metadata, dan konten terstruktur dari berbagai format file seperti PDF, DOCX, XLSX, dan banyak lagi. Secara khusus, kami akan fokus pada mengekstraksi data tabel secara efisien menggunakan templat yang telah ditentukan sebelumnya.
 ## Prasyarat

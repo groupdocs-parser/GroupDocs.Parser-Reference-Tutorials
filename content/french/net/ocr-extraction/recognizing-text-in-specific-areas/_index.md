@@ -6,6 +6,9 @@ description: Découvrez comment utiliser GroupDocs.Parser pour .NET pour extrair
 weight: 13
 url: /fr/net/ocr-extraction/recognizing-text-in-specific-areas/
 ---
+
+# Reconnaître du texte dans des zones spécifiques
+
 ## Introduction
 Dans ce didacticiel, nous explorerons comment utiliser GroupDocs.Parser pour .NET pour reconnaître et extraire du texte de zones spécifiques d'un document. GroupDocs.Parser est une puissante bibliothèque d'analyse de documents qui permet aux développeurs de travailler avec différents formats de documents, notamment PDF, Word, Excel, PowerPoint, etc. Plus précisément, nous nous concentrerons sur l'exploitation des capacités OCR (Optical Character Recognition) de GroupDocs.Parser pour extraire du texte à partir de zones définies dans un document.
 ## Conditions préalables

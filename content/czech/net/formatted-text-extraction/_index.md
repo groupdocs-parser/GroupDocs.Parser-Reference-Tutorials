@@ -7,6 +7,9 @@ weight: 21
 url: /cs/net/formatted-text-extraction/
 ---
 
+# Extrakce formátovaného textu
+
+
 ## Úvod
 
 Prozkoumejte svět extrakce formátovaného textu v .NET pomocí výukových programů GroupDocs.Parser. Tyto výukové programy pokrývají řadu technik pro extrahování formátovaného textu z dokumentů, včetně HTML, Markdown a prostého textu. Ať už jste začátečník nebo zkušený vývojář, tyto výukové programy poskytují cenné postřehy a praktické příklady pro vylepšení vašich možností extrakce textu.

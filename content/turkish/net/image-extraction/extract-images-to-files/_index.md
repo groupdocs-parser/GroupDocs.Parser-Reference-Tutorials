@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak PDF ve DOCX gibi çeşitli b
 weight: 13
 url: /tr/net/image-extraction/extract-images-to-files/
 ---
+
+# Görüntüleri Dosyalara Çıkartın
+
 ## giriiş
 Bu öğreticide, PDF, Word, Excel ve PowerPoint gibi çeşitli belge biçimlerinden görüntüleri ayıklamak için GroupDocs.Parser for .NET'i nasıl kullanacağınızı öğreneceksiniz. GroupDocs.Parser, geliştiricilerin belgelerden metni, meta verileri, görüntüleri ve daha fazlasını basit bir şekilde ayrıştırmasına ve ayıklamasına olanak tanıyan güçlü bir kitaplıktır. Bu kılavuz, C# kullanarak görüntüleri çıkarma ve bunları ayrı dosyalar olarak kaydetme sürecinde size yol gösterecektir.
 ## Önkoşullar

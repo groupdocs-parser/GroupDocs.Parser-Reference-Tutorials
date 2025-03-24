@@ -7,6 +7,9 @@ weight: 20
 url: /zh/net/text-extraction/
 ---
 
+# 文本提取
+
+
 ## 介绍
 
 欢迎来到 GroupDocs.Parser for .NET 提供的全面的文本提取教程集合。在本系列教程中，我们将探索从 .NET 应用程序中的文档中提取、突出显示和搜索文本的各种方法和技术。

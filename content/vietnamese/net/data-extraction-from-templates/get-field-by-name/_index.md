@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất các trường dữ liệu cụ th�
 weight: 10
 url: /vi/net/data-extraction-from-templates/get-field-by-name/
 ---
+
+# Nhận trường theo tên
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách tận dụng GroupDocs.Parser cho .NET để trích xuất các trường dữ liệu cụ thể như giá cả và email từ tài liệu. Thư viện mạnh mẽ này đơn giản hóa các tác vụ phân tích cú pháp tài liệu, khiến nó trở nên lý tưởng cho các nhu cầu trích xuất dữ liệu khác nhau.
 ## Điều kiện tiên quyết

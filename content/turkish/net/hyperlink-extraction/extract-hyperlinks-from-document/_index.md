@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak belgelerden köprüleri nas�
 weight: 10
 url: /tr/net/hyperlink-extraction/extract-hyperlinks-from-document/
 ---
+
+# Belgeden Köprüleri Çıkarma
+
 ## giriiş
 Bu eğitimde, geliştiricilerin belgelerden köprüleri kolaylıkla ayıklamasına olanak tanıyan çok yönlü bir kitaplık olan GroupDocs.Parser for .NET'in güçlü yeteneklerini inceleyeceğiz. Köprü çıkarma, belge işlemede, özellikle de PDF'ler veya Word belgeleri gibi metin tabanlı dosyalarla çalışırken yaygın bir gereksinimdir. GroupDocs.Parser'ı kullanarak çeşitli belge biçimlerinden köprüleri ve ilişkili URL'lerini etkili bir şekilde tanımlayabilir ve çıkarabilirsiniz.
 ## Önkoşullar

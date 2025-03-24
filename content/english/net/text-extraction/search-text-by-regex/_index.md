@@ -6,6 +6,9 @@ description: Learn how to search text using regular expressions in documents usi
 weight: 23
 url: /net/text-extraction/search-text-by-regex/
 ---
+
+# Search Text by Regular Expression (Regex)
+
 ## Introduction
 In this tutorial, we'll delve into using GroupDocs.Parser for .NET to search text by regular expression (Regex) within documents. GroupDocs.Parser is a powerful library that allows developers to extract text and metadata from various file formats such as PDF, DOCX, XLSX, and more. Searching for text using regular expressions is particularly useful for finding patterns or specific content within documents efficiently.
 ## Prerequisites

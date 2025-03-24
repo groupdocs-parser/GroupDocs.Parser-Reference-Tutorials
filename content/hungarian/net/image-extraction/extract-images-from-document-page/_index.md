@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthat ki képeket dokumentumokból a GroupDoc
 weight: 12
 url: /hu/net/image-extraction/extract-images-from-document-page/
 ---
+
+# Képek kibontása a dokumentumoldalról
+
 ## Bevezetés
 Ebben az oktatóanyagban megtanuljuk, hogyan lehet képeket kivonni egy dokumentumoldalról a GroupDocs.Parser for .NET segítségével. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi szövegek, metaadatok, képek és egyebek kinyerését különféle dokumentumformátumokból, például PDF, Microsoft Word, Excel, PowerPoint és másokból. Végigjárjuk a szükséges lépéseket, hogy e könyvtár használatával képeket kinyerhessünk egy dokumentumoldalról.
 ## Előfeltételek

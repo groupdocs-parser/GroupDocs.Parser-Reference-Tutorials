@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak data secara efisien dari dokumen mengguna
 weight: 12
 url: /id/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
 ---
+
+# Bekerja dengan Bidang pada Posisi Tertaut di Templat
+
 ## Perkenalan
 GroupDocs.Parser untuk .NET adalah perpustakaan tangguh yang dirancang untuk memfasilitasi tugas penguraian dokumen dan ekstraksi data. Ini mendukung berbagai format file, termasuk PDF, DOCX, XLSX, dan banyak lagi. Salah satu fitur utamanya adalah ekstraksi data berbasis templat, yang memungkinkan Anda menentukan bidang dalam dokumen dan mengekstrak data tertentu berdasarkan templat yang telah ditentukan sebelumnya.
 ## Prasyarat

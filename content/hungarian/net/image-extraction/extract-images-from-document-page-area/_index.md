@@ -6,6 +6,9 @@ description: Fedezze fel, hogyan lehet pontosan kinyerni képeket a dokumentumok
 weight: 10
 url: /hu/net/image-extraction/extract-images-from-document-page-area/
 ---
+
+# Képek kibontása a dokumentumoldal területéről
+
 ## Bevezetés
 Ebben az oktatóanyagban megtanuljuk, hogyan használhatja a Groupdocs.Parser for .NET-et a dokumentumok oldalának meghatározott területeiről képek kinyerésére. Ez a folyamat lehetővé teszi a képek pontos célzását és visszakeresését a dokumentumon belül meghatározott koordináták és méretek alapján.
 ## Előfeltételek

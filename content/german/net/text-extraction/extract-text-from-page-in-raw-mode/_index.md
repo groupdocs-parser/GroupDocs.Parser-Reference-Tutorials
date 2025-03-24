@@ -6,6 +6,9 @@ description: Erlernen Sie in diesem umfassenden Tutorial die effiziente Textextr
 weight: 17
 url: /de/net/text-extraction/extract-text-from-page-in-raw-mode/
 ---
+
+# Extrahieren Sie Text aus der Seite im Raw-Modus
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie mit Groupdocs.Parser für .NET Text aus Dokumentseiten im Rohmodus extrahieren. Diese Bibliothek bietet effiziente Tools zum Parsen und Extrahieren von Inhalten aus verschiedenen Dateiformaten, sodass Entwickler die Dokumenttextextraktion in ihre .NET-Anwendungen integrieren können.
 ## Voraussetzungen

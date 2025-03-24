@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan nyerhet ki metaadatokat Word-dokumentumokból a
 weight: 12
 url: /hu/net/word-document-processing/extract-metadata-from-word-document/
 ---
+
+# Metaadatok kibontása a Word dokumentumból
+
 ## Bevezetés
 A mai digitális korban az adatok hatékony elemzése és kinyerése a dokumentumokból kulcsfontosságú a különböző alkalmazásokhoz, a tartalomelemzéstől az adatvisszakeresésig. A GroupDocs.Parser for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára a metaadatok és szövegek egyszerű kinyerését a dokumentumokból. Ebben az oktatóanyagban azt fogjuk megvizsgálni, hogyan használható a GroupDocs.Parser for .NET metaadatok kinyerésére a Word dokumentumokból lépésről lépésre.
 ## Előfeltételek

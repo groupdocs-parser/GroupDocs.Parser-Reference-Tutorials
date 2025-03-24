@@ -6,6 +6,9 @@ description: Extrahieren Sie Text anhand des Inhaltsverzeichnisses (TOC) mit Gro
 weight: 15
 url: /de/net/text-extraction/extract-text-by-toc-item/
 ---
+
+# Text nach Inhaltsverzeichniselement (TOC) extrahieren
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Text aus Dokumenten auf der Grundlage von Inhaltsverzeichniselementen extrahieren können. GroupDocs.Parser ist ein leistungsstarkes Tool, das eine effiziente Dokumentenanalyse und -extraktion ermöglicht.
 ## Voraussetzungen

@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak Excel belgelerinden meta ver
 weight: 11
 url: /tr/net/excel-document-processing/extract-metadata-from-excel-document/
 ---
+
+# Excel Belgesinden Meta Verileri Çıkarma
+
 ## giriiş
 Bu öğreticide, bir Excel belgesinden meta verileri ayıklamak için GroupDocs.Parser for .NET'in nasıl kullanılacağını göstereceğiz. GroupDocs.Parser, meta veriler, metin, resimler ve daha fazlası dahil olmak üzere çeşitli belge öğelerini çıkarmanıza olanak tanıyan güçlü bir kitaplıktır.
 ## Önkoşullar

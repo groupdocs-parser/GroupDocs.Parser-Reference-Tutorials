@@ -6,6 +6,9 @@ description: Wyodrębniaj obrazy z dokumentów bez wysiłku za pomocą GroupDocs
 weight: 11
 url: /pl/net/image-extraction/extract-images-from-document/
 ---
+
+# Wyodrębnij obrazy z dokumentu
+
 ## Wstęp
 W tym samouczku przyjrzymy się, jak wyodrębnić obrazy z dokumentów za pomocą GroupDocs.Parser dla .NET. GroupDocs.Parser to potężna biblioteka, która umożliwia programistom wyodrębnianie tekstu, metadanych, obrazów i innych danych z różnych formatów dokumentów.
 ## Warunki wstępne

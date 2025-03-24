@@ -6,6 +6,9 @@ description: GroupDocs.Parser'ı kullanarak .NET'teki çeşitli belge biçimleri
 weight: 12
 url: /tr/net/document-loading/load-document-from-stream/
 ---
+
+# Belgeyi Akıştan Yükle
+
 ## giriiş
 .NET uygulamalarında belge işleme alanında, çeşitli dosya biçimlerinden metin çıkarmak yaygın bir gereksinimdir. GroupDocs.Parser for .NET, çok çeşitli belgelerden metni sorunsuz bir şekilde ayrıştırmak ve çıkarmak için güçlü bir çözüm sunar. Bu eğitim, belgelerden adım adım metin çıkarmak için GroupDocs.Parser'ı kullanma sürecinde size rehberlik edecektir.
 ## Önkoşullar

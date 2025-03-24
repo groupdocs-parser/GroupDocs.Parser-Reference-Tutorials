@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan kereshet szöveget Word dokumentumokban a Group
 weight: 18
 url: /hu/net/word-document-processing/search-text-in-word-document-by-keyword/
 ---
+
+# Szöveg keresése a Word-dokumentumban kulcsszó szerint
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan használhatja a GroupDocs.Parser for .NET-et meghatározott szövegek keresésére egy Word-dokumentumban C# használatával. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy szöveget és metaadatokat kinyerjenek különféle dokumentumformátumokból, beleértve a Word dokumentumokat is.
 ## Előfeltételek

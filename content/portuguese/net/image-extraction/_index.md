@@ -6,6 +6,9 @@ description: Extraia facilmente imagens de documentos em .NET com GroupDocs.Pars
 weight: 24
 url: /pt/net/image-extraction/
 ---
+
+# Extração de imagem
+
 ## Introdução
 
 Mergulhe no domínio da extração de imagens em .NET com os tutoriais do GroupDocs.Parser. Esses tutoriais fornecem orientação abrangente sobre como extrair imagens de documentos, seja de áreas específicas do documento, de documentos inteiros ou de páginas individuais. Quer você seja um desenvolvedor iniciante ou experiente, esses tutoriais oferecem instruções passo a passo claras e exemplos de código para ajudá-lo a integrar perfeitamente a extração de imagens em seus aplicativos .NET.

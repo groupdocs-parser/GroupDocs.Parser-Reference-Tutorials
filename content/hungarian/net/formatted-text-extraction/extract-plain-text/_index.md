@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthat ki egyszerű szöveget dokumentumokból
 weight: 14
 url: /hu/net/formatted-text-extraction/extract-plain-text/
 ---
+
+# Egyszerű szöveg kibontása
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet egyszerű szöveget kivonni különböző dokumentumformátumokból a GroupDocs.Parser for .NET segítségével. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen dolgozzanak a dokumentumokkal, hatékonyan kinyerve a szövegeket és a metaadatokat. Ez az útmutató végigvezeti a könyvtár .NET-alkalmazásaiba való integrálásához és használatához szükséges lépéseken.
 ## Előfeltételek

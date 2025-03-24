@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak belgelerden görüntüleri n
 weight: 12
 url: /tr/net/image-extraction/extract-images-from-document-page/
 ---
+
+# Belge Sayfasından Görüntüleri Çıkarma
+
 ## giriiş
 Bu eğitimde, GroupDocs.Parser for .NET'i kullanarak bir belge sayfasından görüntülerin nasıl çıkarılacağını öğreneceğiz. GroupDocs.Parser, PDF, Microsoft Word, Excel, PowerPoint ve diğerleri gibi çeşitli belge formatlarından metin, meta veriler, resimler ve daha fazlasını çıkarmanıza olanak tanıyan güçlü bir kitaplıktır. Bu kütüphaneyi kullanarak bir belge sayfasından görseller çıkarmak için gerekli adımları izleyeceğiz.
 ## Önkoşullar

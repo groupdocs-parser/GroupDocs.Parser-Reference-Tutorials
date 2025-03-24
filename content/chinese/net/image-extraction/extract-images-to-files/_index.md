@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Parser for .NET 轻松从各种文档类型（如 
 weight: 13
 url: /zh/net/image-extraction/extract-images-to-files/
 ---
+
+# 将图像提取到文件
+
 ## 介绍
 在本教程中，您将学习如何使用 GroupDocs.Parser for .NET 从各种文档格式（如 PDF、Word、Excel 和 PowerPoint）中提取图像。GroupDocs.Parser 是一个功能强大的库，使开发人员能够以简单的方式从文档中解析和提取文本、元数据、图像等。本指南将引导您完成使用 C# 提取图像并将其保存为单个文件的过程。
 ## 先决条件

@@ -6,6 +6,9 @@ description: Extrahera bilder från dokument utan ansträngning med GroupDocs.Pa
 weight: 11
 url: /sv/net/image-extraction/extract-images-from-document/
 ---
+
+# Extrahera bilder från dokument
+
 ## Introduktion
 I den här handledningen kommer vi att utforska hur man extraherar bilder från dokument med GroupDocs.Parser för .NET. GroupDocs.Parser är ett kraftfullt bibliotek som gör det möjligt för utvecklare att extrahera text, metadata, bilder och mer från olika dokumentformat.
 ## Förutsättningar

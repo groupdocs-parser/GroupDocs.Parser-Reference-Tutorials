@@ -6,6 +6,9 @@ description: Tìm hiểu cách tìm kiếm văn bản cụ thể trong tài li�
 weight: 18
 url: /vi/net/pdf-processing/search-text-in-pdf-by-keyword/
 ---
+
+# Tìm kiếm văn bản trong PDF theo từ khóa
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách tận dụng GroupDocs.Parser cho .NET để tìm kiếm văn bản cụ thể trong tài liệu PDF bằng từ khóa. GroupDocs.Parser là API phân tích tài liệu mạnh mẽ cho phép các nhà phát triển trích xuất văn bản, siêu dữ liệu, hình ảnh, v.v. từ các định dạng tài liệu khác nhau trong các ứng dụng .NET. Tìm kiếm văn bản trong tệp PDF là một yêu cầu phổ biến trong các ứng dụng xử lý tài liệu và GroupDocs.Parser đơn giản hóa tác vụ này bằng API trực quan của nó.
 ## Điều kiện tiên quyết

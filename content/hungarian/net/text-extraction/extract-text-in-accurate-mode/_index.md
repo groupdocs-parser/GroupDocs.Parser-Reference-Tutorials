@@ -6,6 +6,9 @@ description: Tanulja meg, hogyan lehet pontosan kivonni szöveget a .NET-ben lé
 weight: 18
 url: /hu/net/text-extraction/extract-text-in-accurate-mode/
 ---
+
+# Szöveg kivonatolása pontos módban
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet szöveget pontosan kivonni különféle dokumentumformátumokból a GroupDocs.Parser for .NET segítségével. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi a szövegek kinyerését olyan dokumentumokból, mint a PDF, DOCX, PPTX, XLSX és egyebek, így értékes eszköz az adatfeldolgozó alkalmazásokhoz.
 ## Előfeltételek

@@ -6,6 +6,9 @@ description: Découvrez comment extraire des images de documents PDF à l'aide d
 weight: 12
 url: /fr/net/pdf-processing/extract-images-from-pdf/
 ---
+
+# Extraire des images d'un PDF
+
 ## Introduction
 Dans ce didacticiel, nous explorerons comment utiliser GroupDocs.Parser pour .NET pour extraire des images de documents PDF. GroupDocs.Parser est une bibliothèque puissante qui permet aux développeurs de travailler avec différents formats de documents, notamment PDF, DOCX, PPTX, etc., dans un environnement .NET. En suivant ces étapes, vous pourrez extraire des images de fichiers PDF sans effort.
 ## Conditions préalables

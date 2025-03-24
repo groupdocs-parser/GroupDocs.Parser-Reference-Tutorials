@@ -6,6 +6,9 @@ description: Tìm hiểu cách tìm kiếm văn bản bằng cách sử dụng c
 weight: 23
 url: /vi/net/text-extraction/search-text-by-regex/
 ---
+
+# Tìm kiếm văn bản theo biểu thức chính quy (Regex)
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ đi sâu vào việc sử dụng GroupDocs.Parser cho .NET để tìm kiếm văn bản theo biểu thức chính quy (Regex) trong tài liệu. GroupDocs.Parser là một thư viện mạnh mẽ cho phép các nhà phát triển trích xuất văn bản và siêu dữ liệu từ nhiều định dạng tệp khác nhau như PDF, DOCX, XLSX, v.v. Tìm kiếm văn bản bằng cách sử dụng biểu thức chính quy đặc biệt hữu ích để tìm mẫu hoặc nội dung cụ thể trong tài liệu một cách hiệu quả.
 ## Điều kiện tiên quyết

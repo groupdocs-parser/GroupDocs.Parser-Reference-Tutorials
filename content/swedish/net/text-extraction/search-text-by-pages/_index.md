@@ -6,6 +6,9 @@ description: Lär dig att söka text på sidor med GroupDocs.Parser för .NET. E
 weight: 22
 url: /sv/net/text-extraction/search-text-by-pages/
 ---
+
+# Sök text efter sidor
+
 ## Introduktion
 I en värld av .NET-utveckling är det en avgörande uppgift att effektivt analysera och extrahera text från dokument. GroupDocs.Parser för .NET erbjuder kraftfulla funktioner för att arbeta med olika dokumentformat, vilket gör att utvecklare kan söka och extrahera specifikt innehåll sömlöst. Den här handledningen guidar dig genom processen att använda GroupDocs.Parser för att söka text efter sidor i dina .NET-applikationer.
 ## Förutsättningar

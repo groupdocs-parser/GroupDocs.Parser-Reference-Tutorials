@@ -6,6 +6,9 @@ description: Dễ dàng trích xuất hình ảnh từ nhiều loại tài liệ
 weight: 13
 url: /vi/net/image-extraction/extract-images-to-files/
 ---
+
+# Trích xuất hình ảnh vào tập tin
+
 ## Giới thiệu
 Trong hướng dẫn này, bạn sẽ tìm hiểu cách sử dụng GroupDocs.Parser cho .NET để trích xuất hình ảnh từ nhiều định dạng tài liệu khác nhau như PDF, Word, Excel và PowerPoint. GroupDocs.Parser là một thư viện mạnh mẽ cho phép các nhà phát triển phân tích cú pháp và trích xuất văn bản, siêu dữ liệu, hình ảnh, v.v. từ tài liệu một cách đơn giản. Hướng dẫn này sẽ hướng dẫn bạn quy trình trích xuất hình ảnh và lưu chúng dưới dạng tệp riêng lẻ bằng C#.
 ## Điều kiện tiên quyết

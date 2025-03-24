@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak PDF belgelerinden meta veril
 weight: 13
 url: /tr/net/pdf-processing/extract-metadata-from-pdf/
 ---
+
+# Meta Verileri PDF'den Çıkarın
+
 ## giriiş
 Bu öğreticide, PDF belgelerinden meta verileri ayıklamak için GroupDocs.Parser for .NET'i kullanmayı ayrıntılı olarak ele alacağız. GroupDocs.Parser, geliştiricilerin metin, meta veriler ve yapılandırılmış verileri ayıklamak için PDF, DOCX ve daha fazlası dahil olmak üzere çeşitli belge formatlarıyla çalışmasına olanak tanıyan güçlü bir kitaplıktır. PDF'lerden meta verileri çıkarmak, belge yönetiminden bilgi almaya kadar çeşitli uygulamalar için yararlı olabilir.
 ## Önkoşullar

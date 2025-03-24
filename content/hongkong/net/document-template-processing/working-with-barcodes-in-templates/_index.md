@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 透過範本從文件�
 weight: 10
 url: /zh-hant/net/document-template-processing/working-with-barcodes-in-templates/
 ---
+
+# 在模板中使用條碼
+
 ## 介紹
 在本教學中，我們將探討如何使用適用於 .NET 的 GroupDocs.Parser 範本從文件中高效提取資料。 GroupDocs.Parser 允許您為特定資料類型（例如條碼）定義模板，然後根據這些模板解析文檔，從而簡化了資料提取的過程。
 ## 先決條件

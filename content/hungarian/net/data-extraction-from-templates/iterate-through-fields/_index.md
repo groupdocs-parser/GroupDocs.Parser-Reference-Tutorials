@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan nyerhet ki strukturált adatokat a dokumentumok
 weight: 11
 url: /hu/net/data-extraction-from-templates/iterate-through-fields/
 ---
+
+# Iterálás mezőkön keresztül
+
 ## Bevezetés
 GroupDocs.Parser for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy adatokat nyerjenek ki különféle dokumentumformátumokból, például PDF, Microsoft Word, Excel és PowerPoint. Ez az oktatóanyag végigvezeti Önt a GroupDocs.Parser használatának folyamatán, amellyel a dokumentummezőket ismételheti, és sablonok segítségével kinyerhet konkrét adatokat. Ennek az oktatóanyagnak a végére képes lesz hatékonyan strukturált adatokat kinyerni a .NET-alkalmazásaiban lévő dokumentumokból.
 ## Előfeltételek

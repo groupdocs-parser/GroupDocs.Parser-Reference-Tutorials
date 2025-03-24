@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar hyperlänkar från Word-dokument med Gro
 weight: 10
 url: /sv/net/word-document-processing/extract-hyperlinks-from-word-document/
 ---
+
+# Extrahera hyperlänkar från Word-dokument
+
 ## Introduktion
 GroupDocs.Parser för .NET är ett kraftfullt verktyg som låter utvecklare extrahera strukturerad text och metadata från olika dokumentformat som Word, Excel, PowerPoint, PDF och mer. Ett vanligt krav vid dokumentbehandling är att extrahera hyperlänkar från Word-dokument programmatiskt. Denna handledning guidar dig genom processen att använda GroupDocs.Parser för att extrahera hyperlänkar från ett Word-dokument steg för steg.
 ## Förutsättningar

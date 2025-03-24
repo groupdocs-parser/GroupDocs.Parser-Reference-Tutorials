@@ -6,6 +6,9 @@ description: Extraheer tekst per inhoudsopgave (TOC) met GroupDocs.Parser voor .
 weight: 15
 url: /nl/net/text-extraction/extract-text-by-toc-item/
 ---
+
+# Extraheer tekst per inhoudsopgave (TOC).
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u GroupDocs.Parser voor .NET kunt gebruiken om tekst op basis van inhoudsopgave-items (TOC) uit documenten te extraheren. GroupDocs.Parser is een krachtige tool waarmee documenten efficiënt kunnen worden geparseerd en geëxtraheerd.
 ## Vereisten

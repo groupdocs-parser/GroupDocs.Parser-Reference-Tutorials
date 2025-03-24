@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser 从 .NET 中的文档中准确�
 weight: 18
 url: /zh/net/text-extraction/extract-text-in-accurate-mode/
 ---
+
+# 以精确模式提取文本
+
 ## 介绍
 在本教程中，我们将探索如何使用 GroupDocs.Parser for .NET 从各种文档格式中准确提取文本。GroupDocs.Parser 是一个功能强大的库，可以从 PDF、DOCX、PPTX、XLSX 等文档中提取文本，使其成为数据处理应用程序的宝贵工具。
 ## 先决条件

@@ -6,6 +6,9 @@ description: 在這個綜合教程中學習使用 Groupdocs.Parser for .NET 從�
 weight: 17
 url: /zh-hant/net/text-extraction/extract-text-from-page-in-raw-mode/
 ---
+
+# 以原始模式從頁面中提取文本
+
 ## 介紹
 在本教程中，您將學習如何使用 Groupdocs.Parser for .NET 以原始模式從文件頁面中提取文字。該程式庫提供了高效的工具來解析和提取各種文件格式的內容，使開發人員能夠將文件文字提取合併到他們的 .NET 應用程式中。
 ## 先決條件

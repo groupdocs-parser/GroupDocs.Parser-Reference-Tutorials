@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębniać obrazy z dokumentów Excel za pomoc
 weight: 10
 url: /pl/net/excel-document-processing/extract-images-from-excel-document/
 ---
+
+# Wyodrębnij obrazy z dokumentu Excel
+
 ## Wstęp
 tym samouczku dowiesz się, jak wyodrębnić obrazy z dokumentu Excel za pomocą GroupDocs.Parser dla .NET. GroupDocs.Parser to potężna biblioteka, która umożliwia analizowanie i wyodrębnianie tekstu, metadanych i obrazów z różnych formatów dokumentów, w tym plików Excel.
 ## Warunki wstępne

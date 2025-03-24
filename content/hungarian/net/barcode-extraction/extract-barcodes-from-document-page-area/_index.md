@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan vonhat ki vonalkódokat dokumentumoldalakról a
 weight: 13
 url: /hu/net/barcode-extraction/extract-barcodes-from-document-page-area/
 ---
+
+# Vonalkódok kivonása a dokumentumoldal területéről
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet vonalkódokat kivonni egy dokumentum meghatározott területeiről a GroupDocs.Parser for .NET segítségével. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi adatok elemzését és kinyerését különféle dokumentumformátumokból, például PDF, DOCX, XLSX és egyebekből, beleértve a vonalkódok kinyerését. Leírjuk az előfeltételeket, a szükséges névtereket, és lépésről lépésre bemutatjuk a kódpéldákat a folyamat bemutatásához.
 ## Előfeltételek

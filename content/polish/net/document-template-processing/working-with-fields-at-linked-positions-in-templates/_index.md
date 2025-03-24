@@ -6,6 +6,9 @@ description: Dowiedz się, jak efektywnie wyodrębniać dane z dokumentów za po
 weight: 12
 url: /pl/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
 ---
+
+# Praca z polami w połączonych pozycjach w szablonach
+
 ## Wstęp
 GroupDocs.Parser dla .NET to solidna biblioteka zaprojektowana w celu ułatwienia zadań analizowania dokumentów i ekstrakcji danych. Obsługuje szeroką gamę formatów plików, w tym PDF, DOCX, XLSX i inne. Jedną z jego kluczowych funkcji jest ekstrakcja danych w oparciu o szablony, która umożliwia definiowanie pól w dokumencie i wyodrębnianie określonych danych na podstawie tych predefiniowanych szablonów.
 ## Warunki wstępne

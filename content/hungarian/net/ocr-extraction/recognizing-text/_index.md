@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET segítségével hatékonyan vonhat ki sz�
 weight: 12
 url: /hu/net/ocr-extraction/recognizing-text/
 ---
+
+# Szöveg felismerése
+
 ## Bevezetés
 A .NET fejlesztés területén a különböző dokumentumformátumok hatékony szövegkinyerése a legfontosabb. A GroupDocs.Parser for .NET robusztus megoldást kínál a szöveg zökkenőmentes kibontására. Ebben az oktatóanyagban részletesen bemutatjuk a GroupDocs.Parser használatát a dokumentumok szövegének felismerésére és kivonására.
 ## Előfeltételek

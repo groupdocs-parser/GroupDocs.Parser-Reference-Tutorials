@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar tabeller från dokument programmatiskt m
 weight: 11
 url: /sv/net/table-extraction/extract-tables-from-document-page/
 ---
+
+# Extrahera tabeller från dokumentsidan
+
 ## Introduktion
 I den här handledningen kommer vi att utforska hur man extraherar tabeller från en dokumentsida med GroupDocs.Parser för .NET. GroupDocs.Parser är ett kraftfullt bibliotek som låter utvecklare arbeta med olika dokumentformat som PDF, DOCX, XLSX och mer. Genom att utnyttja dess funktioner kan vi effektivt extrahera strukturerad data som tabeller från dessa dokument, vilket gör det möjligt för oss att manipulera och analysera informationen programmatiskt.
 ## Förutsättningar

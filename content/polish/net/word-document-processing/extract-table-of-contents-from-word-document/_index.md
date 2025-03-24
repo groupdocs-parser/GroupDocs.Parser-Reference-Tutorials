@@ -6,6 +6,9 @@ description: Dowiedz się, jak programowo wyodrębnić spis treści (TOC) z doku
 weight: 13
 url: /pl/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
+
+# Wyodrębnij spis treści z dokumentu Word
+
 ## Wstęp
 W tym samouczku dowiesz się, jak używać programu GroupDocs.Parser dla platformy .NET do krok po kroku wyodrębniania spisu treści (TOC) z dokumentu programu Word. GroupDocs.Parser to potężna biblioteka, która umożliwia programową pracę z różnymi formatami dokumentów.
 ## Warunki wstępne

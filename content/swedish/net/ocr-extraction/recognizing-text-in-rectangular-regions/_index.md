@@ -6,6 +6,9 @@ description: Lär dig hur du känner igen text i specifika delar av dokument med
 weight: 14
 url: /sv/net/ocr-extraction/recognizing-text-in-rectangular-regions/
 ---
+
+# Känna igen text i rektangulära områden
+
 ## Introduktion
 I den här handledningen kommer vi att utforska hur du använder GroupDocs.Parser för .NET för att känna igen text inom specifika rektangulära områden i dokument. GroupDocs.Parser är ett kraftfullt bibliotek som låter utvecklare extrahera text, metadata och mer från olika filformat, inklusive PDF, Word, Excel och PowerPoint.
 ## Förutsättningar

@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用して Word 文書から画像�
 weight: 11
 url: /ja/net/word-document-processing/extract-images-from-word-document/
 ---
+
+# Word文書から画像を抽出する
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を使用して Word 文書から画像を抽出する方法を学習します。GroupDocs.Parser は、Word (DOCX) を含むさまざまな文書形式からテキスト、メタデータ、画像などを解析して抽出できる強力な .NET ライブラリです。
 ## 前提条件

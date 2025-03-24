@@ -6,6 +6,9 @@ description: Dowiedz się, jak pracować z układami tabel w szablonach przy uż
 weight: 14
 url: /pl/net/document-template-processing/working-with-table-layout-in-templates/
 ---
+
+# Praca z układem tabeli w szablonach
+
 ## Wstęp
 W tym samouczku omówimy, jak pracować z układem tabeli w szablonach przy użyciu programu GroupDocs.Parser dla platformy .NET. GroupDocs.Parser to potężny interfejs API do analizowania dokumentów, który umożliwia programistom wyodrębnianie tekstu i metadanych z różnych formatów dokumentów, w tym PDF, pakietu Microsoft Office i innych.
 ## Warunki wstępne

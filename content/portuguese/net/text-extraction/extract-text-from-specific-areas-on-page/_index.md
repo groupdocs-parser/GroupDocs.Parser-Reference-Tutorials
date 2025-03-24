@@ -6,6 +6,9 @@ description: Aprenda como extrair texto de áreas específicas do documento usan
 weight: 13
 url: /pt/net/text-extraction/extract-text-from-specific-areas-on-page/
 ---
+
+# Extraia texto de áreas específicas de uma página
+
 ## Introdução
 Neste tutorial, exploraremos como extrair texto de áreas específicas de uma página usando a biblioteca GroupDocs.Parser for .NET. GroupDocs.Parser simplifica a extração de texto de documentos, permitindo que os desenvolvedores direcionem regiões de interesse específicas em um documento para extração de texto. Isto pode ser particularmente útil ao lidar com documentos complexos onde é necessária a extração precisa de texto para processamento ou análise posterior.
 ## Pré-requisitos

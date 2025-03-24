@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak OCR'yi nasıl işleyeceğini
 weight: 11
 url: /tr/net/ocr-extraction/handling-ocr/
 ---
+
+# OCR'yi yönetme
+
 ## giriiş
 Bu öğreticide, Optik Karakter Tanıma (OCR) görevlerini verimli bir şekilde gerçekleştirmek için GroupDocs.Parser for .NET'in nasıl kullanılacağını keşfedeceğiz. Bu kitaplık, belgelerden metin ayıklamak için güçlü araçlar sağlar ve OCR ile görüntülerden veya taranmış belgelerden bile metin ayıklayabilirsiniz. Süreci adım adım inceleyelim.
 ## Önkoşullar

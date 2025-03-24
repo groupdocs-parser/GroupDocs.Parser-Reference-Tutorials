@@ -7,6 +7,9 @@ weight: 28
 url: /hu/net/ocr-extraction/
 ---
 
+# Optikai karakterfelismerő (OCR) kivonás
+
+
 ## Bevezetés
 
 A GroupDocs.Parser oktatóanyagaival szabadítsa fel az optikai karakterfelismerés (OCR) kinyerésének erejét .NET-ben. Ezek az oktatóanyagok átfogó útmutatást nyújtanak az OCR kezeléséhez, a szöveg felismeréséhez és a tartalom kinyeréséhez a dokumentumok meghatározott területeiről vagy téglalap alakú területeiről. Akár kezdő, akár tapasztalt fejlesztő, ezek az oktatóanyagok világos, lépésről lépésre bemutatott utasításokat és kódpéldákat kínálnak, amelyek segítenek az OCR-kivonás zökkenőmentes integrálásában .NET-alkalmazásaiba.

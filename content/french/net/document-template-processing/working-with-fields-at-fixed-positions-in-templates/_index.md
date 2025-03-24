@@ -6,6 +6,9 @@ description: Découvrez comment extraire des données de documents à l'aide de 
 weight: 11
 url: /fr/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
+
+# Travailler avec des champs à des positions fixes dans les modèles
+
 ## Introduction
 Dans ce didacticiel, nous explorerons comment travailler avec des champs à des positions fixes dans des modèles à l'aide de GroupDocs.Parser pour .NET. GroupDocs.Parser est une puissante bibliothèque d'analyse de documents qui permet aux développeurs d'extraire des données de divers formats de documents tels que PDF, Word, Excel, etc. Plus précisément, nous nous concentrerons sur la définition et l'utilisation de champs modèles pour extraire des informations ciblées en fonction de leurs positions fixes.
 ## Conditions préalables

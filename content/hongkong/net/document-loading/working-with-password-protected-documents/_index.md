@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 從受密碼保護的�
 weight: 15
 url: /zh-hant/net/document-loading/working-with-password-protected-documents/
 ---
+
+# 使用受密碼保護的文檔
+
 ## 介紹
 在文件處理領域，有效處理受密碼保護的文件至關重要。 GroupDocs.Parser for .NET 提供了強大的功能來無縫處理此類文件。本教學將指導您完成使用 GroupDocs.Parser 從受密碼保護的文件中提取文字的過程。
 ## 先決條件

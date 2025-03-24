@@ -6,6 +6,9 @@ description: Extrahera text från PDF-filer med GroupDocs.Parser i C#. Lär dig 
 weight: 16
 url: /sv/net/pdf-processing/extract-text-from-page-in-pdf-in-raw-mode/
 ---
+
+# Extrahera text från sidan i PDF i råläge
+
 ## Introduktion
 I den här handledningen kommer vi att undersöka hur du använder GroupDocs.Parser för .NET för att extrahera text från sidor i PDF-dokument med råläge. GroupDocs.Parser är ett kraftfullt verktyg som gör det möjligt för utvecklare att arbeta med olika dokumentformat programmatiskt.
 ## Förutsättningar

@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić kody kreskowe z dokumentów za pomoc
 weight: 14
 url: /pl/net/barcode-extraction/extract-barcodes-from-document-with-options/
 ---
+
+# Wyodrębnij kody kreskowe z dokumentu za pomocą opcji
+
 ## Wstęp
 W tym samouczku omówimy proces wyodrębniania kodów kreskowych z dokumentu za pomocą programu GroupDocs.Parser dla platformy .NET. GroupDocs.Parser to potężna biblioteka, która umożliwia wyodrębnianie tekstu, metadanych i kodów kreskowych z różnych formatów dokumentów, takich jak PDF, Microsoft Word, Excel i innych.
 ## Warunki wstępne

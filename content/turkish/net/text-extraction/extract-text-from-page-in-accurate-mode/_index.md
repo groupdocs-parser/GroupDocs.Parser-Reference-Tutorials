@@ -6,6 +6,9 @@ description: Bu kapsamlı eğitimde GroupDocs.Parser for .NET'i kullanarak belge
 weight: 16
 url: /tr/net/text-extraction/extract-text-from-page-in-accurate-mode/
 ---
+
+# Doğru Modda Sayfadan Metin Çıkarma
+
 ## giriiş
 Bu öğreticide, bir belgeden doğru modda metin çıkarmak için GroupDocs.Parser for .NET'in nasıl kullanılacağını keşfedeceğiz. GroupDocs.Parser, geliştiricilerin .NET uygulamalarında çeşitli belge formatlarıyla çalışmasına olanak tanıyan, hassas ve kolay bir şekilde metin çıkarmayı mümkün kılan güçlü bir API'dir. Bu kılavuzun sonunda, GroupDocs.Parser'ın belgelerden verimli bir şekilde metin ayıklama yeteneklerinden yararlanabilecek donanıma sahip olacaksınız.
 ## Önkoşullar

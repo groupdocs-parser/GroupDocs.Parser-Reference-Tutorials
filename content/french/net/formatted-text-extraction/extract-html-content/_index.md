@@ -6,6 +6,9 @@ description: Découvrez comment extraire le contenu HTML de documents à l'aide 
 weight: 12
 url: /fr/net/formatted-text-extraction/extract-html-content/
 ---
+
+# Extraire le contenu HTML
+
 ## Introduction
 Dans ce didacticiel, nous verrons comment utiliser GroupDocs.Parser pour .NET pour extraire du contenu HTML à partir de différents formats de documents. GroupDocs.Parser est une bibliothèque puissante qui permet aux développeurs d'analyser et d'extraire du texte de documents de manière transparente. Que vous travailliez avec des documents Word, des PDF ou d'autres formats, GroupDocs.Parser simplifie le processus d'extraction de contenu structuré.
 ## Conditions préalables

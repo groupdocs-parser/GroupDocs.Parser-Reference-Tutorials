@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak belgelerde anahtar kelimeye 
 weight: 21
 url: /tr/net/text-extraction/search-text-by-keyword/
 ---
+
+# Metni Anahtar Kelimeye Göre Ara
+
 ## giriiş
 Bu öğreticide, belgeler içindeki metni anahtar kelimeye göre aramak için GroupDocs.Parser for .NET'i kullanmayı ayrıntılı olarak ele alacağız. GroupDocs.Parser, geliştiricilerin PDF'ler, Microsoft Office belgeleri ve daha fazlası gibi çeşitli dosya biçimlerinden metin, meta veriler ve diğer bilgileri ayıklamasına olanak tanıyan güçlü bir kitaplıktır. Bu belgelerde belirli anahtar sözcüklerin aranması, büyük hacimli metinsel verilerle uğraşan uygulamalar için önemli olabilir.
 ## Önkoşullar

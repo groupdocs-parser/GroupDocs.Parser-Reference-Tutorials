@@ -6,6 +6,9 @@ description: Extrahujte formátovaný text ze stránek dokumentu pomocí GroupDo
 weight: 11
 url: /cs/net/formatted-text-extraction/extract-formatted-text-from-document-page/
 ---
+
+# Extrahujte formátovaný text ze stránky dokumentu
+
 ## Úvod
 V tomto tutoriálu vás provedeme procesem extrahování formátovaného textu ze stránek dokumentu pomocí GroupDocs.Parser for .NET. Tato knihovna umožňuje efektivně analyzovat a extrahovat text z různých formátů dokumentů, jako je PDF, Word, Excel a další.
 ## Předpoklady

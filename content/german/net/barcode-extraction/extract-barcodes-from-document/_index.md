@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Barcodes aus D
 weight: 10
 url: /de/net/barcode-extraction/extract-barcodes-from-document/
 ---
+
+# Barcodes aus Dokument extrahieren
+
 ## Einführung
 In diesem Tutorial erfahren Sie Schritt für Schritt, wie Sie mit GroupDocs.Parser für .NET Barcodes aus Dokumenten extrahieren. GroupDocs.Parser ist eine leistungsstarke Dokumentanalysebibliothek, die es Entwicklern ermöglicht, mit verschiedenen Dokumentformaten zu arbeiten, darunter PDF, Microsoft Word, Excel, PowerPoint und mehr.
 ## Voraussetzungen

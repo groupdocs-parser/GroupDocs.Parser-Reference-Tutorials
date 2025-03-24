@@ -6,6 +6,9 @@ description: GroupDocs.Parser を使用して .NET のテンプレートを使�
 weight: 16
 url: /ja/net/document-template-processing/parse-pages-using-templates/
 ---
+
+# テンプレートを使用してページを解析する
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を使用してドキュメントからデータを効率的に抽出する方法について詳しく説明します。GroupDocs.Parser は、PDF、DOCX、PPTX などのさまざまなドキュメント形式を解析できる強力なライブラリです。バーコードなどの特定のコンテンツを正確に抽出できるテンプレートを使用したページの解析に焦点を当てます。
 ## 前提条件

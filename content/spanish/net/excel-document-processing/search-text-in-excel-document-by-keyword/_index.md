@@ -6,6 +6,9 @@ description: Aprenda a buscar texto en documentos de Excel utilizando GroupDocs.
 weight: 16
 url: /es/net/excel-document-processing/search-text-in-excel-document-by-keyword/
 ---
+
+# Buscar texto en un documento de Excel por palabra clave
+
 ## Introducción
 GroupDocs.Parser para .NET es una poderosa biblioteca que permite a los desarrolladores trabajar de manera eficiente con tareas de análisis de documentos en sus aplicaciones .NET. En este tutorial, nos centraremos en cómo buscar texto específico dentro de un documento de Excel usando palabras clave. Siguiendo esta guía, aprenderá cómo integrar la biblioteca GroupDocs.Parser en su proyecto y realizar búsquedas de texto específicas dentro de archivos de Excel.
 ## Requisitos previos

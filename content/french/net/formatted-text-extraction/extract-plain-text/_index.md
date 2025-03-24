@@ -6,6 +6,9 @@ description: Découvrez comment extraire du texte brut à partir de documents à
 weight: 14
 url: /fr/net/formatted-text-extraction/extract-plain-text/
 ---
+
+# Extraire le texte brut
+
 ## Introduction
 Dans ce didacticiel, nous explorerons comment extraire du texte brut de différents formats de documents à l'aide de GroupDocs.Parser pour .NET. GroupDocs.Parser est une bibliothèque puissante qui permet aux développeurs de travailler avec des documents de manière transparente, en extrayant efficacement le texte et les métadonnées. Ce guide vous guidera à travers les étapes nécessaires pour intégrer et utiliser cette bibliothèque dans vos applications .NET.
 ## Conditions préalables

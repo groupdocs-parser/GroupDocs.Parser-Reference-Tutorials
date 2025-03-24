@@ -7,6 +7,9 @@ weight: 27
 url: /sv/net/barcode-extraction/
 ---
 
+# Streckkodsextraktion
+
+
 Inom dokumentbehandlingen är streckkodsextraktion en avgörande uppgift. Oavsett om det är för lagerhantering, dokumentkategorisering eller automatisering av datainmatning, är möjligheten att snabbt och exakt extrahera streckkoder från dokument ovärderlig. Med GroupDocs.Parser för .NET blir det inte bara möjligt att bemästra den här processen utan också strömlinjeformad.
 
 ## Förstå streckkodsextraktion:

@@ -6,6 +6,9 @@ description: Aprenda como extrair hiperlinks de áreas específicas de documento
 weight: 12
 url: /pt/net/hyperlink-extraction/extract-hyperlinks-from-document-page-area/
 ---
+
+# Extraia hiperlinks da área da página do documento
+
 ## Introdução
 Neste tutorial, exploraremos como extrair hiperlinks de uma área de página específica de um documento usando a biblioteca GroupDocs.Parser for .NET. GroupDocs.Parser fornece recursos poderosos para processamento de documentos, incluindo extração de hiperlinks. Orientaremos você passo a passo pelo processo, demonstrando como implementar essa funcionalidade em seus aplicativos .NET.
 ## Pré-requisitos

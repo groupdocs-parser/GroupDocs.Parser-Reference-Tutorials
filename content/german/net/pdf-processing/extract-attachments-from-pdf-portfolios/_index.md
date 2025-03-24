@@ -6,6 +6,9 @@ description: Erfahren Sie in diesem umfassenden Tutorial, wie Sie mit GroupDocs.
 weight: 10
 url: /de/net/pdf-processing/extract-attachments-from-pdf-portfolios/
 ---
+
+# Anhänge aus PDF-Portfolios extrahieren
+
 ## Einführung
 In der Welt der Dokumentenverarbeitung und -analyse kann die effiziente Handhabung von PDF-Portfolios von entscheidender Bedeutung sein. GroupDocs.Parser für .NET bietet eine leistungsstarke Lösung zum Extrahieren von Anhängen aus PDF-Portfolios, sodass Entwickler problemlos auf die Inhalte zugreifen und sie verwalten können. Dieses Tutorial führt Sie Schritt für Schritt durch den Prozess und verwendet GroupDocs.Parser zum nahtlosen Extrahieren von Anhängen.
 ## Voraussetzungen

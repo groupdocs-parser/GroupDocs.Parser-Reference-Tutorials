@@ -7,6 +7,9 @@ weight: 21
 url: /de/net/formatted-text-extraction/
 ---
 
+# Formatierte Textextraktion
+
+
 ## Einführung
 
 Entdecken Sie die Welt der formatierten Textextraktion in .NET mit den GroupDocs.Parser-Tutorials. Diese Tutorials behandeln eine Reihe von Techniken zum Extrahieren von formatiertem Text aus Dokumenten, darunter HTML, Markdown und einfacher Text. Egal, ob Sie Anfänger oder erfahrener Entwickler sind, diese Tutorials bieten wertvolle Einblicke und praktische Beispiele, um Ihre Textextraktionsfunktionen zu verbessern.

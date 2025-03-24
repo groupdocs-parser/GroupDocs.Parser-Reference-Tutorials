@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用して Word 文書内のテキ�
 weight: 18
 url: /ja/net/word-document-processing/search-text-in-word-document-by-keyword/
 ---
+
+# Word文書内のテキストをキーワードで検索
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を使用して、C# で Word 文書内の特定のテキストを検索する方法について説明します。GroupDocs.Parser は、開発者が Word 文書を含むさまざまな文書形式からテキストとメタデータを抽出できるようにする強力なライブラリです。
 ## 前提条件

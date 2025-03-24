@@ -7,6 +7,9 @@ weight: 26
 url: /vi/net/data-extraction-from-templates/
 ---
 
+# Trích xuất dữ liệu từ mẫu
+
+
 ## Giới thiệu
 
 Trong lĩnh vực phát triển .NET, GroupDocs.Parser nổi bật như một công cụ mạnh mẽ để trích xuất dữ liệu từ các định dạng tài liệu khác nhau. Cho dù bạn đang xử lý tệp PDF, tài liệu Word hay bảng tính, GroupDocs.Parser đều đơn giản hóa quy trình trích xuất, giúp bạn tiết kiệm thời gian và công sức.

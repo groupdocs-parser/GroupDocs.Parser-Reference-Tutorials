@@ -7,6 +7,9 @@ weight: 20
 url: /fr/net/text-extraction/
 ---
 
+# Extraction de texte
+
+
 ## Introduction
 
 Bienvenue dans la collection complète de didacticiels d'extraction de texte optimisés par GroupDocs.Parser pour .NET. Dans cette série de didacticiels, nous explorerons diverses méthodes et techniques pour extraire, mettre en évidence et rechercher du texte à partir de documents dans vos applications .NET.

@@ -6,6 +6,9 @@ description: Tìm hiểu cách tìm kiếm và đánh dấu văn bản trong tà
 weight: 24
 url: /vi/net/text-extraction/search-text-with-highlights/
 ---
+
+# Tìm kiếm văn bản có điểm nổi bật
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Parser cho .NET để tìm kiếm văn bản trong tài liệu và đánh dấu kết quả tìm kiếm. GroupDocs.Parser là một thư viện mạnh mẽ cho phép bạn làm việc với nhiều định dạng tài liệu khác nhau và trích xuất văn bản, siêu dữ liệu, v.v.
 ## Điều kiện tiên quyết

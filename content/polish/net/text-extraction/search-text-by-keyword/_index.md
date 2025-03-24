@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyszukiwać tekst według słów kluczowych w dok
 weight: 21
 url: /pl/net/text-extraction/search-text-by-keyword/
 ---
+
+# Wyszukaj tekst według słowa kluczowego
+
 ## Wstęp
 W tym samouczku omówimy wykorzystanie GroupDocs.Parser dla .NET do wyszukiwania tekstu według słów kluczowych w dokumentach. GroupDocs.Parser to potężna biblioteka, która umożliwia programistom wyodrębnianie tekstu, metadanych i innych informacji z różnych formatów plików, takich jak pliki PDF, dokumenty Microsoft Office i inne. Wyszukiwanie określonych słów kluczowych w tych dokumentach może być niezbędne w przypadku aplikacji obsługujących duże ilości danych tekstowych.
 ## Warunki wstępne

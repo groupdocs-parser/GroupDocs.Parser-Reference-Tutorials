@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 從 PDF 文件中擷�
 weight: 17
 url: /zh-hant/net/pdf-processing/parse-data-from-pdf-documents/
 ---
+
+# 解析 PDF 文件中的數據
+
 ## 介紹
 在本教學中，我們將探討如何使用 .NET 的 GroupDocs.Parser 函式庫有效率地從 PDF 文件中擷取資料。 GroupDocs.Parser提供了強大的功能來解析和分析PDF文件，使提取結構化資料以進行進一步處理變得更加容易。我們將深入研究使用該程式庫設定、解析和提取資料所需的基本步驟。
 ## 先決條件

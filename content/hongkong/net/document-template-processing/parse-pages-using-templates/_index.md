@@ -6,6 +6,9 @@ description: 了解如何使用 .NET 中的範本和 GroupDocs.Parser 來解析�
 weight: 16
 url: /zh-hant/net/document-template-processing/parse-pages-using-templates/
 ---
+
+# 使用模板解析頁面
+
 ## 介紹
 在本教程中，我們將深入研究使用 GroupDocs.Parser for .NET 從文件中有效提取資料。 GroupDocs.Parser 是一個功能強大的程式庫，可解析各種文件格式，例如 PDF、DOCX、PPTX 等。我們將重點放在使用模板解析頁面，這允許精確提取特定內容，例如條碼。
 ## 先決條件

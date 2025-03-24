@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar text från Excel-ark med GroupDocs.Parse
 weight: 15
 url: /sv/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
 ---
+
+# Extrahera text från Excel-ark i råläge
+
 ## Introduktion
 den här handledningen kommer vi att utforska hur man extraherar text från Excel-ark med GroupDocs.Parser för .NET i råläge. GroupDocs.Parser är ett kraftfullt API som låter utvecklare arbeta med olika dokumentformat, inklusive Excel-filer, för textextraktion och analys. Vi går igenom förutsättningarna, importerar namnrymder och bryter ner varje steg för att demonstrera processen att extrahera text från Excel-ark.
 ## Förutsättningar

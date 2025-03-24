@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 문서에서 텍스트를 
 weight: 13
 url: /ko/net/document-loading/load-document-from-url/
 ---
+
+# URL에서 문서 로드
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser를 활용하여 문서에서 텍스트를 추출하는 방법을 살펴보겠습니다. GroupDocs.Parser는 PDF, Word, Excel 등과 같은 다양한 문서 형식에서 텍스트, 메타데이터 및 기타 정보를 추출하기 위한 강력한 도구입니다. URL에서 문서를 로드하고 텍스트 내용을 추출하는 과정을 단계별로 다루겠습니다.
 ## 전제 조건

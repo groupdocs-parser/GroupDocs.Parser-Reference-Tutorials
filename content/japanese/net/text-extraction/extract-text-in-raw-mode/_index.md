@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用してドキュメントから�
 weight: 19
 url: /ja/net/text-extraction/extract-text-in-raw-mode/
 ---
+
+# 生モードでテキストを抽出
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を使用して、さまざまなドキュメント形式から効率的にテキストを抽出する方法について説明します。GroupDocs.Parser は、開発者が PDF、Word、Excel、PowerPoint などのドキュメントからテキストとメタデータを抽出し、.NET アプリケーション内でのテキスト抽出タスクを簡素化できるようにする強力なライブラリです。
 ## 前提条件

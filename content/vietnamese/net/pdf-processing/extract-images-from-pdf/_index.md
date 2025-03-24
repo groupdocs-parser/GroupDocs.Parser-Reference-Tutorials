@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất hình ảnh từ tài liệu PDF b�
 weight: 12
 url: /vi/net/pdf-processing/extract-images-from-pdf/
 ---
+
+# Trích xuất hình ảnh từ PDF
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Parser cho .NET để trích xuất hình ảnh từ tài liệu PDF. GroupDocs.Parser là một thư viện mạnh mẽ cho phép các nhà phát triển làm việc với nhiều định dạng tài liệu khác nhau, bao gồm PDF, DOCX, PPTX, v.v., trong môi trường .NET. Bằng cách làm theo các bước này, bạn sẽ có thể trích xuất hình ảnh từ tệp PDF một cách dễ dàng.
 ## Điều kiện tiên quyết

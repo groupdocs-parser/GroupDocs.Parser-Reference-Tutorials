@@ -6,6 +6,9 @@ description: Tìm hiểu cách xử lý các tài nguyên bên ngoài trong .NET
 weight: 10
 url: /vi/net/document-loading/handling-loading-of-external-resources/
 ---
+
+# Xử lý việc tải tài nguyên bên ngoài
+
 ## Giới thiệu
 Trong thế giới phát triển .NET, việc phân tích cú pháp và trích xuất nội dung từ nhiều định dạng tệp khác nhau là một yêu cầu chung. GroupDocs.Parser cho .NET cung cấp giải pháp mạnh mẽ để xử lý các tác vụ phân tích cú pháp tài liệu một cách hiệu quả. Hướng dẫn này sẽ hướng dẫn bạn cách sử dụng GroupDocs.Parser để làm việc với các tài nguyên bên ngoài, chẳng hạn như hình ảnh, trong các ứng dụng .NET của bạn. Chúng tôi sẽ đề cập đến các điều kiện tiên quyết cần thiết, nhập vùng tên và chia nhỏ các ví dụ thành hướng dẫn chi tiết từng bước.
 ## Điều kiện tiên quyết

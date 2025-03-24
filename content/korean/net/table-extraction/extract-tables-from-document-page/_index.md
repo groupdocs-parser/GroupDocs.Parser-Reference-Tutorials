@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 프로그래밍 방식으�
 weight: 11
 url: /ko/net/table-extraction/extract-tables-from-document-page/
 ---
+
+# 문서 페이지에서 테이블 추출
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser를 사용하여 문서 페이지에서 테이블을 추출하는 방법을 살펴보겠습니다. GroupDocs.Parser는 개발자가 PDF, DOCX, XLSX 등과 같은 다양한 문서 형식으로 작업할 수 있는 강력한 라이브러리입니다. 해당 기능을 활용하면 이러한 문서에서 테이블과 같은 구조화된 데이터를 효율적으로 추출할 수 있으며 이를 통해 정보를 프로그래밍 방식으로 조작하고 분석할 수 있습니다.
 ## 전제 조건

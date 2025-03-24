@@ -6,6 +6,9 @@ description: Aprenda a buscar texto por palabra clave en documentos utilizando G
 weight: 21
 url: /es/net/text-extraction/search-text-by-keyword/
 ---
+
+# Buscar texto por palabra clave
+
 ## Introducción
 En este tutorial, profundizaremos en el uso de GroupDocs.Parser para .NET para buscar texto por palabra clave dentro de documentos. GroupDocs.Parser es una potente biblioteca que permite a los desarrolladores extraer texto, metadatos y otra información de varios formatos de archivos, como PDF, documentos de Microsoft Office y más. La búsqueda de palabras clave específicas dentro de estos documentos puede ser esencial para aplicaciones que manejan grandes volúmenes de datos textuales.
 ## Requisitos previos

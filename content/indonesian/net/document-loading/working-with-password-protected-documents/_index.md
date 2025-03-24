@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak teks dari dokumen yang dilindungi kata sa
 weight: 15
 url: /id/net/document-loading/working-with-password-protected-documents/
 ---
+
+# Bekerja dengan Dokumen yang Dilindungi Kata Sandi
+
 ## Perkenalan
 Dalam dunia pemrosesan dokumen, menangani file yang dilindungi kata sandi secara efisien sangatlah penting. GroupDocs.Parser untuk .NET menawarkan kemampuan yang kuat untuk bekerja dengan dokumen tersebut secara lancar. Tutorial ini akan memandu Anda melalui proses mengekstraksi teks dari dokumen yang dilindungi kata sandi menggunakan GroupDocs.Parser.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 Word 문서에서 텍스�
 weight: 15
 url: /ko/net/word-document-processing/extract-text-from-word-document/
 ---
+
+# Word 문서에서 텍스트 추출
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser를 사용하여 Word 문서에서 텍스트를 추출하는 방법을 살펴보겠습니다. GroupDocs.Parser는 개발자가 Word 문서, PDF 등을 포함한 다양한 문서 형식으로 작업할 수 있는 강력한 .NET 라이브러리입니다. 이 가이드가 끝나면 간단한 C# 코드를 사용하여 Word 파일에서 텍스트를 효율적으로 추출할 수 있게 됩니다.
 ## 전제 조건

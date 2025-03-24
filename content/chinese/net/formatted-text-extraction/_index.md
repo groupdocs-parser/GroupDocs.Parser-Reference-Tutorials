@@ -7,6 +7,9 @@ weight: 21
 url: /zh/net/formatted-text-extraction/
 ---
 
+# 格式化文本提取
+
+
 ## 介绍
 
 使用 GroupDocs.Parser 教程探索 .NET 中的格式化文本提取世界。这些教程涵盖了从文档中提取格式化文本的一系列技术，包括 HTML、Markdown 和纯文本。无论您是初学者还是经验丰富的开发人员，这些教程都提供了宝贵的见解和实际示例，以增强您的文本提取能力。

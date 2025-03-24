@@ -6,6 +6,9 @@ description: 이 포괄적인 튜토리얼에서 .NET용 GroupDocs.Parser를 사
 weight: 10
 url: /ko/net/pdf-processing/extract-attachments-from-pdf-portfolios/
 ---
+
+# PDF 포트폴리오에서 첨부 파일 추출
+
 ## 소개
 문서 처리 및 분석 분야에서는 PDF 포트폴리오를 효율적으로 처리하는 것이 중요할 수 있습니다. .NET용 GroupDocs.Parser는 PDF 포트폴리오에서 첨부 파일을 추출하기 위한 강력한 솔루션을 제공하므로 개발자는 콘텐츠에 쉽게 액세스하고 관리할 수 있습니다. 이 튜토리얼에서는 GroupDocs.Parser를 사용하여 첨부 파일을 원활하게 추출하는 과정을 단계별로 안내합니다.
 ## 전제 조건

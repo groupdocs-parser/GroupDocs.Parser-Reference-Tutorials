@@ -6,6 +6,9 @@ description: Estrai facilmente collegamenti ipertestuali da documenti in .NET co
 weight: 25
 url: /it/net/hyperlink-extraction/
 ---
+
+# Estrazione dei collegamenti ipertestuali
+
 ## introduzione
 
 Immergiti nel mondo dell'estrazione dei collegamenti ipertestuali in .NET con i tutorial di GroupDocs.Parser. Questi tutorial offrono una guida completa sull'estrazione dei collegamenti ipertestuali dai documenti, sia dall'intero documento, da pagine specifiche o da aree designate. Che tu sia un principiante o uno sviluppatore esperto, questi tutorial forniscono chiare istruzioni dettagliate ed esempi di codice per aiutarti a integrare perfettamente l'estrazione dei collegamenti ipertestuali nelle tue applicazioni C#.

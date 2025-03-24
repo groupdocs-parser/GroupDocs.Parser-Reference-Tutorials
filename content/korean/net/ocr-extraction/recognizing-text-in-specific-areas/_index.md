@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 OCR 기능이 있는 문�
 weight: 13
 url: /ko/net/ocr-extraction/recognizing-text-in-specific-areas/
 ---
+
+# 특정 영역의 텍스트 인식
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser를 사용하여 문서 내의 특정 영역에서 텍스트를 인식하고 추출하는 방법을 살펴보겠습니다. GroupDocs.Parser는 개발자가 PDF, Word, Excel, PowerPoint 등을 포함한 다양한 문서 형식으로 작업할 수 있는 강력한 문서 구문 분석 라이브러리입니다. 특히 GroupDocs.Parser의 OCR(광학 문자 인식) 기능을 활용하여 문서 내의 정의된 영역에서 텍스트를 추출하는 데 중점을 둘 것입니다.
 ## 전제 조건

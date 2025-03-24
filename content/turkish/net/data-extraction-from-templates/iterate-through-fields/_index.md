@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak belgelerden yapılandırılm
 weight: 11
 url: /tr/net/data-extraction-from-templates/iterate-through-fields/
 ---
+
+# Alanlar Arasında Yineleme
+
 ## giriiş
 GroupDocs.Parser for .NET, geliştiricilerin PDF, Microsoft Word, Excel ve PowerPoint gibi çeşitli belge formatlarından veri çıkarmasına olanak tanıyan güçlü bir kitaplıktır. Bu eğitim, belge alanları arasında yineleme yapmak ve şablonları kullanarak belirli verileri çıkarmak için GroupDocs.Parser'ı kullanma sürecinde size rehberlik edecektir. Bu eğitimin sonunda, .NET uygulamalarınızdaki belgelerden yapılandırılmış verileri verimli bir şekilde çıkarabileceksiniz.
 ## Önkoşullar

@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębniać obrazy z dokumentów za pomocą Gro
 weight: 12
 url: /pl/net/image-extraction/extract-images-from-document-page/
 ---
+
+# Wyodrębnij obrazy ze strony dokumentu
+
 ## Wstęp
 W tym samouczku dowiemy się, jak wyodrębnić obrazy ze strony dokumentu za pomocą GroupDocs.Parser dla .NET. GroupDocs.Parser to potężna biblioteka, która umożliwia wyodrębnianie tekstu, metadanych, obrazów i innych danych z różnych formatów dokumentów, takich jak PDF, Microsoft Word, Excel, PowerPoint i inne. Przeprowadzimy przez niezbędne kroki, aby wyodrębnić obrazy ze strony dokumentu za pomocą tej biblioteki.
 ## Warunki wstępne

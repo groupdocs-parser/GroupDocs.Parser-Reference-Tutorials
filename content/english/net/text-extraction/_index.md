@@ -7,6 +7,9 @@ weight: 20
 url: /net/text-extraction/
 ---
 
+# Text Extraction
+
+
 ## Introduction
 
 Welcome to the comprehensive collection of text extraction tutorials powered by GroupDocs.Parser for .NET. In this series of tutorials, we'll explore various methods and techniques to extract, highlight, and search text from documents in your .NET applications.

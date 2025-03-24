@@ -6,6 +6,9 @@ description: Scopri come riconoscere il testo in aree specifiche dei documenti u
 weight: 14
 url: /it/net/ocr-extraction/recognizing-text-in-rectangular-regions/
 ---
+
+# Riconoscimento del testo nelle regioni rettangolari
+
 ## introduzione
 In questo tutorial esploreremo come utilizzare GroupDocs.Parser per .NET per riconoscere il testo all'interno di specifiche aree rettangolari di documenti. GroupDocs.Parser è una potente libreria che consente agli sviluppatori di estrarre testo, metadati e altro da vari formati di file, inclusi PDF, Word, Excel e PowerPoint.
 ## Prerequisiti

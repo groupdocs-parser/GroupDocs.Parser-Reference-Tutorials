@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar och markerar text från dokument med Gro
 weight: 11
 url: /sv/net/text-extraction/extract-and-highlight-text/
 ---
+
+# Extrahera och markera text
+
 ## Introduktion
 I den här handledningen kommer vi att utforska hur du använder GroupDocs.Parser för .NET för att extrahera och markera text från dokument. GroupDocs.Parser är ett kraftfullt bibliotek som låter dig analysera olika dokumentformat och utföra avancerade textextraktionsoperationer.
 ## Förutsättningar

@@ -7,6 +7,9 @@ weight: 26
 url: /cs/net/data-extraction-from-templates/
 ---
 
+# Extrakce dat ze šablon
+
+
 ## Úvod
 
 oblasti vývoje .NET GroupDocs.Parser vyniká jako výkonný nástroj pro extrakci dat z různých formátů dokumentů. Ať už pracujete s PDF, Word dokumenty nebo tabulkami, GroupDocs.Parser zjednodušuje proces extrakce a šetří vám čas a námahu.

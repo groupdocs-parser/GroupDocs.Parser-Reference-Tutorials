@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan kezelheti a külső erőforrásokat a .NET-ben 
 weight: 10
 url: /hu/net/document-loading/handling-loading-of-external-resources/
 ---
+
+# Külső erőforrások betöltésének kezelése
+
 ## Bevezetés
 A .NET fejlesztés világában általános követelmény a tartalom elemzése és kinyerése a különböző fájlformátumokból. A GroupDocs.Parser for .NET robusztus megoldást kínál a dokumentumelemzési feladatok hatékony kezelésére. Ez az oktatóanyag végigvezeti Önt a GroupDocs.Parser használatával, amellyel külső erőforrásokkal, például képekkel dolgozhat a .NET-alkalmazásokban. Lefedjük a szükséges előfeltételeket, importálunk névtereket, és a példákat részletes, lépésről lépésre lebontjuk.
 ## Előfeltételek

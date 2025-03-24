@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用してドキュメントから�
 weight: 13
 url: /ja/net/document-loading/load-document-from-url/
 ---
+
+# URLからドキュメントを読み込む
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を使用してドキュメントからテキストを抽出する方法について説明します。GroupDocs.Parser は、PDF、Word、Excel などのさまざまなドキュメント形式からテキスト、メタデータ、およびその他の情報を抽出するための強力なツールです。URL からドキュメントを読み込み、そのテキスト コンテンツを抽出するプロセスを段階的に説明します。
 ## 前提条件

@@ -6,6 +6,9 @@ description: Dowiedz się, jak używać GroupDocs.Parser dla .NET do wyodrębnia
 weight: 16
 url: /pl/net/word-document-processing/extract-text-from-word-document-as-html/
 ---
+
+# Wyodrębnij tekst z dokumentu Word jako HTML
+
 ## Wstęp
 GroupDocs.Parser dla .NET to potężna biblioteka do analizowania dokumentów, która umożliwia programistom bezproblemowe wyodrębnianie tekstu i metadanych z różnych formatów plików. W tym samouczku skupimy się na wykorzystaniu narzędzia GroupDocs.Parser do wyodrębniania tekstu z dokumentów programu Word i zapisywania go w formacie HTML. Proces ten jest niezbędny w przypadku zadań takich jak analiza treści, indeksowanie lub konwertowanie dokumentów do formatów przyjaznych dla Internetu. Pod koniec tego przewodnika będziesz już w pełni świadomy, jak efektywnie używać GroupDocs.Parser w aplikacjach .NET.
 ## Warunki wstępne

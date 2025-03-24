@@ -6,6 +6,9 @@ description: Ekstrak teks dari berbagai format dokumen secara efisien dengan Gro
 weight: 12
 url: /id/net/ocr-extraction/recognizing-text/
 ---
+
+# Mengenali Teks
+
 ## Perkenalan
 Dalam bidang pengembangan .NET, ekstraksi teks yang efisien dari berbagai format dokumen adalah yang terpenting. GroupDocs.Parser untuk .NET memberikan solusi tangguh untuk mengekstrak teks dengan lancar. Dalam tutorial ini, kita akan mempelajari penggunaan GroupDocs.Parser langkah demi langkah untuk mengenali dan mengekstrak teks dari dokumen.
 ## Prasyarat

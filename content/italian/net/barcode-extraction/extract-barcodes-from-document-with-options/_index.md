@@ -6,6 +6,9 @@ description: Scopri come estrarre i codici a barre dai documenti utilizzando Gro
 weight: 14
 url: /it/net/barcode-extraction/extract-barcodes-from-document-with-options/
 ---
+
+# Estrai codici a barre dal documento con le opzioni
+
 ## introduzione
 In questo tutorial, esamineremo il processo di estrazione dei codici a barre da un documento utilizzando GroupDocs.Parser per .NET. GroupDocs.Parser è una potente libreria che ti consente di estrarre testo, metadati e codici a barre da vari formati di documenti come PDF, Microsoft Word, Excel e altri.
 ## Prerequisiti

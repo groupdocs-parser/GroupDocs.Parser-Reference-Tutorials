@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyszukiwać tekst w dokumentach programu Word prz
 weight: 19
 url: /pl/net/word-document-processing/search-text-in-word-document-by-regular-expression/
 ---
+
+# Wyszukaj tekst w dokumencie programu Word za pomocą wyrażeń regularnych
+
 ## Wstęp
 W tym samouczku pokażemy, jak wykorzystać GroupDocs.Parser dla .NET do wyodrębnienia tekstu z dokumentów programu Word przy użyciu wyrażeń regularnych. Ten przewodnik krok po kroku pomoże Ci skutecznie wdrożyć tę funkcję.
 ## Warunki wstępne

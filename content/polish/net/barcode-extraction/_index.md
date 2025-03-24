@@ -7,6 +7,9 @@ weight: 27
 url: /pl/net/barcode-extraction/
 ---
 
+# Ekstrakcja kodów kreskowych
+
+
 W dziedzinie przetwarzania dokumentów ekstrakcja kodów kreskowych jest zadaniem kluczowym. Niezależnie od tego, czy chodzi o zarządzanie zapasami, kategoryzację dokumentów czy automatyzację wprowadzania danych, możliwość szybkiego i dokładnego wyodrębniania kodów kreskowych z dokumentów jest nieoceniona. Dzięki GroupDocs.Parser dla .NET opanowanie tego procesu staje się nie tylko możliwe, ale także usprawnione.
 
 ## Zrozumienie ekstrakcji kodów kreskowych:

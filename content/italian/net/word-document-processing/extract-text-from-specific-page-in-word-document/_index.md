@@ -6,6 +6,9 @@ description: Scopri come estrarre testo da pagine specifiche nei documenti Word 
 weight: 17
 url: /it/net/word-document-processing/extract-text-from-specific-page-in-word-document/
 ---
+
+# Estrai testo da una pagina specifica nel documento di Word
+
 ## introduzione
 Nell'ambito dello sviluppo .NET, l'estrazione del testo dai documenti è un requisito comune per varie applicazioni. GroupDocs.Parser per .NET fornisce una soluzione affidabile per analizzare ed estrarre testo da diversi formati di documenti senza problemi. Questo tutorial si concentra sull'utilizzo di GroupDocs.Parser per estrarre testo da una pagina specifica all'interno di un documento di Word. Seguendo questa guida imparerai i passaggi necessari per integrare efficacemente questa funzionalità nei tuoi progetti .NET.
 ## Prerequisiti

@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用してドキュメントから�
 weight: 14
 url: /ja/net/formatted-text-extraction/extract-plain-text/
 ---
+
+# プレーンテキストの抽出
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を使用してさまざまなドキュメント形式からプレーン テキストを抽出する方法について説明します。GroupDocs.Parser は、開発者がドキュメントをシームレスに操作し、テキストとメタデータを効率的に抽出できるようにする強力なライブラリです。このガイドでは、このライブラリを .NET アプリケーションに統合して利用するために必要な手順について説明します。
 ## 前提条件

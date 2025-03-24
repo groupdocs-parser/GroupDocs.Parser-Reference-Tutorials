@@ -6,6 +6,9 @@ description: Leer hoe u tekst uit documenten kunt extraheren en markeren met Gro
 weight: 11
 url: /nl/net/text-extraction/extract-and-highlight-text/
 ---
+
+# Tekst extraheren en markeren
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u GroupDocs.Parser voor .NET kunt gebruiken om tekst uit documenten te extraheren en te markeren. GroupDocs.Parser is een krachtige bibliotheek waarmee u verschillende documentformaten kunt ontleden en geavanceerde tekstextractiebewerkingen kunt uitvoeren.
 ## Vereisten

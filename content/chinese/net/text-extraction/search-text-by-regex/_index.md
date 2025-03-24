@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 在文档中使用正�
 weight: 23
 url: /zh/net/text-extraction/search-text-by-regex/
 ---
+
+# 通过正则表达式 (Regex) 搜索文本
+
 ## 介绍
 在本教程中，我们将深入研究如何使用 GroupDocs.Parser for .NET 在文档中通过正则表达式 (Regex) 搜索文本。GroupDocs.Parser 是一个功能强大的库，允许开发人员从各种文件格式（如 PDF、DOCX、XLSX 等）中提取文本和元数据。使用正则表达式搜索文本对于高效地在文档中查找模式或特定内容特别有用。
 ## 先决条件

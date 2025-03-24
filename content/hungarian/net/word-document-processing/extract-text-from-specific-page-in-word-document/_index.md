@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthat ki szöveget a Word dokumentumok adott 
 weight: 17
 url: /hu/net/word-document-processing/extract-text-from-specific-page-in-word-document/
 ---
+
+# Szöveg kibontása egy adott oldalról a Word-dokumentumban
+
 ## Bevezetés
 .NET fejlesztés területén a szövegek dokumentumokból való kinyerése általános követelmény a különféle alkalmazásoknál. A GroupDocs.Parser for .NET robusztus megoldást kínál a különböző dokumentumformátumok szövegének zökkenőmentes elemzésére és kibontására. Ez az oktatóanyag a GroupDocs.Parser kihasználására összpontosít, hogy szöveget vonjon ki egy Word-dokumentum adott oldaláról. Ha követi ezt az útmutatót, megtudhatja, milyen lépések szükségesek ahhoz, hogy ezt a funkciót hatékonyan integrálhassák .NET-projektjeibe.
 ## Előfeltételek

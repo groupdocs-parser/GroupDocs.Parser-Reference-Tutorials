@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębniać i wyróżniać tekst z dokumentów 
 weight: 11
 url: /pl/net/text-extraction/extract-and-highlight-text/
 ---
+
+# Wyodrębnij i wyróżnij tekst
+
 ## Wstęp
 W tym samouczku omówimy, jak używać programu GroupDocs.Parser dla platformy .NET do wyodrębniania i wyróżniania tekstu z dokumentów. GroupDocs.Parser to potężna biblioteka, która umożliwia analizowanie różnych formatów dokumentów i wykonywanie zaawansowanych operacji wyodrębniania tekstu.
 ## Warunki wstępne

@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Parser 的正则表达式搜索 PDF 文档中的�
 weight: 19
 url: /zh/net/pdf-processing/search-text-in-pdf-by-regular-expression/
 ---
+
+# 通过正则表达式搜索PDF中的文本
+
 ## 介绍
 在本教程中，我们将探讨如何使用 GroupDocs.Parser for .NET 高效地从 PDF 文档中提取文本。GroupDocs.Parser 是一个功能强大的库，允许开发人员从各种文档格式（包括 PDF）中解析和提取文本、元数据和结构化数据。无论您是在 .NET 应用程序中进行数据提取、内容分析还是搜索功能，GroupDocs.Parser 都提供了一套全面的工具来无缝处理这些任务。
 ## 先决条件

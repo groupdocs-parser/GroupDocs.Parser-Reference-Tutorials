@@ -6,6 +6,9 @@ description: Aprenda como extrair dados de documentos com eficiência usando Gro
 weight: 12
 url: /pt/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
 ---
+
+# Trabalhando com campos em posições vinculadas em modelos
+
 ## Introdução
 GroupDocs.Parser for .NET é uma biblioteca robusta projetada para facilitar tarefas de análise de documentos e extração de dados. Ele suporta uma ampla variedade de formatos de arquivo, incluindo PDF, DOCX, XLSX e muito mais. Um de seus principais recursos é a extração de dados baseada em modelos, que permite definir campos em um documento e extrair dados específicos com base nesses modelos predefinidos.
 ## Pré-requisitos

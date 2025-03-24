@@ -6,6 +6,9 @@ description: Découvrez comment extraire des images de documents Excel à l'aide
 weight: 10
 url: /fr/net/excel-document-processing/extract-images-from-excel-document/
 ---
+
+# Extraire des images d'un document Excel
+
 ## Introduction
 Dans ce didacticiel, vous apprendrez à extraire des images d'un document Excel à l'aide de GroupDocs.Parser pour .NET. GroupDocs.Parser est une bibliothèque puissante qui vous permet d'analyser et d'extraire du texte, des métadonnées et des images de divers formats de documents, y compris des fichiers Excel.
 ## Conditions préalables

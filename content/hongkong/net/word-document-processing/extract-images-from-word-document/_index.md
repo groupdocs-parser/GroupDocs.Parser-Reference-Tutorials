@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 從 Word 文件中擷�
 weight: 11
 url: /zh-hant/net/word-document-processing/extract-images-from-word-document/
 ---
+
+# 從 Word 文件中提取圖像
+
 ## 介紹
 在本教學中，您將學習如何使用 GroupDocs.Parser for .NET 從 Word 文件中提取圖像。 GroupDocs.Parser 是一個功能強大的 .NET 程式庫，可讓您從包括 Word (DOCX) 在內的各種文件格式中解析和提取文字、元資料、圖像等。
 ## 先決條件

@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar vanlig text från dokument med GroupDocs
 weight: 14
 url: /sv/net/formatted-text-extraction/extract-plain-text/
 ---
+
+# Extrahera vanlig text
+
 ## Introduktion
 den här handledningen kommer vi att utforska hur man extraherar vanlig text från olika dokumentformat med GroupDocs.Parser för .NET. GroupDocs.Parser är ett kraftfullt bibliotek som låter utvecklare arbeta med dokument sömlöst och extrahera text och metadata effektivt. Den här guiden leder dig genom de nödvändiga stegen för att integrera och använda det här biblioteket i dina .NET-applikationer.
 ## Förutsättningar

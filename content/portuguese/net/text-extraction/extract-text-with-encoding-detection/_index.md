@@ -6,6 +6,9 @@ description: Extraia texto de documentos com detecção de codificação usando 
 weight: 10
 url: /pt/net/text-extraction/extract-text-with-encoding-detection/
 ---
+
+# Extraia texto com detecção de codificação
+
 ## Introdução
 GroupDocs.Parser for .NET é uma biblioteca poderosa que permite aos desenvolvedores extrair texto, metadados e outras informações de vários formatos de documentos em seus aplicativos .NET. Este tutorial irá guiá-lo através do processo de uso do GroupDocs.Parser para extrair texto de documentos enquanto detecta a codificação. Seguindo essas etapas, você poderá analisar e trabalhar com eficiência com diferentes tipos de documentos em seus projetos .NET.
 ## Pré-requisitos

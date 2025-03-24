@@ -6,6 +6,9 @@ description: Naučte se vyhledávat a zvýrazňovat text v dokumentech pomocí G
 weight: 24
 url: /cs/net/text-extraction/search-text-with-highlights/
 ---
+
+# Hledat text se zvýrazněním
+
 ## Úvod
 tomto tutoriálu prozkoumáme, jak používat GroupDocs.Parser pro .NET k vyhledávání textu v dokumentu a zvýraznění výsledků hledání. GroupDocs.Parser je výkonná knihovna, která vám umožní pracovat s různými formáty dokumentů a extrahovat text, metadata a další.
 ## Předpoklady

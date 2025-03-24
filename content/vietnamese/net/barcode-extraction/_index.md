@@ -7,6 +7,9 @@ weight: 27
 url: /vi/net/barcode-extraction/
 ---
 
+# Khai thác mã vạch
+
+
 Trong lĩnh vực xử lý tài liệu, trích xuất mã vạch là một nhiệm vụ quan trọng. Cho dù đó là để quản lý hàng tồn kho, phân loại tài liệu hay tự động nhập dữ liệu, khả năng trích xuất mã vạch từ tài liệu một cách nhanh chóng và chính xác là vô giá. Với GroupDocs.Parser dành cho .NET, việc thành thạo quy trình này không chỉ có thể đạt được mà còn được sắp xếp hợp lý.
 
 ## Hiểu về trích xuất mã vạch:

@@ -6,6 +6,9 @@ description: Pelajari cara mencari teks tertentu dalam dokumen PDF menggunakan G
 weight: 18
 url: /id/net/pdf-processing/search-text-in-pdf-by-keyword/
 ---
+
+# Cari Teks dalam PDF berdasarkan Kata Kunci
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara memanfaatkan GroupDocs.Parser untuk .NET untuk mencari teks tertentu dalam dokumen PDF menggunakan kata kunci. GroupDocs.Parser adalah API penguraian dokumen canggih yang memungkinkan pengembang mengekstrak teks, metadata, gambar, dan lainnya dari berbagai format dokumen di aplikasi .NET. Mencari teks dalam PDF adalah persyaratan umum dalam aplikasi pemrosesan dokumen, dan GroupDocs.Parser menyederhanakan tugas ini dengan API intuitifnya.
 ## Prasyarat

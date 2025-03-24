@@ -6,6 +6,9 @@ description: Leer hoe u metagegevens uit Word-documenten kunt extraheren met Gro
 weight: 12
 url: /nl/net/word-document-processing/extract-metadata-from-word-document/
 ---
+
+# Extraheer metadata uit een Word-document
+
 ## Invoering
 In het huidige digitale tijdperk is het efficiënt parseren en extraheren van gegevens uit documenten cruciaal voor verschillende toepassingen, van inhoudsanalyse tot het ophalen van gegevens. GroupDocs.Parser voor .NET is een krachtige bibliotheek waarmee ontwikkelaars eenvoudig metagegevens en tekst uit documenten kunnen extraheren. In deze zelfstudie onderzoeken we stap voor stap hoe u GroupDocs.Parser voor .NET kunt gebruiken om metagegevens uit Word-documenten te extraheren.
 ## Vereisten

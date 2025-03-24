@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 從 Excel 文件中擷
 weight: 10
 url: /zh-hant/net/excel-document-processing/extract-images-from-excel-document/
 ---
+
+# 從 Excel 文件中擷取影像
+
 ## 介紹
 在本教學中，您將學習如何使用 GroupDocs.Parser for .NET 從 Excel 文件中擷取影像。 GroupDocs.Parser 是一個功能強大的程式庫，可讓您從各種文件格式（包括 Excel 文件）解析和提取文字、元資料和圖像。
 ## 先決條件

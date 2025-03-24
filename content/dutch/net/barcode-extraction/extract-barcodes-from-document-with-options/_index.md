@@ -6,6 +6,9 @@ description: Leer hoe u streepjescodes uit documenten kunt extraheren met GroupD
 weight: 14
 url: /nl/net/barcode-extraction/extract-barcodes-from-document-with-options/
 ---
+
+# Extraheer streepjescodes uit document met opties
+
 ## Invoering
 In deze zelfstudie doorlopen we het proces van het extraheren van streepjescodes uit een document met behulp van GroupDocs.Parser voor .NET. GroupDocs.Parser is een krachtige bibliotheek waarmee u tekst, metagegevens en streepjescodes kunt extraheren uit verschillende documentformaten zoals PDF, Microsoft Word, Excel en meer.
 ## Vereisten

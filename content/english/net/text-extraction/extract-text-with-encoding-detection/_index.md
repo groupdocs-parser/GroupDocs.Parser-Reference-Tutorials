@@ -6,6 +6,9 @@ description: Extract text from documents with encoding detection using GroupDocs
 weight: 10
 url: /net/text-extraction/extract-text-with-encoding-detection/
 ---
+
+# Extract Text with Encoding Detection
+
 ## Introduction
 GroupDocs.Parser for .NET is a powerful library that enables developers to extract text, metadata, and other information from various document formats in their .NET applications. This tutorial will guide you through the process of using GroupDocs.Parser to extract text from documents while detecting the encoding. By following these steps, you'll be able to efficiently parse and work with different document types within your .NET projects.
 ## Prerequisites

@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak belirli belge alanlarından 
 weight: 12
 url: /tr/net/hyperlink-extraction/extract-hyperlinks-from-document-page-area/
 ---
+
+# Belge Sayfası Alanından Köprüleri Çıkarma
+
 ## giriiş
 Bu öğreticide, GroupDocs.Parser for .NET kitaplığını kullanarak bir belgenin belirli sayfa alanından köprülerin nasıl çıkarılacağını inceleyeceğiz. GroupDocs.Parser, köprü çıkarma da dahil olmak üzere belge işleme için güçlü özellikler sağlar. Bu işlevselliği .NET uygulamalarınızda nasıl uygulayacağınızı göstererek süreç boyunca size adım adım rehberlik edeceğiz.
 ## Önkoşullar

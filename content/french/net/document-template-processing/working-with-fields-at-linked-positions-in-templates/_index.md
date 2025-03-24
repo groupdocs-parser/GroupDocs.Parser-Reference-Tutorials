@@ -6,6 +6,9 @@ description: Découvrez comment extraire efficacement des données de documents 
 weight: 12
 url: /fr/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
 ---
+
+# Travailler avec des champs à des positions liées dans des modèles
+
 ## Introduction
 GroupDocs.Parser pour .NET est une bibliothèque robuste conçue pour faciliter les tâches d'analyse de documents et d'extraction de données. Il prend en charge un large éventail de formats de fichiers, notamment PDF, DOCX, XLSX, etc. L'une de ses fonctionnalités clés est l'extraction de données basée sur des modèles, qui vous permet de définir des champs dans un document et d'extraire des données spécifiques en fonction de ces modèles prédéfinis.
 ## Conditions préalables

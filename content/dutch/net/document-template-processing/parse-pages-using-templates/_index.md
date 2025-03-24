@@ -6,6 +6,9 @@ description: Leer hoe u documentpagina's kunt parseren met behulp van sjablonen 
 weight: 16
 url: /nl/net/document-template-processing/parse-pages-using-templates/
 ---
+
+# Parseer pagina's met behulp van sjablonen
+
 ## Invoering
 In deze zelfstudie gaan we dieper in op het gebruik van GroupDocs.Parser voor .NET om gegevens efficiënt uit documenten te extraheren. GroupDocs.Parser is een krachtige bibliotheek waarmee verschillende documentformaten kunnen worden geparseerd, zoals PDF, DOCX, PPTX en meer. We zullen ons concentreren op het parseren van pagina's met behulp van sjablonen, waardoor nauwkeurige extractie van specifieke inhoud, zoals streepjescodes, mogelijk is.
 ## Vereisten

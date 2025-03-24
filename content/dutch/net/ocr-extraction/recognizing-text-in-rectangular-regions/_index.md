@@ -6,6 +6,9 @@ description: Leer hoe u tekst in specifieke delen van documenten kunt herkennen 
 weight: 14
 url: /nl/net/ocr-extraction/recognizing-text-in-rectangular-regions/
 ---
+
+# Herkennen van tekst in rechthoekige gebieden
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u GroupDocs.Parser voor .NET kunt gebruiken om tekst in specifieke rechthoekige gebieden van documenten te herkennen. GroupDocs.Parser is een krachtige bibliotheek waarmee ontwikkelaars tekst, metagegevens en meer kunnen extraheren uit verschillende bestandsindelingen, waaronder PDF, Word, Excel en PowerPoint.
 ## Vereisten

@@ -6,6 +6,9 @@ description: Découvrez comment extraire du texte de feuilles Excel à l'aide de
 weight: 15
 url: /fr/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
 ---
+
+# Extraire le texte d'une feuille Excel en mode brut
+
 ## Introduction
 Dans ce didacticiel, nous allons explorer comment extraire du texte de feuilles Excel à l'aide de GroupDocs.Parser pour .NET en mode brut. GroupDocs.Parser est une API puissante qui permet aux développeurs de travailler avec différents formats de documents, y compris des fichiers Excel, pour l'extraction et l'analyse de texte. Nous passerons en revue les conditions préalables, importerons les espaces de noms et détaillerons chaque étape pour démontrer le processus d'extraction de texte à partir de feuilles Excel.
 ## Conditions préalables

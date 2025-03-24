@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET mithilfe regul
 weight: 23
 url: /de/net/text-extraction/search-text-by-regex/
 ---
+
+# Textsuche nach regulären Ausdrücken (Regex)
+
 ## Einführung
 In diesem Tutorial beschäftigen wir uns mit der Verwendung von GroupDocs.Parser für .NET, um Text in Dokumenten mit regulären Ausdrücken (Regex) zu suchen. GroupDocs.Parser ist eine leistungsstarke Bibliothek, mit der Entwickler Text und Metadaten aus verschiedenen Dateiformaten wie PDF, DOCX, XLSX und mehr extrahieren können. Die Textsuche mit regulären Ausdrücken ist besonders nützlich, um Muster oder bestimmte Inhalte in Dokumenten effizient zu finden.
 ## Voraussetzungen

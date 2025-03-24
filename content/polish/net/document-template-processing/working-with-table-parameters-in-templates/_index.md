@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębniać dane z tabel w dokumentach za pomoc
 weight: 15
 url: /pl/net/document-template-processing/working-with-table-parameters-in-templates/
 ---
+
+# Praca z parametrami tabeli w szablonach
+
 ## Wstęp
 W tym samouczku omówimy, jak używać GroupDocs.Parser dla platformy .NET do pracy z parametrami tabeli w szablonach. Ten przewodnik podzieli proces na instrukcje krok po kroku, które pomogą Ci skutecznie analizować i wyodrębniać dane z tabel w dokumentach.
 ## Warunki wstępne

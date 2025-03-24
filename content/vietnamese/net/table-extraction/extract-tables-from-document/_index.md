@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất bảng từ tài liệu bằng Grou
 weight: 10
 url: /vi/net/table-extraction/extract-tables-from-document/
 ---
+
+# Trích xuất bảng từ tài liệu
+
 ## Giới thiệu
 Groupdocs.Parser cho .NET là một thư viện toàn diện hỗ trợ phân tích cú pháp tài liệu, cho phép bạn trích xuất thông tin có giá trị như bảng, văn bản, siêu dữ liệu và nhiều thông tin khác từ tài liệu. Trong hướng dẫn này, chúng tôi đặc biệt tập trung vào việc trích xuất các bảng từ tài liệu bằng API Groupdocs.Parser.
 ## Điều kiện tiên quyết

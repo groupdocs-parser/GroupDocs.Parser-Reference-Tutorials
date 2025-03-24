@@ -7,6 +7,9 @@ weight: 27
 url: /id/net/barcode-extraction/
 ---
 
+# Ekstraksi Kode Batang
+
+
 Dalam bidang pemrosesan dokumen, ekstraksi kode batang merupakan tugas yang sangat penting. Baik untuk manajemen inventaris, kategorisasi dokumen, atau otomatisasi entri data, kemampuan mengekstrak kode batang dari dokumen dengan cepat dan akurat sangatlah berharga. Dengan GroupDocs.Parser untuk .NET, penguasaan proses ini tidak hanya dapat dicapai tetapi juga disederhanakan.
 
 ## Memahami Ekstraksi Barcode:

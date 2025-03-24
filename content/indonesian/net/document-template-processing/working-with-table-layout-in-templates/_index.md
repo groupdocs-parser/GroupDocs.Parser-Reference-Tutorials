@@ -6,6 +6,9 @@ description: Pelajari cara bekerja dengan tata letak tabel di templat menggunaka
 weight: 14
 url: /id/net/document-template-processing/working-with-table-layout-in-templates/
 ---
+
+# Bekerja dengan Tata Letak Tabel di Templat
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara bekerja dengan tata letak tabel di templat menggunakan GroupDocs.Parser untuk .NET. GroupDocs.Parser adalah API penguraian dokumen canggih yang memungkinkan pengembang mengekstrak teks dan metadata dari berbagai format dokumen, termasuk PDF, Microsoft Office, dan banyak lagi.
 ## Prasyarat

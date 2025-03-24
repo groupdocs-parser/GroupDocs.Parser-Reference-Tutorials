@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 處理 OCR。有效率
 weight: 11
 url: /zh-hant/net/ocr-extraction/handling-ocr/
 ---
+
+# 處理 OCR
+
 ## 介紹
 在本教學中，我們將探討如何使用 GroupDocs.Parser for .NET 高效處理光學字元辨識 (OCR) 任務。該庫提供了從文件中提取文字的強大工具，並且透過 OCR，您甚至可以從圖像或掃描文件中提取文字。讓我們逐步深入了解這個過程。
 ## 先決條件

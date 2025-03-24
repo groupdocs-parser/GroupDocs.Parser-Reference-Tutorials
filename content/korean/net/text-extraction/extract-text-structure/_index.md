@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 다양한 문서 형식에
 weight: 20
 url: /ko/net/text-extraction/extract-text-structure/
 ---
+
+# 텍스트 구조 추출
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser를 사용하여 다양한 문서 형식에서 텍스트 구조를 추출하는 방법을 살펴보겠습니다. GroupDocs.Parser는 개발자가 PDF, Word 문서, Excel 시트 등과 같은 문서에서 구조화된 텍스트 콘텐츠를 추출할 수 있는 강력한 라이브러리입니다. 이 튜토리얼에서는 GroupDocs.Parser 설정, 필요한 네임스페이스 가져오기, 텍스트 구조 추출 과정을 단계별로 안내합니다.
 ## 전제 조건

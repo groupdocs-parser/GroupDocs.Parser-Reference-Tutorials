@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất nội dung HTML từ tài liệu b�
 weight: 12
 url: /vi/net/formatted-text-extraction/extract-html-content/
 ---
+
+# Trích xuất nội dung HTML
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Parser cho .NET để trích xuất nội dung HTML từ các định dạng tài liệu khác nhau. GroupDocs.Parser là một thư viện mạnh mẽ cho phép các nhà phát triển phân tích cú pháp và trích xuất văn bản từ tài liệu một cách liền mạch. Cho dù bạn đang làm việc với tài liệu Word, PDF hay các định dạng khác, GroupDocs.Parser đều đơn giản hóa quá trình trích xuất nội dung có cấu trúc.
 ## Điều kiện tiên quyết

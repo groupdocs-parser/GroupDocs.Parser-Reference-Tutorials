@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Parser 轻松从 .NET 中的文档中提取图像�
 weight: 24
 url: /zh/net/image-extraction/
 ---
+
+# 图像提取
+
 ## 介绍
 
 通过 GroupDocs.Parser 教程深入了解 .NET 中的图像提取领域。这些教程提供了从文档中提取图像的全面指导，无论是从特定文档区域、整个文档还是单个页面中提取图像。无论您是初学者还是经验丰富的开发人员，这些教程都提供了清晰的分步说明和代码示例，以帮助您将图像提取无缝集成到 .NET 应用程序中。

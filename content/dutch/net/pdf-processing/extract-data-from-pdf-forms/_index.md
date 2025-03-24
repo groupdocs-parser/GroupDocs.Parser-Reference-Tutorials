@@ -6,6 +6,9 @@ description: Leer hoe u gegevens uit PDF-formulieren kunt extraheren met GroupDo
 weight: 11
 url: /nl/net/pdf-processing/extract-data-from-pdf-forms/
 ---
+
+# Gegevens extraheren uit PDF-formulieren
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u GroupDocs.Parser voor .NET kunt gebruiken om gegevens uit PDF-formulieren te extraheren. GroupDocs.Parser is een krachtige bibliotheek waarmee ontwikkelaars efficiënt kunnen werken met verschillende documentformaten, waaronder PDF, DOCX, XLSX en meer. We zullen de noodzakelijke stappen doorlopen om specifieke velden uit een PDF-formulier te extraheren en de geëxtraheerde gegevens af te handelen.
 ## Vereisten

@@ -6,6 +6,9 @@ description: Naučte se extrahovat hypertextové odkazy z konkrétních oblastí
 weight: 12
 url: /cs/net/hyperlink-extraction/extract-hyperlinks-from-document-page-area/
 ---
+
+# Extrahujte hypertextové odkazy z oblasti stránky dokumentu
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak extrahovat hypertextové odkazy ze specifické oblasti stránky dokumentu pomocí knihovny GroupDocs.Parser for .NET. GroupDocs.Parser poskytuje výkonné funkce pro zpracování dokumentů, včetně extrakce hypertextových odkazů. Provedeme vás procesem krok za krokem a ukážeme vám, jak implementovat tuto funkci do vašich aplikací .NET.
 ## Předpoklady

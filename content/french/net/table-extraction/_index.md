@@ -6,6 +6,9 @@ description: Extraction de tables maîtres à partir de documents avec GroupDocs
 weight: 23
 url: /fr/net/table-extraction/
 ---
+
+# Extraction de tableaux
+
 ## Introduction
 
 Bienvenue dans le monde des didacticiels d’extraction de tables avec GroupDocs.Parser pour .NET. Dans ce guide complet, nous approfondirons les subtilités de l'extraction de tableaux à partir de documents à l'aide des puissantes fonctionnalités de GroupDocs.Parser. Que vous soyez un développeur débutant ou expérimenté, ces didacticiels proposent des instructions claires étape par étape, des exemples de code et des informations pratiques pour vous aider à exploiter tout le potentiel de l'extraction de tables dans vos applications .NET.

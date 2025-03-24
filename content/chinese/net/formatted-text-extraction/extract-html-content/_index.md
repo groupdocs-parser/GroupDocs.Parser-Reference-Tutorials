@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 从文档中提取 HTM
 weight: 12
 url: /zh/net/formatted-text-extraction/extract-html-content/
 ---
+
+# 提取 HTML 内容
+
 ## 介绍
 在本教程中，我们将探讨如何使用 GroupDocs.Parser for .NET 从各种文档格式中提取 HTML 内容。GroupDocs.Parser 是一个功能强大的库，允许开发人员无缝地解析和提取文档中的文本。无论您使用的是 Word 文档、PDF 还是其他格式，GroupDocs.Parser 都可以简化提取结构化内容的过程。
 ## 先决条件

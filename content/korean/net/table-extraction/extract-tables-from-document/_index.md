@@ -6,6 +6,9 @@ description: .NET용 Groupdocs.Parser를 사용하여 문서에서 테이블을 
 weight: 10
 url: /ko/net/table-extraction/extract-tables-from-document/
 ---
+
+# 문서에서 테이블 추출
+
 ## 소개
 .NET용 Groupdocs.Parser는 문서 구문 분석을 용이하게 하는 포괄적인 라이브러리로, 이를 통해 문서에서 테이블, 텍스트, 메타데이터 등과 같은 중요한 정보를 추출할 수 있습니다. 이 튜토리얼에서는 특히 Groupdocs.Parser API를 사용하여 문서에서 테이블을 추출하는 데 중점을 둡니다.
 ## 전제 조건

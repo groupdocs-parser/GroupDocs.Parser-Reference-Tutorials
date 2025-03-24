@@ -6,6 +6,9 @@ description: Naučte se extrahovat čárové kódy z dokumentů pomocí GroupDoc
 weight: 14
 url: /cs/net/barcode-extraction/extract-barcodes-from-document-with-options/
 ---
+
+# Extrahujte čárové kódy z dokumentu pomocí možností
+
 ## Úvod
 V tomto tutoriálu si projdeme proces extrahování čárových kódů z dokumentu pomocí GroupDocs.Parser for .NET. GroupDocs.Parser je výkonná knihovna, která umožňuje extrahovat text, metadata a čárové kódy z různých formátů dokumentů, jako je PDF, Microsoft Word, Excel a další.
 ## Předpoklady

@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthat ki szöveget a dokumentumok meghatároz
 weight: 14
 url: /hu/net/text-extraction/extract-text-from-specific-areas-with-options/
 ---
+
+# Szöveg kinyerése adott területekről opciókkal
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan használhatja a GroupDocs.Parser for .NET-et a dokumentum adott területeinek szövegének kinyerésére testreszabható beállításokkal. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy könnyedén elemezzenek és bontsanak ki szöveget különböző dokumentumformátumokból.
 ## Előfeltételek

@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić metadane z dokumentów Excel za pomo
 weight: 11
 url: /pl/net/excel-document-processing/extract-metadata-from-excel-document/
 ---
+
+# Wyodrębnij metadane z dokumentu Excel
+
 ## Wstęp
 W tym samouczku pokażemy, jak używać programu GroupDocs.Parser dla platformy .NET do wyodrębniania metadanych z dokumentu programu Excel. GroupDocs.Parser to potężna biblioteka, która umożliwia wyodrębnianie różnych elementów dokumentu, w tym metadanych, tekstu, obrazów i innych.
 ## Warunki wstępne

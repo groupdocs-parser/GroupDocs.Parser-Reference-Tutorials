@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan kereshet szöveget Word dokumentumokban regulá
 weight: 19
 url: /hu/net/word-document-processing/search-text-in-word-document-by-regular-expression/
 ---
+
+# Szöveg keresése a Word dokumentumban reguláris kifejezéssel
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan használható a GroupDocs.Parser for .NET a Word dokumentumok szövegének reguláris kifejezésekkel történő kinyerésére. Ez a lépésenkénti útmutató segít a funkció hatékony megvalósításában.
 ## Előfeltételek

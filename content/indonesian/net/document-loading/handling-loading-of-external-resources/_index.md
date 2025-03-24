@@ -6,6 +6,9 @@ description: Pelajari cara menangani sumber daya eksternal di .NET menggunakan G
 weight: 10
 url: /id/net/document-loading/handling-loading-of-external-resources/
 ---
+
+# Menangani Pemuatan Sumber Daya Eksternal
+
 ## Perkenalan
 Dalam dunia pengembangan .NET, parsing dan ekstraksi konten dari berbagai format file merupakan kebutuhan umum. GroupDocs.Parser untuk .NET memberikan solusi tangguh untuk menangani tugas penguraian dokumen secara efisien. Tutorial ini akan memandu Anda dalam menggunakan GroupDocs.Parser untuk bekerja dengan sumber daya eksternal, seperti gambar, di aplikasi .NET Anda. Kami akan membahas prasyarat yang diperlukan, mengimpor namespace, dan memecah contoh menjadi petunjuk langkah demi langkah yang mendetail.
 ## Prasyarat

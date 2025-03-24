@@ -6,6 +6,9 @@ description: Ekstrak gambar dengan mudah dari berbagai jenis dokumen seperti PDF
 weight: 13
 url: /id/net/image-extraction/extract-images-to-files/
 ---
+
+# Ekstrak Gambar ke File
+
 ## Perkenalan
 Dalam tutorial ini, Anda akan mempelajari cara menggunakan GroupDocs.Parser untuk .NET untuk mengekstrak gambar dari berbagai format dokumen seperti PDF, Word, Excel, dan PowerPoint. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan pengembang mengurai dan mengekstrak teks, metadata, gambar, dan lainnya dari dokumen dengan cara yang mudah. Panduan ini akan memandu Anda melalui proses mengekstraksi gambar dan menyimpannya sebagai file individual menggunakan C#.
 ## Prasyarat

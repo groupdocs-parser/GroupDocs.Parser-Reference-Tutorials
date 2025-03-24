@@ -7,6 +7,9 @@ weight: 21
 url: /id/net/formatted-text-extraction/
 ---
 
+# Ekstraksi Teks Terformat
+
+
 ## Perkenalan
 
 Jelajahi dunia ekstraksi teks berformat di .NET dengan tutorial GroupDocs.Parser. Tutorial ini mencakup berbagai teknik untuk mengekstrak teks berformat dari dokumen, termasuk HTML, Markdown, dan teks biasa. Baik Anda seorang pemula atau pengembang berpengalaman, tutorial ini memberikan wawasan berharga dan contoh praktis untuk meningkatkan kemampuan ekstraksi teks Anda.

@@ -6,6 +6,9 @@ description: Extract text by Table of Contents (TOC) using GroupDocs.Parser for 
 weight: 15
 url: /net/text-extraction/extract-text-by-toc-item/
 ---
+
+# Extract Text by Table of Contents (TOC) Item
+
 ## Introduction
 In this tutorial, we will explore how to utilize GroupDocs.Parser for .NET to extract text based on Table of Contents (TOC) items from documents. GroupDocs.Parser is a powerful tool that allows efficient document parsing and extraction.
 ## Prerequisites

@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 在 Word 文档中搜�
 weight: 18
 url: /zh/net/word-document-processing/search-text-in-word-document-by-keyword/
 ---
+
+# 通过关键字在 Word 文档中搜索文本
+
 ## 介绍
 在本教程中，我们将探讨如何使用 GroupDocs.Parser for .NET 在 C# 中搜索 Word 文档中的特定文本。GroupDocs.Parser 是一个功能强大的库，允许开发人员从各种文档格式（包括 Word 文档）中提取文本和元数据。
 ## 先决条件

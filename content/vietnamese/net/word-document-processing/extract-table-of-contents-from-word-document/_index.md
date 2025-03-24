@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất Mục lục (TOC) từ tài liệu 
 weight: 13
 url: /vi/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
+
+# Trích xuất mục lục từ tài liệu Word
+
 ## Giới thiệu
 Trong hướng dẫn này, bạn sẽ tìm hiểu cách sử dụng GroupDocs.Parser cho .NET để trích xuất Mục lục (TOC) từ tài liệu Word theo từng bước. GroupDocs.Parser là một thư viện mạnh mẽ cho phép bạn làm việc với nhiều định dạng tài liệu khác nhau theo chương trình.
 ## Điều kiện tiên quyết

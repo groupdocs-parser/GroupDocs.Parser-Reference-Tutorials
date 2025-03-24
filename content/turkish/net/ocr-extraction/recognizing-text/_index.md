@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET ile çeşitli belge biçimlerinden metni 
 weight: 12
 url: /tr/net/ocr-extraction/recognizing-text/
 ---
+
+# Metni Tanıma
+
 ## giriiş
 .NET geliştirme alanında, çeşitli belge formatlarından verimli metin çıkarma çok önemlidir. GroupDocs.Parser for .NET, metni sorunsuz bir şekilde ayıklamak için güçlü bir çözüm sağlar. Bu eğitimde, GroupDocs.Parser'ı belgelerdeki metni tanımak ve ayıklamak için adım adım kullanmayı inceleyeceğiz.
 ## Önkoşullar

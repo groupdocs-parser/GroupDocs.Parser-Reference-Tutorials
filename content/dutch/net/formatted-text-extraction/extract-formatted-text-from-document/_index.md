@@ -6,6 +6,9 @@ description: Leer hoe u opgemaakte tekst uit documenten kunt extraheren met Grou
 weight: 10
 url: /nl/net/formatted-text-extraction/extract-formatted-text-from-document/
 ---
+
+# Opgemaakte tekst uit document extraheren
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u GroupDocs.Parser voor .NET kunt gebruiken om opgemaakte tekst uit verschillende soorten documenten te extraheren. GroupDocs.Parser is een krachtige bibliotheek waarmee ontwikkelaars op een vereenvoudigde en efficiënte manier met documenten kunnen werken. Aan het einde van deze handleiding kunt u de mogelijkheden voor tekstextractie naadloos integreren in uw .NET-toepassingen.
 ## Vereisten

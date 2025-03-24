@@ -6,6 +6,9 @@ description: เรียนรู้วิธีแยกสารบัญ (TO
 weight: 13
 url: /th/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
+
+# แยกสารบัญออกจากเอกสาร Word
+
 ## การแนะนำ
 ในบทช่วยสอนนี้ คุณจะได้เรียนรู้วิธีใช้ GroupDocs.Parser สำหรับ .NET เพื่อแยกสารบัญ (TOC) ออกจากเอกสาร Word ทีละขั้นตอน GroupDocs.Parser เป็นไลบรารีที่มีประสิทธิภาพซึ่งช่วยให้คุณทำงานกับรูปแบบเอกสารต่างๆ โดยทางโปรแกรม
 ## ข้อกำหนดเบื้องต้น

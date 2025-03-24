@@ -6,6 +6,9 @@ description: Leer hoe u tekst in documenten kunt zoeken en markeren met GroupDoc
 weight: 24
 url: /nl/net/text-extraction/search-text-with-highlights/
 ---
+
+# Zoek tekst met hoogtepunten
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u GroupDocs.Parser voor .NET kunt gebruiken om naar tekst in een document te zoeken en de zoekresultaten te markeren. GroupDocs.Parser is een krachtige bibliotheek waarmee u met verschillende documentformaten kunt werken en tekst, metagegevens en meer kunt extraheren.
 ## Vereisten

@@ -6,6 +6,9 @@ description: 使用 C# 中的 GroupDocs.Parser 從 PDF 中提取文字。使用�
 weight: 16
 url: /zh-hant/net/pdf-processing/extract-text-from-page-in-pdf-in-raw-mode/
 ---
+
+# 在原始模式下從 PDF 頁面中提取文本
+
 ## 介紹
 在本教學中，我們將探討如何使用 GroupDocs.Parser for .NET 使用原始模式從 PDF 文件的頁面中擷取文字。 GroupDocs.Parser 是一個功能強大的工具，使開發人員能夠以程式設計方式處理各種文件格式。
 ## 先決條件

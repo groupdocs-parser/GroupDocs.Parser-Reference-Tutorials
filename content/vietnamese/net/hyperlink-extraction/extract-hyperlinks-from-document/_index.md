@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất siêu liên kết từ tài liệu 
 weight: 10
 url: /vi/net/hyperlink-extraction/extract-hyperlinks-from-document/
 ---
+
+# Trích xuất siêu liên kết từ tài liệu
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ đi sâu vào các khả năng mạnh mẽ của GroupDocs.Parser cho .NET, một thư viện linh hoạt cho phép các nhà phát triển trích xuất siêu liên kết từ tài liệu một cách dễ dàng. Trích xuất siêu liên kết là một yêu cầu phổ biến trong xử lý tài liệu, đặc biệt khi xử lý các tệp dựa trên văn bản như tài liệu PDF hoặc Word. Bằng cách sử dụng GroupDocs.Parser, bạn có thể xác định và trích xuất các siêu liên kết cùng với các URL liên kết của chúng từ các định dạng tài liệu khác nhau một cách hiệu quả.
 ## Điều kiện tiên quyết

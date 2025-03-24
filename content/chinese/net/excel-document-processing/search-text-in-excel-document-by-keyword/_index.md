@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 在 Excel 文档中搜
 weight: 16
 url: /zh/net/excel-document-processing/search-text-in-excel-document-by-keyword/
 ---
+
+# 按关键字在 Excel 文档中搜索文本
+
 ## 介绍
 GroupDocs.Parser for .NET 是一个功能强大的库，它使开发人员能够在其 .NET 应用程序中高效地处理文档解析任务。在本教程中，我们将重点介绍如何使用关键字在 Excel 文档中搜索特定文本。通过遵循本指南，您将学习如何将 GroupDocs.Parser 库集成到您的项目中并在 Excel 文件中执行有针对性的文本搜索。
 ## 先决条件

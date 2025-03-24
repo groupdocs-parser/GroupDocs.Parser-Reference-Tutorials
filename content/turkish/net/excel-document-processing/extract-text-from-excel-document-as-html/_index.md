@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak Excel belgelerinden nasıl m
 weight: 13
 url: /tr/net/excel-document-processing/extract-text-from-excel-document-as-html/
 ---
+
+# Excel Belgesinden Metni HTML Olarak Çıkarma
+
 ## giriiş
 Bu öğreticide, bir Excel belgesinden metin ayıklamak ve onu HTML biçimine dönüştürmek için GroupDocs.Parser for .NET'in nasıl kullanılacağını keşfedeceğiz. GroupDocs.Parser, geliştiricilerin çeşitli belge formatlarıyla çalışmasına, metin ve meta verileri verimli bir şekilde ayıklamasına olanak tanıyan güçlü bir kitaplıktır.
 ## Önkoşullar

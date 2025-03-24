@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar streckkoder från skadade dokument med G
 weight: 11
 url: /sv/net/barcode-extraction/extract-barcodes-from-corrupted-document/
 ---
+
+# Extrahera streckkoder från skadade dokument
+
 ## Introduktion
 den här handledningen guidar vi dig genom processen att extrahera streckkoder från skadade dokument med GroupDocs.Parser för .NET. GroupDocs.Parser är ett kraftfullt API för dokumentanalys som gör det möjligt för utvecklare att extrahera text, metadata, bilder och nu streckkoder från olika filformat. Vi kommer att bryta ner de steg som behövs för att utföra denna uppgift effektivt.
 ## Förutsättningar

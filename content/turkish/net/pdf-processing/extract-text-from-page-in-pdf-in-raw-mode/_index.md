@@ -6,6 +6,9 @@ description: C# dilinde GroupDocs.Parser'ı kullanarak PDF'lerden metin çıkar�
 weight: 16
 url: /tr/net/pdf-processing/extract-text-from-page-in-pdf-in-raw-mode/
 ---
+
+# Ham Modda PDF'deki Sayfadan Metin Çıkarma
+
 ## giriiş
 Bu öğreticide, ham modu kullanarak PDF belgelerindeki sayfalardan metin çıkarmak için GroupDocs.Parser for .NET'in nasıl kullanılacağını keşfedeceğiz. GroupDocs.Parser, geliştiricilerin çeşitli belge formatlarıyla programlı olarak çalışmasına olanak tanıyan güçlü bir araçtır.
 ## Önkoşullar

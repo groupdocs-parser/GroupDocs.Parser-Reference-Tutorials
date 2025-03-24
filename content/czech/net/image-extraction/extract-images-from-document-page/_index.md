@@ -6,6 +6,9 @@ description: Naučte se extrahovat obrázky z dokumentů pomocí GroupDocs.Parse
 weight: 12
 url: /cs/net/image-extraction/extract-images-from-document-page/
 ---
+
+# Extrahujte obrázky ze stránky dokumentu
+
 ## Úvod
 V tomto tutoriálu se naučíme, jak extrahovat obrázky ze stránky dokumentu pomocí GroupDocs.Parser for .NET. GroupDocs.Parser je výkonná knihovna, která vám umožňuje extrahovat text, metadata, obrázky a další z různých formátů dokumentů, jako je PDF, Microsoft Word, Excel, PowerPoint a další. Projdeme si nezbytné kroky k extrahování obrázků ze stránky dokumentu pomocí této knihovny.
 ## Předpoklady

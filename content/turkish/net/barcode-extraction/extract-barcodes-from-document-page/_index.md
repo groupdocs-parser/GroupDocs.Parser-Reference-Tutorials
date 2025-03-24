@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak belge sayfalarından barkodl
 weight: 12
 url: /tr/net/barcode-extraction/extract-barcodes-from-document-page/
 ---
+
+# Belge Sayfasından Barkodları Çıkarma
+
 ## giriiş
 Bu öğreticide, GroupDocs.Parser for .NET'i kullanarak bir belge sayfasından barkod çıkarma işlemi boyunca size yol göstereceğiz. GroupDocs.Parser, geliştiricilerin çeşitli belge formatlarından metin, meta veriler ve hatta barkodları çıkarmasına olanak tanıyan güçlü bir belge ayrıştırma kitaplığıdır.
 ## Önkoşullar

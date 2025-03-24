@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET で正規表現を使用して Excel ド�
 weight: 17
 url: /ja/net/excel-document-processing/search-text-in-excel-document-by-regular-expression/
 ---
+
+# 正規表現で Excel ドキュメント内のテキストを検索する
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を利用して、正規表現を使用して Excel ドキュメント内の特定のテキスト パターンを検索する方法について説明します。GroupDocs.Parser は、開発者が Excel などのスプレッドシートを含むさまざまなドキュメント形式からテキストとメタデータを抽出できるようにする強力なライブラリです。正規表現を活用することで、高度なテキスト検索を効率的に実行できます。
 ## 前提条件

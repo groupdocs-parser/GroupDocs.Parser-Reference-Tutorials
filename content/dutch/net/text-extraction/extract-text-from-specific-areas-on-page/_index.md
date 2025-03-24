@@ -6,6 +6,9 @@ description: Leer hoe u tekst uit specifieke documentgebieden kunt extraheren me
 weight: 13
 url: /nl/net/text-extraction/extract-text-from-specific-areas-on-page/
 ---
+
+# Extraheer tekst uit specifieke gebieden op een pagina
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u tekst uit specifieke gebieden op een pagina kunt extraheren met behulp van de GroupDocs.Parser voor .NET-bibliotheek. GroupDocs.Parser vereenvoudigt de extractie van tekst uit documenten, waardoor ontwikkelaars zich binnen een document kunnen richten op specifieke interessegebieden voor tekstextractie. Dit kan met name handig zijn bij het omgaan met complexe documenten waarbij nauwkeurige tekstextractie vereist is voor verdere verwerking of analyse.
 ## Vereisten

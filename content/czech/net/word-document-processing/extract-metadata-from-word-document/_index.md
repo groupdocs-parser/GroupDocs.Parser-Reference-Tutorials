@@ -6,6 +6,9 @@ description: Naučte se extrahovat metadata z dokumentů aplikace Word pomocí G
 weight: 12
 url: /cs/net/word-document-processing/extract-metadata-from-word-document/
 ---
+
+# Extrahujte metadata z dokumentu aplikace Word
+
 ## Úvod
 V dnešní digitální době je efektivní analýza a extrahování dat z dokumentů zásadní pro různé aplikace, od analýzy obsahu až po vyhledávání dat. GroupDocs.Parser for .NET je výkonná knihovna, která umožňuje vývojářům snadno extrahovat metadata a text z dokumentů. V tomto tutoriálu prozkoumáme, jak používat GroupDocs.Parser pro .NET k extrahování metadat z dokumentů aplikace Word krok za krokem.
 ## Předpoklady

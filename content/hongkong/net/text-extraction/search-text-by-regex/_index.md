@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 在文件中使用正�
 weight: 23
 url: /zh-hant/net/text-extraction/search-text-by-regex/
 ---
+
+# 透過正規表示式 (Regex) 搜尋文本
+
 ## 介紹
 在本教程中，我們將深入研究使用 GroupDocs.Parser for .NET 透過正規表示式 (Regex) 在文件中搜尋文字。 GroupDocs.Parser 是一個功能強大的程式庫，可讓開發人員從各種文件格式（例如 PDF、DOCX、XLSX 等）中提取文字和元資料。使用正規表示式搜尋文字對於有效率地尋找文件中的模式或特定內容特別有用。
 ## 先決條件

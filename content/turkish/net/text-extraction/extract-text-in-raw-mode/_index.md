@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak belgelerden nasıl metin ay�
 weight: 19
 url: /tr/net/text-extraction/extract-text-in-raw-mode/
 ---
+
+# Ham Modda Metni Çıkart
+
 ## giriiş
 Bu eğitimde, çeşitli belge formatlarından verimli bir şekilde metin ayıklamak için GroupDocs.Parser for .NET'in nasıl kullanılacağını keşfedeceğiz. GroupDocs.Parser, geliştiricilerin PDF, Word, Excel, PowerPoint ve daha fazlası gibi belgelerden metin ve meta veriler çıkarmasına olanak tanıyan ve .NET uygulamaları içindeki metin çıkarma görevlerini basitleştiren güçlü bir kitaplıktır.
 ## Önkoşullar

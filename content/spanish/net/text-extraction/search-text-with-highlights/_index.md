@@ -6,6 +6,9 @@ description: Aprenda a buscar y resaltar texto en documentos usando GroupDocs.Pa
 weight: 24
 url: /es/net/text-extraction/search-text-with-highlights/
 ---
+
+# Buscar texto con resaltados
+
 ## Introducción
 En este tutorial, exploraremos cómo usar GroupDocs.Parser para .NET para buscar texto dentro de un documento y resaltar los resultados de la búsqueda. GroupDocs.Parser es una poderosa biblioteca que le permite trabajar con varios formatos de documentos y extraer texto, metadatos y más.
 ## Requisitos previos

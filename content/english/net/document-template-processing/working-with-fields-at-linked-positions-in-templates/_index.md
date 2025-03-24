@@ -6,6 +6,9 @@ description: Learn how to extract data efficiently from documents using GroupDoc
 weight: 12
 url: /net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
 ---
+
+# Working with Fields at Linked Positions in Templates
+
 ## Introduction
 GroupDocs.Parser for .NET is a robust library designed to facilitate document parsing and data extraction tasks. It supports a wide range of file formats, including PDF, DOCX, XLSX, and more. One of its key features is template-based data extraction, which allows you to define fields within a document and extract specific data based on these predefined templates.
 ## Prerequisites

@@ -6,6 +6,9 @@ description: Learn how to work with table layouts in templates using GroupDocs.P
 weight: 14
 url: /net/document-template-processing/working-with-table-layout-in-templates/
 ---
+
+# Working with Table Layout in Templates
+
 ## Introduction
 In this tutorial, we'll explore how to work with table layout in templates using GroupDocs.Parser for .NET. GroupDocs.Parser is a powerful document parsing API that allows developers to extract text and metadata from various document formats, including PDF, Microsoft Office, and more.
 ## Prerequisites

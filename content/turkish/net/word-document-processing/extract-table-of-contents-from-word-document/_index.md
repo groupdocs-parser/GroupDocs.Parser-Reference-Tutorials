@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak Word belgelerinden İçindek
 weight: 13
 url: /tr/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
+
+# Word Belgesinden İçindekiler Tablosunu Çıkarma
+
 ## giriiş
 Bu öğreticide, bir Word belgesinden İçindekiler Tablosunu (TOC) çıkarmak için GroupDocs.Parser for .NET'i adım adım nasıl kullanacağınızı öğreneceksiniz. GroupDocs.Parser, çeşitli belge formatlarıyla programlı olarak çalışmanıza olanak tanıyan güçlü bir kitaplıktır.
 ## Önkoşullar

@@ -6,6 +6,9 @@ description: Naučte se extrahovat data z formulářů PDF pomocí GroupDocs.Par
 weight: 11
 url: /cs/net/pdf-processing/extract-data-from-pdf-forms/
 ---
+
+# Extrahujte data z formulářů PDF
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak využít GroupDocs.Parser pro .NET k extrahování dat z formulářů PDF. GroupDocs.Parser je výkonná knihovna, která umožňuje vývojářům efektivně pracovat s různými formáty dokumentů, včetně PDF, DOCX, XLSX a dalších. Projdeme si nezbytné kroky k extrahování konkrétních polí z formuláře PDF a zpracování extrahovaných dat.
 ## Předpoklady

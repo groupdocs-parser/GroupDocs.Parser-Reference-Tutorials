@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan nyerhet ki adatokat PDF-űrlapokból a GroupDoc
 weight: 11
 url: /hu/net/pdf-processing/extract-data-from-pdf-forms/
 ---
+
+# Adatok kinyerése PDF-űrlapokból
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan használhatja a GroupDocs.Parser for .NET alkalmazást adatok PDF-űrlapokból való kinyerésére. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy hatékonyan dolgozzanak különféle dokumentumformátumokkal, beleértve a PDF, DOCX, XLSX és sok más formátumot. Végigjárjuk a szükséges lépéseket, hogy egy PDF-űrlapból kivonhassunk bizonyos mezőket, és kezeljük a kinyert adatokat.
 ## Előfeltételek

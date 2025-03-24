@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak teks dari area dokumen tertentu menggunak
 weight: 12
 url: /id/net/text-extraction/extract-text-from-specific-areas/
 ---
+
+# Ekstrak Teks dari Area Tertentu
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara mengekstrak teks dari area tertentu pada dokumen menggunakan GroupDocs.Parser untuk .NET. GroupDocs.Parser adalah API canggih yang memungkinkan pengembang mengurai dan mengekstrak teks, metadata, dan informasi lainnya dari berbagai format dokumen seperti PDF, DOCX, XLSX, dan banyak lagi.
 ## Prasyarat

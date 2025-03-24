@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 从文档中提取 Mar
 weight: 13
 url: /zh/net/formatted-text-extraction/extract-markdown-content/
 ---
+
+# 提取 Markdown 内容
+
 ## 介绍
 在本教程中，我们将探索如何使用 GroupDocs.Parser for .NET 从文档中提取 Markdown 内容。GroupDocs.Parser 是一个功能强大的库，允许开发人员无缝地解析和提取各种文件格式中的文本。
 ## 先决条件

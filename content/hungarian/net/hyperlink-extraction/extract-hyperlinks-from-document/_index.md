@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthat ki hiperhivatkozásokat dokumentumokbó
 weight: 10
 url: /hu/net/hyperlink-extraction/extract-hyperlinks-from-document/
 ---
+
+# Kivonja a hiperhivatkozásokat a dokumentumból
+
 ## Bevezetés
 Ebben az oktatóanyagban a GroupDocs.Parser for .NET hatékony képességeit mutatjuk be. Ez egy sokoldalú könyvtár, amely lehetővé teszi a fejlesztők számára, hogy könnyedén kinyerhessenek hiperhivatkozásokat a dokumentumokból. A hiperhivatkozások kinyerése általános követelmény a dokumentumfeldolgozás során, különösen akkor, ha szöveges fájlokkal, például PDF-ekkel vagy Word-dokumentumokkal foglalkozik. A GroupDocs.Parser használatával hatékonyan azonosíthatja és kinyerheti a hiperhivatkozásokat a hozzájuk tartozó URL-ekkel együtt a különböző dokumentumformátumokból.
 ## Előfeltételek

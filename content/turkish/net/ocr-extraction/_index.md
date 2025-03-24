@@ -7,6 +7,9 @@ weight: 28
 url: /tr/net/ocr-extraction/
 ---
 
+# Optik Karakter Tanıma (OCR) Çıkarma
+
+
 ## giriiş
 
 GroupDocs.Parser eğitimleriyle .NET'te Optik Karakter Tanıma (OCR) çıkarmanın gücünün kilidini açın. Bu eğitimler OCR'yi kullanma, metni tanıma ve belgelerdeki belirli alanlardan veya dikdörtgen bölgelerden içerik çıkarma konusunda kapsamlı rehberlik sağlar. İster yeni başlayan ister deneyimli bir geliştirici olun, bu eğitimler, OCR çıkarma işlemini .NET uygulamalarınıza sorunsuz bir şekilde entegre etmenize yardımcı olacak net, adım adım talimatlar ve kod örnekleri sunar.

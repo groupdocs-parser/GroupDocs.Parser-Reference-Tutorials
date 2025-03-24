@@ -6,6 +6,9 @@ description: Szöveg kinyerése PDF-ekből a GroupDocs.Parser segítségével C#
 weight: 16
 url: /hu/net/pdf-processing/extract-text-from-page-in-pdf-in-raw-mode/
 ---
+
+# Szöveg kibontása az oldalról PDF-ben nyers módban
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan használhatja a GroupDocs.Parser for .NET-et a PDF-dokumentumok oldalaiból nyers módban történő szöveg kinyerésére. A GroupDocs.Parser egy hatékony eszköz, amely lehetővé teszi a fejlesztők számára, hogy programozottan dolgozzanak különféle dokumentumformátumokkal.
 ## Előfeltételek

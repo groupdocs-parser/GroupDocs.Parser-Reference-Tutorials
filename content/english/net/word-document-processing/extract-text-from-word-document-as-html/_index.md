@@ -6,6 +6,9 @@ description: Learn how to use GroupDocs.Parser for .NET to extract text from Wor
 weight: 16
 url: /net/word-document-processing/extract-text-from-word-document-as-html/
 ---
+
+# Extract Text from Word Document as HTML
+
 ## Introduction
 GroupDocs.Parser for .NET is a powerful document parsing library that enables developers to extract text and metadata from various file formats seamlessly. In this tutorial, we'll focus on leveraging GroupDocs.Parser to extract text from Word documents and save it as HTML. This process is essential for tasks like content analysis, indexing, or converting documents into web-friendly formats. By the end of this guide, you'll have a clear understanding of how to use GroupDocs.Parser efficiently in your .NET applications.
 ## Prerequisites

@@ -6,6 +6,9 @@ description: Extraia facilmente hiperlinks de documentos em .NET com GroupDocs.P
 weight: 25
 url: /pt/net/hyperlink-extraction/
 ---
+
+# Extração de hiperlink
+
 ## Introdução
 
 Mergulhe no mundo da extração de hiperlinks em .NET com os tutoriais do GroupDocs.Parser. Esses tutoriais oferecem orientação abrangente sobre como extrair hiperlinks de documentos, seja do documento inteiro, de páginas específicas ou de áreas designadas. Quer você seja um desenvolvedor iniciante ou experiente, esses tutoriais fornecem instruções passo a passo claras e exemplos de código para ajudá-lo a integrar perfeitamente a extração de hiperlinks em seus aplicativos C#.

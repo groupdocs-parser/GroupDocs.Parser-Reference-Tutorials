@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić określone pola danych z dokumentów
 weight: 10
 url: /pl/net/data-extraction-from-templates/get-field-by-name/
 ---
+
+# Pobierz pole według nazwy
+
 ## Wstęp
 W tym samouczku pokażemy, jak wykorzystać GroupDocs.Parser dla .NET do wyodrębnienia z dokumentów określonych pól danych, takich jak ceny i adresy e-mail. Ta potężna biblioteka upraszcza zadania analizowania dokumentów, dzięki czemu idealnie nadaje się do różnych potrzeb związanych z ekstrakcją danych.
 ## Warunki wstępne

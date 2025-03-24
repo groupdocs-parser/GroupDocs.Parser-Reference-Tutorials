@@ -6,6 +6,9 @@ description: Learn how to extract barcodes from documents using GroupDocs.Parser
 weight: 10
 url: /net/barcode-extraction/extract-barcodes-from-document/
 ---
+
+# Extract Barcodes from Document
+
 ## Introduction
 In this tutorial, you'll learn how to use GroupDocs.Parser for .NET to extract barcodes from documents step-by-step. GroupDocs.Parser is a powerful document parsing library that enables developers to work with various document formats, including PDF, Microsoft Word, Excel, PowerPoint, and more.
 ## Prerequisites

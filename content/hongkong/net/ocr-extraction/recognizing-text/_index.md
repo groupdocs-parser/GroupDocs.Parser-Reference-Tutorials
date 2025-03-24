@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Parser for .NET 從各種文件格式中高效提�
 weight: 12
 url: /zh-hant/net/ocr-extraction/recognizing-text/
 ---
+
+# 辨識文字
+
 ## 介紹
 在 .NET 開發領域，從各種文件格式中高效提取文字至關重要。 GroupDocs.Parser for .NET 提供了一個強大的解決方案來無縫提取文字。在本教程中，我們將逐步深入研究如何使用 GroupDocs.Parser 從文件中識別和提取文字。
 ## 先決條件

@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić obrazy z dokumentu programu Word za 
 weight: 11
 url: /pl/net/word-document-processing/extract-images-from-word-document/
 ---
+
+# Wyodrębnij obrazy z dokumentu programu Word
+
 ## Wstęp
 W tym samouczku dowiesz się, jak wyodrębnić obrazy z dokumentu programu Word za pomocą GroupDocs.Parser dla .NET. GroupDocs.Parser to potężna biblioteka .NET, która umożliwia analizowanie i wyodrębnianie tekstu, metadanych, obrazów i innych danych z różnych formatów dokumentów, w tym programu Word (DOCX).
 ## Warunki wstępne

@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 OCR을 처리하는 방법
 weight: 11
 url: /ko/net/ocr-extraction/handling-ocr/
 ---
+
+# OCR 처리
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser를 사용하여 OCR(광학 문자 인식) 작업을 효율적으로 처리하는 방법을 살펴보겠습니다. 이 라이브러리는 문서에서 텍스트를 추출하는 강력한 도구를 제공하며, OCR을 사용하면 이미지나 스캔한 문서에서도 텍스트를 추출할 수 있습니다. 프로세스를 단계별로 살펴보겠습니다.
 ## 전제 조건

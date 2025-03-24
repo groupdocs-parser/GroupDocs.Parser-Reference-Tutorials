@@ -6,6 +6,9 @@ description: Scopri come estrarre ed evidenziare testo da documenti utilizzando 
 weight: 11
 url: /it/net/text-extraction/extract-and-highlight-text/
 ---
+
+# Estrai ed evidenzia il testo
+
 ## introduzione
 In questo tutorial esploreremo come utilizzare GroupDocs.Parser per .NET per estrarre ed evidenziare testo dai documenti. GroupDocs.Parser è una potente libreria che consente di analizzare vari formati di documenti ed eseguire operazioni avanzate di estrazione del testo.
 ## Prerequisiti

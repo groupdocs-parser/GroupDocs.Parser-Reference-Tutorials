@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用してドキュメントから�
 weight: 12
 url: /ja/net/data-extraction-from-templates/working-with-tables-in-extracted-data/
 ---
+
+# 抽出されたデータ内のテーブルの操作
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を使用してドキュメント内のテーブルからデータを抽出する方法について説明します。GroupDocs.Parser は、開発者が PDF、DOCX、XLSX などのさまざまなファイル形式からテキスト、メタデータ、構造化コンテンツを解析して抽出できるようにする強力なツールです。具体的には、定義済みのテンプレートを使用してテーブル データを効率的に抽出することに焦点を当てます。
 ## 前提条件

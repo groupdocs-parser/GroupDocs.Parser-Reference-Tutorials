@@ -6,6 +6,9 @@ description: Découvrez comment extraire des données de formulaires PDF à l'ai
 weight: 11
 url: /fr/net/pdf-processing/extract-data-from-pdf-forms/
 ---
+
+# Extraire les données des formulaires PDF
+
 ## Introduction
 Dans ce didacticiel, nous explorerons comment utiliser GroupDocs.Parser pour .NET pour extraire des données de formulaires PDF. GroupDocs.Parser est une bibliothèque puissante qui permet aux développeurs de travailler efficacement avec divers formats de documents, notamment PDF, DOCX, XLSX, etc. Nous passerons en revue les étapes nécessaires pour extraire des champs spécifiques d'un formulaire PDF et gérer les données extraites.
 ## Conditions préalables

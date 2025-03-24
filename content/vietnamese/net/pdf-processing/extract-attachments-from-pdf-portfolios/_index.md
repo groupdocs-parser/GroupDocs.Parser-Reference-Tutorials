@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất tệp đính kèm từ danh mục P
 weight: 10
 url: /vi/net/pdf-processing/extract-attachments-from-pdf-portfolios/
 ---
+
+# Trích xuất tệp đính kèm từ danh mục PDF
+
 ## Giới thiệu
 Trong thế giới xử lý và phân tích tài liệu, việc xử lý danh mục PDF một cách hiệu quả có thể rất quan trọng. GroupDocs.Parser for .NET cung cấp một giải pháp mạnh mẽ để trích xuất tệp đính kèm từ danh mục PDF, cho phép các nhà phát triển truy cập và quản lý nội dung một cách dễ dàng. Hướng dẫn này sẽ hướng dẫn bạn từng bước thực hiện quy trình, sử dụng GroupDocs.Parser để trích xuất các tệp đính kèm một cách liền mạch.
 ## Điều kiện tiên quyết

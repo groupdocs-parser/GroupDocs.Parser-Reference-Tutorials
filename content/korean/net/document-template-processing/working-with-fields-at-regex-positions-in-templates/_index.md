@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser에서 정규식 위치를 사용하여 문
 weight: 13
 url: /ko/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---
+
+# 템플릿의 정규식 위치에 있는 필드 작업
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser를 활용하여 문서 템플릿 내에서 지정된 정규식(regex)을 기반으로 필드를 추출하는 방법을 배웁니다. 이 라이브러리는 문서 구문 분석 및 추출을 위한 강력한 기능을 제공하므로 구조화된 데이터 추출 작업을 효율적으로 처리하는 데 이상적입니다.
 ## 전제 조건

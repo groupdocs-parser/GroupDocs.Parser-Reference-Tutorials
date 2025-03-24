@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak teks dari berbagai format dokumen di .NET
 weight: 12
 url: /id/net/document-loading/load-document-from-stream/
 ---
+
+# Muat Dokumen dari Aliran
+
 ## Perkenalan
 Dalam ranah pemrosesan dokumen pada aplikasi .NET, mengekstraksi teks dari berbagai format file merupakan kebutuhan umum. GroupDocs.Parser untuk .NET menawarkan solusi canggih untuk mengurai dan mengekstrak teks dengan lancar dari beragam dokumen. Tutorial ini akan memandu Anda melalui proses penggunaan GroupDocs.Parser untuk mengekstrak teks dari dokumen langkah demi langkah.
 ## Prasyarat

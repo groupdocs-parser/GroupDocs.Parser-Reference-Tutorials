@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić dane strukturalne z dokumentów za p
 weight: 11
 url: /pl/net/data-extraction-from-templates/iterate-through-fields/
 ---
+
+# Iteruj po polach
+
 ## Wstęp
 GroupDocs.Parser dla .NET to potężna biblioteka, która umożliwia programistom wyodrębnianie danych z różnych formatów dokumentów, takich jak PDF, Microsoft Word, Excel i PowerPoint. Ten samouczek poprowadzi Cię przez proces używania GroupDocs.Parser do iteracji po polach dokumentu i wyodrębniania określonych danych przy użyciu szablonów. Pod koniec tego samouczka będziesz w stanie efektywnie wyodrębniać uporządkowane dane z dokumentów w aplikacjach .NET.
 ## Warunki wstępne

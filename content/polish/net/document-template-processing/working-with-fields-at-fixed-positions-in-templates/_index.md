@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębniać dane z dokumentów za pomocą Group
 weight: 11
 url: /pl/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
+
+# Praca z polami w ustalonych pozycjach w szablonach
+
 ## Wstęp
 W tym samouczku omówimy, jak pracować z polami w ustalonych pozycjach w szablonach przy użyciu GroupDocs.Parser dla .NET. GroupDocs.Parser to potężna biblioteka do analizowania dokumentów, która umożliwia programistom wyodrębnianie danych z różnych formatów dokumentów, takich jak PDF, Word, Excel i innych. W szczególności skupimy się na definiowaniu i wykorzystywaniu pól szablonów w celu wyodrębnienia ukierunkowanych informacji na podstawie ich stałych pozycji.
 ## Warunki wstępne

@@ -6,6 +6,9 @@ description: Découvrez comment rechercher du texte par mot-clé dans des docume
 weight: 21
 url: /fr/net/text-extraction/search-text-by-keyword/
 ---
+
+# Rechercher du texte par mot-clé
+
 ## Introduction
 Dans ce didacticiel, nous allons explorer l'utilisation de GroupDocs.Parser pour .NET pour rechercher du texte par mot-clé dans les documents. GroupDocs.Parser est une bibliothèque puissante qui permet aux développeurs d'extraire du texte, des métadonnées et d'autres informations à partir de divers formats de fichiers, tels que des PDF, des documents Microsoft Office, etc. La recherche de mots-clés spécifiques dans ces documents peut s'avérer essentielle pour les applications traitant de gros volumes de données textuelles.
 ## Conditions préalables

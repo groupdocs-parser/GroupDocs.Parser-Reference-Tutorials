@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić tekst z dokumentów za pomocą Group
 weight: 13
 url: /pl/net/document-loading/load-document-from-url/
 ---
+
+# Załaduj dokument z adresu URL
+
 ## Wstęp
 tym samouczku omówimy, jak wykorzystać GroupDocs.Parser dla .NET do wyodrębnienia tekstu z dokumentów. GroupDocs.Parser to potężne narzędzie do wyodrębniania tekstu, metadanych i innych informacji z różnych formatów dokumentów, takich jak PDF, Word, Excel i innych. Omówimy krok po kroku proces ładowania dokumentu z adresu URL i wydobywania jego zawartości tekstowej.
 ## Warunki wstępne

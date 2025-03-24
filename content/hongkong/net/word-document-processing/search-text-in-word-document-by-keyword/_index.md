@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 在 Word 文件中搜�
 weight: 18
 url: /zh-hant/net/word-document-processing/search-text-in-word-document-by-keyword/
 ---
+
+# 按關鍵字搜尋 Word 文件中的文本
+
 ## 介紹
 在本教學中，我們將探討如何使用 GroupDocs.Parser for .NET 使用 C# 在 Word 文件中搜尋特定文字。 GroupDocs.Parser 是一個功能強大的程式庫，可讓開發人員從各種文件格式（包括 Word 文件）中提取文字和元資料。
 ## 先決條件

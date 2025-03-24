@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 从文档中提取数�
 weight: 11
 url: /zh/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
+
+# 使用模板中固定位置的字段
+
 ## 介绍
 在本教程中，我们将探索如何使用 GroupDocs.Parser for .NET 处理模板中固定位置的字段。GroupDocs.Parser 是一个功能强大的文档解析库，使开发人员能够从各种文档格式（如 PDF、Word、Excel 等）中提取数据。具体来说，我们将专注于定义和利用模板字段来根据其固定位置提取目标信息。
 ## 先决条件

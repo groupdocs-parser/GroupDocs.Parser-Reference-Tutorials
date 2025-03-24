@@ -6,6 +6,9 @@ description: Aprenda a extração eficiente de texto de páginas de documentos u
 weight: 17
 url: /pt/net/text-extraction/extract-text-from-page-in-raw-mode/
 ---
+
+# Extraia texto da página no modo Raw
+
 ## Introdução
 Neste tutorial, você aprenderá como usar Groupdocs.Parser for .NET para extrair texto de páginas de documentos em modo bruto. Esta biblioteca fornece ferramentas eficientes para analisar e extrair conteúdo de vários formatos de arquivo, permitindo que os desenvolvedores incorporem a extração de texto de documentos em seus aplicativos .NET.
 ## Pré-requisitos

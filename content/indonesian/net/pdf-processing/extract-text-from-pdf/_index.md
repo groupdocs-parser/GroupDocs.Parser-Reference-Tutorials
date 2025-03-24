@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak teks dari dokumen PDF menggunakan GroupDo
 weight: 14
 url: /id/net/pdf-processing/extract-text-from-pdf/
 ---
+
+# Ekstrak Teks dari PDF
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara mengekstrak teks dari dokumen PDF menggunakan GroupDocs.Parser untuk .NET. GroupDocs.Parser adalah API canggih yang memungkinkan pengembang mengekstrak teks, metadata, dan data terstruktur dari berbagai format dokumen termasuk PDF, Microsoft Office, dan banyak lagi.
 ## Prasyarat

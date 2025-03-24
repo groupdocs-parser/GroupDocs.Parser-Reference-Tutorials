@@ -6,6 +6,9 @@ description: Dowiedz się, jak analizować strony dokumentów przy użyciu szabl
 weight: 16
 url: /pl/net/document-template-processing/parse-pages-using-templates/
 ---
+
+# Analizuj strony przy użyciu szablonów
+
 ## Wstęp
 W tym samouczku omówimy wykorzystanie GroupDocs.Parser dla .NET do wydajnego wyodrębniania danych z dokumentów. GroupDocs.Parser to potężna biblioteka umożliwiająca analizowanie różnych formatów dokumentów, takich jak PDF, DOCX, PPTX i innych. Skoncentrujemy się na parsowaniu stron za pomocą szablonów, co pozwala na precyzyjne wyodrębnienie określonej treści, takiej jak kody kreskowe.
 ## Warunki wstępne

@@ -7,6 +7,9 @@ weight: 26
 url: /id/net/data-extraction-from-templates/
 ---
 
+# Ekstraksi Data dari Template
+
+
 ## Perkenalan
 
 Dalam bidang pengembangan .NET, GroupDocs.Parser menonjol sebagai alat yang ampuh untuk mengekstraksi data dari berbagai format dokumen. Baik Anda berurusan dengan PDF, dokumen Word, atau spreadsheet, GroupDocs.Parser menyederhanakan proses ekstraksi, menghemat waktu dan tenaga Anda.

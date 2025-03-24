@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 從 PDF 文件中擷�
 weight: 12
 url: /zh-hant/net/pdf-processing/extract-images-from-pdf/
 ---
+
+# 從 PDF 中提取圖像
+
 ## 介紹
 在本教學中，我們將探討如何使用 GroupDocs.Parser for .NET 從 PDF 文件中擷取影像。 GroupDocs.Parser 是一個功能強大的程式庫，可讓開發人員在 .NET 環境中處理各種文件格式，包括 PDF、DOCX、PPTX 等。透過執行這些步驟，您將能夠輕鬆地從 PDF 文件中提取圖像。
 ## 先決條件

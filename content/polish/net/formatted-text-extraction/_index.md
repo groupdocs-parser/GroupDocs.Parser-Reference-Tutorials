@@ -7,6 +7,9 @@ weight: 21
 url: /pl/net/formatted-text-extraction/
 ---
 
+# Ekstrakcja sformatowanego tekstu
+
+
 ## Wstęp
 
 Poznaj świat wyodrębniania sformatowanego tekstu w platformie .NET dzięki samouczkom GroupDocs.Parser. W tych samouczkach opisano szereg technik wyodrębniania sformatowanego tekstu z dokumentów, w tym HTML, Markdown i zwykły tekst. Niezależnie od tego, czy jesteś początkującym, czy doświadczonym programistą, te samouczki dostarczają cennych spostrzeżeń i praktycznych przykładów zwiększających możliwości wyodrębniania tekstu.

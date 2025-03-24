@@ -7,6 +7,9 @@ weight: 27
 url: /hu/net/barcode-extraction/
 ---
 
+# Vonalkód kivonás
+
+
 A dokumentumfeldolgozás területén a vonalkód-kivonás kulcsfontosságú feladat. Legyen szó leltárkezelésről, dokumentumkategorizálásról vagy adatbeviteli automatizálásról, felbecsülhetetlen a lehetőség, hogy gyorsan és pontosan kinyerjük a vonalkódokat a dokumentumokból. A GroupDocs.Parser for .NET segítségével ennek a folyamatnak az elsajátítása nemcsak elérhetővé, hanem egyszerűbbé is válik.
 
 ## vonalkód-kivonás megértése:

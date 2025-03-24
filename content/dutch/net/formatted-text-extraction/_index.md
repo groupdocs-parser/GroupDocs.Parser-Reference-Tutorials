@@ -7,6 +7,9 @@ weight: 21
 url: /nl/net/formatted-text-extraction/
 ---
 
+# Geformatteerde tekstextractie
+
+
 ## Invoering
 
 Ontdek de wereld van opgemaakte tekstextractie in .NET met GroupDocs.Parser-tutorials. Deze tutorials behandelen een reeks technieken voor het extraheren van opgemaakte tekst uit documenten, waaronder HTML, Markdown en platte tekst. Of u nu een beginner of een ervaren ontwikkelaar bent, deze tutorials bieden waardevolle inzichten en praktische voorbeelden om uw mogelijkheden voor tekstextractie te verbeteren.

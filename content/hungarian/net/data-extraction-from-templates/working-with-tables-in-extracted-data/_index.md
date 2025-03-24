@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan nyerhet ki táblázatadatokat dokumentumokból 
 weight: 12
 url: /hu/net/data-extraction-from-templates/working-with-tables-in-extracted-data/
 ---
+
+# Táblázatok használata a kivont adatokban
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan használható a GroupDocs.Parser for .NET adatok kinyerésére a dokumentumok táblázataiból. A GroupDocs.Parser egy hatékony eszköz, amely lehetővé teszi a fejlesztők számára, hogy szövegeket, metaadatokat és strukturált tartalmakat elemezzenek és bontsanak ki különféle fájlformátumokból, például PDF, DOCX, XLSX és egyebekből. Konkrétan a táblázatadatok hatékony kinyerésére fogunk összpontosítani előre meghatározott sablonok segítségével.
 ## Előfeltételek

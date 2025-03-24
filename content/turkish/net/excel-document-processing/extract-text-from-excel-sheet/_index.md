@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak Excel sayfalarından nasıl 
 weight: 14
 url: /tr/net/excel-document-processing/extract-text-from-excel-sheet/
 ---
+
+# Excel Sayfasından Metin Çıkarma
+
 ## giriiş
 Bu öğreticide, GroupDocs.Parser for .NET kitaplığını kullanarak Excel sayfalarından nasıl metin ayıklanacağını keşfedeceğiz. Bu güçlü araç, metinsel verileri çıkarmak için Excel elektronik tabloları da dahil olmak üzere çeşitli belge formatlarını verimli bir şekilde ayrıştırmamıza ve analiz etmemize olanak tanır.
 ## Önkoşullar

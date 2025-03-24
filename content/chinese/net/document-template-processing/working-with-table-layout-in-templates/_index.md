@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 处理模板中的表�
 weight: 14
 url: /zh/net/document-template-processing/working-with-table-layout-in-templates/
 ---
+
+# 使用模板中的表格布局
+
 ## 介绍
 在本教程中，我们将探索如何使用 GroupDocs.Parser for .NET 处理模板中的表格布局。GroupDocs.Parser 是一个功能强大的文档解析 API，允许开发人员从各种文档格式（包括 PDF、Microsoft Office 等）中提取文本和元数据。
 ## 先决条件

@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用して Word 文書からハイ�
 weight: 10
 url: /ja/net/word-document-processing/extract-hyperlinks-from-word-document/
 ---
+
+# Word文書からハイパーリンクを抽出する
+
 ## 導入
 GroupDocs.Parser for .NET は、開発者が Word、Excel、PowerPoint、PDF などのさまざまなドキュメント形式から構造化テキストとメタデータを抽出できるようにする強力なツールです。ドキュメント処理における一般的な要件の 1 つは、Word ドキュメントからプログラムでハイパーリンクを抽出することです。このチュートリアルでは、GroupDocs.Parser を使用して Word ドキュメントからハイパーリンクを抽出するプロセスを段階的に説明します。
 ## 前提条件

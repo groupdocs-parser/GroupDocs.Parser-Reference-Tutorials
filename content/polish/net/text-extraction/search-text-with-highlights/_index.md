@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyszukiwać i wyróżniać tekst w dokumentach za
 weight: 24
 url: /pl/net/text-extraction/search-text-with-highlights/
 ---
+
+# Wyszukaj tekst z wyróżnieniami
+
 ## Wstęp
 tym samouczku omówimy, jak używać programu GroupDocs.Parser dla platformy .NET do wyszukiwania tekstu w dokumencie i wyróżniania wyników wyszukiwania. GroupDocs.Parser to potężna biblioteka, która umożliwia pracę z różnymi formatami dokumentów oraz wyodrębnianie tekstu, metadanych i nie tylko.
 ## Warunki wstępne

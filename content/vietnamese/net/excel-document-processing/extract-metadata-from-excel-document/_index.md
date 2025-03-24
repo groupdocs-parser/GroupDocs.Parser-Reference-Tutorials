@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất siêu dữ liệu từ tài liệu 
 weight: 11
 url: /vi/net/excel-document-processing/extract-metadata-from-excel-document/
 ---
+
+# Trích xuất siêu dữ liệu từ tài liệu Excel
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng tôi sẽ trình bày cách sử dụng GroupDocs.Parser cho .NET để trích xuất siêu dữ liệu từ tài liệu Excel. GroupDocs.Parser là một thư viện mạnh mẽ cho phép bạn trích xuất nhiều thành phần tài liệu khác nhau, bao gồm siêu dữ liệu, văn bản, hình ảnh, v.v.
 ## Điều kiện tiên quyết

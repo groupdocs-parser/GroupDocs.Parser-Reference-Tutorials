@@ -7,6 +7,9 @@ weight: 21
 url: /zh-hant/net/formatted-text-extraction/
 ---
 
+# 格式化文字擷取
+
+
 ## 介紹
 
 透過 GroupDocs.Parser 教學探索 .NET 中格式化文字擷取的世界。這些教程涵蓋了從文件中提取格式化文字的一系列技術，包括 HTML、Markdown 和純文字。無論您是初學者還是經驗豐富的開發人員，這些教程都提供了寶貴的見解和實際範例，以增強您的文字擷取能力。

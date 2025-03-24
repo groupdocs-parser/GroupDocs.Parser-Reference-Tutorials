@@ -6,6 +6,9 @@ description: Leer hoe u gegevens uit documenten kunt extraheren met GroupDocs.Pa
 weight: 11
 url: /nl/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
+
+# Werken met velden op vaste posities in sjablonen
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u met velden op vaste posities binnen sjablonen kunt werken met behulp van GroupDocs.Parser voor .NET. GroupDocs.Parser is een krachtige bibliotheek voor het parseren van documenten waarmee ontwikkelaars gegevens kunnen extraheren uit verschillende documentformaten zoals PDF, Word, Excel en meer. We zullen ons specifiek concentreren op het definiëren en gebruiken van sjabloonvelden om gerichte informatie te extraheren op basis van hun vaste posities.
 ## Vereisten

@@ -6,6 +6,9 @@ description: Leer in eenvoudige stappen hoe u tekst uit Excel-documenten kunt ex
 weight: 12
 url: /nl/net/excel-document-processing/extract-text-from-excel-document/
 ---
+
+# Extraheer tekst uit Excel-document
+
 ## Invoering
 In deze zelfstudie begeleiden we u bij het extraheren van tekst uit een Excel-document met GroupDocs.Parser voor .NET. GroupDocs.Parser is een krachtige .NET-bibliotheek waarmee u verschillende documentformaten, waaronder Excel-bestanden, kunt parseren om tekst en metagegevens te extraheren.
 ## Vereisten

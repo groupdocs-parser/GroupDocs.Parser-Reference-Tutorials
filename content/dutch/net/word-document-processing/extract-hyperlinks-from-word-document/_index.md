@@ -6,6 +6,9 @@ description: Leer hoe u hyperlinks uit Word-documenten extraheert met GroupDocs.
 weight: 10
 url: /nl/net/word-document-processing/extract-hyperlinks-from-word-document/
 ---
+
+# Extraheer hyperlinks uit een Word-document
+
 ## Invoering
 GroupDocs.Parser voor .NET is een krachtige tool waarmee ontwikkelaars gestructureerde tekst en metagegevens kunnen extraheren uit verschillende documentformaten zoals Word, Excel, PowerPoint, PDF en meer. Een veel voorkomende vereiste bij documentverwerking is het programmatisch extraheren van hyperlinks uit Word-documenten. Deze tutorial begeleidt u stap voor stap bij het gebruik van GroupDocs.Parser om hyperlinks uit een Word-document te extraheren.
 ## Vereisten

@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất mã vạch từ tài liệu bằng 
 weight: 14
 url: /vi/net/barcode-extraction/extract-barcodes-from-document-with-options/
 ---
+
+# Trích xuất mã vạch từ tài liệu với các tùy chọn
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ tìm hiểu quy trình trích xuất mã vạch từ tài liệu bằng GroupDocs.Parser cho .NET. GroupDocs.Parser là một thư viện mạnh mẽ cho phép bạn trích xuất văn bản, siêu dữ liệu và mã vạch từ nhiều định dạng tài liệu khác nhau như PDF, Microsoft Word, Excel, v.v.
 ## Điều kiện tiên quyết

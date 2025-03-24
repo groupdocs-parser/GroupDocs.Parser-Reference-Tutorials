@@ -6,6 +6,9 @@ description: Extraheer moeiteloos afbeeldingen uit verschillende documenttypen, 
 weight: 13
 url: /nl/net/image-extraction/extract-images-to-files/
 ---
+
+# Afbeeldingen uitpakken naar bestanden
+
 ## Invoering
 In deze zelfstudie leert u hoe u GroupDocs.Parser voor .NET kunt gebruiken om afbeeldingen uit verschillende documentindelingen, zoals PDF, Word, Excel en PowerPoint, te extraheren. GroupDocs.Parser is een krachtige bibliotheek waarmee ontwikkelaars op een eenvoudige manier tekst, metagegevens, afbeeldingen en meer uit documenten kunnen parseren en extraheren. Deze handleiding leidt u door het proces van het extraheren van afbeeldingen en het opslaan ervan als afzonderlijke bestanden met behulp van C#.
 ## Vereisten

@@ -6,6 +6,9 @@ description: Leer hoe u tekst uit verschillende documentformaten in .NET kunt ex
 weight: 12
 url: /nl/net/document-loading/load-document-from-stream/
 ---
+
+# Document uit stroom laden
+
 ## Invoering
 Op het gebied van documentverwerking in .NET-toepassingen is het extraheren van tekst uit verschillende bestandsformaten een veel voorkomende vereiste. GroupDocs.Parser voor .NET biedt een krachtige oplossing voor het naadloos parseren en extraheren van tekst uit een breed scala aan documenten. Deze tutorial begeleidt u stap voor stap bij het gebruik van GroupDocs.Parser om tekst uit documenten te extraheren.
 ## Vereisten

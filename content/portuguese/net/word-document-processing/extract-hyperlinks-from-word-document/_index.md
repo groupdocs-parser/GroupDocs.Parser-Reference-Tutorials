@@ -6,6 +6,9 @@ description: Aprenda como extrair hiperlinks de documentos do Word usando GroupD
 weight: 10
 url: /pt/net/word-document-processing/extract-hyperlinks-from-word-document/
 ---
+
+# Extraia hiperlinks de um documento do Word
+
 ## Introdução
 GroupDocs.Parser for .NET é uma ferramenta poderosa que permite aos desenvolvedores extrair texto estruturado e metadados de vários formatos de documentos, como Word, Excel, PowerPoint, PDF e muito mais. Um requisito comum no processamento de documentos é extrair hiperlinks de documentos do Word de forma programática. Este tutorial irá guiá-lo através do processo de uso do GroupDocs.Parser para extrair hiperlinks de um documento do Word passo a passo.
 ## Pré-requisitos

@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất văn bản từ tài liệu Excel v
 weight: 13
 url: /vi/net/excel-document-processing/extract-text-from-excel-document-as-html/
 ---
+
+# Trích xuất văn bản từ tài liệu Excel dưới dạng HTML
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Parser cho .NET để trích xuất văn bản từ tài liệu Excel và chuyển đổi nó sang định dạng HTML. GroupDocs.Parser là một thư viện mạnh mẽ cho phép các nhà phát triển làm việc với nhiều định dạng tài liệu khác nhau, trích xuất văn bản và siêu dữ liệu một cách hiệu quả.
 ## Điều kiện tiên quyết

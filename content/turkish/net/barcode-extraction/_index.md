@@ -7,6 +7,9 @@ weight: 27
 url: /tr/net/barcode-extraction/
 ---
 
+# Barkod Çıkarma
+
+
 Belge işleme alanında barkod çıkarma çok önemli bir görevdir. Envanter yönetimi, belge kategorizasyonu veya veri girişi otomasyonu için olsun, belgelerden barkodları hızlı ve doğru bir şekilde çıkarma yeteneği çok değerlidir. GroupDocs.Parser for .NET ile bu süreçte uzmanlaşmak hem ulaşılabilir hem de kolaylaştırılmış hale gelir.
 
 ## Barkod Çıkarmayı Anlamak:

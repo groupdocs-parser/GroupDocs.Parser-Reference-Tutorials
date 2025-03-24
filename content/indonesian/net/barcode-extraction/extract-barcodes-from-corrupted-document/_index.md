@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak kode batang dari dokumen yang rusak mengg
 weight: 11
 url: /id/net/barcode-extraction/extract-barcodes-from-corrupted-document/
 ---
+
+# Ekstrak Barcode dari Dokumen yang Rusak
+
 ## Perkenalan
 Dalam tutorial ini, kami akan memandu Anda melalui proses mengekstraksi kode batang dari dokumen yang rusak menggunakan GroupDocs.Parser untuk .NET. GroupDocs.Parser adalah API penguraian dokumen canggih yang memungkinkan pengembang mengekstrak teks, metadata, gambar, dan sekarang, kode batang dari berbagai format file. Kami akan merinci langkah-langkah yang diperlukan untuk menyelesaikan tugas ini secara efektif.
 ## Prasyarat

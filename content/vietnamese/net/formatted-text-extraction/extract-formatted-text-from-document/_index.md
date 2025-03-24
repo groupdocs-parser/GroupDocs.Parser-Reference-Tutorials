@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất văn bản có định dạng từ 
 weight: 10
 url: /vi/net/formatted-text-extraction/extract-formatted-text-from-document/
 ---
+
+# Trích xuất văn bản được định dạng từ tài liệu
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Parser cho .NET để trích xuất văn bản được định dạng từ nhiều loại tài liệu khác nhau. GroupDocs.Parser là một thư viện mạnh mẽ cho phép các nhà phát triển làm việc với các tài liệu một cách đơn giản và hiệu quả. Đến cuối hướng dẫn này, bạn sẽ có thể tích hợp liền mạch khả năng trích xuất văn bản vào các ứng dụng .NET của mình.
 ## Điều kiện tiên quyết

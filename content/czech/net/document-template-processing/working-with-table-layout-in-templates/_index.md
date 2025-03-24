@@ -6,6 +6,9 @@ description: Naučte se pracovat s rozložením tabulek v šablonách pomocí Gr
 weight: 14
 url: /cs/net/document-template-processing/working-with-table-layout-in-templates/
 ---
+
+# Práce s rozložením tabulky v šablonách
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak pracovat s rozložením tabulek v šablonách pomocí GroupDocs.Parser for .NET. GroupDocs.Parser je výkonné API pro analýzu dokumentů, které umožňuje vývojářům extrahovat text a metadata z různých formátů dokumentů, včetně PDF, Microsoft Office a dalších.
 ## Předpoklady

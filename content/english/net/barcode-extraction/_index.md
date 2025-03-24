@@ -7,6 +7,9 @@ weight: 27
 url: /net/barcode-extraction/
 ---
 
+# Barcode Extraction
+
+
 In the realm of document processing, barcode extraction stands as a crucial task. Whether it's for inventory management, document categorization, or data entry automation, the ability to swiftly and accurately extract barcodes from documents is invaluable. With GroupDocs.Parser for .NET, mastering this process becomes not only achievable but also streamlined.
 
 ## Understanding Barcode Extraction:

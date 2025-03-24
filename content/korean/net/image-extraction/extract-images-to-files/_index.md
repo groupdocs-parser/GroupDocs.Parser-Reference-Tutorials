@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 PDF 및 DOCX와 같은 다
 weight: 13
 url: /ko/net/image-extraction/extract-images-to-files/
 ---
+
+# 이미지를 파일로 추출
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser를 사용하여 PDF, Word, Excel 및 PowerPoint와 같은 다양한 문서 형식에서 이미지를 추출하는 방법을 배웁니다. GroupDocs.Parser는 개발자가 문서에서 텍스트, 메타데이터, 이미지 등을 간단한 방식으로 구문 분석하고 추출할 수 있는 강력한 라이브러리입니다. 이 가이드에서는 C#을 사용하여 이미지를 추출하고 개별 파일로 저장하는 과정을 안내합니다.
 ## 전제 조건

@@ -6,6 +6,9 @@ description: Scopri come estrarre il sommario (TOC) dai documenti Word a livello
 weight: 13
 url: /it/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
+
+# Estrai il sommario dal documento di Word
+
 ## introduzione
 In questo tutorial imparerai come utilizzare GroupDocs.Parser per .NET per estrarre il sommario (TOC) da un documento Word passo dopo passo. GroupDocs.Parser è una potente libreria che ti consente di lavorare con vari formati di documenti a livello di codice.
 ## Prerequisiti

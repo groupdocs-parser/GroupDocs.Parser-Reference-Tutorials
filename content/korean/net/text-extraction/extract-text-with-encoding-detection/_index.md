@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 인코딩 감지 기능을
 weight: 10
 url: /ko/net/text-extraction/extract-text-with-encoding-detection/
 ---
+
+# 인코딩 감지로 텍스트 추출
+
 ## 소개
 .NET용 GroupDocs.Parser는 개발자가 .NET 응용 프로그램의 다양한 문서 형식에서 텍스트, 메타데이터 및 기타 정보를 추출할 수 있는 강력한 라이브러리입니다. 이 튜토리얼에서는 GroupDocs.Parser를 사용하여 인코딩을 감지하면서 문서에서 텍스트를 추출하는 과정을 안내합니다. 다음 단계를 수행하면 .NET 프로젝트 내에서 다양한 문서 유형을 효율적으로 구문 분석하고 작업할 수 있습니다.
 ## 전제 조건

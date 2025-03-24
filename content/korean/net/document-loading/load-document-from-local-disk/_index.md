@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 다양한 문서 형식에
 weight: 11
 url: /ko/net/document-loading/load-document-from-local-disk/
 ---
+
+# 로컬 디스크에서 문서 로드
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser를 사용하여 문서에서 텍스트를 추출하는 방법을 살펴보겠습니다. GroupDocs.Parser는 개발자가 다양한 문서 형식을 구문 분석하고 프로그래밍 방식으로 텍스트 콘텐츠를 추출할 수 있는 강력한 라이브러리입니다. 이 라이브러리를 사용하여 텍스트 추출을 시작하는 데 필요한 단계를 다루겠습니다.
 ## 전제 조건

@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthat ki szöveget Excel-dokumentumokból, é
 weight: 13
 url: /hu/net/excel-document-processing/extract-text-from-excel-document-as-html/
 ---
+
+# Szöveg kibontása az Excel-dokumentumból HTML-ként
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan használható a GroupDocs.Parser for .NET szöveg Excel-dokumentumból való kinyerésére és HTML formátumba konvertálására. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy különféle dokumentumformátumokkal dolgozzanak, hatékonyan kivonva a szöveget és a metaadatokat.
 ## Előfeltételek

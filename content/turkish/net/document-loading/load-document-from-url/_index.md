@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak belgelerden nasıl metin ay�
 weight: 13
 url: /tr/net/document-loading/load-document-from-url/
 ---
+
+# Belgeyi URL'den Yükle
+
 ## giriiş
 Bu öğreticide, belgelerden metin ayıklamak için GroupDocs.Parser for .NET'in nasıl kullanılacağını keşfedeceğiz. GroupDocs.Parser, PDF, Word, Excel ve daha fazlası gibi çeşitli belge formatlarından metin, meta veriler ve diğer bilgileri çıkarmak için güçlü bir araçtır. Bir URL'den belge yükleme ve metin içeriğini çıkarma sürecini adım adım ele alacağız.
 ## Önkoşullar

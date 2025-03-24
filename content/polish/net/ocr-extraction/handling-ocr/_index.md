@@ -6,6 +6,9 @@ description: Dowiedz się, jak obsługiwać OCR przy użyciu GroupDocs.Parser dl
 weight: 11
 url: /pl/net/ocr-extraction/handling-ocr/
 ---
+
+# Obsługa OCR
+
 ## Wstęp
 W tym samouczku omówimy, jak używać GroupDocs.Parser dla .NET do wydajnej obsługi zadań optycznego rozpoznawania znaków (OCR). Ta biblioteka zapewnia zaawansowane narzędzia do wyodrębniania tekstu z dokumentów, a dzięki OCR możesz wyodrębniać tekst nawet z obrazów lub zeskanowanych dokumentów. Zagłębmy się w ten proces krok po kroku.
 ## Warunki wstępne

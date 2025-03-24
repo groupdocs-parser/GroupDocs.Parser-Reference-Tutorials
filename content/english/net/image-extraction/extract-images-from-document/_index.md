@@ -6,6 +6,9 @@ description: Extract images from documents effortlessly using GroupDocs.Parser f
 weight: 11
 url: /net/image-extraction/extract-images-from-document/
 ---
+
+# Extract Images from Document
+
 ## Introduction
 In this tutorial, we will explore how to extract images from documents using GroupDocs.Parser for .NET. GroupDocs.Parser is a powerful library that enables developers to extract text, metadata, images, and more from various document formats.
 ## Prerequisites

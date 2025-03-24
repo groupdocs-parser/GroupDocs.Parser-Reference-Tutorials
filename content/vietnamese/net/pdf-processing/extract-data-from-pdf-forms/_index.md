@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất dữ liệu từ biểu mẫu PDF b
 weight: 11
 url: /vi/net/pdf-processing/extract-data-from-pdf-forms/
 ---
+
+# Trích xuất dữ liệu từ biểu mẫu PDF
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Parser cho .NET để trích xuất dữ liệu từ các biểu mẫu PDF. GroupDocs.Parser là một thư viện mạnh mẽ cho phép các nhà phát triển làm việc hiệu quả với nhiều định dạng tài liệu khác nhau, bao gồm PDF, DOCX, XLSX, v.v. Chúng tôi sẽ hướng dẫn các bước cần thiết để trích xuất các trường cụ thể từ biểu mẫu PDF và xử lý dữ liệu được trích xuất.
 ## Điều kiện tiên quyết

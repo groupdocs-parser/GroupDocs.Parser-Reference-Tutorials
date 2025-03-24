@@ -6,6 +6,9 @@ description: Découvrez comment extraire avec précision des images de documents
 weight: 10
 url: /fr/net/image-extraction/extract-images-from-document-page-area/
 ---
+
+# Extraire des images de la zone de la page du document
+
 ## Introduction
 Dans ce didacticiel, nous apprendrons comment utiliser Groupdocs.Parser pour .NET pour extraire des images de zones spécifiques d'une page de document. Ce processus vous permet de cibler et de récupérer avec précision des images en fonction de coordonnées et de dimensions définies dans le document.
 ## Conditions préalables

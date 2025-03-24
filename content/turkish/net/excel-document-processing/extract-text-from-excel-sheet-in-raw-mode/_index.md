@@ -6,6 +6,9 @@ description: Bu kapsamlı eğitimde GroupDocs.Parser for .NET'i kullanarak Excel
 weight: 15
 url: /tr/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
 ---
+
+# Ham Modda Excel Sayfasından Metin Çıkarma
+
 ## giriiş
 Bu öğreticide, GroupDocs.Parser for .NET'i ham modda kullanarak Excel sayfalarından nasıl metin ayıklanacağını keşfedeceğiz. GroupDocs.Parser, geliştiricilerin metin çıkarma ve analiz için Excel dosyaları da dahil olmak üzere çeşitli belge formatlarıyla çalışmasına olanak tanıyan güçlü bir API'dir. Excel sayfalarından metin çıkarma sürecini göstermek için önkoşulları inceleyeceğiz, ad alanlarını içe aktaracağız ve her adımı ayrıntılı olarak ele alacağız.
 ## Önkoşullar

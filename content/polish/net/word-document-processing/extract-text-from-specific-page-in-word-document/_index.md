@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić tekst z określonych stron w dokumen
 weight: 17
 url: /pl/net/word-document-processing/extract-text-from-specific-page-in-word-document/
 ---
+
+# Wyodrębnij tekst z określonej strony w dokumencie programu Word
+
 ## Wstęp
 środowisku programowania .NET wyodrębnianie tekstu z dokumentów jest powszechnym wymaganiem w różnych aplikacjach. GroupDocs.Parser dla .NET zapewnia niezawodne rozwiązanie do płynnego analizowania i wyodrębniania tekstu z różnych formatów dokumentów. W tym samouczku skupiono się na wykorzystaniu narzędzia GroupDocs.Parser do wyodrębnienia tekstu z określonej strony w dokumencie programu Word. Postępując zgodnie z tym przewodnikiem, poznasz niezbędne kroki, aby skutecznie zintegrować tę funkcjonalność z projektami .NET.
 ## Warunki wstępne

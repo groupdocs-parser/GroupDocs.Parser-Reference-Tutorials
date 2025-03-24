@@ -6,6 +6,9 @@ description: Leer hoe u nauwkeurig tekst uit documenten in .NET kunt extraheren 
 weight: 18
 url: /nl/net/text-extraction/extract-text-in-accurate-mode/
 ---
+
+# Extraheer tekst in nauwkeurige modus
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u tekst nauwkeurig uit verschillende documentindelingen kunt extraheren met behulp van GroupDocs.Parser voor .NET. GroupDocs.Parser is een krachtige bibliotheek die tekstextractie mogelijk maakt uit documenten zoals PDF, DOCX, PPTX, XLSX en meer, waardoor het een waardevol hulpmiddel is voor gegevensverwerkingstoepassingen.
 ## Vereisten

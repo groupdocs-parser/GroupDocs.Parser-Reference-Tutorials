@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Text aus passw
 weight: 15
 url: /de/net/document-loading/working-with-password-protected-documents/
 ---
+
+# Arbeiten mit passwortgeschützten Dokumenten
+
 ## Einführung
 In der Welt der Dokumentenverarbeitung ist der effiziente Umgang mit passwortgeschützten Dateien von entscheidender Bedeutung. GroupDocs.Parser für .NET bietet robuste Funktionen für die nahtlose Arbeit mit solchen Dokumenten. Dieses Tutorial führt Sie durch den Prozess der Textextraktion aus passwortgeschützten Dokumenten mit GroupDocs.Parser.
 ## Voraussetzungen

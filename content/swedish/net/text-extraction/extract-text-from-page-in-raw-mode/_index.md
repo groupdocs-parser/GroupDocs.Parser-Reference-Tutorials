@@ -6,6 +6,9 @@ description: Lär dig effektiv textextraktion från dokumentsidor med Groupdocs.
 weight: 17
 url: /sv/net/text-extraction/extract-text-from-page-in-raw-mode/
 ---
+
+# Extrahera text från sidan i råläge
+
 ## Introduktion
 I den här handledningen kommer du att lära dig hur du använder Groupdocs.Parser för .NET för att extrahera text från dokumentsidor i råläge. Detta bibliotek tillhandahåller effektiva verktyg för att analysera och extrahera innehåll från olika filformat, vilket gör det möjligt för utvecklare att införliva dokumenttextextraktion i sina .NET-applikationer.
 ## Förutsättningar

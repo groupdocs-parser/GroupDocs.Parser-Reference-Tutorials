@@ -6,6 +6,9 @@ description: Learn how to extract text from specific document areas using GroupD
 weight: 13
 url: /net/text-extraction/extract-text-from-specific-areas-on-page/
 ---
+
+# Extract Text from Specific Areas on a Page
+
 ## Introduction
 In this tutorial, we will explore how to extract text from specific areas on a page using the GroupDocs.Parser for .NET library. GroupDocs.Parser simplifies the extraction of text from documents, allowing developers to target specific regions of interest within a document for text extraction. This can be particularly useful when dealing with complex documents where precise text extraction is required for further processing or analysis.
 ## Prerequisites

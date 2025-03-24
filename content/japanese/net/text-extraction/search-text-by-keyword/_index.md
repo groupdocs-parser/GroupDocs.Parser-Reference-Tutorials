@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用して、ドキュメント内�
 weight: 21
 url: /ja/net/text-extraction/search-text-by-keyword/
 ---
+
+# キーワードでテキストを検索
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を使用して、ドキュメント内のキーワードでテキストを検索する方法について詳しく説明します。GroupDocs.Parser は、開発者が PDF、Microsoft Office ドキュメントなどのさまざまなファイル形式からテキスト、メタデータ、およびその他の情報を抽出できるようにする強力なライブラリです。これらのドキュメント内で特定のキーワードを検索することは、大量のテキスト データを処理するアプリケーションにとって不可欠な場合があります。
 ## 前提条件

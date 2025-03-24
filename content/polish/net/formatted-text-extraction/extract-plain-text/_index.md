@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić zwykły tekst z dokumentów za pomoc
 weight: 14
 url: /pl/net/formatted-text-extraction/extract-plain-text/
 ---
+
+# Wyodrębnij zwykły tekst
+
 ## Wstęp
 tym samouczku przyjrzymy się, jak wyodrębnić zwykły tekst z różnych formatów dokumentów za pomocą GroupDocs.Parser dla .NET. GroupDocs.Parser to potężna biblioteka, która umożliwia programistom płynną pracę z dokumentami, wydajne wyodrębnianie tekstu i metadanych. Ten przewodnik przeprowadzi Cię przez niezbędne kroki, aby zintegrować i wykorzystać tę bibliotekę w aplikacjach .NET.
 ## Warunki wstępne

@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak çeşitli belge biçimlerind
 weight: 11
 url: /tr/net/document-loading/load-document-from-local-disk/
 ---
+
+# Belgeyi Yerel Diskten Yükle
+
 ## giriiş
 Bu öğreticide, belgelerden metin ayıklamak için GroupDocs.Parser for .NET'in nasıl kullanılacağını keşfedeceğiz. GroupDocs.Parser, geliştiricilerin çeşitli belge formatlarını ayrıştırmasına ve metin içeriğini programlı olarak ayıklamasına olanak tanıyan güçlü bir kitaplıktır. Bu kütüphaneyi kullanarak metin çıkarmaya başlamak için gerekli adımları ele alacağız.
 ## Önkoşullar

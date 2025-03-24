@@ -6,6 +6,9 @@ description: Lär dig hur du analyserar dokumentsidor med mallar i .NET med Grou
 weight: 16
 url: /sv/net/document-template-processing/parse-pages-using-templates/
 ---
+
+# Analysera sidor med mallar
+
 ## Introduktion
 I den här handledningen kommer vi att fördjupa oss i att använda GroupDocs.Parser för .NET för att effektivt extrahera data från dokument. GroupDocs.Parser är ett kraftfullt bibliotek som gör det möjligt att analysera olika dokumentformat som PDF, DOCX, PPTX och mer. Vi kommer att fokusera på att analysera sidor med hjälp av mallar, vilket möjliggör exakt extrahering av specifikt innehåll som streckkoder.
 ## Förutsättningar

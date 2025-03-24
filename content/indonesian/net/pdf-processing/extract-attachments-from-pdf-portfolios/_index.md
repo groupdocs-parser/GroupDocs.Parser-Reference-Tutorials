@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak lampiran dari portofolio PDF menggunakan 
 weight: 10
 url: /id/net/pdf-processing/extract-attachments-from-pdf-portfolios/
 ---
+
+# Ekstrak Lampiran dari Portofolio PDF
+
 ## Perkenalan
 Dalam dunia pemrosesan dan analisis dokumen, menangani portofolio PDF secara efisien sangatlah penting. GroupDocs.Parser untuk .NET menawarkan solusi canggih untuk mengekstrak lampiran dari portofolio PDF, memungkinkan pengembang mengakses dan mengelola konten dengan mudah. Tutorial ini akan memandu Anda melalui proses langkah demi langkah, menggunakan GroupDocs.Parser untuk mengekstrak lampiran dengan lancar.
 ## Prasyarat

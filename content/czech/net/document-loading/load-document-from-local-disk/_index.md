@@ -6,6 +6,9 @@ description: Naučte se extrahovat text z různých formátů dokumentů pomocí
 weight: 11
 url: /cs/net/document-loading/load-document-from-local-disk/
 ---
+
+# Načíst dokument z místního disku
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak používat GroupDocs.Parser pro .NET k extrahování textu z dokumentů. GroupDocs.Parser je výkonná knihovna, která umožňuje vývojářům analyzovat různé formáty dokumentů a programově extrahovat textový obsah. Probereme nezbytné kroky, jak začít s extrakcí textu pomocí této knihovny.
 ## Předpoklady

@@ -7,6 +7,9 @@ weight: 26
 url: /zh-hant/net/data-extraction-from-templates/
 ---
 
+# 從模板中提取數據
+
+
 ## 介紹
 
 在 .NET 開發領域，GroupDocs.Parser 作為從各種文件格式中提取資料的強大工具而脫穎而出。無論您是處理 PDF、Word 文件還是電子表格，GroupDocs.Parser 都可以簡化提取過程，從而節省您的時間和精力。

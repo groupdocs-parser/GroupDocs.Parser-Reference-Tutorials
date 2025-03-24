@@ -6,6 +6,9 @@ description: Aprenda como extrair tabelas de documentos programaticamente usando
 weight: 11
 url: /pt/net/table-extraction/extract-tables-from-document-page/
 ---
+
+# Extrair tabelas da página do documento
+
 ## Introdução
 Neste tutorial, exploraremos como extrair tabelas de uma página de documento usando GroupDocs.Parser for .NET. GroupDocs.Parser é uma biblioteca poderosa que permite aos desenvolvedores trabalhar com vários formatos de documentos, como PDF, DOCX, XLSX e muito mais. Ao aproveitar seus recursos, podemos extrair com eficiência dados estruturados, como tabelas, desses documentos, permitindo-nos manipular e analisar as informações de forma programática.
 ## Pré-requisitos

@@ -6,6 +6,9 @@ description: Scopri come estrarre testo da documenti protetti da password utiliz
 weight: 15
 url: /it/net/document-loading/working-with-password-protected-documents/
 ---
+
+# Lavorare con documenti protetti da password
+
 ## introduzione
 Nel mondo dell'elaborazione dei documenti, gestire in modo efficiente i file protetti da password è fondamentale. GroupDocs.Parser per .NET offre solide funzionalità per lavorare senza problemi con tali documenti. Questo tutorial ti guiderà attraverso il processo di estrazione del testo da documenti protetti da password utilizzando GroupDocs.Parser.
 ## Prerequisiti

@@ -6,6 +6,9 @@ description: 이 포괄적인 튜토리얼에서 .NET용 GroupDocs.Parser를 사
 weight: 16
 url: /ko/net/text-extraction/extract-text-from-page-in-accurate-mode/
 ---
+
+# 정확한 모드로 페이지에서 텍스트 추출
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser를 사용하여 정확한 모드로 문서에서 텍스트를 추출하는 방법을 살펴보겠습니다. GroupDocs.Parser는 개발자가 .NET 응용 프로그램에서 다양한 문서 형식으로 작업하여 정확하고 쉽게 텍스트를 추출할 수 있도록 하는 강력한 API입니다. 이 가이드를 마치면 GroupDocs.Parser의 기능을 활용하여 문서에서 텍스트를 효율적으로 추출할 수 있게 됩니다.
 ## 전제 조건

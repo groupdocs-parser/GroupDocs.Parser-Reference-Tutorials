@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak dan menyorot teks dari dokumen menggunaka
 weight: 11
 url: /id/net/text-extraction/extract-and-highlight-text/
 ---
+
+# Ekstrak dan Sorot Teks
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggunakan GroupDocs.Parser untuk .NET untuk mengekstrak dan menyorot teks dari dokumen. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan Anda mengurai berbagai format dokumen dan melakukan operasi ekstraksi teks tingkat lanjut.
 ## Prasyarat

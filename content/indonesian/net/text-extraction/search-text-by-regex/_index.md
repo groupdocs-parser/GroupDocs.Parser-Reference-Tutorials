@@ -6,6 +6,9 @@ description: Pelajari cara mencari teks menggunakan ekspresi reguler dalam dokum
 weight: 23
 url: /id/net/text-extraction/search-text-by-regex/
 ---
+
+# Cari Teks dengan Ekspresi Reguler (Regex)
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari penggunaan GroupDocs.Parser untuk .NET untuk mencari teks dengan ekspresi reguler (Regex) dalam dokumen. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan pengembang mengekstrak teks dan metadata dari berbagai format file seperti PDF, DOCX, XLSX, dan banyak lagi. Mencari teks menggunakan ekspresi reguler sangat berguna untuk menemukan pola atau konten tertentu dalam dokumen secara efisien.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Text in Dokume
 weight: 24
 url: /de/net/text-extraction/search-text-with-highlights/
 ---
+
+# Text mit Hervorhebungen durchsuchen
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie mit GroupDocs.Parser für .NET nach Text in einem Dokument suchen und die Suchergebnisse hervorheben können. GroupDocs.Parser ist eine leistungsstarke Bibliothek, mit der Sie mit verschiedenen Dokumentformaten arbeiten und Text, Metadaten und mehr extrahieren können.
 ## Voraussetzungen

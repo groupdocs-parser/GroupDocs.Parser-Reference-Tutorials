@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất dữ liệu từ các bảng trong 
 weight: 15
 url: /vi/net/document-template-processing/working-with-table-parameters-in-templates/
 ---
+
+# Làm việc với các tham số bảng trong mẫu
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Parser cho .NET để làm việc với các tham số bảng trong mẫu. Hướng dẫn này sẽ chia nhỏ quy trình thành hướng dẫn từng bước để giúp bạn phân tích cú pháp và trích xuất dữ liệu từ các bảng trong tài liệu một cách hiệu quả.
 ## Điều kiện tiên quyết

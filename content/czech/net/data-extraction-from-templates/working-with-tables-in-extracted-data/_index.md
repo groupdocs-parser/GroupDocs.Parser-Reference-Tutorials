@@ -6,6 +6,9 @@ description: Naučte se extrahovat data tabulky z dokumentů pomocí GroupDocs.P
 weight: 12
 url: /cs/net/data-extraction-from-templates/working-with-tables-in-extracted-data/
 ---
+
+# Práce s tabulkami v extrahovaných datech
+
 ## Úvod
 tomto tutoriálu prozkoumáme, jak pomocí GroupDocs.Parser for .NET extrahovat data z tabulek v dokumentech. GroupDocs.Parser je výkonný nástroj, který umožňuje vývojářům analyzovat a extrahovat text, metadata a strukturovaný obsah z různých formátů souborů, jako jsou PDF, DOCX, XLSX a další. Konkrétně se zaměříme na efektivní extrahování dat tabulky pomocí předdefinovaných šablon.
 ## Předpoklady

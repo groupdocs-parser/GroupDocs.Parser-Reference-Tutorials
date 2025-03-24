@@ -8,6 +8,9 @@ url: /zh-hant/
 is_root: true
 ---
 
+# 使用 GroupDocs.Parser 解鎖文件解析能力
+
+
 發現跨各種平台（包括 .NET 和 Java）的 GroupDocs.Parser 的統一知識庫。深入研究各種教程，涵蓋文字和格式化文字提取、文件模板處理、表格和圖像提取以及超連結提取。無論您是 .NET 或 Java 開發人員，此資源中心都能為您提供高效處理文件處理任務所需的工具和技術。
 
 ## .NET 教學的 GroupDocs.Parser

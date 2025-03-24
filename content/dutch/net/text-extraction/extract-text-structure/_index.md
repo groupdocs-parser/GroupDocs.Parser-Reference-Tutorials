@@ -6,6 +6,9 @@ description: Leer hoe u de tekststructuur uit verschillende documentformaten kun
 weight: 20
 url: /nl/net/text-extraction/extract-text-structure/
 ---
+
+# Tekststructuur extraheren
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u GroupDocs.Parser voor .NET kunt gebruiken om de tekststructuur uit verschillende documentformaten te extraheren. GroupDocs.Parser is een krachtige bibliotheek waarmee ontwikkelaars gestructureerde tekstinhoud uit documenten kunnen extraheren, zoals PDF's, Word-documenten, Excel-werkbladen en meer. Deze tutorial leidt u stap voor stap door het proces van het instellen van GroupDocs.Parser, het importeren van de benodigde naamruimten en het extraheren van de tekststructuur.
 ## Vereisten

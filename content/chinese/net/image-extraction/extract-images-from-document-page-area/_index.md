@@ -6,6 +6,9 @@ description: 了解如何使用 Groupdocs.Parser for .NET 从文档中精确提�
 weight: 10
 url: /zh/net/image-extraction/extract-images-from-document-page-area/
 ---
+
+# 从文档页面区域提取图像
+
 ## 介绍
 在本教程中，我们将学习如何使用 Groupdocs.Parser for .NET 从文档页面的特定区域提取图像。此过程允许您根据文档中定义的坐标和尺寸精确地定位和检索图像。
 ## 先决条件

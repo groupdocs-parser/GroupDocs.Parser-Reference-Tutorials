@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 搜尋和突出顯示�
 weight: 24
 url: /zh-hant/net/text-extraction/search-text-with-highlights/
 ---
+
+# 搜尋帶有突出顯示的文本
+
 ## 介紹
 在本教程中，我們將探討如何使用 GroupDocs.Parser for .NET 在文件中搜尋文字並突出顯示搜尋結果。 GroupDocs.Parser 是一個功能強大的程式庫，可讓您處理各種文件格式並提取文字、元資料等。
 ## 先決條件

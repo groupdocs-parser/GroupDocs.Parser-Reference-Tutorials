@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất văn bản từ tài liệu Word b�
 weight: 15
 url: /vi/net/word-document-processing/extract-text-from-word-document/
 ---
+
+# Trích xuất văn bản từ tài liệu Word
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách trích xuất văn bản từ tài liệu Word bằng GroupDocs.Parser cho .NET. GroupDocs.Parser là một thư viện .NET mạnh mẽ cho phép các nhà phát triển làm việc với nhiều định dạng tài liệu khác nhau, bao gồm tài liệu Word, PDF, v.v. Đến cuối hướng dẫn này, bạn sẽ có thể trích xuất văn bản từ tệp Word một cách hiệu quả bằng mã C# đơn giản.
 ## Điều kiện tiên quyết

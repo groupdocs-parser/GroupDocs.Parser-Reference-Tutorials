@@ -6,6 +6,9 @@ description: เรียนรู้วิธีแยกเนื้อหา 
 weight: 13
 url: /th/net/formatted-text-extraction/extract-markdown-content/
 ---
+
+# แยกเนื้อหา Markdown
+
 ## การแนะนำ
 ในบทช่วยสอนนี้ เราจะสำรวจวิธีใช้ GroupDocs.Parser สำหรับ .NET เพื่อแยกเนื้อหา Markdown ออกจากเอกสาร GroupDocs.Parser เป็นไลบรารีอันทรงพลังที่ช่วยให้นักพัฒนาสามารถแยกวิเคราะห์และแยกข้อความจากไฟล์รูปแบบต่างๆ ได้อย่างราบรื่น
 ## ข้อกำหนดเบื้องต้น

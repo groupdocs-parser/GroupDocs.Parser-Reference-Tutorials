@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak teks dari halaman tertentu di dokumen Wor
 weight: 17
 url: /id/net/word-document-processing/extract-text-from-specific-page-in-word-document/
 ---
+
+# Ekstrak Teks dari Halaman Tertentu di Dokumen Word
+
 ## Perkenalan
 Dalam bidang pengembangan .NET, mengekstraksi teks dari dokumen merupakan persyaratan umum untuk berbagai aplikasi. GroupDocs.Parser untuk .NET memberikan solusi tangguh untuk mengurai dan mengekstrak teks dari berbagai format dokumen dengan lancar. Tutorial ini berfokus pada memanfaatkan GroupDocs.Parser untuk mengekstrak teks dari halaman tertentu dalam dokumen Word. Dengan mengikuti panduan ini, Anda akan mempelajari langkah-langkah yang diperlukan untuk mengintegrasikan fungsi ini ke dalam proyek .NET Anda secara efektif.
 ## Prasyarat

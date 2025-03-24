@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak PDF belgelerinden görüntü
 weight: 12
 url: /tr/net/pdf-processing/extract-images-from-pdf/
 ---
+
+# PDF'den Görüntüleri Çıkartın
+
 ## giriiş
 Bu eğitimde, PDF belgelerinden görüntüleri ayıklamak için GroupDocs.Parser for .NET'in nasıl kullanılacağını keşfedeceğiz. GroupDocs.Parser, geliştiricilerin bir .NET ortamında PDF, DOCX, PPTX ve daha fazlası dahil olmak üzere çeşitli belge formatlarıyla çalışmasına olanak tanıyan güçlü bir kitaplıktır. Bu adımları izleyerek PDF dosyalarından görüntüleri zahmetsizce çıkarabileceksiniz.
 ## Önkoşullar

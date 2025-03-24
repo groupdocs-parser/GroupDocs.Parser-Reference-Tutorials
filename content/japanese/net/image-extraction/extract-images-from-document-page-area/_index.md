@@ -6,6 +6,9 @@ description: Groupdocs.Parser for .NET を使用してドキュメントから�
 weight: 10
 url: /ja/net/image-extraction/extract-images-from-document-page-area/
 ---
+
+# ドキュメントページ領域から画像を抽出する
+
 ## 導入
 このチュートリアルでは、Groupdocs.Parser for .NET を使用してドキュメント ページの特定の領域から画像を抽出する方法を学習します。このプロセスにより、ドキュメント内の定義された座標と寸法に基づいて、画像を正確にターゲットにして取得できます。
 ## 前提条件

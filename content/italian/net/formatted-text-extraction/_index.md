@@ -7,6 +7,9 @@ weight: 21
 url: /it/net/formatted-text-extraction/
 ---
 
+# Estrazione del testo formattato
+
+
 ## introduzione
 
 Esplora il mondo dell'estrazione del testo formattato in .NET con le esercitazioni di GroupDocs.Parser. Questi tutorial coprono una serie di tecniche per estrarre testo formattato da documenti, inclusi HTML, Markdown e testo normale. Che tu sia un principiante o uno sviluppatore esperto, questi tutorial forniscono preziosi spunti ed esempi pratici per migliorare le tue capacità di estrazione del testo.

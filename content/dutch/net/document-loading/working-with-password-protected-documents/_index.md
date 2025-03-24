@@ -6,6 +6,9 @@ description: Leer hoe u tekst kunt extraheren uit met een wachtwoord beveiligde 
 weight: 15
 url: /nl/net/document-loading/working-with-password-protected-documents/
 ---
+
+# Werken met met wachtwoord beveiligde documenten
+
 ## Invoering
 In de wereld van documentverwerking is het efficiënt omgaan met met wachtwoord beveiligde bestanden cruciaal. GroupDocs.Parser voor .NET biedt robuuste mogelijkheden om naadloos met dergelijke documenten te werken. Deze tutorial leidt u door het proces van het extraheren van tekst uit met een wachtwoord beveiligde documenten met behulp van GroupDocs.Parser.
 ## Vereisten

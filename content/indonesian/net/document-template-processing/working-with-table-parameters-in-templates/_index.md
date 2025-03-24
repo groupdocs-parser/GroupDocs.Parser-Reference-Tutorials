@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak data dari tabel dalam dokumen menggunakan
 weight: 15
 url: /id/net/document-template-processing/working-with-table-parameters-in-templates/
 ---
+
+# Bekerja dengan Parameter Tabel di Templat
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggunakan GroupDocs.Parser untuk .NET agar dapat bekerja dengan parameter tabel di templat. Panduan ini akan membagi proses menjadi petunjuk langkah demi langkah untuk membantu Anda mengurai dan mengekstrak data secara efektif dari tabel dalam dokumen.
 ## Prasyarat

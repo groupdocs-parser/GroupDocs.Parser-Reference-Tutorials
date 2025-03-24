@@ -6,6 +6,9 @@ description: Learn how to search text by keyword in documents using GroupDocs.Pa
 weight: 21
 url: /net/text-extraction/search-text-by-keyword/
 ---
+
+# Search Text by Keyword
+
 ## Introduction
 In this tutorial, we will delve into using GroupDocs.Parser for .NET to search text by keyword within documents. GroupDocs.Parser is a powerful library that enables developers to extract text, metadata, and other information from various file formats, such as PDFs, Microsoft Office documents, and more. Searching for specific keywords within these documents can be essential for applications dealing with large volumes of textual data.
 ## Prerequisites

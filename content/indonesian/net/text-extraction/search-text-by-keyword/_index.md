@@ -6,6 +6,9 @@ description: Pelajari cara mencari teks berdasarkan kata kunci dalam dokumen men
 weight: 21
 url: /id/net/text-extraction/search-text-by-keyword/
 ---
+
+# Cari Teks berdasarkan Kata Kunci
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari penggunaan GroupDocs.Parser untuk .NET untuk mencari teks berdasarkan kata kunci dalam dokumen. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan pengembang mengekstrak teks, metadata, dan informasi lainnya dari berbagai format file, seperti PDF, dokumen Microsoft Office, dan banyak lagi. Mencari kata kunci spesifik dalam dokumen-dokumen ini dapat menjadi penting untuk aplikasi yang menangani data tekstual dalam jumlah besar.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: Learn how to parse document pages using templates in .NET with Grou
 weight: 16
 url: /net/document-template-processing/parse-pages-using-templates/
 ---
+
+# Parse Pages Using Templates
+
 ## Introduction
 In this tutorial, we'll delve into using GroupDocs.Parser for .NET to extract data from documents efficiently. GroupDocs.Parser is a powerful library that enables parsing various document formats like PDF, DOCX, PPTX, and more. We'll focus on parsing pages using templates, which allows precise extraction of specific content such as barcodes.
 ## Prerequisites

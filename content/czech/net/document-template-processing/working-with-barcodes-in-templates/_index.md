@@ -6,6 +6,9 @@ description: Naučte se používat GroupDocs.Parser for .NET k extrahování str
 weight: 10
 url: /cs/net/document-template-processing/working-with-barcodes-in-templates/
 ---
+
+# Práce s čárovými kódy v šablonách
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak efektivně extrahovat data z dokumentů pomocí šablon s GroupDocs.Parser pro .NET. GroupDocs.Parser zjednodušuje proces extrakce dat tím, že umožňuje definovat šablony pro konkrétní datové typy, jako jsou čárové kódy, a poté analyzovat dokumenty podle těchto šablon.
 ## Předpoklady

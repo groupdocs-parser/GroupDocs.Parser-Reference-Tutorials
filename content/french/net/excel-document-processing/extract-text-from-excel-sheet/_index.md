@@ -6,6 +6,9 @@ description: Découvrez comment extraire du texte de feuilles Excel à l'aide de
 weight: 14
 url: /fr/net/excel-document-processing/extract-text-from-excel-sheet/
 ---
+
+# Extraire le texte d'une feuille Excel
+
 ## Introduction
 Dans ce didacticiel, nous allons explorer comment extraire du texte de feuilles Excel à l'aide de la bibliothèque GroupDocs.Parser pour .NET. Cet outil puissant nous permet d'analyser efficacement divers formats de documents, y compris les feuilles de calcul Excel, pour extraire des données textuelles.
 ## Conditions préalables

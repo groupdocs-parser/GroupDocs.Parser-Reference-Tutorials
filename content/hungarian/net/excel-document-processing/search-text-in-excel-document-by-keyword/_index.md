@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan kereshet szöveget az Excel dokumentumokban a G
 weight: 16
 url: /hu/net/excel-document-processing/search-text-in-excel-document-by-keyword/
 ---
+
+# Szöveg keresése az Excel dokumentumban kulcsszó szerint
+
 ## Bevezetés
 A GroupDocs.Parser for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy hatékonyan dolgozzanak dokumentumelemzési feladatokkal .NET-alkalmazásaikban. Ebben az oktatóanyagban arra fogunk összpontosítani, hogyan lehet kulcsszavak használatával keresni adott szöveget egy Excel-dokumentumban. Az útmutató követésével megtudhatja, hogyan integrálhatja a GroupDocs.Parser könyvtárat a projektbe, és hogyan végezhet célzott szöveges kereséseket az Excel-fájlokban.
 ## Előfeltételek

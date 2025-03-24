@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak teks biasa dari dokumen menggunakan Group
 weight: 14
 url: /id/net/formatted-text-extraction/extract-plain-text/
 ---
+
+# Ekstrak Teks Biasa
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara mengekstrak teks biasa dari berbagai format dokumen menggunakan GroupDocs.Parser untuk .NET. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan pengembang bekerja dengan dokumen secara lancar, mengekstraksi teks dan metadata secara efisien. Panduan ini akan memandu Anda melalui langkah-langkah yang diperlukan untuk mengintegrasikan dan memanfaatkan perpustakaan ini dalam aplikasi .NET Anda.
 ## Prasyarat

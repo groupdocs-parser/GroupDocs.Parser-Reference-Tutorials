@@ -6,6 +6,9 @@ description: Leer hoe u streepjescodes uit documentpagina's kunt extraheren met 
 weight: 13
 url: /nl/net/barcode-extraction/extract-barcodes-from-document-page-area/
 ---
+
+# Extraheer streepjescodes uit het documentpaginagebied
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u streepjescodes uit specifieke delen van een document kunt extraheren met GroupDocs.Parser voor .NET. GroupDocs.Parser is een krachtige bibliotheek waarmee u gegevens uit verschillende documentformaten zoals PDF, DOCX, XLSX en meer kunt parseren en extraheren, inclusief het extraheren van streepjescodes. We bespreken de vereisten, vereiste naamruimten en bieden een stapsgewijze handleiding met codevoorbeelden om het proces te demonstreren.
 ## Vereisten

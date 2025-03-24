@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 在 PDF 文件中搜�
 weight: 18
 url: /zh-hant/net/pdf-processing/search-text-in-pdf-by-keyword/
 ---
+
+# 按關鍵字搜尋 PDF 中的文本
+
 ## 介紹
 在本教學中，我們將探討如何利用 GroupDocs.Parser for .NET 使用關鍵字搜尋 PDF 文件中的特定文字。 GroupDocs.Parser 是一個功能強大的文件解析 API，可讓開發人員從 .NET 應用程式中的各種文件格式中提取文字、元資料、圖像等。在 PDF 中搜尋文字是文件處理應用程式中的常見要求，GroupDocs.Parser 以其直覺的 API 簡化了此任務。
 ## 先決條件

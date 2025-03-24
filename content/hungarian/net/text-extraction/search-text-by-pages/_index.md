@@ -6,6 +6,9 @@ description: Tanuljon meg szöveget oldalak szerint keresni a GroupDocs.Parser f
 weight: 22
 url: /hu/net/text-extraction/search-text-by-pages/
 ---
+
+# Szöveg keresése oldalak szerint
+
 ## Bevezetés
 A .NET-fejlesztés világában a szövegek hatékony elemzése és dokumentumokból való kinyerése kulcsfontosságú feladat. A GroupDocs.Parser for .NET hatékony lehetőségeket kínál a különféle dokumentumformátumokkal való együttműködéshez, lehetővé téve a fejlesztők számára, hogy zökkenőmentesen keressenek és bontsanak ki konkrét tartalmat. Ez az oktatóanyag végigvezeti Önt a GroupDocs.Parser segítségével a .NET-alkalmazások szöveges oldalak szerinti kereséséhez.
 ## Előfeltételek

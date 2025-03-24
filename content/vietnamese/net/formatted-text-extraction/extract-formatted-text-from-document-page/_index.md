@@ -6,6 +6,9 @@ description: Trích xuất văn bản được định dạng từ các trang t�
 weight: 11
 url: /vi/net/formatted-text-extraction/extract-formatted-text-from-document-page/
 ---
+
+# Trích xuất văn bản được định dạng từ trang tài liệu
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình trích xuất văn bản được định dạng từ các trang tài liệu bằng GroupDocs.Parser cho .NET. Thư viện này cho phép bạn phân tích cú pháp và trích xuất văn bản một cách hiệu quả từ nhiều định dạng tài liệu khác nhau như PDF, Word, Excel, v.v.
 ## Điều kiện tiên quyết

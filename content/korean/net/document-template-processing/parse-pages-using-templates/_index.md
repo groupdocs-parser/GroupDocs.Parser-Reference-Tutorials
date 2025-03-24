@@ -6,6 +6,9 @@ description: GroupDocs.Parser와 함께 .NET의 템플릿을 사용하여 문서
 weight: 16
 url: /ko/net/document-template-processing/parse-pages-using-templates/
 ---
+
+# 템플릿을 사용하여 페이지 구문 분석
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser를 사용하여 문서에서 데이터를 효율적으로 추출하는 방법을 살펴보겠습니다. GroupDocs.Parser는 PDF, DOCX, PPTX 등과 같은 다양한 문서 형식을 구문 분석할 수 있는 강력한 라이브러리입니다. 바코드와 같은 특정 콘텐츠를 정확하게 추출할 수 있는 템플릿을 사용하여 페이지를 구문 분석하는 데 중점을 둘 것입니다.
 ## 전제 조건

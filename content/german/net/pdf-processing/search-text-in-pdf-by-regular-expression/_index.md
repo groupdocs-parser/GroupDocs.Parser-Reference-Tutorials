@@ -6,6 +6,9 @@ description: Suchen Sie mit GroupDocs.Parser mithilfe regulärer Ausdrücke nach
 weight: 19
 url: /de/net/pdf-processing/search-text-in-pdf-by-regular-expression/
 ---
+
+# Textsuche in PDF mit regulären Ausdrücken
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie mithilfe von GroupDocs.Parser für .NET effizient Text aus PDF-Dokumenten extrahieren. GroupDocs.Parser ist eine leistungsstarke Bibliothek, mit der Entwickler Text, Metadaten und strukturierte Daten aus verschiedenen Dokumentformaten, einschließlich PDFs, analysieren und extrahieren können. Egal, ob Sie an Datenextraktion, Inhaltsanalyse oder Suchfunktionen in Ihren .NET-Anwendungen arbeiten, GroupDocs.Parser bietet einen umfassenden Satz von Tools, um diese Aufgaben nahtlos zu bewältigen.
 ## Voraussetzungen

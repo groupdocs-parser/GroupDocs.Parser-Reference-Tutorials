@@ -6,6 +6,9 @@ description: Tìm hiểu cách xử lý OCR bằng GroupDocs.Parser cho .NET. Tr
 weight: 11
 url: /vi/net/ocr-extraction/handling-ocr/
 ---
+
+# Xử lý OCR
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Parser cho .NET để xử lý các tác vụ Nhận dạng Ký tự Quang học (OCR) một cách hiệu quả. Thư viện này cung cấp các công cụ mạnh mẽ để trích xuất văn bản từ tài liệu và với OCR, bạn có thể trích xuất văn bản ngay cả từ hình ảnh hoặc tài liệu được quét. Chúng ta hãy đi sâu vào quá trình từng bước một.
 ## Điều kiện tiên quyết

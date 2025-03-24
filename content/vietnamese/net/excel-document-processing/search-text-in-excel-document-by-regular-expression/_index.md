@@ -6,6 +6,9 @@ description: Tìm hiểu cách tìm kiếm văn bản trong tài liệu Excel b�
 weight: 17
 url: /vi/net/excel-document-processing/search-text-in-excel-document-by-regular-expression/
 ---
+
+# Tìm kiếm văn bản trong tài liệu Excel bằng biểu thức chính quy
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Parser cho .NET để tìm kiếm các mẫu văn bản cụ thể trong tài liệu Excel bằng cách sử dụng biểu thức thông thường. GroupDocs.Parser là một thư viện mạnh mẽ cho phép các nhà phát triển trích xuất văn bản và siêu dữ liệu từ nhiều định dạng tài liệu khác nhau, bao gồm cả bảng tính như Excel. Bằng cách tận dụng các biểu thức chính quy, chúng ta có thể thực hiện tìm kiếm văn bản nâng cao một cách hiệu quả.
 ## Điều kiện tiên quyết

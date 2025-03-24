@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 使用正则表达式�
 weight: 17
 url: /zh/net/excel-document-processing/search-text-in-excel-document-by-regular-expression/
 ---
+
+# 通过正则表达式在Excel文档中搜索文本
+
 ## 介绍
 在本教程中，我们将探索如何利用 GroupDocs.Parser for .NET 使用正则表达式在 Excel 文档中搜索特定文本模式。GroupDocs.Parser 是一个功能强大的库，允许开发人员从各种文档格式（包括 Excel 等电子表格）中提取文本和元数据。通过利用正则表达式，我们可以有效地执行高级文本搜索。
 ## 先决条件

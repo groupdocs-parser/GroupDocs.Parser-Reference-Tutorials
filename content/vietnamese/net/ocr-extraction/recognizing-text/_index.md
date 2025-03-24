@@ -6,6 +6,9 @@ description: Trích xuất văn bản từ nhiều định dạng tài liệu kh
 weight: 12
 url: /vi/net/ocr-extraction/recognizing-text/
 ---
+
+# Nhận dạng văn bản
+
 ## Giới thiệu
 Trong lĩnh vực phát triển .NET, việc trích xuất văn bản hiệu quả từ các định dạng tài liệu khác nhau là điều tối quan trọng. GroupDocs.Parser cho .NET cung cấp một giải pháp mạnh mẽ để trích xuất văn bản một cách liền mạch. Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách sử dụng GroupDocs.Parser từng bước để nhận dạng và trích xuất văn bản từ tài liệu.
 ## Điều kiện tiên quyết

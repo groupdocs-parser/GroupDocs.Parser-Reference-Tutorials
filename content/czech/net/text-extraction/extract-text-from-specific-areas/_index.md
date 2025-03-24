@@ -6,6 +6,9 @@ description: Naučte se extrahovat text z konkrétních oblastí dokumentů pomo
 weight: 12
 url: /cs/net/text-extraction/extract-text-from-specific-areas/
 ---
+
+# Extrahujte text ze specifických oblastí
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak extrahovat text z konkrétních oblastí dokumentu pomocí GroupDocs.Parser for .NET. GroupDocs.Parser je výkonné API, které umožňuje vývojářům analyzovat a extrahovat text, metadata a další informace z různých formátů dokumentů, jako jsou PDF, DOCX, XLSX a další.
 ## Předpoklady

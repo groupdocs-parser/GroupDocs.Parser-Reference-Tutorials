@@ -6,6 +6,9 @@ description: Découvrez comment extraire avec précision le texte de documents d
 weight: 18
 url: /fr/net/text-extraction/extract-text-in-accurate-mode/
 ---
+
+# Extraire du texte en mode précis
+
 ## Introduction
 Dans ce didacticiel, nous explorerons comment extraire avec précision du texte de différents formats de documents à l'aide de GroupDocs.Parser pour .NET. GroupDocs.Parser est une bibliothèque puissante qui permet l'extraction de texte à partir de documents tels que PDF, DOCX, PPTX, XLSX, etc., ce qui en fait un outil précieux pour les applications de traitement de données.
 ## Conditions préalables

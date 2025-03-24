@@ -6,6 +6,9 @@ description: Tìm hiểu cách tìm kiếm văn bản trong tài liệu Word b�
 weight: 18
 url: /vi/net/word-document-processing/search-text-in-word-document-by-keyword/
 ---
+
+# Tìm kiếm văn bản trong tài liệu Word theo từ khóa
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Parser cho .NET để tìm kiếm văn bản cụ thể trong tài liệu Word bằng C#. GroupDocs.Parser là một thư viện mạnh mẽ cho phép các nhà phát triển trích xuất văn bản và siêu dữ liệu từ nhiều định dạng tài liệu khác nhau, bao gồm cả tài liệu Word.
 ## Điều kiện tiên quyết

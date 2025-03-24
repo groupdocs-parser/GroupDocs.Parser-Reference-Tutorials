@@ -6,6 +6,9 @@ description: Lär dig hur du exakt extraherar text från dokument i .NET med Gro
 weight: 18
 url: /sv/net/text-extraction/extract-text-in-accurate-mode/
 ---
+
+# Extrahera text i exakt läge
+
 ## Introduktion
 den här handledningen kommer vi att utforska hur man extraherar text exakt från olika dokumentformat med GroupDocs.Parser för .NET. GroupDocs.Parser är ett kraftfullt bibliotek som möjliggör textextraktion från dokument som PDF, DOCX, PPTX, XLSX och mer, vilket gör det till ett värdefullt verktyg för databehandlingsapplikationer.
 ## Förutsättningar

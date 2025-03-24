@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 특정 문서 영역에서
 weight: 12
 url: /ko/net/hyperlink-extraction/extract-hyperlinks-from-document-page-area/
 ---
+
+# 문서 페이지 영역에서 하이퍼링크 추출
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser 라이브러리를 사용하여 문서의 특정 페이지 영역에서 하이퍼링크를 추출하는 방법을 살펴보겠습니다. GroupDocs.Parser는 하이퍼링크 추출을 포함하여 문서 처리를 위한 강력한 기능을 제공합니다. 프로세스를 단계별로 안내하여 .NET 애플리케이션에서 이 기능을 구현하는 방법을 보여드리겠습니다.
 ## 전제 조건

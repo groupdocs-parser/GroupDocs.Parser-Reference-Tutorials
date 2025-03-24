@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất văn bản từ trang tính Excel b
 weight: 14
 url: /vi/net/excel-document-processing/extract-text-from-excel-sheet/
 ---
+
+# Trích xuất văn bản từ bảng Excel
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách trích xuất văn bản từ trang tính Excel bằng thư viện GroupDocs.Parser cho .NET. Công cụ mạnh mẽ này cho phép chúng tôi phân tích và phân tích các định dạng tài liệu khác nhau một cách hiệu quả, bao gồm bảng tính Excel, để trích xuất dữ liệu văn bản.
 ## Điều kiện tiên quyết

@@ -6,6 +6,9 @@ description: Effortlessly extract hyperlinks from documents in .NET with GroupDo
 weight: 25
 url: /net/hyperlink-extraction/
 ---
+
+# Hyperlink Extraction
+
 ## Introduction
 
 Delve into the world of hyperlink extraction in .NET with GroupDocs.Parser tutorials. These tutorials offer comprehensive guidance on extracting hyperlinks from documents, whether it's from the entire document, specific pages, or designated areas. Whether you're a novice or an experienced developer, these tutorials provide clear step-by-step instructions and code examples to help you integrate hyperlink extraction seamlessly into your C# applications.

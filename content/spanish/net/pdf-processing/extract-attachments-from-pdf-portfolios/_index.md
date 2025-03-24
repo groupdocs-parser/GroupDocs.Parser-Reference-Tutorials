@@ -6,6 +6,9 @@ description: Aprenda a extraer archivos adjuntos de carteras de PDF utilizando G
 weight: 10
 url: /es/net/pdf-processing/extract-attachments-from-pdf-portfolios/
 ---
+
+# Extraer archivos adjuntos de carteras PDF
+
 ## Introducción
 En el mundo del procesamiento y análisis de documentos, manejar portafolios PDF de manera eficiente puede ser crucial. GroupDocs.Parser para .NET ofrece una poderosa solución para extraer archivos adjuntos de carteras de PDF, lo que permite a los desarrolladores acceder y administrar los contenidos con facilidad. Este tutorial lo guiará a través del proceso paso a paso, utilizando GroupDocs.Parser para extraer archivos adjuntos sin problemas.
 ## Requisitos previos

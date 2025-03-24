@@ -6,6 +6,9 @@ description: Şablonları kullanarak belgelerden yapılandırılmış verileri a
 weight: 10
 url: /tr/net/document-template-processing/working-with-barcodes-in-templates/
 ---
+
+# Şablonlarda Barkodlarla Çalışmak
+
 ## giriiş
 Bu öğreticide, GroupDocs.Parser for .NET ile şablonları kullanarak belgelerden verimli bir şekilde nasıl veri ayıklanacağını keşfedeceğiz. GroupDocs.Parser, barkodlar gibi belirli veri türleri için şablonlar tanımlamanıza ve ardından belgeleri bu şablonlara göre ayrıştırmanıza olanak tanıyarak veri çıkarma sürecini basitleştirir.
 ## Önkoşullar

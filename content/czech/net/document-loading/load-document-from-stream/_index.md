@@ -6,6 +6,9 @@ description: Naučte se extrahovat text z různých formátů dokumentů v .NET 
 weight: 12
 url: /cs/net/document-loading/load-document-from-stream/
 ---
+
+# Načíst dokument ze streamu
+
 ## Úvod
 V oblasti zpracování dokumentů v aplikacích .NET je extrahování textu z různých formátů souborů běžným požadavkem. GroupDocs.Parser for .NET nabízí výkonné řešení pro bezproblémovou analýzu a extrahování textu z nejrůznějších dokumentů. Tento tutoriál vás provede procesem využití GroupDocs.Parser k extrahování textu z dokumentů krok za krokem.
 ## Předpoklady

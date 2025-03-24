@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 문서에서 데이터를 
 weight: 12
 url: /ko/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
 ---
+
+# 템플릿의 연결된 위치에서 필드 작업
+
 ## 소개
 .NET용 GroupDocs.Parser는 문서 구문 분석 및 데이터 추출 작업을 용이하게 하도록 설계된 강력한 라이브러리입니다. PDF, DOCX, XLSX 등을 포함한 광범위한 파일 형식을 지원합니다. 주요 기능 중 하나는 템플릿 기반 데이터 추출로, 이를 통해 문서 내의 필드를 정의하고 사전 정의된 템플릿을 기반으로 특정 데이터를 추출할 수 있습니다.
 ## 전제 조건

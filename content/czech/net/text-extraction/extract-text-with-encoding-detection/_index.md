@@ -6,6 +6,9 @@ description: Extrahujte text z dokumentů s detekcí kódování pomocí GroupDo
 weight: 10
 url: /cs/net/text-extraction/extract-text-with-encoding-detection/
 ---
+
+# Extrahujte text s detekcí kódování
+
 ## Úvod
 GroupDocs.Parser for .NET je výkonná knihovna, která umožňuje vývojářům extrahovat text, metadata a další informace z různých formátů dokumentů v jejich aplikacích .NET. Tento tutoriál vás provede procesem použití GroupDocs.Parser k extrahování textu z dokumentů při detekci kódování. Podle těchto kroků budete moci efektivně analyzovat a pracovat s různými typy dokumentů v rámci svých projektů .NET.
 ## Předpoklady
