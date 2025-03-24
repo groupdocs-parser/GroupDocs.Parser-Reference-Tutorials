@@ -3,7 +3,6 @@ title: 从 PDF 包中提取附件
 linktitle: 从 PDF 包中提取附件
 second_title: GroupDocs.Parser .NET API
 description: 在本综合教程中了解如何使用 GroupDocs.Parser for .NET 从 PDF 组合中提取附件。
-type: docs
 weight: 10
 url: /zh/net/pdf-processing/extract-attachments-from-pdf-portfolios/
 ---

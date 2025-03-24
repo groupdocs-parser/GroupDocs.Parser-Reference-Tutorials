@@ -3,7 +3,6 @@ title: استخراج محتوى HTML
 linktitle: استخراج محتوى HTML
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج محتوى HTML من المستندات باستخدام GroupDocs.Parser لـ .NET. برنامج تعليمي سهل المتابعة يحتوي على أمثلة التعليمات البرمجية وإرشادات خطوة بخطوة.
-type: docs
 weight: 12
 url: /ar/net/formatted-text-extraction/extract-html-content/
 ---

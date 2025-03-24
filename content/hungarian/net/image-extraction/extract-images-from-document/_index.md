@@ -3,7 +3,6 @@ title: Képek kibontása a dokumentumból
 linktitle: Képek kibontása a dokumentumból
 second_title: GroupDocs.Parser .NET API
 description: Könnyedén bontsa ki a képeket a dokumentumokból a GroupDocs.Parser for .NET segítségével. Dokumentumfeldolgozási képességei és hatékonyan egyszerűsítik a képkivonási feladatokat.
-type: docs
 weight: 11
 url: /hu/net/image-extraction/extract-images-from-document/
 ---
@@ -67,7 +66,7 @@ A GroupDocs.Parser támogatja a képek kinyerését különféle formátumokból
 ### Van ingyenes próbaverzió a GroupDocs.Parser számára?
  Igen, elérheti a GroupDocs.Parser ingyenes próbaverzióját a webhelyről[weboldal](https://releases.groupdocs.com/).
 ### Hol találom a GroupDocs.Parser dokumentációját?
- A GroupDocs.Parser részletes dokumentációja megtalálható[itt](https://reference.groupdocs.com/parser/net/).
+ A GroupDocs.Parser részletes dokumentációja megtalálható[itt](https://tutorials.groupdocs.com/parser/net/).
 ### Hogyan szerezhetek ideiglenes licencet a GroupDocs.Parser számára?
  Ideiglenes engedélyt szerezhet a[ideiglenes licenc oldal](https://purchase.groupdocs.com/temporary-license/).
 ### Hol kaphatok támogatást a GroupDocs.Parser számára?

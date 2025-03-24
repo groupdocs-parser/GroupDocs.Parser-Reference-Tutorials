@@ -3,7 +3,6 @@ title: Extraheer tekst in nauwkeurige modus
 linktitle: Extraheer tekst in nauwkeurige modus
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u nauwkeurig tekst uit documenten in .NET kunt extraheren met behulp van GroupDocs.Parser voor naadloze gegevensverwerking.
-type: docs
 weight: 18
 url: /nl/net/text-extraction/extract-text-in-accurate-mode/
 ---

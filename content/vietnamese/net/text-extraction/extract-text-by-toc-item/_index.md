@@ -3,7 +3,6 @@ title: Trích xuất văn bản theo mục lục (TOC)
 linktitle: Trích xuất văn bản theo mục lục (TOC)
 second_title: API GroupDocs.Parser .NET
 description: Trích xuất văn bản theo Mục lục (TOC) bằng GroupDocs.Parser cho .NET. Tìm hiểu các kỹ thuật phân tích cú pháp tài liệu hiệu quả để trích xuất dữ liệu có cấu trúc.
-type: docs
 weight: 15
 url: /vi/net/text-extraction/extract-text-by-toc-item/
 ---

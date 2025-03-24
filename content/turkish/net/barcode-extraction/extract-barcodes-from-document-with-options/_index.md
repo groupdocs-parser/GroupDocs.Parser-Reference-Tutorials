@@ -3,7 +3,6 @@ title: Seçeneklerle Belgeden Barkodları Çıkarma
 linktitle: Seçeneklerle Belgeden Barkodları Çıkarma
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belgelerden barkodları nasıl çıkaracağınızı öğrenin. Kod örnekleri ve SSS içeren kapsamlı eğitim.
-type: docs
 weight: 14
 url: /tr/net/barcode-extraction/extract-barcodes-from-document-with-options/
 ---

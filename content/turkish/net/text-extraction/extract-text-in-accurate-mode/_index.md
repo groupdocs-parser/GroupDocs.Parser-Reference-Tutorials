@@ -3,7 +3,6 @@ title: Doğru Modda Metni Çıkart
 linktitle: Doğru Modda Metni Çıkart
 second_title: GroupDocs.Parser .NET API'si
 description: Kesintisiz veri işleme için GroupDocs.Parser'ı kullanarak .NET'teki belgelerden metni nasıl doğru bir şekilde çıkaracağınızı öğrenin.
-type: docs
 weight: 18
 url: /tr/net/text-extraction/extract-text-in-accurate-mode/
 ---

@@ -3,7 +3,6 @@ title: Lås upp behärskning av dokumenttolkning med GroupDocs.Parser
 linktitle: GroupDocs.Parser självstudier
 additionalTitle: GroupDocs API-referenser
 description: Lås upp effektiva dataextraktionstekniker med GroupDocs.Parser för .NET & Java. Utforska självstudier om text, tabell, bildextraktion och mer.
-type: docs
 weight: 11
 url: /sv/
 is_root: true

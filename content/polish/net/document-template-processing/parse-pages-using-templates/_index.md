@@ -3,7 +3,6 @@ title: Analizuj strony przy użyciu szablonów
 linktitle: Analizuj strony przy użyciu szablonów
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak analizować strony dokumentów przy użyciu szablonów w platformie .NET za pomocą GroupDocs.Parser. Wydajnie wyodrębniaj określoną treść dla swoich aplikacji.
-type: docs
 weight: 16
 url: /pl/net/document-template-processing/parse-pages-using-templates/
 ---
@@ -67,7 +66,7 @@ Tak, GroupDocs.Parser obsługuje różne formaty, w tym PDF, DOCX, XLSX i inne.
 ### Czy GroupDocs.Parser nadaje się do wyodrębniania określonych danych, takich jak kody kreskowe?
 Absolutnie! GroupDocs.Parser oferuje precyzyjne możliwości ekstrakcji w celu ukierunkowanej ekstrakcji treści.
 ### Gdzie mogę znaleźć szczegółową dokumentację GroupDocs.Parser?
- Odwiedzić[dokumentacja](https://reference.groupdocs.com/parser/net/) w celu uzyskania kompleksowych wskazówek.
+ Odwiedzić[dokumentacja](https://tutorials.groupdocs.com/parser/net/) w celu uzyskania kompleksowych wskazówek.
 ### Jak mogę uzyskać tymczasową licencję na GroupDocs.Parser?
  Uzyskanie[licencja tymczasowa](https://purchase.groupdocs.com/temporary-license/) do celów oceny lub rozwoju.
 ### Czy GroupDocs zapewnia pomoc w rozwiązywaniu problemów?

@@ -3,7 +3,6 @@ title: Rozpoznawanie tekstu w określonych obszarach
 linktitle: Rozpoznawanie tekstu w określonych obszarach
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak używać programu GroupDocs.Parser dla platformy .NET do wyodrębniania tekstu z określonych obszarów dokumentów za pomocą funkcji OCR.
-type: docs
 weight: 13
 url: /pl/net/ocr-extraction/recognizing-text-in-specific-areas/
 ---

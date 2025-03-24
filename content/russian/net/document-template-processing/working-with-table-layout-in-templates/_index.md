@@ -3,7 +3,6 @@ title: Работа с макетом таблицы в шаблонах
 linktitle: Работа с макетом таблицы в шаблонах
 second_title: GroupDocs.Parser .NET API
 description: Узнайте, как работать с макетами таблиц в шаблонах с помощью GroupDocs.Parser для .NET. Эффективно извлекайте структурированные данные из документов.
-type: docs
 weight: 14
 url: /ru/net/document-template-processing/working-with-table-layout-in-templates/
 ---

@@ -3,7 +3,6 @@ title: Tìm kiếm văn bản trong tài liệu Word bằng biểu thức chính
 linktitle: Tìm kiếm văn bản trong tài liệu Word bằng biểu thức chính quy
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách tìm kiếm văn bản trong tài liệu Word bằng cách sử dụng cụm từ thông dụng với GroupDocs.Parser cho .NET. Trích xuất nội dung cụ thể một cách hiệu quả.
-type: docs
 weight: 19
 url: /vi/net/word-document-processing/search-text-in-word-document-by-regular-expression/
 ---

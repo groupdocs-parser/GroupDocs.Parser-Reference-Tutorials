@@ -3,7 +3,6 @@ title: استخراج النص من صفحة معينة في PDF
 linktitle: استخراج النص من صفحة معينة في PDF
 second_title: GroupDocs.Parser .NET API
 description: استخرج النص من ملفات PDF باستخدام GroupDocs.Parser لـ .NET. يمكنك بسهولة استرداد محتوى صفحة معينة باستخدام هذه المكتبة القوية.
-type: docs
 weight: 15
 url: /ar/net/pdf-processing/extract-text-from-specific-page-in-pdf/
 ---

@@ -3,7 +3,6 @@ title: Extrahujte data z formulářů PDF
 linktitle: Extrahujte data z formulářů PDF
 second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat data z formulářů PDF pomocí GroupDocs.Parser for .NET. Podrobný průvodce s příklady kódu a často kladenými dotazy.
-type: docs
 weight: 11
 url: /cs/net/pdf-processing/extract-data-from-pdf-forms/
 ---
@@ -79,7 +78,7 @@ Ano, GroupDocs.Parser podporuje různé formáty, včetně DOCX, XLSX, PPTX a da
 ### Mohu extrahovat obrázky a metadata pomocí GroupDocs.Parser?
 Ano, GroupDocs.Parser umožňuje extrakci obrázků, metadat a textu z dokumentů.
 ### Kde najdu další podporu nebo dokumentaci pro GroupDocs.Parser?
- Můžete navštívit[GroupDocs.Parser dokumentace](https://reference.groupdocs.com/parser/net/) pro podrobné informace a příklady.
+ Můžete navštívit[GroupDocs.Parser dokumentace](https://tutorials.groupdocs.com/parser/net/) pro podrobné informace a příklady.
 ### Je k dispozici bezplatná zkušební verze pro GroupDocs.Parser?
  Ano, máte přístup k a[bezplatná zkušební verze GroupDocs.Parser](https://releases.groupdocs.com/) prozkoumat jeho vlastnosti.
 ### Jak mohu získat dočasnou licenci pro GroupDocs.Parser?

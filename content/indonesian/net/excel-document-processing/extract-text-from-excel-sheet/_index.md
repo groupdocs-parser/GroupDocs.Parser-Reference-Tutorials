@@ -3,7 +3,6 @@ title: Ekstrak Teks dari Lembar Excel
 linktitle: Ekstrak Teks dari Lembar Excel
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak teks dari lembar Excel menggunakan GroupDocs.Parser untuk .NET. Langkah sederhana untuk ekstraksi teks yang efektif.
-type: docs
 weight: 14
 url: /id/net/excel-document-processing/extract-text-from-excel-sheet/
 ---

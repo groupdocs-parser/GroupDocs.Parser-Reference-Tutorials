@@ -3,7 +3,6 @@ title: Przetwarzanie dokumentów Word
 linktitle: Przetwarzanie dokumentów Word
 second_title: GroupDocs.Parser API .NET
 description: Odkryj szereg samouczków na temat przetwarzania dokumentów Word przy użyciu GroupDocs.Parser dla .NET. Wyodrębnij hiperłącza, obrazy, metadane i nie tylko.
-type: docs
 weight: 30
 url: /pl/net/word-document-processing/
 ---

@@ -3,7 +3,6 @@ title: Ekstrakcja tabeli
 linktitle: Ekstrakcja tabeli
 second_title: GroupDocs.Parser API .NET
 description: Ekstrakcja tabel głównych z dokumentów za pomocą GroupDocs.Parser dla .NET. Dowiedz się, jak programowo wyodrębniać tabele w celu wydajnego przetwarzania danych.
-type: docs
 weight: 23
 url: /pl/net/table-extraction/
 ---

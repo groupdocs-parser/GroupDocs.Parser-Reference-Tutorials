@@ -3,7 +3,6 @@ title: Data Extraction from Templates
 linktitle: Data Extraction from Templates
 second_title: GroupDocs.Parser .NET API
 description: Extract data effortlessly with GroupDocs.Parser for .NET. Learn to retrieve specific fields, iterate through data, and work with tables in extracted content.
-type: docs
 weight: 26
 url: /net/data-extraction-from-templates/
 ---

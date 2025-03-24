@@ -3,7 +3,6 @@ title: Töltse be a dokumentumot a helyi lemezről
 linktitle: Töltse be a dokumentumot a helyi lemezről
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki szöveget különböző dokumentumformátumokból a GroupDocs.Parser for .NET segítségével. Egyszerű és hatékony szövegkivonás C#-val.
-type: docs
 weight: 11
 url: /hu/net/document-loading/load-document-from-local-disk/
 ---
@@ -57,7 +56,7 @@ A GroupDocs.Parser a formátumok széles skáláját támogatja, beleértve a PD
 ### Kivonhatom a metaadatokat a szöveggel együtt a GroupDocs.Parser segítségével?
 Igen, a GroupDocs.Parser lehetővé teszi a szövegtartalom és a metaadatok kinyerését a támogatott dokumentumformátumokból.
 ### Hol találok további erőforrásokat és támogatást a GroupDocs.Parser számára?
- Meglátogatni a[GroupDocs.Parser dokumentáció](https://reference.groupdocs.com/parser/net/) részletes API-referenciáért és fedezze fel a[GroupDocs fórum](https://forum.groupdocs.com/c/parser/17) közösségi támogatásért.
+ Meglátogatni a[GroupDocs.Parser dokumentáció](https://tutorials.groupdocs.com/parser/net/) részletes API-referenciáért és fedezze fel a[GroupDocs fórum](https://forum.groupdocs.com/c/parser/17) közösségi támogatásért.
 ### Hogyan szerezhetek ideiglenes licencet a GroupDocs.Parser számára?
  Kérheti a[ideiglenes engedély](https://purchase.groupdocs.com/temporary-license/) értékelési és tesztelési célokra.
 ### Van ingyenes próbaverzió a GroupDocs.Parser számára?

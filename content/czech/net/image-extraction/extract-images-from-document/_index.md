@@ -3,7 +3,6 @@ title: Extrahujte obrázky z dokumentu
 linktitle: Extrahujte obrázky z dokumentu
 second_title: GroupDocs.Parser .NET API
 description: Extrahujte obrázky z dokumentů bez námahy pomocí GroupDocs.Parser pro .NET. Vaše možnosti zpracování dokumentů a efektivně zefektivněte úlohy extrakce obrázků.
-type: docs
 weight: 11
 url: /cs/net/image-extraction/extract-images-from-document/
 ---
@@ -67,7 +66,7 @@ GroupDocs.Parser podporuje extrahování obrázků z různých formátů, včetn
 ### Je k dispozici bezplatná zkušební verze pro GroupDocs.Parser?
  Ano, máte přístup k bezplatné zkušební verzi GroupDocs.Parser z[webová stránka](https://releases.groupdocs.com/).
 ### Kde najdu dokumentaci k GroupDocs.Parser?
- Podrobnou dokumentaci k GroupDocs.Parser lze nalézt[tady](https://reference.groupdocs.com/parser/net/).
+ Podrobnou dokumentaci k GroupDocs.Parser lze nalézt[tady](https://tutorials.groupdocs.com/parser/net/).
 ### Jak mohu získat dočasnou licenci pro GroupDocs.Parser?
  Dočasnou licenci můžete získat od[dočasná licenční stránka](https://purchase.groupdocs.com/temporary-license/).
 ### Kde mohu získat podporu pro GroupDocs.Parser?

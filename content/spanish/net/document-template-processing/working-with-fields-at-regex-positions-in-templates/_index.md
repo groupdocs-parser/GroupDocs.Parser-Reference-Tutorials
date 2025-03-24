@@ -3,7 +3,6 @@ title: Trabajar con campos en posiciones Regex en plantillas
 linktitle: Trabajar con campos en posiciones Regex en plantillas
 second_title: API GroupDocs.Parser .NET
 description: Aprenda a extraer datos de plantillas de documentos utilizando posiciones de expresiones regulares con GroupDocs.Parser para .NET. Automatice sus tareas de extracción de datos de manera eficiente.
-type: docs
 weight: 13
 url: /es/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---

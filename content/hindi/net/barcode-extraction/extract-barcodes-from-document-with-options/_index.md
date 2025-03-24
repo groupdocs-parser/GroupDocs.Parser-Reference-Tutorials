@@ -3,7 +3,6 @@ title: विकल्पों के साथ दस्तावेज़ स
 linktitle: विकल्पों के साथ दस्तावेज़ से बारकोड निकालें
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके दस्तावेज़ों से बारकोड निकालना सीखें। कोड उदाहरणों और FAQ के साथ व्यापक ट्यूटोरियल।
-type: docs
 weight: 14
 url: /hi/net/barcode-extraction/extract-barcodes-from-document-with-options/
 ---

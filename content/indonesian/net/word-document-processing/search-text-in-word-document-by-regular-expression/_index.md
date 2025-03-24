@@ -3,7 +3,6 @@ title: Cari Teks di Dokumen Word dengan Ekspresi Reguler
 linktitle: Cari Teks di Dokumen Word dengan Ekspresi Reguler
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mencari teks di dokumen Word menggunakan ekspresi reguler dengan GroupDocs.Parser untuk .NET. Ekstrak konten tertentu secara efisien.
-type: docs
 weight: 19
 url: /id/net/word-document-processing/search-text-in-word-document-by-regular-expression/
 ---

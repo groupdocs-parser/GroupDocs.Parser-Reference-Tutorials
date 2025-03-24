@@ -3,7 +3,6 @@ title: 使用 GroupDocs.Parser 解锁文档解析技能
 linktitle: GroupDocs.Parser 教程
 additionalTitle: GroupDocs API 参考
 description: 使用 GroupDocs.Parser for .NET 和 Java 解锁高效的数据提取技术。探索有关文本、表格、图像提取等的教程。
-type: docs
 weight: 11
 url: /zh/
 is_root: true

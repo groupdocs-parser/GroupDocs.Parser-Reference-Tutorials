@@ -3,7 +3,6 @@ title: ローカルディスクからドキュメントを読み込む
 linktitle: ローカルディスクからドキュメントを読み込む
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して、さまざまなドキュメント形式からテキストを抽出する方法を学びます。C# を使用した簡単で効率的なテキスト抽出。
-type: docs
 weight: 11
 url: /ja/net/document-loading/load-document-from-local-disk/
 ---
@@ -57,7 +56,7 @@ GroupDocs.Parser は、PDF、Microsoft Office ドキュメント (Word、Excel�
 ### GroupDocs.Parser を使用してテキストとともにメタデータを抽出できますか?
 はい、GroupDocs.Parser では、サポートされているドキュメント形式からテキスト コンテンツとメタデータの両方を抽出できます。
 ### GroupDocs.Parser に関するその他のリソースやサポートはどこで見つかりますか?
-訪問[GroupDocs.Parser ドキュメント](https://reference.groupdocs.com/parser/net/)詳細なAPIリファレンスについては、[GroupDocs フォーラム](https://forum.groupdocs.com/c/parser/17)コミュニティサポートのため。
+訪問[GroupDocs.Parser ドキュメント](https://tutorials.groupdocs.com/parser/net/)詳細なAPIリファレンスについては、[GroupDocs フォーラム](https://forum.groupdocs.com/c/parser/17)コミュニティサポートのため。
 ### GroupDocs.Parser の一時ライセンスを取得するにはどうすればよいですか?
 リクエストすることができます[一時ライセンス](https://purchase.groupdocs.com/temporary-license/)評価およびテストの目的で。
 ### GroupDocs.Parser の無料トライアルはありますか?

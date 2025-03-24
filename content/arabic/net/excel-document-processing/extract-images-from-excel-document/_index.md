@@ -3,7 +3,6 @@ title: استخراج الصور من مستند Excel
 linktitle: استخراج الصور من مستند Excel
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج الصور من مستندات Excel باستخدام GroupDocs.Parser لـ .NET. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية.
-type: docs
 weight: 10
 url: /ar/net/excel-document-processing/extract-images-from-excel-document/
 ---
@@ -66,4 +65,4 @@ foreach (PageImageArea image in images)
 ### س: هل يمكنني تجربة GroupDocs.Parser قبل شراء الترخيص؟
  ج: نعم، يمكنك الحصول على[تجربة مجانية](https://releases.groupdocs.com/) لتقييم GroupDocs.Parser.
 ### س: أين يمكنني العثور على الوثائق التفصيلية الخاصة بـ GroupDocs.Parser؟
- ج: راجع الشامل[توثيق](https://reference.groupdocs.com/parser/net/) للحصول على معلومات مفصلة حول استخدام GroupDocs.Parser.
+ ج: راجع الشامل[توثيق](https://tutorials.groupdocs.com/parser/net/) للحصول على معلومات مفصلة حول استخدام GroupDocs.Parser.

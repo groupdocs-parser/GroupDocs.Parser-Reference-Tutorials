@@ -3,7 +3,6 @@ title: Wyodrębnij zwykły tekst
 linktitle: Wyodrębnij zwykły tekst
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić zwykły tekst z dokumentów za pomocą GroupDocs.Parser dla .NET. Proste kroki integracji wyodrębniania tekstu z aplikacjami.
-type: docs
 weight: 14
 url: /pl/net/formatted-text-extraction/extract-plain-text/
 ---

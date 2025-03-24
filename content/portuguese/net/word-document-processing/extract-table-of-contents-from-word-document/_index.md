@@ -3,7 +3,6 @@ title: Extraia o índice do documento do Word
 linktitle: Extraia o índice do documento do Word
 second_title: API GroupDocs.Parser .NET
 description: Aprenda como extrair o Índice (TOC) de documentos do Word programaticamente usando GroupDocs.Parser for .NET.
-type: docs
 weight: 13
 url: /pt/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
@@ -64,7 +63,7 @@ Sim, GroupDocs.Parser oferece suporte a uma ampla variedade de formatos de docum
 ### O GroupDocs.Parser é adequado para processar documentos grandes?
 Sim, GroupDocs.Parser é otimizado para lidar com documentos grandes de forma eficiente, com recursos como extração de texto, extração de metadados e extração de dados estruturados.
 ### Onde posso encontrar mais documentação e tutoriais para GroupDocs.Parser?
- Visite a[Documentação GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) para referências detalhadas de API e tutoriais.
+ Visite a[Documentação GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) para referências detalhadas de API e tutoriais.
 ### Como posso obter suporte para GroupDocs.Parser?
  Junte-se a[Fórum GroupDocs.Parser](https://forum.groupdocs.com/c/parser/17) para fazer perguntas e interagir com a comunidade.
 ### Existe uma versão de teste disponível para GroupDocs.Parser?

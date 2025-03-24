@@ -3,7 +3,6 @@ title: वर्ड दस्तावेज़ से छवियाँ नि
 linktitle: वर्ड दस्तावेज़ से छवियाँ निकालें
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके Word दस्तावेज़ से छवियाँ निकालना सीखें। यह ट्यूटोरियल आपके .NET में छवि को एकीकृत करने के लिए चरण-दर-चरण मार्गदर्शन प्रदान करता है।
-type: docs
 weight: 11
 url: /hi/net/word-document-processing/extract-images-from-word-document/
 ---
@@ -62,7 +61,7 @@ foreach (PageImageArea image in images)
 ### मैं GroupDocs.Parser के लिए अस्थायी लाइसेंस कैसे प्राप्त कर सकता हूं?
  आप परीक्षण प्रयोजनों के लिए अस्थायी लाइसेंस प्राप्त कर सकते हैं[यहाँ](https://purchase.groupdocs.com/temporary-license/).
 ### मैं .NET के लिए GroupDocs.Parser के बारे में अधिक दस्तावेज़ कहां पा सकता हूं?
- आप संपूर्ण दस्तावेज़ देख सकते हैं[यहाँ](https://reference.groupdocs.com/parser/net/).
+ आप संपूर्ण दस्तावेज़ देख सकते हैं[यहाँ](https://tutorials.groupdocs.com/parser/net/).
 ### क्या GroupDocs.Parser के लिए कोई निःशुल्क परीक्षण उपलब्ध है?
  हां, आप उपलब्ध निःशुल्क परीक्षण के साथ GroupDocs.Parser की सुविधाओं का पता लगा सकते हैं[यहाँ](https://releases.groupdocs.com/).
 ### मैं GroupDocs.Parser से संबंधित सहायता कैसे प्राप्त कर सकता हूं या प्रश्न पूछ सकता हूं?

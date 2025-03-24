@@ -3,7 +3,6 @@ title: Bekerja dengan Dokumen yang Dilindungi Kata Sandi
 linktitle: Bekerja dengan Dokumen yang Dilindungi Kata Sandi
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak teks dari dokumen yang dilindungi kata sandi menggunakan GroupDocs.Parser untuk .NET. Tingkatkan kemampuan pemrosesan dokumen Anda.
-type: docs
 weight: 15
 url: /id/net/document-loading/working-with-password-protected-documents/
 ---
@@ -77,7 +76,7 @@ Ya, GroupDocs.Parser mendukung ekstraksi teks dari file PDF yang dilindungi kata
 ### Apakah GroupDocs.Parser kompatibel dengan berbagai format dokumen seperti DOCX, XLSX, dan PPTX?
 Tentu saja, GroupDocs.Parser dapat menangani berbagai format dokumen selain PDF, termasuk format Microsoft Office.
 ### Di mana saya dapat menemukan dokumentasi terperinci untuk GroupDocs.Parser untuk .NET?
- Jelajahi dokumentasi lengkapnya[Di Sini](https://reference.groupdocs.com/parser/net/).
+ Jelajahi dokumentasi lengkapnya[Di Sini](https://tutorials.groupdocs.com/parser/net/).
 ### Bagaimana saya bisa mendapatkan dukungan atau mengajukan pertanyaan terkait GroupDocs.Parser untuk .NET?
  Kunjungi forum komunitas GroupDocs[Di Sini](https://forum.groupdocs.com/c/parser/17) untuk bantuan.
 ### Apakah ada versi uji coba yang tersedia untuk GroupDocs.Parser untuk .NET?

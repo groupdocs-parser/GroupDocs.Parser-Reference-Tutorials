@@ -3,7 +3,6 @@ title: Ekstrak Gambar dari Area Halaman Dokumen
 linktitle: Ekstrak Gambar dari Area Halaman Dokumen
 second_title: GroupDocs.Parser .NET API
 description: Temukan cara mengekstrak gambar dari dokumen dengan tepat menggunakan Groupdocs.Parser untuk .NET. Pelajari cara menargetkan area tertentu untuk ekstraksi gambar yang akurat.
-type: docs
 weight: 10
 url: /id/net/image-extraction/extract-images-from-document-page-area/
 ---

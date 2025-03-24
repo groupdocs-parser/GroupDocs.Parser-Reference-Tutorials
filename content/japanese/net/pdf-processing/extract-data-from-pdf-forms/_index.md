@@ -3,7 +3,6 @@ title: PDFフォームからデータを抽出する
 linktitle: PDFフォームからデータを抽出する
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して PDF フォームからデータを抽出する方法を学びます。コード例と FAQ を含むステップバイステップ ガイド。
-type: docs
 weight: 11
 url: /ja/net/pdf-processing/extract-data-from-pdf-forms/
 ---
@@ -79,7 +78,7 @@ Console.WriteLine("Description: {0}", rec.Description);
 ### GroupDocs.Parser を使用して画像とメタデータを抽出できますか?
 はい、GroupDocs.Parser を使用すると、ドキュメントから画像、メタデータ、テキストを抽出できます。
 ### GroupDocs.Parser の追加サポートやドキュメントはどこで入手できますか?
-訪問することができます[GroupDocs.Parser ドキュメント](https://reference.groupdocs.com/parser/net/)詳細な情報と例については、こちらをご覧ください。
+訪問することができます[GroupDocs.Parser ドキュメント](https://tutorials.groupdocs.com/parser/net/)詳細な情報と例については、こちらをご覧ください。
 ### GroupDocs.Parser の無料トライアルはありますか?
 はい、アクセスできます[GroupDocs.Parserの無料トライアル](https://releases.groupdocs.com/)その特徴を探ります。
 ### GroupDocs.Parser の一時ライセンスを取得するにはどうすればよいですか?

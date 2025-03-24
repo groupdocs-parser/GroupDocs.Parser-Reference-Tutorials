@@ -3,7 +3,6 @@ title: Sök text med reguljärt uttryck (regex)
 linktitle: Sök text med reguljärt uttryck (regex)
 second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du söker efter text med reguljära uttryck i dokument med GroupDocs.Parser för .NET. Extrahera specifikt innehåll utan ansträngning.
-type: docs
 weight: 23
 url: /sv/net/text-extraction/search-text-by-regex/
 ---

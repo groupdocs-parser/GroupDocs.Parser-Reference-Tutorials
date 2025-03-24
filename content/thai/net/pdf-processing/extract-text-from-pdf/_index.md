@@ -3,7 +3,6 @@ title: แยกข้อความจาก PDF
 linktitle: แยกข้อความจาก PDF
 second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกข้อความจากเอกสาร PDF โดยใช้ GroupDocs.Parser สำหรับ .NET บทช่วยสอนทีละขั้นตอนสำหรับนักพัฒนา
-type: docs
 weight: 14
 url: /th/net/pdf-processing/extract-text-from-pdf/
 ---
@@ -58,7 +57,7 @@ Console.WriteLine(reader.ReadToEnd());
 ### ฉันสามารถลองใช้ GroupDocs.Parser ก่อนซื้อใบอนุญาตได้หรือไม่
  ใช่ คุณสามารถรับเวอร์ชันทดลองใช้ฟรีได้[ที่นี่](https://releases.groupdocs.com/).
 ### ฉันจะหาเอกสารสำหรับ GroupDocs.Parser ได้ที่ไหน
- มีเอกสารรายละเอียดให้[ที่นี่](https://reference.groupdocs.com/parser/net/).
+ มีเอกสารรายละเอียดให้[ที่นี่](https://tutorials.groupdocs.com/parser/net/).
 ### ฉันจะรับการสนับสนุนทางเทคนิคสำหรับ GroupDocs.Parser ได้อย่างไร
  คุณสามารถขอความช่วยเหลือได้ในฟอรัมสนับสนุน[ที่นี่](https://forum.groupdocs.com/c/parser/17).
 ### ฉันจะขอรับใบอนุญาตชั่วคราวสำหรับ GroupDocs.Parser ได้อย่างไร

@@ -3,7 +3,6 @@ title: Extrahujte obrázky z dokumentu aplikace Excel
 linktitle: Extrahujte obrázky z dokumentu aplikace Excel
 second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat obrázky z dokumentů aplikace Excel pomocí GroupDocs.Parser for .NET. Podrobný průvodce s příklady kódu.
-type: docs
 weight: 10
 url: /cs/net/excel-document-processing/extract-images-from-excel-document/
 ---
@@ -66,4 +65,4 @@ Odpověď: Ano, GroupDocs.Parser podporuje širokou škálu formátů dokumentů
 ### Otázka: Mohu vyzkoušet GroupDocs.Parser před zakoupením licence?
  Odpověď: Ano, můžete získat a[zkušební verze zdarma](https://releases.groupdocs.com/) k vyhodnocení GroupDocs.Parser.
 ### Otázka: Kde najdu podrobnou dokumentaci k GroupDocs.Parser?
- Odpověď: Viz souhrn[dokumentace](https://reference.groupdocs.com/parser/net/) pro podrobné informace o používání GroupDocs.Parser.
+ Odpověď: Viz souhrn[dokumentace](https://tutorials.groupdocs.com/parser/net/) pro podrobné informace o používání GroupDocs.Parser.

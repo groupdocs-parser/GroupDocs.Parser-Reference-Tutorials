@@ -3,7 +3,6 @@ title: Analyzujte stránky pomocí šablon
 linktitle: Analyzujte stránky pomocí šablon
 second_title: GroupDocs.Parser .NET API
 description: Naučte se analyzovat stránky dokumentu pomocí šablon v .NET pomocí GroupDocs.Parser. Extrahujte konkrétní obsah efektivně pro vaše aplikace.
-type: docs
 weight: 16
 url: /cs/net/document-template-processing/parse-pages-using-templates/
 ---
@@ -67,7 +66,7 @@ Ano, GroupDocs.Parser podporuje různé formáty včetně PDF, DOCX, XLSX a dal�
 ### Je GroupDocs.Parser vhodný pro extrakci konkrétních dat, jako jsou čárové kódy?
 Absolutně! GroupDocs.Parser nabízí přesné možnosti extrakce pro cílenou extrakci obsahu.
 ### Kde najdu podrobnou dokumentaci k GroupDocs.Parser?
- Navštivte[dokumentace](https://reference.groupdocs.com/parser/net/) za komplexní návod.
+ Navštivte[dokumentace](https://tutorials.groupdocs.com/parser/net/) za komplexní návod.
 ### Jak mohu získat dočasné licencování pro GroupDocs.Parser?
  Získejte a[dočasná licence](https://purchase.groupdocs.com/temporary-license/) pro účely hodnocení nebo vývoje.
 ### Poskytuje GroupDocs podporu pro odstraňování problémů?

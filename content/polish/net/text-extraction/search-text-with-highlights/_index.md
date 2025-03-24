@@ -3,7 +3,6 @@ title: Wyszukaj tekst z wyróżnieniami
 linktitle: Wyszukaj tekst z wyróżnieniami
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyszukiwać i wyróżniać tekst w dokumentach za pomocą GroupDocs.Parser dla .NET. Efektywnie wydobywaj cenne informacje.
-type: docs
 weight: 24
 url: /pl/net/text-extraction/search-text-with-highlights/
 ---

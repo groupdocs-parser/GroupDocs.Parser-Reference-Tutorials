@@ -3,7 +3,6 @@ title: 按關鍵字搜尋 Excel 文件中的文本
 linktitle: 按關鍵字搜尋 Excel 文件中的文本
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 在 Excel 文件中搜尋文字。將進階文字搜尋功能整合到您的 .NET 應用程式中。
-type: docs
 weight: 16
 url: /zh-hant/net/excel-document-processing/search-text-in-excel-document-by-keyword/
 ---
@@ -56,7 +55,7 @@ foreach (SearchResult result in searchResults)
 ### GroupDocs.Parser適合大規模文件處理任務嗎？
 絕對地！ GroupDocs.Parser 旨在高效處理大型文檔，從而實現強大的文字擷取和搜尋功能。
 ### 在哪裡可以找到有關 GroupDocs.Parser for .NET 的更多文件和支援？
-參觀[GroupDocs.Parser 文檔](https://reference.groupdocs.com/parser/net/)取得詳細的 API 參考並探索[集團文檔論壇](https://forum.groupdocs.com/c/parser/17)以獲得社區支持。
+參觀[GroupDocs.Parser 文檔](https://tutorials.groupdocs.com/parser/net/)取得詳細的 API 參考並探索[集團文檔論壇](https://forum.groupdocs.com/c/parser/17)以獲得社區支持。
 ### 我可以在購買前試用 GroupDocs.Parser for .NET 嗎？
 是的，您可以透過以下方式探索這些功能：[免費試用](https://releases.groupdocs.com/)在購買之前。
 ### 如何獲得 GroupDocs.Parser 的臨時許可證？

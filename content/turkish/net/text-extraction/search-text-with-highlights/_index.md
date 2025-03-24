@@ -3,7 +3,6 @@ title: Vurgulanan Metinlerde Arama Yapın
 linktitle: Vurgulanan Metinlerde Arama Yapın
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belgelerde metni nasıl arayacağınızı ve vurgulayacağınızı öğrenin. Değerli içgörüleri verimli bir şekilde çıkarın.
-type: docs
 weight: 24
 url: /tr/net/text-extraction/search-text-with-highlights/
 ---

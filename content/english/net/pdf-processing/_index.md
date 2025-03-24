@@ -3,7 +3,6 @@ title: PDF Processing
 linktitle: PDF Processing
 second_title: GroupDocs.Parser .NET API
 description: Master PDF processing with GroupDocs.Parser for .NET. Learn to extract attachments, data, images, metadata, and text efficiently from PDFs.
-type: docs
 weight: 31
 url: /net/pdf-processing/
 ---

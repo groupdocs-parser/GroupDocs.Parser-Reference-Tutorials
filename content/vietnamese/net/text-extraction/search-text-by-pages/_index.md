@@ -3,7 +3,6 @@ title: Tìm kiếm văn bản theo trang
 linktitle: Tìm kiếm văn bản theo trang
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách tìm kiếm văn bản theo trang bằng GroupDocs.Parser cho .NET. Trích xuất nội dung cụ thể một cách hiệu quả từ các tài liệu trong ứng dụng .NET của bạn.
-type: docs
 weight: 22
 url: /vi/net/text-extraction/search-text-by-pages/
 ---
@@ -64,7 +63,7 @@ Có, GroupDocs.Parser hỗ trợ nhiều định dạng tài liệu bao gồm DO
 ### Tôi có thể trích xuất hình ảnh và siêu dữ liệu từ tài liệu bằng GroupDocs.Parser không?
 Hoàn toàn có thể, GroupDocs.Parser cho phép trích xuất hình ảnh, siêu dữ liệu và văn bản từ tài liệu.
 ### Tôi có thể tìm tài liệu chi tiết về GroupDocs.Parser ở đâu?
- Bạn có thể truy cập tài liệu[đây](https://reference.groupdocs.com/parser/net/).
+ Bạn có thể truy cập tài liệu[đây](https://tutorials.groupdocs.com/parser/net/).
 ### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho GroupDocs.Parser?
  Bạn có thể yêu cầu giấy phép tạm thời[đây](https://purchase.groupdocs.com/temporary-license/).
 ### Tôi có thể nhận hỗ trợ hoặc trợ giúp với GroupDocs.Parser ở đâu?

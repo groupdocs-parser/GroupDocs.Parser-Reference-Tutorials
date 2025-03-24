@@ -3,7 +3,6 @@ title: แยกข้อความในโหมด Raw
 linktitle: แยกข้อความในโหมด Raw
 second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกข้อความจากเอกสารโดยใช้ GroupDocs.Parser สำหรับ .NET การแยกข้อความที่ง่าย มีประสิทธิภาพ และราบรื่นภายในแอปพลิเคชัน .NET ของคุณ
-type: docs
 weight: 19
 url: /th/net/text-extraction/extract-text-in-raw-mode/
 ---

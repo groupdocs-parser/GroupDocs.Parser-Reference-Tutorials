@@ -3,7 +3,6 @@ title: Extrahujte obrázky z dokumentu aplikace Word
 linktitle: Extrahujte obrázky z dokumentu aplikace Word
 second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat obrázky z dokumentu aplikace Word pomocí GroupDocs.Parser for .NET. Tento tutoriál poskytuje podrobné pokyny pro integraci obrazu do vašeho .NET.
-type: docs
 weight: 11
 url: /cs/net/word-document-processing/extract-images-from-word-document/
 ---
@@ -62,7 +61,7 @@ Ano, GroupDocs.Parser podporuje různé formáty dokumentů včetně PDF, PowerP
 ### Jak mohu získat dočasnou licenci pro GroupDocs.Parser?
  Dočasnou licenci pro testovací účely můžete získat od[tady](https://purchase.groupdocs.com/temporary-license/).
 ### Kde najdu další dokumentaci o GroupDocs.Parser pro .NET?
- Můžete se podívat na kompletní dokumentaci[tady](https://reference.groupdocs.com/parser/net/).
+ Můžete se podívat na kompletní dokumentaci[tady](https://tutorials.groupdocs.com/parser/net/).
 ### Je k dispozici bezplatná zkušební verze pro GroupDocs.Parser?
  Ano, funkce GroupDocs.Parser můžete prozkoumat pomocí bezplatné zkušební verze[tady](https://releases.groupdocs.com/).
 ### Jak mohu získat podporu nebo klást otázky týkající se GroupDocs.Parser?

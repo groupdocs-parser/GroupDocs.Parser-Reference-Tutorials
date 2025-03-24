@@ -1,7 +1,6 @@
 ---
 title: Tutoriales y ejemplos de GroupDocs.Parser para .NET
 linktitle: Tutoriales de GroupDocs.Parser para .NET
-type: docs
 weight: 10
 url: /es/net/
 description: Desbloquee técnicas eficientes de extracción de texto con GroupDocs.Parser para .NET. Extraiga, resalte y busque texto sin problemas para mejorar el procesamiento de documentos.

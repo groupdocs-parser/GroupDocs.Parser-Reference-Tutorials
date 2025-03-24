@@ -3,7 +3,6 @@ title: การรับรู้ข้อความ
 linktitle: การรับรู้ข้อความ
 second_title: GroupDocs.Parser .NET API
 description: แยกข้อความจากเอกสารรูปแบบต่างๆ ได้อย่างมีประสิทธิภาพด้วย GroupDocs.Parser for .NET บูรณาการได้ง่ายและความสามารถ OCR อันทรงพลัง
-type: docs
 weight: 12
 url: /th/net/ocr-extraction/recognizing-text/
 ---
@@ -57,7 +56,7 @@ using (Parser parser = new Parser("YourSampleFile.docx", settings))
 - `TextOptions` ได้รับการกำหนดค่าให้เปิดใช้งาน OCR และเพิ่มประสิทธิภาพการแยกข้อความ
 
 ## บทสรุป
- ยินดีด้วย! คุณได้เรียนรู้วิธีรวม GroupDocs.Parser สำหรับ .NET เข้ากับโครงการของคุณเพื่อแยกข้อความอย่างมีประสิทธิภาพ สำรวจอย่างกว้างขวาง[เอกสารประกอบ](https://reference.groupdocs.com/parser/net/) สำหรับคุณสมบัติขั้นสูงและการเพิ่มประสิทธิภาพ
+ ยินดีด้วย! คุณได้เรียนรู้วิธีรวม GroupDocs.Parser สำหรับ .NET เข้ากับโครงการของคุณเพื่อแยกข้อความอย่างมีประสิทธิภาพ สำรวจอย่างกว้างขวาง[เอกสารประกอบ](https://tutorials.groupdocs.com/parser/net/) สำหรับคุณสมบัติขั้นสูงและการเพิ่มประสิทธิภาพ
 
 ## คำถามที่พบบ่อย
 ### GroupDocs.Parser เหมาะสำหรับการแยกข้อความจากไฟล์ PDF หรือไม่

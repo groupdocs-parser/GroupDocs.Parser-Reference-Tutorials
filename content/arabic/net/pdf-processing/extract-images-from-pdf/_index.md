@@ -3,7 +3,6 @@ title: استخراج الصور من قوات الدفاع الشعبي
 linktitle: استخراج الصور من قوات الدفاع الشعبي
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج الصور من مستندات PDF باستخدام GroupDocs.Parser لـ .NET. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية.
-type: docs
 weight: 12
 url: /ar/net/pdf-processing/extract-images-from-pdf/
 ---

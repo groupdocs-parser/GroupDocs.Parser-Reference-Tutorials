@@ -3,7 +3,6 @@ title: Excel ドキュメント処理
 linktitle: Excel ドキュメント処理
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser を使用して .NET での Excel ドキュメント処理をマスターします。ステップ バイ ステップ ガイドを使用して、画像、メタデータ、テキストを効率的に抽出する方法を学びます。
-type: docs
 weight: 32
 url: /ja/net/excel-document-processing/
 ---

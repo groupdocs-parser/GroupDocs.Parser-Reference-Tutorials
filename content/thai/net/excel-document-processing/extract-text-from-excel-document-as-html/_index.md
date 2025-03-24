@@ -3,7 +3,6 @@ title: แยกข้อความจากเอกสาร Excel เป็
 linktitle: แยกข้อความจากเอกสาร Excel เป็น HTML
 second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกข้อความจากเอกสาร Excel และแปลงเป็น HTML โดยใช้ GroupDocs.Parser สำหรับ .NET
-type: docs
 weight: 13
 url: /th/net/excel-document-processing/extract-text-from-excel-document-as-html/
 ---

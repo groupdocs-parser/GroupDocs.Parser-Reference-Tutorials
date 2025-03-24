@@ -3,7 +3,6 @@ title: Extrahujte obsah z dokumentu aplikace Word
 linktitle: Extrahujte obsah z dokumentu aplikace Word
 second_title: GroupDocs.Parser .NET API
 description: Naučte se, jak extrahovat obsah (TOC) z dokumentů aplikace Word programově pomocí GroupDocs.Parser for .NET.
-type: docs
 weight: 13
 url: /cs/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
@@ -64,7 +63,7 @@ Ano, GroupDocs.Parser podporuje širokou škálu formátů dokumentů, včetně 
 ### Je GroupDocs.Parser vhodný pro zpracování velkých dokumentů?
 Ano, GroupDocs.Parser je optimalizován pro efektivní manipulaci s velkými dokumenty, s funkcemi, jako je extrakce textu, extrakce metadat a extrakce strukturovaných dat.
 ### Kde najdu další dokumentaci a výukové programy pro GroupDocs.Parser?
- Navštivte[GroupDocs.Parser dokumentace](https://reference.groupdocs.com/parser/net/) pro podrobné API reference a výukové programy.
+ Navštivte[GroupDocs.Parser dokumentace](https://tutorials.groupdocs.com/parser/net/) pro podrobné API tutorials a výukové programy.
 ### Jak mohu získat podporu pro GroupDocs.Parser?
  Připojte se k[Fórum GroupDocs.Parser](https://forum.groupdocs.com/c/parser/17) klást otázky a komunikovat s komunitou.
 ### Je k dispozici zkušební verze pro GroupDocs.Parser?

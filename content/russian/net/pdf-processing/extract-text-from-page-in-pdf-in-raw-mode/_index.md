@@ -3,7 +3,6 @@ title: Извлечь текст со страницы в PDF в режиме Ra
 linktitle: Извлечь текст со страницы в PDF в режиме Raw
 second_title: GroupDocs.Parser .NET API
 description: Извлекайте текст из PDF-файлов с помощью GroupDocs.Parser на C#. Научитесь эффективному извлечению текста из PDF-файлов с помощью этой мощной библиотеки .NET.
-type: docs
 weight: 16
 url: /ru/net/pdf-processing/extract-text-from-page-in-pdf-in-raw-mode/
 ---

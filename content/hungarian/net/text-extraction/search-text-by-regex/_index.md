@@ -3,7 +3,6 @@ title: Szöveg keresése reguláris kifejezéssel (Regex)
 linktitle: Szöveg keresése reguláris kifejezéssel (Regex)
 second_title: GroupDocs.Parser .NET API
 description: Tanulja meg, hogyan kereshet szöveget reguláris kifejezésekkel a dokumentumokban a GroupDocs.Parser for .NET segítségével. Konkrét tartalmat könnyedén kivonat.
-type: docs
 weight: 23
 url: /hu/net/text-extraction/search-text-by-regex/
 ---

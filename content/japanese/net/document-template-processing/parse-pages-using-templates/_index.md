@@ -3,7 +3,6 @@ title: テンプレートを使用してページを解析する
 linktitle: テンプレートを使用してページを解析する
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser を使用して .NET のテンプレートを使用してドキュメント ページを解析する方法を学びます。アプリケーションに合わせて特定のコンテンツを効率的に抽出します。
-type: docs
 weight: 16
 url: /ja/net/document-template-processing/parse-pages-using-templates/
 ---
@@ -67,7 +66,7 @@ GroupDocs.Parser for .NET を使用すると、ドキュメントをシームレ
 ### GroupDocs.Parser はバーコードなどの特定のデータを抽出するのに適していますか?
 もちろんです! GroupDocs.Parser は、対象を絞ったコンテンツの抽出に正確な抽出機能を提供します。
 ### GroupDocs.Parser の詳細なドキュメントはどこで見つかりますか?
-訪問[ドキュメンテーション](https://reference.groupdocs.com/parser/net/)包括的なガイダンスを提供します。
+訪問[ドキュメンテーション](https://tutorials.groupdocs.com/parser/net/)包括的なガイダンスを提供します。
 ### GroupDocs.Parser の一時ライセンスを取得するにはどうすればよいですか?
 取得する[一時ライセンス](https://purchase.groupdocs.com/temporary-license/)評価または開発の目的で。
 ### GroupDocs はトラブルシューティングのサポートを提供していますか?

@@ -3,7 +3,6 @@ title: معالجة قوات الدفاع الشعبي
 linktitle: معالجة قوات الدفاع الشعبي
 second_title: GroupDocs.Parser .NET API
 description: معالجة ملفات PDF الرئيسية باستخدام GroupDocs.Parser لـ .NET. تعلم كيفية استخراج المرفقات والبيانات والصور والبيانات التعريفية والنص بكفاءة من ملفات PDF.
-type: docs
 weight: 31
 url: /ar/net/pdf-processing/
 ---

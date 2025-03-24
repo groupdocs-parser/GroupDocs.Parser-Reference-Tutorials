@@ -3,7 +3,6 @@ title: 按關鍵字搜尋文本
 linktitle: 按關鍵字搜尋文本
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 在文件中按關鍵字搜尋文字。輕鬆有效率地提取相關內容。
-type: docs
 weight: 21
 url: /zh-hant/net/text-extraction/search-text-by-keyword/
 ---
@@ -63,7 +62,7 @@ foreach (SearchResult result in searchResults)
 ### 我可以使用 GroupDocs.Parser 執行高級文字擷取操作嗎？
 絕對地！除了文字搜尋之外，GroupDocs.Parser 還支援元資料提取、結構化文字擷取等。
 ### 在哪裡可以找到 GroupDocs.Parser 的詳細文件？
-探索完整的文檔[這裡](https://reference.groupdocs.com/parser/net/).
+探索完整的文檔[這裡](https://tutorials.groupdocs.com/parser/net/).
 ### 如何獲得有關 GroupDocs.Parser 相關查詢的支援或協助？
 請造訪 GroupDocs 論壇以獲得支援和討論[這裡](https://forum.groupdocs.com/c/parser/17).
 ### 購買前是否有試用版評估 GroupDocs.Parser？

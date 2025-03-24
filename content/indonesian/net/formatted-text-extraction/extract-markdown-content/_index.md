@@ -3,7 +3,6 @@ title: Ekstrak Konten Penurunan Harga
 linktitle: Ekstrak Konten Penurunan Harga
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak konten Markdown dari dokumen menggunakan GroupDocs.Parser untuk .NET. Tutorial ini memberikan petunjuk langkah demi langkah untuk ekstraksi teks yang lancar.
-type: docs
 weight: 13
 url: /id/net/formatted-text-extraction/extract-markdown-content/
 ---

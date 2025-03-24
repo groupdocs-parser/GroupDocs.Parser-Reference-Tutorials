@@ -3,7 +3,6 @@ title: Extrakce stolu
 linktitle: Extrakce stolu
 second_title: GroupDocs.Parser .NET API
 description: Extrahování hlavní tabulky z dokumentů pomocí GroupDocs.Parser pro .NET. Naučte se extrahovat tabulky programově pro efektivní zpracování dat.
-type: docs
 weight: 23
 url: /cs/net/table-extraction/
 ---

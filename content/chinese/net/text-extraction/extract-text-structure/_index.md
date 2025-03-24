@@ -3,7 +3,6 @@ title: 提取文本结构
 linktitle: 提取文本结构
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从各种文档格式中提取文本结构。带有代码示例的分步教程。
-type: docs
 weight: 20
 url: /zh/net/text-extraction/extract-text-structure/
 ---

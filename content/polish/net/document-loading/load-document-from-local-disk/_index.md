@@ -3,7 +3,6 @@ title: Załaduj dokument z dysku lokalnego
 linktitle: Załaduj dokument z dysku lokalnego
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić tekst z różnych formatów dokumentów za pomocą GroupDocs.Parser dla .NET. Łatwa i wydajna ekstrakcja tekstu za pomocą języka C#.
-type: docs
 weight: 11
 url: /pl/net/document-loading/load-document-from-local-disk/
 ---
@@ -57,7 +56,7 @@ GroupDocs.Parser obsługuje szeroką gamę formatów, w tym PDF, dokumenty Micro
 ### Czy mogę wyodrębnić metadane wraz z tekstem za pomocą GroupDocs.Parser?
 Tak, GroupDocs.Parser umożliwia wyodrębnianie zarówno treści tekstowych, jak i metadanych z obsługiwanych formatów dokumentów.
 ### Gdzie mogę znaleźć więcej zasobów i wsparcia dla GroupDocs.Parser?
- Odwiedzić[Dokumentacja GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) aby uzyskać szczegółowe informacje o interfejsie API i zapoznać się z[Forum GroupDocs](https://forum.groupdocs.com/c/parser/17) za wsparcie społeczności.
+ Odwiedzić[Dokumentacja GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) aby uzyskać szczegółowe informacje o interfejsie API i zapoznać się z[Forum GroupDocs](https://forum.groupdocs.com/c/parser/17) za wsparcie społeczności.
 ### Jak mogę uzyskać tymczasową licencję na GroupDocs.Parser?
  Możesz poprosić o[licencja tymczasowa](https://purchase.groupdocs.com/temporary-license/) do celów oceny i testowania.
 ### Czy dostępna jest bezpłatna wersja próbna programu GroupDocs.Parser?

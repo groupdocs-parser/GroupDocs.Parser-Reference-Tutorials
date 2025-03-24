@@ -3,7 +3,6 @@ title: Excel Belge İşleme
 linktitle: Excel Belge İşleme
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser ile .NET'te Excel belge işleme konusunda uzmanlaşın. Adım adım kılavuzlarla görüntüleri, meta verileri ve metni etkili bir şekilde çıkarmayı öğrenin.
-type: docs
 weight: 32
 url: /tr/net/excel-document-processing/
 ---

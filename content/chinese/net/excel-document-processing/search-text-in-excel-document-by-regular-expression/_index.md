@@ -3,7 +3,6 @@ title: 通过正则表达式在Excel文档中搜索文本
 linktitle: 通过正则表达式在Excel文档中搜索文本
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 使用正则表达式在 Excel 文档中搜索文本。高效执行高级文本搜索。
-type: docs
 weight: 17
 url: /zh/net/excel-document-processing/search-text-in-excel-document-by-regular-expression/
 ---

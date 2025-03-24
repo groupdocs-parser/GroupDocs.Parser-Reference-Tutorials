@@ -3,7 +3,6 @@ title: البحث عن نص في مستند Word عن طريق التعبير ا
 linktitle: البحث عن نص في مستند Word عن طريق التعبير العادي
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية البحث عن نص في مستندات Word باستخدام التعبيرات العادية باستخدام GroupDocs.Parser لـ .NET. استخراج محتوى محدد بكفاءة.
-type: docs
 weight: 19
 url: /ar/net/word-document-processing/search-text-in-word-document-by-regular-expression/
 ---

@@ -3,7 +3,6 @@ title: Εξαγωγή συνημμένων από χαρτοφυλάκια PDF
 linktitle: Εξαγωγή συνημμένων από χαρτοφυλάκια PDF
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε συνημμένα από χαρτοφυλάκια PDF χρησιμοποιώντας το GroupDocs.Parser για .NET σε αυτό το περιεκτικό σεμινάριο.
-type: docs
 weight: 10
 url: /el/net/pdf-processing/extract-attachments-from-pdf-portfolios/
 ---

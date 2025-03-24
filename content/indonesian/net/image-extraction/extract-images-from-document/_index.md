@@ -3,7 +3,6 @@ title: Ekstrak Gambar dari Dokumen
 linktitle: Ekstrak Gambar dari Dokumen
 second_title: GroupDocs.Parser .NET API
 description: Ekstrak gambar dari dokumen dengan mudah menggunakan GroupDocs.Parser untuk .NET. Kemampuan pemrosesan dokumen Anda dan menyederhanakan tugas ekstraksi gambar secara efisien.
-type: docs
 weight: 11
 url: /id/net/image-extraction/extract-images-from-document/
 ---
@@ -67,7 +66,7 @@ GroupDocs.Parser mendukung ekstraksi gambar dari berbagai format, termasuk PDF, 
 ### Apakah ada uji coba gratis yang tersedia untuk GroupDocs.Parser?
  Ya, Anda dapat mengakses uji coba gratis GroupDocs.Parser dari[situs web](https://releases.groupdocs.com/).
 ### Di mana saya dapat menemukan dokumentasi untuk GroupDocs.Parser?
- Dokumentasi terperinci untuk GroupDocs.Parser dapat ditemukan[Di Sini](https://reference.groupdocs.com/parser/net/).
+ Dokumentasi terperinci untuk GroupDocs.Parser dapat ditemukan[Di Sini](https://tutorials.groupdocs.com/parser/net/).
 ### Bagaimana saya bisa mendapatkan lisensi sementara untuk GroupDocs.Parser?
  Anda dapat memperoleh lisensi sementara dari[halaman lisensi sementara](https://purchase.groupdocs.com/temporary-license/).
 ### Di mana saya bisa mendapatkan dukungan untuk GroupDocs.Parser?

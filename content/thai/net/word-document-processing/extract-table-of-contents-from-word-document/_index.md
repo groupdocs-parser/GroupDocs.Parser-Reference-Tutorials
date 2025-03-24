@@ -3,7 +3,6 @@ title: แยกสารบัญออกจากเอกสาร Word
 linktitle: แยกสารบัญออกจากเอกสาร Word
 second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกสารบัญ (TOC) จากเอกสาร Word โดยทางโปรแกรมโดยใช้ GroupDocs.Parser สำหรับ .NET
-type: docs
 weight: 13
 url: /th/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
@@ -64,7 +63,7 @@ using (TextReader reader = tocItem.ExtractText())
 ### GroupDocs.Parser เหมาะสำหรับการประมวลผลเอกสารขนาดใหญ่หรือไม่
 ใช่ GroupDocs.Parser ได้รับการปรับให้เหมาะสมเพื่อการจัดการเอกสารขนาดใหญ่อย่างมีประสิทธิภาพ ด้วยฟีเจอร์ต่างๆ เช่น การแยกข้อความ การแยกข้อมูลเมตา และการแยกข้อมูลที่มีโครงสร้าง
 ### ฉันจะหาเอกสารและบทช่วยสอนเพิ่มเติมสำหรับ GroupDocs.Parser ได้ที่ไหน
- เยี่ยมชม[เอกสาร GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) สำหรับการอ้างอิง API โดยละเอียดและบทช่วยสอน
+ เยี่ยมชม[เอกสาร GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) สำหรับการอ้างอิง API โดยละเอียดและบทช่วยสอน
 ### ฉันจะรับการสนับสนุนสำหรับ GroupDocs.Parser ได้อย่างไร
  เข้าร่วม[ฟอรัม GroupDocs.Parser](https://forum.groupdocs.com/c/parser/17) เพื่อถามคำถามและโต้ตอบกับชุมชน
 ### มีรุ่นทดลองใช้งานสำหรับ GroupDocs.Parser หรือไม่

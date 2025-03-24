@@ -3,7 +3,6 @@ title: التعرف على النص
 linktitle: التعرف على النص
 second_title: GroupDocs.Parser .NET API
 description: قم باستخراج النص من تنسيقات المستندات المختلفة بكفاءة باستخدام GroupDocs.Parser لـ .NET. سهولة التكامل وإمكانيات التعرف الضوئي على الحروف القوية.
-type: docs
 weight: 12
 url: /ar/net/ocr-extraction/recognizing-text/
 ---
@@ -57,7 +56,7 @@ using (Parser parser = new Parser("YourSampleFile.docx", settings))
 - `TextOptions` تم تكوينه لتمكين التعرف الضوئي على الحروف (OCR) وتحسين استخراج النص.
 
 ## خاتمة
- تهانينا! لقد تعلمت كيفية دمج GroupDocs.Parser لـ .NET في مشاريعك لاستخراج النص بكفاءة. استكشاف واسعة النطاق[توثيق](https://reference.groupdocs.com/parser/net/) للحصول على الميزات والتحسينات المتقدمة.
+ تهانينا! لقد تعلمت كيفية دمج GroupDocs.Parser لـ .NET في مشاريعك لاستخراج النص بكفاءة. استكشاف واسعة النطاق[توثيق](https://tutorials.groupdocs.com/parser/net/) للحصول على الميزات والتحسينات المتقدمة.
 
 ## الأسئلة الشائعة
 ### هل GroupDocs.Parser مناسب لاستخراج النص من ملفات PDF؟

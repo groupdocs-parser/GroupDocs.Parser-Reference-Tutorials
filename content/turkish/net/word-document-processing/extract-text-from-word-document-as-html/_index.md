@@ -3,7 +3,6 @@ title: Word Belgesinden Metni HTML Olarak Çıkarma
 linktitle: Word Belgesinden Metni HTML Olarak Çıkarma
 second_title: GroupDocs.Parser .NET API'si
 description: Word belgelerinden metin ayıklamak ve HTML olarak kaydetmek için GroupDocs.Parser for .NET'i nasıl kullanacağınızı öğrenin. Kod örnekleriyle adım adım eğitim.
-type: docs
 weight: 16
 url: /tr/net/word-document-processing/extract-text-from-word-document-as-html/
 ---
@@ -67,7 +66,7 @@ Bu öğreticide, bir Word belgesinden metin ayıklamak ve bunu HTML olarak kayde
 ### GroupDocs.Parser için nasıl geçici lisans alabilirim?
  Geçici lisans talebinde bulunabilirsiniz.[Burada](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Parser için daha fazla belgeyi nerede bulabilirim?
- Detaylı dokümantasyon mevcut[Burada](https://reference.groupdocs.com/parser/net/).
+ Detaylı dokümantasyon mevcut[Burada](https://tutorials.groupdocs.com/parser/net/).
 ### GroupDocs.Parser'ın ücretsiz deneme sürümü var mı?
  Evet, ücretsiz deneme sürümüne erişebilirsiniz[Burada](https://releases.groupdocs.com/).
 ### GroupDocs.Parser için nasıl destek alabilirim?

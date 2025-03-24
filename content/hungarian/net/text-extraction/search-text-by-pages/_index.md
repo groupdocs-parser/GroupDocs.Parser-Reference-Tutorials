@@ -3,7 +3,6 @@ title: Szöveg keresése oldalak szerint
 linktitle: Szöveg keresése oldalak szerint
 second_title: GroupDocs.Parser .NET API
 description: Tanuljon meg szöveget oldalak szerint keresni a GroupDocs.Parser for .NET segítségével. A .NET-alkalmazások dokumentumaiból hatékonyan nyerhet ki meghatározott tartalmat.
-type: docs
 weight: 22
 url: /hu/net/text-extraction/search-text-by-pages/
 ---
@@ -64,7 +63,7 @@ Igen, a GroupDocs.Parser a dokumentumformátumok széles skáláját támogatja,
 ### Kivonhatok képeket és metaadatokat a dokumentumokból a GroupDocs.Parser segítségével?
 Természetesen a GroupDocs.Parser lehetővé teszi képek, metaadatok és szövegek kinyerését a dokumentumokból.
 ### Hol találom a GroupDocs.Parser részletes dokumentációját?
- Hozzáférhet a dokumentációhoz[itt](https://reference.groupdocs.com/parser/net/).
+ Hozzáférhet a dokumentációhoz[itt](https://tutorials.groupdocs.com/parser/net/).
 ### Hogyan szerezhetek ideiglenes licencet a GroupDocs.Parser számára?
  Ideiglenes engedélyt kérhet[itt](https://purchase.groupdocs.com/temporary-license/).
 ### Hol kaphatok támogatást vagy segítséget a GroupDocs.Parserrel kapcsolatban?

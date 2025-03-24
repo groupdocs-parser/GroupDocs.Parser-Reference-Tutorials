@@ -3,7 +3,6 @@ title: Phân tích trang bằng mẫu
 linktitle: Phân tích trang bằng mẫu
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách phân tích cú pháp các trang tài liệu bằng cách sử dụng các mẫu trong .NET với GroupDocs.Parser. Trích xuất nội dung cụ thể một cách hiệu quả cho ứng dụng của bạn.
-type: docs
 weight: 16
 url: /vi/net/document-template-processing/parse-pages-using-templates/
 ---
@@ -67,7 +66,7 @@ Có, GroupDocs.Parser hỗ trợ nhiều định dạng khác nhau bao gồm PDF
 ### GroupDocs.Parser có phù hợp để trích xuất dữ liệu cụ thể như mã vạch không?
 Tuyệt đối! GroupDocs.Parser cung cấp khả năng trích xuất chính xác để trích xuất nội dung được nhắm mục tiêu.
 ### Tôi có thể tìm tài liệu chi tiết về GroupDocs.Parser ở đâu?
- Tham quan[tài liệu](https://reference.groupdocs.com/parser/net/) để được hướng dẫn toàn diện.
+ Tham quan[tài liệu](https://tutorials.groupdocs.com/parser/net/) để được hướng dẫn toàn diện.
 ### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho GroupDocs.Parser?
  Có được một[giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/) cho mục đích đánh giá hoặc phát triển.
 ### GroupDocs có cung cấp hỗ trợ khắc phục sự cố không?

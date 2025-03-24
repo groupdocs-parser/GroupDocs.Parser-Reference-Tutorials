@@ -3,7 +3,6 @@ title: Desbloqueie o domínio da análise de documentos com GroupDocs.Parser
 linktitle: Tutoriais GroupDocs.Parser
 additionalTitle: Referências da API GroupDocs
 description: Desbloqueie técnicas eficientes de extração de dados com GroupDocs.Parser para .NET e Java. Explore tutoriais sobre extração de texto, tabela, imagem e muito mais.
-type: docs
 weight: 11
 url: /pt/
 is_root: true

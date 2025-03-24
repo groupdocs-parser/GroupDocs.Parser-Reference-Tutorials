@@ -3,7 +3,6 @@ title: Εξαγωγή κειμένου από τη σελίδα σε Ακριβ�
 linktitle: Εξαγωγή κειμένου από τη σελίδα σε Ακριβή λειτουργία
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε κείμενο με ακρίβεια από έγγραφα χρησιμοποιώντας το GroupDocs.Parser για .NET σε αυτό το περιεκτικό σεμινάριο.
-type: docs
 weight: 16
 url: /el/net/text-extraction/extract-text-from-page-in-accurate-mode/
 ---

@@ -3,7 +3,6 @@ title: 将图像提取到文件
 linktitle: 将图像提取到文件
 second_title: GroupDocs.Parser .NET API
 description: 使用 GroupDocs.Parser for .NET 轻松从各种文档类型（如 PDF 和 DOCX）中提取图像。简化您的文档解析任务。
-type: docs
 weight: 13
 url: /zh/net/image-extraction/extract-images-to-files/
 ---

@@ -3,7 +3,6 @@ title: 从 Excel 工作表中提取文本
 linktitle: 从 Excel 工作表中提取文本
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从 Excel 表中提取文本。有效提取文本的简单步骤。
-type: docs
 weight: 14
 url: /zh/net/excel-document-processing/extract-text-from-excel-sheet/
 ---

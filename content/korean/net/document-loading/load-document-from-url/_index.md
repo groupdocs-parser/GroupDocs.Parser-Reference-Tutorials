@@ -3,7 +3,6 @@ title: URL에서 문서 로드
 linktitle: URL에서 문서 로드
 second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 문서에서 텍스트를 추출하는 방법을 알아보세요. 이 튜토리얼에서는 URL에서 문서를 로드하고 텍스트를 추출하는 방법을 단계별로 다룹니다.
-type: docs
 weight: 13
 url: /ko/net/document-loading/load-document-from-url/
 ---
@@ -64,6 +63,6 @@ Console.WriteLine(reader == null ? "Text extraction isn't supported" : reader.Re
 ### GroupDocs.Parser에 사용할 수 있는 평가판이 있습니까?
  예, 다음에서 GroupDocs.Parser의 무료 평가판을 받을 수 있습니다.[여기](https://releases.groupdocs.com/).
 ### GroupDocs.Parser에 대한 설명서는 어디서 찾을 수 있나요?
- GroupDocs.Parser에 대한 자세한 문서를 사용할 수 있습니다.[여기](https://reference.groupdocs.com/parser/net/).
+ GroupDocs.Parser에 대한 자세한 문서를 사용할 수 있습니다.[여기](https://tutorials.groupdocs.com/parser/net/).
 ### GroupDocs.Parser에 대한 기술 지원을 받으려면 어떻게 해야 합니까?
 GroupDocs.Parser 포럼에서 기술 지원을 찾고 질문할 수 있습니다.[여기](https://forum.groupdocs.com/c/parser/17).

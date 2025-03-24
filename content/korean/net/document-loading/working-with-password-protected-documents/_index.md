@@ -3,7 +3,6 @@ title: 비밀번호로 보호된 문서 작업
 linktitle: 비밀번호로 보호된 문서 작업
 second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 암호로 보호된 문서에서 텍스트를 추출하는 방법을 알아보세요. 문서 처리 능력을 향상시켜 보세요.
-type: docs
 weight: 15
 url: /ko/net/document-loading/working-with-password-protected-documents/
 ---
@@ -77,7 +76,7 @@ catch (InvalidPasswordException)
 ### GroupDocs.Parser는 DOCX, XLSX 및 PPTX와 같은 다양한 문서 형식과 호환됩니까?
 물론, GroupDocs.Parser는 Microsoft Office 형식을 포함하여 PDF 이외의 광범위한 문서 형식을 처리할 수 있습니다.
 ### .NET용 GroupDocs.Parser에 대한 자세한 설명서는 어디에서 찾을 수 있습니까?
- 전체 문서 살펴보기[여기](https://reference.groupdocs.com/parser/net/).
+ 전체 문서 살펴보기[여기](https://tutorials.groupdocs.com/parser/net/).
 ### .NET용 GroupDocs.Parser와 관련된 지원을 받거나 질문을 하려면 어떻게 해야 합니까?
  GroupDocs 커뮤니티 포럼을 방문하세요.[여기](https://forum.groupdocs.com/c/parser/17) 도움을 위해.
 ### .NET용 GroupDocs.Parser에 사용할 수 있는 평가판이 있습니까?

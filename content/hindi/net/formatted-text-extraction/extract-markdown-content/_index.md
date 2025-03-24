@@ -3,7 +3,6 @@ title: मार्कडाउन सामग्री निकालें
 linktitle: मार्कडाउन सामग्री निकालें
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके दस्तावेज़ों से Markdown सामग्री निकालने का तरीका जानें। यह ट्यूटोरियल सहज पाठ निष्कर्षण के लिए चरण-दर-चरण निर्देश प्रदान करता है।
-type: docs
 weight: 13
 url: /hi/net/formatted-text-extraction/extract-markdown-content/
 ---

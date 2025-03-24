@@ -3,7 +3,6 @@ title: Parse Data from PDF Documents
 linktitle: Parse Data from PDF Documents
 second_title: GroupDocs.Parser .NET API
 description: Learn how to extract data from PDF documents using GroupDocs.Parser for .NET. Follow our step-by-step guide to efficiently parse and process PDF files.
-type: docs
 weight: 17
 url: /net/pdf-processing/parse-data-from-pdf-documents/
 ---
@@ -81,6 +80,6 @@ GroupDocs.Parser primarily focuses on PDF files but also supports other formats 
 ### Is there a trial version available for GroupDocs.Parser?
 Yes, you can get a free trial of GroupDocs.Parser [here](https://releases.groupdocs.com/).
 ### Where can I find documentation and support for GroupDocs.Parser?
-Refer to the [documentation](https://reference.groupdocs.com/parser/net/) and [support forum](https://forum.groupdocs.com/c/parser/17) for GroupDocs.Parser.
+Refer to the [documentation](https://tutorials.groupdocs.com/parser/net/) and [support forum](https://forum.groupdocs.com/c/parser/17) for GroupDocs.Parser.
 ### How can I obtain a temporary license for GroupDocs.Parser?
 You can acquire a temporary license [here](https://purchase.groupdocs.com/temporary-license/).

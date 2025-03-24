@@ -3,7 +3,6 @@ title: تحليل الصفحات باستخدام القوالب
 linktitle: تحليل الصفحات باستخدام القوالب
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية تحليل صفحات المستندات باستخدام القوالب في .NET باستخدام GroupDocs.Parser. استخراج محتوى محدد بكفاءة لتطبيقاتك.
-type: docs
 weight: 16
 url: /ar/net/document-template-processing/parse-pages-using-templates/
 ---
@@ -67,7 +66,7 @@ using (Parser parser = new Parser("YourSampleFile.docx"))
 ### هل GroupDocs.Parser مناسب لاستخراج بيانات محددة مثل الرموز الشريطية؟
 قطعاً! يوفر GroupDocs.Parser إمكانات استخراج دقيقة لاستخراج المحتوى المستهدف.
 ### أين يمكنني العثور على وثائق مفصلة عن GroupDocs.Parser؟
- قم بزيارة[توثيق](https://reference.groupdocs.com/parser/net/) للحصول على إرشادات شاملة.
+ قم بزيارة[توثيق](https://tutorials.groupdocs.com/parser/net/) للحصول على إرشادات شاملة.
 ### كيف يمكنني الحصول على ترخيص مؤقت لـ GroupDocs.Parser؟
  الحصول على[ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/) لأغراض التقييم أو التطوير.
 ### هل توفر GroupDocs الدعم لاستكشاف الأخطاء وإصلاحها؟

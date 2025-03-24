@@ -3,7 +3,6 @@ title: Extraheer opgemaakte tekst uit de documentpagina
 linktitle: Extraheer opgemaakte tekst uit de documentpagina
 second_title: GroupDocs.Parser .NET API
 description: Extraheer opgemaakte tekst uit documentpagina's met GroupDocs.Parser voor .NET. Efficiënte en betrouwbare oplossing voor tekstextractie.
-type: docs
 weight: 11
 url: /nl/net/formatted-text-extraction/extract-formatted-text-from-document-page/
 ---

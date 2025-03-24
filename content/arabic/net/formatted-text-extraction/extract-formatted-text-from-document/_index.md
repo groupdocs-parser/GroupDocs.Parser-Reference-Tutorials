@@ -3,7 +3,6 @@ title: استخراج النص المنسق من الوثيقة
 linktitle: استخراج النص المنسق من الوثيقة
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج النص المنسق من المستندات باستخدام GroupDocs.Parser لـ .NET. استخراج نص بسيط وفعال لتطبيقاتك.
-type: docs
 weight: 10
 url: /ar/net/formatted-text-extraction/extract-formatted-text-from-document/
 ---

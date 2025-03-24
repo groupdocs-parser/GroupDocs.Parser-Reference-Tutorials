@@ -3,7 +3,6 @@ title: Arbeiten mit Barcodes in Vorlagen
 linktitle: Arbeiten mit Barcodes in Vorlagen
 second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET strukturierte Daten aus Dokumenten mithilfe von Vorlagen extrahieren. Vereinfachen Sie die Datenextraktion mit Barcodefeldern.
-type: docs
 weight: 10
 url: /de/net/document-template-processing/working-with-barcodes-in-templates/
 ---

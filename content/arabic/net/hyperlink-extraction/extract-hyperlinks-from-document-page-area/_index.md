@@ -3,7 +3,6 @@ title: استخراج الارتباطات التشعبية من منطقة صف
 linktitle: استخراج الارتباطات التشعبية من منطقة صفحة المستند
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج الارتباطات التشعبية من مناطق مستند معينة باستخدام GroupDocs.Parser لـ .NET. تعزيز قدرات معالجة المستندات الخاصة بك.
-type: docs
 weight: 12
 url: /ar/net/hyperlink-extraction/extract-hyperlinks-from-document-page-area/
 ---

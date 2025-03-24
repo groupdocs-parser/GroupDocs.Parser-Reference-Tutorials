@@ -3,7 +3,6 @@ title: Разблокируйте мастерство анализа докум
 linktitle: Учебные пособия по GroupDocs.Parser
 additionalTitle: Ссылки на API GroupDocs
 description: Откройте для себя эффективные методы извлечения данных с помощью GroupDocs.Parser для .NET и Java. Изучите руководства по извлечению текста, таблиц, изображений и многому другому.
-type: docs
 weight: 11
 url: /ru/
 is_root: true

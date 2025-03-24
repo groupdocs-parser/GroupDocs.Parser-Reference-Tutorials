@@ -3,7 +3,6 @@ title: Trích xuất hình ảnh từ tài liệu Word
 linktitle: Trích xuất hình ảnh từ tài liệu Word
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất hình ảnh từ tài liệu Word bằng GroupDocs.Parser cho .NET. Hướng dẫn này cung cấp hướng dẫn từng bước để tích hợp hình ảnh vào .NET của bạn.
-type: docs
 weight: 11
 url: /vi/net/word-document-processing/extract-images-from-word-document/
 ---
@@ -62,7 +61,7 @@ Có, GroupDocs.Parser hỗ trợ nhiều định dạng tài liệu khác nhau b
 ### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho GroupDocs.Parser?
  Bạn có thể xin giấy phép tạm thời cho mục đích thử nghiệm từ[đây](https://purchase.groupdocs.com/temporary-license/).
 ### Tôi có thể tìm thêm tài liệu về GroupDocs.Parser cho .NET ở đâu?
- Bạn có thể tham khảo tài liệu đầy đủ[đây](https://reference.groupdocs.com/parser/net/).
+ Bạn có thể tham khảo tài liệu đầy đủ[đây](https://tutorials.groupdocs.com/parser/net/).
 ### Có bản dùng thử miễn phí cho GroupDocs.Parser không?
  Có, bạn có thể khám phá các tính năng của GroupDocs.Parser với bản dùng thử miễn phí[đây](https://releases.groupdocs.com/).
 ### Làm cách nào tôi có thể nhận được hỗ trợ hoặc đặt câu hỏi liên quan đến GroupDocs.Parser?

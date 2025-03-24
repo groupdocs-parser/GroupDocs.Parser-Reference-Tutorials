@@ -3,7 +3,6 @@ title: Ekstrak Barcode dari Dokumen yang Rusak
 linktitle: Ekstrak Barcode dari Dokumen yang Rusak
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak kode batang dari dokumen yang rusak menggunakan GroupDocs.Parser untuk .NET. Tutorial komprehensif dengan petunjuk langkah demi langkah.
-type: docs
 weight: 11
 url: /id/net/barcode-extraction/extract-barcodes-from-corrupted-document/
 ---

@@ -3,7 +3,6 @@ title: Trích xuất dữ liệu từ biểu mẫu PDF
 linktitle: Trích xuất dữ liệu từ biểu mẫu PDF
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất dữ liệu từ biểu mẫu PDF bằng GroupDocs.Parser cho .NET. Hướng dẫn từng bước với các ví dụ về mã và Câu hỏi thường gặp.
-type: docs
 weight: 11
 url: /vi/net/pdf-processing/extract-data-from-pdf-forms/
 ---
@@ -79,7 +78,7 @@ Có, GroupDocs.Parser hỗ trợ nhiều định dạng khác nhau, bao gồm DO
 ### Tôi có thể trích xuất hình ảnh và siêu dữ liệu bằng GroupDocs.Parser không?
 Có, GroupDocs.Parser cho phép trích xuất hình ảnh, siêu dữ liệu và văn bản từ tài liệu.
 ### Tôi có thể tìm tài liệu hoặc hỗ trợ bổ sung cho GroupDocs.Parser ở đâu?
- Bạn có thể ghé thăm[Tài liệu GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) để biết thông tin chi tiết và ví dụ.
+ Bạn có thể ghé thăm[Tài liệu GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) để biết thông tin chi tiết và ví dụ.
 ### Có bản dùng thử miễn phí cho GroupDocs.Parser không?
  Có, bạn có thể truy cập một[dùng thử miễn phí GroupDocs.Parser](https://releases.groupdocs.com/) để khám phá các tính năng của nó.
 ### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho GroupDocs.Parser?

@@ -3,7 +3,6 @@ title: Document laden vanaf lokale schijf
 linktitle: Document laden vanaf lokale schijf
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u tekst uit verschillende documentformaten kunt extraheren met GroupDocs.Parser voor .NET. Gemakkelijke en efficiënte tekstextractie met C#.
-type: docs
 weight: 11
 url: /nl/net/document-loading/load-document-from-local-disk/
 ---
@@ -57,7 +56,7 @@ GroupDocs.Parser ondersteunt een breed scala aan formaten, waaronder PDF, Micros
 ### Kan ik metagegevens samen met tekst extraheren met GroupDocs.Parser?
 Ja, GroupDocs.Parser maakt extractie van zowel tekstinhoud als metagegevens uit ondersteunde documentformaten mogelijk.
 ### Waar kan ik meer bronnen en ondersteuning voor GroupDocs.Parser vinden?
- Bezoek de[GroupDocs.Parser-documentatie](https://reference.groupdocs.com/parser/net/) voor gedetailleerde API-referentie en verken de[GroupDocs-forum](https://forum.groupdocs.com/c/parser/17) voor gemeenschapssteun.
+ Bezoek de[GroupDocs.Parser-documentatie](https://tutorials.groupdocs.com/parser/net/) voor gedetailleerde API-referentie en verken de[GroupDocs-forum](https://forum.groupdocs.com/c/parser/17) voor gemeenschapssteun.
 ### Hoe kan ik een tijdelijke licentie voor GroupDocs.Parser verkrijgen?
  U kunt een aanvraag indienen voor een[tijdelijke licentie](https://purchase.groupdocs.com/temporary-license/) voor evaluatie- en testdoeleinden.
 ### Is er een gratis proefversie beschikbaar voor GroupDocs.Parser?

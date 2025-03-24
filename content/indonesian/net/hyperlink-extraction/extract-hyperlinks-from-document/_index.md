@@ -3,7 +3,6 @@ title: Ekstrak Hyperlink dari Dokumen
 linktitle: Ekstrak Hyperlink dari Dokumen
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak hyperlink dari dokumen menggunakan GroupDocs.Parser untuk .NET. Tingkatkan aplikasi C# Anda dengan panduan sederhana ini.
-type: docs
 weight: 10
 url: /id/net/hyperlink-extraction/extract-hyperlinks-from-document/
 ---
@@ -73,7 +72,7 @@ Ya, GroupDocs.Parser mendukung ekstraksi hyperlink dari berbagai format file ter
 ### Apakah ada uji coba gratis yang tersedia untuk GroupDocs.Parser?
  Ya, Anda dapat mengakses uji coba gratis GroupDocs.Parser[Di Sini](https://releases.groupdocs.com/).
 ### Di mana saya dapat menemukan dokumentasi untuk GroupDocs.Parser?
- Dokumentasi terperinci untuk GroupDocs.Parser dapat ditemukan[Di Sini](https://reference.groupdocs.com/parser/net/).
+ Dokumentasi terperinci untuk GroupDocs.Parser dapat ditemukan[Di Sini](https://tutorials.groupdocs.com/parser/net/).
 ### Bagaimana saya bisa mendapatkan lisensi sementara untuk GroupDocs.Parser?
  Anda dapat memperoleh lisensi sementara untuk GroupDocs.Parser[Di Sini](https://purchase.groupdocs.com/temporary-license/).
 ### Apakah GroupDocs menawarkan dukungan untuk pemecahan masalah?

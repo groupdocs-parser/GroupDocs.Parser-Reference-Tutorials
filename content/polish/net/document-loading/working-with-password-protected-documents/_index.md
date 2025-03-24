@@ -3,7 +3,6 @@ title: Praca z dokumentami chronionymi hasłem
 linktitle: Praca z dokumentami chronionymi hasłem
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić tekst z dokumentów chronionych hasłem za pomocą GroupDocs.Parser dla .NET. Zwiększ swoje możliwości przetwarzania dokumentów.
-type: docs
 weight: 15
 url: /pl/net/document-loading/working-with-password-protected-documents/
 ---
@@ -77,7 +76,7 @@ Tak, GroupDocs.Parser obsługuje wyodrębnianie tekstu z plików PDF chronionych
 ### Czy GroupDocs.Parser jest zgodny z różnymi formatami dokumentów, takimi jak DOCX, XLSX i PPTX?
 Absolutnie GroupDocs.Parser obsługuje szeroką gamę formatów dokumentów poza PDF, w tym formaty Microsoft Office.
 ### Gdzie mogę znaleźć szczegółową dokumentację GroupDocs.Parser dla .NET?
- Zapoznaj się z pełną dokumentacją[Tutaj](https://reference.groupdocs.com/parser/net/).
+ Zapoznaj się z pełną dokumentacją[Tutaj](https://tutorials.groupdocs.com/parser/net/).
 ### Jak mogę uzyskać pomoc lub zadać pytania dotyczące GroupDocs.Parser dla .NET?
  Odwiedź forum społeczności GroupDocs[Tutaj](https://forum.groupdocs.com/c/parser/17) do pomocy.
 ### Czy dostępna jest wersja próbna programu GroupDocs.Parser dla platformy .NET?

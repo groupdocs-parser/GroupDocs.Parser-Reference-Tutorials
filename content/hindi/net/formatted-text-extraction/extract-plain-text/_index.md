@@ -3,7 +3,6 @@ title: सादा पाठ निकालें
 linktitle: सादा पाठ निकालें
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके दस्तावेज़ों से सादा पाठ निकालना सीखें। अपने अनुप्रयोगों में पाठ निष्कर्षण को एकीकृत करने के लिए आसान चरण।
-type: docs
 weight: 14
 url: /hi/net/formatted-text-extraction/extract-plain-text/
 ---

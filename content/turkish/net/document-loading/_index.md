@@ -3,7 +3,6 @@ title: Belge Yükleme
 linktitle: Belge Yükleme
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser ile .NET'te belge yüklemeyi verimli bir şekilde gerçekleştirin. Yerel disklerden, akışlardan, URL'lerden ve daha fazlasından metin çıkarmayı öğrenin.
-type: docs
 weight: 29
 url: /tr/net/document-loading/
 ---

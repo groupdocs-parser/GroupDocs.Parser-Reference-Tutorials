@@ -3,7 +3,6 @@ title: Muat Dokumen dari Aliran
 linktitle: Muat Dokumen dari Aliran
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak teks dari berbagai format dokumen di .NET menggunakan GroupDocs.Parser. Panduan langkah demi langkah dengan contoh kode.
-type: docs
 weight: 12
 url: /id/net/document-loading/load-document-from-stream/
 ---
@@ -61,4 +60,4 @@ Ya, GroupDocs.Parser kompatibel dengan aplikasi .NET Framework dan .NET Core.
 ### Bagaimana saya bisa mendapatkan lisensi sementara untuk GroupDocs.Parser?
  Anda dapat memperoleh lisensi sementara dari[Di Sini](https://purchase.groupdocs.com/temporary-license/).
 ### Di mana saya dapat menemukan lebih banyak dukungan atau dokumentasi untuk GroupDocs.Parser?
- Untuk dukungan tambahan, kunjungi[GroupDocs.Forum Parser](https://forum.groupdocs.com/c/parser/17) atau rujuk ke[dokumentasi](https://reference.groupdocs.com/parser/net/).
+ Untuk dukungan tambahan, kunjungi[GroupDocs.Forum Parser](https://forum.groupdocs.com/c/parser/17) atau rujuk ke[dokumentasi](https://tutorials.groupdocs.com/parser/net/).

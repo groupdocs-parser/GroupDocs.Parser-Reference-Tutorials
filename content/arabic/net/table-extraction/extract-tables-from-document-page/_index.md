@@ -3,7 +3,6 @@ title: استخراج الجداول من صفحة الوثيقة
 linktitle: استخراج الجداول من صفحة الوثيقة
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج الجداول من المستندات برمجياً باستخدام GroupDocs.Parser لـ .NET. يوفر هذا البرنامج التعليمي الشامل إرشادات خطوة بخطوة.
-type: docs
 weight: 11
 url: /ar/net/table-extraction/extract-tables-from-document-page/
 ---

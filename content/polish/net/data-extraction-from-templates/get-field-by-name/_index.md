@@ -3,7 +3,6 @@ title: Pobierz pole według nazwy
 linktitle: Pobierz pole według nazwy
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić określone pola danych z dokumentów za pomocą GroupDocs.Parser dla .NET. Przewodnik krok po kroku z przykładami kodu.
-type: docs
 weight: 10
 url: /pl/net/data-extraction-from-templates/get-field-by-name/
 ---

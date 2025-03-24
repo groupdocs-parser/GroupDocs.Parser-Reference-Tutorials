@@ -3,7 +3,6 @@ title: Ekstrak Data dari Formulir PDF
 linktitle: Ekstrak Data dari Formulir PDF
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak data dari formulir PDF menggunakan GroupDocs.Parser untuk .NET. Panduan langkah demi langkah dengan contoh kode dan FAQ.
-type: docs
 weight: 11
 url: /id/net/pdf-processing/extract-data-from-pdf-forms/
 ---
@@ -79,7 +78,7 @@ Ya, GroupDocs.Parser mendukung berbagai format, termasuk DOCX, XLSX, PPTX, dan b
 ### Bisakah saya mengekstrak gambar dan metadata menggunakan GroupDocs.Parser?
 Ya, GroupDocs.Parser memungkinkan ekstraksi gambar, metadata, dan teks dari dokumen.
 ### Di mana saya dapat menemukan dukungan atau dokumentasi tambahan untuk GroupDocs.Parser?
- Anda dapat mengunjungi[Dokumentasi GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) untuk informasi rinci dan contoh.
+ Anda dapat mengunjungi[Dokumentasi GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) untuk informasi rinci dan contoh.
 ### Apakah ada uji coba gratis yang tersedia untuk GroupDocs.Parser?
  Ya, Anda dapat mengakses a[uji coba gratis GroupDocs.Parser](https://releases.groupdocs.com/) untuk menjelajahi fitur-fiturnya.
 ### Bagaimana saya bisa mendapatkan lisensi sementara untuk GroupDocs.Parser?

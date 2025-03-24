@@ -3,7 +3,6 @@ title: 텍스트 인식
 linktitle: 텍스트 인식
 second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 다양한 문서 형식에서 텍스트를 효율적으로 추출합니다. 간편한 통합과 강력한 OCR 기능.
-type: docs
 weight: 12
 url: /ko/net/ocr-extraction/recognizing-text/
 ---
@@ -57,7 +56,7 @@ using (Parser parser = new Parser("YourSampleFile.docx", settings))
 - `TextOptions` OCR을 활성화하고 텍스트 추출을 최적화하도록 구성됩니다.
 
 ## 결론
- 축하해요! .NET용 GroupDocs.Parser를 프로젝트에 통합하여 텍스트를 효율적으로 추출하는 방법을 배웠습니다. 광범위한 탐색[선적 서류 비치](https://reference.groupdocs.com/parser/net/) 고급 기능 및 최적화를 위해.
+ 축하해요! .NET용 GroupDocs.Parser를 프로젝트에 통합하여 텍스트를 효율적으로 추출하는 방법을 배웠습니다. 광범위한 탐색[선적 서류 비치](https://tutorials.groupdocs.com/parser/net/) 고급 기능 및 최적화를 위해.
 
 ## FAQ
 ### GroupDocs.Parser는 PDF 파일에서 텍스트를 추출하는 데 적합합니까?

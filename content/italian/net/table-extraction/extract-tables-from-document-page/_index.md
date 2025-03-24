@@ -3,7 +3,6 @@ title: Estrai tabelle dalla pagina del documento
 linktitle: Estrai tabelle dalla pagina del documento
 second_title: API GroupDocs.Parser .NET
 description: Scopri come estrarre tabelle dai documenti a livello di codice utilizzando GroupDocs.Parser per .NET. Questo tutorial completo fornisce una guida passo passo.
-type: docs
 weight: 11
 url: /it/net/table-extraction/extract-tables-from-document-page/
 ---

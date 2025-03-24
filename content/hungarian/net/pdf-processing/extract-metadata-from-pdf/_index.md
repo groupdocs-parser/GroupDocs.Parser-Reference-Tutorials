@@ -3,7 +3,6 @@ title: Metaadatok kibontása PDF-ből
 linktitle: Metaadatok kibontása PDF-ből
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki metaadatokat PDF-dokumentumokból a GroupDocs.Parser for .NET segítségével. Ez az átfogó útmutató lépésről lépésre tartalmazza az utasításokat és az előfeltételeket.
-type: docs
 weight: 13
 url: /hu/net/pdf-processing/extract-metadata-from-pdf/
 ---

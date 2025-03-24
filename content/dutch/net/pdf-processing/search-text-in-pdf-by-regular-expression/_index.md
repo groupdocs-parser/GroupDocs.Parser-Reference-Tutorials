@@ -3,7 +3,6 @@ title: Zoek tekst in PDF via reguliere expressie
 linktitle: Zoek tekst in PDF via reguliere expressie
 second_title: GroupDocs.Parser .NET API
 description: Zoek naar specifieke tekst in PDF-documenten met behulp van reguliere expressies met GroupDocs.Parser. Extraheer, analyseer en manipuleer PDF-tekst moeiteloos.
-type: docs
 weight: 19
 url: /nl/net/pdf-processing/search-text-in-pdf-by-regular-expression/
 ---
@@ -52,7 +51,7 @@ In deze zelfstudie hebben we onderzocht hoe u GroupDocs.Parser voor .NET kunt ge
 ### Kan GroupDocs.Parser naast PDF's ook andere documentformaten verwerken?
 Ja, GroupDocs.Parser ondersteunt verschillende documentformaten zoals DOCX, XLSX, PPTX en meer.
 ### Waar kan ik meer bronnen en ondersteuning voor GroupDocs.Parser vinden?
- U kunt een bezoek brengen aan de[GroupDocs.Parser-documentatie](https://reference.groupdocs.com/parser/net/) en hulp zoeken bij de[GroupDocs-forum](https://forum.groupdocs.com/c/parser/17).
+ U kunt een bezoek brengen aan de[GroupDocs.Parser-documentatie](https://tutorials.groupdocs.com/parser/net/) en hulp zoeken bij de[GroupDocs-forum](https://forum.groupdocs.com/c/parser/17).
 ### Is er een gratis proefversie beschikbaar voor GroupDocs.Parser?
  Ja, u heeft toegang tot a[gratis proefversie](https://releases.groupdocs.com/) van GroupDocs.Parser om de functies ervan te verkennen.
 ### Hoe kan ik een tijdelijke licentie voor GroupDocs.Parser verkrijgen?

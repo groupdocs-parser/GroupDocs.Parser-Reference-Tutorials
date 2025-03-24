@@ -3,7 +3,6 @@ title: Extract Text from Page in PDF in Raw Mode
 linktitle: Extract Text from Page in PDF in Raw Mode
 second_title: GroupDocs.Parser .NET API
 description: Extract text from PDFs using GroupDocs.Parser in C#. Learn efficient PDF text extraction with this powerful .NET library.
-type: docs
 weight: 16
 url: /net/pdf-processing/extract-text-from-page-in-pdf-in-raw-mode/
 ---

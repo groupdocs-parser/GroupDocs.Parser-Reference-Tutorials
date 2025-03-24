@@ -3,7 +3,6 @@ title: Werken met velden op vaste posities in sjablonen
 linktitle: Werken met velden op vaste posities in sjablonen
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u gegevens uit documenten kunt extraheren met GroupDocs.Parser voor .NET. Uitgebreide tutorial met codevoorbeelden.
-type: docs
 weight: 11
 url: /nl/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
@@ -69,7 +68,7 @@ In deze zelfstudie hebben we het proces besproken van het werken met velden op v
 
 ## Veelgestelde vragen
 ### Is GroupDocs.Parser compatibel met alle documentformaten?
- GroupDocs.Parser ondersteunt een breed scala aan bestandsindelingen, waaronder PDF, Microsoft Word, Excel, PowerPoint en meer. Verwijs naar de[documentatie](https://reference.groupdocs.com/parser/net/) voor een gedetailleerde lijst.
+ GroupDocs.Parser ondersteunt een breed scala aan bestandsindelingen, waaronder PDF, Microsoft Word, Excel, PowerPoint en meer. Verwijs naar de[documentatie](https://tutorials.groupdocs.com/parser/net/) voor een gedetailleerde lijst.
 ### Hoe kan ik een tijdelijke licentie voor GroupDocs.Parser verkrijgen?
  U kunt een tijdelijke licentie voor testdoeleinden verkrijgen bij[hier](https://purchase.groupdocs.com/temporary-license/).
 ### Waar kan ik ondersteuning vinden voor GroupDocs.Parser?

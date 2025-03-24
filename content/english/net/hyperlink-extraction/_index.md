@@ -3,7 +3,6 @@ title: Hyperlink Extraction
 linktitle: Hyperlink Extraction
 second_title: GroupDocs.Parser .NET API
 description: Effortlessly extract hyperlinks from documents in .NET with GroupDocs.Parser. Enhance your C# applications with step-by-step guides for hyperlink extraction.
-type: docs
 weight: 25
 url: /net/hyperlink-extraction/
 ---
@@ -25,7 +24,7 @@ Extracting hyperlinks from specific document pages is a common requirement in do
 
 ## Extract Hyperlinks from Document Page Area
 
-Sometimes, you may need to extract hyperlinks from specific areas within a document for targeted analysis or processing. In the "Extract Hyperlinks from Document Page Area" tutorial, you'll learn how to achieve this using GroupDocs.Parser for .NET. Follow the comprehensive guide and code examples to extract hyperlinks from designated document areas seamlessly. Whether you're extracting references from academic papers or analyzing hyperlinks in reports, this tutorial equips you with the skills to handle hyperlink extraction with precision in your C# applications. Ready to take your document processing capabilities to the next level?
+Sometimes, you may need to extract hyperlinks from specific areas within a document for targeted analysis or processing. In the "Extract Hyperlinks from Document Page Area" tutorial, you'll learn how to achieve this using GroupDocs.Parser for .NET. Follow the comprehensive guide and code examples to extract hyperlinks from designated document areas seamlessly. Whether you're extracting tutorialss from academic papers or analyzing hyperlinks in reports, this tutorial equips you with the skills to handle hyperlink extraction with precision in your C# applications. Ready to take your document processing capabilities to the next level?
 
 [Read more](./extract-hyperlinks-from-document-page-area/)
 

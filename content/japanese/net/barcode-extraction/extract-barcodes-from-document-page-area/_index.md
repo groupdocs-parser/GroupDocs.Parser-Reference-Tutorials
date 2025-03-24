@@ -3,7 +3,6 @@ title: ドキュメントページ領域からバーコードを抽出する
 linktitle: ドキュメントページ領域からバーコードを抽出する
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用してドキュメント ページからバーコードを抽出する方法を学習します。このステップ バイ ステップのチュートリアルでドキュメント処理機能を強化します。
-type: docs
 weight: 13
 url: /ja/net/barcode-extraction/extract-barcodes-from-document-page-area/
 ---

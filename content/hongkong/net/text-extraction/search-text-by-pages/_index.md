@@ -3,7 +3,6 @@ title: 按頁搜尋文本
 linktitle: 按頁搜尋文本
 second_title: GroupDocs.Parser .NET API
 description: 了解使用 GroupDocs.Parser for .NET 按頁面搜尋文字。從 .NET 應用程式中的文件中有效地提取特定內容。
-type: docs
 weight: 22
 url: /zh-hant/net/text-extraction/search-text-by-pages/
 ---
@@ -64,7 +63,7 @@ foreach (SearchResult result in searchResults)
 ### 我可以使用 GroupDocs.Parser 從文件中提取圖像和元資料嗎？
 當然，GroupDocs.Parser 允許從文件中提取圖像、元資料和文字。
 ### 在哪裡可以找到 GroupDocs.Parser 的詳細文件？
-您可以存取文檔[這裡](https://reference.groupdocs.com/parser/net/).
+您可以存取文檔[這裡](https://tutorials.groupdocs.com/parser/net/).
 ### 如何獲得 GroupDocs.Parser 的臨時許可證？
 您可以申請臨時許可證[這裡](https://purchase.groupdocs.com/temporary-license/).
 ### 我可以在哪裡獲得 GroupDocs.Parser 的支援或協助？

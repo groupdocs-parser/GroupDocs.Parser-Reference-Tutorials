@@ -3,7 +3,6 @@ title: العمل مع المستندات المحمية بكلمة مرور
 linktitle: العمل مع المستندات المحمية بكلمة مرور
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج النص من المستندات المحمية بكلمة مرور باستخدام GroupDocs.Parser لـ .NET. تعزيز قدرات معالجة المستندات الخاصة بك.
-type: docs
 weight: 15
 url: /ar/net/document-loading/working-with-password-protected-documents/
 ---
@@ -77,7 +76,7 @@ catch (InvalidPasswordException)
 ### هل GroupDocs.Parser متوافق مع تنسيقات المستندات المختلفة مثل DOCX وXLSX وPPTX؟
 بالتأكيد، يمكن لـ GroupDocs.Parser التعامل مع مجموعة واسعة من تنسيقات المستندات بخلاف PDF، بما في ذلك تنسيقات Microsoft Office.
 ### أين يمكنني العثور على وثائق مفصلة عن GroupDocs.Parser لـ .NET؟
- استكشاف الوثائق الكاملة[هنا](https://reference.groupdocs.com/parser/net/).
+ استكشاف الوثائق الكاملة[هنا](https://tutorials.groupdocs.com/parser/net/).
 ### كيف يمكنني الحصول على الدعم أو طرح الأسئلة المتعلقة بـ GroupDocs.Parser لـ .NET؟
  تفضل بزيارة منتدى مجتمع GroupDocs[هنا](https://forum.groupdocs.com/c/parser/17) للمساعدة.
 ### هل هناك إصدار تجريبي متاح لـ GroupDocs.Parser لـ .NET؟

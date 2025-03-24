@@ -3,7 +3,6 @@ title: Şablonlardan Veri Çıkarma
 linktitle: Şablonlardan Veri Çıkarma
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET ile verileri zahmetsizce çıkarın. Belirli alanları almayı, verileri yinelemeyi ve çıkarılan içerikteki tablolarla çalışmayı öğrenin.
-type: docs
 weight: 26
 url: /tr/net/data-extraction-from-templates/
 ---

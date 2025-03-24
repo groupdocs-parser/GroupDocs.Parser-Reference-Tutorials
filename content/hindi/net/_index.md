@@ -1,7 +1,6 @@
 ---
 title: .NET के लिए GroupDocs.Parser के ट्यूटोरियल और उदाहरण
 linktitle: .NET ट्यूटोरियल के लिए GroupDocs.Parser
-type: docs
 weight: 10
 url: /hi/net/
 description: .NET के लिए GroupDocs.Parser के साथ कुशल टेक्स्ट निष्कर्षण तकनीकों को अनलॉक करें। बेहतर दस्तावेज़ प्रसंस्करण के लिए टेक्स्ट को सहजता से निकालें, हाइलाइट करें और खोजें।

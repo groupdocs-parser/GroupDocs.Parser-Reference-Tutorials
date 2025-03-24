@@ -3,7 +3,6 @@ title: Εξαγωγή εικόνων από το έγγραφο
 linktitle: Εξαγωγή εικόνων από το έγγραφο
 second_title: GroupDocs.Parser .NET API
 description: Εξάγετε εικόνες από έγγραφα χωρίς κόπο χρησιμοποιώντας το GroupDocs.Parser για .NET. Οι δυνατότητες επεξεργασίας εγγράφων σας και απλοποιήστε αποτελεσματικά τις εργασίες εξαγωγής εικόνων.
-type: docs
 weight: 11
 url: /el/net/image-extraction/extract-images-from-document/
 ---
@@ -67,7 +66,7 @@ foreach (PageImageArea image in images)
 ### Υπάρχει διαθέσιμη δωρεάν δοκιμή για το GroupDocs.Parser;
  Ναι, μπορείτε να αποκτήσετε πρόσβαση σε μια δωρεάν δοκιμή του GroupDocs.Parser από το[δικτυακός τόπος](https://releases.groupdocs.com/).
 ### Πού μπορώ να βρω τεκμηρίωση για το GroupDocs.Parser;
- Μπορείτε να βρείτε αναλυτική τεκμηρίωση για το GroupDocs.Parser[εδώ](https://reference.groupdocs.com/parser/net/).
+ Μπορείτε να βρείτε αναλυτική τεκμηρίωση για το GroupDocs.Parser[εδώ](https://tutorials.groupdocs.com/parser/net/).
 ### Πώς μπορώ να αποκτήσω μια προσωρινή άδεια για το GroupDocs.Parser;
  Μπορείτε να αποκτήσετε προσωρινή άδεια από το[σελίδα προσωρινής άδειας](https://purchase.groupdocs.com/temporary-license/).
 ### Πού μπορώ να λάβω υποστήριξη για το GroupDocs.Parser;

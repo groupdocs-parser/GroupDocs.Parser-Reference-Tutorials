@@ -3,7 +3,6 @@ title: Belirli Dosya Formatlarını Yükleme
 linktitle: Belirli Dosya Formatlarını Yükleme
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser'ı kullanarak .NET'te çeşitli dosya biçimlerinden metin çıkarmayı öğrenin. Verimli belge işleme için adım adım eğitim.
-type: docs
 weight: 14
 url: /tr/net/document-loading/loading-specific-file-formats/
 ---
@@ -71,7 +70,7 @@ GroupDocs.Parser for .NET, çeşitli dosya formatlarından metin çıkarmayı ba
 ### .NET için GroupDocs.Parser'ın kullanımı ücretsiz midir?
 GroupDocs.Parser for .NET, hem ücretsiz hem de ücretli lisanslama seçenekleri sunar. Bunları keşfedebilirsiniz[Burada](https://purchase.groupdocs.com/buy).
 ### GroupDocs.Parser for .NET hangi dosya formatlarını destekler?
- GroupDocs.Parser, Word, PDF, Excel, PowerPoint, Markdown ve daha fazlasını içeren çok çeşitli dosya formatlarını destekler. Belgelere bakın[Burada](https://reference.groupdocs.com/parser/net/) tam liste için.
+ GroupDocs.Parser, Word, PDF, Excel, PowerPoint, Markdown ve daha fazlasını içeren çok çeşitli dosya formatlarını destekler. Belgelere bakın[Burada](https://tutorials.groupdocs.com/parser/net/) tam liste için.
 ### Satın almadan önce GroupDocs.Parser for .NET'i deneyebilir miyim?
  Evet, ücretsiz deneme sürümüne erişebilirsiniz[Burada](https://releases.groupdocs.com/).
 ### GroupDocs.Parser for .NET hakkında nereden destek bulabilirim veya soru sorabilirim?

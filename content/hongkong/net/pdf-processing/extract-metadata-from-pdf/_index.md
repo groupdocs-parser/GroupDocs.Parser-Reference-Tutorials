@@ -3,7 +3,6 @@ title: 從 PDF 提取元數據
 linktitle: 從 PDF 提取元數據
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 從 PDF 文件中提取元資料。本綜合指南涵蓋了逐步說明和先決條件。
-type: docs
 weight: 13
 url: /zh-hant/net/pdf-processing/extract-metadata-from-pdf/
 ---

@@ -3,7 +3,6 @@ title: Dokumentum betöltése
 linktitle: Dokumentum betöltése
 second_title: GroupDocs.Parser .NET API
 description: Hatékonyan kezelheti a dokumentumbetöltést .NET-ben a GroupDocs.Parser segítségével. Tanuljon meg szöveget kivonni helyi lemezekről, adatfolyamokról, URL-ekről és egyebekről.
-type: docs
 weight: 29
 url: /hu/net/document-loading/
 ---

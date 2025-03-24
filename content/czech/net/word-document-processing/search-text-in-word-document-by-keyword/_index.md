@@ -3,7 +3,6 @@ title: Hledání textu v dokumentu aplikace Word podle klíčového slova
 linktitle: Hledání textu v dokumentu aplikace Word podle klíčového slova
 second_title: GroupDocs.Parser .NET API
 description: Naučte se vyhledávat text v dokumentech aplikace Word pomocí GroupDocs.Parser for .NET. Extrahujte konkrétní klíčová slova efektivně.
-type: docs
 weight: 18
 url: /cs/net/word-document-processing/search-text-in-word-document-by-keyword/
 ---

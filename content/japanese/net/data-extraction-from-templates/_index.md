@@ -3,7 +3,6 @@ title: テンプレートからのデータ抽出
 linktitle: テンプレートからのデータ抽出
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用すると、データを簡単に抽出できます。特定のフィールドを取得し、データを反復処理し、抽出されたコンテンツ内のテーブルを操作する方法を学習します。
-type: docs
 weight: 26
 url: /ja/net/data-extraction-from-templates/
 ---

@@ -3,7 +3,6 @@ title: Zpracování šablony dokumentu
 linktitle: Zpracování šablony dokumentu
 second_title: GroupDocs.Parser .NET API
 description: Bez námahy extrahujte strukturovaná data ze šablon dokumentů pomocí GroupDocs.Parser pro .NET. Naučte se pracovat s čárovými kódy, poli, regulárním výrazem a rozložením tabulek.
-type: docs
 weight: 22
 url: /cs/net/document-template-processing/
 ---

@@ -3,7 +3,6 @@ title: Wyodrębnij kody kreskowe z dokumentu
 linktitle: Wyodrębnij kody kreskowe z dokumentu
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić kody kreskowe z dokumentów za pomocą GroupDocs.Parser dla .NET. Bez wysiłku zwiększ swoje możliwości przetwarzania dokumentów.
-type: docs
 weight: 10
 url: /pl/net/barcode-extraction/extract-barcodes-from-document/
 ---

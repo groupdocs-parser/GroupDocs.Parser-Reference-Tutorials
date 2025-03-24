@@ -3,7 +3,6 @@ title: Ontgrendel de beheersing van het parseren van documenten met GroupDocs.Pa
 linktitle: GroupDocs.Parser-zelfstudies
 additionalTitle: GroupDocs API-referenties
 description: Ontgrendel efficiënte technieken voor gegevensextractie met GroupDocs.Parser voor .NET en Java. Ontdek tutorials over tekst, tabellen, afbeeldingsextractie en meer.
-type: docs
 weight: 11
 url: /nl/
 is_root: true

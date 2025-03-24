@@ -3,7 +3,6 @@ title: Vonja ki a vonalkódokat a dokumentumoldalról
 linktitle: Vonja ki a vonalkódokat a dokumentumoldalról
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan vonhat ki vonalkódokat dokumentumoldalakról a GroupDocs.Parser for .NET segítségével. Ez az oktatóanyag lépésről lépésre útmutatást ad a vonalkód kinyeréséhez.
-type: docs
 weight: 12
 url: /hu/net/barcode-extraction/extract-barcodes-from-document-page/
 ---
@@ -79,7 +78,7 @@ Ebben az oktatóanyagban megtanulta, hogyan használhatja a GroupDocs.Parser for
 ### GYIK
 
 ### K: Milyen dokumentumformátumokat támogat a GroupDocs.Parser?
- A GroupDocs.Parser a formátumok széles skáláját támogatja, beleértve a DOCX, PDF, XLSX, PPTX stb. Utal[dokumentáció](https://reference.groupdocs.com/parser/net/) teljes listáért.
+ A GroupDocs.Parser a formátumok széles skáláját támogatja, beleértve a DOCX, PDF, XLSX, PPTX stb. Utal[dokumentáció](https://tutorials.groupdocs.com/parser/net/) teljes listáért.
 
 ### K: Kivonhatok-e metaadatokat vonalkódokkal együtt a GroupDocs.Parser segítségével?
 Igen, a GroupDocs.Parser lehetővé teszi metaadatok, szövegek, képek és vonalkódok kinyerését a dokumentumokból, átfogó dokumentumelemzési lehetőségeket biztosítva.

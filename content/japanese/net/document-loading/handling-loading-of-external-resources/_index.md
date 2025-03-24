@@ -3,7 +3,6 @@ title: 外部リソースの読み込みの処理
 linktitle: 外部リソースの読み込みの処理
 second_title: GroupDocs.Parser .NET API
 description: 効率的なドキュメント解析と抽出のために GroupDocs.Parser を使用して .NET で外部リソースを処理する方法を学習します。
-type: docs
 weight: 10
 url: /ja/net/document-loading/handling-loading-of-external-resources/
 ---
@@ -66,7 +65,7 @@ GroupDocs.Parser for .NET は、ドキュメント内の外部リソースを処
 ### GroupDocs.Parser を使用して画像とともにテキストを抽出できますか?
 はい、GroupDocs.Parser では、サポートされているドキュメント形式からテキストと画像の両方を抽出できます。
 ### GroupDocs.Parser の詳細なドキュメントはどこで見つかりますか?
-探索する[ドキュメンテーション](https://reference.groupdocs.com/parser/net/)包括的なガイドと API リファレンスについては、こちらをご覧ください。
+探索する[ドキュメンテーション](https://tutorials.groupdocs.com/parser/net/)包括的なガイドと API リファレンスについては、こちらをご覧ください。
 ### GroupDocs.Parser の一時ライセンスを取得するにはどうすればよいですか?
 臨時免許証は[GroupDocs 購入ページ](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Parser で問題が発生した場合、どこでサポートを求めることができますか?

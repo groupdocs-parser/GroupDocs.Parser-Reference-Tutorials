@@ -3,7 +3,6 @@ title: 光学文字認識（OCR）抽出
 linktitle: 光学文字認識（OCR）抽出
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用すると、OCR を効率的に処理し、画像やドキュメントからテキストを抽出できます。今すぐ OCR 機能を強化しましょう。
-type: docs
 weight: 28
 url: /ja/net/ocr-extraction/
 ---

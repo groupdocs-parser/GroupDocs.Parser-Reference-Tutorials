@@ -3,7 +3,6 @@ title: 엑셀 문서 처리
 linktitle: 엑셀 문서 처리
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser를 사용하여 .NET에서 Excel 문서 처리를 마스터하세요. 단계별 가이드를 통해 이미지, 메타데이터, 텍스트를 효율적으로 추출하는 방법을 알아보세요.
-type: docs
 weight: 32
 url: /ko/net/excel-document-processing/
 ---

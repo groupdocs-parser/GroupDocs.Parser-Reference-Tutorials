@@ -3,7 +3,6 @@ title: Belirli Alanlardan Metin Çıkarma
 linktitle: Belirli Alanlardan Metin Çıkarma
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belgelerin belirli alanlarından metin çıkarmayı öğrenin. Kolay adım adım kılavuz.
-type: docs
 weight: 12
 url: /tr/net/text-extraction/extract-text-from-specific-areas/
 ---

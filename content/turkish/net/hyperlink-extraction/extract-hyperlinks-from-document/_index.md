@@ -3,7 +3,6 @@ title: Belgeden Köprüleri Çıkarma
 linktitle: Belgeden Köprüleri Çıkarma
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belgelerden köprüleri nasıl çıkaracağınızı öğrenin. Bu basit kılavuzla C# uygulamalarınızı geliştirin.
-type: docs
 weight: 10
 url: /tr/net/hyperlink-extraction/extract-hyperlinks-from-document/
 ---
@@ -73,7 +72,7 @@ Evet, GroupDocs.Parser, PDF, Word, Excel, PowerPoint ve daha fazlasını içeren
 ### GroupDocs.Parser'ın ücretsiz deneme sürümü var mı?
  Evet, GroupDocs.Parser'ın ücretsiz deneme sürümüne erişebilirsiniz[Burada](https://releases.groupdocs.com/).
 ### GroupDocs.Parser belgelerini nerede bulabilirim?
- GroupDocs.Parser için ayrıntılı belgeler bulunabilir[Burada](https://reference.groupdocs.com/parser/net/).
+ GroupDocs.Parser için ayrıntılı belgeler bulunabilir[Burada](https://tutorials.groupdocs.com/parser/net/).
 ### GroupDocs.Parser için nasıl geçici lisans alabilirim?
  GroupDocs.Parser için geçici bir lisans alabilirsiniz.[Burada](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs sorun giderme desteği sunuyor mu?

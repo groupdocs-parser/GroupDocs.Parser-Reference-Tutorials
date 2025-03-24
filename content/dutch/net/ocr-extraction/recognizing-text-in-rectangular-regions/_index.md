@@ -3,7 +3,6 @@ title: Herkennen van tekst in rechthoekige gebieden
 linktitle: Herkennen van tekst in rechthoekige gebieden
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u tekst in specifieke delen van documenten kunt herkennen met behulp van GroupDocs.Parser voor .NET met OCR-mogelijkheden.
-type: docs
 weight: 14
 url: /nl/net/ocr-extraction/recognizing-text-in-rectangular-regions/
 ---

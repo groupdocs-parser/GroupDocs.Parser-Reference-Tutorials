@@ -3,7 +3,6 @@ title: Optical Character Recognition (OCR) Extraction
 linktitle: Optical Character Recognition (OCR) Extraction
 second_title: GroupDocs.Parser .NET API
 description: Efficiently handle OCR and extract text from images and documents with GroupDocs.Parser for .NET. Enhance your OCR capabilities today!
-type: docs
 weight: 28
 url: /net/ocr-extraction/
 ---

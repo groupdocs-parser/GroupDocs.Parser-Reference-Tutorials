@@ -3,7 +3,6 @@ title: 使用模板中連結位置處的字段
 linktitle: 使用模板中連結位置處的字段
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 從文件中有效擷取資料。帶有程式碼範例的分步教程。
-type: docs
 weight: 12
 url: /zh-hant/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
 ---

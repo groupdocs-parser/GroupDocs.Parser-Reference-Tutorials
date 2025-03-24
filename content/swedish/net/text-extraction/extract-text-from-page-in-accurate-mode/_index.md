@@ -3,7 +3,6 @@ title: Extrahera text från sidan i exakt läge
 linktitle: Extrahera text från sidan i exakt läge
 second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du extraherar text korrekt från dokument med GroupDocs.Parser för .NET i den här omfattande självstudien.
-type: docs
 weight: 16
 url: /sv/net/text-extraction/extract-text-from-page-in-accurate-mode/
 ---

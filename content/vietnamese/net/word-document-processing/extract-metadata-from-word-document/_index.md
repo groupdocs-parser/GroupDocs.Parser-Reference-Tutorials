@@ -3,7 +3,6 @@ title: Trích xuất siêu dữ liệu từ tài liệu Word
 linktitle: Trích xuất siêu dữ liệu từ tài liệu Word
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất siêu dữ liệu từ tài liệu Word bằng GroupDocs.Parser cho .NET. Các bước dễ dàng để phân tích và truy xuất thông tin tài liệu.
-type: docs
 weight: 12
 url: /vi/net/word-document-processing/extract-metadata-from-word-document/
 ---
@@ -55,7 +54,7 @@ Trong hướng dẫn này, chúng tôi đã khám phá cách sử dụng GroupDo
 ### GroupDocs.Parser cho .NET là gì?
 GroupDocs.Parser cho .NET là thư viện phân tích cú pháp tài liệu cho phép các nhà phát triển trích xuất văn bản và siêu dữ liệu từ các định dạng tài liệu khác nhau theo chương trình.
 ### Tôi có thể tìm tài liệu GroupDocs.Parser ở đâu?
- Bạn có thể tham khảo các[tài liệu](https://reference.groupdocs.com/parser/net/) để biết thông tin chi tiết về cách sử dụng GroupDocs.Parser cho .NET.
+ Bạn có thể tham khảo các[tài liệu](https://tutorials.groupdocs.com/parser/net/) để biết thông tin chi tiết về cách sử dụng GroupDocs.Parser cho .NET.
 ### Làm cách nào để tôi có thể dùng thử miễn phí GroupDocs.Parser?
  Bạn có thể tải xuống phiên bản dùng thử miễn phí của GroupDocs.Parser từ[trang phát hành](https://releases.groupdocs.com/).
 ### GroupDocs.Parser có phù hợp cho mục đích thương mại không?

@@ -3,7 +3,6 @@ title: 从损坏的文档中提取条形码
 linktitle: 从损坏的文档中提取条形码
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从损坏的文档中提取条形码。包含分步说明的综合教程。
-type: docs
 weight: 11
 url: /zh/net/barcode-extraction/extract-barcodes-from-corrupted-document/
 ---

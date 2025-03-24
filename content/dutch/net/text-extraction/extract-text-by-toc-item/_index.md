@@ -3,7 +3,6 @@ title: Extraheer tekst per inhoudsopgave (TOC).
 linktitle: Extraheer tekst per inhoudsopgave (TOC).
 second_title: GroupDocs.Parser .NET API
 description: Extraheer tekst per inhoudsopgave (TOC) met GroupDocs.Parser voor .NET. Leer efficiënte technieken voor het parseren van documenten voor gestructureerde gegevensextractie.
-type: docs
 weight: 15
 url: /nl/net/text-extraction/extract-text-by-toc-item/
 ---

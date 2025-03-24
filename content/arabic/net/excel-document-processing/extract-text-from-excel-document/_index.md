@@ -3,7 +3,6 @@ title: استخراج النص من مستند Excel
 linktitle: استخراج النص من مستند Excel
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج النص من مستندات Excel باستخدام GroupDocs.Parser لـ .NET في خطوات بسيطة.
-type: docs
 weight: 12
 url: /ar/net/excel-document-processing/extract-text-from-excel-document/
 ---
@@ -58,7 +57,7 @@ Console.WriteLine(reader.ReadToEnd());
 ### هل هناك نسخة تجريبية مجانية متاحة لـ GroupDocs.Parser؟
  نعم، يمكنك تنزيل نسخة تجريبية مجانية من GroupDocs.Parser من[هنا](https://releases.groupdocs.com/).
 ### أين يمكنني العثور على وثائق GroupDocs.Parser؟
- يمكنك العثور على الوثائق التفصيلية لـ GroupDocs.Parser[هنا](https://reference.groupdocs.com/parser/net/).
+ يمكنك العثور على الوثائق التفصيلية لـ GroupDocs.Parser[هنا](https://tutorials.groupdocs.com/parser/net/).
 ### كيف يمكنني الحصول على الدعم لـ GroupDocs.Parser؟
 للحصول على الدعم والمساعدة فيما يتعلق بـ GroupDocs.Parser، قم بزيارة[منتدى مستندات المجموعة](https://forum.groupdocs.com/c/parser/17).
 ### أين يمكنني شراء ترخيص GroupDocs.Parser؟

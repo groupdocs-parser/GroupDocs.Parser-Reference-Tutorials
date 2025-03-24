@@ -3,7 +3,6 @@ title: Получить поле по имени
 linktitle: Получить поле по имени
 second_title: GroupDocs.Parser .NET API
 description: Узнайте, как извлечь определенные поля данных из документов с помощью GroupDocs.Parser для .NET. Пошаговое руководство с примерами кода.
-type: docs
 weight: 10
 url: /ru/net/data-extraction-from-templates/get-field-by-name/
 ---

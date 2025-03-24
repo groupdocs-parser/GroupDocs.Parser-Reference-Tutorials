@@ -3,7 +3,6 @@ title: Werken met tabellen in geëxtraheerde gegevens
 linktitle: Werken met tabellen in geëxtraheerde gegevens
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u tabelgegevens uit documenten kunt extraheren met GroupDocs.Parser voor .NET. Parseer gestructureerde inhoud efficiënt met vooraf gedefinieerde sjablonen.
-type: docs
 weight: 12
 url: /nl/net/data-extraction-from-templates/working-with-tables-in-extracted-data/
 ---

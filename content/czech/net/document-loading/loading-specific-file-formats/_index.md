@@ -3,7 +3,6 @@ title: Načítání konkrétních formátů souborů
 linktitle: Načítání konkrétních formátů souborů
 second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat text z různých formátů souborů v .NET pomocí GroupDocs.Parser. Výukový program krok za krokem pro efektivní zpracování dokumentů.
-type: docs
 weight: 14
 url: /cs/net/document-loading/loading-specific-file-formats/
 ---
@@ -71,7 +70,7 @@ GroupDocs.Parser for .NET zjednodušuje extrakci textu z různých formátů sou
 ### Je GroupDocs.Parser for .NET zdarma k použití?
 GroupDocs.Parser for .NET nabízí bezplatné i placené možnosti licencování. Můžete je prozkoumat[tady](https://purchase.groupdocs.com/buy).
 ### Které formáty souborů podporuje GroupDocs.Parser for .NET?
- GroupDocs.Parser podporuje širokou škálu formátů souborů, včetně Word, PDF, Excel, PowerPoint, Markdown a dalších. Viz dokumentace[tady](https://reference.groupdocs.com/parser/net/) pro úplný seznam.
+ GroupDocs.Parser podporuje širokou škálu formátů souborů, včetně Word, PDF, Excel, PowerPoint, Markdown a dalších. Viz dokumentace[tady](https://tutorials.groupdocs.com/parser/net/) pro úplný seznam.
 ### Mohu GroupDocs.Parser for .NET vyzkoušet před nákupem?
  Ano, máte přístup k bezplatné zkušební verzi[tady](https://releases.groupdocs.com/).
 ### Kde najdu podporu nebo se zeptám na GroupDocs.Parser pro .NET?

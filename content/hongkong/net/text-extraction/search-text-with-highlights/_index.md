@@ -3,7 +3,6 @@ title: 搜尋帶有突出顯示的文本
 linktitle: 搜尋帶有突出顯示的文本
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 搜尋和突出顯示文件中的文字。有效地提取有價值的見解。
-type: docs
 weight: 24
 url: /zh-hant/net/text-extraction/search-text-with-highlights/
 ---

@@ -3,7 +3,6 @@ title: Hyperlänkextraktion
 linktitle: Hyperlänkextraktion
 second_title: GroupDocs.Parser .NET API
 description: Extrahera enkelt hyperlänkar från dokument i .NET med GroupDocs.Parser. Förbättra dina C#-applikationer med steg-för-steg-guider för extrahering av hyperlänkar.
-type: docs
 weight: 25
 url: /sv/net/hyperlink-extraction/
 ---

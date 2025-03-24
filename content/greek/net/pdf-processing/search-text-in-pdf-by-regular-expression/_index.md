@@ -3,7 +3,6 @@ title: Αναζήτηση κειμένου σε PDF με κανονική έκφ
 linktitle: Αναζήτηση κειμένου σε PDF με κανονική έκφραση
 second_title: GroupDocs.Parser .NET API
 description: Αναζητήστε συγκεκριμένο κείμενο σε έγγραφα PDF χρησιμοποιώντας κανονικές εκφράσεις με το GroupDocs.Parser. Εξαγωγή, ανάλυση και επεξεργασία κειμένου PDF χωρίς κόπο.
-type: docs
 weight: 19
 url: /el/net/pdf-processing/search-text-in-pdf-by-regular-expression/
 ---
@@ -52,7 +51,7 @@ foreach (SearchResult result in searchResults)
 ### Μπορεί το GroupDocs.Parser να χειριστεί άλλες μορφές εγγράφων εκτός από τα PDF;
 Ναι, το GroupDocs.Parser υποστηρίζει διάφορες μορφές εγγράφων όπως DOCX, XLSX, PPTX και άλλα.
 ### Πού μπορώ να βρω περισσότερους πόρους και υποστήριξη για το GroupDocs.Parser;
- Μπορείτε να επισκεφθείτε το[Τεκμηρίωση GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) και ζητήστε βοήθεια από το[Φόρουμ GroupDocs](https://forum.groupdocs.com/c/parser/17).
+ Μπορείτε να επισκεφθείτε το[Τεκμηρίωση GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) και ζητήστε βοήθεια από το[Φόρουμ GroupDocs](https://forum.groupdocs.com/c/parser/17).
 ### Υπάρχει διαθέσιμη δωρεάν δοκιμή για το GroupDocs.Parser;
  Ναι, μπορείτε να έχετε πρόσβαση σε ένα[δωρεάν δοκιμαστική έκδοση](https://releases.groupdocs.com/) του GroupDocs.Parser για να εξερευνήσετε τις δυνατότητές του.
 ### Πώς μπορώ να αποκτήσω μια προσωρινή άδεια για το GroupDocs.Parser;

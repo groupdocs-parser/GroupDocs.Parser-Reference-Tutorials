@@ -3,7 +3,6 @@ title: Metagegevens uit PDF extraheren
 linktitle: Metagegevens uit PDF extraheren
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u metagegevens uit PDF-documenten kunt extraheren met GroupDocs.Parser voor .NET. Deze uitgebreide handleiding bevat stapsgewijze instructies en vereisten.
-type: docs
 weight: 13
 url: /nl/net/pdf-processing/extract-metadata-from-pdf/
 ---

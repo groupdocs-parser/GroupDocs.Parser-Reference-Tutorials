@@ -3,7 +3,6 @@ title: Nhận dạng văn bản ở các khu vực cụ thể
 linktitle: Nhận dạng văn bản ở các khu vực cụ thể
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách sử dụng GroupDocs.Parser cho .NET để trích xuất văn bản từ các khu vực cụ thể trong tài liệu có khả năng OCR.
-type: docs
 weight: 13
 url: /vi/net/ocr-extraction/recognizing-text-in-specific-areas/
 ---

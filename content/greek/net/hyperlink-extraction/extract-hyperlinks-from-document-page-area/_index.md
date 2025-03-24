@@ -3,7 +3,6 @@ title: Εξαγωγή υπερσυνδέσμων από την περιοχή σ
 linktitle: Εξαγωγή υπερσυνδέσμων από την περιοχή σελίδας εγγράφων
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε υπερσυνδέσμους από συγκεκριμένες περιοχές εγγράφων χρησιμοποιώντας το GroupDocs.Parser για .NET. Βελτιώστε τις δυνατότητες επεξεργασίας εγγράφων σας.
-type: docs
 weight: 12
 url: /el/net/hyperlink-extraction/extract-hyperlinks-from-document-page-area/
 ---

@@ -3,7 +3,6 @@ title: Metni Anahtar Kelimeye Göre Ara
 linktitle: Metni Anahtar Kelimeye Göre Ara
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belgelerde anahtar kelimeye göre metin aramayı öğrenin. İlgili içeriği kolaylıkla ve verimli bir şekilde çıkarın.
-type: docs
 weight: 21
 url: /tr/net/text-extraction/search-text-by-keyword/
 ---
@@ -63,7 +62,7 @@ Evet, GroupDocs.Parser, PDF, DOCX, XLSX, PPTX ve daha fazlasını içeren çok �
 ### GroupDocs.Parser'ı kullanarak gelişmiş metin çıkarma işlemlerini gerçekleştirebilir miyim?
 Kesinlikle! GroupDocs.Parser, metin aramanın yanı sıra meta veri çıkarma, yapılandırılmış metin çıkarma ve daha fazlasını sağlar.
 ### GroupDocs.Parser'a ilişkin ayrıntılı belgeleri nerede bulabilirim?
-Belgelerin tamamını inceleyin[Burada](https://reference.groupdocs.com/parser/net/).
+Belgelerin tamamını inceleyin[Burada](https://tutorials.groupdocs.com/parser/net/).
 ### GroupDocs.Parser ile ilgili sorgularla ilgili nasıl destek veya yardım alabilirim?
  Destek ve tartışmalar için GroupDocs forumunu ziyaret edin[Burada](https://forum.groupdocs.com/c/parser/17).
 ### GroupDocs.Parser'ı satın almadan önce değerlendirebileceğiniz bir deneme sürümü var mı?

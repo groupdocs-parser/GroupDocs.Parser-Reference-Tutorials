@@ -3,7 +3,6 @@ title: Menangani Pemuatan Sumber Daya Eksternal
 linktitle: Menangani Pemuatan Sumber Daya Eksternal
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara menangani sumber daya eksternal di .NET menggunakan GroupDocs.Parser untuk penguraian dan ekstraksi dokumen yang efisien.
-type: docs
 weight: 10
 url: /id/net/document-loading/handling-loading-of-external-resources/
 ---
@@ -66,7 +65,7 @@ Ya, GroupDocs.Parser mendukung berbagai format file termasuk DOCX, PDF, XLSX, PP
 ### Bisakah saya mengekstrak teks beserta gambar menggunakan GroupDocs.Parser?
 Tentu saja, GroupDocs.Parser memungkinkan ekstraksi teks dan gambar dari format dokumen yang didukung.
 ### Di mana saya dapat menemukan dokumentasi terperinci untuk GroupDocs.Parser?
- Jelajahi[dokumentasi](https://reference.groupdocs.com/parser/net/) untuk panduan komprehensif dan referensi API.
+ Jelajahi[dokumentasi](https://tutorials.groupdocs.com/parser/net/) untuk panduan komprehensif dan referensi API.
 ### Bagaimana cara mendapatkan lisensi sementara untuk GroupDocs.Parser?
  Anda bisa mendapatkan lisensi sementara dari[Halaman pembelian GroupDocs](https://purchase.groupdocs.com/temporary-license/).
 ### Di mana saya dapat mencari bantuan jika saya mengalami masalah dengan GroupDocs.Parser?

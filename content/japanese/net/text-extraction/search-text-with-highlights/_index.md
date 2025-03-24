@@ -3,7 +3,6 @@ title: ハイライト付きテキスト検索
 linktitle: ハイライト付きテキスト検索
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用してドキュメント内のテキストを検索および強調表示する方法を学びます。貴重な洞察を効率的に抽出します。
-type: docs
 weight: 24
 url: /ja/net/text-extraction/search-text-with-highlights/
 ---

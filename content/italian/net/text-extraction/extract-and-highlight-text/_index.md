@@ -3,7 +3,6 @@ title: Estrai ed evidenzia il testo
 linktitle: Estrai ed evidenzia il testo
 second_title: API GroupDocs.Parser .NET
 description: Scopri come estrarre ed evidenziare testo da documenti utilizzando GroupDocs.Parser per .NET. Semplici passaggi per un'estrazione efficiente del testo nei tuoi progetti .NET.
-type: docs
 weight: 11
 url: /it/net/text-extraction/extract-and-highlight-text/
 ---

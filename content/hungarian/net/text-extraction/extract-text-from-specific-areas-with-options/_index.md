@@ -3,7 +3,6 @@ title: Szöveg kinyerése adott területekről opciókkal
 linktitle: Szöveg kinyerése adott területekről opciókkal
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki szöveget a dokumentumok meghatározott területeiről a GroupDocs.Parser for .NET segítségével. Fedezze fel a speciális szövegkivonási lehetőségeket ezzel az oktatóanyaggal.
-type: docs
 weight: 14
 url: /hu/net/text-extraction/extract-text-from-specific-areas-with-options/
 ---

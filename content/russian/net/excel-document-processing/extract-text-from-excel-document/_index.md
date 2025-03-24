@@ -3,7 +3,6 @@ title: Извлечь текст из документа Excel
 linktitle: Извлечь текст из документа Excel
 second_title: GroupDocs.Parser .NET API
 description: Узнайте, как извлечь текст из документов Excel с помощью GroupDocs.Parser для .NET, выполнив простые шаги.
-type: docs
 weight: 12
 url: /ru/net/excel-document-processing/extract-text-from-excel-document/
 ---
@@ -58,7 +57,7 @@ Console.WriteLine(reader.ReadToEnd());
 ### Доступна ли бесплатная пробная версия GroupDocs.Parser?
  Да, вы можете загрузить бесплатную пробную версию GroupDocs.Parser с сайта[здесь](https://releases.groupdocs.com/).
 ### Где я могу найти документацию для GroupDocs.Parser?
- Вы можете найти подробную документацию для GroupDocs.Parser.[здесь](https://reference.groupdocs.com/parser/net/).
+ Вы можете найти подробную документацию для GroupDocs.Parser.[здесь](https://tutorials.groupdocs.com/parser/net/).
 ### Как я могу получить поддержку для GroupDocs.Parser?
 Для получения поддержки и помощи по GroupDocs.Parser посетите[Форум групповых документов](https://forum.groupdocs.com/c/parser/17).
 ### Где я могу приобрести лицензию на GroupDocs.Parser?

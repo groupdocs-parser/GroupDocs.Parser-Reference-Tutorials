@@ -3,7 +3,6 @@ title: Tìm kiếm văn bản có điểm nổi bật
 linktitle: Tìm kiếm văn bản có điểm nổi bật
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách tìm kiếm và đánh dấu văn bản trong tài liệu bằng GroupDocs.Parser cho .NET. Trích xuất những hiểu biết có giá trị một cách hiệu quả.
-type: docs
 weight: 24
 url: /vi/net/text-extraction/search-text-with-highlights/
 ---

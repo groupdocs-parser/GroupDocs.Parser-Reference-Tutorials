@@ -3,7 +3,6 @@ title: ドキュメントの読み込み
 linktitle: ドキュメントの読み込み
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser を使用して、.NET でのドキュメントの読み込みを効率的に処理します。ローカル ディスク、ストリーム、URL などからテキストを抽出する方法を学習します。
-type: docs
 weight: 29
 url: /ja/net/document-loading/
 ---

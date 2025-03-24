@@ -3,7 +3,6 @@ title: Bekerja dengan Tabel dalam Data yang Diekstraksi
 linktitle: Bekerja dengan Tabel dalam Data yang Diekstraksi
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak data tabel dari dokumen menggunakan GroupDocs.Parser untuk .NET. Parsing konten terstruktur secara efisien dengan templat yang telah ditentukan sebelumnya.
-type: docs
 weight: 12
 url: /id/net/data-extraction-from-templates/working-with-tables-in-extracted-data/
 ---

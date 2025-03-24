@@ -3,7 +3,6 @@ title: Estrai metadati da un documento Word
 linktitle: Estrai metadati da un documento Word
 second_title: API GroupDocs.Parser .NET
 description: Scopri come estrarre metadati da documenti Word utilizzando GroupDocs.Parser per .NET. Semplici passaggi per analizzare e recuperare le informazioni del documento.
-type: docs
 weight: 12
 url: /it/net/word-document-processing/extract-metadata-from-word-document/
 ---
@@ -55,7 +54,7 @@ In questo tutorial, abbiamo esplorato come utilizzare GroupDocs.Parser per .NET 
 ### Cos'è GroupDocs.Parser per .NET?
 GroupDocs.Parser per .NET è una libreria di analisi di documenti che consente agli sviluppatori di estrarre testo e metadati da vari formati di documenti a livello di codice.
 ### Dove posso trovare la documentazione di GroupDocs.Parser?
- Puoi fare riferimento a[documentazione](https://reference.groupdocs.com/parser/net/) per informazioni dettagliate sull'utilizzo di GroupDocs.Parser per .NET.
+ Puoi fare riferimento a[documentazione](https://tutorials.groupdocs.com/parser/net/) per informazioni dettagliate sull'utilizzo di GroupDocs.Parser per .NET.
 ### Come posso ottenere una prova gratuita di GroupDocs.Parser?
  È possibile scaricare una versione di prova gratuita di GroupDocs.Parser da[pagina delle uscite](https://releases.groupdocs.com/).
 ### GroupDocs.Parser è adatto per l'uso commerciale?

@@ -3,7 +3,6 @@ title: दूषित दस्तावेज़ से बारकोड न
 linktitle: दूषित दस्तावेज़ से बारकोड निकालें
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके दूषित दस्तावेज़ों से बारकोड निकालना सीखें। चरण-दर-चरण निर्देशों के साथ व्यापक ट्यूटोरियल।
-type: docs
 weight: 11
 url: /hi/net/barcode-extraction/extract-barcodes-from-corrupted-document/
 ---

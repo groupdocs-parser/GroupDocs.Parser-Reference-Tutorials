@@ -3,7 +3,6 @@ title: Şablonlarda Sabit Konumlardaki Alanlarla Çalışma
 linktitle: Şablonlarda Sabit Konumlardaki Alanlarla Çalışma
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belgelerden nasıl veri ayıklayacağınızı öğrenin. Kod örnekleriyle kapsamlı eğitim.
-type: docs
 weight: 11
 url: /tr/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
@@ -69,7 +68,7 @@ Bu öğreticide, GroupDocs.Parser for .NET'i kullanarak şablonlardaki sabit kon
 
 ## SSS'ler
 ### GroupDocs.Parser tüm belge formatlarıyla uyumlu mu?
- GroupDocs.Parser, PDF, Microsoft Word, Excel, PowerPoint ve daha fazlasını içeren çok çeşitli dosya formatlarını destekler. Bakın[dokümantasyon](https://reference.groupdocs.com/parser/net/) ayrıntılı bir liste için.
+ GroupDocs.Parser, PDF, Microsoft Word, Excel, PowerPoint ve daha fazlasını içeren çok çeşitli dosya formatlarını destekler. Bakın[dokümantasyon](https://tutorials.groupdocs.com/parser/net/) ayrıntılı bir liste için.
 ### GroupDocs.Parser için nasıl geçici lisans alabilirim?
  Test amaçlı olarak geçici bir lisans alabilirsiniz.[Burada](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Parser desteğini nerede bulabilirim?

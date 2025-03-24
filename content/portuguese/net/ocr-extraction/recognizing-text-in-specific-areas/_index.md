@@ -3,7 +3,6 @@ title: Reconhecendo Texto em Áreas Específicas
 linktitle: Reconhecendo Texto em Áreas Específicas
 second_title: API GroupDocs.Parser .NET
 description: Aprenda como usar o GroupDocs.Parser for .NET para extrair texto de áreas específicas em documentos com recursos de OCR.
-type: docs
 weight: 13
 url: /pt/net/ocr-extraction/recognizing-text-in-specific-areas/
 ---

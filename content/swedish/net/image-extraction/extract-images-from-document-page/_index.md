@@ -3,7 +3,6 @@ title: Extrahera bilder från dokumentsidan
 linktitle: Extrahera bilder från dokumentsidan
 second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du extraherar bilder från dokument med GroupDocs.Parser för .NET. Förbättra dina dokumentbehandlingsmöjligheter.
-type: docs
 weight: 12
 url: /sv/net/image-extraction/extract-images-from-document-page/
 ---

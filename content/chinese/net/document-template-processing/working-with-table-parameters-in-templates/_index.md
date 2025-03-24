@@ -3,7 +3,6 @@ title: 在模板中使用表参数
 linktitle: 在模板中使用表参数
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从文档中的表中提取数据。表参数使用的分步指南。
-type: docs
 weight: 15
 url: /zh/net/document-template-processing/working-with-table-parameters-in-templates/
 ---

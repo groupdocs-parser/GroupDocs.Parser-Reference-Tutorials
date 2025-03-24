@@ -3,7 +3,6 @@ title: Arbeta med fält vid Regex-positioner i mallar
 linktitle: Arbeta med fält vid Regex-positioner i mallar
 second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du extraherar data från dokumentmallar med hjälp av regexpositioner med GroupDocs.Parser för .NET. Automatisera dina dataextraktionsuppgifter effektivt.
-type: docs
 weight: 13
 url: /sv/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---

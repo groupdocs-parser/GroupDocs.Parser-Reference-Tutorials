@@ -3,7 +3,6 @@ title: 使用模板中固定位置的字段
 linktitle: 使用模板中固定位置的字段
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从文档中提取数据。带有代码示例的综合教程。
-type: docs
 weight: 11
 url: /zh/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
@@ -69,7 +68,7 @@ using (Parser parser = new Parser("YourSampleFile.pdf"))
 
 ## 常见问题解答
 ### GroupDocs.Parser 是否兼容所有文档格式？
- GroupDocs.Parser 支持多种文件格式，包括 PDF、Microsoft Word、Excel、PowerPoint 等。请参阅[文档](https://reference.groupdocs.com/parser/net/)以获取详细列表。
+ GroupDocs.Parser 支持多种文件格式，包括 PDF、Microsoft Word、Excel、PowerPoint 等。请参阅[文档](https://tutorials.groupdocs.com/parser/net/)以获取详细列表。
 ### 如何获得 GroupDocs.Parser 的临时许可证？
 您可以从以下网站获取临时许可证以进行测试[这里](https://purchase.groupdocs.com/temporary-license/).
 ### 在哪里可以找到对 GroupDocs.Parser 的支持？

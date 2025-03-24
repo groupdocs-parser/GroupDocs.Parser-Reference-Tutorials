@@ -3,7 +3,6 @@ title: Szövegkivonás
 linktitle: Szövegkivonás
 second_title: GroupDocs.Parser .NET API
 description: Oldja fel a hatékony szövegkivonási technikákat a GroupDocs.Parser for .NET segítségével. Tanuljon meg könnyedén kivonatolni, kiemelni és keresni a szöveget.
-type: docs
 weight: 20
 url: /hu/net/text-extraction/
 ---

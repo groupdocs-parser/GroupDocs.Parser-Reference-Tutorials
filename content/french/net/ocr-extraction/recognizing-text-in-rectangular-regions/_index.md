@@ -3,7 +3,6 @@ title: Reconnaissance du texte dans les régions rectangulaires
 linktitle: Reconnaissance du texte dans les régions rectangulaires
 second_title: API GroupDocs.Parser .NET
 description: Découvrez comment reconnaître du texte dans des régions spécifiques de documents à l'aide de GroupDocs.Parser pour .NET avec fonctionnalités OCR.
-type: docs
 weight: 14
 url: /fr/net/ocr-extraction/recognizing-text-in-rectangular-regions/
 ---

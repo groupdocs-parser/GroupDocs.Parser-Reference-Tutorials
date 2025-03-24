@@ -3,7 +3,6 @@ title: Excel ドキュメントから画像を抽出する
 linktitle: Excel ドキュメントから画像を抽出する
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して Excel ドキュメントから画像を抽出する方法を学習します。コード例付きのステップバイステップ ガイドです。
-type: docs
 weight: 10
 url: /ja/net/excel-document-processing/extract-images-from-excel-document/
 ---
@@ -66,4 +65,4 @@ A: はい、GroupDocs.Parser は、Word、PowerPoint、PDF など、幅広いド
 ### Q: ライセンスを購入する前に GroupDocs.Parser を試すことはできますか?
  A: はい、[無料トライアル](https://releases.groupdocs.com/) GroupDocs.Parserを評価します。
 ### Q: GroupDocs.Parser の詳細なドキュメントはどこで見つかりますか?
- A: 包括的な[ドキュメンテーション](https://reference.groupdocs.com/parser/net/)GroupDocs.Parser の使用に関する詳細情報。
+ A: 包括的な[ドキュメンテーション](https://tutorials.groupdocs.com/parser/net/)GroupDocs.Parser の使用に関する詳細情報。

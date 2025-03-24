@@ -3,7 +3,6 @@ title: Поиск текста в документе Word по ключевом�
 linktitle: Поиск текста в документе Word по ключевому слову
 second_title: GroupDocs.Parser .NET API
 description: Узнайте, как искать текст в документах Word с помощью GroupDocs.Parser для .NET. Эффективно извлекайте конкретные ключевые слова.
-type: docs
 weight: 18
 url: /ru/net/word-document-processing/search-text-in-word-document-by-keyword/
 ---

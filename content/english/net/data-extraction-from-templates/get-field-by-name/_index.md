@@ -3,7 +3,6 @@ title: Get Field by Name
 linktitle: Get Field by Name
 second_title: GroupDocs.Parser .NET API
 description: Learn how to extract specific data fields from documents using GroupDocs.Parser for .NET. Step-by-step guide with code examples.
-type: docs
 weight: 10
 url: /net/data-extraction-from-templates/get-field-by-name/
 ---

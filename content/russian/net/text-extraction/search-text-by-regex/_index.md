@@ -3,7 +3,6 @@ title: Поиск текста по регулярному выражению (R
 linktitle: Поиск текста по регулярному выражению (Regex)
 second_title: GroupDocs.Parser .NET API
 description: Узнайте, как искать текст с помощью регулярных выражений в документах с помощью GroupDocs.Parser для .NET. Извлекайте конкретный контент без особых усилий.
-type: docs
 weight: 23
 url: /ru/net/text-extraction/search-text-by-regex/
 ---

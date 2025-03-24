@@ -3,7 +3,6 @@ title: معالجة قالب الوثيقة
 linktitle: معالجة قالب الوثيقة
 second_title: GroupDocs.Parser .NET API
 description: قم باستخراج البيانات المنظمة من قوالب المستندات بسهولة باستخدام GroupDocs.Parser لـ .NET. تعلم كيفية العمل مع الرموز الشريطية والحقول والتعبير العادي وتخطيطات الجدول.
-type: docs
 weight: 22
 url: /ar/net/document-template-processing/
 ---

@@ -3,7 +3,6 @@ title: Xử lý tài liệu Excel
 linktitle: Xử lý tài liệu Excel
 second_title: API GroupDocs.Parser .NET
 description: Làm chủ việc xử lý tài liệu Excel trong .NET với GroupDocs.Parser. Tìm hiểu cách trích xuất hình ảnh, siêu dữ liệu và văn bản một cách hiệu quả bằng hướng dẫn từng bước.
-type: docs
 weight: 32
 url: /vi/net/excel-document-processing/
 ---

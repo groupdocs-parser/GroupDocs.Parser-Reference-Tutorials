@@ -3,7 +3,6 @@ title: Barcodes aus beschädigten Dokumenten extrahieren
 linktitle: Barcodes aus beschädigten Dokumenten extrahieren
 second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Barcodes aus beschädigten Dokumenten extrahieren. Umfassendes Tutorial mit Schritt-für-Schritt-Anleitungen.
-type: docs
 weight: 11
 url: /de/net/barcode-extraction/extract-barcodes-from-corrupted-document/
 ---

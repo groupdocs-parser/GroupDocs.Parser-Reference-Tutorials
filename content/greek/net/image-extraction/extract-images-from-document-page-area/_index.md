@@ -3,7 +3,6 @@ title: Εξαγωγή εικόνων από την περιοχή σελίδας
 linktitle: Εξαγωγή εικόνων από την περιοχή σελίδας εγγράφων
 second_title: GroupDocs.Parser .NET API
 description: Ανακαλύψτε πώς να εξάγετε με ακρίβεια εικόνες από έγγραφα χρησιμοποιώντας το Groupdocs.Parser για .NET. Μάθετε να στοχεύετε συγκεκριμένες περιοχές για ακριβή εξαγωγή εικόνας.
-type: docs
 weight: 10
 url: /el/net/image-extraction/extract-images-from-document-page-area/
 ---

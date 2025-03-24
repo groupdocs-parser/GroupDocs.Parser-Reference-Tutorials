@@ -3,7 +3,6 @@ title: 提取并突出显示文本
 linktitle: 提取并突出显示文本
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从文档中提取和突出显示文本。在 .NET 项目中高效提取文本的简单步骤。
-type: docs
 weight: 11
 url: /zh/net/text-extraction/extract-and-highlight-text/
 ---

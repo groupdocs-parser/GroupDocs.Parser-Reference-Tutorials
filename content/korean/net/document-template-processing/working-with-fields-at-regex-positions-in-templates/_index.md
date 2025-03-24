@@ -3,7 +3,6 @@ title: 템플릿의 정규식 위치에 있는 필드 작업
 linktitle: 템플릿의 정규식 위치에 있는 필드 작업
 second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser에서 정규식 위치를 사용하여 문서 템플릿에서 데이터를 추출하는 방법을 알아보세요. 데이터 추출 작업을 효율적으로 자동화하세요.
-type: docs
 weight: 13
 url: /ko/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---

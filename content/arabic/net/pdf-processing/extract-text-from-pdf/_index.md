@@ -3,7 +3,6 @@ title: استخراج النص من قوات الدفاع الشعبي
 linktitle: استخراج النص من قوات الدفاع الشعبي
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج النص من مستندات PDF باستخدام GroupDocs.Parser لـ .NET. برنامج تعليمي خطوة بخطوة للمطورين.
-type: docs
 weight: 14
 url: /ar/net/pdf-processing/extract-text-from-pdf/
 ---
@@ -58,7 +57,7 @@ Console.WriteLine(reader.ReadToEnd());
 ### هل يمكنني تجربة GroupDocs.Parser قبل شراء الترخيص؟
  نعم، يمكنك الحصول على نسخة تجريبية مجانية[هنا](https://releases.groupdocs.com/).
 ### أين يمكنني العثور على وثائق GroupDocs.Parser؟
- الوثائق التفصيلية متاحة[هنا](https://reference.groupdocs.com/parser/net/).
+ الوثائق التفصيلية متاحة[هنا](https://tutorials.groupdocs.com/parser/net/).
 ### كيف يمكنني الحصول على الدعم الفني لـ GroupDocs.Parser؟
  يمكنك طلب المساعدة في منتدى الدعم[هنا](https://forum.groupdocs.com/c/parser/17).
 ### كيف يمكنني الحصول على ترخيص مؤقت لـ GroupDocs.Parser؟

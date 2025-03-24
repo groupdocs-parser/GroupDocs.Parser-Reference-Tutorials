@@ -3,7 +3,6 @@ title: Text nach Inhaltsverzeichniselement (TOC) extrahieren
 linktitle: Text nach Inhaltsverzeichniselement (TOC) extrahieren
 second_title: GroupDocs.Parser .NET API
 description: Extrahieren Sie Text anhand des Inhaltsverzeichnisses (TOC) mit GroupDocs.Parser für .NET. Lernen Sie effiziente Dokumentanalysetechniken für die strukturierte Datenextraktion.
-type: docs
 weight: 15
 url: /de/net/text-extraction/extract-text-by-toc-item/
 ---

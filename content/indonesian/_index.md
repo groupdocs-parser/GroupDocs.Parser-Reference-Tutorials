@@ -3,7 +3,6 @@ title: Buka Kunci Penguasaan Parsing Dokumen Dengan GroupDocs.Parser
 linktitle: GroupDocs.Tutorial Parser
 additionalTitle: Referensi API GroupDocs
 description: Buka teknik ekstraksi data yang efisien dengan GroupDocs.Parser untuk .NET & Java. Jelajahi tutorial tentang teks, tabel, ekstraksi gambar & lainnya.
-type: docs
 weight: 11
 url: /id/
 is_root: true

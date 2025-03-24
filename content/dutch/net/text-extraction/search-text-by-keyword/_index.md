@@ -3,7 +3,6 @@ title: Zoek tekst op trefwoord
 linktitle: Zoek tekst op trefwoord
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u tekst kunt zoeken op trefwoord in documenten met GroupDocs.Parser voor .NET. Haal op een efficiënte manier relevante inhoud eruit.
-type: docs
 weight: 21
 url: /nl/net/text-extraction/search-text-by-keyword/
 ---
@@ -63,7 +62,7 @@ Ja, GroupDocs.Parser ondersteunt een breed scala aan bestandsindelingen, waarond
 ### Kan ik geavanceerde tekstextractiebewerkingen uitvoeren met GroupDocs.Parser?
 Absoluut! Naast tekstzoeken maakt GroupDocs.Parser extractie van metagegevens, gestructureerde tekstextractie en meer mogelijk.
 ### Waar kan ik gedetailleerde documentatie voor GroupDocs.Parser vinden?
-Ontdek de volledige documentatie[hier](https://reference.groupdocs.com/parser/net/).
+Ontdek de volledige documentatie[hier](https://tutorials.groupdocs.com/parser/net/).
 ### Hoe kan ik ondersteuning of assistentie krijgen bij vragen over GroupDocs.Parser?
  Bezoek het GroupDocs-forum voor ondersteuning en discussies[hier](https://forum.groupdocs.com/c/parser/17).
 ### Is er een proefversie beschikbaar om GroupDocs.Parser te evalueren voordat u het aanschaft?

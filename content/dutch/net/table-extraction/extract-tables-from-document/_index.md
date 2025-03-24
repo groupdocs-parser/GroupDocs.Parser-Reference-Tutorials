@@ -3,7 +3,6 @@ title: Tabellen uit document extraheren
 linktitle: Tabellen uit document extraheren
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u tabellen uit documenten kunt extraheren met Groupdocs.Parser voor .NET. Volg ons voor een gedetailleerde handleiding over het integreren van deze functionaliteit.
-type: docs
 weight: 10
 url: /nl/net/table-extraction/extract-tables-from-document/
 ---

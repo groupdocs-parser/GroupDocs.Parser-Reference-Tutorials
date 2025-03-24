@@ -3,7 +3,6 @@ title: Extract Text from Specific Page in Word Document
 linktitle: Extract Text from Specific Page in Word Document
 second_title: GroupDocs.Parser .NET API
 description: Learn how to extract text from specific pages in Word documents using GroupDocs.Parser for .NET. Integrate text extraction capabilities into your .NET.
-type: docs
 weight: 17
 url: /net/word-document-processing/extract-text-from-specific-page-in-word-document/
 ---
@@ -67,7 +66,7 @@ Yes, GroupDocs.Parser supports a wide range of file formats, including Word, PDF
 ### Can I extract structured data from documents using GroupDocs.Parser?
 Absolutely, GroupDocs.Parser enables extraction of text, images, metadata, and even tables from documents.
 ### How can I integrate GroupDocs.Parser into my .NET project?
-Simply install the GroupDocs.Parser package via NuGet or download the DLL from the website and reference it in your project.
+Simply install the GroupDocs.Parser package via NuGet or download the DLL from the website and tutorials it in your project.
 ### Is GroupDocs.Parser suitable for batch processing of documents?
 Yes, you can batch process multiple documents efficiently using GroupDocs.Parser.
 ### Does GroupDocs.Parser offer support and assistance for developers?

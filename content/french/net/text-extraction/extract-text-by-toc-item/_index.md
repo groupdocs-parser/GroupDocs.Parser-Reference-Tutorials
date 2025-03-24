@@ -3,7 +3,6 @@ title: Extraire le texte par élément de la table des matières (TOC)
 linktitle: Extraire le texte par élément de la table des matières (TOC)
 second_title: API GroupDocs.Parser .NET
 description: Extrayez le texte par table des matières (TOC) à l'aide de GroupDocs.Parser pour .NET. Apprenez des techniques efficaces d’analyse de documents pour l’extraction de données structurées.
-type: docs
 weight: 15
 url: /fr/net/text-extraction/extract-text-by-toc-item/
 ---

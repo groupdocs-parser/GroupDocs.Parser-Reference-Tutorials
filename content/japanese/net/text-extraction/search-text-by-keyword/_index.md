@@ -3,7 +3,6 @@ title: キーワードでテキストを検索
 linktitle: キーワードでテキストを検索
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して、ドキュメント内のテキストをキーワードで検索する方法を学びます。関連するコンテンツを効率的に簡単に抽出します。
-type: docs
 weight: 21
 url: /ja/net/text-extraction/search-text-by-keyword/
 ---
@@ -63,7 +62,7 @@ foreach (SearchResult result in searchResults)
 ### GroupDocs.Parser を使用して高度なテキスト抽出操作を実行できますか?
 もちろんです! テキスト検索以外にも、GroupDocs.Parser ではメタデータ抽出、構造化テキスト抽出などが可能になります。
 ### GroupDocs.Parser の詳細なドキュメントはどこで見つかりますか?
-完全なドキュメントを見る[ここ](https://reference.groupdocs.com/parser/net/).
+完全なドキュメントを見る[ここ](https://tutorials.groupdocs.com/parser/net/).
 ### GroupDocs.Parser 関連のクエリについてサポートや支援を受けるにはどうすればよいですか?
 サポートとディスカッションについては、GroupDocs フォーラムをご覧ください。[ここ](https://forum.groupdocs.com/c/parser/17).
 ### 購入前に GroupDocs.Parser を評価できる試用版はありますか?

@@ -3,7 +3,6 @@ title: Memuat Format File Tertentu
 linktitle: Memuat Format File Tertentu
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak teks dari berbagai format file di .NET menggunakan GroupDocs.Parser. Tutorial langkah demi langkah untuk pemrosesan dokumen yang efisien.
-type: docs
 weight: 14
 url: /id/net/document-loading/loading-specific-file-formats/
 ---
@@ -71,7 +70,7 @@ GroupDocs.Parser untuk .NET menyederhanakan ekstraksi teks dari berbagai format 
 ### Apakah GroupDocs.Parser untuk .NET gratis untuk digunakan?
 GroupDocs.Parser untuk .NET menawarkan opsi lisensi gratis dan berbayar. Anda dapat menjelajahinya[Di Sini](https://purchase.groupdocs.com/buy).
 ### Format file apa yang didukung oleh GroupDocs.Parser untuk .NET?
- GroupDocs.Parser mendukung berbagai format file, termasuk Word, PDF, Excel, PowerPoint, Markdown, dan banyak lagi. Lihat dokumentasi[Di Sini](https://reference.groupdocs.com/parser/net/) untuk daftar lengkap.
+ GroupDocs.Parser mendukung berbagai format file, termasuk Word, PDF, Excel, PowerPoint, Markdown, dan banyak lagi. Lihat dokumentasi[Di Sini](https://tutorials.groupdocs.com/parser/net/) untuk daftar lengkap.
 ### Bisakah saya mencoba GroupDocs.Parser untuk .NET sebelum membeli?
  Ya, Anda dapat mengakses versi uji coba gratis[Di Sini](https://releases.groupdocs.com/).
 ### Di mana saya dapat menemukan dukungan atau mengajukan pertanyaan tentang GroupDocs.Parser untuk .NET?

@@ -3,7 +3,6 @@ title: Egyszerű szöveg kibontása
 linktitle: Egyszerű szöveg kibontása
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki egyszerű szöveget dokumentumokból a GroupDocs.Parser for .NET segítségével. Egyszerű lépések a szövegkivonás integrálásához az alkalmazásokban.
-type: docs
 weight: 14
 url: /hu/net/formatted-text-extraction/extract-plain-text/
 ---

@@ -3,7 +3,6 @@ title: Pemrosesan Dokumen Word
 linktitle: Pemrosesan Dokumen Word
 second_title: GroupDocs.Parser .NET API
 description: Temukan serangkaian tutorial tentang pemrosesan dokumen Word menggunakan GroupDocs.Parser untuk .NET. Ekstrak hyperlink, gambar, metadata, dan lainnya.
-type: docs
 weight: 30
 url: /id/net/word-document-processing/
 ---

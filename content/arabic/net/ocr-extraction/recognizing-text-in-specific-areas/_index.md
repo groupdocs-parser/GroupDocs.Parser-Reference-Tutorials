@@ -3,7 +3,6 @@ title: التعرف على النص في مناطق محددة
 linktitle: التعرف على النص في مناطق محددة
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخدام GroupDocs.Parser لـ .NET لاستخراج النص من مناطق محددة في المستندات التي تتمتع بإمكانيات التعرف الضوئي على الحروف.
-type: docs
 weight: 13
 url: /ar/net/ocr-extraction/recognizing-text-in-specific-areas/
 ---

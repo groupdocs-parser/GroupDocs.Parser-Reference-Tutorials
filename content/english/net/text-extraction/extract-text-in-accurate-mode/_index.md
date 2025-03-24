@@ -3,7 +3,6 @@ title: Extract Text in Accurate Mode
 linktitle: Extract Text in Accurate Mode
 second_title: GroupDocs.Parser .NET API
 description: Learn how to accurately extract text from documents in .NET using GroupDocs.Parser for seamless data processing.
-type: docs
 weight: 18
 url: /net/text-extraction/extract-text-in-accurate-mode/
 ---
@@ -12,7 +11,7 @@ In this tutorial, we'll explore how to extract text accurately from various docu
 ## Prerequisites
 Before we begin, make sure you have the following:
 - Visual Studio: Installed on your machine.
-- GroupDocs.Parser for .NET: Downloaded and referenced in your project. You can download it [here](https://releases.groupdocs.com/parser/net/).
+- GroupDocs.Parser for .NET: Downloaded and tutorialsd in your project. You can download it [here](https://releases.groupdocs.com/parser/net/).
 
 ## Import Namespaces
 To get started, you need to import the necessary namespaces:

@@ -3,7 +3,6 @@ title: Szöveg kibontása az Excel munkalapról nyers módban
 linktitle: Szöveg kibontása az Excel munkalapról nyers módban
 second_title: GroupDocs.Parser .NET API
 description: Ebből az átfogó oktatóanyagból megtudhatja, hogyan bonthat ki szöveget Excel-lapokból a GroupDocs.Parser for .NET segítségével. Töltse le és kezdje el az elemzést.
-type: docs
 weight: 15
 url: /hu/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
 ---
@@ -66,7 +65,7 @@ Igen, a GroupDocs.Parser a dokumentumformátumok széles skáláját támogatja,
 ### A GroupDocs.Parser alkalmas nagyméretű Excel fájlok feldolgozására?
 Igen, a GroupDocs.Parser célja a nagyméretű dokumentumok hatékony kezelése.
 ### Hol találok további dokumentációt a GroupDocs.Parserről?
- Hivatkozhat a[dokumentáció](https://reference.groupdocs.com/parser/net/) részletes információkért és példákért.
+ Hivatkozhat a[dokumentáció](https://tutorials.groupdocs.com/parser/net/) részletes információkért és példákért.
 ### Hogyan szerezhetek ideiglenes licencet a GroupDocs.Parser számára?
  Látogatás[ez a link](https://purchase.groupdocs.com/temporary-license/) ideiglenes engedélyt kérni.
 ### A GroupDocs.Parser kínál ügyfélszolgálatot?

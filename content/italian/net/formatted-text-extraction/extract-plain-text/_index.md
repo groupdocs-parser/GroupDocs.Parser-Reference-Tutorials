@@ -3,7 +3,6 @@ title: Estrai testo semplice
 linktitle: Estrai testo semplice
 second_title: API GroupDocs.Parser .NET
 description: Scopri come estrarre testo semplice da documenti utilizzando GroupDocs.Parser per .NET. Semplici passaggi per integrare l'estrazione del testo nelle tue applicazioni.
-type: docs
 weight: 14
 url: /it/net/formatted-text-extraction/extract-plain-text/
 ---

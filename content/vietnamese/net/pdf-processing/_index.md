@@ -3,7 +3,6 @@ title: Xử lý PDF
 linktitle: Xử lý PDF
 second_title: API GroupDocs.Parser .NET
 description: Xử lý PDF thành thạo bằng GroupDocs.Parser cho .NET. Tìm hiểu cách trích xuất tệp đính kèm, dữ liệu, hình ảnh, siêu dữ liệu và văn bản một cách hiệu quả từ tệp PDF.
-type: docs
 weight: 31
 url: /vi/net/pdf-processing/
 ---

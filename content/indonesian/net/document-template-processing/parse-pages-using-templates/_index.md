@@ -3,7 +3,6 @@ title: Parsing Halaman Menggunakan Templat
 linktitle: Parsing Halaman Menggunakan Templat
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengurai halaman dokumen menggunakan templat di .NET dengan GroupDocs.Parser. Ekstrak konten tertentu secara efisien untuk aplikasi Anda.
-type: docs
 weight: 16
 url: /id/net/document-template-processing/parse-pages-using-templates/
 ---
@@ -67,7 +66,7 @@ Ya, GroupDocs.Parser mendukung berbagai format termasuk PDF, DOCX, XLSX, dan ban
 ### Apakah GroupDocs.Parser cocok untuk mengekstraksi data tertentu seperti kode batang?
 Sangat! GroupDocs.Parser menawarkan kemampuan ekstraksi yang tepat untuk ekstraksi konten yang ditargetkan.
 ### Di mana saya dapat menemukan dokumentasi terperinci untuk GroupDocs.Parser?
- Mengunjungi[dokumentasi](https://reference.groupdocs.com/parser/net/) untuk panduan komprehensif.
+ Mengunjungi[dokumentasi](https://tutorials.groupdocs.com/parser/net/) untuk panduan komprehensif.
 ### Bagaimana saya bisa mendapatkan lisensi sementara untuk GroupDocs.Parser?
  Memperoleh a[izin sementara](https://purchase.groupdocs.com/temporary-license/) untuk tujuan evaluasi atau pengembangan.
 ### Apakah GroupDocs menyediakan dukungan untuk pemecahan masalah?

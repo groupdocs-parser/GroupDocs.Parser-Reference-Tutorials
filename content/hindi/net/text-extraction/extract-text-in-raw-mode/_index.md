@@ -3,7 +3,6 @@ title: रॉ मोड में टेक्स्ट निकालें
 linktitle: रॉ मोड में टेक्स्ट निकालें
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके दस्तावेज़ों से टेक्स्ट निकालना सीखें। अपने .NET अनुप्रयोगों में आसान, कुशल और निर्बाध टेक्स्ट निष्कर्षण।
-type: docs
 weight: 19
 url: /hi/net/text-extraction/extract-text-in-raw-mode/
 ---

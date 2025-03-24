@@ -3,7 +3,6 @@ title: Suchen Sie mit regulären Ausdrücken nach Text in einem Excel-Dokument
 linktitle: Suchen Sie mit regulären Ausdrücken nach Text in einem Excel-Dokument
 second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET mithilfe regulärer Ausdrücke nach Text in Excel-Dokumenten suchen. Führen Sie erweiterte Textsuchen effizient durch.
-type: docs
 weight: 17
 url: /de/net/excel-document-processing/search-text-in-excel-document-by-regular-expression/
 ---

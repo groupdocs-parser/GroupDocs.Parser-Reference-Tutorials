@@ -3,7 +3,6 @@ title: Επανάληψη μέσω πεδίων
 linktitle: Επανάληψη μέσω πεδίων
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε δομημένα δεδομένα από έγγραφα χρησιμοποιώντας το GroupDocs.Parser για .NET. Βελτιώστε τις εφαρμογές σας .NET με δυνατότητες εξαγωγής δεδομένων εγγράφων.
-type: docs
 weight: 11
 url: /el/net/data-extraction-from-templates/iterate-through-fields/
 ---

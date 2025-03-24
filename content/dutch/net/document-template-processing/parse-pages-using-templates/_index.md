@@ -3,7 +3,6 @@ title: Parseer pagina's met behulp van sjablonen
 linktitle: Parseer pagina's met behulp van sjablonen
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u documentpagina's kunt parseren met behulp van sjablonen in .NET met GroupDocs.Parser. Extraheer specifieke inhoud efficiënt voor uw toepassingen.
-type: docs
 weight: 16
 url: /nl/net/document-template-processing/parse-pages-using-templates/
 ---
@@ -67,7 +66,7 @@ Ja, GroupDocs.Parser ondersteunt verschillende formaten, waaronder PDF, DOCX, XL
 ### Is GroupDocs.Parser geschikt voor het extraheren van specifieke gegevens zoals streepjescodes?
 Absoluut! GroupDocs.Parser biedt nauwkeurige extractiemogelijkheden voor gerichte inhoudsextractie.
 ### Waar kan ik gedetailleerde documentatie voor GroupDocs.Parser vinden?
- Bezoek de[documentatie](https://reference.groupdocs.com/parser/net/) voor uitgebreide begeleiding.
+ Bezoek de[documentatie](https://tutorials.groupdocs.com/parser/net/) voor uitgebreide begeleiding.
 ### Hoe kan ik tijdelijke licenties krijgen voor GroupDocs.Parser?
  Verkrijg een[tijdelijke licentie](https://purchase.groupdocs.com/temporary-license/) voor evaluatie- of ontwikkelingsdoeleinden.
 ### Biedt GroupDocs ondersteuning bij het oplossen van problemen?

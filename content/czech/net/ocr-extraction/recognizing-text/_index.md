@@ -3,7 +3,6 @@ title: Rozpoznávání textu
 linktitle: Rozpoznávání textu
 second_title: GroupDocs.Parser .NET API
 description: Extrahujte text z různých formátů dokumentů efektivně pomocí GroupDocs.Parser pro .NET. Snadná integrace a výkonné možnosti OCR.
-type: docs
 weight: 12
 url: /cs/net/ocr-extraction/recognizing-text/
 ---
@@ -13,7 +12,7 @@ V oblasti vývoje .NET je prvořadá efektivní extrakce textu z různých form�
 Než se pustíme do používání GroupDocs.Parser, ujistěte se, že máte následující předpoklady:
 - Základní znalost programování v C#
 - Visual Studio nainstalované na vašem počítači
-- Přístup k internetu pro stahování balíčků a reference na dokumentaci
+- Přístup k internetu pro stahování balíčků a tutorials na dokumentaci
 
 ## Import jmenných prostorů
 Začněte importem potřebných jmenných prostorů, abyste mohli využít funkce GroupDocs.Parser:
@@ -57,7 +56,7 @@ V tomto úryvku:
 - `TextOptions` je nakonfigurován tak, aby umožňoval OCR a optimalizoval extrakci textu.
 
 ## Závěr
- Gratulujeme! Naučili jste se, jak integrovat GroupDocs.Parser for .NET do svých projektů, abyste mohli efektivně extrahovat text. Prozkoumejte rozsáhlé[dokumentace](https://reference.groupdocs.com/parser/net/) pro pokročilé funkce a optimalizace.
+ Gratulujeme! Naučili jste se, jak integrovat GroupDocs.Parser for .NET do svých projektů, abyste mohli efektivně extrahovat text. Prozkoumejte rozsáhlé[dokumentace](https://tutorials.groupdocs.com/parser/net/) pro pokročilé funkce a optimalizace.
 
 ## FAQ
 ### Je GroupDocs.Parser vhodný pro extrahování textu ze souborů PDF?

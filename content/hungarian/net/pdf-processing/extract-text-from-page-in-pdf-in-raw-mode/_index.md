@@ -3,7 +3,6 @@ title: Szöveg kibontása az oldalról PDF-ben nyers módban
 linktitle: Szöveg kibontása az oldalról PDF-ben nyers módban
 second_title: GroupDocs.Parser .NET API
 description: Szöveg kinyerése PDF-ekből a GroupDocs.Parser segítségével C#-ban. Tanulja meg a hatékony PDF-szövegkivonást ezzel a hatékony .NET-könyvtárral.
-type: docs
 weight: 16
 url: /hu/net/pdf-processing/extract-text-from-page-in-pdf-in-raw-mode/
 ---

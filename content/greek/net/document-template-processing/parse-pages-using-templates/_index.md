@@ -3,7 +3,6 @@ title: Ανάλυση σελίδων με χρήση προτύπων
 linktitle: Ανάλυση σελίδων με χρήση προτύπων
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να αναλύετε σελίδες εγγράφων χρησιμοποιώντας πρότυπα στο .NET με το GroupDocs.Parser. Εξάγετε αποτελεσματικά συγκεκριμένο περιεχόμενο για τις εφαρμογές σας.
-type: docs
 weight: 16
 url: /el/net/document-template-processing/parse-pages-using-templates/
 ---
@@ -67,7 +66,7 @@ using (Parser parser = new Parser("YourSampleFile.docx"))
 ### Είναι το GroupDocs.Parser κατάλληλο για την εξαγωγή συγκεκριμένων δεδομένων όπως γραμμωτούς κώδικες;
 Απολύτως! Το GroupDocs.Parser προσφέρει ακριβείς δυνατότητες εξαγωγής για στοχευμένη εξαγωγή περιεχομένου.
 ### Πού μπορώ να βρω λεπτομερή τεκμηρίωση για το GroupDocs.Parser;
- Επισκέψου το[τεκμηρίωση](https://reference.groupdocs.com/parser/net/) για ολοκληρωμένη καθοδήγηση.
+ Επισκέψου το[τεκμηρίωση](https://tutorials.groupdocs.com/parser/net/) για ολοκληρωμένη καθοδήγηση.
 ### Πώς μπορώ να λάβω προσωρινή άδεια χρήσης για το GroupDocs.Parser;
  Αποκτήστε α[προσωρινή άδεια](https://purchase.groupdocs.com/temporary-license/) για σκοπούς αξιολόγησης ή ανάπτυξης.
 ### Το GroupDocs παρέχει υποστήριξη για την αντιμετώπιση προβλημάτων;

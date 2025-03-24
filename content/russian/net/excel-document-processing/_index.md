@@ -3,7 +3,6 @@ title: Обработка документов Excel
 linktitle: Обработка документов Excel
 second_title: GroupDocs.Parser .NET API
 description: Освойте обработку документов Excel в .NET с помощью GroupDocs.Parser. Научитесь эффективно извлекать изображения, метаданные и текст с помощью пошаговых руководств.
-type: docs
 weight: 32
 url: /ru/net/excel-document-processing/
 ---

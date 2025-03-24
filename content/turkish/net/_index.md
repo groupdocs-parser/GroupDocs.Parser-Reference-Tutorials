@@ -1,7 +1,6 @@
 ---
 title: .NET için GroupDocs.Parser Öğreticileri ve Örnekleri
 linktitle: .NET Eğitimleri için GroupDocs.Parser
-type: docs
 weight: 10
 url: /tr/net/
 description: GroupDocs.Parser for .NET ile verimli metin çıkarma tekniklerinin kilidini açın. Gelişmiş belge işleme için metni sorunsuz bir şekilde çıkarın, vurgulayın ve arayın.

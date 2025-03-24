@@ -3,7 +3,6 @@ title: Εξαγωγή κειμένου από το έγγραφο του Word ω
 linktitle: Εξαγωγή κειμένου από το έγγραφο του Word ως HTML
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να χρησιμοποιείτε το GroupDocs.Parser για .NET για εξαγωγή κειμένου από έγγραφα του Word και αποθήκευση ως HTML. Βήμα προς βήμα σεμινάριο με παραδείγματα κώδικα.
-type: docs
 weight: 16
 url: /el/net/word-document-processing/extract-text-from-word-document-as-html/
 ---
@@ -67,7 +66,7 @@ using (Parser parser = new Parser("YourSampleFile.docx"))
 ### Πώς μπορώ να αποκτήσω μια προσωρινή άδεια για το GroupDocs.Parser;
  Μπορείτε να ζητήσετε μια προσωρινή άδεια από[εδώ](https://purchase.groupdocs.com/temporary-license/).
 ### Πού μπορώ να βρω περισσότερη τεκμηρίωση για το GroupDocs.Parser;
- Λεπτομερής τεκμηρίωση είναι διαθέσιμη[εδώ](https://reference.groupdocs.com/parser/net/).
+ Λεπτομερής τεκμηρίωση είναι διαθέσιμη[εδώ](https://tutorials.groupdocs.com/parser/net/).
 ### Υπάρχει διαθέσιμη δωρεάν δοκιμή για το GroupDocs.Parser;
  Ναι, μπορείτε να έχετε πρόσβαση στη δωρεάν δοκιμαστική έκδοση[εδώ](https://releases.groupdocs.com/).
 ### Πώς μπορώ να λάβω υποστήριξη για το GroupDocs.Parser;

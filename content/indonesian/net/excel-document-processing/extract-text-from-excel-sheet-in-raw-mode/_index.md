@@ -3,7 +3,6 @@ title: Ekstrak Teks dari Lembar Excel dalam Mode Mentah
 linktitle: Ekstrak Teks dari Lembar Excel dalam Mode Mentah
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak teks dari lembar Excel menggunakan GroupDocs.Parser untuk .NET dalam tutorial komprehensif ini. Unduh dan mulai parsing.
-type: docs
 weight: 15
 url: /id/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
 ---
@@ -66,7 +65,7 @@ Ya, GroupDocs.Parser mendukung berbagai format dokumen termasuk Word, PDF, Power
 ### Apakah GroupDocs.Parser cocok untuk memproses file Excel berukuran besar?
 Ya, GroupDocs.Parser dirancang untuk menangani dokumen besar secara efisien.
 ### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang GroupDocs.Parser?
- Anda dapat merujuk ke[dokumentasi](https://reference.groupdocs.com/parser/net/) untuk informasi rinci dan contoh.
+ Anda dapat merujuk ke[dokumentasi](https://tutorials.groupdocs.com/parser/net/) untuk informasi rinci dan contoh.
 ### Bagaimana saya bisa mendapatkan lisensi sementara untuk GroupDocs.Parser?
  Mengunjungi[Link ini](https://purchase.groupdocs.com/temporary-license/) untuk meminta izin sementara.
 ### Apakah GroupDocs.Parser menawarkan dukungan pelanggan?

@@ -3,7 +3,6 @@ title: स्थानीय डिस्क से दस्तावेज़ 
 linktitle: स्थानीय डिस्क से दस्तावेज़ लोड करें
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके विभिन्न दस्तावेज़ स्वरूपों से टेक्स्ट निकालना सीखें। C# के साथ आसान और कुशल टेक्स्ट निष्कर्षण।
-type: docs
 weight: 11
 url: /hi/net/document-loading/load-document-from-local-disk/
 ---
@@ -57,7 +56,7 @@ GroupDocs.Parser पीडीएफ, माइक्रोसॉफ्ट ऑफ
 ### क्या मैं GroupDocs.Parser का उपयोग करके पाठ के साथ मेटाडेटा निकाल सकता हूँ?
 हां, GroupDocs.Parser समर्थित दस्तावेज़ प्रारूपों से पाठ सामग्री और मेटाडेटा दोनों को निकालने की अनुमति देता है।
 ### मैं GroupDocs.Parser के लिए अधिक संसाधन और समर्थन कहां पा सकता हूं?
- दौरा करना[GroupDocs.Parser दस्तावेज़ीकरण](https://reference.groupdocs.com/parser/net/) विस्तृत API संदर्भ के लिए और अन्वेषण करें[ग्रुपडॉक्स फोरम](https://forum.groupdocs.com/c/parser/17) सामुदायिक समर्थन के लिए.
+ दौरा करना[GroupDocs.Parser दस्तावेज़ीकरण](https://tutorials.groupdocs.com/parser/net/) विस्तृत API संदर्भ के लिए और अन्वेषण करें[ग्रुपडॉक्स फोरम](https://forum.groupdocs.com/c/parser/17) सामुदायिक समर्थन के लिए.
 ### मैं GroupDocs.Parser के लिए अस्थायी लाइसेंस कैसे प्राप्त कर सकता हूं?
  आप अनुरोध कर सकते हैं[अस्थायी लाइसेंस](https://purchase.groupdocs.com/temporary-license/) मूल्यांकन और परीक्षण प्रयोजनों के लिए।
 ### क्या GroupDocs.Parser के लिए कोई निःशुल्क परीक्षण उपलब्ध है?

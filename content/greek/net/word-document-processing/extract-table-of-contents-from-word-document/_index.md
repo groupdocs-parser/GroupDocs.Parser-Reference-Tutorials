@@ -3,7 +3,6 @@ title: Εξαγωγή πίνακα περιεχομένων από το έγγρ
 linktitle: Εξαγωγή πίνακα περιεχομένων από το έγγραφο του Word
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε τον Πίνακα Περιεχομένων (TOC) από έγγραφα του Word μέσω προγραμματισμού χρησιμοποιώντας το GroupDocs.Parser για .NET.
-type: docs
 weight: 13
 url: /el/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
@@ -64,7 +63,7 @@ using (TextReader reader = tocItem.ExtractText())
 ### Είναι το GroupDocs.Parser κατάλληλο για την επεξεργασία μεγάλων εγγράφων;
 Ναι, το GroupDocs.Parser είναι βελτιστοποιημένο για αποτελεσματικό χειρισμό μεγάλων εγγράφων, με δυνατότητες όπως εξαγωγή κειμένου, εξαγωγή μεταδεδομένων και δομημένη εξαγωγή δεδομένων.
 ### Πού μπορώ να βρω περισσότερη τεκμηρίωση και σεμινάρια για το GroupDocs.Parser;
- Επισκέψου το[Τεκμηρίωση GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) για λεπτομερείς αναφορές και εκπαιδευτικά προγράμματα API.
+ Επισκέψου το[Τεκμηρίωση GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) για λεπτομερείς αναφορές και εκπαιδευτικά προγράμματα API.
 ### Πώς μπορώ να λάβω υποστήριξη για το GroupDocs.Parser;
  Γίνε μελος[GroupDocs.Parser φόρουμ](https://forum.groupdocs.com/c/parser/17) να κάνουν ερωτήσεις και να αλληλεπιδρούν με την κοινότητα.
 ### Υπάρχει διαθέσιμη δοκιμαστική έκδοση για το GroupDocs.Parser;

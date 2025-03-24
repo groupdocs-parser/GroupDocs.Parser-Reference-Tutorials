@@ -3,7 +3,6 @@ title: ハイパーリンク抽出
 linktitle: ハイパーリンク抽出
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser を使用すると、.NET のドキュメントからハイパーリンクを簡単に抽出できます。ハイパーリンク抽出のステップバイステップ ガイドを使用して、C# アプリケーションを強化します。
-type: docs
 weight: 25
 url: /ja/net/hyperlink-extraction/
 ---

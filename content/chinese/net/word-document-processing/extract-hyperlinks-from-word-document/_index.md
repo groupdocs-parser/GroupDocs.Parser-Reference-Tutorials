@@ -3,7 +3,6 @@ title: 从 Word 文档中提取超链接
 linktitle: 从 Word 文档中提取超链接
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从 Word 文档中提取超链接。带有代码示例的分步指南。
-type: docs
 weight: 10
 url: /zh/net/word-document-processing/extract-hyperlinks-from-word-document/
 ---

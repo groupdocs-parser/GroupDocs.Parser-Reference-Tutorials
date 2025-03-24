@@ -3,7 +3,6 @@ title: Estrai dati da moduli PDF
 linktitle: Estrai dati da moduli PDF
 second_title: API GroupDocs.Parser .NET
 description: Scopri come estrarre dati da moduli PDF utilizzando GroupDocs.Parser per .NET. Guida passo passo con esempi di codice e domande frequenti.
-type: docs
 weight: 11
 url: /it/net/pdf-processing/extract-data-from-pdf-forms/
 ---
@@ -79,7 +78,7 @@ Sì, GroupDocs.Parser supporta vari formati, inclusi DOCX, XLSX, PPTX e altri.
 ### Posso estrarre immagini e metadati utilizzando GroupDocs.Parser?
 Sì, GroupDocs.Parser consente l'estrazione di immagini, metadati e testo dai documenti.
 ### Dove posso trovare ulteriore supporto o documentazione per GroupDocs.Parser?
- Puoi visitare il[Documentazione GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) per informazioni dettagliate ed esempi.
+ Puoi visitare il[Documentazione GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) per informazioni dettagliate ed esempi.
 ### È disponibile una prova gratuita per GroupDocs.Parser?
  Sì, puoi accedere a[prova gratuita di GroupDocs.Parser](https://releases.groupdocs.com/) per esplorarne le caratteristiche.
 ### Come posso ottenere una licenza temporanea per GroupDocs.Parser?

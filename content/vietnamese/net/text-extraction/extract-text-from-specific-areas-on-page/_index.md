@@ -3,7 +3,6 @@ title: Trích xuất văn bản từ các khu vực cụ thể trên một trang
 linktitle: Trích xuất văn bản từ các khu vực cụ thể trên một trang
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất văn bản từ các vùng tài liệu cụ thể bằng GroupDocs.Parser cho .NET. Trích xuất văn bản có mục tiêu và chính xác cho ứng dụng của bạn.
-type: docs
 weight: 13
 url: /vi/net/text-extraction/extract-text-from-specific-areas-on-page/
 ---

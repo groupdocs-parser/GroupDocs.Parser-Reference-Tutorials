@@ -3,7 +3,6 @@ title: Külső erőforrások betöltésének kezelése
 linktitle: Külső erőforrások betöltésének kezelése
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan kezelheti a külső erőforrásokat a .NET-ben a GroupDocs.Parser segítségével a hatékony dokumentumelemzés és -kinyerés érdekében.
-type: docs
 weight: 10
 url: /hu/net/document-loading/handling-loading-of-external-resources/
 ---
@@ -66,7 +65,7 @@ Igen, a GroupDocs.Parser a fájlformátumok széles skáláját támogatja, bele
 ### Kivonhatok szöveget a képekkel együtt a GroupDocs.Parser segítségével?
 Természetesen a GroupDocs.Parser lehetővé teszi szövegek és képek kinyerését a támogatott dokumentumformátumokból.
 ### Hol találom a GroupDocs.Parser részletes dokumentációját?
- Fedezze fel a[dokumentáció](https://reference.groupdocs.com/parser/net/) átfogó útmutatókért és API-referenciákért.
+ Fedezze fel a[dokumentáció](https://tutorials.groupdocs.com/parser/net/) átfogó útmutatókért és API-referenciákért.
 ### Hogyan szerezhetek ideiglenes licencet a GroupDocs.Parser számára?
  Ideiglenes jogosítványt kaphat a[GroupDocs vásárlási oldal](https://purchase.groupdocs.com/temporary-license/).
 ### Hol kérhetek segítséget, ha problémákat tapasztalok a GroupDocs.Parser használatával?

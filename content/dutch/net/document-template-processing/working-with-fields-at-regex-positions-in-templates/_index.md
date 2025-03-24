@@ -3,7 +3,6 @@ title: Werken met velden bij Regex-posities in sjablonen
 linktitle: Werken met velden bij Regex-posities in sjablonen
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u gegevens uit documentsjablonen kunt extraheren met behulp van regex-posities met GroupDocs.Parser voor .NET. Automatiseer uw gegevensextractietaken efficiënt.
-type: docs
 weight: 13
 url: /nl/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---

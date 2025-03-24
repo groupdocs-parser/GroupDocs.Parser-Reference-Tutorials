@@ -3,7 +3,6 @@ title: استخراج النص من ورقة Excel في الوضع الخام
 linktitle: استخراج النص من ورقة Excel في الوضع الخام
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج النص من أوراق Excel باستخدام GroupDocs.Parser لـ .NET في هذا البرنامج التعليمي الشامل. قم بالتنزيل وبدء التحليل.
-type: docs
 weight: 15
 url: /ar/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
 ---
@@ -66,7 +65,7 @@ using (TextReader reader = parser.GetText(p, new TextOptions(true)))
 ### هل GroupDocs.Parser مناسب لمعالجة ملفات Excel الكبيرة؟
 نعم، تم تصميم GroupDocs.Parser للتعامل مع المستندات الكبيرة بكفاءة.
 ### أين يمكنني العثور على مزيد من الوثائق حول GroupDocs.Parser؟
- يمكنك الرجوع إلى[توثيق](https://reference.groupdocs.com/parser/net/) للحصول على معلومات وأمثلة مفصلة.
+ يمكنك الرجوع إلى[توثيق](https://tutorials.groupdocs.com/parser/net/) للحصول على معلومات وأمثلة مفصلة.
 ### كيف يمكنني الحصول على ترخيص مؤقت لـ GroupDocs.Parser؟
  يزور[هذا الرابط](https://purchase.groupdocs.com/temporary-license/) لطلب ترخيص مؤقت.
 ### هل يقدم GroupDocs.Parser دعم العملاء؟

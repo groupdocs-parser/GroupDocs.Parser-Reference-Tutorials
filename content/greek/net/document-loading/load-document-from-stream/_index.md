@@ -3,7 +3,6 @@ title: Φόρτωση εγγράφου από τη ροή
 linktitle: Φόρτωση εγγράφου από τη ροή
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε κείμενο από διάφορες μορφές εγγράφων στο .NET χρησιμοποιώντας το GroupDocs.Parser. Οδηγός βήμα προς βήμα με παραδείγματα κώδικα.
-type: docs
 weight: 12
 url: /el/net/document-loading/load-document-from-stream/
 ---
@@ -61,4 +60,4 @@ using (Stream stream = File.OpenRead("YourSampleFile.docx"))
 ### Πώς μπορώ να αποκτήσω μια προσωρινή άδεια για το GroupDocs.Parser;
  Μπορείτε να αποκτήσετε προσωρινή άδεια από[εδώ](https://purchase.groupdocs.com/temporary-license/).
 ### Πού μπορώ να βρω περισσότερη υποστήριξη ή τεκμηρίωση για το GroupDocs.Parser;
- Για πρόσθετη υποστήριξη, επισκεφθείτε το[GroupDocs.Parser Forum](https://forum.groupdocs.com/c/parser/17) ή ανατρέξτε στο[τεκμηρίωση](https://reference.groupdocs.com/parser/net/).
+ Για πρόσθετη υποστήριξη, επισκεφθείτε το[GroupDocs.Parser Forum](https://forum.groupdocs.com/c/parser/17) ή ανατρέξτε στο[τεκμηρίωση](https://tutorials.groupdocs.com/parser/net/).

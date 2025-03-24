@@ -3,7 +3,6 @@ title: Работа с параметрами таблиц в шаблонах
 linktitle: Работа с параметрами таблиц в шаблонах
 second_title: GroupDocs.Parser .NET API
 description: Узнайте, как извлекать данные из таблиц в документах с помощью GroupDocs.Parser для .NET. Пошаговое руководство по использованию параметров таблицы.
-type: docs
 weight: 15
 url: /ru/net/document-template-processing/working-with-table-parameters-in-templates/
 ---

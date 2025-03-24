@@ -3,7 +3,6 @@ title: एक्सेल दस्तावेज़ से पाठ निक
 linktitle: एक्सेल दस्तावेज़ से पाठ निकालें
 second_title: GroupDocs.Parser .NET एपीआई
 description: सरल चरणों में .NET के लिए GroupDocs.Parser का उपयोग करके Excel दस्तावेज़ों से टेक्स्ट निकालना सीखें।
-type: docs
 weight: 12
 url: /hi/net/excel-document-processing/extract-text-from-excel-document/
 ---
@@ -58,7 +57,7 @@ Console.WriteLine(reader.ReadToEnd());
 ### क्या GroupDocs.Parser के लिए कोई निःशुल्क परीक्षण उपलब्ध है?
  हां, आप GroupDocs.Parser का निःशुल्क परीक्षण यहां से डाउनलोड कर सकते हैं[यहाँ](https://releases.groupdocs.com/).
 ### मैं GroupDocs.Parser के लिए दस्तावेज़ कहां पा सकता हूं?
- आप GroupDocs.Parser के लिए विस्तृत दस्तावेज़ पा सकते हैं[यहाँ](https://reference.groupdocs.com/parser/net/).
+ आप GroupDocs.Parser के लिए विस्तृत दस्तावेज़ पा सकते हैं[यहाँ](https://tutorials.groupdocs.com/parser/net/).
 ### मैं GroupDocs.Parser के लिए समर्थन कैसे प्राप्त कर सकता हूं?
 GroupDocs.Parser के साथ समर्थन और सहायता के लिए, पर जाएँ[ग्रुपडॉक्स फ़ोरम](https://forum.groupdocs.com/c/parser/17).
 ### मैं GroupDocs.Parser के लिए लाइसेंस कहां से खरीद सकता हूं?

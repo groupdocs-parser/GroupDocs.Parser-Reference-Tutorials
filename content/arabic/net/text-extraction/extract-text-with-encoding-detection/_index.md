@@ -3,7 +3,6 @@ title: استخراج النص مع كشف الترميز
 linktitle: استخراج النص مع كشف الترميز
 second_title: GroupDocs.Parser .NET API
 description: استخرج النص من المستندات مع اكتشاف التشفير باستخدام GroupDocs.Parser لـ .NET. تحليل التنسيقات المختلفة بكفاءة في تطبيقات .NET الخاصة بك.
-type: docs
 weight: 10
 url: /ar/net/text-extraction/extract-text-with-encoding-detection/
 ---

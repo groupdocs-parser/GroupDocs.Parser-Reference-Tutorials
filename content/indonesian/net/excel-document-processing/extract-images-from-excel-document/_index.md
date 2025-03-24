@@ -3,7 +3,6 @@ title: Ekstrak Gambar dari Dokumen Excel
 linktitle: Ekstrak Gambar dari Dokumen Excel
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak gambar dari dokumen Excel menggunakan GroupDocs.Parser untuk .NET. Panduan langkah demi langkah dengan contoh kode.
-type: docs
 weight: 10
 url: /id/net/excel-document-processing/extract-images-from-excel-document/
 ---
@@ -66,4 +65,4 @@ J: Ya, GroupDocs.Parser mendukung berbagai format dokumen termasuk Word, PowerPo
 ### T: Dapatkah saya mencoba GroupDocs.Parser sebelum membeli lisensi?
  A: Ya, Anda bisa mendapatkan[uji coba gratis](https://releases.groupdocs.com/) untuk mengevaluasi GroupDocs.Parser.
 ### T: Di mana saya dapat menemukan dokumentasi terperinci untuk GroupDocs.Parser?
- A: Lihat secara komprehensif[dokumentasi](https://reference.groupdocs.com/parser/net/) untuk informasi rinci tentang penggunaan GroupDocs.Parser.
+ A: Lihat secara komprehensif[dokumentasi](https://tutorials.groupdocs.com/parser/net/) untuk informasi rinci tentang penggunaan GroupDocs.Parser.

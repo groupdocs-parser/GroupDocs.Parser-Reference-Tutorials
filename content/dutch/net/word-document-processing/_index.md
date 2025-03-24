@@ -3,7 +3,6 @@ title: Word-documentverwerking
 linktitle: Word-documentverwerking
 second_title: GroupDocs.Parser .NET API
 description: Ontdek een reeks tutorials over de verwerking van Word-documenten met GroupDocs.Parser voor .NET. Extraheer hyperlinks, afbeeldingen, metagegevens en meer.
-type: docs
 weight: 30
 url: /nl/net/word-document-processing/
 ---

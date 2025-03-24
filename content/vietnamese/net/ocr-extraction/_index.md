@@ -3,7 +3,6 @@ title: Trích xuất nhận dạng ký tự quang học (OCR)
 linktitle: Trích xuất nhận dạng ký tự quang học (OCR)
 second_title: API GroupDocs.Parser .NET
 description: Xử lý OCR và trích xuất văn bản từ hình ảnh và tài liệu một cách hiệu quả bằng GroupDocs.Parser cho .NET. Hãy nâng cao khả năng OCR của bạn ngay hôm nay!
-type: docs
 weight: 28
 url: /vi/net/ocr-extraction/
 ---

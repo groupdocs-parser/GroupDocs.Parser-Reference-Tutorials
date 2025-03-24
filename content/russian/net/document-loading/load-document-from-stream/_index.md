@@ -3,7 +3,6 @@ title: Загрузить документ из потока
 linktitle: Загрузить документ из потока
 second_title: GroupDocs.Parser .NET API
 description: Узнайте, как извлечь текст из различных форматов документов в .NET с помощью GroupDocs.Parser. Пошаговое руководство с примерами кода.
-type: docs
 weight: 12
 url: /ru/net/document-loading/load-document-from-stream/
 ---
@@ -61,4 +60,4 @@ GroupDocs.Parser поддерживает широкий спектр форма
 ### Как получить временную лицензию на GroupDocs.Parser?
  Вы можете получить временную лицензию[здесь](https://purchase.groupdocs.com/temporary-license/).
 ### Где я могу найти дополнительную поддержку или документацию для GroupDocs.Parser?
- Для получения дополнительной поддержки посетите[Форум GroupDocs.Parser](https://forum.groupdocs.com/c/parser/17) или обратитесь к[документация](https://reference.groupdocs.com/parser/net/).
+ Для получения дополнительной поддержки посетите[Форум GroupDocs.Parser](https://forum.groupdocs.com/c/parser/17) или обратитесь к[документация](https://tutorials.groupdocs.com/parser/net/).

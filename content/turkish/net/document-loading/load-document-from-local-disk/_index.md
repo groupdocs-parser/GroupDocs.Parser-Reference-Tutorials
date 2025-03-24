@@ -3,7 +3,6 @@ title: Belgeyi Yerel Diskten Yükle
 linktitle: Belgeyi Yerel Diskten Yükle
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak çeşitli belge biçimlerinden nasıl metin ayıklayacağınızı öğrenin. C# ile kolay ve etkili metin çıkarma.
-type: docs
 weight: 11
 url: /tr/net/document-loading/load-document-from-local-disk/
 ---
@@ -57,7 +56,7 @@ GroupDocs.Parser, PDF, Microsoft Office belgeleri (Word, Excel, PowerPoint) ve d
 ### GroupDocs.Parser'ı kullanarak metinle birlikte meta verileri çıkarabilir miyim?
 Evet, GroupDocs.Parser, desteklenen belge formatlarından hem metin içeriğinin hem de meta verilerin çıkarılmasına olanak tanır.
 ### GroupDocs.Parser için daha fazla kaynağı ve desteği nerede bulabilirim?
- Ziyaret edin[GroupDocs.Parser Belgeleri](https://reference.groupdocs.com/parser/net/) ayrıntılı API referansı için[GroupDocs Forumu](https://forum.groupdocs.com/c/parser/17) topluluk desteği için.
+ Ziyaret edin[GroupDocs.Parser Belgeleri](https://tutorials.groupdocs.com/parser/net/) ayrıntılı API referansı için[GroupDocs Forumu](https://forum.groupdocs.com/c/parser/17) topluluk desteği için.
 ### GroupDocs.Parser için nasıl geçici lisans alabilirim?
  Bir talepte bulunabilirsiniz[geçici lisans](https://purchase.groupdocs.com/temporary-license/) değerlendirme ve test amaçlıdır.
 ### GroupDocs.Parser'ın ücretsiz deneme sürümü var mı?

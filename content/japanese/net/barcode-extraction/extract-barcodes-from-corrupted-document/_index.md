@@ -3,7 +3,6 @@ title: 破損した文書からバーコードを抽出する
 linktitle: 破損した文書からバーコードを抽出する
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して破損したドキュメントからバーコードを抽出する方法を学びます。ステップバイステップの手順を説明した包括的なチュートリアルです。
-type: docs
 weight: 11
 url: /ja/net/barcode-extraction/extract-barcodes-from-corrupted-document/
 ---

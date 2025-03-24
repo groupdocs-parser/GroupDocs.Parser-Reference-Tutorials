@@ -3,7 +3,6 @@ title: 從本機磁碟載入文檔
 linktitle: 從本機磁碟載入文檔
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 從各種文件格式中擷取文字。使用 C# 輕鬆有效率地擷取文字。
-type: docs
 weight: 11
 url: /zh-hant/net/document-loading/load-document-from-local-disk/
 ---
@@ -57,7 +56,7 @@ GroupDocs.Parser 支援多種格式，包括 PDF、Microsoft Office 文件（Wor
 ### 我可以使用 GroupDocs.Parser 提取元資料和文字嗎？
 是的，GroupDocs.Parser 允許從支援的文件格式中提取文字內容和元資料。
 ### 在哪裡可以找到有關 GroupDocs.Parser 的更多資源和支援？
-參觀[GroupDocs.Parser 文檔](https://reference.groupdocs.com/parser/net/)取得詳細的 API 參考並探索[集團文檔論壇](https://forum.groupdocs.com/c/parser/17)以獲得社區支持。
+參觀[GroupDocs.Parser 文檔](https://tutorials.groupdocs.com/parser/net/)取得詳細的 API 參考並探索[集團文檔論壇](https://forum.groupdocs.com/c/parser/17)以獲得社區支持。
 ### 如何獲得 GroupDocs.Parser 的臨時許可證？
 您可以請求[臨時執照](https://purchase.groupdocs.com/temporary-license/)用於評估和測試目的。
 ### GroupDocs.Parser 是否有免費試用版？

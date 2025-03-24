@@ -3,7 +3,6 @@ title: Trích xuất hình ảnh từ trang tài liệu
 linktitle: Trích xuất hình ảnh từ trang tài liệu
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất hình ảnh từ tài liệu bằng GroupDocs.Parser cho .NET. Nâng cao khả năng xử lý tài liệu của bạn.
-type: docs
 weight: 12
 url: /vi/net/image-extraction/extract-images-from-document-page/
 ---

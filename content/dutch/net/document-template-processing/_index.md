@@ -3,7 +3,6 @@ title: Documentsjabloonverwerking
 linktitle: Documentsjabloonverwerking
 second_title: GroupDocs.Parser .NET API
 description: Extraheer moeiteloos gestructureerde gegevens uit documentsjablonen met GroupDocs.Parser voor .NET. Leer werken met streepjescodes, velden, regex en tabelindelingen.
-type: docs
 weight: 22
 url: /nl/net/document-template-processing/
 ---

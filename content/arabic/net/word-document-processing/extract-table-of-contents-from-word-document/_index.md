@@ -3,7 +3,6 @@ title: استخراج جدول المحتويات من مستند Word
 linktitle: استخراج جدول المحتويات من مستند Word
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج جدول المحتويات (TOC) من مستندات Word برمجياً باستخدام GroupDocs.Parser لـ .NET.
-type: docs
 weight: 13
 url: /ar/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
@@ -64,7 +63,7 @@ using (TextReader reader = tocItem.ExtractText())
 ### هل GroupDocs.Parser مناسب لمعالجة المستندات الكبيرة؟
 نعم، تم تحسين GroupDocs.Parser للتعامل مع المستندات الكبيرة بكفاءة، مع ميزات مثل استخراج النص، واستخراج بيانات التعريف، واستخراج البيانات المنظمة.
 ### أين يمكنني العثور على المزيد من الوثائق والبرامج التعليمية الخاصة بـ GroupDocs.Parser؟
- قم بزيارة[وثائق GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) للحصول على مراجع API مفصلة والبرامج التعليمية.
+ قم بزيارة[وثائق GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) للحصول على مراجع API مفصلة والبرامج التعليمية.
 ### كيف يمكنني الحصول على الدعم لـ GroupDocs.Parser؟
  انضم الي[منتدى GroupDocs.Parser](https://forum.groupdocs.com/c/parser/17) لطرح الأسئلة والتفاعل مع المجتمع.
 ### هل هناك نسخة تجريبية متاحة لـ GroupDocs.Parser؟

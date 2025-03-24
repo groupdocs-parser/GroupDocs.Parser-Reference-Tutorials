@@ -3,7 +3,6 @@ title: Lavorare con i parametri di tabella nei modelli
 linktitle: Lavorare con i parametri di tabella nei modelli
 second_title: API GroupDocs.Parser .NET
 description: Scopri come estrarre dati dalle tabelle nei documenti utilizzando GroupDocs.Parser per .NET. Guida passo passo per l'utilizzo dei parametri della tabella.
-type: docs
 weight: 15
 url: /it/net/document-template-processing/working-with-table-parameters-in-templates/
 ---

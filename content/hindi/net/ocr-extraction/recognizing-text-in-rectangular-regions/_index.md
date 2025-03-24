@@ -3,7 +3,6 @@ title: आयताकार क्षेत्रों में पाठ क
 linktitle: आयताकार क्षेत्रों में पाठ को पहचानना
 second_title: GroupDocs.Parser .NET एपीआई
 description: OCR क्षमताओं के साथ .NET के लिए GroupDocs.Parser का उपयोग करके दस्तावेज़ों के विशिष्ट क्षेत्रों में पाठ को पहचानना सीखें।
-type: docs
 weight: 14
 url: /hi/net/ocr-extraction/recognizing-text-in-rectangular-regions/
 ---

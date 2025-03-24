@@ -3,7 +3,6 @@ title: Extrahujte text z listu aplikace Excel v režimu Raw
 linktitle: Extrahujte text z listu aplikace Excel v režimu Raw
 second_title: GroupDocs.Parser .NET API
 description: V tomto komplexním kurzu se dozvíte, jak extrahovat text z listů aplikace Excel pomocí GroupDocs.Parser for .NET. Stáhněte a spusťte analýzu.
-type: docs
 weight: 15
 url: /cs/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
 ---
@@ -66,7 +65,7 @@ Ano, GroupDocs.Parser podporuje širokou škálu formátů dokumentů včetně W
 ### Je GroupDocs.Parser vhodný pro zpracování velkých souborů Excel?
 Ano, GroupDocs.Parser je navržen tak, aby efektivně zpracovával velké dokumenty.
 ### Kde najdu další dokumentaci o GroupDocs.Parser?
- Můžete odkazovat na[dokumentace](https://reference.groupdocs.com/parser/net/) pro podrobné informace a příklady.
+ Můžete odkazovat na[dokumentace](https://tutorials.groupdocs.com/parser/net/) pro podrobné informace a příklady.
 ### Jak mohu získat dočasnou licenci pro GroupDocs.Parser?
  Návštěva[tento odkaz](https://purchase.groupdocs.com/temporary-license/) požádat o dočasnou licenci.
 ### Nabízí GroupDocs.Parser zákaznickou podporu?

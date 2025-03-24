@@ -3,7 +3,6 @@ title: Wyodrębnij metadane z pliku PDF
 linktitle: Wyodrębnij metadane z pliku PDF
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić metadane z dokumentów PDF za pomocą GroupDocs.Parser dla .NET. Ten obszerny przewodnik zawiera instrukcje krok po kroku i wymagania wstępne.
-type: docs
 weight: 13
 url: /pl/net/pdf-processing/extract-metadata-from-pdf/
 ---

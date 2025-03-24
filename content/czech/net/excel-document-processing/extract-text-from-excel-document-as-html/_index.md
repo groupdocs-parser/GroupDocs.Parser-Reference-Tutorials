@@ -3,7 +3,6 @@ title: Extrahujte text z dokumentu aplikace Excel jako HTML
 linktitle: Extrahujte text z dokumentu aplikace Excel jako HTML
 second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat text z dokumentů aplikace Excel a převést jej do HTML pomocí GroupDocs.Parser for .NET.
-type: docs
 weight: 13
 url: /cs/net/excel-document-processing/extract-text-from-excel-document-as-html/
 ---

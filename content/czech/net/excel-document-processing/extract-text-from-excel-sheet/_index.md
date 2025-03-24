@@ -3,7 +3,6 @@ title: Extrahujte text z listu aplikace Excel
 linktitle: Extrahujte text z listu aplikace Excel
 second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat text z listů aplikace Excel pomocí GroupDocs.Parser for .NET. Jednoduché kroky pro efektivní extrakci textu.
-type: docs
 weight: 14
 url: /cs/net/excel-document-processing/extract-text-from-excel-sheet/
 ---

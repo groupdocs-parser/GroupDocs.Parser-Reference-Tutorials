@@ -3,7 +3,6 @@ title: 条形码提取
 linktitle: 条形码提取
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 教程轻松提取条形码。立即增强您的文档处理能力！
-type: docs
 weight: 27
 url: /zh/net/barcode-extraction/
 ---

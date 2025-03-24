@@ -3,7 +3,6 @@ title: Xử lý việc tải tài nguyên bên ngoài
 linktitle: Xử lý việc tải tài nguyên bên ngoài
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách xử lý các tài nguyên bên ngoài trong .NET bằng GroupDocs.Parser để phân tích và trích xuất tài liệu hiệu quả.
-type: docs
 weight: 10
 url: /vi/net/document-loading/handling-loading-of-external-resources/
 ---
@@ -66,7 +65,7 @@ Có, GroupDocs.Parser hỗ trợ nhiều định dạng tệp bao gồm DOCX, PD
 ### Tôi có thể trích xuất văn bản cùng với hình ảnh bằng GroupDocs.Parser không?
 Hoàn toàn có thể, GroupDocs.Parser cho phép trích xuất cả văn bản và hình ảnh từ các định dạng tài liệu được hỗ trợ.
 ### Tôi có thể tìm tài liệu chi tiết về GroupDocs.Parser ở đâu?
- Khám phá cái[tài liệu](https://reference.groupdocs.com/parser/net/) để có hướng dẫn toàn diện và tài liệu tham khảo API.
+ Khám phá cái[tài liệu](https://tutorials.groupdocs.com/parser/net/) để có hướng dẫn toàn diện và tài liệu tham khảo API.
 ### Làm cách nào để có được giấy phép tạm thời cho GroupDocs.Parser?
  Bạn có thể nhận được giấy phép tạm thời từ[Trang mua GroupDocs](https://purchase.groupdocs.com/temporary-license/).
 ### Tôi có thể tìm trợ giúp ở đâu nếu gặp sự cố với GroupDocs.Parser?

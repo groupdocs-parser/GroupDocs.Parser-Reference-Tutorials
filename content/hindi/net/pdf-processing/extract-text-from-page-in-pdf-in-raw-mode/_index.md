@@ -3,7 +3,6 @@ title: रॉ मोड में पीडीएफ में पेज से 
 linktitle: रॉ मोड में पीडीएफ में पेज से टेक्स्ट निकालें
 second_title: GroupDocs.Parser .NET एपीआई
 description: C# में GroupDocs.Parser का उपयोग करके PDF से टेक्स्ट निकालें। इस शक्तिशाली .NET लाइब्रेरी के साथ कुशल PDF टेक्स्ट निष्कर्षण सीखें।
-type: docs
 weight: 16
 url: /hi/net/pdf-processing/extract-text-from-page-in-pdf-in-raw-mode/
 ---

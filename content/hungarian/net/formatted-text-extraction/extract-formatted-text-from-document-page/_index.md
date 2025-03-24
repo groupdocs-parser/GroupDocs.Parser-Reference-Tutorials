@@ -3,7 +3,6 @@ title: Formázott szöveg kibontása a dokumentumoldalról
 linktitle: Formázott szöveg kibontása a dokumentumoldalról
 second_title: GroupDocs.Parser .NET API
 description: Formázott szöveg kinyerése a dokumentumoldalakról a GroupDocs.Parser for .NET segítségével. Hatékony és megbízható szövegkivonási megoldás.
-type: docs
 weight: 11
 url: /hu/net/formatted-text-extraction/extract-formatted-text-from-document-page/
 ---

@@ -3,7 +3,6 @@ title: Estrai immagini dal documento
 linktitle: Estrai immagini dal documento
 second_title: API GroupDocs.Parser .NET
 description: Estrai immagini dai documenti senza sforzo utilizzando GroupDocs.Parser per .NET. Le tue capacità di elaborazione dei documenti e semplifica le attività di estrazione delle immagini in modo efficiente.
-type: docs
 weight: 11
 url: /it/net/image-extraction/extract-images-from-document/
 ---
@@ -67,7 +66,7 @@ GroupDocs.Parser supporta l'estrazione di immagini da vari formati, inclusi PDF,
 ### È disponibile una prova gratuita per GroupDocs.Parser?
  Sì, puoi accedere a una prova gratuita di GroupDocs.Parser da[sito web](https://releases.groupdocs.com/).
 ### Dove posso trovare la documentazione per GroupDocs.Parser?
- È possibile trovare la documentazione dettagliata per GroupDocs.Parser[Qui](https://reference.groupdocs.com/parser/net/).
+ È possibile trovare la documentazione dettagliata per GroupDocs.Parser[Qui](https://tutorials.groupdocs.com/parser/net/).
 ### Come posso ottenere una licenza temporanea per GroupDocs.Parser?
  È possibile ottenere una licenza temporanea da[pagina della licenza temporanea](https://purchase.groupdocs.com/temporary-license/).
 ### Dove posso ottenere supporto per GroupDocs.Parser?

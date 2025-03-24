@@ -3,7 +3,6 @@ title: Kivonja a hiperhivatkozásokat a dokumentumból
 linktitle: Kivonja a hiperhivatkozásokat a dokumentumból
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki hiperhivatkozásokat dokumentumokból a GroupDocs.Parser for .NET segítségével. Bővítse C# alkalmazásait ezzel az egyszerű útmutatóval.
-type: docs
 weight: 10
 url: /hu/net/hyperlink-extraction/extract-hyperlinks-from-document/
 ---
@@ -73,7 +72,7 @@ Igen, a GroupDocs.Parser támogatja a hiperhivatkozások kivonatát számos fáj
 ### Van ingyenes próbaverzió a GroupDocs.Parser számára?
  Igen, hozzáférhet a GroupDocs.Parser ingyenes próbaverziójához[itt](https://releases.groupdocs.com/).
 ### Hol találom a GroupDocs.Parser dokumentációját?
- A GroupDocs.Parser részletes dokumentációja megtalálható[itt](https://reference.groupdocs.com/parser/net/).
+ A GroupDocs.Parser részletes dokumentációja megtalálható[itt](https://tutorials.groupdocs.com/parser/net/).
 ### Hogyan szerezhetek ideiglenes licencet a GroupDocs.Parser számára?
  Ideiglenes licencet szerezhet a GroupDocs.Parser számára[itt](https://purchase.groupdocs.com/temporary-license/).
 ### A GroupDocs támogatja a hibaelhárítást?

@@ -3,7 +3,6 @@ title: Wyodrębnij strukturę tekstu
 linktitle: Wyodrębnij strukturę tekstu
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić strukturę tekstu z różnych formatów dokumentów za pomocą GroupDocs.Parser dla .NET. Samouczek krok po kroku z przykładami kodu.
-type: docs
 weight: 20
 url: /pl/net/text-extraction/extract-text-structure/
 ---

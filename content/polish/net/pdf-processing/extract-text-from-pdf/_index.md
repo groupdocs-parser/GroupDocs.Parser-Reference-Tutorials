@@ -3,7 +3,6 @@ title: Wyodrębnij tekst z pliku PDF
 linktitle: Wyodrębnij tekst z pliku PDF
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić tekst z dokumentów PDF za pomocą GroupDocs.Parser dla .NET. Samouczek krok po kroku dla programistów.
-type: docs
 weight: 14
 url: /pl/net/pdf-processing/extract-text-from-pdf/
 ---
@@ -58,7 +57,7 @@ Tak, GroupDocs.Parser obsługuje szeroką gamę formatów, w tym DOCX, XLSX, PPT
 ### Czy mogę wypróbować GroupDocs.Parser przed zakupem licencji?
  Tak, możesz otrzymać bezpłatną wersję próbną[Tutaj](https://releases.groupdocs.com/).
 ### Gdzie mogę znaleźć dokumentację GroupDocs.Parser?
- Dostępna jest szczegółowa dokumentacja[Tutaj](https://reference.groupdocs.com/parser/net/).
+ Dostępna jest szczegółowa dokumentacja[Tutaj](https://tutorials.groupdocs.com/parser/net/).
 ### Jak mogę uzyskać pomoc techniczną dla GroupDocs.Parser?
  Możesz szukać pomocy na forum pomocy technicznej[Tutaj](https://forum.groupdocs.com/c/parser/17).
 ### Jak uzyskać tymczasową licencję na GroupDocs.Parser?

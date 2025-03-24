@@ -3,7 +3,6 @@ title: โหลดเอกสารจาก URL
 linktitle: โหลดเอกสารจาก URL
 second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกข้อความจากเอกสารโดยใช้ GroupDocs.Parser สำหรับ .NET บทช่วยสอนนี้ครอบคลุมถึงการโหลดเอกสารจาก URL และการแยกข้อความทีละขั้นตอน
-type: docs
 weight: 13
 url: /th/net/document-loading/load-document-from-url/
 ---
@@ -64,6 +63,6 @@ Console.WriteLine(reader == null ? "Text extraction isn't supported" : reader.Re
 ### มีรุ่นทดลองใช้งานสำหรับ GroupDocs.Parser หรือไม่
  ใช่ คุณสามารถรับ GroupDocs.Parser เวอร์ชันทดลองใช้ฟรีได้จาก[ที่นี่](https://releases.groupdocs.com/).
 ### ฉันจะหาเอกสารสำหรับ GroupDocs.Parser ได้ที่ไหน
- มีเอกสารประกอบโดยละเอียดสำหรับ GroupDocs.Parser[ที่นี่](https://reference.groupdocs.com/parser/net/).
+ มีเอกสารประกอบโดยละเอียดสำหรับ GroupDocs.Parser[ที่นี่](https://tutorials.groupdocs.com/parser/net/).
 ### ฉันจะรับการสนับสนุนทางเทคนิคสำหรับ GroupDocs.Parser ได้อย่างไร
 คุณสามารถขอการสนับสนุนด้านเทคนิคและถามคำถามได้ในฟอรัม GroupDocs.Parser[ที่นี่](https://forum.groupdocs.com/c/parser/17).

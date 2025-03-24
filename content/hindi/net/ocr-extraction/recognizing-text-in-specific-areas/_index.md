@@ -3,7 +3,6 @@ title: विशिष्ट क्षेत्रों में पाठ क
 linktitle: विशिष्ट क्षेत्रों में पाठ को पहचानना
 second_title: GroupDocs.Parser .NET एपीआई
 description: OCR क्षमताओं वाले दस्तावेज़ों में विशिष्ट क्षेत्रों से पाठ निकालने के लिए .NET के लिए GroupDocs.Parser का उपयोग करना सीखें।
-type: docs
 weight: 13
 url: /hi/net/ocr-extraction/recognizing-text-in-specific-areas/
 ---

@@ -3,7 +3,6 @@ title: Feld nach Namen abrufen
 linktitle: Feld nach Namen abrufen
 second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET bestimmte Datenfelder aus Dokumenten extrahieren. Schritt-für-Schritt-Anleitung mit Codebeispielen.
-type: docs
 weight: 10
 url: /de/net/data-extraction-from-templates/get-field-by-name/
 ---

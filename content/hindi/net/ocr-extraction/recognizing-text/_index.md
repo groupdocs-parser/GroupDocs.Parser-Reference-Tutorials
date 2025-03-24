@@ -3,7 +3,6 @@ title: पाठ पहचानना
 linktitle: पाठ पहचानना
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser के साथ विभिन्न दस्तावेज़ प्रारूपों से कुशलतापूर्वक पाठ निकालें। आसान एकीकरण और शक्तिशाली OCR क्षमताएँ।
-type: docs
 weight: 12
 url: /hi/net/ocr-extraction/recognizing-text/
 ---
@@ -57,7 +56,7 @@ using (Parser parser = new Parser("YourSampleFile.docx", settings))
 - `TextOptions` OCR को सक्षम करने और पाठ निष्कर्षण को अनुकूलित करने के लिए कॉन्फ़िगर किया गया है।
 
 ## निष्कर्ष
- बधाई हो! आपने सीखा है कि कैसे कुशलतापूर्वक पाठ निकालने के लिए अपने प्रोजेक्ट में GroupDocs.Parser for .NET को एकीकृत किया जाए।[प्रलेखन](https://reference.groupdocs.com/parser/net/) उन्नत सुविधाओं और अनुकूलन के लिए.
+ बधाई हो! आपने सीखा है कि कैसे कुशलतापूर्वक पाठ निकालने के लिए अपने प्रोजेक्ट में GroupDocs.Parser for .NET को एकीकृत किया जाए।[प्रलेखन](https://tutorials.groupdocs.com/parser/net/) उन्नत सुविधाओं और अनुकूलन के लिए.
 
 ## अक्सर पूछे जाने वाले प्रश्न
 ### क्या GroupDocs.Parser पीडीएफ फाइलों से पाठ निकालने के लिए उपयुक्त है?

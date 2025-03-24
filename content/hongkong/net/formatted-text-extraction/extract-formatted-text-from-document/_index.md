@@ -3,7 +3,6 @@ title: 從文件中提取格式化文本
 linktitle: 從文件中提取格式化文本
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 從文件中擷取格式化文字。為您的應用程式提供簡單且有效率的文字擷取。
-type: docs
 weight: 10
 url: /zh-hant/net/formatted-text-extraction/extract-formatted-text-from-document/
 ---

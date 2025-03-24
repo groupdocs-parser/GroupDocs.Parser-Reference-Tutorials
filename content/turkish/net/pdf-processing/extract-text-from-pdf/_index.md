@@ -3,7 +3,6 @@ title: PDF'den Metin Çıkart
 linktitle: PDF'den Metin Çıkart
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak PDF belgelerinden nasıl metin ayıklayacağınızı öğrenin. Geliştiriciler için adım adım eğitim.
-type: docs
 weight: 14
 url: /tr/net/pdf-processing/extract-text-from-pdf/
 ---
@@ -58,7 +57,7 @@ Evet, GroupDocs.Parser, DOCX, XLSX, PPTX ve daha fazlasını içeren çok çeşi
 ### Lisans satın almadan önce GroupDocs.Parser'ı deneyebilir miyim?
  Evet, ücretsiz deneme sürümünü alabilirsiniz[Burada](https://releases.groupdocs.com/).
 ### GroupDocs.Parser belgelerini nerede bulabilirim?
- Detaylı dokümantasyon mevcut[Burada](https://reference.groupdocs.com/parser/net/).
+ Detaylı dokümantasyon mevcut[Burada](https://tutorials.groupdocs.com/parser/net/).
 ### GroupDocs.Parser için nasıl teknik destek alabilirim?
  Destek forumunda yardım arayabilirsiniz[Burada](https://forum.groupdocs.com/c/parser/17).
 ### GroupDocs.Parser için nasıl geçici lisans edinebilirim?

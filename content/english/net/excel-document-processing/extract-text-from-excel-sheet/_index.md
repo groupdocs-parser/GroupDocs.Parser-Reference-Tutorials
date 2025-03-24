@@ -3,7 +3,6 @@ title: Extract Text from Excel Sheet
 linktitle: Extract Text from Excel Sheet
 second_title: GroupDocs.Parser .NET API
 description: Learn how to extract text from Excel sheets using GroupDocs.Parser for .NET. Simple steps for effective text extraction.
-type: docs
 weight: 14
 url: /net/excel-document-processing/extract-text-from-excel-sheet/
 ---

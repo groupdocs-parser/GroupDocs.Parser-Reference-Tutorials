@@ -3,7 +3,6 @@ title: 從文件中提取圖像
 linktitle: 從文件中提取圖像
 second_title: GroupDocs.Parser .NET API
 description: 使用 GroupDocs.Parser for .NET 輕鬆從文件中擷取映像。您的文件處理能力並有效地簡化影像擷取任務。
-type: docs
 weight: 11
 url: /zh-hant/net/image-extraction/extract-images-from-document/
 ---
@@ -67,7 +66,7 @@ GroupDocs.Parser 支援從各種格式擷取影像，包括 PDF、DOCX、XLSX �
 ### GroupDocs.Parser 是否有免費試用版？
 是的，您可以從以下位置存取 GroupDocs.Parser 的免費試用版：[網站](https://releases.groupdocs.com/).
 ### 在哪裡可以找到 GroupDocs.Parser 的文檔？
-可以找到 GroupDocs.Parser 的詳細文檔[這裡](https://reference.groupdocs.com/parser/net/).
+可以找到 GroupDocs.Parser 的詳細文檔[這裡](https://tutorials.groupdocs.com/parser/net/).
 ### 如何獲得 GroupDocs.Parser 的臨時許可證？
 您可以從以下機構獲得臨時許可證[臨時許可證頁面](https://purchase.groupdocs.com/temporary-license/).
 ### 我可以在哪裡獲得 GroupDocs.Parser 的支援？

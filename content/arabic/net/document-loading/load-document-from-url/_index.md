@@ -3,7 +3,6 @@ title: قم بتحميل المستند من URL
 linktitle: قم بتحميل المستند من URL
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج النص من المستندات باستخدام GroupDocs.Parser لـ .NET. يغطي هذا البرنامج التعليمي تحميل مستند من عنوان URL واستخراج النص خطوة بخطوة.
-type: docs
 weight: 13
 url: /ar/net/document-loading/load-document-from-url/
 ---
@@ -64,6 +63,6 @@ Console.WriteLine(reader == null ? "Text extraction isn't supported" : reader.Re
 ### هل هناك نسخة تجريبية متاحة لـ GroupDocs.Parser؟
  نعم، يمكنك الحصول على نسخة تجريبية مجانية من GroupDocs.Parser من[هنا](https://releases.groupdocs.com/).
 ### أين يمكنني العثور على وثائق GroupDocs.Parser؟
- تتوفر الوثائق التفصيلية لـ GroupDocs.Parser[هنا](https://reference.groupdocs.com/parser/net/).
+ تتوفر الوثائق التفصيلية لـ GroupDocs.Parser[هنا](https://tutorials.groupdocs.com/parser/net/).
 ### كيف يمكنني الحصول على الدعم الفني لـ GroupDocs.Parser؟
 يمكنك طلب الدعم الفني وطرح الأسئلة في منتدى GroupDocs.Parser[هنا](https://forum.groupdocs.com/c/parser/17).

@@ -3,7 +3,6 @@ title: กำลังโหลดรูปแบบไฟล์เฉพาะ
 linktitle: กำลังโหลดรูปแบบไฟล์เฉพาะ
 second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกข้อความจากรูปแบบไฟล์ต่างๆ ใน .NET โดยใช้ GroupDocs.Parser บทช่วยสอนทีละขั้นตอนเพื่อการประมวลผลเอกสารอย่างมีประสิทธิภาพ
-type: docs
 weight: 14
 url: /th/net/document-loading/loading-specific-file-formats/
 ---
@@ -71,7 +70,7 @@ GroupDocs.Parser for .NET ช่วยให้การแยกข้อคว
 ### GroupDocs.Parser สำหรับ .NET ใช้งานได้ฟรีหรือไม่
 GroupDocs.Parser สำหรับ .NET เสนอตัวเลือกใบอนุญาตทั้งแบบฟรีและแบบชำระเงิน คุณสามารถสำรวจพวกเขาได้[ที่นี่](https://purchase.groupdocs.com/buy).
 ### GroupDocs.Parser for .NET รองรับไฟล์รูปแบบใดบ้าง
- GroupDocs.Parser รองรับรูปแบบไฟล์ที่หลากหลาย รวมถึง Word, PDF, Excel, PowerPoint, Markdown และอื่นๆ โปรดดูเอกสารประกอบ[ที่นี่](https://reference.groupdocs.com/parser/net/) สำหรับรายการทั้งหมด
+ GroupDocs.Parser รองรับรูปแบบไฟล์ที่หลากหลาย รวมถึง Word, PDF, Excel, PowerPoint, Markdown และอื่นๆ โปรดดูเอกสารประกอบ[ที่นี่](https://tutorials.groupdocs.com/parser/net/) สำหรับรายการทั้งหมด
 ### ฉันสามารถลองใช้ GroupDocs.Parser สำหรับ .NET ก่อนซื้อได้หรือไม่
  ใช่ คุณสามารถเข้าถึงเวอร์ชันทดลองใช้ฟรีได้[ที่นี่](https://releases.groupdocs.com/).
 ### ฉันจะรับการสนับสนุนหรือถามคำถามเกี่ยวกับ GroupDocs.Parser for .NET ได้ที่ไหน

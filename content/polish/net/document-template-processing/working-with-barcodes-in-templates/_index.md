@@ -3,7 +3,6 @@ title: Praca z kodami kreskowymi w szablonach
 linktitle: Praca z kodami kreskowymi w szablonach
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak używać GroupDocs.Parser dla .NET do wyodrębniania danych strukturalnych z dokumentów przy użyciu szablonów. Uprość wyodrębnianie danych dzięki polom kodów kreskowych.
-type: docs
 weight: 10
 url: /pl/net/document-template-processing/working-with-barcodes-in-templates/
 ---

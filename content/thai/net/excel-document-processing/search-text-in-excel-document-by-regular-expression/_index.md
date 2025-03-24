@@ -3,7 +3,6 @@ title: ค้นหาข้อความในเอกสาร Excel ด้
 linktitle: ค้นหาข้อความในเอกสาร Excel ด้วยนิพจน์ปกติ
 second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีค้นหาข้อความในเอกสาร Excel โดยใช้นิพจน์ทั่วไปด้วย GroupDocs.Parser for .NET ทำการค้นหาข้อความขั้นสูงอย่างมีประสิทธิภาพ
-type: docs
 weight: 17
 url: /th/net/excel-document-processing/search-text-in-excel-document-by-regular-expression/
 ---

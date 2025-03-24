@@ -3,7 +3,6 @@ title: Munka jelszóval védett dokumentumokkal
 linktitle: Munka jelszóval védett dokumentumokkal
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki szöveget jelszóval védett dokumentumokból a GroupDocs.Parser for .NET segítségével. Növelje dokumentumfeldolgozási képességeit.
-type: docs
 weight: 15
 url: /hu/net/document-loading/working-with-password-protected-documents/
 ---
@@ -77,7 +76,7 @@ Igen, a GroupDocs.Parser támogatja a szöveg kinyerését a jelszóval védett 
 ### Kompatibilis a GroupDocs.Parser különféle dokumentumformátumokkal, például DOCX, XLSX és PPTX?
 A GroupDocs.Parser a PDF-en túlmenően sokféle dokumentumformátumot képes kezelni, beleértve a Microsoft Office formátumokat is.
 ### Hol találom a GroupDocs.Parser for .NET részletes dokumentációját?
- Fedezze fel a teljes dokumentációt[itt](https://reference.groupdocs.com/parser/net/).
+ Fedezze fel a teljes dokumentációt[itt](https://tutorials.groupdocs.com/parser/net/).
 ### Hogyan kaphatok támogatást, vagy hogyan tehetek fel kérdéseket a GroupDocs.Parser for .NET-hez kapcsolódóan?
  Látogassa meg a GroupDocs közösségi fórumot[itt](https://forum.groupdocs.com/c/parser/17) segítségért.
 ### Elérhető a GroupDocs.Parser for .NET próbaverziója?

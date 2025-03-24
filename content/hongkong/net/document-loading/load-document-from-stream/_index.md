@@ -3,7 +3,6 @@ title: 從串流載入文檔
 linktitle: 從串流載入文檔
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser 從 .NET 中的各種文件格式中擷取文字。帶有程式碼範例的分步指南。
-type: docs
 weight: 12
 url: /zh-hant/net/document-loading/load-document-from-stream/
 ---
@@ -61,4 +60,4 @@ GroupDocs.Parser 支援多種文件格式，包括 DOCX、PDF、XLSX、PPTX、EP
 ### 如何獲得 GroupDocs.Parser 的臨時許可證？
 您可以從以下地址取得臨時許可證[這裡](https://purchase.groupdocs.com/temporary-license/).
 ### 在哪裡可以找到有關 GroupDocs.Parser 的更多支援或文件？
-如需更多支持，請訪問[GroupDocs.Parser 論壇](https://forum.groupdocs.com/c/parser/17)或參考[文件](https://reference.groupdocs.com/parser/net/).
+如需更多支持，請訪問[GroupDocs.Parser 論壇](https://forum.groupdocs.com/c/parser/17)或參考[文件](https://tutorials.groupdocs.com/parser/net/).

@@ -3,7 +3,6 @@ title: แยกตารางออกจากหน้าเอกสาร
 linktitle: แยกตารางออกจากหน้าเอกสาร
 second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกตารางออกจากเอกสารโดยทางโปรแกรมโดยใช้ GroupDocs.Parser สำหรับ .NET บทช่วยสอนที่ครอบคลุมนี้ให้คำแนะนำทีละขั้นตอน
-type: docs
 weight: 11
 url: /th/net/table-extraction/extract-tables-from-document-page/
 ---

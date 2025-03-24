@@ -3,7 +3,6 @@ title: 通过关键字在 Word 文档中搜索文本
 linktitle: 通过关键字在 Word 文档中搜索文本
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 在 Word 文档中搜索文本。高效提取特定关键字。
-type: docs
 weight: 18
 url: /zh/net/word-document-processing/search-text-in-word-document-by-keyword/
 ---

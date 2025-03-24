@@ -3,7 +3,6 @@ title: Extrahera hyperlänkar från Word-dokument
 linktitle: Extrahera hyperlänkar från Word-dokument
 second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du extraherar hyperlänkar från Word-dokument med GroupDocs.Parser för .NET. Steg-för-steg guide med kodexempel.
-type: docs
 weight: 10
 url: /sv/net/word-document-processing/extract-hyperlinks-from-word-document/
 ---

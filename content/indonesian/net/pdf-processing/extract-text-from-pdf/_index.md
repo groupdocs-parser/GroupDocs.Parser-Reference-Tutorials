@@ -3,7 +3,6 @@ title: Ekstrak Teks dari PDF
 linktitle: Ekstrak Teks dari PDF
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak teks dari dokumen PDF menggunakan GroupDocs.Parser untuk .NET. Tutorial langkah demi langkah untuk pengembang.
-type: docs
 weight: 14
 url: /id/net/pdf-processing/extract-text-from-pdf/
 ---
@@ -58,7 +57,7 @@ Ya, GroupDocs.Parser mendukung berbagai format termasuk DOCX, XLSX, PPTX, dan ba
 ### Bisakah saya mencoba GroupDocs.Parser sebelum membeli lisensi?
  Ya, Anda bisa mendapatkan versi uji coba gratis[Di Sini](https://releases.groupdocs.com/).
 ### Di mana saya dapat menemukan dokumentasi untuk GroupDocs.Parser?
- Dokumentasi terperinci tersedia[Di Sini](https://reference.groupdocs.com/parser/net/).
+ Dokumentasi terperinci tersedia[Di Sini](https://tutorials.groupdocs.com/parser/net/).
 ### Bagaimana saya bisa mendapatkan dukungan teknis untuk GroupDocs.Parser?
  Anda dapat mencari bantuan di forum dukungan[Di Sini](https://forum.groupdocs.com/c/parser/17).
 ### Bagaimana cara mendapatkan lisensi sementara untuk GroupDocs.Parser?

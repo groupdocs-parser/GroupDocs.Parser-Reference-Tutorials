@@ -3,7 +3,6 @@ title: Поиск текста по ключевому слову
 linktitle: Поиск текста по ключевому слову
 second_title: GroupDocs.Parser .NET API
 description: Узнайте, как искать текст по ключевому слову в документах с помощью GroupDocs.Parser для .NET. Легко и эффективно извлекайте релевантный контент.
-type: docs
 weight: 21
 url: /ru/net/text-extraction/search-text-by-keyword/
 ---
@@ -63,7 +62,7 @@ foreach (SearchResult result in searchResults)
 ### Могу ли я выполнять расширенные операции по извлечению текста с помощью GroupDocs.Parser?
 Абсолютно! Помимо текстового поиска, GroupDocs.Parser позволяет извлекать метаданные, извлекать структурированный текст и многое другое.
 ### Где я могу найти подробную документацию по GroupDocs.Parser?
-Изучите полную документацию[здесь](https://reference.groupdocs.com/parser/net/).
+Изучите полную документацию[здесь](https://tutorials.groupdocs.com/parser/net/).
 ### Как я могу получить поддержку или помощь по запросам, связанным с GroupDocs.Parser?
  Посетите форум GroupDocs для получения поддержки и обсуждений.[здесь](https://forum.groupdocs.com/c/parser/17).
 ### Доступна ли пробная версия для оценки GroupDocs.Parser перед покупкой?

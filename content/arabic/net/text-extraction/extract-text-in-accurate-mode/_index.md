@@ -3,7 +3,6 @@ title: استخراج النص في الوضع الدقيق
 linktitle: استخراج النص في الوضع الدقيق
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج النص بدقة من المستندات في .NET باستخدام GroupDocs.Parser لمعالجة البيانات بسلاسة.
-type: docs
 weight: 18
 url: /ar/net/text-extraction/extract-text-in-accurate-mode/
 ---

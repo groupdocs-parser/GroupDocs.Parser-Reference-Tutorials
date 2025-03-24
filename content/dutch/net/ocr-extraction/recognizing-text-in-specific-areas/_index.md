@@ -3,7 +3,6 @@ title: Tekst herkennen in specifieke gebieden
 linktitle: Tekst herkennen in specifieke gebieden
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u GroupDocs.Parser voor .NET kunt gebruiken om tekst uit specifieke gebieden in documenten te extraheren met OCR-mogelijkheden.
-type: docs
 weight: 13
 url: /nl/net/ocr-extraction/recognizing-text-in-specific-areas/
 ---

@@ -3,7 +3,6 @@ title: 長方形領域内のテキストの認識
 linktitle: 長方形領域内のテキストの認識
 second_title: GroupDocs.Parser .NET API
 description: OCR 機能を備えた GroupDocs.Parser for .NET を使用して、ドキュメントの特定の領域内のテキストを認識する方法を学習します。
-type: docs
 weight: 14
 url: /ja/net/ocr-extraction/recognizing-text-in-rectangular-regions/
 ---

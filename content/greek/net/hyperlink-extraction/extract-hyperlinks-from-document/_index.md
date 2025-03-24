@@ -3,7 +3,6 @@ title: Εξαγωγή υπερσυνδέσμων από το έγγραφο
 linktitle: Εξαγωγή υπερσυνδέσμων από το έγγραφο
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε υπερσυνδέσμους από έγγραφα χρησιμοποιώντας το GroupDocs.Parser για .NET. Βελτιώστε τις εφαρμογές σας C# με αυτόν τον απλό οδηγό.
-type: docs
 weight: 10
 url: /el/net/hyperlink-extraction/extract-hyperlinks-from-document/
 ---
@@ -73,7 +72,7 @@ foreach (PageHyperlinkArea hyperlink in hyperlinks)
 ### Υπάρχει διαθέσιμη δωρεάν δοκιμή για το GroupDocs.Parser;
  Ναι, μπορείτε να αποκτήσετε πρόσβαση σε μια δωρεάν δοκιμή του GroupDocs.Parser[εδώ](https://releases.groupdocs.com/).
 ### Πού μπορώ να βρω τεκμηρίωση για το GroupDocs.Parser;
- Μπορείτε να βρείτε αναλυτική τεκμηρίωση για το GroupDocs.Parser[εδώ](https://reference.groupdocs.com/parser/net/).
+ Μπορείτε να βρείτε αναλυτική τεκμηρίωση για το GroupDocs.Parser[εδώ](https://tutorials.groupdocs.com/parser/net/).
 ### Πώς μπορώ να αποκτήσω μια προσωρινή άδεια για το GroupDocs.Parser;
  Μπορείτε να αποκτήσετε μια προσωρινή άδεια για το GroupDocs.Parser[εδώ](https://purchase.groupdocs.com/temporary-license/).
 ### Το GroupDocs προσφέρει υποστήριξη για την αντιμετώπιση προβλημάτων;

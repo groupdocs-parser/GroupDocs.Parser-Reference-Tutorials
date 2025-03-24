@@ -3,7 +3,6 @@ title: Extraheer tekst met coderingsdetectie
 linktitle: Extraheer tekst met coderingsdetectie
 second_title: GroupDocs.Parser .NET API
 description: Extraheer tekst uit documenten met coderingsdetectie met behulp van GroupDocs.Parser voor .NET. Parseer op efficiënte wijze verschillende formaten in uw .NET-applicaties.
-type: docs
 weight: 10
 url: /nl/net/text-extraction/extract-text-with-encoding-detection/
 ---

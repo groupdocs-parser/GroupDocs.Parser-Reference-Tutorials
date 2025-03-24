@@ -3,7 +3,6 @@ title: Extrakce hypertextového odkazu
 linktitle: Extrakce hypertextového odkazu
 second_title: GroupDocs.Parser .NET API
 description: Bez námahy extrahujte hypertextové odkazy z dokumentů v .NET pomocí GroupDocs.Parser. Vylepšete své aplikace C# pomocí podrobných průvodců pro extrakci hypertextových odkazů.
-type: docs
 weight: 25
 url: /cs/net/hyperlink-extraction/
 ---
@@ -25,7 +24,7 @@ Extrahování hypertextových odkazů z konkrétních stránek dokumentu je bě�
 
 ## Extrahujte hypertextové odkazy z oblasti stránky dokumentu
 
-Někdy může být nutné extrahovat hypertextové odkazy z konkrétních oblastí v dokumentu pro cílenou analýzu nebo zpracování. V tutoriálu "Extrahovat hypertextové odkazy z oblasti stránky dokumentu" se dozvíte, jak toho dosáhnout pomocí GroupDocs.Parser for .NET. Postupujte podle obsáhlého průvodce a příkladů kódu a bez problémů extrahujte hypertextové odkazy z určených oblastí dokumentu. Ať už získáváte reference z akademických prací nebo analyzujete hypertextové odkazy ve zprávách, tento výukový program vás vybaví dovednostmi, jak přesně zvládnout extrakci hypertextových odkazů ve vašich aplikacích C#. Jste připraveni posunout své možnosti zpracování dokumentů na další úroveň?
+Někdy může být nutné extrahovat hypertextové odkazy z konkrétních oblastí v dokumentu pro cílenou analýzu nebo zpracování. V tutoriálu "Extrahovat hypertextové odkazy z oblasti stránky dokumentu" se dozvíte, jak toho dosáhnout pomocí GroupDocs.Parser for .NET. Postupujte podle obsáhlého průvodce a příkladů kódu a bez problémů extrahujte hypertextové odkazy z určených oblastí dokumentu. Ať už získáváte tutorials z akademických prací nebo analyzujete hypertextové odkazy ve zprávách, tento výukový program vás vybaví dovednostmi, jak přesně zvládnout extrakci hypertextových odkazů ve vašich aplikacích C#. Jste připraveni posunout své možnosti zpracování dokumentů na další úroveň?
 
 [Přečtěte si více](./extract-hyperlinks-from-document-page-area/)
 

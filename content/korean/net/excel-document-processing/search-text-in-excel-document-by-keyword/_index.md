@@ -3,7 +3,6 @@ title: 키워드로 Excel 문서의 텍스트 검색
 linktitle: 키워드로 Excel 문서의 텍스트 검색
 second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 Excel 문서 내에서 텍스트를 검색하는 방법을 알아보세요. 고급 텍스트 검색 기능을 .NET 애플리케이션에 통합하세요.
-type: docs
 weight: 16
 url: /ko/net/excel-document-processing/search-text-in-excel-document-by-keyword/
 ---
@@ -56,7 +55,7 @@ foreach (SearchResult result in searchResults)
 ### GroupDocs.Parser는 대규모 문서 처리 작업에 적합합니까?
 전적으로! GroupDocs.Parser는 강력한 텍스트 추출 및 검색 기능을 사용하여 대용량 문서를 효율적으로 처리하도록 설계되었습니다.
 ### .NET용 GroupDocs.Parser에 대한 추가 문서와 지원은 어디에서 찾을 수 있습니까?
- 방문하다[GroupDocs.Parser 문서](https://reference.groupdocs.com/parser/net/) 자세한 API 참조를 확인하고[GroupDocs 포럼](https://forum.groupdocs.com/c/parser/17) 지역 사회 지원을 위해.
+ 방문하다[GroupDocs.Parser 문서](https://tutorials.groupdocs.com/parser/net/) 자세한 API 참조를 확인하고[GroupDocs 포럼](https://forum.groupdocs.com/c/parser/17) 지역 사회 지원을 위해.
 ### 구매하기 전에 .NET용 GroupDocs.Parser를 사용해 볼 수 있습니까?
  예, 다음을 통해 기능을 탐색할 수 있습니다.[무료 시험판](https://releases.groupdocs.com/) 구매하기 전에.
 ### GroupDocs.Parser의 임시 라이센스를 얻으려면 어떻게 해야 합니까?

@@ -3,7 +3,6 @@ title: استخراج الصور من مستند Word
 linktitle: استخراج الصور من مستند Word
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج الصور من مستند Word باستخدام GroupDocs.Parser لـ .NET. يوفر هذا البرنامج التعليمي إرشادات خطوة بخطوة لدمج الصورة في .NET الخاص بك.
-type: docs
 weight: 11
 url: /ar/net/word-document-processing/extract-images-from-word-document/
 ---
@@ -62,7 +61,7 @@ foreach (PageImageArea image in images)
 ### كيف يمكنني الحصول على ترخيص مؤقت لـ GroupDocs.Parser؟
  يمكنك الحصول على ترخيص مؤقت لأغراض الاختبار من[هنا](https://purchase.groupdocs.com/temporary-license/).
 ### أين يمكنني العثور على مزيد من الوثائق حول GroupDocs.Parser لـ .NET؟
- يمكنك الرجوع إلى الوثائق الكاملة[هنا](https://reference.groupdocs.com/parser/net/).
+ يمكنك الرجوع إلى الوثائق الكاملة[هنا](https://tutorials.groupdocs.com/parser/net/).
 ### هل هناك نسخة تجريبية مجانية متاحة لـ GroupDocs.Parser؟
  نعم، يمكنك استكشاف ميزات GroupDocs.Parser من خلال النسخة التجريبية المجانية المتاحة[هنا](https://releases.groupdocs.com/).
 ### كيف يمكنني الحصول على الدعم أو طرح الأسئلة المتعلقة بـ GroupDocs.Parser؟

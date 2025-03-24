@@ -3,7 +3,6 @@ title: Extract Hyperlinks from Document Page
 linktitle: Extract Hyperlinks from Document Page
 second_title: GroupDocs.Parser .NET API
 description: Learn how to extract hyperlinks from documents using GroupDocs.Parser for .NET. Step-by-step guide for hyperlink extraction in C#.
-type: docs
 weight: 11
 url: /net/hyperlink-extraction/extract-hyperlinks-from-document-page/
 ---
@@ -12,7 +11,7 @@ In this tutorial, we'll explore how to use GroupDocs.Parser for .NET to extract 
 ## Prerequisites
 Before we begin, ensure you have the following:
 - Visual Studio: Install Visual Studio on your development machine.
-- GroupDocs.Parser Library: Download and reference the GroupDocs.Parser library. You can get it from [here](https://releases.groupdocs.com/parser/net/).
+- GroupDocs.Parser Library: Download and tutorials the GroupDocs.Parser library. You can get it from [here](https://releases.groupdocs.com/parser/net/).
 - Sample Document: Prepare a sample document (e.g., DOCX, PDF) containing hyperlinks for testing.
 
 ## Import Namespaces

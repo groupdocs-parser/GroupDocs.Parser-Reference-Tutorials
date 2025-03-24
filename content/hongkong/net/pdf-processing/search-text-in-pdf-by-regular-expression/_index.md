@@ -3,7 +3,6 @@ title: 透過正規表示式搜尋 PDF 中的文本
 linktitle: 透過正規表示式搜尋 PDF 中的文本
 second_title: GroupDocs.Parser .NET API
 description: 使用正規表示式和 GroupDocs.Parser 搜尋 PDF 文件中的特定文字。輕鬆擷取、分析和操作 PDF 文字。
-type: docs
 weight: 19
 url: /zh-hant/net/pdf-processing/search-text-in-pdf-by-regular-expression/
 ---
@@ -52,7 +51,7 @@ foreach (SearchResult result in searchResults)
 ### GroupDocs.Parser 可以處理 PDF 以外的其他文件格式嗎？
 是的，GroupDocs.Parser 支援各種文件格式，例如 DOCX、XLSX、PPTX 等。
 ### 在哪裡可以找到有關 GroupDocs.Parser 的更多資源和支援？
-您可以訪問[GroupDocs.Parser 文檔](https://reference.groupdocs.com/parser/net/)並向有關部門尋求協助[集團文檔論壇](https://forum.groupdocs.com/c/parser/17).
+您可以訪問[GroupDocs.Parser 文檔](https://tutorials.groupdocs.com/parser/net/)並向有關部門尋求協助[集團文檔論壇](https://forum.groupdocs.com/c/parser/17).
 ### GroupDocs.Parser 是否有免費試用版？
 是的，您可以訪問[免費試用版](https://releases.groupdocs.com/)GroupDocs.Parser 來探索其功能。
 ### 如何獲得 GroupDocs.Parser 的臨時許可證？

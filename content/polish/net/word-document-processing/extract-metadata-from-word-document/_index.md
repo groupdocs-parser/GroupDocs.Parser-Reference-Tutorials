@@ -3,7 +3,6 @@ title: Wyodrębnij metadane z dokumentu programu Word
 linktitle: Wyodrębnij metadane z dokumentu programu Word
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić metadane z dokumentów programu Word za pomocą programu GroupDocs.Parser dla platformy .NET. Proste kroki do analizowania i pobierania informacji o dokumencie.
-type: docs
 weight: 12
 url: /pl/net/word-document-processing/extract-metadata-from-word-document/
 ---
@@ -55,7 +54,7 @@ W tym samouczku omówiliśmy, jak używać programu GroupDocs.Parser dla platfor
 ### Co to jest GroupDocs.Parser dla .NET?
 GroupDocs.Parser dla .NET to biblioteka do analizowania dokumentów, która umożliwia programistom programowe wyodrębnianie tekstu i metadanych z różnych formatów dokumentów.
 ### Gdzie mogę znaleźć dokumentację GroupDocs.Parser?
- Możesz odwołać się do[dokumentacja](https://reference.groupdocs.com/parser/net/) aby uzyskać szczegółowe informacje na temat korzystania z GroupDocs.Parser dla .NET.
+ Możesz odwołać się do[dokumentacja](https://tutorials.groupdocs.com/parser/net/) aby uzyskać szczegółowe informacje na temat korzystania z GroupDocs.Parser dla .NET.
 ### Jak uzyskać bezpłatną wersję próbną GroupDocs.Parser?
  Możesz pobrać bezpłatną wersję próbną GroupDocs.Parser z[strona z wydaniami](https://releases.groupdocs.com/).
 ### Czy GroupDocs.Parser nadaje się do użytku komercyjnego?

@@ -3,7 +3,6 @@ title: Cari Teks dengan Sorotan
 linktitle: Cari Teks dengan Sorotan
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mencari dan menyorot teks dalam dokumen menggunakan GroupDocs.Parser untuk .NET. Ekstrak wawasan berharga secara efisien.
-type: docs
 weight: 24
 url: /id/net/text-extraction/search-text-with-highlights/
 ---

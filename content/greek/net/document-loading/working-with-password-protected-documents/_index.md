@@ -3,7 +3,6 @@ title: Εργασία με έγγραφα που προστατεύονται μ
 linktitle: Εργασία με έγγραφα που προστατεύονται με κωδικό πρόσβασης
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε κείμενο από έγγραφα που προστατεύονται με κωδικό πρόσβασης χρησιμοποιώντας το GroupDocs.Parser για .NET. Βελτιώστε τις δυνατότητες επεξεργασίας εγγράφων σας.
-type: docs
 weight: 15
 url: /el/net/document-loading/working-with-password-protected-documents/
 ---
@@ -77,7 +76,7 @@ catch (InvalidPasswordException)
 ### Είναι το GroupDocs.Parser συμβατό με διάφορες μορφές εγγράφων όπως DOCX, XLSX και PPTX;
 Οπωσδήποτε, το GroupDocs.Parser μπορεί να χειριστεί ένα ευρύ φάσμα μορφών εγγράφων πέρα από το PDF, συμπεριλαμβανομένων των μορφών του Microsoft Office.
 ### Πού μπορώ να βρω λεπτομερή τεκμηρίωση για το GroupDocs.Parser για .NET;
- Εξερευνήστε την πλήρη τεκμηρίωση[εδώ](https://reference.groupdocs.com/parser/net/).
+ Εξερευνήστε την πλήρη τεκμηρίωση[εδώ](https://tutorials.groupdocs.com/parser/net/).
 ### Πώς μπορώ να λάβω υποστήριξη ή να κάνω ερωτήσεις σχετικά με το GroupDocs.Parser για .NET;
  Επισκεφτείτε το φόρουμ της κοινότητας του GroupDocs[εδώ](https://forum.groupdocs.com/c/parser/17) για βοήθεια.
 ### Υπάρχει διαθέσιμη δοκιμαστική έκδοση για το GroupDocs.Parser για .NET;

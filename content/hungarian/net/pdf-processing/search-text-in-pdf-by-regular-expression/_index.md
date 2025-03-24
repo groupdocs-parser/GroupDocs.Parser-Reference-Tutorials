@@ -3,7 +3,6 @@ title: Szöveg keresése PDF-ben reguláris kifejezéssel
 linktitle: Szöveg keresése PDF-ben reguláris kifejezéssel
 second_title: GroupDocs.Parser .NET API
 description: Adott szöveg keresése PDF-dokumentumokban reguláris kifejezések használatával a GroupDocs.Parser segítségével. Könnyedén bontsa ki, elemezze és kezelje a PDF szöveget.
-type: docs
 weight: 19
 url: /hu/net/pdf-processing/search-text-in-pdf-by-regular-expression/
 ---
@@ -52,7 +51,7 @@ Ebben az oktatóanyagban megvizsgáltuk, hogyan használhatjuk a GroupDocs.Parse
 ### A GroupDocs.Parser kezelhet más dokumentumformátumokat a PDF-eken kívül?
 Igen, a GroupDocs.Parser különféle dokumentumformátumokat támogat, például DOCX, XLSX, PPTX stb.
 ### Hol találok további erőforrásokat és támogatást a GroupDocs.Parser számára?
- Meglátogathatja a[GroupDocs.Parser dokumentáció](https://reference.groupdocs.com/parser/net/) és kérjen segítséget a[GroupDocs fórum](https://forum.groupdocs.com/c/parser/17).
+ Meglátogathatja a[GroupDocs.Parser dokumentáció](https://tutorials.groupdocs.com/parser/net/) és kérjen segítséget a[GroupDocs fórum](https://forum.groupdocs.com/c/parser/17).
 ### Van ingyenes próbaverzió a GroupDocs.Parser számára?
  Igen, hozzáférhet a[ingyenes próbaverzió](https://releases.groupdocs.com/) a GroupDocs.Parser alkalmazásban, hogy felfedezze szolgáltatásait.
 ### Hogyan szerezhetek ideiglenes licencet a GroupDocs.Parser számára?

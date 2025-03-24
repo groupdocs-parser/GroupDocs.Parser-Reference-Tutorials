@@ -3,7 +3,6 @@ title: Mở khóa khả năng phân tích cú pháp tài liệu với GroupDocs.
 linktitle: Hướng dẫn về GroupDocs.Parser
 additionalTitle: Tài liệu tham khảo API GroupDocs
 description: Mở khóa các kỹ thuật trích xuất dữ liệu hiệu quả với GroupDocs.Parser cho .NET & Java. Khám phá các hướng dẫn về văn bản, bảng, trích xuất hình ảnh và hơn thế nữa.
-type: docs
 weight: 11
 url: /vi/
 is_root: true

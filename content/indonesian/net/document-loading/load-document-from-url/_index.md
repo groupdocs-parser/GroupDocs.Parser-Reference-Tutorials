@@ -3,7 +3,6 @@ title: Muat Dokumen dari URL
 linktitle: Muat Dokumen dari URL
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak teks dari dokumen menggunakan GroupDocs.Parser untuk .NET. Tutorial ini mencakup memuat dokumen dari URL dan mengekstraksi teks langkah demi langkah.
-type: docs
 weight: 13
 url: /id/net/document-loading/load-document-from-url/
 ---
@@ -64,6 +63,6 @@ Ya, GroupDocs.Parser memungkinkan Anda mengekstrak metadata, teks, dan informasi
 ### Apakah ada versi uji coba yang tersedia untuk GroupDocs.Parser?
  Ya, Anda bisa mendapatkan GroupDocs.Parser versi uji coba gratis dari[Di Sini](https://releases.groupdocs.com/).
 ### Di mana saya dapat menemukan dokumentasi untuk GroupDocs.Parser?
- Dokumentasi terperinci untuk GroupDocs.Parser tersedia[Di Sini](https://reference.groupdocs.com/parser/net/).
+ Dokumentasi terperinci untuk GroupDocs.Parser tersedia[Di Sini](https://tutorials.groupdocs.com/parser/net/).
 ### Bagaimana saya bisa mendapatkan dukungan teknis untuk GroupDocs.Parser?
 Anda dapat mencari dukungan teknis dan mengajukan pertanyaan di forum GroupDocs.Parser[Di Sini](https://forum.groupdocs.com/c/parser/17).

@@ -3,7 +3,6 @@ title: Hledání textu v PDF podle klíčového slova
 linktitle: Hledání textu v PDF podle klíčového slova
 second_title: GroupDocs.Parser .NET API
 description: Naučte se hledat konkrétní text v dokumentech PDF pomocí GroupDocs.Parser for .NET. Integrujte výkonné možnosti textového vyhledávání do svého .NET efektivně.
-type: docs
 weight: 18
 url: /cs/net/pdf-processing/search-text-in-pdf-by-keyword/
 ---

@@ -3,7 +3,6 @@ title: Wyszukaj tekst według stron
 linktitle: Wyszukaj tekst według stron
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyszukiwać tekst według stron przy użyciu GroupDocs.Parser dla .NET. Wydajnie wyodrębniaj określoną treść z dokumentów w aplikacjach .NET.
-type: docs
 weight: 22
 url: /pl/net/text-extraction/search-text-by-pages/
 ---
@@ -64,7 +63,7 @@ Tak, GroupDocs.Parser obsługuje szeroką gamę formatów dokumentów, w tym DOC
 ### Czy mogę wyodrębnić obrazy i metadane z dokumentów za pomocą GroupDocs.Parser?
 Absolutnie GroupDocs.Parser umożliwia wyodrębnianie obrazów, metadanych i tekstu z dokumentów.
 ### Gdzie mogę znaleźć szczegółową dokumentację GroupDocs.Parser?
- Można uzyskać dostęp do dokumentacji[Tutaj](https://reference.groupdocs.com/parser/net/).
+ Można uzyskać dostęp do dokumentacji[Tutaj](https://tutorials.groupdocs.com/parser/net/).
 ### Jak mogę uzyskać tymczasową licencję na GroupDocs.Parser?
  Możesz poprosić o licencję tymczasową[Tutaj](https://purchase.groupdocs.com/temporary-license/).
 ### Gdzie mogę uzyskać pomoc dotyczącą GroupDocs.Parser?

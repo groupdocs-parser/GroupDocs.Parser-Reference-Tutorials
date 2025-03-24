@@ -3,7 +3,6 @@ title: Εξαγωγή κειμένου από έγγραφο του Word
 linktitle: Εξαγωγή κειμένου από έγγραφο του Word
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε κείμενο από έγγραφα του Word χρησιμοποιώντας το GroupDocs.Parser για .NET. Οδηγός βήμα προς βήμα με παραδείγματα κώδικα.
-type: docs
 weight: 15
 url: /el/net/word-document-processing/extract-text-from-word-document/
 ---

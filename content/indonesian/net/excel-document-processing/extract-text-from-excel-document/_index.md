@@ -3,7 +3,6 @@ title: Ekstrak Teks dari Dokumen Excel
 linktitle: Ekstrak Teks dari Dokumen Excel
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak teks dari dokumen Excel menggunakan GroupDocs.Parser untuk .NET dalam langkah sederhana.
-type: docs
 weight: 12
 url: /id/net/excel-document-processing/extract-text-from-excel-document/
 ---
@@ -58,7 +57,7 @@ Ya, GroupDocs.Parser mendukung berbagai format dokumen termasuk Word, PowerPoint
 ### Apakah ada uji coba gratis yang tersedia untuk GroupDocs.Parser?
  Ya, Anda dapat mengunduh uji coba gratis GroupDocs.Parser dari[Di Sini](https://releases.groupdocs.com/).
 ### Di mana saya dapat menemukan dokumentasi untuk GroupDocs.Parser?
- Anda dapat menemukan dokumentasi terperinci untuk GroupDocs.Parser[Di Sini](https://reference.groupdocs.com/parser/net/).
+ Anda dapat menemukan dokumentasi terperinci untuk GroupDocs.Parser[Di Sini](https://tutorials.groupdocs.com/parser/net/).
 ### Bagaimana saya bisa mendapatkan dukungan untuk GroupDocs.Parser?
 Untuk dukungan dan bantuan dengan GroupDocs.Parser, kunjungi[Forum Grup Dokumen](https://forum.groupdocs.com/c/parser/17).
 ### Di mana saya dapat membeli lisensi untuk GroupDocs.Parser?

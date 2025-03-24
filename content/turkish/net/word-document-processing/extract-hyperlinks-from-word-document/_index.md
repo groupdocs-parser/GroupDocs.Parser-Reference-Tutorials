@@ -3,7 +3,6 @@ title: Word Belgesinden Köprüleri Çıkarma
 linktitle: Word Belgesinden Köprüleri Çıkarma
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak Word belgelerinden köprüleri nasıl çıkaracağınızı öğrenin. Kod örnekleri içeren adım adım kılavuz.
-type: docs
 weight: 10
 url: /tr/net/word-document-processing/extract-hyperlinks-from-word-document/
 ---

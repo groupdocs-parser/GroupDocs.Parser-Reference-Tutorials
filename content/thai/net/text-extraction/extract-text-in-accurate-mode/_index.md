@@ -3,7 +3,6 @@ title: แยกข้อความในโหมดแม่นยำ
 linktitle: แยกข้อความในโหมดแม่นยำ
 second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกข้อความจากเอกสารใน .NET อย่างถูกต้องโดยใช้ GroupDocs.Parser เพื่อการประมวลผลข้อมูลที่ราบรื่น
-type: docs
 weight: 18
 url: /th/net/text-extraction/extract-text-in-accurate-mode/
 ---

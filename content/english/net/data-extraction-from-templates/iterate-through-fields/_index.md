@@ -3,7 +3,6 @@ title: Iterate Through Fields
 linktitle: Iterate Through Fields
 second_title: GroupDocs.Parser .NET API
 description: Learn how to extract structured data from documents using GroupDocs.Parser for .NET. Enhance your .NET applications with document data extraction capabilities.
-type: docs
 weight: 11
 url: /net/data-extraction-from-templates/iterate-through-fields/
 ---
@@ -13,7 +12,7 @@ GroupDocs.Parser for .NET is a powerful library that allows developers to extrac
 Before we begin, ensure you have the following prerequisites set up:
 - Basic knowledge of C# programming.
 - Visual Studio installed on your machine.
-- GroupDocs.Parser for .NET library installed and referenced in your project.
+- GroupDocs.Parser for .NET library installed and tutorialsd in your project.
 
 ## Import Namespaces
 To get started, add the necessary namespaces to your C# file:

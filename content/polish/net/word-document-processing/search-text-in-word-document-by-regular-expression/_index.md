@@ -3,7 +3,6 @@ title: Wyszukaj tekst w dokumencie programu Word za pomocą wyrażeń regularnyc
 linktitle: Wyszukaj tekst w dokumencie programu Word za pomocą wyrażeń regularnych
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyszukiwać tekst w dokumentach programu Word przy użyciu wyrażeń regularnych za pomocą programu GroupDocs.Parser dla platformy .NET. Wydajne wyodrębnianie określonej treści.
-type: docs
 weight: 19
 url: /pl/net/word-document-processing/search-text-in-word-document-by-regular-expression/
 ---

@@ -3,7 +3,6 @@ title: 从 Word 文档中提取图像
 linktitle: 从 Word 文档中提取图像
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从 Word 文档中提取图像。本教程提供将图像集成到 .NET 的分步指导。
-type: docs
 weight: 11
 url: /zh/net/word-document-processing/extract-images-from-word-document/
 ---
@@ -62,7 +61,7 @@ foreach (PageImageArea image in images)
 ### 如何获得 GroupDocs.Parser 的临时许可证？
 您可以从以下网站获取临时许可证以进行测试[这里](https://purchase.groupdocs.com/temporary-license/).
 ### 在哪里可以找到有关 GroupDocs.Parser for .NET 的更多文档？
-您可以参考完整文档[这里](https://reference.groupdocs.com/parser/net/).
+您可以参考完整文档[这里](https://tutorials.groupdocs.com/parser/net/).
 ### GroupDocs.Parser 有免费试用版吗？
 是的，您可以通过免费试用探索 GroupDocs.Parser 的功能[这里](https://releases.groupdocs.com/).
 ### 我如何获得支持或询问与 GroupDocs.Parser 相关的问题？

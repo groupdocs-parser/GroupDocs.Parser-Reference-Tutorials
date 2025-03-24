@@ -3,7 +3,6 @@ title: Extraire le texte brut
 linktitle: Extraire le texte brut
 second_title: API GroupDocs.Parser .NET
 description: Découvrez comment extraire du texte brut à partir de documents à l'aide de GroupDocs.Parser pour .NET. Étapes simples pour intégrer l’extraction de texte dans vos applications.
-type: docs
 weight: 14
 url: /fr/net/formatted-text-extraction/extract-plain-text/
 ---

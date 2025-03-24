@@ -3,7 +3,6 @@ title: Extrahera bilder från PDF
 linktitle: Extrahera bilder från PDF
 second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du extraherar bilder från PDF-dokument med GroupDocs.Parser för .NET. Steg-för-steg guide med kodexempel.
-type: docs
 weight: 12
 url: /sv/net/pdf-processing/extract-images-from-pdf/
 ---

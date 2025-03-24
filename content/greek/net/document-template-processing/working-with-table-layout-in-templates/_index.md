@@ -3,7 +3,6 @@ title: Εργασία με τη διάταξη πίνακα σε πρότυπα
 linktitle: Εργασία με τη διάταξη πίνακα σε πρότυπα
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εργάζεστε με διατάξεις πινάκων σε πρότυπα χρησιμοποιώντας το GroupDocs.Parser για .NET. Εξαγωγή δομημένων δεδομένων αποτελεσματικά από έγγραφα.
-type: docs
 weight: 14
 url: /el/net/document-template-processing/working-with-table-layout-in-templates/
 ---

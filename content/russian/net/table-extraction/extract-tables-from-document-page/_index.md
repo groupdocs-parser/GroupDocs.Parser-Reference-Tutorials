@@ -3,7 +3,6 @@ title: Извлечь таблицы со страницы документа
 linktitle: Извлечь таблицы со страницы документа
 second_title: GroupDocs.Parser .NET API
 description: Узнайте, как программно извлекать таблицы из документов с помощью GroupDocs.Parser для .NET. Это подробное руководство содержит пошаговые инструкции.
-type: docs
 weight: 11
 url: /ru/net/table-extraction/extract-tables-from-document-page/
 ---

@@ -3,7 +3,6 @@ title: Şablonlarda Tablo Düzeniyle Çalışmak
 linktitle: Şablonlarda Tablo Düzeniyle Çalışmak
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET kullanarak şablonlardaki tablo düzenleriyle nasıl çalışılacağını öğrenin. Yapılandırılmış verileri belgelerden verimli bir şekilde çıkarın.
-type: docs
 weight: 14
 url: /tr/net/document-template-processing/working-with-table-layout-in-templates/
 ---

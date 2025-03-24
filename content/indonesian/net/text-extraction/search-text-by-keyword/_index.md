@@ -3,7 +3,6 @@ title: Cari Teks berdasarkan Kata Kunci
 linktitle: Cari Teks berdasarkan Kata Kunci
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mencari teks berdasarkan kata kunci dalam dokumen menggunakan GroupDocs.Parser untuk .NET. Ekstrak konten relevan secara efisien dengan mudah.
-type: docs
 weight: 21
 url: /id/net/text-extraction/search-text-by-keyword/
 ---
@@ -63,7 +62,7 @@ Ya, GroupDocs.Parser mendukung berbagai format file, termasuk PDF, DOCX, XLSX, P
 ### Bisakah saya melakukan operasi ekstraksi teks tingkat lanjut menggunakan GroupDocs.Parser?
 Sangat! Selain pencarian teks, GroupDocs.Parser memungkinkan ekstraksi metadata, ekstraksi teks terstruktur, dan banyak lagi.
 ### Di mana saya dapat menemukan dokumentasi terperinci untuk GroupDocs.Parser?
-Jelajahi dokumentasi lengkapnya[Di Sini](https://reference.groupdocs.com/parser/net/).
+Jelajahi dokumentasi lengkapnya[Di Sini](https://tutorials.groupdocs.com/parser/net/).
 ### Bagaimana saya bisa mendapatkan dukungan atau bantuan dengan pertanyaan terkait GroupDocs.Parser?
  Kunjungi forum GroupDocs untuk dukungan dan diskusi[Di Sini](https://forum.groupdocs.com/c/parser/17).
 ### Apakah ada versi uji coba yang tersedia untuk mengevaluasi GroupDocs.Parser sebelum membeli?

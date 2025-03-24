@@ -3,7 +3,6 @@ title: استخراج نص عادي
 linktitle: استخراج نص عادي
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج نص عادي من المستندات باستخدام GroupDocs.Parser لـ .NET. خطوات سهلة لدمج استخراج النص في تطبيقاتك.
-type: docs
 weight: 14
 url: /ar/net/formatted-text-extraction/extract-plain-text/
 ---

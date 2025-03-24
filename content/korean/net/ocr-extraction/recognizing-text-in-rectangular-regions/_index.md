@@ -3,7 +3,6 @@ title: 직사각형 영역의 텍스트 인식
 linktitle: 직사각형 영역의 텍스트 인식
 second_title: GroupDocs.Parser .NET API
 description: OCR 기능이 있는 .NET용 GroupDocs.Parser를 사용하여 문서의 특정 영역에서 텍스트를 인식하는 방법을 알아보세요.
-type: docs
 weight: 14
 url: /ko/net/ocr-extraction/recognizing-text-in-rectangular-regions/
 ---

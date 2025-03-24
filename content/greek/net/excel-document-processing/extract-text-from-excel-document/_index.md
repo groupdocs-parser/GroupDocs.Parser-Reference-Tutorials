@@ -3,7 +3,6 @@ title: Εξαγωγή κειμένου από Έγγραφο Excel
 linktitle: Εξαγωγή κειμένου από Έγγραφο Excel
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε κείμενο από έγγραφα του Excel χρησιμοποιώντας το GroupDocs.Parser για .NET με απλά βήματα.
-type: docs
 weight: 12
 url: /el/net/excel-document-processing/extract-text-from-excel-document/
 ---
@@ -58,7 +57,7 @@ Console.WriteLine(reader.ReadToEnd());
 ### Υπάρχει διαθέσιμη δωρεάν δοκιμή για το GroupDocs.Parser;
  Ναι, μπορείτε να κάνετε λήψη μιας δωρεάν δοκιμής του GroupDocs.Parser από[εδώ](https://releases.groupdocs.com/).
 ### Πού μπορώ να βρω τεκμηρίωση για το GroupDocs.Parser;
- Μπορείτε να βρείτε τη λεπτομερή τεκμηρίωση για το GroupDocs.Parser[εδώ](https://reference.groupdocs.com/parser/net/).
+ Μπορείτε να βρείτε τη λεπτομερή τεκμηρίωση για το GroupDocs.Parser[εδώ](https://tutorials.groupdocs.com/parser/net/).
 ### Πώς μπορώ να λάβω υποστήριξη για το GroupDocs.Parser;
 Για υποστήριξη και βοήθεια με το GroupDocs.Parser, επισκεφθείτε τη διεύθυνση[Φόρουμ GroupDocs](https://forum.groupdocs.com/c/parser/17).
 ### Πού μπορώ να αγοράσω άδεια χρήσης για το GroupDocs.Parser;

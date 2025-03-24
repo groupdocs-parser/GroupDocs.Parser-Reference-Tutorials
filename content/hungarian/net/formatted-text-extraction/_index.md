@@ -3,7 +3,6 @@ title: Formázott szöveg kinyerése
 linktitle: Formázott szöveg kinyerése
 second_title: GroupDocs.Parser .NET API
 description: A GroupDocs.Parser segítségével hatékonyan kivonhatja a formázott szöveget a .NET-ben található dokumentumokból. Tanulja meg a HTML, Markdown és egyszerű szöveg zökkenőmentes kibontását.
-type: docs
 weight: 21
 url: /hu/net/formatted-text-extraction/
 ---

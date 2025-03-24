@@ -3,7 +3,6 @@ title: Word Belgesinden Görüntüleri Çıkarma
 linktitle: Word Belgesinden Görüntüleri Çıkarma
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak bir Word belgesinden görüntüleri nasıl çıkaracağınızı öğrenin. Bu öğretici, görüntüyü .NET'inize entegre etmek için adım adım rehberlik sağlar.
-type: docs
 weight: 11
 url: /tr/net/word-document-processing/extract-images-from-word-document/
 ---
@@ -62,7 +61,7 @@ Evet, GroupDocs.Parser; PDF, PowerPoint, Excel ve daha fazlası dahil olmak üze
 ### GroupDocs.Parser için nasıl geçici lisans alabilirim?
  Aşağıdaki adresten test amaçlı geçici bir lisans alabilirsiniz:[Burada](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Parser for .NET hakkında daha fazla belgeyi nerede bulabilirim?
- Tüm belgelere başvurabilirsiniz[Burada](https://reference.groupdocs.com/parser/net/).
+ Tüm belgelere başvurabilirsiniz[Burada](https://tutorials.groupdocs.com/parser/net/).
 ### GroupDocs.Parser'ın ücretsiz deneme sürümü var mı?
  Evet, GroupDocs.Parser'ın özelliklerini ücretsiz deneme sürümüyle keşfedebilirsiniz[Burada](https://releases.groupdocs.com/).
 ### GroupDocs.Parser ile ilgili nasıl destek alabilirim veya soru sorabilirim?

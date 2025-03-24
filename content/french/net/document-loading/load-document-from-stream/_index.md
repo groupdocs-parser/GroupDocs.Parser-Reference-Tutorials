@@ -3,7 +3,6 @@ title: Charger un document à partir d'un flux
 linktitle: Charger un document à partir d'un flux
 second_title: API GroupDocs.Parser .NET
 description: Découvrez comment extraire du texte de différents formats de documents dans .NET à l'aide de GroupDocs.Parser. Guide étape par étape avec des exemples de code.
-type: docs
 weight: 12
 url: /fr/net/document-loading/load-document-from-stream/
 ---
@@ -61,4 +60,4 @@ Oui, GroupDocs.Parser est compatible avec les applications .NET Framework et .NE
 ### Comment puis-je obtenir une licence temporaire pour GroupDocs.Parser ?
  Vous pouvez obtenir une licence temporaire auprès de[ici](https://purchase.groupdocs.com/temporary-license/).
 ### Où puis-je trouver plus d’assistance ou de documentation pour GroupDocs.Parser ?
- Pour une assistance supplémentaire, visitez le[Forum GroupDocs.Parser](https://forum.groupdocs.com/c/parser/17) ou se référer au[Documentation](https://reference.groupdocs.com/parser/net/).
+ Pour une assistance supplémentaire, visitez le[Forum GroupDocs.Parser](https://forum.groupdocs.com/c/parser/17) ou se référer au[Documentation](https://tutorials.groupdocs.com/parser/net/).

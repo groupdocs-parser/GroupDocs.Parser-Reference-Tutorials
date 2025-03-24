@@ -3,7 +3,6 @@ title: Excel Belgesinden Metin Çıkarma
 linktitle: Excel Belgesinden Metin Çıkarma
 second_title: GroupDocs.Parser .NET API'si
 description: Basit adımlarla GroupDocs.Parser for .NET'i kullanarak Excel belgelerinden nasıl metin ayıklayacağınızı öğrenin.
-type: docs
 weight: 12
 url: /tr/net/excel-document-processing/extract-text-from-excel-document/
 ---
@@ -58,7 +57,7 @@ Evet, GroupDocs.Parser, Word, PowerPoint, PDF ve daha fazlasını içeren çok �
 ### GroupDocs.Parser'ın ücretsiz deneme sürümü var mı?
  Evet, GroupDocs.Parser'ın ücretsiz deneme sürümünü şu adresten indirebilirsiniz:[Burada](https://releases.groupdocs.com/).
 ### GroupDocs.Parser belgelerini nerede bulabilirim?
- GroupDocs.Parser'ın ayrıntılı belgelerini burada bulabilirsiniz.[Burada](https://reference.groupdocs.com/parser/net/).
+ GroupDocs.Parser'ın ayrıntılı belgelerini burada bulabilirsiniz.[Burada](https://tutorials.groupdocs.com/parser/net/).
 ### GroupDocs.Parser için nasıl destek alabilirim?
 GroupDocs.Parser ile ilgili destek ve yardım için şu adresi ziyaret edin:[GroupDocs forumu](https://forum.groupdocs.com/c/parser/17).
 ### GroupDocs.Parser lisansını nereden satın alabilirim?

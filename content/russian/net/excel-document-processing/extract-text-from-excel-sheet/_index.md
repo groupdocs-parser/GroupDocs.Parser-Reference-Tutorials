@@ -3,7 +3,6 @@ title: Извлечь текст из листа Excel
 linktitle: Извлечь текст из листа Excel
 second_title: GroupDocs.Parser .NET API
 description: Узнайте, как извлечь текст из листов Excel с помощью GroupDocs.Parser для .NET. Простые шаги для эффективного извлечения текста.
-type: docs
 weight: 14
 url: /ru/net/excel-document-processing/extract-text-from-excel-sheet/
 ---

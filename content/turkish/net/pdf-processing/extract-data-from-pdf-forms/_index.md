@@ -3,7 +3,6 @@ title: PDF Formlarından Veri Çıkarma
 linktitle: PDF Formlarından Veri Çıkarma
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak PDF formlarından nasıl veri ayıklayacağınızı öğrenin. Kod örnekleri ve SSS içeren adım adım kılavuz.
-type: docs
 weight: 11
 url: /tr/net/pdf-processing/extract-data-from-pdf-forms/
 ---
@@ -79,7 +78,7 @@ Evet, GroupDocs.Parser, DOCX, XLSX, PPTX ve daha fazlası dahil olmak üzere çe
 ### GroupDocs.Parser'ı kullanarak görüntüleri ve meta verileri çıkarabilir miyim?
 Evet, GroupDocs.Parser belgelerden görsellerin, meta verilerin ve metnin çıkarılmasına olanak tanır.
 ### GroupDocs.Parser için ek desteği veya belgeleri nerede bulabilirim?
- Ziyaret edebilirsiniz[GroupDocs.Parser belgeleri](https://reference.groupdocs.com/parser/net/) detaylı bilgi ve örnekler için.
+ Ziyaret edebilirsiniz[GroupDocs.Parser belgeleri](https://tutorials.groupdocs.com/parser/net/) detaylı bilgi ve örnekler için.
 ### GroupDocs.Parser'ın ücretsiz deneme sürümü var mı?
  Evet, şu adrese erişebilirsiniz:[GroupDocs.Parser'ın ücretsiz deneme sürümü](https://releases.groupdocs.com/) özelliklerini keşfetmek için.
 ### GroupDocs.Parser için nasıl geçici lisans alabilirim?

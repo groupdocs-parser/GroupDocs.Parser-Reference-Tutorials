@@ -3,7 +3,6 @@ title: 根据名称获取字段
 linktitle: 根据名称获取字段
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从文档中提取特定数据字段。带有代码示例的分步指南。
-type: docs
 weight: 10
 url: /zh/net/data-extraction-from-templates/get-field-by-name/
 ---

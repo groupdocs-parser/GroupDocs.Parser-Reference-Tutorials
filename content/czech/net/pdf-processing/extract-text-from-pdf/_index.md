@@ -3,7 +3,6 @@ title: Extrahujte text z PDF
 linktitle: Extrahujte text z PDF
 second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat text z dokumentů PDF pomocí GroupDocs.Parser for .NET. Výukový program krok za krokem pro vývojáře.
-type: docs
 weight: 14
 url: /cs/net/pdf-processing/extract-text-from-pdf/
 ---
@@ -58,7 +57,7 @@ Ano, GroupDocs.Parser podporuje širokou škálu formátů včetně DOCX, XLSX, 
 ### Mohu vyzkoušet GroupDocs.Parser před zakoupením licence?
  Ano, můžete získat bezplatnou zkušební verzi[tady](https://releases.groupdocs.com/).
 ### Kde najdu dokumentaci k GroupDocs.Parser?
- K dispozici je podrobná dokumentace[tady](https://reference.groupdocs.com/parser/net/).
+ K dispozici je podrobná dokumentace[tady](https://tutorials.groupdocs.com/parser/net/).
 ### Jak mohu získat technickou podporu pro GroupDocs.Parser?
  Pomoc můžete hledat na fóru podpory[tady](https://forum.groupdocs.com/c/parser/17).
 ### Jak získám dočasnou licenci pro GroupDocs.Parser?

@@ -3,7 +3,6 @@ title: Работа со штрих-кодами в шаблонах
 linktitle: Работа со штрих-кодами в шаблонах
 second_title: GroupDocs.Parser .NET API
 description: Узнайте, как использовать GroupDocs.Parser для .NET для извлечения структурированных данных из документов с помощью шаблонов. Упростите извлечение данных с помощью полей штрих-кода.
-type: docs
 weight: 10
 url: /ru/net/document-template-processing/working-with-barcodes-in-templates/
 ---

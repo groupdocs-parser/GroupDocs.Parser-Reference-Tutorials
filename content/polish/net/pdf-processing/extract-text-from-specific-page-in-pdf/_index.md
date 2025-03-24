@@ -3,7 +3,6 @@ title: Wyodrębnij tekst z określonej strony w formacie PDF
 linktitle: Wyodrębnij tekst z określonej strony w formacie PDF
 second_title: GroupDocs.Parser API .NET
 description: Wyodrębnij tekst z plików PDF za pomocą GroupDocs.Parser dla .NET. Dzięki tej potężnej bibliotece możesz bez trudu pobierać określoną zawartość strony.
-type: docs
 weight: 15
 url: /pl/net/pdf-processing/extract-text-from-specific-page-in-pdf/
 ---

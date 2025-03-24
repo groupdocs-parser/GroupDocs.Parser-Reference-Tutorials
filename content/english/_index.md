@@ -3,7 +3,6 @@ title: Unlock Document Parsing Mastery With GroupDocs.Parser
 linktitle: GroupDocs.Parser Tutorials
 additionalTitle: GroupDocs API References
 description: Unlock efficient data extraction techniques with GroupDocs.Parser for .NET & Java. Explore tutorials on text, table, image extraction & more.
-type: docs
 weight: 11
 url: /
 is_root: true

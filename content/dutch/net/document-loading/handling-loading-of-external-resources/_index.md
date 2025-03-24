@@ -3,7 +3,6 @@ title: Afhandelen van het laden van externe bronnen
 linktitle: Afhandelen van het laden van externe bronnen
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u met externe bronnen in .NET omgaat met GroupDocs.Parser voor efficiënt parseren en extraheren van documenten.
-type: docs
 weight: 10
 url: /nl/net/document-loading/handling-loading-of-external-resources/
 ---
@@ -66,7 +65,7 @@ Ja, GroupDocs.Parser ondersteunt een breed scala aan bestandsindelingen, waarond
 ### Kan ik tekst samen met afbeeldingen extraheren met GroupDocs.Parser?
 Absoluut, GroupDocs.Parser maakt het extraheren van zowel tekst als afbeeldingen uit ondersteunde documentformaten mogelijk.
 ### Waar kan ik gedetailleerde documentatie voor GroupDocs.Parser vinden?
- Ontdek de[documentatie](https://reference.groupdocs.com/parser/net/) voor uitgebreide handleidingen en API-referenties.
+ Ontdek de[documentatie](https://tutorials.groupdocs.com/parser/net/) voor uitgebreide handleidingen en API-referenties.
 ### Hoe verkrijg ik een tijdelijke licentie voor GroupDocs.Parser?
  U kunt een tijdelijke licentie verkrijgen bij de[GroupDocs-aankooppagina](https://purchase.groupdocs.com/temporary-license/).
 ### Waar kan ik hulp zoeken als ik problemen tegenkom met GroupDocs.Parser?

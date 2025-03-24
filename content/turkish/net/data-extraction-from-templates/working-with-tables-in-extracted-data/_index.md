@@ -3,7 +3,6 @@ title: Çıkarılan Verilerde Tablolarla Çalışmak
 linktitle: Çıkarılan Verilerde Tablolarla Çalışmak
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belgelerden tablo verilerini nasıl çıkaracağınızı öğrenin. Yapılandırılmış içeriği önceden tanımlanmış şablonlarla verimli bir şekilde ayrıştırın.
-type: docs
 weight: 12
 url: /tr/net/data-extraction-from-templates/working-with-tables-in-extracted-data/
 ---

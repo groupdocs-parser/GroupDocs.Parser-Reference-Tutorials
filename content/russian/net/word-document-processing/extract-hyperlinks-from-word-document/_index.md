@@ -3,7 +3,6 @@ title: Извлечь гиперссылки из документа Word
 linktitle: Извлечь гиперссылки из документа Word
 second_title: GroupDocs.Parser .NET API
 description: Узнайте, как извлекать гиперссылки из документов Word с помощью GroupDocs.Parser для .NET. Пошаговое руководство с примерами кода.
-type: docs
 weight: 10
 url: /ru/net/word-document-processing/extract-hyperlinks-from-word-document/
 ---

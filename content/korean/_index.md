@@ -3,7 +3,6 @@ title: GroupDocs.Parser를 사용하여 문서 구문 분석 마스터리 잠금
 linktitle: GroupDocs.Parser 자습서
 additionalTitle: GroupDocs API 참조
 description: .NET 및 Java용 GroupDocs.Parser를 사용하여 효율적인 데이터 추출 기술을 활용하세요. 텍스트, 표, 이미지 추출 등에 대한 튜토리얼을 살펴보세요.
-type: docs
 weight: 11
 url: /ko/
 is_root: true

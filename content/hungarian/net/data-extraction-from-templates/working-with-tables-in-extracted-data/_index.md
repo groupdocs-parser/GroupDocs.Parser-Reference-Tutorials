@@ -3,7 +3,6 @@ title: Táblázatok használata a kivont adatokban
 linktitle: Táblázatok használata a kivont adatokban
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan nyerhet ki táblázatadatokat dokumentumokból a GroupDocs.Parser for .NET segítségével. Hatékonyan elemezheti a strukturált tartalmat előre meghatározott sablonokkal.
-type: docs
 weight: 12
 url: /hu/net/data-extraction-from-templates/working-with-tables-in-extracted-data/
 ---

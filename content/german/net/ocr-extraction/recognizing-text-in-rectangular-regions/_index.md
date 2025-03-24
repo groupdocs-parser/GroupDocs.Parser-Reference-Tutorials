@@ -3,7 +3,6 @@ title: Erkennen von Text in rechteckigen Bereichen
 linktitle: Erkennen von Text in rechteckigen Bereichen
 second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET mit OCR-Funktionen Text in bestimmten Bereichen von Dokumenten erkennen.
-type: docs
 weight: 14
 url: /de/net/ocr-extraction/recognizing-text-in-rectangular-regions/
 ---

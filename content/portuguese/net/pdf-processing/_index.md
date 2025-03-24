@@ -3,7 +3,6 @@ title: Processamento de PDF
 linktitle: Processamento de PDF
 second_title: API GroupDocs.Parser .NET
 description: Domine o processamento de PDF com GroupDocs.Parser para .NET. Aprenda a extrair anexos, dados, imagens, metadados e texto de forma eficiente de PDFs.
-type: docs
 weight: 31
 url: /pt/net/pdf-processing/
 ---

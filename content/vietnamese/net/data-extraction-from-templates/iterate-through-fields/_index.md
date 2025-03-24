@@ -3,7 +3,6 @@ title: Lặp lại qua các trường
 linktitle: Lặp lại qua các trường
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất dữ liệu có cấu trúc từ tài liệu bằng GroupDocs.Parser cho .NET. Nâng cao các ứng dụng .NET của bạn với khả năng trích xuất dữ liệu tài liệu.
-type: docs
 weight: 11
 url: /vi/net/data-extraction-from-templates/iterate-through-fields/
 ---

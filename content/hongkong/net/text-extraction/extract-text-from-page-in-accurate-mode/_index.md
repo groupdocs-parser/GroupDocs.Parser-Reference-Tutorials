@@ -3,7 +3,6 @@ title: 以準確模式從頁面中提取文本
 linktitle: 以準確模式從頁面中提取文本
 second_title: GroupDocs.Parser .NET API
 description: 在這個綜合教學中了解如何使用 GroupDocs.Parser for .NET 從文件中準確提取文字。
-type: docs
 weight: 16
 url: /zh-hant/net/text-extraction/extract-text-from-page-in-accurate-mode/
 ---

@@ -3,7 +3,6 @@ title: Trích xuất văn bản từ tài liệu Word
 linktitle: Trích xuất văn bản từ tài liệu Word
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất văn bản từ tài liệu Word bằng GroupDocs.Parser cho .NET. Hướng dẫn từng bước với các ví dụ về mã.
-type: docs
 weight: 15
 url: /vi/net/word-document-processing/extract-text-from-word-document/
 ---

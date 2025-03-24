@@ -3,7 +3,6 @@ title: Sök text i Word-dokument efter nyckelord
 linktitle: Sök text i Word-dokument efter nyckelord
 second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du söker efter text i Word-dokument med GroupDocs.Parser för .NET. Extrahera specifika sökord effektivt.
-type: docs
 weight: 18
 url: /sv/net/word-document-processing/search-text-in-word-document-by-keyword/
 ---

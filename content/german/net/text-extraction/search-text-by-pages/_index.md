@@ -3,7 +3,6 @@ title: Text seitenweise durchsuchen
 linktitle: Text seitenweise durchsuchen
 second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET seitenweise nach Text suchen. Extrahieren Sie effizient spezifische Inhalte aus Dokumenten in Ihren .NET-Anwendungen.
-type: docs
 weight: 22
 url: /de/net/text-extraction/search-text-by-pages/
 ---
@@ -64,7 +63,7 @@ Ja, GroupDocs.Parser unterstützt eine breite Palette von Dokumentformaten, daru
 ### Kann ich mit GroupDocs.Parser Bilder und Metadaten aus Dokumenten extrahieren?
 Absolut, GroupDocs.Parser ermöglicht die Extraktion von Bildern, Metadaten und Text aus Dokumenten.
 ### Wo finde ich eine ausführliche Dokumentation für GroupDocs.Parser?
- Sie können auf die Dokumentation zugreifen[Hier](https://reference.groupdocs.com/parser/net/).
+ Sie können auf die Dokumentation zugreifen[Hier](https://tutorials.groupdocs.com/parser/net/).
 ### Wie kann ich eine temporäre Lizenz für GroupDocs.Parser erhalten?
  Sie können eine temporäre Lizenz anfordern[Hier](https://purchase.groupdocs.com/temporary-license/).
 ### Wo erhalte ich Unterstützung oder Hilfe zu GroupDocs.Parser?

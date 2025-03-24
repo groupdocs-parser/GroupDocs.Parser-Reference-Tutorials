@@ -3,7 +3,6 @@ title: العمل مع معلمات الجدول في القوالب
 linktitle: العمل مع معلمات الجدول في القوالب
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج البيانات من الجداول في المستندات باستخدام GroupDocs.Parser لـ .NET. دليل خطوة بخطوة لاستخدام معلمات الجدول.
-type: docs
 weight: 15
 url: /ar/net/document-template-processing/working-with-table-parameters-in-templates/
 ---

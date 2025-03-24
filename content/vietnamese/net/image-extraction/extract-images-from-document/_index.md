@@ -3,7 +3,6 @@ title: Trích xuất hình ảnh từ tài liệu
 linktitle: Trích xuất hình ảnh từ tài liệu
 second_title: API GroupDocs.Parser .NET
 description: Trích xuất hình ảnh từ tài liệu một cách dễ dàng bằng GroupDocs.Parser cho .NET. Khả năng xử lý tài liệu của bạn và hợp lý hóa các tác vụ trích xuất hình ảnh một cách hiệu quả.
-type: docs
 weight: 11
 url: /vi/net/image-extraction/extract-images-from-document/
 ---
@@ -67,7 +66,7 @@ GroupDocs.Parser hỗ trợ trích xuất hình ảnh từ nhiều định dạn
 ### Có bản dùng thử miễn phí cho GroupDocs.Parser không?
  Có, bạn có thể truy cập bản dùng thử miễn phí của GroupDocs.Parser từ[trang mạng](https://releases.groupdocs.com/).
 ### Tôi có thể tìm tài liệu về GroupDocs.Parser ở đâu?
- Tài liệu chi tiết về GroupDocs.Parser có thể được tìm thấy[đây](https://reference.groupdocs.com/parser/net/).
+ Tài liệu chi tiết về GroupDocs.Parser có thể được tìm thấy[đây](https://tutorials.groupdocs.com/parser/net/).
 ### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho GroupDocs.Parser?
  Bạn có thể xin giấy phép tạm thời từ[trang giấy phép tạm thời](https://purchase.groupdocs.com/temporary-license/).
 ### Tôi có thể nhận hỗ trợ cho GroupDocs.Parser ở đâu?

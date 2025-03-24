@@ -3,7 +3,6 @@ title: Trích xuất tệp đính kèm từ danh mục PDF
 linktitle: Trích xuất tệp đính kèm từ danh mục PDF
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất tệp đính kèm từ danh mục PDF bằng GroupDocs.Parser cho .NET trong hướng dẫn toàn diện này.
-type: docs
 weight: 10
 url: /vi/net/pdf-processing/extract-attachments-from-pdf-portfolios/
 ---

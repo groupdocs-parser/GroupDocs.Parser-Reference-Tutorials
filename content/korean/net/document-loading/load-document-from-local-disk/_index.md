@@ -3,7 +3,6 @@ title: 로컬 디스크에서 문서 로드
 linktitle: 로컬 디스크에서 문서 로드
 second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 다양한 문서 형식에서 텍스트를 추출하는 방법을 알아보세요. C#을 사용한 쉽고 효율적인 텍스트 추출.
-type: docs
 weight: 11
 url: /ko/net/document-loading/load-document-from-local-disk/
 ---
@@ -57,7 +56,7 @@ GroupDocs.Parser는 PDF, Microsoft Office 문서(Word, Excel, PowerPoint) 등을
 ### GroupDocs.Parser를 사용하여 텍스트와 함께 메타데이터를 추출할 수 있습니까?
 예, GroupDocs.Parser를 사용하면 지원되는 문서 형식에서 텍스트 콘텐츠와 메타데이터를 모두 추출할 수 있습니다.
 ### GroupDocs.Parser에 대한 추가 리소스와 지원은 어디서 찾을 수 있나요?
- 방문하다[GroupDocs.Parser 문서](https://reference.groupdocs.com/parser/net/) 자세한 API 참조를 확인하고[GroupDocs 포럼](https://forum.groupdocs.com/c/parser/17) 지역 사회 지원을 위해.
+ 방문하다[GroupDocs.Parser 문서](https://tutorials.groupdocs.com/parser/net/) 자세한 API 참조를 확인하고[GroupDocs 포럼](https://forum.groupdocs.com/c/parser/17) 지역 사회 지원을 위해.
 ### GroupDocs.Parser의 임시 라이센스를 얻으려면 어떻게 해야 합니까?
  다음을 요청할 수 있습니다.[임시면허](https://purchase.groupdocs.com/temporary-license/) 평가 및 테스트 목적으로.
 ### GroupDocs.Parser에 대한 무료 평가판이 있습니까?

@@ -3,7 +3,6 @@ title: Trích xuất văn bản từ trang ở dạng PDF ở Chế độ thô
 linktitle: Trích xuất văn bản từ trang ở dạng PDF ở Chế độ thô
 second_title: API GroupDocs.Parser .NET
 description: Trích xuất văn bản từ tệp PDF bằng GroupDocs.Parser trong C#. Tìm hiểu cách trích xuất văn bản PDF hiệu quả với thư viện .NET mạnh mẽ này.
-type: docs
 weight: 16
 url: /vi/net/pdf-processing/extract-text-from-page-in-pdf-in-raw-mode/
 ---

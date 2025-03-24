@@ -3,7 +3,6 @@ title: Képek kibontása a Word dokumentumból
 linktitle: Képek kibontása a Word dokumentumból
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki képeket Word-dokumentumból a GroupDocs.Parser for .NET segítségével. Ez az oktatóanyag lépésről lépésre útmutatást nyújt a kép .NET-be való integrálásához.
-type: docs
 weight: 11
 url: /hu/net/word-document-processing/extract-images-from-word-document/
 ---
@@ -62,7 +61,7 @@ Igen, a GroupDocs.Parser különféle dokumentumformátumokat támogat, beleért
 ### Hogyan szerezhetek ideiglenes licencet a GroupDocs.Parser számára?
  Ideiglenes licencet tesztelési célból szerezhet be[itt](https://purchase.groupdocs.com/temporary-license/).
 ### Hol találok további dokumentációt a GroupDocs.Parser for .NET-hez?
- A teljes dokumentációra hivatkozhat[itt](https://reference.groupdocs.com/parser/net/).
+ A teljes dokumentációra hivatkozhat[itt](https://tutorials.groupdocs.com/parser/net/).
 ### Van ingyenes próbaverzió a GroupDocs.Parser számára?
  Igen, ingyenes próbaverzióval felfedezheti a GroupDocs.Parser szolgáltatásait[itt](https://releases.groupdocs.com/).
 ### Hogyan kaphatok támogatást, vagy hogyan tehetek fel kérdéseket a GroupDocs.Parser-rel kapcsolatban?

@@ -3,7 +3,6 @@ title: البحث عن نص في مستند Excel عن طريق التعبير �
 linktitle: البحث عن نص في مستند Excel عن طريق التعبير العادي
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية البحث عن نص في مستندات Excel باستخدام التعبيرات العادية باستخدام GroupDocs.Parser لـ .NET. إجراء عمليات البحث النصية المتقدمة بكفاءة.
-type: docs
 weight: 17
 url: /ar/net/excel-document-processing/search-text-in-excel-document-by-regular-expression/
 ---

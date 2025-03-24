@@ -3,7 +3,6 @@ title: Praca z parametrami tabeli w szablonach
 linktitle: Praca z parametrami tabeli w szablonach
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębniać dane z tabel w dokumentach za pomocą GroupDocs.Parser dla .NET. Przewodnik krok po kroku dotyczący użycia parametrów tabeli.
-type: docs
 weight: 15
 url: /pl/net/document-template-processing/working-with-table-parameters-in-templates/
 ---

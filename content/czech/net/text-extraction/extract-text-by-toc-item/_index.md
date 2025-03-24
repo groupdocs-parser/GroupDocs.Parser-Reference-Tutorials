@@ -3,7 +3,6 @@ title: Extrahovat text podle položky obsahu (TOC).
 linktitle: Extrahovat text podle položky obsahu (TOC).
 second_title: GroupDocs.Parser .NET API
 description: Extrahujte text podle obsahu (TOC) pomocí GroupDocs.Parser for .NET. Naučte se efektivní techniky analýzy dokumentů pro extrakci strukturovaných dat.
-type: docs
 weight: 15
 url: /cs/net/text-extraction/extract-text-by-toc-item/
 ---

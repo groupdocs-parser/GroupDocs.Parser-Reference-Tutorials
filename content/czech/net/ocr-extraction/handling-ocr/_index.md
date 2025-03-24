@@ -3,7 +3,6 @@ title: Manipulace s OCR
 linktitle: Manipulace s OCR
 second_title: GroupDocs.Parser .NET API
 description: Naučte se, jak zacházet s OCR pomocí GroupDocs.Parser pro .NET. Extrahujte text z obrázků a naskenovaných dokumentů efektivně.
-type: docs
 weight: 11
 url: /cs/net/ocr-extraction/handling-ocr/
 ---

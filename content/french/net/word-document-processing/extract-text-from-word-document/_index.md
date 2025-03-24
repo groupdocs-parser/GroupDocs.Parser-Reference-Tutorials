@@ -3,7 +3,6 @@ title: Extraire le texte d'un document Word
 linktitle: Extraire le texte d'un document Word
 second_title: API GroupDocs.Parser .NET
 description: Découvrez comment extraire du texte à partir de documents Word à l'aide de GroupDocs.Parser pour .NET. Guide étape par étape avec des exemples de code.
-type: docs
 weight: 15
 url: /fr/net/word-document-processing/extract-text-from-word-document/
 ---

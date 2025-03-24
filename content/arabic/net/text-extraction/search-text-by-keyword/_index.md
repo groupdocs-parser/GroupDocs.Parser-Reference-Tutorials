@@ -3,7 +3,6 @@ title: بحث النص عن طريق الكلمة الرئيسية
 linktitle: بحث النص عن طريق الكلمة الرئيسية
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية البحث عن النص باستخدام الكلمة الرئيسية في المستندات باستخدام GroupDocs.Parser لـ .NET. استخراج المحتوى ذي الصلة بكفاءة وبسهولة.
-type: docs
 weight: 21
 url: /ar/net/text-extraction/search-text-by-keyword/
 ---
@@ -63,7 +62,7 @@ foreach (SearchResult result in searchResults)
 ### هل يمكنني إجراء عمليات استخراج النص المتقدمة باستخدام GroupDocs.Parser؟
 قطعاً! وبصرف النظر عن البحث عن النص، يتيح GroupDocs.Parser استخراج البيانات التعريفية واستخراج النص المنظم والمزيد.
 ### أين يمكنني العثور على وثائق مفصلة عن GroupDocs.Parser؟
-استكشاف الوثائق الكاملة[هنا](https://reference.groupdocs.com/parser/net/).
+استكشاف الوثائق الكاملة[هنا](https://tutorials.groupdocs.com/parser/net/).
 ### كيف يمكنني الحصول على الدعم أو المساعدة فيما يتعلق بالاستعلامات المتعلقة بـ GroupDocs.Parser؟
  قم بزيارة منتدى GroupDocs للحصول على الدعم والمناقشات[هنا](https://forum.groupdocs.com/c/parser/17).
 ### هل هناك نسخة تجريبية متاحة لتقييم GroupDocs.Parser قبل الشراء؟

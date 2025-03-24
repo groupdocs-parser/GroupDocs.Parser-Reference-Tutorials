@@ -3,7 +3,6 @@ title: ドキュメントページから書式設定されたテキストを抽�
 linktitle: ドキュメントページから書式設定されたテキストを抽出する
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して、ドキュメント ページから書式設定されたテキストを抽出します。効率的で信頼性の高いテキスト抽出ソリューションです。
-type: docs
 weight: 11
 url: /ja/net/formatted-text-extraction/extract-formatted-text-from-document-page/
 ---

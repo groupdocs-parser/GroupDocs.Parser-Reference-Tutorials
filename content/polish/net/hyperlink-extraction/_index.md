@@ -3,7 +3,6 @@ title: Wyodrębnianie hiperłączy
 linktitle: Wyodrębnianie hiperłączy
 second_title: GroupDocs.Parser API .NET
 description: Bez wysiłku wyodrębniaj hiperłącza z dokumentów w .NET za pomocą GroupDocs.Parser. Ulepsz swoje aplikacje w języku C#, korzystając ze szczegółowych przewodników dotyczących wyodrębniania hiperłączy.
-type: docs
 weight: 25
 url: /pl/net/hyperlink-extraction/
 ---

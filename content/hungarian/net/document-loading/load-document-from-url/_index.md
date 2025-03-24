@@ -3,7 +3,6 @@ title: Dokumentum betöltése az URL-ről
 linktitle: Dokumentum betöltése az URL-ről
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki szöveget dokumentumokból a GroupDocs.Parser for .NET segítségével. Ez az oktatóanyag egy dokumentum URL-ből történő betöltését és a szöveg kibontását ismerteti lépésről lépésre.
-type: docs
 weight: 13
 url: /hu/net/document-loading/load-document-from-url/
 ---
@@ -64,6 +63,6 @@ Igen, a GroupDocs.Parser lehetővé teszi metaadatok, szövegek és egyéb infor
 ### Elérhető a GroupDocs.Parser próbaverziója?
  Igen, beszerezheti a GroupDocs.Parser ingyenes próbaverzióját a webhelyről[itt](https://releases.groupdocs.com/).
 ### Hol találom a GroupDocs.Parser dokumentációját?
- A GroupDocs.Parser részletes dokumentációja elérhető[itt](https://reference.groupdocs.com/parser/net/).
+ A GroupDocs.Parser részletes dokumentációja elérhető[itt](https://tutorials.groupdocs.com/parser/net/).
 ### Hogyan kaphatok technikai támogatást a GroupDocs.Parser számára?
 Technikai támogatást kérhet, és kérdéseket tehet fel a GroupDocs.Parser fórumon[itt](https://forum.groupdocs.com/c/parser/17).

@@ -3,7 +3,6 @@ title: แยกข้อความจากแผ่นงาน Excel
 linktitle: แยกข้อความจากแผ่นงาน Excel
 second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกข้อความจากชีต Excel โดยใช้ GroupDocs.Parser สำหรับ .NET ขั้นตอนง่ายๆ เพื่อการแยกข้อความอย่างมีประสิทธิภาพ
-type: docs
 weight: 14
 url: /th/net/excel-document-processing/extract-text-from-excel-sheet/
 ---

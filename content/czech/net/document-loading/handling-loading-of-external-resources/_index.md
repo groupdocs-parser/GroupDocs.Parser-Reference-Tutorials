@@ -3,7 +3,6 @@ title: Manipulace s načítáním externích zdrojů
 linktitle: Manipulace s načítáním externích zdrojů
 second_title: GroupDocs.Parser .NET API
 description: Naučte se, jak zacházet s externími zdroji v .NET pomocí GroupDocs.Parser pro efektivní analýzu a extrakci dokumentů.
-type: docs
 weight: 10
 url: /cs/net/document-loading/handling-loading-of-external-resources/
 ---
@@ -66,7 +65,7 @@ Ano, GroupDocs.Parser podporuje širokou škálu formátů souborů včetně DOC
 ### Mohu extrahovat text spolu s obrázky pomocí GroupDocs.Parser?
 GroupDocs.Parser rozhodně umožňuje extrakci textu i obrázků z podporovaných formátů dokumentů.
 ### Kde najdu podrobnou dokumentaci k GroupDocs.Parser?
- Prozkoumat[dokumentace](https://reference.groupdocs.com/parser/net/) pro komplexní průvodce a reference API.
+ Prozkoumat[dokumentace](https://tutorials.groupdocs.com/parser/net/) pro komplexní průvodce a tutorials API.
 ### Jak získám dočasnou licenci pro GroupDocs.Parser?
  Dočasnou licenci můžete získat od[Nákupní stránka GroupDocs](https://purchase.groupdocs.com/temporary-license/).
 ### Kde mohu vyhledat pomoc, pokud narazím na problémy s GroupDocs.Parser?

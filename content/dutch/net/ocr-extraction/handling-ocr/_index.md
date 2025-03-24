@@ -3,7 +3,6 @@ title: OCR verwerken
 linktitle: OCR verwerken
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u met OCR omgaat met GroupDocs.Parser voor .NET. Extraheer tekst efficiënt uit afbeeldingen en gescande documenten.
-type: docs
 weight: 11
 url: /nl/net/ocr-extraction/handling-ocr/
 ---

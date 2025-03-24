@@ -3,7 +3,6 @@ title: PDFから画像を抽出する
 linktitle: PDFから画像を抽出する
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して PDF ドキュメントから画像を抽出する方法を学習します。コード例付きのステップバイステップ ガイドです。
-type: docs
 weight: 12
 url: /ja/net/pdf-processing/extract-images-from-pdf/
 ---

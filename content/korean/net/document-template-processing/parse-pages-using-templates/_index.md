@@ -3,7 +3,6 @@ title: 템플릿을 사용하여 페이지 구문 분석
 linktitle: 템플릿을 사용하여 페이지 구문 분석
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser와 함께 .NET의 템플릿을 사용하여 문서 페이지를 구문 분석하는 방법을 알아보세요. 귀하의 애플리케이션에 맞는 특정 콘텐츠를 효율적으로 추출하세요.
-type: docs
 weight: 16
 url: /ko/net/document-template-processing/parse-pages-using-templates/
 ---
@@ -67,7 +66,7 @@ using (Parser parser = new Parser("YourSampleFile.docx"))
 ### GroupDocs.Parser는 바코드와 같은 특정 데이터를 추출하는 데 적합합니까?
 전적으로! GroupDocs.Parser는 대상 콘텐츠 추출을 위한 정확한 추출 기능을 제공합니다.
 ### GroupDocs.Parser에 대한 자세한 문서는 어디서 찾을 수 있나요?
- 방문하다[선적 서류 비치](https://reference.groupdocs.com/parser/net/) 종합적인 안내를 위해.
+ 방문하다[선적 서류 비치](https://tutorials.groupdocs.com/parser/net/) 종합적인 안내를 위해.
 ### GroupDocs.Parser에 대한 임시 라이센스를 얻으려면 어떻게 해야 합니까?
  획득[임시면허](https://purchase.groupdocs.com/temporary-license/) 평가 또는 개발 목적으로.
 ### GroupDocs는 문제 해결을 위한 지원을 제공합니까?

@@ -3,7 +3,6 @@ title: استخراج الصور
 linktitle: استخراج الصور
 second_title: GroupDocs.Parser .NET API
 description: قم باستخراج الصور من المستندات في .NET بسهولة باستخدام GroupDocs.Parser. عزز قدرات معالجة المستندات الخاصة بك باستخدام تقنيات استخراج الصور الدقيقة.
-type: docs
 weight: 24
 url: /ar/net/image-extraction/
 ---

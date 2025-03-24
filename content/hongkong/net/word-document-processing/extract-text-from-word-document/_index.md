@@ -3,7 +3,6 @@ title: 從 Word 文件中提取文本
 linktitle: 從 Word 文件中提取文本
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 從 Word 文件中提取文字。帶有程式碼範例的分步指南。
-type: docs
 weight: 15
 url: /zh-hant/net/word-document-processing/extract-text-from-word-document/
 ---

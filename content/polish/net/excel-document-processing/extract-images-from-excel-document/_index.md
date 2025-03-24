@@ -3,7 +3,6 @@ title: Wyodrębnij obrazy z dokumentu Excel
 linktitle: Wyodrębnij obrazy z dokumentu Excel
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębniać obrazy z dokumentów Excel za pomocą GroupDocs.Parser dla .NET. Przewodnik krok po kroku z przykładami kodu.
-type: docs
 weight: 10
 url: /pl/net/excel-document-processing/extract-images-from-excel-document/
 ---
@@ -66,4 +65,4 @@ O: Tak, GroupDocs.Parser obsługuje szeroką gamę formatów dokumentów, w tym 
 ### P: Czy mogę wypróbować GroupDocs.Parser przed zakupem licencji?
  Odp.: Tak, możesz otrzymać[bezpłatna wersja próbna](https://releases.groupdocs.com/) do oceny GroupDocs.Parser.
 ### P: Gdzie mogę znaleźć szczegółową dokumentację GroupDocs.Parser?
- Odp.: Zapoznaj się z kompleksowością[dokumentacja](https://reference.groupdocs.com/parser/net/) aby uzyskać szczegółowe informacje na temat korzystania z GroupDocs.Parser.
+ Odp.: Zapoznaj się z kompleksowością[dokumentacja](https://tutorials.groupdocs.com/parser/net/) aby uzyskać szczegółowe informacje na temat korzystania z GroupDocs.Parser.

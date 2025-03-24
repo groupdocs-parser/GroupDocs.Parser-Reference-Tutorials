@@ -3,7 +3,6 @@ title: Εξαγωγή μεταδεδομένων από το έγγραφο το
 linktitle: Εξαγωγή μεταδεδομένων από το έγγραφο του Word
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε μεταδεδομένα από έγγραφα του Word χρησιμοποιώντας το GroupDocs.Parser για .NET. Εύκολα βήματα για την ανάλυση και την ανάκτηση πληροφοριών εγγράφου.
-type: docs
 weight: 12
 url: /el/net/word-document-processing/extract-metadata-from-word-document/
 ---
@@ -55,7 +54,7 @@ foreach (MetadataItem item in metadata)
 ### Τι είναι το GroupDocs.Parser για .NET;
 Το GroupDocs.Parser για .NET είναι μια βιβλιοθήκη ανάλυσης εγγράφων που επιτρέπει στους προγραμματιστές να εξάγουν κείμενο και μεταδεδομένα από διάφορες μορφές εγγράφων μέσω προγραμματισμού.
 ### Πού μπορώ να βρω την τεκμηρίωση του GroupDocs.Parser;
- Μπορείτε να ανατρέξετε στο[τεκμηρίωση](https://reference.groupdocs.com/parser/net/) για λεπτομερείς πληροφορίες σχετικά με τη χρήση του GroupDocs.Parser για .NET.
+ Μπορείτε να ανατρέξετε στο[τεκμηρίωση](https://tutorials.groupdocs.com/parser/net/) για λεπτομερείς πληροφορίες σχετικά με τη χρήση του GroupDocs.Parser για .NET.
 ### Πώς μπορώ να αποκτήσω μια δωρεάν δοκιμή του GroupDocs.Parser;
  Μπορείτε να κάνετε λήψη μιας δωρεάν δοκιμαστικής έκδοσης του GroupDocs.Parser από το[σελίδα εκδόσεων](https://releases.groupdocs.com/).
 ### Είναι το GroupDocs.Parser κατάλληλο για εμπορική χρήση;

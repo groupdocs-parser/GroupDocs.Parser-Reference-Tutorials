@@ -3,7 +3,6 @@ title: Extraer y resaltar texto
 linktitle: Extraer y resaltar texto
 second_title: API GroupDocs.Parser .NET
 description: Aprenda a extraer y resaltar texto de documentos usando GroupDocs.Parser para .NET. Pasos sencillos para una extracción de texto eficiente en sus proyectos .NET.
-type: docs
 weight: 11
 url: /es/net/text-extraction/extract-and-highlight-text/
 ---

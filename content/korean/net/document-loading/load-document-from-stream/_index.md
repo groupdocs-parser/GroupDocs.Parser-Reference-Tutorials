@@ -3,7 +3,6 @@ title: 스트림에서 문서 로드
 linktitle: 스트림에서 문서 로드
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser를 사용하여 .NET의 다양한 문서 형식에서 텍스트를 추출하는 방법을 알아보세요. 코드 예제가 포함된 단계별 가이드입니다.
-type: docs
 weight: 12
 url: /ko/net/document-loading/load-document-from-stream/
 ---
@@ -61,4 +60,4 @@ GroupDocs.Parser는 DOCX, PDF, XLSX, PPTX, EPUB 등을 포함한 광범위한 �
 ### GroupDocs.Parser의 임시 라이센스를 얻으려면 어떻게 해야 합니까?
  임시면허를 취득하실 수 있습니다.[여기](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Parser에 대한 추가 지원이나 문서는 어디서 찾을 수 있나요?
- 추가 지원을 받으려면 다음을 방문하세요.[GroupDocs.Parser 포럼](https://forum.groupdocs.com/c/parser/17) 또는[선적 서류 비치](https://reference.groupdocs.com/parser/net/).
+ 추가 지원을 받으려면 다음을 방문하세요.[GroupDocs.Parser 포럼](https://forum.groupdocs.com/c/parser/17) 또는[선적 서류 비치](https://tutorials.groupdocs.com/parser/net/).

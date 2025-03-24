@@ -3,7 +3,6 @@ title: 문서 페이지에서 바코드 추출
 linktitle: 문서 페이지에서 바코드 추출
 second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 문서 페이지에서 바코드를 추출하는 방법을 알아보세요. 이 튜토리얼은 바코드 추출에 대한 단계별 지침을 제공합니다.
-type: docs
 weight: 12
 url: /ko/net/barcode-extraction/extract-barcodes-from-document-page/
 ---
@@ -79,7 +78,7 @@ foreach (PageBarcodeArea barcode in barcodes)
 ### FAQ
 
 ### Q: GroupDocs.Parser는 어떤 문서 형식을 지원합니까?
- GroupDocs.Parser는 DOCX, PDF, XLSX, PPTX 등을 포함한 광범위한 형식을 지원합니다. 다음을 참조하세요.[선적 서류 비치](https://reference.groupdocs.com/parser/net/)전체 목록을 보려면.
+ GroupDocs.Parser는 DOCX, PDF, XLSX, PPTX 등을 포함한 광범위한 형식을 지원합니다. 다음을 참조하세요.[선적 서류 비치](https://tutorials.groupdocs.com/parser/net/)전체 목록을 보려면.
 
 ### Q: GroupDocs.Parser를 사용하여 바코드와 함께 메타데이터를 추출할 수 있습니까?
 예, GroupDocs.Parser를 사용하면 문서에서 메타데이터, 텍스트, 이미지 및 바코드를 추출하여 포괄적인 문서 구문 분석 기능을 제공할 수 있습니다.

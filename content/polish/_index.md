@@ -3,7 +3,6 @@ title: Odblokuj mistrzostwo w analizowaniu dokumentów dzięki GroupDocs.Parser
 linktitle: Poradniki GroupDocs.Parser
 additionalTitle: Referencje API GroupDocs
 description: Odblokuj wydajne techniki ekstrakcji danych dzięki GroupDocs.Parser dla .NET i Java. Przeglądaj samouczki dotyczące tekstu, tabeli, wyodrębniania obrazów i nie tylko.
-type: docs
 weight: 11
 url: /pl/
 is_root: true

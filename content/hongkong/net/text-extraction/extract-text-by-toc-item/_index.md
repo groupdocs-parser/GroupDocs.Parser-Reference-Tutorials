@@ -3,7 +3,6 @@ title: 按目錄 (TOC) 項目提取文本
 linktitle: 按目錄 (TOC) 項目提取文本
 second_title: GroupDocs.Parser .NET API
 description: 使用 GroupDocs.Parser for .NET 按目錄 (TOC) 擷取文字。學習用於結構化資料擷取的高效文件解析技術。
-type: docs
 weight: 15
 url: /zh-hant/net/text-extraction/extract-text-by-toc-item/
 ---

@@ -1,7 +1,6 @@
 ---
 title: Εκπαιδευτικά προγράμματα και παραδείγματα GroupDocs.Parser για .NET
 linktitle: GroupDocs.Parser για .NET Tutorials
-type: docs
 weight: 10
 url: /el/net/
 description: Ξεκλειδώστε αποτελεσματικές τεχνικές εξαγωγής κειμένου με το GroupDocs.Parser για .NET. Εξαγωγή, επισήμανση και αναζήτηση κειμένου απρόσκοπτα για βελτιωμένη επεξεργασία εγγράφων.

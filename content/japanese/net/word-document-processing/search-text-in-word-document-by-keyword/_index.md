@@ -3,7 +3,6 @@ title: Word文書内のテキストをキーワードで検索
 linktitle: Word文書内のテキストをキーワードで検索
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して Word 文書内のテキストを検索する方法を学習します。特定のキーワードを効率的に抽出します。
-type: docs
 weight: 18
 url: /ja/net/word-document-processing/search-text-in-word-document-by-keyword/
 ---

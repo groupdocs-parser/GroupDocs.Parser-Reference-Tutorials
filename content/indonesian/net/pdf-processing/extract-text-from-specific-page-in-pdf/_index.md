@@ -3,7 +3,6 @@ title: Ekstrak Teks dari Halaman Tertentu dalam PDF
 linktitle: Ekstrak Teks dari Halaman Tertentu dalam PDF
 second_title: GroupDocs.Parser .NET API
 description: Ekstrak teks dari PDF menggunakan GroupDocs.Parser untuk .NET. Ambil konten halaman tertentu dengan mudah menggunakan perpustakaan canggih ini.
-type: docs
 weight: 15
 url: /id/net/pdf-processing/extract-text-from-specific-page-in-pdf/
 ---

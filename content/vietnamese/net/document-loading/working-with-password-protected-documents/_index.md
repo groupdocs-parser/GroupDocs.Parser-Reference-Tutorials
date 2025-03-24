@@ -3,7 +3,6 @@ title: Làm việc với các tài liệu được bảo vệ bằng mật khẩ
 linktitle: Làm việc với các tài liệu được bảo vệ bằng mật khẩu
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất văn bản từ tài liệu được bảo vệ bằng mật khẩu bằng GroupDocs.Parser cho .NET. Nâng cao khả năng xử lý tài liệu của bạn.
-type: docs
 weight: 15
 url: /vi/net/document-loading/working-with-password-protected-documents/
 ---
@@ -77,7 +76,7 @@ Có, GroupDocs.Parser hỗ trợ trích xuất văn bản từ các tệp PDF đ
 ### GroupDocs.Parser có tương thích với nhiều định dạng tài liệu khác nhau như DOCX, XLSX và PPTX không?
 Hoàn toàn có thể, GroupDocs.Parser có thể xử lý nhiều định dạng tài liệu ngoài PDF, bao gồm cả các định dạng Microsoft Office.
 ### Tôi có thể tìm tài liệu chi tiết về GroupDocs.Parser cho .NET ở đâu?
- Khám phá tài liệu đầy đủ[đây](https://reference.groupdocs.com/parser/net/).
+ Khám phá tài liệu đầy đủ[đây](https://tutorials.groupdocs.com/parser/net/).
 ### Làm cách nào tôi có thể nhận được hỗ trợ hoặc đặt câu hỏi liên quan đến GroupDocs.Parser cho .NET?
  Truy cập diễn đàn cộng đồng GroupDocs[đây](https://forum.groupdocs.com/c/parser/17) để được hỗ trợ.
 ### Có phiên bản dùng thử nào cho GroupDocs.Parser cho .NET không?

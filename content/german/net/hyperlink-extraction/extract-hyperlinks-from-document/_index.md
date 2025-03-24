@@ -3,7 +3,6 @@ title: Hyperlinks aus Dokument extrahieren
 linktitle: Hyperlinks aus Dokument extrahieren
 second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Hyperlinks aus Dokumenten extrahieren. Verbessern Sie Ihre C#-Anwendungen mit dieser unkomplizierten Anleitung.
-type: docs
 weight: 10
 url: /de/net/hyperlink-extraction/extract-hyperlinks-from-document/
 ---
@@ -73,7 +72,7 @@ Ja, GroupDocs.Parser unterstützt die Hyperlink-Extraktion aus einer Vielzahl vo
 ### Gibt es eine kostenlose Testversion für GroupDocs.Parser?
  Ja, Sie können auf eine kostenlose Testversion von GroupDocs.Parser zugreifen[Hier](https://releases.groupdocs.com/).
 ### Wo finde ich Dokumentation für GroupDocs.Parser?
- Eine ausführliche Dokumentation zu GroupDocs.Parser finden Sie[Hier](https://reference.groupdocs.com/parser/net/).
+ Eine ausführliche Dokumentation zu GroupDocs.Parser finden Sie[Hier](https://tutorials.groupdocs.com/parser/net/).
 ### Wie kann ich eine temporäre Lizenz für GroupDocs.Parser erhalten?
  Sie können eine temporäre Lizenz für GroupDocs.Parser erhalten[Hier](https://purchase.groupdocs.com/temporary-license/).
 ### Bietet GroupDocs Unterstützung bei der Fehlerbehebung?

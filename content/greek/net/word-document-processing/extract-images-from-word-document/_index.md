@@ -3,7 +3,6 @@ title: Εξαγωγή εικόνων από το έγγραφο του Word
 linktitle: Εξαγωγή εικόνων από το έγγραφο του Word
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε εικόνες από ένα έγγραφο του Word χρησιμοποιώντας το GroupDocs.Parser για .NET. Αυτό το σεμινάριο παρέχει οδηγίες βήμα προς βήμα για την ενσωμάτωση εικόνας στο .NET σας.
-type: docs
 weight: 11
 url: /el/net/word-document-processing/extract-images-from-word-document/
 ---
@@ -62,7 +61,7 @@ foreach (PageImageArea image in images)
 ### Πώς μπορώ να λάβω μια προσωρινή άδεια για το GroupDocs.Parser;
  Μπορείτε να αποκτήσετε μια προσωρινή άδεια για σκοπούς δοκιμής από[εδώ](https://purchase.groupdocs.com/temporary-license/).
 ### Πού μπορώ να βρω περισσότερη τεκμηρίωση σχετικά με το GroupDocs.Parser για .NET;
- Μπορείτε να ανατρέξετε στην πλήρη τεκμηρίωση[εδώ](https://reference.groupdocs.com/parser/net/).
+ Μπορείτε να ανατρέξετε στην πλήρη τεκμηρίωση[εδώ](https://tutorials.groupdocs.com/parser/net/).
 ### Υπάρχει διαθέσιμη δωρεάν δοκιμή για το GroupDocs.Parser;
  Ναι, μπορείτε να εξερευνήσετε τις δυνατότητες του GroupDocs.Parser με μια δωρεάν δοκιμή διαθέσιμη[εδώ](https://releases.groupdocs.com/).
 ### Πώς μπορώ να λάβω υποστήριξη ή να κάνω ερωτήσεις σχετικά με το GroupDocs.Parser;

@@ -3,7 +3,6 @@ title: Document laden vanaf URL
 linktitle: Document laden vanaf URL
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u tekst uit documenten kunt extraheren met GroupDocs.Parser voor .NET. Deze tutorial behandelt stap voor stap het laden van een document vanaf een URL en het extraheren van tekst.
-type: docs
 weight: 13
 url: /nl/net/document-loading/load-document-from-url/
 ---
@@ -64,6 +63,6 @@ Ja, met GroupDocs.Parser kunt u metagegevens, tekst en andere informatie uit doc
 ### Is er een proefversie beschikbaar voor GroupDocs.Parser?
  Ja, u kunt een gratis proefversie van GroupDocs.Parser downloaden[hier](https://releases.groupdocs.com/).
 ### Waar kan ik documentatie voor GroupDocs.Parser vinden?
- Er is gedetailleerde documentatie voor GroupDocs.Parser beschikbaar[hier](https://reference.groupdocs.com/parser/net/).
+ Er is gedetailleerde documentatie voor GroupDocs.Parser beschikbaar[hier](https://tutorials.groupdocs.com/parser/net/).
 ### Hoe kan ik technische ondersteuning krijgen voor GroupDocs.Parser?
  kunt technische ondersteuning zoeken en vragen stellen op het GroupDocs.Parser-forum[hier](https://forum.groupdocs.com/c/parser/17).

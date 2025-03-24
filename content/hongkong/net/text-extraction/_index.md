@@ -3,7 +3,6 @@ title: 文字擷取
 linktitle: 文字擷取
 second_title: GroupDocs.Parser .NET API
 description: 使用 GroupDocs.Parser for .NET 解鎖高效能的文字擷取技術。學習輕鬆提取、突出顯示和搜尋文字。
-type: docs
 weight: 20
 url: /zh-hant/net/text-extraction/
 ---

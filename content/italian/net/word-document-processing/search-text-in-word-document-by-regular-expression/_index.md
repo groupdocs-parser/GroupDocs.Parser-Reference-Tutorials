@@ -3,7 +3,6 @@ title: Cerca testo nel documento Word tramite espressione regolare
 linktitle: Cerca testo nel documento Word tramite espressione regolare
 second_title: API GroupDocs.Parser .NET
 description: Scopri come cercare testo nei documenti Word utilizzando le espressioni regolari con GroupDocs.Parser per .NET. Estrai contenuti specifici in modo efficiente.
-type: docs
 weight: 19
 url: /it/net/word-document-processing/search-text-in-word-document-by-regular-expression/
 ---

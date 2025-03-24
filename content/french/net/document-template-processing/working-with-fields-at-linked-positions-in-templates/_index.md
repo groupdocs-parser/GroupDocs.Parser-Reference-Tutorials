@@ -3,7 +3,6 @@ title: Travailler avec des champs à des positions liées dans des modèles
 linktitle: Travailler avec des champs à des positions liées dans des modèles
 second_title: API GroupDocs.Parser .NET
 description: Découvrez comment extraire efficacement des données de documents à l'aide de GroupDocs.Parser pour .NET. Tutoriel étape par étape avec des exemples de code.
-type: docs
 weight: 12
 url: /fr/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
 ---

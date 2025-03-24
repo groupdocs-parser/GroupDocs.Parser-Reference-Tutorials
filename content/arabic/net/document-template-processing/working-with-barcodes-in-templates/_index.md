@@ -3,7 +3,6 @@ title: العمل مع الباركود في القوالب
 linktitle: العمل مع الباركود في القوالب
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخدام GroupDocs.Parser لـ .NET لاستخراج البيانات المنظمة من المستندات باستخدام القوالب. تبسيط عملية استخراج البيانات باستخدام حقول الباركود.
-type: docs
 weight: 10
 url: /ar/net/document-template-processing/working-with-barcodes-in-templates/
 ---

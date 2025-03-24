@@ -3,7 +3,6 @@ title: Search Text by Keyword
 linktitle: Search Text by Keyword
 second_title: GroupDocs.Parser .NET API
 description: Learn how to search text by keyword in documents using GroupDocs.Parser for .NET. Efficiently extract relevant content with ease.
-type: docs
 weight: 21
 url: /net/text-extraction/search-text-by-keyword/
 ---
@@ -63,7 +62,7 @@ Yes, GroupDocs.Parser supports a wide range of file formats, including PDF, DOCX
 ### Can I perform advanced text extraction operations using GroupDocs.Parser?
 Absolutely! Apart from text search, GroupDocs.Parser enables metadata extraction, structured text extraction, and more.
 ### Where can I find detailed documentation for GroupDocs.Parser?
-Explore the complete documentation [here](https://reference.groupdocs.com/parser/net/).
+Explore the complete documentation [here](https://tutorials.groupdocs.com/parser/net/).
 ### How can I get support or assistance with GroupDocs.Parser-related queries?
 Visit the GroupDocs forum for support and discussions [here](https://forum.groupdocs.com/c/parser/17).
 ### Is there a trial version available to evaluate GroupDocs.Parser before purchasing?

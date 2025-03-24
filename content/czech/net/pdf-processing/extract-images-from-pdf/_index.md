@@ -3,7 +3,6 @@ title: Extrahujte obrázky z PDF
 linktitle: Extrahujte obrázky z PDF
 second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat obrázky z dokumentů PDF pomocí GroupDocs.Parser for .NET. Podrobný průvodce s příklady kódu.
-type: docs
 weight: 12
 url: /cs/net/pdf-processing/extract-images-from-pdf/
 ---

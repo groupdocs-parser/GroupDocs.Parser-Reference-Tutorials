@@ -3,7 +3,6 @@ title: Extrakce dat ze šablon
 linktitle: Extrakce dat ze šablon
 second_title: GroupDocs.Parser .NET API
 description: Extrahujte data bez námahy pomocí GroupDocs.Parser pro .NET. Naučte se načítat konkrétní pole, iterovat data a pracovat s tabulkami v extrahovaném obsahu.
-type: docs
 weight: 26
 url: /cs/net/data-extraction-from-templates/
 ---

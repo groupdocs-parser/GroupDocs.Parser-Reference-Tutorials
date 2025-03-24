@@ -3,7 +3,6 @@ title: Excel dokumentumfeldolgozás
 linktitle: Excel dokumentumfeldolgozás
 second_title: GroupDocs.Parser .NET API
 description: Master Excel dokumentumfeldolgozás .NET-ben a GroupDocs.Parser segítségével. Ismerje meg a képek, metaadatok és szövegek hatékony kinyerését a lépésenkénti útmutatók segítségével.
-type: docs
 weight: 32
 url: /hu/net/excel-document-processing/
 ---

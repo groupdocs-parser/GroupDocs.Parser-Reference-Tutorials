@@ -3,7 +3,6 @@ title: Načíst dokument ze streamu
 linktitle: Načíst dokument ze streamu
 second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat text z různých formátů dokumentů v .NET pomocí GroupDocs.Parser. Podrobný průvodce s příklady kódu.
-type: docs
 weight: 12
 url: /cs/net/document-loading/load-document-from-stream/
 ---
@@ -61,4 +60,4 @@ Ano, GroupDocs.Parser je kompatibilní s aplikacemi .NET Framework i .NET Core.
 ### Jak mohu získat dočasnou licenci pro GroupDocs.Parser?
  Dočasnou licenci můžete získat od[tady](https://purchase.groupdocs.com/temporary-license/).
 ### Kde najdu další podporu nebo dokumentaci pro GroupDocs.Parser?
- Další podporu získáte na adrese[Fórum GroupDocs.Parser](https://forum.groupdocs.com/c/parser/17) nebo odkazovat na[dokumentace](https://reference.groupdocs.com/parser/net/).
+ Další podporu získáte na adrese[Fórum GroupDocs.Parser](https://forum.groupdocs.com/c/parser/17) nebo odkazovat na[dokumentace](https://tutorials.groupdocs.com/parser/net/).

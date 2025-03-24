@@ -3,7 +3,6 @@ title: Loading Specific File Formats
 linktitle: Loading Specific File Formats
 second_title: GroupDocs.Parser .NET API
 description: Learn how to extract text from various file formats in .NET using GroupDocs.Parser. Step-by-step tutorial for efficient document processing.
-type: docs
 weight: 14
 url: /net/document-loading/loading-specific-file-formats/
 ---
@@ -71,7 +70,7 @@ GroupDocs.Parser for .NET simplifies text extraction from various file formats, 
 ### Is GroupDocs.Parser for .NET free to use?
 GroupDocs.Parser for .NET offers both free and paid licensing options. You can explore them [here](https://purchase.groupdocs.com/buy).
 ### Which file formats are supported by GroupDocs.Parser for .NET?
-GroupDocs.Parser supports a wide range of file formats, including Word, PDF, Excel, PowerPoint, Markdown, and more. Refer to the documentation [here](https://reference.groupdocs.com/parser/net/) for the full list.
+GroupDocs.Parser supports a wide range of file formats, including Word, PDF, Excel, PowerPoint, Markdown, and more. Refer to the documentation [here](https://tutorials.groupdocs.com/parser/net/) for the full list.
 ### Can I try GroupDocs.Parser for .NET before purchasing?
 Yes, you can access a free trial version [here](https://releases.groupdocs.com/).
 ### Where can I find support or ask questions about GroupDocs.Parser for .NET?

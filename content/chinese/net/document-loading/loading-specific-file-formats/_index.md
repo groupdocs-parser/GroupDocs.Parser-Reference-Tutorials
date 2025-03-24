@@ -3,7 +3,6 @@ title: 加载特定文件格式
 linktitle: 加载特定文件格式
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser 从 .NET 中的各种文件格式中提取文本。高效文档处理的分步教程。
-type: docs
 weight: 14
 url: /zh/net/document-loading/loading-specific-file-formats/
 ---
@@ -71,7 +70,7 @@ GroupDocs.Parser for .NET 简化了从各种文件格式中提取文本的过程
 ### GroupDocs.Parser for .NET 可以免费使用吗？
 GroupDocs.Parser for .NET 提供免费和付费许可选项。您可以探索它们[这里](https://purchase.groupdocs.com/buy).
 ### GroupDocs.Parser for .NET 支持哪些文件格式？
- GroupDocs.Parser 支持多种文件格式，包括 Word、PDF、Excel、PowerPoint、Markdown 等。请参阅文档[这里](https://reference.groupdocs.com/parser/net/)了解完整列表。
+ GroupDocs.Parser 支持多种文件格式，包括 Word、PDF、Excel、PowerPoint、Markdown 等。请参阅文档[这里](https://tutorials.groupdocs.com/parser/net/)了解完整列表。
 ### 我可以在购买之前试用 GroupDocs.Parser for .NET 吗？
 是的，您可以访问免费试用版[这里](https://releases.groupdocs.com/).
 ### 在哪里可以找到支持或询问有关 GroupDocs.Parser for .NET 的问题？

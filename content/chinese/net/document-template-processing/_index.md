@@ -3,7 +3,6 @@ title: 文档模板处理
 linktitle: 文档模板处理
 second_title: GroupDocs.Parser .NET API
 description: 使用 GroupDocs.Parser for .NET 轻松从文档模板中提取结构化数据。学习使用条形码、字段、正则表达式和表格布局。
-type: docs
 weight: 22
 url: /zh/net/document-template-processing/
 ---

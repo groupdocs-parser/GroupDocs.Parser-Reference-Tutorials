@@ -3,7 +3,6 @@ title: Εξαγωγή κειμένου ανά στοιχείο περιεχομ�
 linktitle: Εξαγωγή κειμένου ανά στοιχείο περιεχομένων (TOC).
 second_title: GroupDocs.Parser .NET API
 description: Εξαγωγή κειμένου κατά πίνακα περιεχομένων (TOC) χρησιμοποιώντας GroupDocs.Parser για .NET. Μάθετε αποτελεσματικές τεχνικές ανάλυσης εγγράφων για δομημένη εξαγωγή δεδομένων.
-type: docs
 weight: 15
 url: /el/net/text-extraction/extract-text-by-toc-item/
 ---

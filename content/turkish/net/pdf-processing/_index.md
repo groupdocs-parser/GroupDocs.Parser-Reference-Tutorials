@@ -3,7 +3,6 @@ title: PDF İşleme
 linktitle: PDF İşleme
 second_title: GroupDocs.Parser .NET API'si
 description: .NET için GroupDocs.Parser ile PDF işlemede ustalaşın. PDF'lerden ekleri, verileri, görüntüleri, meta verileri ve metni verimli bir şekilde çıkarmayı öğrenin.
-type: docs
 weight: 31
 url: /tr/net/pdf-processing/
 ---

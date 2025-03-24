@@ -3,7 +3,6 @@ title: Trích xuất văn bản từ tài liệu Excel
 linktitle: Trích xuất văn bản từ tài liệu Excel
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất văn bản từ tài liệu Excel bằng GroupDocs.Parser cho .NET theo các bước đơn giản.
-type: docs
 weight: 12
 url: /vi/net/excel-document-processing/extract-text-from-excel-document/
 ---
@@ -58,7 +57,7 @@ Có, GroupDocs.Parser hỗ trợ nhiều định dạng tài liệu bao gồm Wo
 ### Có bản dùng thử miễn phí cho GroupDocs.Parser không?
  Có, bạn có thể tải xuống bản dùng thử miễn phí của GroupDocs.Parser từ[đây](https://releases.groupdocs.com/).
 ### Tôi có thể tìm tài liệu về GroupDocs.Parser ở đâu?
- Bạn có thể tìm tài liệu chi tiết về GroupDocs.Parser[đây](https://reference.groupdocs.com/parser/net/).
+ Bạn có thể tìm tài liệu chi tiết về GroupDocs.Parser[đây](https://tutorials.groupdocs.com/parser/net/).
 ### Làm cách nào tôi có thể nhận được hỗ trợ cho GroupDocs.Parser?
 Để được hỗ trợ và trợ giúp với GroupDocs.Parser, hãy truy cập[diễn đàn GroupDocs](https://forum.groupdocs.com/c/parser/17).
 ### Tôi có thể mua giấy phép cho GroupDocs.Parser ở đâu?

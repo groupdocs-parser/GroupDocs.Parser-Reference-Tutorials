@@ -3,7 +3,6 @@ title: Bekerja dengan Bidang pada Posisi Tertaut di Templat
 linktitle: Bekerja dengan Bidang pada Posisi Tertaut di Templat
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak data secara efisien dari dokumen menggunakan GroupDocs.Parser untuk .NET. Tutorial langkah demi langkah dengan contoh kode.
-type: docs
 weight: 12
 url: /id/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
 ---

@@ -3,7 +3,6 @@ title: การแยกข้อความ
 linktitle: การแยกข้อความ
 second_title: GroupDocs.Parser .NET API
 description: ปลดล็อกเทคนิคการแยกข้อความที่มีประสิทธิภาพด้วย GroupDocs.Parser สำหรับ .NET เรียนรู้วิธีแยก เน้น และค้นหาข้อความได้อย่างง่ายดาย
-type: docs
 weight: 20
 url: /th/net/text-extraction/
 ---

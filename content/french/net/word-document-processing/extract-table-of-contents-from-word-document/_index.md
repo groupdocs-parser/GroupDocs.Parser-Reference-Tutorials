@@ -3,7 +3,6 @@ title: Extraire la table des matières d'un document Word
 linktitle: Extraire la table des matières d'un document Word
 second_title: API GroupDocs.Parser .NET
 description: Découvrez comment extraire la table des matières (TOC) de documents Word par programmation à l'aide de GroupDocs.Parser pour .NET.
-type: docs
 weight: 13
 url: /fr/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
@@ -64,7 +63,7 @@ Oui, GroupDocs.Parser prend en charge un large éventail de formats de documents
 ### GroupDocs.Parser est-il adapté au traitement de documents volumineux ?
 Oui, GroupDocs.Parser est optimisé pour gérer efficacement des documents volumineux, avec des fonctionnalités telles que l'extraction de texte, l'extraction de métadonnées et l'extraction de données structurées.
 ### Où puis-je trouver plus de documentation et de didacticiels pour GroupDocs.Parser ?
- Visiter le[Documentation GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) pour des références API détaillées et des didacticiels.
+ Visiter le[Documentation GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) pour des références API détaillées et des didacticiels.
 ### Comment puis-je obtenir de l’aide pour GroupDocs.Parser ?
  Rejoins[Forum GroupDocs.Parser](https://forum.groupdocs.com/c/parser/17) pour poser des questions et interagir avec la communauté.
 ### Existe-t-il une version d’essai disponible pour GroupDocs.Parser ?

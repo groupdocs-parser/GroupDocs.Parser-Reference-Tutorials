@@ -3,7 +3,6 @@ title: Ekstrak Hyperlink dari Dokumen Word
 linktitle: Ekstrak Hyperlink dari Dokumen Word
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak hyperlink dari dokumen Word menggunakan GroupDocs.Parser untuk .NET. Panduan langkah demi langkah dengan contoh kode.
-type: docs
 weight: 10
 url: /id/net/word-document-processing/extract-hyperlinks-from-word-document/
 ---

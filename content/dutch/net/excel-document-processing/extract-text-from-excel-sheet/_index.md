@@ -3,7 +3,6 @@ title: Extraheer tekst uit Excel-blad
 linktitle: Extraheer tekst uit Excel-blad
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u tekst uit Excel-werkbladen kunt extraheren met GroupDocs.Parser voor .NET. Eenvoudige stappen voor effectieve tekstextractie.
-type: docs
 weight: 14
 url: /nl/net/excel-document-processing/extract-text-from-excel-sheet/
 ---

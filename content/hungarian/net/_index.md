@@ -1,7 +1,6 @@
 ---
 title: Oktatóanyagok és példák a GroupDocs.Parser for .NET-hez
 linktitle: GroupDocs.Parser for .NET oktatóanyagok
-type: docs
 weight: 10
 url: /hu/net/
 description: Oldja fel a hatékony szövegkivonási technikákat a GroupDocs.Parser for .NET segítségével. Zökkenőmentesen bontsa ki, emelje ki és keressen szöveget a továbbfejlesztett dokumentumfeldolgozás érdekében.

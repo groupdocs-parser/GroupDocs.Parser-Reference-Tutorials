@@ -3,7 +3,6 @@ title: Práce s poli na pevných pozicích v šablonách
 linktitle: Práce s poli na pevných pozicích v šablonách
 second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat data z dokumentů pomocí GroupDocs.Parser for .NET. Obsáhlý tutoriál s příklady kódu.
-type: docs
 weight: 11
 url: /cs/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
@@ -69,7 +68,7 @@ V tomto tutoriálu jsme se zabývali procesem práce s poli na pevných pozicíc
 
 ## FAQ
 ### Je GroupDocs.Parser kompatibilní se všemi formáty dokumentů?
- GroupDocs.Parser podporuje širokou škálu formátů souborů, včetně PDF, Microsoft Word, Excel, PowerPoint a dalších. Odkazovat na[dokumentace](https://reference.groupdocs.com/parser/net/) pro podrobný seznam.
+ GroupDocs.Parser podporuje širokou škálu formátů souborů, včetně PDF, Microsoft Word, Excel, PowerPoint a dalších. Odkazovat na[dokumentace](https://tutorials.groupdocs.com/parser/net/) pro podrobný seznam.
 ### Jak mohu získat dočasnou licenci pro GroupDocs.Parser?
  Dočasnou licenci pro testovací účely můžete získat od[tady](https://purchase.groupdocs.com/temporary-license/).
 ### Kde najdu podporu pro GroupDocs.Parser?

@@ -3,7 +3,6 @@ title: Cari Teks dengan Ekspresi Reguler (Regex)
 linktitle: Cari Teks dengan Ekspresi Reguler (Regex)
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mencari teks menggunakan ekspresi reguler dalam dokumen menggunakan GroupDocs.Parser untuk .NET. Ekstrak konten tertentu dengan mudah.
-type: docs
 weight: 23
 url: /id/net/text-extraction/search-text-by-regex/
 ---

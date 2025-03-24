@@ -3,7 +3,6 @@ title: Dokumentum betöltése a Streamből
 linktitle: Dokumentum betöltése a Streamből
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki szöveget különböző dokumentumformátumokból a .NET-ben a GroupDocs.Parser segítségével. Útmutató lépésről lépésre kódpéldákkal.
-type: docs
 weight: 12
 url: /hu/net/document-loading/load-document-from-stream/
 ---
@@ -61,4 +60,4 @@ Igen, a GroupDocs.Parser a .NET Framework és a .NET Core alkalmazásokkal is ko
 ### Hogyan szerezhetek ideiglenes licencet a GroupDocs.Parser számára?
  Ideiglenes jogosítványt szerezhet be[itt](https://purchase.groupdocs.com/temporary-license/).
 ### Hol találok további támogatást vagy dokumentációt a GroupDocs.Parser számára?
- További támogatásért keresse fel a[GroupDocs.Parser fórum](https://forum.groupdocs.com/c/parser/17) vagy hivatkozzon a[dokumentáció](https://reference.groupdocs.com/parser/net/).
+ További támogatásért keresse fel a[GroupDocs.Parser fórum](https://forum.groupdocs.com/c/parser/17) vagy hivatkozzon a[dokumentáció](https://tutorials.groupdocs.com/parser/net/).

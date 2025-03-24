@@ -3,7 +3,6 @@ title: Trích xuất hình ảnh từ tài liệu Excel
 linktitle: Trích xuất hình ảnh từ tài liệu Excel
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất hình ảnh từ tài liệu Excel bằng GroupDocs.Parser cho .NET. Hướng dẫn từng bước với các ví dụ về mã.
-type: docs
 weight: 10
 url: /vi/net/excel-document-processing/extract-images-from-excel-document/
 ---
@@ -66,4 +65,4 @@ Trả lời: Có, GroupDocs.Parser hỗ trợ nhiều định dạng tài liệu
 ### Câu hỏi: Tôi có thể dùng thử GroupDocs.Parser trước khi mua giấy phép không?
  A: Vâng, bạn có thể nhận được một[dùng thử miễn phí](https://releases.groupdocs.com/) để đánh giá GroupDocs.Parser.
 ### Câu hỏi: Tôi có thể tìm tài liệu chi tiết về GroupDocs.Parser ở đâu?
- A: Tham khảo toàn diện[tài liệu](https://reference.groupdocs.com/parser/net/) để biết thông tin chi tiết về cách sử dụng GroupDocs.Parser.
+ A: Tham khảo toàn diện[tài liệu](https://tutorials.groupdocs.com/parser/net/) để biết thông tin chi tiết về cách sử dụng GroupDocs.Parser.

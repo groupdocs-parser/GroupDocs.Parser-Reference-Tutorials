@@ -3,7 +3,6 @@ title: Wyodrębnij tekst za pomocą wykrywania kodowania
 linktitle: Wyodrębnij tekst za pomocą wykrywania kodowania
 second_title: GroupDocs.Parser API .NET
 description: Wyodrębnij tekst z dokumentów z wykrywaniem kodowania za pomocą GroupDocs.Parser dla .NET. Efektywnie analizuj różne formaty w aplikacjach .NET.
-type: docs
 weight: 10
 url: /pl/net/text-extraction/extract-text-with-encoding-detection/
 ---

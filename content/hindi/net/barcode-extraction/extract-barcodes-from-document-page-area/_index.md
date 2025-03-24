@@ -3,7 +3,6 @@ title: दस्तावेज़ पृष्ठ क्षेत्र से 
 linktitle: दस्तावेज़ पृष्ठ क्षेत्र से बारकोड निकालें
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके दस्तावेज़ पृष्ठों से बारकोड निकालने का तरीका जानें। इस चरण-दर-चरण ट्यूटोरियल के साथ अपने दस्तावेज़ प्रसंस्करण क्षमताओं को बढ़ाएँ।
-type: docs
 weight: 13
 url: /hi/net/barcode-extraction/extract-barcodes-from-document-page-area/
 ---

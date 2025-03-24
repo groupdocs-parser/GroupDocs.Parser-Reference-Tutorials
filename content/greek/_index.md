@@ -3,7 +3,6 @@ title: Ξεκλειδώστε την κυριαρχία ανάλυσης εγγ�
 linktitle: GroupDocs.Parser Tutorials
 additionalTitle: Αναφορές API GroupDocs
 description: Ξεκλειδώστε αποτελεσματικές τεχνικές εξαγωγής δεδομένων με το GroupDocs.Parser για .NET & Java. Εξερευνήστε μαθήματα για κείμενο, πίνακα, εξαγωγή εικόνων και άλλα.
-type: docs
 weight: 11
 url: /el/
 is_root: true

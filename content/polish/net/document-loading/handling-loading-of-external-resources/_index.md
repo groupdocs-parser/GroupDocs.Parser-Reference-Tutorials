@@ -3,7 +3,6 @@ title: Obsługa ładowania zasobów zewnętrznych
 linktitle: Obsługa ładowania zasobów zewnętrznych
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak obsługiwać zasoby zewnętrzne w .NET przy użyciu GroupDocs.Parser w celu wydajnego analizowania i wyodrębniania dokumentów.
-type: docs
 weight: 10
 url: /pl/net/document-loading/handling-loading-of-external-resources/
 ---
@@ -66,7 +65,7 @@ Tak, GroupDocs.Parser obsługuje szeroką gamę formatów plików, w tym DOCX, P
 ### Czy mogę wyodrębnić tekst wraz z obrazami za pomocą GroupDocs.Parser?
 Absolutnie GroupDocs.Parser umożliwia wyodrębnianie zarówno tekstu, jak i obrazów z obsługiwanych formatów dokumentów.
 ### Gdzie mogę znaleźć szczegółową dokumentację GroupDocs.Parser?
- Poznaj[dokumentacja](https://reference.groupdocs.com/parser/net/) w celu uzyskania kompleksowych przewodników i referencji API.
+ Poznaj[dokumentacja](https://tutorials.groupdocs.com/parser/net/) w celu uzyskania kompleksowych przewodników i referencji API.
 ### Jak uzyskać tymczasową licencję na GroupDocs.Parser?
  Możesz uzyskać tymczasową licencję od[Strona zakupu GroupDocs](https://purchase.groupdocs.com/temporary-license/).
 ### Gdzie mogę szukać pomocy, jeśli napotkam problemy z GroupDocs.Parser?

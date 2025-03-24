@@ -3,7 +3,6 @@ title: ドキュメントページ領域からハイパーリンクを抽出す�
 linktitle: ドキュメントページ領域からハイパーリンクを抽出する
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して特定のドキュメント領域からハイパーリンクを抽出する方法を学習します。ドキュメント処理機能を強化します。
-type: docs
 weight: 12
 url: /ja/net/hyperlink-extraction/extract-hyperlinks-from-document-page-area/
 ---

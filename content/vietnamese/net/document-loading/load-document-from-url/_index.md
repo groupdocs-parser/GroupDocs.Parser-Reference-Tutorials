@@ -3,7 +3,6 @@ title: Tải tài liệu từ URL
 linktitle: Tải tài liệu từ URL
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất văn bản từ tài liệu bằng GroupDocs.Parser cho .NET. Hướng dẫn này bao gồm việc tải tài liệu từ một URL và trích xuất văn bản theo từng bước.
-type: docs
 weight: 13
 url: /vi/net/document-loading/load-document-from-url/
 ---
@@ -64,6 +63,6 @@ Có, GroupDocs.Parser cho phép bạn trích xuất siêu dữ liệu, văn bả
 ### Có phiên bản dùng thử cho GroupDocs.Parser không?
  Có, bạn có thể tải phiên bản dùng thử miễn phí của GroupDocs.Parser từ[đây](https://releases.groupdocs.com/).
 ### Tôi có thể tìm tài liệu về GroupDocs.Parser ở đâu?
- Tài liệu chi tiết về GroupDocs.Parser có sẵn[đây](https://reference.groupdocs.com/parser/net/).
+ Tài liệu chi tiết về GroupDocs.Parser có sẵn[đây](https://tutorials.groupdocs.com/parser/net/).
 ### Làm cách nào tôi có thể nhận được hỗ trợ kỹ thuật cho GroupDocs.Parser?
 Bạn có thể tìm kiếm hỗ trợ kỹ thuật và đặt câu hỏi trên diễn đàn GroupDocs.Parser[đây](https://forum.groupdocs.com/c/parser/17).

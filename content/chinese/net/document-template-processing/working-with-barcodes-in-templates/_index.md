@@ -3,7 +3,6 @@ title: 在模板中使用条形码
 linktitle: 在模板中使用条形码
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 通过模板从文档中提取结构化数据。使用条形码字段简化数据提取。
-type: docs
 weight: 10
 url: /zh/net/document-template-processing/working-with-barcodes-in-templates/
 ---

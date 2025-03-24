@@ -3,7 +3,6 @@ title: Wyodrębnij tekst z dokumentu Word
 linktitle: Wyodrębnij tekst z dokumentu Word
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić tekst z dokumentów programu Word za pomocą programu GroupDocs.Parser dla platformy .NET. Przewodnik krok po kroku z przykładami kodu.
-type: docs
 weight: 15
 url: /pl/net/word-document-processing/extract-text-from-word-document/
 ---

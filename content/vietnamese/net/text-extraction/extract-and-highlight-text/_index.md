@@ -3,7 +3,6 @@ title: Trích xuất và đánh dấu văn bản
 linktitle: Trích xuất và đánh dấu văn bản
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất và đánh dấu văn bản từ tài liệu bằng GroupDocs.Parser cho .NET. Các bước dễ dàng để trích xuất văn bản hiệu quả trong các dự án .NET của bạn.
-type: docs
 weight: 11
 url: /vi/net/text-extraction/extract-and-highlight-text/
 ---

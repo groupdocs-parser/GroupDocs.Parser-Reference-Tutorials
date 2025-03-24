@@ -3,7 +3,6 @@ title: Wyodrębnij dane z formularzy PDF
 linktitle: Wyodrębnij dane z formularzy PDF
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębniać dane z formularzy PDF za pomocą GroupDocs.Parser dla .NET. Przewodnik krok po kroku z przykładami kodu i często zadawanymi pytaniami.
-type: docs
 weight: 11
 url: /pl/net/pdf-processing/extract-data-from-pdf-forms/
 ---
@@ -79,7 +78,7 @@ Tak, GroupDocs.Parser obsługuje różne formaty, w tym DOCX, XLSX, PPTX i inne.
 ### Czy mogę wyodrębnić obrazy i metadane za pomocą GroupDocs.Parser?
 Tak, GroupDocs.Parser umożliwia wyodrębnianie obrazów, metadanych i tekstu z dokumentów.
 ### Gdzie mogę znaleźć dodatkową pomoc lub dokumentację dotyczącą GroupDocs.Parser?
- Możesz odwiedzić[Dokumentacja GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) szczegółowe informacje i przykłady.
+ Możesz odwiedzić[Dokumentacja GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) szczegółowe informacje i przykłady.
 ### Czy dostępna jest bezpłatna wersja próbna programu GroupDocs.Parser?
  Tak, możesz uzyskać dostęp do[bezpłatna wersja próbna GroupDocs.Parser](https://releases.groupdocs.com/) aby poznać jego funkcje.
 ### Jak mogę uzyskać tymczasową licencję na GroupDocs.Parser?

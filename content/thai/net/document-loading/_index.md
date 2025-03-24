@@ -3,7 +3,6 @@ title: กำลังโหลดเอกสาร
 linktitle: กำลังโหลดเอกสาร
 second_title: GroupDocs.Parser .NET API
 description: จัดการการโหลดเอกสารใน .NET ได้อย่างมีประสิทธิภาพด้วย GroupDocs.Parser เรียนรู้วิธีแยกข้อความจากดิสก์ในเครื่อง สตรีม URL และอื่นๆ
-type: docs
 weight: 29
 url: /th/net/document-loading/
 ---

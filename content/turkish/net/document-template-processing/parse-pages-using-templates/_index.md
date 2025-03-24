@@ -3,7 +3,6 @@ title: Şablonları Kullanarak Sayfaları Ayrıştırma
 linktitle: Şablonları Kullanarak Sayfaları Ayrıştırma
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser ile .NET'teki şablonları kullanarak belge sayfalarını nasıl ayrıştıracağınızı öğrenin. Uygulamalarınız için belirli içerikleri verimli bir şekilde çıkarın.
-type: docs
 weight: 16
 url: /tr/net/document-template-processing/parse-pages-using-templates/
 ---
@@ -67,7 +66,7 @@ Evet, GroupDocs.Parser; PDF, DOCX, XLSX ve daha fazlası dahil olmak üzere çe�
 ### GroupDocs.Parser, barkodlar gibi belirli verileri çıkarmak için uygun mu?
 Kesinlikle! GroupDocs.Parser, hedeflenen içeriğin çıkarılması için hassas ayıklama yetenekleri sunar.
 ### GroupDocs.Parser'a ilişkin ayrıntılı belgeleri nerede bulabilirim?
- Ziyaret edin[dokümantasyon](https://reference.groupdocs.com/parser/net/) kapsamlı rehberlik için.
+ Ziyaret edin[dokümantasyon](https://tutorials.groupdocs.com/parser/net/) kapsamlı rehberlik için.
 ### GroupDocs.Parser için nasıl geçici lisans alabilirim?
  Elde etmek[geçici lisans](https://purchase.groupdocs.com/temporary-license/) değerlendirme veya geliştirme amaçlı.
 ### GroupDocs sorun giderme konusunda destek sağlıyor mu?

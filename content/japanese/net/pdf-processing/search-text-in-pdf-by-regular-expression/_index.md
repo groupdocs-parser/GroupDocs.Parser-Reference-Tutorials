@@ -3,7 +3,6 @@ title: 正規表現でPDF内のテキストを検索する
 linktitle: 正規表現でPDF内のテキストを検索する
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser で正規表現を使用して PDF ドキュメント内の特定のテキストを検索します。PDF テキストを簡単に抽出、分析、操作します。
-type: docs
 weight: 19
 url: /ja/net/pdf-processing/search-text-in-pdf-by-regular-expression/
 ---
@@ -52,7 +51,7 @@ foreach (SearchResult result in searchResults)
 ### GroupDocs.Parser は PDF 以外のドキュメント形式も処理できますか?
 はい、GroupDocs.Parser は DOCX、XLSX、PPTX などのさまざまなドキュメント形式をサポートしています。
 ### GroupDocs.Parser に関するその他のリソースやサポートはどこで見つかりますか?
-訪問することができます[GroupDocs.Parser ドキュメント](https://reference.groupdocs.com/parser/net/)そして、[GroupDocs フォーラム](https://forum.groupdocs.com/c/parser/17).
+訪問することができます[GroupDocs.Parser ドキュメント](https://tutorials.groupdocs.com/parser/net/)そして、[GroupDocs フォーラム](https://forum.groupdocs.com/c/parser/17).
 ### GroupDocs.Parser の無料トライアルはありますか?
 はい、アクセスできます[無料試用版](https://releases.groupdocs.com/) GroupDocs.Parser の機能を調べてみましょう。
 ### GroupDocs.Parser の一時ライセンスを取得するにはどうすればよいですか?

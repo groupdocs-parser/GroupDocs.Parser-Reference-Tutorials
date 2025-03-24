@@ -1,7 +1,6 @@
 ---
 title: Tutorial dan Contoh GroupDocs.Parser untuk .NET
 linktitle: GroupDocs.Parser untuk Tutorial .NET
-type: docs
 weight: 10
 url: /id/net/
 description: Buka teknik ekstraksi teks yang efisien dengan GroupDocs.Parser untuk .NET. Ekstrak, sorot, dan cari teks dengan lancar untuk pemrosesan dokumen yang lebih baik.

@@ -3,7 +3,6 @@ title: Extrahera text från specifika områden på en sida
 linktitle: Extrahera text från specifika områden på en sida
 second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du extraherar text från specifika dokumentområden med GroupDocs.Parser för .NET. Riktad och exakt textextraktion för dina applikationer.
-type: docs
 weight: 13
 url: /sv/net/text-extraction/extract-text-from-specific-areas-on-page/
 ---

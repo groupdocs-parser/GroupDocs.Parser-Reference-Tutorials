@@ -3,7 +3,6 @@ title: Wyodrębnij tekst z arkusza Excel
 linktitle: Wyodrębnij tekst z arkusza Excel
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić tekst z arkuszy Excela za pomocą GroupDocs.Parser dla .NET. Proste kroki do skutecznego wyodrębniania tekstu.
-type: docs
 weight: 14
 url: /pl/net/excel-document-processing/extract-text-from-excel-sheet/
 ---

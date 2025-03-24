@@ -3,7 +3,6 @@ title: Extrair texto por item do índice (TOC)
 linktitle: Extrair texto por item do índice (TOC)
 second_title: API GroupDocs.Parser .NET
 description: Extraia texto por Índice (TOC) usando GroupDocs.Parser para .NET. Aprenda técnicas eficientes de análise de documentos para extração estruturada de dados.
-type: docs
 weight: 15
 url: /pt/net/text-extraction/extract-text-by-toc-item/
 ---

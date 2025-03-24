@@ -3,7 +3,6 @@ title: Ekstraksi Kode Batang
 linktitle: Ekstraksi Kode Batang
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak kode batang dengan mudah dengan tutorial GroupDocs.Parser untuk .NET. Tingkatkan kemampuan pemrosesan dokumen Anda sekarang!
-type: docs
 weight: 27
 url: /id/net/barcode-extraction/
 ---

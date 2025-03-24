@@ -3,7 +3,6 @@ title: Ekstrak Metadata dari Dokumen Excel
 linktitle: Ekstrak Metadata dari Dokumen Excel
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak metadata dari dokumen Excel menggunakan GroupDocs.Parser untuk .NET. Ikuti tutorial langkah demi langkah ini.
-type: docs
 weight: 11
 url: /id/net/excel-document-processing/extract-metadata-from-excel-document/
 ---

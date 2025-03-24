@@ -3,7 +3,6 @@ title: Zoek tekst in Word-document op reguliere expressie
 linktitle: Zoek tekst in Word-document op reguliere expressie
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u tekst in Word-documenten kunt doorzoeken met behulp van reguliere expressies met GroupDocs.Parser voor .NET. Extraheer specifieke inhoud efficiënt.
-type: docs
 weight: 19
 url: /nl/net/word-document-processing/search-text-in-word-document-by-regular-expression/
 ---

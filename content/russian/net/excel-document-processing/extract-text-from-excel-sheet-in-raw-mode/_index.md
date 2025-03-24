@@ -3,7 +3,6 @@ title: Извлечь текст из листа Excel в необработан
 linktitle: Извлечь текст из листа Excel в необработанном режиме
 second_title: GroupDocs.Parser .NET API
 description: В этом подробном руководстве вы узнаете, как извлечь текст из листов Excel с помощью GroupDocs.Parser для .NET. Скачайте и начните разбор.
-type: docs
 weight: 15
 url: /ru/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
 ---
@@ -66,7 +65,7 @@ using (TextReader reader = parser.GetText(p, new TextOptions(true)))
 ### Подходит ли GroupDocs.Parser для обработки больших файлов Excel?
 Да, GroupDocs.Parser предназначен для эффективной обработки больших документов.
 ### Где я могу найти дополнительную документацию о GroupDocs.Parser?
- Вы можете обратиться к[документация](https://reference.groupdocs.com/parser/net/) для получения подробной информации и примеров.
+ Вы можете обратиться к[документация](https://tutorials.groupdocs.com/parser/net/) для получения подробной информации и примеров.
 ### Как получить временную лицензию на GroupDocs.Parser?
  Посещать[эта ссылка](https://purchase.groupdocs.com/temporary-license/) запросить временную лицензию.
 ### Предлагает ли GroupDocs.Parser поддержку клиентов?

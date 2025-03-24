@@ -3,7 +3,6 @@ title: 识别矩形区域中的文本
 linktitle: 识别矩形区域中的文本
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用具有 OCR 功能的 GroupDocs.Parser for .NET 识别文档特定区域中的文本。
-type: docs
 weight: 14
 url: /zh/net/ocr-extraction/recognizing-text-in-rectangular-regions/
 ---

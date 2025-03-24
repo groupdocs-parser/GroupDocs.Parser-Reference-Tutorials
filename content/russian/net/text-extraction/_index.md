@@ -3,7 +3,6 @@ title: Извлечение текста
 linktitle: Извлечение текста
 second_title: GroupDocs.Parser .NET API
 description: Откройте для себя эффективные методы извлечения текста с помощью GroupDocs.Parser для .NET. Научитесь легко извлекать, выделять и искать текст.
-type: docs
 weight: 20
 url: /ru/net/text-extraction/
 ---

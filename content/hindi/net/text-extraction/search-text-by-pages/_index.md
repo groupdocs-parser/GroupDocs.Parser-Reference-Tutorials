@@ -3,7 +3,6 @@ title: पेज के अनुसार टेक्स्ट खोजें
 linktitle: पेज के अनुसार टेक्स्ट खोजें
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके पृष्ठों द्वारा पाठ खोजना सीखें। अपने .NET अनुप्रयोगों में दस्तावेज़ों से विशिष्ट सामग्री को कुशलतापूर्वक निकालें।
-type: docs
 weight: 22
 url: /hi/net/text-extraction/search-text-by-pages/
 ---
@@ -64,7 +63,7 @@ foreach (SearchResult result in searchResults)
 ### क्या मैं GroupDocs.Parser का उपयोग करके दस्तावेज़ों से छवियाँ और मेटाडेटा निकाल सकता हूँ?
 बिल्कुल, GroupDocs.Parser दस्तावेजों से छवियों, मेटाडेटा और पाठ को निकालने की अनुमति देता है।
 ### मैं GroupDocs.Parser के लिए विस्तृत दस्तावेज़ कहां पा सकता हूं?
- आप दस्तावेज़ तक पहुँच सकते हैं[यहाँ](https://reference.groupdocs.com/parser/net/).
+ आप दस्तावेज़ तक पहुँच सकते हैं[यहाँ](https://tutorials.groupdocs.com/parser/net/).
 ### मैं GroupDocs.Parser के लिए अस्थायी लाइसेंस कैसे प्राप्त कर सकता हूं?
  आप अस्थायी लाइसेंस का अनुरोध कर सकते हैं[यहाँ](https://purchase.groupdocs.com/temporary-license/).
 ### मुझे GroupDocs.Parser के साथ समर्थन या सहायता कहां मिल सकती है?

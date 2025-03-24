@@ -3,7 +3,6 @@ title: Cargar documento desde el disco local
 linktitle: Cargar documento desde el disco local
 second_title: API GroupDocs.Parser .NET
 description: Aprenda a extraer texto de varios formatos de documentos utilizando GroupDocs.Parser para .NET. Extracción de texto fácil y eficiente con C#.
-type: docs
 weight: 11
 url: /es/net/document-loading/load-document-from-local-disk/
 ---
@@ -57,7 +56,7 @@ GroupDocs.Parser admite una amplia gama de formatos, incluidos PDF, documentos d
 ### ¿Puedo extraer metadatos junto con texto usando GroupDocs.Parser?
 Sí, GroupDocs.Parser permite la extracción tanto de contenido de texto como de metadatos de formatos de documentos compatibles.
 ### ¿Dónde puedo encontrar más recursos y soporte para GroupDocs.Parser?
- Visita el[Documentación de GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) para obtener una referencia API detallada y explorar el[Foro de GroupDocs](https://forum.groupdocs.com/c/parser/17) para el apoyo de la comunidad.
+ Visita el[Documentación de GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) para obtener una referencia API detallada y explorar el[Foro de GroupDocs](https://forum.groupdocs.com/c/parser/17) para el apoyo de la comunidad.
 ### ¿Cómo puedo obtener una licencia temporal para GroupDocs.Parser?
  Puedes solicitar un[licencia temporal](https://purchase.groupdocs.com/temporary-license/) para fines de evaluación y prueba.
 ### ¿Existe una prueba gratuita disponible para GroupDocs.Parser?

@@ -3,7 +3,6 @@ title: البحث عن نص في PDF عن طريق التعبير العادي
 linktitle: البحث عن نص في PDF عن طريق التعبير العادي
 second_title: GroupDocs.Parser .NET API
 description: ابحث عن نص محدد في مستندات PDF باستخدام التعبيرات العادية باستخدام GroupDocs.Parser. قم باستخراج نص PDF وتحليله ومعالجته بسهولة.
-type: docs
 weight: 19
 url: /ar/net/pdf-processing/search-text-in-pdf-by-regular-expression/
 ---
@@ -52,7 +51,7 @@ foreach (SearchResult result in searchResults)
 ### هل يستطيع GroupDocs.Parser التعامل مع تنسيقات المستندات الأخرى إلى جانب ملفات PDF؟
 نعم، يدعم GroupDocs.Parser تنسيقات المستندات المختلفة مثل DOCX وXLSX وPPTX والمزيد.
 ### أين يمكنني العثور على المزيد من الموارد والدعم لـ GroupDocs.Parser؟
- يمكنك زيارة[وثائق GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) وطلب المساعدة من[منتدى مستندات المجموعة](https://forum.groupdocs.com/c/parser/17).
+ يمكنك زيارة[وثائق GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) وطلب المساعدة من[منتدى مستندات المجموعة](https://forum.groupdocs.com/c/parser/17).
 ### هل هناك نسخة تجريبية مجانية متاحة لـ GroupDocs.Parser؟
  نعم يمكنك الوصول إلى[نسخة تجريبية مجانية](https://releases.groupdocs.com/) من GroupDocs.Parser لاستكشاف ميزاته.
 ### كيف يمكنني الحصول على ترخيص مؤقت لـ GroupDocs.Parser؟

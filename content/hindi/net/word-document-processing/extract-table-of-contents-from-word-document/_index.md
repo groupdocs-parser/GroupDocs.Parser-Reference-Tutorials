@@ -3,7 +3,6 @@ title: वर्ड दस्तावेज़ से विषय-सूची
 linktitle: वर्ड दस्तावेज़ से विषय-सूची निकालें
 second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके प्रोग्रामेटिक रूप से Word दस्तावेज़ों से विषय-सूची (TOC) निकालना सीखें।
-type: docs
 weight: 13
 url: /hi/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
@@ -64,7 +63,7 @@ using (TextReader reader = tocItem.ExtractText())
 ### क्या GroupDocs.Parser बड़े दस्तावेज़ों के प्रसंस्करण के लिए उपयुक्त है?
 हां, GroupDocs.Parser को बड़े दस्तावेज़ों को कुशलतापूर्वक संभालने के लिए अनुकूलित किया गया है, जिसमें पाठ निष्कर्षण, मेटाडेटा निष्कर्षण और संरचित डेटा निष्कर्षण जैसी सुविधाएं हैं।
 ### मैं GroupDocs.Parser के लिए अधिक दस्तावेज़ और ट्यूटोरियल कहां पा सकता हूं?
- दौरा करना[GroupDocs.Parser दस्तावेज़ीकरण](https://reference.groupdocs.com/parser/net/) विस्तृत API संदर्भ और ट्यूटोरियल के लिए.
+ दौरा करना[GroupDocs.Parser दस्तावेज़ीकरण](https://tutorials.groupdocs.com/parser/net/) विस्तृत API संदर्भ और ट्यूटोरियल के लिए.
 ### मैं GroupDocs.Parser के लिए समर्थन कैसे प्राप्त कर सकता हूं?
  शामिल होना[GroupDocs.Parser मंच](https://forum.groupdocs.com/c/parser/17) प्रश्न पूछने और समुदाय के साथ बातचीत करने के लिए।
 ### क्या GroupDocs.Parser के लिए कोई परीक्षण संस्करण उपलब्ध है?

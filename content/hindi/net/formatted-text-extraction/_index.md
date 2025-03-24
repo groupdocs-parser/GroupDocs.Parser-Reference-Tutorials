@@ -3,7 +3,6 @@ title: स्वरूपित पाठ निष्कर्षण
 linktitle: स्वरूपित पाठ निष्कर्षण
 second_title: GroupDocs.Parser .NET एपीआई
 description: GroupDocs.Parser के साथ .NET में दस्तावेज़ों से फ़ॉर्मेट किए गए टेक्स्ट को कुशलतापूर्वक निकालें। HTML, मार्कडाउन और सादे टेक्स्ट को सहजता से निकालना सीखें।
-type: docs
 weight: 21
 url: /hi/net/formatted-text-extraction/
 ---

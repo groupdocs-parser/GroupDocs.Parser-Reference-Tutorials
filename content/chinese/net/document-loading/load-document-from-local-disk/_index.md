@@ -3,7 +3,6 @@ title: 从本地磁盘加载文档
 linktitle: 从本地磁盘加载文档
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从各种文档格式中提取文本。使用 C# 轻松高效地提取文本。
-type: docs
 weight: 11
 url: /zh/net/document-loading/load-document-from-local-disk/
 ---
@@ -57,7 +56,7 @@ GroupDocs.Parser 支持多种格式，包括 PDF、Microsoft Office 文档（Wor
 ### 我可以使用 GroupDocs.Parser 和文本一起提取元数据吗？
 是的，GroupDocs.Parser 允许从支持的文档格式中提取文本内容和元数据。
 ### 在哪里可以找到有关 GroupDocs.Parser 的更多资源和支持？
-访问[GroupDocs.Parser 文档](https://reference.groupdocs.com/parser/net/)了解详细的 API 参考并探索[GroupDocs 论坛](https://forum.groupdocs.com/c/parser/17)寻求社区支持。
+访问[GroupDocs.Parser 文档](https://tutorials.groupdocs.com/parser/net/)了解详细的 API 参考并探索[GroupDocs 论坛](https://forum.groupdocs.com/c/parser/17)寻求社区支持。
 ### 如何获得 GroupDocs.Parser 的临时许可证？
 您可以请求[临时执照](https://purchase.groupdocs.com/temporary-license/)用于评估和测试目的。
 ### GroupDocs.Parser 有免费试用版吗？

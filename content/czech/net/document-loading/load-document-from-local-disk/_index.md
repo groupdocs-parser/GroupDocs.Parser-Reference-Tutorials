@@ -3,7 +3,6 @@ title: Načíst dokument z místního disku
 linktitle: Načíst dokument z místního disku
 second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat text z různých formátů dokumentů pomocí GroupDocs.Parser for .NET. Snadná a efektivní extrakce textu pomocí C#.
-type: docs
 weight: 11
 url: /cs/net/document-loading/load-document-from-local-disk/
 ---
@@ -57,7 +56,7 @@ GroupDocs.Parser podporuje širokou škálu formátů včetně PDF, dokumentů M
 ### Mohu extrahovat metadata spolu s textem pomocí GroupDocs.Parser?
 Ano, GroupDocs.Parser umožňuje extrakci textového obsahu i metadat z podporovaných formátů dokumentů.
 ### Kde najdu další zdroje a podporu pro GroupDocs.Parser?
- Navštivte[GroupDocs.Parser dokumentace](https://reference.groupdocs.com/parser/net/) pro podrobnou referenci API a prozkoumejte[Fórum GroupDocs](https://forum.groupdocs.com/c/parser/17) za podporu komunity.
+ Navštivte[GroupDocs.Parser dokumentace](https://tutorials.groupdocs.com/parser/net/) pro podrobnou referenci API a prozkoumejte[Fórum GroupDocs](https://forum.groupdocs.com/c/parser/17) za podporu komunity.
 ### Jak mohu získat dočasnou licenci pro GroupDocs.Parser?
  Můžete požádat a[dočasná licence](https://purchase.groupdocs.com/temporary-license/) pro účely hodnocení a testování.
 ### Je k dispozici bezplatná zkušební verze pro GroupDocs.Parser?

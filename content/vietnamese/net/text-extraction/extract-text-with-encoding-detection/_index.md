@@ -3,7 +3,6 @@ title: Trích xuất văn bản bằng tính năng phát hiện mã hóa
 linktitle: Trích xuất văn bản bằng tính năng phát hiện mã hóa
 second_title: API GroupDocs.Parser .NET
 description: Trích xuất văn bản từ tài liệu có tính năng phát hiện mã hóa bằng GroupDocs.Parser for .NET. Phân tích cú pháp hiệu quả các định dạng khác nhau trong ứng dụng .NET của bạn.
-type: docs
 weight: 10
 url: /vi/net/text-extraction/extract-text-with-encoding-detection/
 ---

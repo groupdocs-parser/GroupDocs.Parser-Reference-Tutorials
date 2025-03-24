@@ -3,7 +3,6 @@ title: Muat Dokumen dari Disk Lokal
 linktitle: Muat Dokumen dari Disk Lokal
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak teks dari berbagai format dokumen menggunakan GroupDocs.Parser untuk .NET. Ekstraksi teks yang mudah dan efisien dengan C#.
-type: docs
 weight: 11
 url: /id/net/document-loading/load-document-from-local-disk/
 ---
@@ -57,7 +56,7 @@ GroupDocs.Parser mendukung berbagai format termasuk PDF, dokumen Microsoft Offic
 ### Bisakah saya mengekstrak metadata beserta teks menggunakan GroupDocs.Parser?
 Ya, GroupDocs.Parser memungkinkan ekstraksi konten teks dan metadata dari format dokumen yang didukung.
 ### Di mana saya dapat menemukan lebih banyak sumber daya dan dukungan untuk GroupDocs.Parser?
- Mengunjungi[Dokumentasi GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) untuk referensi API terperinci dan jelajahi[Forum Grup Dokumen](https://forum.groupdocs.com/c/parser/17) untuk dukungan masyarakat.
+ Mengunjungi[Dokumentasi GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) untuk referensi API terperinci dan jelajahi[Forum Grup Dokumen](https://forum.groupdocs.com/c/parser/17) untuk dukungan masyarakat.
 ### Bagaimana saya bisa mendapatkan lisensi sementara untuk GroupDocs.Parser?
  Anda dapat meminta a[izin sementara](https://purchase.groupdocs.com/temporary-license/) untuk tujuan evaluasi dan pengujian.
 ### Apakah ada uji coba gratis yang tersedia untuk GroupDocs.Parser?

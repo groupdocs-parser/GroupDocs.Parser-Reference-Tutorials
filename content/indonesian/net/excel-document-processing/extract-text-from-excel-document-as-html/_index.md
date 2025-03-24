@@ -3,7 +3,6 @@ title: Ekstrak Teks dari Dokumen Excel sebagai HTML
 linktitle: Ekstrak Teks dari Dokumen Excel sebagai HTML
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak teks dari dokumen Excel dan mengubahnya menjadi HTML menggunakan GroupDocs.Parser untuk .NET.
-type: docs
 weight: 13
 url: /id/net/excel-document-processing/extract-text-from-excel-document-as-html/
 ---

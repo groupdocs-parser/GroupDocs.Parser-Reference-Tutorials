@@ -3,7 +3,6 @@ title: Εξαγωγή κειμένου από συγκεκριμένες περ�
 linktitle: Εξαγωγή κειμένου από συγκεκριμένες περιοχές
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε κείμενο από συγκεκριμένες περιοχές εγγράφων χρησιμοποιώντας το GroupDocs.Parser για .NET. Εύκολος οδηγός βήμα προς βήμα.
-type: docs
 weight: 12
 url: /el/net/text-extraction/extract-text-from-specific-areas/
 ---

@@ -3,7 +3,6 @@ title: Εργασία με γραμμωτούς κώδικες σε πρότυπ
 linktitle: Εργασία με γραμμωτούς κώδικες σε πρότυπα
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να χρησιμοποιείτε το GroupDocs.Parser για .NET για εξαγωγή δομημένων δεδομένων από έγγραφα χρησιμοποιώντας πρότυπα. Απλοποιήστε την εξαγωγή δεδομένων με πεδία γραμμωτού κώδικα.
-type: docs
 weight: 10
 url: /el/net/document-template-processing/working-with-barcodes-in-templates/
 ---

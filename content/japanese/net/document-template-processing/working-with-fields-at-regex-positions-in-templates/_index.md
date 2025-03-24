@@ -3,7 +3,6 @@ title: テンプレート内の正規表現位置でのフィールドの操作
 linktitle: テンプレート内の正規表現位置でのフィールドの操作
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET で正規表現の位置を使用してドキュメント テンプレートからデータを抽出する方法を学習します。データ抽出タスクを効率的に自動化します。
-type: docs
 weight: 13
 url: /ja/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---

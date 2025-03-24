@@ -3,7 +3,6 @@ title: Práce s dokumenty chráněnými heslem
 linktitle: Práce s dokumenty chráněnými heslem
 second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat text z dokumentů chráněných heslem pomocí GroupDocs.Parser for .NET. Vylepšete své možnosti zpracování dokumentů.
-type: docs
 weight: 15
 url: /cs/net/document-loading/working-with-password-protected-documents/
 ---
@@ -77,7 +76,7 @@ Ano, GroupDocs.Parser podporuje extrahování textu ze souborů PDF chráněnýc
 ### Je GroupDocs.Parser kompatibilní s různými formáty dokumentů, jako jsou DOCX, XLSX a PPTX?
 GroupDocs.Parser rozhodně zvládne širokou škálu formátů dokumentů mimo PDF, včetně formátů Microsoft Office.
 ### Kde najdu podrobnou dokumentaci k GroupDocs.Parser pro .NET?
- Prozkoumejte úplnou dokumentaci[tady](https://reference.groupdocs.com/parser/net/).
+ Prozkoumejte úplnou dokumentaci[tady](https://tutorials.groupdocs.com/parser/net/).
 ### Jak mohu získat podporu nebo klást otázky týkající se GroupDocs.Parser for .NET?
  Navštivte fórum komunity GroupDocs[tady](https://forum.groupdocs.com/c/parser/17) pro pomoc.
 ### Je k dispozici zkušební verze pro GroupDocs.Parser pro .NET?

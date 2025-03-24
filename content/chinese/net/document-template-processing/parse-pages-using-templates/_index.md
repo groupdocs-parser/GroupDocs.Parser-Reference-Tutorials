@@ -3,7 +3,6 @@ title: 使用模板解析页面
 linktitle: 使用模板解析页面
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser 在 .NET 中使用模板解析文档页面。高效地为您的应用程序提取特定内容。
-type: docs
 weight: 16
 url: /zh/net/document-template-processing/parse-pages-using-templates/
 ---
@@ -67,7 +66,7 @@ using (Parser parser = new Parser("YourSampleFile.docx"))
 ### GroupDocs.Parser 是否适合提取条形码等特定数据？
 当然！GroupDocs.Parser 提供精确的提取功能，可提取有针对性的内容。
 ### 在哪里可以找到 GroupDocs.Parser 的详细文档？
-访问[文档](https://reference.groupdocs.com/parser/net/)提供全面指导。
+访问[文档](https://tutorials.groupdocs.com/parser/net/)提供全面指导。
 ### 如何获得 GroupDocs.Parser 的临时许可？
 获得[临时执照](https://purchase.groupdocs.com/temporary-license/)用于评估或开发目的。
 ### GroupDocs 是否提供故障排除支持？

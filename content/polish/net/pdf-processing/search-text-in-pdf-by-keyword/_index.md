@@ -3,7 +3,6 @@ title: Wyszukaj tekst w formacie PDF według słowa kluczowego
 linktitle: Wyszukaj tekst w formacie PDF według słowa kluczowego
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyszukiwać określony tekst w dokumentach PDF za pomocą GroupDocs.Parser dla .NET. Efektywnie integruj zaawansowane możliwości wyszukiwania tekstu ze swoją platformą .NET.
-type: docs
 weight: 18
 url: /pl/net/pdf-processing/search-text-in-pdf-by-keyword/
 ---

@@ -3,7 +3,6 @@ title: Extrahera text från Word-dokument som HTML
 linktitle: Extrahera text från Word-dokument som HTML
 second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du använder GroupDocs.Parser för .NET för att extrahera text från Word-dokument och spara den som HTML. Steg-för-steg handledning med kodexempel.
-type: docs
 weight: 16
 url: /sv/net/word-document-processing/extract-text-from-word-document-as-html/
 ---
@@ -67,7 +66,7 @@ I den här handledningen har vi utforskat hur man använder GroupDocs.Parser fö
 ### Hur kan jag få en tillfällig licens för GroupDocs.Parser?
  Du kan begära en tillfällig licens från[här](https://purchase.groupdocs.com/temporary-license/).
 ### Var kan jag hitta mer dokumentation för GroupDocs.Parser?
- Detaljerad dokumentation finns tillgänglig[här](https://reference.groupdocs.com/parser/net/).
+ Detaljerad dokumentation finns tillgänglig[här](https://tutorials.groupdocs.com/parser/net/).
 ### Finns det en gratis testversion tillgänglig för GroupDocs.Parser?
  Ja, du kan komma åt den kostnadsfria testversionen[här](https://releases.groupdocs.com/).
 ### Hur får jag support för GroupDocs.Parser?

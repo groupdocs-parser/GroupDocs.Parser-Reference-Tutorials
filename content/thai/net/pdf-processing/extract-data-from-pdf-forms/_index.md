@@ -3,7 +3,6 @@ title: แยกข้อมูลจากแบบฟอร์ม PDF
 linktitle: แยกข้อมูลจากแบบฟอร์ม PDF
 second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีดึงข้อมูลจากแบบฟอร์ม PDF โดยใช้ GroupDocs.Parser สำหรับ .NET คำแนะนำทีละขั้นตอนพร้อมตัวอย่างโค้ดและคำถามที่พบบ่อย
-type: docs
 weight: 11
 url: /th/net/pdf-processing/extract-data-from-pdf-forms/
 ---
@@ -79,7 +78,7 @@ Console.WriteLine("Description: {0}", rec.Description);
 ### ฉันสามารถแยกรูปภาพและข้อมูลเมตาโดยใช้ GroupDocs.Parser ได้หรือไม่
 ใช่ GroupDocs.Parser อนุญาตให้แยกรูปภาพ ข้อมูลเมตา และข้อความจากเอกสาร
 ### ฉันจะหาการสนับสนุนหรือเอกสารเพิ่มเติมสำหรับ GroupDocs.Parser ได้ที่ไหน
- ท่านสามารถเยี่ยมชมได้ที่[เอกสาร GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) สำหรับข้อมูลโดยละเอียดและตัวอย่าง
+ ท่านสามารถเยี่ยมชมได้ที่[เอกสาร GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) สำหรับข้อมูลโดยละเอียดและตัวอย่าง
 ### GroupDocs.Parser มีรุ่นทดลองใช้ฟรีหรือไม่
  ใช่ คุณสามารถเข้าถึง[ทดลองใช้ GroupDocs.Parser ฟรี](https://releases.groupdocs.com/) เพื่อสำรวจคุณลักษณะต่างๆ
 ### ฉันจะขอรับใบอนุญาตชั่วคราวสำหรับ GroupDocs.Parser ได้อย่างไร

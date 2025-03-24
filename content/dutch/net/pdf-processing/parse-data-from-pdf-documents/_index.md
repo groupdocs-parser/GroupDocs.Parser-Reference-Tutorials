@@ -3,7 +3,6 @@ title: Parseer gegevens uit PDF-documenten
 linktitle: Parseer gegevens uit PDF-documenten
 second_title: GroupDocs.Parser .NET API
 description: Leer hoe u gegevens uit PDF-documenten kunt extraheren met GroupDocs.Parser voor .NET. Volg onze stapsgewijze handleiding om PDF-bestanden efficiënt te parseren en verwerken.
-type: docs
 weight: 17
 url: /nl/net/pdf-processing/parse-data-from-pdf-documents/
 ---
@@ -81,6 +80,6 @@ GroupDocs.Parser richt zich voornamelijk op PDF-bestanden, maar ondersteunt ook 
 ### Is er een proefversie beschikbaar voor GroupDocs.Parser?
  Ja, u kunt een gratis proefversie van GroupDocs.Parser krijgen[hier](https://releases.groupdocs.com/).
 ### Waar kan ik documentatie en ondersteuning vinden voor GroupDocs.Parser?
- Verwijs naar de[documentatie](https://reference.groupdocs.com/parser/net/) En[Helpforum](https://forum.groupdocs.com/c/parser/17) voor GroupDocs.Parser.
+ Verwijs naar de[documentatie](https://tutorials.groupdocs.com/parser/net/) En[Helpforum](https://forum.groupdocs.com/c/parser/17) voor GroupDocs.Parser.
 ### Hoe kan ik een tijdelijke licentie voor GroupDocs.Parser verkrijgen?
  U kunt een tijdelijke licentie aanschaffen[hier](https://purchase.groupdocs.com/temporary-license/).

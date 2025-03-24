@@ -3,7 +3,6 @@ title: Cari Teks berdasarkan Halaman
 linktitle: Cari Teks berdasarkan Halaman
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mencari teks berdasarkan halaman menggunakan GroupDocs.Parser untuk .NET. Ekstrak konten tertentu secara efisien dari dokumen di aplikasi .NET Anda.
-type: docs
 weight: 22
 url: /id/net/text-extraction/search-text-by-pages/
 ---
@@ -64,7 +63,7 @@ Ya, GroupDocs.Parser mendukung berbagai format dokumen termasuk DOCX, PDF, XLSX,
 ### Bisakah saya mengekstrak gambar dan metadata dari dokumen menggunakan GroupDocs.Parser?
 Tentu saja, GroupDocs.Parser memungkinkan ekstraksi gambar, metadata, dan teks dari dokumen.
 ### Di mana saya dapat menemukan dokumentasi terperinci untuk GroupDocs.Parser?
- Anda dapat mengakses dokumentasinya[Di Sini](https://reference.groupdocs.com/parser/net/).
+ Anda dapat mengakses dokumentasinya[Di Sini](https://tutorials.groupdocs.com/parser/net/).
 ### Bagaimana saya bisa mendapatkan lisensi sementara untuk GroupDocs.Parser?
  Anda dapat meminta lisensi sementara[Di Sini](https://purchase.groupdocs.com/temporary-license/).
 ### Di mana saya bisa mendapatkan dukungan atau bantuan dengan GroupDocs.Parser?

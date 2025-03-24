@@ -3,7 +3,6 @@ title: البحث في النص مع النقاط البارزة
 linktitle: البحث في النص مع النقاط البارزة
 second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية البحث عن النص وتمييزه في المستندات باستخدام GroupDocs.Parser لـ .NET. استخراج رؤى قيمة بكفاءة.
-type: docs
 weight: 24
 url: /ar/net/text-extraction/search-text-with-highlights/
 ---

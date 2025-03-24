@@ -3,7 +3,6 @@ title: PDFからテキストを抽出する
 linktitle: PDFからテキストを抽出する
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して PDF ドキュメントからテキストを抽出する方法を学びます。開発者向けのステップバイステップのチュートリアルです。
-type: docs
 weight: 14
 url: /ja/net/pdf-processing/extract-text-from-pdf/
 ---
@@ -58,7 +57,7 @@ Console.WriteLine(reader.ReadToEnd());
 ### ライセンスを購入する前に GroupDocs.Parser を試すことはできますか?
 はい、無料試用版を入手できます[ここ](https://releases.groupdocs.com/).
 ### GroupDocs.Parser のドキュメントはどこにありますか?
-詳細なドキュメントが利用可能[ここ](https://reference.groupdocs.com/parser/net/).
+詳細なドキュメントが利用可能[ここ](https://tutorials.groupdocs.com/parser/net/).
 ### GroupDocs.Parser のテクニカル サポートを受けるにはどうすればよいですか?
 サポートフォーラムで助けを求めることができます[ここ](https://forum.groupdocs.com/c/parser/17).
 ### GroupDocs.Parser の一時ライセンスを取得するにはどうすればよいですか?

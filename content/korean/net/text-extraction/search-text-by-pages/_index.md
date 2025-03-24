@@ -3,7 +3,6 @@ title: 페이지별로 텍스트 검색
 linktitle: 페이지별로 텍스트 검색
 second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 페이지별로 텍스트를 검색하는 방법을 알아보세요. .NET 애플리케이션의 문서에서 특정 콘텐츠를 효율적으로 추출합니다.
-type: docs
 weight: 22
 url: /ko/net/text-extraction/search-text-by-pages/
 ---
@@ -64,7 +63,7 @@ foreach (SearchResult result in searchResults)
 ### GroupDocs.Parser를 사용하여 문서에서 이미지와 메타데이터를 추출할 수 있습니까?
 물론, GroupDocs.Parser를 사용하면 문서에서 이미지, 메타데이터 및 텍스트를 추출할 수 있습니다.
 ### GroupDocs.Parser에 대한 자세한 문서는 어디서 찾을 수 있나요?
- 문서에 액세스할 수 있습니다.[여기](https://reference.groupdocs.com/parser/net/).
+ 문서에 액세스할 수 있습니다.[여기](https://tutorials.groupdocs.com/parser/net/).
 ### GroupDocs.Parser의 임시 라이센스를 얻으려면 어떻게 해야 합니까?
  임시 라이센스를 요청할 수 있습니다[여기](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Parser에 대한 지원은 어디서 받을 수 있나요?

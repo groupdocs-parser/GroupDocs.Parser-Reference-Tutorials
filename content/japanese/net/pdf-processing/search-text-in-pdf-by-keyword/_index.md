@@ -3,7 +3,6 @@ title: キーワードでPDF内のテキストを検索する
 linktitle: キーワードでPDF内のテキストを検索する
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して PDF ドキュメント内の特定のテキストを検索する方法を学習します。強力なテキスト検索機能を .NET に効率的に統合します。
-type: docs
 weight: 18
 url: /ja/net/pdf-processing/search-text-in-pdf-by-keyword/
 ---

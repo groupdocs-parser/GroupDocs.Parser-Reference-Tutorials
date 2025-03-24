@@ -3,7 +3,6 @@ title: แยกรูปภาพจากเอกสาร Excel
 linktitle: แยกรูปภาพจากเอกสาร Excel
 second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกรูปภาพจากเอกสาร Excel โดยใช้ GroupDocs.Parser สำหรับ .NET คำแนะนำทีละขั้นตอนพร้อมตัวอย่างโค้ด
-type: docs
 weight: 10
 url: /th/net/excel-document-processing/extract-images-from-excel-document/
 ---
@@ -66,4 +65,4 @@ foreach (PageImageArea image in images)
 ### ถาม: ฉันสามารถลองใช้ GroupDocs.Parser ก่อนซื้อใบอนุญาตได้หรือไม่
  ตอบ: ได้ คุณจะได้รับ[ทดลองฟรี](https://releases.groupdocs.com/) เพื่อประเมิน GroupDocs.Parser
 ### ถาม: ฉันจะหาเอกสารโดยละเอียดสำหรับ GroupDocs.Parser ได้ที่ไหน
- ตอบ: อ้างถึงเนื้อหาที่ครอบคลุม[เอกสารประกอบ](https://reference.groupdocs.com/parser/net/) สำหรับข้อมูลโดยละเอียดเกี่ยวกับการใช้ GroupDocs.Parser
+ ตอบ: อ้างถึงเนื้อหาที่ครอบคลุม[เอกสารประกอบ](https://tutorials.groupdocs.com/parser/net/) สำหรับข้อมูลโดยละเอียดเกี่ยวกับการใช้ GroupDocs.Parser

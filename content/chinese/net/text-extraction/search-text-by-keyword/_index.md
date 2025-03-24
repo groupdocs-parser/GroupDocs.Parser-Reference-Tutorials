@@ -3,7 +3,6 @@ title: 按关键字搜索文本
 linktitle: 按关键字搜索文本
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 在文档中按关键字搜索文本。轻松高效地提取相关内容。
-type: docs
 weight: 21
 url: /zh/net/text-extraction/search-text-by-keyword/
 ---
@@ -63,7 +62,7 @@ foreach (SearchResult result in searchResults)
 ### 我可以使用 GroupDocs.Parser 执行高级文本提取操作吗？
 当然！除了文本搜索之外，GroupDocs.Parser 还支持元数据提取、结构化文本提取等。
 ### 在哪里可以找到 GroupDocs.Parser 的详细文档？
-探索完整文档[这里](https://reference.groupdocs.com/parser/net/).
+探索完整文档[这里](https://tutorials.groupdocs.com/parser/net/).
 ### 如何获得与 GroupDocs.Parser 相关的查询的支持或帮助？
 访问 GroupDocs 论坛以获得支持和讨论[这里](https://forum.groupdocs.com/c/parser/17).
 ### 购买之前是否有试用版可供评估 GroupDocs.Parser？

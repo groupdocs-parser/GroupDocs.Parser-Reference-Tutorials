@@ -3,7 +3,6 @@ title: दस्तावेज़ पृष्ठ क्षेत्र से 
 linktitle: दस्तावेज़ पृष्ठ क्षेत्र से छवियाँ निकालें
 second_title: GroupDocs.Parser .NET एपीआई
 description: जानें कि .NET के लिए Groupdocs.Parser का उपयोग करके दस्तावेज़ों से छवियों को सटीक रूप से कैसे निकाला जाए। सटीक छवि निष्कर्षण के लिए विशिष्ट क्षेत्रों को लक्षित करना सीखें।
-type: docs
 weight: 10
 url: /hi/net/image-extraction/extract-images-from-document-page-area/
 ---

@@ -3,7 +3,6 @@ title: Trabajar con documentos protegidos con contraseña
 linktitle: Trabajar con documentos protegidos con contraseña
 second_title: API GroupDocs.Parser .NET
 description: Aprenda a extraer texto de documentos protegidos con contraseña utilizando GroupDocs.Parser para .NET. Mejore sus capacidades de procesamiento de documentos.
-type: docs
 weight: 15
 url: /es/net/document-loading/working-with-password-protected-documents/
 ---
@@ -77,7 +76,7 @@ Sí, GroupDocs.Parser admite la extracción de texto de archivos PDF protegidos 
 ### ¿GroupDocs.Parser es compatible con varios formatos de documentos como DOCX, XLSX y PPTX?
 Por supuesto, GroupDocs.Parser puede manejar una amplia gama de formatos de documentos además de PDF, incluidos los formatos de Microsoft Office.
 ### ¿Dónde puedo encontrar documentación detallada para GroupDocs.Parser para .NET?
- Explora la documentación completa[aquí](https://reference.groupdocs.com/parser/net/).
+ Explora la documentación completa[aquí](https://tutorials.groupdocs.com/parser/net/).
 ### ¿Cómo puedo obtener soporte o hacer preguntas relacionadas con GroupDocs.Parser para .NET?
  Visite el foro de la comunidad GroupDocs[aquí](https://forum.groupdocs.com/c/parser/17) para asistencia.
 ### ¿Existe una versión de prueba disponible para GroupDocs.Parser para .NET?

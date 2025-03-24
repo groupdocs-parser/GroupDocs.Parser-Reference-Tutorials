@@ -3,7 +3,6 @@ title: Ekstrak Teks dari Halaman dalam PDF dalam Mode Mentah
 linktitle: Ekstrak Teks dari Halaman dalam PDF dalam Mode Mentah
 second_title: GroupDocs.Parser .NET API
 description: Ekstrak teks dari PDF menggunakan GroupDocs.Parser di C#. Pelajari ekstraksi teks PDF yang efisien dengan perpustakaan .NET yang kuat ini.
-type: docs
 weight: 16
 url: /id/net/pdf-processing/extract-text-from-page-in-pdf-in-raw-mode/
 ---

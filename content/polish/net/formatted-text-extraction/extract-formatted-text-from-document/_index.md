@@ -3,7 +3,6 @@ title: Wyodrębnij sformatowany tekst z dokumentu
 linktitle: Wyodrębnij sformatowany tekst z dokumentu
 second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić sformatowany tekst z dokumentów za pomocą GroupDocs.Parser dla .NET. Prosta i wydajna ekstrakcja tekstu dla Twoich aplikacji.
-type: docs
 weight: 10
 url: /pl/net/formatted-text-extraction/extract-formatted-text-from-document/
 ---

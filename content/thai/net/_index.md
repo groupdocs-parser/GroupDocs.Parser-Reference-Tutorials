@@ -1,7 +1,6 @@
 ---
 title: บทช่วยสอนและตัวอย่างของ GroupDocs.Parser สำหรับ .NET
 linktitle: GroupDocs.Parser สำหรับ .NET บทช่วยสอน
-type: docs
 weight: 10
 url: /th/net/
 description: ปลดล็อกเทคนิคการแยกข้อความที่มีประสิทธิภาพด้วย GroupDocs.Parser สำหรับ .NET แยก ไฮไลต์ และค้นหาข้อความได้อย่างราบรื่นเพื่อการประมวลผลเอกสารที่ได้รับการปรับปรุง

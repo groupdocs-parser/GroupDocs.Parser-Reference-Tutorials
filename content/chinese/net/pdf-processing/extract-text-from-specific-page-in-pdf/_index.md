@@ -3,7 +3,6 @@ title: 从 PDF 中的特定页面提取文本
 linktitle: 从 PDF 中的特定页面提取文本
 second_title: GroupDocs.Parser .NET API
 description: 使用 GroupDocs.Parser for .NET 从 PDF 中提取文本。使用这个强大的库轻松检索特定页面内容。
-type: docs
 weight: 15
 url: /zh/net/pdf-processing/extract-text-from-specific-page-in-pdf/
 ---

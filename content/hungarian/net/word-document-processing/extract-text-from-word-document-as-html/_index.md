@@ -3,7 +3,6 @@ title: Szöveg kibontása a Word-dokumentumból HTML-ként
 linktitle: Szöveg kibontása a Word-dokumentumból HTML-ként
 second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan használhatja a GroupDocs.Parser for .NET-et szövegek kivonásához Word-dokumentumokból, és HTML-ként mentheti el. Lépésről lépésre bemutató oktatóprogram kódpéldákkal.
-type: docs
 weight: 16
 url: /hu/net/word-document-processing/extract-text-from-word-document-as-html/
 ---
@@ -67,7 +66,7 @@ Ebben az oktatóanyagban megvizsgáltuk, hogyan használható a GroupDocs.Parser
 ### Hogyan szerezhetek ideiglenes licencet a GroupDocs.Parser számára?
  Ideiglenes jogosítványt kérhetsz[itt](https://purchase.groupdocs.com/temporary-license/).
 ### Hol találok további dokumentációt a GroupDocs.Parserhez?
- A részletes dokumentáció elérhető[itt](https://reference.groupdocs.com/parser/net/).
+ A részletes dokumentáció elérhető[itt](https://tutorials.groupdocs.com/parser/net/).
 ### Van ingyenes próbaverzió a GroupDocs.Parser számára?
  Igen, hozzáférhet az ingyenes próbaverzióhoz[itt](https://releases.groupdocs.com/).
 ### Hogyan kaphatok támogatást a GroupDocs.Parser számára?

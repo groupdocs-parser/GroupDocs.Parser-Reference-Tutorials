@@ -3,7 +3,6 @@ title: 使用提取数据中的表格
 linktitle: 使用提取数据中的表格
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从文档中提取表格数据。使用预定义模板高效解析结构化内容。
-type: docs
 weight: 12
 url: /zh/net/data-extraction-from-templates/working-with-tables-in-extracted-data/
 ---

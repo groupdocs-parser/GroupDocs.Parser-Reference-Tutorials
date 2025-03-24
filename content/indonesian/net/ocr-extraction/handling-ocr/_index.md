@@ -3,7 +3,6 @@ title: Menangani OCR
 linktitle: Menangani OCR
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara menangani OCR menggunakan GroupDocs.Parser untuk .NET. Ekstrak teks dari gambar dan dokumen yang dipindai secara efisien.
-type: docs
 weight: 11
 url: /id/net/ocr-extraction/handling-ocr/
 ---

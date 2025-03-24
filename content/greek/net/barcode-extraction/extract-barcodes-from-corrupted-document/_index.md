@@ -3,7 +3,6 @@ title: Εξαγωγή γραμμωτών κωδίκων από κατεστρα�
 linktitle: Εξαγωγή γραμμωτών κωδίκων από κατεστραμμένο έγγραφο
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε γραμμικούς κώδικες από κατεστραμμένα έγγραφα χρησιμοποιώντας το GroupDocs.Parser για .NET. Ολοκληρωμένο σεμινάριο με οδηγίες βήμα προς βήμα.
-type: docs
 weight: 11
 url: /el/net/barcode-extraction/extract-barcodes-from-corrupted-document/
 ---

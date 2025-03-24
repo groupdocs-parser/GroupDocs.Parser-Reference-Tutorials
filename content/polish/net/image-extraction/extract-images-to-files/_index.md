@@ -3,7 +3,6 @@ title: Wyodrębnij obrazy do plików
 linktitle: Wyodrębnij obrazy do plików
 second_title: GroupDocs.Parser API .NET
 description: Bez wysiłku wyodrębniaj obrazy z różnych typów dokumentów, takich jak PDF i DOCX, za pomocą GroupDocs.Parser dla .NET. Uprość zadania analizowania dokumentów.
-type: docs
 weight: 13
 url: /pl/net/image-extraction/extract-images-to-files/
 ---

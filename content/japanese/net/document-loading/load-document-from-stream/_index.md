@@ -3,7 +3,6 @@ title: ストリームからドキュメントを読み込む
 linktitle: ストリームからドキュメントを読み込む
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser を使用して .NET のさまざまなドキュメント形式からテキストを抽出する方法を学習します。コード例を使用したステップバイステップ ガイド。
-type: docs
 weight: 12
 url: /ja/net/document-loading/load-document-from-stream/
 ---
@@ -61,4 +60,4 @@ GroupDocs.Parser は、DOCX、PDF、XLSX、PPTX、EPUB など、幅広いドキ�
 ### GroupDocs.Parser の一時ライセンスを取得するにはどうすればよいですか?
 一時ライセンスは以下から取得できます。[ここ](https://purchase.groupdocs.com/temporary-license/).
 ### GroupDocs.Parser の詳細なサポートやドキュメントはどこで見つかりますか?
-追加のサポートについては、[GroupDocs.Parser フォーラム](https://forum.groupdocs.com/c/parser/17)または、[ドキュメンテーション](https://reference.groupdocs.com/parser/net/).
+追加のサポートについては、[GroupDocs.Parser フォーラム](https://forum.groupdocs.com/c/parser/17)または、[ドキュメンテーション](https://tutorials.groupdocs.com/parser/net/).

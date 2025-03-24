@@ -3,7 +3,6 @@ title: टेम्पलेट्स का उपयोग करके पे
 linktitle: टेम्पलेट्स का उपयोग करके पेज पार्स करें
 second_title: GroupDocs.Parser .NET एपीआई
 description: GroupDocs.Parser के साथ .NET में टेम्प्लेट का उपयोग करके दस्तावेज़ पृष्ठों को पार्स करना सीखें। अपने अनुप्रयोगों के लिए विशिष्ट सामग्री को कुशलतापूर्वक निकालें।
-type: docs
 weight: 16
 url: /hi/net/document-template-processing/parse-pages-using-templates/
 ---
@@ -67,7 +66,7 @@ using (Parser parser = new Parser("YourSampleFile.docx"))
 ### क्या GroupDocs.Parser बारकोड जैसे विशिष्ट डेटा निकालने के लिए उपयुक्त है?
 बिल्कुल! GroupDocs.Parser लक्षित सामग्री निष्कर्षण के लिए सटीक निष्कर्षण क्षमताएं प्रदान करता है।
 ### मैं GroupDocs.Parser के लिए विस्तृत दस्तावेज़ कहां पा सकता हूं?
- दौरा करना[प्रलेखन](https://reference.groupdocs.com/parser/net/) व्यापक मार्गदर्शन के लिए.
+ दौरा करना[प्रलेखन](https://tutorials.groupdocs.com/parser/net/) व्यापक मार्गदर्शन के लिए.
 ### मैं GroupDocs.Parser के लिए अस्थायी लाइसेंस कैसे प्राप्त कर सकता हूं?
  प्राप्त करें[अस्थायी लाइसेंस](https://purchase.groupdocs.com/temporary-license/) मूल्यांकन या विकास प्रयोजनों के लिए।
 ### क्या ग्रुपडॉक्स समस्या निवारण के लिए समर्थन प्रदान करता है?

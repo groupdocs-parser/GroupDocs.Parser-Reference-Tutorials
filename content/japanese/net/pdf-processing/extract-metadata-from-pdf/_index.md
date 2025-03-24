@@ -3,7 +3,6 @@ title: PDFからメタデータを抽出する
 linktitle: PDFからメタデータを抽出する
 second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して PDF ドキュメントからメタデータを抽出する方法を学びます。この包括的なガイドでは、手順と前提条件を段階的に説明します。
-type: docs
 weight: 13
 url: /ja/net/pdf-processing/extract-metadata-from-pdf/
 ---

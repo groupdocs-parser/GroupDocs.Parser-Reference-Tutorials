@@ -3,7 +3,6 @@ title: 遍歷字段
 linktitle: 遍歷字段
 second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 從文件中擷取結構化資料。透過文件資料擷取功能增強您的 .NET 應用程式。
-type: docs
 weight: 11
 url: /zh-hant/net/data-extraction-from-templates/iterate-through-fields/
 ---

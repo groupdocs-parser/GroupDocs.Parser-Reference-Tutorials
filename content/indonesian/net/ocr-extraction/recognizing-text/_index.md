@@ -3,7 +3,6 @@ title: Mengenali Teks
 linktitle: Mengenali Teks
 second_title: GroupDocs.Parser .NET API
 description: Ekstrak teks dari berbagai format dokumen secara efisien dengan GroupDocs.Parser untuk .NET. Integrasi yang mudah dan kemampuan OCR yang kuat.
-type: docs
 weight: 12
 url: /id/net/ocr-extraction/recognizing-text/
 ---
@@ -57,7 +56,7 @@ Dalam cuplikan ini:
 - `TextOptions` dikonfigurasi untuk mengaktifkan OCR dan mengoptimalkan ekstraksi teks.
 
 ## Kesimpulan
- Selamat! Anda telah mempelajari cara mengintegrasikan GroupDocs.Parser untuk .NET ke dalam proyek Anda untuk mengekstrak teks secara efisien. Jelajahi yang luas[dokumentasi](https://reference.groupdocs.com/parser/net/) untuk fitur lanjutan dan pengoptimalan.
+ Selamat! Anda telah mempelajari cara mengintegrasikan GroupDocs.Parser untuk .NET ke dalam proyek Anda untuk mengekstrak teks secara efisien. Jelajahi yang luas[dokumentasi](https://tutorials.groupdocs.com/parser/net/) untuk fitur lanjutan dan pengoptimalan.
 
 ## FAQ
 ### Apakah GroupDocs.Parser cocok untuk mengekstrak teks dari file PDF?

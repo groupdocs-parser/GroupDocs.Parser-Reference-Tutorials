@@ -3,7 +3,6 @@ title: Extrahujte formátovaný text ze stránky dokumentu
 linktitle: Extrahujte formátovaný text ze stránky dokumentu
 second_title: GroupDocs.Parser .NET API
 description: Extrahujte formátovaný text ze stránek dokumentu pomocí GroupDocs.Parser for .NET. Efektivní a spolehlivé řešení extrakce textu.
-type: docs
 weight: 11
 url: /cs/net/formatted-text-extraction/extract-formatted-text-from-document-page/
 ---

@@ -3,7 +3,6 @@ title: 從 Excel 文件中擷取文本
 linktitle: 從 Excel 文件中擷取文本
 second_title: GroupDocs.Parser .NET API
 description: 了解如何透過簡單的步驟使用 GroupDocs.Parser for .NET 從 Excel 文件中擷取文字。
-type: docs
 weight: 12
 url: /zh-hant/net/excel-document-processing/extract-text-from-excel-document/
 ---
@@ -58,7 +57,7 @@ Console.WriteLine(reader.ReadToEnd());
 ### GroupDocs.Parser 是否有免費試用版？
 是的，您可以從以下位置下載 GroupDocs.Parser 的免費試用版：[這裡](https://releases.groupdocs.com/).
 ### 在哪裡可以找到 GroupDocs.Parser 的文檔？
-您可以找到 GroupDocs.Parser 的詳細文檔[這裡](https://reference.groupdocs.com/parser/net/).
+您可以找到 GroupDocs.Parser 的詳細文檔[這裡](https://tutorials.groupdocs.com/parser/net/).
 ### 如何獲得 GroupDocs.Parser 的支援？
 如需 GroupDocs.Parser 的支援和協助，請訪問[集團文檔論壇](https://forum.groupdocs.com/c/parser/17).
 ### 哪裡可以購買 GroupDocs.Parser 的許可證？

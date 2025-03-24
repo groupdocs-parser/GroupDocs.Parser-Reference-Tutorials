@@ -3,7 +3,6 @@ title: Εξαγωγή κειμένου από PDF
 linktitle: Εξαγωγή κειμένου από PDF
 second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε κείμενο από έγγραφα PDF χρησιμοποιώντας το GroupDocs.Parser για .NET. Βήμα προς βήμα μάθημα για προγραμματιστές.
-type: docs
 weight: 14
 url: /el/net/pdf-processing/extract-text-from-pdf/
 ---
@@ -58,7 +57,7 @@ Console.WriteLine(reader.ReadToEnd());
 ### Μπορώ να δοκιμάσω το GroupDocs.Parser πριν αγοράσω μια άδεια;
  Ναι, μπορείτε να λάβετε μια δωρεάν δοκιμαστική έκδοση[εδώ](https://releases.groupdocs.com/).
 ### Πού μπορώ να βρω τεκμηρίωση για το GroupDocs.Parser;
- Λεπτομερής τεκμηρίωση είναι διαθέσιμη[εδώ](https://reference.groupdocs.com/parser/net/).
+ Λεπτομερής τεκμηρίωση είναι διαθέσιμη[εδώ](https://tutorials.groupdocs.com/parser/net/).
 ### Πώς μπορώ να λάβω τεχνική υποστήριξη για το GroupDocs.Parser;
  Μπορείτε να αναζητήσετε βοήθεια στο φόρουμ υποστήριξης[εδώ](https://forum.groupdocs.com/c/parser/17).
 ### Πώς μπορώ να αποκτήσω μια προσωρινή άδεια για το GroupDocs.Parser;

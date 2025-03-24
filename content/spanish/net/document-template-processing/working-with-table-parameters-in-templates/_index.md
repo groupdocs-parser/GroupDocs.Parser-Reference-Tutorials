@@ -3,7 +3,6 @@ title: Trabajar con parámetros de tabla en plantillas
 linktitle: Trabajar con parámetros de tabla en plantillas
 second_title: API GroupDocs.Parser .NET
 description: Aprenda a extraer datos de tablas en documentos usando GroupDocs.Parser para .NET. Guía paso a paso para el uso de parámetros de tabla.
-type: docs
 weight: 15
 url: /es/net/document-template-processing/working-with-table-parameters-in-templates/
 ---

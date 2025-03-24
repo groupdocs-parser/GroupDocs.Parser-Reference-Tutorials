@@ -3,7 +3,6 @@ title: Trích xuất mục lục từ tài liệu Word
 linktitle: Trích xuất mục lục từ tài liệu Word
 second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất Mục lục (TOC) từ tài liệu Word theo chương trình bằng GroupDocs.Parser cho .NET.
-type: docs
 weight: 13
 url: /vi/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
@@ -64,7 +63,7 @@ Có, GroupDocs.Parser hỗ trợ nhiều định dạng tài liệu, bao gồm P
 ### GroupDocs.Parser có phù hợp để xử lý các tài liệu lớn không?
 Có, GroupDocs.Parser được tối ưu hóa để xử lý các tài liệu lớn một cách hiệu quả với các tính năng như trích xuất văn bản, trích xuất siêu dữ liệu và trích xuất dữ liệu có cấu trúc.
 ### Tôi có thể tìm thêm tài liệu và hướng dẫn về GroupDocs.Parser ở đâu?
- Tham quan[Tài liệu GroupDocs.Parser](https://reference.groupdocs.com/parser/net/) để có tài liệu tham khảo và hướng dẫn API chi tiết.
+ Tham quan[Tài liệu GroupDocs.Parser](https://tutorials.groupdocs.com/parser/net/) để có tài liệu tham khảo và hướng dẫn API chi tiết.
 ### Làm cách nào tôi có thể nhận được hỗ trợ cho GroupDocs.Parser?
  Tham gia[Diễn đàn GroupDocs.Parser](https://forum.groupdocs.com/c/parser/17) để đặt câu hỏi và tương tác với cộng đồng.
 ### Có phiên bản dùng thử cho GroupDocs.Parser không?

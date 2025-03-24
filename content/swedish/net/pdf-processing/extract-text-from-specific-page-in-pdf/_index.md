@@ -3,7 +3,6 @@ title: Extrahera text från specifik sida i PDF
 linktitle: Extrahera text från specifik sida i PDF
 second_title: GroupDocs.Parser .NET API
 description: Extrahera text från PDF-filer med GroupDocs.Parser för .NET. Hämta enkelt specifikt sidinnehåll med detta kraftfulla bibliotek.
-type: docs
 weight: 15
 url: /sv/net/pdf-processing/extract-text-from-specific-page-in-pdf/
 ---

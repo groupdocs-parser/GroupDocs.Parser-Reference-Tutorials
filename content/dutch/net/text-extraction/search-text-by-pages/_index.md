@@ -3,7 +3,6 @@ title: Zoek tekst op pagina's
 linktitle: Zoek tekst op pagina's
 second_title: GroupDocs.Parser .NET API
 description: Leer tekst per pagina zoeken met GroupDocs.Parser voor .NET. Extraheer specifieke inhoud efficiënt uit documenten in uw .NET-applicaties.
-type: docs
 weight: 22
 url: /nl/net/text-extraction/search-text-by-pages/
 ---
@@ -64,7 +63,7 @@ Ja, GroupDocs.Parser ondersteunt een breed scala aan documentformaten, waaronder
 ### Kan ik afbeeldingen en metagegevens uit documenten extraheren met GroupDocs.Parser?
 Absoluut, GroupDocs.Parser maakt het extraheren van afbeeldingen, metagegevens en tekst uit documenten mogelijk.
 ### Waar kan ik gedetailleerde documentatie voor GroupDocs.Parser vinden?
- U heeft toegang tot de documentatie[hier](https://reference.groupdocs.com/parser/net/).
+ U heeft toegang tot de documentatie[hier](https://tutorials.groupdocs.com/parser/net/).
 ### Hoe kan ik een tijdelijke licentie voor GroupDocs.Parser verkrijgen?
  U kunt een tijdelijke licentie aanvragen[hier](https://purchase.groupdocs.com/temporary-license/).
 ### Waar kan ik ondersteuning of hulp krijgen bij GroupDocs.Parser?

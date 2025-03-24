@@ -3,7 +3,6 @@ title: Word Belgesindeki Belirli Sayfadan Metin Çıkarma
 linktitle: Word Belgesindeki Belirli Sayfadan Metin Çıkarma
 second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak Word belgelerindeki belirli sayfalardan metni nasıl çıkaracağınızı öğrenin. Metin çıkarma yeteneklerini .NET'inize entegre edin.
-type: docs
 weight: 17
 url: /tr/net/word-document-processing/extract-text-from-specific-page-in-word-document/
 ---

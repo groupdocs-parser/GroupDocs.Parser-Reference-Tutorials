@@ -3,7 +3,6 @@ title: Ekstrak Barcode dari Dokumen
 linktitle: Ekstrak Barcode dari Dokumen
 second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak kode batang dari dokumen menggunakan GroupDocs.Parser untuk .NET. Tingkatkan kemampuan pemrosesan dokumen Anda dengan mudah.
-type: docs
 weight: 10
 url: /id/net/barcode-extraction/extract-barcodes-from-document/
 ---
