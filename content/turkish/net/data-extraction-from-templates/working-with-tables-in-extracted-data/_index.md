@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak belgelerden tablo verilerini
 weight: 12
 url: /tr/net/data-extraction-from-templates/working-with-tables-in-extracted-data/
 ---
+
+# Çıkarılan Verilerde Tablolarla Çalışmak
+
 ## giriiş
 Bu öğreticide, GroupDocs.Parser for .NET'in belgelerdeki tablolardan veri ayıklamak için nasıl kullanılacağını keşfedeceğiz. GroupDocs.Parser, geliştiricilerin PDF, DOCX, XLSX ve daha fazlası gibi çeşitli dosya formatlarından metni, meta verileri ve yapılandırılmış içeriği ayrıştırıp çıkarmasına olanak tanıyan güçlü bir araçtır. Özellikle, önceden tanımlanmış şablonları kullanarak tablo verilerini verimli bir şekilde çıkarmaya odaklanacağız.
 ## Önkoşullar

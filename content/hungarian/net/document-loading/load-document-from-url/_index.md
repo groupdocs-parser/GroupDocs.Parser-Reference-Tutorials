@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthat ki szöveget dokumentumokból a GroupDo
 weight: 13
 url: /hu/net/document-loading/load-document-from-url/
 ---
+
+# Dokumentum betöltése az URL-ről
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan használhatjuk a GroupDocs.Parser for .NET-et szövegek kinyerésére a dokumentumokból. A GroupDocs.Parser egy hatékony eszköz szövegek, metaadatok és egyéb információk kinyerésére különféle dokumentumformátumokból, például PDF, Word, Excel és egyebekből. Lépésről lépésre bemutatjuk a dokumentum URL-ből történő betöltésének és a szöveges tartalom kibontásának folyamatát.
 ## Előfeltételek

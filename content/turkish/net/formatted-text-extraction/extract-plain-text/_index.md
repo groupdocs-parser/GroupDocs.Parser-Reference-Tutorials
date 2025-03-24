@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak belgelerden düz metin çık
 weight: 14
 url: /tr/net/formatted-text-extraction/extract-plain-text/
 ---
+
+# Düz Metni Çıkart
+
 ## giriiş
 Bu öğreticide, GroupDocs.Parser for .NET'i kullanarak çeşitli belge formatlarından düz metinlerin nasıl çıkarılacağını inceleyeceğiz. GroupDocs.Parser, geliştiricilerin belgelerle sorunsuz bir şekilde çalışmasına, metin ve meta verileri verimli bir şekilde ayıklamasına olanak tanıyan güçlü bir kitaplıktır. Bu kılavuz, bu kitaplığı .NET uygulamalarınıza entegre etmek ve kullanmak için gerekli adımlarda size yol gösterecektir.
 ## Önkoşullar

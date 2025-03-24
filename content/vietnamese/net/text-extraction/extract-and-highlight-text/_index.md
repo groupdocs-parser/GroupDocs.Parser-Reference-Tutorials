@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất và đánh dấu văn bản từ t�
 weight: 11
 url: /vi/net/text-extraction/extract-and-highlight-text/
 ---
+
+# Trích xuất và đánh dấu văn bản
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Parser cho .NET để trích xuất và đánh dấu văn bản từ tài liệu. GroupDocs.Parser là một thư viện mạnh mẽ cho phép bạn phân tích các định dạng tài liệu khác nhau và thực hiện các thao tác trích xuất văn bản nâng cao.
 ## Điều kiện tiên quyết

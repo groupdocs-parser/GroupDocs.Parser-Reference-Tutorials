@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất văn bản từ các vùng cụ th�
 weight: 14
 url: /vi/net/text-extraction/extract-text-from-specific-areas-with-options/
 ---
+
+# Trích xuất văn bản từ các khu vực cụ thể bằng tùy chọn
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Parser cho .NET để trích xuất văn bản từ các vùng cụ thể trong tài liệu bằng các tùy chọn có thể tùy chỉnh. GroupDocs.Parser là một thư viện mạnh mẽ cho phép các nhà phát triển phân tích cú pháp và trích xuất văn bản từ nhiều định dạng tài liệu khác nhau một cách dễ dàng.
 ## Điều kiện tiên quyết

@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 从特定文档区域�
 weight: 13
 url: /zh/net/text-extraction/extract-text-from-specific-areas-on-page/
 ---
+
+# 从页面的特定区域提取文本
+
 ## 介绍
 在本教程中，我们将探索如何使用 GroupDocs.Parser for .NET 库从页面的特定区域提取文本。GroupDocs.Parser 简化了从文档中提取文本的过程，允许开发人员针对文档中的特定感兴趣区域进行文本提取。这在处理需要精确提取文本以进行进一步处理或分析的复杂文档时特别有用。
 ## 先决条件

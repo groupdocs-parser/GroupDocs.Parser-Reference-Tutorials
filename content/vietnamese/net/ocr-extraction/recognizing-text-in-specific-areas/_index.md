@@ -6,6 +6,9 @@ description: Tìm hiểu cách sử dụng GroupDocs.Parser cho .NET để tríc
 weight: 13
 url: /vi/net/ocr-extraction/recognizing-text-in-specific-areas/
 ---
+
+# Nhận dạng văn bản ở các khu vực cụ thể
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Parser cho .NET để nhận dạng và trích xuất văn bản từ các vùng cụ thể trong tài liệu. GroupDocs.Parser là thư viện phân tích cú pháp tài liệu mạnh mẽ cho phép các nhà phát triển làm việc với nhiều định dạng tài liệu khác nhau, bao gồm PDF, Word, Excel, PowerPoint, v.v. Cụ thể, chúng tôi sẽ tập trung vào việc tận dụng khả năng OCR (Nhận dạng ký tự quang học) của GroupDocs.Parser để trích xuất văn bản từ các vùng được xác định trong tài liệu.
 ## Điều kiện tiên quyết

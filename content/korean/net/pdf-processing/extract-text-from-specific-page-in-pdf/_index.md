@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 PDF에서 텍스트를 추
 weight: 15
 url: /ko/net/pdf-processing/extract-text-from-specific-page-in-pdf/
 ---
+
+# PDF의 특정 페이지에서 텍스트 추출
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser를 사용하여 PDF 문서 내의 특정 페이지에서 텍스트를 추출하는 방법을 배웁니다. GroupDocs.Parser는 개발자가 PDF, Microsoft Word, Excel 등을 포함한 다양한 문서 형식으로 작업할 수 있는 강력한 라이브러리입니다. 텍스트 추출을 .NET 애플리케이션에 통합하려면 다음 단계를 따르세요.
 ## 전제 조건

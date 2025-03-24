@@ -6,6 +6,9 @@ description: Ekstrak teks dari dokumen dengan deteksi pengkodean menggunakan Gro
 weight: 10
 url: /id/net/text-extraction/extract-text-with-encoding-detection/
 ---
+
+# Ekstrak Teks dengan Deteksi Pengkodean
+
 ## Perkenalan
 GroupDocs.Parser untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang mengekstrak teks, metadata, dan informasi lainnya dari berbagai format dokumen di aplikasi .NET mereka. Tutorial ini akan memandu Anda melalui proses penggunaan GroupDocs.Parser untuk mengekstrak teks dari dokumen sambil mendeteksi pengkodean. Dengan mengikuti langkah-langkah ini, Anda akan dapat mengurai dan bekerja dengan tipe dokumen berbeda dalam proyek .NET Anda secara efisien.
 ## Prasyarat

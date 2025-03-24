@@ -6,6 +6,9 @@ description: Entdecken Sie, wie Sie mit Groupdocs.Parser für .NET Bilder präzi
 weight: 10
 url: /de/net/image-extraction/extract-images-from-document-page-area/
 ---
+
+# Bilder aus dem Dokumentseitenbereich extrahieren
+
 ## Einführung
 In diesem Tutorial lernen wir, wie man mit Groupdocs.Parser für .NET Bilder aus bestimmten Bereichen einer Dokumentseite extrahiert. Mit diesem Prozess können Sie Bilder anhand definierter Koordinaten und Abmessungen im Dokument gezielt auswählen und abrufen.
 ## Voraussetzungen

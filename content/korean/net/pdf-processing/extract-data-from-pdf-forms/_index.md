@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 PDF 양식에서 데이터
 weight: 11
 url: /ko/net/pdf-processing/extract-data-from-pdf-forms/
 ---
+
+# PDF 양식에서 데이터 추출
+
 ## 소개
 이 튜토리얼에서는 .NET용 GroupDocs.Parser를 활용하여 PDF 양식에서 데이터를 추출하는 방법을 살펴보겠습니다. GroupDocs.Parser는 개발자가 PDF, DOCX, XLSX 등을 포함한 다양한 문서 형식으로 효율적으로 작업할 수 있는 강력한 라이브러리입니다. PDF 양식에서 특정 필드를 추출하고 추출된 데이터를 처리하는 데 필요한 단계를 살펴보겠습니다.
 ## 전제 조건

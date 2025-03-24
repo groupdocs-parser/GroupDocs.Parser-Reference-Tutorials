@@ -6,6 +6,9 @@ description: Découvrez une gamme de didacticiels sur le traitement des document
 weight: 30
 url: /fr/net/word-document-processing/
 ---
+
+# Traitement de documents Word
+
 Cherchez-vous à améliorer vos capacités de traitement de documents Word dans .NET ? Cherchez pas plus loin! GroupDocs.Parser pour .NET propose un ensemble complet de didacticiels pour vous aider à extraire sans effort divers éléments de documents Word.
 
 ## Extraction d'hyperliens

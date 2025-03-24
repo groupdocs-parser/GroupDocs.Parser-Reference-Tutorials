@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyszukiwać tekst według stron przy użyciu Grou
 weight: 22
 url: /pl/net/text-extraction/search-text-by-pages/
 ---
+
+# Wyszukaj tekst według stron
+
 ## Wstęp
 W świecie programowania .NET wydajne analizowanie i wyodrębnianie tekstu z dokumentów jest kluczowym zadaniem. GroupDocs.Parser dla .NET oferuje zaawansowane możliwości pracy z różnymi formatami dokumentów, umożliwiając programistom płynne wyszukiwanie i wyodrębnianie określonej zawartości. Ten samouczek poprowadzi Cię przez proces wykorzystania GroupDocs.Parser do wyszukiwania tekstu według stron w aplikacjach .NET.
 ## Warunki wstępne

@@ -6,6 +6,9 @@ description: Scopri come gestire le risorse esterne in .NET utilizzando GroupDoc
 weight: 10
 url: /it/net/document-loading/handling-loading-of-external-resources/
 ---
+
+# Gestione del caricamento delle risorse esterne
+
 ## introduzione
 Nel mondo dello sviluppo .NET, l'analisi e l'estrazione di contenuto da vari formati di file è un requisito comune. GroupDocs.Parser per .NET fornisce una soluzione solida per gestire in modo efficiente le attività di analisi dei documenti. Questa esercitazione ti guiderà nell'uso di GroupDocs.Parser per lavorare con risorse esterne, ad esempio immagini, nelle tue applicazioni .NET. Tratteremo i prerequisiti necessari, importeremo gli spazi dei nomi e suddivideremo gli esempi in istruzioni dettagliate passo dopo passo.
 ## Prerequisiti

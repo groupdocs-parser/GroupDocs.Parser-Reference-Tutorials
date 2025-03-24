@@ -6,6 +6,9 @@ description: Naučte se vyhledávat text podle klíčových slov v dokumentech p
 weight: 21
 url: /cs/net/text-extraction/search-text-by-keyword/
 ---
+
+# Hledat text podle klíčového slova
+
 ## Úvod
 V tomto tutoriálu se ponoříme do používání GroupDocs.Parser pro .NET k vyhledávání textu podle klíčových slov v dokumentech. GroupDocs.Parser je výkonná knihovna, která umožňuje vývojářům extrahovat text, metadata a další informace z různých formátů souborů, jako jsou PDF, dokumenty Microsoft Office a další. Hledání konkrétních klíčových slov v těchto dokumentech může být zásadní pro aplikace, které pracují s velkými objemy textových dat.
 ## Předpoklady

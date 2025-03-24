@@ -6,6 +6,9 @@ description: Learn how to extract data from document templates using regex posit
 weight: 13
 url: /net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---
+
+# Working with Fields at Regex Positions in Templates
+
 ## Introduction
 In this tutorial, you will learn how to utilize GroupDocs.Parser for .NET to extract fields based on specified regular expressions (regex) within document templates. This library offers powerful features for document parsing and extraction, making it ideal for handling structured data extraction tasks efficiently.
 ## Prerequisites

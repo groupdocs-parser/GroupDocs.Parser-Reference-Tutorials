@@ -6,6 +6,9 @@ description: Scopri come cercare testo per parola chiave nei documenti utilizzan
 weight: 21
 url: /it/net/text-extraction/search-text-by-keyword/
 ---
+
+# Cerca testo per parola chiave
+
 ## introduzione
 In questo tutorial, approfondiremo l'utilizzo di GroupDocs.Parser per .NET per cercare testo per parola chiave all'interno dei documenti. GroupDocs.Parser è una potente libreria che consente agli sviluppatori di estrarre testo, metadati e altre informazioni da vari formati di file, come PDF, documenti di Microsoft Office e altro. La ricerca di parole chiave specifiche all'interno di questi documenti può essere essenziale per le applicazioni che gestiscono grandi volumi di dati testuali.
 ## Prerequisiti

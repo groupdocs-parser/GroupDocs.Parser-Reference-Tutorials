@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak gambar dari dokumen PDF menggunakan Group
 weight: 12
 url: /id/net/pdf-processing/extract-images-from-pdf/
 ---
+
+# Ekstrak Gambar dari PDF
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggunakan GroupDocs.Parser untuk .NET untuk mengekstrak gambar dari dokumen PDF. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan pengembang bekerja dengan berbagai format dokumen, termasuk PDF, DOCX, PPTX, dan banyak lagi, dalam lingkungan .NET. Dengan mengikuti langkah-langkah ini, Anda akan dapat mengekstrak gambar dari file PDF dengan mudah.
 ## Prasyarat

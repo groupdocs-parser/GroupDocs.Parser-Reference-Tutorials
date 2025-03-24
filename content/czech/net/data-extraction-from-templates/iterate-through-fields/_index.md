@@ -6,6 +6,9 @@ description: Naučte se extrahovat strukturovaná data z dokumentů pomocí Grou
 weight: 11
 url: /cs/net/data-extraction-from-templates/iterate-through-fields/
 ---
+
+# Iterovat přes pole
+
 ## Úvod
 GroupDocs.Parser for .NET je výkonná knihovna, která umožňuje vývojářům extrahovat data z různých formátů dokumentů, jako je PDF, Microsoft Word, Excel a PowerPoint. Tento tutoriál vás provede procesem používání GroupDocs.Parser k iteraci polí dokumentu a extrahování konkrétních dat pomocí šablon. Na konci tohoto kurzu budete schopni efektivně extrahovat strukturovaná data z dokumentů ve vašich aplikacích .NET.
 ## Předpoklady

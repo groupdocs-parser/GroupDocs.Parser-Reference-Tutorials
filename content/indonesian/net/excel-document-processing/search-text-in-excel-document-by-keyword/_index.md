@@ -6,6 +6,9 @@ description: Pelajari cara mencari teks dalam dokumen Excel menggunakan GroupDoc
 weight: 16
 url: /id/net/excel-document-processing/search-text-in-excel-document-by-keyword/
 ---
+
+# Pencarian Teks di Dokumen Excel berdasarkan Kata Kunci
+
 ## Perkenalan
 GroupDocs.Parser untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang bekerja secara efisien dengan tugas penguraian dokumen di aplikasi .NET mereka. Dalam tutorial ini, kita akan fokus pada cara mencari teks tertentu dalam dokumen Excel menggunakan kata kunci. Dengan mengikuti panduan ini, Anda akan mempelajari cara mengintegrasikan perpustakaan GroupDocs.Parser ke dalam proyek Anda dan melakukan pencarian teks yang ditargetkan dalam file Excel.
 ## Prasyarat

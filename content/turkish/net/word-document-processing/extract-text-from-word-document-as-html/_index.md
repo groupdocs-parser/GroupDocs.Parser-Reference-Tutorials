@@ -6,6 +6,9 @@ description: Word belgelerinden metin ayıklamak ve HTML olarak kaydetmek için 
 weight: 16
 url: /tr/net/word-document-processing/extract-text-from-word-document-as-html/
 ---
+
+# Word Belgesinden Metni HTML Olarak Çıkarma
+
 ## giriiş
 GroupDocs.Parser for .NET, geliştiricilerin çeşitli dosya formatlarından metin ve meta verileri sorunsuz bir şekilde ayıklamasına olanak tanıyan güçlü bir belge ayrıştırma kitaplığıdır. Bu eğitimde, Word belgelerinden metin ayıklamak ve bunu HTML olarak kaydetmek için GroupDocs.Parser'dan yararlanmaya odaklanacağız. Bu süreç, içerik analizi, indeksleme veya belgeleri web dostu formatlara dönüştürme gibi görevler için gereklidir. Bu kılavuzun sonunda GroupDocs.Parser'ı .NET uygulamalarınızda verimli bir şekilde nasıl kullanacağınızı net bir şekilde anlayacaksınız.
 ## Önkoşullar

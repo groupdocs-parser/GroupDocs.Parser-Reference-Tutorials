@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET effizient Date
 weight: 12
 url: /de/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
 ---
+
+# Arbeiten mit Feldern an verknüpften Positionen in Vorlagen
+
 ## Einführung
 GroupDocs.Parser für .NET ist eine robuste Bibliothek, die das Parsen von Dokumenten und die Datenextraktion erleichtert. Sie unterstützt eine Vielzahl von Dateiformaten, darunter PDF, DOCX, XLSX und mehr. Eines ihrer wichtigsten Features ist die vorlagenbasierte Datenextraktion, mit der Sie Felder in einem Dokument definieren und bestimmte Daten basierend auf diesen vordefinierten Vorlagen extrahieren können.
 ## Voraussetzungen

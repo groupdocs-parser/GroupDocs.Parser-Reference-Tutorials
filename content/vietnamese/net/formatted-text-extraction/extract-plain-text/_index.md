@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất văn bản thuần túy từ tài l
 weight: 14
 url: /vi/net/formatted-text-extraction/extract-plain-text/
 ---
+
+# Trích xuất văn bản thuần túy
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách trích xuất văn bản thuần túy từ các định dạng tài liệu khác nhau bằng GroupDocs.Parser cho .NET. GroupDocs.Parser là một thư viện mạnh mẽ cho phép các nhà phát triển làm việc liền mạch với các tài liệu, trích xuất văn bản và siêu dữ liệu một cách hiệu quả. Hướng dẫn này sẽ hướng dẫn bạn các bước cần thiết để tích hợp và sử dụng thư viện này trong các ứng dụng .NET của bạn.
 ## Điều kiện tiên quyết

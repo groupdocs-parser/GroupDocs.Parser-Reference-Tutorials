@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan kereshet és jelölhet ki szöveget dokumentumo
 weight: 24
 url: /hu/net/text-extraction/search-text-with-highlights/
 ---
+
+# Szöveg keresése a kiemelésekkel
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan használhatjuk a GroupDocs.Parser for .NET-et szövegek keresésére egy dokumentumon belül, és kiemeljük a keresési eredményeket. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi, hogy különféle dokumentumformátumokkal dolgozzon, és kivonja a szöveget, a metaadatokat és egyebeket.
 ## Előfeltételek

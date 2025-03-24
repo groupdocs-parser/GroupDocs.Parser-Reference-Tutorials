@@ -6,6 +6,9 @@ description: Learn how to extract specific data fields from documents using Grou
 weight: 10
 url: /net/data-extraction-from-templates/get-field-by-name/
 ---
+
+# Get Field by Name
+
 ## Introduction
 In this tutorial, we will explore how to leverage GroupDocs.Parser for .NET to extract specific data fields like prices and emails from documents. This powerful library simplifies document parsing tasks, making it ideal for various data extraction needs.
 ## Prerequisites

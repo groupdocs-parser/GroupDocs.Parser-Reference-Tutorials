@@ -6,6 +6,9 @@ description: Learn how to extract hyperlinks from specific document areas using 
 weight: 12
 url: /net/hyperlink-extraction/extract-hyperlinks-from-document-page-area/
 ---
+
+# Extract Hyperlinks from Document Page Area
+
 ## Introduction
 In this tutorial, we will explore how to extract hyperlinks from a document's specific page area using the GroupDocs.Parser for .NET library. GroupDocs.Parser provides powerful features for document processing, including hyperlink extraction. We'll guide you through the process step-by-step, demonstrating how to implement this functionality in your .NET applications.
 ## Prerequisites

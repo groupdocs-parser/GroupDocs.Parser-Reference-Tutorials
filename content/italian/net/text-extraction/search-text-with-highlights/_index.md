@@ -6,6 +6,9 @@ description: Scopri come cercare ed evidenziare testo nei documenti utilizzando 
 weight: 24
 url: /it/net/text-extraction/search-text-with-highlights/
 ---
+
+# Cerca testo con evidenziazioni
+
 ## introduzione
 In questo tutorial esploreremo come utilizzare GroupDocs.Parser per .NET per cercare testo all'interno di un documento ed evidenziare i risultati della ricerca. GroupDocs.Parser è una potente libreria che ti consente di lavorare con vari formati di documenti ed estrarre testo, metadati e altro.
 ## Prerequisiti

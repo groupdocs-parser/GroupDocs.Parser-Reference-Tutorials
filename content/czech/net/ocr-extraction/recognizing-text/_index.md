@@ -6,6 +6,9 @@ description: Extrahujte text z různých formátů dokumentů efektivně pomocí
 weight: 12
 url: /cs/net/ocr-extraction/recognizing-text/
 ---
+
+# Rozpoznávání textu
+
 ## Úvod
 V oblasti vývoje .NET je prvořadá efektivní extrakce textu z různých formátů dokumentů. GroupDocs.Parser for .NET poskytuje robustní řešení pro bezproblémovou extrakci textu. V tomto tutoriálu se ponoříme do používání GroupDocs.Parser krok za krokem k rozpoznání a extrahování textu z dokumentů.
 ## Předpoklady

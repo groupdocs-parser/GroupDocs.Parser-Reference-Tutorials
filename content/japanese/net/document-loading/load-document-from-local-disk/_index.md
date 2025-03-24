@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用して、さまざまなドキ�
 weight: 11
 url: /ja/net/document-loading/load-document-from-local-disk/
 ---
+
+# ローカルディスクからドキュメントを読み込む
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を使用してドキュメントからテキストを抽出する方法について説明します。GroupDocs.Parser は、開発者がさまざまなドキュメント形式を解析し、プログラムでテキスト コンテンツを抽出できるようにする強力なライブラリです。このライブラリを使用してテキスト抽出を開始するために必要な手順について説明します。
 ## 前提条件

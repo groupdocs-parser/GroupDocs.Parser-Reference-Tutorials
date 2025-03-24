@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 문서에서 특정 데이
 weight: 10
 url: /ko/net/data-extraction-from-templates/get-field-by-name/
 ---
+
+# 이름으로 필드 가져오기
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser를 활용하여 문서에서 가격 및 이메일과 같은 특정 데이터 필드를 추출하는 방법을 살펴보겠습니다. 이 강력한 라이브러리는 문서 구문 분석 작업을 단순화하여 다양한 데이터 추출 요구 사항에 이상적입니다.
 ## 전제 조건

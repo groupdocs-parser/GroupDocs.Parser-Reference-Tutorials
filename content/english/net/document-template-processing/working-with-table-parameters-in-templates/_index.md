@@ -6,6 +6,9 @@ description: Learn how to extract data from tables in documents using GroupDocs.
 weight: 15
 url: /net/document-template-processing/working-with-table-parameters-in-templates/
 ---
+
+# Working with Table Parameters in Templates
+
 ## Introduction
 In this tutorial, we'll explore how to use GroupDocs.Parser for .NET to work with table parameters in templates. This guide will break down the process into step-by-step instructions to help you effectively parse and extract data from tables within documents.
 ## Prerequisites

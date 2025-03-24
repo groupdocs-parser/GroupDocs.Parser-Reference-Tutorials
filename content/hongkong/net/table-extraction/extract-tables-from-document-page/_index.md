@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 以程式設計方式�
 weight: 11
 url: /zh-hant/net/table-extraction/extract-tables-from-document-page/
 ---
+
+# 從文件頁面中提取表格
+
 ## 介紹
 在本教學中，我們將探討如何使用 GroupDocs.Parser for .NET 從文件頁面中擷取表格。 GroupDocs.Parser 是一個功能強大的程式庫，可讓開發人員處理各種文件格式，例如 PDF、DOCX、XLSX 等。透過利用其功能，我們可以有效地從這些文件中提取結構化資料（例如表格），從而使我們能夠以程式設計方式操作和分析資訊。
 ## 先決條件

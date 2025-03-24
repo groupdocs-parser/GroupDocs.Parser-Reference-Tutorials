@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 문서에서 하이퍼링�
 weight: 10
 url: /ko/net/hyperlink-extraction/extract-hyperlinks-from-document/
 ---
+
+# 문서에서 하이퍼링크 추출
+
 ## 소개
 이 자습서에서는 개발자가 문서에서 하이퍼링크를 쉽게 추출할 수 있는 다목적 라이브러리인 .NET용 GroupDocs.Parser의 강력한 기능을 자세히 살펴보겠습니다. 하이퍼링크 추출은 문서 처리, 특히 PDF나 Word 문서와 같은 텍스트 기반 파일을 처리할 때 일반적인 요구 사항입니다. GroupDocs.Parser를 사용하면 다양한 문서 형식에서 하이퍼링크와 관련 URL을 효율적으로 식별하고 추출할 수 있습니다.
 ## 전제 조건

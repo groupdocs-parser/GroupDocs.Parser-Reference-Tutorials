@@ -6,6 +6,9 @@ description: Ebben az átfogó oktatóanyagban tanulhat meg hatékony szövegkiv
 weight: 17
 url: /hu/net/text-extraction/extract-text-from-page-in-raw-mode/
 ---
+
+# Szöveg kibontása az oldalról nyers módban
+
 ## Bevezetés
 Ebből az oktatóanyagból megtudhatja, hogyan használhatja a Groupdocs.Parser for .NET-et a dokumentumoldalak szövegének nyers módban történő kinyerésére. Ez a könyvtár hatékony eszközöket biztosít a különböző fájlformátumok tartalmának elemzéséhez és kibontásához, lehetővé téve a fejlesztők számára, hogy beépítsék a dokumentumszöveg-kivonást .NET-alkalmazásaikba.
 ## Előfeltételek

@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用して、プログラムによ�
 weight: 11
 url: /ja/net/table-extraction/extract-tables-from-document-page/
 ---
+
+# ドキュメントページから表を抽出する
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を使用してドキュメント ページからテーブルを抽出する方法について説明します。GroupDocs.Parser は、開発者が PDF、DOCX、XLSX などのさまざまなドキュメント形式を操作できるようにする強力なライブラリです。その機能を活用することで、これらのドキュメントからテーブルなどの構造化データを効率的に抽出し、プログラムで情報を操作および分析できるようになります。
 ## 前提条件

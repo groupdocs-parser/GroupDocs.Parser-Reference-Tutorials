@@ -6,6 +6,9 @@ description: Learn how to extract data from PDF forms using GroupDocs.Parser for
 weight: 11
 url: /net/pdf-processing/extract-data-from-pdf-forms/
 ---
+
+# Extract Data from PDF Forms
+
 ## Introduction
 In this tutorial, we will explore how to utilize GroupDocs.Parser for .NET to extract data from PDF forms. GroupDocs.Parser is a powerful library that allows developers to efficiently work with various document formats, including PDF, DOCX, XLSX, and more. We will walk through the necessary steps to extract specific fields from a PDF form and handle the extracted data.
 ## Prerequisites

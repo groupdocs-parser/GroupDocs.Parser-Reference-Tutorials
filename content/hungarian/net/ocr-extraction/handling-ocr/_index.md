@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan kezelheti az OCR-t a GroupDocs.Parser for .NET 
 weight: 11
 url: /hu/net/ocr-extraction/handling-ocr/
 ---
+
+# OCR kezelése
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan használható a GroupDocs.Parser for .NET az optikai karakterfelismerési (OCR) feladatok hatékony kezelésére. Ez a könyvtár hatékony eszközöket kínál szövegek kinyerésére a dokumentumokból, az OCR segítségével pedig még képekből vagy beolvasott dokumentumokból is kivonhat szöveget. Lépésről lépésre merüljünk el a folyamatban.
 ## Előfeltételek

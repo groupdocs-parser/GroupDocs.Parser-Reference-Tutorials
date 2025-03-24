@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser 從 .NET 中的各種文件格�
 weight: 12
 url: /zh-hant/net/document-loading/load-document-from-stream/
 ---
+
+# 從串流載入文檔
+
 ## 介紹
 在 .NET 應用程式的文檔處理領域，從各種文件格式中提取文字是常見的要求。 GroupDocs.Parser for .NET 提供了一個強大的解決方案，可以從各種文件中無縫解析和提取文字。本教學將指導您逐步完成使用 GroupDocs.Parser 從文件中提取文字的過程。
 ## 先決條件

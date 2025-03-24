@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET nach Text in E
 weight: 16
 url: /de/net/excel-document-processing/search-text-in-excel-document-by-keyword/
 ---
+
+# Textsuche im Excel-Dokument nach Stichwort
+
 ## Einführung
 GroupDocs.Parser für .NET ist eine leistungsstarke Bibliothek, die es Entwicklern ermöglicht, effizient mit Dokumentanalyseaufgaben in ihren .NET-Anwendungen zu arbeiten. In diesem Tutorial konzentrieren wir uns darauf, wie Sie mithilfe von Schlüsselwörtern nach bestimmtem Text in einem Excel-Dokument suchen. In dieser Anleitung erfahren Sie, wie Sie die Bibliothek GroupDocs.Parser in Ihr Projekt integrieren und gezielte Textsuchen in Excel-Dateien durchführen.
 ## Voraussetzungen

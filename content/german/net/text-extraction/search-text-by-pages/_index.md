@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET seitenweise na
 weight: 22
 url: /de/net/text-extraction/search-text-by-pages/
 ---
+
+# Text seitenweise durchsuchen
+
 ## Einführung
 In der Welt der .NET-Entwicklung ist das effiziente Parsen und Extrahieren von Text aus Dokumenten eine entscheidende Aufgabe. GroupDocs.Parser für .NET bietet leistungsstarke Funktionen für die Arbeit mit verschiedenen Dokumentformaten, sodass Entwickler nahtlos nach bestimmten Inhalten suchen und diese extrahieren können. Dieses Tutorial führt Sie durch den Prozess der Nutzung von GroupDocs.Parser zum Durchsuchen von Textseiten in Ihren .NET-Anwendungen.
 ## Voraussetzungen

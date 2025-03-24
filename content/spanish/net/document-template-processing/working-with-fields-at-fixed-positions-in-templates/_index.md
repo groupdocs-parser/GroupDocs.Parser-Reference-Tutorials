@@ -6,6 +6,9 @@ description: Aprenda a extraer datos de documentos utilizando GroupDocs.Parser p
 weight: 11
 url: /es/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
+
+# Trabajar con campos en posiciones fijas en plantillas
+
 ## Introducción
 En este tutorial, exploraremos cómo trabajar con campos en posiciones fijas dentro de plantillas usando GroupDocs.Parser para .NET. GroupDocs.Parser es una potente biblioteca de análisis de documentos que permite a los desarrolladores extraer datos de varios formatos de documentos, como PDF, Word, Excel y más. Específicamente, nos centraremos en definir y utilizar campos de plantilla para extraer información específica en función de sus posiciones fijas.
 ## Requisitos previos

@@ -6,6 +6,9 @@ description: Aprenda a extraer texto eficiente de páginas de documentos utiliza
 weight: 17
 url: /es/net/text-extraction/extract-text-from-page-in-raw-mode/
 ---
+
+# Extraer texto de la página en modo sin formato
+
 ## Introducción
 En este tutorial, aprenderá a utilizar Groupdocs.Parser para .NET para extraer texto de páginas de documentos en modo sin formato. Esta biblioteca proporciona herramientas eficientes para analizar y extraer contenido de varios formatos de archivos, lo que permite a los desarrolladores incorporar la extracción de texto de documentos en sus aplicaciones .NET.
 ## Requisitos previos

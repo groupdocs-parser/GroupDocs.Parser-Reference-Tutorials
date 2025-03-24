@@ -6,6 +6,9 @@ description: Aprenda como lidar com recursos externos no .NET usando GroupDocs.P
 weight: 10
 url: /pt/net/document-loading/handling-loading-of-external-resources/
 ---
+
+# Lidando com o carregamento de recursos externos
+
 ## Introdução
 No mundo do desenvolvimento .NET, analisar e extrair conteúdo de vários formatos de arquivo é um requisito comum. GroupDocs.Parser for .NET fornece uma solução robusta para lidar com tarefas de análise de documentos com eficiência. Este tutorial irá guiá-lo no uso do GroupDocs.Parser para trabalhar com recursos externos, como imagens, em seus aplicativos .NET. Abordaremos os pré-requisitos necessários, importaremos namespaces e dividiremos os exemplos em instruções detalhadas passo a passo.
 ## Pré-requisitos

@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić tekst z arkuszy Excela za pomocą Gr
 weight: 14
 url: /pl/net/excel-document-processing/extract-text-from-excel-sheet/
 ---
+
+# Wyodrębnij tekst z arkusza Excel
+
 ## Wstęp
 W tym samouczku omówimy, jak wyodrębnić tekst z arkuszy programu Excel przy użyciu biblioteki GroupDocs.Parser dla platformy .NET. To potężne narzędzie pozwala nam efektywnie analizować różne formaty dokumentów, w tym arkusze kalkulacyjne Excel, w celu wyodrębnienia danych tekstowych.
 ## Warunki wstępne

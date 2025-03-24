@@ -6,6 +6,9 @@ description: Ebből az átfogó oktatóanyagból megtudhatja, hogyan bonthat ki 
 weight: 15
 url: /hu/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
 ---
+
+# Szöveg kibontása az Excel munkalapról nyers módban
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet szöveget kivonni Excel-lapokból a GroupDocs.Parser for .NET használatával nyers módban. A GroupDocs.Parser egy hatékony API, amely lehetővé teszi a fejlesztők számára, hogy különféle dokumentumformátumokkal dolgozzanak, beleértve az Excel fájlokat is, szövegkivonat és -elemzés céljából. Végignézzük az előfeltételeket, importálunk névtereket, és lebontjuk az egyes lépéseket, hogy bemutassuk a szöveg Excel-lapokból való kivonatolási folyamatát.
 ## Előfeltételek

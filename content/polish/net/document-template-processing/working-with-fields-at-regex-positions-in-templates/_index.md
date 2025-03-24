@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębniać dane z szablonów dokumentów przy 
 weight: 13
 url: /pl/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---
+
+# Praca z polami w pozycjach wyrażeń regularnych w szablonach
+
 ## Wstęp
 W tym samouczku dowiesz się, jak używać GroupDocs.Parser dla .NET do wyodrębniania pól na podstawie określonych wyrażeń regularnych (regex) w szablonach dokumentów. Biblioteka ta oferuje zaawansowane funkcje analizowania i ekstrakcji dokumentów, dzięki czemu idealnie nadaje się do wydajnej obsługi zadań ekstrakcji danych strukturalnych.
 ## Warunki wstępne

@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthat ki szöveget Word-dokumentumokból a Gr
 weight: 15
 url: /hu/net/word-document-processing/extract-text-from-word-document/
 ---
+
+# Szöveg kibontása a Word dokumentumból
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet szöveget kivonni Word-dokumentumokból a GroupDocs.Parser for .NET segítségével. A GroupDocs.Parser egy hatékony .NET-könyvtár, amely lehetővé teszi a fejlesztők számára, hogy különféle dokumentumformátumokkal dolgozzanak, beleértve a Word dokumentumokat, PDF-eket és még sok mást. Ennek az útmutatónak a végére képes lesz hatékonyan kivonatolni szöveget Word-fájlokból egyszerű C# kód használatával.
 ## Előfeltételek

@@ -6,6 +6,9 @@ description: V tomto komplexním kurzu se dozvíte, jak extrahovat přílohy z p
 weight: 10
 url: /cs/net/pdf-processing/extract-attachments-from-pdf-portfolios/
 ---
+
+# Extrahujte přílohy z portfolií PDF
+
 ## Úvod
 Ve světě zpracování a analýzy dokumentů může být efektivní manipulace s portfolii PDF zásadní. GroupDocs.Parser for .NET nabízí výkonné řešení pro extrahování příloh z portfolií PDF, což vývojářům umožňuje snadný přístup a správu obsahu. Tento tutoriál vás provede procesem krok za krokem pomocí GroupDocs.Parser k bezproblémovému extrahování příloh.
 ## Předpoklady

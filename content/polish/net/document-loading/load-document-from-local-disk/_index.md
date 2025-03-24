@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić tekst z różnych formatów dokument
 weight: 11
 url: /pl/net/document-loading/load-document-from-local-disk/
 ---
+
+# Załaduj dokument z dysku lokalnego
+
 ## Wstęp
 W tym samouczku omówimy, jak używać GroupDocs.Parser dla .NET do wyodrębniania tekstu z dokumentów. GroupDocs.Parser to potężna biblioteka, która umożliwia programistom analizowanie różnych formatów dokumentów i programowe wyodrębnianie zawartości tekstowej. Omówimy kroki niezbędne do rozpoczęcia ekstrakcji tekstu przy użyciu tej biblioteki.
 ## Warunki wstępne

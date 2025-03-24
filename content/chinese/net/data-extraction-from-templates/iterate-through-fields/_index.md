@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 从文档中提取结�
 weight: 11
 url: /zh/net/data-extraction-from-templates/iterate-through-fields/
 ---
+
+# 迭代字段
+
 ## 介绍
 GroupDocs.Parser for .NET 是一个功能强大的库，允许开发人员从各种文档格式（如 PDF、Microsoft Word、Excel 和 PowerPoint）中提取数据。本教程将指导您完成使用 GroupDocs.Parser 遍历文档字段并使用模板提取特定数据的过程。在本教程结束时，您将能够有效地从 .NET 应用程序中的文档中提取结构化数据。
 ## 先决条件

@@ -6,6 +6,9 @@ description: Naučte se extrahovat obrázky z dokumentů aplikace Excel pomocí 
 weight: 10
 url: /cs/net/excel-document-processing/extract-images-from-excel-document/
 ---
+
+# Extrahujte obrázky z dokumentu aplikace Excel
+
 ## Úvod
 tomto tutoriálu se naučíte extrahovat obrázky z dokumentu aplikace Excel pomocí GroupDocs.Parser for .NET. GroupDocs.Parser je výkonná knihovna, která vám umožňuje analyzovat a extrahovat text, metadata a obrázky z různých formátů dokumentů včetně souborů aplikace Excel.
 ## Předpoklady

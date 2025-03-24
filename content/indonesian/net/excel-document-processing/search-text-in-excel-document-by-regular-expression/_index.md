@@ -6,6 +6,9 @@ description: Pelajari cara mencari teks di dokumen Excel menggunakan ekspresi re
 weight: 17
 url: /id/net/excel-document-processing/search-text-in-excel-document-by-regular-expression/
 ---
+
+# Cari Teks di Dokumen Excel dengan Ekspresi Reguler
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara memanfaatkan GroupDocs.Parser untuk .NET untuk mencari pola teks tertentu dalam dokumen Excel menggunakan ekspresi reguler. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan pengembang mengekstrak teks dan metadata dari berbagai format dokumen, termasuk spreadsheet seperti Excel. Dengan memanfaatkan ekspresi reguler, kami dapat melakukan penelusuran teks tingkat lanjut secara efisien.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: Extraiga texto de archivos PDF utilizando GroupDocs.Parser para .NE
 weight: 15
 url: /es/net/pdf-processing/extract-text-from-specific-page-in-pdf/
 ---
+
+# Extraer texto de una página específica en PDF
+
 ## Introducción
 En este tutorial, aprenderá cómo utilizar GroupDocs.Parser para .NET para extraer texto de una página específica dentro de un documento PDF. GroupDocs.Parser es una potente biblioteca que permite a los desarrolladores trabajar con varios formatos de documentos, incluidos PDF, Microsoft Word, Excel y más. Siga estos pasos para integrar la extracción de texto en su aplicación .NET.
 ## Requisitos previos

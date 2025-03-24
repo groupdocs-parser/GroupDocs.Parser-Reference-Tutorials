@@ -6,6 +6,9 @@ description: 使用正規表示式和 GroupDocs.Parser 搜尋 PDF 文件中的�
 weight: 19
 url: /zh-hant/net/pdf-processing/search-text-in-pdf-by-regular-expression/
 ---
+
+# 透過正規表示式搜尋 PDF 中的文本
+
 ## 介紹
 在本教學中，我們將探討如何使用 GroupDocs.Parser for .NET 從 PDF 文件中高效提取文字。 GroupDocs.Parser 是一個功能強大的程式庫，可讓開發人員從各種文件格式（包括 PDF）中解析和提取文字、元資料和結構化資料。無論您是在 .NET 應用程式中進行資料擷取、內容分析或搜尋功能，GroupDocs.Parser 都提供了一套全面的工具來無縫處理這些任務。
 ## 先決條件

@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak teks dari lembar Excel menggunakan GroupD
 weight: 15
 url: /id/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
 ---
+
+# Ekstrak Teks dari Lembar Excel dalam Mode Mentah
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara mengekstrak teks dari lembar Excel menggunakan GroupDocs.Parser untuk .NET dalam mode mentah. GroupDocs.Parser adalah API canggih yang memungkinkan pengembang bekerja dengan berbagai format dokumen, termasuk file Excel, untuk ekstraksi dan analisis teks. Kami akan membahas prasyarat, mengimpor namespace, dan menguraikan setiap langkah untuk mendemonstrasikan proses mengekstraksi teks dari lembar Excel.
 ## Prasyarat

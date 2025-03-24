@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak teks dari lembar Excel menggunakan GroupD
 weight: 14
 url: /id/net/excel-document-processing/extract-text-from-excel-sheet/
 ---
+
+# Ekstrak Teks dari Lembar Excel
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara mengekstrak teks dari lembar Excel menggunakan pustaka GroupDocs.Parser untuk .NET. Alat canggih ini memungkinkan kita mengurai dan menganalisis berbagai format dokumen secara efisien, termasuk spreadsheet Excel, untuk mengekstrak data tekstual.
 ## Prasyarat

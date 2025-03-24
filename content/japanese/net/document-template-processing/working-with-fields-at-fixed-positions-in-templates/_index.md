@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用してドキュメントから�
 weight: 11
 url: /ja/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
+
+# テンプレート内の固定位置のフィールドの操作
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を使用して、テンプレート内の固定位置にあるフィールドを操作する方法について説明します。GroupDocs.Parser は、開発者が PDF、Word、Excel などのさまざまなドキュメント形式からデータを抽出できるようにする強力なドキュメント解析ライブラリです。具体的には、テンプレート フィールドの定義と使用に焦点を当て、固定位置に基づいて対象となる情報を抽出する方法について説明します。
 ## 前提条件

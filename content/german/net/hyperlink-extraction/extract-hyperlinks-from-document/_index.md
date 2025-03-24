@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Hyperlinks aus
 weight: 10
 url: /de/net/hyperlink-extraction/extract-hyperlinks-from-document/
 ---
+
+# Hyperlinks aus Dokument extrahieren
+
 ## Einführung
 In diesem Tutorial werden wir uns mit den leistungsstarken Funktionen von GroupDocs.Parser für .NET befassen, einer vielseitigen Bibliothek, mit der Entwickler ganz einfach Hyperlinks aus Dokumenten extrahieren können. Die Extraktion von Hyperlinks ist eine häufige Anforderung bei der Dokumentverarbeitung, insbesondere bei textbasierten Dateien wie PDFs oder Word-Dokumenten. Mit GroupDocs.Parser können Sie Hyperlinks zusammen mit den zugehörigen URLs effizient aus verschiedenen Dokumentformaten identifizieren und extrahieren.
 ## Voraussetzungen

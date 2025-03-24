@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất siêu dữ liệu từ tài liệu 
 weight: 12
 url: /vi/net/word-document-processing/extract-metadata-from-word-document/
 ---
+
+# Trích xuất siêu dữ liệu từ tài liệu Word
+
 ## Giới thiệu
 Trong thời đại kỹ thuật số ngày nay, việc phân tích và trích xuất dữ liệu từ tài liệu một cách hiệu quả là rất quan trọng đối với nhiều ứng dụng khác nhau, từ phân tích nội dung đến truy xuất dữ liệu. GroupDocs.Parser cho .NET là một thư viện mạnh mẽ cho phép các nhà phát triển trích xuất siêu dữ liệu và văn bản từ tài liệu một cách dễ dàng. Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Parser cho .NET để trích xuất siêu dữ liệu từ tài liệu Word theo từng bước.
 ## Điều kiện tiên quyết

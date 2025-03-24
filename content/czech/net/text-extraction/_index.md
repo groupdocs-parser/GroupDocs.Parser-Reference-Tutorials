@@ -7,6 +7,9 @@ weight: 20
 url: /cs/net/text-extraction/
 ---
 
+# Extrakce textu
+
+
 ## Úvod
 
 Vítejte v obsáhlé sbírce výukových programů extrakce textu poháněných GroupDocs.Parser pro .NET. V této sérii výukových programů prozkoumáme různé metody a techniky pro extrahování, zvýraznění a vyhledávání textu z dokumentů ve vašich aplikacích .NET.

@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用してドキュメントから�
 weight: 10
 url: /ja/net/data-extraction-from-templates/get-field-by-name/
 ---
+
+# 名前でフィールドを取得
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を活用して、ドキュメントから価格やメールなどの特定のデータ フィールドを抽出する方法について説明します。この強力なライブラリは、ドキュメント解析タスクを簡素化し、さまざまなデータ抽出ニーズに最適です。
 ## 前提条件

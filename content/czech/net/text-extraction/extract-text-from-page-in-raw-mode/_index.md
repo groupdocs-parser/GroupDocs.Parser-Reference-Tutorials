@@ -6,6 +6,9 @@ description: Naučte se efektivní extrakci textu ze stránek dokumentu pomocí 
 weight: 17
 url: /cs/net/text-extraction/extract-text-from-page-in-raw-mode/
 ---
+
+# Extrahujte text ze stránky v režimu Raw
+
 ## Úvod
 V tomto tutoriálu se naučíte, jak používat Groupdocs.Parser pro .NET k extrahování textu ze stránek dokumentu v nezpracovaném režimu. Tato knihovna poskytuje účinné nástroje pro analýzu a extrahování obsahu z různých formátů souborů, což umožňuje vývojářům začlenit extrakci textu dokumentu do jejich aplikací .NET.
 ## Předpoklady

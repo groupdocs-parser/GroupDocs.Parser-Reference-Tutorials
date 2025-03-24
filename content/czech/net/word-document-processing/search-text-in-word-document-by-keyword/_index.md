@@ -6,6 +6,9 @@ description: Naučte se vyhledávat text v dokumentech aplikace Word pomocí Gro
 weight: 18
 url: /cs/net/word-document-processing/search-text-in-word-document-by-keyword/
 ---
+
+# Hledání textu v dokumentu aplikace Word podle klíčového slova
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak používat GroupDocs.Parser pro .NET k hledání konkrétního textu v dokumentu aplikace Word pomocí C#. GroupDocs.Parser je výkonná knihovna, která umožňuje vývojářům extrahovat text a metadata z různých formátů dokumentů, včetně dokumentů Word.
 ## Předpoklady

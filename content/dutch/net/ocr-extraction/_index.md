@@ -7,6 +7,9 @@ weight: 28
 url: /nl/net/ocr-extraction/
 ---
 
+# Extractie van optische tekenherkenning (OCR).
+
+
 ## Invoering
 
 Ontgrendel de kracht van OCR-extractie (Optical Character Recognition) in .NET met GroupDocs.Parser-tutorials. Deze tutorials bieden uitgebreide richtlijnen voor het omgaan met OCR, het herkennen van tekst en het extraheren van inhoud uit specifieke gebieden of rechthoekige gebieden binnen documenten. Of u nu een beginner of een ervaren ontwikkelaar bent, deze tutorials bieden duidelijke stapsgewijze instructies en codevoorbeelden waarmee u OCR-extractie naadloos in uw .NET-applicaties kunt integreren.

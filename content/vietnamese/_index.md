@@ -8,6 +8,9 @@ url: /vi/
 is_root: true
 ---
 
+# Mở khóa khả năng phân tích cú pháp tài liệu với GroupDocs.Parser
+
+
 Khám phá cơ sở kiến thức thống nhất cho GroupDocs.Parser trên nhiều nền tảng khác nhau, bao gồm .NET và Java. Đi sâu vào nhiều hướng dẫn khác nhau bao gồm trích xuất văn bản và văn bản có định dạng, xử lý mẫu tài liệu, trích xuất bảng và hình ảnh cũng như trích xuất siêu liên kết. Cho dù bạn là nhà phát triển .NET hay Java, trung tâm tài nguyên này đều trang bị cho bạn các công cụ và kỹ thuật cần thiết để xử lý các tác vụ xử lý tài liệu một cách hiệu quả và năng suất.
 
 ## Hướng dẫn GroupDocs.Parser cho .NET

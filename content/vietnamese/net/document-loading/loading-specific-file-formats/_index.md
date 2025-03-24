@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất văn bản từ các định dạng
 weight: 14
 url: /vi/net/document-loading/loading-specific-file-formats/
 ---
+
+# Đang tải các định dạng tệp cụ thể
+
 ## Giới thiệu
 Trong thế giới phát triển .NET, việc phân tích cú pháp và trích xuất văn bản từ nhiều định dạng tệp khác nhau là một yêu cầu chung. GroupDocs.Parser cho .NET cung cấp các công cụ mạnh mẽ để đơn giản hóa tác vụ này. Hướng dẫn này sẽ hướng dẫn bạn cách sử dụng GroupDocs.Parser để tải và trích xuất văn bản từ các định dạng tệp cụ thể theo từng bước.
 ## Điều kiện tiên quyết

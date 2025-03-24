@@ -6,6 +6,9 @@ description: Scopri come estrarre testo dai documenti utilizzando GroupDocs.Pars
 weight: 19
 url: /it/net/text-extraction/extract-text-in-raw-mode/
 ---
+
+# Estrai testo in modalità Raw
+
 ## introduzione
 In questo tutorial esploreremo come utilizzare GroupDocs.Parser per .NET per estrarre testo da vari formati di documenti in modo efficiente. GroupDocs.Parser è una potente libreria che consente agli sviluppatori di estrarre testo e metadati da documenti come PDF, Word, Excel, PowerPoint e altro, semplificando le attività di estrazione del testo all'interno delle applicazioni .NET.
 ## Prerequisiti

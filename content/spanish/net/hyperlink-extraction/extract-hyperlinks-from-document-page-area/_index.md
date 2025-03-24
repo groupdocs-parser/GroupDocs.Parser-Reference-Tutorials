@@ -6,6 +6,9 @@ description: Aprenda a extraer hipervínculos de áreas de documentos específic
 weight: 12
 url: /es/net/hyperlink-extraction/extract-hyperlinks-from-document-page-area/
 ---
+
+# Extraer hipervínculos del área de la página del documento
+
 ## Introducción
 En este tutorial, exploraremos cómo extraer hipervínculos del área de página específica de un documento utilizando la biblioteca GroupDocs.Parser para .NET. GroupDocs.Parser proporciona potentes funciones para el procesamiento de documentos, incluida la extracción de hipervínculos. Lo guiaremos a través del proceso paso a paso y le demostraremos cómo implementar esta funcionalidad en sus aplicaciones .NET.
 ## Requisitos previos

@@ -7,6 +7,9 @@ weight: 27
 url: /it/net/barcode-extraction/
 ---
 
+# Estrazione di codici a barre
+
+
 Nel campo dell'elaborazione dei documenti, l'estrazione dei codici a barre rappresenta un compito cruciale. Che si tratti di gestione dell'inventario, categorizzazione di documenti o automazione dell'immissione di dati, la capacità di estrarre rapidamente e con precisione i codici a barre dai documenti ha un valore inestimabile. Con GroupDocs.Parser per .NET, padroneggiare questo processo diventa non solo realizzabile ma anche semplificato.
 
 ## Comprendere l'estrazione dei codici a barre:

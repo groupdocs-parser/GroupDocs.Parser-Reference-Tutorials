@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić hiperłącza z dokumentów programu 
 weight: 10
 url: /pl/net/word-document-processing/extract-hyperlinks-from-word-document/
 ---
+
+# Wyodrębnij hiperłącza z dokumentu programu Word
+
 ## Wstęp
 GroupDocs.Parser dla .NET to potężne narzędzie, które umożliwia programistom wyodrębnianie tekstu strukturalnego i metadanych z różnych formatów dokumentów, takich jak Word, Excel, PowerPoint, PDF i innych. Jednym z powszechnych wymagań w przetwarzaniu dokumentów jest programowe wyodrębnianie hiperłączy z dokumentów programu Word. Ten samouczek przeprowadzi Cię krok po kroku przez proces używania GroupDocs.Parser do wyodrębniania hiperłączy z dokumentu programu Word.
 ## Warunki wstępne

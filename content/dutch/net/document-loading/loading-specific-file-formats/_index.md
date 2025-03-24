@@ -6,6 +6,9 @@ description: Leer hoe u tekst uit verschillende bestandsindelingen in .NET kunt 
 weight: 14
 url: /nl/net/document-loading/loading-specific-file-formats/
 ---
+
+# Specifieke bestandsformaten laden
+
 ## Invoering
 In de wereld van .NET-ontwikkeling is het parseren en extraheren van tekst uit verschillende bestandsformaten een veel voorkomende vereiste. GroupDocs.Parser voor .NET biedt krachtige tools om deze taak te vereenvoudigen. Deze tutorial begeleidt u stap voor stap bij het gebruik van GroupDocs.Parser om tekst uit specifieke bestandsformaten te laden en te extraheren.
 ## Vereisten

@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 从文档中提取格�
 weight: 10
 url: /zh/net/formatted-text-extraction/extract-formatted-text-from-document/
 ---
+
+# 从文档中提取格式化文本
+
 ## 介绍
 在本教程中，我们将探讨如何使用 GroupDocs.Parser for .NET 从各种类型的文档中提取格式化文本。GroupDocs.Parser 是一个功能强大的库，允许开发人员以简化和高效的方式处理文档。在本指南结束时，您将能够将文本提取功能无缝集成到您的 .NET 应用程序中。
 ## 先决条件

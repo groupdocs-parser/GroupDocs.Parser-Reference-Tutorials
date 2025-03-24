@@ -6,6 +6,9 @@ description: Efektywnie wyodrębniaj tekst z różnych formatów dokumentów za 
 weight: 12
 url: /pl/net/ocr-extraction/recognizing-text/
 ---
+
+# Rozpoznawanie tekstu
+
 ## Wstęp
 W dziedzinie programowania .NET najważniejsza jest wydajna ekstrakcja tekstu z różnych formatów dokumentów. GroupDocs.Parser dla .NET zapewnia solidne rozwiązanie do płynnego wyodrębniania tekstu. W tym samouczku omówimy krok po kroku używanie narzędzia GroupDocs.Parser do rozpoznawania i wyodrębniania tekstu z dokumentów.
 ## Warunki wstępne

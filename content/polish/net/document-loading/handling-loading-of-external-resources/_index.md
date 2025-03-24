@@ -6,6 +6,9 @@ description: Dowiedz się, jak obsługiwać zasoby zewnętrzne w .NET przy użyc
 weight: 10
 url: /pl/net/document-loading/handling-loading-of-external-resources/
 ---
+
+# Obsługa ładowania zasobów zewnętrznych
+
 ## Wstęp
 W świecie programowania .NET analizowanie i wyodrębnianie treści z różnych formatów plików jest powszechnym wymogiem. GroupDocs.Parser dla .NET zapewnia solidne rozwiązanie do wydajnej obsługi zadań analizowania dokumentów. Ten samouczek poprowadzi Cię przez proces używania GroupDocs.Parser do pracy z zasobami zewnętrznymi, takimi jak obrazy, w aplikacjach .NET. Omówimy niezbędne wymagania wstępne, zaimportujemy przestrzenie nazw i podzielimy przykłady na szczegółowe instrukcje krok po kroku.
 ## Warunki wstępne

@@ -6,6 +6,9 @@ description: Naučte se, jak extrahovat text z dokumentů aplikace Excel pomocí
 weight: 12
 url: /cs/net/excel-document-processing/extract-text-from-excel-document/
 ---
+
+# Extrahujte text z dokumentu aplikace Excel
+
 ## Úvod
 V tomto tutoriálu vás provedeme procesem extrahování textu z dokumentu aplikace Excel pomocí GroupDocs.Parser for .NET. GroupDocs.Parser je výkonná knihovna .NET, která vám umožňuje analyzovat různé formáty dokumentů, včetně souborů aplikace Excel, a extrahovat text a metadata.
 ## Předpoklady

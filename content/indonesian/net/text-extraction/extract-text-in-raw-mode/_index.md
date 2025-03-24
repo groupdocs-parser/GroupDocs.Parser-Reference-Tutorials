@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak teks dari dokumen menggunakan GroupDocs.P
 weight: 19
 url: /id/net/text-extraction/extract-text-in-raw-mode/
 ---
+
+# Ekstrak Teks dalam Mode Mentah
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara memanfaatkan GroupDocs.Parser untuk .NET untuk mengekstrak teks dari berbagai format dokumen secara efisien. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan pengembang mengekstrak teks dan metadata dari dokumen seperti PDF, Word, Excel, PowerPoint, dan lainnya, menyederhanakan tugas ekstraksi teks dalam aplikasi .NET.
 ## Prasyarat

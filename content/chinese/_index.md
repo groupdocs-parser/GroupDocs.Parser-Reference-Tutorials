@@ -8,6 +8,9 @@ url: /zh/
 is_root: true
 ---
 
+# 使用 GroupDocs.Parser 解锁文档解析技能
+
+
 发现 GroupDocs.Parser 在各种平台上（包括 .NET 和 Java）的统一知识库。深入了解各种教程，涵盖文本和格式化文本提取、文档模板处理、表格和图像提取以及超链接提取。无论您是 .NET 还是 Java 开发人员，此资源中心都为您提供高效处理文档处理任务所需的工具和技术。
 
 ## GroupDocs.Parser for .NET 教程

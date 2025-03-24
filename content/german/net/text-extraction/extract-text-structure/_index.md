@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Textstrukturen
 weight: 20
 url: /de/net/text-extraction/extract-text-structure/
 ---
+
+# Textstruktur extrahieren
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Textstrukturen aus verschiedenen Dokumentformaten extrahieren. GroupDocs.Parser ist eine leistungsstarke Bibliothek, mit der Entwickler strukturierte Textinhalte aus Dokumenten wie PDFs, Word-Dokumenten, Excel-Tabellen und mehr extrahieren können. Dieses Tutorial führt Sie Schritt für Schritt durch die Einrichtung von GroupDocs.Parser, das Importieren der erforderlichen Namespaces und das Extrahieren der Textstruktur.
 ## Voraussetzungen

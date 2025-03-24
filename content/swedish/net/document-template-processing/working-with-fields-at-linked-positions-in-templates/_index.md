@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar data effektivt från dokument med GroupD
 weight: 12
 url: /sv/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
 ---
+
+# Arbeta med fält på länkade positioner i mallar
+
 ## Introduktion
 GroupDocs.Parser för .NET är ett robust bibliotek designat för att underlätta dokumentanalys och dataextrahering. Den stöder ett brett utbud av filformat, inklusive PDF, DOCX, XLSX och mer. En av dess nyckelfunktioner är mallbaserad dataextraktion, som låter dig definiera fält i ett dokument och extrahera specifik data baserat på dessa fördefinierade mallar.
 ## Förutsättningar

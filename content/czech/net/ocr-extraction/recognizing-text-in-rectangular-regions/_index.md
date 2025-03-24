@@ -6,6 +6,9 @@ description: Naučte se rozpoznávat text v určitých oblastech dokumentů pomo
 weight: 14
 url: /cs/net/ocr-extraction/recognizing-text-in-rectangular-regions/
 ---
+
+# Rozpoznávání textu v pravoúhlých oblastech
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak používat GroupDocs.Parser pro .NET k rozpoznání textu v konkrétních obdélníkových oblastech dokumentů. GroupDocs.Parser je výkonná knihovna, která umožňuje vývojářům extrahovat text, metadata a další z různých formátů souborů, včetně PDF, Wordu, Excelu a PowerPointu.
 ## Předpoklady

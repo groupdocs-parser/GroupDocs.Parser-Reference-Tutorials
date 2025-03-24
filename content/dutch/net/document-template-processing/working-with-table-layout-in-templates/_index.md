@@ -6,6 +6,9 @@ description: Leer hoe u met tabelindelingen in sjablonen werkt met GroupDocs.Par
 weight: 14
 url: /nl/net/document-template-processing/working-with-table-layout-in-templates/
 ---
+
+# Werken met tabelindeling in sjablonen
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u met tabelindeling in sjablonen kunt werken met behulp van GroupDocs.Parser voor .NET. GroupDocs.Parser is een krachtige API voor het parseren van documenten waarmee ontwikkelaars tekst en metagegevens kunnen extraheren uit verschillende documentformaten, waaronder PDF, Microsoft Office en meer.
 ## Vereisten

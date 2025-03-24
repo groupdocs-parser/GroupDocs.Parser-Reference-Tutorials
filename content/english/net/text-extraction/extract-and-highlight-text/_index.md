@@ -6,6 +6,9 @@ description: Learn how to extract and highlight text from documents using GroupD
 weight: 11
 url: /net/text-extraction/extract-and-highlight-text/
 ---
+
+# Extract and Highlight Text
+
 ## Introduction
 In this tutorial, we'll explore how to use GroupDocs.Parser for .NET to extract and highlight text from documents. GroupDocs.Parser is a powerful library that allows you to parse various document formats and perform advanced text extraction operations.
 ## Prerequisites

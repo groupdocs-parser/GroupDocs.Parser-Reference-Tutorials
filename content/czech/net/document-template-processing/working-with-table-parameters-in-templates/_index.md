@@ -6,6 +6,9 @@ description: Naučte se extrahovat data z tabulek v dokumentech pomocí GroupDoc
 weight: 15
 url: /cs/net/document-template-processing/working-with-table-parameters-in-templates/
 ---
+
+# Práce s parametry tabulky v šablonách
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak používat GroupDocs.Parser pro .NET pro práci s parametry tabulek v šablonách. Tato příručka rozdělí proces do podrobných pokynů, které vám pomohou efektivně analyzovat a extrahovat data z tabulek v dokumentech.
 ## Předpoklady

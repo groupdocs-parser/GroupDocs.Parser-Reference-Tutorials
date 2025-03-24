@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak data terstruktur dari dokumen menggunakan
 weight: 11
 url: /id/net/data-extraction-from-templates/iterate-through-fields/
 ---
+
+# Iterasi Melalui Bidang
+
 ## Perkenalan
 GroupDocs.Parser untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang mengekstrak data dari berbagai format dokumen seperti PDF, Microsoft Word, Excel, dan PowerPoint. Tutorial ini akan memandu Anda melalui proses penggunaan GroupDocs.Parser untuk melakukan iterasi melalui bidang dokumen dan mengekstrak data tertentu menggunakan templat. Di akhir tutorial ini, Anda akan dapat mengekstrak data terstruktur secara efisien dari dokumen di aplikasi .NET Anda.
 ## Prasyarat

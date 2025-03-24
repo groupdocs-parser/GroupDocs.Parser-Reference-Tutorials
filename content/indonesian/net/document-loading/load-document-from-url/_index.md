@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak teks dari dokumen menggunakan GroupDocs.P
 weight: 13
 url: /id/net/document-loading/load-document-from-url/
 ---
+
+# Muat Dokumen dari URL
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara memanfaatkan GroupDocs.Parser untuk .NET untuk mengekstrak teks dari dokumen. GroupDocs.Parser adalah alat yang ampuh untuk mengekstrak teks, metadata, dan informasi lainnya dari berbagai format dokumen, seperti PDF, Word, Excel, dan banyak lagi. Kami akan membahas proses memuat dokumen dari URL dan mengekstraksi konten teksnya langkah demi langkah.
 ## Prasyarat

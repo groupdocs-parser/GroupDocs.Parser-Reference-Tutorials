@@ -6,6 +6,9 @@ description: 学习使用 GroupDocs.Parser for .NET 按页面搜索文本。从 
 weight: 22
 url: /zh/net/text-extraction/search-text-by-pages/
 ---
+
+# 按页搜索文本
+
 ## 介绍
 在 .NET 开发领域，高效地解析和提取文档中的文本是一项至关重要的任务。GroupDocs.Parser for .NET 提供了强大的功能来处理各种文档格式，使开发人员能够无缝地搜索和提取特定内容。本教程将指导您完成利用 GroupDocs.Parser 在 .NET 应用程序中按页面搜索文本的过程。
 ## 先决条件

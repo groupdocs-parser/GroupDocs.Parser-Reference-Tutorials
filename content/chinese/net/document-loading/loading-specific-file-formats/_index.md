@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser 从 .NET 中的各种文件格�
 weight: 14
 url: /zh/net/document-loading/loading-specific-file-formats/
 ---
+
+# 加载特定文件格式
+
 ## 介绍
 在 .NET 开发领域，解析和提取各种文件格式的文本是一项常见要求。GroupDocs.Parser for .NET 提供了强大的工具来简化此任务。本教程将指导您逐步使用 GroupDocs.Parser 从特定文件格式加载和提取文本。
 ## 先决条件

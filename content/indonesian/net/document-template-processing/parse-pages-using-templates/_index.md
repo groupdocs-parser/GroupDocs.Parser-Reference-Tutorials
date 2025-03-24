@@ -6,6 +6,9 @@ description: Pelajari cara mengurai halaman dokumen menggunakan templat di .NET 
 weight: 16
 url: /id/net/document-template-processing/parse-pages-using-templates/
 ---
+
+# Parsing Halaman Menggunakan Templat
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari penggunaan GroupDocs.Parser untuk .NET untuk mengekstrak data dari dokumen secara efisien. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan penguraian berbagai format dokumen seperti PDF, DOCX, PPTX, dan banyak lagi. Kami akan fokus pada penguraian halaman menggunakan templat, yang memungkinkan ekstraksi konten tertentu secara tepat seperti kode batang.
 ## Prasyarat

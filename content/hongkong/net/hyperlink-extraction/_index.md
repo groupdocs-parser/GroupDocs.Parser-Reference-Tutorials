@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Parser 輕鬆從 .NET 文件中提取超連結。�
 weight: 25
 url: /zh-hant/net/hyperlink-extraction/
 ---
+
+# 超連結提取
+
 ## 介紹
 
 透過 GroupDocs.Parser 教學深入了解 .NET 中超連結提取的世界。這些教程提供了有關從文件中提取超連結的全面指導，無論是來自整個文件、特定頁面還是指定區域。無論您是新手還是經驗豐富的開發人員，這些教程都提供清晰的逐步說明和程式碼範例，幫助您將超連結提取無縫整合到 C# 應用程式中。

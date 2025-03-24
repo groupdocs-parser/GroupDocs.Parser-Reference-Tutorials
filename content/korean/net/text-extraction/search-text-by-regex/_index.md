@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 문서에서 정규식을 
 weight: 23
 url: /ko/net/text-extraction/search-text-by-regex/
 ---
+
+# 정규식으로 텍스트 검색(Regex)
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser를 사용하여 문서 내에서 정규식(Regex)으로 텍스트를 검색하는 방법을 살펴보겠습니다. GroupDocs.Parser는 개발자가 PDF, DOCX, XLSX 등과 같은 다양한 파일 형식에서 텍스트와 메타데이터를 추출할 수 있는 강력한 라이브러리입니다. 정규식을 사용하여 텍스트를 검색하는 것은 문서 내에서 패턴이나 특정 콘텐츠를 효율적으로 찾는 데 특히 유용합니다.
 ## 전제 조건

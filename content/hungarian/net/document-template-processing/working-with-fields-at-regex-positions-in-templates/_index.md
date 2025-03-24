@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan nyerhet ki adatokat dokumentumsablonokból rege
 weight: 13
 url: /hu/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---
+
+# Mezőkkel való munkavégzés reguláris kifejezési pozíciókban a sablonokban
+
 ## Bevezetés
 Ebből az oktatóanyagból megtudhatja, hogyan használhatja a GroupDocs.Parser for .NET-et a mezők kinyerésére a dokumentumsablonokon belül meghatározott reguláris kifejezések (regex) alapján. Ez a könyvtár hatékony szolgáltatásokat kínál a dokumentumok elemzéséhez és kibontásához, így ideális a strukturált adatkinyerési feladatok hatékony kezelésére.
 ## Előfeltételek

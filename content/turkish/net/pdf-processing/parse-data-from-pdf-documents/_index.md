@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak PDF belgelerinden nasıl ver
 weight: 17
 url: /tr/net/pdf-processing/parse-data-from-pdf-documents/
 ---
+
+# PDF Belgelerinden Verileri Ayrıştırma
+
 ## giriiş
 Bu öğreticide, .NET için GroupDocs.Parser kitaplığını kullanarak PDF belgelerinden verimli bir şekilde nasıl veri ayıklanacağını keşfedeceğiz. GroupDocs.Parser, PDF dosyalarını ayrıştırmak ve analiz etmek için güçlü işlevler sağlayarak, daha sonraki işlemler için yapılandırılmış verilerin çıkarılmasını kolaylaştırır. Kitaplığı kullanarak verileri ayarlamak, ayrıştırmak ve çıkarmak için gereken temel adımları inceleyeceğiz.
 ## Önkoşullar

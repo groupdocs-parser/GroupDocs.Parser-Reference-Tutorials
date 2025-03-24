@@ -6,6 +6,9 @@ description: Master table extraction from documents with GroupDocs.Parser for .N
 weight: 23
 url: /net/table-extraction/
 ---
+
+# Table Extraction
+
 ## Introduction
 
 Welcome to the world of table extraction tutorials with GroupDocs.Parser for .NET. In this comprehensive guide, we'll delve into the intricacies of extracting tables from documents using the powerful capabilities of GroupDocs.Parser. Whether you're a beginner or an experienced developer, these tutorials offer clear step-by-step instructions, code examples, and practical insights to help you harness the full potential of table extraction in your .NET applications.

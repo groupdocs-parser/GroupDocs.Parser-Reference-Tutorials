@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 在範本中處理表�
 weight: 14
 url: /zh-hant/net/document-template-processing/working-with-table-layout-in-templates/
 ---
+
+# 使用範本中的表格佈局
+
 ## 介紹
 在本教學中，我們將探索如何使用 GroupDocs.Parser for .NET 在範本中處理表格版面配置。 GroupDocs.Parser 是一個功能強大的文件解析 API，可讓開發人員從各種文件格式（包括 PDF、Microsoft Office 等）中提取文字和元資料。
 ## 先決條件

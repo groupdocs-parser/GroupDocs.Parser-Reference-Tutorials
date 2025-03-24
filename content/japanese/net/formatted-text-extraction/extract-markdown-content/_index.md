@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用してドキュメントから M
 weight: 13
 url: /ja/net/formatted-text-extraction/extract-markdown-content/
 ---
+
+# Markdownコンテンツの抽出
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を使用してドキュメントから Markdown コンテンツを抽出する方法について説明します。GroupDocs.Parser は、開発者がさまざまなファイル形式からテキストをシームレスに解析および抽出できるようにする強力なライブラリです。
 ## 前提条件

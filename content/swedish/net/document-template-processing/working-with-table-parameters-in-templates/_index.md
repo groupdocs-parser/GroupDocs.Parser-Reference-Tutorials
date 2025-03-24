@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar data från tabeller i dokument med Group
 weight: 15
 url: /sv/net/document-template-processing/working-with-table-parameters-in-templates/
 ---
+
+# Arbeta med tabellparametrar i mallar
+
 ## Introduktion
 I den här handledningen kommer vi att utforska hur du använder GroupDocs.Parser för .NET för att arbeta med tabellparametrar i mallar. Den här guiden kommer att dela upp processen i steg-för-steg-instruktioner för att hjälpa dig att effektivt analysera och extrahera data från tabeller i dokument.
 ## Förutsättningar

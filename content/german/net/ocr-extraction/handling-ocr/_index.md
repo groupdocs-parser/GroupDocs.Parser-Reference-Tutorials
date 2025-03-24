@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie OCR mit GroupDocs.Parser für .NET handhaben.
 weight: 11
 url: /de/net/ocr-extraction/handling-ocr/
 ---
+
+# Handhabung von OCR
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Aufgaben zur optischen Zeichenerkennung (OCR) effizient erledigen können. Diese Bibliothek bietet leistungsstarke Tools zum Extrahieren von Text aus Dokumenten. Mit OCR können Sie sogar aus Bildern oder gescannten Dokumenten Text extrahieren. Lassen Sie uns Schritt für Schritt in den Prozess eintauchen.
 ## Voraussetzungen

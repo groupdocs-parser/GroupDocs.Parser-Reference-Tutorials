@@ -6,6 +6,9 @@ description: Dễ dàng trích xuất siêu liên kết từ các tài liệu tr
 weight: 25
 url: /vi/net/hyperlink-extraction/
 ---
+
+# Trích xuất siêu liên kết
+
 ## Giới thiệu
 
 Đi sâu vào thế giới trích xuất siêu liên kết trong .NET với các hướng dẫn của GroupDocs.Parser. Các hướng dẫn này cung cấp hướng dẫn toàn diện về cách trích xuất siêu liên kết từ tài liệu, cho dù đó là từ toàn bộ tài liệu, các trang cụ thể hay các khu vực được chỉ định. Cho dù bạn là người mới hay nhà phát triển có kinh nghiệm, những hướng dẫn này đều cung cấp hướng dẫn từng bước rõ ràng và ví dụ về mã để giúp bạn tích hợp trích xuất siêu liên kết một cách liền mạch vào các ứng dụng C# của mình.

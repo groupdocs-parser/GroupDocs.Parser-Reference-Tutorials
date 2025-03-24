@@ -6,6 +6,9 @@ description: Aprenda a pesquisar texto por páginas usando GroupDocs.Parser for 
 weight: 22
 url: /pt/net/text-extraction/search-text-by-pages/
 ---
+
+# Pesquisar texto por páginas
+
 ## Introdução
 No mundo do desenvolvimento .NET, analisar e extrair texto de documentos com eficiência é uma tarefa crucial. GroupDocs.Parser for .NET oferece recursos poderosos para trabalhar com vários formatos de documentos, permitindo que os desenvolvedores pesquisem e extraiam conteúdo específico de maneira integrada. Este tutorial irá guiá-lo através do processo de aproveitamento do GroupDocs.Parser para pesquisar texto por páginas em seus aplicativos .NET.
 ## Pré-requisitos

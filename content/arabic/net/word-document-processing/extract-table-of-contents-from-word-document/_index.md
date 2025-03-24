@@ -6,6 +6,9 @@ description: تعرف على كيفية استخراج جدول المحتويا
 weight: 13
 url: /ar/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
+
+# استخراج جدول المحتويات من مستند Word
+
 ## مقدمة
 ستتعلم في هذا البرنامج التعليمي كيفية استخدام GroupDocs.Parser لـ .NET لاستخراج جدول المحتويات (TOC) من مستند Word خطوة بخطوة. GroupDocs.Parser هي مكتبة قوية تتيح لك العمل مع تنسيقات المستندات المختلفة برمجيًا.
 ## المتطلبات الأساسية

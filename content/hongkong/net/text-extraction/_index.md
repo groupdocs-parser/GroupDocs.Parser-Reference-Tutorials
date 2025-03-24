@@ -7,6 +7,9 @@ weight: 20
 url: /zh-hant/net/text-extraction/
 ---
 
+# 文字擷取
+
+
 ## 介紹
 
 歡迎來到由 GroupDocs.Parser for .NET 支援的全面的文字擷取教學集。在本系列教程中，我們將探索從 .NET 應用程式中的文件中提取、突出顯示和搜尋文字的各種方法和技術。

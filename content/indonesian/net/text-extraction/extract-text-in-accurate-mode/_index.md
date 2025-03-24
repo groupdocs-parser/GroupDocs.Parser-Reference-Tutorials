@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak teks secara akurat dari dokumen di .NET m
 weight: 18
 url: /id/net/text-extraction/extract-text-in-accurate-mode/
 ---
+
+# Ekstrak Teks dalam Mode Akurat
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara mengekstrak teks secara akurat dari berbagai format dokumen menggunakan GroupDocs.Parser untuk .NET. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan ekstraksi teks dari dokumen seperti PDF, DOCX, PPTX, XLSX, dan banyak lagi, menjadikannya alat yang berharga untuk aplikasi pemrosesan data.
 ## Prasyarat

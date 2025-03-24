@@ -6,6 +6,9 @@ description: Découvrez comment extraire des données de modèles de documents �
 weight: 13
 url: /fr/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---
+
+# Travailler avec des champs aux positions Regex dans les modèles
+
 ## Introduction
 Dans ce didacticiel, vous apprendrez à utiliser GroupDocs.Parser pour .NET pour extraire des champs basés sur des expressions régulières spécifiées (regex) dans des modèles de document. Cette bibliothèque offre des fonctionnalités puissantes pour l'analyse et l'extraction de documents, ce qui la rend idéale pour gérer efficacement les tâches d'extraction de données structurées.
 ## Conditions préalables

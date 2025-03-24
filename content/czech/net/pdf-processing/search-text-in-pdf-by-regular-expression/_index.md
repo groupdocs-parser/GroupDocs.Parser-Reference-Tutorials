@@ -6,6 +6,9 @@ description: Vyhledejte konkrétní text v dokumentech PDF pomocí regulárních
 weight: 19
 url: /cs/net/pdf-processing/search-text-in-pdf-by-regular-expression/
 ---
+
+# Hledání textu v PDF regulárním výrazem
+
 ## Úvod
 tomto tutoriálu prozkoumáme, jak efektivně extrahovat text z dokumentů PDF pomocí GroupDocs.Parser pro .NET. GroupDocs.Parser je výkonná knihovna, která umožňuje vývojářům analyzovat a extrahovat text, metadata a strukturovaná data z různých formátů dokumentů, včetně PDF. Ať už pracujete na extrakci dat, analýze obsahu nebo vyhledávacích funkcích ve svých aplikacích .NET, GroupDocs.Parser poskytuje komplexní sadu nástrojů pro bezproblémové zvládnutí těchto úkolů.
 ## Předpoklady

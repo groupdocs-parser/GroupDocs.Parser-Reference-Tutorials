@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak gambar dari dokumen Word menggunakan Grou
 weight: 11
 url: /id/net/word-document-processing/extract-images-from-word-document/
 ---
+
+# Ekstrak Gambar dari Dokumen Word
+
 ## Perkenalan
 Dalam tutorial ini, Anda akan mempelajari cara mengekstrak gambar dari dokumen Word menggunakan GroupDocs.Parser untuk .NET. GroupDocs.Parser adalah pustaka .NET canggih yang memungkinkan Anda mengurai dan mengekstrak teks, metadata, gambar, dan lainnya dari berbagai format dokumen termasuk Word (DOCX).
 ## Prasyarat

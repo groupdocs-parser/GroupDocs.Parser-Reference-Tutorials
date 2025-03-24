@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 從文件中擷取文�
 weight: 19
 url: /zh-hant/net/text-extraction/extract-text-in-raw-mode/
 ---
+
+# 在原始模式下提取文本
+
 ## 介紹
 在本教程中，我們將探索如何利用 GroupDocs.Parser for .NET 從各種文件格式中高效提取文字。 GroupDocs.Parser 是一個功能強大的程式庫，可讓開發人員從 PDF、Word、Excel、PowerPoint 等文件中提取文字和元數據，從而簡化 .NET 應用程式中的文字擷取任務。
 ## 先決條件

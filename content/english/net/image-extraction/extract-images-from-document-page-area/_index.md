@@ -6,6 +6,9 @@ description: Discover how to precisely extract images from documents using Group
 weight: 10
 url: /net/image-extraction/extract-images-from-document-page-area/
 ---
+
+# Extract Images from Document Page Area
+
 ## Introduction
 In this tutorial, we will learn how to use Groupdocs.Parser for .NET to extract images from specific areas of a document page. This process allows you to precisely target and retrieve images based on defined coordinates and dimensions within the document.
 ## Prerequisites

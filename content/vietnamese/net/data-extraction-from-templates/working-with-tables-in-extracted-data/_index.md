@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất dữ liệu bảng từ tài liệu
 weight: 12
 url: /vi/net/data-extraction-from-templates/working-with-tables-in-extracted-data/
 ---
+
+# Làm việc với các bảng trong dữ liệu được trích xuất
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Parser cho .NET để trích xuất dữ liệu từ các bảng trong tài liệu. GroupDocs.Parser là một công cụ mạnh mẽ cho phép các nhà phát triển phân tích cú pháp và trích xuất văn bản, siêu dữ liệu và nội dung có cấu trúc từ nhiều định dạng tệp khác nhau như PDF, DOCX, XLSX, v.v. Cụ thể, chúng tôi sẽ tập trung vào việc trích xuất dữ liệu bảng một cách hiệu quả bằng cách sử dụng các mẫu được xác định trước.
 ## Điều kiện tiên quyết

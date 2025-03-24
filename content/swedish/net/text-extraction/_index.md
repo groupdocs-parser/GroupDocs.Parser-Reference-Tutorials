@@ -7,6 +7,9 @@ weight: 20
 url: /sv/net/text-extraction/
 ---
 
+# Textextraktion
+
+
 ## Introduktion
 
 Välkommen till den omfattande samlingen av självstudier för textextraktion som drivs av GroupDocs.Parser för .NET. I den här serien med självstudiekurser kommer vi att utforska olika metoder och tekniker för att extrahera, markera och söka efter text från dokument i dina .NET-program.

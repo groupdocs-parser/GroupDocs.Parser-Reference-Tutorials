@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET nach Schlüsse
 weight: 21
 url: /de/net/text-extraction/search-text-by-keyword/
 ---
+
+# Textsuche nach Stichwort
+
 ## Einführung
 In diesem Tutorial werden wir uns mit der Verwendung von GroupDocs.Parser für .NET befassen, um Text in Dokumenten nach Schlüsselwörtern zu suchen. GroupDocs.Parser ist eine leistungsstarke Bibliothek, mit der Entwickler Text, Metadaten und andere Informationen aus verschiedenen Dateiformaten wie PDFs, Microsoft Office-Dokumenten und mehr extrahieren können. Die Suche nach bestimmten Schlüsselwörtern in diesen Dokumenten kann für Anwendungen, die mit großen Mengen an Textdaten arbeiten, von entscheidender Bedeutung sein.
 ## Voraussetzungen

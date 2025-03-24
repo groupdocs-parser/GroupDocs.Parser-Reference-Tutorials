@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthat ki képeket Word-dokumentumból a Group
 weight: 11
 url: /hu/net/word-document-processing/extract-images-from-word-document/
 ---
+
+# Képek kibontása a Word dokumentumból
+
 ## Bevezetés
 Ebből az oktatóanyagból megtudhatja, hogyan bonthat ki képeket Word-dokumentumból a GroupDocs.Parser for .NET segítségével. A GroupDocs.Parser egy hatékony .NET-könyvtár, amely lehetővé teszi szövegek, metaadatok, képek és egyebek elemzését és kinyerését különféle dokumentumformátumokból, köztük a Wordből (DOCX).
 ## Előfeltételek

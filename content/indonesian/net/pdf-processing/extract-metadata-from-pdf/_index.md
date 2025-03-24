@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak metadata dari dokumen PDF menggunakan Gro
 weight: 13
 url: /id/net/pdf-processing/extract-metadata-from-pdf/
 ---
+
+# Ekstrak Metadata dari PDF
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari penggunaan GroupDocs.Parser untuk .NET untuk mengekstrak metadata dari dokumen PDF. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan pengembang bekerja dengan berbagai format dokumen, termasuk PDF, DOCX, dan lainnya, untuk mengekstraksi teks, metadata, dan data terstruktur. Mengekstraksi metadata dari PDF dapat berguna untuk berbagai aplikasi, mulai dari manajemen dokumen hingga pengambilan informasi.
 ## Prasyarat

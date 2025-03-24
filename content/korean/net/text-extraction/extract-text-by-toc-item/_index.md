@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 목차(TOC)별로 텍스�
 weight: 15
 url: /ko/net/text-extraction/extract-text-by-toc-item/
 ---
+
+# 목차(TOC) 항목별로 텍스트 추출
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser를 활용하여 문서에서 목차(TOC) 항목을 기반으로 텍스트를 추출하는 방법을 살펴보겠습니다. GroupDocs.Parser는 효율적인 문서 구문 분석 및 추출을 가능하게 하는 강력한 도구입니다.
 ## 전제 조건

@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用して、ドキュメント ペ�
 weight: 11
 url: /ja/net/formatted-text-extraction/extract-formatted-text-from-document-page/
 ---
+
+# ドキュメントページから書式設定されたテキストを抽出する
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を使用してドキュメント ページから書式設定されたテキストを抽出するプロセスについて説明します。このライブラリを使用すると、PDF、Word、Excel などのさまざまなドキュメント形式からテキストを効率的に解析して抽出できます。
 ## 前提条件

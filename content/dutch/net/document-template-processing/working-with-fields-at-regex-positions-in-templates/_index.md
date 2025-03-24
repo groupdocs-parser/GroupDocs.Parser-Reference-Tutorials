@@ -6,6 +6,9 @@ description: Leer hoe u gegevens uit documentsjablonen kunt extraheren met behul
 weight: 13
 url: /nl/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---
+
+# Werken met velden bij Regex-posities in sjablonen
+
 ## Invoering
 In deze zelfstudie leert u hoe u GroupDocs.Parser voor .NET kunt gebruiken om velden te extraheren op basis van gespecificeerde reguliere expressies (regex) binnen documentsjablonen. Deze bibliotheek biedt krachtige functies voor het parseren en extraheren van documenten, waardoor deze ideaal is voor het efficiënt afhandelen van gestructureerde gegevensextractietaken.
 ## Vereisten

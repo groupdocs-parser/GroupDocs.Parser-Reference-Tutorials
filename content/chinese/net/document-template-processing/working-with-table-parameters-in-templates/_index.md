@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 从文档中的表中�
 weight: 15
 url: /zh/net/document-template-processing/working-with-table-parameters-in-templates/
 ---
+
+# 在模板中使用表参数
+
 ## 介绍
 在本教程中，我们将探索如何使用 GroupDocs.Parser for .NET 处理模板中的表参数。本指南将把该过程分解为分步说明，以帮助您有效地解析和提取文档中表格中的数据。
 ## 先决条件

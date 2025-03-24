@@ -6,6 +6,9 @@ description: Lär dig hur du använder GroupDocs.Parser för .NET för att extra
 weight: 10
 url: /sv/net/document-template-processing/working-with-barcodes-in-templates/
 ---
+
+# Arbeta med streckkoder i mallar
+
 ## Introduktion
 I den här handledningen kommer vi att utforska hur du effektivt extraherar data från dokument med hjälp av mallar med GroupDocs.Parser för .NET. GroupDocs.Parser förenklar processen för dataextraktion genom att du kan definiera mallar för specifika datatyper, såsom streckkoder, och sedan analysera dokument enligt dessa mallar.
 ## Förutsättningar

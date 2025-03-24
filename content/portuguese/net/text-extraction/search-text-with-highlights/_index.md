@@ -6,6 +6,9 @@ description: Aprenda como pesquisar e destacar texto em documentos usando GroupD
 weight: 24
 url: /pt/net/text-extraction/search-text-with-highlights/
 ---
+
+# Pesquisar texto com destaques
+
 ## Introdução
 Neste tutorial, exploraremos como usar GroupDocs.Parser for .NET para pesquisar texto em um documento e destacar os resultados da pesquisa. GroupDocs.Parser é uma biblioteca poderosa que permite trabalhar com vários formatos de documentos e extrair texto, metadados e muito mais.
 ## Pré-requisitos

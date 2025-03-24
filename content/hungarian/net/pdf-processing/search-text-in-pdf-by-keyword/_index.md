@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan kereshet meghatározott szöveget PDF-dokumentu
 weight: 18
 url: /hu/net/pdf-processing/search-text-in-pdf-by-keyword/
 ---
+
+# Szöveg keresése PDF-ben kulcsszó szerint
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet kihasználni a GroupDocs.Parser for .NET alkalmazást, hogy kulcsszavak használatával keressen konkrét szöveget PDF-dokumentumokban. A GroupDocs.Parser egy hatékony dokumentumelemző API, amely lehetővé teszi a fejlesztők számára, hogy szöveget, metaadatokat, képeket és egyebeket kinyerhessenek különböző dokumentumformátumokból .NET-alkalmazásokban. A PDF-ben található szöveg keresése általános követelmény a dokumentumfeldolgozó alkalmazásokban, és a GroupDocs.Parser leegyszerűsíti ezt a feladatot az intuitív API-jával.
 ## Előfeltételek

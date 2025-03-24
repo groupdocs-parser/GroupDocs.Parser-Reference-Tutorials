@@ -6,6 +6,9 @@ description: Tìm hiểu cách tìm kiếm văn bản theo từ khóa trong tài
 weight: 21
 url: /vi/net/text-extraction/search-text-by-keyword/
 ---
+
+# Tìm kiếm văn bản theo từ khóa
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách sử dụng GroupDocs.Parser cho .NET để tìm kiếm văn bản theo từ khóa trong tài liệu. GroupDocs.Parser là một thư viện mạnh mẽ cho phép các nhà phát triển trích xuất văn bản, siêu dữ liệu và thông tin khác từ nhiều định dạng tệp khác nhau, chẳng hạn như PDF, tài liệu Microsoft Office, v.v. Việc tìm kiếm các từ khóa cụ thể trong các tài liệu này có thể cần thiết cho các ứng dụng xử lý khối lượng lớn dữ liệu văn bản.
 ## Điều kiện tiên quyết

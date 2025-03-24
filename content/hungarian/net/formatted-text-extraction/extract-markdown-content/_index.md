@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan vonhat ki Markdown tartalmat dokumentumokból a
 weight: 13
 url: /hu/net/formatted-text-extraction/extract-markdown-content/
 ---
+
+# Markdown tartalom kibontása
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan használható a GroupDocs.Parser for .NET Markdown tartalom dokumentumokból való kinyerésére. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen elemezzék és bontsanak ki szöveget különböző fájlformátumokból.
 ## Előfeltételek

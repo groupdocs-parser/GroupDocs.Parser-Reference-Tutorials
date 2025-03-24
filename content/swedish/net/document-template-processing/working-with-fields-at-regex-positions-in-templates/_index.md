@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar data från dokumentmallar med hjälp av 
 weight: 13
 url: /sv/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---
+
+# Arbeta med fält vid Regex-positioner i mallar
+
 ## Introduktion
 I den här handledningen kommer du att lära dig hur du använder GroupDocs.Parser för .NET för att extrahera fält baserat på specificerade reguljära uttryck (regex) i dokumentmallar. Det här biblioteket erbjuder kraftfulla funktioner för att analysera och extrahera dokument, vilket gör det idealiskt för att hantera strukturerade dataextraheringsuppgifter effektivt.
 ## Förutsättningar

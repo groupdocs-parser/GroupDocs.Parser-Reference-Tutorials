@@ -6,6 +6,9 @@ description: Naučte se extrahovat formátovaný text z dokumentů pomocí Group
 weight: 10
 url: /cs/net/formatted-text-extraction/extract-formatted-text-from-document/
 ---
+
+# Extrahujte formátovaný text z dokumentu
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak pomocí GroupDocs.Parser for .NET extrahovat formátovaný text z různých typů dokumentů. GroupDocs.Parser je výkonná knihovna, která umožňuje vývojářům pracovat s dokumenty zjednodušeným a efektivním způsobem. Na konci této příručky budete schopni bezproblémově integrovat možnosti extrakce textu do vašich aplikací .NET.
 ## Předpoklady

@@ -6,6 +6,9 @@ description: Temukan serangkaian tutorial tentang pemrosesan dokumen Word menggu
 weight: 30
 url: /id/net/word-document-processing/
 ---
+
+# Pemrosesan Dokumen Word
+
 Apakah Anda ingin meningkatkan kemampuan pemrosesan dokumen Word di .NET? Tidak perlu mencari lagi! GroupDocs.Parser untuk .NET menawarkan serangkaian tutorial komprehensif untuk membantu Anda mengekstrak berbagai elemen dari dokumen Word dengan mudah.
 
 ## Mengekstrak Hyperlink

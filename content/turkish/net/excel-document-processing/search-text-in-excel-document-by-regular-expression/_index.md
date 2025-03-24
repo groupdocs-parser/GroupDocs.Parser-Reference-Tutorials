@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET ile normal ifadeleri kullanarak Excel bel
 weight: 17
 url: /tr/net/excel-document-processing/search-text-in-excel-document-by-regular-expression/
 ---
+
+# Excel Belgesindeki Metni Normal İfadeyle Arama
+
 ## giriiş
 Bu öğreticide, düzenli ifadeler kullanarak Excel belgelerinde belirli metin kalıplarını aramak için GroupDocs.Parser for .NET'in nasıl kullanılacağını keşfedeceğiz. GroupDocs.Parser, geliştiricilerin Excel gibi elektronik tablolar da dahil olmak üzere çeşitli belge formatlarından metin ve meta veriler çıkarmasına olanak tanıyan güçlü bir kitaplıktır. Düzenli ifadelerden yararlanarak gelişmiş metin aramalarını verimli bir şekilde gerçekleştirebiliriz.
 ## Önkoşullar

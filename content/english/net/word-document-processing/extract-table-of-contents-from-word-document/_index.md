@@ -6,6 +6,9 @@ description: Learn how to extract Table of Contents (TOC) from Word documents pr
 weight: 13
 url: /net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
+
+# Extract Table of Contents from Word Document
+
 ## Introduction
 In this tutorial, you will learn how to use GroupDocs.Parser for .NET to extract the Table of Contents (TOC) from a Word document step-by-step. GroupDocs.Parser is a powerful library that allows you to work with various document formats programmatically.
 ## Prerequisites

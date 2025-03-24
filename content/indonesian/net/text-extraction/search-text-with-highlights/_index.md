@@ -6,6 +6,9 @@ description: Pelajari cara mencari dan menyorot teks dalam dokumen menggunakan G
 weight: 24
 url: /id/net/text-extraction/search-text-with-highlights/
 ---
+
+# Cari Teks dengan Sorotan
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggunakan GroupDocs.Parser untuk .NET untuk mencari teks dalam dokumen dan menyorot hasil pencarian. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan Anda bekerja dengan berbagai format dokumen dan mengekstrak teks, metadata, dan banyak lagi.
 ## Prasyarat

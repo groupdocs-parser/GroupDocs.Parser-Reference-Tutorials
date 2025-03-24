@@ -6,6 +6,9 @@ description: Leer hoe u GroupDocs.Parser voor .NET kunt gebruiken om gestructure
 weight: 10
 url: /nl/net/document-template-processing/working-with-barcodes-in-templates/
 ---
+
+# Werken met streepjescodes in sjablonen
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u efficiënt gegevens uit documenten kunt extraheren met behulp van sjablonen met GroupDocs.Parser voor .NET. GroupDocs.Parser vereenvoudigt het proces van gegevensextractie doordat u sjablonen kunt definiëren voor specifieke gegevenstypen, zoals streepjescodes, en vervolgens documenten kunt parseren op basis van deze sjablonen.
 ## Vereisten

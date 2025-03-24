@@ -6,6 +6,9 @@ description: Naučte se extrahovat obrázky z dokumentu aplikace Word pomocí Gr
 weight: 11
 url: /cs/net/word-document-processing/extract-images-from-word-document/
 ---
+
+# Extrahujte obrázky z dokumentu aplikace Word
+
 ## Úvod
 V tomto tutoriálu se naučíte, jak extrahovat obrázky z dokumentu aplikace Word pomocí GroupDocs.Parser for .NET. GroupDocs.Parser je výkonná knihovna .NET, která vám umožňuje analyzovat a extrahovat text, metadata, obrázky a další z různých formátů dokumentů včetně Wordu (DOCX).
 ## Předpoklady

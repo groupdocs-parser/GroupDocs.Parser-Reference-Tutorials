@@ -6,6 +6,9 @@ description: Naučte se extrahovat čárové kódy z poškozených dokumentů po
 weight: 11
 url: /cs/net/barcode-extraction/extract-barcodes-from-corrupted-document/
 ---
+
+# Extrahujte čárové kódy z poškozeného dokumentu
+
 ## Úvod
 tomto tutoriálu vás provedeme procesem extrahování čárových kódů z poškozených dokumentů pomocí GroupDocs.Parser for .NET. GroupDocs.Parser je výkonné API pro analýzu dokumentů, které umožňuje vývojářům extrahovat text, metadata, obrázky a nyní i čárové kódy z různých formátů souborů. Rozebereme si kroky potřebné k efektivnímu splnění tohoto úkolu.
 ## Předpoklady

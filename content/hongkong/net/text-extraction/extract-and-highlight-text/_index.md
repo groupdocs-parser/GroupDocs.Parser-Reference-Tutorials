@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 從文件中提取和�
 weight: 11
 url: /zh-hant/net/text-extraction/extract-and-highlight-text/
 ---
+
+# 提取並突出顯示文本
+
 ## 介紹
 在本教學中，我們將探討如何使用 GroupDocs.Parser for .NET 從文件中擷取並反白顯示文字。 GroupDocs.Parser 是一個功能強大的程式庫，可讓您解析各種文件格式並執行進階文字擷取操作。
 ## 先決條件

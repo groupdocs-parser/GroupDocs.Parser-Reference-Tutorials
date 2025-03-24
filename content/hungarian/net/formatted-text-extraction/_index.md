@@ -7,6 +7,9 @@ weight: 21
 url: /hu/net/formatted-text-extraction/
 ---
 
+# Formázott szöveg kinyerése
+
+
 ## Bevezetés
 
 Fedezze fel a formázott szöveg kinyerésének világát .NET-ben a GroupDocs.Parser oktatóanyagaival. Ezek az oktatóanyagok a formázott szöveg dokumentumokból való kinyerésére szolgáló technikák széles skáláját mutatják be, beleértve a HTML-t, a Markdown-t és az egyszerű szöveget. Akár kezdő, akár tapasztalt fejlesztő, ezek az oktatóanyagok értékes betekintést és gyakorlati példákat kínálnak a szövegkivonási képességek fejlesztéséhez.

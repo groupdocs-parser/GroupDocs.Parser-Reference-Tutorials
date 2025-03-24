@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić tekst z dokumentów za pomocą Group
 weight: 19
 url: /pl/net/text-extraction/extract-text-in-raw-mode/
 ---
+
+# Wyodrębnij tekst w trybie surowym
+
 ## Wstęp
 W tym samouczku pokażemy, jak wykorzystać GroupDocs.Parser dla .NET do wydajnego wyodrębniania tekstu z różnych formatów dokumentów. GroupDocs.Parser to potężna biblioteka, która umożliwia programistom wyodrębnianie tekstu i metadanych z dokumentów takich jak PDF, Word, Excel, PowerPoint i innych, upraszczając zadania wyodrębniania tekstu w aplikacjach .NET.
 ## Warunki wstępne

@@ -6,6 +6,9 @@ description: Tìm hiểu cách tìm kiếm văn bản theo trang bằng GroupDoc
 weight: 22
 url: /vi/net/text-extraction/search-text-by-pages/
 ---
+
+# Tìm kiếm văn bản theo trang
+
 ## Giới thiệu
 Trong thế giới phát triển .NET, việc phân tích cú pháp và trích xuất văn bản từ tài liệu một cách hiệu quả là một nhiệm vụ quan trọng. GroupDocs.Parser for .NET cung cấp các khả năng mạnh mẽ để hoạt động với nhiều định dạng tài liệu khác nhau, cho phép các nhà phát triển tìm kiếm và trích xuất nội dung cụ thể một cách liền mạch. Hướng dẫn này sẽ hướng dẫn bạn quy trình tận dụng GroupDocs.Parser để tìm kiếm văn bản theo trang trong ứng dụng .NET của bạn.
 ## Điều kiện tiên quyết

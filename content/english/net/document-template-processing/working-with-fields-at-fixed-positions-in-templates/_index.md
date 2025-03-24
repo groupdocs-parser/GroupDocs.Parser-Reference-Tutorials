@@ -6,6 +6,9 @@ description: Learn how to extract data from documents using GroupDocs.Parser for
 weight: 11
 url: /net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
+
+# Working with Fields at Fixed Positions in Templates
+
 ## Introduction
 In this tutorial, we will explore how to work with fields at fixed positions within templates using GroupDocs.Parser for .NET. GroupDocs.Parser is a powerful document parsing library that enables developers to extract data from various document formats such as PDF, Word, Excel, and more. Specifically, we'll focus on defining and utilizing template fields to extract targeted information based on their fixed positions.
 ## Prerequisites

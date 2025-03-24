@@ -6,6 +6,9 @@ description: Aprenda como pesquisar texto em documentos Excel usando expressões
 weight: 17
 url: /pt/net/excel-document-processing/search-text-in-excel-document-by-regular-expression/
 ---
+
+# Pesquisar texto em documento Excel por expressão regular
+
 ## Introdução
 Neste tutorial, exploraremos como utilizar GroupDocs.Parser for .NET para pesquisar padrões de texto específicos em documentos Excel usando expressões regulares. GroupDocs.Parser é uma biblioteca poderosa que permite aos desenvolvedores extrair texto e metadados de vários formatos de documentos, incluindo planilhas como Excel. Aproveitando expressões regulares, podemos realizar pesquisas de texto avançadas com eficiência.
 ## Pré-requisitos

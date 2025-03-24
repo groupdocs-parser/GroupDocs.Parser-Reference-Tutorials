@@ -6,6 +6,9 @@ description: GroupDocs.Parser를 사용하여 .NET의 다양한 문서 형식에
 weight: 12
 url: /ko/net/document-loading/load-document-from-stream/
 ---
+
+# 스트림에서 문서 로드
+
 ## 소개
 .NET 애플리케이션의 문서 처리 영역에서는 다양한 파일 형식에서 텍스트를 추출하는 것이 일반적인 요구 사항입니다. .NET용 GroupDocs.Parser는 다양한 범위의 문서에서 텍스트를 원활하게 구문 분석하고 추출할 수 있는 강력한 솔루션을 제공합니다. 이 튜토리얼에서는 GroupDocs.Parser를 활용하여 문서에서 텍스트를 추출하는 과정을 단계별로 안내합니다.
 ## 전제 조건

@@ -6,6 +6,9 @@ description: Könnyedén kinyerhet képeket a .NET-ben lévő dokumentumokból a
 weight: 24
 url: /hu/net/image-extraction/
 ---
+
+# Képkivonás
+
 ## Bevezetés
 
 Merüljön el a .NET képkinyerésének birodalmában a GroupDocs.Parser oktatóanyagaival. Ezek az oktatóanyagok átfogó útmutatást nyújtanak a képek dokumentumokból való kinyeréséhez, legyen szó bizonyos dokumentumterületekről, teljes dokumentumokról vagy egyes oldalakról. Akár kezdő, akár tapasztalt fejlesztő, ezek az oktatóanyagok világos, lépésről lépésre bemutatott utasításokat és kódpéldákat kínálnak, amelyek segítenek a képkivonat zökkenőmentes integrálásában .NET-alkalmazásaiba.

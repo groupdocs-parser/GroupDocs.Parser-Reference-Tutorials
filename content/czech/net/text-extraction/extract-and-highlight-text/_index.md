@@ -6,6 +6,9 @@ description: Naučte se extrahovat a zvýraznit text z dokumentů pomocí GroupD
 weight: 11
 url: /cs/net/text-extraction/extract-and-highlight-text/
 ---
+
+# Extrahujte a zvýrazněte text
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak používat GroupDocs.Parser pro .NET k extrahování a zvýraznění textu z dokumentů. GroupDocs.Parser je výkonná knihovna, která umožňuje analyzovat různé formáty dokumentů a provádět pokročilé operace extrakce textu.
 ## Předpoklady

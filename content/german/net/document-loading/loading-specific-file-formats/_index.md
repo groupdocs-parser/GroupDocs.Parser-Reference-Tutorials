@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Parser Text aus verschiedenen D
 weight: 14
 url: /de/net/document-loading/loading-specific-file-formats/
 ---
+
+# Laden bestimmter Dateiformate
+
 ## Einführung
 In der Welt der .NET-Entwicklung ist das Parsen und Extrahieren von Text aus verschiedenen Dateiformaten eine häufige Anforderung. GroupDocs.Parser für .NET bietet leistungsstarke Tools, um diese Aufgabe zu vereinfachen. Dieses Tutorial führt Sie Schritt für Schritt durch die Verwendung von GroupDocs.Parser zum Laden und Extrahieren von Text aus bestimmten Dateiformaten.
 ## Voraussetzungen

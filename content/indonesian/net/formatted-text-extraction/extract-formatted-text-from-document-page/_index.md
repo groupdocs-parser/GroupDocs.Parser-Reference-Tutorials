@@ -6,6 +6,9 @@ description: Ekstrak teks yang diformat dari halaman dokumen menggunakan GroupDo
 weight: 11
 url: /id/net/formatted-text-extraction/extract-formatted-text-from-document-page/
 ---
+
+# Ekstrak Teks Terformat dari Halaman Dokumen
+
 ## Perkenalan
 Dalam tutorial ini, kami akan memandu Anda melalui proses mengekstraksi teks yang diformat dari halaman dokumen menggunakan GroupDocs.Parser untuk .NET. Pustaka ini memungkinkan Anda mengurai dan mengekstrak teks secara efisien dari berbagai format dokumen seperti PDF, Word, Excel, dan lainnya.
 ## Prasyarat

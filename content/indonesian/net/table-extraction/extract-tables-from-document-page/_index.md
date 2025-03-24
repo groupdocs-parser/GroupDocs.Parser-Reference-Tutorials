@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak tabel dari dokumen secara terprogram meng
 weight: 11
 url: /id/net/table-extraction/extract-tables-from-document-page/
 ---
+
+# Ekstrak Tabel dari Halaman Dokumen
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara mengekstrak tabel dari halaman dokumen menggunakan GroupDocs.Parser untuk .NET. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan pengembang bekerja dengan berbagai format dokumen seperti PDF, DOCX, XLSX, dan banyak lagi. Dengan memanfaatkan fitur-fiturnya, kami dapat secara efisien mengekstrak data terstruktur seperti tabel dari dokumen-dokumen ini, sehingga memungkinkan kami memanipulasi dan menganalisis informasi secara terprogram.
 ## Prasyarat

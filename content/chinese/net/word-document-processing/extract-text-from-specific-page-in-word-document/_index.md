@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 从 Word 文档中的�
 weight: 17
 url: /zh/net/word-document-processing/extract-text-from-specific-page-in-word-document/
 ---
+
+# 从 Word 文档中的特定页面提取文本
+
 ## 介绍
 在 .NET 开发领域，从文档中提取文本是各种应用程序的常见要求。GroupDocs.Parser for .NET 提供了一个强大的解决方案，可以无缝地解析和提取不同文档格式的文本。本教程重点介绍如何利用 GroupDocs.Parser 从 Word 文档中的特定页面中提取文本。通过遵循本指南，您将学习将此功能有效地集成到 .NET 项目中的必要步骤。
 ## 先决条件

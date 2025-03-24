@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser 处理 .NET 中的外部资源�
 weight: 10
 url: /zh/net/document-loading/handling-loading-of-external-resources/
 ---
+
+# 处理外部资源的加载
+
 ## 介绍
 在 .NET 开发领域，解析和提取各种文件格式的内容是一项常见要求。GroupDocs.Parser for .NET 提供了一个强大的解决方案，可以高效地处理文档解析任务。本教程将指导您使用 GroupDocs.Parser 在 .NET 应用程序中处理外部资源（例如图像）。我们将介绍必要的先决条件、导入命名空间，并将示例分解为详细的分步说明。
 ## 先决条件

@@ -6,6 +6,9 @@ description: A GroupDocs.Parser for .NET segítségével könnyedén bonthat ki 
 weight: 13
 url: /hu/net/image-extraction/extract-images-to-files/
 ---
+
+# Képek kibontása fájlba
+
 ## Bevezetés
 Ebből az oktatóanyagból megtudhatja, hogyan használhatja a GroupDocs.Parser for .NET-et képek kinyerésére különféle dokumentumformátumokból, például PDF, Word, Excel és PowerPoint. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy szövegeket, metaadatokat, képeket és egyebeket egyszerű módon elemezzenek és nyerjenek ki dokumentumokból. Ez az útmutató végigvezeti a képek kibontásának és a C# használatával egyedi fájlként történő mentésének folyamatán.
 ## Előfeltételek

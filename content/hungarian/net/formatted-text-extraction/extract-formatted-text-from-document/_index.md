@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan vonhat ki formázott szöveget dokumentumokból
 weight: 10
 url: /hu/net/formatted-text-extraction/extract-formatted-text-from-document/
 ---
+
+# Formázott szöveg kibontása a dokumentumból
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan használható a GroupDocs.Parser for .NET formázott szöveg kinyerésére különböző típusú dokumentumokból. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy egyszerűsített és hatékony módon dolgozzanak a dokumentumokkal. Az útmutató végére zökkenőmentesen integrálhatja a szövegkivonási képességeket .NET-alkalmazásaiba.
 ## Előfeltételek

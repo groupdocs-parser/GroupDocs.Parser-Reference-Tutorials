@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất văn bản từ tài liệu bằng 
 weight: 13
 url: /vi/net/document-loading/load-document-from-url/
 ---
+
+# Tải tài liệu từ URL
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Parser cho .NET để trích xuất văn bản từ tài liệu. GroupDocs.Parser là một công cụ mạnh mẽ để trích xuất văn bản, siêu dữ liệu và thông tin khác từ các định dạng tài liệu khác nhau, chẳng hạn như PDF, Word, Excel, v.v. Chúng tôi sẽ đề cập đến quá trình tải tài liệu từ một URL và trích xuất nội dung văn bản của nó theo từng bước.
 ## Điều kiện tiên quyết

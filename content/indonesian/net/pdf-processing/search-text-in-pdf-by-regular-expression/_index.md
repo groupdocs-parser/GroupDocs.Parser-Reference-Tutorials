@@ -6,6 +6,9 @@ description: Cari teks tertentu dalam dokumen PDF menggunakan ekspresi reguler d
 weight: 19
 url: /id/net/pdf-processing/search-text-in-pdf-by-regular-expression/
 ---
+
+# Cari Teks dalam PDF dengan Ekspresi Reguler
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara mengekstrak teks dari dokumen PDF secara efisien menggunakan GroupDocs.Parser untuk .NET. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan pengembang mengurai dan mengekstrak teks, metadata, dan data terstruktur dari berbagai format dokumen, termasuk PDF. Baik Anda sedang mengerjakan ekstraksi data, analisis konten, atau fungsi pencarian dalam aplikasi .NET Anda, GroupDocs.Parser menyediakan seperangkat alat komprehensif untuk menangani tugas-tugas ini dengan lancar.
 ## Prasyarat

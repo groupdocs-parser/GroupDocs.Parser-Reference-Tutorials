@@ -6,6 +6,9 @@ description: Bez námahy extrahujte obrázky z různých typů dokumentů, jako 
 weight: 13
 url: /cs/net/image-extraction/extract-images-to-files/
 ---
+
+# Extrahujte obrázky do souborů
+
 ## Úvod
 V tomto tutoriálu se naučíte, jak používat GroupDocs.Parser pro .NET k extrahování obrázků z různých formátů dokumentů, jako jsou PDF, Word, Excel a PowerPoint. GroupDocs.Parser je výkonná knihovna, která umožňuje vývojářům analyzovat a extrahovat text, metadata, obrázky a další z dokumentů jednoduchým způsobem. Tato příručka vás provede procesem extrahování obrázků a jejich ukládání jako jednotlivých souborů pomocí C#.
 ## Předpoklady

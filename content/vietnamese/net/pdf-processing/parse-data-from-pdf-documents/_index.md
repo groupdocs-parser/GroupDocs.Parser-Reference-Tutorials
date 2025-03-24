@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất dữ liệu từ tài liệu PDF b�
 weight: 17
 url: /vi/net/pdf-processing/parse-data-from-pdf-documents/
 ---
+
+# Phân tích dữ liệu từ tài liệu PDF
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách trích xuất dữ liệu từ tài liệu PDF một cách hiệu quả bằng thư viện GroupDocs.Parser cho .NET. GroupDocs.Parser cung cấp các chức năng mạnh mẽ để phân tích và phân tích tệp PDF, giúp trích xuất dữ liệu có cấu trúc để xử lý tiếp dễ dàng hơn. Chúng ta sẽ đi sâu vào các bước cần thiết để thiết lập, phân tích cú pháp và trích xuất dữ liệu bằng thư viện.
 ## Điều kiện tiên quyết

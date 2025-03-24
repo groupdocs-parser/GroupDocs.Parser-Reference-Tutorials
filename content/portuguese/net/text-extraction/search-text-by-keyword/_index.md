@@ -6,6 +6,9 @@ description: Aprenda como pesquisar texto por palavra-chave em documentos usando
 weight: 21
 url: /pt/net/text-extraction/search-text-by-keyword/
 ---
+
+# Pesquisar texto por palavra-chave
+
 ## Introdução
 Neste tutorial, nos aprofundaremos no uso do GroupDocs.Parser for .NET para pesquisar texto por palavra-chave em documentos. GroupDocs.Parser é uma biblioteca poderosa que permite aos desenvolvedores extrair texto, metadados e outras informações de vários formatos de arquivo, como PDFs, documentos do Microsoft Office e muito mais. A busca por palavras-chave específicas nesses documentos pode ser essencial para aplicações que lidam com grandes volumes de dados textuais.
 ## Pré-requisitos

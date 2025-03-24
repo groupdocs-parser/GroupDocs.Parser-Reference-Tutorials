@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 從 Excel 文件中擷
 weight: 11
 url: /zh-hant/net/excel-document-processing/extract-metadata-from-excel-document/
 ---
+
+# 從 Excel 文件中擷取元數據
+
 ## 介紹
 在本教學中，我們將示範如何使用 GroupDocs.Parser for .NET 從 Excel 文件中擷取元資料。 GroupDocs.Parser 是一個功能強大的程式庫，可讓您提取各種文件元素，包括元資料、文字、圖像等。
 ## 先決條件

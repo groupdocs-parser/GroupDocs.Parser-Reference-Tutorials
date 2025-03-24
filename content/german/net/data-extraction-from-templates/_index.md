@@ -7,6 +7,9 @@ weight: 26
 url: /de/net/data-extraction-from-templates/
 ---
 
+# Datenextraktion aus Vorlagen
+
+
 ## Einführung
 
 Im Bereich der .NET-Entwicklung ist GroupDocs.Parser ein leistungsstarkes Tool zum Extrahieren von Daten aus verschiedenen Dokumentformaten. Egal, ob Sie mit PDFs, Word-Dokumenten oder Tabellenkalkulationen arbeiten, GroupDocs.Parser vereinfacht den Extraktionsprozess und spart Ihnen Zeit und Mühe.

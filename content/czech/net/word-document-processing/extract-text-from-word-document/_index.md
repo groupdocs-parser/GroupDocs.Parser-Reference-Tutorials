@@ -6,6 +6,9 @@ description: Naučte se extrahovat text z dokumentů aplikace Word pomocí Group
 weight: 15
 url: /cs/net/word-document-processing/extract-text-from-word-document/
 ---
+
+# Extrahujte text z dokumentu aplikace Word
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak extrahovat text z dokumentů aplikace Word pomocí GroupDocs.Parser for .NET. GroupDocs.Parser je výkonná knihovna .NET, která umožňuje vývojářům pracovat s různými formáty dokumentů, včetně dokumentů Word, PDF a dalších. Na konci této příručky budete schopni efektivně extrahovat text ze souborů aplikace Word pomocí jednoduchého kódu C#.
 ## Předpoklady

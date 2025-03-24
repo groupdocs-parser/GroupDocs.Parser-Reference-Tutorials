@@ -6,6 +6,9 @@ description: Extraheer opgemaakte tekst uit documentpagina's met GroupDocs.Parse
 weight: 11
 url: /nl/net/formatted-text-extraction/extract-formatted-text-from-document-page/
 ---
+
+# Extraheer opgemaakte tekst uit de documentpagina
+
 ## Invoering
 In deze zelfstudie begeleiden we u bij het extraheren van opgemaakte tekst uit documentpagina's met behulp van GroupDocs.Parser voor .NET. Met deze bibliotheek kunt u tekst efficiënt ontleden en extraheren uit verschillende documentformaten, zoals PDF, Word, Excel en meer.
 ## Vereisten

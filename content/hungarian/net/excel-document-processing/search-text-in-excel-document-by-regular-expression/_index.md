@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan kereshet szöveget Excel-dokumentumokban regul�
 weight: 17
 url: /hu/net/excel-document-processing/search-text-in-excel-document-by-regular-expression/
 ---
+
+# Szöveg keresése az Excel-dokumentumban reguláris kifejezéssel
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan használható a GroupDocs.Parser for .NET speciális szövegminták keresésére az Excel dokumentumokban reguláris kifejezések használatával. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy szöveget és metaadatokat kinyerhessenek különböző dokumentumformátumokból, beleértve az Excelhez hasonló táblázatokat is. A reguláris kifejezések kihasználásával hatékonyan végezhetünk speciális szöveges kereséseket.
 ## Előfeltételek

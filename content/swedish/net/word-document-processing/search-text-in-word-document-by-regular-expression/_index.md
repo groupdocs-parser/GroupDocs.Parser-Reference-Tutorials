@@ -6,6 +6,9 @@ description: Lär dig hur du söker efter text i Word-dokument med hjälp av reg
 weight: 19
 url: /sv/net/word-document-processing/search-text-in-word-document-by-regular-expression/
 ---
+
+# Sök text i Word-dokument med reguljära uttryck
+
 ## Introduktion
 I den här handledningen kommer vi att utforska hur man använder GroupDocs.Parser för .NET för att extrahera text från Word-dokument med hjälp av reguljära uttryck. Denna steg-för-steg-guide hjälper dig att implementera den här funktionen effektivt.
 ## Förutsättningar

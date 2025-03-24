@@ -6,6 +6,9 @@ description: Leer hoe u tekst kunt zoeken op trefwoord in documenten met GroupDo
 weight: 21
 url: /nl/net/text-extraction/search-text-by-keyword/
 ---
+
+# Zoek tekst op trefwoord
+
 ## Invoering
 In deze zelfstudie gaan we dieper in op het gebruik van GroupDocs.Parser voor .NET om tekst op trefwoord in documenten te zoeken. GroupDocs.Parser is een krachtige bibliotheek waarmee ontwikkelaars tekst, metagegevens en andere informatie kunnen extraheren uit verschillende bestandsindelingen, zoals pdf's, Microsoft Office-documenten en meer. Het zoeken naar specifieke trefwoorden in deze documenten kan essentieel zijn voor toepassingen die te maken hebben met grote hoeveelheden tekstuele gegevens.
 ## Vereisten

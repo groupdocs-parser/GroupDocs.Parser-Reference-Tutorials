@@ -6,6 +6,9 @@ description: GroupDocs.Parser を使用して .NET のさまざまなファイ�
 weight: 14
 url: /ja/net/document-loading/loading-specific-file-formats/
 ---
+
+# 特定のファイル形式の読み込み
+
 ## 導入
 .NET 開発の世界では、さまざまなファイル形式からテキストを解析して抽出することが一般的な要件です。GroupDocs.Parser for .NET は、このタスクを簡素化する強力なツールを提供します。このチュートリアルでは、GroupDocs.Parser を使用して特定のファイル形式からテキストを読み込み、抽出する手順を段階的に説明します。
 ## 前提条件

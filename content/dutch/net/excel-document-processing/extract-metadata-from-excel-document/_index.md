@@ -6,6 +6,9 @@ description: Leer hoe u metagegevens uit Excel-documenten kunt extraheren met Gr
 weight: 11
 url: /nl/net/excel-document-processing/extract-metadata-from-excel-document/
 ---
+
+# Metagegevens extraheren uit Excel-document
+
 ## Invoering
 In deze zelfstudie laten we zien hoe u GroupDocs.Parser voor .NET kunt gebruiken om metagegevens uit een Excel-document te extraheren. GroupDocs.Parser is een krachtige bibliotheek waarmee u verschillende documentelementen kunt extraheren, waaronder metagegevens, tekst, afbeeldingen en meer.
 ## Vereisten

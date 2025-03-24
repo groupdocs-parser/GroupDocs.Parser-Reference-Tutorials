@@ -6,6 +6,9 @@ description: Leer hoe u tekst uit verschillende documentformaten kunt extraheren
 weight: 11
 url: /nl/net/document-loading/load-document-from-local-disk/
 ---
+
+# Document laden vanaf lokale schijf
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u GroupDocs.Parser voor .NET kunt gebruiken om tekst uit documenten te extraheren. GroupDocs.Parser is een krachtige bibliotheek waarmee ontwikkelaars verschillende documentformaten kunnen parseren en tekstinhoud programmatisch kunnen extraheren. We bespreken de noodzakelijke stappen om aan de slag te gaan met tekstextractie met behulp van deze bibliotheek.
 ## Vereisten

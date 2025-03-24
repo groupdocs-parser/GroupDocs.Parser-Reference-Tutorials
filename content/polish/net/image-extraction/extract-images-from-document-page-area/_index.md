@@ -6,6 +6,9 @@ description: Dowiedz się, jak precyzyjnie wyodrębniać obrazy z dokumentów za
 weight: 10
 url: /pl/net/image-extraction/extract-images-from-document-page-area/
 ---
+
+# Wyodrębnij obrazy z obszaru strony dokumentu
+
 ## Wstęp
 W tym samouczku dowiemy się, jak używać Groupdocs.Parser dla .NET do wyodrębniania obrazów z określonych obszarów strony dokumentu. Proces ten umożliwia precyzyjne kierowanie i pobieranie obrazów w oparciu o określone współrzędne i wymiary w dokumencie.
 ## Warunki wstępne

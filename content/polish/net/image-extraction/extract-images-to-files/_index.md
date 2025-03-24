@@ -6,6 +6,9 @@ description: Bez wysiłku wyodrębniaj obrazy z różnych typów dokumentów, ta
 weight: 13
 url: /pl/net/image-extraction/extract-images-to-files/
 ---
+
+# Wyodrębnij obrazy do plików
+
 ## Wstęp
 W tym samouczku dowiesz się, jak używać GroupDocs.Parser dla .NET do wyodrębniania obrazów z różnych formatów dokumentów, takich jak PDF, Word, Excel i PowerPoint. GroupDocs.Parser to potężna biblioteka, która umożliwia programistom analizowanie i wyodrębnianie tekstu, metadanych, obrazów i innych danych z dokumentów w prosty sposób. Ten przewodnik przeprowadzi Cię przez proces wyodrębniania obrazów i zapisywania ich jako pojedynczych plików przy użyciu języka C#.
 ## Warunki wstępne

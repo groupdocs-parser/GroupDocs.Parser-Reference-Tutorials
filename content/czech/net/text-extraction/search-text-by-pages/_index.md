@@ -6,6 +6,9 @@ description: Naučte se prohledávat text podle stránek pomocí GroupDocs.Parse
 weight: 22
 url: /cs/net/text-extraction/search-text-by-pages/
 ---
+
+# Hledat text podle stránek
+
 ## Úvod
 Ve světě vývoje .NET je efektivní analýza a extrahování textu z dokumentů zásadním úkolem. GroupDocs.Parser for .NET nabízí výkonné funkce pro práci s různými formáty dokumentů a umožňuje vývojářům bezproblémově vyhledávat a extrahovat konkrétní obsah. Tento tutoriál vás provede procesem využití GroupDocs.Parser k vyhledávání textu podle stránek ve vašich aplikacích .NET.
 ## Předpoklady

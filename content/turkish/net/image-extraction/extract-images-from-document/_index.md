@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak belgelerdeki görüntüleri 
 weight: 11
 url: /tr/net/image-extraction/extract-images-from-document/
 ---
+
+# Belgeden Görüntüleri Çıkartın
+
 ## giriiş
 Bu öğreticide, GroupDocs.Parser for .NET'i kullanarak belgelerden görüntülerin nasıl çıkarılacağını inceleyeceğiz. GroupDocs.Parser, geliştiricilerin çeşitli belge formatlarından metin, meta veriler, resimler ve daha fazlasını çıkarmasına olanak tanıyan güçlü bir kitaplıktır.
 ## Önkoşullar

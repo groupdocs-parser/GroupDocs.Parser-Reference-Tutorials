@@ -6,6 +6,9 @@ description: Aprenda como extrair texto de áreas específicas de documentos usa
 weight: 12
 url: /pt/net/text-extraction/extract-text-from-specific-areas/
 ---
+
+# Extraia texto de áreas específicas
+
 ## Introdução
 Neste tutorial, exploraremos como extrair texto de áreas específicas de um documento usando GroupDocs.Parser for .NET. GroupDocs.Parser é uma API poderosa que permite aos desenvolvedores analisar e extrair texto, metadados e outras informações de vários formatos de documentos, como PDF, DOCX, XLSX e muito mais.
 ## Pré-requisitos

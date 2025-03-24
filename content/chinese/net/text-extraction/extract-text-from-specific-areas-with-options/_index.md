@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 从文档中的特定�
 weight: 14
 url: /zh/net/text-extraction/extract-text-from-specific-areas-with-options/
 ---
+
+# 使用选项从特定区域提取文本
+
 ## 介绍
 在本教程中，我们将探索如何使用 GroupDocs.Parser for .NET 使用可自定义选项从文档中的特定区域提取文本。GroupDocs.Parser 是一个功能强大的库，使开发人员能够轻松地解析和提取各种文档格式的文本。
 ## 先决条件

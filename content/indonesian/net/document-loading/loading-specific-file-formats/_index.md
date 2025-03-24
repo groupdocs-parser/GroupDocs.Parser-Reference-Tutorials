@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak teks dari berbagai format file di .NET me
 weight: 14
 url: /id/net/document-loading/loading-specific-file-formats/
 ---
+
+# Memuat Format File Tertentu
+
 ## Perkenalan
 Dalam dunia pengembangan .NET, parsing dan ekstraksi teks dari berbagai format file merupakan kebutuhan umum. GroupDocs.Parser untuk .NET menawarkan alat canggih untuk menyederhanakan tugas ini. Tutorial ini akan memandu Anda dalam menggunakan GroupDocs.Parser untuk memuat dan mengekstrak teks dari format file tertentu langkah demi langkah.
 ## Prasyarat

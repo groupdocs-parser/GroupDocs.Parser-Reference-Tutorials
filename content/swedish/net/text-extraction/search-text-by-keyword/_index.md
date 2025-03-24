@@ -6,6 +6,9 @@ description: Lär dig hur du söker efter text med nyckelord i dokument med Grou
 weight: 21
 url: /sv/net/text-extraction/search-text-by-keyword/
 ---
+
+# Sök text efter nyckelord
+
 ## Introduktion
 I den här handledningen kommer vi att fördjupa oss i att använda GroupDocs.Parser för .NET för att söka text med nyckelord i dokument. GroupDocs.Parser är ett kraftfullt bibliotek som gör det möjligt för utvecklare att extrahera text, metadata och annan information från olika filformat, såsom PDF-filer, Microsoft Office-dokument och mer. Att söka efter specifika nyckelord i dessa dokument kan vara avgörande för applikationer som hanterar stora mängder textdata.
 ## Förutsättningar

@@ -6,6 +6,9 @@ description: Aprenda como extrair conteúdo Markdown de documentos usando GroupD
 weight: 13
 url: /pt/net/formatted-text-extraction/extract-markdown-content/
 ---
+
+# Extraia o conteúdo do Markdown
+
 ## Introdução
 Neste tutorial, exploraremos como usar GroupDocs.Parser for .NET para extrair conteúdo Markdown de documentos. GroupDocs.Parser é uma biblioteca poderosa que permite aos desenvolvedores analisar e extrair texto de vários formatos de arquivo perfeitamente.
 ## Pré-requisitos

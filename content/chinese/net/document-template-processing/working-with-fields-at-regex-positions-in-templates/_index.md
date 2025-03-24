@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 的正则表达式位�
 weight: 13
 url: /zh/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---
+
+# 使用模板中正则表达式位置的字段
+
 ## 介绍
 在本教程中，您将学习如何利用 GroupDocs.Parser for .NET 根据文档模板中的指定正则表达式 (regex) 提取字段。该库提供了强大的文档解析和提取功能，使其成为高效处理结构化数据提取任务的理想选择。
 ## 先决条件

@@ -6,6 +6,9 @@ description: 효율적인 문서 구문 분석 및 추출을 위해 GroupDocs.Pa
 weight: 10
 url: /ko/net/document-loading/handling-loading-of-external-resources/
 ---
+
+# 외부 리소스 로드 처리
+
 ## 소개
 .NET 개발 세계에서는 다양한 파일 형식의 콘텐츠를 구문 분석하고 추출하는 것이 일반적인 요구 사항입니다. .NET용 GroupDocs.Parser는 문서 구문 분석 작업을 효율적으로 처리하기 위한 강력한 솔루션을 제공합니다. 이 자습서에서는 GroupDocs.Parser를 사용하여 .NET 응용 프로그램에서 이미지와 같은 외부 리소스로 작업하는 방법을 안내합니다. 필요한 전제 조건을 다루고, 네임스페이스를 가져오고, 예제를 자세한 단계별 지침으로 분류합니다.
 ## 전제 조건

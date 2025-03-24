@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan lehet programozottan táblákat kivonni dokumen
 weight: 11
 url: /hu/net/table-extraction/extract-tables-from-document-page/
 ---
+
+# Táblázatok kibontása a dokumentumoldalról
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet táblákat kivonni egy dokumentumoldalról a GroupDocs.Parser for .NET segítségével. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy különféle dokumentumformátumokkal dolgozzanak, például PDF, DOCX, XLSX stb. Funkcióinak kiaknázásával hatékonyan kinyerhetünk strukturált adatokat, például táblázatokat ezekből a dokumentumokból, lehetővé téve számunkra az információk programozott kezelését és elemzését.
 ## Előfeltételek

@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 以程式設計方式�
 weight: 13
 url: /zh-hant/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
+
+# 從 Word 文件中提取目錄
+
 ## 介紹
 在本教學中，您將學習如何使用 GroupDocs.Parser for .NET 從 Word 文件中逐步擷取目錄 (TOC)。 GroupDocs.Parser 是一個功能強大的程式庫，可讓您以程式設計方式處理各種文件格式。
 ## 先決條件

@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất văn bản từ các định dạng
 weight: 11
 url: /vi/net/document-loading/load-document-from-local-disk/
 ---
+
+# Tải tài liệu từ đĩa cục bộ
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Parser cho .NET để trích xuất văn bản từ tài liệu. GroupDocs.Parser là một thư viện mạnh mẽ cho phép các nhà phát triển phân tích cú pháp các định dạng tài liệu khác nhau và trích xuất nội dung văn bản theo chương trình. Chúng tôi sẽ đề cập đến các bước cần thiết để bắt đầu trích xuất văn bản bằng thư viện này.
 ## Điều kiện tiên quyết

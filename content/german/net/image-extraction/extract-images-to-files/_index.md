@@ -6,6 +6,9 @@ description: Extrahieren Sie mühelos Bilder aus verschiedenen Dokumenttypen wie
 weight: 13
 url: /de/net/image-extraction/extract-images-to-files/
 ---
+
+# Bilder in Dateien extrahieren
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Bilder aus verschiedenen Dokumentformaten wie PDF, Word, Excel und PowerPoint extrahieren. GroupDocs.Parser ist eine leistungsstarke Bibliothek, mit der Entwickler auf einfache Weise Text, Metadaten, Bilder und mehr aus Dokumenten analysieren und extrahieren können. Diese Anleitung führt Sie durch den Prozess des Extrahierens von Bildern und deren Speichern als einzelne Dateien mit C#.
 ## Voraussetzungen

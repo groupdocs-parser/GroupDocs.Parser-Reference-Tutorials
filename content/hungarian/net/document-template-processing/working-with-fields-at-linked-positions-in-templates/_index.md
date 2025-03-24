@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan nyerhet ki hatékonyan adatokat a dokumentumokb
 weight: 12
 url: /hu/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
 ---
+
+# Mezőkkel végzett munka a sablonok összekapcsolt pozícióinál
+
 ## Bevezetés
 A GroupDocs.Parser for .NET egy robusztus könyvtár, amelyet a dokumentumelemzési és adatkinyerési feladatok megkönnyítésére terveztek. A fájlformátumok széles skáláját támogatja, beleértve a PDF, DOCX, XLSX stb. Egyik kulcsfontosságú funkciója a sablon alapú adatkinyerés, amely lehetővé teszi mezők meghatározását egy dokumentumon belül, és konkrét adatok kinyerését ezen előre meghatározott sablonok alapján.
 ## Előfeltételek

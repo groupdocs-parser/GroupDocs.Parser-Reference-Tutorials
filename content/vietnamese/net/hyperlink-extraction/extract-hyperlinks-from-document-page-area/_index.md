@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất siêu liên kết từ các vùng t
 weight: 12
 url: /vi/net/hyperlink-extraction/extract-hyperlinks-from-document-page-area/
 ---
+
+# Trích xuất siêu liên kết từ khu vực trang tài liệu
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách trích xuất siêu liên kết từ vùng trang cụ thể của tài liệu bằng cách sử dụng thư viện GroupDocs.Parser cho .NET. GroupDocs.Parser cung cấp các tính năng mạnh mẽ để xử lý tài liệu, bao gồm cả trích xuất siêu liên kết. Chúng tôi sẽ hướng dẫn bạn từng bước trong quy trình, trình bày cách triển khai chức năng này trong các ứng dụng .NET của bạn.
 ## Điều kiện tiên quyết

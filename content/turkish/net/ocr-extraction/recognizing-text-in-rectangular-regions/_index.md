@@ -6,6 +6,9 @@ description: OCR özelliklerine sahip GroupDocs.Parser for .NET'i kullanarak bel
 weight: 14
 url: /tr/net/ocr-extraction/recognizing-text-in-rectangular-regions/
 ---
+
+# Dikdörtgen Bölgelerdeki Metni Tanıma
+
 ## giriiş
 Bu öğreticide, belgelerin belirli dikdörtgen bölgelerindeki metni tanımak için GroupDocs.Parser for .NET'in nasıl kullanılacağını keşfedeceğiz. GroupDocs.Parser, geliştiricilerin PDF, Word, Excel ve PowerPoint dahil olmak üzere çeşitli dosya formatlarından metin, meta veriler ve daha fazlasını çıkarmasına olanak tanıyan güçlü bir kitaplıktır.
 ## Önkoşullar

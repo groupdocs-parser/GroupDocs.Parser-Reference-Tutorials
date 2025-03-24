@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất mã vạch từ tài liệu bị h�
 weight: 11
 url: /vi/net/barcode-extraction/extract-barcodes-from-corrupted-document/
 ---
+
+# Trích xuất mã vạch từ tài liệu bị hỏng
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình trích xuất mã vạch từ tài liệu bị hỏng bằng GroupDocs.Parser cho .NET. GroupDocs.Parser là API phân tích tài liệu mạnh mẽ cho phép các nhà phát triển trích xuất văn bản, siêu dữ liệu, hình ảnh và bây giờ là mã vạch từ nhiều định dạng tệp khác nhau. Chúng tôi sẽ chia nhỏ các bước cần thiết để hoàn thành nhiệm vụ này một cách hiệu quả.
 ## Điều kiện tiên quyết

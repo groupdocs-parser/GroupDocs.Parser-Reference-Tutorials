@@ -6,6 +6,9 @@ description: Wyodrębnij tekst według spisu treści (TOC) za pomocą GroupDocs.
 weight: 15
 url: /pl/net/text-extraction/extract-text-by-toc-item/
 ---
+
+# Wyodrębnij tekst według pozycji spisu treści (TOC).
+
 ## Wstęp
 W tym samouczku pokażemy, jak wykorzystać GroupDocs.Parser dla .NET do wyodrębnienia tekstu na podstawie elementów spisu treści (TOC) z dokumentów. GroupDocs.Parser to potężne narzędzie umożliwiające wydajne analizowanie i wyodrębnianie dokumentów.
 ## Warunki wstępne

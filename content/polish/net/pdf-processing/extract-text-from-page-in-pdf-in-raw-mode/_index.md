@@ -6,6 +6,9 @@ description: Wyodrębnij tekst z plików PDF za pomocą GroupDocs.Parser w języ
 weight: 16
 url: /pl/net/pdf-processing/extract-text-from-page-in-pdf-in-raw-mode/
 ---
+
+# Wyodrębnij tekst ze strony w formacie PDF w trybie surowym
+
 ## Wstęp
 W tym samouczku omówimy, jak używać programu GroupDocs.Parser dla platformy .NET do wyodrębniania tekstu ze stron dokumentów PDF w trybie nieprzetworzonym. GroupDocs.Parser to potężne narzędzie umożliwiające programistom programową pracę z różnymi formatami dokumentów.
 ## Warunki wstępne

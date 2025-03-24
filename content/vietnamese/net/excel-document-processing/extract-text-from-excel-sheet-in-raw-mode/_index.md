@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất văn bản từ trang tính Excel b
 weight: 15
 url: /vi/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
 ---
+
+# Trích xuất văn bản từ bảng Excel ở chế độ thô
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách trích xuất văn bản từ trang tính Excel bằng GroupDocs.Parser cho .NET ở chế độ thô. GroupDocs.Parser là một API mạnh mẽ cho phép các nhà phát triển làm việc với nhiều định dạng tài liệu khác nhau, bao gồm các tệp Excel, để trích xuất và phân tích văn bản. Chúng ta sẽ xem xét các điều kiện tiên quyết, nhập vùng tên và chia nhỏ từng bước để trình bày quy trình trích xuất văn bản từ trang tính Excel.
 ## Điều kiện tiên quyết

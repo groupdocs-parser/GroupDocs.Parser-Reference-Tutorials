@@ -6,6 +6,9 @@ description: Extrahujte obrázky z dokumentů v .NET bez námahy pomocí GroupDo
 weight: 24
 url: /cs/net/image-extraction/
 ---
+
+# Extrakce obrazu
+
 ## Úvod
 
 Ponořte se do sféry extrakce obrázků v .NET s GroupDocs.Parser tutoriály. Tyto výukové programy poskytují komplexní návod na extrahování obrázků z dokumentů, ať už z konkrétních oblastí dokumentu, celých dokumentů nebo jednotlivých stránek. Ať už jste začátečník nebo zkušený vývojář, tyto výukové programy nabízejí jasné pokyny krok za krokem a příklady kódu, které vám pomohou bezproblémově integrovat extrakci obrázků do vašich aplikací .NET.

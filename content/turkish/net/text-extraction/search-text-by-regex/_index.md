@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak belgelerde normal ifadeleri 
 weight: 23
 url: /tr/net/text-extraction/search-text-by-regex/
 ---
+
+# Normal İfadeye Göre Metin Arama (Regex)
+
 ## giriiş
 Bu öğreticide, belgeler içindeki normal ifadeye (Regex) göre metin aramak için GroupDocs.Parser for .NET'i kullanmayı ayrıntılı olarak ele alacağız. GroupDocs.Parser, geliştiricilerin PDF, DOCX, XLSX ve daha fazlası gibi çeşitli dosya formatlarından metin ve meta veriler çıkarmasına olanak tanıyan güçlü bir kitaplıktır. Düzenli ifadeler kullanarak metin aramak, özellikle belgelerdeki kalıpları veya belirli içerikleri verimli bir şekilde bulmak için kullanışlıdır.
 ## Önkoşullar

@@ -6,6 +6,9 @@ description: シームレスなデータ処理のために GroupDocs.Parser を�
 weight: 18
 url: /ja/net/text-extraction/extract-text-in-accurate-mode/
 ---
+
+# 正確モードでテキストを抽出する
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を使用して、さまざまなドキュメント形式からテキストを正確に抽出する方法について説明します。GroupDocs.Parser は、PDF、DOCX、PPTX、XLSX などのドキュメントからテキストを抽出できる強力なライブラリであり、データ処理アプリケーションにとって貴重なツールとなります。
 ## 前提条件

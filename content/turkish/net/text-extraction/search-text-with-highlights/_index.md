@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak belgelerde metni nasıl aray
 weight: 24
 url: /tr/net/text-extraction/search-text-with-highlights/
 ---
+
+# Vurgulanan Metinlerde Arama Yapın
+
 ## giriiş
 Bu öğreticide, bir belge içindeki metni aramak ve arama sonuçlarını vurgulamak için GroupDocs.Parser for .NET'in nasıl kullanılacağını keşfedeceğiz. GroupDocs.Parser, çeşitli belge formatlarıyla çalışmanıza ve metin, meta veriler ve daha fazlasını çıkarmanıza olanak tanıyan güçlü bir kitaplıktır.
 ## Önkoşullar

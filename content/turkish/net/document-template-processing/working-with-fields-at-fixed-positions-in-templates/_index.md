@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak belgelerden nasıl veri ayı
 weight: 11
 url: /tr/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
+
+# Şablonlarda Sabit Konumlardaki Alanlarla Çalışma
+
 ## giriiş
 Bu öğreticide, GroupDocs.Parser for .NET'i kullanarak şablonlar içindeki sabit konumlardaki alanlarla nasıl çalışılacağını keşfedeceğiz. GroupDocs.Parser, geliştiricilerin PDF, Word, Excel ve daha fazlası gibi çeşitli belge formatlarından veri çıkarmasına olanak tanıyan güçlü bir belge ayrıştırma kitaplığıdır. Özellikle, sabit konumlarına göre hedeflenen bilgileri çıkarmak için şablon alanlarını tanımlamaya ve kullanmaya odaklanacağız.
 ## Önkoşullar

@@ -6,6 +6,9 @@ description: Learn how to search for text within Excel documents using GroupDocs
 weight: 16
 url: /net/excel-document-processing/search-text-in-excel-document-by-keyword/
 ---
+
+# Search Text in Excel Document by Keyword
+
 ## Introduction
 GroupDocs.Parser for .NET is a powerful library that enables developers to efficiently work with document parsing tasks in their .NET applications. In this tutorial, we will focus on how to search for specific text within an Excel document using keywords. By following this guide, you will learn how to integrate the GroupDocs.Parser library into your project and perform targeted text searches within Excel files.
 ## Prerequisites

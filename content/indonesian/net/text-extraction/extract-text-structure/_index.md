@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak struktur teks dari berbagai format dokume
 weight: 20
 url: /id/net/text-extraction/extract-text-structure/
 ---
+
+# Ekstrak Struktur Teks
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggunakan GroupDocs.Parser untuk .NET untuk mengekstrak struktur teks dari berbagai format dokumen. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan pengembang mengekstrak konten teks terstruktur dari dokumen, seperti PDF, dokumen Word, lembar Excel, dan banyak lagi. Tutorial ini akan memandu Anda melalui proses pengaturan GroupDocs.Parser, mengimpor namespace yang diperlukan, dan mengekstrak struktur teks langkah demi langkah.
 ## Prasyarat

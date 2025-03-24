@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak belirli belge alanlarından 
 weight: 13
 url: /tr/net/text-extraction/extract-text-from-specific-areas-on-page/
 ---
+
+# Bir Sayfanın Belirli Alanlarından Metin Çıkarma
+
 ## giriiş
 Bu öğreticide, GroupDocs.Parser for .NET kitaplığını kullanarak bir sayfadaki belirli alanlardan nasıl metin ayıklanacağını inceleyeceğiz. GroupDocs.Parser, belgelerden metnin çıkarılmasını basitleştirerek geliştiricilerin metin ayıklama için bir belge içindeki belirli ilgi alanlarını hedeflemesine olanak tanır. Bu, daha ileri işleme veya analiz için hassas metin çıkarmanın gerekli olduğu karmaşık belgelerle uğraşırken özellikle yararlı olabilir.
 ## Önkoşullar

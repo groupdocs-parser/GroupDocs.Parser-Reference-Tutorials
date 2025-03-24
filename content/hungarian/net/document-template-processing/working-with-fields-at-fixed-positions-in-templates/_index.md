@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan nyerhet ki adatokat dokumentumokból a GroupDoc
 weight: 11
 url: /hu/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
+
+# Mezőkkel végzett munka fix pozíciókban a sablonokban
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan dolgozhatunk a sablonokon belül rögzített pozíciójú mezőkkel a GroupDocs.Parser for .NET segítségével. A GroupDocs.Parser egy hatékony dokumentumelemző könyvtár, amely lehetővé teszi a fejlesztők számára, hogy adatokat nyerjenek ki különböző dokumentumformátumokból, például PDF, Word, Excel stb. Konkrétan a sablonmezők meghatározására és felhasználására fogunk összpontosítani a célzott információk kinyerésére a rögzített pozícióik alapján.
 ## Előfeltételek

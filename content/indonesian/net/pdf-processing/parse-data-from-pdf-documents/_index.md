@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak data dari dokumen PDF menggunakan GroupDo
 weight: 17
 url: /id/net/pdf-processing/parse-data-from-pdf-documents/
 ---
+
+# Parsing Data dari Dokumen PDF
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara mengekstrak data dari dokumen PDF secara efisien menggunakan perpustakaan GroupDocs.Parser untuk .NET. GroupDocs.Parser menyediakan fungsionalitas canggih untuk mengurai dan menganalisis file PDF, sehingga lebih mudah mengekstrak data terstruktur untuk diproses lebih lanjut. Kami akan mempelajari langkah-langkah penting yang diperlukan untuk menyiapkan, mengurai, dan mengekstrak data menggunakan perpustakaan.
 ## Prasyarat

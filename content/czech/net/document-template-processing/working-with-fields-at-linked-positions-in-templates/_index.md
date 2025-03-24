@@ -6,6 +6,9 @@ description: Naučte se, jak efektivně extrahovat data z dokumentů pomocí Gro
 weight: 12
 url: /cs/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
 ---
+
+# Práce s poli na propojených pozicích v šablonách
+
 ## Úvod
 GroupDocs.Parser for .NET je robustní knihovna navržená tak, aby usnadnila analýzu dokumentů a úlohy extrakce dat. Podporuje širokou škálu formátů souborů, včetně PDF, DOCX, XLSX a dalších. Jednou z jeho klíčových funkcí je extrakce dat na základě šablon, která umožňuje definovat pole v dokumentu a extrahovat konkrétní data na základě těchto předdefinovaných šablon.
 ## Předpoklady

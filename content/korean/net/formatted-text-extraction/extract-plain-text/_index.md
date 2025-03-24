@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 문서에서 일반 텍스
 weight: 14
 url: /ko/net/formatted-text-extraction/extract-plain-text/
 ---
+
+# 일반 텍스트 추출
+
 ## 소개
 이 튜토리얼에서는 .NET용 GroupDocs.Parser를 사용하여 다양한 문서 형식에서 일반 텍스트를 추출하는 방법을 살펴보겠습니다. GroupDocs.Parser는 개발자가 원활하게 문서 작업을 수행하고 텍스트와 메타데이터를 효율적으로 추출할 수 있게 해주는 강력한 라이브러리입니다. 이 가이드는 .NET 애플리케이션 내에서 이 라이브러리를 통합하고 활용하는 데 필요한 단계를 안내합니다.
 ## 전제 조건

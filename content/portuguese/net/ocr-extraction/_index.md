@@ -7,6 +7,9 @@ weight: 28
 url: /pt/net/ocr-extraction/
 ---
 
+# Extração de reconhecimento óptico de caracteres (OCR)
+
+
 ## Introdução
 
 Desbloqueie o poder da extração de reconhecimento óptico de caracteres (OCR) no .NET com os tutoriais do GroupDocs.Parser. Esses tutoriais fornecem orientação abrangente sobre como lidar com OCR, reconhecer texto e extrair conteúdo de áreas específicas ou regiões retangulares em documentos. Quer você seja um desenvolvedor iniciante ou experiente, esses tutoriais oferecem instruções passo a passo claras e exemplos de código para ajudá-lo a integrar perfeitamente a extração de OCR em seus aplicativos .NET.

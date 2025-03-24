@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthat ki szöveget PDF-dokumentumokból a Gro
 weight: 14
 url: /hu/net/pdf-processing/extract-text-from-pdf/
 ---
+
+# Szöveg kibontása PDF-ből
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet szöveget kivonni PDF-dokumentumokból a GroupDocs.Parser for .NET segítségével. A GroupDocs.Parser egy hatékony API, amely lehetővé teszi a fejlesztők számára, hogy szöveget, metaadatokat és strukturált adatokat kinyerjenek különféle dokumentumformátumokból, például PDF-ből, Microsoft Office-ból stb.
 ## Előfeltételek

@@ -7,6 +7,9 @@ weight: 20
 url: /it/net/text-extraction/
 ---
 
+# Estrazione del testo
+
+
 ## introduzione
 
 Benvenuti nella raccolta completa di esercitazioni sull'estrazione del testo fornite da GroupDocs.Parser per .NET. In questa serie di esercitazioni esploreremo vari metodi e tecniche per estrarre, evidenziare e cercare testo dai documenti nelle applicazioni .NET.

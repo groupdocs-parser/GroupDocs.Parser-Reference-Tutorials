@@ -6,6 +6,9 @@ description: Aprenda a extraer códigos de barras de documentos corruptos utiliz
 weight: 11
 url: /es/net/barcode-extraction/extract-barcodes-from-corrupted-document/
 ---
+
+# Extraer códigos de barras de documentos corruptos
+
 ## Introducción
 En este tutorial, lo guiaremos a través del proceso de extracción de códigos de barras de documentos corruptos usando GroupDocs.Parser para .NET. GroupDocs.Parser es una potente API de análisis de documentos que permite a los desarrolladores extraer texto, metadatos, imágenes y, ahora, códigos de barras de varios formatos de archivo. Desglosaremos los pasos necesarios para realizar esta tarea de manera efectiva.
 ## Requisitos previos

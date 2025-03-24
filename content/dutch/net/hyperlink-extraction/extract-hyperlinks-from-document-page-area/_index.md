@@ -6,6 +6,9 @@ description: Leer hoe u hyperlinks uit specifieke documentgebieden kunt extraher
 weight: 12
 url: /nl/net/hyperlink-extraction/extract-hyperlinks-from-document-page-area/
 ---
+
+# Extraheer hyperlinks uit het documentpaginagebied
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u hyperlinks kunt extraheren uit het specifieke paginagebied van een document met behulp van de GroupDocs.Parser voor .NET-bibliotheek. GroupDocs.Parser biedt krachtige functies voor documentverwerking, inclusief extractie van hyperlinks. We begeleiden u stap voor stap door het proces en laten zien hoe u deze functionaliteit in uw .NET-applicaties kunt implementeren.
 ## Vereisten

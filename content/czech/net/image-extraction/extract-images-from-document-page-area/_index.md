@@ -6,6 +6,9 @@ description: Objevte, jak přesně extrahovat obrázky z dokumentů pomocí Grou
 weight: 10
 url: /cs/net/image-extraction/extract-images-from-document-page-area/
 ---
+
+# Extrahujte obrázky z oblasti stránky dokumentu
+
 ## Úvod
 V tomto tutoriálu se naučíme, jak používat Groupdocs.Parser pro .NET k extrahování obrázků z konkrétních oblastí stránky dokumentu. Tento proces vám umožňuje přesně zacílit a získat obrázky na základě definovaných souřadnic a rozměrů v dokumentu.
 ## Předpoklady

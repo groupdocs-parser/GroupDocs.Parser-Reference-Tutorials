@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Parser Text aus verschiedenen D
 weight: 12
 url: /de/net/document-loading/load-document-from-stream/
 ---
+
+# Dokument aus Stream laden
+
 ## Einführung
 Im Bereich der Dokumentenverarbeitung in .NET-Anwendungen ist das Extrahieren von Text aus verschiedenen Dateiformaten eine häufige Anforderung. GroupDocs.Parser für .NET bietet eine leistungsstarke Lösung zum nahtlosen Parsen und Extrahieren von Text aus einer Vielzahl von Dokumenten. Dieses Tutorial führt Sie Schritt für Schritt durch den Prozess der Verwendung von GroupDocs.Parser zum Extrahieren von Text aus Dokumenten.
 ## Voraussetzungen

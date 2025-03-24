@@ -6,6 +6,9 @@ description: GroupDocs.Parser で正規表現を使用して PDF ドキュメン
 weight: 19
 url: /ja/net/pdf-processing/search-text-in-pdf-by-regular-expression/
 ---
+
+# 正規表現でPDF内のテキストを検索する
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を使用して PDF ドキュメントからテキストを効率的に抽出する方法を説明します。GroupDocs.Parser は、開発者が PDF を含むさまざまなドキュメント形式からテキスト、メタデータ、構造化データを解析および抽出できるようにする強力なライブラリです。.NET アプリケーション内でデータ抽出、コンテンツ分析、または検索機能に取り組んでいる場合でも、GroupDocs.Parser はこれらのタスクをシームレスに処理するための包括的なツール セットを提供します。
 ## 前提条件

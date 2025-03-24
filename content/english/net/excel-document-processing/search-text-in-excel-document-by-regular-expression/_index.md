@@ -6,6 +6,9 @@ description: Learn how to search text in Excel documents using regular expressio
 weight: 17
 url: /net/excel-document-processing/search-text-in-excel-document-by-regular-expression/
 ---
+
+# Search Text in Excel Document by Regular Expression
+
 ## Introduction
 In this tutorial, we'll explore how to utilize GroupDocs.Parser for .NET to search for specific text patterns within Excel documents using regular expressions. GroupDocs.Parser is a powerful library that allows developers to extract text and metadata from various document formats, including spreadsheets like Excel. By leveraging regular expressions, we can perform advanced text searches efficiently.
 ## Prerequisites

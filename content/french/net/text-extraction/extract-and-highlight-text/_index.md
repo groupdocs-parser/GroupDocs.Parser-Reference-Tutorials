@@ -6,6 +6,9 @@ description: Découvrez comment extraire et surligner du texte à partir de docu
 weight: 11
 url: /fr/net/text-extraction/extract-and-highlight-text/
 ---
+
+# Extraire et surligner du texte
+
 ## Introduction
 Dans ce didacticiel, nous verrons comment utiliser GroupDocs.Parser pour .NET pour extraire et mettre en surbrillance le texte de documents. GroupDocs.Parser est une bibliothèque puissante qui vous permet d'analyser différents formats de documents et d'effectuer des opérations avancées d'extraction de texte.
 ## Conditions préalables

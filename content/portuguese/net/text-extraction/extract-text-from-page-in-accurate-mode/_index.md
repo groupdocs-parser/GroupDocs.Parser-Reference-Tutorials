@@ -6,6 +6,9 @@ description: Aprenda como extrair texto com precisão de documentos usando Group
 weight: 16
 url: /pt/net/text-extraction/extract-text-from-page-in-accurate-mode/
 ---
+
+# Extraia texto da página no modo preciso
+
 ## Introdução
 Neste tutorial, exploraremos como usar GroupDocs.Parser for .NET para extrair texto de um documento no modo preciso. GroupDocs.Parser é uma API poderosa que permite aos desenvolvedores trabalhar com vários formatos de documentos em seus aplicativos .NET, permitindo a extração de texto com precisão e facilidade. Ao final deste guia, você estará equipado para aproveitar os recursos do GroupDocs.Parser para extrair texto de documentos com eficiência.
 ## Pré-requisitos

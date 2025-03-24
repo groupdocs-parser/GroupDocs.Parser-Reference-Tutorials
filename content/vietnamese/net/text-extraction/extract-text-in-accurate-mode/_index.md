@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất chính xác văn bản từ tài li
 weight: 18
 url: /vi/net/text-extraction/extract-text-in-accurate-mode/
 ---
+
+# Trích xuất văn bản ở chế độ chính xác
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách trích xuất văn bản chính xác từ các định dạng tài liệu khác nhau bằng GroupDocs.Parser cho .NET. GroupDocs.Parser là một thư viện mạnh mẽ cho phép trích xuất văn bản từ các tài liệu như PDF, DOCX, PPTX, XLSX, v.v., biến nó thành một công cụ có giá trị cho các ứng dụng xử lý dữ liệu.
 ## Điều kiện tiên quyết

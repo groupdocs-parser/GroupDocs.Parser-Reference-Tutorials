@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthat ki táblákat dokumentumokból a Groupd
 weight: 10
 url: /hu/net/table-extraction/extract-tables-from-document/
 ---
+
+# Táblázatok kibontása a dokumentumból
+
 ## Bevezetés
 A Groupdocs.Parser for .NET egy átfogó könyvtár, amely megkönnyíti a dokumentumok elemzését, lehetővé téve olyan értékes információk kinyerését a dokumentumokból, mint például táblázatok, szövegek, metaadatok és egyebek. Ebben az oktatóanyagban kifejezetten a táblázatok kinyerésére összpontosítunk a dokumentumokból a Groupdocs.Parser API használatával.
 ## Előfeltételek

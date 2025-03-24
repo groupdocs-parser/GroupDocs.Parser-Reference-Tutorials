@@ -7,6 +7,9 @@ weight: 27
 url: /cs/net/barcode-extraction/
 ---
 
+# Extrakce čárového kódu
+
+
 V oblasti zpracování dokumentů představuje extrakce čárového kódu klíčový úkol. Ať už se jedná o řízení zásob, kategorizaci dokumentů nebo automatizaci zadávání dat, schopnost rychle a přesně extrahovat čárové kódy z dokumentů je neocenitelná. S GroupDocs.Parser for .NET je zvládnutí tohoto procesu nejen dosažitelné, ale také zjednodušené.
 
 ## Porozumění extrakci čárového kódu:

@@ -6,6 +6,9 @@ description: Pelajari cara mencari teks berdasarkan halaman menggunakan GroupDoc
 weight: 22
 url: /id/net/text-extraction/search-text-by-pages/
 ---
+
+# Cari Teks berdasarkan Halaman
+
 ## Perkenalan
 Dalam dunia pengembangan .NET, penguraian dan ekstraksi teks dari dokumen secara efisien adalah tugas yang sangat penting. GroupDocs.Parser untuk .NET menawarkan kemampuan canggih untuk bekerja dengan berbagai format dokumen, memungkinkan pengembang mencari dan mengekstrak konten tertentu dengan lancar. Tutorial ini akan memandu Anda melalui proses memanfaatkan GroupDocs.Parser untuk mencari teks demi halaman di aplikasi .NET Anda.
 ## Prasyarat

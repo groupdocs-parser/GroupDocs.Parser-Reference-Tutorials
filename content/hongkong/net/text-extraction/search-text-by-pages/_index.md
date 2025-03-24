@@ -6,6 +6,9 @@ description: 了解使用 GroupDocs.Parser for .NET 按頁面搜尋文字。從 
 weight: 22
 url: /zh-hant/net/text-extraction/search-text-by-pages/
 ---
+
+# 按頁搜尋文本
+
 ## 介紹
 在 .NET 開發領域，從文件中有效地解析和提取文字是一項至關重要的任務。 GroupDocs.Parser for .NET 提供了處理各種文件格式的強大功能，使開發人員能夠無縫搜尋和提取特定內容。本教學將引導您完成利用 GroupDocs.Parser 在 .NET 應用程式中按頁面搜尋文字的過程。
 ## 先決條件

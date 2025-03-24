@@ -6,6 +6,9 @@ description: Szöveg kibontása tartalomjegyzékkel (TOC) a GroupDocs.Parser for
 weight: 15
 url: /hu/net/text-extraction/extract-text-by-toc-item/
 ---
+
+# Szöveg kibontása tartalomjegyzék (TOC) elem szerint
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan használható a GroupDocs.Parser for .NET a dokumentumokból a tartalomjegyzék (TOC) elemei alapján szöveg kinyerésére. A GroupDocs.Parser egy hatékony eszköz, amely lehetővé teszi a hatékony dokumentumelemzést és -kinyerést.
 ## Előfeltételek

@@ -7,6 +7,9 @@ weight: 20
 url: /pl/net/text-extraction/
 ---
 
+# Ekstrakcja tekstu
+
+
 ## Wstęp
 
 Witamy w obszernej kolekcji samouczków dotyczących wyodrębniania tekstu obsługiwanych przez GroupDocs.Parser dla .NET. W tej serii samouczków omówimy różne metody i techniki wyodrębniania, wyróżniania i wyszukiwania tekstu z dokumentów w aplikacjach .NET.

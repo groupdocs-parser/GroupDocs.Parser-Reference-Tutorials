@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 문서에서 서식 있는
 weight: 10
 url: /ko/net/formatted-text-extraction/extract-formatted-text-from-document/
 ---
+
+# 문서에서 서식 있는 텍스트 추출
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser를 사용하여 다양한 유형의 문서에서 서식 있는 텍스트를 추출하는 방법을 살펴보겠습니다. GroupDocs.Parser는 개발자가 간단하고 효율적인 방식으로 문서 작업을 수행할 수 있게 해주는 강력한 라이브러리입니다. 이 가이드를 마치면 텍스트 추출 기능을 .NET 애플리케이션에 원활하게 통합할 수 있게 됩니다.
 ## 전제 조건

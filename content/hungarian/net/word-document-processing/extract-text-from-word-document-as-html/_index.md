@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan használhatja a GroupDocs.Parser for .NET-et sz
 weight: 16
 url: /hu/net/word-document-processing/extract-text-from-word-document-as-html/
 ---
+
+# Szöveg kibontása a Word-dokumentumból HTML-ként
+
 ## Bevezetés
 GroupDocs.Parser for .NET egy hatékony dokumentumelemző könyvtár, amely lehetővé teszi a fejlesztők számára, hogy zökkenőmentesen kinyerjenek szöveget és metaadatokat különböző fájlformátumokból. Ebben az oktatóanyagban a GroupDocs.Parser kihasználására fogunk összpontosítani, hogy szöveget kinyerhessen a Word-dokumentumokból, és HTML-ként mentse el. Ez a folyamat elengedhetetlen az olyan feladatokhoz, mint a tartalomelemzés, az indexelés vagy a dokumentumok webbarát formátumba konvertálása. Az útmutató végére világosan megérti, hogyan kell hatékonyan használni a GroupDocs.Parser-t .NET-alkalmazásaiban.
 ## Előfeltételek

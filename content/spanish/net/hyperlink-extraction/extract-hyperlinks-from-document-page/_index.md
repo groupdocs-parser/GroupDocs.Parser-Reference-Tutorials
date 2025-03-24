@@ -6,6 +6,9 @@ description: Aprenda a extraer hipervínculos de documentos utilizando GroupDocs
 weight: 11
 url: /es/net/hyperlink-extraction/extract-hyperlinks-from-document-page/
 ---
+
+# Extraer hipervínculos de la página del documento
+
 ## Introducción
 En este tutorial, exploraremos cómo usar GroupDocs.Parser para .NET para extraer hipervínculos de documentos paso a paso. GroupDocs.Parser es una potente biblioteca que permite a los desarrolladores analizar varios formatos de documentos y extraer texto, metadatos y otros elementos.
 ## Requisitos previos

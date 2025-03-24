@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak PDF belgelerinden nasıl met
 weight: 14
 url: /tr/net/pdf-processing/extract-text-from-pdf/
 ---
+
+# PDF'den Metin Çıkart
+
 ## giriiş
 Bu öğreticide, GroupDocs.Parser for .NET'i kullanarak PDF belgelerinden nasıl metin ayıklanacağını keşfedeceğiz. GroupDocs.Parser, geliştiricilerin PDF, Microsoft Office ve daha fazlasını içeren çeşitli belge formatlarından metin, meta veriler ve yapılandırılmış veriler çıkarmasına olanak tanıyan güçlü bir API'dir.
 ## Önkoşullar

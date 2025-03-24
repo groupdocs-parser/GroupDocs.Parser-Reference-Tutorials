@@ -6,6 +6,9 @@ description: Découvrez comment rechercher et surligner du texte dans des docume
 weight: 24
 url: /fr/net/text-extraction/search-text-with-highlights/
 ---
+
+# Rechercher du texte avec des surbrillances
+
 ## Introduction
 Dans ce didacticiel, nous verrons comment utiliser GroupDocs.Parser pour .NET pour rechercher du texte dans un document et mettre en évidence les résultats de la recherche. GroupDocs.Parser est une bibliothèque puissante qui vous permet de travailler avec différents formats de documents et d'extraire du texte, des métadonnées, etc.
 ## Conditions préalables

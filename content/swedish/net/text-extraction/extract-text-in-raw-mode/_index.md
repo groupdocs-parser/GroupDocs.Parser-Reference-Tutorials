@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar text från dokument med GroupDocs.Parser
 weight: 19
 url: /sv/net/text-extraction/extract-text-in-raw-mode/
 ---
+
+# Extrahera text i råläge
+
 ## Introduktion
 I den här handledningen kommer vi att utforska hur man använder GroupDocs.Parser för .NET för att effektivt extrahera text från olika dokumentformat. GroupDocs.Parser är ett kraftfullt bibliotek som gör det möjligt för utvecklare att extrahera text och metadata från dokument som PDF, Word, Excel, PowerPoint och mer, vilket förenklar textextraktionsuppgifter i .NET-applikationer.
 ## Förutsättningar

@@ -6,6 +6,9 @@ description: Aprenda como extrair hiperlinks de documentos usando GroupDocs.Pars
 weight: 11
 url: /pt/net/hyperlink-extraction/extract-hyperlinks-from-document-page/
 ---
+
+# Extraia hiperlinks da página do documento
+
 ## Introdução
 Neste tutorial, exploraremos como usar GroupDocs.Parser for .NET para extrair hiperlinks de documentos passo a passo. GroupDocs.Parser é uma biblioteca poderosa que permite aos desenvolvedores analisar vários formatos de documentos e extrair texto, metadados e outros elementos.
 ## Pré-requisitos

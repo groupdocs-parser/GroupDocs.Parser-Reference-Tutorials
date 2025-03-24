@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 문서에서 텍스트를 
 weight: 11
 url: /ko/net/text-extraction/extract-and-highlight-text/
 ---
+
+# 텍스트 추출 및 강조 표시
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser를 사용하여 문서에서 텍스트를 추출하고 강조 표시하는 방법을 살펴보겠습니다. GroupDocs.Parser는 다양한 문서 형식을 구문 분석하고 고급 텍스트 추출 작업을 수행할 수 있는 강력한 라이브러리입니다.
 ## 전제 조건

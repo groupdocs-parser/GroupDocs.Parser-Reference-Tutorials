@@ -6,6 +6,9 @@ description: Objevte řadu výukových programů pro zpracování dokumentů Wor
 weight: 30
 url: /cs/net/word-document-processing/
 ---
+
+# Zpracování textových dokumentů
+
 Chcete vylepšit své možnosti zpracování dokumentů Word v .NET? Už nehledejte! GroupDocs.Parser for .NET nabízí komplexní sadu výukových programů, které vám pomohou snadno extrahovat různé prvky z dokumentů aplikace Word.
 
 ## Extrahování hypertextových odkazů

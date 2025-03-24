@@ -6,6 +6,9 @@ description: Naučte se extrahovat hypertextové odkazy z dokumentů pomocí Gro
 weight: 10
 url: /cs/net/hyperlink-extraction/extract-hyperlinks-from-document/
 ---
+
+# Extrahujte hypertextové odkazy z dokumentu
+
 ## Úvod
 V tomto tutoriálu se ponoříme do výkonných možností GroupDocs.Parser for .NET, všestranné knihovny, která umožňuje vývojářům snadno extrahovat hypertextové odkazy z dokumentů. Extrakce hypertextových odkazů je běžným požadavkem při zpracování dokumentů, zejména při práci s textovými soubory, jako jsou soubory PDF nebo dokumenty Word. Pomocí GroupDocs.Parser můžete efektivně identifikovat a extrahovat hypertextové odkazy spolu s jejich přidruženými adresami URL z různých formátů dokumentů.
 ## Předpoklady

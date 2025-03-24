@@ -7,6 +7,9 @@ weight: 27
 url: /fr/net/barcode-extraction/
 ---
 
+# Extraction de codes-barres
+
+
 Dans le domaine du traitement des documents, l’extraction des codes-barres constitue une tâche cruciale. Qu'il s'agisse de la gestion des stocks, de la catégorisation des documents ou de l'automatisation de la saisie des données, la capacité d'extraire rapidement et précisément les codes-barres des documents est inestimable. Avec GroupDocs.Parser pour .NET, la maîtrise de ce processus devient non seulement réalisable mais également rationalisée.
 
 ## Comprendre l'extraction de codes-barres :

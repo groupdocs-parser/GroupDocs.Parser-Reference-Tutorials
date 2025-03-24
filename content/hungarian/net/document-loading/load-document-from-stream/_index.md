@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthat ki szöveget különböző dokumentumfo
 weight: 12
 url: /hu/net/document-loading/load-document-from-stream/
 ---
+
+# Dokumentum betöltése a Streamből
+
 ## Bevezetés
 A .NET-alkalmazások dokumentumfeldolgozásának területén általános követelmény a szövegek kinyerése a különböző fájlformátumokból. A GroupDocs.Parser for .NET hatékony megoldást kínál a dokumentumok zökkenőmentes elemzésére és szövegek kinyerésére. Ez az oktatóanyag végigvezeti Önt a GroupDocs.Parser használatával a dokumentumokból szövegek kinyeréséhez lépésről lépésre.
 ## Előfeltételek

@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan lehet programozottan kibontani a tartalomjegyz�
 weight: 13
 url: /hu/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
+
+# Tartalomjegyzék kibontása a Word dokumentumból
+
 ## Bevezetés
 Ebből az oktatóanyagból megtudhatja, hogyan kell a GroupDocs.Parser for .NET használatával lépésről lépésre kibontani a tartalomjegyzéket (TOC) egy Word-dokumentumból. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi, hogy programozottan dolgozzon különféle dokumentumformátumokkal.
 ## Előfeltételek

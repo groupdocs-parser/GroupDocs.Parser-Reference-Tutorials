@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 문서에서 텍스트를 
 weight: 19
 url: /ko/net/text-extraction/extract-text-in-raw-mode/
 ---
+
+# 원시 모드에서 텍스트 추출
+
 ## 소개
 이 튜토리얼에서는 .NET용 GroupDocs.Parser를 활용하여 다양한 문서 형식에서 텍스트를 효율적으로 추출하는 방법을 살펴보겠습니다. GroupDocs.Parser는 개발자가 PDF, Word, Excel, PowerPoint 등과 같은 문서에서 텍스트와 메타데이터를 추출하여 .NET 응용 프로그램 내에서 텍스트 추출 작업을 단순화할 수 있는 강력한 라이브러리입니다.
 ## 전제 조건

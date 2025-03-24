@@ -6,6 +6,9 @@ description: 在本综合教程中了解如何使用 GroupDocs.Parser for .NET �
 weight: 10
 url: /zh/net/pdf-processing/extract-attachments-from-pdf-portfolios/
 ---
+
+# 从 PDF 包中提取附件
+
 ## 介绍
 在文档处理和分析领域，高效处理 PDF 包至关重要。GroupDocs.Parser for .NET 提供了一个强大的解决方案，用于从 PDF 包中提取附件，使开发人员能够轻松访问和管理内容。本教程将逐步指导您完成该过程，使用 GroupDocs.Parser 无缝提取附件。
 ## 先决条件

@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 Excel 문서에서 이미�
 weight: 10
 url: /ko/net/excel-document-processing/extract-images-from-excel-document/
 ---
+
+# Excel 문서에서 이미지 추출
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser를 사용하여 Excel 문서에서 이미지를 추출하는 방법을 알아봅니다. GroupDocs.Parser는 Excel 파일을 포함한 다양한 문서 형식에서 텍스트, 메타데이터 및 이미지를 구문 분석하고 추출할 수 있는 강력한 라이브러리입니다.
 ## 전제 조건

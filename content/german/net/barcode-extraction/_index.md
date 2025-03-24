@@ -7,6 +7,9 @@ weight: 27
 url: /de/net/barcode-extraction/
 ---
 
+# Barcode-Extraktion
+
+
 Im Bereich der Dokumentenverarbeitung ist die Barcode-Extraktion eine entscheidende Aufgabe. Ob für die Bestandsverwaltung, die Dokumentenkategorisierung oder die Automatisierung der Dateneingabe – die Fähigkeit, Barcodes schnell und genau aus Dokumenten zu extrahieren, ist von unschätzbarem Wert. Mit GroupDocs.Parser für .NET wird die Beherrschung dieses Prozesses nicht nur möglich, sondern auch rationalisiert.
 
 ## Grundlegendes zur Barcode-Extraktion:

@@ -6,6 +6,9 @@ description: Scopri come estrarre dati dai documenti utilizzando GroupDocs.Parse
 weight: 11
 url: /it/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
+
+# Lavorare con i campi in posizioni fisse nei modelli
+
 ## introduzione
 In questo tutorial esploreremo come lavorare con i campi in posizioni fisse all'interno dei modelli utilizzando GroupDocs.Parser per .NET. GroupDocs.Parser è una potente libreria di analisi dei documenti che consente agli sviluppatori di estrarre dati da vari formati di documenti come PDF, Word, Excel e altri. Nello specifico, ci concentreremo sulla definizione e sull'utilizzo dei campi del modello per estrarre informazioni mirate in base alle loro posizioni fisse.
 ## Prerequisiti

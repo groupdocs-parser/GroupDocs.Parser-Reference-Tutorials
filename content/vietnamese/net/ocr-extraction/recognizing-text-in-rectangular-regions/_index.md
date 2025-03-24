@@ -6,6 +6,9 @@ description: Tìm hiểu cách nhận dạng văn bản ở các vùng tài li�
 weight: 14
 url: /vi/net/ocr-extraction/recognizing-text-in-rectangular-regions/
 ---
+
+# Nhận dạng văn bản trong vùng hình chữ nhật
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Parser cho .NET để nhận dạng văn bản trong các vùng tài liệu hình chữ nhật cụ thể. GroupDocs.Parser là một thư viện mạnh mẽ cho phép các nhà phát triển trích xuất văn bản, siêu dữ liệu, v.v. từ nhiều định dạng tệp khác nhau, bao gồm PDF, Word, Excel và PowerPoint.
 ## Điều kiện tiên quyết

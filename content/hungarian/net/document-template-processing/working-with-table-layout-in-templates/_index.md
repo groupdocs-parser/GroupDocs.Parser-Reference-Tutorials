@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan dolgozhat sablonokban táblázatelrendezésekke
 weight: 14
 url: /hu/net/document-template-processing/working-with-table-layout-in-templates/
 ---
+
+# A táblázat elrendezésének használata sablonokban
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan dolgozhatunk a táblázatok elrendezésével sablonokban a GroupDocs.Parser for .NET használatával. A GroupDocs.Parser egy hatékony dokumentumelemző API, amely lehetővé teszi a fejlesztők számára, hogy szöveget és metaadatokat kinyerjenek különféle dokumentumformátumokból, beleértve a PDF-et, a Microsoft Office-t és egyebeket.
 ## Előfeltételek

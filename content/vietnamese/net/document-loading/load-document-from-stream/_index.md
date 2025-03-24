@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất văn bản từ các định dạng
 weight: 12
 url: /vi/net/document-loading/load-document-from-stream/
 ---
+
+# Tải tài liệu từ luồng
+
 ## Giới thiệu
 Trong lĩnh vực xử lý tài liệu trong các ứng dụng .NET, việc trích xuất văn bản từ các định dạng tệp khác nhau là một yêu cầu chung. GroupDocs.Parser cho .NET cung cấp một giải pháp mạnh mẽ để phân tích cú pháp và trích xuất văn bản từ nhiều loại tài liệu khác nhau một cách liền mạch. Hướng dẫn này sẽ hướng dẫn bạn qua quy trình sử dụng GroupDocs.Parser để trích xuất văn bản từ tài liệu theo từng bước.
 ## Điều kiện tiên quyết

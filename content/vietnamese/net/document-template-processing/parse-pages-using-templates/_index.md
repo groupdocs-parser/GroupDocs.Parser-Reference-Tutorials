@@ -6,6 +6,9 @@ description: Tìm hiểu cách phân tích cú pháp các trang tài liệu bằ
 weight: 16
 url: /vi/net/document-template-processing/parse-pages-using-templates/
 ---
+
+# Phân tích trang bằng mẫu
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách sử dụng GroupDocs.Parser cho .NET để trích xuất dữ liệu từ tài liệu một cách hiệu quả. GroupDocs.Parser là một thư viện mạnh mẽ cho phép phân tích cú pháp các định dạng tài liệu khác nhau như PDF, DOCX, PPTX, v.v. Chúng tôi sẽ tập trung vào việc phân tích các trang bằng cách sử dụng các mẫu, cho phép trích xuất chính xác nội dung cụ thể như mã vạch.
 ## Điều kiện tiên quyết

@@ -6,6 +6,9 @@ description: Learn how to extract barcodes from corrupted documents using GroupD
 weight: 11
 url: /net/barcode-extraction/extract-barcodes-from-corrupted-document/
 ---
+
+# Extract Barcodes from Corrupted Document
+
 ## Introduction
 In this tutorial, we'll guide you through the process of extracting barcodes from corrupted documents using GroupDocs.Parser for .NET. GroupDocs.Parser is a powerful document parsing API that enables developers to extract text, metadata, images, and now, barcodes from various file formats. We'll break down the steps needed to accomplish this task effectively.
 ## Prerequisites

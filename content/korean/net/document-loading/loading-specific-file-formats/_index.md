@@ -6,6 +6,9 @@ description: GroupDocs.Parser를 사용하여 .NET의 다양한 파일 형식에
 weight: 14
 url: /ko/net/document-loading/loading-specific-file-formats/
 ---
+
+# 특정 파일 형식 로드
+
 ## 소개
 .NET 개발 세계에서는 다양한 파일 형식의 텍스트를 구문 분석하고 추출하는 것이 일반적인 요구 사항입니다. .NET용 GroupDocs.Parser는 이 작업을 단순화하는 강력한 도구를 제공합니다. 이 튜토리얼에서는 GroupDocs.Parser를 사용하여 특정 파일 형식에서 텍스트를 로드하고 추출하는 과정을 단계별로 안내합니다.
 ## 전제 조건

@@ -6,6 +6,9 @@ description: Naučte se extrahovat text z konkrétních stránek v dokumentech W
 weight: 17
 url: /cs/net/word-document-processing/extract-text-from-specific-page-in-word-document/
 ---
+
+# Extrahujte text z konkrétní stránky v dokumentu aplikace Word
+
 ## Úvod
 oblasti vývoje .NET je extrahování textu z dokumentů běžným požadavkem pro různé aplikace. GroupDocs.Parser for .NET poskytuje robustní řešení pro bezproblémovou analýzu a extrahování textu z různých formátů dokumentů. Tento výukový program se zaměřuje na využití GroupDocs.Parser k extrahování textu z konkrétní stránky v dokumentu aplikace Word. Podle tohoto průvodce se naučíte nezbytné kroky k efektivní integraci této funkce do vašich projektů .NET.
 ## Předpoklady

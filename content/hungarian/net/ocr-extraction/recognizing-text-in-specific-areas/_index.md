@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan használhatja a GroupDocs.Parser for .NET-et az
 weight: 13
 url: /hu/net/ocr-extraction/recognizing-text-in-specific-areas/
 ---
+
+# Szöveg felismerése meghatározott területeken
+
 ## Bevezetés
 Ebben az oktatóanyagban azt fogjuk megvizsgálni, hogyan használható a GroupDocs.Parser for .NET a dokumentum meghatározott területeinek szöveg felismerésére és kibontására. A GroupDocs.Parser egy hatékony dokumentumelemző könyvtár, amely lehetővé teszi a fejlesztők számára, hogy különféle dokumentumformátumokkal dolgozzanak, beleértve a PDF, Word, Excel, PowerPoint stb. Konkrétan a GroupDocs.Parser OCR (Optical Character Recognition) képességeinek kihasználására fogunk összpontosítani, hogy szöveget kinyerhessünk a dokumentum meghatározott területeiről.
 ## Előfeltételek

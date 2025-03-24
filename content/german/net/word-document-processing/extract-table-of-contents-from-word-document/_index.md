@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET programmgesteu
 weight: 13
 url: /de/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
+
+# Inhaltsverzeichnis aus Word-Dokument extrahieren
+
 ## Einführung
 In diesem Tutorial erfahren Sie Schritt für Schritt, wie Sie mit GroupDocs.Parser für .NET das Inhaltsverzeichnis (TOC) aus einem Word-Dokument extrahieren. GroupDocs.Parser ist eine leistungsstarke Bibliothek, mit der Sie programmgesteuert mit verschiedenen Dokumentformaten arbeiten können.
 ## Voraussetzungen

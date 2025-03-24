@@ -6,6 +6,9 @@ description: Tanulja meg, hogyan lehet szöveget felismerni a dokumentumok megha
 weight: 14
 url: /hu/net/ocr-extraction/recognizing-text-in-rectangular-regions/
 ---
+
+# Szöveg felismerése téglalap alakú területeken
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan használható a GroupDocs.Parser for .NET a dokumentumok meghatározott téglalap alakú régióiban lévő szövegek felismerésére. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy szöveget, metaadatokat és egyebeket kinyerjenek különféle fájlformátumokból, beleértve a PDF, Word, Excel és PowerPoint fájlokat.
 ## Előfeltételek

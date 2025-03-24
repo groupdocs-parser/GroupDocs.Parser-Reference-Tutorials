@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthat ki szöveget dokumentumokból a GroupDo
 weight: 19
 url: /hu/net/text-extraction/extract-text-in-raw-mode/
 ---
+
+# Szöveg kibontása nyers módban
+
 ## Bevezetés
 Ebben az oktatóanyagban azt fogjuk megvizsgálni, hogyan használható a GroupDocs.Parser for .NET a különböző dokumentumformátumokból származó szövegek hatékony kinyerésére. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy szöveget és metaadatokat kinyerhessenek olyan dokumentumokból, mint a PDF, Word, Excel, PowerPoint és egyebek, leegyszerűsítve a szövegkivonási feladatokat a .NET-alkalmazásokon belül.
 ## Előfeltételek

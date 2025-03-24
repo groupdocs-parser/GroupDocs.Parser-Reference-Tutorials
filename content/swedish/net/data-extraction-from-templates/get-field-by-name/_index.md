@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar specifika datafält från dokument med G
 weight: 10
 url: /sv/net/data-extraction-from-templates/get-field-by-name/
 ---
+
+# Hämta fält efter namn
+
 ## Introduktion
 I den här handledningen kommer vi att utforska hur man kan utnyttja GroupDocs.Parser för .NET för att extrahera specifika datafält som priser och e-postmeddelanden från dokument. Detta kraftfulla bibliotek förenklar dokumentanalys, vilket gör det idealiskt för olika dataextraktionsbehov.
 ## Förutsättningar

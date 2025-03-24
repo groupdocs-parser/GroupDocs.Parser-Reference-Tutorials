@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak Word belgelerinden nasıl me
 weight: 15
 url: /tr/net/word-document-processing/extract-text-from-word-document/
 ---
+
+# Word Belgesinden Metin Çıkarma
+
 ## giriiş
 Bu öğreticide, GroupDocs.Parser for .NET'i kullanarak Word belgelerinden nasıl metin ayıklanacağını keşfedeceğiz. GroupDocs.Parser, geliştiricilerin Word belgeleri, PDF'ler ve daha fazlası dahil olmak üzere çeşitli belge formatlarıyla çalışmasına olanak tanıyan güçlü bir .NET kitaplığıdır. Bu kılavuzun sonunda, basit C# kodunu kullanarak Word dosyalarından etkili bir şekilde metin ayıklayabileceksiniz.
 ## Önkoşullar

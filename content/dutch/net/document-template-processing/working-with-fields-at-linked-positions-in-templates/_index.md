@@ -6,6 +6,9 @@ description: Leer hoe u gegevens efficiënt uit documenten kunt extraheren met G
 weight: 12
 url: /nl/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
 ---
+
+# Werken met velden op gekoppelde posities in sjablonen
+
 ## Invoering
 GroupDocs.Parser voor .NET is een robuuste bibliotheek die is ontworpen om het parseren van documenten en gegevensextractietaken te vergemakkelijken. Het ondersteunt een breed scala aan bestandsformaten, waaronder PDF, DOCX, XLSX en meer. Een van de belangrijkste functies is op sjablonen gebaseerde gegevensextractie, waarmee u velden binnen een document kunt definiëren en specifieke gegevens kunt extraheren op basis van deze vooraf gedefinieerde sjablonen.
 ## Vereisten

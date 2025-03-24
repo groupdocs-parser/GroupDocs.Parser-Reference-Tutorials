@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET ile normal ifade konumlarını kullanarak
 weight: 13
 url: /tr/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---
+
+# Şablonlarda Regex Konumlarında Alanlarla Çalışmak
+
 ## giriiş
 Bu öğreticide, belge şablonları içindeki belirli normal ifadelere (regex) dayalı alanları ayıklamak için GroupDocs.Parser for .NET'i nasıl kullanacağınızı öğreneceksiniz. Bu kitaplık, belge ayrıştırma ve çıkarma için güçlü özellikler sunarak, yapılandırılmış veri çıkarma görevlerini verimli bir şekilde gerçekleştirmek için idealdir.
 ## Önkoşullar

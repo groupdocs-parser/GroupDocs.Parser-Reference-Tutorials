@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用して特定のドキュメン�
 weight: 13
 url: /ja/net/text-extraction/extract-text-from-specific-areas-on-page/
 ---
+
+# ページ上の特定の領域からテキストを抽出する
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET ライブラリを使用して、ページ上の特定の領域からテキストを抽出する方法について説明します。GroupDocs.Parser は、ドキュメントからのテキスト抽出を簡素化し、開発者がドキュメント内の特定の関心領域をターゲットにしてテキストを抽出できるようにします。これは、さらに処理または分析を行うために正確なテキスト抽出が必要な複雑なドキュメントを扱う場合に特に役立ちます。
 ## 前提条件

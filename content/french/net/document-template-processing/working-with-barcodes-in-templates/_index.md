@@ -6,6 +6,9 @@ description: Découvrez comment utiliser GroupDocs.Parser pour .NET pour extrair
 weight: 10
 url: /fr/net/document-template-processing/working-with-barcodes-in-templates/
 ---
+
+# Travailler avec des codes-barres dans des modèles
+
 ## Introduction
 Dans ce didacticiel, nous explorerons comment extraire efficacement des données de documents à l'aide de modèles avec GroupDocs.Parser pour .NET. GroupDocs.Parser simplifie le processus d'extraction de données en vous permettant de définir des modèles pour des types de données spécifiques, tels que les codes-barres, puis d'analyser les documents en fonction de ces modèles.
 ## Conditions préalables

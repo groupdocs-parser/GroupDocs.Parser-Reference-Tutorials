@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 从具有 OCR 功能�
 weight: 13
 url: /zh/net/ocr-extraction/recognizing-text-in-specific-areas/
 ---
+
+# 识别特定区域中的文本
+
 ## 介绍
 在本教程中，我们将探索如何使用 GroupDocs.Parser for .NET 识别和提取文档中特定区域的文本。GroupDocs.Parser 是一个功能强大的文档解析库，允许开发人员处理各种文档格式，包括 PDF、Word、Excel、PowerPoint 等。具体来说，我们将重点介绍如何利用 GroupDocs.Parser 的 OCR（光学字符识别）功能从文档中的定义区域提取文本。
 ## 先决条件

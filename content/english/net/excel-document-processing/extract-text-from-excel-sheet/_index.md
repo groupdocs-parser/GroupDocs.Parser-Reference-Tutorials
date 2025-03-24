@@ -6,6 +6,9 @@ description: Learn how to extract text from Excel sheets using GroupDocs.Parser 
 weight: 14
 url: /net/excel-document-processing/extract-text-from-excel-sheet/
 ---
+
+# Extract Text from Excel Sheet
+
 ## Introduction
 In this tutorial, we'll explore how to extract text from Excel sheets using the GroupDocs.Parser for .NET library. This powerful tool allows us to efficiently parse and analyze various document formats, including Excel spreadsheets, to extract textual data.
 ## Prerequisites

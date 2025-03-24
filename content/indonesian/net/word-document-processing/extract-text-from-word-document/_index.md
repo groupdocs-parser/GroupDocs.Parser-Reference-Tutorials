@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak teks dari dokumen Word menggunakan GroupD
 weight: 15
 url: /id/net/word-document-processing/extract-text-from-word-document/
 ---
+
+# Ekstrak Teks dari Dokumen Word
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara mengekstrak teks dari dokumen Word menggunakan GroupDocs.Parser untuk .NET. GroupDocs.Parser adalah perpustakaan .NET yang kuat yang memungkinkan pengembang bekerja dengan berbagai format dokumen, termasuk dokumen Word, PDF, dan banyak lagi. Di akhir panduan ini, Anda akan dapat mengekstrak teks dari file Word secara efisien menggunakan kode C# sederhana.
 ## Prasyarat

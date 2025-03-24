@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan vonhat ki vonalkódokat dokumentumoldalakról a
 weight: 12
 url: /hu/net/barcode-extraction/extract-barcodes-from-document-page/
 ---
+
+# Vonja ki a vonalkódokat a dokumentumoldalról
+
 ## Bevezetés
 Ebben az oktatóanyagban végigvezetjük a vonalkódok dokumentumoldalakról történő kinyerésének folyamatán a GroupDocs.Parser for .NET segítségével. A GroupDocs.Parser egy hatékony dokumentumelemző könyvtár, amely lehetővé teszi a fejlesztők számára, hogy szöveget, metaadatokat és akár vonalkódokat is kinyerjenek különféle dokumentumformátumokból.
 ## Előfeltételek

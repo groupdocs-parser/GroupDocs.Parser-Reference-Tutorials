@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar hyperlänkar från specifika dokumentomr
 weight: 12
 url: /sv/net/hyperlink-extraction/extract-hyperlinks-from-document-page-area/
 ---
+
+# Extrahera hyperlänkar från dokumentsidans område
+
 ## Introduktion
 I den här handledningen kommer vi att utforska hur man extraherar hyperlänkar från ett dokuments specifika sidområde med hjälp av GroupDocs.Parser for .NET-biblioteket. GroupDocs.Parser tillhandahåller kraftfulla funktioner för dokumentbehandling, inklusive extrahering av hyperlänkar. Vi guidar dig genom processen steg för steg och visar hur du implementerar denna funktionalitet i dina .NET-applikationer.
 ## Förutsättningar

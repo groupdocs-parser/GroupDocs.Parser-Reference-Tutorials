@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 从 Excel 表中提取
 weight: 14
 url: /zh/net/excel-document-processing/extract-text-from-excel-sheet/
 ---
+
+# 从 Excel 工作表中提取文本
+
 ## 介绍
 在本教程中，我们将探索如何使用 GroupDocs.Parser for .NET 库从 Excel 表中提取文本。这个强大的工具使我们能够有效地解析和分析各种文档格式（包括 Excel 电子表格），以提取文本数据。
 ## 先决条件

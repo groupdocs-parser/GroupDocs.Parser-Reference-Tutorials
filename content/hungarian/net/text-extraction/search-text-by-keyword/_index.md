@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan kereshet szöveget kulcsszó alapján a dokumen
 weight: 21
 url: /hu/net/text-extraction/search-text-by-keyword/
 ---
+
+# Szöveg keresése kulcsszó szerint
+
 ## Bevezetés
 Ebben az oktatóanyagban a GroupDocs.Parser for .NET használatával foglalkozunk a dokumentumokon belüli kulcsszó szerinti kereséshez. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy szöveget, metaadatokat és egyéb információkat kinyerjenek különféle fájlformátumokból, például PDF-ekből, Microsoft Office dokumentumokból és egyebekből. A konkrét kulcsszavak keresése ezeken a dokumentumokon belül elengedhetetlen lehet a nagy mennyiségű szöveges adattal foglalkozó alkalmazások számára.
 ## Előfeltételek

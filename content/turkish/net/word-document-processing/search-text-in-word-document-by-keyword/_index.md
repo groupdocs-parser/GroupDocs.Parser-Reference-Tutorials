@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak Word belgelerinde nasıl met
 weight: 18
 url: /tr/net/word-document-processing/search-text-in-word-document-by-keyword/
 ---
+
+# Word Belgesindeki Metni Anahtar Kelimeye Göre Arama
+
 ## giriiş
 Bu öğreticide, C# kullanarak bir Word belgesinde belirli bir metni aramak için GroupDocs.Parser for .NET'in nasıl kullanılacağını keşfedeceğiz. GroupDocs.Parser, geliştiricilerin Word belgeleri de dahil olmak üzere çeşitli belge biçimlerinden metin ve meta veriler çıkarmasına olanak tanıyan güçlü bir kitaplıktır.
 ## Önkoşullar

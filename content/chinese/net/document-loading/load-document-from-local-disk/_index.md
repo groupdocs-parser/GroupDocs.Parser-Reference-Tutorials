@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 从各种文档格式�
 weight: 11
 url: /zh/net/document-loading/load-document-from-local-disk/
 ---
+
+# 从本地磁盘加载文档
+
 ## 介绍
 在本教程中，我们将探索如何使用 GroupDocs.Parser for .NET 从文档中提取文本。GroupDocs.Parser 是一个功能强大的库，允许开发人员解析各种文档格式并以编程方式提取文本内容。我们将介绍使用此库开始文本提取所需的步骤。
 ## 先决条件

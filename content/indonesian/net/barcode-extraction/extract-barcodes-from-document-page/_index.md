@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak kode batang dari halaman dokumen mengguna
 weight: 12
 url: /id/net/barcode-extraction/extract-barcodes-from-document-page/
 ---
+
+# Ekstrak Barcode dari Halaman Dokumen
+
 ## Perkenalan
 Dalam tutorial ini, kami akan memandu Anda melalui proses mengekstraksi kode batang dari halaman dokumen menggunakan GroupDocs.Parser untuk .NET. GroupDocs.Parser adalah pustaka penguraian dokumen canggih yang memungkinkan pengembang mengekstrak teks, metadata, dan bahkan kode batang dari berbagai format dokumen.
 ## Prasyarat

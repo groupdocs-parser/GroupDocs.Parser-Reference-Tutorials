@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用してドキュメントから�
 weight: 11
 url: /ja/net/data-extraction-from-templates/iterate-through-fields/
 ---
+
+# フィールドを反復処理する
+
 ## 導入
 GroupDocs.Parser for .NET は、開発者が PDF、Microsoft Word、Excel、PowerPoint などのさまざまなドキュメント形式からデータを抽出できるようにする強力なライブラリです。このチュートリアルでは、GroupDocs.Parser を使用してドキュメント フィールドを反復処理し、テンプレートを使用して特定のデータを抽出するプロセスについて説明します。このチュートリアルを完了すると、.NET アプリケーションのドキュメントから構造化データを効率的に抽出できるようになります。
 ## 前提条件

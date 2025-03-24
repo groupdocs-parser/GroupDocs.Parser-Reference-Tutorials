@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用すると、ドキュメント�
 weight: 11
 url: /ja/net/image-extraction/extract-images-from-document/
 ---
+
+# ドキュメントから画像を抽出する
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を使用してドキュメントから画像を抽出する方法について説明します。GroupDocs.Parser は、開発者がさまざまなドキュメント形式からテキスト、メタデータ、画像などを抽出できるようにする強力なライブラリです。
 ## 前提条件

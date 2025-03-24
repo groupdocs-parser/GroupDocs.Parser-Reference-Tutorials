@@ -6,6 +6,9 @@ description: Bez námahy extrahujte hypertextové odkazy z dokumentů v .NET pom
 weight: 25
 url: /cs/net/hyperlink-extraction/
 ---
+
+# Extrakce hypertextového odkazu
+
 ## Úvod
 
 Ponořte se do světa extrakce hypertextových odkazů v .NET pomocí výukových programů GroupDocs.Parser. Tyto výukové programy nabízejí komplexní návod na extrahování hypertextových odkazů z dokumentů, ať už z celého dokumentu, konkrétních stránek nebo určených oblastí. Ať už jste začátečník nebo zkušený vývojář, tyto výukové programy poskytují jasné pokyny krok za krokem a příklady kódu, které vám pomohou bezproblémově integrovat extrakci hypertextových odkazů do vašich aplikací C#.

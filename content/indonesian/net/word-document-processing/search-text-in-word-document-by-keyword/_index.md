@@ -6,6 +6,9 @@ description: Pelajari cara mencari teks di dokumen Word menggunakan GroupDocs.Pa
 weight: 18
 url: /id/net/word-document-processing/search-text-in-word-document-by-keyword/
 ---
+
+# Cari Teks di Dokumen Word berdasarkan Kata Kunci
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggunakan GroupDocs.Parser untuk .NET untuk mencari teks tertentu dalam dokumen Word menggunakan C#. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan pengembang mengekstrak teks dan metadata dari berbagai format dokumen, termasuk dokumen Word.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Parser for .NET 按目录 (TOC) 提取文本。了
 weight: 15
 url: /zh/net/text-extraction/extract-text-by-toc-item/
 ---
+
+# 按目录 (TOC) 项目提取文本
+
 ## 介绍
 在本教程中，我们将探讨如何利用 GroupDocs.Parser for .NET 从文档中提取基于目录 (TOC) 项的文本。GroupDocs.Parser 是一个功能强大的工具，可以高效地解析和提取文档。
 ## 先决条件

@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất hình ảnh từ tài liệu Word b
 weight: 11
 url: /vi/net/word-document-processing/extract-images-from-word-document/
 ---
+
+# Trích xuất hình ảnh từ tài liệu Word
+
 ## Giới thiệu
 Trong hướng dẫn này, bạn sẽ tìm hiểu cách trích xuất hình ảnh từ tài liệu Word bằng GroupDocs.Parser cho .NET. GroupDocs.Parser là một thư viện .NET mạnh mẽ cho phép bạn phân tích và trích xuất văn bản, siêu dữ liệu, hình ảnh, v.v. từ nhiều định dạng tài liệu khác nhau bao gồm Word (DOCX).
 ## Điều kiện tiên quyết

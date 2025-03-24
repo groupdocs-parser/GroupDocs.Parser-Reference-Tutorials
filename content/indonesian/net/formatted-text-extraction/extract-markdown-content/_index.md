@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak konten Markdown dari dokumen menggunakan 
 weight: 13
 url: /id/net/formatted-text-extraction/extract-markdown-content/
 ---
+
+# Ekstrak Konten Penurunan Harga
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggunakan GroupDocs.Parser untuk .NET untuk mengekstrak konten Markdown dari dokumen. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan pengembang mengurai dan mengekstrak teks dari berbagai format file dengan mulus.
 ## Prasyarat

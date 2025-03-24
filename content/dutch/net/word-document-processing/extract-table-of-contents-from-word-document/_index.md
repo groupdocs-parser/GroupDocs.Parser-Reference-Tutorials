@@ -6,6 +6,9 @@ description: Leer hoe u de inhoudsopgave (TOC) programmatisch uit Word-documente
 weight: 13
 url: /nl/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
+
+# Haal de inhoudsopgave uit een Word-document
+
 ## Invoering
 In deze zelfstudie leert u stap voor stap hoe u GroupDocs.Parser voor .NET kunt gebruiken om de inhoudsopgave (TOC) uit een Word-document te extraheren. GroupDocs.Parser is een krachtige bibliotheek waarmee u programmatisch met verschillende documentformaten kunt werken.
 ## Vereisten

@@ -6,6 +6,9 @@ description: Tìm hiểu cách sử dụng GroupDocs.Parser cho .NET để tríc
 weight: 16
 url: /vi/net/word-document-processing/extract-text-from-word-document-as-html/
 ---
+
+# Trích xuất văn bản từ tài liệu Word dưới dạng HTML
+
 ## Giới thiệu
 GroupDocs.Parser for .NET là một thư viện phân tích tài liệu mạnh mẽ cho phép các nhà phát triển trích xuất văn bản và siêu dữ liệu từ nhiều định dạng tệp khác nhau một cách liền mạch. Trong hướng dẫn này, chúng tôi sẽ tập trung vào việc tận dụng GroupDocs.Parser để trích xuất văn bản từ tài liệu Word và lưu dưới dạng HTML. Quá trình này rất cần thiết cho các tác vụ như phân tích nội dung, lập chỉ mục hoặc chuyển đổi tài liệu sang định dạng thân thiện với web. Đến cuối hướng dẫn này, bạn sẽ hiểu rõ về cách sử dụng GroupDocs.Parser một cách hiệu quả trong các ứng dụng .NET của mình.
 ## Điều kiện tiên quyết

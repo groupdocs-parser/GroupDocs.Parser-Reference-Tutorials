@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak hyperlink dari dokumen menggunakan GroupD
 weight: 11
 url: /id/net/hyperlink-extraction/extract-hyperlinks-from-document-page/
 ---
+
+# Ekstrak Hyperlink dari Halaman Dokumen
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggunakan GroupDocs.Parser untuk .NET untuk mengekstrak hyperlink dari dokumen langkah demi langkah. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan pengembang mengurai berbagai format dokumen dan mengekstrak teks, metadata, dan elemen lainnya.
 ## Prasyarat

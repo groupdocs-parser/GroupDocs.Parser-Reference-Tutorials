@@ -6,6 +6,9 @@ description: Naučte se extrahovat prostý text z dokumentů pomocí GroupDocs.P
 weight: 14
 url: /cs/net/formatted-text-extraction/extract-plain-text/
 ---
+
+# Extrahujte prostý text
+
 ## Úvod
 tomto tutoriálu prozkoumáme, jak extrahovat prostý text z různých formátů dokumentů pomocí GroupDocs.Parser pro .NET. GroupDocs.Parser je výkonná knihovna, která umožňuje vývojářům bezproblémově pracovat s dokumenty a efektivně extrahovat text a metadata. Tato příručka vás provede nezbytnými kroky k integraci a využití této knihovny v rámci vašich aplikací .NET.
 ## Předpoklady

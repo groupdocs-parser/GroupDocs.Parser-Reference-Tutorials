@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET kullanarak şablonlardaki tablo düzenler
 weight: 14
 url: /tr/net/document-template-processing/working-with-table-layout-in-templates/
 ---
+
+# Şablonlarda Tablo Düzeniyle Çalışmak
+
 ## giriiş
 Bu öğreticide, GroupDocs.Parser for .NET'i kullanarak şablonlarda tablo düzeniyle nasıl çalışılacağını keşfedeceğiz. GroupDocs.Parser, geliştiricilerin PDF, Microsoft Office ve daha fazlası dahil olmak üzere çeşitli belge formatlarından metin ve meta veriler çıkarmasına olanak tanıyan güçlü bir belge ayrıştırma API'sidir.
 ## Önkoşullar

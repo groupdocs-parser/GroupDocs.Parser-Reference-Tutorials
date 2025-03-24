@@ -6,6 +6,9 @@ description: Z tego obszernego samouczka dowiesz się, jak wyodrębniać załąc
 weight: 10
 url: /pl/net/pdf-processing/extract-attachments-from-pdf-portfolios/
 ---
+
+# Wyodrębnij załączniki z portfolio PDF
+
 ## Wstęp
 świecie przetwarzania i analizy dokumentów wydajna obsługa portfolio PDF może mieć kluczowe znaczenie. GroupDocs.Parser dla .NET oferuje zaawansowane rozwiązanie do wyodrębniania załączników z portfeli PDF, umożliwiając programistom łatwy dostęp do zawartości i zarządzanie nią. Ten samouczek przeprowadzi Cię krok po kroku przez cały proces, wykorzystując GroupDocs.Parser do płynnego wyodrębniania załączników.
 ## Warunki wstępne

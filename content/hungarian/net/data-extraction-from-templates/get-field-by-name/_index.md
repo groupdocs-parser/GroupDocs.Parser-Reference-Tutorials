@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthat ki meghatározott adatmezőket a dokume
 weight: 10
 url: /hu/net/data-extraction-from-templates/get-field-by-name/
 ---
+
+# Mező lekérése név szerint
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet kihasználni a GroupDocs.Parser for .NET alkalmazást bizonyos adatmezők, például árak és e-mailek kinyerésére a dokumentumokból. Ez a hatékony könyvtár leegyszerűsíti a dokumentumelemzési feladatokat, így ideális különféle adatkinyerési igényekhez.
 ## Előfeltételek

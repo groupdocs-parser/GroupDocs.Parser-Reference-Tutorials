@@ -6,6 +6,9 @@ description: GroupDocs.Parser의 정규식을 사용하여 PDF 문서에서 특�
 weight: 19
 url: /ko/net/pdf-processing/search-text-in-pdf-by-regular-expression/
 ---
+
+# 정규식으로 PDF에서 텍스트 검색
+
 ## 소개
 이 튜토리얼에서는 .NET용 GroupDocs.Parser를 사용하여 PDF 문서에서 텍스트를 효율적으로 추출하는 방법을 살펴보겠습니다. GroupDocs.Parser는 개발자가 PDF를 포함한 다양한 문서 형식에서 텍스트, 메타데이터 및 구조화된 데이터를 구문 분석하고 추출할 수 있는 강력한 라이브러리입니다. .NET 응용 프로그램 내에서 데이터 추출, 콘텐츠 분석 또는 검색 기능을 작업하는 경우 GroupDocs.Parser는 이러한 작업을 원활하게 처리할 수 있는 포괄적인 도구 세트를 제공합니다.
 ## 전제 조건

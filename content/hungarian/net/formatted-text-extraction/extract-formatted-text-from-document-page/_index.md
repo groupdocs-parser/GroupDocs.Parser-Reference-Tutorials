@@ -6,6 +6,9 @@ description: Formázott szöveg kinyerése a dokumentumoldalakról a GroupDocs.P
 weight: 11
 url: /hu/net/formatted-text-extraction/extract-formatted-text-from-document-page/
 ---
+
+# Formázott szöveg kibontása a dokumentumoldalról
+
 ## Bevezetés
 Ebben az oktatóanyagban végigvezetjük a formázott szöveg kinyerésének folyamatán a dokumentumoldalakról a GroupDocs.Parser for .NET segítségével. Ez a könyvtár lehetővé teszi a szövegek hatékony elemzését és kinyerését különféle dokumentumformátumokból, például PDF, Word, Excel stb.
 ## Előfeltételek

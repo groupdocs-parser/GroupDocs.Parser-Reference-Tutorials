@@ -6,6 +6,9 @@ description: Extrahera text efter innehållsförteckning (TOC) med GroupDocs.Par
 weight: 15
 url: /sv/net/text-extraction/extract-text-by-toc-item/
 ---
+
+# Extrahera text efter innehållsförteckning (TOC).
+
 ## Introduktion
 I den här handledningen kommer vi att utforska hur man använder GroupDocs.Parser för .NET för att extrahera text baserad på innehållsförteckningar (TOC) från dokument. GroupDocs.Parser är ett kraftfullt verktyg som möjliggör effektiv dokumentanalys och extrahering.
 ## Förutsättningar

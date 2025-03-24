@@ -6,6 +6,9 @@ description: Adott szöveg keresése PDF-dokumentumokban reguláris kifejezések
 weight: 19
 url: /hu/net/pdf-processing/search-text-in-pdf-by-regular-expression/
 ---
+
+# Szöveg keresése PDF-ben reguláris kifejezéssel
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet hatékonyan kinyerni szöveget PDF-dokumentumokból a GroupDocs.Parser for .NET segítségével. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára szövegek, metaadatok és strukturált adatok elemzését és kinyerését különféle dokumentumformátumokból, beleértve a PDF-eket is. Függetlenül attól, hogy .NET-alkalmazásaiban adatkinyeréssel, tartalomelemzéssel vagy keresési funkciókkal dolgozik, a GroupDocs.Parser átfogó eszközkészletet biztosít ezeknek a feladatoknak a zökkenőmentes kezeléséhez.
 ## Előfeltételek

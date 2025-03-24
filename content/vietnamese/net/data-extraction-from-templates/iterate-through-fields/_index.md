@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất dữ liệu có cấu trúc từ t�
 weight: 11
 url: /vi/net/data-extraction-from-templates/iterate-through-fields/
 ---
+
+# Lặp lại qua các trường
+
 ## Giới thiệu
 GroupDocs.Parser cho .NET là một thư viện mạnh mẽ cho phép các nhà phát triển trích xuất dữ liệu từ nhiều định dạng tài liệu khác nhau như PDF, Microsoft Word, Excel và PowerPoint. Hướng dẫn này sẽ hướng dẫn bạn trong quá trình sử dụng GroupDocs.Parser để lặp qua các trường tài liệu và trích xuất dữ liệu cụ thể bằng cách sử dụng các mẫu. Đến cuối hướng dẫn này, bạn sẽ có thể trích xuất dữ liệu có cấu trúc từ các tài liệu trong ứng dụng .NET của mình một cách hiệu quả.
 ## Điều kiện tiên quyết

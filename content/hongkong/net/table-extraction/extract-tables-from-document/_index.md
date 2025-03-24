@@ -6,6 +6,9 @@ description: 了解如何使用 Groupdocs.Parser for .NET 從文件中提取表�
 weight: 10
 url: /zh-hant/net/table-extraction/extract-tables-from-document/
 ---
+
+# 從文件中提取表格
+
 ## 介紹
 Groupdocs.Parser for .NET 是一個綜合性庫，可促進文件解析，使您能夠從文件中提取有價值的信息，例如表格、文字、元資料等。在本教程中，我們特別關注使用 Groupdocs.Parser API 從文件中提取表。
 ## 先決條件

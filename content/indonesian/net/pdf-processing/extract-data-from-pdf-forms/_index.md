@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak data dari formulir PDF menggunakan GroupD
 weight: 11
 url: /id/net/pdf-processing/extract-data-from-pdf-forms/
 ---
+
+# Ekstrak Data dari Formulir PDF
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara memanfaatkan GroupDocs.Parser untuk .NET untuk mengekstrak data dari formulir PDF. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan pengembang bekerja secara efisien dengan berbagai format dokumen, termasuk PDF, DOCX, XLSX, dan banyak lagi. Kami akan memandu langkah-langkah yang diperlukan untuk mengekstrak bidang tertentu dari formulir PDF dan menangani data yang diekstraksi.
 ## Prasyarat

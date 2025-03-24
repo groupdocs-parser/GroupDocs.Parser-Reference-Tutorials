@@ -6,6 +6,9 @@ description: Découvrez comment extraire du texte de différents formats de fich
 weight: 14
 url: /fr/net/document-loading/loading-specific-file-formats/
 ---
+
+# Chargement de formats de fichiers spécifiques
+
 ## Introduction
 Dans le monde du développement .NET, l'analyse et l'extraction de texte à partir de différents formats de fichiers sont une exigence courante. GroupDocs.Parser pour .NET propose des outils puissants pour simplifier cette tâche. Ce didacticiel vous guidera dans l'utilisation de GroupDocs.Parser pour charger et extraire du texte à partir de formats de fichiers spécifiques, étape par étape.
 ## Conditions préalables

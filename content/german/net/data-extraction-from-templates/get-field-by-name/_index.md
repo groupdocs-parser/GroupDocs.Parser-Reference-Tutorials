@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET bestimmte Date
 weight: 10
 url: /de/net/data-extraction-from-templates/get-field-by-name/
 ---
+
+# Feld nach Namen abrufen
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie GroupDocs.Parser für .NET nutzen können, um bestimmte Datenfelder wie Preise und E-Mails aus Dokumenten zu extrahieren. Diese leistungsstarke Bibliothek vereinfacht die Dokumentanalyse und ist daher ideal für verschiedene Datenextraktionsanforderungen.
 ## Voraussetzungen

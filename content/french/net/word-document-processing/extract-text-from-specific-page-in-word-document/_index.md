@@ -6,6 +6,9 @@ description: Découvrez comment extraire du texte de pages spécifiques dans des
 weight: 17
 url: /fr/net/word-document-processing/extract-text-from-specific-page-in-word-document/
 ---
+
+# Extraire le texte d'une page spécifique dans un document Word
+
 ## Introduction
 Dans le domaine du développement .NET, l'extraction de texte à partir de documents est une exigence courante pour diverses applications. GroupDocs.Parser pour .NET fournit une solution robuste pour analyser et extraire de manière transparente le texte de différents formats de documents. Ce didacticiel se concentre sur l'utilisation de GroupDocs.Parser pour extraire le texte d'une page spécifique dans un document Word. En suivant ce guide, vous apprendrez les étapes nécessaires pour intégrer efficacement cette fonctionnalité dans vos projets .NET.
 ## Conditions préalables

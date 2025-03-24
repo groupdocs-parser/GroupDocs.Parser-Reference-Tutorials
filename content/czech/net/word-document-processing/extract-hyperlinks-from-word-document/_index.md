@@ -6,6 +6,9 @@ description: Naučte se extrahovat hypertextové odkazy z dokumentů aplikace Wo
 weight: 10
 url: /cs/net/word-document-processing/extract-hyperlinks-from-word-document/
 ---
+
+# Extrahujte hypertextové odkazy z dokumentu aplikace Word
+
 ## Úvod
 GroupDocs.Parser for .NET je výkonný nástroj, který umožňuje vývojářům extrahovat strukturovaný text a metadata z různých formátů dokumentů, jako je Word, Excel, PowerPoint, PDF a další. Jedním z běžných požadavků při zpracování dokumentů je extrahovat hypertextové odkazy z dokumentů aplikace Word programově. Tento tutoriál vás provede procesem použití GroupDocs.Parser k extrahování hypertextových odkazů z dokumentu aplikace Word krok za krokem.
 ## Předpoklady

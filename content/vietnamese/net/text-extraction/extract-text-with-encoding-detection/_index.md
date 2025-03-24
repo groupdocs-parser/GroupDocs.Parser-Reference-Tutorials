@@ -6,6 +6,9 @@ description: Trích xuất văn bản từ tài liệu có tính năng phát hi�
 weight: 10
 url: /vi/net/text-extraction/extract-text-with-encoding-detection/
 ---
+
+# Trích xuất văn bản bằng tính năng phát hiện mã hóa
+
 ## Giới thiệu
 GroupDocs.Parser cho .NET là một thư viện mạnh mẽ cho phép các nhà phát triển trích xuất văn bản, siêu dữ liệu và thông tin khác từ các định dạng tài liệu khác nhau trong ứng dụng .NET của họ. Hướng dẫn này sẽ hướng dẫn bạn quy trình sử dụng GroupDocs.Parser để trích xuất văn bản từ tài liệu trong khi phát hiện mã hóa. Bằng cách làm theo các bước này, bạn sẽ có thể phân tích cú pháp và làm việc với các loại tài liệu khác nhau một cách hiệu quả trong các dự án .NET của mình.
 ## Điều kiện tiên quyết

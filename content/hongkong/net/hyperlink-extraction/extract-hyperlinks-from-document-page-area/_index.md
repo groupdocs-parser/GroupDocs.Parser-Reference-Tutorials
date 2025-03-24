@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 從特定文件區域�
 weight: 12
 url: /zh-hant/net/hyperlink-extraction/extract-hyperlinks-from-document-page-area/
 ---
+
+# 從文檔頁面區域提取超鏈接
+
 ## 介紹
 在本教學中，我們將探討如何使用 GroupDocs.Parser for .NET 程式庫從文件的特定頁面區域中提取超連結。 GroupDocs.Parser 為文件處理提供了強大的功能，包括超連結提取。我們將逐步指導您完成流程，示範如何在您的 .NET 應用程式中實現此功能。
 ## 先決條件

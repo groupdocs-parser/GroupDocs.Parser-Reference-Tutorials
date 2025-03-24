@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar textstruktur från olika dokumentformat 
 weight: 20
 url: /sv/net/text-extraction/extract-text-structure/
 ---
+
+# Extrahera textstruktur
+
 ## Introduktion
 I den här handledningen kommer vi att utforska hur man använder GroupDocs.Parser för .NET för att extrahera textstruktur från olika dokumentformat. GroupDocs.Parser är ett kraftfullt bibliotek som gör det möjligt för utvecklare att extrahera strukturerat textinnehåll från dokument, som PDF-filer, Word-dokument, Excel-ark och mer. Denna handledning guidar dig genom processen att ställa in GroupDocs.Parser, importera nödvändiga namnrymder och extrahera textstruktur steg för steg.
 ## Förutsättningar

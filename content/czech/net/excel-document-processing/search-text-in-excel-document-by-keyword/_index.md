@@ -6,6 +6,9 @@ description: Naučte se vyhledávat text v dokumentech aplikace Excel pomocí Gr
 weight: 16
 url: /cs/net/excel-document-processing/search-text-in-excel-document-by-keyword/
 ---
+
+# Hledání textu v dokumentu aplikace Excel podle klíčového slova
+
 ## Úvod
 GroupDocs.Parser for .NET je výkonná knihovna, která umožňuje vývojářům efektivně pracovat s úlohami analýzy dokumentů v jejich aplikacích .NET. V tomto tutoriálu se zaměříme na to, jak vyhledávat konkrétní text v dokumentu aplikace Excel pomocí klíčových slov. Podle této příručky se naučíte, jak integrovat knihovnu GroupDocs.Parser do vašeho projektu a provádět cílené vyhledávání textu v souborech aplikace Excel.
 ## Předpoklady

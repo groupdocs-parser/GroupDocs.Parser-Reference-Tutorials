@@ -6,6 +6,9 @@ description: GroupDocs.Parser ile .NET'teki şablonları kullanarak belge sayfal
 weight: 16
 url: /tr/net/document-template-processing/parse-pages-using-templates/
 ---
+
+# Şablonları Kullanarak Sayfaları Ayrıştırma
+
 ## giriiş
 Bu öğreticide, belgelerden verimli bir şekilde veri ayıklamak için GroupDocs.Parser for .NET'i kullanmayı ayrıntılı olarak ele alacağız. GroupDocs.Parser, PDF, DOCX, PPTX ve daha fazlası gibi çeşitli belge formatlarının ayrıştırılmasına olanak tanıyan güçlü bir kitaplıktır. Barkodlar gibi belirli içeriklerin hassas bir şekilde çıkarılmasına olanak tanıyan şablonları kullanarak sayfaları ayrıştırmaya odaklanacağız.
 ## Önkoşullar

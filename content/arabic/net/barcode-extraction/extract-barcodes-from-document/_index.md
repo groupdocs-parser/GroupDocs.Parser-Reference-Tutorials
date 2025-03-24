@@ -6,6 +6,9 @@ description: تعرف على كيفية استخراج الرموز الشريط
 weight: 10
 url: /ar/net/barcode-extraction/extract-barcodes-from-document/
 ---
+
+# استخراج الباركود من الوثيقة
+
 ## مقدمة
 ستتعلم في هذا البرنامج التعليمي كيفية استخدام GroupDocs.Parser لـ .NET لاستخراج الرموز الشريطية من المستندات خطوة بخطوة. GroupDocs.Parser هي مكتبة قوية لتحليل المستندات تمكن المطورين من العمل مع تنسيقات المستندات المختلفة، بما في ذلك PDF وMicrosoft Word وExcel وPowerPoint والمزيد.
 ## المتطلبات الأساسية

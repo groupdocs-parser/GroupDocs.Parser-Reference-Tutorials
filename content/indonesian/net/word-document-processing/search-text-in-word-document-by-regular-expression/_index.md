@@ -6,6 +6,9 @@ description: Pelajari cara mencari teks di dokumen Word menggunakan ekspresi reg
 weight: 19
 url: /id/net/word-document-processing/search-text-in-word-document-by-regular-expression/
 ---
+
+# Cari Teks di Dokumen Word dengan Ekspresi Reguler
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara memanfaatkan GroupDocs.Parser untuk .NET untuk mengekstrak teks dari dokumen Word menggunakan ekspresi reguler. Panduan langkah demi langkah ini akan membantu Anda menerapkan fitur ini secara efektif.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用して目次 (TOC) でテキス�
 weight: 15
 url: /ja/net/text-extraction/extract-text-by-toc-item/
 ---
+
+# 目次 (TOC) 項目によるテキストの抽出
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を使用して、ドキュメントから目次 (TOC) 項目に基づいてテキストを抽出する方法について説明します。GroupDocs.Parser は、効率的なドキュメントの解析と抽出を可能にする強力なツールです。
 ## 前提条件

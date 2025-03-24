@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET mithilfe regul
 weight: 17
 url: /de/net/excel-document-processing/search-text-in-excel-document-by-regular-expression/
 ---
+
+# Suchen Sie mit regulären Ausdrücken nach Text in einem Excel-Dokument
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie GroupDocs.Parser für .NET nutzen können, um mithilfe regulärer Ausdrücke nach bestimmten Textmustern in Excel-Dokumenten zu suchen. GroupDocs.Parser ist eine leistungsstarke Bibliothek, mit der Entwickler Text und Metadaten aus verschiedenen Dokumentformaten extrahieren können, darunter auch Tabellenkalkulationen wie Excel. Durch die Nutzung regulärer Ausdrücke können wir erweiterte Textsuchen effizient durchführen.
 ## Voraussetzungen

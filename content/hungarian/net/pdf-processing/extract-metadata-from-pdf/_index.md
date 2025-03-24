@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthat ki metaadatokat PDF-dokumentumokból a 
 weight: 13
 url: /hu/net/pdf-processing/extract-metadata-from-pdf/
 ---
+
+# Metaadatok kibontása PDF-ből
+
 ## Bevezetés
 Ebben az oktatóanyagban a GroupDocs.Parser for .NET használatával foglalkozunk metaadatok kinyerésére PDF dokumentumokból. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy különféle dokumentumformátumokkal dolgozzanak, beleértve a PDF-et, DOCX-et és még sok mást, szövegek, metaadatok és strukturált adatok kinyerésére. A metaadatok PDF-ekből történő kinyerése számos alkalmazás számára hasznos lehet, a dokumentumkezeléstől az információ-visszakeresésig.
 ## Előfeltételek

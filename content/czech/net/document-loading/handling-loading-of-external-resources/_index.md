@@ -6,6 +6,9 @@ description: Naučte se, jak zacházet s externími zdroji v .NET pomocí GroupD
 weight: 10
 url: /cs/net/document-loading/handling-loading-of-external-resources/
 ---
+
+# Manipulace s načítáním externích zdrojů
+
 ## Úvod
 Ve světě vývoje .NET je parsování a extrahování obsahu z různých formátů souborů běžným požadavkem. GroupDocs.Parser for .NET poskytuje robustní řešení pro efektivní zpracování úloh analýzy dokumentů. Tento kurz vás provede používáním GroupDocs.Parser pro práci s externími zdroji, jako jsou obrázky, ve vašich aplikacích .NET. Pokryjeme nezbytné předpoklady, importujeme jmenné prostory a rozebereme příklady do podrobných instrukcí krok za krokem.
 ## Předpoklady

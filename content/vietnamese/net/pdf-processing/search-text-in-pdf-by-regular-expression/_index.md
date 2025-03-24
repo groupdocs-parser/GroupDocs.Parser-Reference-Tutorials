@@ -6,6 +6,9 @@ description: Tìm kiếm văn bản cụ thể trong tài liệu PDF bằng các
 weight: 19
 url: /vi/net/pdf-processing/search-text-in-pdf-by-regular-expression/
 ---
+
+# Tìm kiếm văn bản trong PDF bằng biểu thức chính quy
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách trích xuất văn bản từ tài liệu PDF một cách hiệu quả bằng GroupDocs.Parser cho .NET. GroupDocs.Parser là một thư viện mạnh mẽ cho phép các nhà phát triển phân tích cú pháp và trích xuất văn bản, siêu dữ liệu và dữ liệu có cấu trúc từ nhiều định dạng tài liệu khác nhau, bao gồm cả tệp PDF. Cho dù bạn đang làm việc về trích xuất dữ liệu, phân tích nội dung hay chức năng tìm kiếm trong các ứng dụng .NET của mình, GroupDocs.Parser đều cung cấp một bộ công cụ toàn diện để xử lý các tác vụ này một cách liền mạch.
 ## Điều kiện tiên quyết

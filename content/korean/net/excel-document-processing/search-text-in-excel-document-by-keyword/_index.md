@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 Excel 문서 내에서 텍
 weight: 16
 url: /ko/net/excel-document-processing/search-text-in-excel-document-by-keyword/
 ---
+
+# 키워드로 Excel 문서의 텍스트 검색
+
 ## 소개
 .NET용 GroupDocs.Parser는 개발자가 .NET 응용 프로그램에서 문서 구문 분석 작업을 효율적으로 수행할 수 있게 해주는 강력한 라이브러리입니다. 이 튜토리얼에서는 키워드를 사용하여 Excel 문서 내에서 특정 텍스트를 검색하는 방법에 중점을 둘 것입니다. 이 가이드를 따르면 GroupDocs.Parser 라이브러리를 프로젝트에 통합하고 Excel 파일 내에서 대상 텍스트 검색을 수행하는 방법을 배우게 됩니다.
 ## 전제 조건

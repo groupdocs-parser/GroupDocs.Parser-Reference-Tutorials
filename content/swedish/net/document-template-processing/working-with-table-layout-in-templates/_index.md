@@ -6,6 +6,9 @@ description: Lär dig hur du arbetar med tabelllayouter i mallar med GroupDocs.P
 weight: 14
 url: /sv/net/document-template-processing/working-with-table-layout-in-templates/
 ---
+
+# Arbeta med tabelllayout i mallar
+
 ## Introduktion
 I den här handledningen kommer vi att utforska hur man arbetar med tabelllayout i mallar med GroupDocs.Parser för .NET. GroupDocs.Parser är ett kraftfullt dokumentanalys-API som låter utvecklare extrahera text och metadata från olika dokumentformat, inklusive PDF, Microsoft Office och mer.
 ## Förutsättningar

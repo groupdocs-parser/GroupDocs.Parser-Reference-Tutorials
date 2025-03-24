@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 從文件中提取特�
 weight: 10
 url: /zh-hant/net/data-extraction-from-templates/get-field-by-name/
 ---
+
+# 按名稱取得字段
+
 ## 介紹
 在本教學中，我們將探討如何利用 GroupDocs.Parser for .NET 從文件中提取特定的資料字段，例如價格和電子郵件。這個強大的程式庫簡化了文件解析任務，使其成為各種資料擷取需求的理想選擇。
 ## 先決條件

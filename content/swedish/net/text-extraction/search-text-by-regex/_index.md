@@ -6,6 +6,9 @@ description: Lär dig hur du söker efter text med reguljära uttryck i dokument
 weight: 23
 url: /sv/net/text-extraction/search-text-by-regex/
 ---
+
+# Sök text med reguljärt uttryck (regex)
+
 ## Introduktion
 I den här handledningen kommer vi att fördjupa oss i att använda GroupDocs.Parser för .NET för att söka text med reguljärt uttryck (Regex) i dokument. GroupDocs.Parser är ett kraftfullt bibliotek som låter utvecklare extrahera text och metadata från olika filformat som PDF, DOCX, XLSX och mer. Att söka efter text med reguljära uttryck är särskilt användbart för att effektivt hitta mönster eller specifikt innehåll i dokument.
 ## Förutsättningar

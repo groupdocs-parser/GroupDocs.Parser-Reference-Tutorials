@@ -6,6 +6,9 @@ description: Learn how to search and highlight text in documents using GroupDocs
 weight: 24
 url: /net/text-extraction/search-text-with-highlights/
 ---
+
+# Search Text with Highlights
+
 ## Introduction
 In this tutorial, we'll explore how to use GroupDocs.Parser for .NET to search for text within a document and highlight the search results. GroupDocs.Parser is a powerful library that allows you to work with various document formats and extract text, metadata, and more.
 ## Prerequisites

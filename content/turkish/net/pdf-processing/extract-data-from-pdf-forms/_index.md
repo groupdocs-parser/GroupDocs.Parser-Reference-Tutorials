@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak PDF formlarından nasıl ver
 weight: 11
 url: /tr/net/pdf-processing/extract-data-from-pdf-forms/
 ---
+
+# PDF Formlarından Veri Çıkarma
+
 ## giriiş
 Bu eğitimde, PDF formlarından veri ayıklamak için GroupDocs.Parser for .NET'in nasıl kullanılacağını keşfedeceğiz. GroupDocs.Parser, geliştiricilerin PDF, DOCX, XLSX ve daha fazlası dahil olmak üzere çeşitli belge formatlarıyla verimli bir şekilde çalışmasına olanak tanıyan güçlü bir kitaplıktır. Bir PDF formundan belirli alanları çıkarmak ve çıkarılan verileri işlemek için gerekli adımları izleyeceğiz.
 ## Önkoşullar

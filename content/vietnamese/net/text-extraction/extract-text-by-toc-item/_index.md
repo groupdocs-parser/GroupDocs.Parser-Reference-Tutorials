@@ -6,6 +6,9 @@ description: Trích xuất văn bản theo Mục lục (TOC) bằng GroupDocs.Pa
 weight: 15
 url: /vi/net/text-extraction/extract-text-by-toc-item/
 ---
+
+# Trích xuất văn bản theo mục lục (TOC)
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Parser cho .NET để trích xuất văn bản dựa trên các mục Mục lục (TOC) từ tài liệu. GroupDocs.Parser là một công cụ mạnh mẽ cho phép phân tích và trích xuất tài liệu hiệu quả.
 ## Điều kiện tiên quyết

@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić hiperłącza z określonych obszaró
 weight: 12
 url: /pl/net/hyperlink-extraction/extract-hyperlinks-from-document-page-area/
 ---
+
+# Wyodrębnij hiperłącza z obszaru strony dokumentu
+
 ## Wstęp
 W tym samouczku przyjrzymy się, jak wyodrębnić hiperłącza z określonego obszaru strony dokumentu za pomocą biblioteki GroupDocs.Parser dla .NET. GroupDocs.Parser zapewnia zaawansowane funkcje przetwarzania dokumentów, w tym wyodrębnianie hiperłączy. Poprowadzimy Cię krok po kroku przez proces, pokazując, jak wdrożyć tę funkcjonalność w aplikacjach .NET.
 ## Warunki wstępne

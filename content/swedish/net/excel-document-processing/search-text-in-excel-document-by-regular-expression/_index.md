@@ -6,6 +6,9 @@ description: Lär dig hur du söker efter text i Excel-dokument med hjälp av re
 weight: 17
 url: /sv/net/excel-document-processing/search-text-in-excel-document-by-regular-expression/
 ---
+
+# Sök text i Excel-dokument med reguljära uttryck
+
 ## Introduktion
 den här självstudien kommer vi att utforska hur man använder GroupDocs.Parser för .NET för att söka efter specifika textmönster i Excel-dokument med hjälp av reguljära uttryck. GroupDocs.Parser är ett kraftfullt bibliotek som låter utvecklare extrahera text och metadata från olika dokumentformat, inklusive kalkylblad som Excel. Genom att använda reguljära uttryck kan vi utföra avancerade textsökningar effektivt.
 ## Förutsättningar

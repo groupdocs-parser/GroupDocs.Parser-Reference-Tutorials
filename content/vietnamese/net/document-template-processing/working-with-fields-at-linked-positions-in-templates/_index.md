@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất dữ liệu hiệu quả từ tài 
 weight: 12
 url: /vi/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
 ---
+
+# Làm việc với các trường tại các vị trí được liên kết trong mẫu
+
 ## Giới thiệu
 GroupDocs.Parser cho .NET là một thư viện mạnh mẽ được thiết kế để hỗ trợ các tác vụ phân tích cú pháp tài liệu và trích xuất dữ liệu. Nó hỗ trợ nhiều định dạng tệp, bao gồm PDF, DOCX, XLSX, v.v. Một trong những tính năng chính của nó là trích xuất dữ liệu dựa trên mẫu, cho phép bạn xác định các trường trong tài liệu và trích xuất dữ liệu cụ thể dựa trên các mẫu được xác định trước này.
 ## Điều kiện tiên quyết

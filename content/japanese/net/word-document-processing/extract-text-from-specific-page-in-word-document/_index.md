@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用して Word 文書内の特定�
 weight: 17
 url: /ja/net/word-document-processing/extract-text-from-specific-page-in-word-document/
 ---
+
+# Word 文書の特定のページからテキストを抽出する
+
 ## 導入
 .NET 開発の分野では、ドキュメントからテキストを抽出することは、さまざまなアプリケーションで共通の要件です。GroupDocs.Parser for .NET は、さまざまなドキュメント形式からテキストをシームレスに解析および抽出するための堅牢なソリューションを提供します。このチュートリアルでは、GroupDocs.Parser を利用して Word ドキュメント内の特定のページからテキストを抽出することに焦点を当てています。このガイドに従うことで、この機能を .NET プロジェクトに効果的に統合するために必要な手順を学習できます。
 ## 前提条件

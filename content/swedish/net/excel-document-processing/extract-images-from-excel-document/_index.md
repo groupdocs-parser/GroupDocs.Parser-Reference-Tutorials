@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar bilder från Excel-dokument med GroupDoc
 weight: 10
 url: /sv/net/excel-document-processing/extract-images-from-excel-document/
 ---
+
+# Extrahera bilder från Excel-dokument
+
 ## Introduktion
 den här handledningen kommer du att lära dig hur du extraherar bilder från ett Excel-dokument med GroupDocs.Parser för .NET. GroupDocs.Parser är ett kraftfullt bibliotek som låter dig analysera och extrahera text, metadata och bilder från olika dokumentformat inklusive Excel-filer.
 ## Förutsättningar

@@ -6,6 +6,9 @@ description: Aprenda a extraer texto de hojas de Excel usando GroupDocs.Parser p
 weight: 15
 url: /es/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
 ---
+
+# Extraer texto de una hoja de Excel en modo sin formato
+
 ## Introducción
 En este tutorial, exploraremos cómo extraer texto de hojas de Excel usando GroupDocs.Parser para .NET en modo sin formato. GroupDocs.Parser es una potente API que permite a los desarrolladores trabajar con varios formatos de documentos, incluidos archivos de Excel, para la extracción y el análisis de texto. Revisaremos los requisitos previos, importaremos espacios de nombres y desglosaremos cada paso para demostrar el proceso de extracción de texto de hojas de Excel.
 ## Requisitos previos

@@ -6,6 +6,9 @@ description: Extrahieren Sie formatierten Text aus Dokumentseiten mit GroupDocs.
 weight: 11
 url: /de/net/formatted-text-extraction/extract-formatted-text-from-document-page/
 ---
+
+# Extrahieren Sie formatierten Text aus der Dokumentseite
+
 ## Einführung
 In diesem Tutorial führen wir Sie durch den Prozess des Extrahierens von formatiertem Text aus Dokumentseiten mithilfe von GroupDocs.Parser für .NET. Mit dieser Bibliothek können Sie Text aus verschiedenen Dokumentformaten wie PDF, Word, Excel und mehr effizient analysieren und extrahieren.
 ## Voraussetzungen

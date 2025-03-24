@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar streckkoder från dokumentsidor med Grou
 weight: 13
 url: /sv/net/barcode-extraction/extract-barcodes-from-document-page-area/
 ---
+
+# Extrahera streckkoder från dokumentsidan
+
 ## Introduktion
 I den här självstudien kommer vi att utforska hur man extraherar streckkoder från specifika delar av ett dokument med GroupDocs.Parser för .NET. GroupDocs.Parser är ett kraftfullt bibliotek som låter dig analysera och extrahera data från olika dokumentformat som PDF, DOCX, XLSX och mer, inklusive extrahera streckkoder. Vi kommer att täcka förutsättningarna, nödvändiga namnutrymmen och tillhandahålla en steg-för-steg-guide med kodexempel för att demonstrera processen.
 ## Förutsättningar

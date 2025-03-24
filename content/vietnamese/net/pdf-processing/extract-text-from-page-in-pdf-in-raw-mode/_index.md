@@ -6,6 +6,9 @@ description: Trích xuất văn bản từ tệp PDF bằng GroupDocs.Parser tro
 weight: 16
 url: /vi/net/pdf-processing/extract-text-from-page-in-pdf-in-raw-mode/
 ---
+
+# Trích xuất văn bản từ trang ở dạng PDF ở Chế độ thô
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Parser cho .NET để trích xuất văn bản từ các trang trong tài liệu PDF bằng chế độ thô. GroupDocs.Parser là một công cụ mạnh mẽ cho phép các nhà phát triển làm việc với nhiều định dạng tài liệu khác nhau theo chương trình.
 ## Điều kiện tiên quyết

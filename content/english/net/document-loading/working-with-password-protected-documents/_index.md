@@ -6,6 +6,9 @@ description: Learn how to extract text from password-protected documents using G
 weight: 15
 url: /net/document-loading/working-with-password-protected-documents/
 ---
+
+# Working with Password Protected Documents
+
 ## Introduction
 In the world of document processing, handling password-protected files efficiently is crucial. GroupDocs.Parser for .NET offers robust capabilities to work with such documents seamlessly. This tutorial will guide you through the process of extracting text from password-protected documents using GroupDocs.Parser.
 ## Prerequisites

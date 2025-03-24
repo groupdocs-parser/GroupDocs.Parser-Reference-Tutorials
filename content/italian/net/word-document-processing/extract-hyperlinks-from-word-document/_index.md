@@ -6,6 +6,9 @@ description: Scopri come estrarre collegamenti ipertestuali da documenti Word ut
 weight: 10
 url: /it/net/word-document-processing/extract-hyperlinks-from-word-document/
 ---
+
+# Estrai collegamenti ipertestuali da un documento Word
+
 ## introduzione
 GroupDocs.Parser per .NET è un potente strumento che consente agli sviluppatori di estrarre testo strutturato e metadati da vari formati di documenti come Word, Excel, PowerPoint, PDF e altri. Un requisito comune nell'elaborazione dei documenti consiste nell'estrarre i collegamenti ipertestuali dai documenti di Word a livello di codice. Questo tutorial ti guiderà passo dopo passo attraverso il processo di utilizzo di GroupDocs.Parser per estrarre collegamenti ipertestuali da un documento Word.
 ## Prerequisiti

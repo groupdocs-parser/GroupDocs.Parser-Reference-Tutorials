@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar innehållsförteckning (TOC) från Word-
 weight: 13
 url: /sv/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
+
+# Extrahera innehållsförteckning från Word-dokument
+
 ## Introduktion
 I den här handledningen kommer du att lära dig hur du använder GroupDocs.Parser för .NET för att extrahera innehållsförteckningen (TOC) från ett Word-dokument steg för steg. GroupDocs.Parser är ett kraftfullt bibliotek som låter dig arbeta med olika dokumentformat programmatiskt.
 ## Förutsättningar

@@ -6,6 +6,9 @@ description: Aprenda como extrair metadados de documentos Excel usando GroupDocs
 weight: 11
 url: /pt/net/excel-document-processing/extract-metadata-from-excel-document/
 ---
+
+# Extraia metadados de documento Excel
+
 ## Introdução
 Neste tutorial, demonstraremos como usar GroupDocs.Parser for .NET para extrair metadados de um documento Excel. GroupDocs.Parser é uma biblioteca poderosa que permite extrair vários elementos de documentos, incluindo metadados, texto, imagens e muito mais.
 ## Pré-requisitos

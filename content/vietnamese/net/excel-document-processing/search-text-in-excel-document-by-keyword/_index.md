@@ -6,6 +6,9 @@ description: Tìm hiểu cách tìm kiếm văn bản trong tài liệu Excel b�
 weight: 16
 url: /vi/net/excel-document-processing/search-text-in-excel-document-by-keyword/
 ---
+
+# Tìm kiếm văn bản trong tài liệu Excel theo từ khóa
+
 ## Giới thiệu
 GroupDocs.Parser cho .NET là một thư viện mạnh mẽ cho phép các nhà phát triển làm việc hiệu quả với các tác vụ phân tích cú pháp tài liệu trong các ứng dụng .NET của họ. Trong hướng dẫn này, chúng tôi sẽ tập trung vào cách tìm kiếm văn bản cụ thể trong tài liệu Excel bằng từ khóa. Bằng cách làm theo hướng dẫn này, bạn sẽ tìm hiểu cách tích hợp thư viện GroupDocs.Parser vào dự án của mình và thực hiện tìm kiếm văn bản được nhắm mục tiêu trong tệp Excel.
 ## Điều kiện tiên quyết

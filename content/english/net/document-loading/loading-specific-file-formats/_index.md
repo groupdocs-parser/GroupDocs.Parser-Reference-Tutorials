@@ -6,6 +6,9 @@ description: Learn how to extract text from various file formats in .NET using G
 weight: 14
 url: /net/document-loading/loading-specific-file-formats/
 ---
+
+# Loading Specific File Formats
+
 ## Introduction
 In the world of .NET development, parsing and extracting text from various file formats is a common requirement. GroupDocs.Parser for .NET offers powerful tools to simplify this task. This tutorial will guide you through using GroupDocs.Parser to load and extract text from specific file formats step by step.
 ## Prerequisites

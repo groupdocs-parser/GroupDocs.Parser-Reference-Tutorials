@@ -6,6 +6,9 @@ description: Leer hoe u streepjescodes uit beschadigde documenten kunt extrahere
 weight: 11
 url: /nl/net/barcode-extraction/extract-barcodes-from-corrupted-document/
 ---
+
+# Extraheer streepjescodes uit een beschadigd document
+
 ## Invoering
 In deze zelfstudie begeleiden we u bij het extraheren van streepjescodes uit beschadigde documenten met GroupDocs.Parser voor .NET. GroupDocs.Parser is een krachtige API voor het parseren van documenten waarmee ontwikkelaars tekst, metagegevens, afbeeldingen en nu ook streepjescodes uit verschillende bestandsindelingen kunnen extraheren. We zullen de stappen uiteenzetten die nodig zijn om deze taak effectief te volbrengen.
 ## Vereisten

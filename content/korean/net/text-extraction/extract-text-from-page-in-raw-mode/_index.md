@@ -6,6 +6,9 @@ description: 이 포괄적인 튜토리얼에서 .NET용 Groupdocs.Parser를 사
 weight: 17
 url: /ko/net/text-extraction/extract-text-from-page-in-raw-mode/
 ---
+
+# 원시 모드의 페이지에서 텍스트 추출
+
 ## 소개
 이 자습서에서는 .NET용 Groupdocs.Parser를 사용하여 원시 모드로 문서 페이지에서 텍스트를 추출하는 방법을 배웁니다. 이 라이브러리는 다양한 파일 형식의 콘텐츠를 구문 분석하고 추출하는 효율적인 도구를 제공하므로 개발자는 문서 텍스트 추출을 .NET 애플리케이션에 통합할 수 있습니다.
 ## 전제 조건

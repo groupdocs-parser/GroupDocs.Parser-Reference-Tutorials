@@ -7,6 +7,9 @@ weight: 28
 url: /pl/net/ocr-extraction/
 ---
 
+# Ekstrakcja poprzez optyczne rozpoznawanie znaków (OCR).
+
+
 ## Wstęp
 
 Odblokuj możliwości ekstrakcji optycznego rozpoznawania znaków (OCR) w platformie .NET dzięki samouczkom GroupDocs.Parser. Te samouczki zawierają kompleksowe wskazówki dotyczące obsługi OCR, rozpoznawania tekstu i wyodrębniania treści z określonych obszarów lub prostokątnych regionów w dokumentach. Niezależnie od tego, czy jesteś początkującym, czy doświadczonym programistą, te samouczki oferują jasne instrukcje krok po kroku i przykłady kodu, które pomogą Ci bezproblemowo zintegrować ekstrakcję OCR z aplikacjami .NET.

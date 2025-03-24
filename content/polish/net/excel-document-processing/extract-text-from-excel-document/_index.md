@@ -6,6 +6,9 @@ description: Dowiedz się, jak w prostych krokach wyodrębnić tekst z dokument�
 weight: 12
 url: /pl/net/excel-document-processing/extract-text-from-excel-document/
 ---
+
+# Wyodrębnij tekst z dokumentu Excel
+
 ## Wstęp
 W tym samouczku przeprowadzimy Cię przez proces wyodrębniania tekstu z dokumentu Excel przy użyciu GroupDocs.Parser dla .NET. GroupDocs.Parser to potężna biblioteka .NET, która umożliwia analizowanie różnych formatów dokumentów, w tym plików Excel, w celu wyodrębniania tekstu i metadanych.
 ## Warunki wstępne

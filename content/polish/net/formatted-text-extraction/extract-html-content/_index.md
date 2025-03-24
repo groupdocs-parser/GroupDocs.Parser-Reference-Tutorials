@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić zawartość HTML z dokumentów za po
 weight: 12
 url: /pl/net/formatted-text-extraction/extract-html-content/
 ---
+
+# Wyodrębnij zawartość HTML
+
 ## Wstęp
 W tym samouczku omówimy, jak używać narzędzia GroupDocs.Parser dla platformy .NET do wyodrębniania zawartości HTML z różnych formatów dokumentów. GroupDocs.Parser to potężna biblioteka, która umożliwia programistom płynne analizowanie i wyodrębnianie tekstu z dokumentów. Niezależnie od tego, czy pracujesz z dokumentami programu Word, plikami PDF czy innymi formatami, GroupDocs.Parser upraszcza proces wyodrębniania treści strukturalnych.
 ## Warunki wstępne

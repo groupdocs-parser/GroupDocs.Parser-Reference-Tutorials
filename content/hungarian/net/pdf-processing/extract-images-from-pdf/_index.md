@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthat ki képeket PDF-dokumentumokból a Grou
 weight: 12
 url: /hu/net/pdf-processing/extract-images-from-pdf/
 ---
+
+# Képek kibontása PDF-ből
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan használhatja a GroupDocs.Parser for .NET-et képek PDF-dokumentumokból való kinyerésére. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy különféle dokumentumformátumokkal dolgozzanak, beleértve a PDF-et, a DOCX-et, a PPTX-et és még sok mást, .NET-környezetben. Ha követi ezeket a lépéseket, könnyedén kivonhatja a képeket PDF-fájlokból.
 ## Előfeltételek

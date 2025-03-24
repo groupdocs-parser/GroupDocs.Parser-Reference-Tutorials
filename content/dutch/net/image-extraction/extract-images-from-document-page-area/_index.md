@@ -6,6 +6,9 @@ description: Ontdek hoe u afbeeldingen nauwkeurig uit documenten kunt extraheren
 weight: 10
 url: /nl/net/image-extraction/extract-images-from-document-page-area/
 ---
+
+# Afbeeldingen extraheren uit het documentpaginagebied
+
 ## Invoering
 In deze zelfstudie leren we hoe u Groupdocs.Parser voor .NET kunt gebruiken om afbeeldingen uit specifieke delen van een documentpagina te extraheren. Met dit proces kunt u afbeeldingen nauwkeurig targeten en ophalen op basis van gedefinieerde coördinaten en afmetingen in het document.
 ## Vereisten

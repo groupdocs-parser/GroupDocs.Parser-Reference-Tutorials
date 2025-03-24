@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用して Excel シートからテ�
 weight: 14
 url: /ja/net/excel-document-processing/extract-text-from-excel-sheet/
 ---
+
+# Excelシートからテキストを抽出する
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET ライブラリを使用して Excel シートからテキストを抽出する方法について説明します。この強力なツールを使用すると、Excel スプレッドシートを含むさまざまなドキュメント形式を効率的に解析および分析し、テキスト データを抽出できます。
 ## 前提条件

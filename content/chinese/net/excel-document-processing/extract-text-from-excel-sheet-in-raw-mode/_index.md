@@ -6,6 +6,9 @@ description: 在本综合教程中了解如何使用 GroupDocs.Parser for .NET �
 weight: 15
 url: /zh/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
 ---
+
+# 以 Raw 模式从 Excel 表中提取文本
+
 ## 介绍
 在本教程中，我们将探索如何使用 GroupDocs.Parser for .NET 在原始模式下从 Excel 工作表中提取文本。GroupDocs.Parser 是一个功能强大的 API，允许开发人员使用各种文档格式（包括 Excel 文件）进行文本提取和分析。我们将介绍先决条件、导入命名空间并分解每个步骤以演示从 Excel 工作表中提取文本的过程。
 ## 先决条件

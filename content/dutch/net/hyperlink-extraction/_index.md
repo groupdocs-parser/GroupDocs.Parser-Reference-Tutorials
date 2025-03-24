@@ -6,6 +6,9 @@ description: Extraheer moeiteloos hyperlinks uit documenten in .NET met GroupDoc
 weight: 25
 url: /nl/net/hyperlink-extraction/
 ---
+
+# Hyperlinkextractie
+
 ## Invoering
 
 Duik in de wereld van hyperlinkextractie in .NET met GroupDocs.Parser-tutorials. Deze zelfstudies bieden uitgebreide richtlijnen voor het extraheren van hyperlinks uit documenten, of het nu gaat om het hele document, specifieke pagina's of aangewezen gebieden. Of u nu een beginnende of een ervaren ontwikkelaar bent, deze tutorials bieden duidelijke stapsgewijze instructies en codevoorbeelden waarmee u hyperlinkextractie naadloos in uw C#-applicaties kunt integreren.

@@ -7,6 +7,9 @@ weight: 28
 url: /vi/net/ocr-extraction/
 ---
 
+# Trích xuất nhận dạng ký tự quang học (OCR)
+
+
 ## Giới thiệu
 
 Khai phá sức mạnh của tính năng trích xuất Nhận dạng Ký tự Quang học (OCR) trong .NET với các hướng dẫn của GroupDocs.Parser. Các hướng dẫn này cung cấp hướng dẫn toàn diện về cách xử lý OCR, nhận dạng văn bản và trích xuất nội dung từ các vùng cụ thể hoặc vùng hình chữ nhật trong tài liệu. Cho dù bạn là người mới bắt đầu hay nhà phát triển có kinh nghiệm, những hướng dẫn này đều cung cấp hướng dẫn từng bước rõ ràng và ví dụ về mã để giúp bạn tích hợp trích xuất OCR một cách liền mạch vào các ứng dụng .NET của mình.

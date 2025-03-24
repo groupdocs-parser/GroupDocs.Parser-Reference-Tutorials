@@ -7,6 +7,9 @@ weight: 21
 url: /vi/net/formatted-text-extraction/
 ---
 
+# Trích xuất văn bản có định dạng
+
+
 ## Giới thiệu
 
 Khám phá thế giới trích xuất văn bản được định dạng trong .NET với các hướng dẫn của GroupDocs.Parser. Các hướng dẫn này bao gồm một loạt các kỹ thuật để trích xuất văn bản có định dạng từ tài liệu, bao gồm HTML, Markdown và văn bản thuần túy. Cho dù bạn là người mới bắt đầu hay nhà phát triển có kinh nghiệm, những hướng dẫn này đều cung cấp thông tin chi tiết có giá trị và ví dụ thực tế để nâng cao khả năng trích xuất văn bản của bạn.

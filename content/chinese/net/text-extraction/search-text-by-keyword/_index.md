@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 在文档中按关键�
 weight: 21
 url: /zh/net/text-extraction/search-text-by-keyword/
 ---
+
+# 按关键字搜索文本
+
 ## 介绍
 在本教程中，我们将深入研究如何使用 GroupDocs.Parser for .NET 在文档中按关键字搜索文本。GroupDocs.Parser 是一个功能强大的库，使开发人员能够从各种文件格式（如 PDF、Microsoft Office 文档等）中提取文本、元数据和其他信息。对于处理大量文本数据的应用程序来说，在这些文档中搜索特定关键字至关重要。
 ## 先决条件

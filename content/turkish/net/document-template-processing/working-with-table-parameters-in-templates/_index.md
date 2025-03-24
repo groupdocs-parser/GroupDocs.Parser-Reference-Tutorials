@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak belgelerdeki tablolardan nas
 weight: 15
 url: /tr/net/document-template-processing/working-with-table-parameters-in-templates/
 ---
+
+# Şablonlarda Tablo Parametreleriyle Çalışmak
+
 ## giriiş
 Bu öğreticide, şablonlardaki tablo parametreleriyle çalışmak için GroupDocs.Parser for .NET'in nasıl kullanılacağını keşfedeceğiz. Bu kılavuz, belgelerdeki tablolardan verileri etkili bir şekilde ayrıştırmanıza ve çıkarmanıza yardımcı olmak için süreci adım adım talimatlara ayıracaktır.
 ## Önkoşullar

@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić tekst z dokumentów chronionych has�
 weight: 15
 url: /pl/net/document-loading/working-with-password-protected-documents/
 ---
+
+# Praca z dokumentami chronionymi hasłem
+
 ## Wstęp
 świecie przetwarzania dokumentów wydajna obsługa plików chronionych hasłem ma kluczowe znaczenie. GroupDocs.Parser dla .NET oferuje solidne możliwości bezproblemowej pracy z takimi dokumentami. Ten samouczek poprowadzi Cię przez proces wyodrębniania tekstu z dokumentów chronionych hasłem przy użyciu GroupDocs.Parser.
 ## Warunki wstępne

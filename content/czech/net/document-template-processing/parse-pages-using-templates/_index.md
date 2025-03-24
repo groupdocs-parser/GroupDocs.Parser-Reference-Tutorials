@@ -6,6 +6,9 @@ description: Naučte se analyzovat stránky dokumentu pomocí šablon v .NET pom
 weight: 16
 url: /cs/net/document-template-processing/parse-pages-using-templates/
 ---
+
+# Analyzujte stránky pomocí šablon
+
 ## Úvod
 V tomto tutoriálu se ponoříme do používání GroupDocs.Parser pro .NET k efektivnímu extrahování dat z dokumentů. GroupDocs.Parser je výkonná knihovna, která umožňuje analýzu různých formátů dokumentů, jako jsou PDF, DOCX, PPTX a další. Zaměříme se na analýzu stránek pomocí šablon, což umožňuje přesnou extrakci specifického obsahu, jako jsou čárové kódy.
 ## Předpoklady

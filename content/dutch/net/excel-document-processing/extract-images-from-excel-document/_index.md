@@ -6,6 +6,9 @@ description: Leer hoe u afbeeldingen uit Excel-documenten kunt extraheren met Gr
 weight: 10
 url: /nl/net/excel-document-processing/extract-images-from-excel-document/
 ---
+
+# Afbeeldingen uit Excel-document extraheren
+
 ## Invoering
 In deze zelfstudie leert u hoe u afbeeldingen uit een Excel-document kunt extraheren met GroupDocs.Parser voor .NET. GroupDocs.Parser is een krachtige bibliotheek waarmee u tekst, metagegevens en afbeeldingen kunt ontleden en extraheren uit verschillende documentindelingen, waaronder Excel-bestanden.
 ## Vereisten

@@ -6,6 +6,9 @@ description: Trích xuất văn bản từ tệp PDF bằng GroupDocs.Parser cho
 weight: 15
 url: /vi/net/pdf-processing/extract-text-from-specific-page-in-pdf/
 ---
+
+# Trích xuất văn bản từ trang cụ thể trong PDF
+
 ## Giới thiệu
 Trong hướng dẫn này, bạn sẽ tìm hiểu cách sử dụng GroupDocs.Parser cho .NET để trích xuất văn bản từ một trang cụ thể trong tài liệu PDF. GroupDocs.Parser là một thư viện mạnh mẽ cho phép các nhà phát triển làm việc với nhiều định dạng tài liệu khác nhau, bao gồm PDF, Microsoft Word, Excel, v.v. Hãy làm theo các bước sau để tích hợp trích xuất văn bản vào ứng dụng .NET của bạn.
 ## Điều kiện tiên quyết

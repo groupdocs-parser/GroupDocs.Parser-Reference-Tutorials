@@ -6,6 +6,9 @@ description: Groupdocs.Parser for .NET'i kullanarak belgelerden görüntüleri t
 weight: 10
 url: /tr/net/image-extraction/extract-images-from-document-page-area/
 ---
+
+# Belge Sayfası Alanından Görüntüleri Çıkarın
+
 ## giriiş
 Bu eğitimde, bir belge sayfasının belirli alanlarından görüntüleri çıkarmak için Groupdocs.Parser for .NET'in nasıl kullanılacağını öğreneceğiz. Bu işlem, belgedeki tanımlı koordinatlara ve boyutlara göre görüntüleri hassas bir şekilde hedeflemenize ve almanıza olanak tanır.
 ## Önkoşullar

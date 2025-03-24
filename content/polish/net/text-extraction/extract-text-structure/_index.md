@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić strukturę tekstu z różnych format
 weight: 20
 url: /pl/net/text-extraction/extract-text-structure/
 ---
+
+# Wyodrębnij strukturę tekstu
+
 ## Wstęp
 W tym samouczku omówimy, jak używać GroupDocs.Parser dla .NET do wyodrębniania struktury tekstu z różnych formatów dokumentów. GroupDocs.Parser to potężna biblioteka, która umożliwia programistom wyodrębnianie zawartości tekstu strukturalnego z dokumentów, takich jak pliki PDF, dokumenty programu Word, arkusze programu Excel i inne. Ten samouczek poprowadzi Cię krok po kroku przez proces konfigurowania GroupDocs.Parser, importowania niezbędnych przestrzeni nazw i wyodrębniania struktury tekstu.
 ## Warunki wstępne

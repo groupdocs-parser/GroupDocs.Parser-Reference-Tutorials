@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất hình ảnh từ tài liệu Excel 
 weight: 10
 url: /vi/net/excel-document-processing/extract-images-from-excel-document/
 ---
+
+# Trích xuất hình ảnh từ tài liệu Excel
+
 ## Giới thiệu
 Trong hướng dẫn này, bạn sẽ tìm hiểu cách trích xuất hình ảnh từ tài liệu Excel bằng GroupDocs.Parser cho .NET. GroupDocs.Parser là một thư viện mạnh mẽ cho phép bạn phân tích và trích xuất văn bản, siêu dữ liệu và hình ảnh từ nhiều định dạng tài liệu khác nhau, bao gồm cả tệp Excel.
 ## Điều kiện tiên quyết

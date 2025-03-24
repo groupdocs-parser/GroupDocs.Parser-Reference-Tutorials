@@ -6,6 +6,9 @@ description: Ekstrak gambar dari dokumen dengan mudah menggunakan GroupDocs.Pars
 weight: 11
 url: /id/net/image-extraction/extract-images-from-document/
 ---
+
+# Ekstrak Gambar dari Dokumen
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara mengekstrak gambar dari dokumen menggunakan GroupDocs.Parser untuk .NET. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan pengembang mengekstrak teks, metadata, gambar, dan lainnya dari berbagai format dokumen.
 ## Prasyarat

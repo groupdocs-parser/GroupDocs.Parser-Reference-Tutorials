@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić tekst z określonych obszarów dokum
 weight: 14
 url: /pl/net/text-extraction/extract-text-from-specific-areas-with-options/
 ---
+
+# Wyodrębnij tekst z określonych obszarów za pomocą opcji
+
 ## Wstęp
 W tym samouczku omówimy, jak używać programu GroupDocs.Parser dla platformy .NET do wyodrębniania tekstu z określonych obszarów dokumentu przy użyciu konfigurowalnych opcji. GroupDocs.Parser to potężna biblioteka, która umożliwia programistom bezproblemowe analizowanie i wyodrębnianie tekstu z dokumentów o różnych formatach.
 ## Warunki wstępne

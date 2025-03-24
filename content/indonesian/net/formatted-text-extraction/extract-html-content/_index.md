@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak konten HTML dari dokumen menggunakan Grou
 weight: 12
 url: /id/net/formatted-text-extraction/extract-html-content/
 ---
+
+# Ekstrak Konten HTML
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara menggunakan GroupDocs.Parser untuk .NET untuk mengekstrak konten HTML dari berbagai format dokumen. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan pengembang mengurai dan mengekstrak teks dari dokumen dengan lancar. Baik Anda bekerja dengan dokumen Word, PDF, atau format lainnya, GroupDocs.Parser menyederhanakan proses mengekstraksi konten terstruktur.
 ## Prasyarat

@@ -6,6 +6,9 @@ description: Leer tekst per pagina zoeken met GroupDocs.Parser voor .NET. Extrah
 weight: 22
 url: /nl/net/text-extraction/search-text-by-pages/
 ---
+
+# Zoek tekst op pagina's
+
 ## Invoering
 In de wereld van .NET-ontwikkeling is het efficiënt ontleden en extraheren van tekst uit documenten een cruciale taak. GroupDocs.Parser voor .NET biedt krachtige mogelijkheden om met verschillende documentformaten te werken, waardoor ontwikkelaars naadloos specifieke inhoud kunnen zoeken en extraheren. Deze tutorial begeleidt u bij het gebruik van GroupDocs.Parser om tekst per pagina te doorzoeken in uw .NET-toepassingen.
 ## Vereisten

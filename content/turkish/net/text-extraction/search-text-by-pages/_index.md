@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak sayfalara göre metin aramay
 weight: 22
 url: /tr/net/text-extraction/search-text-by-pages/
 ---
+
+# Metinleri Sayfalara Göre Ara
+
 ## giriiş
 .NET geliştirme dünyasında, belgelerden metni verimli bir şekilde ayrıştırmak ve çıkarmak çok önemli bir görevdir. GroupDocs.Parser for .NET, çeşitli belge formatlarıyla çalışmak için güçlü yetenekler sunarak geliştiricilerin belirli içeriği sorunsuz bir şekilde aramasına ve çıkarmasına olanak tanır. Bu eğitim, .NET uygulamalarınızdaki sayfalara göre metin aramak için GroupDocs.Parser'dan yararlanma sürecinde size rehberlik edecektir.
 ## Önkoşullar

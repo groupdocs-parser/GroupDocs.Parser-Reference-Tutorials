@@ -6,6 +6,9 @@ description: Maîtrisez le traitement des documents Excel dans .NET avec GroupDo
 weight: 32
 url: /fr/net/excel-document-processing/
 ---
+
+# Traitement des documents Excel
+
 ## Introduction
 
 Libérez tout le potentiel du traitement des documents Excel dans .NET avec les didacticiels GroupDocs.Parser. Ces didacticiels couvrent un large éventail de sujets, depuis l'extraction d'images et de métadonnées jusqu'à la recherche de texte à l'aide d'expressions régulières. Que vous soyez un développeur débutant ou expérimenté, ces guides étape par étape fournissent des informations précieuses et des exemples pratiques pour améliorer vos capacités de traitement de documents.

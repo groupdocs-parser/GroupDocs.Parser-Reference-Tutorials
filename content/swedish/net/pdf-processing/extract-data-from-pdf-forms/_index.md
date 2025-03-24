@@ -6,6 +6,9 @@ description: Lär dig hur du extraherar data från PDF-formulär med GroupDocs.P
 weight: 11
 url: /sv/net/pdf-processing/extract-data-from-pdf-forms/
 ---
+
+# Extrahera data från PDF-formulär
+
 ## Introduktion
 I den här handledningen kommer vi att utforska hur man använder GroupDocs.Parser för .NET för att extrahera data från PDF-formulär. GroupDocs.Parser är ett kraftfullt bibliotek som tillåter utvecklare att effektivt arbeta med olika dokumentformat, inklusive PDF, DOCX, XLSX och mer. Vi kommer att gå igenom de nödvändiga stegen för att extrahera specifika fält från ett PDF-formulär och hantera extraherade data.
 ## Förutsättningar

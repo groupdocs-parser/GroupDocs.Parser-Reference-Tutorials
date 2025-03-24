@@ -6,6 +6,9 @@ description: 了解如何使用適用於 .NET 的 GroupDocs.Parser 的正規表�
 weight: 13
 url: /zh-hant/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---
+
+# 使用模板中正規表示式位置的字段
+
 ## 介紹
 在本教學中，您將學習如何利用 GroupDocs.Parser for .NET 根據文件範本中指定的正規表示式 (regex) 擷取欄位。該庫提供了強大的文檔解析和提取功能，使其成為高效處理結構化資料提取任務的理想選擇。
 ## 先決條件

@@ -6,6 +6,9 @@ description: Tìm hiểu cách tìm kiếm văn bản trong tài liệu Word b�
 weight: 19
 url: /vi/net/word-document-processing/search-text-in-word-document-by-regular-expression/
 ---
+
+# Tìm kiếm văn bản trong tài liệu Word bằng biểu thức chính quy
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Parser cho .NET để trích xuất văn bản từ tài liệu Word bằng cách sử dụng biểu thức thông thường. Hướng dẫn từng bước này sẽ hỗ trợ bạn triển khai tính năng này một cách hiệu quả.
 ## Điều kiện tiên quyết

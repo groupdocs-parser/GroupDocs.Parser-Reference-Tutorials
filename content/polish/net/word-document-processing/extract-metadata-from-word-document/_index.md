@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić metadane z dokumentów programu Word
 weight: 12
 url: /pl/net/word-document-processing/extract-metadata-from-word-document/
 ---
+
+# Wyodrębnij metadane z dokumentu programu Word
+
 ## Wstęp
 W dzisiejszej erze cyfrowej wydajne analizowanie i wydobywanie danych z dokumentów ma kluczowe znaczenie dla różnych zastosowań, od analizy treści po wyszukiwanie danych. GroupDocs.Parser dla .NET to potężna biblioteka, która pozwala programistom z łatwością wyodrębniać metadane i tekst z dokumentów. W tym samouczku pokażemy, jak krok po kroku używać GroupDocs.Parser dla .NET do wyodrębniania metadanych z dokumentów programu Word.
 ## Warunki wstępne

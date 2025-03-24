@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak belgelerden belirli veri ala
 weight: 10
 url: /tr/net/data-extraction-from-templates/get-field-by-name/
 ---
+
+# Alanı Ada Göre Al
+
 ## giriiş
 Bu eğitimde, fiyatlar ve e-postalar gibi belirli veri alanlarını belgelerden çıkarmak için GroupDocs.Parser for .NET'ten nasıl yararlanılacağını keşfedeceğiz. Bu güçlü kitaplık, belge ayrıştırma görevlerini basitleştirerek onu çeşitli veri çıkarma ihtiyaçları için ideal hale getirir.
 ## Önkoşullar

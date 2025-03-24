@@ -6,6 +6,9 @@ description: Extrahujte text z PDF pomocí GroupDocs.Parser v C#. Naučte se efe
 weight: 16
 url: /cs/net/pdf-processing/extract-text-from-page-in-pdf-in-raw-mode/
 ---
+
+# Extrahujte text ze stránky ve formátu PDF v režimu Raw
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak používat GroupDocs.Parser pro .NET k extrahování textu ze stránek v dokumentech PDF pomocí režimu raw. GroupDocs.Parser je výkonný nástroj, který umožňuje vývojářům programově pracovat s různými formáty dokumentů.
 ## Předpoklady

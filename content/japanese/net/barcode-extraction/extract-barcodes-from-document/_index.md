@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用してドキュメントから�
 weight: 10
 url: /ja/net/barcode-extraction/extract-barcodes-from-document/
 ---
+
+# ドキュメントからバーコードを抽出する
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を使用してドキュメントからバーコードを抽出する方法を段階的に学習します。GroupDocs.Parser は、開発者が PDF、Microsoft Word、Excel、PowerPoint などのさまざまなドキュメント形式を操作できるようにする強力なドキュメント解析ライブラリです。
 ## 前提条件

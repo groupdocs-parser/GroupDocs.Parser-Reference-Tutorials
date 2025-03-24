@@ -6,6 +6,9 @@ description: 使用 GroupDocs.Parser for .NET 透過編碼檢測從文件中提�
 weight: 10
 url: /zh-hant/net/text-extraction/extract-text-with-encoding-detection/
 ---
+
+# 透過編碼檢測提取文本
+
 ## 介紹
 GroupDocs.Parser for .NET 是一個功能強大的程式庫，可讓開發人員從其 .NET 應用程式中的各種文件格式中提取文字、元資料和其他資訊。本教學將指導您完成使用 GroupDocs.Parser 從文件中提取文字並偵測編碼的過程。透過執行這些步驟，您將能夠有效地解析和使用 .NET 專案中的不同文件類型。
 ## 先決條件

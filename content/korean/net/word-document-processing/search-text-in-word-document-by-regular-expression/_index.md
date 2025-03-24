@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser에서 정규식을 사용하여 Word 문�
 weight: 19
 url: /ko/net/word-document-processing/search-text-in-word-document-by-regular-expression/
 ---
+
+# 정규식으로 Word 문서의 텍스트 검색
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser를 활용하여 정규식을 사용하여 Word 문서에서 텍스트를 추출하는 방법을 살펴보겠습니다. 이 단계별 가이드는 이 기능을 효과적으로 구현하는 데 도움이 됩니다.
 ## 전제 조건

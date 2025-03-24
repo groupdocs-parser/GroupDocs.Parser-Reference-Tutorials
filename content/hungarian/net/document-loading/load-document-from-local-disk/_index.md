@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthat ki szöveget különböző dokumentumfo
 weight: 11
 url: /hu/net/document-loading/load-document-from-local-disk/
 ---
+
+# Töltse be a dokumentumot a helyi lemezről
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan használhatja a GroupDocs.Parser for .NET-et szövegek kinyerésére a dokumentumokból. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára a különböző dokumentumformátumok elemzését és a szöveges tartalom programozott kibontását. Leírjuk a szükséges lépéseket a könyvtár használatával történő szövegkivonás megkezdéséhez.
 ## Előfeltételek

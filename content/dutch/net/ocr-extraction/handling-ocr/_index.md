@@ -6,6 +6,9 @@ description: Leer hoe u met OCR omgaat met GroupDocs.Parser voor .NET. Extraheer
 weight: 11
 url: /nl/net/ocr-extraction/handling-ocr/
 ---
+
+# OCR verwerken
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u GroupDocs.Parser voor .NET kunt gebruiken om OCR-taken (Optical Character Recognition) efficiënt af te handelen. Deze bibliotheek biedt krachtige hulpmiddelen om tekst uit documenten te extraheren, en met OCR kunt u zelfs tekst uit afbeeldingen of gescande documenten extraheren. Laten we stap voor stap in het proces duiken.
 ## Vereisten

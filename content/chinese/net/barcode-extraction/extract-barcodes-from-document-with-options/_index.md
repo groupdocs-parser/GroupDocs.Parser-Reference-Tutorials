@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 从文档中提取条�
 weight: 14
 url: /zh/net/barcode-extraction/extract-barcodes-from-document-with-options/
 ---
+
+# 使用选项从文档中提取条形码
+
 ## 介绍
 在本教程中，我们将介绍使用 GroupDocs.Parser for .NET 从文档中提取条形码的过程。GroupDocs.Parser 是一个功能强大的库，可让您从各种文档格式（如 PDF、Microsoft Word、Excel 等）中提取文本、元数据和条形码。
 ## 先决条件

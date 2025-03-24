@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất nội dung Markdown từ tài liệ
 weight: 13
 url: /vi/net/formatted-text-extraction/extract-markdown-content/
 ---
+
+# Trích xuất nội dung đánh dấu
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng GroupDocs.Parser cho .NET để trích xuất nội dung Markdown từ tài liệu. GroupDocs.Parser là một thư viện mạnh mẽ cho phép các nhà phát triển phân tích cú pháp và trích xuất văn bản từ nhiều định dạng tệp khác nhau một cách liền mạch.
 ## Điều kiện tiên quyết

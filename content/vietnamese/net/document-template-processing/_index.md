@@ -7,6 +7,9 @@ weight: 22
 url: /vi/net/document-template-processing/
 ---
 
+# Xử lý mẫu tài liệu
+
+
 ## Giới thiệu
 
 Khai phá sức mạnh của việc xử lý mẫu tài liệu trong .NET với các hướng dẫn của GroupDocs.Parser. Những hướng dẫn toàn diện này đề cập đến nhiều khía cạnh khác nhau của việc trích xuất dữ liệu có cấu trúc từ tài liệu bằng cách sử dụng mẫu. Cho dù bạn đang làm việc với mã vạch, trường cố định, vị trí được liên kết, mẫu biểu thức chính quy hay bố cục bảng, GroupDocs.Parser đều trang bị cho bạn các công cụ và kiến thức để hợp lý hóa các tác vụ trích xuất dữ liệu của bạn.

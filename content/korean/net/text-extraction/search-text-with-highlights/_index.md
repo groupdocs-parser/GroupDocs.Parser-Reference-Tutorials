@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 문서에서 텍스트를 
 weight: 24
 url: /ko/net/text-extraction/search-text-with-highlights/
 ---
+
+# 하이라이트로 텍스트 검색
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser를 사용하여 문서 내에서 텍스트를 검색하고 검색 결과를 강조 표시하는 방법을 살펴보겠습니다. GroupDocs.Parser는 다양한 문서 형식으로 작업하고 텍스트, 메타데이터 등을 추출할 수 있는 강력한 라이브러리입니다.
 ## 전제 조건

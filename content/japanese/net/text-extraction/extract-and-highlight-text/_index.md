@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用してドキュメントから�
 weight: 11
 url: /ja/net/text-extraction/extract-and-highlight-text/
 ---
+
+# テキストの抽出と強調表示
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を使用してドキュメントからテキストを抽出し、強調表示する方法について説明します。GroupDocs.Parser は、さまざまなドキュメント形式を解析し、高度なテキスト抽出操作を実行できる強力なライブラリです。
 ## 前提条件

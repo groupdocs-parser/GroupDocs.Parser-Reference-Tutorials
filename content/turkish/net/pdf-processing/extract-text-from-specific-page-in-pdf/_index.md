@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak PDF'lerden metin çıkarın.
 weight: 15
 url: /tr/net/pdf-processing/extract-text-from-specific-page-in-pdf/
 ---
+
+# PDF'deki Belirli Sayfadan Metin Çıkarma
+
 ## giriiş
 Bu öğreticide, bir PDF belgesindeki belirli bir sayfadan metin çıkarmak için GroupDocs.Parser for .NET'i nasıl kullanacağınızı öğreneceksiniz. GroupDocs.Parser, geliştiricilerin PDF, Microsoft Word, Excel ve daha fazlası dahil olmak üzere çeşitli belge formatlarıyla çalışmasına olanak tanıyan güçlü bir kitaplıktır. Metin ayıklamayı .NET uygulamanıza entegre etmek için bu adımları izleyin.
 ## Önkoşullar

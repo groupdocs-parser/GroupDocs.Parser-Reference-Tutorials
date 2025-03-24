@@ -6,6 +6,9 @@ description: Ismerje meg, hogyan bonthat ki szöveget Excel-lapokból a GroupDoc
 weight: 14
 url: /hu/net/excel-document-processing/extract-text-from-excel-sheet/
 ---
+
+# Szöveg kibontása az Excel munkalapról
+
 ## Bevezetés
 Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet szöveget kivonni Excel-lapokból a GroupDocs.Parser for .NET könyvtár használatával. Ezzel a hatékony eszközzel hatékonyan elemezhetjük és elemezhetjük a különféle dokumentumformátumokat, beleértve az Excel-táblázatokat is, szöveges adatok kinyeréséhez.
 ## Előfeltételek

@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 從文件頁面中提�
 weight: 12
 url: /zh-hant/net/barcode-extraction/extract-barcodes-from-document-page/
 ---
+
+# 從文件頁面提取條碼
+
 ## 介紹
 在本教學中，我們將引導您完成使用 GroupDocs.Parser for .NET 從文件頁面擷取條碼的流程。 GroupDocs.Parser 是一個功能強大的文件解析庫，可讓開發人員從各種文件格式中提取文字、元資料甚至條碼。
 ## 先決條件

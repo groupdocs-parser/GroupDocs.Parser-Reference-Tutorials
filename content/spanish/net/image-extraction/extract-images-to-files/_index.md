@@ -6,6 +6,9 @@ description: Extraiga imágenes sin esfuerzo de varios tipos de documentos como 
 weight: 13
 url: /es/net/image-extraction/extract-images-to-files/
 ---
+
+# Extraer imágenes a archivos
+
 ## Introducción
 En este tutorial, aprenderá a utilizar GroupDocs.Parser para .NET para extraer imágenes de varios formatos de documentos, como PDF, Word, Excel y PowerPoint. GroupDocs.Parser es una potente biblioteca que permite a los desarrolladores analizar y extraer texto, metadatos, imágenes y más de documentos de forma sencilla. Esta guía lo guiará a través del proceso de extraer imágenes y guardarlas como archivos individuales usando C#.
 ## Requisitos previos

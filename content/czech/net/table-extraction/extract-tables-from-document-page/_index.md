@@ -6,6 +6,9 @@ description: Naučte se, jak extrahovat tabulky z dokumentů programově pomocí
 weight: 11
 url: /cs/net/table-extraction/extract-tables-from-document-page/
 ---
+
+# Extrahujte tabulky ze stránky dokumentu
+
 ## Úvod
 V tomto tutoriálu prozkoumáme, jak extrahovat tabulky ze stránky dokumentu pomocí GroupDocs.Parser for .NET. GroupDocs.Parser je výkonná knihovna, která umožňuje vývojářům pracovat s různými formáty dokumentů, jako jsou PDF, DOCX, XLSX a další. Využitím jeho funkcí můžeme z těchto dokumentů efektivně extrahovat strukturovaná data, jako jsou tabulky, což nám umožňuje programově manipulovat a analyzovat informace.
 ## Předpoklady

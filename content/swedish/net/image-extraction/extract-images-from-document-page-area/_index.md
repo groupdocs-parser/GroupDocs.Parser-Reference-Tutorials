@@ -6,6 +6,9 @@ description: Upptäck hur du exakt extraherar bilder från dokument med Groupdoc
 weight: 10
 url: /sv/net/image-extraction/extract-images-from-document-page-area/
 ---
+
+# Extrahera bilder från dokumentsidans område
+
 ## Introduktion
 I den här handledningen kommer vi att lära oss hur du använder Groupdocs.Parser för .NET för att extrahera bilder från specifika områden på en dokumentsida. Denna process låter dig rikta in och hämta bilder exakt baserat på definierade koordinater och dimensioner i dokumentet.
 ## Förutsättningar

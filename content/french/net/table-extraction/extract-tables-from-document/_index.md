@@ -6,6 +6,9 @@ description: Découvrez comment extraire des tableaux de documents à l'aide de 
 weight: 10
 url: /fr/net/table-extraction/extract-tables-from-document/
 ---
+
+# Extraire des tableaux d'un document
+
 ## Introduction
 Groupdocs.Parser pour .NET est une bibliothèque complète qui facilite l'analyse de documents, vous permettant d'extraire des informations précieuses telles que des tableaux, du texte, des métadonnées et bien plus encore à partir de documents. Dans ce didacticiel, nous nous concentrons spécifiquement sur l'extraction de tableaux à partir de documents à l'aide de l'API Groupdocs.Parser.
 ## Conditions préalables

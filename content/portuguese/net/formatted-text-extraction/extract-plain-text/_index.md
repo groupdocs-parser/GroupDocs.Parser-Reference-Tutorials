@@ -6,6 +6,9 @@ description: Aprenda como extrair texto simples de documentos usando GroupDocs.P
 weight: 14
 url: /pt/net/formatted-text-extraction/extract-plain-text/
 ---
+
+# Extrair texto simples
+
 ## Introdução
 Neste tutorial, exploraremos como extrair texto simples de vários formatos de documento usando GroupDocs.Parser for .NET. GroupDocs.Parser é uma biblioteca poderosa que permite aos desenvolvedores trabalhar com documentos de forma integrada, extraindo texto e metadados de forma eficiente. Este guia orientará você nas etapas necessárias para integrar e utilizar esta biblioteca em seus aplicativos .NET.
 ## Pré-requisitos

@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak kode batang dari halaman dokumen mengguna
 weight: 13
 url: /id/net/barcode-extraction/extract-barcodes-from-document-page-area/
 ---
+
+# Ekstrak Barcode dari Area Halaman Dokumen
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara mengekstrak kode batang dari area tertentu pada dokumen menggunakan GroupDocs.Parser untuk .NET. GroupDocs.Parser adalah perpustakaan canggih yang memungkinkan Anda mengurai dan mengekstrak data dari berbagai format dokumen seperti PDF, DOCX, XLSX, dan lainnya, termasuk mengekstraksi kode batang. Kami akan membahas prasyarat, namespace yang diperlukan, dan memberikan panduan langkah demi langkah dengan contoh kode untuk mendemonstrasikan prosesnya.
 ## Prasyarat

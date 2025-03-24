@@ -6,6 +6,9 @@ description: Bu kapsamlı eğitimde GroupDocs.Parser for .NET'i kullanarak PDF p
 weight: 10
 url: /tr/net/pdf-processing/extract-attachments-from-pdf-portfolios/
 ---
+
+# PDF Portföylerinden Ekleri Çıkarma
+
 ## giriiş
 Belge işleme ve analiz dünyasında PDF portföylerini verimli bir şekilde kullanmak çok önemli olabilir. GroupDocs.Parser for .NET, PDF portföylerinden eklerin çıkarılması için güçlü bir çözüm sunarak geliştiricilerin içeriklere kolaylıkla erişmesine ve bunları yönetmesine olanak tanır. Bu eğitim, ekleri sorunsuz bir şekilde çıkarmak için GroupDocs.Parser'ı kullanarak süreç boyunca size adım adım rehberlik edecektir.
 ## Önkoşullar

@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất văn bản hiệu quả từ các t
 weight: 17
 url: /vi/net/text-extraction/extract-text-from-page-in-raw-mode/
 ---
+
+# Trích xuất văn bản từ trang ở chế độ thô
+
 ## Giới thiệu
 Trong hướng dẫn này, bạn sẽ tìm hiểu cách sử dụng Groupdocs.Parser cho .NET để trích xuất văn bản từ các trang tài liệu ở chế độ thô. Thư viện này cung cấp các công cụ hiệu quả để phân tích và trích xuất nội dung từ các định dạng tệp khác nhau, cho phép các nhà phát triển kết hợp trích xuất văn bản tài liệu vào các ứng dụng .NET của họ.
 ## Điều kiện tiên quyết

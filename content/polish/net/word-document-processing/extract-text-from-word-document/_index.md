@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić tekst z dokumentów programu Word za
 weight: 15
 url: /pl/net/word-document-processing/extract-text-from-word-document/
 ---
+
+# Wyodrębnij tekst z dokumentu Word
+
 ## Wstęp
 W tym samouczku przyjrzymy się, jak wyodrębnić tekst z dokumentów programu Word za pomocą programu GroupDocs.Parser dla platformy .NET. GroupDocs.Parser to potężna biblioteka .NET, która umożliwia programistom pracę z różnymi formatami dokumentów, w tym dokumentami programu Word, plikami PDF i nie tylko. Pod koniec tego przewodnika będziesz w stanie efektywnie wyodrębniać tekst z plików programu Word przy użyciu prostego kodu C#.
 ## Warunki wstępne

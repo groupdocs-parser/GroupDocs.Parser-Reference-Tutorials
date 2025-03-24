@@ -6,6 +6,9 @@ description: 了解如何使用 GroupDocs.Parser for .NET 从损坏的文档中�
 weight: 11
 url: /zh/net/barcode-extraction/extract-barcodes-from-corrupted-document/
 ---
+
+# 从损坏的文档中提取条形码
+
 ## 介绍
 在本教程中，我们将指导您使用 GroupDocs.Parser for .NET 从损坏的文档中提取条形码的过程。 GroupDocs.Parser 是一个功能强大的文档解析 API，使开发人员能够从各种文件格式中提取文本、元数据、图像以及现在的条形码。我们将分解有效完成此任务所需的步骤。
 ## 先决条件

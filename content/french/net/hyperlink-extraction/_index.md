@@ -6,6 +6,9 @@ description: Extrayez sans effort les hyperliens des documents dans .NET avec Gr
 weight: 25
 url: /fr/net/hyperlink-extraction/
 ---
+
+# Extraction de liens hypertextes
+
 ## Introduction
 
 Plongez dans le monde de l'extraction de liens hypertexte dans .NET avec les didacticiels GroupDocs.Parser. Ces didacticiels offrent des conseils complets sur l'extraction de liens hypertexte à partir de documents, qu'il s'agisse de l'intégralité du document, de pages spécifiques ou de zones désignées. Que vous soyez novice ou développeur expérimenté, ces didacticiels fournissent des instructions claires étape par étape et des exemples de code pour vous aider à intégrer de manière transparente l'extraction d'hyperliens dans vos applications C#.

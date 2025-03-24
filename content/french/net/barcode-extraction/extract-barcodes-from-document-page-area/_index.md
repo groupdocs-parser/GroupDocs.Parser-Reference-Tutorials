@@ -6,6 +6,9 @@ description: Découvrez comment extraire les codes-barres des pages de documents
 weight: 13
 url: /fr/net/barcode-extraction/extract-barcodes-from-document-page-area/
 ---
+
+# Extraire les codes-barres de la zone de la page du document
+
 ## Introduction
 Dans ce didacticiel, nous verrons comment extraire des codes-barres de zones spécifiques d'un document à l'aide de GroupDocs.Parser pour .NET. GroupDocs.Parser est une bibliothèque puissante qui vous permet d'analyser et d'extraire des données de divers formats de documents tels que PDF, DOCX, XLSX, etc., y compris l'extraction de codes-barres. Nous aborderons les conditions préalables, les espaces de noms requis et fournirons un guide étape par étape avec des exemples de code pour démontrer le processus.
 ## Conditions préalables

@@ -6,6 +6,9 @@ description: Learn how to extract table data from documents using GroupDocs.Pars
 weight: 12
 url: /net/data-extraction-from-templates/working-with-tables-in-extracted-data/
 ---
+
+# Working with Tables in Extracted Data
+
 ## Introduction
 In this tutorial, we will explore how to use GroupDocs.Parser for .NET to extract data from tables in documents. GroupDocs.Parser is a powerful tool that enables developers to parse and extract text, metadata, and structured content from various file formats like PDF, DOCX, XLSX, and more. Specifically, we'll focus on extracting table data efficiently using predefined templates.
 ## Prerequisites

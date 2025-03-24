@@ -6,6 +6,9 @@ description: Leer hoe u afbeeldingen uit een Word-document kunt extraheren met G
 weight: 11
 url: /nl/net/word-document-processing/extract-images-from-word-document/
 ---
+
+# Afbeeldingen extraheren uit een Word-document
+
 ## Invoering
 In deze zelfstudie leert u hoe u afbeeldingen uit een Word-document kunt extraheren met GroupDocs.Parser voor .NET. GroupDocs.Parser is een krachtige .NET-bibliotheek waarmee u tekst, metagegevens, afbeeldingen en meer kunt ontleden en extraheren uit verschillende documentindelingen, waaronder Word (DOCX).
 ## Vereisten

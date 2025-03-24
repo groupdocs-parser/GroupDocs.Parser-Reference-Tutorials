@@ -6,6 +6,9 @@ description: GroupDocs.Parser を使用して .NET のさまざまなドキュ�
 weight: 12
 url: /ja/net/document-loading/load-document-from-stream/
 ---
+
+# ストリームからドキュメントを読み込む
+
 ## 導入
 .NET アプリケーションでのドキュメント処理の分野では、さまざまなファイル形式からテキストを抽出することが一般的な要件です。GroupDocs.Parser for .NET は、さまざまなドキュメントからテキストをシームレスに解析して抽出するための強力なソリューションを提供します。このチュートリアルでは、GroupDocs.Parser を使用してドキュメントからテキストを抽出するプロセスを段階的に説明します。
 ## 前提条件

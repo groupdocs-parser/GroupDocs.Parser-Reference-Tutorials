@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak data dari templat dokumen menggunakan pos
 weight: 13
 url: /id/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
 ---
+
+# Bekerja dengan Bidang di Posisi Regex di Templat
+
 ## Perkenalan
 Dalam tutorial ini, Anda akan mempelajari cara memanfaatkan GroupDocs.Parser untuk .NET untuk mengekstrak bidang berdasarkan ekspresi reguler tertentu (regex) dalam templat dokumen. Pustaka ini menawarkan fitur canggih untuk penguraian dan ekstraksi dokumen, menjadikannya ideal untuk menangani tugas ekstraksi data terstruktur secara efisien.
 ## Prasyarat

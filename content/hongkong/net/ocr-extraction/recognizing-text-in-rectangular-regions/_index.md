@@ -6,6 +6,9 @@ description: 了解如何使用具有 OCR 功能的 GroupDocs.Parser for .NET �
 weight: 14
 url: /zh-hant/net/ocr-extraction/recognizing-text-in-rectangular-regions/
 ---
+
+# 辨識矩形區域中的文字
+
 ## 介紹
 在本教學中，我們將探討如何使用 GroupDocs.Parser for .NET 識別文件特定矩形區域內的文字。 GroupDocs.Parser 是一個功能強大的程式庫，可讓開發人員從各種文件格式（包括 PDF、Word、Excel 和 PowerPoint）中提取文字、元資料等。
 ## 先決條件

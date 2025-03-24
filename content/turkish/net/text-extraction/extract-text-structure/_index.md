@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak çeşitli belge biçimlerind
 weight: 20
 url: /tr/net/text-extraction/extract-text-structure/
 ---
+
+# Metin Yapısını Çıkart
+
 ## giriiş
 Bu eğitimde, çeşitli belge formatlarından metin yapısını çıkarmak için GroupDocs.Parser for .NET'in nasıl kullanılacağını keşfedeceğiz. GroupDocs.Parser, geliştiricilerin PDF'ler, Word belgeleri, Excel sayfaları ve daha fazlası gibi belgelerden yapılandırılmış metin içeriği çıkarmasına olanak tanıyan güçlü bir kitaplıktır. Bu eğitim, GroupDocs.Parser'ı kurma, gerekli ad alanlarını içe aktarma ve metin yapısını adım adım çıkarma sürecinde size rehberlik edecektir.
 ## Önkoşullar

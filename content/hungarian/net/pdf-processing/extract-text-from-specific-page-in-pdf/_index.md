@@ -6,6 +6,9 @@ description: Szöveg kibontása PDF-fájlokból a GroupDocs.Parser for .NET seg�
 weight: 15
 url: /hu/net/pdf-processing/extract-text-from-specific-page-in-pdf/
 ---
+
+# Szöveg kibontása egy adott oldalról PDF-ben
+
 ## Bevezetés
 Ebből az oktatóanyagból megtudhatja, hogyan használhatja a GroupDocs.Parser for .NET-et a PDF-dokumentum egy adott oldaláról történő szöveg kinyerésére. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy különféle dokumentumformátumokkal dolgozzanak, beleértve a PDF-t, a Microsoft Word-t, az Excelt és még sok mást. Kövesse ezeket a lépéseket a szövegkivonás integrálásához a .NET-alkalmazásba.
 ## Előfeltételek

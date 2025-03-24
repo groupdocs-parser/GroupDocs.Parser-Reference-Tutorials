@@ -6,6 +6,9 @@ description: Aprenda como extrair texto de vários formatos de documentos em .NE
 weight: 12
 url: /pt/net/document-loading/load-document-from-stream/
 ---
+
+# Carregar documento do stream
+
 ## Introdução
 No domínio do processamento de documentos em aplicativos .NET, extrair texto de vários formatos de arquivo é um requisito comum. GroupDocs.Parser for .NET oferece uma solução poderosa para analisar e extrair texto de uma ampla variedade de documentos. Este tutorial irá guiá-lo através do processo de utilização do GroupDocs.Parser para extrair texto de documentos passo a passo.
 ## Pré-requisitos

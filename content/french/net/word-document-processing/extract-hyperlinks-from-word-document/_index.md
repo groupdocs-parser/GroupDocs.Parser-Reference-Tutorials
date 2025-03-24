@@ -6,6 +6,9 @@ description: Découvrez comment extraire des hyperliens à partir de documents W
 weight: 10
 url: /fr/net/word-document-processing/extract-hyperlinks-from-word-document/
 ---
+
+# Extraire les hyperliens d'un document Word
+
 ## Introduction
 GroupDocs.Parser pour .NET est un outil puissant qui permet aux développeurs d'extraire du texte structuré et des métadonnées de divers formats de documents tels que Word, Excel, PowerPoint, PDF, etc. Une exigence courante dans le traitement des documents consiste à extraire par programmation les hyperliens des documents Word. Ce didacticiel vous guidera tout au long du processus d'utilisation de GroupDocs.Parser pour extraire étape par étape les hyperliens d'un document Word.
 ## Conditions préalables

@@ -6,6 +6,9 @@ description: Learn how to extract text from Word documents using GroupDocs.Parse
 weight: 15
 url: /net/word-document-processing/extract-text-from-word-document/
 ---
+
+# Extract Text from Word Document
+
 ## Introduction
 In this tutorial, we'll explore how to extract text from Word documents using GroupDocs.Parser for .NET. GroupDocs.Parser is a powerful .NET library that allows developers to work with various document formats, including Word documents, PDFs, and more. By the end of this guide, you'll be able to efficiently extract text from Word files using simple C# code.
 ## Prerequisites

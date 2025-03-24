@@ -6,6 +6,9 @@ description: Aprenda como extrair texto de documentos protegidos por senha usand
 weight: 15
 url: /pt/net/document-loading/working-with-password-protected-documents/
 ---
+
+# Trabalhando com documentos protegidos por senha
+
 ## Introdução
 No mundo do processamento de documentos, o gerenciamento eficiente de arquivos protegidos por senha é crucial. GroupDocs.Parser for .NET oferece recursos robustos para trabalhar perfeitamente com esses documentos. Este tutorial irá guiá-lo através do processo de extração de texto de documentos protegidos por senha usando GroupDocs.Parser.
 ## Pré-requisitos

@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用して、さまざまなドキ�
 weight: 20
 url: /ja/net/text-extraction/extract-text-structure/
 ---
+
+# テキスト構造の抽出
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を使用してさまざまなドキュメント形式からテキスト構造を抽出する方法について説明します。GroupDocs.Parser は、開発者が PDF、Word ドキュメント、Excel シートなどのドキュメントから構造化されたテキスト コンテンツを抽出できるようにする強力なライブラリです。このチュートリアルでは、GroupDocs.Parser の設定、必要な名前空間のインポート、テキスト構造の抽出のプロセスを段階的に説明します。
 ## 前提条件

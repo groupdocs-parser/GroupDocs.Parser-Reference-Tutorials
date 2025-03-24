@@ -6,6 +6,9 @@ description: Leer hoe u gegevens uit tabellen in documenten kunt extraheren met 
 weight: 15
 url: /nl/net/document-template-processing/working-with-table-parameters-in-templates/
 ---
+
+# Werken met tabelparameters in sjablonen
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u GroupDocs.Parser voor .NET kunt gebruiken om met tabelparameters in sjablonen te werken. In deze handleiding wordt het proces opgesplitst in stapsgewijze instructies, zodat u gegevens effectief kunt ontleden en extraheren uit tabellen in documenten.
 ## Vereisten

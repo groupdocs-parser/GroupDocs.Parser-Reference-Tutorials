@@ -6,6 +6,9 @@ description: OCR 機能を備えた GroupDocs.Parser for .NET を使用して、
 weight: 14
 url: /ja/net/ocr-extraction/recognizing-text-in-rectangular-regions/
 ---
+
+# 長方形領域内のテキストの認識
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を使用して、ドキュメントの特定の長方形領域内のテキストを認識する方法について説明します。GroupDocs.Parser は、開発者が PDF、Word、Excel、PowerPoint などのさまざまなファイル形式からテキスト、メタデータなどを抽出できるようにする強力なライブラリです。
 ## 前提条件

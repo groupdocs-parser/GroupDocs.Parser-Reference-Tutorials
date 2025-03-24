@@ -6,6 +6,9 @@ description: Découvrez comment extraire des données de table à partir de docu
 weight: 12
 url: /fr/net/data-extraction-from-templates/working-with-tables-in-extracted-data/
 ---
+
+# Travailler avec des tables dans des données extraites
+
 ## Introduction
 Dans ce didacticiel, nous explorerons comment utiliser GroupDocs.Parser pour .NET pour extraire des données de tables dans des documents. GroupDocs.Parser est un outil puissant qui permet aux développeurs d'analyser et d'extraire du texte, des métadonnées et du contenu structuré à partir de divers formats de fichiers tels que PDF, DOCX, XLSX, etc. Plus précisément, nous nous concentrerons sur l’extraction efficace des données de table à l’aide de modèles prédéfinis.
 ## Conditions préalables

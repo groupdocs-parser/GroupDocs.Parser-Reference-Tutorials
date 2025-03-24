@@ -6,6 +6,9 @@ description: Découvrez comment extraire du texte à partir de documents à l'ai
 weight: 19
 url: /fr/net/text-extraction/extract-text-in-raw-mode/
 ---
+
+# Extraire du texte en mode brut
+
 ## Introduction
 Dans ce didacticiel, nous explorerons comment utiliser GroupDocs.Parser pour .NET pour extraire efficacement le texte de divers formats de documents. GroupDocs.Parser est une bibliothèque puissante qui permet aux développeurs d'extraire du texte et des métadonnées de documents tels que PDF, Word, Excel, PowerPoint, etc., simplifiant ainsi les tâches d'extraction de texte dans les applications .NET.
 ## Conditions préalables

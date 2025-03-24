@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất dữ liệu từ tài liệu bằng
 weight: 11
 url: /vi/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
 ---
+
+# Làm việc với các trường ở vị trí cố định trong mẫu
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ khám phá cách làm việc với các trường ở vị trí cố định trong các mẫu bằng GroupDocs.Parser cho .NET. GroupDocs.Parser là thư viện phân tích cú pháp tài liệu mạnh mẽ cho phép các nhà phát triển trích xuất dữ liệu từ nhiều định dạng tài liệu khác nhau như PDF, Word, Excel, v.v. Cụ thể, chúng tôi sẽ tập trung vào việc xác định và sử dụng các trường mẫu để trích xuất thông tin được nhắm mục tiêu dựa trên vị trí cố định của chúng.
 ## Điều kiện tiên quyết

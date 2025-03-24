@@ -6,6 +6,9 @@ description: Tìm hiểu cách trích xuất hình ảnh từ tài liệu bằng
 weight: 12
 url: /vi/net/image-extraction/extract-images-from-document-page/
 ---
+
+# Trích xuất hình ảnh từ trang tài liệu
+
 ## Giới thiệu
 Trong hướng dẫn này, chúng ta sẽ tìm hiểu cách trích xuất hình ảnh từ một trang tài liệu bằng GroupDocs.Parser cho .NET. GroupDocs.Parser là một thư viện mạnh mẽ cho phép bạn trích xuất văn bản, siêu dữ liệu, hình ảnh, v.v. từ nhiều định dạng tài liệu khác nhau như PDF, Microsoft Word, Excel, PowerPoint và các định dạng khác. Chúng tôi sẽ hướng dẫn các bước cần thiết để trích xuất hình ảnh từ trang tài liệu bằng thư viện này.
 ## Điều kiện tiên quyết

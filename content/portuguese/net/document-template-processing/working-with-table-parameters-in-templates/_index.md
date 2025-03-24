@@ -6,6 +6,9 @@ description: Aprenda como extrair dados de tabelas em documentos usando GroupDoc
 weight: 15
 url: /pt/net/document-template-processing/working-with-table-parameters-in-templates/
 ---
+
+# Trabalhando com parâmetros de tabela em modelos
+
 ## Introdução
 Neste tutorial, exploraremos como usar GroupDocs.Parser for .NET para trabalhar com parâmetros de tabela em modelos. Este guia dividirá o processo em instruções passo a passo para ajudá-lo a analisar e extrair dados de tabelas em documentos com eficácia.
 ## Pré-requisitos

@@ -6,6 +6,9 @@ description: แยกข้อความจาก PDF โดยใช้ Grou
 weight: 16
 url: /th/net/pdf-processing/extract-text-from-page-in-pdf-in-raw-mode/
 ---
+
+# แยกข้อความจากหน้าในรูปแบบ PDF ในโหมด Raw
+
 ## การแนะนำ
 ในบทช่วยสอนนี้ เราจะสำรวจวิธีใช้ GroupDocs.Parser สำหรับ .NET เพื่อแยกข้อความจากหน้าในเอกสาร PDF โดยใช้โหมด Raw GroupDocs.Parser เป็นเครื่องมืออันทรงพลังที่ช่วยให้นักพัฒนาสามารถทำงานกับเอกสารรูปแบบต่างๆ โดยทางโปรแกรม
 ## ข้อกำหนดเบื้องต้น

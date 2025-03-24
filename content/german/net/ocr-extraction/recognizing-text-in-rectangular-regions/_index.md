@@ -6,6 +6,9 @@ description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET mit OCR-Funkti
 weight: 14
 url: /de/net/ocr-extraction/recognizing-text-in-rectangular-regions/
 ---
+
+# Erkennen von Text in rechteckigen Bereichen
+
 ## Einführung
 In diesem Tutorial erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Text in bestimmten rechteckigen Bereichen von Dokumenten erkennen können. GroupDocs.Parser ist eine leistungsstarke Bibliothek, mit der Entwickler Text, Metadaten und mehr aus verschiedenen Dateiformaten extrahieren können, darunter PDF, Word, Excel und PowerPoint.
 ## Voraussetzungen

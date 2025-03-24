@@ -6,6 +6,9 @@ description: Leer hoe u tabelgegevens uit documenten kunt extraheren met GroupDo
 weight: 12
 url: /nl/net/data-extraction-from-templates/working-with-tables-in-extracted-data/
 ---
+
+# Werken met tabellen in geëxtraheerde gegevens
+
 ## Invoering
 In deze zelfstudie onderzoeken we hoe u GroupDocs.Parser voor .NET kunt gebruiken om gegevens uit tabellen in documenten te extraheren. GroupDocs.Parser is een krachtige tool waarmee ontwikkelaars tekst, metagegevens en gestructureerde inhoud kunnen parseren en extraheren uit verschillende bestandsformaten zoals PDF, DOCX, XLSX en meer. We zullen ons specifiek concentreren op het efficiënt extraheren van tabelgegevens met behulp van vooraf gedefinieerde sjablonen.
 ## Vereisten

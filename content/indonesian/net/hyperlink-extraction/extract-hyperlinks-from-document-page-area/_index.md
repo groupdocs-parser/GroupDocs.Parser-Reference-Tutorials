@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak hyperlink dari area dokumen tertentu meng
 weight: 12
 url: /id/net/hyperlink-extraction/extract-hyperlinks-from-document-page-area/
 ---
+
+# Ekstrak Hyperlink dari Area Halaman Dokumen
+
 ## Perkenalan
 Dalam tutorial ini, kita akan mempelajari cara mengekstrak hyperlink dari area halaman spesifik dokumen menggunakan pustaka GroupDocs.Parser untuk .NET. GroupDocs.Parser menyediakan fitur canggih untuk pemrosesan dokumen, termasuk ekstraksi hyperlink. Kami akan memandu Anda melalui proses langkah demi langkah, menunjukkan cara menerapkan fungsi ini di aplikasi .NET Anda.
 ## Prasyarat

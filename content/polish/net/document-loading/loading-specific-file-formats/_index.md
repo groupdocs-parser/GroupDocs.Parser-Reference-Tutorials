@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębnić tekst z różnych formatów plików 
 weight: 14
 url: /pl/net/document-loading/loading-specific-file-formats/
 ---
+
+# Ładowanie określonych formatów plików
+
 ## Wstęp
 W świecie programowania .NET analizowanie i wyodrębnianie tekstu z różnych formatów plików jest powszechnym wymogiem. GroupDocs.Parser dla .NET oferuje zaawansowane narzędzia upraszczające to zadanie. Ten samouczek poprowadzi Cię krok po kroku przez proces używania GroupDocs.Parser do ładowania i wyodrębniania tekstu z plików w określonych formatach.
 ## Warunki wstępne

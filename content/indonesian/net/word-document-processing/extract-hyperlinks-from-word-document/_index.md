@@ -6,6 +6,9 @@ description: Pelajari cara mengekstrak hyperlink dari dokumen Word menggunakan G
 weight: 10
 url: /id/net/word-document-processing/extract-hyperlinks-from-word-document/
 ---
+
+# Ekstrak Hyperlink dari Dokumen Word
+
 ## Perkenalan
 GroupDocs.Parser untuk .NET adalah alat canggih yang memungkinkan pengembang mengekstrak teks terstruktur dan metadata dari berbagai format dokumen seperti Word, Excel, PowerPoint, PDF, dan banyak lagi. Salah satu persyaratan umum dalam pemrosesan dokumen adalah mengekstrak hyperlink dari dokumen Word secara terprogram. Tutorial ini akan memandu Anda melalui proses penggunaan GroupDocs.Parser untuk mengekstrak hyperlink dari dokumen Word langkah demi langkah.
 ## Prasyarat

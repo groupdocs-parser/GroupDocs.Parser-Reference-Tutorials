@@ -6,6 +6,9 @@ description: Tanulja meg, hogyan kereshet szöveget reguláris kifejezésekkel a
 weight: 23
 url: /hu/net/text-extraction/search-text-by-regex/
 ---
+
+# Szöveg keresése reguláris kifejezéssel (Regex)
+
 ## Bevezetés
 Ebben az oktatóanyagban elmélyülünk a GroupDocs.Parser for .NET használatával szöveges kereséshez reguláris kifejezéssel (Regex) a dokumentumokon belül. A GroupDocs.Parser egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy szöveget és metaadatokat kinyerjenek különféle fájlformátumokból, például PDF, DOCX, XLSX stb. Szöveg keresése reguláris kifejezésekkel különösen hasznos a minták vagy konkrét tartalom hatékony megtalálásához a dokumentumokban.
 ## Előfeltételek

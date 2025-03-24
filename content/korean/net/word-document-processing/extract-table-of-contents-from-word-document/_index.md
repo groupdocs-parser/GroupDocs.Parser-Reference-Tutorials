@@ -6,6 +6,9 @@ description: .NET용 GroupDocs.Parser를 사용하여 프로그래밍 방식으�
 weight: 13
 url: /ko/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
+
+# Word 문서에서 목차 추출
+
 ## 소개
 이 자습서에서는 .NET용 GroupDocs.Parser를 사용하여 Word 문서에서 목차(TOC)를 단계별로 추출하는 방법을 배웁니다. GroupDocs.Parser는 다양한 문서 형식을 프로그래밍 방식으로 작업할 수 있는 강력한 라이브러리입니다.
 ## 전제 조건

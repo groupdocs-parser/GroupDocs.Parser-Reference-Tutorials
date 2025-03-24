@@ -6,6 +6,9 @@ description: Découvrez comment extraire la table des matières (TOC) de documen
 weight: 13
 url: /fr/net/word-document-processing/extract-table-of-contents-from-word-document/
 ---
+
+# Extraire la table des matières d'un document Word
+
 ## Introduction
 Dans ce didacticiel, vous apprendrez à utiliser GroupDocs.Parser pour .NET pour extraire étape par étape la table des matières (TOC) d'un document Word. GroupDocs.Parser est une bibliothèque puissante qui vous permet de travailler avec différents formats de documents par programme.
 ## Conditions préalables

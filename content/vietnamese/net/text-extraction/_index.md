@@ -7,6 +7,9 @@ weight: 20
 url: /vi/net/text-extraction/
 ---
 
+# Trích xuất văn bản
+
+
 ## Giới thiệu
 
 Chào mừng bạn đến với bộ sưu tập toàn diện các hướng dẫn trích xuất văn bản được cung cấp bởi GroupDocs.Parser cho .NET. Trong loạt hướng dẫn này, chúng ta sẽ khám phá các phương pháp và kỹ thuật khác nhau để trích xuất, đánh dấu và tìm kiếm văn bản từ các tài liệu trong ứng dụng .NET của bạn.

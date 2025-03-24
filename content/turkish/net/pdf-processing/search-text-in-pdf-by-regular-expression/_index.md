@@ -6,6 +6,9 @@ description: GroupDocs.Parser ile normal ifadeleri kullanarak PDF belgelerinde b
 weight: 19
 url: /tr/net/pdf-processing/search-text-in-pdf-by-regular-expression/
 ---
+
+# Normal İfade ile PDF'de Metin Arama
+
 ## giriiş
 Bu öğreticide, GroupDocs.Parser for .NET'i kullanarak PDF belgelerinden verimli bir şekilde nasıl metin ayıklanacağını keşfedeceğiz. GroupDocs.Parser, geliştiricilerin PDF'ler de dahil olmak üzere çeşitli belge formatlarındaki metinleri, meta verileri ve yapılandırılmış verileri ayrıştırıp çıkarmasına olanak tanıyan güçlü bir kitaplıktır. .NET uygulamalarınızdaki veri çıkarma, içerik analizi veya arama işlevleri üzerinde çalışıyor olsanız da, GroupDocs.Parser bu görevleri sorunsuz bir şekilde yerine getirmek için kapsamlı bir araç seti sağlar.
 ## Önkoşullar

@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET'i kullanarak parola korumalı belgelerden
 weight: 15
 url: /tr/net/document-loading/working-with-password-protected-documents/
 ---
+
+# Parola Korumalı Belgelerle Çalışma
+
 ## giriiş
 Belge işleme dünyasında parola korumalı dosyaların verimli bir şekilde işlenmesi çok önemlidir. GroupDocs.Parser for .NET, bu tür belgelerle sorunsuz bir şekilde çalışmak için güçlü yetenekler sunar. Bu eğitim, GroupDocs.Parser'ı kullanarak parola korumalı belgelerden metin çıkarma sürecinde size rehberlik edecektir.
 ## Önkoşullar

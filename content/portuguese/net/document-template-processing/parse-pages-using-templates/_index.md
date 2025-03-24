@@ -6,6 +6,9 @@ description: Aprenda como analisar páginas de documentos usando modelos em .NET
 weight: 16
 url: /pt/net/document-template-processing/parse-pages-using-templates/
 ---
+
+# Analisar páginas usando modelos
+
 ## Introdução
 Neste tutorial, nos aprofundaremos no uso do GroupDocs.Parser for .NET para extrair dados de documentos com eficiência. GroupDocs.Parser é uma biblioteca poderosa que permite analisar vários formatos de documentos como PDF, DOCX, PPTX e muito mais. Vamos nos concentrar na análise de páginas usando modelos, que permitem a extração precisa de conteúdo específico, como códigos de barras.
 ## Pré-requisitos

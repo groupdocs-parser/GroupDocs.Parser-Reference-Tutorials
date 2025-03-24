@@ -6,6 +6,9 @@ description: Learn how to extract attachments from PDF portfolios using GroupDoc
 weight: 10
 url: /net/pdf-processing/extract-attachments-from-pdf-portfolios/
 ---
+
+# Extract Attachments from PDF Portfolios
+
 ## Introduction
 In the world of document processing and analysis, handling PDF portfolios efficiently can be crucial. GroupDocs.Parser for .NET offers a powerful solution for extracting attachments from PDF portfolios, enabling developers to access and manage the contents with ease. This tutorial will guide you through the process step by step, using GroupDocs.Parser to extract attachments seamlessly.
 ## Prerequisites

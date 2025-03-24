@@ -6,6 +6,9 @@ description: GroupDocs.Parser for .NET を使用して、ドキュメント内�
 weight: 23
 url: /ja/net/text-extraction/search-text-by-regex/
 ---
+
+# 正規表現によるテキスト検索 (Regex)
+
 ## 導入
 このチュートリアルでは、GroupDocs.Parser for .NET を使用して、ドキュメント内のテキストを正規表現 (Regex) で検索する方法について詳しく説明します。GroupDocs.Parser は、開発者が PDF、DOCX、XLSX などのさまざまなファイル形式からテキストとメタデータを抽出できるようにする強力なライブラリです。正規表現を使用したテキストの検索は、ドキュメント内のパターンや特定のコンテンツを効率的に見つけるのに特に便利です。
 ## 前提条件

@@ -6,6 +6,9 @@ description: Scopri come estrarre con precisione le immagini dai documenti utili
 weight: 10
 url: /it/net/image-extraction/extract-images-from-document-page-area/
 ---
+
+# Estrai immagini dall'area della pagina del documento
+
 ## introduzione
 In questo tutorial impareremo come utilizzare Groupdocs.Parser per .NET per estrarre immagini da aree specifiche di una pagina di documento. Questo processo consente di individuare e recuperare con precisione le immagini in base alle coordinate e alle dimensioni definite all'interno del documento.
 ## Prerequisiti

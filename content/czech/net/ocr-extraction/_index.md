@@ -7,6 +7,9 @@ weight: 28
 url: /cs/net/ocr-extraction/
 ---
 
+# Extrakce optického rozpoznávání znaků (OCR).
+
+
 ## Úvod
 
 Odemkněte sílu extrakce optického rozpoznávání znaků (OCR) v .NET pomocí výukových programů GroupDocs.Parser. Tyto výukové programy poskytují komplexní pokyny pro práci s OCR, rozpoznávání textu a extrahování obsahu z konkrétních oblastí nebo obdélníkových oblastí v dokumentech. Ať už jste začátečník nebo zkušený vývojář, tyto výukové programy nabízejí jasné pokyny krok za krokem a příklady kódu, které vám pomohou bezproblémově integrovat extrakci OCR do vašich aplikací .NET.

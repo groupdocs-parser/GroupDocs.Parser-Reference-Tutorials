@@ -6,6 +6,9 @@ description: Aprenda a extraer texto sin formato de documentos utilizando GroupD
 weight: 14
 url: /es/net/formatted-text-extraction/extract-plain-text/
 ---
+
+# Extraer texto sin formato
+
 ## Introducción
 En este tutorial, exploraremos cómo extraer texto sin formato de varios formatos de documentos usando GroupDocs.Parser para .NET. GroupDocs.Parser es una poderosa biblioteca que permite a los desarrolladores trabajar con documentos sin problemas, extrayendo texto y metadatos de manera eficiente. Esta guía lo guiará a través de los pasos necesarios para integrar y utilizar esta biblioteca dentro de sus aplicaciones .NET.
 ## Requisitos previos

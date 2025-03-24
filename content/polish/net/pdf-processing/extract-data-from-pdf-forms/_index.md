@@ -6,6 +6,9 @@ description: Dowiedz się, jak wyodrębniać dane z formularzy PDF za pomocą Gr
 weight: 11
 url: /pl/net/pdf-processing/extract-data-from-pdf-forms/
 ---
+
+# Wyodrębnij dane z formularzy PDF
+
 ## Wstęp
 W tym samouczku omówimy, jak wykorzystać GroupDocs.Parser dla .NET do wyodrębnienia danych z formularzy PDF. GroupDocs.Parser to potężna biblioteka, która umożliwia programistom wydajną pracę z różnymi formatami dokumentów, w tym PDF, DOCX, XLSX i innymi. Przeprowadzimy przez niezbędne kroki, aby wyodrębnić określone pola z formularza PDF i obsłużyć wyodrębnione dane.
 ## Warunki wstępne

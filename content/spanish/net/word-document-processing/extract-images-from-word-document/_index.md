@@ -6,6 +6,9 @@ description: Aprenda a extraer imágenes de un documento de Word usando GroupDoc
 weight: 11
 url: /es/net/word-document-processing/extract-images-from-word-document/
 ---
+
+# Extraer imágenes de un documento de Word
+
 ## Introducción
 En este tutorial, aprenderá cómo extraer imágenes de un documento de Word usando GroupDocs.Parser para .NET. GroupDocs.Parser es una poderosa biblioteca .NET que le permite analizar y extraer texto, metadatos, imágenes y más de varios formatos de documentos, incluido Word (DOCX).
 ## Requisitos previos
