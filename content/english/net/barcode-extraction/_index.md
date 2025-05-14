@@ -43,3 +43,35 @@ Learn how to extract barcodes from document pages using GroupDocs.Parser for .NE
 Learn how to extract barcodes from document pages using GroupDocs.Parser for .NET. Enhance your document processing capabilities with this step-by-step tutorial.
 ### [Extract Barcodes from Document with Options](./extract-barcodes-from-document-with-options/)
 Learn how to extract barcodes from documents using GroupDocs.Parser for .NET. Comprehensive tutorial with code examples and FAQs.
+### [.NET Barcode Extraction and JSON Export Using GroupDocs.Parser&#58; A Comprehensive Guide](./net-barcode-extraction-json-export-groupdocs-parser/)
+Learn how to implement barcode extraction from documents using .NET and export data as JSON with GroupDocs.Parser. Streamline your data management systems today.
+
+### [.NET Barcode Extraction with GroupDocs.Parser&#58; A Comprehensive Guide for Developers](./net-barcode-extraction-guide-groupdocs-parser/)
+Learn how to implement barcode extraction in .NET using GroupDocs.Parser. This guide covers prerequisites, setup, and real-world applications.
+
+### [.NET Barcode Parsing with GroupDocs&#58; A Comprehensive Guide to Template-Based Extraction](./net-barcode-parsing-groupdocs-template-extraction/)
+Learn how to efficiently parse barcodes in .NET using GroupDocs.Parser. This guide covers setup, template creation, and data extraction.
+
+### [Efficient Barcode Extraction from Documents Using GroupDocs.Parser for .NET&#58; A Comprehensive Guide](./groupdocs-parser-net-barcode-extraction-guide/)
+Learn how to automate barcode extraction from documents using GroupDocs.Parser for .NET. This guide covers setup, implementation, and practical applications.
+
+### [Extract Barcodes Efficiently with GroupDocs.Parser for .NET | Barcode Extraction Tutorial](./extract-barcodes-groupdocs-parser-net/)
+Learn how to extract barcodes from documents using the GroupDocs.Parser .NET library. Streamline inventory management and enhance data accuracy.
+
+### [Extract Barcodes from Specific Areas in Documents Using GroupDocs.Parser .NET](./groupdocs-parser-dotnet-extract-barcodes-specific-areas/)
+Learn how to efficiently extract barcodes from specific areas of PDFs using GroupDocs.Parser for .NET. Follow this guide to integrate barcode extraction into your applications.
+
+### [How to Extract Corrupted Barcodes Using GroupDocs.Parser .NET&#58; A Comprehensive Guide](./extract-corrupted-barcodes-groupdocs-parser-net/)
+Learn how to efficiently extract corrupted barcodes from documents using GroupDocs.Parser .NET, perfect for inventory management and data migration.
+
+### [Mastering Barcode Extraction in .NET Using GroupDocs.Parser&#58; A Comprehensive Guide](./mastering-barcode-extraction-groupdocs-parser-net/)
+Learn how to efficiently extract barcodes from documents using GroupDocs.Parser for .NET. This guide covers setup, template creation, and real-world applications.
+
+## Additional Resources
+
+- [GroupDocs.Parser for Net Documentation](https://docs.groupdocs.com/parser/net/)
+- [GroupDocs.Parser for Net API Reference](https://reference.groupdocs.com/parser/net/)
+- [Download GroupDocs.Parser for Net](https://releases.groupdocs.com/parser/net/)
+- [GroupDocs.Parser Forum](https://forum.groupdocs.com/c/parser)
+- [Free Support](https://forum.groupdocs.com/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)

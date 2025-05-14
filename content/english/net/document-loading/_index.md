@@ -46,3 +46,20 @@ Learn how to extract text from documents using GroupDocs.Parser for .NET. This t
 Learn how to extract text from various file formats in .NET using GroupDocs.Parser. Step-by-step tutorial for efficient document processing.
 ### [Working with Password Protected Documents](./working-with-password-protected-documents/)
 Learn how to extract text from password-protected documents using GroupDocs.Parser for .NET. Enhance your document processing capabilities.
+### [How to Process Password-Protected Documents Using GroupDocs.Parser for .NET&#58; A Step-by-Step Guide](./processing-password-documents-groupdocs-parser-net/)
+Learn how to efficiently process password-protected documents using GroupDocs.Parser for .NET with this comprehensive guide, featuring code examples and best practices.
+
+### [Master File Loading in .NET Using GroupDocs.Parser for Markdown Files](./mastering-groupdocs-parser-markdown-loading-net/)
+Learn how to efficiently load and parse markdown files using GroupDocs.Parser for .NET. This guide provides step-by-step instructions, practical applications, and performance tips.
+
+### [Mastering Document Loading and Text Extraction in .NET Using GroupDocs.Parser](./mastering-document-loading-groupdocs-parser-net/)
+Learn how to efficiently load and extract text from PDF files using GroupDocs.Parser for .NET. This guide covers setup, implementation, and real-world applications.
+
+## Additional Resources
+
+- [GroupDocs.Parser for Net Documentation](https://docs.groupdocs.com/parser/net/)
+- [GroupDocs.Parser for Net API Reference](https://reference.groupdocs.com/parser/net/)
+- [Download GroupDocs.Parser for Net](https://releases.groupdocs.com/parser/net/)
+- [GroupDocs.Parser Forum](https://forum.groupdocs.com/c/parser)
+- [Free Support](https://forum.groupdocs.com/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
