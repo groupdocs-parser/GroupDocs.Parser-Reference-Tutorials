@@ -39,3 +39,20 @@ Learn how to extract hyperlinks from documents using GroupDocs.Parser for .NET. 
 Learn how to extract hyperlinks from documents using GroupDocs.Parser for .NET. Step-by-step guide for hyperlink extraction in C#.
 ### [Extract Hyperlinks from Document Page Area](./extract-hyperlinks-from-document-page-area/)
 Learn how to extract hyperlinks from specific document areas using GroupDocs.Parser for .NET. Enhance your document processing capabilities.
+### [Extract Hyperlinks from Word Docs with GroupDocs.Parser for .NET&#58; A Step-by-Step Guide](./extract-hyperlinks-word-docs-groupdocs-parser-net/)
+Learn how to extract hyperlinks from Microsoft Word documents using GroupDocs.Parser for .NET. This guide provides step-by-step instructions and practical use cases.
+
+### [How to Extract Hyperlinks from Documents using GroupDocs.Parser .NET API](./extract-hyperlinks-groupdocs-parser-net/)
+Learn how to extract hyperlinks efficiently from various document formats using the GroupDocs.Parser for .NET. Ideal for PDFs, Word docs, and more.
+
+### [Master Hyperlink Extraction in .NET with GroupDocs.Parser&#58; A Comprehensive Guide](./mastering-hyperlink-extraction-groupdocs-parser-net/)
+Learn how to efficiently extract hyperlinks from documents using GroupDocs.Parser for .NET. This guide covers setup, implementation, and best practices.
+
+## Additional Resources
+
+- [GroupDocs.Parser for Net Documentation](https://docs.groupdocs.com/parser/net/)
+- [GroupDocs.Parser for Net API Reference](https://reference.groupdocs.com/parser/net/)
+- [Download GroupDocs.Parser for Net](https://releases.groupdocs.com/parser/net/)
+- [GroupDocs.Parser Forum](https://forum.groupdocs.com/c/parser)
+- [Free Support](https://forum.groupdocs.com/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)

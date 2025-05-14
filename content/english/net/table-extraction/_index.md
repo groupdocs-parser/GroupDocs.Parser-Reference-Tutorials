@@ -29,3 +29,26 @@ In conclusion, GroupDocs.Parser for .NET tutorials on table extraction provide i
 Learn how to extract tables from documents using Groupdocs.Parser for .NET. Follow along for a detailed guide on integrating this functionality.
 ### [Extract Tables from Document Page](./extract-tables-from-document-page/)
 Learn how to extract tables from documents programmatically using GroupDocs.Parser for .NET. This comprehensive tutorial provides step-by-step guidance.
+### [Create a Table Template in C# Using GroupDocs.Parser .NET for Efficient Document Parsing](./create-table-template-groupdocs-parser-net/)
+Learn how to create table templates with GroupDocs.Parser .NET, optimize document parsing workflows, and streamline data extraction from structured documents.
+
+### [Efficiently Extract Tables from Word Documents Using GroupDocs.Parser for .NET](./extract-tables-word-documents-groupdocs-parser-dotnet/)
+Learn how to easily extract tables from Microsoft Word documents using GroupDocs.Parser for .NET. This guide covers setup, implementation, and optimization tips.
+
+### [Extract Tables from PDFs Using GroupDocs.Parser .NET&#58; A Comprehensive Guide](./extract-tables-groupdocs-parser-dotnet/)
+Learn how to efficiently extract tables from PDFs using GroupDocs.Parser for .NET. This guide covers setup, implementation, and best practices for seamless integration.
+
+### [Extracting Data from Excel Files Using GroupDocs.Parser for .NET&#58; A Step-by-Step Guide](./extracting-excel-data-groupdocs-parser-net/)
+Learn how to extract data from Excel files with ease using GroupDocs.Parser for .NET. This comprehensive guide covers everything from setup to advanced cell range extraction.
+
+### [Master Table Extraction from PDFs Using GroupDocs.Parser .NET&#58; A Comprehensive Guide](./groupdocs-parser-net-table-extraction-tutorial/)
+Learn how to efficiently extract tables from PDF files using GroupDocs.Parser for .NET, boosting your data processing workflows.
+
+## Additional Resources
+
+- [GroupDocs.Parser for Net Documentation](https://docs.groupdocs.com/parser/net/)
+- [GroupDocs.Parser for Net API Reference](https://reference.groupdocs.com/parser/net/)
+- [Download GroupDocs.Parser for Net](https://releases.groupdocs.com/parser/net/)
+- [GroupDocs.Parser Forum](https://forum.groupdocs.com/c/parser)
+- [Free Support](https://forum.groupdocs.com/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)

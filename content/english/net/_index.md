@@ -51,6 +51,8 @@ PDFs are ubiquitous in document sharing. [GroupDocs.Parser for .NET](./pdf-proce
 With [GroupDocs.Parser for .NET](./word-document-processing/), you can unlock a world of possibilities for document processing and analysis. Explore our tutorials today and take your .NET applications to new heights of efficiency and functionality.
 
 ## GroupDocs.Parser for .NET Tutorials
+### [Getting Started](./getting-started)
+Step-by-step tutorials for GroupDocs.Parser installation, licensing, setup, and basic document parsing in .NET applications.
 ### [Text Extraction](./text-extraction/)
 Unlock efficient text extraction techniques with GroupDocs.Parser for .NET. Learn to extract, highlight, and search text effortlessly.
 ### [Formatted Text Extraction](./formatted-text-extraction/)
@@ -77,3 +79,24 @@ Discover a range of tutorials on Word document processing using GroupDocs.Parser
 Master PDF processing with GroupDocs.Parser for .NET. Learn to extract attachments, data, images, metadata, and text efficiently from PDFs.
 ### [Excel Document Processing](./excel-document-processing/)
 Master Excel document processing in .NET with GroupDocs.Parser. Learn to extract images, metadata, and text efficiently with step-by-step guides.
+Here are all categories converted to the requested markdown format:
+### [Text Search](./text-search/)
+Learn to search text using keywords, regular expressions, and advanced search options with these GroupDocs.Parser .NET tutorials.
+### [Formatted Text Extraction](./formatted-text-extraction/)
+Step-by-step tutorials for extracting text with formatting in HTML, Markdown, and other formats using GroupDocs.Parser for .NET.
+### [Template Parsing](./template-parsing/)
+Learn to use templates for extracting structured data from documents with these GroupDocs.Parser .NET tutorials.
+### [Email Parsing](./email-parsing/)
+Complete tutorials for extracting emails, attachments, and metadata from various email formats using GroupDocs.Parser for .NET.
+### [Document Information](./document-information/)
+Step-by-step tutorials for retrieving document information, supported features, and file format details using GroupDocs.Parser for .NET.
+### [Container Formats](./container-formats/)
+Learn to work with ZIP archives, PDF portfolios, and other container formats with these GroupDocs.Parser .NET tutorials.
+### [Advanced Features](./advanced-features/)
+Complete tutorials for implementing highlighting, text area detection, encoding detection, and other advanced features with GroupDocs.Parser for .NET.
+### [Page Preview Generation](./page-preview-generation/)
+Step-by-step tutorials for generating page previews and thumbnails from various document formats using GroupDocs.Parser for .NET.
+### [OCR Integration](./ocr-integration/)
+Learn to implement Optical Character Recognition (OCR) features for image-based text extraction with these GroupDocs.Parser .NET tutorials.
+### [Database Integration](./database-integration/)
+Complete tutorials for extracting data from databases and integrating with database connections using GroupDocs.Parser for .NET. 

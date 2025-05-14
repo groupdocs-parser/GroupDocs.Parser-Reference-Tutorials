@@ -44,3 +44,35 @@ Learn how to extract HTML content from documents using GroupDocs.Parser for .NET
 Learn how to extract Markdown content from documents using GroupDocs.Parser for .NET. This tutorial provides step-by-step instructions for seamless text extraction.
 ### [Extract Plain Text](./extract-plain-text/)
 Learn how to extract plain text from documents using GroupDocs.Parser for .NET. Easy steps for integrating text extraction in your applications.
+### [Convert Document Text to HTML Using GroupDocs.Parser for .NET - Formatted Text Extraction Guide](./convert-text-html-groupdocs-parser-net/)
+Learn how to convert document text into HTML format effortlessly with GroupDocs.Parser for .NET. Follow this comprehensive guide for developers.
+
+### [Convert PowerPoint to HTML using GroupDocs.Parser .NET&#58; A Comprehensive Guide for Formatted Text Extraction](./convert-powerpoint-html-groupdocs-parser-dotnet/)
+Learn how to convert PowerPoint presentations into web-friendly HTML format using GroupDocs.Parser .NET with this detailed guide. Perfect for sharing and archiving your documents online.
+
+### [Convert Word Documents to HTML Using GroupDocs.Parser .NET for Seamless Text Extraction](./convert-word-to-html-groupdocs-parser-net/)
+Learn how to convert Microsoft Word documents into HTML using GroupDocs.Parser .NET. This guide covers setup, implementation, and practical applications.
+
+### [Extract Document Text as HTML Using GroupDocs.Parser .NET in C#](./groupdocs-parser-net-extract-html-text-csharp-guide/)
+Learn how to extract formatted text from documents as HTML using GroupDocs.Parser for .NET. This guide covers setup, implementation, and practical applications.
+
+### [Extract HTML Text from Documents Using GroupDocs.Parser for .NET](./groupdocs-parser-net-extract-html-text-documents/)
+Learn how to efficiently extract formatted text as HTML from Word, Excel, and PDF documents using GroupDocs.Parser for .NET. Streamline your document processing workflows today.
+
+### [Extract Markdown Text from Documents using GroupDocs.Parser for .NET](./groupdocs-parser-dotnet-markdown-extraction-guide/)
+Learn how to use GroupDocs.Parser for .NET to extract Markdown text efficiently while preserving formatting. Master document parsing with step-by-step guidance.
+
+### [How to Extract Text as HTML from Excel Using GroupDocs.Parser .NET for Seamless Data Conversion](./extract-text-html-excel-groupdocs-parser-dotnet/)
+Learn how to convert your Excel files into HTML format using GroupDocs.Parser for .NET, enhancing web integration and document management.
+
+### [How to Extract Text from HTML Using GroupDocs.Parser for .NET](./extract-text-html-groupdocs-parser-dotnet/)
+Learn how to efficiently extract text from HTML documents using GroupDocs.Parser for .NET with this detailed tutorial.
+
+## Additional Resources
+
+- [GroupDocs.Parser for Net Documentation](https://docs.groupdocs.com/parser/net/)
+- [GroupDocs.Parser for Net API Reference](https://reference.groupdocs.com/parser/net/)
+- [Download GroupDocs.Parser for Net](https://releases.groupdocs.com/parser/net/)
+- [GroupDocs.Parser Forum](https://forum.groupdocs.com/c/parser)
+- [Free Support](https://forum.groupdocs.com/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
