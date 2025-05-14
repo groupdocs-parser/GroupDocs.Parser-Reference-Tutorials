@@ -52,9 +52,6 @@ Learn how to efficiently process password-protected documents using GroupDocs.Pa
 ### [Master File Loading in .NET Using GroupDocs.Parser for Markdown Files](./mastering-groupdocs-parser-markdown-loading-net/)
 Learn how to efficiently load and parse markdown files using GroupDocs.Parser for .NET. This guide provides step-by-step instructions, practical applications, and performance tips.
 
-### [Mastering Document Loading and Text Extraction in .NET Using GroupDocs.Parser](./mastering-document-loading-groupdocs-parser-net/)
-Learn how to efficiently load and extract text from PDF files using GroupDocs.Parser for .NET. This guide covers setup, implementation, and real-world applications.
-
 ## Additional Resources
 
 - [GroupDocs.Parser for Net Documentation](https://docs.groupdocs.com/parser/net/)

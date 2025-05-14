@@ -119,9 +119,6 @@ Learn how to efficiently extract text from PDFs and other documents using GroupD
 ### [Mastering Document Text Extraction in Java using GroupDocs.Parser&#58; HTML and Markdown Guide](./mastering-document-text-extraction-java-groupdocs-parser/)
 Learn to extract text from documents in Java with GroupDocs.Parser. Transform content into HTML and Markdown for web publishing and documentation.
 
-### [Mastering PDF Parsing in Java&#58; GroupDocs.Parser with User-Generated Templates](./mastering-pdf-parsing-groupdocs-parser-java/)
-Efficiently extract data from PDFs using GroupDocs.Parser for Java. Learn to create custom templates and parse documents with precision.
-
 ## Additional Resources
 
 - [GroupDocs.Parser for Java Documentation](https://docs.groupdocs.com/parser/java/)

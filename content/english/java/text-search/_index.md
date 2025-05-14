@@ -20,9 +20,6 @@ Learn how to efficiently search for keywords within Microsoft OneNote documents 
 ### [Efficiently Search Keywords in Email Files Using GroupDocs.Parser Java Library](./search-keywords-emails-groupdocs-parser-java/)
 Learn how to search for specific keywords in emails using the powerful GroupDocs.Parser Java library. This guide covers setup, code implementation, and practical applications.
 
-### [How to Implement Java EPUB Keyword Search Using GroupDocs.Parser for Efficient Information Retrieval](./java-epub-keyword-search-groupdocs-parser/)
-Learn how to implement a keyword search feature in Java using GroupDocs.Parser, enhancing efficiency and accuracy when working with EPUB documents.
-
 ### [How to Perform Regex Text Searches in PDFs Using GroupDocs.Parser for Java](./master-pdf-text-searches-groupdocs-parser-java/)
 Learn how to use GroupDocs.Parser for Java to efficiently perform regex-based text searches in PDF documents. Enhance your data analysis and document management skills.
 

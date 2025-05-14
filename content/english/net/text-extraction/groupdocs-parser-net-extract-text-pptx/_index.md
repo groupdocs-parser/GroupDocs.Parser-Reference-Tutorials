@@ -128,18 +128,23 @@ Explore more features in the [GroupDocs.Parser documentation](https://docs.group
 ## FAQ Section
 
 **Q1: Can I extract text from password-protected PPTX files?**
+
 A1: Yes, provide credentials when initializing the Parser class for handling protected documents.
 
 **Q2: What types of content can be extracted besides text?**
+
 A2: GroupDocs.Parser supports extracting images and other data embedded in presentations.
 
 **Q3: How does performance scale with large PPTX files?**
+
 A3: Performance is robust, but for very large files, optimize code to handle memory usage efficiently.
 
 **Q4: Is there a limit on the number of slides that can be processed?**
+
 A4: No specific limit by GroupDocs.Parser; performance may vary based on system resources and file size.
 
 **Q5: Can I integrate this feature into an existing .NET application?**
+
 A5: Absolutely! The library fits seamlessly into various .NET applications.
 
 ## Resources

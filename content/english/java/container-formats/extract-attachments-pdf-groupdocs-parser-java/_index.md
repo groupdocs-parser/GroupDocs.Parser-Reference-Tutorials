@@ -179,9 +179,9 @@ A4: Yes, after purchasing a license. A temporary license can also be used for in
 A5: Visit the [GroupDocs support forum](https://forum.groupdocs.com/c/parser) for assistance from both the community and official support teams.
 
 ## Resources
-- **Documentation**: https://docs.groupdocs.com/parser/java/
-- **API Reference**: https://reference.groupdocs.com/parser/java
-- **Download**: https://releases.groupdocs.com/parser/java/
-- **GitHub Repository**: https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java
-- **Free Support**: https://forum.groupdocs.com/c/parser
-- **Temporary License**: https://purchase.groupdocs.com/temporary-license/
+- [Documentation:](https://docs.groupdocs.com/parser/java/)
+- [API Reference:](https://reference.groupdocs.com/parser/java)
+- [Download:](https://releases.groupdocs.com/parser/java/)
+- [GitHub Repository:](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
+- [Free Support:](https://forum.groupdocs.com/c/parser)
+- [Temporary License:](https://purchase.groupdocs.com/temporary-license/)

@@ -23,9 +23,6 @@ Learn how to extract text from specific sections of a document's Table of Conten
 ### [How to Extract Table of Contents from Word Documents using GroupDocs.Parser for Java](./groupdocs-parser-extract-toc-word-documents-java/)
 Learn how to extract a table of contents from Word documents using GroupDocs.Parser in Java with this developer's guide. Streamline document processing and enhance your applications.
 
-### [Mastering GroupDocs.Parser Java&#58; Extract Text and TOC from SQLite Databases](./mastering-groupdocs-parser-java-sqlite-text-toc-extraction/)
-Learn how to extract text and Table of Contents (TOC) from an SQLite database using GroupDocs.Parser with JDBC in Java. Enhance your data processing tasks.
-
 ## Additional Resources
 
 - [GroupDocs.Parser for Java Documentation](https://docs.groupdocs.com/parser/java/)

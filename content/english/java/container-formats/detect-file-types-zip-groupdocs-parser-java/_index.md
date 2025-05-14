@@ -164,9 +164,9 @@ Ready to take the next step? Try implementing this solution in your projects and
    - Absolutely! Start with a free trial to explore its full capabilities.
 
 ## Resources
-- **Documentation**: https://docs.groupdocs.com/parser/java/
-- **API Reference**: https://reference.groupdocs.com/parser/java
-- **Download**: https://releases.groupdocs.com/parser/java/
-- **GitHub**: https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java
-- **Free Support**: https://forum.groupdocs.com/c/parser
-- **Temporary License**: https://purchase.groupdocs.com/temporary-license/
+- [Documentation:](https://docs.groupdocs.com/parser/java/)
+- [API Reference:](https://reference.groupdocs.com/parser/java)
+- [Download:](https://releases.groupdocs.com/parser/java/)
+- [GitHub Repository:](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
+- [Free Support:](https://forum.groupdocs.com/c/parser)
+- [Temporary License:](https://purchase.groupdocs.com/temporary-license/)

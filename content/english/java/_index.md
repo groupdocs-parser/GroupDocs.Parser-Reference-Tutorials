@@ -60,45 +60,43 @@ Implement powerful search functionality:
 
 ## Tutorial Categories
 
-### [Getting Started](./getting-started)
+### [Getting Started](./getting-started/)
 Step-by-step tutorials for GroupDocs.Parser installation, licensing, setup, and basic document parsing in Java applications.
-### [Document Loading](./document-loading)
+### [Document Loading](./document-loading/)
 Complete tutorials for loading documents from various sources (local disk, stream, URL) and handling password-protected files using GroupDocs.Parser for Java.
-### [Text Extraction](./text-extraction)
+### [Text Extraction](./text-extraction/)
 Step-by-step tutorials for extracting plain text, formatted text, and text with layout information from documents using GroupDocs.Parser for Java.
-### [Text Search](./text-search)
+### [Text Search](./text-search/)
 Learn to search text using keywords, regular expressions, and advanced search options with these GroupDocs.Parser Java tutorials.
-### [Image Extraction](./image-extraction)
+### [Image Extraction](./image-extraction/)
 Complete tutorials for extracting images from various document formats and saving them as files using GroupDocs.Parser for Java.
-### [Table Extraction](./table-extraction)
+### [Table Extraction](./table-extraction/)
 Step-by-step tutorials for extracting and processing tables from documents using GroupDocs.Parser for Java.
-### [Metadata Extraction](./metadata-extraction)
+### [Metadata Extraction](./metadata-extraction/)
 Learn to extract and process document metadata and properties with these GroupDocs.Parser Java tutorials.
-### [Hyperlink Extraction](./hyperlink-extraction)
+### [Hyperlink Extraction](./hyperlink-extraction/)
 Complete tutorials for extracting hyperlinks from documents, pages, and specific areas using GroupDocs.Parser for Java.
-### [TOC Extraction](./toc-extraction)
+### [TOC Extraction](./toc-extraction/)
 Step-by-step tutorials for extracting and navigating document table of contents using GroupDocs.Parser for Java.
-### [Barcode Extraction](./barcode-extraction)
+### [Barcode Extraction](./barcode-extraction/)
 Learn to extract and process barcodes from documents and specific page areas with these GroupDocs.Parser Java tutorials.
-### [Form Extraction](./form-extraction)
+### [Form Extraction](./form-extraction/)
 Complete tutorials for extracting and processing data from PDF forms and other document fields using GroupDocs.Parser for Java.
-### [Formatted Text Extraction](./formatted-text-extraction)
+### [Formatted Text Extraction](./formatted-text-extraction/)
 Step-by-step tutorials for extracting text with formatting in HTML, Markdown, and other formats using GroupDocs.Parser for Java.
-### [Template Parsing](./template-parsing)
+### [Template Parsing](./template-parsing/)
 Learn to use templates for extracting structured data from documents with these GroupDocs.Parser Java tutorials.
-### [Email Parsing](./email-parsing)
+### [Email Parsing](./email-parsing/)
 Complete tutorials for extracting emails, attachments, and metadata from various email formats using GroupDocs.Parser for Java.
-### [Document Information](./document-information)
+### [Document Information](./document-information/)
 Step-by-step tutorials for retrieving document information, supported features, and file format details using GroupDocs.Parser for Java.
-### [Container Formats](./container-formats)
+### [Container Formats](./container-formats/)
 Learn to work with ZIP archives, PDF portfolios, and other container formats with these GroupDocs.Parser Java tutorials.
-### [Advanced Features](./advanced-features)
-Complete tutorials for implementing highlighting, text area detection, encoding detection, and other advanced features with GroupDocs.Parser for Java.
-### [Page Preview Generation](./page-preview-generation)
+### [Page Preview Generation](./page-preview-generation/)
 Step-by-step tutorials for generating page previews and thumbnails from various document formats using GroupDocs.Parser for Java.
-### [OCR Integration](./ocr-integration)
+### [OCR Integration](./ocr-integration/)
 Learn to implement Optical Character Recognition (OCR) features for image-based text extraction with these GroupDocs.Parser Java tutorials.
-### [Database Integration](./database-integration)
+### [Database Integration](./database-integration/)
 Complete tutorials for extracting data from databases and integrating with database connections using GroupDocs.Parser for Java.
 
 ## Support
