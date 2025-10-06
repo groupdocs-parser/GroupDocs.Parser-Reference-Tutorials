@@ -8,10 +8,8 @@ keywords:
 - extract PDF metadata .NET
 - GroupDocs.Parser for .NET tutorial
 - PDF metadata extraction C#
-
+type: docs
 ---
-
-
 # How to Extract PDF Metadata Using GroupDocs.Parser .NET: A Developer's Guide
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: .NET için GroupDocs.Parser ile belgelerden ana tablo çıkarma. Verimli veri işleme için tabloları programlı olarak çıkarmayı öğrenin.
 weight: 23
 url: /tr/net/table-extraction/
+type: docs
 ---
-
 # Tablo Çıkarma
 
 ## giriiş

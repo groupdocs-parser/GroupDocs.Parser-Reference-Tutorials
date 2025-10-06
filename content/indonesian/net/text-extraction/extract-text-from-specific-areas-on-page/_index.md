@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak teks dari area dokumen tertentu menggunakan GroupDocs.Parser untuk .NET. Ekstraksi teks yang tepat sasaran dan tepat untuk aplikasi Anda.
 weight: 13
 url: /id/net/text-extraction/extract-text-from-specific-areas-on-page/
+type: docs
 ---
-
 # Ekstrak Teks dari Area Tertentu di Halaman
 
 ## Perkenalan

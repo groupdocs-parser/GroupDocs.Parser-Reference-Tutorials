@@ -8,10 +8,8 @@ keywords:
 - extract hyperlinks Word
 - GroupDocs.Parser Java setup
 - hyperlink extraction Word documents
-
+type: docs
 ---
-
-
 # Extract Hyperlinks from Word Documents Using GroupDocs.Parser Java
 
 In the digital world, efficient document management is crucial for businesses and developers alike. Whether archiving web links or analyzing content, extracting hyperlinks from Microsoft Word documents can significantly streamline your workflow. **GroupDocs.Parser for Java** provides a powerful solution to simplify this task. This comprehensive guide will walk you through extracting hyperlinks using GroupDocs.Parser, equipping you with the knowledge to implement this feature in your projects.

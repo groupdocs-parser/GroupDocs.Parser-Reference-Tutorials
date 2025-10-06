@@ -8,10 +8,8 @@ keywords:
 - spreadsheet page previews
 - GroupDocs.Parser for .NET
 - generate spreadsheet previews
-
+type: docs
 ---
-
-
 # Generate Spreadsheet Page Previews Using GroupDocs.Parser for .NET
 
 ## Introduction

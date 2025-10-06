@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกวิเคราะห์หน้าเอกสารโดยใช้เทมเพลตใน .NET ด้วย GroupDocs.Parser แยกเนื้อหาเฉพาะอย่างมีประสิทธิภาพสำหรับแอปพลิเคชันของคุณ
 weight: 16
 url: /th/net/document-template-processing/parse-pages-using-templates/
+type: docs
 ---
-
 # แยกหน้าโดยใช้เทมเพลต
 
 ## การแนะนำ

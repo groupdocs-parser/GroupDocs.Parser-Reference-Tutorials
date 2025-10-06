@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 從文件中提取超連結。透過這個簡單的指南增強您的 C# 應用程式。
 weight: 10
 url: /zh-hant/net/hyperlink-extraction/extract-hyperlinks-from-document/
+type: docs
 ---
-
 # 從文件中提取超鏈接
 
 ## 介紹

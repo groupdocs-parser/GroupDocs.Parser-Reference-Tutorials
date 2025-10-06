@@ -8,10 +8,8 @@ keywords:
 - hyperlink extraction Java
 - GroupDocs.Parser hyperlink
 - Java document parsing
-
+type: docs
 ---
-
-
 # Mastering Hyperlink Extraction in Java with GroupDocs.Parser
 
 ## Introduction

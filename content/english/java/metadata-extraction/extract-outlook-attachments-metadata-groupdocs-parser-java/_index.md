@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser Java
 - extract Outlook attachments
 - retrieve metadata Outlook
-
+type: docs
 ---
-
-
 # Extract Outlook Attachments & Metadata Using GroupDocs.Parser Java: A Complete Guide
 
 In today's digital age, managing emails effectively is crucial for both personal and professional productivity. Imagine having a tool that not only helps you extract attachments from your Outlook storage files but also allows you to retrieve metadata associated with these attachments seamlessly. This guide will walk you through using the powerful GroupDocs.Parser Java library to achieve just that.

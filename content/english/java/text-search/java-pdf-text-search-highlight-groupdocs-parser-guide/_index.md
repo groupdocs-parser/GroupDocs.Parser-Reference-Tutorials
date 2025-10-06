@@ -8,9 +8,8 @@ keywords:
 - GroupDocs.Parser
 - Java
 - Document Processing
-
+type: docs
 ---
-
 ## Introduction
 
 Ever find yourself drowning in a sea of documents—be it PDFs, Word files, or other formats—and wish you could effortlessly find specific words or phrases? You’re not alone! Searching text inside complex files can be a challenge, especially when you also want visual cues like highlights to quickly locate your search terms. That’s where **GroupDocs.Parser for Java** shines.

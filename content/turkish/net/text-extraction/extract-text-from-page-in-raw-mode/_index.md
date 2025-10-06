@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: Bu kapsamlı eğitimde Groupdocs.Parser for .NET'i kullanarak belge sayfalarından verimli metin çıkarmayı öğrenin.
 weight: 17
 url: /tr/net/text-extraction/extract-text-from-page-in-raw-mode/
+type: docs
 ---
-
 # Ham Modda Sayfadan Metin Çıkarma
 
 ## giriiş

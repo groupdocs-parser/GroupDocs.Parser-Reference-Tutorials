@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất hình ảnh từ tài liệu Word bằng GroupDocs.Parser cho .NET. Hướng dẫn này cung cấp hướng dẫn từng bước để tích hợp hình ảnh vào .NET của bạn.
 weight: 11
 url: /vi/net/word-document-processing/extract-images-from-word-document/
+type: docs
 ---
-
 # Trích xuất hình ảnh từ tài liệu Word
 
 ## Giới thiệu

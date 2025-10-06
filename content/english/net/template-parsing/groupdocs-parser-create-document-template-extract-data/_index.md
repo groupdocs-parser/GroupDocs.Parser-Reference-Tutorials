@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Parser
 - data extraction templates
 - automated document parsing
-
+type: docs
 ---
-
-
 # How to Create and Use Document Templates for Data Extraction with GroupDocs.Parser for .NET
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser के साथ कुशलतापूर्वक OCR संभालें और छवियों और दस्तावेज़ों से टेक्स्ट निकालें। आज ही अपनी OCR क्षमताओं को बढ़ाएँ!
 weight: 28
 url: /hi/net/ocr-extraction/
+type: docs
 ---
-
 # ऑप्टिकल कैरेक्टर रिकॉग्निशन (OCR) निष्कर्षण
 
 

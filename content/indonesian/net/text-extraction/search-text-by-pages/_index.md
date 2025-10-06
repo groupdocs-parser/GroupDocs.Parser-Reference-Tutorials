@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mencari teks berdasarkan halaman menggunakan GroupDocs.Parser untuk .NET. Ekstrak konten tertentu secara efisien dari dokumen di aplikasi .NET Anda.
 weight: 22
 url: /id/net/text-extraction/search-text-by-pages/
+type: docs
 ---
-
 # Cari Teks berdasarkan Halaman
 
 ## Perkenalan

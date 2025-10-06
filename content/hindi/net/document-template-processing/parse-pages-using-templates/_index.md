@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: GroupDocs.Parser के साथ .NET में टेम्प्लेट का उपयोग करके दस्तावेज़ पृष्ठों को पार्स करना सीखें। अपने अनुप्रयोगों के लिए विशिष्ट सामग्री को कुशलतापूर्वक निकालें।
 weight: 16
 url: /hi/net/document-template-processing/parse-pages-using-templates/
+type: docs
 ---
-
 # टेम्पलेट्स का उपयोग करके पेज पार्स करें
 
 ## परिचय

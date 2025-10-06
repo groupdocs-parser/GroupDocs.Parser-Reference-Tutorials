@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Tanulja meg, hogyan lehet pontosan kivonni szöveget a .NET-ben lévő dokumentumokból a GroupDocs.Parser segítségével a zökkenőmentes adatfeldolgozás érdekében.
 weight: 18
 url: /hu/net/text-extraction/extract-text-in-accurate-mode/
+type: docs
 ---
-
 # Szöveg kivonatolása pontos módban
 
 ## Bevezetés

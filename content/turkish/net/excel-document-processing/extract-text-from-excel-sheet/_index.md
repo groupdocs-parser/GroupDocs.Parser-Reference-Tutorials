@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak Excel sayfalarından nasıl metin ayıklayacağınızı öğrenin. Etkili metin çıkarma için basit adımlar.
 weight: 14
 url: /tr/net/excel-document-processing/extract-text-from-excel-sheet/
+type: docs
 ---
-
 # Excel Sayfasından Metin Çıkarma
 
 ## giriiş

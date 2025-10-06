@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất dữ liệu từ tài liệu PDF bằng GroupDocs.Parser cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để phân tích và xử lý tệp PDF một cách hiệu quả.
 weight: 17
 url: /vi/net/pdf-processing/parse-data-from-pdf-documents/
+type: docs
 ---
-
 # Phân tích dữ liệu từ tài liệu PDF
 
 ## Giới thiệu

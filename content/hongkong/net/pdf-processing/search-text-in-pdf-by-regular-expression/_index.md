@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 使用正規表示式和 GroupDocs.Parser 搜尋 PDF 文件中的特定文字。輕鬆擷取、分析和操作 PDF 文字。
 weight: 19
 url: /zh-hant/net/pdf-processing/search-text-in-pdf-by-regular-expression/
+type: docs
 ---
-
 # 透過正規表示式搜尋 PDF 中的文本
 
 ## 介紹

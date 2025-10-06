@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: แยกข้อความตามสารบัญ (TOC) โดยใช้ GroupDocs.Parser สำหรับ .NET เรียนรู้เทคนิคการแยกวิเคราะห์เอกสารที่มีประสิทธิภาพสำหรับการดึงข้อมูลที่มีโครงสร้าง
 weight: 15
 url: /th/net/text-extraction/extract-text-by-toc-item/
+type: docs
 ---
-
 # แยกข้อความตามรายการสารบัญ (TOC)
 
 ## การแนะนำ

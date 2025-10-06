@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić tekst z różnych formatów plików w .NET przy użyciu GroupDocs.Parser. Samouczek krok po kroku dotyczący wydajnego przetwarzania dokumentów.
 weight: 14
 url: /pl/net/document-loading/loading-specific-file-formats/
+type: docs
 ---
-
 # Ładowanie określonych formatów plików
 
 ## Wstęp

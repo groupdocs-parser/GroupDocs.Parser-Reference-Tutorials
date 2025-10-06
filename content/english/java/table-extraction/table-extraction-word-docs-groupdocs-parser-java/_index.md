@@ -8,10 +8,8 @@ keywords:
 - table extraction java
 - groupdocs parser word doc
 - java data management
-
+type: docs
 ---
-
-
 # Efficient Table Extraction from Word Documents Using GroupDocs.Parser in Java
 
 Extracting tables from Microsoft Office Word documents can be a challenging task that requires precision and efficiency. With the integration of GroupDocs.Parser for Java, developers have an effective tool to streamline this process. This tutorial will guide you through step-by-step implementation of extracting tables from Word documents using GroupDocs.Parser in Java.

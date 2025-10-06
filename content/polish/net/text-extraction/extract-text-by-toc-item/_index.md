@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Wyodrębnij tekst według spisu treści (TOC) za pomocą GroupDocs.Parser dla .NET. Poznaj wydajne techniki analizowania dokumentów w celu ekstrakcji danych strukturalnych.
 weight: 15
 url: /pl/net/text-extraction/extract-text-by-toc-item/
+type: docs
 ---
-
 # Wyodrębnij tekst według pozycji spisu treści (TOC).
 
 ## Wstęp

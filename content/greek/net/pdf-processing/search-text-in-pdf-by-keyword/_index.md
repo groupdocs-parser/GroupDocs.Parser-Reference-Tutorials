@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να αναζητάτε συγκεκριμένο κείμενο σε έγγραφα PDF χρησιμοποιώντας το GroupDocs.Parser για .NET. Ενσωματώστε ισχυρές δυνατότητες αναζήτησης κειμένου στο .NET σας αποτελεσματικά.
 weight: 18
 url: /el/net/pdf-processing/search-text-in-pdf-by-keyword/
+type: docs
 ---
-
 # Αναζήτηση κειμένου σε PDF κατά λέξη-κλειδί
 
 ## Εισαγωγή

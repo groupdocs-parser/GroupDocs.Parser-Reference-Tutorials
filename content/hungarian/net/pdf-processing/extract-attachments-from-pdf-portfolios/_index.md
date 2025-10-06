@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ebben az átfogó oktatóanyagban megtudhatja, hogyan bonthat ki mellékleteket PDF-portfóliókból a GroupDocs.Parser for .NET segítségével.
 weight: 10
 url: /hu/net/pdf-processing/extract-attachments-from-pdf-portfolios/
+type: docs
 ---
-
 # Kivonja a mellékleteket a PDF-portfóliókból
 
 ## Bevezetés

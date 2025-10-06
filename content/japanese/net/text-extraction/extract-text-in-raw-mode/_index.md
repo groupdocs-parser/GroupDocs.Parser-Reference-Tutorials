@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用してドキュメントからテキストを抽出する方法を学習します。.NET アプリケーション内で簡単かつ効率的でシームレスなテキスト抽出を実現します。
 weight: 19
 url: /ja/net/text-extraction/extract-text-in-raw-mode/
+type: docs
 ---
-
 # 生モードでテキストを抽出
 
 ## 導入

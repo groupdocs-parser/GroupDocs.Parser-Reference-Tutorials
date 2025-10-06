@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat data tabulky z dokumentů pomocí GroupDocs.Parser for .NET. Efektivně analyzujte strukturovaný obsah pomocí předdefinovaných šablon.
 weight: 12
 url: /cs/net/data-extraction-from-templates/working-with-tables-in-extracted-data/
+type: docs
 ---
-
 # Práce s tabulkami v extrahovaných datech
 
 ## Úvod

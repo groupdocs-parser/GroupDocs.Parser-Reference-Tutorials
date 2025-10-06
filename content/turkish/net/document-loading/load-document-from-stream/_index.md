@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser'ı kullanarak .NET'teki çeşitli belge biçimlerinden nasıl metin ayıklayacağınızı öğrenin. Kod örnekleri içeren adım adım kılavuz.
 weight: 12
 url: /tr/net/document-loading/load-document-from-stream/
+type: docs
 ---
-
 # Belgeyi Akıştan Yükle
 
 ## giriiş

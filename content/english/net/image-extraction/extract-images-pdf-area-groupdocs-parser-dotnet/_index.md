@@ -8,10 +8,8 @@ keywords:
 - extract images from PDF
 - image extraction using GroupDocs.Parser
 - precise image extraction
-
+type: docs
 ---
-
-
 # How to Extract Images from a Specific Area of a Document Using GroupDocs.Parser .NET
 
 ## Introduction

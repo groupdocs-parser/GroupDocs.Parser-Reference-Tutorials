@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: اكتشف كيفية استخراج الصور بدقة من المستندات باستخدام Groupdocs.Parser لـ .NET. تعلم كيفية استهداف مناطق محددة لاستخراج الصور بدقة.
 weight: 10
 url: /ar/net/image-extraction/extract-images-from-document-page-area/
+type: docs
 ---
-
 # استخراج الصور من منطقة صفحة الوثيقة
 
 ## مقدمة

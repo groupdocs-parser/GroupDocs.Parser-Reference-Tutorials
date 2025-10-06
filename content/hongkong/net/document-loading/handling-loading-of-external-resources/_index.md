@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser 處理 .NET 中的外部資源，以實現高效的文件解析和提取。
 weight: 10
 url: /zh-hant/net/document-loading/handling-loading-of-external-resources/
+type: docs
 ---
-
 # 處理外部資源的加載
 
 ## 介紹

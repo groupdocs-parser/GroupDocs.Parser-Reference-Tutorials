@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 암호로 보호된 문서에서 텍스트를 추출하는 방법을 알아보세요. 문서 처리 능력을 향상시켜 보세요.
 weight: 15
 url: /ko/net/document-loading/working-with-password-protected-documents/
+type: docs
 ---
-
 # 비밀번호로 보호된 문서 작업
 
 ## 소개

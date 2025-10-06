@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके टेम्प्लेट में टेबल लेआउट के साथ काम करना सीखें। दस्तावेज़ों से संरचित डेटा को कुशलतापूर्वक निकालें।
 weight: 14
 url: /hi/net/document-template-processing/working-with-table-layout-in-templates/
+type: docs
 ---
-
 # टेम्पलेट्स में टेबल लेआउट के साथ कार्य करना
 
 ## परिचय

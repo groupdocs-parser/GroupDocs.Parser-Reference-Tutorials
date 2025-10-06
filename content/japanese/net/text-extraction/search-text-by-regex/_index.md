@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して、ドキュメント内の正規表現を使用してテキストを検索する方法を学習します。特定のコンテンツを簡単に抽出します。
 weight: 23
 url: /ja/net/text-extraction/search-text-by-regex/
+type: docs
 ---
-
 # 正規表現によるテキスト検索 (Regex)
 
 ## 導入

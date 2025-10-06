@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất văn bản từ các trang cụ thể trong tài liệu Word bằng GroupDocs.Parser cho .NET. Tích hợp khả năng trích xuất văn bản vào .NET của bạn.
 weight: 17
 url: /vi/net/word-document-processing/extract-text-from-specific-page-in-word-document/
+type: docs
 ---
-
 # Trích xuất văn bản từ trang cụ thể trong tài liệu Word
 
 ## Giới thiệu

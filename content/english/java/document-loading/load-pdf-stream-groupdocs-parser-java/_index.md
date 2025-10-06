@@ -8,10 +8,8 @@ keywords:
 - load PDF from InputStream in Java
 - GroupDocs.Parser library
 - programmatic document handling
-
+type: docs
 ---
-
-
 # Load PDF from InputStream in Java Using GroupDocs.Parser
 ## Introduction
 In today's digital landscape, efficiently handling documents programmatically is crucial for automating workflows and enhancing productivity. Whether you're processing invoices, contracts, or reports, there are times when reading document contents directly from an input stream is more efficient than using a static file path. This comprehensive guide will show you how to achieve this with the GroupDocs.Parser library in Java.

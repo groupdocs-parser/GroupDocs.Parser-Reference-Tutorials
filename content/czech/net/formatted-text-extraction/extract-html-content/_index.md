@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat obsah HTML z dokumentů pomocí GroupDocs.Parser for .NET. Snadno sledovatelný výukový program s příklady kódu a pokyny krok za krokem.
 weight: 12
 url: /cs/net/formatted-text-extraction/extract-html-content/
+type: docs
 ---
-
 # Extrahujte obsah HTML
 
 ## Úvod

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki szöveget dokumentumokból a GroupDocs.Parser for .NET segítségével. Egyszerű, hatékony és zökkenőmentes szövegkinyerés a .NET-alkalmazásokon belül.
 weight: 19
 url: /hu/net/text-extraction/extract-text-in-raw-mode/
+type: docs
 ---
-
 # Szöveg kibontása nyers módban
 
 ## Bevezetés

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: टेम्प्लेट का उपयोग करके दस्तावेज़ों से संरचित डेटा निकालने के लिए .NET के लिए GroupDocs.Parser का उपयोग करना सीखें। बारकोड फ़ील्ड के साथ डेटा निष्कर्षण को सरल बनाएँ।
 weight: 10
 url: /hi/net/document-template-processing/working-with-barcodes-in-templates/
+type: docs
 ---
-
 # टेम्पलेट्स में बारकोड के साथ काम करना
 
 ## परिचय

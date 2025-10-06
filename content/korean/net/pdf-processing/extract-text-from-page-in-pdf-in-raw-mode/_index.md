@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: C#에서 GroupDocs.Parser를 사용하여 PDF에서 텍스트를 추출합니다. 이 강력한 .NET 라이브러리를 사용하여 효율적인 PDF 텍스트 추출에 대해 알아보세요.
 weight: 16
 url: /ko/net/pdf-processing/extract-text-from-page-in-pdf-in-raw-mode/
+type: docs
 ---
-
 # 원시 모드의 PDF 페이지에서 텍스트 추출
 
 ## 소개

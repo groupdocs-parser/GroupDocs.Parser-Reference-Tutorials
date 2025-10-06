@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 使用 GroupDocs.Parser for .NET 轻松提取数据。学习检索特定字段、遍历数据以及处理提取内容中的表格。
 weight: 26
 url: /zh/net/data-extraction-from-templates/
+type: docs
 ---
-
 # 从模板提取数据
 
 

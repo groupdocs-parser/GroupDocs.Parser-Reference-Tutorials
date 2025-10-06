@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Εξάγετε δομημένα δεδομένα χωρίς κόπο από πρότυπα εγγράφων με το GroupDocs.Parser για .NET. Μάθετε να εργάζεστε με γραμμωτούς κώδικες, πεδία, regex και διατάξεις πίνακα.
 weight: 22
 url: /el/net/document-template-processing/
+type: docs
 ---
-
 # Επεξεργασία προτύπου εγγράφου
 
 

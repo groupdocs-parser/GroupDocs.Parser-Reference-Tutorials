@@ -8,10 +8,8 @@ keywords:
 - extract barcodes PDF Java
 - GroupDocs.Parser for Java setup
 - Java barcode extraction from documents
-
+type: docs
 ---
-
-
 # Extract Barcodes from PDFs Using GroupDocs.Parser for Java
 
 ## Introduction

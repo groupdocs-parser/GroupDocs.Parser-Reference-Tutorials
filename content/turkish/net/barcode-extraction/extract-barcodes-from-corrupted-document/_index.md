@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak bozuk belgelerden barkodları nasıl çıkaracağınızı öğrenin. Adım adım talimatlarla kapsamlı eğitim.
 weight: 11
 url: /tr/net/barcode-extraction/extract-barcodes-from-corrupted-document/
+type: docs
 ---
-
 # Bozuk Belgeden Barkodları Çıkarma
 
 ## giriiş

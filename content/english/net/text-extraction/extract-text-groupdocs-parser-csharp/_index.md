@@ -8,10 +8,8 @@ keywords:
 - extract text from word
 - GroupDocs.Parser for .NET
 - text extraction in C#
-
+type: docs
 ---
-
-
 # How to Extract Text from Word Documents Using GroupDocs.Parser in C#
 
 ## Introduction

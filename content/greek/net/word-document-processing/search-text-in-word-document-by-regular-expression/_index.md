@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να αναζητάτε κείμενο σε έγγραφα του Word χρησιμοποιώντας κανονικές εκφράσεις με το GroupDocs.Parser για .NET. Εξαγωγή συγκεκριμένου περιεχομένου αποτελεσματικά.
 weight: 19
 url: /el/net/word-document-processing/search-text-in-word-document-by-regular-expression/
+type: docs
 ---
-
 # Αναζήτηση κειμένου σε έγγραφο Word με κανονική έκφραση
 
 ## Εισαγωγή

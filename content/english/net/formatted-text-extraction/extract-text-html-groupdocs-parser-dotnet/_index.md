@@ -8,10 +8,8 @@ keywords:
 - extract text from HTML using .NET
 - GroupDocs.Parser for .NET tutorial
 - text extraction in C#
-
+type: docs
 ---
-
-
 # How to Extract Text from an HTML Document Using GroupDocs.Parser for .NET
 
 ## Introduction

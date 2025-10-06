@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 Groupdocs.Parser for .NET 從文件中提取表格。請繼續閱讀有關整合此功能的詳細指南。
 weight: 10
 url: /zh-hant/net/table-extraction/extract-tables-from-document/
+type: docs
 ---
-
 # 從文件中提取表格
 
 ## 介紹

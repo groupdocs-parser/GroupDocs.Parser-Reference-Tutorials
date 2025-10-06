@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belgelerden nasıl veri ayıklayacağınızı öğrenin. Kod örnekleriyle kapsamlı eğitim.
 weight: 11
 url: /tr/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
+type: docs
 ---
-
 # Şablonlarda Sabit Konumlardaki Alanlarla Çalışma
 
 ## giriiş

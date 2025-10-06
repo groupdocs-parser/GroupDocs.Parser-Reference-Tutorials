@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 在文档中按关键字搜索文本。轻松高效地提取相关内容。
 weight: 21
 url: /zh/net/text-extraction/search-text-by-keyword/
+type: docs
 ---
-
 # 按关键字搜索文本
 
 ## 介绍

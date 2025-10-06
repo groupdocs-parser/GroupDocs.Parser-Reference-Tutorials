@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε δεδομένα από έγγραφα PDF χρησιμοποιώντας το GroupDocs.Parser για .NET. Ακολουθήστε τον αναλυτικό οδηγό μας για την αποτελεσματική ανάλυση και επεξεργασία αρχείων PDF.
 weight: 17
 url: /el/net/pdf-processing/parse-data-from-pdf-documents/
+type: docs
 ---
-
 # Ανάλυση δεδομένων από έγγραφα PDF
 
 ## Εισαγωγή

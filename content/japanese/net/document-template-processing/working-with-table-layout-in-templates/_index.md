@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用してテンプレート内のテーブル レイアウトを操作する方法を学習します。ドキュメントから構造化データを効率的に抽出します。
 weight: 14
 url: /ja/net/document-template-processing/working-with-table-layout-in-templates/
+type: docs
 ---
-
 # テンプレートでのテーブルレイアウトの操作
 
 ## 導入

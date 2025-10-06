@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak PDF belgelerinden nasıl metin ayıklayacağınızı öğrenin. Geliştiriciler için adım adım eğitim.
 weight: 14
 url: /tr/net/pdf-processing/extract-text-from-pdf/
+type: docs
 ---
-
 # PDF'den Metin Çıkart
 
 ## giriiş

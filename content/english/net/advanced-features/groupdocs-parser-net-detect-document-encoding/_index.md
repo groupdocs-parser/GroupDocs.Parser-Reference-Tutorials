@@ -8,10 +8,8 @@ keywords:
 - detect document encoding .net
 - groupdocs parser net tutorial
 - document encoding detection
-
+type: docs
 ---
-
-
 # How to Detect Document Encoding in .NET Using GroupDocs.Parser
 
 ## Introduction

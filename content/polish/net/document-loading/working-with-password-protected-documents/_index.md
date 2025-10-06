@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić tekst z dokumentów chronionych hasłem za pomocą GroupDocs.Parser dla .NET. Zwiększ swoje możliwości przetwarzania dokumentów.
 weight: 15
 url: /pl/net/document-loading/working-with-password-protected-documents/
+type: docs
 ---
-
 # Praca z dokumentami chronionymi hasłem
 
 ## Wstęp

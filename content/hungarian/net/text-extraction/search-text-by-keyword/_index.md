@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan kereshet szöveget kulcsszó alapján a dokumentumokban a GroupDocs.Parser for .NET segítségével. Könnyedén, hatékonyan nyerhet ki releváns tartalmat.
 weight: 21
 url: /hu/net/text-extraction/search-text-by-keyword/
+type: docs
 ---
-
 # Szöveg keresése kulcsszó szerint
 
 ## Bevezetés

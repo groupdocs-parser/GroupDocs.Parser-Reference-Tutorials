@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser Java
 - extract HTML from Excel
 - Java formatted text extraction
-
+type: docs
 ---
-
-
 # How to Extract Text as HTML from Excel Spreadsheets Using GroupDocs.Parser for Java
 
 **Transform Excel Data into Web-Friendly HTML with Ease Using GroupDocs.Parser in Java**

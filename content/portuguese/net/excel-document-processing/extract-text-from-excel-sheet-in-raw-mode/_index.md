@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Aprenda como extrair texto de planilhas do Excel usando GroupDocs.Parser for .NET neste tutorial abrangente. Baixe e comece a analisar.
 weight: 15
 url: /pt/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
+type: docs
 ---
-
 # Extraia texto da planilha Excel no modo Raw
 
 ## Introdução

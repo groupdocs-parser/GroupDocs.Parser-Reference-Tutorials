@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Αναζητήστε συγκεκριμένο κείμενο σε έγγραφα PDF χρησιμοποιώντας κανονικές εκφράσεις με το GroupDocs.Parser. Εξαγωγή, ανάλυση και επεξεργασία κειμένου PDF χωρίς κόπο.
 weight: 19
 url: /el/net/pdf-processing/search-text-in-pdf-by-regular-expression/
+type: docs
 ---
-
 # Αναζήτηση κειμένου σε PDF με κανονική έκφραση
 
 ## Εισαγωγή

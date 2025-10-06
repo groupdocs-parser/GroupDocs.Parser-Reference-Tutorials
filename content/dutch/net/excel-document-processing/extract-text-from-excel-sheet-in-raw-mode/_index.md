@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Leer in deze uitgebreide zelfstudie hoe u tekst uit Excel-werkbladen kunt extraheren met GroupDocs.Parser voor .NET. Download en begin met parseren.
 weight: 15
 url: /nl/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
+type: docs
 ---
-
 # Extraheer tekst uit Excel-blad in Raw-modus
 
 ## Invoering

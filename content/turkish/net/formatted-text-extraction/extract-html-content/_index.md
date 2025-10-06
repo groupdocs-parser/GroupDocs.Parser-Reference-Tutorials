@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belgelerden HTML içeriğini nasıl çıkaracağınızı öğrenin. Kod örnekleri ve adım adım rehberlik içeren, takip edilmesi kolay eğitim.
 weight: 12
 url: /tr/net/formatted-text-extraction/extract-html-content/
+type: docs
 ---
-
 # HTML İçeriğini Çıkart
 
 ## giriiş

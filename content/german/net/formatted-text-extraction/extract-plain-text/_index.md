@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Klartext aus Dokumenten extrahieren. Einfache Schritte zur Integration der Textextraktion in Ihre Anwendungen.
 weight: 14
 url: /de/net/formatted-text-extraction/extract-plain-text/
+type: docs
 ---
-
 # Reinen Text extrahieren
 
 ## Einführung

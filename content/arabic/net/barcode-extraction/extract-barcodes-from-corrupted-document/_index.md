@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج الرموز الشريطية من المستندات التالفة باستخدام GroupDocs.Parser لـ .NET. برنامج تعليمي شامل مع تعليمات خطوة بخطوة.
 weight: 11
 url: /ar/net/barcode-extraction/extract-barcodes-from-corrupted-document/
+type: docs
 ---
-
 # استخراج الباركود من الوثيقة التالفة
 
 ## مقدمة

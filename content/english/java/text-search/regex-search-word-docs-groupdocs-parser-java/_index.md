@@ -8,10 +8,8 @@ keywords:
 - regex search Word documents
 - GroupDocs.Parser Java library
 - text processing in Java
-
+type: docs
 ---
-
-
 # Implement Regex Search in Word Documents Using GroupDocs.Parser for Java
 
 ## Introduction

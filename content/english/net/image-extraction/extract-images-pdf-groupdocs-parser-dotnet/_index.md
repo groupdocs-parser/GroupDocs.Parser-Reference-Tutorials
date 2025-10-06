@@ -8,10 +8,8 @@ keywords:
 - extract images from PDF with GroupDocs.Parser .NET
 - image extraction from PDF using GroupDocs.Parser for .NET
 - automate image extraction from PDFs
-
+type: docs
 ---
-
-
 # How to Extract Images from PDFs Using GroupDocs.Parser for .NET: A Step-by-Step Guide
 
 ## Introduction

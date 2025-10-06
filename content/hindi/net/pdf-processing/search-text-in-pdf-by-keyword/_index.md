@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके PDF दस्तावेज़ों में विशिष्ट टेक्स्ट खोजना सीखें। अपने .NET में शक्तिशाली टेक्स्ट खोज क्षमताओं को कुशलतापूर्वक एकीकृत करें।
 weight: 18
 url: /hi/net/pdf-processing/search-text-in-pdf-by-keyword/
+type: docs
 ---
-
 # कीवर्ड द्वारा पीडीएफ में टेक्स्ट खोजें
 
 ## परिचय

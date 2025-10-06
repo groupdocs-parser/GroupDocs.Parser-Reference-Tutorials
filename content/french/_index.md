@@ -6,8 +6,8 @@ description: Débloquez des techniques d'extraction de données efficaces avec G
 weight: 11
 url: /fr/
 is_root: true
+type: docs
 ---
-
 # Débloquez la maîtrise de l’analyse de documents avec GroupDocs.Parser
 
 

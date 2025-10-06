@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić dane tabeli z dokumentów za pomocą GroupDocs.Parser dla .NET. Efektywnie analizuj treści strukturalne za pomocą predefiniowanych szablonów.
 weight: 12
 url: /pl/net/data-extraction-from-templates/working-with-tables-in-extracted-data/
+type: docs
 ---
-
 # Praca z tabelami w wyodrębnionych danych
 
 ## Wstęp

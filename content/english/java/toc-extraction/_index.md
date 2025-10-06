@@ -3,8 +3,8 @@ title: "Table of Contents Extraction Tutorials for GroupDocs.Parser Java"
 description: "Step-by-step tutorials for extracting and navigating document table of contents using GroupDocs.Parser for Java."
 weight: 9
 url: "/java/toc-extraction/"
+type: docs
 ---
-
 # Table of Contents Extraction Tutorials for GroupDocs.Parser Java
 
 Learn how to work with document structure using our GroupDocs.Parser table of contents tutorials for Java. These detailed guides demonstrate how to extract document TOC, navigate to specific sections using TOC items, extract text by TOC item, and work with multi-level document structures. Each tutorial includes practical Java code examples for common TOC scenarios, helping you build applications that can effectively utilize document organization and provide enhanced navigation within large documents.

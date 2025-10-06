@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser で正規表現を使用して PDF ドキュメント内の特定のテキストを検索します。PDF テキストを簡単に抽出、分析、操作します。
 weight: 19
 url: /ja/net/pdf-processing/search-text-in-pdf-by-regular-expression/
+type: docs
 ---
-
 # 正規表現でPDF内のテキストを検索する
 
 ## 導入

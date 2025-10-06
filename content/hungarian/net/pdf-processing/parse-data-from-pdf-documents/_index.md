@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan nyerhet ki adatokat PDF-dokumentumokból a GroupDocs.Parser for .NET segítségével. Kövesse lépésenkénti útmutatónkat a PDF-fájlok hatékony elemzéséhez és feldolgozásához.
 weight: 17
 url: /hu/net/pdf-processing/parse-data-from-pdf-documents/
+type: docs
 ---
-
 # Adatok elemzése PDF dokumentumokból
 
 ## Bevezetés

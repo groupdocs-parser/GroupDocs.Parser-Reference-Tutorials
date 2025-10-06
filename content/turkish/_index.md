@@ -6,8 +6,8 @@ description: .NET ve Java için GroupDocs.Parser ile verimli veri çıkarma tekn
 weight: 11
 url: /tr/
 is_root: true
+type: docs
 ---
-
 # GroupDocs.Parser ile Belge Ayrıştırma Ustalığının Kilidini Açın
 
 

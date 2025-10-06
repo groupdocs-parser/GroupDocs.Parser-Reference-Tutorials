@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Tanulja meg, hogyan kereshet szöveget reguláris kifejezésekkel a dokumentumokban a GroupDocs.Parser for .NET segítségével. Konkrét tartalmat könnyedén kivonat.
 weight: 23
 url: /hu/net/text-extraction/search-text-by-regex/
+type: docs
 ---
-
 # Szöveg keresése reguláris kifejezéssel (Regex)
 
 ## Bevezetés

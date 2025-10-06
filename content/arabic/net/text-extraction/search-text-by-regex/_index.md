@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية البحث عن نص باستخدام التعبيرات العادية في المستندات باستخدام GroupDocs.Parser لـ .NET. استخراج محتوى معين دون عناء.
 weight: 23
 url: /ar/net/text-extraction/search-text-by-regex/
+type: docs
 ---
-
 # البحث عن النص بالتعبير العادي (Regex)
 
 ## مقدمة

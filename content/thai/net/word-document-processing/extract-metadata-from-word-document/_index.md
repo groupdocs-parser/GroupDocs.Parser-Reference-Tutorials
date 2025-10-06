@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกข้อมูลเมตาจากเอกสาร Word โดยใช้ GroupDocs.Parser สำหรับ .NET ขั้นตอนง่ายๆ ในการแยกวิเคราะห์และดึงข้อมูลเอกสาร
 weight: 12
 url: /th/net/word-document-processing/extract-metadata-from-word-document/
+type: docs
 ---
-
 # แยกข้อมูลเมตาออกจากเอกสาร Word
 
 ## การแนะนำ

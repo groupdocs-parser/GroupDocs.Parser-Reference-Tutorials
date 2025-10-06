@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak PDF belgelerinden görüntüleri nasıl çıkaracağınızı öğrenin. Kod örnekleri içeren adım adım kılavuz.
 weight: 12
 url: /tr/net/pdf-processing/extract-images-from-pdf/
+type: docs
 ---
-
 # PDF'den Görüntüleri Çıkartın
 
 ## giriiş

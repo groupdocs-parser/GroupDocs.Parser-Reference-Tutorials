@@ -3,8 +3,8 @@ title: "Text Search and Analysis Tutorials for GroupDocs.Parser .NET"
 description: "Learn to search text using keywords, regular expressions, and advanced search options with these GroupDocs.Parser .NET tutorials."
 weight: 4
 url: "/net/text-search/"
+type: docs
 ---
-
 # Text Search and Analysis Tutorials for GroupDocs.Parser .NET
 
 Our text search tutorials show you how to implement powerful content discovery features using GroupDocs.Parser in .NET. These step-by-step guides cover searching by keywords, using regular expressions for pattern matching, implementing page-by-page searches, and working with search highlights. Each tutorial provides practical C# code examples for common search scenarios, helping you build applications that can efficiently locate and extract specific information from large document collections.

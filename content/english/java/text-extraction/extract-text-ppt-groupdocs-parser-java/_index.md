@@ -8,10 +8,8 @@ keywords:
 - extract text PowerPoint
 - GroupDocs.Parser for Java
 - Java text extraction
-
+type: docs
 ---
-
-
 # How to Extract Text from PowerPoint Presentations Using GroupDocs.Parser for Java
 
 ## Introduction

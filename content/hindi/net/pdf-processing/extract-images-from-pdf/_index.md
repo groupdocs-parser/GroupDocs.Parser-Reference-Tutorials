@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके PDF दस्तावेज़ों से छवियाँ निकालना सीखें। कोड उदाहरणों के साथ चरण-दर-चरण मार्गदर्शिका।
 weight: 12
 url: /hi/net/pdf-processing/extract-images-from-pdf/
+type: docs
 ---
-
 # पीडीएफ से छवियाँ निकालें
 
 ## परिचय

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat text z různých formátů souborů v .NET pomocí GroupDocs.Parser. Výukový program krok za krokem pro efektivní zpracování dokumentů.
 weight: 14
 url: /cs/net/document-loading/loading-specific-file-formats/
+type: docs
 ---
-
 # Načítání konkrétních formátů souborů
 
 ## Úvod

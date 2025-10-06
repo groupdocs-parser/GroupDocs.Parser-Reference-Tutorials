@@ -8,10 +8,8 @@ keywords:
 - Java PDF barcode extraction
 - GroupDocs.Parser for Java
 - XML export from PDF
-
+type: docs
 ---
-
-
 # Efficient Java PDF Barcode Extraction and XML Export with GroupDocs.Parser
 
 ## Introduction

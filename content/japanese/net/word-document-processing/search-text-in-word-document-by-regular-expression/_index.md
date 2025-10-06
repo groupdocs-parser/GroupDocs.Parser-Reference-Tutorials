@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET で正規表現を使用して Word 文書内のテキストを検索する方法を学習します。特定のコンテンツを効率的に抽出します。
 weight: 19
 url: /ja/net/word-document-processing/search-text-in-word-document-by-regular-expression/
+type: docs
 ---
-
 # 正規表現で Word 文書内のテキストを検索する
 
 ## 導入

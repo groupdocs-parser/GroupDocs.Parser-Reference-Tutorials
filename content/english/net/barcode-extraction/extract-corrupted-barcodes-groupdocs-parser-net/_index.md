@@ -8,10 +8,8 @@ keywords:
 - extract corrupted barcodes
 - barcode extraction .NET
 - GroupDocs.Parser .NET
-
+type: docs
 ---
-
-
 # How to Extract Corrupted Barcodes with GroupDocs.Parser .NET
 ## Introduction
 Extracting potentially corrupted barcodes from various document formats is essential in fields like inventory management and document tracking. This tutorial leverages the power of GroupDocs.Parser .NET, enabling you to efficiently tackle this challenge.

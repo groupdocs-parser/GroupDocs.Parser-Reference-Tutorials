@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 搜索和突出显示文档中的文本。高效提取有价值的见解。
 weight: 24
 url: /zh/net/text-extraction/search-text-with-highlights/
+type: docs
 ---
-
 # 突出显示搜索文本
 
 ## 介绍

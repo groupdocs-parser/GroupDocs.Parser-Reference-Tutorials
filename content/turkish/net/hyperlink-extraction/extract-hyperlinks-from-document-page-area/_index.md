@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belirli belge alanlarından köprüleri nasıl çıkaracağınızı öğrenin. Belge işleme yeteneklerinizi geliştirin.
 weight: 12
 url: /tr/net/hyperlink-extraction/extract-hyperlinks-from-document-page-area/
+type: docs
 ---
-
 # Belge Sayfası Alanından Köprüleri Çıkarma
 
 ## giriiş

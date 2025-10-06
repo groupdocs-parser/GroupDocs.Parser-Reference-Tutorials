@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengurai halaman dokumen menggunakan templat di .NET dengan GroupDocs.Parser. Ekstrak konten tertentu secara efisien untuk aplikasi Anda.
 weight: 16
 url: /id/net/document-template-processing/parse-pages-using-templates/
+type: docs
 ---
-
 # Parsing Halaman Menggunakan Templat
 
 ## Perkenalan

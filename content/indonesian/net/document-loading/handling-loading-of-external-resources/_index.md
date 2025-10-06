@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Pelajari cara menangani sumber daya eksternal di .NET menggunakan GroupDocs.Parser untuk penguraian dan ekstraksi dokumen yang efisien.
 weight: 10
 url: /id/net/document-loading/handling-loading-of-external-resources/
+type: docs
 ---
-
 # Menangani Pemuatan Sumber Daya Eksternal
 
 ## Perkenalan

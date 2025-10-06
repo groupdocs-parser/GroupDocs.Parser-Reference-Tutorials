@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du extraherar data från dokument med GroupDocs.Parser för .NET. Omfattande handledning med kodexempel.
 weight: 11
 url: /sv/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
+type: docs
 ---
-
 # Arbeta med fält på fasta positioner i mallar
 
 ## Introduktion

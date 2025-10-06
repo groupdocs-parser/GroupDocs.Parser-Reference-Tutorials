@@ -8,10 +8,8 @@ keywords:
 - extract Outlook attachments
 - GroupDocs.Parser .NET tutorial
 - Outlook MSG file parsing
-
+type: docs
 ---
-
-
 # How to Extract Outlook Attachments Using GroupDocs.Parser .NET
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić tekst z różnych formatów dokumentów w .NET przy użyciu GroupDocs.Parser. Przewodnik krok po kroku z przykładami kodu.
 weight: 12
 url: /pl/net/document-loading/load-document-from-stream/
+type: docs
 ---
-
 # Załaduj dokument ze strumienia
 
 ## Wstęp

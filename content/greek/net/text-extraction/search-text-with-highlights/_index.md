@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να αναζητάτε και να επισημαίνετε κείμενο σε έγγραφα χρησιμοποιώντας το GroupDocs.Parser για .NET. Εξάγετε πολύτιμες γνώσεις αποτελεσματικά.
 weight: 24
 url: /el/net/text-extraction/search-text-with-highlights/
+type: docs
 ---
-
 # Αναζήτηση κειμένου με επισημάνσεις
 
 ## Εισαγωγή

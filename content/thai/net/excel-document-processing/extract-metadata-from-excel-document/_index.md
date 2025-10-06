@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกข้อมูลเมตาจากเอกสาร Excel โดยใช้ GroupDocs.Parser สำหรับ .NET ปฏิบัติตามบทช่วยสอนทีละขั้นตอนนี้
 weight: 11
 url: /th/net/excel-document-processing/extract-metadata-from-excel-document/
+type: docs
 ---
-
 # แยกข้อมูลเมตาออกจากเอกสาร Excel
 
 ## การแนะนำ

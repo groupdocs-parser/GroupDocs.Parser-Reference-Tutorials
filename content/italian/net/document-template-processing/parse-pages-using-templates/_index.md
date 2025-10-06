@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Scopri come analizzare le pagine dei documenti utilizzando i modelli in .NET con GroupDocs.Parser. Estrai contenuti specifici in modo efficiente per le tue applicazioni.
 weight: 16
 url: /it/net/document-template-processing/parse-pages-using-templates/
+type: docs
 ---
-
 # Analizzare le pagine utilizzando i modelli
 
 ## introduzione

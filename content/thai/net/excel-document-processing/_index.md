@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: การประมวลผลเอกสาร Excel ต้นแบบใน .NET ด้วย GroupDocs.Parser เรียนรู้การแยกรูปภาพ ข้อมูลเมตา และข้อความอย่างมีประสิทธิภาพพร้อมคำแนะนำทีละขั้นตอน
 weight: 32
 url: /th/net/excel-document-processing/
+type: docs
 ---
-
 # การประมวลผลเอกสาร Excel
 
 ## การแนะนำ

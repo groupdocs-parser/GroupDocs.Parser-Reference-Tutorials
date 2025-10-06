@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Learn how to extract metadata from Word documents using GroupDocs.Parser for .NET. Easy steps to parse and retrieve document information.
 weight: 12
 url: /net/word-document-processing/extract-metadata-from-word-document/
+type: docs
 ---
-
 # Extract Metadata from Word Document
 
 ## Introduction

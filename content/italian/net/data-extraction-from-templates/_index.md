@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Estrai i dati senza sforzo con GroupDocs.Parser per .NET. Impara a recuperare campi specifici, scorrere i dati e lavorare con le tabelle nel contenuto estratto.
 weight: 26
 url: /it/net/data-extraction-from-templates/
+type: docs
 ---
-
 # Estrazione dati da modelli
 
 

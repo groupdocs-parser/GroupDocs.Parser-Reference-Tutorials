@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกข้อความที่จัดรูปแบบออกจากเอกสารโดยใช้ GroupDocs.Parser สำหรับ .NET การแยกข้อความที่ง่ายและมีประสิทธิภาพสำหรับแอปพลิเคชันของคุณ
 weight: 10
 url: /th/net/formatted-text-extraction/extract-formatted-text-from-document/
+type: docs
 ---
-
 # แยกข้อความที่จัดรูปแบบออกจากเอกสาร
 
 ## การแนะนำ

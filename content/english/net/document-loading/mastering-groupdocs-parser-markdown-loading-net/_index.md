@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser for .NET
 - loading markdown files in .NET
 - document parsing with GroupDocs
-
+type: docs
 ---
-
-
 # Mastering File Loading in .NET with GroupDocs.Parser
 
 Unlock the power of document parsing with this comprehensive guide to loading markdown files using GroupDocs.Parser for .NET.

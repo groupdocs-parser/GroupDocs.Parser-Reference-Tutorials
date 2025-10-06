@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 Word 문서의 특정 페이지에서 텍스트를 추출하는 방법을 알아보세요. 텍스트 추출 기능을 .NET에 통합하세요.
 weight: 17
 url: /ko/net/word-document-processing/extract-text-from-specific-page-in-word-document/
+type: docs
 ---
-
 # Word 문서의 특정 페이지에서 텍스트 추출
 
 ## 소개

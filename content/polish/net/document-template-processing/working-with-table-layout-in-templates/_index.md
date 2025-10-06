@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak pracować z układami tabel w szablonach przy użyciu programu GroupDocs.Parser dla platformy .NET. Efektywnie wyodrębniaj uporządkowane dane z dokumentów.
 weight: 14
 url: /pl/net/document-template-processing/working-with-table-layout-in-templates/
+type: docs
 ---
-
 # Praca z układem tabeli w szablonach
 
 ## Wstęp

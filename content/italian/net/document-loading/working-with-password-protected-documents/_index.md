@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Scopri come estrarre testo da documenti protetti da password utilizzando GroupDocs.Parser per .NET. Migliora le tue capacità di elaborazione dei documenti.
 weight: 15
 url: /it/net/document-loading/working-with-password-protected-documents/
+type: docs
 ---
-
 # Lavorare con documenti protetti da password
 
 ## introduzione

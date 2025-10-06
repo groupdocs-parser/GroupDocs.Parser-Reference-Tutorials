@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm kiếm văn bản cụ thể trong tài liệu PDF bằng cách sử dụng biểu thức thông thường với GroupDocs.Parser. Trích xuất, phân tích và thao tác văn bản PDF một cách dễ dàng.
 weight: 19
 url: /vi/net/pdf-processing/search-text-in-pdf-by-regular-expression/
+type: docs
 ---
-
 # Tìm kiếm văn bản trong PDF bằng biểu thức chính quy
 
 ## Giới thiệu

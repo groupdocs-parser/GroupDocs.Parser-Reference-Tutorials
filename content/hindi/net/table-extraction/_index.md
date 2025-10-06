@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser के साथ दस्तावेज़ों से मास्टर टेबल निष्कर्षण। कुशल डेटा प्रोसेसिंग के लिए प्रोग्रामेटिक रूप से टेबल निकालना सीखें।
 weight: 23
 url: /hi/net/table-extraction/
+type: docs
 ---
-
 # तालिका निष्कर्षण
 
 ## परिचय

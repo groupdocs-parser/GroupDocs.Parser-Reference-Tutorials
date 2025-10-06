@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从 Word 文档中提取文本。带有代码示例的分步指南。
 weight: 15
 url: /zh/net/word-document-processing/extract-text-from-word-document/
+type: docs
 ---
-
 # 从 Word 文档中提取文本
 
 ## 介绍

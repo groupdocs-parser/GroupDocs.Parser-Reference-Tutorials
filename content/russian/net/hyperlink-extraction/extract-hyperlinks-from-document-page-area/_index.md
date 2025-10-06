@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Узнайте, как извлекать гиперссылки из определенных областей документа с помощью GroupDocs.Parser для .NET. Расширьте свои возможности обработки документов.
 weight: 12
 url: /ru/net/hyperlink-extraction/extract-hyperlinks-from-document-page-area/
+type: docs
 ---
-
 # Извлечь гиперссылки из области страницы документа
 
 ## Введение

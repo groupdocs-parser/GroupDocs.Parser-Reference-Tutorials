@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser .NET
 - document parsing in .NET
 - load documents from streams
-
+type: docs
 ---
-
-
 # Master Document Parsing in .NET with GroupDocs.Parser: Load and Extract Text from Streams
 
 In today's digital age, efficient document management is crucial for businesses and developers alike. With the increasing volume of documents that need processing, extracting text from various file formats can become a daunting task. Enter GroupDocs.Parser for .NET—a powerful library designed to make document parsing straightforward and effective. This tutorial will guide you through loading documents using streams and extracting text with ease.

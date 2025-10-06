@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 在本综合教程中学习如何使用 Groupdocs.Parser for .NET 从文档页面中进行有效的文本提取。
 weight: 17
 url: /zh/net/text-extraction/extract-text-from-page-in-raw-mode/
+type: docs
 ---
-
 # 以原始模式从页面提取文本
 
 ## 介绍

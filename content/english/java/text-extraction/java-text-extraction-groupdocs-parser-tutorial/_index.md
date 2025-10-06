@@ -8,10 +8,8 @@ keywords:
 - Java text extraction
 - GroupDocs.Parser for Java
 - document parsing
-
+type: docs
 ---
-
-
 # Java Text Extraction with GroupDocs.Parser
 
 Master efficient text extraction from various document formats using GroupDocs.Parser in Java, ideal for applications like data analysis and information retrieval systems. This tutorial covers extracting text from URLs and streams.

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε δεδομένα από πρότυπα εγγράφων χρησιμοποιώντας θέσεις regex με το GroupDocs.Parser για .NET. Αυτοματοποιήστε αποτελεσματικά τις εργασίες εξαγωγής δεδομένων σας.
 weight: 13
 url: /el/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
+type: docs
 ---
-
 # Εργασία με πεδία σε θέσεις Regex σε πρότυπα
 
 ## Εισαγωγή

@@ -3,8 +3,8 @@ title: "Database Integration Tutorials for GroupDocs.Parser Java"
 description: "Complete tutorials for extracting data from databases and integrating with database connections using GroupDocs.Parser for Java."
 weight: 20
 url: "/java/database-integration/"
+type: docs
 ---
-
 # Database Integration Tutorials for GroupDocs.Parser Java
 
 Our database integration tutorials show you how to connect document parsing with database operations using GroupDocs.Parser in Java. These comprehensive guides cover extracting data from databases, using database connections, storing extracted document data, and implementing database-driven document processing workflows. Each tutorial includes working Java code examples for database integration scenarios, helping you build applications that can efficiently manage document content alongside structured database information.

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Aprenda como extrair hiperlinks de documentos usando GroupDocs.Parser for .NET. Aprimore seus aplicativos C# com este guia simples.
 weight: 10
 url: /pt/net/hyperlink-extraction/extract-hyperlinks-from-document/
+type: docs
 ---
-
 # Extraia hiperlinks do documento
 
 ## Introdução

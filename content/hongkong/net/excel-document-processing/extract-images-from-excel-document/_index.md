@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 從 Excel 文件中擷取映像。帶有程式碼範例的分步指南。
 weight: 10
 url: /zh-hant/net/excel-document-processing/extract-images-from-excel-document/
+type: docs
 ---
-
 # 從 Excel 文件中擷取影像
 
 ## 介紹

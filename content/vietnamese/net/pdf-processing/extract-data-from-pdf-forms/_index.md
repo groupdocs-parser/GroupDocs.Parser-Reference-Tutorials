@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất dữ liệu từ biểu mẫu PDF bằng GroupDocs.Parser cho .NET. Hướng dẫn từng bước với các ví dụ về mã và Câu hỏi thường gặp.
 weight: 11
 url: /vi/net/pdf-processing/extract-data-from-pdf-forms/
+type: docs
 ---
-
 # Trích xuất dữ liệu từ biểu mẫu PDF
 
 ## Giới thiệu

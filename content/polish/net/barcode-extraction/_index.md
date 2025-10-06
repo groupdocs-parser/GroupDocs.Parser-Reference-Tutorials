@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak bez wysiłku wyodrębniać kody kreskowe, korzystając z samouczków GroupDocs.Parser for .NET. Zwiększ swoje możliwości przetwarzania dokumentów już teraz!
 weight: 27
 url: /pl/net/barcode-extraction/
+type: docs
 ---
-
 # Ekstrakcja kodów kreskowych
 
 

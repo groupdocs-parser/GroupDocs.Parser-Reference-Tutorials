@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić tekst z określonych stron w dokumentach programu Word za pomocą GroupDocs.Parser dla .NET. Zintegruj możliwości wyodrębniania tekstu ze swoją platformą .NET.
 weight: 17
 url: /pl/net/word-document-processing/extract-text-from-specific-page-in-word-document/
+type: docs
 ---
-
 # Wyodrębnij tekst z określonej strony w dokumencie programu Word
 
 ## Wstęp

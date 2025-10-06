@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके विभिन्न दस्तावेज़ स्वरूपों से टेक्स्ट निकालना सीखें। C# के साथ आसान और कुशल टेक्स्ट निष्कर्षण।
 weight: 11
 url: /hi/net/document-loading/load-document-from-local-disk/
+type: docs
 ---
-
 # स्थानीय डिस्क से दस्तावेज़ लोड करें
 
 ## परिचय

@@ -8,10 +8,8 @@ keywords:
 - parse PDF forms .NET
 - GroupDocs.Parser setup
 - extract data from PDF
-
+type: docs
 ---
-
-
 # Parse PDF Forms Efficiently with GroupDocs.Parser .NET: A Comprehensive Guide
 
 ## Introduction

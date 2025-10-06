@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके विशिष्ट दस्तावेज़ क्षेत्रों से पाठ निकालना सीखें। अपने अनुप्रयोगों के लिए लक्षित और सटीक पाठ निष्कर्षण।
 weight: 13
 url: /hi/net/text-extraction/extract-text-from-specific-areas-on-page/
+type: docs
 ---
-
 # पृष्ठ पर विशिष्ट क्षेत्रों से पाठ निकालें
 
 ## परिचय

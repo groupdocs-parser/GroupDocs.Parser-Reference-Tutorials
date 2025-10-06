@@ -8,10 +8,8 @@ keywords:
 - extract images from PowerPoint
 - GroupDocs.Parser Java setup
 - automate PowerPoint image extraction
-
+type: docs
 ---
-
-
 # How to Extract Images from PowerPoint Using GroupDocs.Parser Java
 
 ## Introduction

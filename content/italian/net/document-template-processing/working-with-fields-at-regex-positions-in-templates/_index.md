@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Scopri come estrarre dati da modelli di documenti utilizzando posizioni regex con GroupDocs.Parser per .NET. Automatizza le tue attività di estrazione dei dati in modo efficiente.
 weight: 13
 url: /it/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
+type: docs
 ---
-
 # Lavorare con i campi nelle posizioni regex nei modelli
 
 ## introduzione

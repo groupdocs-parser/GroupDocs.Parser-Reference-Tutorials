@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Naučte se používat GroupDocs.Parser for .NET k extrahování textu z dokumentů aplikace Word a jeho uložení jako HTML. Výukový program krok za krokem s příklady kódu.
 weight: 16
 url: /cs/net/word-document-processing/extract-text-from-word-document-as-html/
+type: docs
 ---
-
 # Extrahujte text z dokumentu aplikace Word jako HTML
 
 ## Úvod

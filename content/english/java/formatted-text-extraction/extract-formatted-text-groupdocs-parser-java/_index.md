@@ -8,10 +8,8 @@ keywords:
 - extract formatted text from docx
 - groupdocs parser java tutorial
 - formatted text extraction in markdown
-
+type: docs
 ---
-
-
 # How to Extract Formatted Text from DOCX Files Using GroupDocs.Parser Java
 
 ## Introduction

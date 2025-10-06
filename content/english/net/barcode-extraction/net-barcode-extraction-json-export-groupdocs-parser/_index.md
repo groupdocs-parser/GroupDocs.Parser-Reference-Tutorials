@@ -8,10 +8,8 @@ keywords:
 - .NET barcode extraction
 - JSON export GroupDocs
 - GroupDocs.Parser for .NET
-
+type: docs
 ---
-
-
 # Implementing .NET Barcode Extraction & JSON Export Using GroupDocs.Parser
 
 ## Introduction

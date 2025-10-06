@@ -8,10 +8,8 @@ keywords:
 - Java image extraction
 - GroupDocs.Parser for Java
 - image saving in Java
-
+type: docs
 ---
-
-
 # Mastering Java Image Extraction and Saving with GroupDocs.Parser
 
 ## Introduction

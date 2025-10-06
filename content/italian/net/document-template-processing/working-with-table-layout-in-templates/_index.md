@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Scopri come lavorare con i layout di tabella nei modelli utilizzando GroupDocs.Parser per .NET. Estrai dati strutturati in modo efficiente dai documenti.
 weight: 14
 url: /it/net/document-template-processing/working-with-table-layout-in-templates/
+type: docs
 ---
-
 # Lavorare con il layout della tabella nei modelli
 
 ## introduzione

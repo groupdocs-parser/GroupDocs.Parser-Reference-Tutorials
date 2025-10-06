@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan vonhat ki vonalkódokat a sérült dokumentumokból a GroupDocs.Parser for .NET segítségével. Átfogó oktatóanyag lépésről lépésre.
 weight: 11
 url: /hu/net/barcode-extraction/extract-barcodes-from-corrupted-document/
+type: docs
 ---
-
 # Vonja ki a vonalkódokat a sérült dokumentumból
 
 ## Bevezetés

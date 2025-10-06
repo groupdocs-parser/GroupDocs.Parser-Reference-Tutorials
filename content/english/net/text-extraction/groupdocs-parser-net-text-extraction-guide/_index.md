@@ -8,10 +8,8 @@ keywords:
 - text extraction in .NET
 - GroupDocs.Parser setup
 - document text extraction
-
+type: docs
 ---
-
-
 # Efficient Text Extraction in .NET Using GroupDocs.Parser
 
 Discover how to efficiently extract raw text from specific pages of documents using the powerful GroupDocs.Parser library in a .NET environment. This tutorial will guide you step-by-step through implementing this functionality, ensuring you gain valuable insights into both setup and execution.

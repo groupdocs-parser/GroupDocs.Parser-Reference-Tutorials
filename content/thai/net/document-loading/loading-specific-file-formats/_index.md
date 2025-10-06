@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกข้อความจากรูปแบบไฟล์ต่างๆ ใน .NET โดยใช้ GroupDocs.Parser บทช่วยสอนทีละขั้นตอนเพื่อการประมวลผลเอกสารอย่างมีประสิทธิภาพ
 weight: 14
 url: /th/net/document-loading/loading-specific-file-formats/
+type: docs
 ---
-
 # กำลังโหลดรูปแบบไฟล์เฉพาะ
 
 ## การแนะนำ

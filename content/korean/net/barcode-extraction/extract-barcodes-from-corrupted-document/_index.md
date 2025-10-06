@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 손상된 문서에서 바코드를 추출하는 방법을 알아보세요. 단계별 지침이 포함된 종합 튜토리얼입니다.
 weight: 11
 url: /ko/net/barcode-extraction/extract-barcodes-from-corrupted-document/
+type: docs
 ---
-
 # 손상된 문서에서 바코드 추출
 
 ## 소개

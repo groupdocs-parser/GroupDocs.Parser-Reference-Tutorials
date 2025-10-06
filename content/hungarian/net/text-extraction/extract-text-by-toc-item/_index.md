@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Szöveg kibontása tartalomjegyzékkel (TOC) a GroupDocs.Parser for .NET segítségével. Tanuljon meg hatékony dokumentumelemzési technikákat a strukturált adatkinyeréshez.
 weight: 15
 url: /hu/net/text-extraction/extract-text-by-toc-item/
+type: docs
 ---
-
 # Szöveg kibontása tartalomjegyzék (TOC) elem szerint
 
 ## Bevezetés

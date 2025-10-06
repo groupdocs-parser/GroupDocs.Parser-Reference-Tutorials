@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Découvrez comment extraire des données de tables dans des documents à l'aide de GroupDocs.Parser pour .NET. Guide étape par étape pour l’utilisation des paramètres de table.
 weight: 15
 url: /fr/net/document-template-processing/working-with-table-parameters-in-templates/
+type: docs
 ---
-
 # Utilisation des paramètres de table dans les modèles
 
 ## Introduction

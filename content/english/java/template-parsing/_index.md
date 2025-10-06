@@ -3,8 +3,8 @@ title: "Template-Based Parsing Tutorials for GroupDocs.Parser Java"
 description: "Learn to use templates for extracting structured data from documents with these GroupDocs.Parser Java tutorials."
 weight: 13
 url: "/java/template-parsing/"
+type: docs
 ---
-
 # Template-Based Parsing Tutorials for GroupDocs.Parser Java
 
 Master template-based data extraction with our comprehensive GroupDocs.Parser tutorials for Java developers. These step-by-step guides demonstrate how to create data extraction templates with fixed position, linked position, and regex position to systematically extract information from semi-structured documents. Each tutorial provides detailed Java code examples for implementing efficient template parsing, helping you build applications that can reliably extract specific data from documents with consistent layouts.

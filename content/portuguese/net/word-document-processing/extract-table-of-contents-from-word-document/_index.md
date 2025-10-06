@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Aprenda como extrair o Índice (TOC) de documentos do Word programaticamente usando GroupDocs.Parser for .NET.
 weight: 13
 url: /pt/net/word-document-processing/extract-table-of-contents-from-word-document/
+type: docs
 ---
-
 # Extraia o índice do documento do Word
 
 ## Introdução

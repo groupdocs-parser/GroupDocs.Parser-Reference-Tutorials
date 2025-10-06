@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 使用 GroupDocs.Parser 的正则表达式搜索 PDF 文档中的特定文本。轻松提取、分析和操作 PDF 文本。
 weight: 19
 url: /zh/net/pdf-processing/search-text-in-pdf-by-regular-expression/
+type: docs
 ---
-
 # 通过正则表达式搜索PDF中的文本
 
 ## 介绍

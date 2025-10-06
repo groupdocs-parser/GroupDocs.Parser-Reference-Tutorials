@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Xử lý hiệu quả việc tải tài liệu trong .NET bằng GroupDocs.Parser. Tìm hiểu cách trích xuất văn bản từ đĩa, luồng, URL cục bộ, v.v.
 weight: 29
 url: /vi/net/document-loading/
+type: docs
 ---
-
 # Đang tải tài liệu
 
 ## Giới thiệu

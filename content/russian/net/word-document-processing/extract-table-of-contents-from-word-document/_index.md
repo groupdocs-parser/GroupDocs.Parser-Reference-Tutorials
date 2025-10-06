@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Узнайте, как программно извлечь оглавление (TOC) из документов Word с помощью GroupDocs.Parser для .NET.
 weight: 13
 url: /ru/net/word-document-processing/extract-table-of-contents-from-word-document/
+type: docs
 ---
-
 # Извлечь оглавление из документа Word
 
 ## Введение

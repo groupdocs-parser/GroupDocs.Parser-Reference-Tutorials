@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki szöveget adott dokumentumterületekről a GroupDocs.Parser for .NET segítségével. Célzott és precíz szövegkivonás az alkalmazásokhoz.
 weight: 13
 url: /hu/net/text-extraction/extract-text-from-specific-areas-on-page/
+type: docs
 ---
-
 # Szöveg kinyerése az oldal meghatározott területeiről
 
 ## Bevezetés

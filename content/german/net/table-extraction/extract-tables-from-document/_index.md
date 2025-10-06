@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit Groupdocs.Parser für .NET Tabellen aus Dokumenten extrahieren. Folgen Sie den Anweisungen für eine detaillierte Anleitung zur Integration dieser Funktion.
 weight: 10
 url: /de/net/table-extraction/extract-tables-from-document/
+type: docs
 ---
-
 # Tabellen aus Dokument extrahieren
 
 ## Einführung

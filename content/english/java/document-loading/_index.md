@@ -3,8 +3,8 @@ title: "Document Loading Tutorials for GroupDocs.Parser Java"
 description: "Complete tutorials for loading documents from various sources (local disk, stream, URL) and handling password-protected files using GroupDocs.Parser for Java."
 weight: 2
 url: "/java/document-loading/"
+type: docs
 ---
-
 # Document Loading Tutorials for GroupDocs.Parser Java
 
 Our document loading tutorials provide comprehensive guidance for accessing documents from various sources with GroupDocs.Parser in Java. These step-by-step guides demonstrate how to load documents from local storage, memory streams, remote URLs, and how to handle password-protected files. Each tutorial includes working Java code examples for common loading scenarios, helping you build robust document processing applications that can reliably access content from diverse sources.

@@ -8,10 +8,8 @@ keywords:
 - regex text search HTML
 - GroupDocs.Parser for Java
 - Java regular expression
-
+type: docs
 ---
-
-
 # Mastering Regex Text Search in HTML Documents Using GroupDocs.Parser for Java
 
 ## Introduction

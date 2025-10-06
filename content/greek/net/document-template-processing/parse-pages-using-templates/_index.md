@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να αναλύετε σελίδες εγγράφων χρησιμοποιώντας πρότυπα στο .NET με το GroupDocs.Parser. Εξάγετε αποτελεσματικά συγκεκριμένο περιεχόμενο για τις εφαρμογές σας.
 weight: 16
 url: /el/net/document-template-processing/parse-pages-using-templates/
+type: docs
 ---
-
 # Ανάλυση σελίδων με χρήση προτύπων
 
 ## Εισαγωγή

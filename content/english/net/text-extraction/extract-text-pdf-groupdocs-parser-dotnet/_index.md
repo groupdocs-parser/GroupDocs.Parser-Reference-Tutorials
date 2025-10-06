@@ -8,10 +8,8 @@ keywords:
 - extract text from PDF
 - GroupDocs.Parser .NET
 - text extraction in .NET
-
+type: docs
 ---
-
-
 # How to Extract Text from PDFs Using GroupDocs.Parser .NET
 
 In today's digital landscape, efficiently extracting text from documents is crucial for data processing and automation tasks. Whether dealing with invoices, contracts, or reports, programmatically extracting text can save time and reduce errors. This comprehensive guide demonstrates how to use **GroupDocs.Parser** in a .NET environment to effortlessly extract text from PDF files.

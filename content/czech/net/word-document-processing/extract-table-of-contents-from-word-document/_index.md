@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Naučte se, jak extrahovat obsah (TOC) z dokumentů aplikace Word programově pomocí GroupDocs.Parser for .NET.
 weight: 13
 url: /cs/net/word-document-processing/extract-table-of-contents-from-word-document/
+type: docs
 ---
-
 # Extrahujte obsah z dokumentu aplikace Word
 
 ## Úvod

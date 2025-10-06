@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat data z tabulek v dokumentech pomocí GroupDocs.Parser for .NET. Podrobný průvodce pro použití parametrů tabulky.
 weight: 15
 url: /cs/net/document-template-processing/working-with-table-parameters-in-templates/
+type: docs
 ---
-
 # Práce s parametry tabulky v šablonách
 
 ## Úvod

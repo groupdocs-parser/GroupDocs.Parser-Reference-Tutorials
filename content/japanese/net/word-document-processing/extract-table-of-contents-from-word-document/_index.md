@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して、Word 文書から目次 (TOC) をプログラムで抽出する方法を学習します。
 weight: 13
 url: /ja/net/word-document-processing/extract-table-of-contents-from-word-document/
+type: docs
 ---
-
 # Word文書から目次を抽出する
 
 ## 導入

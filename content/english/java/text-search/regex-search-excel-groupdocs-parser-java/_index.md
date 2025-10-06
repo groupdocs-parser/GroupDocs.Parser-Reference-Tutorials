@@ -8,10 +8,8 @@ keywords:
 - regex search excel
 - GroupDocs Parser for Java
 - Excel data analysis with regex
-
+type: docs
 ---
-
-
 # Master Regex Searches in Excel Using GroupDocs.Parser for Java
 
 ## Introduction

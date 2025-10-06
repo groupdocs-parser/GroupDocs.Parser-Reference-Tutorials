@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser .NET
 - metadata extraction
 - document parsing
-
+type: docs
 ---
-
-
 # Efficient Metadata Extraction from Documents Using GroupDocs.Parser .NET
 
 ## Introduction

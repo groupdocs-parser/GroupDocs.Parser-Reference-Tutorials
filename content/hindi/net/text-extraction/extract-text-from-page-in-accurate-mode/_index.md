@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: इस व्यापक ट्यूटोरियल में .NET के लिए GroupDocs.Parser का उपयोग करके दस्तावेज़ों से पाठ को सटीक रूप से निकालने का तरीका जानें।
 weight: 16
 url: /hi/net/text-extraction/extract-text-from-page-in-accurate-mode/
+type: docs
 ---
-
 # सटीक मोड में पृष्ठ से पाठ निकालें
 
 ## परिचय

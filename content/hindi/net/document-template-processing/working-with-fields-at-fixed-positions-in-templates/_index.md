@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके दस्तावेज़ों से डेटा निकालना सीखें। कोड उदाहरणों के साथ व्यापक ट्यूटोरियल।
 weight: 11
 url: /hi/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
+type: docs
 ---
-
 # टेम्पलेट्स में निश्चित स्थानों पर फ़ील्ड्स के साथ कार्य करना
 
 ## परिचय

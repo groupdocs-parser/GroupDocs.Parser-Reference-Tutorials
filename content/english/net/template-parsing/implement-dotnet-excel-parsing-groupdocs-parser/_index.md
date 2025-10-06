@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Parser .NET
 - .NET Excel parsing
 - Excel data extraction
-
+type: docs
 ---
-
-
 # Master .NET Excel Parsing with GroupDocs.Parser
 ## Introduction
 Navigating complex Excel files can be challenging, especially when you need to programmatically extract worksheet information or cell data. This comprehensive tutorial will guide you through using the **GroupDocs.Parser for .NET** library to streamline these tasks. By mastering this tool, you'll automate data extraction from Excel spreadsheets efficiently.

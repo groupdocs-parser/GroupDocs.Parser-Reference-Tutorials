@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए Groupdocs.Parser का उपयोग करके दस्तावेज़ों से तालिकाएँ निकालने का तरीका जानें। इस कार्यक्षमता को एकीकृत करने के बारे में विस्तृत मार्गदर्शिका के लिए आगे बढ़ें।
 weight: 10
 url: /hi/net/table-extraction/extract-tables-from-document/
+type: docs
 ---
-
 # दस्तावेज़ से तालिकाएँ निकालें
 
 ## परिचय

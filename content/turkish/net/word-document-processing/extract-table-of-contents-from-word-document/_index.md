@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak Word belgelerinden İçindekiler Tablosunu (TOC) program aracılığıyla nasıl ayıklayacağınızı öğrenin.
 weight: 13
 url: /tr/net/word-document-processing/extract-table-of-contents-from-word-document/
+type: docs
 ---
-
 # Word Belgesinden İçindekiler Tablosunu Çıkarma
 
 ## giriiş

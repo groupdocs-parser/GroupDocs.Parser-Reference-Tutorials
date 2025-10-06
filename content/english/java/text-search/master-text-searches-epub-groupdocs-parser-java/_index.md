@@ -8,10 +8,8 @@ keywords:
 - text search EPUB
 - GroupDocs.Parser Java setup
 - Regex text extraction EPUB
-
+type: docs
 ---
-
-
 # Mastering Text Searches in EPUB Files Using GroupDocs.Parser Java and Regular Expressions
 
 **Unlock the Power of Text Extraction from EPUBs**

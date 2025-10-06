@@ -8,9 +8,8 @@ keywords:
 - GroupDocs.Parser
 - Net
 - Document Processing
-
+type: docs
 ---
-
 ## Introduction
 
 Welcome! If you're working with Microsoft Word documents and need to extract images embedded within them, you're in the right place. Extracting images programmatically can save you hours of manual effort, especially when dealing with hundreds or thousands of documents. Whether you're developing a document management system, building a content analysis tool, or automating data extraction, GroupDocs.Parser for .NET is a flexible, powerful library that makes this task straightforward.

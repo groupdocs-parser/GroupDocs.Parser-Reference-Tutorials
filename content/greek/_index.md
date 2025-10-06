@@ -6,8 +6,8 @@ description: Ξεκλειδώστε αποτελεσματικές τεχνικ�
 weight: 11
 url: /el/
 is_root: true
+type: docs
 ---
-
 # Ξεκλειδώστε την κυριαρχία ανάλυσης εγγράφων με το GroupDocs.Parser
 
 

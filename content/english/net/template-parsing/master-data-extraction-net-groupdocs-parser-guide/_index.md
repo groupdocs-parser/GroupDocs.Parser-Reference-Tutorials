@@ -8,10 +8,8 @@ keywords:
 - data extraction with GroupDocs.Parser
 - .NET regex templates
 - document parsing with GroupDocs
-
+type: docs
 ---
-
-
 # Comprehensive Guide to Implementing .NET: Extract Data with GroupDocs.Parser and Regex Templates
 
 ## Introduction

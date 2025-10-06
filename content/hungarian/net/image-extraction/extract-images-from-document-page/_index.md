@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki képeket dokumentumokból a GroupDocs.Parser for .NET segítségével. Növelje dokumentumfeldolgozási képességeit.
 weight: 12
 url: /hu/net/image-extraction/extract-images-from-document-page/
+type: docs
 ---
-
 # Képek kibontása a dokumentumoldalról
 
 ## Bevezetés

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Découvrez comment extraire des hyperliens à partir de zones de document spécifiques à l’aide de GroupDocs.Parser pour .NET. Améliorez vos capacités de traitement de documents.
 weight: 12
 url: /fr/net/hyperlink-extraction/extract-hyperlinks-from-document-page-area/
+type: docs
 ---
-
 # Extraire les hyperliens de la zone de la page du document
 
 ## Introduction

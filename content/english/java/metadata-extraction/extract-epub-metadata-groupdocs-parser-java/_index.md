@@ -8,10 +8,8 @@ keywords:
 - extract EPUB metadata Java
 - GroupDocs.Parser metadata extraction
 - Java digital library management
-
+type: docs
 ---
-
-
 # How to Extract EPUB Metadata Using GroupDocs.Parser in Java: A Developer’s Guide
 
 ## Introduction

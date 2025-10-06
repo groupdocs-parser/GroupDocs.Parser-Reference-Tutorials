@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 목차(TOC)별로 텍스트를 추출합니다. 구조화된 데이터 추출을 위한 효율적인 문서 구문 분석 기술을 알아보세요.
 weight: 15
 url: /ko/net/text-extraction/extract-text-by-toc-item/
+type: docs
 ---
-
 # 목차(TOC) 항목별로 텍스트 추출
 
 ## 소개

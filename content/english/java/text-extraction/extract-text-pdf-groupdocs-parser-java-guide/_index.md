@@ -8,10 +8,8 @@ keywords:
 - extract text PDF Java
 - GroupDocs Parser setup Java
 - text extraction GroupDocs
-
+type: docs
 ---
-
-
 # Extract Text from PDFs Using GroupDocs.Parser for Java: A Comprehensive Guide
 
 Extracting text from PDFs is essential in various industries for data analysis, content migration, and document management. This tutorial provides a step-by-step approach to using GroupDocs.Parser for Java, making the process straightforward.

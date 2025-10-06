@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Verwerk het laden van documenten in .NET efficiënt met GroupDocs.Parser. Leer hoe u tekst kunt extraheren van lokale schijven, streams, URL's en meer.
 weight: 29
 url: /nl/net/document-loading/
+type: docs
 ---
-
 # Documenten laden
 
 ## Invoering

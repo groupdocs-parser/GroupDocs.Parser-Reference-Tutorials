@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用してドキュメントから HTML コンテンツを抽出する方法を学習します。コード例とステップバイステップのガイダンスを含むわかりやすいチュートリアルです。
 weight: 12
 url: /ja/net/formatted-text-extraction/extract-html-content/
+type: docs
 ---
-
 # HTML コンテンツを抽出する
 
 ## 導入

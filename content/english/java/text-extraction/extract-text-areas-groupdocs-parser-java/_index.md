@@ -8,10 +8,8 @@ keywords:
 - extract text areas
 - GroupDocs.Parser Java
 - Java document processing
-
+type: docs
 ---
-
-
 # Extract Text Areas from Documents with GroupDocs.Parser for Java
 
 ## Introduction

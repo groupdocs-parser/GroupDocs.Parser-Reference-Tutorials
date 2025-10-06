@@ -8,10 +8,8 @@ keywords:
 - Connecting .NET to SQLite with GroupDocs.Parser
 - .NET SQLite integration tutorial
 - GroupDocs.Parser document parsing
-
+type: docs
 ---
-
-
 # Efficiently Connecting .NET to SQLite Using GroupDocs.Parser
 
 ## Introduction

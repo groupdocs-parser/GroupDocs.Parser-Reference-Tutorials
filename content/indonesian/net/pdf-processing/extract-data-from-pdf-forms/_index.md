@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak data dari formulir PDF menggunakan GroupDocs.Parser untuk .NET. Panduan langkah demi langkah dengan contoh kode dan FAQ.
 weight: 11
 url: /id/net/pdf-processing/extract-data-from-pdf-forms/
+type: docs
 ---
-
 # Ekstrak Data dari Formulir PDF
 
 ## Perkenalan

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 문서에서 텍스트를 추출하는 방법을 알아보세요. .NET 애플리케이션 내에서 쉽고 효율적이며 원활한 텍스트 추출이 가능합니다.
 weight: 19
 url: /ko/net/text-extraction/extract-text-in-raw-mode/
+type: docs
 ---
-
 # 원시 모드에서 텍스트 추출
 
 ## 소개

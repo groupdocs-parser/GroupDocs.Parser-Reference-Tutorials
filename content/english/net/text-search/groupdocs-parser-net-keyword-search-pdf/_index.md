@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser for .NET
 - search keywords PDF
 - keyword search C#
-
+type: docs
 ---
-
-
 # How to Use GroupDocs.Parser for .NET to Search Keywords in PDFs
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して Excel ドキュメントからテキストを抽出する方法を簡単な手順で学習します。
 weight: 12
 url: /ja/net/excel-document-processing/extract-text-from-excel-document/
+type: docs
 ---
-
 # Excel ドキュメントからテキストを抽出する
 
 ## 導入

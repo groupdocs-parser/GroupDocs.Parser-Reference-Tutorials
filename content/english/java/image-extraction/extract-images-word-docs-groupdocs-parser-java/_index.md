@@ -8,10 +8,8 @@ keywords:
 - extract images from Word documents
 - GroupDocs.Parser for Java
 - automate image extraction
-
+type: docs
 ---
-
-
 # How to Efficiently Extract Images from Word Documents with GroupDocs.Parser for Java
 
 ## Introduction

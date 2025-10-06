@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan vonhat ki Markdown tartalmat dokumentumokból a GroupDocs.Parser for .NET segítségével. Ez az oktatóanyag lépésről lépésre tartalmaz utasításokat a zökkenőmentes szövegkivonáshoz.
 weight: 13
 url: /hu/net/formatted-text-extraction/extract-markdown-content/
+type: docs
 ---
-
 # Markdown tartalom kibontása
 
 ## Bevezetés

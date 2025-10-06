@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 教學課程輕鬆擷取條碼。立即增強您的文件處理能力！
 weight: 27
 url: /zh-hant/net/barcode-extraction/
+type: docs
 ---
-
 # 條碼擷取
 
 

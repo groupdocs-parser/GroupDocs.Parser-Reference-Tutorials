@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser .NET
 - keyword search in documents
 - C# document handling
-
+type: docs
 ---
-
-
 # Mastering Keyword Searches in Documents with GroupDocs.Parser .NET
 
 ## Introduction

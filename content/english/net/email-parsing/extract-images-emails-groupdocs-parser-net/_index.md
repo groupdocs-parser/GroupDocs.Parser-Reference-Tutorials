@@ -8,10 +8,8 @@ keywords:
 - extract images from email .NET
 - GroupDocs.Parser .NET installation
 - image extraction using GroupDocs.Parser
-
+type: docs
 ---
-
-
 # How to Extract Images from Emails Using GroupDocs.Parser .NET
 
 ## Introduction

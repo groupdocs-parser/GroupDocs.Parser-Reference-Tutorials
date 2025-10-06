@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất nội dung Markdown từ tài liệu bằng GroupDocs.Parser cho .NET. Hướng dẫn này cung cấp hướng dẫn từng bước để trích xuất văn bản liền mạch.
 weight: 13
 url: /vi/net/formatted-text-extraction/extract-markdown-content/
+type: docs
 ---
-
 # Trích xuất nội dung đánh dấu
 
 ## Giới thiệu

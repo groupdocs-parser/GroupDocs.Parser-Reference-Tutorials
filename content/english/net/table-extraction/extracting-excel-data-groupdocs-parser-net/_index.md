@@ -8,10 +8,8 @@ keywords:
 - extracting data from Excel
 - GroupDocs.Parser for .NET
 - worksheet information extraction
-
+type: docs
 ---
-
-
 # Extracting Data from Excel Files Using GroupDocs.Parser for .NET: A Step-by-Step Guide
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat hypertextové odkazy z dokumentů aplikace Word pomocí GroupDocs.Parser for .NET. Podrobný průvodce s příklady kódu.
 weight: 10
 url: /cs/net/word-document-processing/extract-hyperlinks-from-word-document/
+type: docs
 ---
-
 # Extrahujte hypertextové odkazy z dokumentu aplikace Word
 
 ## Úvod

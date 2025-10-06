@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Temukan serangkaian tutorial tentang pemrosesan dokumen Word menggunakan GroupDocs.Parser untuk .NET. Ekstrak hyperlink, gambar, metadata, dan lainnya.
 weight: 30
 url: /id/net/word-document-processing/
+type: docs
 ---
-
 # Pemrosesan Dokumen Word
 
 Apakah Anda ingin meningkatkan kemampuan pemrosesan dokumen Word di .NET? Tidak perlu mencari lagi! GroupDocs.Parser untuk .NET menawarkan serangkaian tutorial komprehensif untuk membantu Anda mengekstrak berbagai elemen dari dokumen Word dengan mudah.

@@ -8,10 +8,8 @@ keywords:
 - extract emails exchange server
 - groupdocs parser java tutorial
 - email parsing java
-
+type: docs
 ---
-
-
 # How to Extract Emails from an Exchange Server Using GroupDocs.Parser Java
 
 ## Introduction

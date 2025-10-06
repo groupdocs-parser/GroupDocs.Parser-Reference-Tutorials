@@ -8,10 +8,8 @@ keywords:
 - text extraction in .NET
 - GroupDocs.Parser setup
 - document text processing
-
+type: docs
 ---
-
-
 # Mastering Text Extraction in .NET with GroupDocs.Parser
 
 Extracting text from documents is a common challenge faced by developers working with document management systems and data analysis projects. Whether you're dealing with PDFs, Word files, or any other document format, the right tool can make all the difference. In this tutorial, we'll explore how to leverage GroupDocs.Parser for .NET to efficiently extract text from documents.

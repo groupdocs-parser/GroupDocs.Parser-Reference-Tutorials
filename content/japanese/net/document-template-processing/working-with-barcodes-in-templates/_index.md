@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して、テンプレートを使用してドキュメントから構造化データを抽出する方法を学習します。バーコード フィールドを使用してデータ抽出を簡素化します。
 weight: 10
 url: /ja/net/document-template-processing/working-with-barcodes-in-templates/
+type: docs
 ---
-
 # テンプレートでのバーコードの操作
 
 ## 導入

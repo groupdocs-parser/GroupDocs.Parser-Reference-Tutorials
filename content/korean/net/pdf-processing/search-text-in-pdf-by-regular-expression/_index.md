@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser의 정규식을 사용하여 PDF 문서에서 특정 텍스트를 검색합니다. PDF 텍스트를 쉽게 추출, 분석 및 조작할 수 있습니다.
 weight: 19
 url: /ko/net/pdf-processing/search-text-in-pdf-by-regular-expression/
+type: docs
 ---
-
 # 정규식으로 PDF에서 텍스트 검색
 
 ## 소개

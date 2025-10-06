@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して、さまざまなドキュメント形式からテキスト構造を抽出する方法を学習します。コード例を含むステップバイステップのチュートリアルです。
 weight: 20
 url: /ja/net/text-extraction/extract-text-structure/
+type: docs
 ---
-
 # テキスト構造の抽出
 
 ## 導入

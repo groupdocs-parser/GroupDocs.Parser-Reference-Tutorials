@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Learn how to work with table layouts in templates using GroupDocs.Parser for .NET. Extract structured data efficiently from documents.
 weight: 14
 url: /net/document-template-processing/working-with-table-layout-in-templates/
+type: docs
 ---
-
 # Working with Table Layout in Templates
 
 ## Introduction

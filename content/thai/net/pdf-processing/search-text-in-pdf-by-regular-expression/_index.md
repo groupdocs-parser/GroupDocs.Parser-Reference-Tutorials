@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: ค้นหาข้อความเฉพาะในเอกสาร PDF โดยใช้นิพจน์ทั่วไปด้วย GroupDocs.Parser แยก วิเคราะห์ และจัดการข้อความ PDF ได้อย่างง่ายดาย
 weight: 19
 url: /th/net/pdf-processing/search-text-in-pdf-by-regular-expression/
+type: docs
 ---
-
 # ค้นหาข้อความในรูปแบบ PDF ด้วยนิพจน์ปกติ
 
 ## การแนะนำ

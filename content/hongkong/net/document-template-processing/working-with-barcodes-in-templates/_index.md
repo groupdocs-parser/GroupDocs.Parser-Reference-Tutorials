@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 透過範本從文件中提取結構化資料。使用條碼欄位簡化資料擷取。
 weight: 10
 url: /zh-hant/net/document-template-processing/working-with-barcodes-in-templates/
+type: docs
 ---
-
 # 在模板中使用條碼
 
 ## 介紹

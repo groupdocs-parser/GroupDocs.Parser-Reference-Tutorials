@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 使用 GroupDocs.Parser for .NET 按目录 (TOC) 提取文本。了解用于结构化数据提取的高效文档解析技术。
 weight: 15
 url: /zh/net/text-extraction/extract-text-by-toc-item/
+type: docs
 ---
-
 # 按目录 (TOC) 项目提取文本
 
 ## 介绍

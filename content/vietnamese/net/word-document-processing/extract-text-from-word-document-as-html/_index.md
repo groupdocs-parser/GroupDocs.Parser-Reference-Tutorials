@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách sử dụng GroupDocs.Parser cho .NET để trích xuất văn bản từ tài liệu Word và lưu dưới dạng HTML. Hướng dẫn từng bước với các ví dụ về mã.
 weight: 16
 url: /vi/net/word-document-processing/extract-text-from-word-document-as-html/
+type: docs
 ---
-
 # Trích xuất văn bản từ tài liệu Word dưới dạng HTML
 
 ## Giới thiệu

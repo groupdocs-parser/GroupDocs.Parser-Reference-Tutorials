@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak lampiran dari portofolio PDF menggunakan GroupDocs.Parser untuk .NET dalam tutorial komprehensif ini.
 weight: 10
 url: /id/net/pdf-processing/extract-attachments-from-pdf-portfolios/
+type: docs
 ---
-
 # Ekstrak Lampiran dari Portofolio PDF
 
 ## Perkenalan

@@ -8,10 +8,8 @@ keywords:
 - extract metadata Excel spreadsheets
 - GroupDocs.Parser Java
 - metadata extraction Excel
-
+type: docs
 ---
-
-
 # Extract Metadata from Excel Spreadsheets Using GroupDocs.Parser Java
 
 ## Introduction

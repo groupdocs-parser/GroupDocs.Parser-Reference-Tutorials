@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất văn bản từ các định dạng tài liệu khác nhau bằng GroupDocs.Parser cho .NET. Trích xuất văn bản dễ dàng và hiệu quả với C#.
 weight: 11
 url: /vi/net/document-loading/load-document-from-local-disk/
+type: docs
 ---
-
 # Tải tài liệu từ đĩa cục bộ
 
 ## Giới thiệu

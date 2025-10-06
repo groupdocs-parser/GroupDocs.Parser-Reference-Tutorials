@@ -8,10 +8,8 @@ keywords:
 - extract text from PDF
 - GroupDocs.Parser for .NET
 - text extraction
-
+type: docs
 ---
-
-
 # How to Extract Text from PDF Pages Using GroupDocs.Parser for .NET
 
 **Introduction**

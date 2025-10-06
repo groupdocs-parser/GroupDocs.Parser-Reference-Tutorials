@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan vonhat ki vonalkódokat dokumentumoldalakról a GroupDocs.Parser for .NET segítségével. Ez az oktatóanyag lépésről lépésre útmutatást ad a vonalkód kinyeréséhez.
 weight: 12
 url: /hu/net/barcode-extraction/extract-barcodes-from-document-page/
+type: docs
 ---
-
 # Vonja ki a vonalkódokat a dokumentumoldalról
 
 ## Bevezetés

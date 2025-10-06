@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser के साथ आसानी से डेटा निकालें। विशिष्ट फ़ील्ड प्राप्त करना, डेटा के माध्यम से पुनरावृति करना और निकाली गई सामग्री में तालिकाओं के साथ काम करना सीखें।
 weight: 26
 url: /hi/net/data-extraction-from-templates/
+type: docs
 ---
-
 # टेम्पलेट्स से डेटा निष्कर्षण
 
 

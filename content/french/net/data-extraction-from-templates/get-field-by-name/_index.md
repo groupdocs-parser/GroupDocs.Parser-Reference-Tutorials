@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Découvrez comment extraire des champs de données spécifiques de documents à l'aide de GroupDocs.Parser pour .NET. Guide étape par étape avec des exemples de code.
 weight: 10
 url: /fr/net/data-extraction-from-templates/get-field-by-name/
+type: docs
 ---
-
 # Obtenir le champ par nom
 
 ## Introduction

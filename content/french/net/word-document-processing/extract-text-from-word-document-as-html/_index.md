@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Découvrez comment utiliser GroupDocs.Parser pour .NET pour extraire du texte de documents Word et l'enregistrer au format HTML. Tutoriel étape par étape avec des exemples de code.
 weight: 16
 url: /fr/net/word-document-processing/extract-text-from-word-document-as-html/
+type: docs
 ---
-
 # Extraire le texte d'un document Word au format HTML
 
 ## Introduction

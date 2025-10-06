@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Apprenez à rechercher du texte par pages à l'aide de GroupDocs.Parser pour .NET. Extrayez efficacement le contenu spécifique des documents de vos applications .NET.
 weight: 22
 url: /fr/net/text-extraction/search-text-by-pages/
+type: docs
 ---
-
 # Rechercher du texte par pages
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Εξαγωγή κειμένου από αρχεία PDF χρησιμοποιώντας GroupDocs.Parser για .NET. Ανακτήστε εύκολα συγκεκριμένο περιεχόμενο σελίδας με αυτήν την ισχυρή βιβλιοθήκη.
 weight: 15
 url: /el/net/pdf-processing/extract-text-from-specific-page-in-pdf/
+type: docs
 ---
-
 # Εξαγωγή κειμένου από συγκεκριμένη σελίδα σε PDF
 
 ## Εισαγωγή

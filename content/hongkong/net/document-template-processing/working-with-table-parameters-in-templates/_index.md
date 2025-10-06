@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 從文件中的表格中擷取資料。表參數使用的逐步指南。
 weight: 15
 url: /zh-hant/net/document-template-processing/working-with-table-parameters-in-templates/
+type: docs
 ---
-
 # 使用模板中的表參數
 
 ## 介紹

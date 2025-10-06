@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du extraherar och markerar text från dokument med GroupDocs.Parser för .NET. Enkla steg för effektiv textextraktion i dina .NET-projekt.
 weight: 11
 url: /sv/net/text-extraction/extract-and-highlight-text/
+type: docs
 ---
-
 # Extrahera och markera text
 
 ## Introduktion

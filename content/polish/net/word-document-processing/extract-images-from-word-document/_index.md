@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić obrazy z dokumentu programu Word za pomocą GroupDocs.Parser dla .NET. Ten samouczek zawiera wskazówki krok po kroku dotyczące integracji obrazu z platformą .NET.
 weight: 11
 url: /pl/net/word-document-processing/extract-images-from-word-document/
+type: docs
 ---
-
 # Wyodrębnij obrazy z dokumentu programu Word
 
 ## Wstęp

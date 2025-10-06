@@ -8,10 +8,8 @@ keywords:
 - OCR Text Extraction
 - GroupDocs.Parser Java
 - Java OCR Integration
-
+type: docs
 ---
-
-
 # How to Implement OCR Text Area Extraction Using GroupDocs.Parser with Java
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีดึงข้อมูลจากเทมเพลตเอกสารโดยใช้ตำแหน่ง regex ด้วย GroupDocs.Parser สำหรับ .NET ทำให้งานแยกข้อมูลของคุณเป็นอัตโนมัติอย่างมีประสิทธิภาพ
 weight: 13
 url: /th/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
+type: docs
 ---
-
 # การทำงานกับฟิลด์ที่ตำแหน่ง Regex ในเทมเพลต
 
 ## การแนะนำ

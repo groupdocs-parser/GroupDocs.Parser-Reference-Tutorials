@@ -8,10 +8,8 @@ keywords:
 - extract PDF attachments Java
 - GroupDocs Parser library
 - PDF portfolio extraction
-
+type: docs
 ---
-
-
 # How to Extract Attachments from a PDF Portfolio Using GroupDocs.Parser in Java
 
 ## Introduction

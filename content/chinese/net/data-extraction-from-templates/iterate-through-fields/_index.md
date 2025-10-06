@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从文档中提取结构化数据。使用文档数据提取功能增强您的 .NET 应用程序。
 weight: 11
 url: /zh/net/data-extraction-from-templates/iterate-through-fields/
+type: docs
 ---
-
 # 迭代字段
 
 ## 介绍

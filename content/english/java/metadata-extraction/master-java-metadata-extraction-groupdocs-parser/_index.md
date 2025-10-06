@@ -8,10 +8,8 @@ keywords:
 - Java metadata extraction
 - GroupDocs.Parser tutorial
 - metadata management in Java
-
+type: docs
 ---
-
-
 # Mastering Java Metadata Extraction with GroupDocs.Parser: A Comprehensive Guide
 
 ## Introduction

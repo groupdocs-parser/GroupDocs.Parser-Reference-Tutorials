@@ -6,8 +6,8 @@ description: 使用 GroupDocs.Parser for .NET 和 Java 解锁高效的数据提�
 weight: 11
 url: /zh/
 is_root: true
+type: docs
 ---
-
 # 使用 GroupDocs.Parser 解锁文档解析技能
 
 

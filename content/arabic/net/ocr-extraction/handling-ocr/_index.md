@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية التعامل مع التعرف الضوئي على الحروف (OCR) باستخدام GroupDocs.Parser لـ .NET. استخراج النص من الصور والمستندات الممسوحة ضوئيا بكفاءة.
 weight: 11
 url: /ar/net/ocr-extraction/handling-ocr/
+type: docs
 ---
-
 # التعامل مع التعرف الضوئي على الحروف
 
 ## مقدمة

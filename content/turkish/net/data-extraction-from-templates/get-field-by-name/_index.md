@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belgelerden belirli veri alanlarını nasıl çıkaracağınızı öğrenin. Kod örnekleri içeren adım adım kılavuz.
 weight: 10
 url: /tr/net/data-extraction-from-templates/get-field-by-name/
+type: docs
 ---
-
 # Alanı Ada Göre Al
 
 ## giriiş

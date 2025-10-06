@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak struktur teks dari berbagai format dokumen menggunakan GroupDocs.Parser untuk .NET. Tutorial langkah demi langkah dengan contoh kode.
 weight: 20
 url: /id/net/text-extraction/extract-text-structure/
+type: docs
 ---
-
 # Ekstrak Struktur Teks
 
 ## Perkenalan

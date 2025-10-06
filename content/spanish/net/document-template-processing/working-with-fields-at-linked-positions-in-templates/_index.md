@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Aprenda a extraer datos de manera eficiente de documentos usando GroupDocs.Parser para .NET. Tutorial paso a paso con ejemplos de código.
 weight: 12
 url: /es/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
+type: docs
 ---
-
 # Trabajar con campos en posiciones vinculadas en plantillas
 
 ## Introducción

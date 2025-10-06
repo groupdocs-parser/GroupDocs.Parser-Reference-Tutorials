@@ -10,10 +10,8 @@ keywords:
 - text extraction in Java
 - email parsing with GroupDocs
 - Java email file processing
-
+type: docs
 ---
-
-
 # How to Extract Text from Emails Using GroupDocs.Parser in Java
 
 ## Introduction

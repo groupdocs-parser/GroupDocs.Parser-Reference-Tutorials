@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีใช้ GroupDocs.Parser สำหรับ .NET เพื่อแยกข้อมูลที่มีโครงสร้างจากเอกสารโดยใช้เทมเพลต ลดความซับซ้อนในการดึงข้อมูลด้วยช่องบาร์โค้ด
 weight: 10
 url: /th/net/document-template-processing/working-with-barcodes-in-templates/
+type: docs
 ---
-
 # การทำงานกับบาร์โค้ดในเทมเพลต
 
 ## การแนะนำ

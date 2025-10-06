@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan nyerhet ki adatokat dokumentumokból a GroupDocs.Parser for .NET segítségével. Átfogó oktatóanyag kódpéldákkal.
 weight: 11
 url: /hu/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
+type: docs
 ---
-
 # Mezőkkel végzett munka fix pozíciókban a sablonokban
 
 ## Bevezetés

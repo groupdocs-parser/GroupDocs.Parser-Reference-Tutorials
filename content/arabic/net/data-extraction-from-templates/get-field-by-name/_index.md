@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج حقول بيانات محددة من المستندات باستخدام GroupDocs.Parser لـ .NET. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية.
 weight: 10
 url: /ar/net/data-extraction-from-templates/get-field-by-name/
+type: docs
 ---
-
 # الحصول على الحقل بالاسم
 
 ## مقدمة

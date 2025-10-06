@@ -8,10 +8,8 @@ keywords:
 - barcode extraction .NET
 - GroupDocs.Parser for .NET setup
 - automate barcode scanning with GroupDocs
-
+type: docs
 ---
-
-
 # Efficient Barcode Extraction from Documents with GroupDocs.Parser for .NET
 
 ## Introduction

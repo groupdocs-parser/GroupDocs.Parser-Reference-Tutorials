@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Bez námahy extrahujte hypertextové odkazy z dokumentů v .NET pomocí GroupDocs.Parser. Vylepšete své aplikace C# pomocí podrobných průvodců pro extrakci hypertextových odkazů.
 weight: 25
 url: /cs/net/hyperlink-extraction/
+type: docs
 ---
-
 # Extrakce hypertextového odkazu
 
 ## Úvod

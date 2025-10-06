@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Groupdocs.Parser for .NET を使用してドキュメントからテーブルを抽出する方法を学びます。この機能の統合に関する詳細なガイドに従ってください。
 weight: 10
 url: /ja/net/table-extraction/extract-tables-from-document/
+type: docs
 ---
-
 # ドキュメントから表を抽出する
 
 ## 導入

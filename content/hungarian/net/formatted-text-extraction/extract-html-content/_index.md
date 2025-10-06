@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan nyerhet ki HTML-tartalmat dokumentumokból a GroupDocs.Parser for .NET segítségével. Könnyen követhető oktatóanyag kódpéldákkal és lépésről lépésre útmutatóval.
 weight: 12
 url: /hu/net/formatted-text-extraction/extract-html-content/
+type: docs
 ---
-
 # HTML tartalom kibontása
 
 ## Bevezetés

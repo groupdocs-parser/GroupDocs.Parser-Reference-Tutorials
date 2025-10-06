@@ -9,10 +9,8 @@ keywords:
 - GroupDocs.Parser .NET
 - image extraction PowerPoint
 - PowerPoint image extraction
-
+type: docs
 ---
-
-
 # How to Extract Images from PowerPoint Using GroupDocs.Parser .NET
 
 ## Introduction

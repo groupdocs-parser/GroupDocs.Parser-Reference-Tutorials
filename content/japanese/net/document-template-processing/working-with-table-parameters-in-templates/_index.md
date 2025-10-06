@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用してドキュメント内のテーブルからデータを抽出する方法を学習します。テーブル パラメータの使用に関するステップ バイ ステップ ガイド。
 weight: 15
 url: /ja/net/document-template-processing/working-with-table-parameters-in-templates/
+type: docs
 ---
-
 # テンプレート内のテーブルパラメータの操作
 
 ## 導入

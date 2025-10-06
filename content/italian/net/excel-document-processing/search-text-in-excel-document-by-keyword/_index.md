@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Scopri come cercare testo all'interno di documenti Excel utilizzando GroupDocs.Parser per .NET. Integra funzionalità avanzate di ricerca testuale nelle tue applicazioni .NET.
 weight: 16
 url: /it/net/excel-document-processing/search-text-in-excel-document-by-keyword/
+type: docs
 ---
-
 # Cerca testo nel documento Excel per parola chiave
 
 ## introduzione

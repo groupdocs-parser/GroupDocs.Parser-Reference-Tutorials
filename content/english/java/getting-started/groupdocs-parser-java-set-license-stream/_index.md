@@ -8,10 +8,8 @@ keywords:
 - Set license from stream with GroupDocs.Parser for Java
 - GroupDocs.Parser for Java setup
 - Java document parsing
-
+type: docs
 ---
-
-
 # How to Implement Set License from Stream with GroupDocs.Parser for Java
 
 ## Introduction

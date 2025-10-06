@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: Word दस्तावेज़ों से टेक्स्ट निकालने और उसे HTML के रूप में सहेजने के लिए .NET के लिए GroupDocs.Parser का उपयोग करना सीखें। कोड उदाहरणों के साथ चरण-दर-चरण ट्यूटोरियल।
 weight: 16
 url: /hi/net/word-document-processing/extract-text-from-word-document-as-html/
+type: docs
 ---
-
 # Word दस्तावेज़ से HTML के रूप में पाठ निकालें
 
 ## परिचय

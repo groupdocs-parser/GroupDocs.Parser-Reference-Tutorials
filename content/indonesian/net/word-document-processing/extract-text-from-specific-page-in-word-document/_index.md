@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak teks dari halaman tertentu di dokumen Word menggunakan GroupDocs.Parser untuk .NET. Integrasikan kemampuan ekstraksi teks ke dalam .NET Anda.
 weight: 17
 url: /id/net/word-document-processing/extract-text-from-specific-page-in-word-document/
+type: docs
 ---
-
 # Ekstrak Teks dari Halaman Tertentu di Dokumen Word
 
 ## Perkenalan

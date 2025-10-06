@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET programmgesteuert das Inhaltsverzeichnis (TOC) aus Word-Dokumenten extrahieren.
 weight: 13
 url: /de/net/word-document-processing/extract-table-of-contents-from-word-document/
+type: docs
 ---
-
 # Inhaltsverzeichnis aus Word-Dokument extrahieren
 
 ## Einführung

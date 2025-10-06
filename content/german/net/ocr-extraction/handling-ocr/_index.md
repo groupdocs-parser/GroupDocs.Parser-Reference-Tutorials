@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie OCR mit GroupDocs.Parser für .NET handhaben. Extrahieren Sie effizient Text aus Bildern und gescannten Dokumenten.
 weight: 11
 url: /de/net/ocr-extraction/handling-ocr/
+type: docs
 ---
-
 # Handhabung von OCR
 
 ## Einführung

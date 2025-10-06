@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Découvrez comment rechercher et surligner du texte dans des documents à l'aide de GroupDocs.Parser pour .NET. Extrayez efficacement des informations précieuses.
 weight: 24
 url: /fr/net/text-extraction/search-text-with-highlights/
+type: docs
 ---
-
 # Rechercher du texte avec des surbrillances
 
 ## Introduction

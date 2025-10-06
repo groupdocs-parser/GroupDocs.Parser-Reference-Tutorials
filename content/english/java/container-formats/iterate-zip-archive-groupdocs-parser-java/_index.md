@@ -8,10 +8,8 @@ keywords:
 - iterate ZIP archive
 - GroupDocs.Parser for Java setup
 - extract file metadata from ZIP
-
+type: docs
 ---
-
-
 # Iterate Through ZIP Archives Using GroupDocs.Parser Java: A Comprehensive Guide
 
 ## Introduction

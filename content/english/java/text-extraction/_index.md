@@ -3,8 +3,8 @@ title: "Text Extraction Tutorials for GroupDocs.Parser Java"
 description: "Step-by-step tutorials for extracting plain text, formatted text, and text with layout information from documents using GroupDocs.Parser for Java."
 weight: 3
 url: "/java/text-extraction/"
+type: docs
 ---
-
 # Text Extraction Tutorials for GroupDocs.Parser Java
 
 Master text extraction with our detailed GroupDocs.Parser Java tutorials. These practical guides demonstrate how to extract raw text, formatted text (HTML, Markdown), and maintain text layout information from various document formats. Learn to extract text from specific pages, use different extraction modes (raw, accurate), and work with text areas. Each tutorial includes complete Java code examples that show how to implement efficient text extraction while preserving the content structure needed for your application.

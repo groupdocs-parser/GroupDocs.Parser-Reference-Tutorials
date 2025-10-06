@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan nyerhet ki hatékonyan adatokat a dokumentumokból a GroupDocs.Parser for .NET segítségével. Lépésről lépésre bemutató oktatóprogram kódpéldákkal.
 weight: 12
 url: /hu/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
+type: docs
 ---
-
 # Mezőkkel végzett munka a sablonok összekapcsolt pozícióinál
 
 ## Bevezetés

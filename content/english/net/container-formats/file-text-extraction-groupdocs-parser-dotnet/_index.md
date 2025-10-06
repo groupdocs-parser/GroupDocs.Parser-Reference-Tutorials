@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser for .NET
 - extract files from ZIP archive
 - text extraction from ZIP
-
+type: docs
 ---
-
-
 # Extract Files and Text from ZIP Archives with GroupDocs.Parser for .NET
 ## Introduction
 Do you need to programmatically extract files or text from a ZIP archive using C#? Whether processing documents, managing backups, or integrating data workflows, handling compressed files efficiently is essential. In this tutorial, we will guide you through extracting files and text from ZIP archives using GroupDocs.Parser for .NET, a powerful library designed for document parsing in .NET applications.

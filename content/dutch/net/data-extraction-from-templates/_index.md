@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Extraheer gegevens moeiteloos met GroupDocs.Parser voor .NET. Leer specifieke velden op te halen, door gegevens te bladeren en met tabellen in geëxtraheerde inhoud te werken.
 weight: 26
 url: /nl/net/data-extraction-from-templates/
+type: docs
 ---
-
 # Gegevensextractie uit sjablonen
 
 

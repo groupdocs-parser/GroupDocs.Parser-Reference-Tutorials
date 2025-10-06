@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki táblákat dokumentumokból a Groupdocs.Parser for .NET segítségével. Kövesse a részletes útmutatót a funkció integrálásához.
 weight: 10
 url: /hu/net/table-extraction/extract-tables-from-document/
+type: docs
 ---
-
 # Táblázatok kibontása a dokumentumból
 
 ## Bevezetés

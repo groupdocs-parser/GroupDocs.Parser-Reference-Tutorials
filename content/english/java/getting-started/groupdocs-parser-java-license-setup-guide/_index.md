@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Parser license setup
 - Java GroupDocs licensing
 - Setting up GroupDocs license in Java
-
+type: docs
 ---
-
-
 # How to Set a License in Java Using GroupDocs.Parser: A Comprehensive Guide
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε κείμενο από φύλλα Excel χρησιμοποιώντας το GroupDocs.Parser για .NET. Απλά βήματα για αποτελεσματική εξαγωγή κειμένου.
 weight: 14
 url: /el/net/excel-document-processing/extract-text-from-excel-sheet/
+type: docs
 ---
-
 # Εξαγωγή κειμένου από φύλλο Excel
 
 ## Εισαγωγή

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Aprenda a extraer códigos de barras de páginas de documentos utilizando GroupDocs.Parser para .NET. Mejore sus capacidades de procesamiento de documentos con este tutorial paso a paso.
 weight: 13
 url: /es/net/barcode-extraction/extract-barcodes-from-document-page-area/
+type: docs
 ---
-
 # Extraer códigos de barras del área de la página del documento
 
 ## Introducción

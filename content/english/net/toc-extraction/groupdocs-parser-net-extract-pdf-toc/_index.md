@@ -8,10 +8,8 @@ keywords:
 - extracting PDF table of contents
 - GroupDocs.Parser .NET tutorial
 - automating TOC extraction from PDFs
-
+type: docs
 ---
-
-
 # Extracting PDF Table of Contents with GroupDocs.Parser .NET: A Step-by-Step Guide
 
 ## Introduction

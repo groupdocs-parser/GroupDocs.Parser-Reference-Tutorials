@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Szöveg kibontása PDF-fájlokból a GroupDocs.Parser for .NET segítségével. Ezzel a hatékony könyvtárral könnyedén visszakereshet bizonyos oldaltartalmakat.
 weight: 15
 url: /hu/net/pdf-processing/extract-text-from-specific-page-in-pdf/
+type: docs
 ---
-
 # Szöveg kibontása egy adott oldalról PDF-ben
 
 ## Bevezetés

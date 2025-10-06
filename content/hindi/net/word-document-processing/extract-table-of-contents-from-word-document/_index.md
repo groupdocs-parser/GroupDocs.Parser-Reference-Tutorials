@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके प्रोग्रामेटिक रूप से Word दस्तावेज़ों से विषय-सूची (TOC) निकालना सीखें।
 weight: 13
 url: /hi/net/word-document-processing/extract-table-of-contents-from-word-document/
+type: docs
 ---
-
 # वर्ड दस्तावेज़ से विषय-सूची निकालें
 
 ## परिचय

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębniać dane z formularzy PDF za pomocą GroupDocs.Parser dla .NET. Przewodnik krok po kroku z przykładami kodu i często zadawanymi pytaniami.
 weight: 11
 url: /pl/net/pdf-processing/extract-data-from-pdf-forms/
+type: docs
 ---
-
 # Wyodrębnij dane z formularzy PDF
 
 ## Wstęp

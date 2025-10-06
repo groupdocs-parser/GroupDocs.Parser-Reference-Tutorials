@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du söker efter text i Word-dokument med GroupDocs.Parser för .NET. Extrahera specifika sökord effektivt.
 weight: 18
 url: /sv/net/word-document-processing/search-text-in-word-document-by-keyword/
+type: docs
 ---
-
 # Sök text i Word-dokument efter nyckelord
 
 ## Introduktion

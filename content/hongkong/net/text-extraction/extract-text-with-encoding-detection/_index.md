@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 使用 GroupDocs.Parser for .NET 透過編碼檢測從文件中提取文字。高效解析 .NET 應用程式中的各種格式。
 weight: 10
 url: /zh-hant/net/text-extraction/extract-text-with-encoding-detection/
+type: docs
 ---
-
 # 透過編碼檢測提取文本
 
 ## 介紹

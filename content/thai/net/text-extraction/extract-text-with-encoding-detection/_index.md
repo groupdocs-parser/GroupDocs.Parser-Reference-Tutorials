@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: แยกข้อความออกจากเอกสารด้วยการตรวจจับการเข้ารหัสโดยใช้ GroupDocs.Parser สำหรับ .NET แยกวิเคราะห์รูปแบบต่างๆ ในแอปพลิเคชัน .NET ของคุณได้อย่างมีประสิทธิภาพ
 weight: 10
 url: /th/net/text-extraction/extract-text-with-encoding-detection/
+type: docs
 ---
-
 # แยกข้อความด้วยการตรวจจับการเข้ารหัส
 
 ## การแนะนำ

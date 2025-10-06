@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके PDF फ़ॉर्म से डेटा निकालने का तरीका जानें। कोड उदाहरणों और FAQ के साथ चरण-दर-चरण मार्गदर्शिका।
 weight: 11
 url: /hi/net/pdf-processing/extract-data-from-pdf-forms/
+type: docs
 ---
-
 # पीडीएफ फॉर्म से डेटा निकालें
 
 ## परिचय

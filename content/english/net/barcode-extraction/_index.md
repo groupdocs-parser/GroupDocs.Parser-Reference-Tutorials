@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Learn how to extract barcodes effortlessly with GroupDocs.Parser for .NET tutorials. Enhance your document processing capabilities now!
 weight: 27
 url: /net/barcode-extraction/
+type: docs
 ---
-
 # Barcode Extraction
 
 

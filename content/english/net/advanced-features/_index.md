@@ -3,8 +3,8 @@ title: "Advanced Parsing Features Tutorials for GroupDocs.Parser .NET"
 description: "Complete tutorials for implementing highlighting, text area detection, encoding detection, and other advanced features with GroupDocs.Parser for .NET."
 weight: 17
 url: "/net/advanced-features/"
+type: docs
 ---
-
 # Advanced Parsing Features Tutorials for GroupDocs.Parser .NET
 
 Master advanced document parsing capabilities with our comprehensive GroupDocs.Parser tutorials for .NET developers. These detailed guides cover detecting text areas, working with text highlighting, implementing text structure analysis, detecting document encoding, and extracting formatted text with preserved structure. Each tutorial provides working C# code examples for sophisticated parsing scenarios, helping you build applications that offer enhanced document analysis and information extraction capabilities.

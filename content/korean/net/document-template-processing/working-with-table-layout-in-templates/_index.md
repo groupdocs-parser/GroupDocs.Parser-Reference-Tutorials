@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 템플릿에서 테이블 레이아웃으로 작업하는 방법을 알아보세요. 문서에서 구조화된 데이터를 효율적으로 추출합니다.
 weight: 14
 url: /ko/net/document-template-processing/working-with-table-layout-in-templates/
+type: docs
 ---
-
 # 템플릿에서 테이블 레이아웃 작업
 
 ## 소개

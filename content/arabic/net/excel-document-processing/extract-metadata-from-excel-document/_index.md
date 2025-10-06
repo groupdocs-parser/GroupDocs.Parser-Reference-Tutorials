@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج بيانات التعريف من مستندات Excel باستخدام GroupDocs.Parser لـ .NET. اتبع هذا البرنامج التعليمي خطوة بخطوة.
 weight: 11
 url: /ar/net/excel-document-processing/extract-metadata-from-excel-document/
+type: docs
 ---
-
 # استخراج البيانات التعريفية من مستند Excel
 
 ## مقدمة

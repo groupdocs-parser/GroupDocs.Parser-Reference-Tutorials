@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất siêu dữ liệu từ tài liệu PDF bằng GroupDocs.Parser cho .NET. Hướng dẫn toàn diện này bao gồm các hướng dẫn từng bước và điều kiện tiên quyết.
 weight: 13
 url: /vi/net/pdf-processing/extract-metadata-from-pdf/
+type: docs
 ---
-
 # Trích xuất siêu dữ liệu từ PDF
 
 ## Giới thiệu

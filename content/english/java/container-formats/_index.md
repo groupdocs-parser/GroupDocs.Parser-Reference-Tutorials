@@ -3,8 +3,8 @@ title: "Container Format Parsing Tutorials for GroupDocs.Parser Java"
 description: "Learn to work with ZIP archives, PDF portfolios, and other container formats with these GroupDocs.Parser Java tutorials."
 weight: 16
 url: "/java/container-formats/"
+type: docs
 ---
-
 # Container Format Parsing Tutorials for GroupDocs.Parser Java
 
 Our container format tutorials show you how to process compound documents using GroupDocs.Parser in Java. These step-by-step guides cover extracting content from ZIP archives, processing PDF portfolios, iterating through container items, and working with nested documents. Each tutorial includes detailed Java code examples for common container processing scenarios, helping you build applications that can effectively navigate and extract content from complex document collections.

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Bilder aus einem Word-Dokument extrahieren. Dieses Tutorial bietet eine Schritt-für-Schritt-Anleitung zum Integrieren von Bildern in Ihr .NET.
 weight: 11
 url: /de/net/word-document-processing/extract-images-from-word-document/
+type: docs
 ---
-
 # Bilder aus Word-Dokument extrahieren
 
 ## Einführung

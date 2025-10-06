@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak teks biasa dari dokumen menggunakan GroupDocs.Parser untuk .NET. Langkah mudah untuk mengintegrasikan ekstraksi teks dalam aplikasi Anda.
 weight: 14
 url: /id/net/formatted-text-extraction/extract-plain-text/
+type: docs
 ---
-
 # Ekstrak Teks Biasa
 
 ## Perkenalan

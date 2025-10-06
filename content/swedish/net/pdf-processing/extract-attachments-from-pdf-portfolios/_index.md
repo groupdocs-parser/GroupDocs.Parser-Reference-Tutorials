@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du extraherar bilagor från PDF-portföljer med GroupDocs.Parser för .NET i den här omfattande självstudien.
 weight: 10
 url: /sv/net/pdf-processing/extract-attachments-from-pdf-portfolios/
+type: docs
 ---
-
 # Extrahera bilagor från PDF-portföljer
 
 ## Introduktion

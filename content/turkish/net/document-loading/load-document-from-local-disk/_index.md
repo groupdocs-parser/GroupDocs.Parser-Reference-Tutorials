@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak çeşitli belge biçimlerinden nasıl metin ayıklayacağınızı öğrenin. C# ile kolay ve etkili metin çıkarma.
 weight: 11
 url: /tr/net/document-loading/load-document-from-local-disk/
+type: docs
 ---
-
 # Belgeyi Yerel Diskten Yükle
 
 ## giriiş

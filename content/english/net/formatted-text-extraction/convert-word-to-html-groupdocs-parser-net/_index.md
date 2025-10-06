@@ -8,10 +8,8 @@ keywords:
 - convert Word to HTML
 - GroupDocs.Parser .NET
 - formatted text extraction
-
+type: docs
 ---
-
-
 # Convert Word Documents to HTML with GroupDocs.Parser .NET
 
 ## Introduction

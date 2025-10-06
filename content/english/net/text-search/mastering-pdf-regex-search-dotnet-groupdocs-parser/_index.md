@@ -8,10 +8,8 @@ keywords:
 - PDF Regex Search in .NET
 - GroupDocs.Parser
 - Regex Text Extraction
-
+type: docs
 ---
-
-
 # Master PDF Regex Search in .NET with GroupDocs.Parser: A Step-by-Step Guide
 
 ## Introduction

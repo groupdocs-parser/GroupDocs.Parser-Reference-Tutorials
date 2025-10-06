@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Aprenda como extrair hiperlinks de documentos do Word usando GroupDocs.Parser for .NET. Guia passo a passo com exemplos de código.
 weight: 10
 url: /pt/net/word-document-processing/extract-hyperlinks-from-word-document/
+type: docs
 ---
-
 # Extraia hiperlinks de um documento do Word
 
 ## Introdução

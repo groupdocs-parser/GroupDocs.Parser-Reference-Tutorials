@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 손쉽게 데이터를 추출하세요. 특정 필드를 검색하고, 데이터를 반복하고, 추출된 콘텐츠의 테이블로 작업하는 방법을 알아보세요.
 weight: 26
 url: /ko/net/data-extraction-from-templates/
+type: docs
 ---
-
 # 템플릿에서 데이터 추출
 
 

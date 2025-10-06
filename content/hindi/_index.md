@@ -6,8 +6,8 @@ description: .NET और Java के लिए GroupDocs.Parser के साथ
 weight: 11
 url: /hi/
 is_root: true
+type: docs
 ---
-
 # GroupDocs.Parser के साथ दस्तावेज़ पार्सिंग महारत अनलॉक करें
 
 

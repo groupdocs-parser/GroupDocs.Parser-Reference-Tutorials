@@ -6,8 +6,8 @@ description: Odblokuj wydajne techniki ekstrakcji danych dzięki GroupDocs.Parse
 weight: 11
 url: /pl/
 is_root: true
+type: docs
 ---
-
 # Odblokuj mistrzostwo w analizowaniu dokumentów dzięki GroupDocs.Parser
 
 

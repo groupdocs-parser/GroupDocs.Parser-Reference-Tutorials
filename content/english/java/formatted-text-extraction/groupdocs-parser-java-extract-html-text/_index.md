@@ -8,10 +8,8 @@ keywords:
 - extract HTML text from documents
 - GroupDocs.Parser Java tutorial
 - document parsing with GroupDocs Parser
-
+type: docs
 ---
-
-
 # How to Extract HTML Text from Documents Using GroupDocs.Parser in Java
 
 ## Introduction

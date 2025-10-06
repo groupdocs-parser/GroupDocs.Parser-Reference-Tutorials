@@ -8,7 +8,7 @@ keywords:
 - GroupDocs.Parser
 - Net
 - Document Processing
-
+type: docs
 ---
 ## How to Extract Text from Defined Rectangular Areas Using OCR in GroupDocs.Parser for .NET
 

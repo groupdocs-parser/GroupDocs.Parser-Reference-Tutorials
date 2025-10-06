@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Learn how to extract HTML content from documents using GroupDocs.Parser for .NET. Easy-to-follow tutorial with code examples and step-by-step guidance.
 weight: 12
 url: /net/formatted-text-extraction/extract-html-content/
+type: docs
 ---
-
 # Extract HTML Content
 
 ## Introduction

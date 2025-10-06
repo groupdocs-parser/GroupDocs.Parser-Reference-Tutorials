@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξαγάγετε μεταδεδομένα από έγγραφα PDF χρησιμοποιώντας το GroupDocs.Parser για .NET. Αυτός ο περιεκτικός οδηγός καλύπτει βήμα προς βήμα οδηγίες και προϋποθέσεις.
 weight: 13
 url: /el/net/pdf-processing/extract-metadata-from-pdf/
+type: docs
 ---
-
 # Εξαγωγή μεταδεδομένων από PDF
 
 ## Εισαγωγή

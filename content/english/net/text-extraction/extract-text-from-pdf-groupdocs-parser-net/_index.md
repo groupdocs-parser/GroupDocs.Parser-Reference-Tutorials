@@ -8,10 +8,8 @@ keywords:
 - extract raw text from PDF
 - GroupDocs.Parser .NET setup
 - automate PDF data extraction
-
+type: docs
 ---
-
-
 # Extract Raw Text from PDF Pages Using GroupDocs.Parser .NET
 
 ## Introduction

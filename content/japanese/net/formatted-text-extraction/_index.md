@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser を使用して、.NET のドキュメントから書式設定されたテキストを効率的に抽出します。HTML、Markdown、プレーン テキストをシームレスに抽出する方法を学びます。
 weight: 21
 url: /ja/net/formatted-text-extraction/
+type: docs
 ---
-
 # フォーマットされたテキストの抽出
 
 

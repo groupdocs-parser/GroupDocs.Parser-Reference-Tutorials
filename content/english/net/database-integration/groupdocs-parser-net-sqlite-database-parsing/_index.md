@@ -8,10 +8,8 @@ keywords:
 - SQLite parsing with GroupDocs.Parser
 - GroupDocs.Parser .NET setup
 - extracting data from SQLite using GroupDocs.Parser
-
+type: docs
 ---
-
-
 # Mastering SQLite Parsing with GroupDocs.Parser for .NET: A Comprehensive Guide
 
 ## Introduction

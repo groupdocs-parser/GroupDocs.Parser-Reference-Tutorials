@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके दस्तावेज़ों से आसानी से छवियाँ निकालें। आपकी दस्तावेज़ प्रसंस्करण क्षमताएँ और छवि निष्कर्षण कार्यों को कुशलतापूर्वक सुव्यवस्थित करें।
 weight: 11
 url: /hi/net/image-extraction/extract-images-from-document/
+type: docs
 ---
-
 # दस्तावेज़ से छवियाँ निकालें
 
 ## परिचय

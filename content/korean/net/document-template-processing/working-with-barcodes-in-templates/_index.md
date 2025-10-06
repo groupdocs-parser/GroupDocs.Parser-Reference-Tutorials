@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 템플릿을 사용하여 문서에서 구조화된 데이터를 추출하는 방법을 알아보세요. 바코드 필드를 사용하여 데이터 추출을 단순화합니다.
 weight: 10
 url: /ko/net/document-template-processing/working-with-barcodes-in-templates/
+type: docs
 ---
-
 # 템플릿에서 바코드 작업
 
 ## 소개

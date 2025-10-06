@@ -8,10 +8,8 @@ keywords:
 - extract document text as HTML
 - GroupDocs.Parser Java setup
 - HTML formatted text extraction
-
+type: docs
 ---
-
-
 # How to Extract Document Text as HTML Using GroupDocs.Parser Java: A Comprehensive Guide
 
 ## Introduction

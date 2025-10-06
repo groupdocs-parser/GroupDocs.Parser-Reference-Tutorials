@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके दस्तावेज़ पृष्ठों से स्वरूपित पाठ निकालें। कुशल और विश्वसनीय पाठ निष्कर्षण समाधान।
 weight: 11
 url: /hi/net/formatted-text-extraction/extract-formatted-text-from-document-page/
+type: docs
 ---
-
 # दस्तावेज़ पृष्ठ से स्वरूपित पाठ निकालें
 
 ## परिचय

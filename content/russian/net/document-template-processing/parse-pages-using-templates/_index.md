@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Узнайте, как анализировать страницы документов с помощью шаблонов в .NET с помощью GroupDocs.Parser. Эффективно извлекайте определенный контент для своих приложений.
 weight: 16
 url: /ru/net/document-template-processing/parse-pages-using-templates/
+type: docs
 ---
-
 # Анализ страниц с использованием шаблонов
 
 ## Введение

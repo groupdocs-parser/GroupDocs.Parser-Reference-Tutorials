@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Извлекайте текст из документов с определением кодировки с помощью GroupDocs.Parser для .NET. Эффективно анализируйте различные форматы в своих приложениях .NET.
 weight: 10
 url: /ru/net/text-extraction/extract-text-with-encoding-detection/
+type: docs
 ---
-
 # Извлечение текста с обнаружением кодировки
 
 ## Введение

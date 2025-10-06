@@ -8,10 +8,8 @@ keywords:
 - Java Logging with GroupDocs.Parser
 - Document Parsing in Java
 - Custom Logger Implementation
-
+type: docs
 ---
-
-
 # Master Logging & Document Parsing in Java with GroupDocs.Parser
 
 Welcome to this comprehensive guide on enhancing your Java applications by integrating a custom logger with the powerful GroupDocs.Parser library for document parsing. This tutorial will equip you with the skills needed to efficiently handle errors, warnings, and trace events while extracting text from various document formats.

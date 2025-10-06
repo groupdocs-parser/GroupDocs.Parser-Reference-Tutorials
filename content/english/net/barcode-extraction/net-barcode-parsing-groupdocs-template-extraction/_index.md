@@ -8,10 +8,8 @@ keywords:
 - .NET barcode parsing
 - GroupDocs Parser setup
 - template-based data extraction
-
+type: docs
 ---
-
-
 # Implementing .NET Barcode Parsing with GroupDocs: A Comprehensive Guide to Template-Based Extraction
 
 ## Introduction

@@ -8,10 +8,8 @@ keywords:
 - custom logger
 - .NET text extraction
 - GroupDocs.Parser
-
+type: docs
 ---
-
-
 # Implementing Custom Logger and Text Extraction in .NET with GroupDocs.Parser
 
 ## Introduction

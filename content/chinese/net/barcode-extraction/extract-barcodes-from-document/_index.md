@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从文档中提取条形码。轻松增强您的文档处理能力。
 weight: 10
 url: /zh/net/barcode-extraction/extract-barcodes-from-document/
+type: docs
 ---
-
 # 从文档中提取条形码
 
 ## 介绍

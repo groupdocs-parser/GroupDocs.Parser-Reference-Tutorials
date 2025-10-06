@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mencari teks berdasarkan kata kunci dalam dokumen menggunakan GroupDocs.Parser untuk .NET. Ekstrak konten relevan secara efisien dengan mudah.
 weight: 21
 url: /id/net/text-extraction/search-text-by-keyword/
+type: docs
 ---
-
 # Cari Teks berdasarkan Kata Kunci
 
 ## Perkenalan

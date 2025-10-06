@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak PDF belgelerinden nasıl veri ayıklayacağınızı öğrenin. PDF dosyalarını verimli bir şekilde ayrıştırmak ve işlemek için adım adım kılavuzumuzu izleyin.
 weight: 17
 url: /tr/net/pdf-processing/parse-data-from-pdf-documents/
+type: docs
 ---
-
 # PDF Belgelerinden Verileri Ayrıştırma
 
 ## giriiş

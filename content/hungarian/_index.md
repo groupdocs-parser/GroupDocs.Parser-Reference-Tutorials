@@ -6,8 +6,8 @@ description: Oldja fel a hatékony adatkinyerési technikákat a GroupDocs.Parse
 weight: 11
 url: /hu/
 is_root: true
+type: docs
 ---
-
 # GroupDocs.Parser segítségével feloldhatja a dokumentumelemzési mesteri képességet
 
 

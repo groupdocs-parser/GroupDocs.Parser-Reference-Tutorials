@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε κείμενο από φύλλα Excel χρησιμοποιώντας το GroupDocs.Parser για .NET σε αυτό το περιεκτικό σεμινάριο. Κάντε λήψη και ξεκινήστε την ανάλυση.
 weight: 15
 url: /el/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
+type: docs
 ---
-
 # Εξαγωγή κειμένου από Φύλλο Excel σε Raw Mode
 
 ## Εισαγωγή

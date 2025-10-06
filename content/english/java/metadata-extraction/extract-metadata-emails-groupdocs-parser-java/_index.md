@@ -8,10 +8,8 @@ keywords:
 - extract email metadata using GroupDocs.Parser in Java
 - GroupDocs.Parser library setup in Java
 - Java email metadata extraction
-
+type: docs
 ---
-
-
 # How to Extract Email Metadata from Emails Using GroupDocs.Parser in Java
 
 In today's digital age, managing and processing email data is crucial for businesses that rely heavily on communication. Developers often face the challenge of extracting metadata from emails, such as sender information, timestamps, and subject lines. This comprehensive guide will help you use the powerful `GroupDocs.Parser` library in Java to accomplish this efficiently.

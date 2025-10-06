@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: Basit adımlarla GroupDocs.Parser for .NET'i kullanarak Excel belgelerinden nasıl metin ayıklayacağınızı öğrenin.
 weight: 12
 url: /tr/net/excel-document-processing/extract-text-from-excel-document/
+type: docs
 ---
-
 # Excel Belgesinden Metin Çıkarma
 
 ## giriiş

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: GroupDocs.Parser के साथ .NET में Excel दस्तावेज़ प्रसंस्करण में महारत हासिल करें। चरण-दर-चरण मार्गदर्शिकाओं के साथ कुशलतापूर्वक चित्र, मेटाडेटा और पाठ निकालना सीखें।
 weight: 32
 url: /hi/net/excel-document-processing/
+type: docs
 ---
-
 # एक्सेल दस्तावेज़ प्रसंस्करण
 
 ## परिचय

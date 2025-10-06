@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε υπερσυνδέσμους από έγγραφα χρησιμοποιώντας το GroupDocs.Parser για .NET. Βελτιώστε τις εφαρμογές σας C# με αυτόν τον απλό οδηγό.
 weight: 10
 url: /el/net/hyperlink-extraction/extract-hyperlinks-from-document/
+type: docs
 ---
-
 # Εξαγωγή υπερσυνδέσμων από το έγγραφο
 
 ## Εισαγωγή

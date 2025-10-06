@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用具有 OCR 功能的 GroupDocs.Parser for .NET 識別文件特定區域中的文字。
 weight: 14
 url: /zh-hant/net/ocr-extraction/recognizing-text-in-rectangular-regions/
+type: docs
 ---
-
 # 辨識矩形區域中的文字
 
 ## 介紹

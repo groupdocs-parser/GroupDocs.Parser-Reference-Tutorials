@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: قم باستخراج النص من تنسيقات المستندات المختلفة بكفاءة باستخدام GroupDocs.Parser لـ .NET. سهولة التكامل وإمكانيات التعرف الضوئي على الحروف القوية.
 weight: 12
 url: /ar/net/ocr-extraction/recognizing-text/
+type: docs
 ---
-
 # التعرف على النص
 
 ## مقدمة

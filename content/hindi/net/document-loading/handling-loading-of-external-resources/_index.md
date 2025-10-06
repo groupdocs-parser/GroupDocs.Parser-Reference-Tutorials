@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: कुशल दस्तावेज़ पार्सिंग और निष्कर्षण के लिए GroupDocs.Parser का उपयोग करके .NET में बाहरी संसाधनों को संभालना सीखें।
 weight: 10
 url: /hi/net/document-loading/handling-loading-of-external-resources/
+type: docs
 ---
-
 # बाह्य संसाधनों का लोडिंग प्रबंधन
 
 ## परिचय

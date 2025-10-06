@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Mở khóa các kỹ thuật trích xuất văn bản hiệu quả với GroupDocs.Parser cho .NET. Tìm hiểu cách trích xuất, đánh dấu và tìm kiếm văn bản một cách dễ dàng.
 weight: 20
 url: /vi/net/text-extraction/
+type: docs
 ---
-
 # Trích xuất văn bản
 
 

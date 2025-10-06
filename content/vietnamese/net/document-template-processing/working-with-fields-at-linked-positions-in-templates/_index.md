@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất dữ liệu hiệu quả từ tài liệu bằng GroupDocs.Parser cho .NET. Hướng dẫn từng bước với các ví dụ về mã.
 weight: 12
 url: /vi/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
+type: docs
 ---
-
 # Làm việc với các trường tại các vị trí được liên kết trong mẫu
 
 ## Giới thiệu

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Wyodrębniaj obrazy z dokumentów bez wysiłku za pomocą GroupDocs.Parser dla .NET. Możliwości przetwarzania dokumentów i efektywne usprawnianie zadań wyodrębniania obrazów.
 weight: 11
 url: /pl/net/image-extraction/extract-images-from-document/
+type: docs
 ---
-
 # Wyodrębnij obrazy z dokumentu
 
 ## Wstęp

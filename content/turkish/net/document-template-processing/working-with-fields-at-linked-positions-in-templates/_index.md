@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belgelerden verileri verimli bir şekilde nasıl çıkaracağınızı öğrenin. Kod örnekleriyle adım adım eğitim.
 weight: 12
 url: /tr/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
+type: docs
 ---
-
 # Şablonlarda Bağlantılı Konumlardaki Alanlarla Çalışma
 
 ## giriiş

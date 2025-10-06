@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج الصور من مستندات PDF باستخدام GroupDocs.Parser لـ .NET. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية.
 weight: 12
 url: /ar/net/pdf-processing/extract-images-from-pdf/
+type: docs
 ---
-
 # استخراج الصور من قوات الدفاع الشعبي
 
 ## مقدمة

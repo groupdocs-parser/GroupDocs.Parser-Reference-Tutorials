@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีค้นหาข้อความโดยใช้นิพจน์ทั่วไปในเอกสารโดยใช้ GroupDocs.Parser for .NET แยกเนื้อหาเฉพาะเจาะจงได้อย่างง่ายดาย
 weight: 23
 url: /th/net/text-extraction/search-text-by-regex/
+type: docs
 ---
-
 # ค้นหาข้อความตามนิพจน์ทั่วไป (Regex)
 
 ## การแนะนำ

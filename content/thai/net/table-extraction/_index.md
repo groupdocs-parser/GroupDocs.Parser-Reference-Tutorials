@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: การแยกตารางหลักจากเอกสารด้วย GroupDocs.Parser สำหรับ .NET เรียนรู้วิธีแยกตารางโดยทางโปรแกรมเพื่อการประมวลผลข้อมูลที่มีประสิทธิภาพ
 weight: 23
 url: /th/net/table-extraction/
+type: docs
 ---
-
 # การสกัดตาราง
 
 ## การแนะนำ

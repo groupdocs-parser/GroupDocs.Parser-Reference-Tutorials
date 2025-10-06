@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Узнайте, как извлечь текст из PDF-документов с помощью GroupDocs.Parser для .NET. Пошаговое руководство для разработчиков.
 weight: 14
 url: /ru/net/pdf-processing/extract-text-from-pdf/
+type: docs
 ---
-
 # Извлечь текст из PDF
 
 ## Введение

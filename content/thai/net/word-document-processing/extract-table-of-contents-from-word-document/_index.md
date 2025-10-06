@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกสารบัญ (TOC) จากเอกสาร Word โดยทางโปรแกรมโดยใช้ GroupDocs.Parser สำหรับ .NET
 weight: 13
 url: /th/net/word-document-processing/extract-table-of-contents-from-word-document/
+type: docs
 ---
-
 # แยกสารบัญออกจากเอกสาร Word
 
 ## การแนะนำ

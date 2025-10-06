@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET segítségével hatékonyan vonhat ki szöveget különböző dokumentumformátumokból. Könnyű integráció és erőteljes OCR képességek.
 weight: 12
 url: /hu/net/ocr-extraction/recognizing-text/
+type: docs
 ---
-
 # Szöveg felismerése
 
 ## Bevezetés

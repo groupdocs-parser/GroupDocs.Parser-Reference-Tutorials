@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić hiperłącza z dokumentów programu Word za pomocą GroupDocs.Parser dla .NET. Przewodnik krok po kroku z przykładami kodu.
 weight: 10
 url: /pl/net/word-document-processing/extract-hyperlinks-from-word-document/
+type: docs
 ---
-
 # Wyodrębnij hiperłącza z dokumentu programu Word
 
 ## Wstęp

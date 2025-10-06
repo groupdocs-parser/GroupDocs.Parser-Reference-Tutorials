@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak Word belgelerinden nasıl metin ayıklayacağınızı öğrenin. Kod örnekleri içeren adım adım kılavuz.
 weight: 15
 url: /tr/net/word-document-processing/extract-text-from-word-document/
+type: docs
 ---
-
 # Word Belgesinden Metin Çıkarma
 
 ## giriiş

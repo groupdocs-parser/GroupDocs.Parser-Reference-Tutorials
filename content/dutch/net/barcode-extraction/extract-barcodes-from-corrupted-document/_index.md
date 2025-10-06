@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Leer hoe u streepjescodes uit beschadigde documenten kunt extraheren met GroupDocs.Parser voor .NET. Uitgebreide tutorial met stapsgewijze instructies.
 weight: 11
 url: /nl/net/barcode-extraction/extract-barcodes-from-corrupted-document/
+type: docs
 ---
-
 # Extraheer streepjescodes uit een beschadigd document
 
 ## Invoering

@@ -8,10 +8,8 @@ keywords:
 - metadata extraction excel
 - GroupDocs Parser .NET
 - automated metadata management
-
+type: docs
 ---
-
-
 # Extracting Metadata from Excel Spreadsheets Using GroupDocs.Parser .NET: A Comprehensive Guide
 
 ## Introduction

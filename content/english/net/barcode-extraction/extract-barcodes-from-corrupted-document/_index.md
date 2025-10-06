@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Learn how to extract barcodes from corrupted documents using GroupDocs.Parser for .NET. Comprehensive tutorial with step-by-step instructions.
 weight: 11
 url: /net/barcode-extraction/extract-barcodes-from-corrupted-document/
+type: docs
 ---
-
 # Extract Barcodes from Corrupted Document
 
 ## Introduction

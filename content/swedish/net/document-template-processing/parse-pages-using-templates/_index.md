@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du analyserar dokumentsidor med mallar i .NET med GroupDocs.Parser. Extrahera specifikt innehåll effektivt för dina applikationer.
 weight: 16
 url: /sv/net/document-template-processing/parse-pages-using-templates/
+type: docs
 ---
-
 # Analysera sidor med mallar
 
 ## Introduktion

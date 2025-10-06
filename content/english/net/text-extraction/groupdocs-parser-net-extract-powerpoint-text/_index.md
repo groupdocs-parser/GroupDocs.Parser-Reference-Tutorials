@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser .NET
 - extract text from PowerPoint
 - text extraction from presentations
-
+type: docs
 ---
-
-
 # Extract Text from PowerPoint with GroupDocs.Parser .NET
 
 In the realm of digital presentations, extracting text from PowerPoint files can be a daunting task—especially when dealing with hundreds or thousands of slides. Whether it's for data analysis, content repurposing, or automating documentation workflows, having efficient tools to extract text is crucial. This guide will demonstrate how you can leverage GroupDocs.Parser .NET for seamless text extraction.

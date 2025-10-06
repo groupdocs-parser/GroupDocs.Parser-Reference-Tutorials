@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser for Java
 - Java document parsing
 - extracting text from PDFs in Java
-
+type: docs
 ---
-
-
 # Mastering GroupDocs.Parser in Java: A Comprehensive Guide
 
 ## Introduction

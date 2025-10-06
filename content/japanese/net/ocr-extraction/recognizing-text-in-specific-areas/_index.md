@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して、OCR 機能を使用してドキュメント内の特定の領域からテキストを抽出する方法を学習します。
 weight: 13
 url: /ja/net/ocr-extraction/recognizing-text-in-specific-areas/
+type: docs
 ---
-
 # 特定の領域のテキストを認識する
 
 ## 導入

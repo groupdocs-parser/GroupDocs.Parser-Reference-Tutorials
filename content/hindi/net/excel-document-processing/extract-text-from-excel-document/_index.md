@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: सरल चरणों में .NET के लिए GroupDocs.Parser का उपयोग करके Excel दस्तावेज़ों से टेक्स्ट निकालना सीखें।
 weight: 12
 url: /hi/net/excel-document-processing/extract-text-from-excel-document/
+type: docs
 ---
-
 # एक्सेल दस्तावेज़ से पाठ निकालें
 
 ## परिचय

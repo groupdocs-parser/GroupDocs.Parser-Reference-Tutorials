@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Aprenda como extrair dados de tabela de documentos usando GroupDocs.Parser for .NET. Analise com eficiência o conteúdo estruturado com modelos predefinidos.
 weight: 12
 url: /pt/net/data-extraction-from-templates/working-with-tables-in-extracted-data/
+type: docs
 ---
-
 # Trabalhando com tabelas em dados extraídos
 
 ## Introdução

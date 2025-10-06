@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Scopri come estrarre immagini da documenti PDF utilizzando GroupDocs.Parser per .NET. Guida passo passo con esempi di codice.
 weight: 12
 url: /it/net/pdf-processing/extract-images-from-pdf/
+type: docs
 ---
-
 # Estrai immagini da PDF
 
 ## introduzione

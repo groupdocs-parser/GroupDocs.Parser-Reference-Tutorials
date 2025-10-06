@@ -3,8 +3,8 @@ title: "Form Data Extraction Tutorials for GroupDocs.Parser Java"
 description: "Complete tutorials for extracting and processing data from PDF forms and other document fields using GroupDocs.Parser for Java."
 weight: 11
 url: "/java/form-extraction/"
+type: docs
 ---
-
 # Form Data Extraction Tutorials for GroupDocs.Parser Java
 
 Master form data extraction with our detailed GroupDocs.Parser tutorials for Java developers. These practical guides demonstrate how to extract data from PDF forms, work with form fields, iterate through fields, and access fields by name. Each tutorial includes working Java code examples for common form processing scenarios, helping you build applications that can effectively capture and utilize user-submitted information from structured forms in your documents.

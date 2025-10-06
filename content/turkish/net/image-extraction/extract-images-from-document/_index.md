@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belgelerdeki görüntüleri zahmetsizce çıkarın. Belge işleme yetenekleriniz ve görüntü çıkarma görevlerinizi verimli bir şekilde kolaylaştırın.
 weight: 11
 url: /tr/net/image-extraction/extract-images-from-document/
+type: docs
 ---
-
 # Belgeden Görüntüleri Çıkartın
 
 ## giriiş

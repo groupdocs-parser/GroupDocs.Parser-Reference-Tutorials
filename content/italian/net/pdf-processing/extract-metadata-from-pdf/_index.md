@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Scopri come estrarre metadati da documenti PDF utilizzando GroupDocs.Parser per .NET. Questa guida completa copre istruzioni dettagliate e prerequisiti.
 weight: 13
 url: /it/net/pdf-processing/extract-metadata-from-pdf/
+type: docs
 ---
-
 # Estrai metadati da PDF
 
 ## introduzione

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从 Word 文档中提取元数据。解析和检索文档信息的简单步骤。
 weight: 12
 url: /zh/net/word-document-processing/extract-metadata-from-word-document/
+type: docs
 ---
-
 # 从 Word 文档中提取元数据
 
 ## 介绍

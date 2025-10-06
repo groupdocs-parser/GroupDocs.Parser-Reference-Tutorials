@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser for Java
 - regex text search PDF
 - Java regex in PDFs
-
+type: docs
 ---
-
-
 # How to Perform Regex Text Searches in PDFs Using GroupDocs.Parser for Java
 
 Searching through PDF documents can be challenging, especially when you need to find specific patterns of text. This guide will show you how to leverage the power of GroupDocs.Parser for Java to search text using regular expressions (regex) within PDF files.

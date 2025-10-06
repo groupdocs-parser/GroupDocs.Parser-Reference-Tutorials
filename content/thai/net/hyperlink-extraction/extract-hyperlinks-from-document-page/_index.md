@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกไฮเปอร์ลิงก์ออกจากเอกสารโดยใช้ GroupDocs.Parser สำหรับ .NET คำแนะนำทีละขั้นตอนสำหรับการแยกไฮเปอร์ลิงก์ใน C#
 weight: 11
 url: /th/net/hyperlink-extraction/extract-hyperlinks-from-document-page/
+type: docs
 ---
-
 # แยกไฮเปอร์ลิงก์ออกจากหน้าเอกสาร
 
 ## การแนะนำ

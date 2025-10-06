@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Aprenda a extraer archivos adjuntos de carteras de PDF utilizando GroupDocs.Parser para .NET en este completo tutorial.
 weight: 10
 url: /es/net/pdf-processing/extract-attachments-from-pdf-portfolios/
+type: docs
 ---
-
 # Extraer archivos adjuntos de carteras PDF
 
 ## Introducción

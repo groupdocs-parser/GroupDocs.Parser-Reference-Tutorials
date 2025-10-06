@@ -8,10 +8,8 @@ keywords:
 - .NET PDF keyword search
 - GroupDocs.Parser for .NET
 - PDF data extraction
-
+type: docs
 ---
-
-
 # Mastering .NET PDF Keyword Search Using GroupDocs.Parser
 
 ## Introduction

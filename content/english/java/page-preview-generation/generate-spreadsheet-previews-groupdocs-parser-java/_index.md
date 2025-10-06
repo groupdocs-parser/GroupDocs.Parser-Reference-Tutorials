@@ -8,9 +8,8 @@ keywords:
 - GroupDocs.Parser
 - Java
 - Document Processing
-
+type: docs
 ---
-
 ## Introduction
 
 Are you eager to leverage the robust capabilities of GroupDocs.Parser for Java to extract, preview, and manage diverse document types? Whether you’re delving into data extraction or creating stunning previews, this tutorial will walk you through everything with simple, digestible steps. By the end, you'll be confidently using GroupDocs.Parser to handle spreadsheet previews and more — all in plain English, friendly tone, and straightforward instructions.

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan kereshet szöveget Word dokumentumokban a GroupDocs.Parser for .NET segítségével. Konkrét kulcsszavak hatékony kinyerése.
 weight: 18
 url: /hu/net/word-document-processing/search-text-in-word-document-by-keyword/
+type: docs
 ---
-
 # Szöveg keresése a Word-dokumentumban kulcsszó szerint
 
 ## Bevezetés

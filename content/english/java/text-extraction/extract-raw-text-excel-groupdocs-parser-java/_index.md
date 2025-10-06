@@ -8,10 +8,8 @@ keywords:
 - extract raw text from excel with java
 - groupdocs parser for java setup
 - implementing text extraction in excel with java
-
+type: docs
 ---
-
-
 # How to Extract Raw Text from Excel Sheets Using GroupDocs.Parser for Java: A Step-by-Step Guide
 
 In the modern, data-driven world, efficiently extracting raw text data from Excel sheets is vital for businesses and developers. This tutorial guides you through using GroupDocs.Parser for Java—a powerful library that simplifies parsing documents, including extracting text from individual sheets in Excel files.

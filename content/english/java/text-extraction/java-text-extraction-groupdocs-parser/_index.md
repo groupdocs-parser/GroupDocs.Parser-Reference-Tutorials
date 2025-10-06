@@ -8,10 +8,8 @@ keywords:
 - Java text extraction from Excel
 - GroupDocs.Parser Java
 - Excel data parsing with Java
-
+type: docs
 ---
-
-
 # Extracting Text from Excel Spreadsheets with Java Using GroupDocs.Parser
 
 ## Introduction

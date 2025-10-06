@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser .NET
 - Excel text extraction
 - data processing automation
-
+type: docs
 ---
-
-
 # Efficiently Extract Raw Text from Excel with GroupDocs.Parser .NET
 
 ## Introduction

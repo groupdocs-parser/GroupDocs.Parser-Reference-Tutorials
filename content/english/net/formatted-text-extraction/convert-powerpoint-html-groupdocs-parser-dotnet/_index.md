@@ -8,10 +8,8 @@ keywords:
 - convert PowerPoint to HTML
 - GroupDocs Parser .NET
 - formatted text extraction
-
+type: docs
 ---
-
-
 # Convert PowerPoint to HTML Using GroupDocs.Parser .NET: A Comprehensive Guide
 
 ## Introduction

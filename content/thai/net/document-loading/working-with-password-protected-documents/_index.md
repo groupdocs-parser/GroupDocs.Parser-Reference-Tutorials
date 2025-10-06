@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกข้อความจากเอกสารที่มีการป้องกันด้วยรหัสผ่านโดยใช้ GroupDocs.Parser สำหรับ .NET เพิ่มความสามารถในการประมวลผลเอกสารของคุณ
 weight: 15
 url: /th/net/document-loading/working-with-password-protected-documents/
+type: docs
 ---
-
 # การทำงานกับเอกสารที่ป้องกันด้วยรหัสผ่าน
 
 ## การแนะนำ

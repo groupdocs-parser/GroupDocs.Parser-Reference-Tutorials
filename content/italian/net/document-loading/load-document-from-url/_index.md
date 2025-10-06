@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Scopri come estrarre testo dai documenti utilizzando GroupDocs.Parser per .NET. Questo tutorial illustra il caricamento di un documento da un URL e l'estrazione del testo passo dopo passo.
 weight: 13
 url: /it/net/document-loading/load-document-from-url/
+type: docs
 ---
-
 # Carica documento dall'URL
 
 ## introduzione

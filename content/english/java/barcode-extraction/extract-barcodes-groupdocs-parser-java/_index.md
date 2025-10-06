@@ -8,10 +8,8 @@ keywords:
 - extract barcodes GroupDocs.Parser Java
 - barcode extraction from documents
 - Java barcode management
-
+type: docs
 ---
-
-
 # How to Extract Barcodes from Document Pages Using GroupDocs.Parser for Java
 
 In the fast-paced digital world, managing and extracting data from documents is essential for businesses aiming to enhance productivity. One common challenge is accurately extracting barcode information from specific areas within document pages—a task that can be streamlined using GroupDocs.Parser for Java.

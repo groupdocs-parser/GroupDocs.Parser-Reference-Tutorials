@@ -8,10 +8,8 @@ keywords:
 - .NET document parsing
 - GroupDocs.Parser template fields
 - fixed position data extraction
-
+type: docs
 ---
-
-
 # Master .NET Document Parsing: Implementing Fixed Position Template Fields with GroupDocs.Parser
 
 ## Introduction

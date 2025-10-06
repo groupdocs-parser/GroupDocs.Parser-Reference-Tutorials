@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 以编程方式从 Word 文档中提取目录 (TOC)。
 weight: 13
 url: /zh/net/word-document-processing/extract-table-of-contents-from-word-document/
+type: docs
 ---
-
 # 从 Word 文档中提取目录
 
 ## 介绍

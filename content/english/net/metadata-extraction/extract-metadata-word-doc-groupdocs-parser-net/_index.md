@@ -8,10 +8,8 @@ keywords:
 - extract metadata from Word documents
 - metadata extraction .NET
 - GroupDocs.Parser setup
-
+type: docs
 ---
-
-
 # How to Extract Metadata from a Word Document Using GroupDocs.Parser .NET
 
 ## Introduction

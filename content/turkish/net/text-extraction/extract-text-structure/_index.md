@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak çeşitli belge biçimlerinden metin yapısını nasıl çıkaracağınızı öğrenin. Kod örnekleri içeren adım adım eğitim.
 weight: 20
 url: /tr/net/text-extraction/extract-text-structure/
+type: docs
 ---
-
 # Metin Yapısını Çıkart
 
 ## giriiş

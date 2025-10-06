@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 從各種文件格式中擷取文字。使用 C# 輕鬆有效率地擷取文字。
 weight: 11
 url: /zh-hant/net/document-loading/load-document-from-local-disk/
+type: docs
 ---
-
 # 從本機磁碟載入文檔
 
 ## 介紹

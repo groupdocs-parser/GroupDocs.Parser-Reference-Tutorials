@@ -8,10 +8,8 @@ keywords:
 - Set GroupDocs.Parser License Stream .NET
 - GroupDocs.Parser Licensing
 - Stream-based Licensing in .NET
-
+type: docs
 ---
-
-
 # How to Set GroupDocs.Parser License Using Stream in .NET: A Comprehensive Guide
 ## Getting Started
 ### Introduction

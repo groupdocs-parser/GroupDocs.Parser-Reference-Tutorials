@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Extrahujte text z PDF pomocí GroupDocs.Parser pro .NET. Pomocí této výkonné knihovny bez námahy načtěte konkrétní obsah stránky.
 weight: 15
 url: /cs/net/pdf-processing/extract-text-from-specific-page-in-pdf/
+type: docs
 ---
-
 # Extrahujte text z konkrétní stránky v PDF
 
 ## Úvod

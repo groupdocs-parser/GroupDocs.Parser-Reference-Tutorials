@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser를 사용하여 .NET 문서에서 이미지를 쉽게 추출할 수 있습니다. 정확한 이미지 추출 기술로 문서 처리 능력을 향상시키세요.
 weight: 24
 url: /ko/net/image-extraction/
+type: docs
 ---
-
 # 이미지 추출
 
 ## 소개

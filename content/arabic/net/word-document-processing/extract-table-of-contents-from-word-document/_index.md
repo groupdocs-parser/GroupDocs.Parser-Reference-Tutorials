@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج جدول المحتويات (TOC) من مستندات Word برمجياً باستخدام GroupDocs.Parser لـ .NET.
 weight: 13
 url: /ar/net/word-document-processing/extract-table-of-contents-from-word-document/
+type: docs
 ---
-
 # استخراج جدول المحتويات من مستند Word
 
 ## مقدمة

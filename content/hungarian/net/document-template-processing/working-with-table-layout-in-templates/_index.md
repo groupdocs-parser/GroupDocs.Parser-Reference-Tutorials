@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan dolgozhat sablonokban táblázatelrendezésekkel a GroupDocs.Parser for .NET segítségével. Strukturált adatok hatékony kinyerése a dokumentumokból.
 weight: 14
 url: /hu/net/document-template-processing/working-with-table-layout-in-templates/
+type: docs
 ---
-
 # A táblázat elrendezésének használata sablonokban
 
 ## Bevezetés

@@ -8,10 +8,8 @@ keywords:
 - extract text from OneNote
 - Java GroupDocs.Parser
 - OneNote document parsing in Java
-
+type: docs
 ---
-
-
 # How to Parse and Extract Text from OneNote Using GroupDocs.Parser in Java
 
 ## Introduction

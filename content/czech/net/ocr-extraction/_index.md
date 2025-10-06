@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Efektivně zpracujte OCR a extrahujte text z obrázků a dokumentů pomocí GroupDocs.Parser pro .NET. Vylepšete své možnosti OCR ještě dnes!
 weight: 28
 url: /cs/net/ocr-extraction/
+type: docs
 ---
-
 # Extrakce optického rozpoznávání znaků (OCR).
 
 

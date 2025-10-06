@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser for Java
 - external resource loading in Java
 - custom handlers in GroupDocs
-
+type: docs
 ---
-
-
 # Mastering External Resource Loading and Filtering in Java with GroupDocs.Parser
 
 ## Introduction

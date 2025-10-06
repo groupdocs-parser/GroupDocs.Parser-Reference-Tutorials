@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak parola korumalı belgelerden nasıl metin ayıklayacağınızı öğrenin. Belge işleme yeteneklerinizi geliştirin.
 weight: 15
 url: /tr/net/document-loading/working-with-password-protected-documents/
+type: docs
 ---
-
 # Parola Korumalı Belgelerle Çalışma
 
 ## giriiş

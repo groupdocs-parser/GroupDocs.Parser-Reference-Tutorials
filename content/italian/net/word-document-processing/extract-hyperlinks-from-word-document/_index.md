@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Scopri come estrarre collegamenti ipertestuali da documenti Word utilizzando GroupDocs.Parser per .NET. Guida passo passo con esempi di codice.
 weight: 10
 url: /it/net/word-document-processing/extract-hyperlinks-from-word-document/
+type: docs
 ---
-
 # Estrai collegamenti ipertestuali da un documento Word
 
 ## introduzione

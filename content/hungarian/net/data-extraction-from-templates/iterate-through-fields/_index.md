@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan nyerhet ki strukturált adatokat a dokumentumokból a GroupDocs.Parser for .NET segítségével. Bővítse .NET-alkalmazásait dokumentum-adatkinyerési lehetőségekkel.
 weight: 11
 url: /hu/net/data-extraction-from-templates/iterate-through-fields/
+type: docs
 ---
-
 # Iterálás mezőkön keresztül
 
 ## Bevezetés

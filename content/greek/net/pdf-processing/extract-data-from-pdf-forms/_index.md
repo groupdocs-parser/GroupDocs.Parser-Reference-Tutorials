@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε δεδομένα από φόρμες PDF χρησιμοποιώντας το GroupDocs.Parser για .NET. Οδηγός βήμα προς βήμα με παραδείγματα κώδικα και συχνές ερωτήσεις.
 weight: 11
 url: /el/net/pdf-processing/extract-data-from-pdf-forms/
+type: docs
 ---
-
 # Εξαγωγή δεδομένων από φόρμες PDF
 
 ## Εισαγωγή

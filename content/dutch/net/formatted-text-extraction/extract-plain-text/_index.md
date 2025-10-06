@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Leer hoe u platte tekst uit documenten kunt extraheren met GroupDocs.Parser voor .NET. Eenvoudige stappen voor het integreren van tekstextractie in uw toepassingen.
 weight: 14
 url: /nl/net/formatted-text-extraction/extract-plain-text/
+type: docs
 ---
-
 # Platte tekst extraheren
 
 ## Invoering

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki szöveget különböző dokumentumformátumokból a .NET-ben a GroupDocs.Parser segítségével. Útmutató lépésről lépésre kódpéldákkal.
 weight: 12
 url: /hu/net/document-loading/load-document-from-stream/
+type: docs
 ---
-
 # Dokumentum betöltése a Streamből
 
 ## Bevezetés

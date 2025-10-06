@@ -8,10 +8,8 @@ keywords:
 - email regex searches with GroupDocs.Parser Java
 - text extraction from emails using Java
 - implementing regex in email parsing
-
+type: docs
 ---
-
-
 # Mastering Email Regex Searches with GroupDocs.Parser Java
 
 ## Introduction

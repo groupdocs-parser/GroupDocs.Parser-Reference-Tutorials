@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج النص من المستندات باستخدام GroupDocs.Parser لـ .NET. يغطي هذا البرنامج التعليمي تحميل مستند من عنوان URL واستخراج النص خطوة بخطوة.
 weight: 13
 url: /ar/net/document-loading/load-document-from-url/
+type: docs
 ---
-
 # قم بتحميل المستند من URL
 
 ## مقدمة

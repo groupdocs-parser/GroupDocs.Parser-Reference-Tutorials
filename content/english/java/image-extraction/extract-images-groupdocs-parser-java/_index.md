@@ -8,10 +8,8 @@ keywords:
 - extract images from documents
 - GroupDocs.Parser for Java
 - image extraction from documents
-
+type: docs
 ---
-
-
 # How to Extract Images from Documents Using GroupDocs.Parser for Java: A Comprehensive Guide
 
 ## Introduction

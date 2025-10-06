@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić hiperłącza z dokumentów za pomocą GroupDocs.Parser dla .NET. Przewodnik krok po kroku dotyczący wyodrębniania hiperłączy w języku C#.
 weight: 11
 url: /pl/net/hyperlink-extraction/extract-hyperlinks-from-document-page/
+type: docs
 ---
-
 # Wyodrębnij hiperłącza ze strony dokumentu
 
 ## Wstęp

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε κείμενο από έγγραφα χρησιμοποιώντας το GroupDocs.Parser για .NET. Εύκολη, αποτελεσματική και απρόσκοπτη εξαγωγή κειμένου στις εφαρμογές σας .NET.
 weight: 19
 url: /el/net/text-extraction/extract-text-in-raw-mode/
+type: docs
 ---
-
 # Εξαγωγή κειμένου σε Raw Mode
 
 ## Εισαγωγή

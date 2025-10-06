@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất nội dung HTML từ tài liệu bằng GroupDocs.Parser cho .NET. Hướng dẫn dễ làm theo với các ví dụ về mã và hướng dẫn từng bước.
 weight: 12
 url: /vi/net/formatted-text-extraction/extract-html-content/
+type: docs
 ---
-
 # Trích xuất nội dung HTML
 
 ## Giới thiệu

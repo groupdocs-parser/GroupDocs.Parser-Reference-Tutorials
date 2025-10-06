@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất văn bản từ tài liệu bằng GroupDocs.Parser cho .NET. Hướng dẫn này bao gồm việc tải tài liệu từ một URL và trích xuất văn bản theo từng bước.
 weight: 13
 url: /vi/net/document-loading/load-document-from-url/
+type: docs
 ---
-
 # Tải tài liệu từ URL
 
 ## Giới thiệu

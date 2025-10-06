@@ -8,10 +8,8 @@ keywords:
 - Java template parsing
 - GroupDocs.Parser
 - regular expressions in Java
-
+type: docs
 ---
-
-
 # Mastering Java Template Parsing with GroupDocs.Parser: A Comprehensive Guide to Using Regular Expressions and Linked Fields
 
 ## Introduction

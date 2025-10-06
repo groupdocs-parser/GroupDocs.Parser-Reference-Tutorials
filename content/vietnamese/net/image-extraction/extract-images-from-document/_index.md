@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Trích xuất hình ảnh từ tài liệu một cách dễ dàng bằng GroupDocs.Parser cho .NET. Khả năng xử lý tài liệu của bạn và hợp lý hóa các tác vụ trích xuất hình ảnh một cách hiệu quả.
 weight: 11
 url: /vi/net/image-extraction/extract-images-from-document/
+type: docs
 ---
-
 # Trích xuất hình ảnh từ tài liệu
 
 ## Giới thiệu

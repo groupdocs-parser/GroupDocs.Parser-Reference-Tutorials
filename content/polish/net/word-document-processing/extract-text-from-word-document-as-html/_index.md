@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak używać GroupDocs.Parser dla .NET do wyodrębniania tekstu z dokumentów programu Word i zapisywania go w formacie HTML. Samouczek krok po kroku z przykładami kodu.
 weight: 16
 url: /pl/net/word-document-processing/extract-text-from-word-document-as-html/
+type: docs
 ---
-
 # Wyodrębnij tekst z dokumentu Word jako HTML
 
 ## Wstęp

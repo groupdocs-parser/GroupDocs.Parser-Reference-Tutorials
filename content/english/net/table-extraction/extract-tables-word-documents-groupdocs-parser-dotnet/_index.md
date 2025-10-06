@@ -8,10 +8,8 @@ keywords:
 - extract tables from Word documents
 - GroupDocs.Parser for .NET
 - automate document workflow
-
+type: docs
 ---
-
-
 # Efficiently Extract Tables from Word Documents Using GroupDocs.Parser for .NET
 
 ## Introduction

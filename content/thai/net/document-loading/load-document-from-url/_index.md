@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกข้อความจากเอกสารโดยใช้ GroupDocs.Parser สำหรับ .NET บทช่วยสอนนี้ครอบคลุมถึงการโหลดเอกสารจาก URL และการแยกข้อความทีละขั้นตอน
 weight: 13
 url: /th/net/document-loading/load-document-from-url/
+type: docs
 ---
-
 # โหลดเอกสารจาก URL
 
 ## การแนะนำ

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกโครงสร้างข้อความจากเอกสารรูปแบบต่างๆ โดยใช้ GroupDocs.Parser สำหรับ .NET บทช่วยสอนทีละขั้นตอนพร้อมตัวอย่างโค้ด
 weight: 20
 url: /th/net/text-extraction/extract-text-structure/
+type: docs
 ---
-
 # แยกโครงสร้างข้อความ
 
 ## การแนะนำ

@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser
 - .NET HTML keyword search
 - HTML data extraction
-
+type: docs
 ---
-
-
 # How to Implement .NET Search Keyword in HTML Using GroupDocs.Parser for Efficient Data Extraction
 
 ## Introduction

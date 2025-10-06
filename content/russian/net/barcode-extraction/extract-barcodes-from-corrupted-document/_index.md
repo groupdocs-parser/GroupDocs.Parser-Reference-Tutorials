@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Узнайте, как извлечь штрих-коды из поврежденных документов с помощью GroupDocs.Parser для .NET. Подробное руководство с пошаговыми инструкциями.
 weight: 11
 url: /ru/net/barcode-extraction/extract-barcodes-from-corrupted-document/
+type: docs
 ---
-
 # Извлечь штрих-коды из поврежденного документа
 
 ## Введение

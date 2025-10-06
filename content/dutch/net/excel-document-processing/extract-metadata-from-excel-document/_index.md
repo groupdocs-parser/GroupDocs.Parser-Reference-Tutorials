@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Leer hoe u metagegevens uit Excel-documenten kunt extraheren met GroupDocs.Parser voor .NET. Volg deze stapsgewijze zelfstudie.
 weight: 11
 url: /nl/net/excel-document-processing/extract-metadata-from-excel-document/
+type: docs
 ---
-
 # Metagegevens extraheren uit Excel-document
 
 ## Invoering

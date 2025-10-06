@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser에서 정규식을 사용하여 Excel 문서에서 텍스트를 검색하는 방법을 알아보세요. 고급 텍스트 검색을 효율적으로 수행합니다.
 weight: 17
 url: /ko/net/excel-document-processing/search-text-in-excel-document-by-regular-expression/
+type: docs
 ---
-
 # 정규식으로 Excel 문서의 텍스트 검색
 
 ## 소개

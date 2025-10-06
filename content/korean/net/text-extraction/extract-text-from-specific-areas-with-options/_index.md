@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 문서의 특정 영역에서 텍스트를 추출하는 방법을 알아보세요. 이 튜토리얼을 통해 고급 텍스트 추출 옵션을 살펴보세요.
 weight: 14
 url: /ko/net/text-extraction/extract-text-from-specific-areas-with-options/
+type: docs
 ---
-
 # 옵션을 사용하여 특정 영역에서 텍스트 추출
 
 ## 소개

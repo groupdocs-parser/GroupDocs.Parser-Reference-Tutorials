@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके दस्तावेज़ों में तालिकाओं से डेटा निकालने का तरीका जानें। तालिका पैरामीटर उपयोग के लिए चरण-दर-चरण मार्गदर्शिका।
 weight: 15
 url: /hi/net/document-template-processing/working-with-table-parameters-in-templates/
+type: docs
 ---
-
 # टेम्पलेट्स में टेबल पैरामीटर्स के साथ कार्य करना
 
 ## परिचय

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak konten Markdown dari dokumen menggunakan GroupDocs.Parser untuk .NET. Tutorial ini memberikan petunjuk langkah demi langkah untuk ekstraksi teks yang lancar.
 weight: 13
 url: /id/net/formatted-text-extraction/extract-markdown-content/
+type: docs
 ---
-
 # Ekstrak Konten Penurunan Harga
 
 ## Perkenalan

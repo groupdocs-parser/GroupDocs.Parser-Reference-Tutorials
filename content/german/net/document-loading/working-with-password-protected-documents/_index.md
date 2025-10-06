@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Text aus passwortgeschützten Dokumenten extrahieren. Erweitern Sie Ihre Dokumentverarbeitungsfunktionen.
 weight: 15
 url: /de/net/document-loading/working-with-password-protected-documents/
+type: docs
 ---
-
 # Arbeiten mit passwortgeschützten Dokumenten
 
 ## Einführung

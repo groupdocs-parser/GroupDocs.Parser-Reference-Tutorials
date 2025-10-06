@@ -6,8 +6,8 @@ description: Buka teknik ekstraksi data yang efisien dengan GroupDocs.Parser unt
 weight: 11
 url: /id/
 is_root: true
+type: docs
 ---
-
 # Buka Kunci Penguasaan Parsing Dokumen Dengan GroupDocs.Parser
 
 

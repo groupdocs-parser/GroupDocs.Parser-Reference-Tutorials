@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ekstrak data terstruktur dengan mudah dari templat dokumen dengan GroupDocs.Parser untuk .NET. Pelajari cara bekerja dengan kode batang, bidang, regex, dan tata letak tabel.
 weight: 22
 url: /id/net/document-template-processing/
+type: docs
 ---
-
 # Pemrosesan Templat Dokumen
 
 

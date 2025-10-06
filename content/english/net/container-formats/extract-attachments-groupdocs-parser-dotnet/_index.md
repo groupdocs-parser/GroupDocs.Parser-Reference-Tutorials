@@ -8,10 +8,8 @@ keywords:
 - extract attachments from PDF portfolios
 - GroupDocs.Parser .NET setup
 - document extraction using GroupDocs
-
+type: docs
 ---
-
-
 # How to Extract Attachments from PDF Portfolios Using GroupDocs.Parser .NET
 
 ## Introduction

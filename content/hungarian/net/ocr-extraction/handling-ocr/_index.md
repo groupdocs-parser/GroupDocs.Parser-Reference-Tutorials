@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan kezelheti az OCR-t a GroupDocs.Parser for .NET használatával. Hatékonyan vonja ki a szöveget a képekből és a beolvasott dokumentumokból.
 weight: 11
 url: /hu/net/ocr-extraction/handling-ocr/
+type: docs
 ---
-
 # OCR kezelése
 
 ## Bevezetés

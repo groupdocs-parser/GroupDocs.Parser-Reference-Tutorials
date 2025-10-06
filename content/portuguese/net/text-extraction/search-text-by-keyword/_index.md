@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Aprenda como pesquisar texto por palavra-chave em documentos usando GroupDocs.Parser for .NET. Extraia conteúdo relevante com eficiência e facilidade.
 weight: 21
 url: /pt/net/text-extraction/search-text-by-keyword/
+type: docs
 ---
-
 # Pesquisar texto por palavra-chave
 
 ## Introdução

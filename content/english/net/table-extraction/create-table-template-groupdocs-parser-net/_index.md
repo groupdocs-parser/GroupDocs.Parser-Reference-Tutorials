@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser .NET
 - table template creation in C#
 - document parsing automation
-
+type: docs
 ---
-
-
 # How to Create a Table Template in C# Using GroupDocs.Parser .NET for Efficient Document Parsing
 
 Automating the extraction of specific fields from large datasets can be challenging. This tutorial guides you through creating a table template using the GroupDocs.Parser .NET API, an essential skill for developers seeking efficient document parsing.

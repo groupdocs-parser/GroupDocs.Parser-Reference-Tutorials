@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Extracción de tablas maestras de documentos con GroupDocs.Parser para .NET. Aprenda a extraer tablas mediante programación para un procesamiento de datos eficiente.
 weight: 23
 url: /es/net/table-extraction/
+type: docs
 ---
-
 # Extracción de tablas
 
 ## Introducción

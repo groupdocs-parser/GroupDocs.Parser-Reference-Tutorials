@@ -8,10 +8,8 @@ keywords:
 - extract metadata Office documents
 - GroupDocs Parser Java setup
 - metadata extraction Java
-
+type: docs
 ---
-
-
 # How to Extract Metadata from Office Documents Using GroupDocs.Parser Java: A Comprehensive Guide
 
 ## Introduction

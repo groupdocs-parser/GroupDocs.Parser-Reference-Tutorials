@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Leer hoe u tekst in documenten kunt zoeken en markeren met GroupDocs.Parser voor .NET. Haal op efficiënte wijze waardevolle inzichten eruit.
 weight: 24
 url: /nl/net/text-extraction/search-text-with-highlights/
+type: docs
 ---
-
 # Zoek tekst met hoogtepunten
 
 ## Invoering

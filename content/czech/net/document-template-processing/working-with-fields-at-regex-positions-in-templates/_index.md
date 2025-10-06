@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat data ze šablon dokumentů pomocí pozic regulárních výrazů pomocí GroupDocs.Parser pro .NET. Efektivně automatizujte své úlohy extrakce dat.
 weight: 13
 url: /cs/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
+type: docs
 ---
-
 # Práce s poli na Regex pozicích v šablonách
 
 ## Úvod

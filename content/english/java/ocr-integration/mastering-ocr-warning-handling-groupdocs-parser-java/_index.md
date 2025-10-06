@@ -8,10 +8,8 @@ keywords:
 - OCR warning handling
 - GroupDocs.Parser Java
 - Aspose OCR
-
+type: docs
 ---
-
-
 # Mastering OCR Warning Handling in Java with GroupDocs.Parser and Aspose OCR
 
 ## Introduction

@@ -8,10 +8,8 @@ keywords:
 - extract text from PPTX
 - GroupDocs.Parser for .NET
 - PowerPoint text extraction
-
+type: docs
 ---
-
-
 # Extract Text from PowerPoint PPTX Files Using GroupDocs.Parser .NET: A Step-by-Step Guide
 
 ## Introduction

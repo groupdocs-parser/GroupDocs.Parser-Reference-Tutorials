@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser के साथ विभिन्न दस्तावेज़ प्रारूपों से कुशलतापूर्वक पाठ निकालें। आसान एकीकरण और शक्तिशाली OCR क्षमताएँ।
 weight: 12
 url: /hi/net/ocr-extraction/recognizing-text/
+type: docs
 ---
-
 # पाठ पहचानना
 
 ## परिचय

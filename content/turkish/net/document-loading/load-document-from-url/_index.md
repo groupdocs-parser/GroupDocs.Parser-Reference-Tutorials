@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belgelerden nasıl metin ayıklayacağınızı öğrenin. Bu eğitim, bir URL'den belge yüklemeyi ve adım adım metin çıkarmayı kapsar.
 weight: 13
 url: /tr/net/document-loading/load-document-from-url/
+type: docs
 ---
-
 # Belgeyi URL'den Yükle
 
 ## giriiş

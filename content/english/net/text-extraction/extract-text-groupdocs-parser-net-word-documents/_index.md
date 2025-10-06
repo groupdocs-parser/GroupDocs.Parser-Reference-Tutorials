@@ -8,10 +8,8 @@ keywords:
 - extract text from word documents
 - groupdocs parser .net
 - text extraction with groupdocs
-
+type: docs
 ---
-
-
 # How to Extract Text from Each Page of a Word Document Using GroupDocs.Parser .NET
 
 ## Introduction

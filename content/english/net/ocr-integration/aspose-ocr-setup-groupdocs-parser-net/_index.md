@@ -8,10 +8,8 @@ keywords:
 - Aspose OCR setup
 - GroupDocs Parser integration
 - .NET OCR warning handling
-
+type: docs
 ---
-
-
 # Implementing Aspose.OCR with GroupDocs.Parser for .NET
 ## Introduction
 In today’s digital world, extracting text from documents is a common challenge faced by developers, especially when dealing with scanned images or PDFs. This tutorial guides you through setting up the Aspose OCR connector using GroupDocs.Parser for .NET to handle warnings during text extraction effectively. You'll learn how to configure and implement OCR with warning handling, ensuring your application can gracefully manage issues encountered during processing.

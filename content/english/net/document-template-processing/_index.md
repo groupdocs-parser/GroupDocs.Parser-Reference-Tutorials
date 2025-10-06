@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Effortlessly extract structured data from document templates with GroupDocs.Parser for .NET. Learn to work with barcodes, fields, regex, and table layouts.
 weight: 22
 url: /net/document-template-processing/
+type: docs
 ---
-
 # Document Template Processing
 
 

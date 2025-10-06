@@ -8,10 +8,8 @@ keywords:
 - Java barcode support check
 - GroupDocs.Parser for Java setup
 - Barcode extraction verification
-
+type: docs
 ---
-
-
 # Check Java Barcode Support with GroupDocs.Parser: A Comprehensive Guide
 
 ## Introduction

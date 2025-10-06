@@ -8,10 +8,8 @@ keywords:
 - extract data from PDF tables with GroupDocs.Parser for Java
 - GroupDocs.Parser setup and configuration
 - PDF table extraction templates
-
+type: docs
 ---
-
-
 # Mastering Data Extraction from PDFs with GroupDocs.Parser Java
 
 ## Introduction

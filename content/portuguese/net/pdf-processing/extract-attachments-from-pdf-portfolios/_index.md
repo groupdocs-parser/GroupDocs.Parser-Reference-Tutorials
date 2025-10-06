@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Aprenda como extrair anexos de portfólios PDF usando GroupDocs.Parser for .NET neste tutorial abrangente.
 weight: 10
 url: /pt/net/pdf-processing/extract-attachments-from-pdf-portfolios/
+type: docs
 ---
-
 # Extraia anexos de portfólios PDF
 
 ## Introdução

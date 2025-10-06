@@ -6,8 +6,8 @@ description: Odemkněte efektivní techniky extrakce dat s GroupDocs.Parser pro 
 weight: 11
 url: /cs/
 is_root: true
+type: docs
 ---
-
 # Odemkněte ovládání analýzy dokumentů pomocí GroupDocs.Parser
 
 

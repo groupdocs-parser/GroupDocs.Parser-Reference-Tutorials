@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET ile çeşitli belge biçimlerinden metni verimli bir şekilde çıkarın. Kolay entegrasyon ve güçlü OCR yetenekleri.
 weight: 12
 url: /tr/net/ocr-extraction/recognizing-text/
+type: docs
 ---
-
 # Metni Tanıma
 
 ## giriiş

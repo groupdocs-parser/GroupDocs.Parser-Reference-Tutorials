@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 PDF에서 텍스트를 추출합니다. 이 강력한 라이브러리를 사용하면 특정 페이지 콘텐츠를 쉽게 검색할 수 있습니다.
 weight: 15
 url: /ko/net/pdf-processing/extract-text-from-specific-page-in-pdf/
+type: docs
 ---
-
 # PDF의 특정 페이지에서 텍스트 추출
 
 ## 소개

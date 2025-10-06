@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Extraia texto de documentos com detecção de codificação usando GroupDocs.Parser for .NET. Analise com eficiência vários formatos em seus aplicativos .NET.
 weight: 10
 url: /pt/net/text-extraction/extract-text-with-encoding-detection/
+type: docs
 ---
-
 # Extraia texto com detecção de codificação
 
 ## Introdução

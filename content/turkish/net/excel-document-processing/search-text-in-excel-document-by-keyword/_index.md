@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak Excel belgelerinde nasıl metin arayacağınızı öğrenin. Gelişmiş metin arama yeteneklerini .NET uygulamalarınıza entegre edin.
 weight: 16
 url: /tr/net/excel-document-processing/search-text-in-excel-document-by-keyword/
+type: docs
 ---
-
 # Excel Belgesindeki Metni Anahtar Kelimeye Göre Arama
 
 ## giriiş

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Scopri come riconoscere il testo in aree specifiche dei documenti utilizzando GroupDocs.Parser per .NET con funzionalità OCR.
 weight: 14
 url: /it/net/ocr-extraction/recognizing-text-in-rectangular-regions/
+type: docs
 ---
-
 # Riconoscimento del testo nelle regioni rettangolari
 
 ## introduzione

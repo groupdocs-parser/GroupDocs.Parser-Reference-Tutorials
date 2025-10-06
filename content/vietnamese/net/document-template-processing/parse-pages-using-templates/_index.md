@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách phân tích cú pháp các trang tài liệu bằng cách sử dụng các mẫu trong .NET với GroupDocs.Parser. Trích xuất nội dung cụ thể một cách hiệu quả cho ứng dụng của bạn.
 weight: 16
 url: /vi/net/document-template-processing/parse-pages-using-templates/
+type: docs
 ---
-
 # Phân tích trang bằng mẫu
 
 ## Giới thiệu

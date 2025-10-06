@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 문서 템플릿에서 구조화된 데이터를 쉽게 추출할 수 있습니다. 바코드, 필드, 정규식 및 테이블 레이아웃 작업 방법을 알아보세요.
 weight: 22
 url: /ko/net/document-template-processing/
+type: docs
 ---
-
 # 문서 템플릿 처리
 
 

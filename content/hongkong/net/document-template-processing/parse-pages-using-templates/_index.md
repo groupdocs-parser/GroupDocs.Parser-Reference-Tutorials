@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 .NET 中的範本和 GroupDocs.Parser 來解析文件頁面。為您的應用程式高效提取特定內容。
 weight: 16
 url: /zh-hant/net/document-template-processing/parse-pages-using-templates/
+type: docs
 ---
-
 # 使用模板解析頁面
 
 ## 介紹

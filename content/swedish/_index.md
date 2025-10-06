@@ -6,8 +6,8 @@ description: Lås upp effektiva dataextraktionstekniker med GroupDocs.Parser fö
 weight: 11
 url: /sv/
 is_root: true
+type: docs
 ---
-
 # Lås upp behärskning av dokumenttolkning med GroupDocs.Parser
 
 

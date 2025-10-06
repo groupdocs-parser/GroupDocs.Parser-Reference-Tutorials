@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: OCR özelliklerine sahip belgelerdeki belirli alanlardan metin çıkarmak için GroupDocs.Parser for .NET'i nasıl kullanacağınızı öğrenin.
 weight: 13
 url: /tr/net/ocr-extraction/recognizing-text-in-specific-areas/
+type: docs
 ---
-
 # Belirli Alanlardaki Metni Tanıma
 
 ## giriiş

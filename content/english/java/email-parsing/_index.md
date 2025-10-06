@@ -3,8 +3,8 @@ title: "Email Parsing and Extraction Tutorials for GroupDocs.Parser Java"
 description: "Complete tutorials for extracting emails, attachments, and metadata from various email formats using GroupDocs.Parser for Java."
 weight: 14
 url: "/java/email-parsing/"
+type: docs
 ---
-
 # Email Parsing and Extraction Tutorials for GroupDocs.Parser Java
 
 Our email parsing tutorials provide in-depth guidance for processing email content using GroupDocs.Parser in Java. These practical guides cover extracting email messages from PST/OST files, downloading emails from remote servers, extracting email attachments, and working with email metadata. Each tutorial includes working Java code examples for common email processing scenarios, helping you build applications that can effectively capture and utilize information from various email storage formats.

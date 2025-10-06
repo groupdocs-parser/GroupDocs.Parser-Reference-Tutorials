@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Κύρια επεξεργασία εγγράφων Excel σε .NET με GroupDocs.Parser. Μάθετε να εξάγετε εικόνες, μεταδεδομένα και κείμενο αποτελεσματικά με οδηγούς βήμα προς βήμα.
 weight: 32
 url: /el/net/excel-document-processing/
+type: docs
 ---
-
 # Επεξεργασία εγγράφων Excel
 
 ## Εισαγωγή

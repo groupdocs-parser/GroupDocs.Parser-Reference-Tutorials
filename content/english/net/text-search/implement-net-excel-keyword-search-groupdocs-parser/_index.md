@@ -8,10 +8,8 @@ keywords:
 - .NET Excel Keyword Search
 - GroupDocs.Parser for .NET
 - automate Excel searches
-
+type: docs
 ---
-
-
 # Master .NET Excel Keyword Search with GroupDocs.Parser: A Step-by-Step Guide
 
 ## Introduction

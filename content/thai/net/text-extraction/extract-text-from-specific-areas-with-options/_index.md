@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกข้อความจากพื้นที่เฉพาะในเอกสารโดยใช้ GroupDocs.Parser สำหรับ .NET สำรวจตัวเลือกการแยกข้อความขั้นสูงด้วยบทช่วยสอนนี้
 weight: 14
 url: /th/net/text-extraction/extract-text-from-specific-areas-with-options/
+type: docs
 ---
-
 # แยกข้อความจากพื้นที่เฉพาะพร้อมตัวเลือก
 
 ## การแนะนำ

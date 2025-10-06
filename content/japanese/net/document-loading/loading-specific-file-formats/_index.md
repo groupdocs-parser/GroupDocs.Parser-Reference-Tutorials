@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser を使用して .NET のさまざまなファイル形式からテキストを抽出する方法を学習します。効率的なドキュメント処理のためのステップバイステップのチュートリアルです。
 weight: 14
 url: /ja/net/document-loading/loading-specific-file-formats/
+type: docs
 ---
-
 # 特定のファイル形式の読み込み
 
 ## 導入

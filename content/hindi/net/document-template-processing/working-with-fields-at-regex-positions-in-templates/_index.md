@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser के साथ रेगेक्स स्थितियों का उपयोग करके दस्तावेज़ टेम्पलेट्स से डेटा निकालने का तरीका जानें। अपने डेटा निष्कर्षण कार्यों को कुशलतापूर्वक स्वचालित करें।
 weight: 13
 url: /hi/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
+type: docs
 ---
-
 # टेम्पलेट्स में रेगेक्स स्थिति पर फ़ील्ड्स के साथ कार्य करना
 
 ## परिचय

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan kereshet és jelölhet ki szöveget dokumentumokban a GroupDocs.Parser for .NET segítségével. Hatékonyan nyerhet ki értékes információkat.
 weight: 24
 url: /hu/net/text-extraction/search-text-with-highlights/
+type: docs
 ---
-
 # Szöveg keresése a kiemelésekkel
 
 ## Bevezetés

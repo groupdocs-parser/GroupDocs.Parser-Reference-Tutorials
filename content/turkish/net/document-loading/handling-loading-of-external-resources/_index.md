@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: Verimli belge ayrıştırma ve çıkarma için GroupDocs.Parser'ı kullanarak .NET'te harici kaynakları nasıl kullanacağınızı öğrenin.
 weight: 10
 url: /tr/net/document-loading/handling-loading-of-external-resources/
+type: docs
 ---
-
 # Dış Kaynakların Yüklenmesinin İşlenmesi
 
 ## giriiş

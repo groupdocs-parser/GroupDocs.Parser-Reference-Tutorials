@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Εξάγετε εύκολα εικόνες από έγγραφα στο .NET με το GroupDocs.Parser. Βελτιώστε τις δυνατότητες επεξεργασίας εγγράφων σας με ακριβείς τεχνικές εξαγωγής εικόνων.
 weight: 24
 url: /el/net/image-extraction/
+type: docs
 ---
-
 # Εξαγωγή εικόνας
 
 ## Εισαγωγή

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Naučte se pracovat s rozložením tabulek v šablonách pomocí GroupDocs.Parser for .NET. Extrahujte strukturovaná data efektivně z dokumentů.
 weight: 14
 url: /cs/net/document-template-processing/working-with-table-layout-in-templates/
+type: docs
 ---
-
 # Práce s rozložením tabulky v šablonách
 
 ## Úvod

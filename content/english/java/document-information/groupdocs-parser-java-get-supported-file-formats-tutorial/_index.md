@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser Java
 - retrieve supported file formats
 - document parsing library
-
+type: docs
 ---
-
-
 # How to Implement GetSupportedFileFormats with GroupDocs.Parser Java
 
 ## Introduction

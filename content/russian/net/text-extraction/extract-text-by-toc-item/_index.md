@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Извлеките текст по оглавлению (TOC) с помощью GroupDocs.Parser для .NET. Изучите эффективные методы анализа документов для извлечения структурированных данных.
 weight: 15
 url: /ru/net/text-extraction/extract-text-by-toc-item/
+type: docs
 ---
-
 # Извлечение текста по элементу оглавления (TOC)
 
 ## Введение

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du extraherar hyperlänkar från dokument med GroupDocs.Parser för .NET. Förbättra dina C#-applikationer med denna enkla guide.
 weight: 10
 url: /sv/net/hyperlink-extraction/extract-hyperlinks-from-document/
+type: docs
 ---
-
 # Extrahera hyperlänkar från dokument
 
 ## Introduktion

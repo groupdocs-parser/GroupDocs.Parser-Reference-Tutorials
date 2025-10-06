@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách tìm kiếm văn bản theo trang bằng GroupDocs.Parser cho .NET. Trích xuất nội dung cụ thể một cách hiệu quả từ các tài liệu trong ứng dụng .NET của bạn.
 weight: 22
 url: /vi/net/text-extraction/search-text-by-pages/
+type: docs
 ---
-
 # Tìm kiếm văn bản theo trang
 
 ## Giới thiệu

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki szöveget jelszóval védett dokumentumokból a GroupDocs.Parser for .NET segítségével. Növelje dokumentumfeldolgozási képességeit.
 weight: 15
 url: /hu/net/document-loading/working-with-password-protected-documents/
+type: docs
 ---
-
 # Munka jelszóval védett dokumentumokkal
 
 ## Bevezetés

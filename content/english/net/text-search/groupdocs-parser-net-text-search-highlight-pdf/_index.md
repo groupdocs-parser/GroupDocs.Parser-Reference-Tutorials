@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser .NET
 - text search PDF
 - highlight text in PDF
-
+type: docs
 ---
-
-
 # Implement Text Search and Highlighting in PDFs with GroupDocs.Parser for .NET
 
 ## Introduction

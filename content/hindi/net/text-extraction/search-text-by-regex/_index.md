@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके दस्तावेज़ों में नियमित अभिव्यक्तियों का उपयोग करके पाठ खोजना सीखें। विशिष्ट सामग्री को आसानी से निकालें।
 weight: 23
 url: /hi/net/text-extraction/search-text-by-regex/
+type: docs
 ---
-
 # नियमित अभिव्यक्ति (रेगेक्स) द्वारा पाठ खोजें
 
 ## परिचय

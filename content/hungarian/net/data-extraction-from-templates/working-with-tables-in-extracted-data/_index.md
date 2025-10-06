@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan nyerhet ki táblázatadatokat dokumentumokból a GroupDocs.Parser for .NET segítségével. Hatékonyan elemezheti a strukturált tartalmat előre meghatározott sablonokkal.
 weight: 12
 url: /hu/net/data-extraction-from-templates/working-with-tables-in-extracted-data/
+type: docs
 ---
-
 # Táblázatok használata a kivont adatokban
 
 ## Bevezetés

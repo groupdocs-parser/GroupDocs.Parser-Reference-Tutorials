@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: この包括的なチュートリアルでは、GroupDocs.Parser for .NET を使用して PDF ポートフォリオから添付ファイルを抽出する方法を学習します。
 weight: 10
 url: /ja/net/pdf-processing/extract-attachments-from-pdf-portfolios/
+type: docs
 ---
-
 # PDFポートフォリオから添付ファイルを抽出する
 
 ## 導入

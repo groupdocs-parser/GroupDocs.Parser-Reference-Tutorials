@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser .NET
 - automate keyword searches Word documents
 - streamline document processing
-
+type: docs
 ---
-
-
 # Automating Keyword Searches in Microsoft Word Documents with GroupDocs.Parser for .NET
 
 ## Introduction

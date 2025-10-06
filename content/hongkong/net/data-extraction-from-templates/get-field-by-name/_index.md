@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 從文件中提取特定資料欄位。帶有程式碼範例的分步指南。
 weight: 10
 url: /zh-hant/net/data-extraction-from-templates/get-field-by-name/
+type: docs
 ---
-
 # 按名稱取得字段
 
 ## 介紹

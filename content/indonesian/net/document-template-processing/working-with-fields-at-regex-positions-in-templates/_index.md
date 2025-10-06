@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak data dari templat dokumen menggunakan posisi regex dengan GroupDocs.Parser untuk .NET. Otomatiskan tugas ekstraksi data Anda secara efisien.
 weight: 13
 url: /id/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
+type: docs
 ---
-
 # Bekerja dengan Bidang di Posisi Regex di Templat
 
 ## Perkenalan

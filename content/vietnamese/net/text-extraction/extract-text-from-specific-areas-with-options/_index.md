@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất văn bản từ các vùng cụ thể trong tài liệu bằng GroupDocs.Parser cho .NET. Khám phá các tùy chọn trích xuất văn bản nâng cao với hướng dẫn này.
 weight: 14
 url: /vi/net/text-extraction/extract-text-from-specific-areas-with-options/
+type: docs
 ---
-
 # Trích xuất văn bản từ các khu vực cụ thể bằng tùy chọn
 
 ## Giới thiệu

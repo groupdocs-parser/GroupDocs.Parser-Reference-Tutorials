@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET ile belge şablonlarından yapılandırılmış verileri zahmetsizce çıkarın. Barkodlar, alanlar, normal ifadeler ve tablo düzenleriyle çalışmayı öğrenin.
 weight: 22
 url: /tr/net/document-template-processing/
+type: docs
 ---
-
 # Belge Şablonu İşleme
 
 

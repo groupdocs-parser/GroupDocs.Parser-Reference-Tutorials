@@ -8,10 +8,8 @@ keywords:
 - extract text from OneNote
 - GroupDocs.Parser .NET
 - text extraction tutorial
-
+type: docs
 ---
-
-
 # How to Extract Text from OneNote Using GroupDocs.Parser for .NET
 
 ## Introduction

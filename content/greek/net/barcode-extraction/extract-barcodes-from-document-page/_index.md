@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε γραμμικούς κώδικες από σελίδες εγγράφων χρησιμοποιώντας το GroupDocs.Parser για .NET. Αυτό το σεμινάριο παρέχει οδηγίες βήμα προς βήμα για την εξαγωγή γραμμωτού κώδικα.
 weight: 12
 url: /el/net/barcode-extraction/extract-barcodes-from-document-page/
+type: docs
 ---
-
 # Εξαγωγή γραμμωτών κωδίκων από τη σελίδα εγγράφου
 
 ## Εισαγωγή

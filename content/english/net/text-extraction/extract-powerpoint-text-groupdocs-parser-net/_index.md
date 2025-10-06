@@ -8,10 +8,8 @@ keywords:
 - PowerPoint text extraction
 - GroupDocs.Parser .NET
 - document processing with GroupDocs
-
+type: docs
 ---
-
-
 # Efficient PowerPoint Text Extraction with GroupDocs.Parser for .NET
 
 ## Introduction

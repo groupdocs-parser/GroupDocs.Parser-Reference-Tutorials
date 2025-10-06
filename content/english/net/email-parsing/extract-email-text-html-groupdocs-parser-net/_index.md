@@ -8,10 +8,8 @@ keywords:
 - extract email text as HTML .NET
 - email parsing with GroupDocs.Parser for .NET
 - GroupDocs.Parser for .NET tutorial
-
+type: docs
 ---
-
-
 # Extract Email Text as HTML with GroupDocs.Parser for .NET
 
 ## Introduction

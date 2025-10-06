@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: この包括的なチュートリアルでは、GroupDocs.Parser for .NET を使用して Excel シートからテキストを抽出する方法を学びます。ダウンロードして解析を開始します。
 weight: 15
 url: /ja/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
+type: docs
 ---
-
 # Excel シートから Raw モードでテキストを抽出する
 
 ## 導入

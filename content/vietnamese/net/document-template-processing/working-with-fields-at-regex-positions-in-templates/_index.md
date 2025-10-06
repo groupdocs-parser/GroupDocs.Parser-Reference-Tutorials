@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất dữ liệu từ các mẫu tài liệu bằng cách sử dụng các vị trí biểu thức chính quy với GroupDocs.Parser cho .NET. Tự động hóa các tác vụ trích xuất dữ liệu của bạn một cách hiệu quả.
 weight: 13
 url: /vi/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
+type: docs
 ---
-
 # Làm việc với các trường tại vị trí Regex trong mẫu
 
 ## Giới thiệu

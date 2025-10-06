@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 從文件中提取和突出顯示文字。在 .NET 專案中高效提取文字的簡單步驟。
 weight: 11
 url: /zh-hant/net/text-extraction/extract-and-highlight-text/
+type: docs
 ---
-
 # 提取並突出顯示文本
 
 ## 介紹

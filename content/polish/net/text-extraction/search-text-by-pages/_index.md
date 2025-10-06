@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyszukiwać tekst według stron przy użyciu GroupDocs.Parser dla .NET. Wydajnie wyodrębniaj określoną treść z dokumentów w aplikacjach .NET.
 weight: 22
 url: /pl/net/text-extraction/search-text-by-pages/
+type: docs
 ---
-
 # Wyszukaj tekst według stron
 
 ## Wstęp

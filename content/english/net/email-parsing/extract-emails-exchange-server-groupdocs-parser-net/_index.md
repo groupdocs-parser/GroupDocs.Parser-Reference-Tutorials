@@ -8,10 +8,8 @@ keywords:
 - extract emails from exchange server
 - groupdocs parser .net tutorial
 - ews protocol email extraction
-
+type: docs
 ---
-
-
 # How to Extract Emails from an Exchange Server Using GroupDocs.Parser for .NET
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất văn bản có định dạng từ tài liệu bằng GroupDocs.Parser cho .NET. Trích xuất văn bản đơn giản và hiệu quả cho các ứng dụng của bạn.
 weight: 10
 url: /vi/net/formatted-text-extraction/extract-formatted-text-from-document/
+type: docs
 ---
-
 # Trích xuất văn bản được định dạng từ tài liệu
 
 ## Giới thiệu

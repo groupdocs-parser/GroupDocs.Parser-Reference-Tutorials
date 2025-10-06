@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belgelerde metni nasıl arayacağınızı ve vurgulayacağınızı öğrenin. Değerli içgörüleri verimli bir şekilde çıkarın.
 weight: 24
 url: /tr/net/text-extraction/search-text-with-highlights/
+type: docs
 ---
-
 # Vurgulanan Metinlerde Arama Yapın
 
 ## giriiş

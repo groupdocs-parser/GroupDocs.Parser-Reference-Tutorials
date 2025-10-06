@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser .NET
 - license setup .NET
 - file existence check .NET
-
+type: docs
 ---
-
-
 # Mastering GroupDocs.Parser .NET: Setting Licenses and Checking File Existence
 
 ## Introduction

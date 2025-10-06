@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να κάνετε αναζήτηση κειμένου με λέξη-κλειδί σε έγγραφα χρησιμοποιώντας το GroupDocs.Parser για .NET. Εξάγετε αποτελεσματικά σχετικό περιεχόμενο με ευκολία.
 weight: 21
 url: /el/net/text-extraction/search-text-by-keyword/
+type: docs
 ---
-
 # Αναζήτηση κειμένου με λέξη-κλειδί
 
 ## Εισαγωγή

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 学习使用 GroupDocs.Parser for .NET 按页面搜索文本。从 .NET 应用程序中的文档中高效提取特定内容。
 weight: 22
 url: /zh/net/text-extraction/search-text-by-pages/
+type: docs
 ---
-
 # 按页搜索文本
 
 ## 介绍

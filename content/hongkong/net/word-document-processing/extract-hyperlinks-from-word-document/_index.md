@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 從 Word 文件中提取超連結。帶有程式碼範例的分步指南。
 weight: 10
 url: /zh-hant/net/word-document-processing/extract-hyperlinks-from-word-document/
+type: docs
 ---
-
 # 從Word文檔中提取超鏈接
 
 ## 介紹

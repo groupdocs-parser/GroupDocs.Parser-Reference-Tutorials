@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser Java
 - load PDF in Java
 - extract text from PDF
-
+type: docs
 ---
-
-
 # How to Load a PDF Document Using GroupDocs.Parser in Java
 
 ## Introduction

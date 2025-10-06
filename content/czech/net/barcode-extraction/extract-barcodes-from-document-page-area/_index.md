@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat čárové kódy ze stránek dokumentů pomocí GroupDocs.Parser for .NET. Vylepšete své možnosti zpracování dokumentů pomocí tohoto podrobného kurzu.
 weight: 13
 url: /cs/net/barcode-extraction/extract-barcodes-from-document-page-area/
+type: docs
 ---
-
 # Extrahujte čárové kódy z oblasti stránky dokumentu
 
 ## Úvod

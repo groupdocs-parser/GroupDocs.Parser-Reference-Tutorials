@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: แยกข้อความจากเอกสารรูปแบบต่างๆ ได้อย่างมีประสิทธิภาพด้วย GroupDocs.Parser for .NET บูรณาการได้ง่ายและความสามารถ OCR อันทรงพลัง
 weight: 12
 url: /th/net/ocr-extraction/recognizing-text/
+type: docs
 ---
-
 # การรับรู้ข้อความ
 
 ## การแนะนำ

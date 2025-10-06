@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET で効率的なテキスト抽出テクニックを習得します。テキストを簡単に抽出、強調表示、検索する方法を学びます。
 weight: 20
 url: /ja/net/text-extraction/
+type: docs
 ---
-
 # テキスト抽出
 
 

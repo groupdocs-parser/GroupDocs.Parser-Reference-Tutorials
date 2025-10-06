@@ -3,8 +3,8 @@ title: "GroupDocs.Parser Getting Started Tutorials for Java Developers"
 description: "Step-by-step tutorials for GroupDocs.Parser installation, licensing, setup, and basic document parsing in Java applications."
 weight: 1
 url: "/java/getting-started/"
+type: docs
 ---
-
 # GroupDocs.Parser Getting Started Tutorials for Java Developers
 
 Begin your journey with these essential GroupDocs.Parser tutorials that walk you through installation, licensing configuration, and creating your first document parsing operations in Java. Our beginner-friendly guides demonstrate how to set up your development environment, initialize the GroupDocs.Parser library, and perform fundamental document extraction operations. Follow these tutorials to quickly master the basics and prepare for more advanced document parsing tasks in your Java applications.

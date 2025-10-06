@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET mit Tabellenlayouts in Vorlagen arbeiten. Extrahieren Sie strukturierte Daten effizient aus Dokumenten.
 weight: 14
 url: /de/net/document-template-processing/working-with-table-layout-in-templates/
+type: docs
 ---
-
 # Arbeiten mit dem Tabellenlayout in Vorlagen
 
 ## Einführung

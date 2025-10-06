@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج النص من مستندات PDF باستخدام GroupDocs.Parser لـ .NET. برنامج تعليمي خطوة بخطوة للمطورين.
 weight: 14
 url: /ar/net/pdf-processing/extract-text-from-pdf/
+type: docs
 ---
-
 # استخراج النص من قوات الدفاع الشعبي
 
 ## مقدمة

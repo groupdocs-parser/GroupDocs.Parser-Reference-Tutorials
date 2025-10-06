@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Trích xuất dữ liệu dễ dàng với GroupDocs.Parser cho .NET. Tìm hiểu cách truy xuất các trường cụ thể, lặp qua dữ liệu và làm việc với các bảng trong nội dung được trích xuất.
 weight: 26
 url: /vi/net/data-extraction-from-templates/
+type: docs
 ---
-
 # Trích xuất dữ liệu từ mẫu
 
 

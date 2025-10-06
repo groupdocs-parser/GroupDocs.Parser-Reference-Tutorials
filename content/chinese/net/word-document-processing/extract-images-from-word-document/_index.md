@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从 Word 文档中提取图像。本教程提供将图像集成到 .NET 的分步指导。
 weight: 11
 url: /zh/net/word-document-processing/extract-images-from-word-document/
+type: docs
 ---
-
 # 从 Word 文档中提取图像
 
 ## 介绍

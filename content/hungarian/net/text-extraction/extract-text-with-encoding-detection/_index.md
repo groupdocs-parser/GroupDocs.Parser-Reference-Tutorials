@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Szöveg kinyerése a dokumentumokból kódolásészlelés segítségével a GroupDocs.Parser for .NET segítségével. Hatékonyan elemezheti a különböző formátumokat .NET-alkalmazásaiban.
 weight: 10
 url: /hu/net/text-extraction/extract-text-with-encoding-detection/
+type: docs
 ---
-
 # Szöveg kibontása kódolásészlelés segítségével
 
 ## Bevezetés

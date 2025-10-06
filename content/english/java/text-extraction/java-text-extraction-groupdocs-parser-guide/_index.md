@@ -8,10 +8,8 @@ keywords:
 - Java Text Extraction
 - GroupDocs Parser Setup
 - Text Extraction Guide
-
+type: docs
 ---
-
-
 # Java Text Extraction with GroupDocs.Parser: Complete Guide
 
 ## Introduction

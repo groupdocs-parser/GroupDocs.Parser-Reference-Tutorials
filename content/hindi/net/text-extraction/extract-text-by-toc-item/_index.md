@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके विषय-सूची (TOC) द्वारा पाठ निकालें। संरचित डेटा निष्कर्षण के लिए कुशल दस्तावेज़ पार्सिंग तकनीक सीखें।
 weight: 15
 url: /hi/net/text-extraction/extract-text-by-toc-item/
+type: docs
 ---
-
 # विषय-सूची (TOC) आइटम द्वारा पाठ निकालें
 
 ## परिचय

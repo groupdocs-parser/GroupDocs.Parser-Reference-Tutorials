@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić tekst z określonych obszarów dokumentów za pomocą GroupDocs.Parser dla .NET. Poznaj zaawansowane opcje wyodrębniania tekstu dzięki temu samouczkowi.
 weight: 14
 url: /pl/net/text-extraction/extract-text-from-specific-areas-with-options/
+type: docs
 ---
-
 # Wyodrębnij tekst z określonych obszarów za pomocą opcji
 
 ## Wstęp

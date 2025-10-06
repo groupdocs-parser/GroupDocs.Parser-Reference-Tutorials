@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 使用 GroupDocs.Parser for .NET 从文档页面中提取格式化文本。高效可靠的文本提取解决方案。
 weight: 11
 url: /zh/net/formatted-text-extraction/extract-formatted-text-from-document-page/
+type: docs
 ---
-
 # 从文档页面中提取格式化文本
 
 ## 介绍

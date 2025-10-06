@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak teks dari dokumen yang dilindungi kata sandi menggunakan GroupDocs.Parser untuk .NET. Tingkatkan kemampuan pemrosesan dokumen Anda.
 weight: 15
 url: /id/net/document-loading/working-with-password-protected-documents/
+type: docs
 ---
-
 # Bekerja dengan Dokumen yang Dilindungi Kata Sandi
 
 ## Perkenalan

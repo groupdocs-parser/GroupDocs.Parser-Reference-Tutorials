@@ -8,10 +8,8 @@ keywords:
 - extract text areas pdf
 - GroupDocs.Parser for .NET
 - PDF text extraction
-
+type: docs
 ---
-
-
 # How to Extract Text Areas from PDF Documents Using GroupDocs.Parser for .NET
 
 ## Introduction

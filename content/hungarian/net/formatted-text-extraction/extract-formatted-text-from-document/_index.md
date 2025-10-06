@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan vonhat ki formázott szöveget dokumentumokból a GroupDocs.Parser for .NET segítségével. Egyszerű és hatékony szövegkivonás az alkalmazásokhoz.
 weight: 10
 url: /hu/net/formatted-text-extraction/extract-formatted-text-from-document/
+type: docs
 ---
-
 # Formázott szöveg kibontása a dokumentumból
 
 ## Bevezetés

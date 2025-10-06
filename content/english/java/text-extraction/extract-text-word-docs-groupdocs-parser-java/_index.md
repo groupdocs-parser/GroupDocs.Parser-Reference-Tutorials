@@ -8,10 +8,8 @@ keywords:
 - extract text from Word documents
 - GroupDocs.Parser for Java setup
 - text extraction in Java
-
+type: docs
 ---
-
-
 # How to Extract Text from Word Documents Using GroupDocs.Parser in Java: A Comprehensive Guide
 
 Extracting text from Microsoft Word documents is a crucial task for developers working on document processing applications. With the power of GroupDocs.Parser for Java, this process becomes straightforward and efficient. In this comprehensive guide, we'll walk you through setting up your environment and implementing text extraction using GroupDocs.Parser's Parser class.

@@ -8,10 +8,8 @@ keywords:
 - hyperlink extraction .net
 - GroupDocs.Parser .NET
 - document hyperlink extraction
-
+type: docs
 ---
-
-
 # Master Hyperlink Extraction in .NET with GroupDocs.Parser: A Comprehensive Guide
 
 ## Introduction

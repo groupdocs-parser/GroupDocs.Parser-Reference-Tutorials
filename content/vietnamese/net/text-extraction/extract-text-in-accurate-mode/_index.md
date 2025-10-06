@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất chính xác văn bản từ tài liệu trong .NET bằng GroupDocs.Parser để xử lý dữ liệu liền mạch.
 weight: 18
 url: /vi/net/text-extraction/extract-text-in-accurate-mode/
+type: docs
 ---
-
 # Trích xuất văn bản ở chế độ chính xác
 
 ## Giới thiệu

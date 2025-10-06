@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Извлечение основной таблицы из документов с помощью GroupDocs.Parser для .NET. Научитесь программно извлекать таблицы для эффективной обработки данных.
 weight: 23
 url: /ru/net/table-extraction/
+type: docs
 ---
-
 # Извлечение таблицы
 
 ## Введение

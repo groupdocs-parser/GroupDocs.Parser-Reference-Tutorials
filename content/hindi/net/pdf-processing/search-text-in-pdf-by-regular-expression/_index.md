@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: GroupDocs.Parser के साथ नियमित अभिव्यक्तियों का उपयोग करके PDF दस्तावेज़ों में विशिष्ट पाठ खोजें। PDF पाठ को आसानी से निकालें, उसका विश्लेषण करें और उसमें बदलाव करें।
 weight: 19
 url: /hi/net/pdf-processing/search-text-in-pdf-by-regular-expression/
+type: docs
 ---
-
 # रेगुलर एक्सप्रेशन द्वारा पीडीएफ में टेक्स्ट खोजें
 
 ## परिचय

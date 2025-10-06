@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Learn how to extract and highlight text from documents using GroupDocs.Parser for .NET. Easy steps for efficient text extraction in your .NET projects.
 weight: 11
 url: /net/text-extraction/extract-and-highlight-text/
+type: docs
 ---
-
 # Extract and Highlight Text
 
 ## Introduction

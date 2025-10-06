@@ -8,10 +8,8 @@ keywords:
 - extract text from zip files java
 - groupdocs parser metadata extraction
 - java zip file parsing
-
+type: docs
 ---
-
-
 # Extract Text & Metadata from ZIP Files Using GroupDocs.Parser Java: A Complete Guide for Developers
 
 ## Introduction

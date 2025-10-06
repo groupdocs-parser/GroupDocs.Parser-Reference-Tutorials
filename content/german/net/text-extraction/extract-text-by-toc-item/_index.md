@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Extrahieren Sie Text anhand des Inhaltsverzeichnisses (TOC) mit GroupDocs.Parser für .NET. Lernen Sie effiziente Dokumentanalysetechniken für die strukturierte Datenextraktion.
 weight: 15
 url: /de/net/text-extraction/extract-text-by-toc-item/
+type: docs
 ---
-
 # Text nach Inhaltsverzeichniselement (TOC) extrahieren
 
 ## Einführung

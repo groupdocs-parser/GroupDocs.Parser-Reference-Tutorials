@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 문서에서 데이터를 추출하는 방법을 알아보세요. 코드 예제가 포함된 종합 튜토리얼입니다.
 weight: 11
 url: /ko/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
+type: docs
 ---
-
 # 템플릿의 고정 위치에 있는 필드 작업
 
 ## 소개

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất văn bản từ tài liệu Excel và chuyển đổi nó thành HTML bằng GroupDocs.Parser cho .NET.
 weight: 13
 url: /vi/net/excel-document-processing/extract-text-from-excel-document-as-html/
+type: docs
 ---
-
 # Trích xuất văn bản từ tài liệu Excel dưới dạng HTML
 
 ## Giới thiệu

@@ -8,10 +8,8 @@ keywords:
 - convert document text to HTML
 - GroupDocs.Parser .NET tutorial
 - formatted text extraction
-
+type: docs
 ---
-
-
 # Convert Document Text to HTML Using GroupDocs.Parser for .NET
 ## Introduction
 Are you looking to seamlessly convert document text into HTML format? Whether you're a developer aiming to automate content extraction from various file formats or seeking an efficient way to manage document data, this tutorial is your ultimate guide. With the powerful **GroupDocs.Parser** library for .NET, extracting text as HTML has never been easier or more intuitive.

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak hyperlink dari dokumen menggunakan GroupDocs.Parser untuk .NET. Panduan langkah demi langkah untuk ekstraksi hyperlink di C#.
 weight: 11
 url: /id/net/hyperlink-extraction/extract-hyperlinks-from-document-page/
+type: docs
 ---
-
 # Ekstrak Hyperlink dari Halaman Dokumen
 
 ## Perkenalan

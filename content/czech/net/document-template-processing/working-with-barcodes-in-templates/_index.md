@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Naučte se používat GroupDocs.Parser for .NET k extrahování strukturovaných dat z dokumentů pomocí šablon. Zjednodušte extrakci dat pomocí polí s čárovými kódy.
 weight: 10
 url: /cs/net/document-template-processing/working-with-barcodes-in-templates/
+type: docs
 ---
-
 # Práce s čárovými kódy v šablonách
 
 ## Úvod

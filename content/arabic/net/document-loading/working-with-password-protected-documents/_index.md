@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج النص من المستندات المحمية بكلمة مرور باستخدام GroupDocs.Parser لـ .NET. تعزيز قدرات معالجة المستندات الخاصة بك.
 weight: 15
 url: /ar/net/document-loading/working-with-password-protected-documents/
+type: docs
 ---
-
 # العمل مع المستندات المحمية بكلمة مرور
 
 ## مقدمة

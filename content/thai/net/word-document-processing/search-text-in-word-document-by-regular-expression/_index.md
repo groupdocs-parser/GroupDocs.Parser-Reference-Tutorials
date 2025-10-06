@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีค้นหาข้อความในเอกสาร Word โดยใช้นิพจน์ทั่วไปด้วย GroupDocs.Parser for .NET แยกเนื้อหาเฉพาะได้อย่างมีประสิทธิภาพ
 weight: 19
 url: /th/net/word-document-processing/search-text-in-word-document-by-regular-expression/
+type: docs
 ---
-
 # ค้นหาข้อความในเอกสาร Word ด้วยนิพจน์ปกติ
 
 ## การแนะนำ

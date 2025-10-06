@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Aprenda a extraer tablas de contenido (TOC) de documentos de Word mediante programación utilizando GroupDocs.Parser para .NET.
 weight: 13
 url: /es/net/word-document-processing/extract-table-of-contents-from-word-document/
+type: docs
 ---
-
 # Extraer tabla de contenidos de un documento de Word
 
 ## Introducción

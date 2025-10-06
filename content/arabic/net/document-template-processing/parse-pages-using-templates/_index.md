@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية تحليل صفحات المستندات باستخدام القوالب في .NET باستخدام GroupDocs.Parser. استخراج محتوى محدد بكفاءة لتطبيقاتك.
 weight: 16
 url: /ar/net/document-template-processing/parse-pages-using-templates/
+type: docs
 ---
-
 # تحليل الصفحات باستخدام القوالب
 
 ## مقدمة

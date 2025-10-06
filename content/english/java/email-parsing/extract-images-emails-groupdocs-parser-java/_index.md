@@ -8,10 +8,8 @@ keywords:
 - extract images from emails
 - GroupDocs.Parser for Java
 - image extraction email
-
+type: docs
 ---
-
-
 # Efficiently Extract Images from Emails using GroupDocs.Parser for Java
 
 ## Introduction

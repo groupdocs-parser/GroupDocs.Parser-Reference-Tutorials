@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belgelerde anahtar kelimeye göre metin aramayı öğrenin. İlgili içeriği kolaylıkla ve verimli bir şekilde çıkarın.
 weight: 21
 url: /tr/net/text-extraction/search-text-by-keyword/
+type: docs
 ---
-
 # Metni Anahtar Kelimeye Göre Ara
 
 ## giriiş

@@ -3,8 +3,8 @@ title: "Formatted Text Extraction Tutorials for GroupDocs.Parser Java"
 description: "Step-by-step tutorials for extracting text with formatting in HTML, Markdown, and other formats using GroupDocs.Parser for Java."
 weight: 12
 url: "/java/formatted-text-extraction/"
+type: docs
 ---
-
 # Formatted Text Extraction Tutorials for GroupDocs.Parser Java
 
 Our formatted text extraction tutorials show you how to preserve document styling and formatting when extracting content using GroupDocs.Parser in Java. These detailed guides cover extracting text as HTML, converting to Markdown, working with text structure, and maintaining document layout. Each tutorial includes practical Java code examples for common formatting scenarios, helping you build applications that can effectively capture not just the content but also the presentation of information from your documents.

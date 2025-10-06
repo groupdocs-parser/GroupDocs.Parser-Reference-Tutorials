@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 使用 C# 中的 GroupDocs.Parser 从 PDF 中提取文本。学习如何使用这个强大的 .NET 库高效地提取 PDF 文本。
 weight: 16
 url: /zh/net/pdf-processing/extract-text-from-page-in-pdf-in-raw-mode/
+type: docs
 ---
-
 # 以原始模式从 PDF 页面中提取文本
 
 ## 介绍

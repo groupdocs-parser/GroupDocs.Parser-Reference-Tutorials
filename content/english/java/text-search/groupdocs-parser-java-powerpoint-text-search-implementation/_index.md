@@ -8,10 +8,8 @@ keywords:
 - text search in PowerPoint
 - GroupDocs.Parser for Java
 - Java keyword search
-
+type: docs
 ---
-
-
 # Implementing Text Search in PowerPoint with GroupDocs.Parser for Java
 
 ## Introduction

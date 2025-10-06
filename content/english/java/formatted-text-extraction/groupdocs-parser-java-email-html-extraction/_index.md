@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Parser
 - extract email text as HTML
 - Java email parsing
-
+type: docs
 ---
-
-
 # Tutorial: Extracting and Formatting Email Text as HTML with GroupDocs.Parser for Java
 
 ## Introduction

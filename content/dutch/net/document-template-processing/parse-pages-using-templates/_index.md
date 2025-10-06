@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Leer hoe u documentpagina's kunt parseren met behulp van sjablonen in .NET met GroupDocs.Parser. Extraheer specifieke inhoud efficiënt voor uw toepassingen.
 weight: 16
 url: /nl/net/document-template-processing/parse-pages-using-templates/
+type: docs
 ---
-
 # Parseer pagina's met behulp van sjablonen
 
 ## Invoering

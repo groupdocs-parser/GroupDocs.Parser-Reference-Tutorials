@@ -8,10 +8,8 @@ keywords:
 - extract document metadata
 - GroupDocs.Parser Java setup
 - Java document management
-
+type: docs
 ---
-
-
 # How to Retrieve Document Information Using GroupDocs.Parser in Java
 
 ## Introduction

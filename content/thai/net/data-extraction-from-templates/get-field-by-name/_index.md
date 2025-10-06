@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกเขตข้อมูลเฉพาะจากเอกสารโดยใช้ GroupDocs.Parser สำหรับ .NET คำแนะนำทีละขั้นตอนพร้อมตัวอย่างโค้ด
 weight: 10
 url: /th/net/data-extraction-from-templates/get-field-by-name/
+type: docs
 ---
-
 # รับฟิลด์ตามชื่อ
 
 ## การแนะนำ

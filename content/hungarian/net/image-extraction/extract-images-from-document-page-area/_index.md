@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Fedezze fel, hogyan lehet pontosan kinyerni képeket a dokumentumokból a Groupdocs.Parser for .NET segítségével. Tanuljon meg konkrét területeket célozni a pontos képkivonás érdekében.
 weight: 10
 url: /hu/net/image-extraction/extract-images-from-document-page-area/
+type: docs
 ---
-
 # Képek kibontása a dokumentumoldal területéről
 
 ## Bevezetés

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε κείμενο από διάφορες μορφές εγγράφων χρησιμοποιώντας το GroupDocs.Parser για .NET. Εύκολη και αποτελεσματική εξαγωγή κειμένου με C#.
 weight: 11
 url: /el/net/document-loading/load-document-from-local-disk/
+type: docs
 ---
-
 # Φόρτωση εγγράφου από τοπικό δίσκο
 
 ## Εισαγωγή

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีทำงานกับเค้าโครงตารางในเทมเพลตโดยใช้ GroupDocs.Parser for .NET แยกข้อมูลที่มีโครงสร้างออกจากเอกสารได้อย่างมีประสิทธิภาพ
 weight: 14
 url: /th/net/document-template-processing/working-with-table-layout-in-templates/
+type: docs
 ---
-
 # การทำงานกับเค้าโครงตารางในเทมเพลต
 
 ## การแนะนำ

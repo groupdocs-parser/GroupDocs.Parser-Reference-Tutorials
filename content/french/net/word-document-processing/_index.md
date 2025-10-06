@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Découvrez une gamme de didacticiels sur le traitement des documents Word à l'aide de GroupDocs.Parser pour .NET. Extrayez des hyperliens, des images, des métadonnées et bien plus encore.
 weight: 30
 url: /fr/net/word-document-processing/
+type: docs
 ---
-
 # Traitement de documents Word
 
 Cherchez-vous à améliorer vos capacités de traitement de documents Word dans .NET ? Cherchez pas plus loin! GroupDocs.Parser pour .NET propose un ensemble complet de didacticiels pour vous aider à extraire sans effort divers éléments de documents Word.

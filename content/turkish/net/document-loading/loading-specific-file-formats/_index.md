@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser'ı kullanarak .NET'te çeşitli dosya biçimlerinden metin çıkarmayı öğrenin. Verimli belge işleme için adım adım eğitim.
 weight: 14
 url: /tr/net/document-loading/loading-specific-file-formats/
+type: docs
 ---
-
 # Belirli Dosya Formatlarını Yükleme
 
 ## giriiş

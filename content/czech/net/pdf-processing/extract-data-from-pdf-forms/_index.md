@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat data z formulářů PDF pomocí GroupDocs.Parser for .NET. Podrobný průvodce s příklady kódu a často kladenými dotazy.
 weight: 11
 url: /cs/net/pdf-processing/extract-data-from-pdf-forms/
+type: docs
 ---
-
 # Extrahujte data z formulářů PDF
 
 ## Úvod

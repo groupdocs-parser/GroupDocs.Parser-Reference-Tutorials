@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Χειριστείτε αποτελεσματικά τη φόρτωση εγγράφων στο .NET με το GroupDocs.Parser. Μάθετε να εξάγετε κείμενο από τοπικούς δίσκους, ροές, διευθύνσεις URL και πολλά άλλα.
 weight: 29
 url: /el/net/document-loading/
+type: docs
 ---
-
 # Φόρτωση εγγράφου
 
 ## Εισαγωγή

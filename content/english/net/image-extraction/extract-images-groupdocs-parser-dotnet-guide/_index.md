@@ -8,10 +8,8 @@ keywords:
 - extract images from documents
 - GroupDocs.Parser for .NET
 - image extraction with GroupDocs
-
+type: docs
 ---
-
-
 # How to Extract Images from Documents Using GroupDocs.Parser for .NET: A Developer's Guide
 
 ## Introduction

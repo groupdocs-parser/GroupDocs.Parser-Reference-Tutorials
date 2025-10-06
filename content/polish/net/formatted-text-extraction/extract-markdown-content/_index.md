@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić zawartość Markdown z dokumentów za pomocą GroupDocs.Parser dla .NET. Ten samouczek zawiera instrukcje krok po kroku dotyczące płynnego wyodrębniania tekstu.
 weight: 13
 url: /pl/net/formatted-text-extraction/extract-markdown-content/
+type: docs
 ---
-
 # Wyodrębnij zawartość Markdown
 
 ## Wstęp

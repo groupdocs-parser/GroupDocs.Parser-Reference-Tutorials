@@ -8,10 +8,8 @@ keywords:
 - Keyword Search
 - OneNote
 - GroupDocs.Parser .NET
-
+type: docs
 ---
-
-
 # Efficient Keyword Search in Microsoft OneNote Using GroupDocs.Parser .NET
 
 ## Introduction

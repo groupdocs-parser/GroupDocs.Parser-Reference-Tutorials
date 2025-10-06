@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Wyodrębnij tekst z plików PDF za pomocą GroupDocs.Parser w języku C#. Naucz się wydajnej ekstrakcji tekstu PDF dzięki tej potężnej bibliotece .NET.
 weight: 16
 url: /pl/net/pdf-processing/extract-text-from-page-in-pdf-in-raw-mode/
+type: docs
 ---
-
 # Wyodrębnij tekst ze strony w formacie PDF w trybie surowym
 
 ## Wstęp

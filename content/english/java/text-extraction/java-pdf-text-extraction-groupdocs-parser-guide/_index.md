@@ -8,10 +8,8 @@ keywords:
 - Java PDF text extraction
 - GroupDocs.Parser library
 - Document processing with Java
-
+type: docs
 ---
-
-
 # Implementing Java PDF Text Extraction with GroupDocs.Parser: A Developer's Guide
 
 ## Introduction

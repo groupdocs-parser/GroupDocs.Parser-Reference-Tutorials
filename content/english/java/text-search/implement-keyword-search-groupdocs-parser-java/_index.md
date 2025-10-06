@@ -8,7 +8,7 @@ keywords:
 - GroupDocs.Parser
 - Java
 - Document Processing
-
+type: docs
 ---
 # How to Implement Keyword Search in HTML Using GroupDocs.Parser for Java
 

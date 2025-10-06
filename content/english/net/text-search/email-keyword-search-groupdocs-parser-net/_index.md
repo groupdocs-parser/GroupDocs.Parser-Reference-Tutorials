@@ -8,10 +8,8 @@ keywords:
 - email keyword search
 - GroupDocs.Parser .NET tutorial
 - implementing keyword search in emails
-
+type: docs
 ---
-
-
 # Mastering Email Keyword Search with GroupDocs.Parser .NET
 
 ## Introduction

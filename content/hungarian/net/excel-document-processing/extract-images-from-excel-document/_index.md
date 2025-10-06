@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki képeket Excel-dokumentumokból a GroupDocs.Parser for .NET segítségével. Útmutató lépésről lépésre kódpéldákkal.
 weight: 10
 url: /hu/net/excel-document-processing/extract-images-from-excel-document/
+type: docs
 ---
-
 # Képek kibontása Excel dokumentumból
 
 ## Bevezetés

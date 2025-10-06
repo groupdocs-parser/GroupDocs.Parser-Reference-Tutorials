@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके दस्तावेज़ों से विशिष्ट डेटा फ़ील्ड निकालने का तरीका जानें। कोड उदाहरणों के साथ चरण-दर-चरण मार्गदर्शिका।
 weight: 10
 url: /hi/net/data-extraction-from-templates/get-field-by-name/
+type: docs
 ---
-
 # नाम से फ़ील्ड प्राप्त करें
 
 ## परिचय

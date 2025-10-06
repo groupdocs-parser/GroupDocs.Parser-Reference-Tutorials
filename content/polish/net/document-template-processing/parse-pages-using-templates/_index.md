@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak analizować strony dokumentów przy użyciu szablonów w platformie .NET za pomocą GroupDocs.Parser. Wydajnie wyodrębniaj określoną treść dla swoich aplikacji.
 weight: 16
 url: /pl/net/document-template-processing/parse-pages-using-templates/
+type: docs
 ---
-
 # Analizuj strony przy użyciu szablonów
 
 ## Wstęp

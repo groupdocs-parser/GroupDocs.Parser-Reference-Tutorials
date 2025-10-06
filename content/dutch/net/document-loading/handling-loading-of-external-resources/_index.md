@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Leer hoe u met externe bronnen in .NET omgaat met GroupDocs.Parser voor efficiënt parseren en extraheren van documenten.
 weight: 10
 url: /nl/net/document-loading/handling-loading-of-external-resources/
+type: docs
 ---
-
 # Afhandelen van het laden van externe bronnen
 
 ## Invoering

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีการแยกบาร์โค้ดออกจากเอกสารที่เสียหายโดยใช้ GroupDocs.Parser for .NET บทช่วยสอนที่ครอบคลุมพร้อมคำแนะนำทีละขั้นตอน
 weight: 11
 url: /th/net/barcode-extraction/extract-barcodes-from-corrupted-document/
+type: docs
 ---
-
 # แยกบาร์โค้ดออกจากเอกสารที่เสียหาย
 
 ## การแนะนำ

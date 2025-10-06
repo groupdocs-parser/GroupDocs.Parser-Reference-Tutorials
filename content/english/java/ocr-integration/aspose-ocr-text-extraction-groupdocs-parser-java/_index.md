@@ -8,10 +8,8 @@ keywords:
 - Aspose OCR
 - text extraction Java
 - OCR integration Java
-
+type: docs
 ---
-
-
 # Aspose OCR Text Extraction with GroupDocs.Parser in Java
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีการแยกบาร์โค้ดอย่างง่ายดายด้วยบทเรียน GroupDocs.Parser สำหรับ .NET เพิ่มความสามารถในการประมวลผลเอกสารของคุณทันที!
 weight: 27
 url: /th/net/barcode-extraction/
+type: docs
 ---
-
 # การสกัดบาร์โค้ด
 
 

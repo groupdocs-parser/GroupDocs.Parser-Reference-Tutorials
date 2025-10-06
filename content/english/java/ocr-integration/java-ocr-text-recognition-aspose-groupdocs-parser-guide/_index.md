@@ -8,10 +8,8 @@ keywords:
 - Java OCR text recognition
 - Aspose OCR Java
 - GroupDocs Parser for Java
-
+type: docs
 ---
-
-
 # Implementing Java OCR Text Recognition with Aspose.OCR & GroupDocs.Parser: A Comprehensive Guide
 
 ## Introduction

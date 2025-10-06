@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belgelerde normal ifadeleri kullanarak nasıl metin arayacağınızı öğrenin. Belirli içerikleri zahmetsizce çıkarın.
 weight: 23
 url: /tr/net/text-extraction/search-text-by-regex/
+type: docs
 ---
-
 # Normal İfadeye Göre Metin Arama (Regex)
 
 ## giriiş

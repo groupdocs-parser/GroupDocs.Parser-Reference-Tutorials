@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用してドキュメントからデータを効率的に抽出する方法を学びます。コード例を使用したステップバイステップのチュートリアルです。
 weight: 12
 url: /ja/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
+type: docs
 ---
-
 # テンプレート内のリンクされた位置にあるフィールドの操作
 
 ## 導入

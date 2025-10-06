@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET mithilfe regulärer Ausdrücke nach Text in Word-Dokumenten suchen. Extrahieren Sie effizient spezifischen Inhalt.
 weight: 19
 url: /de/net/word-document-processing/search-text-in-word-document-by-regular-expression/
+type: docs
 ---
-
 # Textsuche im Word-Dokument mit regulären Ausdrücken
 
 ## Einführung

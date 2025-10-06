@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất Mục lục (TOC) từ tài liệu Word theo chương trình bằng GroupDocs.Parser cho .NET.
 weight: 13
 url: /vi/net/word-document-processing/extract-table-of-contents-from-word-document/
+type: docs
 ---
-
 # Trích xuất mục lục từ tài liệu Word
 
 ## Giới thiệu

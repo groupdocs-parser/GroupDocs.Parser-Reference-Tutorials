@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser 從 .NET 中的各種文件格式中提取文字。高效文件處理的逐步教學。
 weight: 14
 url: /zh-hant/net/document-loading/loading-specific-file-formats/
+type: docs
 ---
-
 # 載入特定文件格式
 
 ## 介紹

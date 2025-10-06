@@ -8,10 +8,8 @@ keywords:
 - EPUB text extraction
 - GroupDocs.Parser .NET
 - text extraction from EPUB
-
+type: docs
 ---
-
-
 # Efficient EPUB Text Extraction with GroupDocs.Parser for .NET
 
 ## Introduction

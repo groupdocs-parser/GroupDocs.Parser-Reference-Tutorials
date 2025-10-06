@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: معالجة ملفات PDF الرئيسية باستخدام GroupDocs.Parser لـ .NET. تعلم كيفية استخراج المرفقات والبيانات والصور والبيانات التعريفية والنص بكفاءة من ملفات PDF.
 weight: 31
 url: /ar/net/pdf-processing/
+type: docs
 ---
-
 # معالجة قوات الدفاع الشعبي
 
 ## مقدمة

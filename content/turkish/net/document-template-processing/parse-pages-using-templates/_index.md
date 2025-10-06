@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser ile .NET'teki şablonları kullanarak belge sayfalarını nasıl ayrıştıracağınızı öğrenin. Uygulamalarınız için belirli içerikleri verimli bir şekilde çıkarın.
 weight: 16
 url: /tr/net/document-template-processing/parse-pages-using-templates/
+type: docs
 ---
-
 # Şablonları Kullanarak Sayfaları Ayrıştırma
 
 ## giriiş

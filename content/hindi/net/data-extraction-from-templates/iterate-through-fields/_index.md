@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके दस्तावेज़ों से संरचित डेटा निकालने का तरीका जानें। दस्तावेज़ डेटा निष्कर्षण क्षमताओं के साथ अपने .NET अनुप्रयोगों को बेहतर बनाएँ।
 weight: 11
 url: /hi/net/data-extraction-from-templates/iterate-through-fields/
+type: docs
 ---
-
 # फ़ील्ड के माध्यम से पुनरावृति करें
 
 ## परिचय

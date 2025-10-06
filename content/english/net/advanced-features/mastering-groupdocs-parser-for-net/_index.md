@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser for .NET
 - document parsing with .NET
 - extract text from URLs
-
+type: docs
 ---
-
-
 # Mastering Document Parsing in .NET with GroupDocs.Parser
 
 ## Introduction

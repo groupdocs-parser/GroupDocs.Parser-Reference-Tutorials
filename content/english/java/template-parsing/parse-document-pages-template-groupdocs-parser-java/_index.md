@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser for Java
 - parse document pages by template
 - extract barcode data from PDF
-
+type: docs
 ---
-
-
 # Parse Document Pages by Template Using GroupDocs.Parser in Java
 
 In today’s digital landscape, efficiently extracting information from documents is a common challenge faced by developers worldwide. Whether it's extracting QR codes from PDFs or parsing specific fields from forms, the need for reliable document processing tools is more pressing than ever. Enter **GroupDocs.Parser for Java**, a powerful library that simplifies these tasks with precision and ease. This comprehensive guide will walk you through using GroupDocs.Parser to parse document pages by template—specifically focusing on extracting barcode data from PDF files.

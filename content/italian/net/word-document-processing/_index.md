@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Scopri una serie di tutorial sull'elaborazione dei documenti Word utilizzando GroupDocs.Parser per .NET. Estrai collegamenti ipertestuali, immagini, metadati e altro ancora.
 weight: 30
 url: /it/net/word-document-processing/
+type: docs
 ---
-
 # Elaborazione di documenti Word
 
 Desideri migliorare le tue capacità di elaborazione dei documenti Word in .NET? Non guardare oltre! GroupDocs.Parser per .NET offre una serie completa di tutorial per aiutarti a estrarre vari elementi dai documenti Word senza sforzo.

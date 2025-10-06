@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić zawartość HTML z dokumentów za pomocą GroupDocs.Parser dla .NET. Łatwy do zrozumienia samouczek z przykładami kodu i wskazówkami krok po kroku.
 weight: 12
 url: /pl/net/formatted-text-extraction/extract-html-content/
+type: docs
 ---
-
 # Wyodrębnij zawartość HTML
 
 ## Wstęp

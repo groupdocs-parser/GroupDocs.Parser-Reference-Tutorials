@@ -8,10 +8,8 @@ keywords:
 - display supported file formats GroupDocs.Parser .NET
 - retrieving supported file types .NET
 - list document formats with GroupDocs
-
+type: docs
 ---
-
-
 # How to Display Supported File Formats Using GroupDocs.Parser for .NET
 
 ## Introduction

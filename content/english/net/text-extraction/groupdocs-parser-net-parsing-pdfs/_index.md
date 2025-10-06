@@ -8,10 +8,8 @@ keywords:
 - PDF parsing .NET
 - data extraction PDFs .NET
 - template tables GroupDocs
-
+type: docs
 ---
-
-
 # Mastering PDF Parsing in .NET with GroupDocs.Parser: A Complete Guide
 
 ## Introduction

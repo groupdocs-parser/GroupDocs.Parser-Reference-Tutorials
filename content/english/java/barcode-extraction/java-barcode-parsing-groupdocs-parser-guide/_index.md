@@ -8,10 +8,8 @@ keywords:
 - Java barcode parsing
 - GroupDocs.Parser for Java
 - barcode data extraction
-
+type: docs
 ---
-
-
 # Create an SEO-Rich Guide: Mastering Java Barcode Parsing with GroupDocs.Parser
 
 ## Introduction

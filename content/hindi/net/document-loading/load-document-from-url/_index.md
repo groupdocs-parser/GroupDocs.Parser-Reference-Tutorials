@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके दस्तावेज़ों से टेक्स्ट निकालना सीखें। यह ट्यूटोरियल URL से दस्तावेज़ लोड करना और चरण दर चरण टेक्स्ट निकालना सिखाता है।
 weight: 13
 url: /hi/net/document-loading/load-document-from-url/
+type: docs
 ---
-
 # URL से दस्तावेज़ लोड करें
 
 ## परिचय

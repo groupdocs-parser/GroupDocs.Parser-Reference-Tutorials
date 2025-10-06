@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat formátovaný text z dokumentů pomocí GroupDocs.Parser for .NET. Jednoduchá a efektivní extrakce textu pro vaše aplikace.
 weight: 10
 url: /cs/net/formatted-text-extraction/extract-formatted-text-from-document/
+type: docs
 ---
-
 # Extrahujte formátovaný text z dokumentu
 
 ## Úvod

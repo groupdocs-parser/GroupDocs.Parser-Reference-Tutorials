@@ -8,10 +8,8 @@ keywords:
 - document parsing in java
 - groupdocs parser library
 - extract text metadata images java
-
+type: docs
 ---
-
-
 # Implement Document Parsing in Java Using GroupDocs.Parser: A Complete Guide
 
 ## Introduction

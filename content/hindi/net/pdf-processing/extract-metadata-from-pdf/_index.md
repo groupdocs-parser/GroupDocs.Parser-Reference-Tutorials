@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके PDF दस्तावेज़ों से मेटाडेटा निकालने का तरीका जानें। यह व्यापक गाइड चरण-दर-चरण निर्देश और पूर्वापेक्षाएँ शामिल करती है।
 weight: 13
 url: /hi/net/pdf-processing/extract-metadata-from-pdf/
+type: docs
 ---
-
 # पीडीएफ से मेटाडेटा निकालें
 
 ## परिचय

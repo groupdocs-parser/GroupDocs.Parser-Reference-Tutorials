@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从 Word 文档中提取文本并将其保存为 HTML。带有代码示例的分步教程。
 weight: 16
 url: /zh/net/word-document-processing/extract-text-from-word-document-as-html/
+type: docs
 ---
-
 # 从 Word 文档中提取文本作为 HTML
 
 ## 介绍

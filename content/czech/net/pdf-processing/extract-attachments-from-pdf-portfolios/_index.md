@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: V tomto komplexním kurzu se dozvíte, jak extrahovat přílohy z portfolií PDF pomocí GroupDocs.Parser for .NET.
 weight: 10
 url: /cs/net/pdf-processing/extract-attachments-from-pdf-portfolios/
+type: docs
 ---
-
 # Extrahujte přílohy z portfolií PDF
 
 ## Úvod

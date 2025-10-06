@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج الرموز الشريطية من صفحات المستندات باستخدام GroupDocs.Parser لـ .NET. عزز قدرات معالجة المستندات لديك من خلال هذا البرنامج التعليمي خطوة بخطوة.
 weight: 13
 url: /ar/net/barcode-extraction/extract-barcodes-from-document-page-area/
+type: docs
 ---
-
 # استخراج الرموز الشريطية من منطقة صفحة الوثيقة
 
 ## مقدمة

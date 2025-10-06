@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε μεταδεδομένα από έγγραφα του Word χρησιμοποιώντας το GroupDocs.Parser για .NET. Εύκολα βήματα για την ανάλυση και την ανάκτηση πληροφοριών εγγράφου.
 weight: 12
 url: /el/net/word-document-processing/extract-metadata-from-word-document/
+type: docs
 ---
-
 # Εξαγωγή μεταδεδομένων από το έγγραφο του Word
 
 ## Εισαγωγή

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε τον Πίνακα Περιεχομένων (TOC) από έγγραφα του Word μέσω προγραμματισμού χρησιμοποιώντας το GroupDocs.Parser για .NET.
 weight: 13
 url: /el/net/word-document-processing/extract-table-of-contents-from-word-document/
+type: docs
 ---
-
 # Εξαγωγή πίνακα περιεχομένων από το έγγραφο του Word
 
 ## Εισαγωγή

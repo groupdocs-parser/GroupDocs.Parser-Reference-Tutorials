@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε μορφοποιημένο κείμενο από έγγραφα χρησιμοποιώντας το GroupDocs.Parser για .NET. Απλή και αποτελεσματική εξαγωγή κειμένου για τις εφαρμογές σας.
 weight: 10
 url: /el/net/formatted-text-extraction/extract-formatted-text-from-document/
+type: docs
 ---
-
 # Εξαγωγή μορφοποιημένου κειμένου από το έγγραφο
 
 ## Εισαγωγή

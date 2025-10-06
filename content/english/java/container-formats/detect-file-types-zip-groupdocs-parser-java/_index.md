@@ -8,10 +8,8 @@ keywords:
 - detect file types in ZIP archives
 - GroupDocs.Parser for Java
 - file type detection without extraction
-
+type: docs
 ---
-
-
 # Detecting File Types in ZIP Archives with GroupDocs.Parser for Java
 
 ## Introduction

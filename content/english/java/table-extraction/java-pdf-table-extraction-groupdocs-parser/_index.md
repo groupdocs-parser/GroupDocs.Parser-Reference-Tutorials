@@ -8,10 +8,8 @@ keywords:
 - Java PDF table extraction
 - GroupDocs.Parser library
 - automate document parsing
-
+type: docs
 ---
-
-
 # Mastering Java PDF Table Extraction with GroupDocs.Parser: A Developer’s Guide
 
 ## Introduction

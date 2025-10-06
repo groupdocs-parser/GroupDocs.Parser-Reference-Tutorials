@@ -8,10 +8,8 @@ keywords:
 - email parsing with regex
 - groupdocs parser net tutorial
 - regex email search
-
+type: docs
 ---
-
-
 # Mastering Email Searches with Regular Expressions using GroupDocs.Parser .NET
 
 Searching through emails efficiently is a common challenge, especially when dealing with large volumes of data or specific text patterns. By leveraging the power of regular expressions combined with GroupDocs.Parser for .NET—a robust solution—you can simplify this task significantly. In this tutorial, you'll learn how to harness these tools to search for patterns within emails using regular expressions.

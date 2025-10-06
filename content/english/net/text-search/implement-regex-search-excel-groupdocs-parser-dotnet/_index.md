@@ -8,10 +8,8 @@ keywords:
 - Regex Search in Excel
 - GroupDocs.Parser for .NET
 - Automate Data Analysis with Regex
-
+type: docs
 ---
-
-
 # Comprehensive Tutorial: Implementing Regex Search in Excel Using GroupDocs.Parser for .NET
 
 ## Introduction

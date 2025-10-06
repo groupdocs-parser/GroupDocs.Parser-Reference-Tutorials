@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki szöveget különböző dokumentumformátumokból a GroupDocs.Parser for .NET segítségével. Egyszerű és hatékony szövegkivonás C#-val.
 weight: 11
 url: /hu/net/document-loading/load-document-from-local-disk/
+type: docs
 ---
-
 # Töltse be a dokumentumot a helyi lemezről
 
 ## Bevezetés

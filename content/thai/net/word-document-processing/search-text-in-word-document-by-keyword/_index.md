@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีค้นหาข้อความในเอกสาร Word โดยใช้ GroupDocs.Parser for .NET แยกคำหลักที่เฉพาะเจาะจงอย่างมีประสิทธิภาพ
 weight: 18
 url: /th/net/word-document-processing/search-text-in-word-document-by-keyword/
+type: docs
 ---
-
 # ค้นหาข้อความในเอกสาร Word ด้วยคำสำคัญ
 
 ## การแนะนำ

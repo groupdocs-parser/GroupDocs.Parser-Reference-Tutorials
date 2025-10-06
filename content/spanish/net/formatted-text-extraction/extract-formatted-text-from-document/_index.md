@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Aprenda a extraer texto formateado de documentos usando GroupDocs.Parser para .NET. Extracción de texto simple y eficiente para sus aplicaciones.
 weight: 10
 url: /es/net/formatted-text-extraction/extract-formatted-text-from-document/
+type: docs
 ---
-
 # Extraer texto formateado del documento
 
 ## Introducción

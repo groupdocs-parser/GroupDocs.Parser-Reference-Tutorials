@@ -8,10 +8,8 @@ keywords:
 - extract text from one note section
 - groupdocs parser net
 - text extraction from onenote
-
+type: docs
 ---
-
-
 # Extracting Text from OneNote Sections Using GroupDocs.Parser .NET
 ## Introduction
 Struggling to efficiently extract text from Microsoft OneNote documents? **GroupDocs.Parser for .NET** offers a seamless solution for extracting text from specific sections of OneNote files. This comprehensive guide will take you through the process using GroupDocs.Parser, paired with Aspose.PDF in .NET.

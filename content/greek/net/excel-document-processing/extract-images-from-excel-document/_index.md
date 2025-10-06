@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε εικόνες από έγγραφα του Excel χρησιμοποιώντας το GroupDocs.Parser για .NET. Οδηγός βήμα προς βήμα με παραδείγματα κώδικα.
 weight: 10
 url: /el/net/excel-document-processing/extract-images-from-excel-document/
+type: docs
 ---
-
 # Εξαγωγή εικόνων από το έγγραφο Excel
 
 ## Εισαγωγή

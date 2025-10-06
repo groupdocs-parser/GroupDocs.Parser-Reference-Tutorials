@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan nyerhet ki adatokat dokumentumok tábláiból a GroupDocs.Parser for .NET segítségével. Lépésről lépésre a táblázat paramétereinek használatához.
 weight: 15
 url: /hu/net/document-template-processing/working-with-table-parameters-in-templates/
+type: docs
 ---
-
 # Táblázatparaméterek használata sablonokban
 
 ## Bevezetés

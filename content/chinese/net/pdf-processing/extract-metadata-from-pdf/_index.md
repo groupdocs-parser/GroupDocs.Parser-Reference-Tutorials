@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从 PDF 文档中提取元数据。本综合指南涵盖分步说明和先决条件。
 weight: 13
 url: /zh/net/pdf-processing/extract-metadata-from-pdf/
+type: docs
 ---
-
 # 从 PDF 中提取元数据
 
 ## 介绍

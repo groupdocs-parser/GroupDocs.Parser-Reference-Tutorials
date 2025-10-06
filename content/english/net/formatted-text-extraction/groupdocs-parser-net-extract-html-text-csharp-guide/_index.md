@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser .NET
 - extract formatted text
 - document parsing C#
-
+type: docs
 ---
-
-
 # Extract Document Text as HTML Using GroupDocs.Parser .NET in C#
 
 ## Introduction

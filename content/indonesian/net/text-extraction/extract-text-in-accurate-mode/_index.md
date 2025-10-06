@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak teks secara akurat dari dokumen di .NET menggunakan GroupDocs.Parser untuk pemrosesan data yang lancar.
 weight: 18
 url: /id/net/text-extraction/extract-text-in-accurate-mode/
+type: docs
 ---
-
 # Ekstrak Teks dalam Mode Akurat
 
 ## Perkenalan

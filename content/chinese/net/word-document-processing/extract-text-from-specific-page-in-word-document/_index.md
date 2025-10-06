@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从 Word 文档中的特定页面提取文本。将文本提取功能集成到您的 .NET 中。
 weight: 17
 url: /zh/net/word-document-processing/extract-text-from-specific-page-in-word-document/
+type: docs
 ---
-
 # 从 Word 文档中的特定页面提取文本
 
 ## 介绍

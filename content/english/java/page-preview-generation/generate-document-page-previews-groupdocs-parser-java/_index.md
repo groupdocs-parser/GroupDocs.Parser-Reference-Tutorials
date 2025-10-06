@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser Java
 - document page previews
 - Java document processing
-
+type: docs
 ---
-
-
 # How to Generate Document Page Previews in Java Using GroupDocs.Parser
 
 ## Introduction

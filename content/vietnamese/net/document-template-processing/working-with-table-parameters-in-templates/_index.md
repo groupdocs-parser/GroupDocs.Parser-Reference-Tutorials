@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất dữ liệu từ các bảng trong tài liệu bằng GroupDocs.Parser cho .NET. Hướng dẫn từng bước để sử dụng tham số bảng.
 weight: 15
 url: /vi/net/document-template-processing/working-with-table-parameters-in-templates/
+type: docs
 ---
-
 # Làm việc với các tham số bảng trong mẫu
 
 ## Giới thiệu

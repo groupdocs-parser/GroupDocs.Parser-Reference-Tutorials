@@ -8,10 +8,8 @@ keywords:
 - OCR text extraction
 - GroupDocs.Parser Java
 - document automation
-
+type: docs
 ---
-
-
 # OCR Text Extraction in Java: Mastering GroupDocs.Parser for Document Automation
 Unlock the full potential of document automation by mastering Optical Character Recognition (OCR) using GroupDocs.Parser for Java. This comprehensive guide demonstrates how to implement text extraction within defined rectangular areas, complete with robust error handling techniques.
 

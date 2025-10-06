@@ -8,10 +8,8 @@ keywords:
 - extract text from PPTX
 - GroupDocs Parser Java
 - PowerPoint text extraction
-
+type: docs
 ---
-
-
 # Tutorial: Extracting Text from PowerPoint (PPTX) with GroupDocs.Parser for Java
 
 ## Introduction

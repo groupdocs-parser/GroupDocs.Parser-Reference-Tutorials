@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Scopri come estrarre collegamenti ipertestuali dai documenti utilizzando GroupDocs.Parser per .NET. Migliora le tue applicazioni C# con questa guida semplice.
 weight: 10
 url: /it/net/hyperlink-extraction/extract-hyperlinks-from-document/
+type: docs
 ---
-
 # Estrai collegamenti ipertestuali dal documento
 
 ## introduzione

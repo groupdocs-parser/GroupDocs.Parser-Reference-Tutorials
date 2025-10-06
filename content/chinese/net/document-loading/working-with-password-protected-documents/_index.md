@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从受密码保护的文档中提取文本。增强您的文档处理能力。
 weight: 15
 url: /zh/net/document-loading/working-with-password-protected-documents/
+type: docs
 ---
-
 # 使用受密码保护的文档
 
 ## 介绍

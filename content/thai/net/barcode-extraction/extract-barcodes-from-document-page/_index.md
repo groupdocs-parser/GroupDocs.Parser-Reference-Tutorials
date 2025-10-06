@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกบาร์โค้ดออกจากหน้าเอกสารโดยใช้ GroupDocs.Parser for .NET บทช่วยสอนนี้ให้คำแนะนำทีละขั้นตอนสำหรับการดึงบาร์โค้ด
 weight: 12
 url: /th/net/barcode-extraction/extract-barcodes-from-document-page/
+type: docs
 ---
-
 # แยกบาร์โค้ดออกจากหน้าเอกสาร
 
 ## การแนะนำ

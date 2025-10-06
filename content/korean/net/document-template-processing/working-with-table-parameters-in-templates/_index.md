@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 문서의 테이블에서 데이터를 추출하는 방법을 알아보세요. 테이블 매개변수 사용에 대한 단계별 가이드입니다.
 weight: 15
 url: /ko/net/document-template-processing/working-with-table-parameters-in-templates/
+type: docs
 ---
-
 # 템플릿에서 테이블 매개변수 작업
 
 ## 소개

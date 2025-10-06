@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 문서에서 정규식을 사용하여 텍스트를 검색하는 방법을 알아보세요. 특정 콘텐츠를 손쉽게 추출하세요.
 weight: 23
 url: /ko/net/text-extraction/search-text-by-regex/
+type: docs
 ---
-
 # 정규식으로 텍스트 검색(Regex)
 
 ## 소개

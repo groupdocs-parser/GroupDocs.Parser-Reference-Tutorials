@@ -8,10 +8,8 @@ keywords:
 - extract text by TOC
 - GroupDocs.Parser for Java
 - Java document processing
-
+type: docs
 ---
-
-
 # Extract Text by TOC in Java Using GroupDocs.Parser: A Comprehensive Guide
 
 ## Introduction

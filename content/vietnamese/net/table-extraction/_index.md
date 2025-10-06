@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Trích xuất bảng chính từ tài liệu bằng GroupDocs.Parser cho .NET. Tìm hiểu cách trích xuất bảng theo chương trình để xử lý dữ liệu hiệu quả.
 weight: 23
 url: /vi/net/table-extraction/
+type: docs
 ---
-
 # Trích xuất bảng
 
 ## Giới thiệu

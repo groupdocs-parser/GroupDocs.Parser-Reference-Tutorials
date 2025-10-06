@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 從文件中擷取資料。帶有程式碼範例的綜合教程。
 weight: 11
 url: /zh-hant/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
+type: docs
 ---
-
 # 使用模板中固定位置的字段
 
 ## 介紹

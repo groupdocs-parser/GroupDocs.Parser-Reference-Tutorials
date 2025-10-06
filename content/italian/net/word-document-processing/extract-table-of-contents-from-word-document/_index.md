@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Scopri come estrarre il sommario (TOC) dai documenti Word a livello di codice utilizzando GroupDocs.Parser per .NET.
 weight: 13
 url: /it/net/word-document-processing/extract-table-of-contents-from-word-document/
+type: docs
 ---
-
 # Estrai il sommario dal documento di Word
 
 ## introduzione

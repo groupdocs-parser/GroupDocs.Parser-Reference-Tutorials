@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki hiperhivatkozásokat adott dokumentumterületekről a GroupDocs.Parser for .NET segítségével. Növelje dokumentumfeldolgozási képességeit.
 weight: 12
 url: /hu/net/hyperlink-extraction/extract-hyperlinks-from-document-page-area/
+type: docs
 ---
-
 # Kivonja a hiperhivatkozásokat a dokumentumoldal területéről
 
 ## Bevezetés

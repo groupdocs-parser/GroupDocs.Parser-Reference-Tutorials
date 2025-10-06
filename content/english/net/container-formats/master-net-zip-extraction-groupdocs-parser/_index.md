@@ -8,10 +8,8 @@ keywords:
 - .NET ZIP extraction
 - GroupDocs.Parser for .NET
 - ZIP file iteration in C#
-
+type: docs
 ---
-
-
 # Mastering .NET ZIP Archive Extraction and Parsing with GroupDocs.Parser
 
 ## Introduction

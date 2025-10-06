@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak Word belgelerinden meta verileri nasıl çıkaracağınızı öğrenin. Belge bilgilerini ayrıştırmak ve almak için kolay adımlar.
 weight: 12
 url: /tr/net/word-document-processing/extract-metadata-from-word-document/
+type: docs
 ---
-
 # Word Belgesinden Meta Verileri Çıkarma
 
 ## giriiş

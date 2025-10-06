@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して Word 文書からテキストを抽出し、HTML として保存する方法を学びます。コード例を使用したステップバイステップのチュートリアルです。
 weight: 16
 url: /ja/net/word-document-processing/extract-text-from-word-document-as-html/
+type: docs
 ---
-
 # Word 文書からテキストを HTML として抽出する
 
 ## 導入

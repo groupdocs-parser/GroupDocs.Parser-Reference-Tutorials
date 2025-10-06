@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 Word 문서 처리에 대한 다양한 자습서를 살펴보세요. 하이퍼링크, 이미지, 메타데이터 등을 추출합니다.
 weight: 30
 url: /ko/net/word-document-processing/
+type: docs
 ---
-
 # Word 문서 처리
 
 .NET에서 Word 문서 처리 기능을 향상시키고 싶으십니까? 더 이상 보지 마세요! .NET용 GroupDocs.Parser는 Word 문서에서 다양한 요소를 손쉽게 추출하는 데 도움이 되는 포괄적인 자습서 세트를 제공합니다.

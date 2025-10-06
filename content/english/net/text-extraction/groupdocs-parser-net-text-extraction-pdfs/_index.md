@@ -8,10 +8,8 @@ keywords:
 - extract text areas from PDFs
 - GroupDocs.Parser for .NET
 - regex pattern extraction
-
+type: docs
 ---
-
-
 # Extract Text Areas from PDFs Using GroupDocs.Parser for .NET
 
 ## Introduction

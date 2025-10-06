@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: GroupDocs.Parser का उपयोग करके .NET में विभिन्न दस्तावेज़ स्वरूपों से टेक्स्ट निकालना सीखें। कोड उदाहरणों के साथ चरण-दर-चरण मार्गदर्शिका।
 weight: 12
 url: /hi/net/document-loading/load-document-from-stream/
+type: docs
 ---
-
 # स्ट्रीम से दस्तावेज़ लोड करें
 
 ## परिचय

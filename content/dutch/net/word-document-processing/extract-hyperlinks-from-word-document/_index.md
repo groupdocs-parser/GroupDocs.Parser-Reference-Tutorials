@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Leer hoe u hyperlinks uit Word-documenten extraheert met GroupDocs.Parser voor .NET. Stapsgewijze handleiding met codevoorbeelden.
 weight: 10
 url: /nl/net/word-document-processing/extract-hyperlinks-from-word-document/
+type: docs
 ---
-
 # Extraheer hyperlinks uit een Word-document
 
 ## Invoering

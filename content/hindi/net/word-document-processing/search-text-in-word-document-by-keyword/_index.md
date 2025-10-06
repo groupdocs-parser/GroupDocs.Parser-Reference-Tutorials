@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके Word दस्तावेज़ों में टेक्स्ट खोजना सीखें। विशिष्ट कीवर्ड को कुशलतापूर्वक निकालें।
 weight: 18
 url: /hi/net/word-document-processing/search-text-in-word-document-by-keyword/
+type: docs
 ---
-
 # कीवर्ड द्वारा वर्ड दस्तावेज़ में टेक्स्ट खोजें
 
 ## परिचय

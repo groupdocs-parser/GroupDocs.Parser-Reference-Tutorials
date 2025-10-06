@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Z tego obszernego samouczka dowiesz się, jak wyodrębniać załączniki z portfeli PDF przy użyciu narzędzia GroupDocs.Parser dla platformy .NET.
 weight: 10
 url: /pl/net/pdf-processing/extract-attachments-from-pdf-portfolios/
+type: docs
 ---
-
 # Wyodrębnij załączniki z portfolio PDF
 
 ## Wstęp

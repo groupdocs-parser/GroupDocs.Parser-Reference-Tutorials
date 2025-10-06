@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके Word दस्तावेज़ों में विशिष्ट पृष्ठों से टेक्स्ट निकालने का तरीका जानें। अपने .NET में टेक्स्ट निष्कर्षण क्षमताओं को एकीकृत करें।
 weight: 17
 url: /hi/net/word-document-processing/extract-text-from-specific-page-in-word-document/
+type: docs
 ---
-
 # वर्ड दस्तावेज़ में विशिष्ट पृष्ठ से पाठ निकालें
 
 ## परिचय

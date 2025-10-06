@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 프로그래밍 방식으로 문서에서 테이블을 추출하는 방법을 알아보세요. 이 포괄적인 튜토리얼은 단계별 지침을 제공합니다.
 weight: 11
 url: /ko/net/table-extraction/extract-tables-from-document-page/
+type: docs
 ---
-
 # 문서 페이지에서 테이블 추출
 
 ## 소개

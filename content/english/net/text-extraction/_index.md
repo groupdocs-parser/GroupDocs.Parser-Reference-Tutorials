@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Unlock efficient text extraction techniques with GroupDocs.Parser for .NET. Learn to extract, highlight, and search text effortlessly.
 weight: 20
 url: /net/text-extraction/
+type: docs
 ---
-
 # Text Extraction
 
 

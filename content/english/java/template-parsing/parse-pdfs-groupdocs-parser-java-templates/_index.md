@@ -8,10 +8,8 @@ keywords:
 - GroupDocs Parser Java
 - PDF parsing with templates
 - Java template tables for PDF
-
+type: docs
 ---
-
-
 # Efficient PDF Parsing in Java Using GroupDocs.Parser Templates
 Unlock the power of parsing PDF documents using GroupDocs.Parser for Java. This comprehensive guide walks you through creating and utilizing template tables to accurately extract data from PDF files, making it an invaluable resource for developers working with document management systems.
 

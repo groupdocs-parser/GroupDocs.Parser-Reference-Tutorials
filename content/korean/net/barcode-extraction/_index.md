@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser 튜토리얼을 통해 손쉽게 바코드를 추출하는 방법을 알아보세요. 지금 귀하의 문서 처리 능력을 강화해보세요!
 weight: 27
 url: /ko/net/barcode-extraction/
+type: docs
 ---
-
 # 바코드 추출
 
 

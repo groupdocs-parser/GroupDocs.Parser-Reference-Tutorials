@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके PDF से टेक्स्ट निकालें। इस शक्तिशाली लाइब्रेरी के साथ विशिष्ट पृष्ठ सामग्री को आसानी से पुनः प्राप्त करें।
 weight: 15
 url: /hi/net/pdf-processing/extract-text-from-specific-page-in-pdf/
+type: docs
 ---
-
 # पीडीएफ में विशिष्ट पृष्ठ से पाठ निकालें
 
 ## परिचय

@@ -8,10 +8,8 @@ keywords:
 - PDF text search
 - GroupDocs.Parser for .NET
 - regular expressions in PDF
-
+type: docs
 ---
-
-
 # Mastering PDF Text Search Using Regular Expressions with GroupDocs.Parser for .NET
 Searching through PDFs for specific text patterns can be daunting without the right tools. Whether you're looking for words starting or ending with 'ut' or using regular expressions (regex) to find complex patterns, this tutorial will guide you in leveraging GroupDocs.Parser for .NET. Discover how to set up your environment and implement regex-based searches effectively.
 

@@ -8,10 +8,8 @@ keywords:
 - Keyword Search in Word Docs
 - GroupDocs.Parser Java Setup
 - Java Keyword Extraction
-
+type: docs
 ---
-
-
 # Implementing Keyword Search in Word Documents Using GroupDocs.Parser for Java
 
 ## Introduction

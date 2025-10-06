@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从文档中提取文本。本教程介绍如何从 URL 加载文档并逐步提取文本。
 weight: 13
 url: /zh/net/document-loading/load-document-from-url/
+type: docs
 ---
-
 # 从 URL 加载文档
 
 ## 介绍

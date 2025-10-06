@@ -8,10 +8,8 @@ keywords:
 - extract text from password-protected documents
 - GroupDocs.Parser Java tutorial
 - loading and extracting text with GroupDocs
-
+type: docs
 ---
-
-
 # Extract Text from Password-Protected Documents using GroupDocs.Parser Java: A Comprehensive Guide
 
 ## Introduction

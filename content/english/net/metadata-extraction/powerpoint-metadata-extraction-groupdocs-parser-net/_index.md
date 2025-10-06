@@ -8,9 +8,8 @@ keywords:
 - GroupDocs.Parser
 - Net
 - Document Processing
-
+type: docs
 ---
-
 ## PowerPoint Metadata Extraction with GroupDocs.Parser for .NET
 
 Are you looking for an efficient way to extract metadata from PowerPoint presentations? Whether you're doing document management, compliance checks, or just organizing your files better, parsing metadata is a key task. Luckily, with **GroupDocs.Parser for .NET**, you can perform this easily and programmatically. In this comprehensive tutorial, I’ll walk you through the entire process—from prerequisites to implementation—so you can confidently extract PowerPoint metadata using C#.

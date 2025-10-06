@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak programowo wyodrębnić spis treści (TOC) z dokumentów programu Word przy użyciu narzędzia GroupDocs.Parser dla platformy .NET.
 weight: 13
 url: /pl/net/word-document-processing/extract-table-of-contents-from-word-document/
+type: docs
 ---
-
 # Wyodrębnij spis treści z dokumentu Word
 
 ## Wstęp

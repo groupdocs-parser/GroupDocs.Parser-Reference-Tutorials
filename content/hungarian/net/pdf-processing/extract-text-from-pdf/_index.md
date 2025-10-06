@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki szöveget PDF-dokumentumokból a GroupDocs.Parser for .NET segítségével. Lépésről lépésre bemutató fejlesztőknek.
 weight: 14
 url: /hu/net/pdf-processing/extract-text-from-pdf/
+type: docs
 ---
-
 # Szöveg kibontása PDF-ből
 
 ## Bevezetés

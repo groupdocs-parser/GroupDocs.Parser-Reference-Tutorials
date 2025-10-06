@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 在這個綜合教學中了解如何使用 GroupDocs.Parser for .NET 從 PDF 套件中擷取附件。
 weight: 10
 url: /zh-hant/net/pdf-processing/extract-attachments-from-pdf-portfolios/
+type: docs
 ---
-
 # 從 PDF 包中提取附件
 
 ## 介紹

@@ -6,8 +6,8 @@ description: Sblocca tecniche efficienti di estrazione dei dati con GroupDocs.Pa
 weight: 11
 url: /it/
 is_root: true
+type: docs
 ---
-
 # Sblocca la maestria nell'analisi dei documenti con GroupDocs.Parser
 
 

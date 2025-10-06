@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belgelerden tablo verilerini nasıl çıkaracağınızı öğrenin. Yapılandırılmış içeriği önceden tanımlanmış şablonlarla verimli bir şekilde ayrıştırın.
 weight: 12
 url: /tr/net/data-extraction-from-templates/working-with-tables-in-extracted-data/
+type: docs
 ---
-
 # Çıkarılan Verilerde Tablolarla Çalışmak
 
 ## giriiş

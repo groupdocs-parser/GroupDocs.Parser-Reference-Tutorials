@@ -8,10 +8,8 @@ keywords:
 - regex text search EPUB
 - GroupDocs.Parser for .NET
 - EPUB file searching
-
+type: docs
 ---
-
-
 # How to Implement Regex Text Search in EPUB with GroupDocs.Parser for .NET
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: この包括的なチュートリアルでは、GroupDocs.Parser for .NET を使用してドキュメントからテキストを正確に抽出する方法を学びます。
 weight: 16
 url: /ja/net/text-extraction/extract-text-from-page-in-accurate-mode/
+type: docs
 ---
-
 # 正確なモードでページからテキストを抽出する
 
 ## 導入

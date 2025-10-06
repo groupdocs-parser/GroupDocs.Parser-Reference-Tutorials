@@ -8,10 +8,8 @@ keywords:
 - extract text from EPUB
 - GroupDocs.Parser Java
 - text extraction tutorial
-
+type: docs
 ---
-
-
 # How to Extract Text from EPUB Files Using GroupDocs.Parser for Java
 
 ## Introduction

@@ -8,10 +8,8 @@ keywords:
 - PDF highlight extraction
 - GroupDocs.Parser for .NET
 - highlight extraction in documents
-
+type: docs
 ---
-
-
 # Extract PDF Highlights with GroupDocs.Parser for .NET
 
 ## Introduction

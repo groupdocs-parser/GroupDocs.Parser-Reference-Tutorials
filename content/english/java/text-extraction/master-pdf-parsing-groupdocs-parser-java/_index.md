@@ -8,10 +8,8 @@ keywords:
 - PDF parsing with Java
 - GroupDocs.Parser templates
 - custom PDF templates
-
+type: docs
 ---
-
-
 # Mastering PDF Parsing with GroupDocs.Parser Java
 Master the art of extracting data from PDFs using GroupDocs.Parser's powerful Java library. This comprehensive guide will walk you through setting up custom templates to parse your documents efficiently.
 

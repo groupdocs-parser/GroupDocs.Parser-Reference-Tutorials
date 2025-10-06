@@ -8,10 +8,8 @@ keywords:
 - extract images from Excel using GroupDocs.Parser for .NET
 - GroupDocs Parser .NET library setup
 - image extraction settings in .NET
-
+type: docs
 ---
-
-
 # Extract Images from Excel Using GroupDocs.Parser for .NET: A Comprehensive Guide
 
 ## Introduction

@@ -8,10 +8,8 @@ keywords:
 - extract images from PDF Java
 - GroupDocs.Parser for Java setup
 - image extraction using GroupDocs Parser
-
+type: docs
 ---
-
-
 # How to Extract Images from a PDF Document Using GroupDocs.Parser in Java
 
 Extracting images from PDFs is essential for digital archiving, data processing, and content repurposing. This tutorial guides you through using the GroupDocs.Parser library in Java to extract images from PDF documents and save them as PNG files.

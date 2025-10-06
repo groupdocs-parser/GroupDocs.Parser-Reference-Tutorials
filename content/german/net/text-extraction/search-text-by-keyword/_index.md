@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET nach Schlüsselwörtern in Dokumenten suchen. Extrahieren Sie effizient und mühelos relevante Inhalte.
 weight: 21
 url: /de/net/text-extraction/search-text-by-keyword/
+type: docs
 ---
-
 # Textsuche nach Stichwort
 
 ## Einführung

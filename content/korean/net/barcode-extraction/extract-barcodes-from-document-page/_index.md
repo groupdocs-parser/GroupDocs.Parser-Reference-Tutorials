@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 문서 페이지에서 바코드를 추출하는 방법을 알아보세요. 이 튜토리얼은 바코드 추출에 대한 단계별 지침을 제공합니다.
 weight: 12
 url: /ko/net/barcode-extraction/extract-barcodes-from-document-page/
+type: docs
 ---
-
 # 문서 페이지에서 바코드 추출
 
 ## 소개

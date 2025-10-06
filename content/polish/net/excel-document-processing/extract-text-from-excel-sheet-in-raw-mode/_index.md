@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Z tego obszernego samouczka dowiesz się, jak wyodrębnić tekst z arkuszy programu Excel przy użyciu programu GroupDocs.Parser dla platformy .NET. Pobierz i rozpocznij analizowanie.
 weight: 15
 url: /pl/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
+type: docs
 ---
-
 # Wyodrębnij tekst z arkusza Excel w trybie surowym
 
 ## Wstęp

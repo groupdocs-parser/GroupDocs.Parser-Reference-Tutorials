@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Naučte se, jak extrahovat tabulky z dokumentů programově pomocí GroupDocs.Parser for .NET. Tento obsáhlý návod poskytuje návod krok za krokem.
 weight: 11
 url: /cs/net/table-extraction/extract-tables-from-document-page/
+type: docs
 ---
-
 # Extrahujte tabulky ze stránky dokumentu
 
 ## Úvod

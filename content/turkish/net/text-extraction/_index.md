@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET ile verimli metin çıkarma tekniklerinin kilidini açın. Metni zahmetsizce çıkarmayı, vurgulamayı ve aramayı öğrenin.
 weight: 20
 url: /tr/net/text-extraction/
+type: docs
 ---
-
 # Metin Çıkarma
 
 

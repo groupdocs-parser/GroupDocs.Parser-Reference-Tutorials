@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat text z dokumentů pomocí GroupDocs.Parser for .NET. Tento tutoriál popisuje načítání dokumentu z adresy URL a extrahování textu krok za krokem.
 weight: 13
 url: /cs/net/document-loading/load-document-from-url/
+type: docs
 ---
-
 # Načíst dokument z adresy URL
 
 ## Úvod

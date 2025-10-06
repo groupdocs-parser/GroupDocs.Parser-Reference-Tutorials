@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج الارتباطات التشعبية من المستندات باستخدام GroupDocs.Parser لـ .NET. قم بتحسين تطبيقات C# الخاصة بك باستخدام هذا الدليل المباشر.
 weight: 10
 url: /ar/net/hyperlink-extraction/extract-hyperlinks-from-document/
+type: docs
 ---
-
 # استخراج الارتباطات التشعبية من المستند
 
 ## مقدمة

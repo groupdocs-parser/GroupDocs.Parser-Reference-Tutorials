@@ -8,10 +8,8 @@ keywords:
 - generate PDF page previews
 - GroupDocs.Parser for .NET
 - PDF preview generation
-
+type: docs
 ---
-
-
 # How to Generate PDF Page Previews Using GroupDocs.Parser for .NET
 
 ## Introduction

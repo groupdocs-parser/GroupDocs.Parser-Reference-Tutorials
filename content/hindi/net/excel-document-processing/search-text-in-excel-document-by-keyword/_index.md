@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके Excel दस्तावेज़ों में टेक्स्ट खोजना सीखें। अपने .NET अनुप्रयोगों में उन्नत टेक्स्ट खोज क्षमताओं को एकीकृत करें।
 weight: 16
 url: /hi/net/excel-document-processing/search-text-in-excel-document-by-keyword/
+type: docs
 ---
-
 # एक्सेल दस्तावेज़ में कीवर्ड द्वारा टेक्स्ट खोजें
 
 ## परिचय

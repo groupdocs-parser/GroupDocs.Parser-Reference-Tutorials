@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak İçindekiler Tablosuna (TOC) göre metni çıkarın. Yapılandırılmış veri çıkarmaya yönelik etkili belge ayrıştırma tekniklerini öğrenin.
 weight: 15
 url: /tr/net/text-extraction/extract-text-by-toc-item/
+type: docs
 ---
-
 # İçindekiler Tablosu (TOC) Öğesine Göre Metni Çıkart
 
 ## giriiş

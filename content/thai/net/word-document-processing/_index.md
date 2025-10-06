@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: ค้นพบบทช่วยสอนมากมายเกี่ยวกับการประมวลผลเอกสาร Word โดยใช้ GroupDocs.Parser for .NET แยกไฮเปอร์ลิงก์ รูปภาพ ข้อมูลเมตา และอื่นๆ
 weight: 30
 url: /th/net/word-document-processing/
+type: docs
 ---
-
 # การประมวลผลเอกสารคำ
 
 คุณต้องการปรับปรุงความสามารถในการประมวลผลเอกสาร Word ใน .NET หรือไม่? ไม่ต้องมองอีกต่อไป! GroupDocs.Parser for .NET นำเสนอชุดบทช่วยสอนที่ครอบคลุมเพื่อช่วยให้คุณแยกองค์ประกอบต่างๆ จากเอกสาร Word ได้อย่างง่ายดาย

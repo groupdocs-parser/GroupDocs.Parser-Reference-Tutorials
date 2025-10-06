@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε πίνακες από έγγραφα χρησιμοποιώντας το Groupdocs.Parser για .NET. Ακολουθήστε έναν λεπτομερή οδηγό σχετικά με την ενσωμάτωση αυτής της λειτουργικότητας.
 weight: 10
 url: /el/net/table-extraction/extract-tables-from-document/
+type: docs
 ---
-
 # Εξαγωγή πινάκων από το έγγραφο
 
 ## Εισαγωγή

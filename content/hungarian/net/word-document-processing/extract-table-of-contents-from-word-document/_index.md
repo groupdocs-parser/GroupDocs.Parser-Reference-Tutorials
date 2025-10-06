@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan lehet programozottan kibontani a tartalomjegyzéket (TOC) Word-dokumentumokból a GroupDocs.Parser for .NET segítségével.
 weight: 13
 url: /hu/net/word-document-processing/extract-table-of-contents-from-word-document/
+type: docs
 ---
-
 # Tartalomjegyzék kibontása a Word dokumentumból
 
 ## Bevezetés

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Découvrez comment utiliser GroupDocs.Parser pour .NET pour extraire des données structurées de documents à l'aide de modèles. Simplifiez l'extraction de données avec des champs de codes-barres.
 weight: 10
 url: /fr/net/document-template-processing/working-with-barcodes-in-templates/
+type: docs
 ---
-
 # Travailler avec des codes-barres dans des modèles
 
 ## Introduction

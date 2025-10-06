@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Узнайте, как легко извлекать штрих-коды с помощью учебных пособий GroupDocs.Parser для .NET. Расширьте свои возможности обработки документов прямо сейчас!
 weight: 27
 url: /ru/net/barcode-extraction/
+type: docs
 ---
-
 # Извлечение штрих-кода
 
 

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak Excel belgelerinden görüntüleri nasıl çıkaracağınızı öğrenin. Kod örnekleri içeren adım adım kılavuz.
 weight: 10
 url: /tr/net/excel-document-processing/extract-images-from-excel-document/
+type: docs
 ---
-
 # Excel Belgesinden Görüntüleri Çıkarma
 
 ## giriiş

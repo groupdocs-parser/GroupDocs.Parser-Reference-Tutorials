@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกข้อมูลจากเอกสารอย่างมีประสิทธิภาพโดยใช้ GroupDocs.Parser for .NET บทช่วยสอนทีละขั้นตอนพร้อมตัวอย่างโค้ด
 weight: 12
 url: /th/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
+type: docs
 ---
-
 # การทำงานกับฟิลด์ที่ตำแหน่งที่เชื่อมโยงในเทมเพลต
 
 ## การแนะนำ

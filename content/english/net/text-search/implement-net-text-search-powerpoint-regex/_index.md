@@ -8,10 +8,8 @@ keywords:
 - regex text search PowerPoint
 - GroupDocs.Parser .NET
 - .NET regex PowerPoint
-
+type: docs
 ---
-
-
 # How to Implement .NET Text Search with Regular Expressions in PowerPoint Using GroupDocs.Parser
 
 ## Introduction

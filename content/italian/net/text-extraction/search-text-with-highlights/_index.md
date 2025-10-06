@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Scopri come cercare ed evidenziare testo nei documenti utilizzando GroupDocs.Parser per .NET. Estrai informazioni preziose in modo efficiente.
 weight: 24
 url: /it/net/text-extraction/search-text-with-highlights/
+type: docs
 ---
-
 # Cerca testo con evidenziazioni
 
 ## introduzione

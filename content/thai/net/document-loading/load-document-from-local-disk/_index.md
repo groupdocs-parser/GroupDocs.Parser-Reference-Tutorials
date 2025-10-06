@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกข้อความจากเอกสารรูปแบบต่างๆ โดยใช้ GroupDocs.Parser สำหรับ .NET การแยกข้อความที่ง่ายและมีประสิทธิภาพด้วย C#
 weight: 11
 url: /th/net/document-loading/load-document-from-local-disk/
+type: docs
 ---
-
 # โหลดเอกสารจากดิสก์ภายในเครื่อง
 
 ## การแนะนำ

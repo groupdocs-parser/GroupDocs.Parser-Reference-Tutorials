@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Tanulja meg, hogyan bonthat ki könnyedén vonalkódokat a GroupDocs.Parser for .NET oktatóanyagaival. Növelje dokumentumfeldolgozási képességeit most!
 weight: 27
 url: /hu/net/barcode-extraction/
+type: docs
 ---
-
 # Vonalkód kivonás
 
 

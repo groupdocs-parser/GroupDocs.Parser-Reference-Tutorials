@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Adott szöveg keresése PDF-dokumentumokban reguláris kifejezések használatával a GroupDocs.Parser segítségével. Könnyedén bontsa ki, elemezze és kezelje a PDF szöveget.
 weight: 19
 url: /hu/net/pdf-processing/search-text-in-pdf-by-regular-expression/
+type: docs
 ---
-
 # Szöveg keresése PDF-ben reguláris kifejezéssel
 
 ## Bevezetés

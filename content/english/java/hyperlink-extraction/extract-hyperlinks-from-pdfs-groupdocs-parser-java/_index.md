@@ -8,10 +8,8 @@ keywords:
 - extract hyperlinks from PDF
 - GroupDocs.Parser Java
 - Java hyperlink extraction
-
+type: docs
 ---
-
-
 # Comprehensive Guide: Extract Hyperlinks from PDFs Using GroupDocs.Parser in Java
 
 ## Introduction

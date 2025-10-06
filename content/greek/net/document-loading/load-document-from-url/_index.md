@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε κείμενο από έγγραφα χρησιμοποιώντας το GroupDocs.Parser για .NET. Αυτό το σεμινάριο καλύπτει τη φόρτωση ενός εγγράφου από μια διεύθυνση URL και την εξαγωγή κειμένου βήμα προς βήμα.
 weight: 13
 url: /el/net/document-loading/load-document-from-url/
+type: docs
 ---
-
 # Φόρτωση εγγράφου από τη διεύθυνση URL
 
 ## Εισαγωγή

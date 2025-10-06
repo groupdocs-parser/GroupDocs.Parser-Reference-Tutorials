@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج البيانات بكفاءة من المستندات باستخدام GroupDocs.Parser لـ .NET. برنامج تعليمي خطوة بخطوة مع أمثلة التعليمات البرمجية.
 weight: 12
 url: /ar/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
+type: docs
 ---
-
 # العمل مع الحقول في المواضع المرتبطة في القوالب
 
 ## مقدمة

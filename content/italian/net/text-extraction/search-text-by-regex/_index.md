@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Scopri come cercare testo utilizzando le espressioni regolari nei documenti utilizzando GroupDocs.Parser per .NET. Estrai contenuti specifici senza sforzo.
 weight: 23
 url: /it/net/text-extraction/search-text-by-regex/
+type: docs
 ---
-
 # Cerca testo per espressione regolare (Regex)
 
 ## introduzione

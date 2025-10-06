@@ -8,10 +8,8 @@ keywords:
 - parse tables Java
 - GroupDocs.Parser setup
 - table template layout
-
+type: docs
 ---
-
-
 # How to Define and Parse Tables in Java Using GroupDocs.Parser
 
 ## Introduction

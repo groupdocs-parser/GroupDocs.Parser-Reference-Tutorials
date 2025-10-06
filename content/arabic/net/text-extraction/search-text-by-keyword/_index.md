@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية البحث عن النص باستخدام الكلمة الرئيسية في المستندات باستخدام GroupDocs.Parser لـ .NET. استخراج المحتوى ذي الصلة بكفاءة وبسهولة.
 weight: 21
 url: /ar/net/text-extraction/search-text-by-keyword/
+type: docs
 ---
-
 # بحث النص عن طريق الكلمة الرئيسية
 
 ## مقدمة

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να αναζητάτε κείμενο σε έγγραφα του Excel χρησιμοποιώντας κανονικές εκφράσεις με το GroupDocs.Parser για .NET. Εκτελέστε σύνθετες αναζητήσεις κειμένου αποτελεσματικά.
 weight: 17
 url: /el/net/excel-document-processing/search-text-in-excel-document-by-regular-expression/
+type: docs
 ---
-
 # Αναζήτηση κειμένου σε έγγραφο Excel με κανονική έκφραση
 
 ## Εισαγωγή

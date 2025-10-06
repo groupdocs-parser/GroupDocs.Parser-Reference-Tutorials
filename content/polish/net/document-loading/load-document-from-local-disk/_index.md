@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić tekst z różnych formatów dokumentów za pomocą GroupDocs.Parser dla .NET. Łatwa i wydajna ekstrakcja tekstu za pomocą języka C#.
 weight: 11
 url: /pl/net/document-loading/load-document-from-local-disk/
+type: docs
 ---
-
 # Załaduj dokument z dysku lokalnego
 
 ## Wstęp

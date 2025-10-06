@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Maîtrisez le traitement des documents Excel dans .NET avec GroupDocs.Parser. Apprenez à extraire efficacement des images, des métadonnées et du texte grâce à des guides étape par étape.
 weight: 32
 url: /fr/net/excel-document-processing/
+type: docs
 ---
-
 # Traitement des documents Excel
 
 ## Introduction

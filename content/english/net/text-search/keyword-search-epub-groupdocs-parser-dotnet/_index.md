@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser .NET
 - EPUB keyword search
 - digital book management
-
+type: docs
 ---
-
-
 # Implement Keyword Search in EPUB Files Using GroupDocs.Parser .NET
 
 ## Introduction

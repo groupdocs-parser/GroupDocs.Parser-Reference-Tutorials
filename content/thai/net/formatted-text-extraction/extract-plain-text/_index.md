@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกข้อความธรรมดาจากเอกสารโดยใช้ GroupDocs.Parser สำหรับ .NET ขั้นตอนง่ายๆ สำหรับการรวมการแยกข้อความในแอปพลิเคชันของคุณ
 weight: 14
 url: /th/net/formatted-text-extraction/extract-plain-text/
+type: docs
 ---
-
 # แยกข้อความธรรมดา
 
 ## การแนะนำ

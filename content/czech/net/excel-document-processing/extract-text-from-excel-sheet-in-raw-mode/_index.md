@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: V tomto komplexním kurzu se dozvíte, jak extrahovat text z listů aplikace Excel pomocí GroupDocs.Parser for .NET. Stáhněte a spusťte analýzu.
 weight: 15
 url: /cs/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
+type: docs
 ---
-
 # Extrahujte text z listu aplikace Excel v režimu Raw
 
 ## Úvod

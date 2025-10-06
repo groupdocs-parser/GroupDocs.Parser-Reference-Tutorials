@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके PDF दस्तावेज़ों से टेक्स्ट निकालना सीखें। डेवलपर्स के लिए चरण-दर-चरण ट्यूटोरियल।
 weight: 14
 url: /hi/net/pdf-processing/extract-text-from-pdf/
+type: docs
 ---
-
 # पीडीएफ से पाठ निकालें
 
 ## परिचय

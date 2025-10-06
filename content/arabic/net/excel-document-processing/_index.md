@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: معالجة مستندات Excel الرئيسية في .NET باستخدام GroupDocs.Parser. تعلم كيفية استخراج الصور والبيانات التعريفية والنص بكفاءة باستخدام الأدلة خطوة بخطوة.
 weight: 32
 url: /ar/net/excel-document-processing/
+type: docs
 ---
-
 # معالجة مستندات إكسل
 
 ## مقدمة

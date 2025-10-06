@@ -8,10 +8,8 @@ keywords:
 - extract text from emails
 - automate email parsing with GroupDocs.Parser for .NET
 - GroupDocs.Parser C#
-
+type: docs
 ---
-
-
 # Extract Text from Email Files Using GroupDocs.Parser for .NET
 ## How to Automate Email Parsing with GroupDocs.Parser for .NET
 ### Introduction

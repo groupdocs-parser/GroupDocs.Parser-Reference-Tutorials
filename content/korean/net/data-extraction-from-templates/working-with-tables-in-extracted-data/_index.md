@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 문서에서 테이블 데이터를 추출하는 방법을 알아보세요. 사전 정의된 템플릿을 사용하여 구조화된 콘텐츠를 효율적으로 구문 분석합니다.
 weight: 12
 url: /ko/net/data-extraction-from-templates/working-with-tables-in-extracted-data/
+type: docs
 ---
-
 # 추출된 데이터의 테이블 작업
 
 ## 소개

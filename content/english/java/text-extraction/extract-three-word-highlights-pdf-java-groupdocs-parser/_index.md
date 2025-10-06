@@ -8,10 +8,8 @@ keywords:
 - extract three-word highlights PDF
 - GroupDocs.Parser Java
 - text extraction from PDF
-
+type: docs
 ---
-
-
 # Extracting Three-Word Highlights from PDFs with GroupDocs.Parser in Java
 
 ## Introduction

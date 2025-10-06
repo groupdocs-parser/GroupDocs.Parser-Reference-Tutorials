@@ -8,10 +8,8 @@ keywords:
 - Markdown text extraction
 - formatted text extraction with GroupDocs.Parser for .NET
 - document parsing in .NET
-
+type: docs
 ---
-
-
 # Extracting Markdown Text from Documents Using GroupDocs.Parser for .NET
 
 ## Introduction

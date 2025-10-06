@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके पृष्ठों द्वारा पाठ खोजना सीखें। अपने .NET अनुप्रयोगों में दस्तावेज़ों से विशिष्ट सामग्री को कुशलतापूर्वक निकालें।
 weight: 22
 url: /hi/net/text-extraction/search-text-by-pages/
+type: docs
 ---
-
 # पेज के अनुसार टेक्स्ट खोजें
 
 ## परिचय

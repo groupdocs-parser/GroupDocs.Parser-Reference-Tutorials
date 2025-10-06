@@ -8,10 +8,8 @@ keywords:
 - Regex Text Search OneNote
 - GroupDocs.Parser for .NET
 - Advanced Text Searches with Regex
-
+type: docs
 ---
-
-
 # Efficient Regex Text Search in OneNote Using GroupDocs.Parser for .NET
 
 ## Introduction

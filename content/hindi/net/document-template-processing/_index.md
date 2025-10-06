@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser के साथ दस्तावेज़ टेम्प्लेट से संरचित डेटा को आसानी से निकालें। बारकोड, फ़ील्ड, रेगेक्स और टेबल लेआउट के साथ काम करना सीखें।
 weight: 22
 url: /hi/net/document-template-processing/
+type: docs
 ---
-
 # दस्तावेज़ टेम्पलेट प्रसंस्करण
 
 

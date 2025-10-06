@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan kezelheti a külső erőforrásokat a .NET-ben a GroupDocs.Parser segítségével a hatékony dokumentumelemzés és -kinyerés érdekében.
 weight: 10
 url: /hu/net/document-loading/handling-loading-of-external-resources/
+type: docs
 ---
-
 # Külső erőforrások betöltésének kezelése
 
 ## Bevezetés

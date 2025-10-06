@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Узнайте, как извлекать данные из шаблонов документов, используя позиции регулярных выражений, с помощью GroupDocs.Parser для .NET. Эффективно автоматизируйте задачи по извлечению данных.
 weight: 13
 url: /ru/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
+type: docs
 ---
-
 # Работа с полями в позициях регулярных выражений в шаблонах
 
 ## Введение

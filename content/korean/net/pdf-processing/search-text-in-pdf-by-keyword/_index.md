@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 PDF 문서에서 특정 텍스트를 검색하는 방법을 알아보세요. 강력한 텍스트 검색 기능을 .NET에 효율적으로 통합하세요.
 weight: 18
 url: /ko/net/pdf-processing/search-text-in-pdf-by-keyword/
+type: docs
 ---
-
 # 키워드로 PDF의 텍스트 검색
 
 ## 소개

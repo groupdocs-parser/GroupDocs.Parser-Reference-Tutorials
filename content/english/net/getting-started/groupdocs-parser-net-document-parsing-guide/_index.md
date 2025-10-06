@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser for .NET
 - document parsing
 - template fields
-
+type: docs
 ---
-
-
 # Master Document Parsing with GroupDocs.Parser for .NET: A Comprehensive Guide
 
 ## Introduction

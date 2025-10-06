@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ekstrak teks berformat secara efisien dari dokumen di .NET dengan GroupDocs.Parser. Pelajari cara mengekstrak HTML, Markdown, dan teks biasa dengan mulus.
 weight: 21
 url: /id/net/formatted-text-extraction/
+type: docs
 ---
-
 # Ekstraksi Teks Terformat
 
 

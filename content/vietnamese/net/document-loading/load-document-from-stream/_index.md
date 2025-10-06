@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất văn bản từ các định dạng tài liệu khác nhau trong .NET bằng GroupDocs.Parser. Hướng dẫn từng bước với các ví dụ về mã.
 weight: 12
 url: /vi/net/document-loading/load-document-from-stream/
+type: docs
 ---
-
 # Tải tài liệu từ luồng
 
 ## Giới thiệu

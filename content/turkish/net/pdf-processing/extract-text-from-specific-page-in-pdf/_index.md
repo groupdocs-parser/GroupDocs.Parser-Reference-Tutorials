@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak PDF'lerden metin çıkarın. Bu güçlü kitaplıkla belirli sayfa içeriğini zahmetsizce alın.
 weight: 15
 url: /tr/net/pdf-processing/extract-text-from-specific-page-in-pdf/
+type: docs
 ---
-
 # PDF'deki Belirli Sayfadan Metin Çıkarma
 
 ## giriiş

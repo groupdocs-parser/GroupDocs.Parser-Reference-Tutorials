@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Text aus bestimmten Seiten in Word-Dokumenten extrahieren. Integrieren Sie Textextraktionsfunktionen in Ihr .NET.
 weight: 17
 url: /de/net/word-document-processing/extract-text-from-specific-page-in-word-document/
+type: docs
 ---
-
 # Extrahieren Sie Text aus einer bestimmten Seite im Word-Dokument
 
 ## Einführung

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Узнайте, как извлечь простой текст из документов с помощью GroupDocs.Parser для .NET. Простые шаги для интеграции извлечения текста в ваши приложения.
 weight: 14
 url: /ru/net/formatted-text-extraction/extract-plain-text/
+type: docs
 ---
-
 # Извлечь простой текст
 
 ## Введение

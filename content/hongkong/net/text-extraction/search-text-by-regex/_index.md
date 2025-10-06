@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 在文件中使用正規表示式搜尋文字。輕鬆提取特定內容。
 weight: 23
 url: /zh-hant/net/text-extraction/search-text-by-regex/
+type: docs
 ---
-
 # 透過正規表示式 (Regex) 搜尋文本
 
 ## 介紹

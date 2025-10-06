@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Aprenda a extraer hipervínculos de documentos de Word utilizando GroupDocs.Parser para .NET. Guía paso a paso con ejemplos de código.
 weight: 10
 url: /es/net/word-document-processing/extract-hyperlinks-from-word-document/
+type: docs
 ---
-
 # Extraer hipervínculos de un documento de Word
 
 ## Introducción

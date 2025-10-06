@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất văn bản hiệu quả từ các trang tài liệu bằng Groupdocs.Parser cho .NET trong hướng dẫn toàn diện này.
 weight: 17
 url: /vi/net/text-extraction/extract-text-from-page-in-raw-mode/
+type: docs
 ---
-
 # Trích xuất văn bản từ trang ở chế độ thô
 
 ## Giới thiệu

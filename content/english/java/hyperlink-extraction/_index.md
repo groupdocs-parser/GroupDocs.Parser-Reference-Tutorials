@@ -3,8 +3,8 @@ title: "Hyperlink Extraction Tutorials for GroupDocs.Parser Java"
 description: "Complete tutorials for extracting hyperlinks from documents, pages, and specific areas using GroupDocs.Parser for Java."
 weight: 8
 url: "/java/hyperlink-extraction/"
+type: docs
 ---
-
 # Hyperlink Extraction Tutorials for GroupDocs.Parser Java
 
 Our hyperlink extraction tutorials show you how to capture and process links from documents using GroupDocs.Parser in Java. These practical guides cover extracting all hyperlinks from a document, working with links from specific pages or regions, and processing different types of hyperlinks (URLs, document references, mailto links). Each tutorial includes detailed Java code examples for common hyperlink extraction scenarios, helping you build applications that can effectively capture and utilize linked content from your documents.

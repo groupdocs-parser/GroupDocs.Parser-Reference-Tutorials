@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat text z konkrétních stránek v dokumentech Word pomocí GroupDocs.Parser for .NET. Integrujte do svého .NET možnosti extrakce textu.
 weight: 17
 url: /cs/net/word-document-processing/extract-text-from-specific-page-in-word-document/
+type: docs
 ---
-
 # Extrahujte text z konkrétní stránky v dokumentu aplikace Word
 
 ## Úvod

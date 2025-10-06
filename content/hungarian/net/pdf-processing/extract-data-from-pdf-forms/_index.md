@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan nyerhet ki adatokat PDF-űrlapokból a GroupDocs.Parser for .NET segítségével. Lépésről lépésre, kódpéldákkal és GYIK-vel.
 weight: 11
 url: /hu/net/pdf-processing/extract-data-from-pdf-forms/
+type: docs
 ---
-
 # Adatok kinyerése PDF-űrlapokból
 
 ## Bevezetés

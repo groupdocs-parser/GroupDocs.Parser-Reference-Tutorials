@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 문서에서 서식 있는 텍스트를 추출하는 방법을 알아보세요. 귀하의 애플리케이션을 위한 간단하고 효율적인 텍스트 추출.
 weight: 10
 url: /ko/net/formatted-text-extraction/extract-formatted-text-from-document/
+type: docs
 ---
-
 # 문서에서 서식 있는 텍스트 추출
 
 ## 소개

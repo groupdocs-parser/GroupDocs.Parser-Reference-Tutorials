@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Aprenda a utilizar GroupDocs.Parser para .NET para extraer datos estructurados de documentos mediante plantillas. Simplifique la extracción de datos con campos de códigos de barras.
 weight: 10
 url: /es/net/document-template-processing/working-with-barcodes-in-templates/
+type: docs
 ---
-
 # Trabajar con códigos de barras en plantillas
 
 ## Introducción

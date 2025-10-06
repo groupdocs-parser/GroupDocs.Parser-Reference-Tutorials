@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج النص من مستندات Word باستخدام GroupDocs.Parser لـ .NET. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية.
 weight: 15
 url: /ar/net/word-document-processing/extract-text-from-word-document/
+type: docs
 ---
-
 # استخراج النص من مستند Word
 
 ## مقدمة

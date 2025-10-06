@@ -8,10 +8,8 @@ keywords:
 - text extraction .net
 - raw mode text extraction
 - groupdocs parser tutorial
-
+type: docs
 ---
-
-
 # Efficient Text Extraction from Documents Using GroupDocs.Parser in .NET
 
 ## Introduction

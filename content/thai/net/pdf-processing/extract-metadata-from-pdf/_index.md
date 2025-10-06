@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกข้อมูลเมตาจากเอกสาร PDF โดยใช้ GroupDocs.Parser สำหรับ .NET คู่มือที่ครอบคลุมนี้ครอบคลุมคำแนะนำทีละขั้นตอนและข้อกำหนดเบื้องต้น
 weight: 13
 url: /th/net/pdf-processing/extract-metadata-from-pdf/
+type: docs
 ---
-
 # แยกข้อมูลเมตาจาก PDF
 
 ## การแนะนำ

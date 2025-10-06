@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Upptäck en rad handledningar om Word-dokumentbehandling med GroupDocs.Parser för .NET. Extrahera hyperlänkar, bilder, metadata och mer.
 weight: 30
 url: /sv/net/word-document-processing/
+type: docs
 ---
-
 # Orddokumentbehandling
 
 Vill du förbättra dina Word-dokumentbehandlingsmöjligheter i .NET? Kolla inte vidare! GroupDocs.Parser för .NET erbjuder en omfattande uppsättning handledningar som hjälper dig att extrahera olika element från Word-dokument utan ansträngning.

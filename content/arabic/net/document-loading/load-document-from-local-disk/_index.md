@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج النص من تنسيقات المستندات المختلفة باستخدام GroupDocs.Parser لـ .NET. استخراج النص بسهولة وفعالية باستخدام لغة C#.
 weight: 11
 url: /ar/net/document-loading/load-document-from-local-disk/
+type: docs
 ---
-
 # تحميل المستند من القرص المحلي
 
 ## مقدمة

@@ -8,10 +8,8 @@ keywords:
 - process password-protected documents
 - GroupDocs.Parser .NET
 - extract text from secured files
-
+type: docs
 ---
-
-
 # How to Process Password-Protected Documents Using GroupDocs.Parser for .NET: A Comprehensive Guide
 
 ## Introduction

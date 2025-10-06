@@ -8,10 +8,8 @@ keywords:
 - regex searches in PowerPoint
 - GroupDocs.Parser for Java
 - text search with regex
-
+type: docs
 ---
-
-
 # Mastering Regular Expression Searches in PowerPoint Using GroupDocs.Parser for Java
 
 In the digital age, efficiently searching and extracting information from documents is a crucial skill. Whether you're preparing business reports or managing academic research, finding specific data quickly can save precious time and effort. This tutorial will guide you through implementing text searches using regular expressions (regex) within Microsoft Office PowerPoint presentations using GroupDocs.Parser for Java—a powerful tool that enhances your document processing capabilities.

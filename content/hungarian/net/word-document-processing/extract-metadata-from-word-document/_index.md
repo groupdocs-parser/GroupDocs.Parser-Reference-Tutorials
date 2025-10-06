@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan nyerhet ki metaadatokat Word-dokumentumokból a GroupDocs.Parser for .NET segítségével. Egyszerű lépések a dokumentuminformációk elemzéséhez és lekéréséhez.
 weight: 12
 url: /hu/net/word-document-processing/extract-metadata-from-word-document/
+type: docs
 ---
-
 # Metaadatok kibontása a Word dokumentumból
 
 ## Bevezetés

@@ -8,10 +8,8 @@ keywords:
 - extract EPUB TOC
 - GroupDocs.Parser Java
 - Java document management
-
+type: docs
 ---
-
-
 # Extracting EPUB Table of Contents with GroupDocs.Parser for Java: A Developer’s Guide
 
 ## Introduction

@@ -8,10 +8,8 @@ keywords:
 - OCR integration .NET
 - GroupDocs.Parser for .NET
 - Aspose OCR
-
+type: docs
 ---
-
-
 # Extract Text from Images Using GroupDocs.Parser and Aspose OCR in .NET
 
 ## Introduction

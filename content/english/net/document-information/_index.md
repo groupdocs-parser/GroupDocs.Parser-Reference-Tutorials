@@ -3,8 +3,8 @@ title: "Document Information Extraction Tutorials for GroupDocs.Parser .NET"
 description: "Step-by-step tutorials for retrieving document information, supported features, and file format details using GroupDocs.Parser for .NET."
 weight: 15
 url: "/net/document-information/"
+type: docs
 ---
-
 # Document Information Extraction Tutorials for GroupDocs.Parser .NET
 
 Learn to analyze document capabilities with our detailed GroupDocs.Parser tutorials for document information in .NET. These comprehensive guides demonstrate how to determine document type, check supported features, retrieve file format information, and detect encodings. Each tutorial includes practical C# code examples that show how to implement document inspection functionality, helping you build applications that can intelligently process documents based on their content type and supported extraction features.

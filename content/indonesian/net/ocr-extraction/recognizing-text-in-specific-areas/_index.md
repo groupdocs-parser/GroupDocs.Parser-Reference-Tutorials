@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Pelajari cara menggunakan GroupDocs.Parser untuk .NET untuk mengekstrak teks dari area tertentu dalam dokumen dengan kemampuan OCR.
 weight: 13
 url: /id/net/ocr-extraction/recognizing-text-in-specific-areas/
+type: docs
 ---
-
 # Mengenali Teks di Area Tertentu
 
 ## Perkenalan

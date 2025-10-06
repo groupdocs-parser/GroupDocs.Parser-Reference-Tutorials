@@ -8,10 +8,8 @@ keywords:
 - Java table extraction
 - GroupDocs.Parser setup
 - table layout definition
-
+type: docs
 ---
-
-
 # Mastering Java Table Extraction with GroupDocs.Parser: Your Comprehensive Guide
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser के साथ नियमित अभिव्यक्तियों का उपयोग करके Excel दस्तावेज़ों में टेक्स्ट खोजना सीखें। कुशलतापूर्वक उन्नत टेक्स्ट खोजें करें।
 weight: 17
 url: /hi/net/excel-document-processing/search-text-in-excel-document-by-regular-expression/
+type: docs
 ---
-
 # रेगुलर एक्सप्रेशन द्वारा एक्सेल दस्तावेज़ में टेक्स्ट खोजें
 
 ## परिचय

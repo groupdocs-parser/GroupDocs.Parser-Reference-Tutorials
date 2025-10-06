@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất siêu liên kết từ tài liệu Word bằng GroupDocs.Parser cho .NET. Hướng dẫn từng bước với các ví dụ về mã.
 weight: 10
 url: /vi/net/word-document-processing/extract-hyperlinks-from-word-document/
+type: docs
 ---
-
 # Trích xuất siêu liên kết từ tài liệu Word
 
 ## Giới thiệu

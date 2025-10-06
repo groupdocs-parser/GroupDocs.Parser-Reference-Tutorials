@@ -3,8 +3,8 @@ title: "Table of Contents Extraction Tutorials for GroupDocs.Parser .NET"
 description: "Step-by-step tutorials for extracting and navigating document table of contents using GroupDocs.Parser for .NET."
 weight: 9
 url: "/net/toc-extraction/"
+type: docs
 ---
-
 # Table of Contents Extraction Tutorials for GroupDocs.Parser .NET
 
 Learn how to work with document structure using our GroupDocs.Parser table of contents tutorials for .NET. These detailed guides demonstrate how to extract document TOC, navigate to specific sections using TOC items, extract text by TOC item, and work with multi-level document structures. Each tutorial includes practical C# code examples for common TOC scenarios, helping you build applications that can effectively utilize document organization and provide enhanced navigation within large documents.

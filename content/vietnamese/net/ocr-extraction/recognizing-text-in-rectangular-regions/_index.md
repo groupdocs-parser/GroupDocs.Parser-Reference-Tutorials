@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách nhận dạng văn bản ở các vùng tài liệu cụ thể bằng GroupDocs.Parser cho .NET có khả năng OCR.
 weight: 14
 url: /vi/net/ocr-extraction/recognizing-text-in-rectangular-regions/
+type: docs
 ---
-
 # Nhận dạng văn bản trong vùng hình chữ nhật
 
 ## Giới thiệu

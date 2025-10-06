@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: แยกข้อความจาก PDF โดยใช้ GroupDocs.Parser ใน C# เรียนรู้การแยกข้อความ PDF ที่มีประสิทธิภาพด้วยไลบรารี .NET อันทรงพลังนี้
 weight: 16
 url: /th/net/pdf-processing/extract-text-from-page-in-pdf-in-raw-mode/
+type: docs
 ---
-
 # แยกข้อความจากหน้าในรูปแบบ PDF ในโหมด Raw
 
 ## การแนะนำ

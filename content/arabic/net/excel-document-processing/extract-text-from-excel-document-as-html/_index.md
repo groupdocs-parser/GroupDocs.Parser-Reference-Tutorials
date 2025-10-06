@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج النص من مستندات Excel وتحويله إلى HTML باستخدام GroupDocs.Parser لـ .NET.
 weight: 13
 url: /ar/net/excel-document-processing/extract-text-from-excel-document-as-html/
+type: docs
 ---
-
 # استخراج النص من مستند Excel بتنسيق HTML
 
 ## مقدمة

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser ile .NET'teki belgelerden biçimlendirilmiş metni verimli bir şekilde çıkarın. HTML, Markdown ve düz metni sorunsuz bir şekilde çıkarmayı öğrenin.
 weight: 21
 url: /tr/net/formatted-text-extraction/
+type: docs
 ---
-
 # Biçimlendirilmiş Metin Çıkarma
 
 

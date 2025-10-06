@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Pelajari cara menggunakan GroupDocs.Parser untuk .NET untuk mengekstrak data terstruktur dari dokumen menggunakan templat. Sederhanakan ekstraksi data dengan bidang barcode.
 weight: 10
 url: /id/net/document-template-processing/working-with-barcodes-in-templates/
+type: docs
 ---
-
 # Bekerja dengan Barcode di Templat
 
 ## Perkenalan

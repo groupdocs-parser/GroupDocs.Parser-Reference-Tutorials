@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج النص من تنسيقات الملفات المختلفة في .NET باستخدام GroupDocs.Parser. برنامج تعليمي خطوة بخطوة لمعالجة المستندات بكفاءة.
 weight: 14
 url: /ar/net/document-loading/loading-specific-file-formats/
+type: docs
 ---
-
 # تحميل تنسيقات ملفات محددة
 
 ## مقدمة

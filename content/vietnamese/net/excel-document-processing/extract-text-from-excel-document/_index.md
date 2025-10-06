@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất văn bản từ tài liệu Excel bằng GroupDocs.Parser cho .NET theo các bước đơn giản.
 weight: 12
 url: /vi/net/excel-document-processing/extract-text-from-excel-document/
+type: docs
 ---
-
 # Trích xuất văn bản từ tài liệu Excel
 
 ## Giới thiệu

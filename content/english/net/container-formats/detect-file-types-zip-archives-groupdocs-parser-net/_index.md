@@ -8,10 +8,8 @@ keywords:
 - Detect File Types
 - GroupDocs.Parser .NET
 - ZIP Archives
-
+type: docs
 ---
-
-
 # How to Detect File Types in ZIP Archives Using GroupDocs.Parser for .NET
 
 ## Introduction

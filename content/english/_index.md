@@ -18,8 +18,8 @@ keywords:
   - OCR
   - Java document parser
   - .NET document parser
+type: docs
 ---
-
 # Unlock Document Parsing Mastery With GroupDocs.Parser
 
 Discover a unified knowledge base for GroupDocs.Parser across various platforms, including .NET and Java. Dive into a diverse range of tutorials covering text and formatted text extraction, document template processing, table and image extraction, as well as hyperlink extraction. Whether you're a .NET or Java developer, this resource hub equips you with the tools and techniques needed to handle document processing tasks efficiently and effectively.

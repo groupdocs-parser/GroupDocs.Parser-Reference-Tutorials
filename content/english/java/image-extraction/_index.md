@@ -3,8 +3,8 @@ title: "Image Extraction Tutorials for GroupDocs.Parser Java"
 description: "Complete tutorials for extracting images from various document formats and saving them as files using GroupDocs.Parser for Java."
 weight: 5
 url: "/java/image-extraction/"
+type: docs
 ---
-
 # Image Extraction Tutorials for GroupDocs.Parser Java
 
 Learn how to extract embedded images from documents with our comprehensive GroupDocs.Parser tutorials for Java developers. These detailed guides demonstrate how to extract all images from a document, work with images on specific pages or regions, save images to files, and handle different image formats. Each tutorial includes working Java code examples that show how to implement robust image extraction while maintaining image quality and preserving important visual content from your documents.

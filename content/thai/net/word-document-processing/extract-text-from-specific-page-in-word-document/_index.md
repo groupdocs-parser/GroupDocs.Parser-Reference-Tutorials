@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกข้อความจากหน้าเฉพาะในเอกสาร Word โดยใช้ GroupDocs.Parser for .NET รวมความสามารถในการแยกข้อความเข้ากับ .NET ของคุณ
 weight: 17
 url: /th/net/word-document-processing/extract-text-from-specific-page-in-word-document/
+type: docs
 ---
-
 # แยกข้อความจากหน้าเฉพาะในเอกสาร Word
 
 ## การแนะนำ

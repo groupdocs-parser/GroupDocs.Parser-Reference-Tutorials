@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके PDF और DOCX जैसे विभिन्न दस्तावेज़ प्रकारों से आसानी से छवियाँ निकालें। अपने दस्तावेज़ पार्सिंग कार्यों को सरल बनाएँ।
 weight: 13
 url: /hi/net/image-extraction/extract-images-to-files/
+type: docs
 ---
-
 # छवियों को फ़ाइलों में निकालें
 
 ## परिचय

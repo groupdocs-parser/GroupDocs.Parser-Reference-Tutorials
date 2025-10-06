@@ -8,10 +8,8 @@ keywords:
 - table extraction from PDF
 - GroupDocs.Parser .NET tutorial
 - automate data processing with GroupDocs
-
+type: docs
 ---
-
-
 # Master Table Extraction from PDFs with GroupDocs.Parser .NET
 
 ## Introduction

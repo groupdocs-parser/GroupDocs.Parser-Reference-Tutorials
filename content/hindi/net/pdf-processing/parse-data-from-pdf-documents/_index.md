@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके PDF दस्तावेज़ों से डेटा निकालना सीखें। PDF फ़ाइलों को कुशलतापूर्वक पार्स और प्रोसेस करने के लिए हमारे चरण-दर-चरण मार्गदर्शिका का पालन करें।
 weight: 17
 url: /hi/net/pdf-processing/parse-data-from-pdf-documents/
+type: docs
 ---
-
 # पीडीएफ दस्तावेजों से डेटा पार्स करें
 
 ## परिचय

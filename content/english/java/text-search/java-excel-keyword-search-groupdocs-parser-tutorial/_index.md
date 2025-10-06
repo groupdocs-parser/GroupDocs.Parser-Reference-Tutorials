@@ -8,10 +8,8 @@ keywords:
 - Java Excel Keyword Search
 - GroupDocs.Parser for Java
 - Excel Text Extraction
-
+type: docs
 ---
-
-
 # Efficient Java Keyword Search in Excel Files Using GroupDocs.Parser Library
 
 ## Introduction

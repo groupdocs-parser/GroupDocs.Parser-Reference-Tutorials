@@ -8,10 +8,8 @@ keywords:
 - extract PowerPoint metadata
 - GroupDocs.Parser Java
 - metadata extraction
-
+type: docs
 ---
-
-
 # Extract PowerPoint Metadata with GroupDocs.Parser in Java: A Comprehensive Tutorial
 
 ## Introduction

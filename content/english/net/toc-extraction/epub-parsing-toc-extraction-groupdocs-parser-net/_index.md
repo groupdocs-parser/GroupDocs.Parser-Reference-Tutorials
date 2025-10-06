@@ -8,10 +8,8 @@ keywords:
 - EPUB parsing .NET
 - GroupDocs Parser for .NET
 - TOC extraction in .NET
-
+type: docs
 ---
-
-
 # Master EPUB Parsing and Table of Contents (TOC) Extraction in .NET with GroupDocs.Parser
 
 ## Introduction

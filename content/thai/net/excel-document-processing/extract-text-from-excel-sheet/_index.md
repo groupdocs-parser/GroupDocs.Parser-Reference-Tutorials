@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกข้อความจากชีต Excel โดยใช้ GroupDocs.Parser สำหรับ .NET ขั้นตอนง่ายๆ เพื่อการแยกข้อความอย่างมีประสิทธิภาพ
 weight: 14
 url: /th/net/excel-document-processing/extract-text-from-excel-sheet/
+type: docs
 ---
-
 # แยกข้อความจากแผ่นงาน Excel
 
 ## การแนะนำ

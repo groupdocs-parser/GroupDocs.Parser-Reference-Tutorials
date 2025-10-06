@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج البيانات المنظمة من المستندات باستخدام GroupDocs.Parser لـ .NET. قم بتحسين تطبيقات .NET الخاصة بك من خلال إمكانيات استخراج بيانات المستندات.
 weight: 11
 url: /ar/net/data-extraction-from-templates/iterate-through-fields/
+type: docs
 ---
-
 # التكرار عبر الحقول
 
 ## مقدمة

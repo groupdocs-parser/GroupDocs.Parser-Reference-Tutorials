@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser와 함께 .NET의 템플릿을 사용하여 문서 페이지를 구문 분석하는 방법을 알아보세요. 귀하의 애플리케이션에 맞는 특정 콘텐츠를 효율적으로 추출하세요.
 weight: 16
 url: /ko/net/document-template-processing/parse-pages-using-templates/
+type: docs
 ---
-
 # 템플릿을 사용하여 페이지 구문 분석
 
 ## 소개

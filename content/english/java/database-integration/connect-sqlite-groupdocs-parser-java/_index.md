@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser Java
 - SQLite JDBC Java
 - Java database connectivity
-
+type: docs
 ---
-
-
 # Connect SQLite Database with GroupDocs.Parser in Java
 
 ## Introduction

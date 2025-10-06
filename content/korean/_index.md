@@ -6,8 +6,8 @@ description: .NET 및 Java용 GroupDocs.Parser를 사용하여 효율적인 데�
 weight: 11
 url: /ko/
 is_root: true
+type: docs
 ---
-
 # GroupDocs.Parser를 사용하여 문서 구문 분석 마스터리 잠금 해제
 
 

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak Daftar Isi (TOC) dari dokumen Word secara terprogram menggunakan GroupDocs.Parser untuk .NET.
 weight: 13
 url: /id/net/word-document-processing/extract-table-of-contents-from-word-document/
+type: docs
 ---
-
 # Ekstrak Daftar Isi dari Dokumen Word
 
 ## Perkenalan

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 在 Excel 文件中搜尋文字。將進階文字搜尋功能整合到您的 .NET 應用程式中。
 weight: 16
 url: /zh-hant/net/excel-document-processing/search-text-in-excel-document-by-keyword/
+type: docs
 ---
-
 # 按關鍵字搜尋 Excel 文件中的文本
 
 ## 介紹

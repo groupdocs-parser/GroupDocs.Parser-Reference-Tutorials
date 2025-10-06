@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε δεδομένα από πίνακες σε έγγραφα χρησιμοποιώντας το GroupDocs.Parser για .NET. Οδηγός βήμα προς βήμα για τη χρήση παραμέτρων πίνακα.
 weight: 15
 url: /el/net/document-template-processing/working-with-table-parameters-in-templates/
+type: docs
 ---
-
 # Εργασία με παραμέτρους πίνακα σε πρότυπα
 
 ## Εισαγωγή

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Könnyedén kivonhatja az adatokat a GroupDocs.Parser for .NET segítségével. Tanulja meg, hogyan lehet lekérni adott mezőket, iterálni az adatok között, és dolgozni a kivont tartalomban lévő táblázatokkal.
 weight: 26
 url: /hu/net/data-extraction-from-templates/
+type: docs
 ---
-
 # Adatok kinyerése sablonokból
 
 

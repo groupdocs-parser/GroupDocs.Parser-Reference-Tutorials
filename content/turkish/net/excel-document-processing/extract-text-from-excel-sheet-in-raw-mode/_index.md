@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: Bu kapsamlı eğitimde GroupDocs.Parser for .NET'i kullanarak Excel sayfalarından nasıl metin ayıklayacağınızı öğrenin. İndirin ve ayrıştırmaya başlayın.
 weight: 15
 url: /tr/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
+type: docs
 ---
-
 # Ham Modda Excel Sayfasından Metin Çıkarma
 
 ## giriiş

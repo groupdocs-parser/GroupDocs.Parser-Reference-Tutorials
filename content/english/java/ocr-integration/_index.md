@@ -3,8 +3,8 @@ title: "OCR Integration Tutorials for GroupDocs.Parser Java"
 description: "Learn to implement Optical Character Recognition (OCR) features for image-based text extraction with these GroupDocs.Parser Java tutorials."
 weight: 19
 url: "/java/ocr-integration/"
+type: docs
 ---
-
 # OCR Integration Tutorials for GroupDocs.Parser Java
 
 Discover how to enhance text extraction from scanned documents and images with our GroupDocs.Parser OCR integration tutorials for Java. These step-by-step guides demonstrate how to configure OCR, extract text from images, work with specific page areas, and handle text recognition options. Each tutorial includes practical Java code examples for common OCR scenarios, helping you build applications that can effectively convert image-based documents into searchable, editable text content.

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε και να επισημάνετε κείμενο από έγγραφα χρησιμοποιώντας το GroupDocs.Parser για .NET. Εύκολα βήματα για αποτελεσματική εξαγωγή κειμένου στα έργα σας .NET.
 weight: 11
 url: /el/net/text-extraction/extract-and-highlight-text/
+type: docs
 ---
-
 # Εξαγωγή και επισήμανση κειμένου
 
 ## Εισαγωγή

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从 Excel 文档中提取文本并将其转换为 HTML。
 weight: 13
 url: /zh/net/excel-document-processing/extract-text-from-excel-document-as-html/
+type: docs
 ---
-
 # 从 Excel 文档中提取文本作为 HTML
 
 ## 介绍

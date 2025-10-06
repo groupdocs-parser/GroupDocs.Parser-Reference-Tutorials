@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε αποτελεσματική εξαγωγή κειμένου από σελίδες εγγράφων χρησιμοποιώντας το Groupdocs.Parser για .NET σε αυτό το περιεκτικό σεμινάριο.
 weight: 17
 url: /el/net/text-extraction/extract-text-from-page-in-raw-mode/
+type: docs
 ---
-
 # Εξαγωγή κειμένου από τη σελίδα σε ακατέργαστη λειτουργία
 
 ## Εισαγωγή

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser 從 .NET 文件中準確提取文字以進行無縫資料處理。
 weight: 18
 url: /zh-hant/net/text-extraction/extract-text-in-accurate-mode/
+type: docs
 ---
-
 # 以準確模式擷取文本
 
 ## 介紹

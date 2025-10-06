@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Узнайте, как извлечь форматированный текст из документов с помощью GroupDocs.Parser для .NET. Простое и эффективное извлечение текста для ваших приложений.
 weight: 10
 url: /ru/net/formatted-text-extraction/extract-formatted-text-from-document/
+type: docs
 ---
-
 # Извлечь форматированный текст из документа
 
 ## Введение

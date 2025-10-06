@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Extrahujte obrázky z dokumentů bez námahy pomocí GroupDocs.Parser pro .NET. Vaše možnosti zpracování dokumentů a efektivně zefektivněte úlohy extrakce obrázků.
 weight: 11
 url: /cs/net/image-extraction/extract-images-from-document/
+type: docs
 ---
-
 # Extrahujte obrázky z dokumentu
 
 ## Úvod

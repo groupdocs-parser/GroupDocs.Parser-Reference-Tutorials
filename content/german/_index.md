@@ -6,8 +6,8 @@ description: Schalten Sie effiziente Datenextraktionstechniken mit GroupDocs.Par
 weight: 11
 url: /de/
 is_root: true
+type: docs
 ---
-
 # Erlangen Sie Meisterschaft in der Dokumentanalyse mit GroupDocs.Parser
 
 

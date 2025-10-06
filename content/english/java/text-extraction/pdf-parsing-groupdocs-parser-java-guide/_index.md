@@ -9,10 +9,8 @@ keywords:
 - GroupDocs.Parser for Java
 - extract text from PDFs
 - regular expressions in Java
-
+type: docs
 ---
-
-
 # Guide to PDF Parsing in Java Using GroupDocs.Parser: Text Extraction Techniques
 
 ## Introduction

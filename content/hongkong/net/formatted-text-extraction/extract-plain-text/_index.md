@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 從文件中提取純文字。將文字擷取整合到您的應用程式中的簡單步驟。
 weight: 14
 url: /zh-hant/net/formatted-text-extraction/extract-plain-text/
+type: docs
 ---
-
 # 擷取純文字
 
 ## 介紹

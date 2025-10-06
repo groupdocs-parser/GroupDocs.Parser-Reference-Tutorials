@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser .NET custom image handling
 - document parsing in .NET
 - custom resource handler implementation
-
+type: docs
 ---
-
-
 # Mastering GroupDocs.Parser .NET: Custom Image Handling Guide
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET seitenweise nach Text suchen. Extrahieren Sie effizient spezifische Inhalte aus Dokumenten in Ihren .NET-Anwendungen.
 weight: 22
 url: /de/net/text-extraction/search-text-by-pages/
+type: docs
 ---
-
 # Text seitenweise durchsuchen
 
 ## Einführung

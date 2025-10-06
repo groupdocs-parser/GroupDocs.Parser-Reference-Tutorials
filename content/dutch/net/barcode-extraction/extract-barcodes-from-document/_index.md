@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Leer hoe u streepjescodes uit documenten kunt extraheren met GroupDocs.Parser voor .NET. Verbeter moeiteloos uw documentverwerkingsmogelijkheden.
 weight: 10
 url: /nl/net/barcode-extraction/extract-barcodes-from-document/
+type: docs
 ---
-
 # Streepjescodes uit document extraheren
 
 ## Invoering

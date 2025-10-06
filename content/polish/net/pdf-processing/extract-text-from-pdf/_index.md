@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić tekst z dokumentów PDF za pomocą GroupDocs.Parser dla .NET. Samouczek krok po kroku dla programistów.
 weight: 14
 url: /pl/net/pdf-processing/extract-text-from-pdf/
+type: docs
 ---
-
 # Wyodrębnij tekst z pliku PDF
 
 ## Wstęp

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan használhatja a GroupDocs.Parser for .NET-et az OCR-képességgel rendelkező dokumentumok meghatározott területeiről szövegek kinyerésére.
 weight: 13
 url: /hu/net/ocr-extraction/recognizing-text-in-specific-areas/
+type: docs
 ---
-
 # Szöveg felismerése meghatározott területeken
 
 ## Bevezetés

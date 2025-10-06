@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser를 사용하여 .NET에서 문서 로드를 효율적으로 처리합니다. 로컬 디스크, 스트림, URL 등에서 텍스트를 추출하는 방법을 알아보세요.
 weight: 29
 url: /ko/net/document-loading/
+type: docs
 ---
-
 # 문서 로딩
 
 ## 소개

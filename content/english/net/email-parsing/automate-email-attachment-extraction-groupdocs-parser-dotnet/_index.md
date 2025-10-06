@@ -8,10 +8,8 @@ keywords:
 - automate email attachment extraction
 - GroupDocs.Parser .NET
 - extract attachments from emails
-
+type: docs
 ---
-
-
 # Automating Email Attachment Extraction with GroupDocs.Parser .NET
 
 ## Introduction

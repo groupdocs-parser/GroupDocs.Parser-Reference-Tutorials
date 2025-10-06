@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何通过简单的步骤使用 GroupDocs.Parser for .NET 从 Excel 文档中提取文本。
 weight: 12
 url: /zh/net/excel-document-processing/extract-text-from-excel-document/
+type: docs
 ---
-
 # 从 Excel 文档中提取文本
 
 ## 介绍

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak belge sayfalarından biçimlendirilmiş metni çıkarın. Verimli ve güvenilir metin çıkarma çözümü.
 weight: 11
 url: /tr/net/formatted-text-extraction/extract-formatted-text-from-document-page/
+type: docs
 ---
-
 # Biçimlendirilmiş Metni Belge Sayfasından Çıkart
 
 ## giriiş

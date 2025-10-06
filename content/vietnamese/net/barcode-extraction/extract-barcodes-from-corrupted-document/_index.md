@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất mã vạch từ tài liệu bị hỏng bằng GroupDocs.Parser cho .NET. Hướng dẫn toàn diện với hướng dẫn từng bước.
 weight: 11
 url: /vi/net/barcode-extraction/extract-barcodes-from-corrupted-document/
+type: docs
 ---
-
 # Trích xuất mã vạch từ tài liệu bị hỏng
 
 ## Giới thiệu

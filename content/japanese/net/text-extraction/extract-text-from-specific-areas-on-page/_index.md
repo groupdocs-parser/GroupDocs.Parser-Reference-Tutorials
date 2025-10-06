@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して特定のドキュメント領域からテキストを抽出する方法を学習します。アプリケーションを対象にした正確なテキスト抽出。
 weight: 13
 url: /ja/net/text-extraction/extract-text-from-specific-areas-on-page/
+type: docs
 ---
-
 # ページ上の特定の領域からテキストを抽出する
 
 ## 導入

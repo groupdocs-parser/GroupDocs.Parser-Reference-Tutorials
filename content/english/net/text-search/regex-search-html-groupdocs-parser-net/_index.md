@@ -8,10 +8,8 @@ keywords:
 - regex search HTML
 - GroupDocs.Parser .NET tutorial
 - text extraction with regex
-
+type: docs
 ---
-
-
 # Implement Regular Expression Search in HTML Documents Using GroupDocs.Parser .NET
 
 ## Introduction

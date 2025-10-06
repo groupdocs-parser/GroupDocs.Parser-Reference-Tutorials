@@ -8,10 +8,8 @@ keywords:
 - extract text as HTML from Excel
 - GroupDocs.Parser .NET
 - Excel to HTML conversion
-
+type: docs
 ---
-
-
 # How to Extract Text as HTML from Excel Using GroupDocs.Parser .NET
 
 ## Introduction

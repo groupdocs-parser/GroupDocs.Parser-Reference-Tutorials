@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Effortlessly extract images from documents in .NET with GroupDocs.Parser. Enhance your document processing capabilities with accurate image extraction techniques.
 weight: 24
 url: /net/image-extraction/
+type: docs
 ---
-
 # Image Extraction
 
 ## Introduction

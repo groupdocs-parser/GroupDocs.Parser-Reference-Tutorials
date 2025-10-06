@@ -8,10 +8,8 @@ keywords:
 - extract images from PDF
 - Java image extraction API
 - PDF area image extraction
-
+type: docs
 ---
-
-
 # How to Extract Images from Specific PDF Areas Using GroupDocs.Parser Java API
 
 ## Introduction

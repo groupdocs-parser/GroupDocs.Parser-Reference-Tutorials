@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 在 Word 文件中搜尋文字。高效提取特定關鍵字。
 weight: 18
 url: /zh-hant/net/word-document-processing/search-text-in-word-document-by-keyword/
+type: docs
 ---
-
 # 按關鍵字搜尋 Word 文件中的文本
 
 ## 介紹

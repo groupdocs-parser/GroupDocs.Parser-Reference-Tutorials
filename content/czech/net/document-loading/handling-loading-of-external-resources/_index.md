@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Naučte se, jak zacházet s externími zdroji v .NET pomocí GroupDocs.Parser pro efektivní analýzu a extrakci dokumentů.
 weight: 10
 url: /cs/net/document-loading/handling-loading-of-external-resources/
+type: docs
 ---
-
 # Manipulace s načítáním externích zdrojů
 
 ## Úvod

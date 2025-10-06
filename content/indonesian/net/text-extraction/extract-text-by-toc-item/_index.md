@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ekstrak teks berdasarkan Daftar Isi (TOC) menggunakan GroupDocs.Parser untuk .NET. Pelajari teknik penguraian dokumen yang efisien untuk ekstraksi data terstruktur.
 weight: 15
 url: /id/net/text-extraction/extract-text-by-toc-item/
+type: docs
 ---
-
 # Ekstrak Teks berdasarkan Item Daftar Isi (TOC).
 
 ## Perkenalan

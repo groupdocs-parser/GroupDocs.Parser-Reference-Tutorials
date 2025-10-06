@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak sayfalara göre metin aramayı öğrenin. .NET uygulamalarınızdaki belgelerden belirli içerikleri verimli bir şekilde çıkarın.
 weight: 22
 url: /tr/net/text-extraction/search-text-by-pages/
+type: docs
 ---
-
 # Metinleri Sayfalara Göre Ara
 
 ## giriiş

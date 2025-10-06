@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج الرموز الشريطية بسهولة باستخدام GroupDocs.Parser لبرامج .NET التعليمية. تعزيز قدرات معالجة المستندات الخاصة بك الآن!
 weight: 27
 url: /ar/net/barcode-extraction/
+type: docs
 ---
-
 # استخراج الباركود
 
 

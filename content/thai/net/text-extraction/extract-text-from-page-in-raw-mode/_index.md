@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้การแยกข้อความอย่างมีประสิทธิภาพจากหน้าเอกสารโดยใช้ Groupdocs.Parser สำหรับ .NET ในบทช่วยสอนที่ครอบคลุมนี้
 weight: 17
 url: /th/net/text-extraction/extract-text-from-page-in-raw-mode/
+type: docs
 ---
-
 # แยกข้อความจากเพจในโหมด Raw
 
 ## การแนะนำ

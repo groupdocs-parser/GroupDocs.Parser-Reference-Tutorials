@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Scopri come estrarre dati da moduli PDF utilizzando GroupDocs.Parser per .NET. Guida passo passo con esempi di codice e domande frequenti.
 weight: 11
 url: /it/net/pdf-processing/extract-data-from-pdf-forms/
+type: docs
 ---
-
 # Estrai dati da moduli PDF
 
 ## introduzione

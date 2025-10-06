@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất hình ảnh từ tài liệu PDF bằng GroupDocs.Parser cho .NET. Hướng dẫn từng bước với các ví dụ về mã.
 weight: 12
 url: /vi/net/pdf-processing/extract-images-from-pdf/
+type: docs
 ---
-
 # Trích xuất hình ảnh từ PDF
 
 ## Giới thiệu

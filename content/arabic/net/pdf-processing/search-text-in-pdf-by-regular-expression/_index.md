@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: ابحث عن نص محدد في مستندات PDF باستخدام التعبيرات العادية باستخدام GroupDocs.Parser. قم باستخراج نص PDF وتحليله ومعالجته بسهولة.
 weight: 19
 url: /ar/net/pdf-processing/search-text-in-pdf-by-regular-expression/
+type: docs
 ---
-
 # البحث عن نص في PDF عن طريق التعبير العادي
 
 ## مقدمة

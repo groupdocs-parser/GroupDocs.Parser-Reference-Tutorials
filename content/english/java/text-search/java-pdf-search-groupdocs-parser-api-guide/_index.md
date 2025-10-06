@@ -8,10 +8,8 @@ keywords:
 - Java PDF Search
 - GroupDocs.Parser API
 - Text Extraction from PDF
-
+type: docs
 ---
-
-
 # How to Implement Java PDF Search Using GroupDocs.Parser for Java
 
 ## Introduction

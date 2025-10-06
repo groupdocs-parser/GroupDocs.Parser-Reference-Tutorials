@@ -8,10 +8,8 @@ keywords:
 - parse PDFs with C#
 - GroupDocs Parser templates
 - custom PDF parsing
-
+type: docs
 ---
-
-
 # How to Parse a PDF Document Using a User-Generated Template with GroupDocs.Parser .NET
 
 ## Introduction

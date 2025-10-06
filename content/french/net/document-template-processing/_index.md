@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Extrayez sans effort des données structurées à partir de modèles de documents avec GroupDocs.Parser pour .NET. Apprenez à travailler avec des codes-barres, des champs, des expressions régulières et des mises en page de tableaux.
 weight: 22
 url: /fr/net/document-template-processing/
+type: docs
 ---
-
 # Traitement des modèles de documents
 
 

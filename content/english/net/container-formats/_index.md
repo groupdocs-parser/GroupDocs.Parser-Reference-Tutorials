@@ -3,8 +3,8 @@ title: "Container Format Parsing Tutorials for GroupDocs.Parser .NET"
 description: "Learn to work with ZIP archives, PDF portfolios, and other container formats with these GroupDocs.Parser .NET tutorials."
 weight: 16
 url: "/net/container-formats/"
+type: docs
 ---
-
 # Container Format Parsing Tutorials for GroupDocs.Parser .NET
 
 Our container format tutorials show you how to process compound documents using GroupDocs.Parser in .NET. These step-by-step guides cover extracting content from ZIP archives, processing PDF portfolios, iterating through container items, and working with nested documents. Each tutorial includes detailed C# code examples for common container processing scenarios, helping you build applications that can effectively navigate and extract content from complex document collections.

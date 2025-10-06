@@ -3,8 +3,8 @@ title: "Text Search and Analysis Tutorials for GroupDocs.Parser Java"
 description: "Learn to search text using keywords, regular expressions, and advanced search options with these GroupDocs.Parser Java tutorials."
 weight: 4
 url: "/java/text-search/"
+type: docs
 ---
-
 # Text Search and Analysis Tutorials for GroupDocs.Parser Java
 
 Our text search tutorials show you how to implement powerful content discovery features using GroupDocs.Parser in Java. These step-by-step guides cover searching by keywords, using regular expressions for pattern matching, implementing page-by-page searches, and working with search highlights. Each tutorial includes practical Java code examples for common search scenarios, helping you build applications that can efficiently locate and extract specific information from large document collections.

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak teks dari berbagai format file di .NET menggunakan GroupDocs.Parser. Tutorial langkah demi langkah untuk pemrosesan dokumen yang efisien.
 weight: 14
 url: /id/net/document-loading/loading-specific-file-formats/
+type: docs
 ---
-
 # Memuat Format File Tertentu
 
 ## Perkenalan

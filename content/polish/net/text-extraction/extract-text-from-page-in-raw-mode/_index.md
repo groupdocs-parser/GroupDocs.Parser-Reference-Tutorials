@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: W tym kompleksowym samouczku naucz się wydajnego wyodrębniania tekstu ze stron dokumentów za pomocą Groupdocs.Parser dla .NET.
 weight: 17
 url: /pl/net/text-extraction/extract-text-from-page-in-raw-mode/
+type: docs
 ---
-
 # Wyodrębnij tekst ze strony w trybie surowym
 
 ## Wstęp

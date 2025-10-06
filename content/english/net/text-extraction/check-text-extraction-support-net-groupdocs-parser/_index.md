@@ -8,10 +8,8 @@ keywords:
 - text extraction support
 - groupdocs parser for .net
 - document processing in .NET
-
+type: docs
 ---
-
-
 # Check Text Extraction Support in .NET with GroupDocs.Parser
 
 ## Introduction

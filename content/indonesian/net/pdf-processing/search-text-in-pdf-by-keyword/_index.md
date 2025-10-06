@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mencari teks tertentu dalam dokumen PDF menggunakan GroupDocs.Parser untuk .NET. Integrasikan kemampuan pencarian teks yang kuat ke dalam .NET Anda secara efisien.
 weight: 18
 url: /id/net/pdf-processing/search-text-in-pdf-by-keyword/
+type: docs
 ---
-
 # Cari Teks dalam PDF berdasarkan Kata Kunci
 
 ## Perkenalan

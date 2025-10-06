@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके दस्तावेज़ों में टेक्स्ट खोजना और हाइलाइट करना सीखें। कुशलतापूर्वक बहुमूल्य जानकारी निकालें।
 weight: 24
 url: /hi/net/text-extraction/search-text-with-highlights/
+type: docs
 ---
-
 # हाइलाइट्स के साथ टेक्स्ट खोजें
 
 ## परिचय

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Naučte se prohledávat text podle stránek pomocí GroupDocs.Parser for .NET. Efektivně extrahujte konkrétní obsah z dokumentů ve vašich aplikacích .NET.
 weight: 22
 url: /cs/net/text-extraction/search-text-by-pages/
+type: docs
 ---
-
 # Hledat text podle stránek
 
 ## Úvod

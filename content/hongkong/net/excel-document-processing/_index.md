@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 使用 GroupDocs.Parser 掌握 .NET 中的 Excel 文件處理。透過逐步指南學習如何有效地提取圖像、元資料和文字。
 weight: 32
 url: /zh-hant/net/excel-document-processing/
+type: docs
 ---
-
 # Excel 文件處理
 
 ## 介紹

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách tìm kiếm văn bản theo từ khóa trong tài liệu bằng GroupDocs.Parser cho .NET. Trích xuất hiệu quả nội dung có liên quan một cách dễ dàng.
 weight: 21
 url: /vi/net/text-extraction/search-text-by-keyword/
+type: docs
 ---
-
 # Tìm kiếm văn bản theo từ khóa
 
 ## Giới thiệu

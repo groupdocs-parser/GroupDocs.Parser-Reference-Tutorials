@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Tangani pemuatan dokumen secara efisien di .NET dengan GroupDocs.Parser. Pelajari cara mengekstrak teks dari disk lokal, aliran, URL, dan lainnya.
 weight: 29
 url: /id/net/document-loading/
+type: docs
 ---
-
 # Memuat Dokumen
 
 ## Perkenalan

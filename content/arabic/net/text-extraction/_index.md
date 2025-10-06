@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: أطلق العنان لتقنيات استخراج النص الفعالة باستخدام GroupDocs.Parser لـ .NET. تعلم كيفية استخراج النص وتمييزه والبحث فيه بسهولة.
 weight: 20
 url: /ar/net/text-extraction/
+type: docs
 ---
-
 # استخراج النص
 
 

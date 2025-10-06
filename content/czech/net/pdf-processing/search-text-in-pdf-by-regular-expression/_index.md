@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Vyhledejte konkrétní text v dokumentech PDF pomocí regulárních výrazů pomocí GroupDocs.Parser. Extrahujte, analyzujte a manipulujte s textem PDF bez námahy.
 weight: 19
 url: /cs/net/pdf-processing/search-text-in-pdf-by-regular-expression/
+type: docs
 ---
-
 # Hledání textu v PDF regulárním výrazem
 
 ## Úvod

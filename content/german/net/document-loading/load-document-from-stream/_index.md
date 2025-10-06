@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser Text aus verschiedenen Dokumentformaten in .NET extrahieren. Schritt-für-Schritt-Anleitung mit Codebeispielen.
 weight: 12
 url: /de/net/document-loading/load-document-from-stream/
+type: docs
 ---
-
 # Dokument aus Stream laden
 
 ## Einführung

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du extraherar streckkoder från skadade dokument med GroupDocs.Parser för .NET. Omfattande handledning med steg-för-steg-instruktioner.
 weight: 11
 url: /sv/net/barcode-extraction/extract-barcodes-from-corrupted-document/
+type: docs
 ---
-
 # Extrahera streckkoder från skadade dokument
 
 ## Introduktion

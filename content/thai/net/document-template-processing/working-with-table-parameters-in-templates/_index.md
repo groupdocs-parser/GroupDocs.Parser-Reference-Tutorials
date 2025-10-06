@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกข้อมูลจากตารางในเอกสารโดยใช้ GroupDocs.Parser for .NET คำแนะนำทีละขั้นตอนสำหรับการใช้งานพารามิเตอร์ตาราง
 weight: 15
 url: /th/net/document-template-processing/working-with-table-parameters-in-templates/
+type: docs
 ---
-
 # การทำงานกับพารามิเตอร์ตารางในเทมเพลต
 
 ## การแนะนำ

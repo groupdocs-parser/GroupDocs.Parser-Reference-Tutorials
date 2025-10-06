@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất văn bản từ tài liệu PDF bằng GroupDocs.Parser cho .NET. Hướng dẫn từng bước dành cho nhà phát triển.
 weight: 14
 url: /vi/net/pdf-processing/extract-text-from-pdf/
+type: docs
 ---
-
 # Trích xuất văn bản từ PDF
 
 ## Giới thiệu

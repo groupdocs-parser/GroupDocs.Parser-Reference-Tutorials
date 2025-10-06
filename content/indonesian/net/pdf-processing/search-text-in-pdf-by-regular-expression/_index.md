@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Cari teks tertentu dalam dokumen PDF menggunakan ekspresi reguler dengan GroupDocs.Parser. Ekstrak, analisis, dan manipulasi teks PDF dengan mudah.
 weight: 19
 url: /id/net/pdf-processing/search-text-in-pdf-by-regular-expression/
+type: docs
 ---
-
 # Cari Teks dalam PDF dengan Ekspresi Reguler
 
 ## Perkenalan

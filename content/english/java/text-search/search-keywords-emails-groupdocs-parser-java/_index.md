@@ -8,10 +8,8 @@ keywords:
 - search keywords in emails
 - GroupDocs Parser Java library
 - email keyword search
-
+type: docs
 ---
-
-
 # Efficient Keyword Searching in Emails with GroupDocs.Parser Java Library
 
 ## Introduction

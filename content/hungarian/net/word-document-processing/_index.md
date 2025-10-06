@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Fedezze fel a Word dokumentumfeldolgozásról szóló oktatóanyagok sorát a GroupDocs.Parser for .NET használatával. Kivonja a hiperhivatkozásokat, képeket, metaadatokat és egyebeket.
 weight: 30
 url: /hu/net/word-document-processing/
+type: docs
 ---
-
 # Word dokumentum feldolgozás
 
 Bővíteni szeretné Word dokumentumfeldolgozási képességeit a .NET-ben? Ne keressen tovább! A GroupDocs.Parser for .NET átfogó oktatóanyagokat kínál, amelyek segítségével könnyedén kinyerhet különféle elemeket a Word dokumentumokból.

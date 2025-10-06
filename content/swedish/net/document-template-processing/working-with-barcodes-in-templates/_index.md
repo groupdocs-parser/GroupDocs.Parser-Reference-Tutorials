@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du använder GroupDocs.Parser för .NET för att extrahera strukturerad data från dokument med hjälp av mallar. Förenkla datautvinning med streckkodsfält.
 weight: 10
 url: /sv/net/document-template-processing/working-with-barcodes-in-templates/
+type: docs
 ---
-
 # Arbeta med streckkoder i mallar
 
 ## Introduktion

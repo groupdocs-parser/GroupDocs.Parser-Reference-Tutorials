@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج الارتباطات التشعبية من مستندات Word باستخدام GroupDocs.Parser لـ .NET. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية.
 weight: 10
 url: /ar/net/word-document-processing/extract-hyperlinks-from-word-document/
+type: docs
 ---
-
 # استخراج الارتباطات التشعبية من مستند Word
 
 ## مقدمة

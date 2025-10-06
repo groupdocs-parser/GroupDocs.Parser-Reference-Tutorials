@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เชี่ยวชาญการประมวลผล PDF ด้วย GroupDocs.Parser สำหรับ .NET เรียนรู้การแยกไฟล์แนบ ข้อมูล รูปภาพ ข้อมูลเมตา และข้อความจาก PDF อย่างมีประสิทธิภาพ
 weight: 31
 url: /th/net/pdf-processing/
+type: docs
 ---
-
 # การประมวลผล PDF
 
 ## การแนะนำ

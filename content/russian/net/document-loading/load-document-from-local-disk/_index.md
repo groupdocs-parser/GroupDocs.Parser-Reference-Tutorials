@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Узнайте, как извлекать текст из документов различных форматов с помощью GroupDocs.Parser для .NET. Простое и эффективное извлечение текста с помощью C#.
 weight: 11
 url: /ru/net/document-loading/load-document-from-local-disk/
+type: docs
 ---
-
 # Загрузить документ с локального диска
 
 ## Введение

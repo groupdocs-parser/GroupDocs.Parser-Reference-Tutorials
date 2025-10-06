@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Learn how to extract barcodes from document pages using GroupDocs.Parser for .NET. Enhance your document processing capabilities with this step-by-step tutorial.
 weight: 13
 url: /net/barcode-extraction/extract-barcodes-from-document-page-area/
+type: docs
 ---
-
 # Extract Barcodes from Document Page Area
 
 ## Introduction

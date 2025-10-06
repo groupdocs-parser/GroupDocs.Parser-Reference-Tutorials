@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Lär dig hur du extraherar streckkoder från dokument med GroupDocs.Parser för .NET. Förbättra dina dokumentbehandlingsmöjligheter utan ansträngning.
 weight: 10
 url: /sv/net/barcode-extraction/extract-barcodes-from-document/
+type: docs
 ---
-
 # Extrahera streckkoder från dokument
 
 ## Introduktion

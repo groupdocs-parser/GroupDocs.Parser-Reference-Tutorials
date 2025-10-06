@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Learn how to parse document pages using templates in .NET with GroupDocs.Parser. Extract specific content efficiently for your applications.
 weight: 16
 url: /net/document-template-processing/parse-pages-using-templates/
+type: docs
 ---
-
 # Parse Pages Using Templates
 
 ## Introduction

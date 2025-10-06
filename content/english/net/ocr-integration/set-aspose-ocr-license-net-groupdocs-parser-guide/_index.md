@@ -8,10 +8,8 @@ keywords:
 - Set Aspose OCR License in .NET
 - Integrate GroupDocs.Parser with .NET
 - OCR and Document Parsing
-
+type: docs
 ---
-
-
 # Implementing Aspose OCR License in .NET: Comprehensive Guide with GroupDocs.Parser
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Leer hoe u gegevens efficiënt uit documenten kunt extraheren met GroupDocs.Parser voor .NET. Stapsgewijze zelfstudie met codevoorbeelden.
 weight: 12
 url: /nl/net/document-template-processing/working-with-fields-at-linked-positions-in-templates/
+type: docs
 ---
-
 # Werken met velden op gekoppelde posities in sjablonen
 
 ## Invoering

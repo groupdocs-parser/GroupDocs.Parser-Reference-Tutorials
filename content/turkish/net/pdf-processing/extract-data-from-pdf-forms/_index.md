@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET'i kullanarak PDF formlarından nasıl veri ayıklayacağınızı öğrenin. Kod örnekleri ve SSS içeren adım adım kılavuz.
 weight: 11
 url: /tr/net/pdf-processing/extract-data-from-pdf-forms/
+type: docs
 ---
-
 # PDF Formlarından Veri Çıkarma
 
 ## giriiş

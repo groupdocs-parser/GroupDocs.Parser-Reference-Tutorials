@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić metadane z dokumentów Excel za pomocą GroupDocs.Parser dla .NET. Postępuj zgodnie z tym samouczkiem krok po kroku.
 weight: 11
 url: /pl/net/excel-document-processing/extract-metadata-from-excel-document/
+type: docs
 ---
-
 # Wyodrębnij metadane z dokumentu Excel
 
 ## Wstęp

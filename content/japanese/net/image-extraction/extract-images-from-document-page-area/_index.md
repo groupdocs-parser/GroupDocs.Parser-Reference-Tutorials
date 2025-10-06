@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Groupdocs.Parser for .NET を使用してドキュメントから画像を正確に抽出する方法を学びます。正確な画像抽出のために特定の領域をターゲットにする方法を学びます。
 weight: 10
 url: /ja/net/image-extraction/extract-images-from-document-page-area/
+type: docs
 ---
-
 # ドキュメントページ領域から画像を抽出する
 
 ## 導入

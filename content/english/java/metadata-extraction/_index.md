@@ -3,8 +3,8 @@ title: "Metadata Extraction Tutorials for GroupDocs.Parser Java"
 description: "Learn to extract and process document metadata and properties with these GroupDocs.Parser Java tutorials."
 weight: 7
 url: "/java/metadata-extraction/"
+type: docs
 ---
-
 # Metadata Extraction Tutorials for GroupDocs.Parser Java
 
 Master document metadata extraction with our detailed GroupDocs.Parser tutorials for Java developers. These comprehensive guides demonstrate how to access and interpret document properties such as author, creation date, modified date, and custom metadata fields from various document formats. Each tutorial includes working Java code examples for common metadata extraction scenarios, helping you build applications that can effectively capture and utilize document attribute information.

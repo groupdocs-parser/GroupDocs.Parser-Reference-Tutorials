@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Εξαγωγή κύριου πίνακα από έγγραφα με GroupDocs.Parser για .NET. Μάθετε να εξάγετε πίνακες μέσω προγραμματισμού για αποτελεσματική επεξεργασία δεδομένων.
 weight: 23
 url: /el/net/table-extraction/
+type: docs
 ---
-
 # Εξαγωγή πίνακα
 
 ## Εισαγωγή

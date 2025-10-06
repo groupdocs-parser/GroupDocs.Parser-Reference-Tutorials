@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Master Excelové zpracování dokumentů v .NET s GroupDocs.Parser. Naučte se efektivně extrahovat obrázky, metadata a text pomocí podrobných průvodců.
 weight: 32
 url: /cs/net/excel-document-processing/
+type: docs
 ---
-
 # Zpracování dokumentů Excel
 
 ## Úvod

@@ -5,8 +5,8 @@ weight: 10
 url: /zh-hant/net/
 description: 使用 GroupDocs.Parser for .NET 解鎖高效能的文字擷取技術。無縫提取、突出顯示和搜尋文字以增強文件處理。
 is_root: true
+type: docs
 ---
-
 # 適用於 .NET 的 GroupDocs.Parser 教學與範例
 
 在當今的數位環境中，高效的文件處理對於企業和開發人員都至關重要。 GroupDocs.Parser for .NET 提供了一個強大的解決方案，可從各種文件格式中提取和操作文字、圖像、元資料等。本文概述了可用於使用 GroupDocs.Parser for .NET 掌握文件處理任務的教學課程和範例，使用戶能夠簡化其工作流程並輕鬆從文件中提取有價值的見解。

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: OCR özelliklerine sahip GroupDocs.Parser for .NET'i kullanarak belgelerin belirli bölgelerindeki metni nasıl tanıyacağınızı öğrenin.
 weight: 14
 url: /tr/net/ocr-extraction/recognizing-text-in-rectangular-regions/
+type: docs
 ---
-
 # Dikdörtgen Bölgelerdeki Metni Tanıma
 
 ## giriiş

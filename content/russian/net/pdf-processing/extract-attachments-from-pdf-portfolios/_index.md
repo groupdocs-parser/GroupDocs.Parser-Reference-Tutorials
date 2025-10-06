@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Из этого подробного руководства вы узнаете, как извлекать вложения из портфолио PDF с помощью GroupDocs.Parser для .NET.
 weight: 10
 url: /ru/net/pdf-processing/extract-attachments-from-pdf-portfolios/
+type: docs
 ---
-
 # Извлечение вложений из портфолио PDF
 
 ## Введение

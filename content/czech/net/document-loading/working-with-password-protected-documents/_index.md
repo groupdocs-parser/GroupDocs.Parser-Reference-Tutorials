@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat text z dokumentů chráněných heslem pomocí GroupDocs.Parser for .NET. Vylepšete své možnosti zpracování dokumentů.
 weight: 15
 url: /cs/net/document-loading/working-with-password-protected-documents/
+type: docs
 ---
-
 # Práce s dokumenty chráněnými heslem
 
 ## Úvod

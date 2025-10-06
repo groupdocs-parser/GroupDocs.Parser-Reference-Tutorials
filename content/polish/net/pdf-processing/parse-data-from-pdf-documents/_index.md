@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić dane z dokumentów PDF za pomocą GroupDocs.Parser dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby efektywnie analizować i przetwarzać pliki PDF.
 weight: 17
 url: /pl/net/pdf-processing/parse-data-from-pdf-documents/
+type: docs
 ---
-
 # Analizuj dane z dokumentów PDF
 
 ## Wstęp

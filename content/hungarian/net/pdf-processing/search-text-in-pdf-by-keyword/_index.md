@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan kereshet meghatározott szöveget PDF-dokumentumokban a GroupDocs.Parser for .NET segítségével. Hatékonyan integrálja a hatékony szöveges keresési lehetőségeket a .NET-be.
 weight: 18
 url: /hu/net/pdf-processing/search-text-in-pdf-by-keyword/
+type: docs
 ---
-
 # Szöveg keresése PDF-ben kulcsszó szerint
 
 ## Bevezetés

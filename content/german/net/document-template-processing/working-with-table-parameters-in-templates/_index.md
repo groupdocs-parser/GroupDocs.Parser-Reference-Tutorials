@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Daten aus Tabellen in Dokumenten extrahieren. Schritt-für-Schritt-Anleitung zur Verwendung von Tabellenparametern.
 weight: 15
 url: /de/net/document-template-processing/working-with-table-parameters-in-templates/
+type: docs
 ---
-
 # Arbeiten mit Tabellenparametern in Vorlagen
 
 ## Einführung

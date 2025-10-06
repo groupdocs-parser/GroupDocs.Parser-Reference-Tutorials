@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębnić metadane z dokumentów programu Word za pomocą programu GroupDocs.Parser dla platformy .NET. Proste kroki do analizowania i pobierania informacji o dokumencie.
 weight: 12
 url: /pl/net/word-document-processing/extract-metadata-from-word-document/
+type: docs
 ---
-
 # Wyodrębnij metadane z dokumentu programu Word
 
 ## Wstęp

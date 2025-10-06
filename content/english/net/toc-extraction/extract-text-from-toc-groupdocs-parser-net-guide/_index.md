@@ -8,10 +8,8 @@ keywords:
 - TOC Extraction
 - GroupDocs.Parser .NET
 - Document Navigation
-
+type: docs
 ---
-
-
 # Extract TOC Text Using GroupDocs.Parser .NET: A Step-by-Step Guide
 
 ## Introduction

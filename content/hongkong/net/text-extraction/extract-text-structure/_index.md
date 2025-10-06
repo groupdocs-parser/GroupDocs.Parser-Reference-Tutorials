@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 從各種文件格式中擷取文字結構。帶有程式碼範例的分步教程。
 weight: 20
 url: /zh-hant/net/text-extraction/extract-text-structure/
+type: docs
 ---
-
 # 提取文字結構
 
 ## 介紹

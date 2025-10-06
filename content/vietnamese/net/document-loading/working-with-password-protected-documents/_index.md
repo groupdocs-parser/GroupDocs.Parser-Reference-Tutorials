@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất văn bản từ tài liệu được bảo vệ bằng mật khẩu bằng GroupDocs.Parser cho .NET. Nâng cao khả năng xử lý tài liệu của bạn.
 weight: 15
 url: /vi/net/document-loading/working-with-password-protected-documents/
+type: docs
 ---
-
 # Làm việc với các tài liệu được bảo vệ bằng mật khẩu
 
 ## Giới thiệu

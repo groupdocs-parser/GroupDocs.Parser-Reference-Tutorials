@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用適用於 .NET 的 GroupDocs.Parser 的正規表示式位置從文件範本中擷取資料。有效率地自動化您的資料提取任務。
 weight: 13
 url: /zh-hant/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
+type: docs
 ---
-
 # 使用模板中正規表示式位置的字段
 
 ## 介紹

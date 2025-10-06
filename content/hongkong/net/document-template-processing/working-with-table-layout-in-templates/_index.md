@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 在範本中處理表格佈局。從文件中高效提取結構化資料。
 weight: 14
 url: /zh-hant/net/document-template-processing/working-with-table-layout-in-templates/
+type: docs
 ---
-
 # 使用範本中的表格佈局
 
 ## 介紹

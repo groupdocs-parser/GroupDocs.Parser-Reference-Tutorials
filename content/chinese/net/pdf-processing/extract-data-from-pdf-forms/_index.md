@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 了解如何使用 GroupDocs.Parser for .NET 从 PDF 表单中提取数据。包含代码示例和常见问题解答的分步指南。
 weight: 11
 url: /zh/net/pdf-processing/extract-data-from-pdf-forms/
+type: docs
 ---
-
 # 从 PDF 表单提取数据
 
 ## 介绍

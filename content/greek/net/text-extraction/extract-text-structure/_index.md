@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε δομή κειμένου από διάφορες μορφές εγγράφων χρησιμοποιώντας το GroupDocs.Parser για .NET. Ένα βήμα προς βήμα σεμινάριο με παραδείγματα κώδικα.
 weight: 20
 url: /el/net/text-extraction/extract-text-structure/
+type: docs
 ---
-
 # Εξαγωγή δομής κειμένου
 
 ## Εισαγωγή

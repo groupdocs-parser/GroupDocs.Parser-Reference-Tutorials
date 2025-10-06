@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用して、パスワードで保護されたドキュメントからテキストを抽出する方法を学習します。ドキュメント処理機能を強化します。
 weight: 15
 url: /ja/net/document-loading/working-with-password-protected-documents/
+type: docs
 ---
-
 # パスワード保護されたドキュメントの操作
 
 ## 導入

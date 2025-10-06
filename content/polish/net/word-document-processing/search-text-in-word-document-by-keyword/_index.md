@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyszukiwać tekst w dokumentach programu Word przy użyciu narzędzia GroupDocs.Parser dla platformy .NET. Skutecznie wyodrębniaj określone słowa kluczowe.
 weight: 18
 url: /pl/net/word-document-processing/search-text-in-word-document-by-keyword/
+type: docs
 ---
-
 # Wyszukaj tekst w dokumencie programu Word według słowa kluczowego
 
 ## Wstęp

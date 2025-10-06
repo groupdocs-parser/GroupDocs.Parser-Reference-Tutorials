@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: इस व्यापक ट्यूटोरियल में .NET के लिए Groupdocs.Parser का उपयोग करके दस्तावेज़ पृष्ठों से कुशल पाठ निष्कर्षण सीखें।
 weight: 17
 url: /hi/net/text-extraction/extract-text-from-page-in-raw-mode/
+type: docs
 ---
-
 # रॉ मोड में पेज से टेक्स्ट निकालें
 
 ## परिचय

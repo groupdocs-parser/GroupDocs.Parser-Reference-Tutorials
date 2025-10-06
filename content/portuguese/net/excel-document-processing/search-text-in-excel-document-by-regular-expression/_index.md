@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Aprenda como pesquisar texto em documentos Excel usando expressões regulares com GroupDocs.Parser for .NET. Execute pesquisas de texto avançadas com eficiência.
 weight: 17
 url: /pt/net/excel-document-processing/search-text-in-excel-document-by-regular-expression/
+type: docs
 ---
-
 # Pesquisar texto em documento Excel por expressão regular
 
 ## Introdução

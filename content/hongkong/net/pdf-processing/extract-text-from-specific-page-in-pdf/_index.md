@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 使用 GroupDocs.Parser for .NET 從 PDF 中擷取文字。使用這個強大的庫輕鬆檢索特定頁面內容。
 weight: 15
 url: /zh-hant/net/pdf-processing/extract-text-from-specific-page-in-pdf/
+type: docs
 ---
-
 # 從 PDF 中的特定頁面提取文本
 
 ## 介紹

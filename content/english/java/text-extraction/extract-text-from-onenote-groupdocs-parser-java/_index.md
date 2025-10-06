@@ -8,10 +8,8 @@ keywords:
 - extract text from OneNote
 - GroupDocs.Parser Java
 - text extraction tutorial
-
+type: docs
 ---
-
-
 # Extract Text from Microsoft OneNote Using GroupDocs.Parser in Java: A Comprehensive Guide
 
 Extracting text from Microsoft OneNote documents can be challenging, especially with complex or large files. This comprehensive guide will show you how to use GroupDocs.Parser for Java to extract text content efficiently, simplifying your workflow and boosting productivity.

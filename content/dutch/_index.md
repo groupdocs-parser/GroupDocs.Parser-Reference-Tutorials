@@ -6,8 +6,8 @@ description: Ontgrendel efficiënte technieken voor gegevensextractie met GroupD
 weight: 11
 url: /nl/
 is_root: true
+type: docs
 ---
-
 # Ontgrendel de beheersing van het parseren van documenten met GroupDocs.Parser
 
 

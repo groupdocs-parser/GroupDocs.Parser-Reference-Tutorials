@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Dowiedz się, jak wyodrębniać dane z dokumentów za pomocą GroupDocs.Parser dla .NET. Obszerny samouczek z przykładami kodu.
 weight: 11
 url: /pl/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
+type: docs
 ---
-
 # Praca z polami w ustalonych pozycjach w szablonach
 
 ## Wstęp

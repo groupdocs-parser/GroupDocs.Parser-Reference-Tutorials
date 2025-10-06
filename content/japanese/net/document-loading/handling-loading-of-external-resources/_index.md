@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 効率的なドキュメント解析と抽出のために GroupDocs.Parser を使用して .NET で外部リソースを処理する方法を学習します。
 weight: 10
 url: /ja/net/document-loading/handling-loading-of-external-resources/
+type: docs
 ---
-
 # 外部リソースの読み込みの処理
 
 ## 導入

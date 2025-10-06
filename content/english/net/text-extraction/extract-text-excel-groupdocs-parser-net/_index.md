@@ -8,10 +8,8 @@ keywords:
 - extract text from Excel
 - GroupDocs.Parser .NET
 - text extraction Excel spreadsheets
-
+type: docs
 ---
-
-
 # Extracting Text from Excel Spreadsheets with GroupDocs.Parser .NET
 
 ## Introduction

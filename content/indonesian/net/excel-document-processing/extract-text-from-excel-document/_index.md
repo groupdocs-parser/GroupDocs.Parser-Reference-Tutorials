@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Pelajari cara mengekstrak teks dari dokumen Excel menggunakan GroupDocs.Parser untuk .NET dalam langkah sederhana.
 weight: 12
 url: /id/net/excel-document-processing/extract-text-from-excel-document/
+type: docs
 ---
-
 # Ekstrak Teks dari Dokumen Excel
 
 ## Perkenalan

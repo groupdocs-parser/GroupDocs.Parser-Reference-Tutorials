@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất các trường dữ liệu cụ thể từ tài liệu bằng GroupDocs.Parser cho .NET. Hướng dẫn từng bước với các ví dụ về mã.
 weight: 10
 url: /vi/net/data-extraction-from-templates/get-field-by-name/
+type: docs
 ---
-
 # Nhận trường theo tên
 
 ## Giới thiệu

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية البحث عن نص في مستندات Word باستخدام GroupDocs.Parser لـ .NET. استخراج كلمات رئيسية محددة بكفاءة.
 weight: 18
 url: /ar/net/word-document-processing/search-text-in-word-document-by-keyword/
+type: docs
 ---
-
 # البحث عن نص في مستند Word عن طريق الكلمة الأساسية
 
 ## مقدمة

@@ -6,8 +6,8 @@ description: Desbloquee técnicas eficientes de extracción de datos con GroupDo
 weight: 11
 url: /es/
 is_root: true
+type: docs
 ---
-
 # Desbloquee el dominio del análisis de documentos con GroupDocs.Parser
 
 

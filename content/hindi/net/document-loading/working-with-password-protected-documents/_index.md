@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके पासवर्ड-संरक्षित दस्तावेज़ों से टेक्स्ट निकालना सीखें। अपने दस्तावेज़ प्रसंस्करण क्षमताओं को बढ़ाएँ।
 weight: 15
 url: /hi/net/document-loading/working-with-password-protected-documents/
+type: docs
 ---
-
 # पासवर्ड से सुरक्षित दस्तावेज़ों के साथ कार्य करना
 
 ## परिचय

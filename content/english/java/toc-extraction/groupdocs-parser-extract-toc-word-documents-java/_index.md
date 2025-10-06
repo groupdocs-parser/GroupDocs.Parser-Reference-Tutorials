@@ -8,10 +8,8 @@ keywords:
 - extract table of contents from Word documents
 - GroupDocs.Parser for Java
 - Java document processing
-
+type: docs
 ---
-
-
 # How to Extract Table of Contents from Word Documents using GroupDocs.Parser for Java: A Developer's Guide
 
 ## Introduction

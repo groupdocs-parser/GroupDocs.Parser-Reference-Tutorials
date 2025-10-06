@@ -8,10 +8,8 @@ keywords:
 - extract email metadata
 - GroupDocs.Parser .NET
 - email parsing
-
+type: docs
 ---
-
-
 # Extracting Email Metadata Using GroupDocs.Parser for .NET: A Comprehensive Guide
 
 ## Introduction

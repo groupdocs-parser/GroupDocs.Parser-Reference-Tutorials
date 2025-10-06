@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser for .NET ile normal ifade konumlarını kullanarak belge şablonlarından nasıl veri ayıklayacağınızı öğrenin. Veri çıkarma görevlerinizi verimli bir şekilde otomatikleştirin.
 weight: 13
 url: /tr/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
+type: docs
 ---
-
 # Şablonlarda Regex Konumlarında Alanlarla Çalışmak
 
 ## giriiş

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser API .NET
 description: Bez wysiłku wyodrębniaj uporządkowane dane z szablonów dokumentów za pomocą GroupDocs.Parser dla .NET. Naucz się pracować z kodami kreskowymi, polami, wyrażeniami regularnymi i układami tabel.
 weight: 22
 url: /pl/net/document-template-processing/
+type: docs
 ---
-
 # Przetwarzanie szablonów dokumentów
 
 

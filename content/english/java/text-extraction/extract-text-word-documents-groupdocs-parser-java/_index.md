@@ -8,10 +8,8 @@ keywords:
 - extract text from Word documents
 - GroupDocs.Parser for Java
 - Java text extraction
-
+type: docs
 ---
-
-
 # How to Extract Text from Microsoft Word Document Pages Using GroupDocs.Parser in Java
 
 ## Introduction

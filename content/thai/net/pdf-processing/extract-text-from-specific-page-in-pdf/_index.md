@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: แยกข้อความจาก PDF โดยใช้ GroupDocs.Parser สำหรับ .NET ดึงข้อมูลเนื้อหาเฉพาะหน้าได้อย่างง่ายดายด้วยไลบรารีอันทรงพลังนี้
 weight: 15
 url: /th/net/pdf-processing/extract-text-from-specific-page-in-pdf/
+type: docs
 ---
-
 # แยกข้อความจากหน้าเฉพาะในรูปแบบ PDF
 
 ## การแนะนำ

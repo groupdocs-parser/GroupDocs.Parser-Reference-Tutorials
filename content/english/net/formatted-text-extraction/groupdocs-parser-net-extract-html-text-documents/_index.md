@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser .NET
 - extract HTML text from documents
 - formatted text extraction with .NET
-
+type: docs
 ---
-
-
 # Extract HTML Text from Documents with GroupDocs.Parser in .NET
 ## Introduction
 Are you looking to automate the extraction of formatted text (as HTML) directly from documents like Word, Excel, or PDFs using .NET? This tutorial guides you through leveraging GroupDocs.Parser for .NET to save time and streamline workflows by extracting rich-text content.

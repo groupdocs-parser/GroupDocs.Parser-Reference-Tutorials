@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: التعامل بكفاءة مع تحميل المستندات في .NET باستخدام GroupDocs.Parser. تعلم كيفية استخراج النص من الأقراص المحلية والتدفقات وعناوين URL والمزيد.
 weight: 29
 url: /ar/net/document-loading/
+type: docs
 ---
-
 # تحميل المستند
 
 ## مقدمة

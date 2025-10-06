@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج المرفقات من محافظ PDF باستخدام GroupDocs.Parser لـ .NET في هذا البرنامج التعليمي الشامل.
 weight: 10
 url: /ar/net/pdf-processing/extract-attachments-from-pdf-portfolios/
+type: docs
 ---
-
 # استخراج المرفقات من محافظ PDF
 
 ## مقدمة

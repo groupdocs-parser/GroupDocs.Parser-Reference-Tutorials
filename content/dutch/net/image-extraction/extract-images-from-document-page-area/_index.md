@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ontdek hoe u afbeeldingen nauwkeurig uit documenten kunt extraheren met Groupdocs.Parser voor .NET. Leer specifieke gebieden te targeten voor nauwkeurige beeldextractie.
 weight: 10
 url: /nl/net/image-extraction/extract-images-from-document-page-area/
+type: docs
 ---
-
 # Afbeeldingen extraheren uit het documentpaginagebied
 
 ## Invoering

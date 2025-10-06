@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: قم باستخراج النص المنسق من صفحات المستندات باستخدام GroupDocs.Parser لـ .NET. حل فعال وموثوق لاستخراج النص.
 weight: 11
 url: /ar/net/formatted-text-extraction/extract-formatted-text-from-document-page/
+type: docs
 ---
-
 # استخراج النص المنسق من صفحة المستند
 
 ## مقدمة

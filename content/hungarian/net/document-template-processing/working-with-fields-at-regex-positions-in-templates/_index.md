@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan nyerhet ki adatokat dokumentumsablonokból regex pozíciók használatával a GroupDocs.Parser for .NET segítségével. Hatékonyan automatizálja adatkinyerési feladatait.
 weight: 13
 url: /hu/net/document-template-processing/working-with-fields-at-regex-positions-in-templates/
+type: docs
 ---
-
 # Mezőkkel való munkavégzés reguláris kifejezési pozíciókban a sablonokban
 
 ## Bevezetés

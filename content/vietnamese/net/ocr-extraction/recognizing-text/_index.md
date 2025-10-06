@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Trích xuất văn bản từ nhiều định dạng tài liệu khác nhau một cách hiệu quả với GroupDocs.Parser cho .NET. Tích hợp dễ dàng và khả năng OCR mạnh mẽ.
 weight: 12
 url: /vi/net/ocr-extraction/recognizing-text/
+type: docs
 ---
-
 # Nhận dạng văn bản
 
 ## Giới thiệu

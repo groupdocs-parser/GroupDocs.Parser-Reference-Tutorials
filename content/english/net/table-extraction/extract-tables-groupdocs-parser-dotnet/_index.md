@@ -8,10 +8,8 @@ keywords:
 - extract tables from PDFs
 - GroupDocs.Parser .NET
 - table extraction using GroupDocs.Parser
-
+type: docs
 ---
-
-
 # How to Extract Tables from PDFs Using GroupDocs.Parser .NET
 
 ## Introduction

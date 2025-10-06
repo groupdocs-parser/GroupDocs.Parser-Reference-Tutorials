@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki szöveget Excel-dokumentumokból, és hogyan alakíthatja át HTML-be a GroupDocs.Parser for .NET segítségével.
 weight: 13
 url: /hu/net/excel-document-processing/extract-text-from-excel-document-as-html/
+type: docs
 ---
-
 # Szöveg kibontása az Excel-dokumentumból HTML-ként
 
 ## Bevezetés

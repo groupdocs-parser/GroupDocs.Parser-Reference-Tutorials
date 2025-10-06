@@ -8,10 +8,8 @@ keywords:
 - Extract Hyperlinks Java
 - GroupDocs.Parser API
 - Java Document Processing
-
+type: docs
 ---
-
-
 # How to Extract Hyperlinks Using GroupDocs.Parser in Java: A Complete Guide
 
 ## Introduction

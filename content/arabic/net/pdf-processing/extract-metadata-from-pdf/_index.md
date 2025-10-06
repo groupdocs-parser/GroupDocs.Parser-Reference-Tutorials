@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية استخراج البيانات التعريفية من مستندات PDF باستخدام GroupDocs.Parser لـ .NET. يغطي هذا الدليل الشامل التعليمات والمتطلبات الأساسية خطوة بخطوة.
 weight: 13
 url: /ar/net/pdf-processing/extract-metadata-from-pdf/
+type: docs
 ---
-
 # استخراج البيانات الوصفية من PDF
 
 ## مقدمة

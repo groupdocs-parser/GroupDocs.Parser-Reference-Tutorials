@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser for .NET
 - text extraction in .NET
 - document parsing with GroupDocs
-
+type: docs
 ---
-
-
 # Mastering Text Extraction with GroupDocs.Parser for .NET
 
 ## Introduction

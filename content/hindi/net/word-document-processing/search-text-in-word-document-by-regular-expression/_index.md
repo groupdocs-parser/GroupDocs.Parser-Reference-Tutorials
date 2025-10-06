@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser के साथ नियमित अभिव्यक्तियों का उपयोग करके Word दस्तावेज़ों में टेक्स्ट खोजना सीखें। विशिष्ट सामग्री को कुशलतापूर्वक निकालें।
 weight: 19
 url: /hi/net/word-document-processing/search-text-in-word-document-by-regular-expression/
+type: docs
 ---
-
 # नियमित अभिव्यक्ति द्वारा वर्ड दस्तावेज़ में पाठ खोजें
 
 ## परिचय

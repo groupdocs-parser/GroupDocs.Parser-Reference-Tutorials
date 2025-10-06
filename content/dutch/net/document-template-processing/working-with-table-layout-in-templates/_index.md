@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Leer hoe u met tabelindelingen in sjablonen werkt met GroupDocs.Parser voor .NET. Haal gestructureerde gegevens efficiënt uit documenten.
 weight: 14
 url: /nl/net/document-template-processing/working-with-table-layout-in-templates/
+type: docs
 ---
-
 # Werken met tabelindeling in sjablonen
 
 ## Invoering

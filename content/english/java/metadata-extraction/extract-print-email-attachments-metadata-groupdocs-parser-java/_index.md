@@ -8,10 +8,8 @@ keywords:
 - GroupDocs.Parser for Java
 - email attachment extraction
 - metadata printing
-
+type: docs
 ---
-
-
 # How to Extract and Print Email Attachments Metadata Using GroupDocs.Parser for Java
 
 ## Introduction

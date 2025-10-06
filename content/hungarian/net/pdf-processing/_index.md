@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: PDF-feldolgozás elsajátítása a GroupDocs.Parser for .NET segítségével. Tanulja meg a mellékletek, adatok, képek, metaadatok és szövegek hatékony kinyerését PDF-ekből.
 weight: 31
 url: /hu/net/pdf-processing/
+type: docs
 ---
-
 # PDF feldolgozás
 
 ## Bevezetés

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Узнайте, как извлечь текстовую структуру из различных форматов документов с помощью GroupDocs.Parser для .NET. Пошаговое руководство с примерами кода.
 weight: 20
 url: /ru/net/text-extraction/extract-text-structure/
+type: docs
 ---
-
 # Извлечь текстовую структуру
 
 ## Введение

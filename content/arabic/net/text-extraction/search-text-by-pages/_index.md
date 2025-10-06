@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: تعرف على كيفية البحث عن النص حسب الصفحات باستخدام GroupDocs.Parser لـ .NET. قم باستخراج محتوى محدد بكفاءة من المستندات الموجودة في تطبيقات .NET الخاصة بك.
 weight: 22
 url: /ar/net/text-extraction/search-text-by-pages/
+type: docs
 ---
-
 # البحث عن النص حسب الصفحات
 
 ## مقدمة

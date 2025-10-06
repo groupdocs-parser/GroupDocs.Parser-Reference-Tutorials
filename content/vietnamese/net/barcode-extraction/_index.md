@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất mã vạch dễ dàng với hướng dẫn GroupDocs.Parser for .NET. Hãy nâng cao khả năng xử lý tài liệu của bạn ngay bây giờ!
 weight: 27
 url: /vi/net/barcode-extraction/
+type: docs
 ---
-
 # Khai thác mã vạch
 
 

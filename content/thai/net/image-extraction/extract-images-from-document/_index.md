@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: แยกรูปภาพออกจากเอกสารได้อย่างง่ายดายโดยใช้ GroupDocs.Parser สำหรับ .NET ความสามารถในการประมวลผลเอกสารของคุณและปรับปรุงงานการแยกภาพได้อย่างมีประสิทธิภาพ
 weight: 11
 url: /th/net/image-extraction/extract-images-from-document/
+type: docs
 ---
-
 # แยกรูปภาพออกจากเอกสาร
 
 ## การแนะนำ

@@ -8,10 +8,8 @@ keywords:
 - extract container items
 - GroupDocs Parser for Java
 - document parsing
-
+type: docs
 ---
-
-
 # How to Extract Container Items from Documents Using GroupDocs.Parser for Java
 
 ## Introduction

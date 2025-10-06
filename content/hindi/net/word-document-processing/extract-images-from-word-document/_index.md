@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके Word दस्तावेज़ से छवियाँ निकालना सीखें। यह ट्यूटोरियल आपके .NET में छवि को एकीकृत करने के लिए चरण-दर-चरण मार्गदर्शन प्रदान करता है।
 weight: 11
 url: /hi/net/word-document-processing/extract-images-from-word-document/
+type: docs
 ---
-
 # वर्ड दस्तावेज़ से छवियाँ निकालें
 
 ## परिचय

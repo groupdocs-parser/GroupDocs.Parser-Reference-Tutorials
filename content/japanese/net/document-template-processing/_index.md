@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: GroupDocs.Parser for .NET を使用すると、ドキュメント テンプレートから構造化データを簡単に抽出できます。バーコード、フィールド、正規表現、テーブル レイアウトの操作方法を学習します。
 weight: 22
 url: /ja/net/document-template-processing/
+type: docs
 ---
-
 # ドキュメントテンプレート処理
 
 

@@ -6,8 +6,8 @@ description: GroupDocs.Parser for .NET & Java で効率的なデータ抽出テ�
 weight: 11
 url: /ja/
 is_root: true
+type: docs
 ---
-
 # GroupDocs.Parser でドキュメント解析のスキルを習得
 
 

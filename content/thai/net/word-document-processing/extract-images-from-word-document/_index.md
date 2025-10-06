@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกรูปภาพจากเอกสาร Word โดยใช้ GroupDocs.Parser สำหรับ .NET บทช่วยสอนนี้ให้คำแนะนำทีละขั้นตอนสำหรับการรวมรูปภาพเข้ากับ .NET ของคุณ
 weight: 11
 url: /th/net/word-document-processing/extract-images-from-word-document/
+type: docs
 ---
-
 # แยกรูปภาพออกจากเอกสาร Word
 
 ## การแนะนำ

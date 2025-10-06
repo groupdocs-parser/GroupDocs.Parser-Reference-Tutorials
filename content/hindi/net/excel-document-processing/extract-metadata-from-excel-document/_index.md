@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: .NET के लिए GroupDocs.Parser का उपयोग करके Excel दस्तावेज़ों से मेटाडेटा निकालने का तरीका जानें। इस चरण-दर-चरण ट्यूटोरियल का पालन करें।
 weight: 11
 url: /hi/net/excel-document-processing/extract-metadata-from-excel-document/
+type: docs
 ---
-
 # एक्सेल दस्तावेज़ से मेटाडेटा निकालें
 
 ## परिचय

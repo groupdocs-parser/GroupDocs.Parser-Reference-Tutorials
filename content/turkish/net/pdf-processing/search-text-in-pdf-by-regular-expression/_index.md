@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API'si
 description: GroupDocs.Parser ile normal ifadeleri kullanarak PDF belgelerinde belirli bir metni arayın. PDF metnini zahmetsizce çıkarın, analiz edin ve değiştirin.
 weight: 19
 url: /tr/net/pdf-processing/search-text-in-pdf-by-regular-expression/
+type: docs
 ---
-
 # Normal İfade ile PDF'de Metin Arama
 
 ## giriiş

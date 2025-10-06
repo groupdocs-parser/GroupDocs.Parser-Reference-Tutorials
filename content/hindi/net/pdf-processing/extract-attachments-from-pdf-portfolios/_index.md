@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: इस व्यापक ट्यूटोरियल में .NET के लिए GroupDocs.Parser का उपयोग करके पीडीएफ पोर्टफोलियो से अनुलग्नक निकालने का तरीका जानें।
 weight: 10
 url: /hi/net/pdf-processing/extract-attachments-from-pdf-portfolios/
+type: docs
 ---
-
 # पीडीएफ पोर्टफोलियो से अनुलग्नक निकालें
 
 ## परिचय

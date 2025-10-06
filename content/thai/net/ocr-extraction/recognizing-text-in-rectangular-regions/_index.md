@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีจดจำข้อความในพื้นที่เฉพาะของเอกสารโดยใช้ GroupDocs.Parser สำหรับ .NET พร้อมความสามารถ OCR
 weight: 14
 url: /th/net/ocr-extraction/recognizing-text-in-rectangular-regions/
+type: docs
 ---
-
 # การจดจำข้อความในพื้นที่สี่เหลี่ยม
 
 ## การแนะนำ

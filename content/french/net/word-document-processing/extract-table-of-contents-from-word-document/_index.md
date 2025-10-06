@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Découvrez comment extraire la table des matières (TOC) de documents Word par programmation à l'aide de GroupDocs.Parser pour .NET.
 weight: 13
 url: /fr/net/word-document-processing/extract-table-of-contents-from-word-document/
+type: docs
 ---
-
 # Extraire la table des matières d'un document Word
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET एपीआई
 description: GroupDocs.Parser के साथ .NET में दस्तावेज़ों से हाइपरलिंक्स को आसानी से निकालें। हाइपरलिंक निष्कर्षण के लिए चरण-दर-चरण मार्गदर्शिकाओं के साथ अपने C# अनुप्रयोगों को बेहतर बनाएँ।
 weight: 25
 url: /hi/net/hyperlink-extraction/
+type: docs
 ---
-
 # हाइपरलिंक निष्कर्षण
 
 ## परिचय

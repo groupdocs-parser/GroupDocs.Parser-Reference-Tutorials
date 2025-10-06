@@ -8,10 +8,8 @@ keywords:
 - PDF form extraction
 - GroupDocs.Parser Java
 - Java PDF parsing
-
+type: docs
 ---
-
-
 # Mastering PDF Form Extraction with GroupDocs.Parser in Java
 
 ## Introduction

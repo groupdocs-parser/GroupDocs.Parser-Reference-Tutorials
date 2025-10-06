@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: .NET용 GroupDocs.Parser를 사용하여 문서에서 특정 데이터 필드를 추출하는 방법을 알아보세요. 코드 예제가 포함된 단계별 가이드입니다.
 weight: 10
 url: /ko/net/data-extraction-from-templates/get-field-by-name/
+type: docs
 ---
-
 # 이름으로 필드 가져오기
 
 ## 소개

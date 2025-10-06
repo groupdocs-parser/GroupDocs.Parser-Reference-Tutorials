@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Erfahren Sie, wie Sie mit GroupDocs.Parser für .NET Text aus bestimmten Bereichen in Dokumenten extrahieren. Entdecken Sie in diesem Tutorial erweiterte Optionen zur Textextraktion.
 weight: 14
 url: /de/net/text-extraction/extract-text-from-specific-areas-with-options/
+type: docs
 ---
-
 # Extrahieren Sie Text aus bestimmten Bereichen mit Optionen
 
 ## Einführung

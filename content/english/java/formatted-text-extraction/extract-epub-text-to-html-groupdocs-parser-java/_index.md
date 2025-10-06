@@ -8,10 +8,8 @@ keywords:
 - extract EPUB text to HTML
 - GroupDocs.Parser for Java
 - text extraction from EPUB
-
+type: docs
 ---
-
-
 # Extract EPUB Text to HTML with GroupDocs.Parser for Java
 ## Introduction
 Are you struggling to convert text from EPUB files into HTML? Whether developing a digital library, an e-reader app, or rendering eBook content on web pages, extracting text as HTML is essential. This tutorial will guide you through using **GroupDocs.Parser for Java** to achieve this with ease and efficiency.

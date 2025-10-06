@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Dễ dàng trích xuất dữ liệu có cấu trúc từ các mẫu tài liệu bằng GroupDocs.Parser cho .NET. Tìm hiểu cách làm việc với mã vạch, trường, biểu thức chính quy và bố cục bảng.
 weight: 22
 url: /vi/net/document-template-processing/
+type: docs
 ---
-
 # Xử lý mẫu tài liệu
 
 

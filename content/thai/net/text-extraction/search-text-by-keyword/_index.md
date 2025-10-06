@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีค้นหาข้อความด้วยคำสำคัญในเอกสารโดยใช้ GroupDocs.Parser สำหรับ .NET แยกเนื้อหาที่เกี่ยวข้องอย่างมีประสิทธิภาพได้อย่างง่ายดาย
 weight: 21
 url: /th/net/text-extraction/search-text-by-keyword/
+type: docs
 ---
-
 # ค้นหาข้อความด้วยคำสำคัญ
 
 ## การแนะนำ

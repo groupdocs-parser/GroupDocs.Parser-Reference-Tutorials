@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: เรียนรู้วิธีแยกรูปภาพจากเอกสาร PDF โดยใช้ GroupDocs.Parser สำหรับ .NET คำแนะนำทีละขั้นตอนพร้อมตัวอย่างโค้ด
 weight: 12
 url: /th/net/pdf-processing/extract-images-from-pdf/
+type: docs
 ---
-
 # แยกรูปภาพจาก PDF
 
 ## การแนะนำ

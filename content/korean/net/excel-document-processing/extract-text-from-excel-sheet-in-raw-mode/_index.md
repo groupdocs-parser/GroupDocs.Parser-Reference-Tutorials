@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: 이 포괄적인 튜토리얼에서 .NET용 GroupDocs.Parser를 사용하여 Excel 시트에서 텍스트를 추출하는 방법을 알아보세요. 다운로드하고 구문 분석을 시작하세요.
 weight: 15
 url: /ko/net/excel-document-processing/extract-text-from-excel-sheet-in-raw-mode/
+type: docs
 ---
-
 # 원시 모드의 Excel 시트에서 텍스트 추출
 
 ## 소개

@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Sök efter specifik text i PDF-dokument med hjälp av reguljära uttryck med GroupDocs.Parser. Extrahera, analysera och manipulera PDF-text utan ansträngning.
 weight: 19
 url: /sv/net/pdf-processing/search-text-in-pdf-by-regular-expression/
+type: docs
 ---
-
 # Sök text i PDF med reguljärt uttryck
 
 ## Introduktion

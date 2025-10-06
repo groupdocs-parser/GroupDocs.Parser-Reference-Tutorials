@@ -8,10 +8,8 @@ keywords:
 - regex search in Word documents
 - GroupDocs.Parser for .NET setup
 - implementing regex searches
-
+type: docs
 ---
-
-
 # Mastering Regular Expression Searches in Microsoft Word Documents with GroupDocs.Parser for .NET
 
 ## Introduction

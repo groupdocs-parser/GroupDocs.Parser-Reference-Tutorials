@@ -3,8 +3,8 @@ title: "Barcode Extraction Tutorials for GroupDocs.Parser Java"
 description: "Learn to extract and process barcodes from documents and specific page areas with these GroupDocs.Parser Java tutorials."
 weight: 10
 url: "/java/barcode-extraction/"
+type: docs
 ---
-
 # Barcode Extraction Tutorials for GroupDocs.Parser Java
 
 Our barcode extraction tutorials provide comprehensive guidance for working with embedded barcodes using GroupDocs.Parser in Java. These step-by-step guides cover extracting barcodes from documents, processing barcodes from specific pages or regions, handling various barcode formats, and working with extraction options. Each tutorial includes working Java code examples for common barcode extraction scenarios, helping you build applications that can effectively capture and process encoded information from your documents.

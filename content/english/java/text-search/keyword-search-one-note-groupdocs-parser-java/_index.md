@@ -8,10 +8,8 @@ keywords:
 - Keyword Search OneNote
 - GroupDocs Parser Java
 - Text Extraction Java
-
+type: docs
 ---
-
-
 # Efficient Keyword Search in Microsoft OneNote Using GroupDocs.Parser for Java
 
 ## Introduction

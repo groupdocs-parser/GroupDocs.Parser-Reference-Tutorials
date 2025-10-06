@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan kereshet szöveget Excel-dokumentumokban reguláris kifejezések használatával a GroupDocs.Parser for .NET segítségével. Végezzen hatékonyan speciális szöveges kereséseket.
 weight: 17
 url: /hu/net/excel-document-processing/search-text-in-excel-document-by-regular-expression/
+type: docs
 ---
-
 # Szöveg keresése az Excel-dokumentumban reguláris kifejezéssel
 
 ## Bevezetés

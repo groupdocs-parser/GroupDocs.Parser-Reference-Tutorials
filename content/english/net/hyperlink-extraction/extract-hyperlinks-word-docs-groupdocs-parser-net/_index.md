@@ -8,10 +8,8 @@ keywords:
 - extract hyperlinks from Word documents
 - GroupDocs.Parser for .NET
 - hyperlink extraction tutorial
-
+type: docs
 ---
-
-
 # How to Extract Hyperlinks from Microsoft Office Word Documents Using GroupDocs.Parser for .NET
 
 ## Introduction

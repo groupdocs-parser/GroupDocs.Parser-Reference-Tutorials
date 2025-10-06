@@ -3,8 +3,8 @@ title: "Table Extraction Tutorials for GroupDocs.Parser Java"
 description: "Step-by-step tutorials for extracting and processing tables from documents using GroupDocs.Parser for Java."
 weight: 6
 url: "/java/table-extraction/"
+type: docs
 ---
-
 # Table Extraction Tutorials for GroupDocs.Parser Java
 
 Our table extraction tutorials provide in-depth guidance for working with tabular data using GroupDocs.Parser in Java. These step-by-step guides cover extracting tables from documents, processing tables from specific pages, working with table layouts, and customizing table extraction parameters. Each tutorial includes practical Java code examples for common table processing scenarios, helping you build applications that can effectively capture and utilize structured data from your documents.

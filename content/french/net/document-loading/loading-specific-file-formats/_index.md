@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Découvrez comment extraire du texte de différents formats de fichiers dans .NET à l'aide de GroupDocs.Parser. Tutoriel étape par étape pour un traitement efficace des documents.
 weight: 14
 url: /fr/net/document-loading/loading-specific-file-formats/
+type: docs
 ---
-
 # Chargement de formats de fichiers spécifiques
 
 ## Introduction

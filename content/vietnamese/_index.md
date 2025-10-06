@@ -6,8 +6,8 @@ description: Mở khóa các kỹ thuật trích xuất dữ liệu hiệu quả
 weight: 11
 url: /vi/
 is_root: true
+type: docs
 ---
-
 # Mở khóa khả năng phân tích cú pháp tài liệu với GroupDocs.Parser
 
 

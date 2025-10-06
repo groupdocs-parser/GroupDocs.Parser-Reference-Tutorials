@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Découvrez comment extraire du texte à partir de documents à l'aide de GroupDocs.Parser pour .NET. Extraction de texte simple, efficace et transparente dans vos applications .NET.
 weight: 19
 url: /fr/net/text-extraction/extract-text-in-raw-mode/
+type: docs
 ---
-
 # Extraire du texte en mode brut
 
 ## Introduction

@@ -5,8 +5,8 @@ second_title: API GroupDocs.Parser .NET
 description: Tìm hiểu cách trích xuất siêu dữ liệu từ tài liệu Word bằng GroupDocs.Parser cho .NET. Các bước dễ dàng để phân tích và truy xuất thông tin tài liệu.
 weight: 12
 url: /vi/net/word-document-processing/extract-metadata-from-word-document/
+type: docs
 ---
-
 # Trích xuất siêu dữ liệu từ tài liệu Word
 
 ## Giới thiệu

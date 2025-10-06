@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan bonthat ki szöveget Excel-dokumentumokból a GroupDocs.Parser for .NET segítségével egyszerű lépésekkel.
 weight: 12
 url: /hu/net/excel-document-processing/extract-text-from-excel-document/
+type: docs
 ---
-
 # Szöveg kibontása az Excel dokumentumból
 
 ## Bevezetés

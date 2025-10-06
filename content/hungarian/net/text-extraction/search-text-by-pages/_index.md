@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Tanuljon meg szöveget oldalak szerint keresni a GroupDocs.Parser for .NET segítségével. A .NET-alkalmazások dokumentumaiból hatékonyan nyerhet ki meghatározott tartalmat.
 weight: 22
 url: /hu/net/text-extraction/search-text-by-pages/
+type: docs
 ---
-
 # Szöveg keresése oldalak szerint
 
 ## Bevezetés

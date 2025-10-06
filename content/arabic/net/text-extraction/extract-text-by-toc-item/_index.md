@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: قم باستخراج النص حسب جدول المحتويات (TOC) باستخدام GroupDocs.Parser لـ .NET. تعلم تقنيات تحليل المستندات الفعالة لاستخراج البيانات المنظمة.
 weight: 15
 url: /ar/net/text-extraction/extract-text-by-toc-item/
+type: docs
 ---
-
 # استخراج النص حسب عنصر جدول المحتويات (TOC).
 
 ## مقدمة

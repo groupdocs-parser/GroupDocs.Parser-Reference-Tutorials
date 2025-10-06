@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Ismerje meg, hogyan lehet dokumentumoldalakat elemezni sablonok használatával a .NET-ben a GroupDocs.Parser segítségével. Hatékonyan nyerhet ki konkrét tartalmat alkalmazásaihoz.
 weight: 16
 url: /hu/net/document-template-processing/parse-pages-using-templates/
+type: docs
 ---
-
 # Oldalak elemzése sablonok segítségével
 
 ## Bevezetés

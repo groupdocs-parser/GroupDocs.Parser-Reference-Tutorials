@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Extraheer tekst uit PDF's met GroupDocs.Parser in C#. Leer efficiënte PDF-tekstextractie met deze krachtige .NET-bibliotheek.
 weight: 16
 url: /nl/net/pdf-processing/extract-text-from-page-in-pdf-in-raw-mode/
+type: docs
 ---
-
 # Extraheer tekst van pagina in PDF in Raw-modus
 
 ## Invoering

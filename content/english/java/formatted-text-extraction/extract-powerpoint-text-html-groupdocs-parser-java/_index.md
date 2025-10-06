@@ -8,10 +8,8 @@ keywords:
 - extract PowerPoint text as HTML
 - GroupDocs.Parser Java setup
 - PowerPoint slides to HTML conversion
-
+type: docs
 ---
-
-
 # How to Extract PowerPoint Text as HTML Using GroupDocs.Parser Java
 
 ## Introduction

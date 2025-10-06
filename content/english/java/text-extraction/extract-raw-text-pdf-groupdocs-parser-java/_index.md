@@ -8,10 +8,8 @@ keywords:
 - extract raw text from PDF
 - GroupDocs.Parser Java
 - text extraction in Java
-
+type: docs
 ---
-
-
 # How to Extract Raw Text from a PDF Page Using GroupDocs.Parser in Java
 
 ## Introduction

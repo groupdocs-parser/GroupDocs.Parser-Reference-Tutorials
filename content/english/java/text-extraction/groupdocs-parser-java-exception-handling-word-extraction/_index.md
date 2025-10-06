@@ -8,10 +8,8 @@ keywords:
 - exception handling
 - Word text extraction
 - GroupDocs.Parser Java
-
+type: docs
 ---
-
-
 # Mastering Exception Handling in Word Text Extraction with GroupDocs.Parser for Java
 
 ## Introduction

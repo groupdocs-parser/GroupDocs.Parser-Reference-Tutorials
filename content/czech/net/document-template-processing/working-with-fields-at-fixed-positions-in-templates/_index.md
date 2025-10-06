@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Naučte se extrahovat data z dokumentů pomocí GroupDocs.Parser for .NET. Obsáhlý tutoriál s příklady kódu.
 weight: 11
 url: /cs/net/document-template-processing/working-with-fields-at-fixed-positions-in-templates/
+type: docs
 ---
-
 # Práce s poli na pevných pozicích v šablonách
 
 ## Úvod

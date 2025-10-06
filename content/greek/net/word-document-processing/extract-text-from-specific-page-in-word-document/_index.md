@@ -5,8 +5,8 @@ second_title: GroupDocs.Parser .NET API
 description: Μάθετε πώς να εξάγετε κείμενο από συγκεκριμένες σελίδες σε έγγραφα του Word χρησιμοποιώντας το GroupDocs.Parser για .NET. Ενσωματώστε τις δυνατότητες εξαγωγής κειμένου στο .NET σας.
 weight: 17
 url: /el/net/word-document-processing/extract-text-from-specific-page-in-word-document/
+type: docs
 ---
-
 # Εξαγωγή κειμένου από συγκεκριμένη σελίδα στο έγγραφο του Word
 
 ## Εισαγωγή
