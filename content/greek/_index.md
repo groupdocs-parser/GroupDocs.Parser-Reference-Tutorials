@@ -18,7 +18,7 @@ keywords:
 - Java document parser
 - .NET document parser
 linktitle: GroupDocs.Parser Tutorials
-title: 'Οδηγός GroupDocs.Parser: Αποκτήστε την κυριαρχία στην ανάλυση εγγράφων'
+title: 'Οδηγός GroupDocs.Parser - Αποκτήστε την κυριαρχία στην ανάλυση εγγράφων'
 type: docs
 url: /el/
 weight: 11

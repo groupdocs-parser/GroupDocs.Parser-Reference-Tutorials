@@ -17,7 +17,7 @@ keywords:
 - Java document parser
 - .NET document parser
 linktitle: GroupDocs.Parser Tutorials
-title: 'دليل GroupDocs.Parser: إتقان تحليل المستندات'
+title: 'دليل GroupDocs.Parser - إتقان تحليل المستندات'
 type: docs
 url: /ar/
 weight: 11

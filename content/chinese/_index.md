@@ -16,7 +16,7 @@ keywords:
 - Java document parser
 - .NET document parser
 linktitle: GroupDocs.Parser Tutorials
-title: GroupDocs.Parser 教程：解锁文档解析精通
+title: GroupDocs.Parser 教程 - 解锁文档解析精通
 type: docs
 url: /zh/
 weight: 11

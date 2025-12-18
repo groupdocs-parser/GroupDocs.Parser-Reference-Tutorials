@@ -18,7 +18,7 @@ keywords:
 - Java document parser
 - .NET document parser
 linktitle: GroupDocs.Parser Tutorials
-title: 'Hướng Dẫn GroupDocs.Parser: Mở Khóa Sự Thành Thạo Phân Tích Tài Liệu'
+title: 'Hướng Dẫn GroupDocs.Parser - Mở Khóa Sự Thành Thạo Phân Tích Tài Liệu'
 type: docs
 url: /vi/
 weight: 11

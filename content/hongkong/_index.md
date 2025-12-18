@@ -16,7 +16,7 @@ keywords:
 - Java document parser
 - .NET document parser
 linktitle: GroupDocs.Parser Tutorials
-title: GroupDocs.Parser 教學：解鎖文件解析精通
+title: GroupDocs.Parser 教學 - 解鎖文件解析精通
 type: docs
 url: /zh-hant/
 weight: 11

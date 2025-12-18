@@ -16,7 +16,7 @@ keywords:
 - Java document parser
 - .NET document parser
 linktitle: GroupDocs.Parser Tutorials
-title: GroupDocs.Parser チュートリアル：文書解析の極意を解き放つ
+title: GroupDocs.Parser チュートリアル - 文書解析の極意を解き放つ
 type: docs
 url: /ja/
 weight: 11

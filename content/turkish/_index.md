@@ -18,7 +18,7 @@ keywords:
 - Java document parser
 - .NET document parser
 linktitle: GroupDocs.Parser Tutorials
-title: 'GroupDocs.Parser Eğitimi: Belge Ayrıştırma Ustalığını Açığa Çıkar'
+title: 'GroupDocs.Parser Eğitimi - Belge Ayrıştırma Ustalığını Açığa Çıkar'
 type: docs
 url: /tr/
 weight: 11

@@ -18,7 +18,7 @@ keywords:
 - Java document parser
 - .NET document parser
 linktitle: GroupDocs.Parser Tutorials
-title: 'GroupDocs.Parser útmutató: Szabadítsd fel a dokumentumfeldolgozás mesterségét'
+title: 'GroupDocs.Parser útmutató - Szabadítsd fel a dokumentumfeldolgozás mesterségét'
 type: docs
 url: /hu/
 weight: 11

@@ -1,5 +1,5 @@
 ---
-title: "GroupDocs.Parser Tutorial: Unlock Document Parsing Mastery"
+title: "GroupDocs.Parser Tutorial - Unlock Document Parsing Mastery"
 linktitle: GroupDocs.Parser Tutorials
 additionalTitle: GroupDocs API References
 description: "Learn the GroupDocs.Parser tutorial for efficient document extraction with .NET & Java. Explore step‑by‑step guides on text, table, image extraction and more."

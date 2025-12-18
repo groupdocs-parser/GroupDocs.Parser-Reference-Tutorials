@@ -18,7 +18,7 @@ keywords:
 - Java document parser
 - .NET document parser
 linktitle: GroupDocs.Parser Tutorials
-title: 'Tutorial di GroupDocs.Parser: Sblocca la maestria nell''analisi dei documenti'
+title: 'Tutorial di GroupDocs.Parser - Sblocca la maestria nell''analisi dei documenti'
 type: docs
 url: /it/
 weight: 11

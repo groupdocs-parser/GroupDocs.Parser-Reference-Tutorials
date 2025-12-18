@@ -18,7 +18,7 @@ keywords:
 - Java document parser
 - .NET document parser
 linktitle: GroupDocs.Parser Tutorials
-title: 'Учебник GroupDocs.Parser: Овладейте мастерством разбора документов'
+title: 'Учебник GroupDocs.Parser - Овладейте мастерством разбора документов'
 type: docs
 url: /ru/
 weight: 11

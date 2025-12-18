@@ -18,7 +18,7 @@ keywords:
 - Java document parser
 - .NET document parser
 linktitle: GroupDocs.Parser Tutorials
-title: 'Samouczek GroupDocs.Parser: Odkryj mistrzostwo w parsowaniu dokumentów'
+title: 'Samouczek GroupDocs.Parser - Odkryj mistrzostwo w parsowaniu dokumentów'
 type: docs
 url: /pl/
 weight: 11
