@@ -1,13 +1,17 @@
 ---
-title: "Container Format Parsing Tutorials for GroupDocs.Parser Java"
-description: "Learn to work with ZIP archives, PDF portfolios, and other container formats with these GroupDocs.Parser Java tutorials."
+title: "Iterate Through ZIP Files with GroupDocs.Parser Java"
+description: "Learn how to iterate through ZIP files and detect ZIP file type using GroupDocs.Parser Java tutorials."
 weight: 16
 url: "/java/container-formats/"
 type: docs
+date: 2025-12-18
 ---
-# Container Format Parsing Tutorials for GroupDocs.Parser Java
+# Iterate Through ZIP Files with GroupDocs.Parser Java
 
-Our container format tutorials show you how to process compound documents using GroupDocs.Parser in Java. These step-by-step guides cover extracting content from ZIP archives, processing PDF portfolios, iterating through container items, and working with nested documents. Each tutorial includes detailed Java code examples for common container processing scenarios, helping you build applications that can effectively navigate and extract content from complex document collections.
+Our container format tutorials show you how to **iterate through ZIP files** using GroupDocs.Parser for Java, making it easy to handle complex archives. In addition, you’ll learn techniques to **detect ZIP file type** and extract embedded content from PDF portfolios, emails, and other container formats. These step‑by‑step guides provide detailed Java code examples that help you build robust applications for processing and navigating nested documents.
+
+## How to Iterate Through ZIP Files with GroupDocs.Parser
+When working with large or nested archives, iterating through ZIP files efficiently is essential for performance and reliability. GroupDocs.Parser offers a streaming API that lets you read each entry without loading the entire archive into memory. This approach is ideal for batch processing, content indexing, or on‑the‑fly extraction scenarios.
 
 ## Available Tutorials
 
@@ -29,6 +33,9 @@ Learn how to efficiently extract attachments and embedded documents from PDFs, e
 ### [Iterate Through ZIP Archives Using GroupDocs.Parser Java&#58; A Comprehensive Guide](./iterate-zip-archive-groupdocs-parser-java/)
 Learn how to automate the extraction of file names and sizes from ZIP archives using GroupDocs.Parser for Java. Streamline your workflow with step-by-step instructions.
 
+## Detect ZIP File Type in Archives
+Identifying the exact file type of each entry inside a ZIP archive helps you apply the right processing logic (e.g., OCR for images, text extraction for documents). Using GroupDocs.Parser’s built‑in detectors, you can quickly **detect ZIP file type** without writing custom magic‑byte checks.
+
 ## Additional Resources
 
 - [GroupDocs.Parser for Java Documentation](https://docs.groupdocs.com/parser/java/)
@@ -37,3 +44,10 @@ Learn how to automate the extraction of file names and sizes from ZIP archives u
 - [GroupDocs.Parser Forum](https://forum.groupdocs.com/c/parser)
 - [Free Support](https://forum.groupdocs.com/)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Last Updated:** 2025-12-18  
+**Author:** GroupDocs  
+
+---
