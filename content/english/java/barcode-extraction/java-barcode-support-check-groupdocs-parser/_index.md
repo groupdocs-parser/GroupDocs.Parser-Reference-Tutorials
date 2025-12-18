@@ -1,5 +1,5 @@
 ---
-title: "Check Barcode Support Java with GroupDocs.Parser: A Comprehensive Guide"
+title: "Check Barcode Support Java with GroupDocs.Parser - A Comprehensive Guide"
 description: "Learn how to check barcode support java and detect barcodes java in PDFs using GroupDocs.Parser. Step‑by‑step tutorial with setup, code, and troubleshooting."
 date: "2025-12-18"
 weight: 1

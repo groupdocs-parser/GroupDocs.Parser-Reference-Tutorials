@@ -7,7 +7,7 @@ keywords:
 - Java barcode support check
 - GroupDocs.Parser for Java setup
 - Barcode extraction verification
-title: 'Ověřte podporu čárových kódů v Javě pomocí GroupDocs.Parser: Komplexní průvodce'
+title: 'Ověřte podporu čárových kódů v Javě pomocí GroupDocs.Parser - Komplexní průvodce'
 type: docs
 url: /cs/java/barcode-extraction/java-barcode-support-check-groupdocs-parser/
 weight: 1

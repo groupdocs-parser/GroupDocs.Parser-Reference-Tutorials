@@ -6,7 +6,7 @@ keywords:
 - Java barcode support check
 - GroupDocs.Parser for Java setup
 - Barcode extraction verification
-title: 'تحقق من دعم الباركود في Java باستخدام GroupDocs.Parser: دليل شامل'
+title: 'تحقق من دعم الباركود في Java باستخدام GroupDocs.Parser - دليل شامل'
 type: docs
 url: /ar/java/barcode-extraction/java-barcode-support-check-groupdocs-parser/
 weight: 1

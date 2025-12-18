@@ -7,7 +7,7 @@ keywords:
 - Java barcode support check
 - GroupDocs.Parser for Java setup
 - Barcode extraction verification
-title: 'Ellenőrizze a Java vonalkód támogatását a GroupDocs.Parser-rel: Átfogó útmutató'
+title: 'Ellenőrizze a Java vonalkód támogatását a GroupDocs.Parser-rel - Átfogó útmutató'
 type: docs
 url: /hu/java/barcode-extraction/java-barcode-support-check-groupdocs-parser/
 weight: 1

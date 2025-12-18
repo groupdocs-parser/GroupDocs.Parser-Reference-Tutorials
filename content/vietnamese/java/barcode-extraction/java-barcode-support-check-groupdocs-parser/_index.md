@@ -7,7 +7,7 @@ keywords:
 - Java barcode support check
 - GroupDocs.Parser for Java setup
 - Barcode extraction verification
-title: 'Kiểm tra hỗ trợ mã vạch Java với GroupDocs.Parser: Hướng dẫn toàn diện'
+title: 'Kiểm tra hỗ trợ mã vạch Java với GroupDocs.Parser - Hướng dẫn toàn diện'
 type: docs
 url: /vi/java/barcode-extraction/java-barcode-support-check-groupdocs-parser/
 weight: 1
