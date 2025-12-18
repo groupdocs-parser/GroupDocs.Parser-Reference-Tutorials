@@ -1,57 +1,60 @@
 ---
-title: "Extract Barcodes from PDFs Using GroupDocs.Parser for Java | Step-by-Step Guide"
-description: "Learn how to efficiently extract barcodes from PDF documents using GroupDocs.Parser for Java. This step-by-step guide covers setup, implementation, and best practices."
-date: "2025-12-16"
-weight: 1
-url: "/java/barcode-extraction/extract-barcode-pdf-groupdocs-parser-java/"
+date: '2025-12-16'
+description: Ismerje meg, hogyan lehet hatékonyan kinyerni a vonalkódokat PDF-dokumentumokból
+  a GroupDocs.Parser for Java segítségével. Ez a lépésről‑lépésre útmutató a beállítást,
+  a megvalósítást és a legjobb gyakorlatokat tárgyalja.
 keywords:
 - extract barcodes PDF Java
 - GroupDocs.Parser for Java setup
 - Java barcode extraction from documents
+title: Vonalkódok kinyerése PDF-ekből a GroupDocs.Parser for Java használatával |
+  Lépésről lépésre útmutató
 type: docs
+url: /hu/java/barcode-extraction/extract-barcode-pdf-groupdocs-parser-java/
+weight: 1
 ---
 
-# Extract Barcodes from PDFs Using GroupDocs.Parser for Java
+# Vonalkódok kinyerése PDF-ekből a GroupDocs.Parser for Java segítségével
 
-**groupdocs parser java** makes it easy to pull barcode data straight out of PDF files, letting you automate inventory checks, shipment validation, and more. In this guide we’ll walk through everything you need—from environment setup to extracting barcodes on a specific page.
+**groupdocs parser java** megkönnyíti a vonalkód adatok közvetlen kinyerését PDF fájlokból, lehetővé téve a készletellenőrzés, szállítmány-ellenőrzés és egyéb folyamatok automatizálását. Ebben az útmutatóban végigvezetünk mindenen, ami szükséges – a környezet beállításától a konkrét oldalról történő vonalkód kinyerésig.
 
 ## Introduction
-In today’s digital age, efficiently extracting information is crucial for businesses and developers. With **groupdocs parser java**, you can programmatically read barcodes embedded in PDFs, saving time and reducing manual data entry.
+A mai digitális korban az információ hatékony kinyerése elengedhetetlen a vállalkozások és fejlesztők számára. A **groupdocs parser java** segítségével programozottan olvashatók ki a PDF-ekbe ágyazott vonalkódok, időt takarítva meg és csökkentve a kézi adatbevitel szükségességét.
 
 ## Quick Answers
-- **What library should I use?** GroupDocs.Parser for Java.  
-- **Can I extract barcodes from a single page?** Yes – use `parser.getBarcodes(pageIndex)`.  
-- **Do I need a license?** A temporary or full license is required for production use.  
-- **Supported formats?** PDF, DOCX, XLSX, and other common document types.  
-- **Is barcode extraction fast for large files?** Batch processing and asynchronous calls improve performance.
+- **Melyik könyvtárat használjam?** GroupDocs.Parser for Java.  
+- **Kinyerhetek vonalkódot egyetlen oldalról?** Igen – használd a `parser.getBarcodes(pageIndex)` metódust.  
+- **Szükség van licencre?** Ideiglenes vagy teljes licenc szükséges a termelésben való használathoz.  
+- **Támogatott formátumok?** PDF, DOCX, XLSX és más gyakori dokumentumtípusok.  
+- **Gyors a vonalkód kinyerés nagy fájlok esetén?** Kötegelt feldolgozás és aszinkron hívások javítják a teljesítményt.
 
 ## What is groupdocs parser java?
-GroupDocs.Parser for Java is a high‑level API that reads text, tables, images, and barcodes from a wide range of document formats without converting them to intermediate files. It abstracts the low‑level parsing logic, so you can focus on business rules.
+A GroupDocs.Parser for Java egy magas szintű API, amely szöveget, táblázatokat, képeket és vonalkódokat olvas ki számos dokumentumformátumból anélkül, hogy köztes fájlokba konvertálná őket. Elrejti az alacsony szintű elemzési logikát, így a fejlesztő a üzleti szabályokra koncentrálhat.
 
 ## Why use groupdocs parser java for pdf barcode extraction?
-- **Accuracy** – Built‑in barcode recognition works on both vector and raster images.  
-- **Speed** – Extract only the pages you need, avoiding full‑document scans.  
-- **Scalability** – Handles large batches with minimal memory footprint.  
-- **Cross‑platform** – Works on Windows, macOS, and Linux with any Java 8+ runtime.
+- **Accuracy** – A beépített vonalkód felismerés vektor- és raszteres képeken egyaránt működik.  
+- **Speed** – Csak a szükséges oldalakat olvasod ki, elkerülve a teljes dokumentum átvizsgálását.  
+- **Scalability** – Nagy kötegeket kezel minimális memóriaigénnyel.  
+- **Cross‑platform** – Windows, macOS és Linux rendszereken működik bármely Java 8+ futtatókörnyezettel.
 
 ## Prerequisites
-- **GroupDocs.Parser for Java** ≥ 25.5 (recommended).  
-- Java 8 or newer, Maven (or Gradle) for dependency management.  
-- An IDE such as IntelliJ IDEA or Eclipse.  
+- **GroupDocs.Parser for Java** ≥ 25.5 (ajánlott).  
+- Java 8 vagy újabb, Maven (vagy Gradle) a függőségkezeléshez.  
+- IDE, például IntelliJ IDEA vagy Eclipse.  
 
 ### Required Libraries and Versions
-- **GroupDocs.Parser for Java**: Version 25.5 or later is recommended.
+- **GroupDocs.Parser for Java**: A 25.5 vagy újabb verzió ajánlott.
 
 ### Environment Setup Requirements
-- A suitable IDE (e.g., IntelliJ IDEA, Eclipse) running on Windows, macOS, or Linux.  
-- JDK installed (Java 8+).
+- Megfelelő IDE (pl. IntelliJ IDEA, Eclipse), amely Windows, macOS vagy Linux rendszeren fut.  
+- Telepített JDK (Java 8+).
 
 ### Knowledge Prerequisites
-- Basic Java programming.  
-- Familiarity with Maven for managing dependencies.
+- Alapvető Java programozási ismeretek.  
+- Maven ismerete a függőségek kezeléséhez.
 
 ## Setting Up GroupDocs.Parser for Java
-To get started with barcode extraction, you need to install the GroupDocs.Parser library. You can add it via Maven or download it directly.
+A vonalkód kinyerés megkezdéséhez telepíteni kell a GroupDocs.Parser könyvtárat. Hozzáadhatod Maven‑en keresztül vagy letöltheted közvetlenül.
 
 ### Using Maven
 Add the following configuration to your `pom.xml`:
