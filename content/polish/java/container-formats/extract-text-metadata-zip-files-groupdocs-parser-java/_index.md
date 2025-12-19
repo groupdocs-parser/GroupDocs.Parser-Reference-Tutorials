@@ -1,19 +1,21 @@
 ---
-title: "groupdocs parser zip extraction: Java guide for text & metadata"
-description: "Learn how to perform groupdocs parser zip extraction and metadata extraction Java library usage. This step‑by‑step guide shows extracting text and metadata from ZIP archives with GroupDocs.Parser."
-date: "2025-12-19"
-weight: 1
-url: "/java/container-formats/extract-text-metadata-zip-files-groupdocs-parser-java/"
+date: '2025-12-19'
+description: Dowiedz się, jak wykonać ekstrakcję plików ZIP i metadanych przy użyciu
+  biblioteki Java GroupDocs.Parser. Ten przewodnik krok po kroku pokazuje, jak wyodrębnić
+  tekst i metadane z archiwów ZIP przy użyciu GroupDocs.Parser.
 keywords:
 - extract text from zip files java
 - groupdocs parser metadata extraction
 - java zip file parsing
+title: 'groupdocs parser – wyodrębnianie zip: przewodnik Java dla tekstu i metadanych'
 type: docs
+url: /pl/java/container-formats/extract-text-metadata-zip-files-groupdocs-parser-java/
+weight: 1
 ---
 
-# groupdocs parser zip extraction: Java guide for text & metadata
+# groupdocs parser zip extraction: przewodnik Java dla tekstu i metadanych
 
-Are you tired of manually sifting through each file in a ZIP archive to extract text or metadata? **groupdocs parser zip extraction** lets you automate this task efficiently with the powerful GroupDocs.Parser library for Java. In this tutorial you’ll learn how to set up the library, pull text from every file inside a ZIP, and retrieve useful metadata—all while keeping your code clean and performant.
+Czy masz dość ręcznego przeszukiwania każdego pliku w archiwum ZIP w celu wyodrębnienia tekstu lub metadanych? **groupdocs parser zip extraction** pozwala zautomatyzować to zadanie efektywnie przy użyciu potężnej biblioteki GroupDocs.Parser dla Javy. W tym samouczku dowiesz się, jak skonfigurować bibliotekę, pobrać tekst ze wszystkich plików wewnątrz ZIP oraz uzyskać przydatne metadane — wszystko przy zachowaniu czystego i wydajnego kodu.
 
 ## Quick Answers
 - **What does groupdocs parser zip extraction do?** It reads every entry in a ZIP archive and lets you extract text or metadata programmatically.  
