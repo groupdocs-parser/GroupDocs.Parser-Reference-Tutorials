@@ -1,14 +1,16 @@
 ---
-title: "Connect SQLite Java: Database Integration Tutorials for GroupDocs.Parser"
-description: "Learn how to connect SQLite Java applications with GroupDocs.Parser, covering java database integration, how to connect SQLite, and extract data Java examples."
-weight: 20
-url: "/java/database-integration/"
-type: docs
 date: 2025-12-20
+description: GroupDocs.Parser を使用して SQLite Java アプリケーションを接続する方法を学びます。Java データベース統合、SQLite
+  の接続方法、データ抽出の Java 例をカバーしています。
+title: 'SQLite Java 接続: GroupDocs.Parser のデータベース統合チュートリアル'
+type: docs
+url: /ja/java/database-integration/
+weight: 20
 ---
+
 # Connect SQLite Java: Database Integration Tutorials for GroupDocs.Parser
 
-Connecting SQLite Java databases with GroupDocs.Parser lets you combine powerful document parsing with lightweight, file‑based storage. In this guide you’ll discover **how to connect SQLite** from a Java application, perform **java database integration**, and use the parser to **extract data Java**‑style from documents into your tables. Whether you’re building a document‑driven workflow or need to synchronize parsed content with existing records, these tutorials give you a clear, step‑by‑step path.
+SQLite Java データベースを GroupDocs.Parser と接続すると、強力なドキュメント解析と軽量なファイルベースストレージを組み合わせることができます。このガイドでは **Java アプリケーションから SQLite に接続する方法**、**java データベース統合** の実行方法、そしてパーサーを使用して **Java スタイルでデータを抽出** し、テーブルに格納する手順を紹介します。ドキュメント駆動のワークフローを構築したい場合や、解析結果を既存レコードと同期させる必要がある場合に、これらのチュートリアルは明確なステップバイステップの道筋を提供します。
 
 ## Quick Answers
 - **What is the primary library?** GroupDocs.Parser for Java  
@@ -18,12 +20,12 @@ Connecting SQLite Java databases with GroupDocs.Parser lets you combine powerful
 - **Can I store parsed results back to SQLite?** Absolutely – use standard JDBC operations  
 
 ## What is **connect sqlite java**?
-Connecting SQLite from Java simply means using the SQLite JDBC driver to open a `.db` file, run SQL statements, and retrieve results. When paired with GroupDocs.Parser, you can feed document content directly into your database or pull stored data to enrich parsing logic.
+Java から SQLite に接続するということは、SQLite JDBC ドライバーを使用して `.db` ファイルを開き、SQL 文を実行し、結果を取得することを意味します。GroupDocs.Parser と組み合わせることで、ドキュメントの内容を直接データベースに流し込んだり、保存されたデータを取得して解析ロジックを強化したりできます。
 
 ## Why use **java database integration** with GroupDocs.Parser?
-- **Lightweight storage** – SQLite doesn’t require a server, making deployment easy.  
-- **Seamless workflow** – Parse a PDF, extract tables, and insert them into SQLite in one flow.  
-- **Scalable architecture** – Move from SQLite to a full‑featured RDBMS later without changing parsing code.  
+- **Lightweight storage** – SQLite はサーバーを必要とせず、デプロイが簡単です。  
+- **Seamless workflow** – PDF を解析し、テーブルを抽出し、SQLite に挿入するまでを一連のフローで実行できます。  
+- **Scalable architecture** – 後で SQLite からフル機能の RDBMS に移行しても、解析コードを変更する必要はありません。  
 
 ## Prerequisites
 - Java Development Kit (JDK 8 or newer)  
@@ -37,12 +39,12 @@ Connecting SQLite from Java simply means using the SQLite JDBC driver to open a 
 ### Step 1: Add Required Dependencies
 Include the following Maven coordinates in your `pom.xml` (or the equivalent Gradle entries). This sets up both GroupDocs.Parser and the SQLite driver.
 
-> *No code block needed – just add the dependencies as shown in your build file.*
+> *コードブロックは不要です – ビルドファイルに示すように依存関係を追加してください。*
 
 ### Step 2: Create a SQLite Connection
 Establish a connection using the standard JDBC URL `jdbc:sqlite:your-database-file.db`. This is the core of **how to connect SQLite** from Java.
 
-> *Explanation only – the actual Java code remains unchanged from the original tutorial linked below.*
+> *説明のみです – 実際の Java コードは下記のオリジナルチュートリアルと同じです。*
 
 ### Step 3: Initialize GroupDocs.Parser
 Instantiate the parser with your license and point it to the document you want to process. This step prepares the engine for **extract data java** operations.
@@ -99,6 +101,4 @@ Learn how to integrate GroupDocs.Parser with an SQLite database in Java. This st
 
 **Last Updated:** 2025-12-20  
 **Tested With:** GroupDocs.Parser for Java 23.12 (latest release)  
-**Author:** GroupDocs  
-
----
+**Author:** GroupDocs
