@@ -1,14 +1,16 @@
 ---
-title: "Connect SQLite Java: Database Integration Tutorials for GroupDocs.Parser"
-description: "Learn how to connect SQLite Java applications with GroupDocs.Parser, covering java database integration, how to connect SQLite, and extract data Java examples."
-weight: 20
-url: "/java/database-integration/"
-type: docs
 date: 2025-12-20
+description: 学习如何将 SQLite Java 应用程序与 GroupDocs.Parser 连接，涵盖 Java 数据库集成、如何连接 SQLite，以及提取数据的
+  Java 示例。
+title: 连接 SQLite Java：GroupDocs.Parser 数据库集成教程
+type: docs
+url: /zh/java/database-integration/
+weight: 20
 ---
+
 # Connect SQLite Java: Database Integration Tutorials for GroupDocs.Parser
 
-Connecting SQLite Java databases with GroupDocs.Parser lets you combine powerful document parsing with lightweight, file‑based storage. In this guide you’ll discover **how to connect SQLite** from a Java application, perform **java database integration**, and use the parser to **extract data Java**‑style from documents into your tables. Whether you’re building a document‑driven workflow or need to synchronize parsed content with existing records, these tutorials give you a clear, step‑by‑step path.
+将 SQLite Java 数据库与 GroupDocs.Parser 结合使用，可实现强大的文档解析与轻量级、基于文件的存储相结合。在本指南中，您将了解 **如何在 Java 应用程序中连接 SQLite**、执行 **java 数据库集成**，并使用解析器 **以 Java 方式从文档中提取数据** 到表中。无论是构建文档驱动的工作流，还是需要将解析内容同步到现有记录，这些教程都提供了清晰的逐步路径。
 
 ## Quick Answers
 - **What is the primary library?** GroupDocs.Parser for Java  
@@ -99,6 +101,4 @@ Learn how to integrate GroupDocs.Parser with an SQLite database in Java. This st
 
 **Last Updated:** 2025-12-20  
 **Tested With:** GroupDocs.Parser for Java 23.12 (latest release)  
-**Author:** GroupDocs  
-
----
+**Author:** GroupDocs
