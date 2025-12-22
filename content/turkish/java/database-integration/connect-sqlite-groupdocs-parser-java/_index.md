@@ -1,29 +1,30 @@
 ---
-title: "sqlite jdbc connection with GroupDocs.Parser in Java – A Comprehensive Guide"
-description: "Learn how to set up a sqlite jdbc connection with GroupDocs.Parser in Java, covering installation, connection setup, and extracting data from SQLite databases."
-date: "2025-12-22"
-weight: 1
-url: "/java/database-integration/connect-sqlite-groupdocs-parser-java/"
+date: '2025-12-22'
+description: Java'da GroupDocs.Parser ile bir SQLite JDBC bağlantısı kurmayı öğrenin;
+  kurulum, bağlantı ayarı ve SQLite veritabanlarından veri çıkarma konularını kapsar.
 keywords:
 - GroupDocs.Parser Java
 - SQLite JDBC Java
 - Java database connectivity
+title: Java'da GroupDocs.Parser ile SQLite JDBC Bağlantısı – Kapsamlı Bir Rehber
 type: docs
+url: /tr/java/database-integration/connect-sqlite-groupdocs-parser-java/
+weight: 1
 ---
 
 # sqlite jdbc connection with GroupDocs.Parser in Java
 
 ## Introduction
 
-Connecting to an SQLite database using a **sqlite jdbc connection** is a common requirement when you need lightweight, file‑based storage for Java applications. In this tutorial we’ll show you how to combine the power of GroupDocs.Parser with a reliable SQLite JDBC connection, enabling you to parse documents and store or retrieve data directly from an SQLite file. By the end, you’ll be comfortable setting up the environment, establishing the connection, executing queries, and handling parsed content—all while following best practices for performance and resource management.
+Bir SQLite veritabanına **sqlite jdbc connection** kullanarak bağlanmak, Java uygulamaları için hafif, dosya‑tabanlı depolama gerektiğinde yaygın bir gereksinimdir. Bu öğreticide, GroupDocs.Parser gücünü güvenilir bir SQLite JDBC bağlantısıyla nasıl birleştireceğinizi göstereceğiz; böylece belgeleri ayrıştırabilir ve verileri doğrudan bir SQLite dosyasından depolayıp geri alabilirsiniz. Sonuna kadar ortamı kurma, bağlantıyı oluşturma, sorgu çalıştırma ve ayrıştırılmış içeriği işleme konularında rahat olacaksınız—performans ve kaynak yönetimi için en iyi uygulamaları izleyerek.
 
 **What You'll Learn:**
-- Setting up GroupDocs.Parser for Java.
-- Creating a **sqlite jdbc connection** string.
-- Parsing and extracting data from documents stored in an SQLite database.
-- Debugging common connection issues effectively.
+- GroupDocs.Parser for Java kurulumu.
+- **sqlite jdbc connection** dizesi oluşturma.
+- SQLite veritabanında saklanan belgelerden veri ayrıştırma ve çıkarma.
+- Yaygın bağlantı sorunlarını etkili bir şekilde hata ayıklama.
 
-Let's begin by reviewing the prerequisites!
+Gereksinimleri inceleyerek başlayalım!
 
 ## Quick Answers
 - **What is the primary library?** GroupDocs.Parser for Java.
@@ -49,12 +50,12 @@ A **sqlite jdbc connection** is a JDBC URL that points to an SQLite database fil
 - **SQLite JDBC Driver**: Download from [sqlite-jdbc](https://github.com/xerial/sqlite-jdbc).
 
 ### Environment Setup Requirements
-- An IDE such as IntelliJ IDEA, Eclipse, or NetBeans.  
-- Maven for dependency management.
+- IntelliJ IDEA, Eclipse veya NetBeans gibi bir IDE.  
+- Bağımlılık yönetimi için Maven.
 
 ### Knowledge Prerequisites
-- Basic Java and SQL concepts.  
-- Familiarity with JDBC and database connectivity in Java applications.
+- Temel Java ve SQL kavramları.  
+- JDBC ve Java uygulamalarında veritabanı bağlantısı konularına aşinalık.
 
 ## Setting Up GroupDocs.Parser for Java
 
