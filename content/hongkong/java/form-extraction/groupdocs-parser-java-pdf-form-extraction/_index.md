@@ -1,47 +1,48 @@
 ---
-title: "Extract PDF Form Data with GroupDocs.Parser in Java"
-description: "Learn how to extract pdf form data and read pdf form fields using GroupDocs.Parser for Java. Automate PDF data entry, extract images from pdf, and streamline document processing."
-date: "2026-01-01"
-weight: 1
-url: "/java/form-extraction/groupdocs-parser-java-pdf-form-extraction/"
+date: '2026-01-01'
+description: 了解如何使用 GroupDocs.Parser for Java 提取 PDF 表單資料並讀取 PDF 表單欄位。自動化 PDF 資料輸入、從
+  PDF 中提取圖像，並簡化文件處理流程。
 keywords:
 - PDF form extraction
 - GroupDocs.Parser Java
 - Java PDF parsing
+title: 在 Java 中使用 GroupDocs.Parser 提取 PDF 表單資料
 type: docs
+url: /zh-hant/java/form-extraction/groupdocs-parser-java-pdf-form-extraction/
+weight: 1
 ---
 
-# Extract PDF Form Data with GroupDocs.Parser in Java
+# 使用 GroupDocs.Parser 在 Java 中提取 PDF 表單資料
 
-In this tutorial you'll discover **how to extract pdf form data** from PDF documents using GroupDocs.Parser for Java. Whether you need to read pdf form fields, pull images from pdf, or automate pdf data entry, the step‑by‑step guide below shows you exactly how to do it efficiently and reliably.
+在本教學中，你將了解 **如何使用 GroupDocs.Parser for Java 從 PDF 文件中提取表單資料**。無論你需要讀取 PDF 表單欄位、提取 PDF 中的圖像，或自動化 PDF 資料輸入，以下一步一步的指南都會向你展示如何高效且可靠地完成。
 
-## Quick Answers
-- **What library extracts pdf form data?** GroupDocs.Parser for Java  
-- **Can I read pdf form fields and images?** Yes – both text fields and embedded images are supported  
-- **Do I need a license?** A free trial works for evaluation; a commercial license is required for production  
-- **Which Java version is required?** Java 8 or later  
-- **Is parallel processing possible?** Yes, you can parse multiple PDFs concurrently for high‑throughput scenarios  
+## 快速解答
+- **什麼函式庫可提取 PDF 表單資料？** GroupDocs.Parser for Java  
+- **我可以讀取 PDF 表單欄位和圖像嗎？** Yes – both text fields and embedded images are supported  
+- **我需要授權嗎？** A free trial works for evaluation; a commercial license is required for production  
+- **需要哪個 Java 版本？** Java 8 or later  
+- **是否支援平行處理？** Yes, you can parse multiple PDFs concurrently for high‑throughput scenarios  
 
-## What is extract pdf form data?
-Extracting pdf form data means programmatically reading the values entered into interactive fields (text boxes, check boxes, dropdowns, etc.) inside a PDF form. This lets you move data from static documents into databases, CRM systems, or any downstream process without manual transcription.
+## 什麼是提取 PDF 表單資料？
+提取 PDF 表單資料是指以程式方式讀取 PDF 表單中互動欄位（文字方塊、核取方塊、下拉選單等）所輸入的值。這讓你能將資料從靜態文件搬移至資料庫、CRM 系統或任何後續流程，而無需手動抄寫。
 
-## Why use GroupDocs.Parser to extract pdf form data?
-- **High accuracy:** Handles complex layouts and preserves field names.  
-- **Broad format support:** Works with PDFs, Word, Excel, and more.  
-- **Simple API:** Minimal code required to get field values.  
-- **Performance‑focused:** Supports streaming and selective parsing to keep memory usage low.  
+## 為什麼使用 GroupDocs.Parser 來提取 PDF 表單資料？
+- **高精度：** Handles complex layouts and preserves field names.  
+- **廣泛格式支援：** Works with PDFs, Word, Excel, and more.  
+- **簡易 API：** Minimal code required to get field values.  
+- **效能導向：** Supports streaming and selective parsing to keep memory usage low.  
 
-## Prerequisites
+## 前置條件
 
-- **Java Development Kit (JDK):** Java 8 or later  
-- **Maven:** For dependency management and building the project  
-- **Basic Java knowledge:** Familiarity with classes, methods, and OOP concepts  
+- **Java Development Kit (JDK)：** Java 8 or later  
+- **Maven：** For dependency management and building the project  
+- **Basic Java knowledge：** Familiarity with classes, methods, and OOP concepts  
 
-## Setting Up GroupDocs.Parser for Java
+## 設定 GroupDocs.Parser for Java
 
 Integrate GroupDocs.Parser into your project using Maven or by downloading the library directly.
 
-### Maven Integration
+### Maven 整合
 
 Add the repository and dependency to your `pom.xml` file:
 
@@ -63,13 +64,13 @@ Add the repository and dependency to your `pom.xml` file:
 </dependencies>
 ```
 
-### Direct Download
+### 直接下載
 
 Alternatively, download the latest version from [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
-#### License Acquisition
-- **Free Trial:** Obtain a temporary license to test GroupDocs.Parser features.  
-- **Purchase:** Acquire a full license for commercial use.  
+#### 取得授權
+- **Free Trial：** Obtain a temporary license to test GroupDocs.Parser features.  
+- **Purchase：** Acquire a full license for commercial use.  
 
 Once the library is available, you can create a `Parser` instance to work with PDF forms:
 
@@ -85,9 +86,9 @@ public class PdfFormExtractor {
 }
 ```
 
-## How to extract pdf form data
+## 如何提取 PDF 表單資料
 
-### Step 1: Parse the Form Fields
+### 步驟 1：解析表單欄位
 
 Start by creating a `Parser` object and calling `parseForm()` to retrieve the form structure:
 
@@ -112,7 +113,7 @@ public class ExtractDataFromPdfFormsFeature {
 }
 ```
 
-### Step 2: Extract Field Values
+### 步驟 2：提取欄位值
 
 Use the field name to pull the text content from each `FieldData` object. This method also shows how to **read pdf form fields** safely:
 
@@ -129,7 +130,7 @@ private static String getFieldText(DocumentData data, String fieldName) {
 }
 ```
 
-### Step 3: Create a Record Object
+### 步驟 3：建立記錄物件
 
 Store the extracted values in a structured record so they can be persisted or sent to other systems:
 
@@ -149,18 +150,18 @@ rec.Time = getFieldText(data, "Time");
 rec.Description = getFieldText(data, "Description");
 ```
 
-## Create a Record Object to Store Extracted Data
+## 建立記錄物件以儲存提取的資料
 
 A well‑defined object makes it easy to integrate the extracted information with databases, APIs, or CRM platforms.
 
-### Overview
+### 概觀
 
 Creating a structured object helps manage and integrate form data into larger systems.
 
-### Implementation Steps
+### 實作步驟
 
-1. **Initialize the Record Object:** Set up an instance of `PreliminaryRecord`.  
-2. **Populate with Extracted Values:** Use the helper method above to fill the object.
+1. **Initialize the Record Object：** Set up an instance of `PreliminaryRecord`.  
+2. **Populate with Extracted Values：** Use the helper method above to fill the object.
 
 ```java
 public class CreateRecordObjectFeature {
@@ -178,21 +179,21 @@ public class CreateRecordObjectFeature {
 }
 ```
 
-## Practical Applications
+## 實務應用
 
-- **Automated Data Entry:** Pull customer or order details from PDF forms directly into your backend.  
-- **Invoice Processing:** Extract invoice numbers, dates, and totals to speed up reconciliation.  
-- **Survey Responses Analysis:** Gather answers from PDF questionnaires for reporting.  
-- **Medical Records Management:** Pull patient information for electronic health record (EHR) systems.  
-- **Integration with CRM Systems:** Populate leads and contacts in real time from filled PDFs.  
+- **Automated Data Entry：** Pull customer or order details from PDF forms directly into your backend.  
+- **Invoice Processing：** Extract invoice numbers, dates, and totals to speed up reconciliation.  
+- **Survey Responses Analysis：** Gather answers from PDF questionnaires for reporting.  
+- **Medical Records Management：** Pull patient information for electronic health record (EHR) systems.  
+- **Integration with CRM Systems：** Populate leads and contacts in real time from filled PDFs.  
 
-## Performance Considerations
+## 效能考量
 
-- **Memory Management:** Use try‑with‑resources (as shown) to ensure `Parser` instances are closed promptly.  
-- **Selective Parsing:** Only request the fields you need to reduce CPU overhead.  
-- **Thread Safety:** When processing many PDFs, run each `Parser` instance on its own thread; the library is thread‑safe when used this way.  
+- **Memory Management：** Use try‑with‑resources (as shown) to ensure `Parser` instances are closed promptly.  
+- **Selective Parsing：** Only request the fields you need to reduce CPU overhead.  
+- **Thread Safety：** When processing many PDFs, run each `Parser` instance on its own thread; the library is thread‑safe when used this way.  
 
-## Frequently Asked Questions
+## 常見問題
 
 **Q: Can I extract images from pdf using GroupDocs.Parser?**  
 A: Yes, GroupDocs.Parser supports image extraction alongside text fields.
@@ -209,12 +210,12 @@ A: Combine parallel streams with a thread‑pool executor to parse multiple file
 **Q: Is a commercial license required for production use?**  
 A: Yes, a full license is needed for production deployments; a free trial is available for evaluation.
 
-## Conclusion
+## 結論
 
 You now have a complete, production‑ready approach to **extract pdf form data** with GroupDocs.Parser in Java. By parsing form fields, creating structured record objects, and handling performance considerations, you can automate data entry, integrate with downstream systems, and unlock the hidden value inside your PDF forms. For deeper details, explore the official [documentation](https://docs.groupdocs.com/parser/java/).
 
 ---
 
-**Last Updated:** 2026-01-01  
-**Tested With:** GroupDocs.Parser 25.5  
-**Author:** GroupDocs
+**最後更新：** 2026-01-01  
+**測試版本：** GroupDocs.Parser 25.5  
+**作者：** GroupDocs
