@@ -1,19 +1,20 @@
 ---
-title: "Java Read PDF Text with GroupDocs.Parser: A Complete Guide"
-description: "Learn how to java read pdf text using GroupDocs.Parser, and also java get pdf metadata, extract images, and parse documents efficiently."
-date: "2026-01-06"
-weight: 1
-url: "/java/getting-started/document-parsing-java-groupdocs-parser-guide/"
+date: '2026-01-06'
+description: เรียนรู้วิธีการอ่านข้อความ PDF ด้วย Java โดยใช้ GroupDocs.Parser รวมถึงการดึงข้อมูลเมตาดาต้า
+  PDF, แยกภาพ, และแยกวิเคราะห์เอกสารอย่างมีประสิทธิภาพ.
 keywords:
 - document parsing in java
 - groupdocs parser library
 - extract text metadata images java
+title: 'Java อ่านข้อความ PDF ด้วย GroupDocs.Parser: คู่มือฉบับสมบูรณ์'
 type: docs
+url: /th/java/getting-started/document-parsing-java-groupdocs-parser-guide/
+weight: 1
 ---
 
 # Java Read PDF Text with GroupDocs.Parser: A Complete Guide
 
-If you need to **java read pdf text**, **GroupDocs.Parser for Java** makes the job painless. Whether you're pulling data from PDFs, Word files, or spreadsheets, this library lets you extract text, metadata, and images with just a few lines of code. In this guide we’ll walk through everything you need to start parsing documents in Java—setting up the library, reading PDF text, getting PDF metadata, extracting images, and more.
+หากคุณต้องการ **java read pdf text** **GroupDocs.Parser for Java** จะทำให้งานง่ายดาย ไม่ว่าคุณจะดึงข้อมูลจาก PDF, ไฟล์ Word หรือสเปรดชีต ไลบรารีนี้ช่วยให้คุณสกัดข้อความ, เมตาดาต้าและรูปภาพได้ด้วยเพียงไม่กี่บรรทัดของโค้ด ในคู่มือนี้เราจะพาคุณผ่านทุกขั้นตอนที่จำเป็นสำหรับการแยกเอกสารใน Java — ตั้งค่าห้องสมุด, อ่านข้อความจาก PDF, ดึงเมตาดาต้า PDF, สกัดรูปภาพ, และอื่น ๆ อีกมาก
 
 ## Quick Answers
 - **What is the easiest way to java read pdf text?** Use `Parser.getText()` from GroupDocs.Parser.  
@@ -23,7 +24,7 @@ If you need to **java read pdf text**, **GroupDocs.Parser for Java** makes the j
 - **Which Maven repository hosts GroupDocs.Parser?** The GroupDocs repository at `https://releases.groupdocs.com/parser/java/`.
 
 ## What is java read pdf text?
-Reading PDF text in Java means programmatically extracting the textual content stored inside a PDF file so you can process, search, or display it in your own applications. GroupDocs.Parser provides a high‑level API that abstracts away the low‑level PDF parsing details.
+การอ่านข้อความจาก PDF ใน Java หมายถึงการสกัดเนื้อหาข้อความที่เก็บอยู่ในไฟล์ PDF อย่างโปรแกรมเมติก เพื่อให้คุณสามารถประมวลผล, ค้นหา หรือแสดงผลในแอปพลิเคชันของคุณเอง GroupDocs.Parser ให้ API ระดับสูงที่ซ่อนรายละเอียดการแยก PDF ระดับล่างไว้
 
 ## Why use GroupDocs.Parser for java read pdf text?
 - **Broad format support** – works with PDFs, DOCX, XLSX, and many other formats.  
