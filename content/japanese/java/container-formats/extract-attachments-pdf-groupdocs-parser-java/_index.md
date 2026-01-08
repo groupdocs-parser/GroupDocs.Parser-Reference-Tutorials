@@ -1,19 +1,20 @@
 ---
-title: "How to Extract PDF Attachments from a PDF Portfolio Using GroupDocs.Parser in Java"
-description: "Learn how to extract PDF attachments with GroupDocs.Parser for Java, including batch process pdf attachments and extract attachments from pdf portfolio."
-date: "2025-12-20"
-weight: 1
-url: "/java/container-formats/extract-attachments-pdf-groupdocs-parser-java/"
+date: '2025-12-20'
+description: GroupDocs.Parser for Java を使用して PDF 添付ファイルの抽出方法を学び、バッチ処理での PDF 添付ファイル抽出や
+  PDF ポートフォリオからの添付ファイル抽出も行います。
 keywords:
 - extract PDF attachments Java
 - GroupDocs Parser library
 - PDF portfolio extraction
+title: JavaでGroupDocs.Parserを使用してPDFポートフォリオからPDF添付ファイルを抽出する方法
 type: docs
+url: /ja/java/container-formats/extract-attachments-pdf-groupdocs-parser-java/
+weight: 1
 ---
 
 # How to Extract PDF Attachments from a PDF Portfolio Using GroupDocs.Parser in Java
 
-Managing digital documents often means dealing with PDF portfolios that bundle multiple files together. **How to extract PDF attachments** quickly and reliably is a common question for developers building document‑processing pipelines. In this tutorial you’ll see how to use **GroupDocs.Parser for Java** to pull out every embedded file, whether you need to batch process PDF attachments or simply pull a single document out of a portfolio.
+デジタル文書を管理する際には、複数のファイルをまとめた PDF ポートフォリオを扱うことがよくあります。**PDF 添付ファイルの抽出方法** を迅速かつ確実に行うことは、文書処理パイプラインを構築する開発者にとって共通の課題です。このチュートリアルでは、**GroupDocs.Parser for Java** を使用して、PDF ポートフォリオに埋め込まれたすべてのファイルを抽出する方法を紹介します。バッチ処理で多数の PDF 添付ファイルを処理したい場合や、ポートフォリオから単一の文書だけを取り出したい場合にも役立ちます。
 
 ## Quick Answers
 - **What is the primary library?** GroupDocs.Parser for Java  
@@ -23,7 +24,7 @@ Managing digital documents often means dealing with PDF portfolios that bundle m
 - **Is it possible to extract non‑PDF files?** Absolutely – any embedded file type can be extracted.
 
 ## What is “how to extract PDF attachments”?
-Extracting PDF attachments means reading a PDF portfolio (a container PDF) and saving each embedded file to disk or processing it further. This operation is essential when you need to archive, analyze, or migrate the contents of bundled documents.
+PDF 添付ファイルの抽出とは、PDF ポートフォリオ（コンテナ PDF）を読み取り、埋め込まれた各ファイルをディスクに保存するか、さらに処理することを指します。この操作は、バンドルされた文書の内容をアーカイブ、分析、または移行する必要がある場合に不可欠です。
 
 ## Why use GroupDocs.Parser for Java?
 - **Zero‑configuration parsing** – the API automatically detects container support.  
@@ -32,16 +33,16 @@ Extracting PDF attachments means reading a PDF portfolio (a container PDF) and s
 
 ## Prerequisites
 
-Before you start, make sure you have:
+開始する前に、以下を用意してください。
 
-- **Java Development Kit (JDK)** installed (Java 8 or newer).  
-- An IDE such as **IntelliJ IDEA** or **Eclipse**.  
-- **Maven** for dependency management.  
-- A valid **GroupDocs.Parser** license (free trial or temporary license works for development).
+- **Java Development Kit (JDK)** がインストール済み（Java 8 以降）。  
+- **IntelliJ IDEA** または **Eclipse** などの IDE。  
+- 依存関係管理のための **Maven**。  
+- 有効な **GroupDocs.Parser** ライセンス（開発用の無料トライアルまたは一時ライセンスで可）。
 
 ## Setting Up GroupDocs.Parser for Java
 
-Add the GroupDocs repository and dependency to your `pom.xml`:
+`pom.xml` に GroupDocs リポジトリと依存関係を追加します。
 
 ```xml
 <repositories>
@@ -62,7 +63,7 @@ Add the GroupDocs repository and dependency to your `pom.xml`:
 ```
 
 ### Direct Download
-Alternatively, download the latest version directly from [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
+あるいは、[GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) から最新バージョンを直接ダウンロードしてください。
 
 #### License Acquisition Steps
 - **Free Trial** – explore the API without cost.  
@@ -84,7 +85,7 @@ String pdfPortfolioPath = "YOUR_DOCUMENT_DIRECTORY/SamplePdfPortfolio.pdf";
 ### Extracting Attachments from a PDF Portfolio
 
 #### Overview
-The extraction workflow consists of three simple steps: create a `Parser` instance, verify container support, and iterate through each `ContainerItem`.
+抽出ワークフローは 3 つのシンプルなステップで構成されます。`Parser` インスタンスを作成し、コンテナ対応を確認し、各 `ContainerItem` を反復処理します。
 
 #### Step 1: Initialize the Parser
 ```java
@@ -126,22 +127,22 @@ for (ContainerItem item : attachments) {
 
 ## Performance Considerations
 
-When dealing with large PDF portfolios:
+大規模な PDF ポートフォリオを扱う際のポイント:
 
 - **Batch processing** – handle a limited number of attachments at a time to keep memory usage low.  
 - **Garbage collection tuning** – invoke `System.gc()` sparingly if you notice memory spikes.  
 - **Profiling** – use Java Flight Recorder or VisualVM to locate bottlenecks early.
 
-Keeping the library up‑to‑date and profiling your application are the best ways to maintain optimal performance.
+ライブラリを常に最新に保ち、アプリケーションをプロファイルすることが、最適なパフォーマンスを維持する最善策です。
 
 ## Conclusion
 
-You now have a complete, production‑ready method for **how to extract PDF attachments** from a PDF portfolio using GroupDocs.Parser for Java. This capability opens the door to smarter document workflows, efficient archiving, and powerful data extraction pipelines.
+これで、GroupDocs.Parser for Java を使用して PDF ポートフォリオから **PDF 添付ファイルを抽出する方法** の完全な実装ができました。この機能により、よりスマートな文書ワークフロー、効率的なアーカイブ、強力なデータ抽出パイプラインが実現します。
 
 ### Next Steps
-- Try extracting different file types (images, Word docs, etc.).  
-- Explore the **GroupDocs.Parser** API for metadata extraction.  
-- Integrate the extraction logic into your existing document‑processing service.
+- 異なるファイルタイプ（画像、Word 文書など）の抽出を試す。  
+- メタデータ抽出のために **GroupDocs.Parser** API を探索する。  
+- 抽出ロジックを既存の文書処理サービスに統合する。
 
 ## Frequently Asked Questions
 
