@@ -1,19 +1,20 @@
 ---
-title: "Extract PDF Form Data with GroupDocs.Parser in Java"
-description: "Learn how to extract pdf form data and read pdf form fields using GroupDocs.Parser for Java. Automate PDF data entry, extract images from pdf, and streamline document processing."
-date: "2026-01-01"
-weight: 1
-url: "/java/form-extraction/groupdocs-parser-java-pdf-form-extraction/"
+date: '2026-01-01'
+description: GroupDocs.Parser for Java を使用して PDF フォームデータの抽出と PDF フォームフィールドの読み取り方法を学びましょう。PDF
+  データ入力を自動化し、PDF から画像を抽出し、文書処理を効率化します。
 keywords:
 - PDF form extraction
 - GroupDocs.Parser Java
 - Java PDF parsing
+title: JavaでGroupDocs.Parserを使用してPDFフォームデータを抽出する
 type: docs
+url: /ja/java/form-extraction/groupdocs-parser-java-pdf-form-extraction/
+weight: 1
 ---
 
 # Extract PDF Form Data with GroupDocs.Parser in Java
 
-In this tutorial you'll discover **how to extract pdf form data** from PDF documents using GroupDocs.Parser for Java. Whether you need to read pdf form fields, pull images from pdf, or automate pdf data entry, the step‑by‑step guide below shows you exactly how to do it efficiently and reliably.
+このチュートリアルでは、GroupDocs.Parser for Java を使用して PDF ドキュメントから **pdf フォーム データを抽出する方法** を学びます。PDF のフォーム フィールドを読み取ったり、PDF から画像を取得したり、PDF データ入力を自動化したりしたい場合でも、以下のステップバイステップ ガイドが効率的かつ確実に実装する方法を示します。
 
 ## Quick Answers
 - **What library extracts pdf form data?** GroupDocs.Parser for Java  
@@ -23,7 +24,7 @@ In this tutorial you'll discover **how to extract pdf form data** from PDF docum
 - **Is parallel processing possible?** Yes, you can parse multiple PDFs concurrently for high‑throughput scenarios  
 
 ## What is extract pdf form data?
-Extracting pdf form data means programmatically reading the values entered into interactive fields (text boxes, check boxes, dropdowns, etc.) inside a PDF form. This lets you move data from static documents into databases, CRM systems, or any downstream process without manual transcription.
+pdf フォーム データの抽出とは、PDF フォーム内のインタラクティブ フィールド（テキスト ボックス、チェック ボックス、ドロップダウンなど）に入力された値をプログラムで読み取ることを指します。これにより、静的な文書からデータベース、CRM システム、またはその他の下流プロセスへ手作業の転記なしでデータを移行できます。
 
 ## Why use GroupDocs.Parser to extract pdf form data?
 - **High accuracy:** Handles complex layouts and preserves field names.  
