@@ -1,21 +1,21 @@
 ---
-title: "pdf hyperlink example – Extract links with GroupDocs.Parser"
-description: "Learn the pdf hyperlink example using GroupDocs.Parser for Java to extract PDF hyperlinks quickly and efficiently. Step-by-step guide includes setup, code, and troubleshooting tips."
-date: "2026-01-14"
-weight: 1
-url: "/java/hyperlink-extraction/extract-hyperlinks-from-pdfs-groupdocs-parser-java/"
+date: '2026-01-14'
+description: GroupDocs.Parser for Java を使用した PDF ハイパーリンクの例を学び、PDF ハイパーリンクを迅速かつ効率的に抽出します。ステップバイステップのガイドには、セットアップ、コード、トラブルシューティングのヒントが含まれています。
 keywords:
 - extract hyperlinks from PDF
 - GroupDocs.Parser Java
 - Java hyperlink extraction
+title: PDFハイパーリンクの例 – GroupDocs.Parserでリンクを抽出
 type: docs
+url: /ja/java/hyperlink-extraction/extract-hyperlinks-from-pdfs-groupdocs-parser-java/
+weight: 1
 ---
 
-# pdf hyperlink example – Extract links with GroupDocs.Parser
+# pdf ハイパーリンク例 – GroupDocs.Parser でリンクを抽出
 
-Are you looking for an efficient **pdf hyperlink example** to extract hyperlinks from PDF documents using Java? You're not alone. This common challenge can hinder document automation, data extraction, and content management tasks. Fortunately, **GroupDocs.Parser for Java** makes the process straightforward, reliable, and fast.
+Java を使用して PDF ドキュメントからハイパーリンクを抽出する効率的な **pdf ハイパーリンク例** をお探しですか？ あなたは一人ではありません。この一般的な課題は、ドキュメントの自動化、データ抽出、コンテンツ管理タスクの妨げになることがあります。幸いなことに、**GroupDocs.Parser for Java** はプロセスをシンプルで信頼性が高く、迅速にします。
 
-In this tutorial, we'll walk you through extracting hyperlinks from PDFs using GroupDocs.Parser in Java. By the end, you’ll be able to integrate hyperlink extraction into your applications, boost your document‑processing workflows, and solve real‑world problems such as link verification, content analysis, and data migration.
+このチュートリアルでは、Java で GroupDocs.Parser を使用して PDF からハイパーリンクを抽出する手順をご案内します。最後まで読むと、ハイパーリンク抽出をアプリケーションに統合し、ドキュメント処理ワークフローを強化し、リンク検証、コンテンツ分析、データ移行といった実務上の課題を解決できるようになります。
 
 ## Quick Answers
 - **What does the pdf hyperlink example demonstrate?**  
