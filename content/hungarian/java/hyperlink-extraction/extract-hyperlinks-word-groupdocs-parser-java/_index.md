@@ -1,35 +1,38 @@
 ---
-title: "How to Extract Hyperlinks from Word Docs via GroupDocs.Parser Java"
-description: "Learn how to extract hyperlinks from Word documents using GroupDocs.Parser for Java, and discover how to batch process Word docs efficiently."
-date: "2026-01-14"
-weight: 1
-url: "/java/hyperlink-extraction/extract-hyperlinks-word-groupdocs-parser-java/"
+date: '2026-01-14'
+description: Tanulja meg, hogyan lehet hiperhivatkozásokat kinyerni Word-dokumentumokból
+  a GroupDocs.Parser for Java segítségével, és fedezze fel, hogyan lehet hatékonyan
+  kötegelt feldolgozni a Word-dokumentumokat.
 keywords:
 - extract hyperlinks Word
 - GroupDocs.Parser Java setup
 - hyperlink extraction Word documents
+title: Hogyan lehet kinyerni a hiperhivatkozásokat Word dokumentumokból a GroupDocs.Parser
+  Java segítségével
 type: docs
+url: /hu/java/hyperlink-extraction/extract-hyperlinks-word-groupdocs-parser-java/
+weight: 1
 ---
 
-# How to Extract Hyperlinks from Word Docs via GroupDocs.Parser Java
+# Hogyan lehet hiperhivatkozásokat kinyerni Word dokumentumokból a GroupDocs.Parser Java segítségével
 
-Extracting hyperlinks from Microsoft Word files is a common requirement when you need to analyze, archive, or migrate web references embedded in business documents. In this tutorial you’ll learn **how to extract hyperlinks** from Word docs using GroupDocs.Parser for Java, and you’ll also see how the same approach can be scaled to **batch process Word docs** for large‑scale projects.
+A Microsoft Word fájlokból való hiperhivatkozások kinyerése gyakori igény, ha üzleti dokumentumokban beágyazott webes hivatkozásokat kell elemezni, archiválni vagy migrálni. Ebben az útmutatóban megtanulja, **hogyan kell kinyerni a hiperhivatkozásokat** Word dokumentumokból a GroupDocs.Parser for Java használatával, és azt is láthatja, hogyan skálázható ugyanaz a megközelítés **kötegelt Word dokumentumok feldolgozására** nagy léptékű projektekhez.
 
 ## Quick Answers
-- **What library should I use?** GroupDocs.Parser for Java.
-- **Can I extract links from multiple files at once?** Yes – combine the parser with a simple batch loop.
-- **Which Java version is required?** JDK 8 or later.
-- **Do I need a license?** A free trial works for development; a commercial license is required for production.
-- **Is memory usage a concern for big documents?** Use try‑with‑resources and process files in batches.
+- **Melyik könyvtárat kell használni?** GroupDocs.Parser for Java.
+- **Kinyerhetek hivatkozásokat több fájlból egyszerre?** Igen – kombinálja a parse‑t egy egyszerű kötegelt ciklussal.
+- **Melyik Java verzió szükséges?** JDK 8 vagy újabb.
+- **Szükségem van licencre?** A fejlesztéshez egy ingyenes próba verzió elegendő; a termeléshez kereskedelmi licenc szükséges.
+- **Aggódom a memóriahasználat miatt nagy dokumentumok esetén?** Használjon try‑with‑resources‑t és dolgozza fel a fájlokat kötegekben.
 
 ## What is hyperlink extraction?
-Hyperlink extraction means scanning a document’s internal XML structure, locating nodes that represent links, and pulling out the URL values. This lets you build link inventories, validate external references, or feed URLs into downstream analytics pipelines.
+A hiperhivatkozás kinyerése azt jelenti, hogy a dokumentum belső XML struktúráját átvizsgálja, megtalálja a hivatkozásokat képviselő csomópontokat, és kinyeri az URL értékeket. Ez lehetővé teszi linkkészletek építését, külső hivatkozások validálását, vagy az URL-ek továbbítását az adatfeldolgozó csővezetékekbe.
 
 ## Why use GroupDocs.Parser for Java?
 GroupDocs.Parser provides a high‑level API that abstracts away the complexities of the Office Open XML format. It delivers:
-- **Fast parsing** without loading the entire document into memory.
-- **Consistent behavior** across DOCX, DOC, and other Office formats.
-- **Robust error handling** with dedicated exceptions for unsupported formats.
+- **Gyors elemzés** a teljes dokumentum memóriába töltése nélkül.
+- **Következetes viselkedés** a DOCX, DOC és egyéb Office formátumok között.
+- **Robusztus hibakezelés** dedikált kivételekkel a nem támogatott formátumokhoz.
 
 ## Prerequisites
 
@@ -58,19 +61,19 @@ To use GroupDocs.Parser for Java, include the following dependencies in your pro
 For direct downloads, access the latest version from [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
 ### Environment Setup Requirements
-- JDK 8 or later installed.
-- An IDE such as IntelliJ IDEA or Eclipse.
+- JDK 8 vagy újabb telepítve.
+- Egy IDE, például IntelliJ IDEA vagy Eclipse.
 
 ### Knowledge Prerequisites
-- Basic Java programming.
-- Familiarity with XML DOM traversal.
+- Alap Java programozás.
+- XML DOM bejárás ismerete.
 
 ## Setting Up GroupDocs.Parser for Java
 Before extracting hyperlinks, properly set up GroupDocs.Parser in your environment.
 
-1. **Install GroupDocs.Parser** – add the Maven entries above or download the JAR from the [GroupDocs website](https://releases.groupdocs.com/parser/java/).
-2. **Acquire a License** – obtain a trial or purchase a license to unlock full functionality.
-3. **Basic Initialization**:
+1. **GroupDocs.Parser telepítése** – adja hozzá a fenti Maven bejegyzéseket vagy töltse le a JAR‑t a [GroupDocs weboldalról](https://releases.groupdocs.com/parser/java/).
+2. **Licenc beszerzése** – szerezzen be egy próba verziót vagy vásároljon licencet a teljes funkcionalitás feloldásához.
+3. **Alap inicializálás**:
 ```java
 import com.groupdocs.parser.Parser;
 
@@ -161,36 +164,37 @@ public class ErrorHandlerFeature {
 ```
 
 ## Practical Applications
-Extracting hyperlinks from Word documents can be used for:
-1. **Data Analysis** – Build datasets of referenced URLs for market research.
-2. **Archiving** – Create a searchable index of all links in company reports.
-3. **SEO Monitoring** – Verify that outbound links in marketing collateral are still active.
+A Word dokumentumokból történő hiperhivatkozás kinyerése a következőkre használható:
+
+1. **Adat elemzés** – Hivatkozott URL‑ek adatkészleteinek építése piackutatáshoz.
+2. **Archiválás** – Kereshető index létrehozása a vállalati jelentések összes linkjéről.
+3. **SEO monitorozás** – Ellenőrizze, hogy a marketing anyagokban szereplő kimenő linkek még aktívak-e.
 
 You can pipe the extracted URLs into a database, a CSV file, or an API endpoint for further processing.
 
 ## Performance Considerations
 When you need to **batch process Word docs**, keep these tips in mind:
 
-- **Optimize Memory Usage** – The try‑with‑resources pattern (as shown above) ensures parsers are closed promptly.
-- **Batch Processing** – Loop over a folder of documents and invoke the same extraction logic for each file.
-- **Thread Management** – For high‑throughput scenarios, run each document parse on a separate thread, but guard the parser instances to avoid concurrency issues.
+- **Memóriahasználat optimalizálása** – A try‑with‑resources minta (ahogy fent látható) biztosítja, hogy a parse‑k gyorsan lezáródjanak.
+- **Kötegelt feldolgozás** – Ciklus egy mappán belül lévő dokumentumokon, és ugyanazt a kinyerési logikát hívja meg minden fájlra.
+- **Szálkezelés** – Nagy áteresztőképességű esetekben minden dokumentum elemzését külön szálon futtassa, de óvja a parser példányokat a versenyhelyzetek elkerülése érdekében.
 
 ## Frequently Asked Questions
 
-**Q: How do I handle unsupported document formats?**  
-A: Catch `UnsupportedDocumentFormatException` and provide a fallback or user notification.
+**Q: Hogyan kezelem a nem támogatott dokumentumformátumokat?**  
+A: Fogja el a `UnsupportedDocumentFormatException`‑t, és biztosítson tartalék megoldást vagy felhasználói értesítést.
 
-**Q: Can GroupDocs.Parser extract hyperlinks from PDFs as well?**  
-A: Yes – the same API works with PDFs, DOC, PPT, and many other formats.
+**Q: A GroupDocs.Parser képes PDF‑ekből is hiperhivatkozásokat kinyerni?**  
+A: Igen – ugyanaz az API működik PDF‑ekkel, DOC‑dal, PPT‑vel és számos egyéb formátummal.
 
-**Q: What is the best way to optimize performance for large documents?**  
-A: Use try‑with‑resources, process files in batches, and consider multithreading with proper synchronization.
+**Q: Mi a legjobb módja a teljesítmény optimalizálásának nagy dokumentumok esetén?**  
+A: Használjon try‑with‑resources‑t, dolgozza fel a fájlokat kötegekben, és fontolja meg a több szálas feldolgozást megfelelő szinkronizációval.
 
-**Q: Is there a cost associated with GroupDocs.Parser for Java?**  
-A: A free trial is available; production use requires a purchased license.
+**Q: Van költség a GroupDocs.Parser for Java használatával kapcsolatban?**  
+A: Elérhető egy ingyenes próba verzió; a termelési használathoz megvásárolt licenc szükséges.
 
-**Q: How can I integrate this with a database?**  
-A: After retrieving each URL, use JDBC or an ORM to insert the value into your target table.
+**Q: Hogyan integrálhatom ezt egy adatbázissal?**  
+A: Az egyes URL‑ek lekérése után használjon JDBC‑t vagy ORM‑et az érték cél táblába való beszúrásához.
 
 ## Conclusion
 You now have a complete, production‑ready approach for **how to extract hyperlinks** from Word documents using GroupDocs.Parser for Java, and you understand how to scale the solution to **batch process Word docs** efficiently. Explore the full API in the official [documentation](https://docs.groupdocs.com/parser/java/) to unlock additional features such as metadata extraction, image handling, and more.
