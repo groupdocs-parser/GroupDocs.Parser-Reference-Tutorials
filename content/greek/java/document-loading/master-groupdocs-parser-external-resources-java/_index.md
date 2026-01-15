@@ -1,19 +1,21 @@
 ---
-title: "Extract Images from Documents with GroupDocs.Parser Java – A Guide"
-description: "Learn how to extract images from documents and how to filter resources using GroupDocs.Parser for Java. This guide covers configuration, custom handlers, and practical examples."
-date: "2025-12-29"
-weight: 1
-url: "/java/document-loading/master-groupdocs-parser-external-resources-java/"
+date: '2025-12-29'
+description: Μάθετε πώς να εξάγετε εικόνες από έγγραφα και πώς να φιλτράρετε πόρους
+  χρησιμοποιώντας το GroupDocs.Parser για Java. Αυτός ο οδηγός καλύπτει τη διαμόρφωση,
+  τους προσαρμοσμένους χειριστές και πρακτικά παραδείγματα.
 keywords:
 - GroupDocs.Parser for Java
 - external resource loading in Java
 - custom handlers in GroupDocs
+title: Εξαγωγή εικόνων από έγγραφα με το GroupDocs.Parser Java – Ένας οδηγός
 type: docs
+url: /el/java/document-loading/master-groupdocs-parser-external-resources-java/
+weight: 1
 ---
 
-# Extract Images from Documents and Filter Resources with GroupDocs.Parser Java
+# Εξαγωγή Εικόνων από Έγγραφα και Φιλτράρισμα Πόρων με το GroupDocs.Parser Java
 
-Extracting images from documents is a common requirement when building document‑processing pipelines. In this tutorial you’ll discover **how to extract images from documents** using GroupDocs.Parser for Java, and you’ll also learn **how to filter resources** so that only the files you need are loaded. We’ll walk through setting up the library, creating a custom `ExternalResourceHandler`, and applying filtering logic to keep your application fast and secure.
+Η εξαγωγή εικόνων από έγγραφα είναι μια κοινή απαίτηση κατά την κατασκευή pipelines επεξεργασίας εγγράφων. Σε αυτό το tutorial θα ανακαλύψετε **πώς να εξάγετε εικόνες από έγγραφα** χρησιμοποιώντας το GroupDocs.Parser για Java, και επίσης θα μάθετε **πώς να φιλτράρετε πόρους** ώστε να φορτώνονται μόνο τα αρχεία που χρειάζεστε. Θα περάσουμε από τη ρύθμιση της βιβλιοθήκης, τη δημιουργία ενός προσαρμοσμένου `ExternalResourceHandler`, και την εφαρμογή λογικής φιλτραρίσματος για να διατηρήσετε την εφαρμογή σας γρήγορη και ασφαλή.
 
 ## Quick Answers
 - **What does GroupDocs.Parser do?** It parses a wide range of document formats and gives you access to text, images, and other embedded resources.  
@@ -23,13 +25,13 @@ Extracting images from documents is a common requirement when building document�
 - **Is this approach thread‑safe?** Parsing objects are not shared across threads; create a new `Parser` instance per thread.
 
 ## What is “extract images from documents”?
-When a document contains embedded pictures, charts, or other media, “extract images from documents” means programmatically retrieving those binary files so you can store, display, or further process them outside the original file.
+Όταν ένα έγγραφο περιέχει ενσωματωμένες εικόνες, διαγράμματα ή άλλα μέσα, το “extract images from documents” σημαίνει την προγραμματιστική ανάκτηση αυτών των δυαδικών αρχείων ώστε να μπορείτε να τα αποθηκεύσετε, να τα εμφανίσετε ή να τα επεξεργαστείτε περαιτέρω εκτός του αρχικού αρχείου.
 
 ## Why filter resources while extracting images?
-Filtering resources helps you:
-- Reduce memory consumption by ignoring large or irrelevant files.  
-- Improve security by preventing the loading of potentially unsafe content.  
-- Speed up processing, especially with huge documents that contain many embedded objects.
+Το φιλτράρισμα πόρων σας βοηθά να:
+- Μειώσετε την κατανάλωση μνήμης αγνοώντας μεγάλα ή άσχετα αρχεία.  
+- Βελτιώσετε την ασφάλεια αποτρέποντας τη φόρτωση πιθανώς μη ασφαλούς περιεχομένου.  
+- Επιταχύνετε την επεξεργασία, ειδικά με τεράστια έγγραφα που περιέχουν πολλούς ενσωματωμένους αντικειμενους.
 
 ## Prerequisites
 
