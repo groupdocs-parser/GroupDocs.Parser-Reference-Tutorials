@@ -1,19 +1,20 @@
 ---
-title: "How to Extract Links in Java with GroupDocs.Parser – A Comprehensive Guide"
-description: "Learn how to extract links and extract hyperlinks Java using GroupDocs.Parser. This step‑by‑step guide covers setup, code, and best practices."
-date: "2026-01-16"
-weight: 1
-url: "/java/hyperlink-extraction/efficient-hyperlink-extraction-groupdocs-parser-java/"
+date: '2026-01-16'
+description: Apprenez à extraire des liens et des hyperliens en Java avec GroupDocs.Parser.
+  Ce guide étape par étape couvre la configuration, le code et les meilleures pratiques.
 keywords:
 - hyperlink extraction Java
 - GroupDocs.Parser hyperlink
 - Java document parsing
+title: Comment extraire des liens en Java avec GroupDocs.Parser – Guide complet
 type: docs
+url: /fr/java/hyperlink-extraction/efficient-hyperlink-extraction-groupdocs-parser-java/
+weight: 1
 ---
 
 # How to Extract Links in Java with GroupDocs.Parser
 
-Extracting links from PDFs, Word documents, or any other supported file format can be a tedious manual task. **How to extract links** is a common question for developers building data‑driven applications, and GroupDocs.Parser provides a reliable, language‑native way to do it in Java. In this tutorial you’ll learn how to set up the library, write clean Java code to **extract hyperlinks Java**, and apply best‑practice tips for performance and reliability.
+Extraire les liens à partir de PDF, de documents Word ou de tout autre format de fichier pris en charge peut être une tâche manuelle fastidieuse. **How to extract links** est une question courante pour les développeurs qui créent des applications axées sur les données, et GroupDocs.Parser offre une méthode fiable et native du langage pour le faire en Java. Dans ce tutoriel, vous apprendrez à configurer la bibliothèque, à écrire du code Java propre pour **extract hyperlinks Java**, et à appliquer des conseils de bonnes pratiques pour la performance et la fiabilité.
 
 ## Quick Answers
 - **What library handles link extraction?** GroupDocs.Parser for Java  
@@ -23,7 +24,7 @@ Extracting links from PDFs, Word documents, or any other supported file format c
 - **Is memory usage a concern?** Use try‑with‑resources to automatically close the parser and free memory.
 
 ## What is “how to extract links” in the context of Java?
-The phrase simply refers to programmatically reading a document’s hyperlink objects and returning their target URIs. GroupDocs.Parser abstracts the low‑level file format details, letting you focus on business logic.
+La phrase désigne simplement la lecture programmatique des objets de lien hypertexte d’un document et le renvoi de leurs URI cibles. GroupDocs.Parser abstrait les détails bas‑niveau du format de fichier, vous permettant de vous concentrer sur la logique métier.
 
 ## Why use GroupDocs.Parser for link extraction?
 - **Broad format support** – PDFs, DOCX, PPTX, and more.  
@@ -169,5 +170,3 @@ You now have a complete, production‑ready approach to **how to extract links**
 - **GitHub:** [GroupDocs.Parser GitHub Repository](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
 - **Support Forum:** [GroupDocs Forum](https://forum.groupdocs.com/c/parser)
 - **Temporary License:** [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license)
-
----
