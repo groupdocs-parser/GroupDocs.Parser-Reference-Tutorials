@@ -1,47 +1,48 @@
 ---
-title: "Extract Text from Image in Java using Aspose.OCR & GroupDocs.Parser"
-description: "Learn how to extract text from image in Java using Aspose.OCR and GroupDocs.Parser, and convert scanned document text efficiently."
-date: "2026-01-29"
-weight: 1
-url: "/java/ocr-integration/java-ocr-text-recognition-aspose-groupdocs-parser-guide/"
+date: '2026-01-29'
+description: Tìm hiểu cách trích xuất văn bản từ hình ảnh trong Java bằng Aspose.OCR
+  và GroupDocs.Parser, và chuyển đổi văn bản tài liệu đã quét một cách hiệu quả.
 keywords:
 - Java OCR text recognition
 - Aspose OCR Java
 - GroupDocs Parser for Java
+title: Trích xuất văn bản từ hình ảnh trong Java bằng Aspose.OCR & GroupDocs.Parser
 type: docs
+url: /vi/java/ocr-integration/java-ocr-text-recognition-aspose-groupdocs-parser-guide/
+weight: 1
 ---
 
-# Extract Text from Image in Java using Aspose.OCR & GroupDocs.Parser
+# Trích xuất văn bản từ hình ảnh trong Java sử dụng Aspose.OCR & GroupDocs.Parser
 
-Are you looking for an efficient way to **extract text from image** files in your Java applications? In the digital age, turning pictures of documents into searchable, editable text is a must‑have capability. This tutorial walks you through the complete process of using Aspose.OCR together with GroupDocs.Parser for Java, so you can reliably convert scanned document text into usable strings.
+Bạn đang tìm kiếm một cách hiệu quả để **trích xuất văn bản từ hình ảnh** trong các ứng dụng Java của mình? Trong thời đại số, việc chuyển đổi hình ảnh tài liệu thành văn bản có thể tìm kiếm và chỉnh sửa là một khả năng không thể thiếu. Hướng dẫn này sẽ đưa bạn qua toàn bộ quy trình sử dụng Aspose.OCR kết hợp với GroupDocs.Parser cho Java, để bạn có thể chuyển đổi văn bản tài liệu đã quét thành các chuỗi có thể sử dụng một cách đáng tin cậy.
 
-We’ll cover everything from setting up the libraries to recognizing specific text areas, and we’ll show you real‑world scenarios where this integration shines.
+Chúng tôi sẽ bao phủ mọi thứ từ việc thiết lập các thư viện đến việc nhận diện các khu vực văn bản cụ thể, và sẽ giới thiệu cho bạn các kịch bản thực tế nơi sự tích hợp này tỏa sáng.
 
-## Quick Answers
-- **What library handles OCR?** Aspose.OCR provides high‑accuracy optical character recognition.
-- **Which component parses the result?** GroupDocs.Parser extracts structured data from the OCR output.
-- **Minimum Java version?** JDK 8 or later.
-- **Do I need a license?** A trial works for testing; a full license unlocks all features.
-- **Can I process streams?** Yes—both libraries support image streams for web‑based uploads.
+## Câu trả lời nhanh
+- **Thư viện nào xử lý OCR?** Aspose.OCR provides high‑accuracy optical character recognition.
+- **Thành phần nào phân tích kết quả?** GroupDocs.Parser extracts structured data from the OCR output.
+- **Phiên bản Java tối thiểu?** JDK 8 or later.
+- **Tôi có cần giấy phép không?** A trial works for testing; a full license unlocks all features.
+- **Tôi có thể xử lý luồng không?** Yes—both libraries support image streams for web‑based uploads.
 
-## What is “extract text from image”?
-Extracting text from image means converting visual characters (e.g., a scanned page or a photo of a receipt) into plain text that your code can manipulate, search, or store. OCR (Optical Character Recognition) engines analyze pixel patterns, recognize glyphs, and output Unicode strings.
+## “Trích xuất văn bản từ hình ảnh” là gì?
+Việc trích xuất văn bản từ hình ảnh có nghĩa là chuyển đổi các ký tự trực quan (ví dụ: một trang đã quét hoặc một bức ảnh biên lai) thành văn bản thuần mà mã của bạn có thể thao tác, tìm kiếm hoặc lưu trữ. Các engine OCR (Optical Character Recognition) phân tích mẫu pixel, nhận dạng glyph và xuất ra các chuỗi Unicode.
 
-## Why combine Aspose.OCR with GroupDocs.Parser?
-- **Accuracy:** Aspose.OCR delivers industry‑leading recognition rates.
-- **Flexibility:** GroupDocs.Parser can handle the OCR output, detect page layouts, and return structured results such as tables or form fields.
-- **Stream‑friendly:** Both libraries work directly with `InputStream`, making them perfect for web services that receive image uploads.
+## Tại sao kết hợp Aspose.OCR với GroupDocs.Parser?
+- **Độ chính xác:** Aspose.OCR delivers industry‑leading recognition rates.
+- **Tính linh hoạt:** GroupDocs.Parser can handle the OCR output, detect page layouts, and return structured results such as tables or form fields.
+- **Thân thiện với luồng:** Both libraries work directly with `InputStream`, making them perfect for web services that receive image uploads.
 
-## Prerequisites
-- **Java Development Kit:** JDK 8+ installed.
+## Yêu cầu trước
+- ** Development Kit:** JDK 8+ installed.
 - **Maven:** Preferred build tool (or manual JAR handling).
 - **Aspose OCR Library:** Add the JAR to your project.
 - **GroupDocs.Parser for Java:** Include via Maven (see below) or download the JAR.
 - **Basic Java knowledge:** Handling streams, exceptions, and collections.
 
-## Setting Up GroupDocs.Parser for Java
+## Cài đặt GroupDocs.Parser cho Java
 
-### Maven Setup
+### Cài đặt Maven
 Add the repository and dependency to your `pom.xml`:
 
 ```xml
@@ -62,14 +63,14 @@ Add the repository and dependency to your `pom.xml`:
 </dependencies>
 ```
 
-### Direct Download
-If you prefer not to use Maven, grab the latest JAR from [GroupDocs Releases](https://releases.groupdocs.com/parser/java/).
+### Tải trực tiếp
+Nếu bạn không muốn sử dụng Maven, hãy tải JAR mới nhất từ [GroupDocs Releases](https://releases.groupdocs.com/parser/java/).
 
-### License Acquisition
-A valid license unlocks the full feature set for both Aspose OCR and GroupDocs.Parser. You can start with a free trial or purchase a permanent license from the vendor websites.
+### Nhận giấy phép
+Một giấy phép hợp lệ sẽ mở khóa toàn bộ tính năng cho cả Aspose OCR và GroupDocs.Parser. Bạn có thể bắt đầu với bản dùng thử miễn phí hoặc mua giấy phép vĩnh viễn từ các trang web của nhà cung cấp.
 
-#### Basic Initialization and Setup
-1. **Set the License for Aspose OCR:**
+#### Khởi tạo và Cài đặt Cơ bản
+1. **Set the License for Aspose OCR:**  
    ```java
    import com.aspose.ocr.License;
    
@@ -79,32 +80,29 @@ A valid license unlocks the full feature set for both Aspose OCR and GroupDocs.P
    ```
 2. **Initialize GroupDocs.Parser:** Ensure the parser JAR is on the classpath; no extra code is required for basic usage.
 
-## Implementation Guide
+## Hướng dẫn triển khai
 
-### Feature: Recognize Text from Image Stream
+### Tính năng: Nhận dạng Văn bản từ Luồng Hình ảnh
 This method lets you feed an `InputStream` (e.g., an uploaded file) directly into the OCR engine and receive the recognized text.
 
-#### Overview
+#### Tổng quan
 The process converts the incoming stream to a `BufferedImage`, configures optional recognition areas, and calls Aspose OCR’s `RecognizePage` method.
 
-#### Step‑by‑step Code
-
-1. **Create the AsposeOCR instance:**
+#### Mã từng bước
+1. **Create the AsposeOCR instance:**  
    ```java
    import com.aspose.ocr.AsposeOCR;
    
    AsposeOCR api = new AsposeOCR();
    ```
-
-2. **Read the image stream into a BufferedImage:**
+2. **Read the image stream into a BufferedImage:**  
    ```java
    import java.awt.image.BufferedImage;
    import javax.imageio.ImageIO;
    
    BufferedImage image = ImageIO.read(imageStream);
    ```
-
-3. **Configure recognition settings (optional area selection):**
+3. **Configure recognition settings (optional area selection):**  
    ```java
    import com.aspose.ocr.RecognitionSettings;
    
@@ -121,8 +119,7 @@ The process converts the incoming stream to a `BufferedImage`, configures option
        settings.setRecognitionAreas(areas);
    }
    ```
-
-4. **Run the recognition and handle warnings:**
+4. **Run the recognition and handle warnings:**  
    ```java
    import com.aspose.ocr.RecognitionResult;
    
@@ -135,23 +132,20 @@ The process converts the incoming stream to a `BufferedImage`, configures option
    return result.recognitionText;
    ```
 
-### Feature: Recognize Text Areas from Image Stream
+### Tính năng: Nhận dạng Các khu vực Văn bản từ Luồng Hình ảnh
 When you need each block of text (e.g., separate fields on a form), enable area detection.
 
-#### Overview
+#### Tổng quan
 Setting `detectAreas` tells Aspose OCR to return bounding rectangles for each recognized snippet, which you can then map to your data model.
 
-#### Step‑by‑step Code
-
-1. **Enable area detection:**
+#### Mã từng bước
+1. **Enable area detection:**  
    ```java
    RecognitionSettings settings = new RecognitionSettings();
    settings.setDetectAreas(true);
    ```
-
 2. **(Optional) Define specific regions** – reuse the rectangle logic from the previous section if you only care about certain parts of the image.
-
-3. **Execute OCR and collect area information:**
+3. **Execute OCR and collect area information:**  
    ```java
    import java.awt.Rectangle;
    import java.util.ArrayList;
@@ -172,47 +166,45 @@ Setting `detectAreas` tells Aspose OCR to return bounding rectangles for each re
    return areas;
    ```
 
-## Practical Applications
+## Ứng dụng Thực tiễn
 - **Document Management Systems:** Index scanned PDFs so users can search the full text.
 - **Automated Data Entry:** Pull fields from photographed receipts or forms.
 - **Content Digitization:** Convert printed books or manuals into searchable e‑books.
 
-## Performance Considerations
+## Các yếu tố về Hiệu suất
 - **Batch Processing:** Group images into batches to reduce JVM overhead.
 - **Image Quality:** Higher DPI (300 dpi or more) dramatically improves accuracy.
 - **Memory Management:** Dispose of `BufferedImage` objects promptly, especially when processing large volumes.
 
-## Common Issues & Troubleshooting
-| Symptom | Likely Cause | Fix |
-|---------|--------------|-----|
+## Các vấn đề thường gặp & Khắc phục
+| Triệu chứng | Nguyên nhân có thể | Cách khắc phục |
+|------------|--------------------|----------------|
 | Garbled characters | Low‑resolution image | Use a higher‑resolution scan (≥300 dpi) |
 | No text returned | Wrong image format (e.g., CMYK) | Convert to RGB before OCR |
 | Out‑of‑memory errors | Very large images | Process in smaller tiles or increase heap size |
 
-## Frequently Asked Questions
+## Câu hỏi thường gặp
 
-**Q: How do I install Aspose OCR in my Maven project?**  
+**Q: Làm thế nào để cài đặt Aspose OCR trong dự án Maven của tôi?**  
 A: Add the Aspose OCR dependency to your `pom.xml` (see the vendor’s Maven repository) or download the JAR from the Aspose website and place it on the classpath.
 
-**Q: Can I extract text from multi‑page PDFs?**  
+**Q: Tôi có thể trích xuất văn bản từ các tệp PDF đa trang không?**  
 A: Yes. Convert each PDF page to an image (e.g., using Aspose.PDF) and feed the resulting streams to the OCR method described above.
 
-**Q: Does this approach work with handwritten text?**  
+**Q: Phương pháp này có hoạt động với văn bản viết tay không?**  
 A: Aspose OCR primarily targets printed text. For handwriting, consider a dedicated handwriting‑recognition service.
 
-**Q: Is a license required for production use?**  
+**Q: Có cần giấy phép cho việc sử dụng trong môi trường sản xuất không?**  
 A: A trial license works for evaluation, but a full license removes watermarks and unlocks all features for commercial deployments.
 
-**Q: How can I improve accuracy for a specific language?**  
+**Q: Làm sao cải thiện độ chính xác cho một ngôn ngữ cụ thể?**  
 A: Set the language in `RecognitionSettings` (e.g., `settings.setLanguage(Language.Spanish);`) to guide the engine.
 
-## Conclusion
+## Kết luận
 By combining Aspose.OCR’s powerful recognition engine with GroupDocs.Parser’s flexible parsing capabilities, you now have a robust solution to **extract text from image** files and **convert scanned document text** into structured data. Experiment with the settings, integrate the code into your service layer, and watch your document workflows become fully searchable and automated.
 
 ---
 
-**Last Updated:** 2026-01-29  
-**Tested With:** Aspose.OCR 23.12, GroupDocs.Parser 25.5  
-**Author:** Aspose  
-
----
+**Cập nhật lần cuối:** 2026-01-29  
+**Kiểm tra với:** Aspose.OCR 23.12, GroupDocs.Parser 25.5  
+**Tác giả:** Aspose
