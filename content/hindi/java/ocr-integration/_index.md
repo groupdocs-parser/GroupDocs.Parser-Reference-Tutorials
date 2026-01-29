@@ -1,13 +1,15 @@
 ---
-title: "GroupDocs.Parser OCR Tutorial – Java Integration Guide"
-description: "Step‑by‑step groupdocs parser ocr tutorial for Java developers showing how to extract text from images java using OCR integration."
-weight: 19
-url: "/java/ocr-integration/"
-type: docs
 date: 2026-01-29
+description: जावा डेवलपर्स के लिए स्टेप‑बाय‑स्टेप GroupDocs Parser OCR ट्यूटोरियल,
+  जो OCR इंटीग्रेशन का उपयोग करके जावा में इमेज से टेक्स्ट निकालने का तरीका दिखाता
+  है।
+title: GroupDocs.Parser OCR ट्यूटोरियल – जावा इंटीग्रेशन गाइड
+type: docs
+url: /hi/java/ocr-integration/
+weight: 19
 ---
 
-# GroupDocs.Parser OCR Tutorial – Java Integration Guide
+# GroupDocs.Parser OCR ट्यूटोरियल – जावा इंटीग्रेशन गाइड
 
 Boost your document processing workflow by learning how to add OCR capabilities to GroupDocs.Parser in Java. This **groupdocs parser ocr tutorial** walks you through configuring OCR, extracting text from images, and handling advanced recognition options, so you can turn scanned files into searchable, editable content.
 
@@ -105,6 +107,4 @@ A: Absolutely—loop through your file list, applying the same parser configurat
 
 **Last Updated:** 2026-01-29  
 **Tested With:** GroupDocs.Parser for Java 23.10, Aspose.OCR 23.5  
-**Author:** GroupDocs  
-
----
+**Author:** GroupDocs
