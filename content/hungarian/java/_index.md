@@ -1,8 +1,8 @@
 ---
-date: 2025-12-16
+date: 2026-02-16
 description: Tanulja meg, hogyan lehet szöveget kinyerni Java-val a GroupDocs.Parser
   for Java segítségével, és fedezze fel, hogyan lehet képeket kinyerni Java-val, valamint
-  szöveget keresni dokumentumokban Java-val a hatékony dokumentumfeldolgozás érdekében.
+  szöveget keresni dokumentumokban Java-ban a hatékony dokumentumfeldolgozás érdekében.
 is_root: true
 linktitle: GroupDocs.Parser for Java Tutorials
 title: Szöveg kinyerése Java – GroupDocs.Parser oktatóanyagok
@@ -11,25 +11,44 @@ url: /hu/java/
 weight: 10
 ---
 
-# Extract Text Java – GroupDocs.Parser Oktatóanyagok
+ámogatás". List translate but keep links.
 
-A mai digitális környezetben a **extract text java** kritikus képesség minden dokumentummal dolgozó alkalmazás számára. A GroupDocs.Parser for Java gyors, megbízható módot biztosít a sima szöveg, formázott tartalom, képek, metaadatok és egyebek kinyerésére – külső eszközök nélkül. Akár keresőindexet építesz, jelentéseket generálsz, vagy egyszerűen csak adatot kell olvasnod PDF‑ekből, DOCX‑ekből vagy más formátumokból, ez az útmutató megmutatja, hogyan végezheted el a feladatot hatékonyan.
+Next heading "## Frequently Asked Questions" -> "## Gyakran Ismételt Kérdések". Then Q&A translate.
 
-## Gyors válaszok
-- **Mi jelent a “extract text java”?** A Java könyvtárak (például a GroupDocs.Parser) programozott módon történő szövegtartalom lekérésére utal a dokumentumfájlokból.  
-- **Kivonhatok-e képeket is?** Igen—használd ugyanazt az API‑t a **how to extract images java** bármely támogatott dokumentumból.  
-- **Támogatott a keresés?** Teljesen— a GroupDocs.Parser lehetővé teszi a **search text in documents java** kulcsszavakkal vagy reguláris kifejezésekkel.  
-- **Szükségem van licencre?** Elérhető egy ingyenes próba; a gyártási használathoz kereskedelmi licenc szükséges.  
-- **Mely Java verziók támogatottak?** A Java 8 és újabb verziók teljesen kompatibilisek.
+Make sure to keep bold formatting.
+
+At end: "Last Updated:", "Tested With:", "Author:" translate.
+
+Let's produce final markdown.
+
+# Szöveg Kinyerése Java – GroupDocs.Parser Oktatóanyagok
+
+A mai digitális környezetben a **extract text java** kritikus képesség minden dokumentumokkal dolgozó alkalmazás számára. A GroupDocs.Parser for Java gyors, megbízható módot biztosít a sima szöveg, formázott tartalom, képek, metaadatok és egyebek kinyerésére – külső eszközök nélkül. Akár keresőindexet építesz, jelentéseket generálsz, vagy egyszerűen csak adatot kell olvasnod PDF‑ekből, DOCX‑ekből vagy más formátumokból, ez az útmutató megmutatja, hogyan végezheted el a feladatot hatékonyan.
+
+## Gyors Válaszok
+- **What does “extract text java” mean?** Ez azt jelenti, hogy Java könyvtárakat (például a GroupDocs.Parser‑t) használunk a dokumentumfájlok szövegtartalmának programozott lekérésére.  
+- **Can I also extract images?** Igen — használd ugyanazt az API‑t a **how to extract images java** bármely támogatott dokumentumból.  
+- **Is searching supported?** Teljesen — a GroupDocs.Parser lehetővé teszi a **search text in documents java** kulcsszavakkal vagy reguláris kifejezésekkel.  
+- **Do I need a license?** Elérhető egy ingyenes próba, a kereskedelmi licenc szükséges a termelési használathoz.  
+- **What Java versions are supported?** A Java 8 és újabb verziók teljesen kompatibilisek.  
+- **How do I extract form data?** A parser egy `extractFormData()` metódust biztosít a **extract form data java** forgatókönyvhöz.  
+- **Can I search document text efficiently?** Igen, használd a beépített `search()` metódust a **search document text java** magas teljesítményű kereséshez.
 
 ## Mi az a “extract text java”?
-A “extract text java” a folyamatot írja le, amikor egy dokumentumfájlt (PDF, DOCX, XLSX, stb.) olvasunk be egy Java alkalmazásban, és kinyerjük annak szövegtartalmát. Ez lehetővé teszi az olyan downstream feladatokat, mint az indexelés, analitika vagy tartalomtranszformáció.
+A “extract text java” a folyamatot írja le, amikor egy Java alkalmazásban dokumentumfájlt (PDF, DOCX, XLSX stb.) olvasunk, és kinyerjük annak szövegtartalmát. Ez lehetővé teszi az olyan downstream feladatokat, mint az indexelés, elemzés vagy tartalomtranszformáció.
 
 ## Miért használjuk a GroupDocs.Parser for Java‑t?
 - **All‑in‑one solution** – Kezeli a szöveget, képeket, táblázatokat, metaadatokat és egyebeket több mint 100 fájlformátumból.  
-- **No external dependencies** – Tiszta Java, nincs szükség Office, Adobe vagy más harmadik fél szoftverre.  
-- **High performance** – Választhatsz a pontos kinyerés (megtartja az elrendezést) és a nyers kinyerés (sebesség‑optimalizált) között.  
-- **Search‑ready** – A beépített keresési képességek lehetővé teszik a kulcsszavak vagy minták azonnali megtalálását.
+- **No external dependencies** – Tiszta Java, nincs szükség Office, Adobe vagy más harmadik fél szoftverére.  
+- **High performance** – Választhatsz pontos kinyerés (megtartja a layoutot) vagy nyers kinyerés (sebesség‑optimalizált) között.  
+- **Search‑ready** – Beépített keresési funkciók lehetővé teszik a kulcsszavak vagy minták azonnali megtalálását.  
+- **Form & data extraction** – Külön API‑k a **extract form data java** számára, amelyek megkönnyítik a PDF űrlapok kezelését.  
+
+## Gyakori Felhasználási Esetek
+- **Search engines**: Dokumentumgyűjtemények indexelése egyszerű szöveg kinyerésével, majd a Lucene vagy Elasticsearch felé továbbítva.  
+- **Content migration**: Örökölt dokumentumok áthelyezése CMS‑be a szöveg, képek és metaadatok kinyerésével.  
+- **Compliance auditing**: Szerződések átvizsgálása specifikus záradékok után a **search document text java** segítségével.  
+- **Form processing**: Mezőértékek kinyerése PDF űrlapokból automatizált munkafolyamatokhoz.
 
 ## Előfeltételek
 - Java 8+ (vagy újabb) futtatókörnyezet telepítve.  
@@ -38,92 +57,109 @@ A “extract text java” a folyamatot írja le, amikor egy dokumentumfájlt (PD
 
 ## Oktatóanyag Kategóriák
 
-### [Getting Started](./getting-started/)
+### [Első Lépések](./getting-started/)
 Lépésről‑lépésre útmutatók a GroupDocs.Parser telepítéséhez, licenceléséhez, beállításához és az alapvető dokumentumfeldolgozáshoz Java alkalmazásokban.
 
-### [Document Loading](./document-loading/)
-Teljes körű útmutatók dokumentumok betöltéséhez különböző forrásokból (helyi lemez, stream, URL) és jelszóval védett fájlok kezeléséhez a GroupDocs.Parser for Java használatával.
+### [Dokumentum Betöltés](./document-loading/)
+Teljes körű oktatóanyagok a dokumentumok betöltéséhez különböző forrásokból (helyi lemez, stream, URL) és a jelszóval védett fájlok kezeléséhez a GroupDocs.Parser for Java segítségével.
 
-### [Text Extraction](./text-extraction/)
-Lépésről‑lépésre útmutatók a sima szöveg, formázott szöveg és elrendezési információkkal rendelkező szöveg kinyeréséhez dokumentumokból a GroupDocs.Parser for Java segítségével.
+### [Szöveg Kinyerés](./text-extraction/)
+Lépés‑ről‑lépésre útmutatók a sima szöveg, formázott szöveg és a layout információval együtt kinyeréséhez dokumentumokból a GroupDocs.Parser for Java‑val.
 
-### [Text Search](./text-search/)
-Tanuld meg a szöveg keresését kulcsszavak, reguláris kifejezések és fejlett keresési beállítások segítségével ezekkel a GroupDocs.Parser Java útmutatókkal.
+### [Szöveg Keresés](./text-search/)
+Tanuld meg a szöveg keresését kulcsszavakkal, reguláris kifejezésekkel és fejlett keresési opciókkal ezekkel a GroupDocs.Parser Java oktatóanyagokkal.
 
-### [Image Extraction](./image-extraction/)
-Teljes körű útmutatók képek kinyeréséhez különböző dokumentumformátumokból és fájlokként való mentéséhez a GroupDocs.Parser for Java használatával.
+### [Kép Kinyerés](./image-extraction/)
+Teljes körű oktatóanyagok képek kinyeréséhez különböző dokumentumformátumokból és fájlokként való mentéséhez a GroupDocs.Parser for Java‑val.
 
-### [Table Extraction](./table-extraction/)
-Lépésről‑lépésre útmutatók táblázatok kinyeréséhez és feldolgozásához dokumentumokból a GroupDocs.Parser for Java segítségével.
+### [Táblázat Kinyerés](./table-extraction/)
+Lépés‑ről‑lépésre útmutatók táblázatok kinyeréséhez és feldolgozásához dokumentumokból a GroupDocs.Parser for Java‑val.
 
-### [Metadata Extraction](./metadata-extraction/)
-Tanuld meg a dokumentum metaadatok és tulajdonságok kinyerését és feldolgozását ezekkel a GroupDocs.Parser Java útmutatókkal.
+### [Metaadat Kinyerés](./metadata-extraction/)
+Tanuld meg a dokumentum metaadatok és tulajdonságok kinyerését és feldolgozását ezekkel a GroupDocs.Parser Java oktatóanyagokkal.
 
-### [Hyperlink Extraction](./hyperlink-extraction/)
-Teljes körű útmutatók hiperhivatkozások kinyeréséhez dokumentumokból, oldalakról és meghatározott területekről a GroupDocs.Parser for Java használatával.
+### [Hiperhivatkozás Kinyerés](./hyperlink-extraction/)
+Teljes körű oktatóanyagok hiperhivatkozások kinyeréséhez dokumentumokból, oldalakból és specifikus területekről a GroupDocs.Parser for Java‑val.
 
-### [TOC Extraction](./toc-extraction/)
-Lépésről‑lépésre útmutatók a dokumentum tartalomjegyzékének kinyeréséhez és navigálásához a GroupDocs.Parser for Java segítségével.
+### [Tartalomjegyzék Kinyerés](./toc-extraction/)
+Lépés‑ről‑lépésre útmutatók a dokumentum tartalomjegyzékének kinyeréséhez és navigálásához a GroupDocs.Parser for Java‑val.
 
-### [Barcode Extraction](./barcode-extraction/)
-Tanuld meg a vonalkódok kinyerését és feldolgozását dokumentumokból és meghatározott oldalterületekről ezekkel a GroupDocs.Parser Java útmutatókkal.
+### [Vonalkód Kinyerés](./barcode-extraction/)
+Tanuld meg a vonalkódok kinyerését és feldolgozását dokumentumokból és adott oldalterületekről ezekkel a GroupDocs.Parser Java oktatóanyagokkal.
 
-### [Form Extraction](./form-extraction/)
-Teljes körű útmutatók adatok kinyeréséhez és feldolgozásához PDF űrlapokból és egyéb dokumentummezőkből a GroupDocs.Parser for Java használatával.
+### [Űrlap Kinyerés](./form-extraction/)
+Teljes körű oktatóanyagok PDF űrlapok és egyéb dokumentummezők adatainak kinyeréséhez a GroupDocs.Parser for Java‑val.
 
-### [Formatted Text Extraction](./formatted-text-extraction/)
-Lépésről‑lépésre útmutatók formázott szöveg kinyeréséhez HTML, Markdown és egyéb formátumokban a GroupDocs.Parser for Java segítségével.
+### [Formázott Szöveg Kinyerés](./formatted-text-extraction/)
+Lépés‑ről‑lépésre útmutatók formázott szöveg kinyeréséhez HTML, Markdown és egyéb formátumokba a GroupDocs.Parser for Java‑val.
 
-### [Template Parsing](./template-parsing/)
-Tanuld meg sablonok használatát strukturált adatok kinyeréséhez dokumentumokból ezekkel a GroupDocs.Parser Java útmutatókkal.
+### [Sablon Feldolgozás](./template-parsing/)
+Tanuld meg, hogyan használj sablonokat strukturált adatok kinyeréséhez dokumentumokból ezekkel a GroupDocs.Parser Java oktatóanyagokkal.
 
-### [Email Parsing](./email-parsing/)
-Teljes körű útmutatók e‑mailek, mellékletek és metaadatok kinyeréséhez különböző e‑mail formátumokból a GroupDocs.Parser for Java használatával.
+### [E‑mail Feldolgozás](./email-parsing/)
+Teljes körű oktatóanyagok e‑mailek, mellékletek és metaadatok kinyeréséhez különböző e‑mail formátumokból a GroupDocs.Parser for Java‑val.
 
-### [Document Information](./document-information/)
-Lépésről‑lépésre útmutatók dokumentuminformációk, támogatott funkciók és fájlformátum részletek lekérdezéséhez a GroupDocs.Parser for Java segítségével.
+### [Dokumentum Információk](./document-information/)
+Lépés‑ről‑lépésre útmutatók a dokumentum információk, támogatott funkciók és fájlformátum részletek lekérdezéséhez a GroupDocs.Parser for Java‑val.
 
-### [Container Formats](./container-formats/)
-Tanuld meg a ZIP archívumok, PDF portfóliók és egyéb konténerformátumok kezelését ezekkel a GroupDocs.Parser Java útmutatókkal.
+### [Konténer Formátumok](./container-formats/)
+Tanuld meg a ZIP archívumok, PDF portfóliók és egyéb konténer formátumok kezelését ezekkel a GroupDocs.Parser Java oktatóanyagokkal.
 
-### [Page Preview Generation](./page-preview-generation/)
-Lépésről‑lépésre útmutatók oldal előnézetek és bélyegképek generálásához különböző dokumentumformátumokból a GroupDocs.Parser for Java használatával.
+### [Oldal Előnézet Generálás](./page-preview-generation/)
+Lépés‑ről‑lépésre útmutatók oldal előnézetek és bélyegképek generálásához különböző dokumentumformátumokból a GroupDocs.Parser for Java‑val.
 
-### [OCR Integration](./ocr-integration/)
-Tanuld meg az Optikai Karakterfelismerés (OCR) funkciók megvalósítását képalapú szövegkivonáshoz ezekkel a GroupDocs.Parser Java útmutatókkal.
+### [OCR Integráció](./ocr-integration/)
+Tanuld meg az Optikai Karakterfelismerés (OCR) funkciók implementálását képalapú szöveg kinyeréséhez ezekkel a GroupDocs.Parser Java oktatóanyagokkal.
 
-### [Database Integration](./database-integration/)
-Teljes körű útmutatók adatok kinyeréséhez adatbázisokból és adatbázis‑kapcsolatok integrálásához a GroupDocs.Parser for Java használatával.
+### [Adatbázis Integráció](./database-integration/)
+Teljes körű oktatóanyagok adatok kinyeréséhez adatbázisokból és adatbáziskapcsolatok integrálásához a GroupDocs.Parser for Java‑val.
+
+## Hogyan nyerjünk ki form adatokat java‑ban?
+A GroupDocs.Parser egy egyszerű `extractFormData()` metódust biztosít, amely a mezőneveket és értékeket tartalmazó gyűjteményt adja vissza. Ideális számlafeldolgozás, felmérés‑elemzés vagy bármely olyan munkafolyamat automatizálásához, amely űrlap‑bemenetekre támaszkodik.
+
+## Hogyan kereshetünk dokumentum szövegben java‑ban?
+Használd a `search(String query)` metódust a pontos kifejezések vagy reguláris‑kifejezés minták megtalálásához. Az API visszaadja az oldalszámokat és a szövegrészlet‑kivonatokat, így könnyen kiemelheted az eredményeket a felhasználói felületen.
+
+## Gyakori Problémák és Megoldások
+- **Memory consumption with large files** – Válts streaming API‑kra (`Parser.open(InputStream)`) a dokumentumok darabonkénti feldolgozásához.  
+- **Incorrect layout in extracted text** – Használd a “preserve layout” opciót a oszlopok és táblázatok igazításához.  
+- **Missing images** – Győződj meg róla, hogy a dokumentum nincs jelszóval védve vagy titkosítva; a betöltéskor add meg a jelszót.  
 
 ## Támogatás
-Ha bármilyen problémába ütközöl vagy kérdésed van a GroupDocs.Parser for Java‑ral kapcsolatban, a következőket teheted:
+Ha bármilyen problémába ütközöl vagy kérdésed van a GroupDocs.Parser for Java‑val kapcsolatban, a következőket teheted:
 
-- Látogasd meg a [documentation portal](https://docs.groupdocs.com/parser/java/)
-- Látogasd meg a [API Reference](https://reference.groupdocs.com/parser/java/)
-- Kérj segítséget a [GroupDocs forum](https://forum.groupdocs.com/c/parser) oldalon
-- Tekintsd meg a [code examples on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java) példákat
+- Látogasd meg a [documentation portal](https://docs.groupdocs.com/parser/java/) oldalt  
+- Látogasd meg az [API Reference](https://reference.groupdocs.com/parser/java/) oldalt  
+- Kérj segítséget a [GroupDocs forum](https://forum.groupdocs.com/c/parser)‑on  
+- Tekintsd meg a [code examples on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java) repót  
 
-Kezdd el még ma az útmutatóink felfedezését, hogy kiaknázd a dokumentumfeldolgozás és adatkinyerés teljes potenciálját Java alkalmazásaidban.
+Kezdj el ma felfedezni oktatóanyagainkat, és nyisd ki a dokumentumfeldolgozás és adatkinyerés teljes potenciálját Java alkalmazásaidban.
 
 ## Gyakran Ismételt Kérdések
 
-**Q: Hogyan kezdjek el szöveget kinyerni Java‑val?**  
-A: A GroupDocs.Parser Maven függőséget add hozzá, inicializáld a `Parser` objektumot a fájloddal, és hívd meg az `extractText()`‑t – ez a legegyszerűbb módja a **extract text java**‑nak.
+**Q: How do I begin extracting text with Java?**  
+A: Add the GroupDocs.Parser Maven dependency, initialize the `Parser` object with your file, and call `extractText()`—the simplest way to **extract text java**.
 
-**Q: Kivonhatok‑e képeket a szöveg kinyerése közben?**  
-A: Igen. Használd ugyanazt a parser példányt, és hívd meg az `extractImages()`‑t. Ez lefedi a **how to extract images java** szcenáriót.
+**Q: Can I extract images while extracting text?**  
+A: Yes. Use the same parser instance and call `extractImages()`. This covers the **how to extract images java** scenario.
 
-**Q: Milyen lehetőségek vannak a dokumentumon belüli keresésre?**  
-A: Kereshetsz egyszerű kulcsszavak vagy reguláris kifejezések alapján a `search()` metódussal, ezzel teljesítve a **search text in documents java** követelményt.
+**Q: What options exist for searching within a document?**  
+A: You can search by plain keywords or regular expressions using the `search()` method, fulfilling the **search text in documents java** requirement.
 
-**Q: Támogatja‑e az API a jelszóval védett fájlokat?**  
-A: Teljesen. Add meg a jelszót a dokumentum betöltésekor, a parser automatikusan kezeli a visszafejtést.
+**Q: Does the API support password‑protected files?**  
+A: Absolutely. Provide the password when loading the document, and the parser will handle decryption automatically.
 
-**Q: Van‑e korlátozás a fájlméretre?**  
-A: Bár nincs szigorú határ, nagyon nagy fájlok esetén érdemes a streaming API‑kat és az inkrementális feldolgozást használni a memóriafogyasztás csökkentése érdekében.
+**Q: Is there a limit on file size?**  
+A: While there’s no hard limit, very large files benefit from streaming APIs and incremental processing to reduce memory consumption.
+
+**Q: How can I extract form data from a PDF?**  
+A: Call `extractFormData()` on the parser instance; it returns a map of field names to values, addressing the **extract form data java** need.
+
+**Q: What is the best way to perform fast text search?**  
+A: Use the `search()` method with the `SearchOptions` object to enable case‑insensitive and regex‑based searches, perfect for **search document text java**.
 
 ---
 
-**Legutóbb frissítve:** 2025-12-16  
-**Tesztelve:** GroupDocs.Parser for Java 23.12  
-**Szerző:** GroupDocs
+**Last Updated:** 2026-02-16  
+**Tested With:** GroupDocs.Parser for Java 23.12  
+**Author:** GroupDocs
