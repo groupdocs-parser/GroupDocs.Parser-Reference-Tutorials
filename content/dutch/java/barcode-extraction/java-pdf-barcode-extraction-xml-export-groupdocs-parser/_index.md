@@ -1,51 +1,44 @@
 ---
-date: '2025-12-18'
-description: Leer hoe je efficiënt barcodes uit PDF's kunt extraheren met GroupDocs
-  Parser Java en de gegevens naar XML-formaat kunt exporteren.
+date: '2026-02-19'
+description: Leer hoe u QR-codes in Java‑PDF’s kunt lezen met GroupDocs.Parser en
+  de barcode‑gegevens naar XML kunt exporteren.
 keywords:
 - Java PDF barcode extraction
 - GroupDocs.Parser for Java
 - XML export from PDF
-title: Efficiënte Java PDF-barcode-extractie en XML-export met GroupDocs Parser Java
+title: Hoe QR-codes te lezen in Java‑PDF’s met GroupDocs.Parser
 type: docs
 url: /nl/java/barcode-extraction/java-pdf-barcode-extraction-xml-export-groupdocs-parser/
 weight: 1
 ---
 
-# Efficiënte Java PDF Barcode Extractie en XML Export met groupdocs parser java
+# Hoe QR-codes lezen in Java PDF's met GroupDocs.Parser
 
-In het digitale landschap van vandaag is het extraheren van informatie zoals barcodes uit documenten cruciaal in verschillende sectoren zoals voorraadbeheer, logistiek en detailhandel. Deze tutorial leidt je door het gebruik van **groupdocs parser java** om barcode‑gegevens uit PDF‑bestanden te extraheren en deze te exporteren naar een XML‑bestand.
+In moderne bedrijfsprocessen kan **hoe QR** codes uit PDF‑documenten het verschil maken tussen een handmatige gegevensinvoerknooppunt en een volledig geautomatiseerde pijplijn. Of u nu verzendingsmanifesten, kassabonnen of productcatalogi verwerkt, het snel en betrouwbaar extraheren van QR‑informatie is essentieel. Deze tutorial leidt u door het gebruik van **GroupDocs.Parser for Java** om QR‑codes (en andere barcodes) uit PDF's te lezen en de resultaten te exporteren naar een schoon XML‑bestand dat door downstream‑systemen kan worden gebruikt.
 
-## Snelle Antwoorden
-- **What does groupdocs parser java do?** Wat doet groupdocs parser java?  
-  Het leest PDF‑bestanden en extraheert gestructureerde gegevens zoals barcodes.  
-- **How to extract barcodes?** Hoe barcodes te extraheren?  
-  Door `BarcodeOptions` te configureren en `parser.getBarcodes()` aan te roepen.  
-- **Can I read QR codes java?** Kan ik QR‑codes lezen in Java?  
-  Ja—stel het barcode‑type in op `"QR"` in de opties.  
-- **Do I need a license?** Heb ik een licentie nodig?  
-  Een proefversie werkt voor testen; een commerciële licentie is vereist voor productie.  
-- **What Java version is required?** Welke Java‑versie is vereist?  
-  Java 8 of hoger wordt aanbevolen.
+## Snelle antwoorden
+- **Wat doet GroupDocs.Parser for Java?** Het leest PDF‑bestanden en extraheert gestructureerde gegevens zoals barcodes.  
+- **Hoe QR‑codes extraheren?** Door `BarcodeOptions` te configureren met het QR‑type en `parser.getBarcodes()` aan te roepen.  
+- **Kan ik QR‑codes lezen in Java?** Ja—stel het barcode‑type in op `"QR"` in de opties.  
+- **Heb ik een licentie nodig?** Een proefversie werkt voor testen; een commerciële licentie is vereist voor productie.  
+- **Welke Java‑versie is vereist?** Java 8 of hoger wordt aanbevolen.
+
+## Wat betekent “hoe QR‑codes lezen” in de context van PDF‑verwerking?
+Het lezen van QR‑codes uit PDF's betekent elke pagina scannen op QR‑gecodeerde grafische elementen, de ingebedde data decoderen en deze teruggeven in een programma‑vriendelijk formaat. GroupDocs.Parser abstraheert de low‑level beeldanalyse zodat u zich kunt richten op de bedrijfslogica in plaats van pixelmanipulatie.
+
+## Waarom GroupDocs.Parser gebruiken voor QR‑extractie?
+- **Hoge nauwkeurigheid:** Ingebouwde beeldverwerkingsalgoritmen verwerken scans met lage resolutie.  
+- **Prestatie‑opties:** Kies `QualityMode.Low` voor snelheid of `QualityMode.High` voor maximale precisie.  
+- **Cross‑formatondersteuning:** Werkt met PDF's, afbeeldingen en zelfs Office‑documenten, zodat u dezelfde codebasis kunt hergebruiken voor verschillende bestandstypen.
 
 ## Vereisten
-### Vereiste Bibliotheken en Afhankelijkheden
-Om deze tutorial te volgen, heb je nodig:
-- **GroupDocs.Parser for Java** bibliotheek (versie 25.5 of later).
-- Basiskennis van Maven voor afhankelijkheidsbeheer.
-- Een Java‑ontwikkelomgeving geïnstalleerd op je machine.
+- **GroupDocs.Parser for Java** (versie 25.5 of later).  
+- Maven of handmatige JAR‑download.  
+- Java 8+ ontwikkelomgeving (IntelliJ IDEA, Eclipse of een andere editor).  
 
-### Vereisten voor Omgevingsconfiguratie
-Zorg ervoor dat je het volgende geïnstalleerd hebt:
-- Java JDK (JDK 8 of hoger aanbevolen).
-- Een IDE zoals IntelliJ IDEA, Eclipse, of een teksteditor naar keuze.
-- Maven als je afhankelijkheden via Maven wilt beheren.
-
-## GroupDocs.Parser voor Java Instellen
-Aan de slag gaan met **groupdocs parser java** is eenvoudig. Je kunt Maven gebruiken of de bibliotheek direct van hun website downloaden.
-
+## GroupDocs.Parser voor Java instellen
 ### Maven gebruiken
-Als je een build‑tool zoals Maven gebruikt, voeg dan de volgende configuratie toe in je `pom.xml`:
+Add the GroupDocs repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -65,16 +58,16 @@ Als je een build‑tool zoals Maven gebruikt, voeg dan de volgende configuratie 
 </dependencies>
 ```
 
-### Directe Download
-Download anders de nieuwste versie van [GroupDocs.Parser Java Documentatie](https://releases.groupdocs.com/parser/java/).
+### Directe download
+Alternatively, download the latest JAR from [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
-#### Stappen voor Licentie‑verwerving
-- **Free Trial:** Start met een gratis proefperiode van 30 dagen om alle functies te verkennen.  
-- **Temporary License:** Verkrijg een tijdelijke licentie voor een uitgebreide evaluatie.  
-- **Purchase:** Voor productie, koop een commerciële licentie.
+#### Stappen voor licentie‑acquisitie
+- **Gratis proefversie:** 30‑daagse proef met volledige functionaliteit.  
+- **Tijdelijke licentie:** Vraag een tijdelijke sleutel aan voor uitgebreide evaluatie.  
+- **Aankoop:** Verkrijg een commerciële licentie voor productie‑implementaties.
 
-### Basisinitialisatie en Configuratie
-Zodra je de bibliotheek klaar hebt, initialiseert je deze in je Java‑project. Hier zie je hoe je een eenvoudige instantie van `Parser` kunt opzetten:
+### Basisinitialisatie en -configuratie
+Create a `Parser` instance that points to the PDF you want to analyze:
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -91,13 +84,9 @@ class BarcodeExtractor {
 }
 ```
 
-## groupdocs parser java gebruiken voor Barcode‑Extractie
-### Barcodes extraheren uit een PDF‑document
-#### Overzicht
-Deze functie stelt je in staat om barcode‑gegevens die in je PDF‑documenten zijn ingebed te identificeren en te extraheren. Het is vooral handig wanneer je **how to extract barcodes** moet uitvoeren op verzendmanifesten of kassabonnen.
-
-#### Stap 1: Documentondersteuning controleren
-Eerst, zorg ervoor dat het document barcode‑extractie ondersteunt:
+## Hoe QR‑codes lezen in Java PDF's met GroupDocs.Parser
+### Stap 1: Controleer barcode‑ondersteuning
+Before attempting extraction, confirm that the document format supports barcode scanning:
 
 ```java
 if (!parser.getFeatures().isBarcodes()) {
@@ -106,10 +95,10 @@ if (!parser.getFeatures().isBarcodes()) {
 }
 ```
 
-*Uitleg:* Deze regel controleert of je documenttype compatibel is met barcode‑extractie. Zo niet, dan stopt het netjes om fouten te voorkomen.
+*Uitleg:* Deze controle voorkomt runtime‑fouten bij niet‑ondersteunde bestandstypen.
 
-#### Stap 2: Barcode‑opties instellen
-Configureer de scanner om naar QR‑codes (of elk ander formaat dat je nodig hebt) te zoeken. Dit is waar **read qr codes java** van toepassing is:
+### Stap 2: Barcode‑opties configureren (QR‑codes lezen in Java)
+Set the scanning quality and specify that you’re interested in QR codes:
 
 ```java
 import com.groupdocs.parser.options.BarcodeOptions;
@@ -118,10 +107,10 @@ import com.groupdocs.parser.options.QualityMode;
 BarcodeOptions options = new BarcodeOptions(QualityMode.Low, QualityMode.Low, "QR");
 ```
 
-*Uitleg:* Hier definiëren we de kwaliteitsmodus voor barcode‑scannen. De parameter `"QR"` geeft aan dat we specifiek QR‑codes willen extraheren.
+*Uitleg:* `QualityMode.Low` versnelt de verwerking; schakel over naar `High` als u extra nauwkeurigheid nodig heeft. Het argument `"QR"` vertelt de engine om alleen naar QR‑type barcodes te zoeken.
 
-#### Stap 3: Barcodes extraheren
-Haal nu de barcode‑gegevens op van elke pagina:
+### Stap 3: De QR‑gegevens extraheren
+Pull the barcode information from every page of the PDF:
 
 ```java
 import com.groupdocs.parser.data.PageBarcodeArea;
@@ -130,14 +119,11 @@ import java.util.List;
 Iterable<PageBarcodeArea> barcodes = parser.getBarcodes(options);
 ```
 
-*Uitleg:* Deze regel extraheert de barcode‑gebieden van elke pagina van je document, op basis van de gedefinieerde opties.
+*Uitleg:* `parser.getBarcodes` retourneert een iterabele collectie van `PageBarcodeArea`‑objecten, elk met de gedecodeerde QR‑waarde en de locatie op de pagina.
 
-### Gegevens exporteren naar een XML‑bestand
-#### Overzicht
-Na extractie wil je een gestructureerd formaat voor downstream‑verwerking. XML werkt goed met veel enterprise‑systemen.
-
-#### Stap 1: XmlExporter initialiseren
-Maak een exporter‑instantie aan:
+## Geëxtraheerde gegevens exporteren naar XML
+### Stap 4: Initialise de XML‑exporteur
+Create an exporter that will transform the barcode collection into a well‑structured XML file:
 
 ```java
 import com.groupdocs.parser.export.XmlExporter;
@@ -145,60 +131,60 @@ import com.groupdocs.parser.export.XmlExporter;
 XmlExporter exporter = new XmlExporter();
 ```
 
-*Uitleg:* De `XmlExporter` wordt geïnitialiseerd om de conversie van barcode‑gegevens naar een XML‑bestand af te handelen.
+*Uitleg:* De `XmlExporter` verwerkt de serialisatie van barcode‑objecten naar standaard XML, klaar voor integratie met ERP‑ of voorraadsystemen.
 
-#### Stap 2: Barcodes exporteren naar XML
-Sla de geëxtraheerde gegevens op:
+### Stap 5: Schrijf het XML‑bestand
+Save the extracted QR information to disk:
 
 ```java
 exporter.exportBarcodes(barcodes, "YOUR_OUTPUT_DIRECTORY/data.xml");
 ```
 
-*Uitleg:* Deze regel voert de exportbewerking uit, waarbij alle geëxtraheerde barcodes worden opgeslagen in `data.xml` in de opgegeven uitvoermap.
+*Uitleg:* Het resulterende `data.xml` bevat één `<Barcode>`‑element per QR‑code, met attributen voor paginanummer, coördinaten en gedecodeerde waarde.
 
-## Praktische Toepassingen
-1. **Inventory Management:** Automatisch voorraadbeheersystemen bijwerken door product‑barcodes uit inkomende verzenddocumenten te extraheren.  
-2. **Supply Chain Monitoring:** Volg zendingen en pakketten met barcode‑gegevens voor efficiënt logistiek beheer.  
-3. **Retail Operations:** Verbeter de klantenservice door snel QR‑codes op kassabonnen of productetiketten te scannen om gedetailleerde informatie op te halen.
+## Praktische toepassingen
+1. **Voorraadbeheer:** Automatisch voorraaddatabases vullen door QR‑tags op binnenkomende verzend‑PDF's te lezen.  
+2. **Zichtbaarheid in de toeleveringsketen:** Pakketten in realtime volgen door QR‑identifiers uit logistieke documenten te extraheren.  
+3. **Kassabonnen:** Promotie‑ of garantiebepalingen ophalen uit QR‑codes die op digitale bonnen zijn afgedrukt.
 
 ## Prestatie‑overwegingen
-Om **groupdocs parser java** soepel te laten draaien op grote PDF‑bestanden:
-- Beheer het geheugen zorgvuldig; verwerk pagina's in streams als documenten enorm zijn.
-- Kies de juiste `QualityMode`—`Low` voor snelheid, `High` voor nauwkeurigheid.
-- Houd de bibliotheek up‑to‑date om te profiteren van prestatie‑patches.
+- **Geheugenbeheer:** Voor zeer grote PDF's pagina's in streaming‑modus verwerken in plaats van het hele bestand in het geheugen te laden.  
+- **QualityMode‑selectie:** Gebruik `Low` voor bulkverwerking; schakel over naar `High` bij scans met lage resolutie.  
+- **Bibliotheek‑updates:** Houd GroupDocs.Parser up‑to‑date om te profiteren van de nieuwste prestatie‑verbeteringen en bug‑fixes.
 
-## Conclusie
-Door deze gids te volgen, heb je met succes geleerd hoe je barcodes uit PDF‑bestanden kunt extraheren en deze als XML kunt exporteren met **groupdocs parser java**. Deze mogelijkheid kan de data‑ingestieworkflows in voorraadbeheer, logistiek en retail aanzienlijk verbeteren.
+## Veelvoorkomende problemen & probleemoplossing
+| Symptoom | Waarschijnlijke oorzaak | Oplossing |
+|---------|--------------------------|----------|
+| Geen barcodes geretourneerd | Verkeerd barcode‑type opgegeven | Verander `"QR"` naar het juiste type (bijv. `"CODE_128"`). |
+| Out‑of‑memory‑fout bij grote PDF's | Het volledige document in één keer geladen | Verwerk pagina's afzonderlijk of vergroot de JVM‑heap‑grootte (`-Xmx2g`). |
+| Leeg XML‑bestand | `exportBarcodes` aangeroepen vóór extractie | Zorg dat `parser.getBarcodes(options)` data retourneert vóór het exporteren. |
 
-**Next Steps:**  
-Verken aanvullende functies zoals tekst‑extractie, tabel‑parsing, of het integreren van de output met je ERP‑systeem.
+## Veelgestelde vragen
+**V: Kan ik barcodes uit afbeeldingsbestanden extraheren met GroupDocs.Parser?**  
+A: Ja, de bibliotheek ondersteunt barcode‑extractie uit gangbare afbeeldingsformaten (PNG, JPEG, TIFF).
 
-## Veelgestelde Vragen
-**Q: Kan ik barcodes uit afbeeldingen extraheren met GroupDocs.Parser?**  
-A: Ja, de bibliotheek ondersteunt barcode‑extractie uit afbeeldingsbestanden.
+**V: Welke barcode‑formaten worden herkend?**  
+A: QR, Code 39, Code 128, DataMatrix, PDF417 en nog veel meer. Zie de API‑documentatie voor de volledige lijst.
 
-**Q: Welke soorten barcodes kunnen worden geëxtraheerd?**  
-A: De bibliotheek ondersteunt diverse formaten, waaronder QR‑codes, Code 39, Code 128 en nog veel meer.
+**V: Hoe ga ik om met met wachtwoord beveiligde PDF's?**  
+A: Geef het wachtwoord door aan de `Parser`‑constructor: `new Parser(filePath, "password")`.
 
-**Q: Hoe kan ik grote PDF‑documenten efficiënt verwerken?**  
-A: Verwerk het document in delen of gebruik multi‑threading om de geheugenbelasting te verminderen.
+**V: Is de proefversie voldoende voor productietesten?**  
+A: De proefversie biedt volledige functionaliteit maar voegt een watermerk toe aan geëxtraheerde data. Voor productie dient u een commerciële licentie aan te schaffen.
 
-**Q: Is GroupDocs.Parser gratis voor commercieel gebruik?**  
-A: Een proefversie is beschikbaar; een commerciële licentie is vereist voor productie‑implementaties.
+**V: Wat als mijn PDF zowel QR‑ als lineaire barcodes bevat?**  
+A: Maak meerdere `BarcodeOptions`‑instanties aan of geef een array van types door om in één keer alle benodigde formaten te scannen.
 
-**Q: Wat moet ik doen als mijn documentformaat niet wordt ondersteund?**  
-A: Controleer of je de nieuwste bibliotheekversie gebruikt en raadpleeg de documentatie voor ondersteunde formaten.
+---
 
-## Bronnen
-- [GroupDocs.Parser Java Documentatie](https://docs.groupdocs.com/parser/java/)
-- [API‑referentie](https://reference.groupdocs.com/parser/java)
-- [GroupDocs.Parser downloaden](https://releases.groupdocs.com/parser/java/)
-- [GitHub‑repository](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
-- [Gratis ondersteuningsforum](https://forum.groupdocs.com/c/parser)
-- [Aanvraag tijdelijke licentie](https://purchase.groupdocs.com/temporary-license/) 
-
----  
-
-**Laatst bijgewerkt:** 2025-12-18  
+**Laatst bijgewerkt:** 2026-02-19  
 **Getest met:** GroupDocs.Parser 25.5  
-**Auteur:** GroupDocs
+**Auteur:** GroupDocs  
+
+## Resources
+- [GroupDocs.Parser Java Documentation](https://docs.groupdocs.com/parser/java/)
+- [API Reference](https://reference.groupdocs.com/parser/java)
+- [Download GroupDocs.Parser](https://releases.groupdocs.com/parser/java/)
+- [GitHub Repository](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
+- [Free Support Forum](https://forum.groupdocs.com/c/parser)
+- [Temporary License Application](https://purchase.groupdocs.com/temporary-license/)
