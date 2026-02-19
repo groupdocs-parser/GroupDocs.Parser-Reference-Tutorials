@@ -1,47 +1,46 @@
 ---
-date: '2025-12-18'
-description: Dowiedz się, jak wydajnie wyodrębniać kody kreskowe z plików PDF przy
-  użyciu GroupDocs Parser Java i eksportować dane do formatu XML.
+date: '2026-02-19'
+description: Dowiedz się, jak odczytywać kody QR w plikach PDF w Javie przy użyciu
+  GroupDocs.Parser i eksportować dane kodów kreskowych do formatu XML.
 keywords:
 - Java PDF barcode extraction
 - GroupDocs.Parser for Java
 - XML export from PDF
-title: Wydajne wyodrębnianie kodów kreskowych z PDF w Javie oraz eksport do XML przy
-  użyciu groupdocs parser java
+title: Jak odczytywać kody QR w plikach PDF w Javie przy użyciu GroupDocs.Parser
 type: docs
 url: /pl/java/barcode-extraction/java-pdf-barcode-extraction-xml-export-groupdocs-parser/
 weight: 1
 ---
 
-# Efektywne wyodrębnianie kodów kreskowych z PDF w Javie i eksport do XML przy użyciu groupdocs parser java
+.
 
-W dzisiejszym cyfrowym świecie wyodrębnianie informacji, takich jak kody kreskowe, z dokumentów jest kluczowe w różnych sektorach, takich jak zarządzanie zapasami, logistyka i handel detaliczny. Ten poradnik poprowadzi Cię przez użycie **groupdocs parser java**, aby wyodrębnić dane kodów kreskowych z plików PDF i wyeksportować je do pliku XML.
+# Jak odczytywać kody QR w plikach PDF Java przy użyciu GroupDocs.Parser
+
+W nowoczesnych przepływach pracy biznesowej **jak odczytywać QR** kody z dokumentów PDF może decydować o różnicy między ręcznym wąskim gardłem wprowadzania danych a w pełni zautomatyzowanym potokiem. Niezależnie od tego, czy obsługujesz listy przewozowe, paragony detaliczne, czy katalogi produktów, szybkie i niezawodne wyodrębnianie informacji z kodów QR jest niezbędne. Ten samouczek przeprowadzi Cię przez użycie **GroupDocs.Parser for Java**, aby odczytywać kody QR (i inne kody kreskowe) z PDF‑ów oraz eksportować wyniki do czystego pliku XML, który mogą przetwarzać systemy downstream.
 
 ## Szybkie odpowiedzi
-- **Co robi groupdocs parser java?** Czyta pliki PDF i wyodrębnia dane strukturalne, takie jak kody kreskowe.  
-- **Jak wyodrębnić kody kreskowe?** Konfigurując `BarcodeOptions` i wywołując `parser.getBarcodes()`.  
+- **Co robi GroupDocs.Parser for Java?** Odczytuje pliki PDF i wyodrębnia dane strukturalne, takie jak kody kreskowe.  
+- **Jak wyodrębnić kody QR?** Konfigurując `BarcodeOptions` z typem QR i wywołując `parser.getBarcodes()`.  
 - **Czy mogę odczytywać kody QR w Javie?** Tak — ustaw typ kodu kreskowego na `"QR"` w opcjach.  
 - **Czy potrzebna jest licencja?** Wersja próbna działa do testów; licencja komercyjna jest wymagana w produkcji.  
 - **Jakiej wersji Javy potrzebuję?** Zalecana jest Java 8 lub nowsza.
 
+## Co oznacza „jak odczytywać QR” w kontekście przetwarzania PDF‑ów?
+Odczytywanie kodów QR z PDF‑ów oznacza skanowanie każdej strony w poszukiwaniu grafik zakodowanych jako QR, dekodowanie osadzonych danych i zwracanie ich w formacie przyjaznym dla programu. GroupDocs.Parser abstrahuje niskopoziomową analizę obrazu, dzięki czemu możesz skupić się na logice biznesowej, a nie na manipulacji pikselami.
+
+## Dlaczego warto używać GroupDocs.Parser do ekstrakcji QR?
+- **Wysoka dokładność:** Wbudowane algorytmy przetwarzania obrazu radzą sobie z niską rozdzielczością skanów.  
+- **Opcje wydajności:** Wybierz `QualityMode.Low` dla szybkości lub `QualityMode.High` dla maksymalnej precyzji.  
+- **Obsługa wielu formatów:** Działa z PDF‑ami, obrazami i nawet dokumentami Office, więc możesz ponownie wykorzystać ten sam kod bazowy dla różnych typów plików.
+
 ## Wymagania wstępne
-### Wymagane biblioteki i zależności
-Aby podążać za tym poradnikiem, potrzebujesz:
-- Biblioteki **GroupDocs.Parser for Java** (wersja 25.5 lub nowsza).
-- Podstawowej znajomości Maven do zarządzania zależnościami.
-- Środowiska programistycznego Javy skonfigurowanego na Twoim komputerze.
+- **GroupDocs.Parser for Java** (wersja 25.5 lub nowsza).  
+- Maven lub ręczne pobranie JAR‑a.  
+- Środowisko programistyczne Java 8+ (IntelliJ IDEA, Eclipse lub dowolny edytor).  
 
-### Wymagania dotyczące konfiguracji środowiska
-Upewnij się, że masz zainstalowane:
-- Java JDK (zalecany JDK 8 lub nowszy).
-- IDE, takie jak IntelliJ IDEA, Eclipse lub dowolny edytor tekstu według własnego wyboru.
-- Maven, jeśli zamierzasz zarządzać zależnościami przy jego użyciu.
-
-## Konfiguracja GroupDocs.Parser dla Javy
-Rozpoczęcie pracy z **groupdocs parser java** jest proste. Możesz użyć Maven lub pobrać bibliotekę bezpośrednio ze strony.
-
-### Korzystanie z Maven
-Jeśli używasz narzędzia budującego, takiego jak Maven, dodaj następującą konfigurację do swojego pliku `pom.xml`:
+## Konfiguracja GroupDocs.Parser for Java
+### Użycie Maven
+Dodaj repozytorium GroupDocs i zależność do swojego `pom.xml`:
 
 ```xml
 <repositories>
@@ -62,15 +61,15 @@ Jeśli używasz narzędzia budującego, takiego jak Maven, dodaj następującą 
 ```
 
 ### Bezpośrednie pobranie
-Alternatywnie pobierz najnowszą wersję z [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
+Alternatywnie pobierz najnowszy JAR z [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
 #### Kroki uzyskania licencji
-- **Bezpłatna wersja próbna:** Rozpocznij od 30‑dniowej wersji próbnej, aby poznać wszystkie funkcje.  
-- **Licencja tymczasowa:** Uzyskaj tymczasową licencję na rozszerzoną ewaluację.  
-- **Zakup:** Do użytku produkcyjnego zakup licencję komercyjną.
+- **Bezpłatna wersja próbna:** 30‑dniowy trial z pełnym zestawem funkcji.  
+- **Licencja tymczasowa:** Poproś o tymczasowy klucz do przedłużonej ewaluacji.  
+- **Zakup:** Uzyskaj licencję komercyjną do wdrożeń produkcyjnych.
 
 ### Podstawowa inicjalizacja i konfiguracja
-Gdy biblioteka jest gotowa, zainicjalizuj ją w swoim projekcie Java. Oto jak możesz skonfigurować prostą instancję `Parser`:
+Utwórz instancję `Parser`, która wskazuje na PDF, który chcesz analizować:
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -87,13 +86,9 @@ class BarcodeExtractor {
 }
 ```
 
-## Użycie groupdocs parser java do wyodrębniania kodów kreskowych
-### Wyodrębnianie kodów kreskowych z dokumentu PDF
-#### Przegląd
-Ta funkcja umożliwia identyfikację i wyodrębnianie danych kodów kreskowych osadzonych w dokumentach PDF. Jest szczególnie przydatna, gdy musisz **how to extract barcodes** z listów przewozowych lub paragonów detalicznych.
-
-#### Krok 1: Sprawdź wsparcie dokumentu
-Najpierw upewnij się, że dokument obsługuje wyodrębnianie kodów kreskowych:
+## Jak odczytywać kody QR w PDF‑ach Java przy użyciu GroupDocs.Parser
+### Krok 1: Zweryfikuj obsługę kodów kreskowych
+Zanim przystąpisz do ekstrakcji, potwierdź, że format dokumentu obsługuje skanowanie kodów kreskowych:
 
 ```java
 if (!parser.getFeatures().isBarcodes()) {
@@ -102,10 +97,10 @@ if (!parser.getFeatures().isBarcodes()) {
 }
 ```
 
-*Wyjaśnienie:* Ten wiersz sprawdza, czy typ Twojego dokumentu jest kompatybilny z wyodrębnianiem kodów kreskowych. Jeśli nie, zakończy działanie w sposób kontrolowany, aby uniknąć błędów.
+*Wyjaśnienie:* To zabezpieczenie zapobiega błędom w czasie wykonywania przy nieobsługiwanych typach plików.
 
-#### Krok 2: Skonfiguruj opcje kodów kreskowych
-Ustaw skaner, aby szukał kodów QR (lub dowolnego innego formatu, którego potrzebujesz). To właśnie tutaj wchodzi w grę **read qr codes java**:
+### Krok 2: Skonfiguruj opcje kodu kreskowego (Read QR codes Java)
+Ustaw jakość skanowania i określ, że interesują Cię wyłącznie kody QR:
 
 ```java
 import com.groupdocs.parser.options.BarcodeOptions;
@@ -114,10 +109,10 @@ import com.groupdocs.parser.options.QualityMode;
 BarcodeOptions options = new BarcodeOptions(QualityMode.Low, QualityMode.Low, "QR");
 ```
 
-*Wyjaśnienie:* Tutaj definiujemy tryb jakości skanowania kodów kreskowych. Parametr `"QR"` określa, że szukamy konkretnie kodów QR.
+*Wyjaśnienie:* `QualityMode.Low` przyspiesza przetwarzanie; przełącz na `High`, jeśli potrzebna jest większa dokładność. Argument `"QR"` informuje silnik, aby szukał wyłącznie kodów typu QR.
 
-#### Krok 3: Wyodrębnij kody kreskowe
-Teraz pobierz dane kodów kreskowych z każdej strony:
+### Krok 3: Wyodrębnij dane QR
+Pobierz informacje o kodach kreskowych ze wszystkich stron PDF:
 
 ```java
 import com.groupdocs.parser.data.PageBarcodeArea;
@@ -126,14 +121,11 @@ import java.util.List;
 Iterable<PageBarcodeArea> barcodes = parser.getBarcodes(options);
 ```
 
-*Wyjaśnienie:* Ten wiersz wyodrębnia obszary kodów kreskowych z każdej strony dokumentu, zgodnie z wcześniej zdefiniowanymi opcjami.
+*Wyjaśnienie:* `parser.getBarcodes` zwraca iterowalną kolekcję obiektów `PageBarcodeArea`, z których każdy zawiera zdekodowaną wartość QR oraz jej położenie na stronie.
 
-### Eksport danych do pliku XML
-#### Przegląd
-Po wyodrębnieniu będziesz potrzebował strukturalnego formatu do dalszego przetwarzania. XML dobrze współpracuje z wieloma systemami korporacyjnymi.
-
-#### Krok 1: Zainicjalizuj XmlExporter
-Utwórz instancję eksportera:
+## Eksport wyodrębnionych danych do XML
+### Krok 4: Inicjalizacja eksportera XML
+Utwórz eksporter, który przekształci kolekcję kodów kreskowych w dobrze ustrukturyzowany plik XML:
 
 ```java
 import com.groupdocs.parser.export.XmlExporter;
@@ -141,49 +133,55 @@ import com.groupdocs.parser.export.XmlExporter;
 XmlExporter exporter = new XmlExporter();
 ```
 
-*Wyjaśnienie:* `XmlExporter` jest inicjalizowany, aby obsłużyć konwersję danych kodów kreskowych do pliku XML.
+*Wyjaśnienie:* `XmlExporter` zajmuje się serializacją obiektów kodów kreskowych do standardowego XML, gotowego do integracji z systemami ERP lub inwentaryzacji.
 
-#### Krok 2: Eksportuj kody kreskowe do XML
-Zapisz wyodrębnione dane:
+### Krok 5: Zapisz plik XML
+Zapisz wyodrębnione informacje QR na dysku:
 
 ```java
 exporter.exportBarcodes(barcodes, "YOUR_OUTPUT_DIRECTORY/data.xml");
 ```
 
-*Wyjaśnienie:* Ten wiersz wykonuje operację eksportu, zapisując wszystkie wyodrębnione kody kreskowe w pliku `data.xml` w określonym katalogu wyjściowym.
+*Wyjaśnienie:* Powstały `data.xml` zawiera jeden element `<Barcode>` dla każdego kodu QR, z atrybutami numeru strony, współrzędnych i zdekodowanej wartości.
 
 ## Praktyczne zastosowania
-1. **Zarządzanie zapasami:** Automatyczna aktualizacja systemów magazynowych poprzez wyodrębnianie kodów produktów z dokumentów przychodzących przesyłek.  
-2. **Monitorowanie łańcucha dostaw:** Śledzenie przesyłek i paczek przy użyciu danych kodów kreskowych dla efektywnego zarządzania logistyką.  
-3. **Operacje detaliczne:** Poprawa obsługi klienta poprzez szybkie skanowanie kodów QR na paragonach lub etykietach produktów w celu uzyskania szczegółowych informacji.
+1. **Zarządzanie zapasami:** Automatyczne wypełnianie baz danych magazynowych poprzez odczyt tagów QR w przychodzących PDF‑ach przewozowych.  
+2. **Widoczność łańcucha dostaw:** Śledzenie paczek w czasie rzeczywistym przez wyodrębnianie identyfikatorów QR osadzonych w dokumentach logistycznych.  
+3. **Paragony detaliczne:** Pobieranie informacji promocyjnych lub gwarancyjnych z kodów QR wydrukowanych na cyfrowych paragonach.
 
-## Wskazówki dotyczące wydajności
-Aby **groupdocs parser java** działał płynnie przy dużych plikach PDF:
-- Ostrożnie zarządzaj pamięcią; przetwarzaj strony w strumieniach, jeśli dokumenty są bardzo duże.  
-- Wybieraj odpowiedni `QualityMode` — `Low` dla szybkości, `High` dla dokładności.  
-- Utrzymuj bibliotekę w najnowszej wersji, aby korzystać z poprawek wydajnościowych.
+## Rozważania dotyczące wydajności
+- **Zarządzanie pamięcią:** W przypadku bardzo dużych PDF‑ów przetwarzaj strony w trybie strumieniowym zamiast ładować cały plik do pamięci.  
+- **Wybór QualityMode:** Używaj `Low` przy masowej obróbce; przełącz na `High`, gdy masz do czynienia z niską rozdzielczością skanów.  
+- **Aktualizacje biblioteki:** Utrzymuj GroupDocs.Parser w najnowszej wersji, aby korzystać z najnowszych usprawnień wydajności i poprawek błędów.
 
-## Podsumowanie
-Korzystając z tego przewodnika, nauczyłeś się wyodrębniać kody kreskowe z plików PDF i eksportować je jako XML przy użyciu **groupdocs parser java**. Ta możliwość może znacząco usprawnić przepływy pracy związane z pobieraniem danych w obszarach zarządzania zapasami, logistyki i handlu detalicznego.
-
-**Kolejne kroki:**  
-Zbadaj dodatkowe funkcje, takie jak wyodrębnianie tekstu, parsowanie tabel lub integrację wyniku z systemem ERP.
+## Typowe problemy i rozwiązywanie ich
+| Objaw | Prawdopodobna przyczyna | Rozwiązanie |
+|---------|--------------|-----|
+| Brak zwróconych kodów kreskowych | Nieprawidłowo określony typ kodu kreskowego | Zmień `"QR"` na odpowiedni typ (np. `"CODE_128"`). |
+| Błąd pamięci przy dużych PDF‑ach | Cały dokument ładowany jednocześnie | Przetwarzaj strony pojedynczo lub zwiększ rozmiar sterty JVM (`-Xmx2g`). |
+| Pusty plik XML | `exportBarcodes` wywołane przed ekstrakcją | Upewnij się, że `parser.getBarcodes(options)` zwraca dane przed eksportem. |
 
 ## Najczęściej zadawane pytania
-**P: Czy mogę wyodrębniać kody kreskowe z obrazów przy użyciu GroupDocs.Parser?**  
-O: Tak, biblioteka obsługuje wyodrębnianie kodów kreskowych także z plików graficznych.
+**P: Czy mogę wyodrębniać kody kreskowe z plików graficznych przy użyciu GroupDocs.Parser?**  
+O: Tak, biblioteka obsługuje wyodrębnianie kodów kreskowych z popularnych formatów obrazów (PNG, JPEG, TIFF).
 
-**P: Jakie rodzaje kodów kreskowych można wyodrębnić?**  
-O: Biblioteka obsługuje różne formaty, w tym kody QR, Code 39, Code 128 i wiele innych.
+**P: Jakie formaty kodów kreskowych są rozpoznawane?**  
+O: QR, Code 39, Code 128, DataMatrix, PDF417 i wiele innych. Pełną listę znajdziesz w dokumentacji API.
 
-**P: Jak efektywnie obsługiwać duże dokumenty PDF?**  
-O: Przetwarzaj dokument w partiach lub używaj wielowątkowości, aby zmniejszyć obciążenie pamięci.
+**P: Jak obsłużyć PDF‑y zabezpieczone hasłem?**  
+O: Przekaż hasło do konstruktora `Parser`: `new Parser(filePath, "password")`.
 
-**P: Czy GroupDocs.Parser jest darmowy w zastosowaniach komercyjnych?**  
-O: Dostępna jest wersja próbna; do wdrożeń produkcyjnych wymagana jest licencja komercyjna.
+**P: Czy wersja próbna wystarczy do testów produkcyjnych?**  
+O: Wersja próbna zapewnia pełną funkcjonalność, ale dodaje znak wodny do wyodrębnionych danych. Do produkcji potrzebna jest licencja komercyjna.
 
-**P: Co zrobić, gdy format mojego dokumentu nie jest obsługiwany?**  
-O: Sprawdź, czy używasz najnowszej wersji biblioteki i zapoznaj się z dokumentacją dotyczącą obsługiwanych formatów.
+**P: Co zrobić, gdy mój PDF zawiera zarówno kody QR, jak i liniowe?**  
+O: Utwórz wiele instancji `BarcodeOptions` lub przekaż tablicę typów, aby zeskanować wszystkie potrzebne formaty w jednym przebiegu.
+
+---
+
+**Ostatnia aktualizacja:** 2026-02-19  
+**Testowano z:** GroupDocs.Parser 25.5  
+**Autor:** GroupDocs  
 
 ## Zasoby
 - [GroupDocs.Parser Java Documentation](https://docs.groupdocs.com/parser/java/)
@@ -191,10 +189,4 @@ O: Sprawdź, czy używasz najnowszej wersji biblioteki i zapoznaj się z dokumen
 - [Download GroupDocs.Parser](https://releases.groupdocs.com/parser/java/)
 - [GitHub Repository](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
 - [Free Support Forum](https://forum.groupdocs.com/c/parser)
-- [Temporary License Application](https://purchase.groupdocs.com/temporary-license/) 
-
----  
-
-**Ostatnia aktualizacja:** 2025-12-18  
-**Testowano z:** GroupDocs.Parser 25.5  
-**Autor:** GroupDocs
+- [Temporary License Application](https://purchase.groupdocs.com/temporary-license/)
