@@ -2,103 +2,123 @@
 date: 2025-12-20
 description: 学习如何将 SQLite Java 应用程序与 GroupDocs.Parser 连接，涵盖 Java 数据库集成、如何连接 SQLite，以及提取数据的
   Java 示例。
-title: 连接 SQLite Java：GroupDocs.Parser 数据库集成教程
+title: 连接 SQLite Java - GroupDocs.Parser 数据库集成教程
 type: docs
 url: /zh/java/database-integration/
 weight: 20
 ---
 
-# Connect SQLite Java: Database Integration Tutorials for GroupDocs.Parser
+# 连接 SQLite Java：GroupDocs.Parser 的数据库集成教程
 
 将 SQLite Java 数据库与 GroupDocs.Parser 结合使用，可实现强大的文档解析与轻量级、基于文件的存储相结合。在本指南中，您将了解 **如何在 Java 应用程序中连接 SQLite**、执行 **java 数据库集成**，并使用解析器 **以 Java 方式从文档中提取数据** 到表中。无论是构建文档驱动的工作流，还是需要将解析内容同步到现有记录，这些教程都提供了清晰的逐步路径。
 
-## Quick Answers
-- **What is the primary library?** GroupDocs.Parser for Java  
-- **Which database is covered?** SQLite (file‑based)  
-- **Do I need additional drivers?** Yes – the SQLite JDBC driver  
-- **Is a license required?** A temporary license works for testing; a full license is needed for production  
-- **Can I store parsed results back to SQLite?** Absolutely – use standard JDBC operations  
+## 快速解答
 
-## What is **connect sqlite java**?
-Connecting SQLite from Java simply means using the SQLite JDBC driver to open a `.db` file, run SQL statements, and retrieve results. When paired with GroupDocs.Parser, you can feed document content directly into your database or pull stored data to enrich parsing logic.
+- **主要库是什么？** GroupDocs.Parser for Java
 
-## Why use **java database integration** with GroupDocs.Parser?
-- **Lightweight storage** – SQLite doesn’t require a server, making deployment easy.  
-- **Seamless workflow** – Parse a PDF, extract tables, and insert them into SQLite in one flow.  
-- **Scalable architecture** – Move from SQLite to a full‑featured RDBMS later without changing parsing code.  
+- **支持哪些数据库？** SQLite（基于文件的数据库）
 
-## Prerequisites
-- Java Development Kit (JDK 8 or newer)  
-- Maven or Gradle for dependency management  
-- SQLite JDBC driver (`org.xerial:sqlite-jdbc`)  
-- GroupDocs.Parser for Java library (compatible version)  
-- A temporary or full GroupDocs.Parser license  
+- **我需要额外的驱动程序吗？** 是的，需要 SQLite JDBC 驱动程序
 
-## Step‑by‑Step Guide
+- **需要许可证吗？** 临时许可证可用于测试；生产环境需要完整许可证
 
-### Step 1: Add Required Dependencies
-Include the following Maven coordinates in your `pom.xml` (or the equivalent Gradle entries). This sets up both GroupDocs.Parser and the SQLite driver.
+- **我可以将解析结果存储回 SQLite 吗？** 当然可以，使用标准的 JDBC 操作即可
 
-> *No code block needed – just add the dependencies as shown in your build file.*
+## 什么是 **connect sqlite java**？
 
-### Step 2: Create a SQLite Connection
-Establish a connection using the standard JDBC URL `jdbc:sqlite:your-database-file.db`. This is the core of **how to connect SQLite** from Java.
+从 Java 连接 SQLite 指的是使用 SQLite JDBC 驱动程序打开 `.db` 文件，运行 SQL 语句并检索结果。与 GroupDocs.Parser 配合使用时，您可以将文档内容直接导入数据库，或提取存储的数据来丰富解析逻辑。
 
-> *Explanation only – the actual Java code remains unchanged from the original tutorial linked below.*
+## 为什么要将 **Java 数据库集成** 与 GroupDocs.Parser 结合使用？
 
-### Step 3: Initialize GroupDocs.Parser
-Instantiate the parser with your license and point it to the document you want to process. This step prepares the engine for **extract data java** operations.
+- **轻量级存储** – SQLite 不需要服务器，因此部署起来非常容易。
 
-### Step 4: Parse the Document and Retrieve Data
-Use the parser’s API to extract tables, text, or metadata. The returned objects can be iterated and inserted into SQLite using prepared statements.
+- **无缝工作流程** – 只需一个流程即可解析 PDF、提取表格并将其插入 SQLite 数据库。
 
-### Step 5: Store Extracted Data into SQLite
-For each extracted row, execute an `INSERT` statement against your SQLite connection. Remember to handle transactions for performance.
+- **可扩展架构** – 无需更改解析代码，即可稍后从 SQLite 迁移到功能齐全的关系型数据库管理系统 (RDBMS)。
 
-### Step 6: Clean Up Resources
-Close the parser and JDBC connection in a `finally` block or use try‑with‑resources to ensure everything is released properly.
+## 先决条件
 
-## Common Issues and Solutions
-- **Driver not found** – Verify that the SQLite JDBC JAR is on the classpath.  
-- **License errors** – Ensure the temporary license file is correctly referenced in code.  
-- **Data type mismatches** – SQLite is typeless; cast Java types appropriately before insertion.  
-- **Large documents** – Process in chunks or use streaming APIs to avoid memory pressure.
+- Java 开发工具包 (JDK 8 或更高版本)
 
-## Frequently Asked Questions
+- 用于依赖管理的 Maven 或 Gradle
 
-**Q: How do I configure the parser to read only specific pages?**  
-A: Use the `ParserOptions` class to set `PageRange` before loading the document.
+- SQLite JDBC 驱动程序 (`org.xerial:sqlite-jdbc`)
 
-**Q: Can I query SQLite while parsing is in progress?**  
-A: Yes, as long as you manage connections correctly; using separate connections for read/write is recommended.
+- 用于 Java 的 GroupDocs.Parser 库（兼容版本）
 
-**Q: What if my SQLite file is locked by another process?**  
-A: Ensure exclusive access or use the `busy_timeout` parameter in the JDBC URL to wait for the lock to clear.
+- GroupDocs.Parser 的临时或完整许可证
 
-**Q: Is it possible to update existing rows instead of inserting new ones?**  
-A: Absolutely – replace the `INSERT` statement with an `UPDATE` or `INSERT OR REPLACE` command.
+## 分步指南
 
-**Q: Does GroupDocs.Parser support encrypted PDFs when using SQLite?**  
-A: Yes, provide the password in the `ParserOptions` when opening the document.
+### 步骤 1：添加所需依赖项
 
-## Additional Resources
+在您的 `pom.xml` 文件（或等效的 Gradle 条目）中包含以下 Maven 坐标。这将设置 GroupDocs.Parser 和 SQLite 驱动程序。
 
-### Available Tutorials
+> *无需编写代码块 – 只需按照构建文件中的说明添加依赖项即可。*
 
-### [Connect SQLite Database with GroupDocs.Parser in Java&#58; A Comprehensive Guide](./connect-sqlite-groupdocs-parser-java/)
-Learn how to integrate GroupDocs.Parser with an SQLite database in Java. This step-by-step guide covers setup, connection, and data parsing for enhanced document management.
+### 步骤 2：创建 SQLite 连接
 
-### Additional Resources
+使用标准 JDBC URL `jdbc:sqlite:your-database-file.db` 建立连接。这是从 Java 连接 SQLite 的核心步骤。
 
-- [GroupDocs.Parser for Java Documentation](https://docs.groupdocs.com/parser/java/)
-- [GroupDocs.Parser for Java API Reference](https://reference.groupdocs.com/parser/java/)
-- [Download GroupDocs.Parser for Java](https://releases.groupdocs.com/parser/java/)
-- [GroupDocs.Parser Forum](https://forum.groupdocs.com/c/parser)
-- [Free Support](https://forum.groupdocs.com/)
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+> *仅作说明 – 实际的 Java 代码与下方链接的原始教程保持一致。*
+
+### 步骤 3：初始化 GroupDocs.Parser
+
+使用您的许可证实例化解析器，并将其指向要处理的文档。此步骤为**提取 Java 数据**操作准备引擎。
+
+### 步骤 4：解析文档并检索数据
+
+使用解析器的 API 提取表格、文本或元数据。可以使用预处理语句迭代返回的对象并将其插入 SQLite。
+
+### 步骤 5：将提取的数据存储到 SQLite
+
+对于提取的每一行，针对您的 SQLite 连接执行 `INSERT` 语句。为了提升性能，请务必妥善处理事务。
+
+### 第 6 步：清理资源
+
+在 `finally` 代码块中关闭解析器和 JDBC 连接，或者使用 try-with-resources 语句确保所有资源都已正确释放。
+
+## 常见问题及解决方案
+
+- **找不到驱动程序** – 请确认 SQLite JDBC JAR 文件已添加到类路径中。
+
+- **许可证错误** – 请确保代码中正确引用了临时许可证文件。
+
+- **数据类型不匹配** – SQLite 是无类型的；插入数据前，请正确转换 Java 类型。
+
+- **大型文档** – 分段处理或使用流式 API 以避免内存压力。
+
+## 常见问题解答
+
+**问：如何配置解析器以仅读取特定页面？** 答：使用 `ParserOptions` 类在加载文档之前设置 `PageRange`。
+
+**问：解析过程中可以查询 SQLite 吗？** 答：可以，只要您正确管理连接即可；建议使用单独的读写连接。
+
+**问：如果我的 SQLite 文件被其他进程锁定怎么办？** 答：确保独占访问，或在 JDBC URL 中使用 `busy_timeout` 参数等待锁被释放。
+
+**问：可以更新现有行而不是插入新行吗？** 答：当然可以——只需将 `INSERT` 语句替换为 `UPDATE` 或 `INSERT OR REPLACE` 命令即可。
+
+**问：GroupDocs.Parser 在使用 SQLite 时是否支持加密 PDF？** 答：支持，在打开文档时，请在 `ParserOptions` 中提供密码。
+
+## 其他资源
+
+### 可用教程
+
+### [使用 Java 中的 GroupDocs.Parser 连接 SQLite 数据库]综合指南](./connect-sqlite-groupdocs-parser-java/)
+
+了解如何在 Java 中将 GroupDocs.Parser 与 SQLite 数据库集成。本分步指南涵盖设置、连接和数据解析，以增强文档管理功能。
+
+### 其他资源
+
+- [GroupDocs.Parser Java 文档解析器](https://docs.groupdocs.com/parser/java/)
+- [GroupDocs.Parser Java API 参考解析器](https://reference.groupdocs.com/parser/java/)
+- [下载 GroupDocs.Parser Java 版](https://releases.groupdocs.com/parser/java/)
+- [GroupDocs.Parser 论坛](https://forum.groupdocs.com/c/parser)
+- [免费支持](https://forum.groupdocs.com/)
+- [临时许可](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-**Last Updated:** 2025-12-20  
-**Tested With:** GroupDocs.Parser for Java 23.12 (latest release)  
-**Author:** GroupDocs
+**上次更新：** 2025-12-20
+**测试版本：** GroupDocs.Parser Java 23.12（最新版本）
+**作者：** GroupDocs

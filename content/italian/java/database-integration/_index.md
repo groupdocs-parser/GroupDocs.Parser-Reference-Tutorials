@@ -3,7 +3,7 @@ date: 2025-12-20
 description: Scopri come collegare le applicazioni Java SQLite a GroupDocs.Parser,
   coprendo l'integrazione del database Java, come connettere SQLite e estrarre dati
   con esempi Java.
-title: 'Connetti SQLite Java: Tutorial di integrazione del database per GroupDocs.Parser'
+title: 'Connetti SQLite Java - Tutorial di integrazione del database per GroupDocs.Parser'
 type: docs
 url: /it/java/database-integration/
 weight: 20

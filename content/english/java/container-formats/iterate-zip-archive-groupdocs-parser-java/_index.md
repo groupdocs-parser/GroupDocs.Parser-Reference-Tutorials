@@ -1,5 +1,5 @@
 ---
-title: "GroupDocs Parser Java Tutorial: Iterate Through ZIP Archives"
+title: "GroupDocs Parser Java Tutorial - Iterate Through ZIP Archives"
 description: "This groupdocs parser java tutorial shows how to automate extraction of file names and sizes from ZIP archives using GroupDocs.Parser for Java, with step‑by‑step code and performance tips."
 date: "2025-12-20"
 weight: 1

@@ -7,7 +7,7 @@ keywords:
 - iterate ZIP archive
 - GroupDocs.Parser for Java setup
 - extract file metadata from ZIP
-title: 'دليل GroupDocs Parser Java: التجول عبر أرشيفات ZIP'
+title: 'دليل GroupDocs Parser Java - التجول عبر أرشيفات ZIP'
 type: docs
 url: /ar/java/container-formats/iterate-zip-archive-groupdocs-parser-java/
 weight: 1

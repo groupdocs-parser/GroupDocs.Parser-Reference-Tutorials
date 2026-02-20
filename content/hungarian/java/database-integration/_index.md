@@ -3,7 +3,7 @@ date: 2025-12-20
 description: Ismerje meg, hogyan csatlakoztathatja a SQLite Java alkalmazásokat a
   GroupDocs.Parser-hez, beleértve a Java adatbázis‑integrációt, a SQLite csatlakoztatását
   és az adatkinyerést Java példákkal.
-title: 'SQLite Java csatlakoztatása: Adatbázis‑integrációs útmutatók a GroupDocs.Parser
+title: 'SQLite Java csatlakoztatása - Adatbázis‑integrációs útmutatók a GroupDocs.Parser
   számára'
 type: docs
 url: /hu/java/database-integration/

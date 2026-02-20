@@ -2,7 +2,7 @@
 date: 2025-12-20
 description: 學習如何將 SQLite Java 應用程式與 GroupDocs.Parser 連接，涵蓋 Java 資料庫整合、SQLite 連接方式以及資料提取的
   Java 範例。
-title: 連接 SQLite Java：GroupDocs.Parser 的資料庫整合教學
+title: 連接 SQLite Java - GroupDocs.Parser 的資料庫整合教學
 type: docs
 url: /zh-hant/java/database-integration/
 weight: 20

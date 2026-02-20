@@ -3,7 +3,7 @@ date: 2025-12-20
 description: Naučte se, jak propojit aplikace Java s SQLite pomocí GroupDocs.Parser,
   včetně integrace databáze v Javě, jak připojit SQLite a extrahovat data – příklady
   v Javě.
-title: 'Připojení SQLite v Javě: Tutoriály integrace databáze pro GroupDocs.Parser'
+title: 'Připojení SQLite v Javě - Tutoriály integrace databáze pro GroupDocs.Parser'
 type: docs
 url: /cs/java/database-integration/
 weight: 20

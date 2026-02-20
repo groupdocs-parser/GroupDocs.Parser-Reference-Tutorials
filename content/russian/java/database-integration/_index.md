@@ -3,7 +3,7 @@ date: 2025-12-20
 description: Узнайте, как подключать Java‑приложения к SQLite с помощью GroupDocs.Parser,
   охватывая интеграцию Java с базой данных, подключение к SQLite и извлечение данных.
   Примеры на Java.
-title: 'Подключение SQLite к Java: учебники по интеграции баз данных для GroupDocs.Parser'
+title: 'Подключение SQLite к Java - учебники по интеграции баз данных для GroupDocs.Parser'
 type: docs
 url: /ru/java/database-integration/
 weight: 20

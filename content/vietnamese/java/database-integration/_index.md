@@ -3,7 +3,7 @@ date: 2025-12-20
 description: Tìm hiểu cách kết nối các ứng dụng Java với SQLite bằng GroupDocs.Parser,
   bao gồm tích hợp cơ sở dữ liệu Java, cách kết nối SQLite và trích xuất dữ liệu với
   các ví dụ Java.
-title: 'Kết nối SQLite Java: Hướng dẫn tích hợp cơ sở dữ liệu cho GroupDocs.Parser'
+title: 'Kết nối SQLite Java - Hướng dẫn tích hợp cơ sở dữ liệu cho GroupDocs.Parser'
 type: docs
 url: /vi/java/database-integration/
 weight: 20

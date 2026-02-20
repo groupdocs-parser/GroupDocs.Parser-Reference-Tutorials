@@ -1,5 +1,5 @@
 ---
-title: "Connect SQLite Java: Database Integration Tutorials for GroupDocs.Parser"
+title: "Connect SQLite Java - Database Integration Tutorials for GroupDocs.Parser"
 description: "Learn how to connect SQLite Java applications with GroupDocs.Parser, covering java database integration, how to connect SQLite, and extract data Java examples."
 weight: 20
 url: "/java/database-integration/"

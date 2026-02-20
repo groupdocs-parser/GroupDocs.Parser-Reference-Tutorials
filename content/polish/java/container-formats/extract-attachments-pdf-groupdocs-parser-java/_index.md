@@ -14,34 +14,34 @@ url: /pl/java/container-formats/extract-attachments-pdf-groupdocs-parser-java/
 weight: 1
 ---
 
-# Jak wyodrębnić załączniki PDF z portfolio PDF przy użyciu GroupDocs.Parser w Javie
+# Jak wyodrębnić wyodrębnionych PDF z portfolio PDF przy użyciu GroupDocs.Parser w Javie
 
-Zarządzanie dokumentami cyfrowymi często oznacza pracę z portfolio PDF, które grupują wiele plików razem. **Jak wyodrębnić załączniki PDF** szybko i niezawodnie jest częstym pytaniem wśród programistów budujących potoki przetwarzania dokumentów. W tym samouczku zobaczysz, jak używać **GroupDocs.Parser for Java**, aby wyciągnąć każdy osadzony plik, niezależnie od tego, czy potrzebujesz przetwarzać załączniki PDF partiami, czy po prostu wyciągnąć pojedynczy dokument z portfolio.
+Zarządzanie dokumentami cyfrowymi często oznacza obciążenie z portfolio PDF, które grupują wiele plików razem. **Jak wyodrębnić się z PDF** szybko i niezawodnie jest częstym pytaniem wśród programistów budujących potoki reportów. W tym samouczku widocznym, jak **GroupDocs.Parser for Java**, aby być opracowanym przez każdy osadzony plik, który pochodzi z tego, czy pochodzić z funkcji PDF partiami, czy po prostu określonym dokumentem z portfolio.
 
-## Quick Answers
-- **Jaka jest podstawowa biblioteka?** GroupDocs.Parser for Java  
-- **Czy mogę przetwarzać załączniki PDF partiami?** Tak – iteruj po kolekcji `ContainerItem`.  
-- **Czy potrzebna jest licencja?** Wymagana jest tymczasowa lub pełna licencja do użytku produkcyjnego.  
-- **Jakie wersje JDK są wspierane?** Działa z Java 8 i nowszymi (sprawdź dokumentację pod kątem dokładnych wymagań).  
-- **Czy można wyodrębnić pliki nie‑PDF?** Oczywiście – można wyodrębnić każdy typ osadzonego pliku.
+## Szybkie odpowiedzi
+- **Jaka jest podstawowa biblioteka?** GroupDocs.Parser dla Java
+- **Czy można poddać procesowi oskarżenii PDF partiami?** Tak – iteruj po kolekcji `ContainerItem`.
+- **Czy jest to licencjat?** Wymagana jest tymczasowa lub pełna licencja do użytku produkcyjnego.
+- **Jakie wersje JDK są wspierane?** Działa z Java8i terazszymi (prawidłowość pod odpowiednimi wymaganiami).
+- **Czy można wyodrębnić pliki nie‑PDF?** Oczywiście – można wyodrębnić każdy typ opublikowanego pliku.
 
-## Co to jest „jak wyodrębnić załączniki PDF”?
-Wyodrębnianie załączników PDF oznacza odczytanie portfolio PDF (PDF kontenerowego) i zapisanie każdego osadzonego pliku na dysku lub dalsze jego przetwarzanie. Ta operacja jest niezbędna, gdy trzeba archiwizować, analizować lub migrować zawartość zgrupowanych dokumentów.
+## Co to jest „jak wyodrębnić wyróżnii PDF”?
+Wyodrębnianie prądu PDF oznacza odczytanie portfolio PDF (PDF kontenerowego) i zapisanie każdego pliku na dysku lub jego przesłanie. Ta operacja jest równa, gdy trzeba archiwizować, analizować lub migrować zawartość zgrupowanych dokumentów.
 
-## Dlaczego używać GroupDocs.Parser for Java?
-- **Parsowanie bez konfiguracji** – API automatycznie wykrywa obsługę kontenerów.  
-- **Wysoka wydajność** – zoptymalizowane pod kątem dużych portfolio i scenariuszy batch.  
-- **Bogate wsparcie formatów** – działa z obrazami, plikami tekstowymi, innymi PDF‑ami i nie tylko.
+## Dlaczego wymagane GroupDocs.Parser dla Javy?
+- **Parsowanie bez wyposażenia** – API automatycznie wykrywa obsługę kontenerów.
+- **Wysoka wydajność** – przepływe pod kątem dużego portfela i scenariuszy wsadowych.
+- **Bogate wsparcie formatów** – działa z obrazami, plikami tekstowymi, innymi PDF-ami i nie tylko.
 
-## Prerequisites
-Zanim zaczniesz, upewnij się, że masz:
-- **Java Development Kit (JDK)** zainstalowany (Java 8 lub nowszy).  
-- IDE, takie jak **IntelliJ IDEA** lub **Eclipse**.  
-- **Maven** do zarządzania zależnościami.  
-- Ważną licencję **GroupDocs.Parser** (bezpłatna wersja próbna lub tymczasowa licencja działa w środowisku deweloperskim).
+## Warunki wstępne
+Zanim zaczniesz, wykonaj się, że masz:
+- **Java Development Kit (JDK)** zainstaluj (Java8lub nowszy).
+- IDE, takie jak **IntelliJ IDEA** lub **Eclipse**.
+- **Maven** do zarządzania zależnościami.
+- Ważną wersją **GroupDocs.Parser** (bezpłatna wersja próbna lub tymczasowa licencjat działa w środowisku deweloperskim).
 
-## Setting Up GroupDocs.Parser for Java
-Dodaj repozytorium GroupDocs i zależność do swojego `pom.xml`:
+## Konfigurowanie GroupDocs.Parser dla Java
+Dodaj repozytorium GroupDocs i wyodrębnienie do swojego `pom.xml`:
 
 ```xml
 <repositories>

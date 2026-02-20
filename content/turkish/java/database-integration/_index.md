@@ -3,7 +3,7 @@ date: 2025-12-20
 description: GroupDocs.Parser ile SQLite Java uygulamalarını nasıl bağlayacağınızı
   öğrenin; Java veritabanı entegrasyonu, SQLite bağlantısı ve veri çıkarma konularını
   içeren Java örnekleri.
-title: 'SQLite Java Bağlantısı: GroupDocs.Parser için Veritabanı Entegrasyonu Öğreticileri'
+title: 'SQLite Java Bağlantısı - GroupDocs.Parser için Veritabanı Entegrasyonu Öğreticileri'
 type: docs
 url: /tr/java/database-integration/
 weight: 20

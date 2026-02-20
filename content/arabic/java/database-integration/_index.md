@@ -3,7 +3,7 @@ date: 2025-12-20
 description: تعلم كيفية ربط تطبيقات Java مع SQLite باستخدام GroupDocs.Parser، مع تغطية
   تكامل قاعدة البيانات في Java، وكيفية الاتصال بـ SQLite، واستخراج البيانات من أمثلة
   Java.
-title: 'الاتصال بـ SQLite Java: دروس دمج قاعدة البيانات لـ GroupDocs.Parser'
+title: 'الاتصال بـ SQLite Java - دروس دمج قاعدة البيانات لـ GroupDocs.Parser'
 type: docs
 url: /ar/java/database-integration/
 weight: 20

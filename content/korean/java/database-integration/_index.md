@@ -2,7 +2,7 @@
 date: 2025-12-20
 description: GroupDocs.Parser와 함께 SQLite Java 애플리케이션을 연결하는 방법을 배우고, Java 데이터베이스 통합,
   SQLite 연결 방법 및 데이터 추출 Java 예제를 다룹니다.
-title: 'SQLite Java 연결: GroupDocs.Parser용 데이터베이스 통합 튜토리얼'
+title: 'SQLite Java 연결 - GroupDocs.Parser용 데이터베이스 통합 튜토리얼'
 type: docs
 url: /ko/java/database-integration/
 weight: 20
