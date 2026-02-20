@@ -140,10 +140,6 @@ A: Ellenőrizd, hogy a fájlformátum szerepel‑e a könyvtár támogatott form
 **Q: Hogyan szerezhetek idelenes licencet a GroupDocs.Parser‑hez?**  
 A: Látogasd meg a [GroupDocs vásárlási oldalát](https://purchase.groupdocs.com/temporary-license/), hogy kérj próba licencet.
 
-**Last Updated:** 2025-12-24  
-**Tested With:** GroupDocs.Parser 25.5 for Java  
-**Author:** GroupDocs  
-
 ## Erőforrások
 - **Documentation:** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)
 - **API Reference:** [GroupDocs Parser API Reference](https://reference.groupdocs.com/parser/java)
@@ -151,3 +147,7 @@ A: Látogasd meg a [GroupDocs vásárlási oldalát](https://purchase.groupdocs.
 - **GitHub:** [GroupDocs.Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
 - **Free Support:** [GroupDocs Forum](https://forum.groupdocs.com/c/parser)
 - **Temporary License:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+**Last Updated:** 2025-12-24  
+**Tested With:** GroupDocs.Parser 25.5 for Java  
+**Author:** GroupDocs  

@@ -141,10 +141,6 @@ try (TextReader reader = parser.getText()) {
 **س: كيف يمكنني الحصول على ترخيص مؤقت لـ GroupDocs.Parser؟**  
 ج: زر [صفحة شراء GroupDocs](https://purchase.groupdocs.com/temporary-license/) لطلب ترخيص تجريبي.
 
-**آخر تحديث:** 2025-12-24  
-**تم الاختبار مع:** GroupDocs.Parser 25.5 للـ Java  
-**المؤلف:** GroupDocs  
-
 ## الموارد
 - **التوثيق:** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)
 - **مرجع API:** [GroupDocs Parser API Reference](https://reference.groupdocs.com/parser/java)
@@ -152,3 +148,7 @@ try (TextReader reader = parser.getText()) {
 - **GitHub:** [GroupDocs.Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
 - **دعم مجاني:** [GroupDocs Forum](https://forum.groupdocs.com/c/parser)
 - **ترخيص مؤقت:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+**آخر تحديث:** 2025-12-24  
+**تم الاختبار مع:** GroupDocs.Parser 25.5 للـ Java  
+**المؤلف:** GroupDocs  

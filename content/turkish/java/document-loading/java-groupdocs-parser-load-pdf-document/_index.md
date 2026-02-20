@@ -143,10 +143,6 @@ Görüntü çıkarma, meta veri okuma ve çoklu format desteği gibi ek özellik
 **Q: How can I obtain a temporary license for GroupDocs.Parser?**  
 **A:** Deneme lisansı talep etmek için [GroupDocs satın alma sayfası](https://purchase.groupdocs.com/temporary-license/) adresini ziyaret edin.
 
-**Son Güncelleme:** 2025-12-24  
-**Test Edilen Sürüm:** GroupDocs.Parser 25.5 for Java  
-**Yazar:** GroupDocs  
-
 ## Kaynaklar
 - **Dokümantasyon:** [GroupDocs Parser Java Dokümantasyonu](https://docs.groupdocs.com/parser/java/)
 - **API Referansı:** [GroupDocs Parser API Referansı](https://reference.groupdocs.com/parser/java)
@@ -154,3 +150,7 @@ Görüntü çıkarma, meta veri okuma ve çoklu format desteği gibi ek özellik
 - **GitHub:** [GitHub'da GroupDocs.Parser for Java](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
 - **Ücretsiz Destek:** [GroupDocs Forum](https://forum.groupdocs.com/c/parser)
 - **Geçici Lisans:** [Geçici Lisans Talep Et](https://purchase.groupdocs.com/temporary-license/)
+
+**Son Güncelleme:** 2025-12-24  
+**Test Edilen Sürüm:** GroupDocs.Parser 25.5 for Java  
+**Yazar:** GroupDocs  

@@ -123,8 +123,6 @@ GroupDocs.Parser の **java pdf text extraction** 機能は、さまざまな実
 **次のステップ:**  
 画像抽出、メタデータ読み取り、マルチフォーマットサポートなど、追加機能を探索してドキュメント処理ツールキットをさらに拡張しましょう。
 
----
-
 ## FAQ（よくある質問）
 
 **Q: GroupDocs.Parser for Java とは何ですか？**  
@@ -142,12 +140,6 @@ A: ライブラリのサポート対象フォーマットに該当している�
 **Q: GroupDocs.Parser の一時ライセンスはどこで取得できますか？**  
 A: [GroupDocs の購入ページ](https://purchase.groupdocs.com/temporary-license/) からトライアルライセンスをリクエストしてください。
 
----
-
-**最終更新日:** 2025-12-24  
-**テスト環境:** GroupDocs.Parser 25.5 for Java  
-**作者:** GroupDocs  
-
 ## リソース
 - **ドキュメンテーション:** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)  
 - **API リファレンス:** [GroupDocs Parser API Reference](https://reference.groupdocs.com/parser/java)  
@@ -155,3 +147,9 @@ A: [GroupDocs の購入ページ](https://purchase.groupdocs.com/temporary-licen
 - **GitHub:** [GroupDocs.Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
 - **無料サポート:** [GroupDocs Forum](https://forum.groupdocs.com/c/parser)  
 - **一時ライセンス:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**最終更新日:** 2025-12-24  
+**テスト環境:** GroupDocs.Parser 25.5 for Java  
+**作者:** GroupDocs  

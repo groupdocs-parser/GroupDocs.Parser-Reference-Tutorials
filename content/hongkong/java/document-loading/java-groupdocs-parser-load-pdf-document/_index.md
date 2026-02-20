@@ -142,12 +142,6 @@ A: 請確認檔案格式是否在函式庫支援清單內，或將檔案轉換�
 **Q: 如何取得 GroupDocs.Parser 的臨時授權？**  
 A: 前往 [GroupDocs 的購買頁面](https://purchase.groupdocs.com/temporary-license/) 申請試用授權。
 
----
-
-**最後更新日期：** 2025-12-24  
-**測試環境：** GroupDocs.Parser 25.5 for Java  
-**作者：** GroupDocs  
-
 ## 相關資源
 - **文件說明：** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)  
 - **API 參考：** [GroupDocs Parser API Reference](https://reference.groupdocs.com/parser/java)  
@@ -155,3 +149,9 @@ A: 前往 [GroupDocs 的購買頁面](https://purchase.groupdocs.com/temporary-l
 - **GitHub：** [GroupDocs.Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
 - **免費支援：** [GroupDocs Forum](https://forum.groupdocs.com/c/parser)  
 - **臨時授權：** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**最後更新日期：** 2025-12-24  
+**測試環境：** GroupDocs.Parser 25.5 for Java  
+**作者：** GroupDocs  

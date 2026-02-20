@@ -140,10 +140,6 @@ A: Επαληθεύστε ότι η μορφή αρχείου βρίσκεται
 **Q: Πώς μπορώ να αποκτήσω προσωρινή άδεια για το GroupDocs.Parser;**  
 A: Επισκεφθείτε τη [GroupDocs' purchase page](https://purchase.groupdocs.com/temporary-license/) για να ζητήσετε δοκιμαστική άδεια.
 
-**Τελευταία Ενημέρωση:** 2025-12-24  
-**Δοκιμάστηκε Με:** GroupDocs.Parser 25.5 for Java  
-**Συγγραφέας:** GroupDocs  
-
 ## Πόροι
 - **Τεκμηρίωση:** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)
 - **Αναφορά API:** [GroupDocs Parser API Reference](https://reference.groupdocs.com/parser/java)
@@ -151,3 +147,7 @@ A: Επισκεφθείτε τη [GroupDocs' purchase page](https://purchase.gro
 - **GitHub:** [GroupDocs.Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
 - **Δωρεάν Υποστήριξη:** [GroupDocs Forum](https://forum.groupdocs.com/c/parser)
 - **Προσωρινή Άδεια:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+**Τελευταία Ενημέρωση:** 2025-12-24  
+**Δοκιμάστηκε Με:** GroupDocs.Parser 25.5 for Java  
+**Συγγραφέας:** GroupDocs  

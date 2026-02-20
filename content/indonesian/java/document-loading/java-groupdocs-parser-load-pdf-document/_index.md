@@ -143,10 +143,6 @@ A: Verifikasi bahwa format file terdaftar dalam format yang didukung oleh pustak
 **Q: Bagaimana saya dapat memperoleh lisensi sementara untuk GroupDocs.Parser?**  
 A: Kunjungi [halaman pembelian GroupDocs](https://purchase.groupdocs.com/temporary-license/) untuk meminta lisensi trial.
 
-**Terakhir Diperbarui:** 2025-12-24  
-**Diuji Dengan:** GroupDocs.Parser 25.5 untuk Java  
-**Penulis:** GroupDocs  
-
 ## Sumber Daya
 - **Dokumentasi:** [Dokumentasi GroupDocs Parser Java](https://docs.groupdocs.com/parser/java/)
 - **Referensi API:** [Referensi API GroupDocs Parser](https://reference.groupdocs.com/parser/java)
@@ -154,3 +150,7 @@ A: Kunjungi [halaman pembelian GroupDocs](https://purchase.groupdocs.com/tempora
 - **GitHub:** [GroupDocs.Parser untuk Java di GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
 - **Free Support:** [Forum GroupDocs](https://forum.groupdocs.com/c/parser)
 - **Temporary License:** [Minta Lisensi Sementara](https://purchase.groupdocs.com/temporary-license/)
+
+**Terakhir Diperbarui:** 2025-12-24  
+**Diuji Dengan:** GroupDocs.Parser 25.5 untuk Java  
+**Penulis:** GroupDocs  

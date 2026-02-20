@@ -124,8 +124,6 @@ Ahora tienes una receta completa y lista para producción para **extract pdf tex
 **Próximos pasos:**  
 Explora funciones adicionales como extracción de imágenes, lectura de metadatos y soporte multiformato para ampliar aún más tu conjunto de herramientas de procesamiento de documentos.
 
----
-
 ## Preguntas frecuentes
 
 **P: ¿Qué es GroupDocs.Parser para Java?**  
@@ -143,12 +141,6 @@ R: Verifica que el formato esté listado entre los formatos soportados por la bi
 **P: ¿Cómo puedo obtener una licencia temporal para GroupDocs.Parser?**  
 R: Visita la [página de compra de GroupDocs](https://purchase.groupdocs.com/temporary-license/) para solicitar una licencia de prueba.
 
----
-
-**Última actualización:** 2025-12-24  
-**Probado con:** GroupDocs.Parser 25.5 for Java  
-**Autor:** GroupDocs  
-
 ## Recursos
 - **Documentación:** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)  
 - **Referencia API:** [GroupDocs Parser API Reference](https://reference.groupdocs.com/parser/java)  
@@ -156,3 +148,9 @@ R: Visita la [página de compra de GroupDocs](https://purchase.groupdocs.com/tem
 - **GitHub:** [GroupDocs.Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
 - **Soporte gratuito:** [GroupDocs Forum](https://forum.groupdocs.com/c/parser)  
 - **Licencia temporal:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Última actualización:** 2025-12-24  
+**Probado con:** GroupDocs.Parser 25.5 for Java  
+**Autor:** GroupDocs  

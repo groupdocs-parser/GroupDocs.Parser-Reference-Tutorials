@@ -143,10 +143,6 @@ A: 파일 포맷이 라이브러리 지원 목록에 있는지 확인하거나, 
 **Q: GroupDocs.Parser의 임시 라이선스를 어떻게 얻을 수 있나요?**  
 A: [GroupDocs 구매 페이지](https://purchase.groupdocs.com/temporary-license/)를 방문해 체험 라이선스를 요청하세요.
 
-**마지막 업데이트:** 2025-12-24  
-**테스트 환경:** GroupDocs.Parser 25.5 for Java  
-**작성자:** GroupDocs  
-
 ## 리소스
 - **Documentation:** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)
 - **API Reference:** [GroupDocs Parser API Reference](https://reference.groupdocs.com/parser/java)
@@ -154,3 +150,7 @@ A: [GroupDocs 구매 페이지](https://purchase.groupdocs.com/temporary-license
 - **GitHub:** [GroupDocs.Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
 - **Free Support:** [GroupDocs Forum](https://forum.groupdocs.com/c/parser)
 - **Temporary License:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+**마지막 업데이트:** 2025-12-24  
+**테스트 환경:** GroupDocs.Parser 25.5 for Java  
+**작성자:** GroupDocs  

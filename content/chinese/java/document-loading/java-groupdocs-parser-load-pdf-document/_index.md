@@ -152,10 +152,6 @@ A: 检查该文件格式是否在库的支持列表中，或将文件转换为�
 **Q: 如何获取 GroupDocs.Parser 的临时许可证？**  
 A: 访问 [GroupDocs' purchase page](https://purchase.groupdocs.com/temporary-license/) 以请求试用许可证。
 
-**最后更新：** 2025-12-24  
-**测试环境：** GroupDocs.Parser 25.5 for Java  
-**作者：** GroupDocs  
-
 ## 资源
 
 - **文档：** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)
@@ -164,3 +160,7 @@ A: 访问 [GroupDocs' purchase page](https://purchase.groupdocs.com/temporary-li
 - **GitHub：** [GroupDocs.Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
 - **免费支持：** [GroupDocs Forum](https://forum.groupdocs.com/c/parser)
 - **临时许可证：** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+**最后更新：** 2025-12-24  
+**测试环境：** GroupDocs.Parser 25.5 for Java  
+**作者：** GroupDocs  

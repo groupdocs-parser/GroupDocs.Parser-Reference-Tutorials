@@ -142,10 +142,6 @@ A: Kiểm tra xem định dạng tệp có nằm trong danh sách các định d
 **Q: Làm thế nào để tôi có được giấy phép tạm thời cho GroupDocs.Parser?**  
 A: Truy cập [trang mua của GroupDocs](https://purchase.groupdocs.com/temporary-license/) để yêu cầu giấy phép dùng thử.
 
-**Last Updated:** 2025-12-24  
-**Tested With:** GroupDocs.Parser 25.5 for Java  
-**Author:** GroupDocs  
-
 ## Tài nguyên
 - **Documentation:** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)
 - **API Reference:** [GroupDocs Parser API Reference](https://reference.groupdocs.com/parser/java)
@@ -153,3 +149,7 @@ A: Truy cập [trang mua của GroupDocs](https://purchase.groupdocs.com/tempora
 - **GitHub:** [GroupDocs.Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
 - **Free Support:** [GroupDocs Forum](https://forum.groupdocs.com/c/parser)
 - **Temporary License:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+**Last Updated:** 2025-12-24  
+**Tested With:** GroupDocs.Parser 25.5 for Java  
+**Author:** GroupDocs  

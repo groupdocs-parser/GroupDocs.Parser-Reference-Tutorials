@@ -142,10 +142,6 @@ A: Verifiera att filformatet finns med i bibliotekets stödda format eller konve
 **Q: Hur kan jag skaffa en tillfällig licens för GroupDocs.Parser?**  
 A: Besök [GroupDocs' purchase page](https://purchase.groupdocs.com/temporary-license/) för att begära en provlicens.
 
-**Senast uppdaterad:** 2025-12-24  
-**Testad med:** GroupDocs.Parser 25.5 för Java  
-**Författare:** GroupDocs  
-
 ## Resurser
 - **Dokumentation:** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)
 - **API‑referens:** [GroupDocs Parser API Reference](https://reference.groupdocs.com/parser/java)
@@ -153,3 +149,7 @@ A: Besök [GroupDocs' purchase page](https://purchase.groupdocs.com/temporary-li
 - **GitHub:** [GroupDocs.Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
 - **Gratis support:** [GroupDocs Forum](https://forum.groupdocs.com/c/parser)
 - **Tillfällig licens:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+**Senast uppdaterad:** 2025-12-24  
+**Testad med:** GroupDocs.Parser 25.5 för Java  
+**Författare:** GroupDocs  

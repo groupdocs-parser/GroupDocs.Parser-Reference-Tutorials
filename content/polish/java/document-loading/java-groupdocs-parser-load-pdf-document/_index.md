@@ -124,8 +124,6 @@ Masz teraz kompletny, gotowy do produkcji przepis na **extract pdf text java** p
 **Next Steps:**  
 Zbadaj dodatkowe funkcje, takie jak wyodrębnianie obrazów, odczyt metadanych i obsługa wielu formatów, aby jeszcze bardziej rozbudować swój zestaw narzędzi do przetwarzania dokumentów.
 
----
-
 ## Najczęściej zadawane pytania
 
 **Q: What is GroupDocs.Parser for Java?**  
@@ -143,10 +141,6 @@ A: Zweryfikuj, czy format pliku znajduje się na liście obsługiwanych formató
 **Q: How can I obtain a temporary license for GroupDocs.Parser?**  
 A: Odwiedź [GroupDocs' purchase page](https://purchase.groupdocs.com/temporary-license/), aby poprosić o licencję próbną.
 
-**Last Updated:** 2025-12-24  
-**Tested With:** GroupDocs.Parser 25.5 for Java  
-**Author:** GroupDocs  
-
 ## Zasoby
 - **Documentation:** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)
 - **API Reference:** [GroupDocs Parser API Reference](https://reference.groupdocs.com/parser/java)
@@ -154,3 +148,7 @@ A: Odwiedź [GroupDocs' purchase page](https://purchase.groupdocs.com/temporary-
 - **GitHub:** [GroupDocs.Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
 - **Free Support:** [GroupDocs Forum](https://forum.groupdocs.com/c/parser)
 - **Temporary License:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+**Last Updated:** 2025-12-24  
+**Tested With:** GroupDocs.Parser 25.5 for Java  
+**Author:** GroupDocs  

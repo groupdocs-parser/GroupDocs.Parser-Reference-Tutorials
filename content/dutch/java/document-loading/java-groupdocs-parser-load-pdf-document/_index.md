@@ -142,10 +142,6 @@ A: Controleer of het bestandsformaat in de ondersteunde formaten van de biblioth
 **Q: Hoe kan ik een tijdelijke licentie voor GroupDocs.Parser verkrijgen?**  
 A: Bezoek de [aankooppagina van GroupDocs](https://purchase.groupdocs.com/temporary-license/) om een proeflicentie aan te vragen.
 
-**Laatste update:** 2025-12-24  
-**Getest met:** GroupDocs.Parser 25.5 for Java  
-**Auteur:** GroupDocs  
-
 ## Resources
 - **Documentation:** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)  
 - **API Reference:** [GroupDocs Parser API Reference](https://reference.groupdocs.com/parser/java)  
@@ -153,3 +149,7 @@ A: Bezoek de [aankooppagina van GroupDocs](https://purchase.groupdocs.com/tempor
 - **GitHub:** [GroupDocs.Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
 - **Free Support:** [GroupDocs Forum](https://forum.groupdocs.com/c/parser)  
 - **Temporary License:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+**Laatste update:** 2025-12-24  
+**Getest met:** GroupDocs.Parser 25.5 for Java  
+**Auteur:** GroupDocs  

@@ -143,10 +143,6 @@ R: Verifica che file sia elencato nei formati supportati dalla libreria o conver
 **D: Come posso ottenere una licenza temporanea per GroupDocs.Parser?**  
 R: Visita la [pagina di acquisto di GroupDocs](https://purchase.groupdocs.com/temporary-license/) per richiedere una licenza trial.
 
-**Ultimo aggiornamento:** 2025-12-24  
-**Testato con:** GroupDocs.Parser 25.5 per Java  
-**Autore:** GroupDocs  
-
 ## Risorse
 - **Documentazione:** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)
 - **Riferimento API:** [GroupDocs Parser API Reference](https://reference.groupdocs.com/parser/java)
@@ -154,3 +150,7 @@ R: Visita la [pagina di acquisto di GroupDocs](https://purchase.groupdocs.com/te
 - **GitHub:** [GroupDocs.Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
 - **Supporto gratuito:** [GroupDocs Forum](https://forum.groupdocs.com/c/parser)
 - **Licenza temporanea:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+**Ultimo aggiornamento:** 2025-12-24  
+**Testato con:** GroupDocs.Parser 25.5 per Java  
+**Autore:** GroupDocs  

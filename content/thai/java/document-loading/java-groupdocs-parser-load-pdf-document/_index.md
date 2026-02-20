@@ -138,10 +138,6 @@ A: ตรวจสอบว่ารูปแบบไฟล์อยู่ใ�
 **Q: ฉันจะขอไลเซนส์ชั่วคราวสำหรับ GroupDocs.Parser ได้อย่างไร?**  
 A: เยี่ยมชม [GroupDocs' purchase page](https://purchase.groupdocs.com/temporary-license/) เพื่อขอไลเซนส์ทดลอง  
 
-**อัปเดตล่าสุด:** 2025-12-24  
-**ทดสอบกับ:** GroupDocs.Parser 25.5 for Java  
-**ผู้เขียน:** GroupDocs  
-
 ## แหล่งข้อมูล
 - **เอกสารประกอบ:** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)  
 - **อ้างอิง API:** [GroupDocs Parser API Reference](https://reference.groupdocs.com/parser/java)  
@@ -149,3 +145,7 @@ A: เยี่ยมชม [GroupDocs' purchase page](https://purchase.groupdoc
 - **GitHub:** [GroupDocs.Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
 - **สนับสนุนฟรี:** [GroupDocs Forum](https://forum.groupdocs.com/c/parser)  
 - **ไลเซนส์ชั่วคราว:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+**อัปเดตล่าสุด:** 2025-12-24  
+**ทดสอบกับ:** GroupDocs.Parser 25.5 for Java  
+**ผู้เขียน:** GroupDocs  

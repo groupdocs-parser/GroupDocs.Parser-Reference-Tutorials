@@ -143,12 +143,6 @@ A: सुनिश्चित करें कि फ़ाइल फ़ॉर�
 **Q: GroupDocs.Parser के लिए टेम्पररी लाइसेंस कैसे प्राप्त करें?**  
 A: ट्रायल लाइसेंस के लिए [GroupDocs' purchase page](https://purchase.groupdocs.com/temporary-license/) पर जाएँ।
 
----
-
-**Last Updated:** 2025-12-24  
-**Tested With:** GroupDocs.Parser 25.5 for Java  
-**Author:** GroupDocs  
-
 ## संसाधन
 - **डॉक्यूमेंटेशन:** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)  
 - **API रेफ़रेंस:** [GroupDocs Parser API Reference](https://reference.groupdocs.com/parser/java)  
@@ -156,3 +150,9 @@ A: ट्रायल लाइसेंस के लिए [GroupDocs' purchas
 - **GitHub:** [GroupDocs.Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
 - **फ़्री सपोर्ट:** [GroupDocs Forum](https://forum.groupdocs.com/c/parser)  
 - **टेम्पररी लाइसेंस:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+---
+
+**Last Updated:** 2025-12-24  
+**Tested With:** GroupDocs.Parser 25.5 for Java  
+**Author:** GroupDocs  

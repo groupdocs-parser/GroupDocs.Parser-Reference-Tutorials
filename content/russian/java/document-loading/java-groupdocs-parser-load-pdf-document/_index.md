@@ -124,8 +124,6 @@ try (TextReader reader = parser.getText()) {
 **Next Steps:**  
 Изучите дополнительные возможности, такие как извлечение изображений, чтение метаданных и поддержка нескольких форматов, чтобы расширить ваш набор инструментов для обработки документов.
 
----
-
 ## Часто задаваемые вопросы
 
 **Q: Что такое GroupDocs.Parser для Java?**  
@@ -143,10 +141,6 @@ A: Убедитесь, что формат файла указан в подде
 **Q: Как получить временную лицензию для GroupDocs.Parser?**  
 A: Перейдите на [GroupDocs' purchase page](https://purchase.groupdocs.com/temporary-license/), чтобы запросить пробную лицензию.
 
-**Последнее обновление:** 2025-12-24  
-**Тестировано с:** GroupDocs.Parser 25.5 for Java  
-**Автор:** GroupDocs  
-
 ## Ресурсы
 - **Документация:** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)
 - **Справочник API:** [GroupDocs Parser API Reference](https://reference.groupdocs.com/parser/java)
@@ -154,3 +148,7 @@ A: Перейдите на [GroupDocs' purchase page](https://purchase.groupdocs
 - **GitHub:** [GroupDocs.Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
 - **Бесплатная поддержка:** [GroupDocs Forum](https://forum.groupdocs.com/c/parser)
 - **Временная лицензия:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+**Последнее обновление:** 2025-12-24  
+**Тестировано с:** GroupDocs.Parser 25.5 for Java  
+**Автор:** GroupDocs  
