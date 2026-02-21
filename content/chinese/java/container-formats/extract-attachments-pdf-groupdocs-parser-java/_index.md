@@ -1,47 +1,48 @@
 ---
-date: '2025-12-20'
-description: 了解如何使用 GroupDocs.Parser for Java 提取 PDF 附件，包括批量处理 PDF 附件以及从 PDF 组合文档中提取附件。
+date: '2026-02-21'
+description: 了解如何使用 GroupDocs.Parser for Java 提取 PDF 中嵌入的文件，包括批量处理 PDF 附件以及从 PDF 组合文档中提取文件。
 keywords:
 - extract PDF attachments Java
 - GroupDocs Parser library
 - PDF portfolio extraction
-title: 如何使用 GroupDocs.Parser 在 Java 中从 PDF 组合文档中提取 PDF 附件
+title: 如何使用 GroupDocs.Parser 在 Java 中从 PDF 组合文档中提取嵌入的 PDF 文件
 type: docs
 url: /zh/java/container-formats/extract-attachments-pdf-groupdocs-parser-java/
 weight: 1
 ---
 
-# 如何使用 GroupDocs.Parser 在 Java 中从 PDF 组合文档中提取 PDF 附件
+# 如何使用 GroupDocs.Parser 在 Java 中从 PDF 组合文档中提取嵌入的 PDF 文件
 
-管理数字文档通常意味着要处理将多个文件打包在一起的 PDF 组合文档。**如何快速可靠地提取 PDF 附件** 是构建文档处理流水线的开发者常见的问题。在本教程中，您将看到如何使用 **GroupDocs.Parser for Java** 提取每个嵌入的文件，无论是需要批量处理 PDF 附件还是仅仅从组合文档中提取单个文档。
+当您处理数字文档档案时，PDF 往往充当容器，将多个文件——合同、发票、图像，甚至其他 PDF——打包成一个 **PDF 组合文档**。能够快速 **extract embedded files pdf** 对于实现归档自动化、数据分析流水线或迁移项目至关重要。在本教程中，您将学习一种简洁、可投入生产的方式，使用 **GroupDocs.Parser for Java** 将 PDF 组合文档中的所有嵌入文件提取出来。我们将覆盖从库的设置到高效处理大型组合文档的全部内容，帮助您立即将此功能集成到 Java 应用程序中。
 
-## 快速答案
-- **主要库是什么？** GroupDocs.Parser for Java  
-- **我可以批量处理 PDF 附件吗？** Yes – iterate over the `ContainerItem` collection.  
-- **我需要许可证吗？** A temporary or full license is required for production use.  
-- **支持哪些 JDK 版本？** Works with Java 8 and newer (check the docs for exact requirements).  
-- **是否可以提取非 PDF 文件？** Absolutely – any embedded file type can be extracted.
+## 快速回答
+- **主要使用的库是什么？** GroupDocs.Parser for Java  
+- **可以批量处理 PDF 附件吗？** 可以——遍历 `ContainerItem` 集合。  
+- **是否需要许可证？** 生产环境需要临时或正式许可证。  
+- **支持哪些 JDK 版本？** 支持 Java 8 及以上（具体要求请查阅文档）。  
+- **能提取非 PDF 文件吗？** 完全可以——任何嵌入的文件类型都能被提取。
 
-## 什么是“如何提取 PDF 附件”？
-提取 PDF 附件是指读取 PDF 组合文档（容器 PDF）并将每个嵌入的文件保存到磁盘或进一步处理。当您需要归档、分析或迁移打包文档的内容时，此操作至关重要。
+## 什么是 “extract embedded files pdf”？
+**extract embedded files pdf** 指读取 PDF 组合文档（容器 PDF），并将每个嵌入文件保存到磁盘或进一步处理。当您需要归档、分析或迁移打包文档的内容时，这一操作必不可少。
 
 ## 为什么使用 GroupDocs.Parser for Java？
-- **零配置解析** – the API automatically detects container support.  
-- **高性能** – optimized for large portfolios and batch scenarios.  
-- **丰富的格式支持** – works with images, text files, other PDFs, and more.
+- **零配置解析** – API 自动检测容器支持。  
+- **高性能** – 针对大型组合文档和批量场景进行优化。  
+- **丰富的格式支持** – 支持图像、文本文件、其他 PDF 等多种文件。  
+- **简洁的 Java API** – 可平滑集成到 Maven、Gradle 或任意构建工具中。
 
 ## 前置条件
 
 在开始之前，请确保您已具备：
 
-- **Java Development Kit (JDK)** installed (Java 8 or newer).  
-- An IDE such as **IntelliJ IDEA** or **Eclipse**.  
-- **Maven** for dependency management.  
-- A valid **GroupDocs.Parser** license (free trial or temporary license works for development).
+- 已安装 **Java Development Kit (JDK)**（Java 8 或更高）。  
+- 如 **IntelliJ IDEA** 或 **Eclipse** 等 IDE。  
+- 用于依赖管理的 **Maven**。  
+- 有效的 **GroupDocs.Parser** 许可证（免费试用或临时许可证均可用于开发）。
 
 ## 设置 GroupDocs.Parser for Java
 
-将 GroupDocs 仓库和依赖添加到您的 `pom.xml` 中：
+在 `pom.xml` 中添加 GroupDocs 仓库和依赖：
 
 ```xml
 <repositories>
@@ -64,10 +65,10 @@ weight: 1
 ### 直接下载
 或者，直接从 [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) 下载最新版本。
 
-#### 许可证获取步骤
-- **免费试用** – explore the API without cost.  
-- **临时许可证** – request one for extended development testing.  
-- **购买** – obtain a full license for commercial deployments.
+#### 获取许可证的步骤
+- **免费试用** – 免费探索 API。  
+- **临时许可证** – 申请用于扩展开发测试的许可证。  
+- **购买** – 为商业部署获取正式许可证。
 
 ### 基本初始化和设置
 
@@ -84,7 +85,7 @@ String pdfPortfolioPath = "YOUR_DOCUMENT_DIRECTORY/SamplePdfPortfolio.pdf";
 ### 从 PDF 组合文档中提取附件
 
 #### 概述
-提取工作流包括三个简单步骤：创建 `Parser` 实例、验证容器支持，并遍历每个 `ContainerItem`。
+提取工作流包括三个简单步骤：创建 `Parser` 实例、验证容器支持、遍历每个 `ContainerItem`。
 
 #### 步骤 1：初始化 Parser
 ```java
@@ -92,7 +93,7 @@ try (Parser parser = new Parser(pdfPortfolioPath)) {
     // Continue processing
 }
 ```
-*Why*: 使用 try‑with‑resources 块可确保解析器自动释放文件句柄。
+*原因*：try‑with‑resources 代码块可确保解析器自动释放文件句柄。
 
 #### 步骤 2：检查容器支持
 ```java
@@ -102,7 +103,7 @@ if (attachments == null) {
     return;
 }
 ```
-*Why*: 并非所有 PDF 都支持容器提取；此检查可防止运行时错误。
+*原因*：并非所有 PDF 都支持容器提取，此检查可防止运行时错误。
 
 #### 步骤 3：遍历附件
 ```java
@@ -111,65 +112,58 @@ for (ContainerItem item : attachments) {
     // Additional processing logic here
 }
 ```
-*Why*: 循环使您能够单独处理每个嵌入的文件——非常适合批量处理 PDF 附件。
+*原因*：循环使您能够单独处理每个嵌入文件——非常适合 **java extract pdf attachments** 的批量场景。
 
 #### 常见陷阱与故障排除
-- **损坏的组合文档** – verify the source file before parsing.  
-- **不支持的格式消息** – ensure you are using a PDF portfolio, not a regular PDF.  
-- **大型组合文档的内存压力** – process items in batches and release resources promptly.
+- **组合文档损坏** – 解析前先验证源文件完整性。  
+- **不支持的格式提示** – 确认使用的是 PDF 组合文档，而非普通 PDF。  
+- **大型组合文档的内存压力** – 采用批处理方式并及时释放资源。
 
 ## 实际应用
 
-1. **数据归档** – automatically pull out invoices, receipts, or contracts stored inside a portfolio and archive them in a document‑management system.  
-2. **文档分析** – feed extracted text files into analytics pipelines or search indexes.  
-3. **自动化工作流** – combine with GroupDocs.Conversion or GroupDocs.Viewer to transform extracted files into other formats.
+1. **数据归档** – 自动提取组合文档中的发票、收据或合同，并将其存入文档管理系统。  
+2. **文档分析** – 将提取的文本文件输入分析流水线或搜索索引。  
+3. **自动化工作流** – 与 GroupDocs.Conversion 或 GroupDocs.Viewer 结合，将提取的文件转换为其他格式。
 
 ## 性能考虑
 
-在处理大型 PDF 组合文档时：
+处理大型 PDF 组合文档时：
 
-- **批量处理** – handle a limited number of attachments at a time to keep memory usage low.  
-- **垃圾回收调优** – invoke `System.gc()` sparingly if you notice memory spikes.  
-- **性能分析** – use Java Flight Recorder or VisualVM to locate bottlenecks early.
+- **批量处理** – 每次处理有限数量的附件，以降低内存占用。  
+- **垃圾回收调优** – 如出现内存峰值，可适度调用 `System.gc()`。  
+- **性能分析** – 使用 Java Flight Recorder 或 VisualVM 及早定位瓶颈。
 
-保持库的最新版本并对应用进行性能分析是维持最佳性能的最佳方式。
-
-## 结论
-
-您现在拥有了一套完整的、可投入生产的使用 GroupDocs.Parser for Java 从 PDF 组合文档中 **提取 PDF 附件** 的方法。此功能为更智能的文档工作流、高效归档和强大的数据提取流水线打开了大门。
-
-### 下一步
-- 尝试提取不同的文件类型（图像、Word 文档等）。  
-- 探索 **GroupDocs.Parser** API 以提取元数据。  
-- 将提取逻辑集成到您现有的文档处理服务中。
+保持库的最新版本并对应用进行性能分析，是维持最佳性能的关键。
 
 ## 常见问题
 
-**Q1: 使用 GroupDocs.Parser 我可以从 PDF 组合文档中提取哪些文件格式？**  
-A1: GroupDocs.Parser 支持提取图像、文本文件、其他 PDF，以及几乎所有嵌入在组合文档中的文件类型。
+**Q1：使用 GroupDocs.Parser 能从 PDF 组合文档中提取哪些文件格式？**  
+A1：支持提取图像、文本文件、其他 PDF，以及几乎所有嵌入的文件类型。
 
-**Q2: 我如何高效处理大型 PDF 组合文档？**  
-A2: 使用批量处理（遍历 `ContainerItem` 集合），并在每个批次后释放资源，以保持低内存使用。
+**Q2：如何高效处理大型 PDF 组合文档？**  
+A2：采用批处理（遍历 `ContainerItem` 集合），并在每批完成后释放资源，以保持低内存使用。
 
-**Q3: GroupDocs.Parser Java 与所有 JDK 版本兼容吗？**  
-A3: 它支持 Java 8 及更高版本，但请始终查看发行说明以获取确切的受支持版本。
+**Q3：GroupDocs.Parser Java 是否兼容所有 JDK 版本？**  
+A3：兼容 Java 8 及以上，但请始终查阅发行说明以确认具体支持的版本。
 
-**Q4: 我可以在商业项目中使用 GroupDocs.Parser 吗？**  
-A4: 可以——购买许可证后即可使用。也提供临时许可证用于开发和测试。
+**Q4：可以在商业项目中使用 GroupDocs.Parser 吗？**  
+A4：可以——购买正式许可证后即可使用。开发和测试阶段也可使用临时许可证。
 
-**Q5: 如果遇到问题，我可以在哪里获得帮助？**  
-A: 访问 [GroupDocs support forum](https://forum.groupdocs.com/c/parser) 获取社区和官方支持。
+**Q5：如果遇到问题，在哪里可以获得帮助？**  
+A：访问 [GroupDocs support forum](https://forum.groupdocs.com/c/parser) 获取社区和官方支持。
 
 ## 资源
-- [文档:](https://docs.groupdocs.com/parser/java/)
-- [API 参考:](https://reference.groupdocs.com/parser/java)
-- [下载:](https://releases.groupdocs.com/parser/java/)
-- [GitHub 仓库:](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
-- [免费支持:](https://forum.groupdocs.com/c/parser)
-- [临时许可证:](https://purchase.groupdocs.com/temporary-license/)
+- [Documentation:](https://docs.groupdocs.com/parser/java/)
+- [API Reference:](https://reference.groupdocs.com/parser/java)
+- [Download:](https://releases.groupdocs.com/parser/java/)
+- [GitHub Repository:](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
+- [Free Support:](https://forum.groupdocs.com/c/parser)
+- [Temporary License:](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-**最后更新：** 2025-12-20  
+**最后更新：** 2026-02-21  
 **测试环境：** GroupDocs.Parser 25.5 for Java  
-**作者：** GroupDocs
+**作者：** GroupDocs  
+
+---
