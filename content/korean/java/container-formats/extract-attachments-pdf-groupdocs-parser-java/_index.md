@@ -1,44 +1,45 @@
 ---
-date: '2025-12-20'
-description: GroupDocs.Parser for Java를 사용하여 PDF 첨부 파일을 추출하는 방법을 배우세요. 여기에는 PDF 첨부
-  파일을 일괄 처리하고 PDF 포트폴리오에서 첨부 파일을 추출하는 것이 포함됩니다.
+date: '2026-02-21'
+description: GroupDocs.Parser for Java를 사용하여 PDF에 포함된 파일을 추출하는 방법을 배우세요. PDF 첨부 파일의
+  배치 처리와 PDF 포트폴리오에서 파일을 추출하는 방법을 포함합니다.
 keywords:
 - extract PDF attachments Java
 - GroupDocs Parser library
 - PDF portfolio extraction
-title: Java에서 GroupDocs.Parser를 사용하여 PDF 포트폴리오에서 PDF 첨부 파일을 추출하는 방법
+title: Java에서 GroupDocs.Parser를 사용하여 PDF 포트폴리오에서 임베디드 PDF 파일을 추출하는 방법
 type: docs
 url: /ko/java/container-formats/extract-attachments-pdf-groupdocs-parser-java/
 weight: 1
 ---
 
-# GroupDocs.Parser for Java를 사용하여 PDF 포트폴리오에서 PDF 첨부 파일 추출 방법
+# GroupDocs.Parser for Java를 사용하여 PDF 포트폴리오에서 임베디드 파일 PDF 추출 방법
 
-디지털 문서를 관리하다 보면 여러 파일을 하나로 묶은 PDF 포트폴리오를 다루게 됩니다. **PDF 첨부 파일을 빠르고 안정적으로 추출하는 방법**은 문서 처리 파이프라인을 구축하는 개발자들에게 흔히 제기되는 질문입니다. 이 튜토리얼에서는 **GroupDocs.Parser for Java**를 사용해 모든 임베디드 파일을 추출하는 방법을 살펴봅니다. PDF 첨부 파일을 배치 처리하든 포트폴리오에서 단일 문서를 꺼내든 적용할 수 있습니다.
+디지털 문서 아카이브를 다룰 때, PDF는 종종 계약서, 청구서, 이미지 또는 다른 PDF와 같은 여러 파일을 하나의 **PDF 포트폴리오**로 묶는 컨테이너 역할을 합니다. **임베디드 파일 PDF 추출**을 빠르게 수행할 수 있는 능력은 아카이빙 자동화, 데이터‑분석 파이프라인, 또는 마이그레이션 프로젝트에 필수적입니다. 이 튜토리얼에서는 **GroupDocs.Parser for Java**를 사용해 PDF 포트폴리오에서 모든 임베디드 파일을 추출하는 깔끔하고 프로덕션‑레디한 방법을 배웁니다. 라이브러리 설정부터 대용량 포트폴리오를 효율적으로 처리하는 방법까지 모두 다루므로, 바로 Java 애플리케이션에 이 기능을 통합할 수 있습니다.
 
-## 빠른 답변
-- **주요 라이브러리는 무엇인가요?** GroupDocs.Parser for Java  
-- **PDF 첨부 파일을 배치 처리할 수 있나요?** 예 – `ContainerItem` 컬렉션을 반복합니다.  
-- **라이선스가 필요합니까?** 프로덕션 사용을 위해 임시 또는 정식 라이선스가 필요합니다.  
-- **지원되는 JDK 버전은?** Java 8 이상에서 작동합니다 (정확한 요구 사항은 문서를 확인하세요).  
-- **PDF가 아닌 파일도 추출할 수 있나요?** 물론입니다 – 모든 임베디드 파일 유형을 추출할 수 있습니다.
+## Quick Answers
+- **What is the primary library?** GroupDocs.Parser for Java  
+- **Can I batch process PDF attachments?** Yes – iterate over the `ContainerItem` collection.  
+- **Do I need a license?** A temporary or full license is required for production use.  
+- **Which JDK versions are supported?** Works with Java 8 and newer (check the docs for exact requirements).  
+- **Is it possible to extract non‑PDF files?** Absolutely – any embedded file type can be extracted.
 
-## “PDF 첨부 파일 추출 방법”이란?
-PDF 첨부 파일을 추출한다는 것은 PDF 포트폴리오(컨테이너 PDF)를 읽어 각 임베디드 파일을 디스크에 저장하거나 추가로 처리하는 것을 의미합니다. 이 작업은 번들된 문서의 내용을 아카이브하거나 분석, 마이그레이션해야 할 때 필수적입니다.
+## “extract embedded files pdf”란?
+임베디드 파일 PDF 추출은 PDF 포트폴리오(컨테이너 PDF)를 읽어 각 임베디드 파일을 디스크에 저장하거나 추가로 처리하는 작업을 의미합니다. 이 작업은 번들된 문서의 내용을 아카이브, 분석 또는 마이그레이션해야 할 때 필수적입니다.
 
 ## 왜 GroupDocs.Parser for Java를 사용해야 할까요?
-- **Zero‑configuration 파싱** – API가 자동으로 컨테이너 지원을 감지합니다.  
-- **고성능** – 대용량 포트폴리오 및 배치 시나리오에 최적화되었습니다.  
-- **풍부한 포맷 지원** – 이미지, 텍스트 파일, 다른 PDF 등과 함께 작동합니다.
+- **Zero‑configuration parsing** – API가 자동으로 컨테이너 지원을 감지합니다.  
+- **High performance** – 대용량 포트폴리오와 배치 시나리오에 최적화되었습니다.  
+- **Rich format support** – 이미지, 텍스트 파일, 다른 PDF 등 다양한 형식을 지원합니다.  
+- **Simple Java API** – Maven, Gradle 또는 선호하는 빌드 도구와 원활하게 통합됩니다.
 
 ## Prerequisites
 
 시작하기 전에 다음이 준비되어 있어야 합니다:
 
-- **Java Development Kit (JDK)**가 설치되어 있어야 합니다 (Java 8 이상).  
-- IntelliJ IDEA 또는 Eclipse와 같은 IDE.  
-- **Maven**을 사용한 의존성 관리.  
-- 유효한 **GroupDocs.Parser** 라이선스 (무료 체험 또는 임시 라이선스는 개발에 사용할 수 있습니다).
+- **Java Development Kit (JDK)** 설치 (Java 8 이상).  
+- **IntelliJ IDEA** 또는 **Eclipse**와 같은 IDE.  
+- **Maven**을 이용한 의존성 관리.  
+- 유효한 **GroupDocs.Parser** 라이선스 (개발용 무료 체험 또는 임시 라이선스 사용 가능).
 
 ## Setting Up GroupDocs.Parser for Java
 
@@ -62,15 +63,15 @@ PDF 첨부 파일을 추출한다는 것은 PDF 포트폴리오(컨테이너 PDF
 </dependencies>
 ```
 
-### 직접 다운로드
-또는 최신 버전을 직접 [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/)에서 다운로드합니다.
+### Direct Download
+또는 [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/)에서 최신 버전을 직접 다운로드합니다.
 
 #### License Acquisition Steps
-- **무료 체험** – 비용 없이 API를 탐색합니다.  
-- **임시 라이선스** – 확장된 개발 테스트를 위해 요청합니다.  
-- **구매** – 상업적 배포를 위한 정식 라이선스를 획득합니다.
+- **Free Trial** – 비용 없이 API를 체험합니다.  
+- **Temporary License** – 확장된 개발 테스트를 위해 요청합니다.  
+- **Purchase** – 상업적 배포를 위한 정식 라이선스를 구매합니다.
 
-### 기본 초기화 및 설정
+### Basic Initialization and Setup
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -80,22 +81,22 @@ import com.groupdocs.parser.exceptions.UnsupportedDocumentFormatException;
 String pdfPortfolioPath = "YOUR_DOCUMENT_DIRECTORY/SamplePdfPortfolio.pdf";
 ```
 
-## 구현 가이드
+## Implementation Guide
 
-### PDF 포트폴리오에서 첨부 파일 추출
+### Extracting Attachments from a PDF Portfolio
 
-#### 개요
-추출 워크플로는 세 가지 간단한 단계로 구성됩니다: `Parser` 인스턴스를 생성하고, 컨테이너 지원을 확인한 뒤, 각 `ContainerItem`을 반복합니다.
+#### Overview
+추출 워크플로는 세 단계로 구성됩니다: `Parser` 인스턴스 생성, 컨테이너 지원 여부 확인, 그리고 각 `ContainerItem`을 순회합니다.
 
-#### 단계 1: Parser 초기화
+#### Step 1: Initialize the Parser
 ```java
 try (Parser parser = new Parser(pdfPortfolioPath)) {
     // Continue processing
 }
 ```
-*왜*: try‑with‑resources 블록은 파서가 파일 핸들을 자동으로 해제하도록 보장합니다.
+*Why*: try‑with‑resources 블록을 사용하면 파서가 파일 핸들을 자동으로 해제합니다.
 
-#### 단계 2: 컨테이너 지원 확인
+#### Step 2: Check Container Support
 ```java
 Iterable<ContainerItem> attachments = parser.getContainer();
 if (attachments == null) {
@@ -103,74 +104,65 @@ if (attachments == null) {
     return;
 }
 ```
-*왜*: 모든 PDF가 컨테이너 추출을 지원하는 것은 아니므로, 이 검사는 런타임 오류를 방지합니다.
+*Why*: 모든 PDF가 컨테이너 추출을 지원하는 것은 아니므로, 이 검사는 런타임 오류를 방지합니다.
 
-#### 단계 3: 첨부 파일 반복
+#### Step 3: Iterate Over Attachments
 ```java
 for (ContainerItem item : attachments) {
     System.out.println("Attachment Name: " + item.getName());
     // Additional processing logic here
 }
 ```
-*왜*: 반복을 통해 각 임베디드 파일을 개별적으로 처리할 수 있어, PDF 첨부 파일 배치 처리에 최적입니다.
+*Why*: 루프를 통해 각 임베디드 파일을 개별적으로 처리할 수 있어 **java extract pdf attachments** 배치 시나리오에 최적입니다.
 
-#### 일반적인 함정 및 문제 해결
-- **손상된 포트폴리오** – 파싱 전에 원본 파일을 확인하세요.  
-- **지원되지 않는 포맷 메시지** – 일반 PDF가 아닌 PDF 포트폴리오를 사용하고 있는지 확인하세요.  
-- **대용량 포트폴리오에서 메모리 압박** – 항목을 배치로 처리하고 리소스를 즉시 해제하세요.
+#### Common Pitfalls & Troubleshooting
+- **Corrupted portfolios** – 파싱하기 전에 원본 파일을 확인합니다.  
+- **Unsupported format messages** – 일반 PDF가 아니라 PDF 포트폴리오인지 확인합니다.  
+- **Memory pressure on large portfolios** – 배치 단위로 아이템을 처리하고 리소스를 즉시 해제합니다.
 
-## 실용적인 적용 사례
+## Practical Applications
 
-1. **데이터 아카이빙** – 포트폴리오에 저장된 청구서, 영수증 또는 계약서를 자동으로 추출하여 문서 관리 시스템에 보관합니다.  
-2. **문서 분석** – 추출된 텍스트 파일을 분석 파이프라인이나 검색 인덱스로 전달합니다.  
-3. **자동 워크플로** – GroupDocs.Conversion 또는 GroupDocs.Viewer와 결합하여 추출된 파일을 다른 형식으로 변환합니다.
+1. **Data Archiving** – 포트폴리오에 저장된 청구서, 영수증, 계약서를 자동으로 추출해 문서 관리 시스템에 보관합니다.  
+2. **Document Analysis** – 추출된 텍스트 파일을 분석 파이프라인이나 검색 인덱스로 전달합니다.  
+3. **Automated Workflows** – GroupDocs.Conversion 또는 GroupDocs.Viewer와 결합해 추출된 파일을 다른 형식으로 변환합니다.
 
-## 성능 고려 사항
+## Performance Considerations
 
 대용량 PDF 포트폴리오를 다룰 때:
 
-- **배치 처리** – 메모리 사용량을 낮게 유지하기 위해 한 번에 제한된 수의 첨부 파일을 처리합니다.  
-- **가비지 컬렉션 튜닝** – 메모리 급증이 감지되면 `System.gc()`를 최소한으로 호출합니다.  
-- **프로파일링** – Java Flight Recorder 또는 VisualVM을 사용해 병목 현상을 조기에 찾습니다.
+- **Batch processing** – 한 번에 처리하는 첨부 파일 수를 제한해 메모리 사용량을 낮춥니다.  
+- **Garbage collection tuning** – 메모리 급증이 감지되면 `System.gc()`를 신중히 호출합니다.  
+- **Profiling** – Java Flight Recorder 또는 VisualVM을 사용해 병목 현상을 조기에 파악합니다.
 
-라이브러리를 최신 상태로 유지하고 애플리케이션을 프로파일링하는 것이 최적 성능을 유지하는 가장 좋은 방법입니다.
+라이브러리를 최신 상태로 유지하고 애플리케이션을 정기적으로 프로파일링하는 것이 최적 성능을 유지하는 가장 좋은 방법입니다.
 
-## 결론
+## Frequently Asked Questions
 
-이제 **GroupDocs.Parser for Java**를 사용해 PDF 포트폴리오에서 **PDF 첨부 파일을 추출하는** 완전하고 프로덕션 준비된 방법을 갖추었습니다. 이 기능을 통해 보다 스마트한 문서 워크플로, 효율적인 아카이빙, 강력한 데이터 추출 파이프라인을 구현할 수 있습니다.
+**Q1: What file formats can I extract from a PDF portfolio using GroupDocs.Parser?**  
+A1: GroupDocs.Parser supports extracting images, text files, other PDFs, and virtually any file type embedded in the portfolio.
 
-### 다음 단계
-- 다양한 파일 유형(이미지, Word 문서 등) 추출을 시도해 보세요.  
-- **GroupDocs.Parser** API를 사용해 메타데이터 추출을 탐색하세요.  
-- 추출 로직을 기존 문서 처리 서비스에 통합하세요.
+**Q2: How do I handle large PDF portfolios efficiently?**  
+A2: Use batch processing (iterate over `ContainerItem` collections) and release resources after each batch to keep memory usage low.
 
-## 자주 묻는 질문
+**Q3: Is GroupDocs.Parser Java compatible with all versions of JDK?**  
+A3: It works with Java 8 and newer, but always check the release notes for the exact supported versions.
 
-**Q1: GroupDocs.Parser를 사용해 PDF 포트폴리오에서 어떤 파일 포맷을 추출할 수 있나요?**  
-A1: GroupDocs.Parser는 이미지, 텍스트 파일, 다른 PDF 및 포트폴리오에 임베디드된 거의 모든 파일 유형을 추출할 수 있습니다.
+**Q4: Can I use GroupDocs.Parser for commercial projects?**  
+A4: Yes—once you purchase a license. A temporary license is also available for development and testing.
 
-**Q2: 대용량 PDF 포트폴리오를 효율적으로 처리하려면 어떻게 해야 하나요?**  
-A2: 배치 처리(`ContainerItem` 컬렉션 반복)를 사용하고 각 배치 후에 리소스를 해제하여 메모리 사용량을 낮게 유지합니다.
+**Q5: Where can I get help if I run into issues?**  
+A: Visit the [GroupDocs support forum](https://forum.groupdocs.com/c/parser) for community and official assistance.
 
-**Q3: GroupDocs.Parser Java는 모든 JDK 버전과 호환되나요?**  
-A3: Java 8 이상에서 작동하지만, 정확히 지원되는 버전은 릴리스 노트를 항상 확인하세요.
-
-**Q4: GroupDocs.Parser를 상업 프로젝트에 사용할 수 있나요?**  
-A4: 예—라이선스를 구매하면 사용할 수 있습니다. 개발 및 테스트용으로 임시 라이선스도 제공됩니다.
-
-**Q5: 문제가 발생하면 어디에서 도움을 받을 수 있나요?**  
-A: 커뮤니티와 공식 지원을 위해 [GroupDocs support forum](https://forum.groupdocs.com/c/parser)을 방문하세요.
-
-## 리소스
-- [문서:](https://docs.groupdocs.com/parser/java/)
-- [API 레퍼런스:](https://reference.groupdocs.com/parser/java)
-- [다운로드:](https://releases.groupdocs.com/parser/java/)
-- [GitHub 저장소:](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
-- [무료 지원:](https://forum.groupdocs.com/c/parser)
-- [임시 라이선스:](https://purchase.groupdocs.com/temporary-license/)
+## Resources
+- [Documentation:](https://docs.groupdocs.com/parser/java/)
+- [API Reference:](https://reference.groupdocs.com/parser/java)
+- [Download:](https://releases.groupdocs.com/parser/java/)
+- [GitHub Repository:](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
+- [Free Support:](https://forum.groupdocs.com/c/parser)
+- [Temporary License:](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-**Last Updated:** 2025-12-20  
+**Last Updated:** 2026-02-21  
 **Tested With:** GroupDocs.Parser 25.5 for Java  
 **Author:** GroupDocs
