@@ -1,29 +1,31 @@
 ---
-title: "Java Read PDF Text with GroupDocs.Parser: A Complete Guide"
-description: "Learn how to java read pdf text using GroupDocs.Parser, and also java get pdf metadata, extract images, and parse documents efficiently."
-date: "2026-01-06"
-weight: 1
-url: "/java/getting-started/document-parsing-java-groupdocs-parser-guide/"
+date: '2026-01-06'
+description: Impara come leggere il testo PDF in Java usando GroupDocs.Parser, e anche
+  come ottenere i metadati PDF, estrarre le immagini e analizzare i documenti in modo
+  efficiente.
 keywords:
 - document parsing in java
 - groupdocs parser library
 - extract text metadata images java
+title: 'Java Leggi il Testo PDF con GroupDocs.Parser: Una Guida Completa'
 type: docs
+url: /it/java/getting-started/document-parsing-java-groupdocs-parser-guide/
+weight: 1
 ---
 
 # Java Read PDF Text with GroupDocs.Parser: A Complete Guide
 
-If you need to **java read pdf text**, **GroupDocs.Parser for Java** makes the job painless. Whether you're pulling data from PDFs, Word files, or spreadsheets, this library lets you extract text, metadata, and images with just a few lines of code. In this guide we’ll walk through everything you need to start parsing documents in Java—setting up the library, reading PDF text, getting PDF metadata, extracting images, and more.
+Se hai bisogno di **java read pdf text**, **GroupDocs.Parser for Java** rende il lavoro indolore. Che tu stia estraendo dati da PDF, file Word o fogli di calcolo, questa libreria ti consente di estrarre testo, metadati e immagini con poche righe di codice. In questa guida vedremo tutto ciò che ti serve per iniziare a analizzare documenti in Java—configurare la libreria, leggere il testo PDF, ottenere i metadati PDF, estrarre immagini e molto altro.
 
 ## Quick Answers
-- **What is the easiest way to java read pdf text?** Use `Parser.getText()` from GroupDocs.Parser.  
-- **How can I java get pdf metadata?** Call `Parser.getMetadata()` to retrieve author, creation date, etc.  
-- **Can I extract images from a PDF with Java?** Yes—`Parser.getImages()` returns all embedded images.  
-- **Do I need a license for production use?** A commercial license is required for production; a free trial is available.  
-- **Which Maven repository hosts GroupDocs.Parser?** The GroupDocs repository at `https://releases.groupdocs.com/parser/java/`.
+- **Qual è il modo più semplice per java read pdf text?** Usa `Parser.getText()` di GroupDocs.Parser.  
+- **Come posso java get pdf metadata?** Chiama `Parser.getMetadata()` per recuperare autore, data di creazione, ecc.  
+- **Posso estrarre immagini da un PDF con Java?** Sì—`Parser.getImages()` restituisce tutte le immagini incorporate.  
+- **È necessaria una licenza per l'uso in produzione?** È richiesta una licenza commerciale per la produzione; è disponibile una prova gratuita.  
+- **Quale repository Maven ospita GroupDocs.Parser?** Il repository GroupDocs su `https://releases.groupdocs.com/parser/java/`.
 
 ## What is java read pdf text?
-Reading PDF text in Java means programmatically extracting the textual content stored inside a PDF file so you can process, search, or display it in your own applications. GroupDocs.Parser provides a high‑level API that abstracts away the low‑level PDF parsing details.
+Leggere il testo PDF in Java significa estrarre programmaticamente il contenuto testuale memorizzato all'interno di un file PDF così da poterlo elaborare, cercare o visualizzare nelle proprie applicazioni. GroupDocs.Parser fornisce un'API di alto livello che astrae i dettagli di parsing PDF a basso livello.
 
 ## Why use GroupDocs.Parser for java read pdf text?
 - **Broad format support** – works with PDFs, DOCX, XLSX, and many other formats.  
@@ -34,20 +36,20 @@ Reading PDF text in Java means programmatically extracting the textual content s
 ## Prerequisites
 
 ### Required Libraries and Dependencies
-- **Java Development Kit (JDK)** 8 or higher.  
-- **Maven** for dependency management, or you can download the JAR directly from [GroupDocs](https://releases.groupdocs.com/parser/java/).
+- **Java Development Kit (JDK)** 8 o superiore.  
+- **Maven** per la gestione delle dipendenze, oppure puoi scaricare il JAR direttamente da [GroupDocs](https://releases.groupdocs.com/parser/java/).
 
 ### Environment Setup
-A Java IDE such as IntelliJ IDEA, Eclipse, or NetBeans will make development easier.
+Un IDE Java come IntelliJ IDEA, Eclipse o NetBeans renderà lo sviluppo più semplice.
 
 ### Knowledge Prerequisites
-Familiarity with Java and Maven project structures will help you follow the examples more quickly.
+Familiarità con Java e le strutture di progetto Maven ti aiuterà a seguire gli esempi più rapidamente.
 
 ## Setting Up GroupDocs.Parser for Java
-To start using **GroupDocs.Parser** in your Java projects, follow the installation steps below.
+Per iniziare a usare **GroupDocs.Parser** nei tuoi progetti Java, segui i passaggi di installazione qui sotto.
 
 ### Maven Setup
-Add the GroupDocs repository and dependency to your `pom.xml`:
+Aggiungi il repository GroupDocs e la dipendenza al tuo `pom.xml`:
 
 ```xml
 <repositories>
@@ -68,7 +70,7 @@ Add the GroupDocs repository and dependency to your `pom.xml`:
 ```
 
 ### Direct Download
-Alternatively, download the latest JAR from [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
+In alternativa, scarica l'ultimo JAR da [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
 ### License Acquisition Steps
 1. **Free Trial** – explore the library without cost.  
@@ -76,7 +78,7 @@ Alternatively, download the latest JAR from [GroupDocs.Parser for Java releases]
 3. **Commercial License** – purchase for unrestricted production use.
 
 ### Basic Initialization and Setup
-Once the dependency is in place, you can create a `Parser` instance:
+Una volta aggiunta la dipendenza, puoi creare un'istanza di `Parser`:
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -93,7 +95,7 @@ public class DocumentParser {
 }
 ```
 
-Now you’re ready to **java read pdf text**, retrieve metadata, or extract images.
+Ora sei pronto a **java read pdf text**, recuperare i metadati o estrarre le immagini.
 
 ## java read pdf text: Core Features
 
@@ -217,6 +219,4 @@ We’ve shown you how to **java read pdf text**, **java get pdf metadata**, and 
 
 **Last Updated:** 2026-01-06  
 **Tested With:** GroupDocs.Parser 25.5  
-**Author:** GroupDocs  
-
----
+**Author:** GroupDocs
