@@ -1,42 +1,43 @@
 ---
-title: "Extract Text from Image in Java using Aspose.OCR & GroupDocs.Parser"
-description: "Learn how to extract text from image in Java using Aspose.OCR and GroupDocs.Parser, and convert scanned document text efficiently."
-date: "2026-01-29"
-weight: 1
-url: "/java/ocr-integration/java-ocr-text-recognition-aspose-groupdocs-parser-guide/"
+date: '2026-01-29'
+description: Pelajari cara mengekstrak teks dari gambar di Java menggunakan Aspose.OCR
+  dan GroupDocs.Parser, serta mengonversi teks dokumen yang dipindai secara efisien.
 keywords:
 - Java OCR text recognition
 - Aspose OCR Java
 - GroupDocs Parser for Java
+title: Ekstrak Teks dari Gambar di Java menggunakan Aspose.OCR & GroupDocs.Parser
 type: docs
+url: /id/java/ocr-integration/java-ocr-text-recognition-aspose-groupdocs-parser-guide/
+weight: 1
 ---
 
-# Extract Text from Image in Java using Aspose.OCR & GroupDocs.Parser
+# Ekstrak Teks dari Gambar di Java menggunakan Aspose.OCR & GroupDocs.Parser
 
-Are you looking for an efficient way to **extract text from image** files in your Java applications? In the digital age, turning pictures of documents into searchable, editable text is a must‑have capability. This tutorial walks you through the complete process of using Aspose.OCR together with GroupDocs.Parser for Java, so you can reliably convert scanned document text into usable strings.
+Apakah Anda mencari cara yang efisien untuk **mengekstrak teks dari gambar** dalam aplikasi Java Anda? Di era digital, mengubah foto dokumen menjadi teks yang dapat dicari dan diedit adalah kemampuan yang wajib dimiliki. Tutorial ini memandu Anda melalui proses lengkap menggunakan Aspose.OCR bersama dengan GroupDocs.Parser untuk Java, sehingga Anda dapat dengan andal mengonversi teks dokumen yang dipindai menjadi string yang dapat digunakan.
 
-We’ll cover everything from setting up the libraries to recognizing specific text areas, and we’ll show you real‑world scenarios where this integration shines.
+Kami akan membahas semua hal mulai dari menyiapkan pustaka hingga mengenali area teks tertentu, dan kami akan menunjukkan skenario dunia nyata di mana integrasi ini bersinar.
 
 ## Quick Answers
-- **What library handles OCR?** Aspose.OCR provides high‑accuracy optical character recognition.
-- **Which component parses the result?** GroupDocs.Parser extracts structured data from the OCR output.
-- **Minimum Java version?** JDK 8 or later.
-- **Do I need a license?** A trial works for testing; a full license unlocks all features.
+- **What library handles OCR?** Aspose.OCR provides high‑accuracy optical character recognition.  
+- **Which component parses the result?** GroupDocs.Parser extracts structured data from the OCR output.  
+- **Minimum Java version?** JDK 8 or later.  
+- **Do I need a license?** A trial works for testing; a full license unlocks all features.  
 - **Can I process streams?** Yes—both libraries support image streams for web‑based uploads.
 
 ## What is “extract text from image”?
-Extracting text from image means converting visual characters (e.g., a scanned page or a photo of a receipt) into plain text that your code can manipulate, search, or store. OCR (Optical Character Recognition) engines analyze pixel patterns, recognize glyphs, and output Unicode strings.
+Mengekstrak teks dari gambar berarti mengubah karakter visual (misalnya, halaman yang dipindai atau foto struk) menjadi teks polos yang dapat dimanipulasi, dicari, atau disimpan oleh kode Anda. Mesin OCR (Optical Character Recognition) menganalisis pola piksel, mengenali glif, dan menghasilkan string Unicode.
 
 ## Why combine Aspose.OCR with GroupDocs.Parser?
-- **Accuracy:** Aspose.OCR delivers industry‑leading recognition rates.
-- **Flexibility:** GroupDocs.Parser can handle the OCR output, detect page layouts, and return structured results such as tables or form fields.
+- **Accuracy:** Aspose.OCR delivers industry‑leading recognition rates.  
+- **Flexibility:** GroupDocs.Parser can handle the OCR output, detect page layouts, and return structured results such as tables or form fields.  
 - **Stream‑friendly:** Both libraries work directly with `InputStream`, making them perfect for web services that receive image uploads.
 
 ## Prerequisites
-- **Java Development Kit:** JDK 8+ installed.
-- **Maven:** Preferred build tool (or manual JAR handling).
-- **Aspose OCR Library:** Add the JAR to your project.
-- **GroupDocs.Parser for Java:** Include via Maven (see below) or download the JAR.
+- **Java Development Kit:** JDK 8+ installed.  
+- **Maven:** Preferred build tool (or manual JAR handling).  
+- **Aspose OCR Library:** Add the JAR to your project.  
+- **GroupDocs.Parser for Java:** Include via Maven (see below) or download the JAR.  
 - **Basic Java knowledge:** Handling streams, exceptions, and collections.
 
 ## Setting Up GroupDocs.Parser for Java
@@ -69,7 +70,7 @@ If you prefer not to use Maven, grab the latest JAR from [GroupDocs Releases](ht
 A valid license unlocks the full feature set for both Aspose OCR and GroupDocs.Parser. You can start with a free trial or purchase a permanent license from the vendor websites.
 
 #### Basic Initialization and Setup
-1. **Set the License for Aspose OCR:**
+1. **Set the License for Aspose OCR:**  
    ```java
    import com.aspose.ocr.License;
    
@@ -82,21 +83,20 @@ A valid license unlocks the full feature set for both Aspose OCR and GroupDocs.P
 ## Implementation Guide
 
 ### Feature: Recognize Text from Image Stream
-This method lets you feed an `InputStream` (e.g., an uploaded file) directly into the OCR engine and receive the recognized text.
+Metode ini memungkinkan Anda mengalirkan `InputStream` (misalnya, file yang diunggah) langsung ke mesin OCR dan menerima teks yang dikenali.
 
 #### Overview
-The process converts the incoming stream to a `BufferedImage`, configures optional recognition areas, and calls Aspose OCR’s `RecognizePage` method.
+Proses ini mengubah aliran masuk menjadi `BufferedImage`, mengonfigurasi area pengenalan opsional, dan memanggil metode `RecognizePage` Aspose OCR.
 
 #### Step‑by‑step Code
-
-1. **Create the AsposeOCR instance:**
+1. **Create the AsposeOCR instance:**  
    ```java
    import com.aspose.ocr.AsposeOCR;
    
    AsposeOCR api = new AsposeOCR();
    ```
 
-2. **Read the image stream into a BufferedImage:**
+2. **Read the image stream into a BufferedImage:**  
    ```java
    import java.awt.image.BufferedImage;
    import javax.imageio.ImageIO;
@@ -104,7 +104,7 @@ The process converts the incoming stream to a `BufferedImage`, configures option
    BufferedImage image = ImageIO.read(imageStream);
    ```
 
-3. **Configure recognition settings (optional area selection):**
+3. **Configure recognition settings (optional area selection):**  
    ```java
    import com.aspose.ocr.RecognitionSettings;
    
@@ -122,7 +122,7 @@ The process converts the incoming stream to a `BufferedImage`, configures option
    }
    ```
 
-4. **Run the recognition and handle warnings:**
+4. **Run the recognition and handle warnings:**  
    ```java
    import com.aspose.ocr.RecognitionResult;
    
@@ -136,14 +136,13 @@ The process converts the incoming stream to a `BufferedImage`, configures option
    ```
 
 ### Feature: Recognize Text Areas from Image Stream
-When you need each block of text (e.g., separate fields on a form), enable area detection.
+Ketika Anda memerlukan setiap blok teks (misalnya, bidang terpisah pada formulir), aktifkan deteksi area.
 
 #### Overview
-Setting `detectAreas` tells Aspose OCR to return bounding rectangles for each recognized snippet, which you can then map to your data model.
+Menetapkan `detectAreas` memberi tahu Aspose OCR untuk mengembalikan persegi panjang pembatas untuk setiap potongan yang dikenali, yang kemudian dapat dipetakan ke model data Anda.
 
 #### Step‑by‑step Code
-
-1. **Enable area detection:**
+1. **Enable area detection:**  
    ```java
    RecognitionSettings settings = new RecognitionSettings();
    settings.setDetectAreas(true);
@@ -151,7 +150,7 @@ Setting `detectAreas` tells Aspose OCR to return bounding rectangles for each re
 
 2. **(Optional) Define specific regions** – reuse the rectangle logic from the previous section if you only care about certain parts of the image.
 
-3. **Execute OCR and collect area information:**
+3. **Execute OCR and collect area information:**  
    ```java
    import java.awt.Rectangle;
    import java.util.ArrayList;
@@ -173,13 +172,13 @@ Setting `detectAreas` tells Aspose OCR to return bounding rectangles for each re
    ```
 
 ## Practical Applications
-- **Document Management Systems:** Index scanned PDFs so users can search the full text.
-- **Automated Data Entry:** Pull fields from photographed receipts or forms.
+- **Document Management Systems:** Index scanned PDFs so users can search the full text.  
+- **Automated Data Entry:** Pull fields from photographed receipts or forms.  
 - **Content Digitization:** Convert printed books or manuals into searchable e‑books.
 
 ## Performance Considerations
-- **Batch Processing:** Group images into batches to reduce JVM overhead.
-- **Image Quality:** Higher DPI (300 dpi or more) dramatically improves accuracy.
+- **Batch Processing:** Group images into batches to reduce JVM overhead.  
+- **Image Quality:** Higher DPI (300 dpi or more) dramatically improves accuracy.  
 - **Memory Management:** Dispose of `BufferedImage` objects promptly, especially when processing large volumes.
 
 ## Common Issues & Troubleshooting
@@ -207,12 +206,10 @@ A: A trial license works for evaluation, but a full license removes watermarks a
 A: Set the language in `RecognitionSettings` (e.g., `settings.setLanguage(Language.Spanish);`) to guide the engine.
 
 ## Conclusion
-By combining Aspose.OCR’s powerful recognition engine with GroupDocs.Parser’s flexible parsing capabilities, you now have a robust solution to **extract text from image** files and **convert scanned document text** into structured data. Experiment with the settings, integrate the code into your service layer, and watch your document workflows become fully searchable and automated.
+Dengan menggabungkan mesin pengenalan kuat Aspose.OCR dengan kemampuan parsing fleksibel GroupDocs.Parser, Anda kini memiliki solusi yang kokoh untuk **mengekstrak teks dari gambar** dan **mengonversi teks dokumen yang dipindai** menjadi data terstruktur. Bereksperimenlah dengan pengaturan, integrasikan kode ke lapisan layanan Anda, dan saksikan alur kerja dokumen Anda menjadi sepenuhnya dapat dicari dan otomatis.
 
 ---
 
 **Last Updated:** 2026-01-29  
 **Tested With:** Aspose.OCR 23.12, GroupDocs.Parser 25.5  
-**Author:** Aspose  
-
----
+**Author:** Aspose
