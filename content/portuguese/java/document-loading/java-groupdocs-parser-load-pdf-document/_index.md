@@ -137,16 +137,12 @@ A: Sim, ele suporta Word, Excel, PowerPoint e muitos outros formatos.
 **Q: O que devo fazer se a extração de texto não for suportada para o meu documento?**  
 A: Verifique se o formato do arquivo está listado nos formatos suportados pela biblioteca ou converta o arquivo para uma versão de PDF suportada.
 
-**Q: Como posso obter uma licença temporária para o GroupDocs.Parser?**  
-A: Visite a [página de compra do GroupDocs](https://purchase.groupdocs.com/temporary-license/) para solicitar uma licença de teste.
-
 ## Recursos
 - **Documentação:** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)
 - **Referência da API:** [GroupDocs Parser API Reference](https://reference.groupdocs.com/parser/java)
 - **Download:** [Latest Releases](https://releases.groupdocs.com/parser/java/)
 - **GitHub:** [GroupDocs.Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
 - **Suporte Gratuito:** [GroupDocs Forum](https://forum.groupdocs.com/c/parser)
-- **Licença Temporária:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
 
 **Última atualização:** 2025-12-24  
 **Testado com:** GroupDocs.Parser 25.5 for Java  
