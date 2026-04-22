@@ -161,7 +161,7 @@ A: Prozkoumejte [API Reference](https://reference.groupdocs.com/parser/java) a o
 - [Stáhnout GroupDocs.Parser](https://releases.groupdocs.com/parser/java/)  
 - [GitHub Repository](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
 - [Bezplatné fórum podpory](https://forum.groupdocs.com/c/parser)  
-- [Dočasné získání licence](://purchase.groupdocs.com/temporary-license/)  
+- [Dočasné získání licence](https://purchase.groupdocs.com/temporary-license/)  
 
 Vydejte se na cestu parsování dokumentů s GroupDocs.Parser a změňte způsob, jakým v Java aplikacích pracujete se soubory!
 
