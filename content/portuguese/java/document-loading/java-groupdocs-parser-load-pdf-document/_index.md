@@ -138,7 +138,7 @@ A: Sim, ele suporta Word, Excel, PowerPoint e muitos outros formatos.
 A: Verifique se o formato do arquivo está listado nos formatos suportados pela biblioteca ou converta o arquivo para uma versão de PDF suportada.
 
 **Q: Como posso obter uma licença temporária para o GroupDocs.Parser?**  
-A: Visite a [página de compra do GroupDocs](://purchase.groupdocs.com/temporary-license/) para solicitar uma licença de teste.
+A: Visite a [página de compra do GroupDocs](https://purchase.groupdocs.com/temporary-license/) para solicitar uma licença de teste.
 
 ## Recursos
 - **Documentação:** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)
