@@ -1,52 +1,52 @@
 ---
-title: "Connect SQLite Java with GroupDocs.Parser: A Comprehensive Guide"
-description: "Learn how to connect SQLite Java using GroupDocs.Parser. This step‑by‑step guide covers setup, JDBC connection, and document parsing for robust data handling."
-date: "2026-03-25"
-weight: 1
-url: "/java/database-integration/connect-sqlite-groupdocs-parser-java/"
+date: '2026-03-25'
+description: GroupDocs.Parser kullanarak SQLite Java'ya nasıl bağlanılacağını öğrenin.
+  Bu adım adım kılavuz, kurulum, JDBC bağlantısı ve sağlam veri işleme için belge
+  ayrıştırmayı kapsar.
 keywords:
 - GroupDocs.Parser Java
 - SQLite JDBC Java
 - Java database connectivity
+title: 'SQLite Java''yı GroupDocs.Parser ile Bağlayın: Kapsamlı Bir Rehber'
 type: docs
+url: /tr/java/database-integration/connect-sqlite-groupdocs-parser-java/
+weight: 1
 ---
 
-# Connect SQLite Java with GroupDocs.Parser
+# SQLite Java'ı GroupDocs.Parser ile Bağlamak
 
-Connecting an SQLite database from Java is a common requirement when you need a lightweight, file‑based storage engine. In this tutorial you’ll **connect SQLite Java** using GroupDocs.Parser, learn how to manage the JDBC connection safely with *java try with resources*, and see how to **java create SQLite table** structures that store parsed document data.
+Java'dan bir SQLite veritabanına bağlanmak, hafif, dosya‑tabanlı bir depolama motoruna ihtiyaç duyduğunuzda yaygın bir gereksinimdir. Bu öğreticide GroupDocs.Parser kullanarak **SQLite Java'ı bağlayacak**, JDBC bağlantısını *java try with resources* ile güvenli bir şekilde yönetmeyi öğrenecek ve **java create SQLite table** yapılarını nasıl oluşturacağınızı göreceksiniz; bu yapılar ayrıştırılmış belge verilerini depolar.
 
-## Quick Answers
-- **What library parses documents?** GroupDocs.Parser for Java  
-- **Which driver connects to SQLite?** The Xerial SQLite JDBC driver  
-- **How do I ensure the connection closes?** Use *java try with resources* (try‑with‑resources)  
-- **Can I store parsed text in SQLite?** Yes – create a table and insert the extracted content  
-- **What Java version is required?** JDK 8 or higher  
+## Hızlı Yanıtlar
+- **Belge ayrıştırma kütüphanesi nedir?** GroupDocs.Parser for Java  
+- **SQLite'a bağlanan sürücü hangisidir?** The Xerial SQLite JDBC driver  
+- **Bağlantının kapanmasını nasıl sağlarsınız?** Use *java try with resources* (try‑with‑resources)  
+- **Ayrıştırılmış metni SQLite'da depolayabilir miyim?** Yes – create a table and insert the extracted content  
+- **Gerekli Java sürümü nedir?** JDK 8 or higher  
 
-## What is “connect sqlite java”?
+## “connect sqlite java” nedir?
 
-The phrase “connect sqlite java” simply describes the act of opening a JDBC connection from a Java application to an SQLite database file. This enables you to run SQL statements, store extracted document data, and retrieve it later—all from within the same Java process.
+“connect sqlite java” ifadesi, bir Java uygulamasından bir SQLite veritabanı dosyasına JDBC bağlantısı açma eylemini basitçe tanımlar. Bu sayede SQL ifadeleri çalıştırabilir, ayrıştırılmış belge verilerini depolayabilir ve daha sonra aynı Java süreci içinde bunları geri alabilirsiniz.
 
-## Why use GroupDocs.Parser with SQLite?
+## Neden GroupDocs.Parser'ı SQLite ile Kullanmalısınız?
 
-- **Unified workflow** – Parse PDFs, DOCX, or other formats and immediately persist results in a local SQLite store.  
-- **Zero‑configuration server** – SQLite requires no separate database server, perfect for desktop or small‑service deployments.  
-- **Performance** – Fast reads/writes for moderate data volumes, especially when combined with connection pooling.
+- **Unified workflow** – PDF, DOCX veya diğer formatları ayrıştırın ve sonuçları yerel bir SQLite deposunda hemen kalıcı hale getirin.  
+- **Zero‑configuration server** – SQLite ayrı bir veritabanı sunucusu gerektirmez, masaüstü veya küçük‑servis dağıtımları için mükemmeldir.  
+- **Performance** – Orta ölçekli veri hacimleri için hızlı okuma/yazma sağlar, özellikle bağlantı havuzu ile birleştirildiğinde.
 
-## Prerequisites
-
-Before you start, make sure you have:
+## Önkoşullar
 
 - **GroupDocs.Parser for Java** – version 25.5 or later.  
 - **Java Development Kit (JDK)** – 8 + (any recent JDK works).  
 - **SQLite JDBC Driver** – download from [sqlite-jdbc](https://github.com/xerial/sqlite-jdbc).  
-- An IDE such as IntelliJ IDEA, Eclipse, or NetBeans.  
-- Maven for dependency management.  
+- IntelliJ IDEA, Eclipse veya NetBeans gibi bir IDE.  
+- Bağımlılık yönetimi için Maven.  
 
-You should also be comfortable with basic Java syntax and SQL fundamentals.
+Ayrıca temel Java sözdizimi ve SQL temellerine hâkim olmalısınız.
 
-## Setting Up GroupDocs.Parser for Java
+## GroupDocs.Parser for Java'ı Kurma
 
-### Maven Dependency
+### Maven Bağımlılığı
 
 Add the GroupDocs repository and the parser dependency to your `pom.xml`:
 
@@ -68,17 +68,17 @@ Add the GroupDocs repository and the parser dependency to your `pom.xml`:
 </dependencies>
 ```
 
-### Direct Download (optional)
+### Doğrudan İndirme (isteğe bağlı)
 
 If you prefer not to use Maven, you can grab the latest JAR from [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
-### License
+### Lisans
 
 - **Free trial** – 30‑day evaluation.  
 - **Temporary license** – For extended testing.  
 - **Full license** – Required for production use.
 
-### Basic Initialization (java try with resources)
+### Temel Başlatma (java try with resources)
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -96,14 +96,14 @@ public class Main {
 
 Using *java try with resources* guarantees that the `Parser` instance is closed automatically, preventing memory leaks.
 
-## Implementation Guide
+## Uygulama Rehberi
 
-### Establishing a SQLite Database Connection
+### SQLite Veritabanı Bağlantısı Kurma
 
-#### Overview
+#### Genel Bakış
 We'll build a JDBC connection string, open the connection safely, and then run SQL commands.
 
-#### Step 1: Create the Connection String
+#### Adım 1: Bağlantı Dizesi Oluşturma
 
 ```java
 String connectionString = String.format("jdbc:sqlite:%s", "YOUR_DOCUMENT_DIRECTORY");
@@ -111,7 +111,7 @@ String connectionString = String.format("jdbc:sqlite:%s", "YOUR_DOCUMENT_DIRECTO
 
 **Explanation:** Replace `YOUR_DOCUMENT_DIRECTORY` with the absolute path to your SQLite `.db` file. This string follows the standard JDBC format for SQLite.
 
-#### Step 2: Open the Connection (java try with resources)
+#### Adım 2: Bağlantıyı Aç (java try with resources)
 
 ```java
 import java.sql.Connection;
@@ -135,7 +135,7 @@ public class DatabaseConnector {
 
 **Explanation:** `DriverManager` locates the SQLite driver and creates a live connection. The try‑with‑resources block ensures the connection is closed automatically.
 
-#### Step 3: Execute Queries – java create sqlite table
+#### Adım 3: Sorguları Çalıştır – java create sqlite table
 
 ```java
 import java.sql.Statement;
@@ -164,12 +164,12 @@ public class DatabaseOperations {
 
 **Explanation:** The `Statement` object runs raw SQL. Here we **java create sqlite table** named `users` that could later hold metadata extracted by GroupDocs.Parser.
 
-#### Troubleshooting Tips
+#### Sorun Giderme İpuçları
 - Verify the SQLite JDBC driver is on your classpath (Maven will handle this if you added the dependency).  
 - Double‑check the file path in the connection string; it must point to an existing `.db` file or a writable location for a new database.  
 - If you see “SQLITE\_CANTOPEN”, the application likely lacks permission to read/write the file.
 
-## Practical Applications
+## Pratik Uygulamalar
 
 Integrating GroupDocs.Parser with SQLite opens many possibilities:
 
@@ -177,21 +177,21 @@ Integrating GroupDocs.Parser with SQLite opens many possibilities:
 2. **Data Migration Tools** – Move structured data from legacy documents into a portable SQLite database.  
 3. **Reporting Dashboards** – Pull parsed content from SQLite to generate real‑time analytics without a heavyweight RDBMS.
 
-## Performance Considerations
+## Performans Düşünceleri
 
-### Optimizing Performance
+### Performansı Optimize Etme
 - **Connection pooling** (e.g., HikariCP) reduces the overhead of repeatedly opening connections.  
 - **Batch inserts** let you insert many rows with a single round‑trip, dramatically improving throughput.
 
-### Resource Usage Guidelines
+### Kaynak Kullanım Kılavuzları
 - Monitor heap usage when parsing large files; the parser streams data, but very large documents can still consume memory.  
 - Always close `Parser`, `Connection`, and `Statement` objects—using *java try with resources* makes this effortless.
 
-### Best Practices for Java Memory Management
+### Java Bellek Yönetimi için En İyi Uygulamalar
 - Prefer try‑with‑resources for any `AutoCloseable` (Parser, Connection, Statement).  
 - Profile with tools like VisualVM or YourKit to spot memory spikes during bulk parsing.
 
-## Common Issues and Solutions
+## Yaygın Sorunlar ve Çözümler
 
 | Symptom | Likely Cause | Fix |
 |---------|--------------|-----|
@@ -199,7 +199,7 @@ Integrating GroupDocs.Parser with SQLite opens many possibilities:
 | “database is locked” error | Another process holds the file | Close all connections, or use SQLite’s WAL mode for concurrent reads. |
 | Parser returns empty text | Document type not supported or corrupted | Verify the file format is supported by GroupDocs.Parser and that the file path is correct. |
 
-## Frequently Asked Questions
+## Sıkça Sorulan Sorular
 
 **Q: Can I store binary data (e.g., images) extracted by GroupDocs.Parser in SQLite?**  
 A: Yes. Use a BLOB column and `PreparedStatement.setBytes()` to insert the binary payload.
@@ -216,11 +216,11 @@ A: Each thread should obtain its own `Connection` (or use a pooled connection) b
 **Q: What version of GroupDocs.Parser is required for Java 17?**  
 A: Version 25.5 and later are fully compatible with Java 8 – 17.
 
-## Conclusion
+## Sonuç
 
 You’ve now mastered how to **connect SQLite Java** using GroupDocs.Parser, created a robust table schema with **java create sqlite table**, and applied *java try with resources* to keep resources tidy. These building blocks let you embed powerful document‑parsing capabilities into lightweight Java applications.
 
-**Next Steps**  
+**Sonraki Adımlar**  
 - Experiment with extracting specific fields (tables, images, metadata) and persisting them.  
 - Add connection pooling for high‑throughput scenarios.  
 - Explore GroupDocs.Parser’s advanced features such as OCR and custom extraction rules.
