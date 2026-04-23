@@ -1,8 +1,8 @@
 ---
-date: '2025-12-18'
+date: '2026-02-19'
 description: Pelajari cara melakukan deteksi tipe file Java di dalam arsip ZIP dengan
-  GroupDocs.Parser untuk Java. Temukan cara membaca ZIP tanpa ekstraksi dan mengidentifikasi
-  file dalam ZIP secara efisien.
+  GroupDocs.Parser untuk Java. Temukan cara membaca ZIP tanpa mengekstrak, mengidentifikasi
+  file dalam ZIP, dan mem-parsing entri ZIP secara efisien.
 keywords:
 - detect file types in ZIP archives
 - GroupDocs.Parser for Java
@@ -15,34 +15,34 @@ weight: 1
 
 # Deteksi Tipe File Java dalam Arsip ZIP dengan GroupDocs.Parser untuk Java
 
-Menavigasi arsip ZIP seringkali menakutkan, terutama ketika Anda membutuhkan **java file type detection** tanpa mengekstrak setiap file terlebih dahulu. Tutorial ini menunjukkan **how to detect zip** konten secara efisien menggunakan GroupDocs.Parser untuk Java, sehingga Anda dapat dengan cepat mengidentifikasi file dalam arsip zip dan membaca zip tanpa ekstraksi.
+Menavigasi arsip ZIP seringkali menakutkan, terutama ketika Anda membutuhkan **java file type detection** tanpa mengekstrak setiap file terlebih dahulu. Dalam panduan ini kami akan menunjukkan cara **identify files in zip**, **read zip without extraction**, dan secara efisien **read zip entries java** menggunakan GroupDocs.Parser. Baik Anda membangun pipeline dokumen otomatis atau fitur manajemen konten, tutorial ini memberikan langkah‑langkah tepat untuk **how to detect zip entries** dan **java parse zip archive** dengan percaya diri.
 
-## Jawaban Cepat
+## Quick Answers
 - **Apa yang dilakukan GroupDocs.Parser?** Ia mem-parsing format kontainer (ZIP, RAR, TAR) dan memungkinkan Anda memeriksa isi tanpa mengekstraknya.  
 - **Bisakah saya mendeteksi tipe file tanpa mengekstrak?** Ya – gunakan metode `detectFileType()` pada setiap `ContainerItem`.  
-- **Versi Java apa yang dibutuhkan?** JDK 8 atau lebih baru disarankan.  
+- **Versi Java mana yang diperlukan?** JDK 8 atau lebih baru disarankan.  
 - **Apakah saya memerlukan lisensi?** Versi percobaan gratis tersedia; lisensi permanen diperlukan untuk penggunaan produksi.  
-- **Apakah pemrosesan batch didukung?** Tentu – Anda dapat mengulangi banyak file ZIP dalam sebuah loop.
+- **Apakah pemrosesan batch didukung?** Tentu – Anda dapat mengiterasi banyak file ZIP dalam sebuah loop.
 
 ## Apa itu Deteksi Tipe File Java?
-Deteksi tipe file Java adalah proses menentukan format sebuah file secara programatik (misalnya PDF, DOCX, PNG) berdasarkan tanda tangan biner bukan ekstensi. Ketika diterapkan pada arsip ZIP, ini memungkinkan Anda **detect zip file type** pada setiap entri tanpa harus mengekstrak arsip terlebih dahulu.
+Deteksi tipe file Java adalah proses menentukan format file secara programatis (misalnya PDF, DOCX, PNG) berdasarkan tanda tangan biner bukan ekstensi. Ketika diterapkan pada arsip ZIP, hal ini memungkinkan Anda **detect zip file type** pada setiap entri tanpa harus mengekstrak arsip terlebih dahulu.
 
 ## Mengapa Menggunakan GroupDocs.Parser untuk Tugas Ini?
-- **Speed:** Melewati langkah ekstraksi yang mahal.  
-- **Safety:** Menghindari penulisan file sementara ke disk.  
-- **Versatility:** Bekerja dengan banyak format kontainer, tidak hanya ZIP.  
-- **Ease of Integration:** Panggilan API sederhana cocok secara alami dengan alur kerja Java yang ada.
+- **Kecepatan:** Melewati langkah ekstraksi yang mahal.  
+- **Keamanan:** Menghindari penulisan file sementara ke disk.  
+- **Versatilitas:** Bekerja dengan berbagai format kontainer, tidak hanya ZIP.  
+- **Kemudahan Integrasi:** Panggilan API sederhana cocok secara alami dengan alur kerja Java yang ada.
 
-## Prasyarat
-- **GroupDocs.Parser for Java** — Versi 25.5 atau lebih baru.  
-- **Java Development Kit (JDK)** — 8 atau lebih baru.  
-- Sebuah IDE seperti IntelliJ IDEA, Eclipse, atau NetBeans.  
+## Prerequisites
+- **GroupDocs.Parser untuk Java** — Versi 25.5 atau lebih baru.  
+- **Java Development Kit (JDK)** — 8 atau lebih baru.  
+- IDE seperti IntelliJ IDEA, Eclipse, atau NetBeans.  
 - Maven (opsional, untuk manajemen dependensi).  
 
-## Menyiapkan GroupDocs.Parser untuk Java
+## Setting Up GroupDocs.Parser for Java
 
 ### Pengaturan Maven
-Tambahkan repositori GroupDocs dan dependensi ke `pom.xml` Anda:
+Add the GroupDocs repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -63,11 +63,11 @@ Tambahkan repositori GroupDocs dan dependensi ke `pom.xml` Anda:
 ```
 
 ### Unduhan Langsung
-Sebagai alternatif, Anda dapat mengunduh versi terbaru dari [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
+Alternatively, you can download the latest version from [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
-### Langkah Akuisisi Lisensi
+### Langkah-langkah Akuisisi Lisensi
 - **Free Trial:** Mulai dengan percobaan untuk menjelajahi semua kemampuan.  
-- **Temporary License:** Gunakan kunci sementara untuk evaluasi yang diperpanjang.  
+- **Temporary License:** Gunakan kunci sementara untuk evaluasi yang lebih lama.  
 - **Purchase:** Dapatkan langganan untuk beban kerja produksi.
 
 ## Panduan Implementasi
@@ -77,7 +77,7 @@ Sebagai alternatif, Anda dapat mengunduh versi terbaru dari [GroupDocs.Parser fo
 Bagian ini memandu Anda melalui **how to detect zip** entri tanpa mengekstraknya.
 
 #### Langkah 1: Inisialisasi Parser
-Buat instance `Parser` yang menunjuk ke file ZIP Anda.
+Create a `Parser` instance that points to your ZIP file.
 
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/SampleZip.zip")) {
@@ -88,7 +88,7 @@ try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/SampleZip.zip")) {
 *Mengapa?* Inisialisasi `Parser` membuka arsip sehingga Anda dapat memeriksa isinya.
 
 #### Langkah 2: Ekstrak Lampiran
-Ambil setiap item di dalam kontainer menggunakan `getContainer()`.
+Retrieve each item inside the container using `getContainer()`.
 
 ```java
 Iterable<ContainerItem> attachments = parser.getContainer();
@@ -100,7 +100,7 @@ if (attachments == null) {
 *Mengapa?* Langkah ini memastikan format arsip didukung dan memberi Anda iterable dari semua entri.
 
 #### Langkah 3: Deteksi Tipe File
-Lakukan loop pada item-item tersebut dan panggil `detectFileType()` untuk mengidentifikasi format setiap file.
+Loop through the items and call `detectFileType()` to identify each file’s format.
 
 ```java
 for (ContainerItem item : attachments) {
@@ -112,57 +112,47 @@ for (ContainerItem item : attachments) {
 *Mengapa?* Mendeteksi tipe file tanpa ekstraksi efisien untuk aplikasi yang perlu mengarahkan file berdasarkan formatnya.
 
 ### Tips Pemecahan Masalah
-- Pastikan jalur file ZIP benar dan file dapat diakses.  
+- Verifikasi jalur file ZIP benar dan file dapat diakses.  
 - Jika Anda melihat `UnsupportedOperationException`, pastikan versi ZIP Anda didukung oleh GroupDocs.Parser.  
 - Untuk arsip besar, pertimbangkan memproses item dalam batch lebih kecil untuk menjaga penggunaan memori tetap rendah.
 
-## Aplikasi Praktis
-
-1. **Automated Document Processing** – Dengan cepat mengarahkan file masuk ke penangan yang tepat berdasarkan tipe.  
-2. **Data Archiving Solutions** – Mengindeks isi arsip tanpa membongkar, menghemat I/O penyimpanan.  
+## Contoh Penggunaan Umum
+1. **Automated Document Processing** – Cepat mengarahkan file masuk ke penangan yang tepat berdasarkan tipe.  
+2. **Data Archiving Solutions** – Mengindeks isi arsip tanpa membuka, menghemat I/O penyimpanan.  
 3. **Content Management Systems** – Memungkinkan pengguna mengunggah bundel ZIP dan secara otomatis mengklasifikasikan setiap dokumen.
 
 ## Pertimbangan Kinerja
-
-- **Resource Monitoring:** Lacak memori saat mem-parsing arsip besar; tutup `Parser` dengan cepat (try‑with‑resources).  
-- **Java Memory Management:** Sesuaikan garbage collector JVM untuk pekerjaan batch yang berjalan lama.  
-- **Batch Processing:** Proses beberapa file ZIP dalam loop, gunakan kembali satu instance `Parser` bila memungkinkan.
-
-## Kesimpulan
-
-Anda kini memiliki pemahaman yang kuat tentang **java file type detection** di dalam arsip ZIP menggunakan GroupDocs.Parser untuk Java. Kemampuan ini memungkinkan Anda **identify files in zip** dengan cepat, **read zip without extraction**, dan membangun alur kerja dokumen yang lebih cerdas.
-
-**Langkah Selanjutnya:**  
-- Bereksperimen dengan opsi `FileTypeDetectionMode` lainnya untuk kontrol yang lebih granular.  
-- Jelajahi parsing format kontainer lain seperti RAR dan TAR menggunakan API yang sama.
-
----
+- **Pemantauan Sumber Daya:** Lacak memori saat mem-parsing arsip besar; tutup `Parser` segera (try‑with‑resources).  
+- **Manajemen Memori Java:** Sesuaikan garbage collector JVM untuk pekerjaan batch yang berjalan lama.  
+- **Pemrosesan Batch:** Proses beberapa file ZIP dalam loop, gunakan kembali satu instance `Parser` bila memungkinkan.
 
 ## Pertanyaan yang Sering Diajukan
 
-**Q: Bisakah saya menggunakan GroupDocs.Parser untuk format arsip lain selain ZIP?**  
+**Q: Can I use GroupDocs.Parser for other archive formats besides ZIP?**  
 A: Ya, GroupDocs.Parser mendukung RAR, TAR, dan beberapa tipe kontainer lainnya.
 
-**Q: Apa persyaratan sistem untuk menggunakan GroupDocs.Parser?**  
+**Q: What are the system requirements for using GroupDocs.Parser?**  
 A: JDK 8+ yang kompatibel dan IDE standar apa pun (IntelliJ, Eclipse, NetBeans) sudah cukup.
 
-**Q: Bagaimana saya dapat menangani arsip yang sangat besar secara efisien?**  
+**Q: How can I handle very large archives efficiently?**  
 A: Proses arsip dalam batch lebih kecil dan pantau pengaturan memori JVM.
 
-**Q: Apakah dukungan tersedia jika saya mengalami masalah?**  
+**Q: Is support available if I run into issues?**  
 A: Ya, dukungan gratis disediakan melalui [GroupDocs forum](https://forum.groupdocs.com/c/parser).
 
-**Q: Bisakah saya menguji GroupDocs.Parser sebelum membeli lisensi?**  
+**Q: Can I test GroupDocs.Parser before buying a license?**  
 A: Tentu – mulai dengan percobaan gratis untuk menjelajahi semua fitur.
 
 ## Sumber Daya
-- [Dokumentasi:](https://docs.groupdocs.com/parser/java/)
-- [Referensi API:](https://reference.groupdocs.com/parser/java)
-- [Unduhan:](https://releases.groupdocs.com/parser/java/)
-- [Repositori GitHub:](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
-- [Dukungan Gratis:](https://forum.groupdocs.com/c/parser)
-- [Lisensi Sementara:](https://purchase.groupdocs.com/temporary-license/)
+- [Documentation:](https://docs.groupdocs.com/parser/java/)
+- [API Reference:](https://reference.groupdocs.com/parser/java)
+- [Download:](https://releases.groupdocs.com/parser/java/)
+- [GitHub Repository:](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
+- [Free Support:](https://forum.groupdocs.com/c/parser)
+- [Temporary License:](https://purchase.groupdocs.com/temporary-license/)
 
-**Terakhir Diperbarui:** 2025-12-18  
-**Diuji Dengan:** GroupDocs.Parser 25.5 untuk Java  
-**Penulis:** GroupDocs
+---
+
+**Last Updated:** 2026-02-19  
+**Tested With:** GroupDocs.Parser 25.5 for Java  
+**Author:** GroupDocs
