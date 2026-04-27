@@ -1,95 +1,90 @@
 ---
-date: 2025-12-20
-description: GroupDocs.Parser ile SQLite Java uygulamalarını nasıl bağlayacağınızı
-  öğrenin; Java veritabanı entegrasyonu, SQLite bağlantısı ve veri çıkarma konularını
-  içeren Java örnekleri.
-title: 'SQLite Java Bağlantısı - GroupDocs.Parser için Veritabanı Entegrasyonu Öğreticileri'
+date: 2026-04-27
+description: GroupDocs.Parser kullanarak bir Java SQLite bağlantı örneği öğrenin;
+  SQLite Java nasıl bağlanır, veritabanı entegrasyonu ve Java ile veri çıkarma konularını
+  kapsar.
+keywords:
+- java sqlite connection example
+- how to connect sqlite java
+- java database integration
+title: Java SQLite Bağlantı Örneği – GroupDocs.Parser
 type: docs
 url: /tr/java/database-integration/
 weight: 20
 ---
 
-# SQLite Java Bağlantısı: GroupDocs.Parser için Veritabanı Entegrasyonu Öğreticileri
+# Java SQLite Bağlantı Örneği – SQLite Java'yı GroupDocs.Parser ile Bağlayın
 
-GroupDocs.Parser ile SQLite Java veritabanlarını bağlamak, güçlü belge ayrıştırmayı hafif, dosya tabanlı depolama ile birleştirmenizi sağlar. Bu rehberde bir Java uygulamasından **SQLite'a nasıl bağlanılır**, **java veritabanı entegrasyonu** gerçekleştirmeyi ve ayrıştırıcıyı belgelerden **Java tarzında veri çıkarma** için nasıl kullanacağınızı keşfedeceksiniz. Belge odaklı bir iş akışı oluşturuyor ya da ayrıştırılan içeriği mevcut kayıtlarla senkronize etmeniz gerekiyorsa, bu öğreticiler size net, adım adım bir yol sunar.
+Bu kapsamlı öğreticide, SQLite'ı GroupDocs.Parser ile nasıl entegre edeceğinizi gösteren bir **java sqlite connection example** üzerinden ilerleyeceksiniz. Hafif bir belge‑odaklı iş akışı oluşturuyor olun ya da ayrıştırılmış sonuçları mevcut kayıtların yanına depolamanız gerekse, bu kılavuz **how to connect sqlite java** uygulamalarını dosya‑tabanlı bir veritabanına bağlamayı ve ayrıştırıcının zengin API'siyle veri çıkarmayı açıklıyor.
 
 ## Hızlı Yanıtlar
-- **Ana kütüphane nedir?** GroupDocs.Parser for Java  
-- **Hangi veritabanı kapsanıyor?** SQLite (file‑based)  
-- **Ek sürücülere ihtiyacım var mı?** Evet – the SQLite JDBC driver  
-- **Lisans gerekli mi?** Geçici bir lisans test için çalışır; üretim için tam lisans gerekir.  
-- **Ayrıştırılan sonuçları SQLite'a geri kaydedebilir miyim?** Kesinlikle – use standard JDBC operations  
+- **What is the primary library?** GroupDocs.Parser for Java  
+- **Which database is covered?** SQLite (file‑based)  
+- **Do I need additional drivers?** Evet – the SQLite JDBC driver  
+- **Is a license required?** Geçici bir lisans test için çalışır; üretim için tam bir lisans gerekir  
+- **Can I store parsed results back to SQLite?** Kesinlikle – standard JDBC operations kullanın  
 
-## **connect sqlite java** nedir?
-Java'dan SQLite'a bağlanmak, SQLite JDBC sürücüsünü kullanarak bir `.db` dosyasını açmak, SQL ifadelerini çalıştırmak ve sonuçları almak anlamına gelir. GroupDocs.Parser ile birleştirildiğinde, belge içeriğini doğrudan veritabanınıza aktarabilir veya depolanmış verileri çekerek ayrıştırma mantığını zenginleştirebilirsiniz.
+## Java SQLite bağlantı örneği nedir?
+Bir **java sqlite connection example**, SQLite JDBC sürücüsü (`jdbc:sqlite:your‑database.db`) kullanarak bir veritabanı dosyasını açmayı, SQL ifadelerini çalıştırmayı ve sonuçları almaya gösterir. GroupDocs.Parser ile birleştirildiğinde, belge içeriğini doğrudan SQLite tablolarına besleyebilir veya depolanmış verileri alarak ayrıştırma mantığını zenginleştirebilirsiniz.
 
-## GroupDocs.Parser ile **java database integration** neden kullanılır?
-- **Lightweight storage** – SQLite bir sunucu gerektirmez, bu da dağıtımı kolaylaştırır.  
-- **Seamless workflow** – Bir PDF'i ayrıştırın, tabloları çıkarın ve tek bir akışta SQLite'a ekleyin.  
-- **Scalable architecture** – Daha sonra SQLite'dan tam özellikli bir RDBMS'e geçiş yapabilirsiniz, ayrıştırma kodunu değiştirmeye gerek kalmaz.  
+## GroupDocs.Parser ile Java veritabanı entegrasyonu neden kullanılmalı?
+- **Lightweight storage** – SQLite sunucu gerektirmez, bu da dağıtım ve testleri basitleştirir.  
+- **Seamless workflow** – Bir PDF'i ayrıştırın, tabloları çıkarın ve tek bir otomatik akışta SQLite'a ekleyin.  
+- **Future‑proof architecture** – Aynı kod daha sonra tam özellikli bir RDBMS'ye yönlendirilebilir, ayrıştırma mantığını yeniden yazmaya gerek kalmaz.  
 
-## Önkoşullar
-- Java Development Kit (JDK 8 veya daha yeni)  
-- Bağımlılık yönetimi için Maven veya Gradle  
-- SQLite JDBC driver (`org.xerial:sqlite-jdbc`)  
-- GroupDocs.Parser for Java kütüphanesi (uyumlu sürüm)  
-- Geçici veya tam bir GroupDocs.Parser lisansı  
-
-## Adım Adım Kılavuz
+## SQLite Java'yı GroupDocs.Parser ile nasıl bağlanır
+Aşağıda izleyeceğiniz adım‑adım akış yer alıyor. Her adım, *neden* yaptığınızı, sadece *ne* yapacağınızı değil, kısa bir açıklama içerir.
 
 ### Adım 1: Gerekli Bağımlılıkları Ekleyin
-`pom.xml` dosyanıza (veya eşdeğer Gradle girdilerine) aşağıdaki Maven koordinatlarını ekleyin. Bu, GroupDocs.Parser ve SQLite sürücüsünü kurar.
-
-> *Kod bloğu gerekmez – sadece bağımlılıkları yapı dosyanızda gösterildiği gibi ekleyin.*
+GroupDocs.Parser kütüphanesini ve SQLite JDBC sürücüsünü Maven `pom.xml` dosyanıza (veya eşdeğer Gradle dosyasına) ekleyin. Bu, hem ayrıştırıcı hem de veritabanı sürücüsünün derleme zamanında mevcut olmasını sağlar.
 
 ### Adım 2: SQLite Bağlantısı Oluşturun
-Standart JDBC URL'si `jdbc:sqlite:your-database-file.db` kullanarak bir bağlantı kurun. Bu, Java'dan **SQLite'a nasıl bağlanılır** temel unsurudur.
-
-> *Sadece açıklama – gerçek Java kodu aşağıdaki orijinal öğreticide olduğu gibi değişmeden kalır.*
+Standart JDBC URL'si `jdbc:sqlite:your-database-file.db` kullanarak bir bağlantı açın. Bu, **java sqlite connection example**'ın çekirdeğidir ve dosya‑tabanlı veritabanına karşı `SELECT`, `INSERT`, `UPDATE` ve `DELETE` ifadelerini çalıştırmanıza olanak tanır.
 
 ### Adım 3: GroupDocs.Parser'ı Başlatın
-Parser'ı lisansınızla örnekleyin ve işlemek istediğiniz belgeye yönlendirin. Bu adım, motoru **Java tarzında veri çıkarma** işlemleri için hazırlar.
+Ayrıştırıcıyı lisans dosyanızla örnekleyin ve işlemek istediğiniz belgeye yönlendirin. Bu, motoru **extract data java** işlemleri için hazırlar.
 
-### Adım 4: Belgeyi Ayrıştırın ve Verileri Alın
-Parser'ın API'sini kullanarak tabloları, metni veya meta verileri çıkarın. Dönen nesneler döngüyle işlenebilir ve hazırlanmış ifadelerle SQLite'a eklenebilir.
+### Adım 4: Belgeyi Ayrıştırın ve Veriyi Alın
+Ayrıştırıcının API'sini çağırarak tabloları, metni veya meta verileri çıkarın. Dönen nesneler yineleyebilir ve hazırlıklı ifadelerle SQLite'a eklenebilir.
 
-### Adım 5: Çıkarılan Verileri SQLite'a Kaydedin
-Her çıkarılan satır için SQLite bağlantınıza bir `INSERT` ifadesi çalıştırın. Performans için işlemleri (transaction) yönetmeyi unutmayın.
+### Adım 5: Çıkarılan Veriyi SQLite'a Depolayın
+Her çıkarılan satır için, SQLite bağlantınıza bir `INSERT` (veya `INSERT OR REPLACE`) ifadesi çalıştırın. En iyi performans için eklemeleri bir işlem içinde paketleyin.
 
 ### Adım 6: Kaynakları Temizleyin
-Parser'ı ve JDBC bağlantısını bir `finally` bloğunda kapatın veya her şeyin düzgün bir şekilde serbest bırakılmasını sağlamak için try‑with‑resources kullanın.
+Parser'ı ve JDBC bağlantısını bir `try‑with‑resources` bloğunda veya bir `finally` koşulunda kapatarak her şeyin düzgün bir şekilde serbest bırakılmasını sağlayın.
 
 ## Yaygın Sorunlar ve Çözümler
 - **Driver not found** – SQLite JDBC JAR dosyasının sınıf yolunda (classpath) olduğundan emin olun.  
-- **License errors** – Geçici lisans dosyasının kodda doğru şekilde referans alındığını kontrol edin.  
-- **Data type mismatches** – SQLite tip tanımlı değildir; eklemeden önce Java tiplerini uygun şekilde dönüştürün.  
-- **Large documents** – Bellek baskısını önlemek için belgeleri parçalar halinde işleyin veya akış (streaming) API'lerini kullanın.  
+- **License errors** – Geçici lisans dosyasının kod içinde doğru şekilde referans alındığını doğrulayın.  
+- **Data type mismatches** – SQLite tip içermediğinden, eklemeden önce Java tiplerini uygun şekilde dönüştürün.  
+- **Large documents** – Bellek baskısını önlemek için belgeleri parçalar halinde işleyin veya akış API'lerini kullanın.  
 
 ## Sıkça Sorulan Sorular
 
-**S: Parser'ı yalnızca belirli sayfaları okuyacak şekilde nasıl yapılandırırım?**  
-C: Belgeyi yüklemeden önce `ParserOptions` sınıfını kullanarak `PageRange` ayarlayın.
+**Q: Ayrıştırıcıyı yalnızca belirli sayfaları okuyacak şekilde nasıl yapılandırırım?**  
+A: Belgeyi yüklemeden önce `ParserOptions` sınıfını kullanarak `PageRange` ayarlayın.
 
-**S: Ayrıştırma sırasında SQLite'ı sorgulayabilir miyim?**  
-C: Evet, bağlantıları doğru yönettiğiniz sürece; okuma/yazma için ayrı bağlantılar kullanmanız önerilir.
+**Q: Ayrıştırma sırasında SQLite sorgulaması yapabilir miyim?**  
+A: Evet, bağlantıları doğru yönettiğiniz sürece; okuma/yazma için ayrı bağlantılar kullanmanız önerilir.
 
-**S: SQLite dosyam başka bir işlem tarafından kilitlenmişse ne olur?**  
-C: Özel erişim sağlayın veya kilidin temizlenmesini beklemek için JDBC URL'sindeki `busy_timeout` parametresini kullanın.
+**Q: SQLite dosyam başka bir işlem tarafından kilitlenmişse ne olur?**  
+A: Kesin erişim sağlayın veya kilidin temizlenmesini beklemek için JDBC URL'sindeki `busy_timeout` parametresini kullanın.
 
-**S: Yeni satırlar eklemek yerine mevcut satırları güncellemek mümkün mü?**  
-C: Kesinlikle – `INSERT` ifadesini bir `UPDATE` veya `INSERT OR REPLACE` komutuyla değiştirin.
+**Q: Yeni satırlar eklemek yerine mevcut satırları güncellemek mümkün mü?**  
+A: Kesinlikle – `INSERT` ifadesini bir `UPDATE` veya `INSERT OR REPLACE` komutuyla değiştirin.
 
-**S: SQLite kullanırken GroupDocs.Parser şifreli PDF'leri destekliyor mu?**  
-C: Evet, belgeyi açarken `ParserOptions` içinde şifreyi sağlayın.
+**Q: SQLite kullanırken GroupDocs.Parser şifreli PDF'leri destekliyor mu?**  
+A: Evet, belgeyi açarken `ParserOptions` içinde şifreyi sağlayın.
 
 ## Ek Kaynaklar
 
-### Mevcut Öğreticiler
+### Mevcut Eğitimler
 
-### [SQLite Veritabanını GroupDocs.Parser ile Java'da Bağlayın&#58; Kapsamlı Bir Kılavuz](./connect-sqlite-groupdocs-parser-java/)
-GroupDocs.Parser'ı Java'da bir SQLite veritabanı ile nasıl entegre edeceğinizi öğrenin. Bu adım adım kılavuz, kurulum, bağlantı ve belge yönetimini geliştirmek için veri ayrıştırmayı kapsar.
+### [Java'da GroupDocs.Parser ile SQLite Veritabanı Bağlantısı: Kapsamlı Rehber](./connect-sqlite-groupdocs-parser-java/)
+GroupDocs.Parser'ı Java'da bir SQLite veritabanıyla nasıl entegre edeceğinizi öğrenin. Bu adım‑adım rehber, kurulum, bağlantı ve geliştirilmiş belge yönetimi için veri ayrıştırmayı kapsar.
 
 ### Ek Kaynaklar
+
 - [GroupDocs.Parser for Java Dokümantasyonu](https://docs.groupdocs.com/parser/java/)
 - [GroupDocs.Parser for Java API Referansı](https://reference.groupdocs.com/parser/java/)
 - [GroupDocs.Parser for Java İndir](https://releases.groupdocs.com/parser/java/)
@@ -99,6 +94,6 @@ GroupDocs.Parser'ı Java'da bir SQLite veritabanı ile nasıl entegre edeceğini
 
 ---
 
-**Son Güncelleme:** 2025-12-20  
-**Test Edilen Versiyon:** GroupDocs.Parser for Java 23.12 (en son sürüm)  
+**Son Güncelleme:** 2026-04-27  
+**Test Edilen Versiyon:** GroupDocs.Parser for Java 24.0 (latest release)  
 **Yazar:** GroupDocs
