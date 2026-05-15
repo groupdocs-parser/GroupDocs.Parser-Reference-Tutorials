@@ -1,47 +1,44 @@
 ---
-date: '2025-12-18'
-description: Scopri come estrarre in modo efficiente i codici a barre dai PDF usando
-  GroupDocs Parser per Java ed esportare i dati in formato XML.
+date: '2026-02-19'
+description: Scopri come leggere i codici QR nei PDF Java usando GroupDocs.Parser
+  e esportare i dati del codice a barre in XML.
 keywords:
 - Java PDF barcode extraction
 - GroupDocs.Parser for Java
 - XML export from PDF
-title: Estrazione efficiente di codici a barre da PDF Java e esportazione XML con
-  groupdocs parser Java
+title: Come leggere i codici QR nei PDF Java con GroupDocs.Parser
 type: docs
 url: /it/java/barcode-extraction/java-pdf-barcode-extraction-xml-export-groupdocs-parser/
 weight: 1
 ---
 
-# Estrazione Efficiente di Codici a Barre da PDF Java e Esportazione XML con groupdocs parser java
+# Come leggere i codici QR nei PDF Java con GroupDocs.Parser
 
-Nel panorama digitale odierno, estrarre informazioni come i codici a barre dai documenti è fondamentale in vari settori come la gestione dell'inventario, la logistica e il retail. Questo tutorial ti guiderà nell'utilizzo di **groupdocs parser java** per estrarre i dati dei codici a barre da PDF ed esportarli in un file XML.
+In moderni flussi di lavoro aziendali, **come leggere QR** codici dai documenti PDF può fare la differenza tra un collo di bottiglia di inserimento dati manuale e una pipeline completamente automatizzata. Che tu stia gestendo manifesti di spedizione, ricevute al dettaglio o cataloghi di prodotto, estrarre le informazioni QR in modo rapido e affidabile è essenziale. Questo tutorial ti guida nell'uso di **GroupDocs.Parser for Java** per leggere i codici QR (e altri barcode) dai PDF e esportare i risultati in un file XML pulito che i sistemi a valle possono consumare.
 
-## Risposte Rapide
-- **Cosa fa groupdocs parser java?** Legge i file PDF ed estrae dati strutturati come i codici a barre.  
-- **Come estrarre i codici a barre?** Configurando `BarcodeOptions` e chiamando `parser.getBarcodes()`.  
-- **Posso leggere i codici QR java?** Sì—imposta il tipo di codice a barre su `"QR"` nelle opzioni.  
-- **Ho bisogno di una licenza?** Una versione di prova funziona per i test; è necessaria una licenza commerciale per la produzione.  
+## Risposte rapide
+- **Cosa fa GroupDocs.Parser for Java?** Legge file PDF ed estrae dati strutturati come i barcode.  
+- **Come estrarre i codici QR?** Configurando `BarcodeOptions` con il tipo QR e chiamando `parser.getBarcodes()`.  
+- **Posso leggere i codici QR in Java?** Sì—imposta il tipo di barcode su `"QR"` nelle opzioni.  
+- **È necessaria una licenza?** Una versione di prova funziona per i test; è richiesta una licenza commerciale per la produzione.  
 - **Quale versione di Java è richiesta?** Si consiglia Java 8 o superiore.
 
+## Cos’è “come leggere QR” nel contesto dell’elaborazione PDF?
+Leggere i codici QR dai PDF significa scansionare ogni pagina alla ricerca di grafiche codificate QR, decodificare i dati incorporati e restituirli in un formato adatto al programma. GroupDocs.Parser astrae l'analisi a basso livello dell'immagine così puoi concentrarti sulla logica di business anziché sulla manipolazione dei pixel.
+
+## Perché usare GroupDocs.Parser per l’estrazione di QR?
+- **Alta precisione:** Gli algoritmi di elaborazione immagine integrati gestiscono scansioni a bassa risoluzione.  
+- **Opzioni di performance:** Scegli `QualityMode.Low` per la velocità o `QualityMode.High` per la massima precisione.  
+- **Supporto cross‑formato:** Funziona con PDF, immagini e persino documenti Office, così puoi riutilizzare lo stesso codice per diversi tipi di file.
+
 ## Prerequisiti
-### Librerie e Dipendenze Richieste
-Per seguire questo tutorial, avrai bisogno di:
-- **GroupDocs.Parser for Java** library (versione 25.5 o successiva).
-- Familiarità di base con Maven per la gestione delle dipendenze.
-- Un ambiente di sviluppo Java configurato sulla tua macchina.
+- **GroupDocs.Parser for Java** (versione 25.5 o successiva).  
+- Maven o download manuale del JAR.  
+- Ambiente di sviluppo Java 8+ (IntelliJ IDEA, Eclipse o qualsiasi editor).  
 
-### Requisiti per la Configurazione dell'Ambiente
-Assicurati di avere installato quanto segue:
-- Java JDK (JDK 8 o superiore consigliato).
-- Un IDE come IntelliJ IDEA, Eclipse, o qualsiasi editor di testo a tua scelta.
-- Maven se scegli di gestire le dipendenze tramite esso.
-
-## Configurazione di GroupDocs.Parser per Java
-Iniziare con **groupdocs parser java** è semplice. Puoi usare Maven oppure scaricare la libreria direttamente dal loro sito web.
-
+## Configurare GroupDocs.Parser for Java
 ### Utilizzo di Maven
-Se stai usando uno strumento di build come Maven, aggiungi la seguente configurazione nel tuo `pom.xml`:
+Aggiungi il repository GroupDocs e la dipendenza al tuo `pom.xml`:
 
 ```xml
 <repositories>
@@ -61,16 +58,16 @@ Se stai usando uno strumento di build come Maven, aggiungi la seguente configura
 </dependencies>
 ```
 
-### Download Diretto
-In alternativa, scarica l'ultima versione da [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
+### Download diretto
+In alternativa, scarica l'ultimo JAR da [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
-#### Passaggi per Ottenere la Licenza
-- **Prova Gratuita:** Inizia con una prova gratuita di 30 giorni per esplorare tutte le funzionalità.  
-- **Licenza Temporanea:** Ottieni una licenza temporanea per una valutazione estesa.  
-- **Acquisto:** Per l'uso in produzione, acquista una licenza commerciale.
+#### Passaggi per l’acquisizione della licenza
+- **Prova gratuita:** prova di 30 giorni con set completo di funzionalità.  
+- **Licenza temporanea:** richiedi una chiave temporanea per una valutazione estesa.  
+- **Acquisto:** ottieni una licenza commerciale per le distribuzioni in produzione.
 
-### Inizializzazione e Configurazione di Base
-Una volta che la libreria è pronta, inizializzala nel tuo progetto Java. Ecco come puoi configurare una semplice istanza di `Parser`:
+### Inizializzazione e configurazione di base
+Crea un'istanza `Parser` che punti al PDF da analizzare:
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -87,13 +84,9 @@ class BarcodeExtractor {
 }
 ```
 
-## Utilizzo di groupdocs parser java per l'Estrazione di Codici a Barre
-### Estrazione di Codici a Barre da un Documento PDF
-#### Panoramica
-Questa funzionalità ti consente di identificare ed estrarre i dati dei codici a barre incorporati nei tuoi documenti PDF. È particolarmente utile quando devi **come estrarre i codici a barre** da manifesti di spedizione o ricevute di vendita al dettaglio.
-
-#### Passo 1: Verifica del Supporto del Documento
-Prima, assicurati che il documento supporti l'estrazione dei codici a barre:
+## Come leggere i codici QR nei PDF Java usando GroupDocs.Parser
+### Passo 1: Verifica del supporto ai barcode
+Prima di tentare l'estrazione, conferma che il formato del documento supporti la scansione dei barcode:
 
 ```java
 if (!parser.getFeatures().isBarcodes()) {
@@ -102,10 +95,10 @@ if (!parser.getFeatures().isBarcodes()) {
 }
 ```
 
-*Spiegazione:* Questa riga verifica se il tipo di documento è compatibile con l'estrazione dei codici a barre. In caso contrario, termina in modo pulito per evitare errori.
+*Spiegazione:* questa guardia previene errori di runtime su tipi di file non supportati.
 
-#### Passo 2: Configurazione delle Opzioni del Codice a Barre
-Configura lo scanner per cercare i codici QR (o qualsiasi altro formato necessario). È qui che entra in gioco **read qr codes java**:
+### Passo 2: Configura le opzioni del barcode (Read QR codes Java)
+Imposta la qualità della scansione e specifica che ti interessano i codici QR:
 
 ```java
 import com.groupdocs.parser.options.BarcodeOptions;
@@ -114,10 +107,10 @@ import com.groupdocs.parser.options.QualityMode;
 BarcodeOptions options = new BarcodeOptions(QualityMode.Low, QualityMode.Low, "QR");
 ```
 
-*Spiegazione:* Qui definiamo la modalità di qualità per la scansione dei codici a barre. Il parametro `"QR"` specifica che stiamo cercando di estrarre specificamente i codici QR.
+*Spiegazione:* `QualityMode.Low` velocizza l'elaborazione; passa a `High` se ti serve maggiore accuratezza. L'argomento `"QR"` indica al motore di cercare solo barcode di tipo QR.
 
-#### Passo 3: Estrarre i Codici a Barre
-Ora estrai i dati dei codici a barre da ogni pagina:
+### Passo 3: Estrai i dati QR
+Recupera le informazioni del barcode da ogni pagina del PDF:
 
 ```java
 import com.groupdocs.parser.data.PageBarcodeArea;
@@ -126,14 +119,11 @@ import java.util.List;
 Iterable<PageBarcodeArea> barcodes = parser.getBarcodes(options);
 ```
 
-*Spiegazione:* Questa riga estrae le aree dei codici a barre da ogni pagina del tuo documento, in base alle opzioni definite.
+*Spiegazione:* `parser.getBarcodes` restituisce una collezione iterabile di oggetti `PageBarcodeArea`, ognuno contenente il valore QR decodificato e la sua posizione nella pagina.
 
-### Esportazione dei Dati in un File XML
-#### Panoramica
-Dopo l'estrazione, avrai bisogno di un formato strutturato per l'elaborazione successiva. XML funziona bene con molti sistemi aziendali.
-
-#### Passo 1: Inizializzare XmlExporter
-Crea un'istanza dell'esportatore:
+## Esportare i dati estratti in XML
+### Passo 4: Inizializzare l’exporter XML
+Crea un exporter che trasformerà la collezione di barcode in un file XML ben strutturato:
 
 ```java
 import com.groupdocs.parser.export.XmlExporter;
@@ -141,48 +131,55 @@ import com.groupdocs.parser.export.XmlExporter;
 XmlExporter exporter = new XmlExporter();
 ```
 
-*Spiegazione:* `XmlExporter` viene inizializzato per gestire la conversione dei dati dei codici a barre in un file XML.
+*Spiegazione:* `XmlExporter` gestisce la serializzazione degli oggetti barcode in XML standard, pronto per l’integrazione con sistemi ERP o di inventario.
 
-#### Passo 2: Esportare i Codici a Barre in XML
-Salva i dati estratti:
+### Passo 5: Scrivi il file XML
+Salva le informazioni QR estratte su disco:
 
 ```java
 exporter.exportBarcodes(barcodes, "YOUR_OUTPUT_DIRECTORY/data.xml");
 ```
 
-*Spiegazione:* Questa riga esegue l'operazione di esportazione, salvando tutti i codici a barre estratti in `data.xml` nella directory di output specificata.
+*Spiegazione:* il file `data.xml` risultante contiene un elemento `<Barcode>` per ogni codice QR, con attributi per numero di pagina, coordinate e valore decodificato.
 
-## Applicazioni Pratiche
-1. **Gestione dell'Inventario:** Aggiorna automaticamente i sistemi di inventario estraendo i codici a barre dei prodotti dai documenti di spedizione in arrivo.  
-2. **Monitoraggio della Catena di Fornitura:** Traccia spedizioni e pacchi con i dati dei codici a barre per una gestione logistica efficiente.  
-3. **Operazioni Retail:** Migliora il servizio clienti scansionando rapidamente i codici QR su ricevute o etichette di prodotto per ottenere informazioni dettagliate.
+## Applicazioni pratiche
+1. **Gestione inventario:** Popola automaticamente i database di stock leggendo i tag QR sui PDF di spedizione in entrata.  
+2. **Visibilità della supply‑chain:** Traccia i pacchi in tempo reale estraendo gli identificatori QR incorporati nei documenti logistici.  
+3. **Ricevute al dettaglio:** Recupera informazioni promozionali o di garanzia dai codici QR stampati sulle ricevute digitali.
 
-## Considerazioni sulle Prestazioni
-Per mantenere **groupdocs parser java** funzionante senza problemi su PDF di grandi dimensioni:
-- Gestisci la memoria con attenzione; elabora le pagine in streaming se i documenti sono enormi.  
-- Scegli il `QualityMode` appropriato—`Low` per la velocità, `High` per la precisione.  
-- Mantieni la libreria aggiornata per beneficiare delle correzioni di prestazioni.
+## Considerazioni sulle performance
+- **Gestione della memoria:** Per PDF molto grandi, elabora le pagine in streaming anziché caricare l’intero file in memoria.  
+- **Selezione di QualityMode:** Usa `Low` per elaborazioni di massa; passa a `High` quando lavori con scansioni a bassa risoluzione.  
+- **Aggiornamenti della libreria:** Mantieni GroupDocs.Parser aggiornato per beneficiare delle ultime migliorie di performance e correzioni di bug.
 
-## Conclusione
-Seguendo questa guida, hai imparato con successo come estrarre i codici a barre da PDF ed esportarli come XML usando **groupdocs parser java**. Questa capacità può migliorare drasticamente i flussi di lavoro di ingestione dati nei settori dell'inventario, della logistica e del retail.
+## Problemi comuni e risoluzione
+| Sintomo | Causa probabile | Soluzione |
+|---------|-----------------|-----------|
+| Nessun barcode restituito | Tipo di barcode errato specificato | Cambia `"QR"` con il tipo appropriato (es. `"CODE_128"`). |
+| Errore out‑of‑memory su PDF grandi | Documento caricato interamente | Elabora le pagine singolarmente o aumenta la dimensione dell'heap JVM (`-Xmx2g`). |
+| File XML vuoto | `exportBarcodes` chiamato prima dell'estrazione | Assicurati che `parser.getBarcodes(options)` restituisca dati prima di esportare. |
 
-**Passi Successivi:** Esplora funzionalità aggiuntive come l'estrazione di testo, l'analisi di tabelle o l'integrazione dell'output con il tuo sistema ERP.
+## Domande frequenti
+**D: Posso estrarre barcode da file immagine usando GroupDocs.Parser?**  
+R: Sì, la libreria supporta l'estrazione di barcode da formati immagine comuni (PNG, JPEG, TIFF).
 
-## Domande Frequenti
-**Q: Posso estrarre i codici a barre dalle immagini usando GroupDocs.Parser?**  
-A: Sì, la libreria supporta l'estrazione di codici a barre anche da file immagine.
+**D: Quali formati di barcode sono riconosciuti?**  
+R: QR, Code 39, Code 128, DataMatrix, PDF417 e molti altri. Consulta la documentazione API per l'elenco completo.
 
-**Q: Quali tipi di codici a barre possono essere estratti?**  
-A: La libreria supporta vari formati tra cui QR code, Code 39, Code 128 e molti altri.
+**D: Come gestire PDF protetti da password?**  
+R: Passa la password al costruttore `Parser`: `new Parser(filePath, "password")`.
 
-**Q: Come gestire efficientemente grandi documenti PDF?**  
-A: Elabora il documento a blocchi o utilizza il multi‑threading per ridurre la pressione sulla memoria.
+**D: La versione di prova è sufficiente per i test di produzione?**  
+R: La versione di prova fornisce tutte le funzionalità ma aggiunge un watermark ai dati estratti. Per la produzione, acquista una licenza commerciale.
 
-**Q: GroupDocs.Parser è gratuito per uso commerciale?**  
-A: È disponibile una versione di prova; è necessaria una licenza commerciale per le implementazioni in produzione.
+**D: Cosa succede se il mio PDF contiene sia QR sia barcode lineari?**  
+R: Crea più istanze `BarcodeOptions` oppure passa un array di tipi per scansionare tutti i formati necessari in un unico passaggio.
 
-**Q: Cosa devo fare se il formato del mio documento non è supportato?**  
-A: Verifica di utilizzare l'ultima versione della libreria e consulta la documentazione per i formati supportati.
+---
+
+**Ultimo aggiornamento:** 2026-02-19  
+**Testato con:** GroupDocs.Parser 25.5  
+**Autore:** GroupDocs  
 
 ## Risorse
 - [GroupDocs.Parser Java Documentation](https://docs.groupdocs.com/parser/java/)
@@ -190,10 +187,4 @@ A: Verifica di utilizzare l'ultima versione della libreria e consulta la documen
 - [Download GroupDocs.Parser](https://releases.groupdocs.com/parser/java/)
 - [GitHub Repository](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
 - [Free Support Forum](https://forum.groupdocs.com/c/parser)
-- [Temporary License Application](https://purchase.groupdocs.com/temporary-license/) 
-
----  
-
-**Last Updated:** 2025-12-18  
-**Tested With:** GroupDocs.Parser 25.5  
-**Author:** GroupDocs
+- [Temporary License Application](https://purchase.groupdocs.com/temporary-license/)
