@@ -1,17 +1,18 @@
 ---
-title: "How to Set License from Stream in GroupDocs.Parser for Java&#58; A Comprehensive Guide"
-description: "Learn how to set license from an InputStream using GroupDocs.Parser for Java. This guide shows how to set license efficiently and enhances your document parsing workflow."
-date: "2026-01-11"
-weight: 1
-url: "/java/getting-started/groupdocs-parser-java-set-license-stream/"
+date: '2026-01-11'
+description: GroupDocs.Parser for Java를 사용하여 InputStream에서 라이선스를 설정하는 방법을 배우세요. 이
+  가이드는 라이선스를 효율적으로 설정하는 방법을 보여주며 문서 파싱 워크플로를 향상시킵니다.
 keywords:
 - Set license from stream with GroupDocs.Parser for Java
 - GroupDocs.Parser for Java setup
 - Java document parsing
+title: 'Java용 GroupDocs.Parser에서 스트림으로 라이선스 설정하는 방법: 포괄적인 가이드'
 type: docs
+url: /ko/java/getting-started/groupdocs-parser-java-set-license-stream/
+weight: 1
 ---
 
-# How to Set License from Stream in GroupDocs.Parser for Java
+# 스트림에서 라이선스 설정하기 - GroupDocs.Parser for Java
 
 If you’re looking for **how to set license** from a stream while working with GroupDocs.Parser for Java, you’ve come to the right place. In this guide we’ll walk through the entire process, from project setup to the actual code that loads the license via an `InputStream`. By the end, you’ll see how to set license efficiently and keep your parsing workflow smooth.
 
