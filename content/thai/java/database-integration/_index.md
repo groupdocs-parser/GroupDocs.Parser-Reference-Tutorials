@@ -1,104 +1,96 @@
 ---
-date: 2025-12-20
-description: เรียนรู้วิธีเชื่อมต่อแอปพลิเคชัน Java กับ SQLite ด้วย GroupDocs.Parser
-  ครอบคลุมการบูรณาการฐานข้อมูล Java วิธีเชื่อมต่อ SQLite และตัวอย่าง Java สำหรับการดึงข้อมูล
-title: 'เชื่อมต่อ SQLite กับ Java - บทเรียนการบูรณาการฐานข้อมูลสำหรับ GroupDocs.Parser'
+date: 2026-04-27
+description: เรียนรู้ตัวอย่างการเชื่อมต่อ Java กับ SQLite โดยใช้ GroupDocs.Parser
+  ครอบคลุมวิธีการเชื่อมต่อ SQLite กับ Java, การรวมฐานข้อมูล, และการดึงข้อมูลด้วย Java.
+keywords:
+- java sqlite connection example
+- how to connect sqlite java
+- java database integration
+title: ตัวอย่างการเชื่อมต่อ Java กับ SQLite – GroupDocs.Parser
 type: docs
 url: /th/java/database-integration/
 weight: 20
 ---
 
-# เชื่อมต่อ SQLite Java: บทเรียนการรวมฐานข้อมูลสำหรับ GroupDocs.Parser
+# ตัวอย่างการเชื่อมต่อ Java SQLite – เชื่อมต่อ SQLite Java กับ GroupDocs.Parser
 
-การเชื่อมต่อฐานข้อมูล SQLite Java กับ GroupDocs.Parser ช่วยให้คุณรวมการแยกเอกสารที่มีประสิทธิภาพกับการจัดเก็บแบบไฟล์เบา ๆ ในคู่มือฉบับนี้คุณจะได้เรียนรู้ **วิธีเชื่อมต่อ SQLite** จากแอปพลิเคชัน Java, ทำ **การรวมฐานข้อมูล Java**, และใช้ parser เพื่อ **ดึงข้อมูลแบบ Java** จากเอกสารเข้าสู่ตารางของคุณ ไม่ว่าคุณจะสร้างเวิร์กโฟลว์ที่ขับเคลื่อนด้วยเอกสารหรือจำเป็นต้องซิงโครไนซ์เนื้อหาที่แยกออกกับบันทึกที่มีอยู่แล้ว บทเรียนเหล่านี้จะให้เส้นทางที่ชัดเจนและเป็นขั้นตอนต่อขั้นตอน
-
-## คำตอบอย่างรวดเร็ว
+## คำตอบด่วน
 - **ไลบรารีหลักคืออะไร?** GroupDocs.Parser for Java  
-- **ฐานข้อมูลที่ครอบคลุมคืออะไร?** SQLite (แบบไฟล์)  
-- **ต้องการไดรเวอร์เพิ่มเติมหรือไม่?** ใช่ – ไดรเวอร์ SQLite JDBC  
-- **ต้องมีลิขสิทธิ์หรือไม่?** ลิขสิทธิ์ชั่วคราวใช้สำหรับการทดสอบ; ต้องมีลิขสิทธิ์เต็มสำหรับการใช้งานจริง  
-- **สามารถเก็บผลลัพธ์ที่แยกออกกลับไปยัง SQLite ได้หรือไม่?** แน่นอน – ใช้การดำเนินการ JDBC มาตรฐาน  
+- **ฐานข้อมูลที่ครอบคลุมคืออะไร?** SQLite (file‑based)  
+- **ต้องการไดรเวอร์เพิ่มเติมหรือไม่?** Yes – the SQLite JDBC driver  
+- **ต้องการใบอนุญาตหรือไม่?** A temporary license works for testing; a full license is needed for production  
+- **ฉันสามารถเก็บผลลัพธ์ที่แยกวิเคราะห์กลับไปยัง SQLite ได้หรือไม่?** Absolutely – use standard JDBC operations  
 
-## **connect sqlite java** คืออะไร?
-การเชื่อมต่อ SQLite จาก Java หมายถึงการใช้ไดรเวอร์ SQLite JDBC เพื่อเปิดไฟล์ `.db` รันคำสั่ง SQL และดึงผลลัพธ์ เมื่อจับคู่กับ GroupDocs.Parser คุณสามารถป้อนเนื้อหาเอกสารโดยตรงเข้าสู่ฐานข้อมูลของคุณหรือดึงข้อมูลที่เก็บไว้เพื่อเสริมตรรกะการแยกได้
+## ตัวอย่างการเชื่อมต่อ java sqlite คืออะไร?
+ตัวอย่าง **java sqlite connection example** แสดงการใช้ SQLite JDBC driver (`jdbc:sqlite:your‑database.db`) เพื่อเปิดไฟล์ฐานข้อมูล, รันคำสั่ง SQL, และดึงผลลัพธ์ออกมา เมื่อรวมกับ GroupDocs.Parser คุณสามารถป้อนเนื้อหาเอกสารโดยตรงลงในตาราง SQLite หรือดึงข้อมูลที่เก็บไว้เพื่อเสริมตรรกะการแยกวิเคราะห์  
 
-## ทำไมต้องใช้ **java database integration** กับ GroupDocs.Parser?
-- **การจัดเก็บแบบเบา** – SQLite ไม่ต้องการเซิร์ฟเวอร์ ทำให้การปรับใช้เป็นเรื่องง่าย  
-- **เวิร์กโฟลว์ไร้รอยต่อ** – แยก PDF, ดึงตาราง, แล้วแทรกลงใน SQLite ในขั้นตอนเดียว  
-- **สถาปัตยกรรมที่ขยายได้** – สามารถย้ายจาก SQLite ไปยัง RDBMS ที่เต็มรูปแบบในภายหลังโดยไม่ต้องเปลี่ยนโค้ดการแยก  
+## ทำไมต้องใช้การบูรณาการฐานข้อมูล java กับ GroupDocs.Parser?
+- **Lightweight storage** – SQLite ไม่ต้องการเซิร์ฟเวอร์ ทำให้การปรับใช้และการทดสอบเป็นเรื่องง่าย  
+- **Seamless workflow** – แยกวิเคราะห์ PDF, ดึงตาราง, และแทรกลงใน SQLite ในขั้นตอนเดียวที่อัตโนมัติ  
+- **Future‑proof architecture** – โค้ดเดียวกันสามารถชี้ไปยัง RDBMS ที่เต็มรูปแบบในภายหลังโดยไม่ต้องเขียนตรรกะการแยกวิเคราะห์ใหม่  
 
-## ข้อกำหนดเบื้องต้น
-- Java Development Kit (JDK 8 หรือใหม่กว่า)  
-- Maven หรือ Gradle สำหรับการจัดการ dependencies  
-- ไดรเวอร์ SQLite JDBC (`org.xerial:sqlite-jdbc`)  
-- ไลบรารี GroupDocs.Parser for Java (เวอร์ชันที่เข้ากันได้)  
-- ลิขสิทธิ์ GroupDocs.Parser ชั่วคราวหรือเต็ม  
-
-## คู่มือขั้นตอนต่อขั้นตอน
+## วิธีเชื่อมต่อ sqlite java กับ GroupDocs.Parser
+ด้านล่างเป็นขั้นตอนแบบทีละขั้นตอนที่คุณจะทำตาม แต่ละขั้นตอนรวมคำอธิบายสั้น ๆ เพื่อให้คุณเข้าใจ *ทำไม* คุณทำเช่นนั้น ไม่ใช่แค่ *ทำอะไร*  
 
 ### ขั้นตอนที่ 1: เพิ่ม Dependencies ที่จำเป็น
-ใส่พิกัด Maven ต่อไปนี้ในไฟล์ `pom.xml` ของคุณ (หรือรายการที่เทียบเท่าใน Gradle) เพื่อกำหนดค่า GroupDocs.Parser และไดรเวอร์ SQLite
-
-> *ไม่ต้องใช้บล็อกโค้ด – เพียงเพิ่ม dependencies ตามที่แสดงในไฟล์ build ของคุณ*
+เพิ่มไลบรารี GroupDocs.Parser และ SQLite JDBC driver ไปยัง `pom.xml` ของ Maven ของคุณ (หรือไฟล์ Gradle ที่เทียบเท่า) เพื่อให้แน่ใจว่าตัว parser และไดรเวอร์ฐานข้อมูลพร้อมใช้งานในขั้นตอนคอมไพล์  
 
 ### ขั้นตอนที่ 2: สร้างการเชื่อมต่อ SQLite
-สร้างการเชื่อมต่อโดยใช้ URL JDBC มาตรฐาน `jdbc:sqlite:your-database-file.db` นี่คือหัวใจของ **วิธีเชื่อมต่อ SQLite** จาก Java
-
-> *อธิบายเท่านั้น – โค้ด Java จริงยังคงเหมือนเดิมจากบทแนะนำต้นฉบับที่ลิงก์ด้านล่าง*
+ใช้ JDBC URL มาตรฐาน `jdbc:sqlite:your-database-file.db` เพื่อเปิดการเชื่อมต่อ นี่คือหัวใจของ **java sqlite connection example** และทำให้คุณสามารถรันคำสั่ง `SELECT`, `INSERT`, `UPDATE`, และ `DELETE` กับฐานข้อมูลแบบไฟล์  
 
 ### ขั้นตอนที่ 3: เริ่มต้น GroupDocs.Parser
-สร้างอินสแตนซ์ของ parser ด้วยลิขสิทธิ์ของคุณและชี้ไปยังเอกสารที่ต้องการประมวลผล ขั้นตอนนี้เตรียมเอนจินสำหรับการทำ **extract data java**  
+สร้างอินสแตนซ์ของ parser ด้วยไฟล์ใบอนุญาตของคุณและชี้ไปยังเอกสารที่ต้องการประมวลผล เพื่อเตรียมเครื่องมือสำหรับการดำเนินการ **extract data java**  
 
-### ขั้นตอนที่ 4: แยกเอกสารและดึงข้อมูล
-ใช้ API ของ parser เพื่อดึงตาราง, ข้อความ หรือเมตาดาต้า วัตถุที่คืนค่ามาอาจวนลูปและแทรกลงใน SQLite ด้วย prepared statements  
+### ขั้นตอนที่ 4: แยกวิเคราะห์เอกสารและดึงข้อมูล
+เรียก API ของ parser เพื่อดึงตาราง, ข้อความ หรือเมตาดาต้า วัตถุที่คืนค่ามาสามารถวนลูปและแทรกลงใน SQLite ด้วย prepared statements  
 
-### ขั้นตอนที่ 5: เก็บข้อมูลที่แยกออกลงใน SQLite
-สำหรับแต่ละแถวที่แยกออก ให้ดำเนินการ `INSERT` ต่อการเชื่อมต่อ SQLite ของคุณ อย่าลืมจัดการ transaction เพื่อประสิทธิภาพ  
+### ขั้นตอนที่ 5: เก็บข้อมูลที่ดึงออกมาไว้ใน SQLite
+สำหรับแต่ละแถวที่ดึงออกมา ให้รันคำสั่ง `INSERT` (หรือ `INSERT OR REPLACE`) กับการเชื่อมต่อ SQLite ของคุณ ห่อหุ้มการแทรกใน transaction เพื่อประสิทธิภาพสูงสุด  
 
 ### ขั้นตอนที่ 6: ทำความสะอาดทรัพยากร
-ปิด parser และการเชื่อมต่อ JDBC ในบล็อก `finally` หรือใช้ try‑with‑resources เพื่อให้แน่ใจว่าทุกอย่างถูกปล่อยอย่างถูกต้อง  
+ปิด parser และการเชื่อมต่อ JDBC ในบล็อก `try‑with‑resources` หรือใน clause `finally` เพื่อให้แน่ใจว่าทุกอย่างถูกปล่อยอย่างเหมาะสม  
 
-## ปัญหาที่พบบ่อยและวิธีแก้
-- **ไม่พบไดรเวอร์** – ตรวจสอบว่า JAR ของ SQLite JDBC อยู่ใน classpath  
-- **ข้อผิดพลาดลิขสิทธิ์** – ตรวจสอบว่าไฟล์ลิขสิทธิ์ชั่วคราวอ้างอิงอย่างถูกต้องในโค้ด  
-- **ประเภทข้อมูลไม่ตรงกัน** – SQLite ไม่มีประเภทข้อมูลที่เข้มงวด; แปลงประเภท Java ให้เหมาะสมก่อนแทรก  
-- **เอกสารขนาดใหญ่** – ประมวลผลเป็นชิ้น ๆ หรือใช้ streaming API เพื่อหลีกเลี่ยงความกดดันของหน่วยความจำ  
+## ปัญหาทั่วไปและวิธีแก้
+- **Driver not found** – ตรวจสอบว่า SQLite JDBC JAR อยู่ใน classpath  
+- **License errors** – ตรวจสอบว่าไฟล์ใบอนุญาตชั่วคราวถูกอ้างอิงอย่างถูกต้องในโค้ด  
+- **Data type mismatches** – SQLite ไม่มีประเภทข้อมูล; แปลงประเภท Java ให้เหมาะสมก่อนการแทรก  
+- **Large documents** – ประมวลผลเป็นชิ้นส่วนหรือใช้ streaming APIs เพื่อหลีกเลี่ยงความกดดันของหน่วยความจำ  
 
 ## คำถามที่พบบ่อย
 
-**ถาม: ฉันจะกำหนดค่า parser ให้อ่านเฉพาะหน้าที่ต้องการได้อย่างไร?**  
-ตอบ: ใช้คลาส `ParserOptions` เพื่อตั้งค่า `PageRange` ก่อนโหลดเอกสาร  
+**Q:** ฉันจะกำหนดค่า parser ให้อ่านเฉพาะหน้าที่ต้องการได้อย่างไร?  
+**A:** ใช้คลาส `ParserOptions` เพื่อตั้งค่า `PageRange` ก่อนโหลดเอกสาร  
 
-**ถาม: ฉันสามารถ query SQLite ขณะกำลังทำการแยกได้หรือไม่?**  
-ตอบ: ได้ ตราบใดที่คุณจัดการการเชื่อมต่ออย่างถูกต้อง; แนะนำให้ใช้การเชื่อมต่อแยกสำหรับการอ่าน/เขียน  
+**Q:** ฉันสามารถ query SQLite ขณะกำลังแยกวิเคราะห์ได้หรือไม่?  
+**A:** ได้ ตราบใดที่คุณจัดการการเชื่อมต่ออย่างถูกต้อง; แนะนำให้ใช้การเชื่อมต่อแยกสำหรับการอ่าน/เขียน  
 
-**ถาม: ถ้าไฟล์ SQLite ของฉันถูกล็อกโดยกระบวนการอื่นจะทำอย่างไร?**  
-ตอบ: ให้รับประกันการเข้าถึงแบบ exclusive หรือใช้พารามิเตอร์ `busy_timeout` ใน URL JDBC เพื่อรอให้การล็อกคลี่คลาย  
+**Q:** ถ้าไฟล์ SQLite ของฉันถูกล็อกโดยโปรเซสอื่นจะทำอย่างไร?  
+**A:** ตรวจสอบให้ได้การเข้าถึงแบบ exclusive หรือใช้พารามิเตอร์ `busy_timeout` ใน JDBC URL เพื่อรอให้การล็อกคลียร์  
 
-**ถาม: สามารถอัปเดตแถวที่มีอยู่แทนการแทรกใหม่ได้หรือไม่?**  
-ตอบ: แน่นอน – แทนที่คำสั่ง `INSERT` ด้วย `UPDATE` หรือคำสั่ง `INSERT OR REPLACE`  
+**Q:** สามารถอัปเดตแถวที่มีอยู่แทนการแทรกใหม่ได้หรือไม่?  
+**A:** แน่นอน – แทนที่คำสั่ง `INSERT` ด้วย `UPDATE` หรือ `INSERT OR REPLACE`  
 
-**ถาม: GroupDocs.Parser รองรับ PDF ที่เข้ารหัสเมื่อใช้ SQLite หรือไม่?**  
-ตอบ: รองรับ เพียงใส่รหัสผ่านใน `ParserOptions` ขณะเปิดเอกสาร  
+**Q:** GroupDocs.Parser รองรับ PDF ที่เข้ารหัสเมื่อใช้ SQLite หรือไม่?  
+**A:** ใช่, ให้ใส่รหัสผ่านใน `ParserOptions` ขณะเปิดเอกสาร  
 
 ## แหล่งข้อมูลเพิ่มเติม
 
-### บทเรียนที่มีให้เลือก
+### บทแนะนำที่พร้อมใช้งาน
 
-### [Connect SQLite Database with GroupDocs.Parser in Java&#58; A Comprehensive Guide](./connect-sqlite-groupdocs-parser-java/)
-เรียนรู้วิธีผสาน GroupDocs.Parser กับฐานข้อมูล SQLite ใน Java คู่มือขั้นตอนต่อขั้นตอนนี้ครอบคลุมการตั้งค่า, การเชื่อมต่อ, และการแยกข้อมูลเพื่อการจัดการเอกสารที่ดียิ่งขึ้น  
+### [เชื่อมต่อฐานข้อมูล SQLite กับ GroupDocs.Parser ใน Java&#58; คู่มือเชิงลึก](./connect-sqlite-groupdocs-parser-java/)
+เรียนรู้วิธีบูรณาการ GroupDocs.Parser กับฐานข้อมูล SQLite ใน Java คู่มือขั้นตอนนี้ครอบคลุมการตั้งค่า, การเชื่อมต่อ, และการแยกข้อมูลเพื่อการจัดการเอกสารที่ดียิ่งขึ้น  
 
 ### แหล่งข้อมูลเพิ่มเติม
 
-- [GroupDocs.Parser for Java Documentation](https://docs.groupdocs.com/parser/java/)
-- [GroupDocs.Parser for Java API Reference](https://reference.groupdocs.com/parser/java/)
-- [Download GroupDocs.Parser for Java](https://releases.groupdocs.com/parser/java/)
-- [GroupDocs.Parser Forum](https://forum.groupdocs.com/c/parser)
-- [Free Support](https://forum.groupdocs.com/)
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- [เอกสาร GroupDocs.Parser สำหรับ Java](https://docs.groupdocs.com/parser/java/)
+- [อ้างอิง API GroupDocs.Parser สำหรับ Java](https://reference.groupdocs.com/parser/java/)
+- [ดาวน์โหลด GroupDocs.Parser สำหรับ Java](https://releases.groupdocs.com/parser/java/)
+- [ฟอรั่ม GroupDocs.Parser](https://forum.groupdocs.com/c/parser)
+- [การสนับสนุนฟรี](https://forum.groupdocs.com/)
+- [ใบอนุญาตชั่วคราว](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-**อัปเดตล่าสุด:** 2025-12-20  
-**ทดสอบด้วย:** GroupDocs.Parser for Java 23.12 (รุ่นล่าสุด)  
+**อัปเดตล่าสุด:** 2026-04-27  
+**ทดสอบด้วย:** GroupDocs.Parser for Java 24.0 (latest release)  
 **ผู้เขียน:** GroupDocs
