@@ -1,21 +1,21 @@
 ---
-title: "Extract Text from Image in Java using Aspose.OCR & GroupDocs.Parser"
-description: "Learn how to extract text from image in Java using Aspose.OCR and GroupDocs.Parser, and convert scanned document text efficiently."
-date: "2026-01-29"
-weight: 1
-url: "/java/ocr-integration/java-ocr-text-recognition-aspose-groupdocs-parser-guide/"
+date: '2026-01-29'
+description: Aspose.OCR と GroupDocs.Parser を使用して Java で画像からテキストを抽出し、スキャンした文書のテキストを効率的に変換する方法を学びましょう。
 keywords:
 - Java OCR text recognition
 - Aspose OCR Java
 - GroupDocs Parser for Java
+title: JavaでAspose.OCRとGroupDocs.Parserを使用して画像からテキストを抽出
 type: docs
+url: /ja/java/ocr-integration/java-ocr-text-recognition-aspose-groupdocs-parser-guide/
+weight: 1
 ---
 
-# Extract Text from Image in Java using Aspose.OCR & GroupDocs.Parser
+# JavaでAspose.OCRとGroupDocs.Parserを使用して画像からテキストを抽出する
 
-Are you looking for an efficient way to **extract text from image** files in your Java applications? In the digital age, turning pictures of documents into searchable, editable text is a must‑have capability. This tutorial walks you through the complete process of using Aspose.OCR together with GroupDocs.Parser for Java, so you can reliably convert scanned document text into usable strings.
+Java アプリケーションで **extract text from image** ファイルを効率的に抽出したいですか？ デジタル時代において、ドキュメントの写真を検索可能で編集可能なテキストに変換することは必須の機能です。このチュートリアルでは、Aspose.OCR と GroupDocs.Parser for Java を組み合わせて、スキャンしたドキュメントのテキストを確実に文字列へ変換する手順をすべて解説します。
 
-We’ll cover everything from setting up the libraries to recognizing specific text areas, and we’ll show you real‑world scenarios where this integration shines.
+ライブラリのセットアップから特定領域の認識までカバーし、実際のシナリオでこの統合がどのように活躍するかをご紹介します。
 
 ## Quick Answers
 - **What library handles OCR?** Aspose.OCR provides high‑accuracy optical character recognition.
@@ -25,7 +25,7 @@ We’ll cover everything from setting up the libraries to recognizing specific t
 - **Can I process streams?** Yes—both libraries support image streams for web‑based uploads.
 
 ## What is “extract text from image”?
-Extracting text from image means converting visual characters (e.g., a scanned page or a photo of a receipt) into plain text that your code can manipulate, search, or store. OCR (Optical Character Recognition) engines analyze pixel patterns, recognize glyphs, and output Unicode strings.
+画像からテキストを抽出するとは、スキャンしたページやレシートの写真などの視覚的文字を、コードで操作・検索・保存できるプレーンテキストに変換することを意味します。OCR（Optical Character Recognition）エンジンはピクセルパターンを解析し、グリフを認識して Unicode 文字列を出力します。
 
 ## Why combine Aspose.OCR with GroupDocs.Parser?
 - **Accuracy:** Aspose.OCR delivers industry‑leading recognition rates.
@@ -69,7 +69,7 @@ If you prefer not to use Maven, grab the latest JAR from [GroupDocs Releases](ht
 A valid license unlocks the full feature set for both Aspose OCR and GroupDocs.Parser. You can start with a free trial or purchase a permanent license from the vendor websites.
 
 #### Basic Initialization and Setup
-1. **Set the License for Aspose OCR:**
+1. **Set the License for Aspose OCR:**  
    ```java
    import com.aspose.ocr.License;
    
@@ -89,14 +89,14 @@ The process converts the incoming stream to a `BufferedImage`, configures option
 
 #### Step‑by‑step Code
 
-1. **Create the AsposeOCR instance:**
+1. **Create the AsposeOCR instance:**  
    ```java
    import com.aspose.ocr.AsposeOCR;
    
    AsposeOCR api = new AsposeOCR();
    ```
 
-2. **Read the image stream into a BufferedImage:**
+2. **Read the image stream into a BufferedImage:**  
    ```java
    import java.awt.image.BufferedImage;
    import javax.imageio.ImageIO;
@@ -104,7 +104,7 @@ The process converts the incoming stream to a `BufferedImage`, configures option
    BufferedImage image = ImageIO.read(imageStream);
    ```
 
-3. **Configure recognition settings (optional area selection):**
+3. **Configure recognition settings (optional area selection):**  
    ```java
    import com.aspose.ocr.RecognitionSettings;
    
@@ -122,7 +122,7 @@ The process converts the incoming stream to a `BufferedImage`, configures option
    }
    ```
 
-4. **Run the recognition and handle warnings:**
+4. **Run the recognition and handle warnings:**  
    ```java
    import com.aspose.ocr.RecognitionResult;
    
@@ -143,7 +143,7 @@ Setting `detectAreas` tells Aspose OCR to return bounding rectangles for each re
 
 #### Step‑by‑step Code
 
-1. **Enable area detection:**
+1. **Enable area detection:**  
    ```java
    RecognitionSettings settings = new RecognitionSettings();
    settings.setDetectAreas(true);
@@ -151,7 +151,7 @@ Setting `detectAreas` tells Aspose OCR to return bounding rectangles for each re
 
 2. **(Optional) Define specific regions** – reuse the rectangle logic from the previous section if you only care about certain parts of the image.
 
-3. **Execute OCR and collect area information:**
+3. **Execute OCR and collect area information:**  
    ```java
    import java.awt.Rectangle;
    import java.util.ArrayList;
