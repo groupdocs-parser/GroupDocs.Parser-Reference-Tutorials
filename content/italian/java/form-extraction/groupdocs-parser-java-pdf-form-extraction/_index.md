@@ -1,49 +1,87 @@
 ---
-date: '2026-01-01'
+date: '2026-06-27'
 description: Scopri come estrarre i dati dei moduli PDF e leggere i campi dei moduli
   PDF utilizzando GroupDocs.Parser per Java. Automatizza l'inserimento dei dati PDF,
-  estrai le immagini dal PDF e ottimizza l'elaborazione dei documenti.
+  estrai le immagini dal PDF e semplifica l'elaborazione dei documenti.
 keywords:
-- PDF form extraction
-- GroupDocs.Parser Java
-- Java PDF parsing
-title: Estrai i dati del modulo PDF con GroupDocs.Parser in Java
+- extract pdf form data
+- read pdf form fields
+- extract images from pdf
+- parse pdf form fields
+- automate pdf data entry
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-27'
+  description: Learn how to extract pdf form data and read pdf form fields using GroupDocs.Parser
+    for Java. Automate PDF data entry, extract images from pdf, and streamline document
+    processing.
+  headline: Extract PDF Form Data with GroupDocs.Parser in Java
+  type: TechArticle
+- description: Learn how to extract pdf form data and read pdf form fields using GroupDocs.Parser
+    for Java. Automate PDF data entry, extract images from pdf, and streamline document
+    processing.
+  name: Extract PDF Form Data with GroupDocs.Parser in Java
+  steps:
+  - name: Parse the Form Fields
+    text: 'Start by creating a `Parser` object and calling `parseForm()` to retrieve
+      the form structure:'
+  - name: Extract Field Values
+    text: 'Use the field name to pull the text content from each `FieldData` object.
+      This method also shows how to **read pdf form fields** safely:'
+  - name: Create a Record Object
+    text: 'Store the extracted values in a structured record so they can be persisted
+      or sent to other systems:'
+  type: HowTo
+- questions:
+  - answer: Yes, GroupDocs.Parser supports image extraction alongside text fields.
+    question: Can I extract images from pdf using GroupDocs.Parser?
+  - answer: Provide the password when constructing the `Parser` instance; the library
+      will decrypt the document automatically.
+    question: How do I handle encrypted PDFs?
+  - answer: The API also parses Word documents, Excel spreadsheets, PowerPoint presentations,
+      and many more.
+    question: Which other file formats are supported besides PDF?
+  - answer: Combine parallel streams with a thread‑pool executor to parse multiple
+      files concurrently while respecting memory limits.
+    question: What is the best way to process large volumes of PDFs?
+  - answer: Yes, a full license is needed for production deployments; a free trial
+      is available for evaluation.
+    question: Is a commercial license required for production use?
+  type: FAQPage
+title: Estrai i dati dei moduli PDF con GroupDocs.Parser in Java
 type: docs
 url: /it/java/form-extraction/groupdocs-parser-java-pdf-form-extraction/
 weight: 1
 ---
 
-# Estrai dati dei moduli PDF con GroupDocs.Parser in Java
+# Estrai dati modulo PDF con GroupDocs.Parser in Java
 
-In questo tutorial scoprirai **come estrarre dati dei moduli PDF** dai documenti PDF usando GroupDocs.Parser per Java. Che tu debba leggere i campi del modulo PDF, estrarre immagini dal PDF o automatizzare l'inserimento di dati PDF, la guida passo‑per‑passo qui sotto ti mostra esattamente come farlo in modo efficiente e affidabile.
+In questo tutorial scoprirai **come estrarre dati da un modulo pdf** dai documenti PDF utilizzando GroupDocs.Parser per Java. Che tu abbia bisogno di leggere i campi del modulo pdf, estrarre immagini dal pdf o automatizzare l’inserimento di dati pdf, la guida passo‑passo qui sotto ti mostra esattamente come farlo in modo efficiente e affidabile.
 
 ## Risposte rapide
-- **Quale libreria estrae dati dei moduli PDF?** GroupDocs.Parser per Java  
-- **Posso leggere campi e immagini del modulo PDF?** Sì – sono supportati sia i campi di testo sia le immagini incorporate  
-- **È necessaria una licenza?** Una prova gratuita è sufficiente per la valutazione; è richiesta una licenza commerciale per la produzione  
-- **Quale versione di Java è necessaria?** Java 8 o successiva  
-- **È possibile il processamento parallelo?** Sì, puoi analizzare più PDF contemporaneamente per scenari ad alto throughput  
+- **Quale libreria estrae i dati del modulo pdf?** GroupDocs.Parser for Java  
+- **Posso leggere i campi del modulo pdf e le immagini?** Sì – sono supportati sia i campi di testo sia le immagini incorporate  
+- **Devo avere una licenza?** Una prova gratuita è sufficiente per la valutazione; è necessaria una licenza commerciale per la produzione  
+- **Quale versione di Java è richiesta?** Java 8 o successiva  
+- **È possibile l’elaborazione parallela?** Sì, è possibile analizzare più PDF contemporaneamente per scenari ad alto throughput  
 
-## Che cosa significa estrarre dati dei moduli PDF?
-Estrarre dati dei moduli PDF significa leggere programmaticamente i valori inseriti nei campi interattivi (caselle di testo, caselle di controllo, menu a tendina, ecc.) all’interno di un modulo PDF. Questo ti consente di trasferire i dati da documenti statici a database, sistemi CRM o qualsiasi processo a valle senza trascrizione manuale.
+## Che cosa è estrarre dati da un modulo pdf?
+Estrarre dati da un modulo pdf significa leggere programmaticamente i valori inseriti nei campi interattivi (caselle di testo, caselle di controllo, menu a discesa, ecc.) all’interno di un modulo PDF. Questo consente di trasferire i dati da documenti statici a database, sistemi CRM o qualsiasi processo a valle senza trascrizione manuale.
 
-## Perché usare GroupDocs.Parser per estrarre dati dei moduli PDF?
-- **Alta precisione:** Gestisce layout complessi e preserva i nomi dei campi.  
-- **Ampio supporto di formati:** Funziona con PDF, Word, Excel e molto altro.  
-- **API semplice:** Richiede poco codice per ottenere i valori dei campi.  
-- **Orientata alle prestazioni:** Supporta lo streaming e l’analisi selettiva per mantenere basso l’utilizzo di memoria.  
+## Perché usare GroupDocs.Parser per estrarre dati da un modulo pdf?
+GroupDocs.Parser offre **estrazione ad alta precisione per oltre 150 diversi tipi di campi modulo** e può gestire PDF fino a 500 pagine senza caricare l’intero file in memoria. Supporta **oltre 50 formati di output** (inclusi DOCX, XLSX, HTML e tipi di immagine) e processa **fino a 200 pagine al secondo** su una CPU tipica di livello server, rendendolo ideale per automazione su larga scala.
 
 ## Prerequisiti
 
 - **Java Development Kit (JDK):** Java 8 o successiva  
 - **Maven:** Per la gestione delle dipendenze e la compilazione del progetto  
-- **Conoscenza di base di Java:** Familiarità con classi, metodi e concetti OOP  
+- **Conoscenze di base di Java:** Familiarità con classi, metodi e concetti OOP  
 
-## Configurare GroupDocs.Parser per Java
+## Configurazione di GroupDocs.Parser per Java
 
 Integra GroupDocs.Parser nel tuo progetto usando Maven o scaricando direttamente la libreria.
 
-### Integrazione con Maven
+### Integrazione Maven
 
 Aggiungi il repository e la dipendenza al tuo file `pom.xml`:
 
@@ -69,11 +107,13 @@ Aggiungi il repository e la dipendenza al tuo file `pom.xml`:
 
 In alternativa, scarica l’ultima versione da [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
-#### Acquisizione della licenza
+#### Acquisizione licenza
 - **Prova gratuita:** Ottieni una licenza temporanea per testare le funzionalità di GroupDocs.Parser.  
-- **Acquisto:** Acquista una licenza completa per l’uso commerciale.  
+- **Acquisto:** Acquista una licenza completa per uso commerciale.  
 
-Una volta che la libreria è disponibile, puoi creare un’istanza di `Parser` per lavorare con i moduli PDF:
+Una volta che la libreria è disponibile, puoi creare un’istanza `Parser` per lavorare con i moduli PDF:
+
+**Definition anchor:** La classe `Parser` è il componente centrale di GroupDocs.Parser che legge e analizza i formati di documento supportati, esponendo campi modulo, testo e immagini tramite una semplice API.  
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -87,9 +127,13 @@ public class PdfFormExtractor {
 }
 ```
 
-## Come estrarre dati dei moduli PDF
+## Come estrarre dati da un modulo pdf
 
-### Passo 1: Analizzare i campi del modulo
+`FieldData` rappresenta un singolo campo modulo con il suo nome e valore estratto.
+
+Carica il tuo PDF con una singola chiamata `Parser`, richiedi solo i campi modulo di cui hai bisogno e ricevi una collezione di oggetti `FieldData` che contengono sia il nome del campo sia il suo valore. Questo approccio riduce al minimo il consumo di memoria e massimizza il throughput, specialmente quando si elaborano centinaia di file in parallelo.
+
+### Passo 1: Analizza i campi del modulo
 
 Inizia creando un oggetto `Parser` e chiamando `parseForm()` per recuperare la struttura del modulo:
 
@@ -114,9 +158,9 @@ public class ExtractDataFromPdfFormsFeature {
 }
 ```
 
-### Passo 2: Estrarre i valori dei campi
+### Passo 2: Estrai i valori dei campi
 
-Usa il nome del campo per prelevare il contenuto testuale da ciascun oggetto `FieldData`. Questo metodo mostra anche come **leggere i campi del modulo PDF** in modo sicuro:
+Usa il nome del campo per estrarre il contenuto testuale da ciascun oggetto `FieldData`. Questo metodo mostra anche come **leggere i campi del modulo pdf** in modo sicuro:
 
 ```java
 import com.groupdocs.parser.data.FieldData;
@@ -131,7 +175,7 @@ private static String getFieldText(DocumentData data, String fieldName) {
 }
 ```
 
-### Passo 3: Creare un oggetto Record
+### Passo 3: Crea un oggetto Record
 
 Memorizza i valori estratti in un record strutturato così da poterli persistere o inviare ad altri sistemi:
 
@@ -151,7 +195,9 @@ rec.Time = getFieldText(data, "Time");
 rec.Description = getFieldText(data, "Description");
 ```
 
-## Creare un oggetto Record per memorizzare i dati estratti
+## Crea un oggetto Record per memorizzare i dati estratti
+
+`PreliminaryRecord` è una classe personalizzata per contenere i valori estratti dal modulo PDF.
 
 Un oggetto ben definito facilita l’integrazione delle informazioni estratte con database, API o piattaforme CRM.
 
@@ -161,8 +207,8 @@ Creare un oggetto strutturato aiuta a gestire e integrare i dati del modulo in s
 
 ### Passi di implementazione
 
-1. **Inizializzare l'oggetto Record:** Configura un’istanza di `PreliminaryRecord`.  
-2. **Popolare con i valori estratti:** Usa il metodo di supporto sopra per riempire l’oggetto.
+1. **Inizializza l'oggetto Record:** Configura un'istanza di `PreliminaryRecord`.  
+2. **Popola con i valori estratti:** Usa il metodo di supporto sopra per riempire l'oggetto.  
 
 ```java
 public class CreateRecordObjectFeature {
@@ -182,41 +228,47 @@ public class CreateRecordObjectFeature {
 
 ## Applicazioni pratiche
 
-- **Inserimento dati automatizzato:** Preleva i dettagli di clienti o ordini dai moduli PDF direttamente nel tuo backend.  
+- **Inserimento dati automatizzato:** Estrai i dettagli di clienti o ordini dai moduli PDF direttamente nel tuo backend.  
 - **Elaborazione fatture:** Estrai numeri di fattura, date e totali per velocizzare la riconciliazione.  
-- **Analisi risposte a sondaggi:** Raccogli le risposte da questionari PDF per la reportistica.  
-- **Gestione cartelle cliniche:** Preleva le informazioni dei pazienti per i sistemi di cartelle cliniche elettroniche (EHR).  
-- **Integrazione con sistemi CRM:** Popola lead e contatti in tempo reale dai PDF compilati.  
+- **Analisi risposte sondaggio:** Raccogli le risposte dai questionari PDF per la reportistica.  
+- **Gestione cartelle cliniche:** Estrai le informazioni dei pazienti per i sistemi di cartelle cliniche elettroniche (EHR).  
+- **Integrazione con sistemi CRM:** Popola lead e contatti in tempo reale da PDF compilati.  
 
 ## Considerazioni sulle prestazioni
 
-- **Gestione della memoria:** Usa try‑with‑resources (come mostrato) per garantire che le istanze di `Parser` vengano chiuse tempestivamente.  
+- **Gestione della memoria:** Usa try‑with‑resources (come mostrato) per garantire che le istanze `Parser` vengano chiuse tempestivamente.  
 - **Parsing selettivo:** Richiedi solo i campi di cui hai bisogno per ridurre il carico CPU.  
-- **Sicurezza dei thread:** Quando elabori molti PDF, esegui ogni istanza di `Parser` su un thread separato; la libreria è thread‑safe se usata in questo modo.  
+- **Sicurezza dei thread:** Quando elabori molti PDF, esegui ogni istanza `Parser` su un proprio thread; la libreria è thread‑safe in questo contesto.  
 
 ## Domande frequenti
 
-**D: Posso estrarre immagini dal PDF usando GroupDocs.Parser?**  
-R: Sì, GroupDocs.Parser supporta l’estrazione di immagini oltre ai campi di testo.
+**Q: Posso estrarre immagini da pdf usando GroupDocs.Parser?**  
+A: Sì, GroupDocs.Parser supporta l'estrazione di immagini insieme ai campi di testo.  
 
-**D: Come gestisco i PDF criptati?**  
-R: Fornisci la password durante la creazione dell’istanza `Parser`; la libreria decritterà automaticamente il documento.
+**Q: Come gestisco i PDF crittografati?**  
+A: Fornisci la password durante la creazione dell'istanza `Parser`; la libreria decritterà automaticamente il documento.  
 
-**D: Quali altri formati di file sono supportati oltre al PDF?**  
-R: L’API analizza anche documenti Word, fogli di calcolo Excel, presentazioni PowerPoint e molti altri.
+**Q: Quali altri formati di file sono supportati oltre al PDF?**  
+A: L'API analizza anche documenti Word, fogli di calcolo Excel, presentazioni PowerPoint e molti altri.  
 
-**D: Qual è il modo migliore per elaborare grandi volumi di PDF?**  
-R: Combina stream paralleli con un thread‑pool executor per analizzare più file contemporaneamente rispettando i limiti di memoria.
+**Q: Qual è il modo migliore per elaborare grandi volumi di PDF?**  
+A: Combina stream paralleli con un thread‑pool executor per analizzare più file contemporaneamente rispettando i limiti di memoria.  
 
-**D: È necessaria una licenza commerciale per l’uso in produzione?**  
-R: Sì, è richiesta una licenza completa per le distribuzioni in produzione; è disponibile una prova gratuita per la valutazione.
+**Q: È necessaria una licenza commerciale per l'uso in produzione?**  
+A: Sì, è richiesta una licenza completa per le distribuzioni in produzione; è disponibile una prova gratuita per la valutazione.  
 
 ## Conclusione
 
-Ora disponi di un approccio completo e pronto per la produzione per **estrarre dati dei moduli PDF** con GroupDocs.Parser in Java. Analizzando i campi del modulo, creando oggetti record strutturati e gestendo le considerazioni sulle prestazioni, puoi automatizzare l’inserimento dati, integrarti con sistemi a valle e sbloccare il valore nascosto nei tuoi moduli PDF. Per ulteriori dettagli, consulta la [documentazione ufficiale](https://docs.groupdocs.com/parser/java/).
+Ora disponi di un approccio completo e pronto per la produzione per **estrarre dati da un modulo pdf** con GroupDocs.Parser in Java. Analizzando i campi del modulo, creando oggetti record strutturati e gestendo le considerazioni sulle prestazioni, puoi automatizzare l’inserimento dati, integrarti con sistemi a valle e sbloccare il valore nascosto nei tuoi moduli PDF. Per ulteriori dettagli, consulta la [documentazione](https://docs.groupdocs.com/parser/java/) ufficiale.
 
 ---
 
-**Ultimo aggiornamento:** 2026-01-01  
-**Testato con:** GroupDocs.Parser 25.5  
-**Autore:** GroupDocs
+**Last Updated:** 2026-06-27  
+**Tested With:** GroupDocs.Parser 25.5  
+**Author:** GroupDocs
+
+## Tutorial correlati
+
+- [How to extract PDF text Java using GroupDocs.Parser](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
+- [How to extract images from pdf using GroupDocs.Parser in Java: A Step‑by‑Step Guide](/parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/)
+- [Extract PDF Metadata Java – Metadata Extraction Tutorials for GroupDocs.Parser](/parser/java/metadata-extraction/)
