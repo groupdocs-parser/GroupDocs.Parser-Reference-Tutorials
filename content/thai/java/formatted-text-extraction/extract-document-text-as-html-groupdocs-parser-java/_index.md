@@ -1,66 +1,77 @@
 ---
-date: '2026-01-01'
-description: เรียนรู้วิธีแปลงเอกสารเป็น HTML ด้วย GroupDocs.Parser สำหรับ Java, แปลงไฟล์
-  docx เป็น HTML และดึงข้อความที่จัดรูปแบบอย่างมีประสิทธิภาพ
+date: '2026-07-02'
+description: เรียนรู้วิธีแปลง doc เป็น html ด้วย GroupDocs.Parser for Java, แปลง docx
+  เป็น html และดึงข้อความที่จัดรูปแบบอย่างมีประสิทธิภาพ
 keywords:
-- extract document text as HTML
-- GroupDocs.Parser Java setup
-- HTML formatted text extraction
-title: 'วิธีแปลงเอกสารเป็น HTML ด้วย GroupDocs.Parser Java: คู่มือขั้นตอนต่อขั้นตอน'
+- convert doc to html
+- parse docx to html
+- convert document html java
+- read document as html
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-02'
+  description: Learn how to convert doc to html with GroupDocs.Parser for Java, parse
+    docx to html and extract formatted text efficiently.
+  headline: How to Convert Doc to HTML Using GroupDocs.Parser for Java – Step‑by‑Step
+    Guide
+  type: TechArticle
+- questions:
+  - answer: It’s a versatile library for extracting text, metadata, and formatted
+      content (including HTML) from a wide range of document formats.
+    question: What is GroupDocs.Parser Java used for?
+  - answer: Yes—set `FormattedTextMode.Html` as shown, and the parser returns the
+      DOCX content as HTML.
+    question: Can I parse docx to html with this library?
+  - answer: Large files consume more memory, but using try‑with‑resources and streaming
+      techniques mitigates the impact; the library can handle files up to 2 GB without
+      loading the entire file into memory.
+    question: Is there a performance impact when parsing large documents?
+  - answer: The parser returns `null` for unsupported extraction modes; implement
+      fallback logic or notify the user accordingly.
+    question: How do I handle unsupported document features?
+  - answer: Visit the official documentation and community links listed below.
+    question: Where can I find more resources on GroupDocs.Parser Java?
+  type: FAQPage
+title: วิธีแปลง Doc เป็น HTML ด้วย GroupDocs.Parser for Java – คู่มือขั้นตอนโดยละเอียด
 type: docs
 url: /th/java/formatted-text-extraction/extract-document-text-as-html-groupdocs-parser-java/
 weight: 1
 ---
 
-# วิธีแปลงเอกสารเป็น HTML ด้วย GroupDocs.Parser Java: คู่มือขั้นตอนโดยละเอียด
+# วิธีแปลง Doc เป็น HTML ด้วย GroupDocs.Parser สำหรับ Java – คู่มือขั้นตอนต่อขั้นตอน
 
-การดึงข้อความจากไฟล์และ **convert document to html** อาจดูยาก โดยเฉพาะเมื่อคุณต้องการรักษาการจัดรูปแบบไว้ ในบทแนะนำนี้เราจะพาคุณผ่านขั้นตอนที่แน่นอนเพื่อใช้ GroupDocs.Parser สำหรับ Java เพื่อ **convert document to html**, แปลง docx เป็น html, และอ่านเอกสารเป็น html อย่างเป็นระเบียบและดูแลรักษาได้ง่าย เมื่อเสร็จคุณจะได้สคริปต์พร้อมใช้ที่แปลงไฟล์ Word ให้เป็นเนื้อหา HTML ที่เหมาะกับเว็บ
+การแปลง **doc to html** เป็นความต้องการทั่วไปเมื่อคุณต้องการแสดงเนื้อหา Word บนเว็บโดยไม่สูญเสียรูปแบบ ในบทแนะนำนี้เราจะอธิบายขั้นตอนที่แน่นอนเพื่อใช้ GroupDocs.Parser สำหรับ Java เพื่อ **convert doc to html**, แปลง docx เป็น html, และอ่านเอกสารเป็น html อย่างสะอาดและดูแลได้ง่าย เมื่อเสร็จคุณจะมีโค้ดสแนปเป็ตที่พร้อมใช้งานเพื่อแปลงไฟล์ Word ให้เป็นเนื้อหา HTML ที่เหมาะกับเว็บ และคุณจะเข้าใจว่าทำไมวิธีนี้จึงเป็นวิธีที่เชื่อถือได้ที่สุดสำหรับนักพัฒนา Java
 
 ## คำตอบด่วน
 - **ไลบรารีที่จัดการการแปลงเป็น HTML คืออะไร?** GroupDocs.Parser for Java  
-- **โหมดใดที่ดึง HTML ได้?** `FormattedTextMode.Html`  
-- **ต้องการไลเซนส์หรือไม่?** การทดลองใช้ฟรีหรือไลเซนส์ชั่วคราวทำงานได้สำหรับการทดสอบ; จำเป็นต้องมีไลเซนส์เต็มสำหรับการใช้งานจริง  
-- **สามารถแปลงไฟล์ DOCX ได้หรือไม่?** ใช่ – ตัวแปลงสนับสนุน DOCX, PDF, PPTX, และรูปแบบอื่น ๆ อีกมากมาย  
-- **การจัดการหน่วยความจำสำคัญหรือไม่?** แน่นอน; ควรปิด parser และ reader เสมอเพื่อหลีกเลี่ยงการรั่วไหลของหน่วยความจำ  
+- **โหมดใดที่ดึง HTML?** `FormattedTextMode.Html`  
+- **ฉันต้องการไลเซนส์หรือไม่?** การทดลองใช้ฟรีหรือไลเซนส์ชั่วคราวทำงานสำหรับการทดสอบ; จำเป็นต้องมีไลเซนส์เต็มสำหรับการใช้งานจริง.  
+- **ฉันสามารถแปลงไฟล์ DOCX ได้หรือไม่?** ใช่ – ตัว parser รองรับ DOCX, PDF, PPTX, และรูปแบบอื่น ๆ อีกมากมาย.  
+- **การจัดการหน่วยความจำสำคัญหรือไม่?** แน่นอน; ควรปิด parser และ reader เสมอเพื่อหลีกเลี่ยงการรั่วไหล.  
+- **เอกสารขนาดใหญ่ที่สุดที่สามารถประมวลผลได้คือเท่าไหร่?** ไฟล์ขนาดสูงสุดถึง 2 GB สามารถจัดการได้โดยไม่ต้องโหลดไฟล์ทั้งหมดเข้าสู่หน่วยความจำ.  
 
-## บทนำ
+## “convert doc to html” คืออะไร?
+การแปลง doc เป็น html หมายถึงการนำไฟล์ Microsoft Word (DOC หรือ DOCX) มาสร้างเป็นการแสดงผลในรูปแบบ HTML ที่คงรูปแบบต้นฉบับ, สไตล์, หัวข้อ, ตาราง, รูปภาพและองค์ประกอบอื่น ๆ ไว้ ผลลัพธ์ HTML สามารถฝังลงในหน้าเว็บโดยตรง, แสดงในเบราว์เซอร์, หรือส่งต่อไปยังระบบจัดการเนื้อหา (CMS) ได้
 
-การดึงข้อความจากเอกสารและแปลงเป็นรูปแบบ HTML ด้วย Java อาจเป็นเรื่องท้าทาย นักพัฒนาหลายคนพบปัญหาเมื่อพยายามแปลงเอกสารเป็นรูปแบบเฉพาะอย่าง HTML คู่มือนี้จะพาคุณผ่านกระบวนการดึงข้อความจากเอกสารเป็น HTML ด้วย GroupDocs.Parser Java – ไลบรารีที่แข็งแกร่งออกแบบมาเพื่อจัดการกับรูปแบบเอกสารหลากหลาย
-
-โดยทำตามบทแนะนำนี้ คุณจะได้เรียนรู้วิธีแปลงเนื้อหาเอกสารเป็น HTML อย่างราบรื่น ทำให้การแสดงผลและการจัดการบนเว็บแพลตฟอร์มง่ายขึ้น สิ่งที่คุณจะได้ค้นพบ:
-
-- การตั้งค่า GroupDocs.Parser ในโปรเจกต์ Java ของคุณ  
-- การดึงข้อความที่จัดรูปแบบจากเอกสารโดยใช้โหมด HTML  
-- การประยุกต์ใช้เนื้อหา HTML ที่ได้อย่างจริงจัง  
-
-มาดูกันว่าคุณจะใช้ GroupDocs.Parser เพื่อจุดประสงค์นี้ได้อย่างมีประสิทธิภาพอย่างไร
+## ทำไมต้องใช้ GroupDocs.Parser สำหรับ Java เพื่อแปลง doc เป็น html?
+GroupDocs.Parser รองรับ **รูปแบบอินพุตและเอาต์พุตกว่า 100 รูปแบบ** และสามารถประมวลผลเอกสารหลายร้อยหน้าในเวลาไม่กี่วินาทีบนฮาร์ดแวร์เซิร์ฟเวอร์มาตรฐาน การสกัด `FormattedTextMode.Html` ของมันรับประกันว่ารูปแบบย่อหน้า, รายการ, และตารางจะถูกสร้างขึ้นอย่างแม่นยำ ลดความจำเป็นในการทำ post‑processing ด้วยตนเอง
 
 ## ข้อกำหนดเบื้องต้น
 
-ก่อนเริ่มทำงาน ให้ตรวจสอบว่าคุณได้เตรียมสิ่งต่อไปนี้ครบถ้วน:
+ก่อนเริ่มทำงาน โปรดตรวจสอบว่าคุณมีสิ่งต่อไปนี้:
 
-### ไลบรารี, เวอร์ชัน, และการพึ่งพาที่จำเป็น
+- **Java Development Kit (JDK) 8+** ติดตั้งบนเครื่องของคุณ.  
+- IDE เช่น **IntelliJ IDEA**, **Eclipse**, หรือ **NetBeans**.  
+- **Maven** หรือ **Gradle** สำหรับการจัดการ dependencies.  
+- ความคุ้นเคยพื้นฐานกับไวยากรณ์ Java และแนวคิด HTML (ไม่จำเป็นแต่เป็นประโยชน์).  
 
-ผสานรวมไลบรารี GroupDocs.Parser เข้ากับโปรเจกต์ Java ของคุณโดยใช้ Maven หรือดาวน์โหลดจากเว็บไซต์ของ GroupDocs ใช้เวอร์ชัน 25.5 เพื่อความเข้ากันได้
+## ฉันจะตั้งค่า GroupDocs.Parser สำหรับ Java อย่างไร?
 
-### ความต้องการในการตั้งค่าสภาพแวดล้อม
-
-- **Java Development Kit (JDK):** ตรวจสอบให้แน่ใจว่าได้ติดตั้ง JDK ไว้บนระบบของคุณ  
-- **IDE:** สามารถใช้ IDE ใดก็ได้ เช่น IntelliJ IDEA, Eclipse หรือ NetBeans  
-- **เครื่องมือสร้าง (Build Tool):** ตั้งค่า Maven หรือ Gradle เพื่อจัดการการพึ่งพา  
-
-### ความรู้เบื้องต้นที่จำเป็น
-
-ความคุ้นเคยกับการเขียนโปรแกรม Java และความเข้าใจพื้นฐานเกี่ยวกับไลบรารีการประมวลผลเอกสารจะเป็นประโยชน์ ความเข้าใจพื้นฐานเกี่ยวกับ HTML จะช่วยได้แต่ไม่จำเป็น
-
-## การตั้งค่า GroupDocs.Parser สำหรับ Java
-
-เพื่อเริ่มใช้ GroupDocs.Parser ในโปรเจกต์ Java ของคุณ ให้ทำตามขั้นตอนต่อไปนี้:
+เพื่อกำหนดค่า GroupDocs.Parser สำหรับ Java คุณต้องเพิ่มไลบรารีนี้เข้าไปใน dependencies ของโปรเจกต์ของคุณ ซึ่งทำได้ผ่าน Maven, Gradle หรือโดยการดาวน์โหลดไฟล์ JAR ด้วยตนเองและเพิ่มลงใน classpath หลังจากที่ dependencies ถูกจัดการแล้ว คุณก็สามารถเริ่มใช้ parser ในโค้ดของคุณได้
 
 ### การตั้งค่า Maven
 
-เพิ่ม repository และ dependency ต่อไปนี้ในไฟล์ `pom.xml` ของคุณ:
-
+```markdown
 ```xml
 <repositories>
    <repository>
@@ -78,19 +89,25 @@ weight: 1
    </dependency>
 </dependencies>
 ```
+```
 
 ### ดาวน์โหลดโดยตรง
 
-หากคุณไม่ต้องการใช้ Maven ให้ดาวน์โหลดเวอร์ชันล่าสุดจาก [รุ่น GroupDocs.Parser สำหรับ Java](https://releases.groupdocs.com/parser/java/)
+หากคุณไม่ต้องการใช้ Maven ให้ดาวน์โหลดเวอร์ชันล่าสุดจาก [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
 ### การรับไลเซนส์
 
-- **ทดลองใช้ฟรี:** เริ่มต้นด้วยการทดลองใช้ฟรีเพื่อทดสอบ GroupDocs.Parser  
-- **ไลเซนส์ชั่วคราว:** รับไลเซนส์ชั่วคราวเพื่อเข้าถึงคุณสมบัติทั้งหมดเป็นระยะเวลานานขึ้น  
-- **การซื้อ:** พิจารณาซื้อไลเซนส์เต็มเพื่อการใช้งานระยะยาว  
+- **Free Trial:** เริ่มต้นด้วยการทดลองใช้ฟรีเพื่อทดสอบ GroupDocs.Parser.  
+- **Temporary License:** รับไลเซนส์ชั่วคราวเพื่อเข้าถึงคุณสมบัติทั้งหมดต่อเนื่อง.  
+- **Purchase:** พิจารณาซื้อไลเซนส์เต็มสำหรับการใช้งานระยะยาว.  
 
-เมื่อคุณได้ตั้งค่าไลบรารีแล้ว ให้เริ่มต้นใช้งานในโปรเจกต์ของคุณ:
+## ฉันจะเริ่มต้น parser และดึง HTML ได้อย่างไร?
 
+การเริ่มต้น parser เกี่ยวข้องกับการสร้างอ็อบเจ็กต์ `Parser` ที่ชี้ไปยังเอกสารต้นทาง หลังจากสร้าง parser แล้ว คุณกำหนด `FormattedTextOptions` เพื่อระบุการส่งออกเป็น HTML แล้วเรียกเมธอดสกัดที่คืนค่า `TextReader` ตัวอ่านจะให้สตริง HTML เต็มรูปแบบที่คุณสามารถประมวลผลหรือแสดงได้
+
+คลาส `Parser` อ่านเอกสารและให้เมธอดสำหรับดึงเนื้อหาออกมา
+
+```markdown
 ```java
 import com.groupdocs.parser.Parser;
 
@@ -105,30 +122,34 @@ public class DocumentParser {
     }
 }
 ```
+```
 
 ## คู่มือการใช้งาน
 
-เมื่อสภาพแวดล้อมพร้อมแล้ว เรามาเขียนฟีเจอร์เพื่อ **convert document to html** และดึงข้อความที่จัดรูปแบบกัน
+เมื่อสภาพแวดล้อมพร้อมแล้ว เรามาเขียนฟีเจอร์เพื่อ **convert doc to html** และสกัดข้อความที่มีรูปแบบกัน
 
-### การดึงข้อความที่จัดรูปแบบโดยใช้โหมด HTML
+### คลาสใดบ้างที่เกี่ยวข้องกับการแปลงและดึง HTML?
 
-ฟีเจอร์นี้ช่วยให้คุณรับเนื้อหาเอกสารในรูปแบบ HTML ที่มีโครงสร้าง ทำตามขั้นตอนต่อไปนี้:
+คลาสหลักที่คุณจะทำงานด้วยคือ `Parser` ซึ่งเปิดและอ่านเอกสาร, `FormattedTextOptions` ที่กำหนดรูปแบบเอาต์พุตที่ต้องการ, และ `TextReader` ที่สตรีมเนื้อหาที่สกัดออกมา `FormattedTextMode` เป็น enum ที่ระบุรูปแบบเอาต์พุต เช่น Html, PlainText หรือ Markdown
 
-#### ขั้นตอนที่ 1: นำเข้าแพ็กเกจที่จำเป็น
+`FormattedTextOptions` กำหนดวิธีที่ parser จัดรูปแบบผลลัพธ์ที่สกัด เช่น HTML หรือ plain text.  
+`TextReader` สตรีมข้อความที่สกัดเพื่อให้คุณอ่านเป็นสตริงหรือประมวลผลทีละบรรทัด.  
+`FormattedTextMode` เป็น enum ที่ระบุรูปแบบเอาต์พุต เช่น Html, PlainText หรือ Markdown.
 
-ตรวจสอบให้แน่ใจว่าได้นำเข้าแพ็กเกจทั้งหมดที่ต้องการไว้ที่ส่วนหัวของไฟล์ Java ของคุณ:
+### ขั้นตอนที่ 1: นำเข้าแพ็กเกจที่จำเป็น
 
+```markdown
 ```java
 import com.groupdocs.parser.Parser;
 import com.groupdocs.parser.data.TextReader;
 import com.groupdocs.parser.options.FormattedTextOptions;
 import com.groupdocs.parser.options.FormattedTextMode;
 ```
+```
 
-#### ขั้นตอนที่ 2: เริ่มต้น Parser และดึง HTML
+### ขั้นตอนที่ 2: เริ่มต้น Parser และดึง HTML
 
-ใช้โค้ดตัวอย่างต่อไปนี้เพื่อดึงข้อความที่จัดรูปแบบเป็น HTML:
-
+```markdown
 ```java
 String documentPath = "YOUR_DOCUMENT_DIRECTORY/sample.docx";
 
@@ -146,72 +167,70 @@ try (Parser parser = new Parser(documentPath)) {
     System.out.println("An error occurred: " + e.getMessage());
 }
 ```
+```
 
 **คำอธิบาย:**  
-- **การเริ่มต้น Parser:** สร้างอินสแตนซ์ `Parser` สำหรับไฟล์เป้าหมาย  
-- **FormattedTextOptions:** บอก parser ให้ส่งออกเป็น HTML (`FormattedTextMode.Html`)  
-- **การจัดการข้อผิดพลาด:** ดักจับปัญหาใด ๆ และรายงานอย่างสุภาพ  
+- **Parser Initialization:** สร้างอินสแตนซ์ `Parser` สำหรับไฟล์เป้าหมาย.  
+- **FormattedTextOptions:** แจ้ง parser ให้ส่งออกเป็น HTML (`FormattedTextMode.Html`).  
+- **Error Handling:** ดักจับข้อผิดพลาดใด ๆ และรายงานอย่างสุภาพ.
 
-### เคล็ดลับการแก้ไขปัญหา
+## ปัญหาทั่วไปและวิธีแก้
 
-- ตรวจสอบให้แน่ใจว่าเส้นทางไฟล์ถูกต้องและไฟล์สามารถอ่านได้  
-- ยืนยันว่าเวอร์ชัน GroupDocs.Parser ที่คุณใช้รองรับการดึง HTML สำหรับรูปแบบที่กำหนด  
-- ตรวจสอบการพึ่งพา Maven/Gradle หากพบข้อผิดพลาด `ClassNotFoundException`
+- **Incorrect file path:** ตรวจสอบว่าพาธแบบ absolute หรือ relative ชี้ไปยังไฟล์ที่มีอยู่และสามารถอ่านได้.  
+- **Unsupported format:** ตรวจสอบว่าเวอร์ชัน GroupDocs.Parser ของคุณรองรับการสกัด HTML สำหรับรูปแบบที่กำหนด; หากไม่รองรับให้อัปเกรด.  
+- **ClassNotFoundException:** ตรวจสอบให้แน่ใจว่า dependencies ของ Maven/Gradle ถูกแก้ไขอย่างถูกต้องและ JAR อยู่ใน classpath.  
 
 ## การประยุกต์ใช้งานจริง
 
-การดึง HTML จากเอกสารเปิดโอกาสให้ทำสิ่งต่าง ๆ ได้หลายรูปแบบ:
+การสกัด HTML จากเอกสารเปิดโอกาสหลายอย่าง:
 
-1. **การสร้างเนื้อหาเว็บ:** แปลงรายงานหรือคู่มือเป็นหน้าเว็บเพื่อเข้าถึงออนไลน์ได้ทันที  
-2. **การบูรณาการข้อมูล:** ส่ง HTML ไปยัง CMS หรือ API แบบ headless เพื่อสร้างหน้าแบบไดนามิก  
-3. **การวิเคราะห์เนื้อหา:** นำ HTML ไปผ่านกระบวนการวิเคราะห์ข้อความหรือโมเดลแมชชีนเลิร์นนิงโดยคงโครงสร้างสำคัญไว้  
+1. **Web Content Creation:** แปลงรายงานหรือคู่มือภายในให้เป็นหน้าเว็บที่ดูได้ทันที.  
+2. **Data Integration:** ส่ง HTML ไปยัง CMS หรือ API แบบ headless เพื่อสร้างหน้าแบบไดนามิกแบบเรียลไทม์.  
+3. **Content Analysis:** นำ HTML ผ่าน pipeline การวิเคราะห์ข้อความหรือโมเดลแมชชีนเลิร์นนิงโดยคงโครงสร้างเช่นหัวข้อและตาราง.  
 
-## พิจารณาด้านประสิทธิภาพ
+## การพิจารณาประสิทธิภาพ
 
-เพื่อให้ได้ประสิทธิภาพสูงสุดเมื่อใช้ GroupDocs.Parser:
+เพื่อประสิทธิภาพสูงสุดเมื่อใช้ GroupDocs.Parser:
 
-- **ปิดทรัพยากรโดยเร็ว:** ใช้ `try‑with‑resources` (ตามตัวอย่าง) เพื่อคืนหน่วยความจำ  
-- **สตรีมไฟล์ขนาดใหญ่:** ประมวลผลเอกสารขนาดใหญ่เป็นชิ้นส่วนหากพบข้อจำกัดด้านหน่วยความจำ  
-- **ใช้ Parser ซ้ำ:** เมื่อแปลงไฟล์หลายไฟล์ประเภทเดียวกัน ให้ใช้การตั้งค่า `Parser` เดียวกันซ้ำหลายครั้ง  
-
-## สรุป
-
-คุณได้เรียนรู้วิธี **convert document to html** ด้วย GroupDocs.Parser สำหรับ Java ความสามารถนี้เปิดประตูสู่การนำเสนอ, การบูรณาการ, และการวิเคราะห์เนื้อหาเอกสารบนเว็บอย่างมีพลัง
-
-**ขั้นตอนต่อไป:**  
-
-- ทดลองใช้รูปแบบผลลัพธ์อื่น ๆ เช่น PDF หรือ plain text  
-- ผสานการดึง HTML กับเครื่องมือเทมเพลตเพื่อสร้างหน้าเว็บแบบเต็มรูปแบบ  
-- สำรวจ API ทั้งหมดเพื่อดึงตาราง, รูปภาพ, และเมตาดาต้า  
+- **Close Resources Promptly:** ใช้ try‑with‑resources (เช่นในตัวอย่าง) เพื่อปล่อยหน่วยความจำ.  
+- **Stream Large Files:** ประมวลผลเอกสารขนาดใหญ่เป็นชิ้น ๆ หากพบความกดดันของหน่วยความจำ.  
+- **Reuse Parser Instances:** เมื่อแปลงหลายไฟล์ประเภทเดียวกัน ให้ใช้การตั้งค่า `Parser` เดียวกันซ้ำเพื่อ ลดค่าโอเวอร์เฮด.  
 
 ## คำถามที่พบบ่อย
 
-**ถาม: GroupDocs.Parser Java ใช้ทำอะไร?**  
-ตอบ: เป็นไลบรารีที่หลากหลายสำหรับการดึงข้อความ, เมตาดาต้า, และเนื้อหาที่จัดรูปแบบ (รวมถึง HTML) จากรูปแบบเอกสารหลายประเภท
+**Q: GroupDocs.Parser Java ใช้ทำอะไร?**  
+A: เป็นไลบรารีอเนกประสงค์สำหรับสกัดข้อความ, เมตาดาต้า, และเนื้อหาที่มีรูปแบบ (รวมถึง HTML) จากรูปแบบเอกสารหลากหลาย.
 
-**ถาม: สามารถแปลง docx เป็น html ด้วยไลบรารีนี้ได้หรือไม่?**  
-ตอบ: ได้—เพียงตั้งค่า `FormattedTextMode.Html` ตามที่แสดง ตัวแปลงจะคืนเนื้อหา DOCX เป็น HTML
+**Q: ฉันสามารถแปลง docx เป็น html ด้วยไลบรารีนี้ได้หรือไม่?**  
+A: ใช่—ตั้งค่า `FormattedTextMode.Html` ตามที่แสดงในตัวอย่าง และ parser จะคืนค่าเนื้อหา DOCX เป็น HTML.
 
-**ถาม: การแปลงเอกสารขนาดใหญ่มีผลต่อประสิทธิภาพหรือไม่?**  
-ตอบ: ไฟล์ขนาดใหญ่ใช้หน่วยความจำมากขึ้น แต่การใช้ `try‑with‑resources` และเทคนิคสตรีมช่วยลดผลกระทบได้
+**Q: การประมวลผลเอกสารขนาดใหญ่มีผลต่อประสิทธิภาพหรือไม่?**  
+A: ไฟล์ขนาดใหญ่ใช้หน่วยความจำมากขึ้น แต่การใช้ try‑with‑resources และเทคนิคสตรีมช่วยลดผลกระทบ; ไลบรารีสามารถจัดการไฟล์ขนาดถึง 2 GB โดยไม่โหลดทั้งหมดเข้าสู่หน่วยความจำ.
 
-**ถาม: จะจัดการกับฟีเจอร์เอกสารที่ไม่รองรับอย่างไร?**  
-ตอบ: ตัวแปลงจะคืนค่า `null` สำหรับโหมดการดึงที่ไม่รองรับ; คุณควรเขียนโลจิกสำรองหรือแจ้งผู้ใช้ตามความเหมาะสม
+**Q: จะจัดการกับฟีเจอร์เอกสารที่ไม่รองรับอย่างไร?**  
+A: parser จะคืนค่า `null` สำหรับโหมดสกัดที่ไม่รองรับ; คุณควรเขียนโลจิก fallback หรือแจ้งผู้ใช้ตามความเหมาะสม.
 
-**ถาม: จะหาแหล่งข้อมูลเพิ่มเติมเกี่ยวกับ GroupDocs.Parser Java ได้จากที่ไหน?**  
-ตอบ: เยี่ยมชม [เอกสารอย่างเป็นทางการ](https://docs.groupdocs.com/parser/java/) และสำรวจฟอรั่มชุมชนเพื่อรับเคล็ดลับและตัวอย่าง
+**Q: จะหาแหล่งข้อมูลเพิ่มเติมเกี่ยวกับ GroupDocs.Parser Java ได้จากที่ไหน?**  
+A: เยี่ยมชมเอกสารอย่างเป็นทางการและลิงก์ชุมชนที่ระบุด้านล่างนี้.
 
 ## แหล่งข้อมูล
 
-- **เอกสาร:** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)  
-- **อ้างอิง API:** [GroupDocs Parser Java API Reference](https://reference.groupdocs.com/parser/java)  
-- **ดาวน์โหลด:** [GroupDocs Parser Java Releases](https://releases.groupdocs.com/parser/java/)  
+- **Documentation:** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)  
+- **Official Documentation:** [official documentation](https://docs.groupdocs.com/parser/java/)  
+- **API Reference:** [GroupDocs Parser Java API Reference](https://reference.groupdocs.com/parser/java)  
+- **Download:** [GroupDocs Parser Java Releases](https://releases.groupdocs.com/parser/java/)  
 - **GitHub:** [GroupDocs.Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
-- **สนับสนุนฟรี:** [GroupDocs Parser Forum](https://forum.groupdocs.com/c/parser)  
-- **ไลเซนส์ชั่วคราว:** [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Free Support:** [GroupDocs Parser Forum](https://forum.groupdocs.com/c/parser)  
+- **Temporary License:** [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 
 ---
 
-**อัปเดตล่าสุด:** 2026-01-01  
+**อัปเดตล่าสุด:** 2026-07-02  
 **ทดสอบกับ:** GroupDocs.Parser 25.5 for Java  
 **ผู้เขียน:** GroupDocs
+
+## บทเรียนที่เกี่ยวข้อง
+
+- [Master Document Extraction with GroupDocs.Parser for Java: Convert Documents to HTML and Plain Text](/parser/java/text-extraction/master-document-extraction-groupdocs-parser-java/)  
+- [Mastering Document Text Extraction in Java using GroupDocs.Parser: HTML and Markdown Guide](/parser/java/text-extraction/mastering-document-text-extraction-java-groupdocs-parser/)  
+- [Java HTML Text Extraction Using GroupDocs.Parser: A Comprehensive Guide](/parser/java/text-extraction/java-text-extraction-html-groupdocs-parser/)
