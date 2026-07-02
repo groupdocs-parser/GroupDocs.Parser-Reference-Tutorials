@@ -1,69 +1,98 @@
 ---
-date: '2026-01-03'
-description: Naucz się wyodrębniać tekst z e‑maili przy użyciu GroupDocs.Parser w
-  Javie. Ten przewodnik obejmuje konfigurację, implementację i praktyczne zastosowania.
+date: '2026-07-02'
+description: Dowiedz się, jak przekonwertować MSG na tekst przy użyciu GroupDocs.Parser
+  w Javie, obejmując konfigurację, przegląd kodu oraz rzeczywiste przypadki użycia.
 keywords:
-- extract text from emails
-- GroupDocs.Parser Java
-- text extraction in Java
-- email parsing with GroupDocs
-- Java email file processing
-title: 'Jak wyodrębnić tekst z e‑maili przy użyciu GroupDocs.Parser w Javie: przewodnik
+- convert msg to text
+- extract email text java
+- parse outlook email java
+- read email body java
+- parse msg files java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-02'
+  description: Learn how to convert MSG to text with GroupDocs.Parser in Java, covering
+    setup, code walkthrough, and real‑world use cases.
+  headline: 'How to Convert MSG to Text Using GroupDocs.Parser in Java: A Step‑By‑Step
+    Guide'
+  type: TechArticle
+- description: Learn how to convert MSG to text with GroupDocs.Parser in Java, covering
+    setup, code walkthrough, and real‑world use cases.
+  name: 'How to Convert MSG to Text Using GroupDocs.Parser in Java: A Step‑By‑Step
+    Guide'
+  steps:
+  - name: Import Required Classes
+    text: Start by importing the necessary GroupDocs.Parser classes into your Java
+      source file. > **Definition anchor:** `TextReader` is a high‑level API that
+      streams textual content from a document, delivering it line‑by‑line for efficient
+      memory usage.
+  - name: Initialize the Parser with the MSG Path
+    text: '`Parser` is the main entry point for reading supported documents, including
+      MSG email files. Instantiate `Parser` with the absolute or relative path of
+      the *.msg* file you want to process.'
+  - name: Verify Text Extraction Capability
+    text: 'Before reading, check whether the current document type supports text extraction:
+      > **Tip:** This guard prevents `UnsupportedOperationException` for formats that
+      only allow metadata extraction.'
+  - name: Read and Output the Email Text
+    text: '`TextReader` streams textual content from a document line by line, enabling
+      low‑memory processing. Use `TextReader` to stream the subject and body. The
+      reader returns each line of text, which you can concatenate or write directly
+      to a file. **Why this matters:** Streaming avoids loading the entire e'
+  type: HowTo
+- questions:
+  - answer: Over 50 formats, including *.msg*, *.eml*, *.pdf*, *.docx*, and *.xlsx*,
+      can be converted to plain text.
+    question: What file formats can I convert to text with GroupDocs.Parser?
+  - answer: Decrypt the email first using your own logic, then pass the decrypted
+      stream to `Parser`. The library does not decrypt protected files automatically.
+    question: How do I handle encrypted or password‑protected emails?
+  - answer: GroupDocs.Parser can process files up to 2 GB without loading the entire
+      file into memory, thanks to its streaming architecture.
+    question: Is there a size limit for MSG files?
+  - answer: Change the `<version>` element in `pom.xml` to the newest number listed
+      on the [GroupDocs releases](https://releases.groupdocs.com/parser/java/) page
+      and run `mvn clean install`.
+    question: How can I update to the latest version of GroupDocs.Parser?
+  - answer: The official documentation and GitHub repository contain dozens of samples
+      covering advanced scenarios like attachment extraction and metadata handling.
+    question: Where can I find more code examples?
+  type: FAQPage
+title: 'Jak przekonwertować MSG na tekst przy użyciu GroupDocs.Parser w Javie: przewodnik
   krok po kroku'
 type: docs
 url: /pl/java/email-parsing/extract-text-emails-groupdocs-parser-java/
 weight: 1
 ---
 
-# Jak wyodrębnić tekst z e‑maili przy użyciu GroupDocs.Parser w Javie
+# Jak przekonwertować MSG na tekst przy użyciu GroupDocs.Parser w Javie
 
-## Wprowadzenie
-
-Czy masz problem z automatyzacją procesu **wyodrębniania tekstu z e‑maili** przy użyciu Javy? Nie jesteś sam! Potężna biblioteka GroupDocs.Parser w Javie została zaprojektowana specjalnie do tego celu. Wykorzystując jej możliwości, programiści mogą płynnie wyodrębniać i przetwarzać dane tekstowe z różnych formatów dokumentów, w tym e‑maili.
-
-W tym obszernej przewodniku przeprowadzimy Cię krok po kroku, jak używać GroupDocs.Parser w Javie do wyodrębniania tekstu z plików e‑maili. Dowiesz się, jak skonfigurować niezbędne środowisko, pisać wydajny kod zgodnie z najlepszymi praktykami oraz poznasz praktyczne zastosowania tej funkcji.
-
-**Czego się nauczysz:**
-- Jak skonfigurować GroupDocs.Parser w projekcie Java
-- Kroki wyodrębniania treści tekstowej z pliku e‑mail przy użyciu GroupDocs.Parser Java
-- Praktyczne przypadki użycia i możliwości integracji
-- Techniki optymalizacji wydajności
+Wyodrębnianie treści, tematu i załączników z plików Outlook **.msg** jest powszechną potrzebą w automatyzacji, archiwizacji i analizie. W tym samouczku dowiesz się, jak **przekonwertować MSG na tekst** szybko i niezawodnie przy użyciu GroupDocs.Parser dla Javy. Przejdziemy przez konfigurację środowiska, dokładne wywołania API oraz wskazówki najlepszych praktyk, które utrzymują kod czystym i wydajnym.
 
 ## Szybkie odpowiedzi
-- **Jaką bibliotekę użyć do wyodrębniania tekstu z e‑maili w Javie?** GroupDocs.Parser for Java
-- **Jaki format pliku jest obsługiwany przy wyodrębnianiu e‑maili?** Pliki .msg (format e‑mail Outlook)
-- **Czy potrzebna jest licencja do testowania?** Tak, dostępna jest tymczasowa licencja próbna
-- **Czy mogę przetwarzać wiele e‑maili jednocześnie?** Tak, przetwarzanie wsadowe jest zalecane dla wydajności
-- **Jaka wersja Javy jest wymagana?** JDK 8 lub wyższa
+- **Jaka biblioteka konwertuje MSG na tekst w Javie?** GroupDocs.Parser for Java  
+- **Jaki format e‑mail jest obsługiwany?** Pliki Outlook *.msg* (natywny format Outlooka)  
+- **Czy potrzebna jest licencja do testowania?** Tak – tymczasowa licencja próbna jest dostępna od GroupDocs  
+- **Czy mogę przetwarzać wiele wiadomości jednocześnie?** Zdecydowanie; przetwarzanie wsadowe jest zalecane w scenariuszach o dużej objętości  
+- **Jaka wersja Javy jest wymagana?** JDK 8 lub nowsza  
 
-## Co oznacza „wyodrębnianie tekstu z e‑maili”?
+## Co oznacza „konwersja MSG na tekst”?
+Konwersja MSG na tekst oznacza programowe otwieranie pliku Outlook *.msg* i wyodrębnianie jego komponentów tekstowych — takich jak temat, treść wiadomości oraz opcjonalnie nazwy załączników — oraz zwracanie ich jako ciągów znaków w formacie zwykłego tekstu, które mogą być przechowywane, indeksowane lub przetwarzane przez inne aplikacje.
 
-Wyodrębnianie tekstu z e‑maili oznacza programowe odczytywanie treści, tematu i innych części tekstowych pliku e‑mail (takiego jak *.msg*) oraz konwertowanie tej zawartości na ciągi znaków w formacie zwykłego tekstu, które Twoja aplikacja może analizować, przechowywać lub wyświetlać.
-
-## Dlaczego warto używać GroupDocs.Parser do wyodrębniania tekstu z e‑maili?
-
-- **Niezależny od formatu:** Obsługuje wiele formatów e‑maili bez potrzeby używania zewnętrznych parserów.
-- **Wysoka dokładność:** Zachowuje znaki Unicode i symbole specjalne.
-- **Łatwa integracja:** Prosta zależność Maven i przejrzyste API.
-- **Skalowalny:** Działa dobrze zarówno dla pojedynczych e‑maili, jak i dużych zadań wsadowych.
+## Dlaczego używać GroupDocs.Parser do konwersji MSG na tekst?
+GroupDocs.Parser oferuje szerokie wsparcie formatów, obsługując MSG wraz z dziesiątkami innych typów e‑mail i dokumentów bez użycia zewnętrznych narzędzi. Zachowuje formatowanie Unicode i HTML z wysoką dokładnością, działa poprzez API strumieniowe, które utrzymuje niskie zużycie pamięci, oraz zapewnia prostą integrację z Mavenem, co czyni go idealnym zarówno dla pojedynczych plików, jak i scenariuszy przetwarzania wsadowego o dużej objętości.
 
 ## Wymagania wstępne
-
-Zanim rozpoczniemy implementację wyodrębniania tekstu z e‑maili, upewnij się, że Twoje środowisko jest prawidłowo skonfigurowane. Będziesz potrzebować:
-
-- **Java Development Kit (JDK):** Upewnij się, że na Twoim systemie jest zainstalowany JDK 8 lub wyższy.
-- **Maven:** Ten samouczek używa Maven do zarządzania zależnościami i konfiguracją projektu.
-- **IDE:** Zintegrowane środowisko programistyczne, takie jak IntelliJ IDEA lub Eclipse, będzie przydatne.
-
-Dodatkowo przydatna będzie podstawowa znajomość programowania w Javie oraz zaznajomienie się z formatami plików e‑mail (np. pliki .msg), aby móc swobodnie podążać za instrukcjami.
+- **Java Development Kit (JDK):** Zainstalowana wersja 8 lub nowsza.  
+- **Maven:** Do zarządzania zależnościami i automatyzacji budowania.  
+- **IDE (opcjonalnie):** IntelliJ IDEA, Eclipse lub dowolny edytor, który preferujesz.  
+- **Podstawowa znajomość Javy** oraz zaznajomienie się z plikami Outlook *.msg*.  
 
 ## Konfiguracja GroupDocs.Parser dla Javy
-
-Aby rozpocząć pracę z GroupDocs.Parser w swoim projekcie Java, musisz dodać go do konfiguracji budowania. Możesz to zrobić za pomocą Maven lub pobrać bezpośrednio:
+Aby rozpocząć, dodaj bibliotekę GroupDocs.Parser do swojego projektu Maven.
 
 ### Konfiguracja Maven
-
-Dodaj następujące wpisy repozytorium i zależności do pliku `pom.xml`:
+Dodaj wpisy repozytorium i zależności do pliku `pom.xml`:
 
 ```xml
 <repositories>
@@ -83,28 +112,22 @@ Dodaj następujące wpisy repozytorium i zależności do pliku `pom.xml`:
 </dependencies>
 ```
 
-### Pobranie bezpośrednie
+> **Definition anchor:** Klasa `Parser` jest punktem wejścia do odczytu dowolnego obsługiwanego dokumentu, w tym plików e‑mail.
 
-Alternatywnie, pobierz najnowszą wersję GroupDocs.Parser z [GroupDocs releases](https://releases.groupdocs.com/parser/java/).
+### Bezpośrednie pobranie
+Jeśli wolisz ręczną konfigurację, pobierz najnowszy plik JAR z [GroupDocs releases](https://releases.groupdocs.com/parser/java/).
 
 #### Uzyskanie licencji
+Uzyskaj tymczasową licencję próbną ze [strony tymczasowej licencji](https://purchase.groupdocs.com/temporary-license). Licencja ta usuwa ograniczenia wersji próbnej i pozwala testować wszystkie funkcje.
 
-Aby rozpocząć pełną wersję próbną, możesz uzyskać tymczasową licencję, odwiedzając [stronę tymczasowej licencji](https://purchase.groupdocs.com/temporary-license). Pozwoli to przetestować wszystkie funkcje bez ograniczeń.
+## Jak przekonwertować MSG na tekst w Javie
+Załaduj plik e‑mail, zweryfikuj, że wyodrębnianie tekstu jest obsługiwane, i odczytaj zawartość przy użyciu `TextReader`.
 
-## Przewodnik implementacji
+**Direct answer (40‑70 words):**  
+Utwórz instancję `Parser` z ścieżką do pliku *.msg*, wywołaj `parser.getFeatures().isText()`, aby potwierdzić wsparcie, a następnie użyj `TextReader` do odczytania tematu i treści e‑maila. Na koniec wypisz ciągi znaków lub zapisz je do pliku — cały proces wymaga tylko trzech wywołań API.
 
-W tej sekcji podzielimy implementację wyodrębniania tekstu z pliku e‑mail przy użyciu GroupDocs.Parser Java na przystępne kroki.
-
-### Jak odczytać plik .msg w Javie
-
-#### Przegląd
-
-Ta funkcja pozwala wyodrębnić i odczytać treść tekstową z pliku e‑mail (.msg). Pokażemy, jak zainicjalizować obiekt `Parser` dla pliku e‑mail i użyć go do uzyskania treści tekstowej.
-
-#### Implementacja krok po kroku
-
-**1. Importuj wymagane biblioteki**  
-Rozpocznij od zaimportowania niezbędnych klas:
+### Krok 1: Importowanie wymaganych klas
+Zacznij od zaimportowania niezbędnych klas GroupDocs.Parser do pliku źródłowego Javy.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -112,8 +135,11 @@ import com.groupdocs.parser.data.TextReader;
 import java.io.IOException;
 ```
 
-**2. Zainicjalizuj Parser ze ścieżką do pliku e‑mail**  
-Utwórz instancję `Parser` używając ścieżki do pliku e‑mail. Upewnij się, że ścieżka wskazuje na istniejący plik .msg w Twoim katalogu.
+> **Definition anchor:** `TextReader` jest wysokopoziomowym API, które strumieniuje zawartość tekstową z dokumentu, dostarczając ją linia po linii w celu efektywnego wykorzystania pamięci.
+
+### Krok 2: Inicjalizacja Parsera ze ścieżką do pliku MSG
+`Parser` jest głównym punktem wejścia do odczytu obsługiwanych dokumentów, w tym plików e‑mail MSG.  
+Utwórz instancję `Parser` z absolutną lub względną ścieżką do pliku *.msg*, który chcesz przetworzyć.
 
 ```java
 String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/sample.msg"; // Replace with your document path
@@ -133,65 +159,86 @@ try (Parser parser = new Parser(emailFilePath)) {
 }
 ```
 
-**Wyjaśnienie:**
-- **Inicjalizacja Parsera:** Obiekt `Parser` jest inicjalizowany ze ścieżką do pliku .msg.
-- **Sprawdzenie funkcji:** Przed próbą wyodrębnienia tekstu weryfikujemy, czy wyodrębnianie tekstu jest obsługiwane dla tego typu dokumentu przy użyciu `parser.getFeatures().isText()`.
-- **Wyodrębnianie tekstu:** Jeśli jest obsługiwane, używany jest obiekt `TextReader` do odczytania i wypisania całej treści tekstowej z e‑maila.
+### Krok 3: Weryfikacja możliwości wyodrębniania tekstu
+Przed odczytem sprawdź, czy bieżący typ dokumentu obsługuje wyodrębnianie tekstu:
 
-### Jak wyodrębnić tekst z e‑maila w Javie
+```text
+if (!parser.getFeatures().isText()) {
+    System.out.println("Text extraction not supported for this file.");
+    return;
+}
+```
 
-#### Porady dotyczące rozwiązywania problemów
-- Upewnij się, że ścieżka do pliku .msg jest prawidłowa; w przeciwnym razie zostanie rzucony `IOException`.
-- Sprawdź, czy GroupDocs.Parser obsługuje wyodrębnianie tekstu dla konkretnego formatu pliku, z którym pracujesz. Nie wszystkie formaty mogą w pełni obsługiwać tę funkcję.
+> **Tip:** Ten warunek zapobiega `UnsupportedOperationException` dla formatów, które umożliwiają wyłącznie wyodrębnianie metadanych.
+
+### Krok 4: Odczyt i wyjście tekstu e‑maila
+`TextReader` strumieniuje zawartość tekstową z dokumentu linia po linii, umożliwiając przetwarzanie przy niskim zużyciu pamięci.  
+Użyj `TextReader` do strumieniowego odczytu tematu i treści. Czytnik zwraca każdą linię tekstu, którą możesz połączyć lub zapisać bezpośrednio do pliku.
+
+```text
+try (TextReader reader = parser.getText()) {
+    StringBuilder emailContent = new StringBuilder();
+    while (reader.readLine() != null) {
+        emailContent.append(reader.getCurrentLine()).append(System.lineSeparator());
+    }
+    System.out.println(emailContent.toString());
+}
+```
+
+**Dlaczego to jest ważne:** Strumieniowanie zapobiega ładowaniu całego e‑maila do pamięci, co jest kluczowe przy obsłudze dużych wiadomości z wieloma załącznikami.
+
+## Częste problemy i rozwiązania
+- **Nieprawidłowa ścieżka pliku:** Nieprawidłowa ścieżka powoduje wyrzucenie `IOException`. Zweryfikuj ścieżkę i użyj `Files.exists(Paths.get(path))` przed inicjalizacją parsera.  
+- **Nieobsługiwany format:** Nie wszystkie formaty e‑mail udostępniają tekst. Użyj `parser.getFeatures().isText()`, aby zabezpieczyć się przed nieobsługiwanymi plikami.  
+- **Licencja nie zastosowana:** Jeśli licencja próbna nie zostanie załadowana, pojawi się błąd licencyjny. `License` stosuje próbną lub komercyjną licencję GroupDocs, aby włączyć pełną funkcjonalność. Załaduj plik licencji wcześnie w aplikacji przy użyciu `License license = new License(); license.setLicense("path/to/license.lic");`.
 
 ## Praktyczne zastosowania
+Konwersja MSG na tekst otwiera wiele scenariuszy automatyzacji:
 
-Wyodrębnianie tekstu z e‑maili ma kilka praktycznych zastosowań:
-
-1. **Automatyczne przetwarzanie e‑maili:** Automatyczne przetwarzanie i kategoryzowanie przychodzących e‑maili na podstawie ich treści.
-2. **Analiza danych:** Wyodrębnianie kluczowych informacji, takich jak imiona, daty i adresy, w celu dalszej analizy danych lub raportowania.
-3. **Integracja z systemami CRM:** Dostarczanie wyodrębnionych danych e‑mail do systemów zarządzania relacjami z klientami w celu usprawnienia interakcji z klientami.
+1. **Automatyczne kierowanie zgłoszeń:** Analizuj przychodzące e‑maile wsparcia i kieruj je na podstawie słów kluczowych wyodrębnionych z treści.  
+2. **Archiwizacja zgodna z przepisami:** Przechowuj wersje e‑maili w formacie zwykłego tekstu dla przeszukiwalnych archiwów prawnych.  
+3. **Uzupełnianie CRM:** Pobieraj dane klientów z podpisów e‑mail i wprowadzaj je do systemu CRM.  
+4. **Analiza sentymentu:** Przekazuj wyodrębnione treści e‑mail do potoków NLP, aby ocenić nastroje klientów.
 
 ## Wskazówki dotyczące wydajności
+- **Ponowne użycie instancji Parser:** Podczas przetwarzania wsadu, w miarę możliwości używaj jednego obiektu `Parser`, aby zmniejszyć obciążenie JVM.  
+- **Przetwarzanie równoległe:** Użyj `ForkJoinPool` Javy do obsługi wielu plików jednocześnie, ale ogranicz równoległość, aby uniknąć nadmiernego obciążenia pamięci.  
+- **Strumieniowanie na dysk:** Dla bardzo dużych e‑maili, przekieruj wyjście `TextReader` bezpośrednio do pliku zamiast budować duży `StringBuilder`.
 
-Podczas pracy z wyodrębnianiem tekstu w Javie przy użyciu GroupDocs.Parser, rozważ następujące wskazówki, aby zoptymalizować wydajność:
+## Najczęściej zadawane pytania
 
-- **Zarządzanie pamięcią:** Zapewnij efektywne wykorzystanie pamięci poprzez prawidłowe zarządzanie zasobami, takimi jak zamykanie strumieni po użyciu.
-- **Przetwarzanie wsadowe:** Jeśli przetwarzasz wiele e‑maili, grupuj je w partie, aby zmniejszyć narzut i zwiększyć przepustowość.
+**Q: Jakie formaty plików mogę konwertować na tekst przy użyciu GroupDocs.Parser?**  
+A: Ponad 50 formatów, w tym *.msg*, *.eml*, *.pdf*, *.docx* i *.xlsx*, może być konwertowanych na zwykły tekst.
 
-## Zakończenie
+**Q: Jak obsłużyć zaszyfrowane lub chronione hasłem e‑maile?**  
+A: Najpierw odszyfruj e‑mail przy użyciu własnej logiki, a następnie przekaż odszyfrowany strumień do `Parser`. Biblioteka nie odszyfrowuje chronionych plików automatycznie.
 
-Gratulacje z okazji ukończenia tego przewodnika! Nauczyłeś się, jak skonfigurować GroupDocs.Parser dla Javy i **wyodrębniać tekst z e‑maili** efektywnie. Ta wiedza może być krokiem w kierunku budowania bardziej złożonych rozwiązań do ekstrakcji danych i automatyzacji w Twoich projektach.
+**Q: Czy istnieje limit rozmiaru plików MSG?**  
+A: GroupDocs.Parser może przetwarzać pliki do 2 GB bez ładowania całego pliku do pamięci, dzięki architekturze strumieniowej.
 
-W kolejnych krokach rozważ eksplorację innych funkcji GroupDocs.Parser lub integrację z dodatkowymi systemami, takimi jak bazy danych czy narzędzia analityczne. Jeśli masz pytania lub potrzebujesz dalszej pomocy, nie wahaj się skontaktować na [forum wsparcia GroupDocs](https://forum.groupdocs.com/c/parser).
+**Q: Jak mogę zaktualizować do najnowszej wersji GroupDocs.Parser?**  
+A: Zmień element `<version>` w `pom.xml` na najnowszy numer podany na stronie [GroupDocs releases](https://releases.groupdocs.com/parser/java/) i uruchom `mvn clean install`.
 
-## Sekcja FAQ
-
-**1. Z jakich formatów plików mogę wyodrębniać tekst przy użyciu GroupDocs.Parser?**  
-GroupDocs.Parser obsługuje szeroką gamę formatów dokumentów, w tym .msg, .pdf, .docx i inne.
-
-**2. Jak obsługiwać błędy podczas wyodrębniania tekstu?**  
-Używaj bloków try-catch, aby przechwycić `IOException` lub inne odpowiednie wyjątki, które mogą wystąpić podczas obsługi plików lub parsowania.
-
-**3. Czy mogę wyodrębnić tekst z zaszyfrowanych e‑maili przy użyciu GroupDocs.Parser?**  
-Wyodrębnianie tekstu jest możliwe tylko wtedy, gdy e‑mail zostanie odszyfrowany przed przetworzeniem przez GroupDocs.Parser.
-
-**4. Czy istnieje limit rozmiaru plików e‑mail, które mogę przetwarzać?**  
-GroupDocs.Parser nie narzuca konkretnych limitów, ale przetwarzanie bardzo dużych plików może wymagać dodatkowej pamięci i zasobów.
-
-**5. Jak zaktualizować do nowszej wersji GroupDocs.Parser w Maven?**  
-Zaktualizuj znacznik `<version>` w pliku `pom.xml` do najnowszego numeru wersji dostępnego na [stronie pobierania GroupDocs](https://releases.groupdocs.com/parser/java/).
+**Q: Gdzie mogę znaleźć więcej przykładów kodu?**  
+A: Oficjalna dokumentacja i repozytorium GitHub zawierają dziesiątki przykładów obejmujących zaawansowane scenariusze, takie jak wyodrębnianie załączników i obsługa metadanych.
 
 ## Zasoby
-
-- **Dokumentacja:** Zapoznaj się ze szczegółową dokumentacją pod adresem [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/).
-- **Referencja API:** Uzyskaj dostęp do pełnych szczegółów API pod adresem [GroupDocs API Reference](https://reference.groupdocs.com/parser/java).
-- **Pobranie:** Pobierz najnowszą wersję z [GroupDocs Downloads](https://releases.groupdocs.com/parser/java/).
-- **Repozytorium GitHub:** Zobacz kod źródłowy na [GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java).
-- **Bezpłatne wsparcie:** Dołącz do dyskusji i szukaj pomocy na [GroupDocs Forum](https://forum.groupdocs.com/c/parser).
+- **Dokumentacja:** Przeglądaj szczegółowe przewodniki pod adresem [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/).  
+- **Referencja API:** Przeglądaj pełne API pod adresem [GroupDocs API Reference](https://reference.groupdocs.com/parser/java).  
+- **Pobieranie:** Pobierz najnowsze pliki binarne z [GroupDocs Downloads](https://releases.groupdocs.com/parser/java/).  
+- **Strona pobierania GroupDocs:** Uzyskaj te same pliki binarne poprzez [GroupDocs downloads page](https://releases.groupdocs.com/parser/java/).  
+- **Repozytorium GitHub:** Zobacz kod źródłowy i wkład społeczności na [GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java).  
+- **Bezpłatne wsparcie:** Zadawaj pytania na [GroupDocs support forum](https://forum.groupdocs.com/c/parser).  
+- **Forum GroupDocs:** Dodatkowe dyskusje społeczności są dostępne na [GroupDocs Forum](https://forum.groupdocs.com/c/parser).
 
 ---
 
-**Ostatnia aktualizacja:** 2026-01-03  
+**Ostatnia aktualizacja:** 2026-07-02  
 **Testowano z:** GroupDocs.Parser 25.5 for Java  
 **Autor:** GroupDocs
+
+## Powiązane samouczki
+
+- [Jak wyodrębnić metadane e‑mail przy użyciu GroupDocs.Parser w Javie – Kompletny przewodnik](/parser/java/metadata-extraction/extract-metadata-emails-groupdocs-parser-java/)
+- [Analiza pliku Outlook PST: wyodrębnianie załączników i metadanych przy użyciu GroupDocs.Parser Java](/parser/java/metadata-extraction/extract-outlook-attachments-metadata-groupdocs-parser-java/)
+- [Java: odczyt tekstu PDF przy użyciu GroupDocs.Parser – kompletny przewodnik](/parser/java/getting-started/document-parsing-java-groupdocs-parser-guide/)
