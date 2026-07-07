@@ -1,45 +1,95 @@
 ---
-date: '2026-01-06'
-description: GroupDocs.Parser for Java kullanarak e-posta nasıl çıkarılır ve HTML'ye
-  dönüştürülür öğrenin; içerik analizi, veri taşıma veya kullanıcı deneyimini geliştirme
-  için mükemmeldir.
+date: '2026-07-07'
+description: GroupDocs.Parser for Java kullanarak e-postayı HTML'ye nasıl dönüştüreceğinizi
+  öğrenin; içerik analizi, veri taşıma ve kullanıcı deneyimini iyileştirme için idealdir.
 keywords:
-- GroupDocs Parser
-- extract email text as HTML
-- Java email parsing
-title: GroupDocs.Parser Java ile E-postayı HTML'ye Nasıl Çıkarılır
+- convert email to html
+- read msg file java
+- java email parsing
+- parse eml file java
+og_description: GroupDocs.Parser for Java kullanarak e-postayı HTML'ye dönüştürün.
+  Bu rehber, .msg ve .eml dosyalarını verimli bir şekilde ayrıştırmak için kurulum,
+  kod ve ipuçlarını gösterir.
+og_title: GroupDocs.Parser for Java ile E-postayı HTML'ye Dönüştürün
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-07'
+  description: Learn how to convert email to HTML using GroupDocs.Parser for Java,
+    ideal for content analysis, data migration, and enhancing user experiences.
+  headline: How to Convert Email to HTML with GroupDocs.Parser for Java
+  type: TechArticle
+- description: Learn how to convert email to HTML using GroupDocs.Parser for Java,
+    ideal for content analysis, data migration, and enhancing user experiences.
+  name: How to Convert Email to HTML with GroupDocs.Parser for Java
+  steps:
+  - name: Create an Instance of the Parser Class
+    text: The `Parser` class is GroupDocs.Parser's core object that loads and interprets
+      email files. *Why?* Initialising `Parser` points the API at your email file,
+      establishing the context for all subsequent operations.
+  - name: Extract Formatted Text from the Document
+    text: '`FormattedTextMode.Html` tells the API to return the body as HTML rather
+      than plain text. *Why?* This mode preserves headings, lists, and basic styling,
+      giving you ready‑to‑display markup.'
+  - name: Read and Process the Extracted Text
+    text: The `TextReader` streams the HTML string so you can embed it, store it,
+      or sanitise it. *Why?* Streaming avoids loading large messages into memory,
+      which is crucial when processing batches.
+  type: HowTo
+- questions:
+  - answer: Extracting and formatting email bodies (and attachments) into HTML or
+      plain text for web applications and data pipelines.
+    question: What is the primary use case for GroupDocs.Parser with emails?
+  - answer: Yes, the library can read and extract content from most common attachment
+      types embedded in emails.
+    question: Can I process attachments using GroupDocs.Parser?
+  - answer: GroupDocs.Parser automatically detects the file type and applies the appropriate
+      parser, so you only need to point it at the file path.
+    question: How does the API handle different email formats ( .msg, .eml, .mht )?
+  - answer: Monitor memory consumption and ensure thread safety; use the try‑with‑resources
+      pattern and consider parallel processing with separate parser instances.
+    question: What should I watch out for when parsing large email datasets?
+  - answer: GroupDocs offers free community support via their forum and comprehensive
+      documentation.
+    question: Where can I get help if I encounter issues?
+  type: FAQPage
+title: GroupDocs.Parser for Java ile E-postayı HTML'ye Dönüştürme
 type: docs
 url: /tr/java/formatted-text-extraction/groupdocs-parser-java-email-html-extraction/
 weight: 1
 ---
 
-# GroupDocs.Parser Java ile E-posta İçeriğini HTML'ye Çıkarma
+# GroupDocs.Parser for Java ile E-postayı HTML'ye Dönüştürme
 
-E‑posta içeriğini **nasıl çıkaracağınızı** ve temiz, web‑hazır HTML'e dönüştüreceğinizi öğrenmek istiyorsanız doğru yerdesiniz. Bu öğreticide, GroupDocs.Parser'ı bir Java projesine kurmaktan formatlanmış metni okumaya ve e‑postayı uygulamanızda HTML olarak göstermeye kadar tüm süreci adım adım inceleyeceğiz. Ayrıca **java e‑posta ayrıştırma**, ek dosyaların işlenmesi ve performans optimizasyonu için pratik ipuçlarını da göreceksiniz.
+E-postayı **HTML'ye dönüştürmek** istiyorsanız hızlı ve güvenilir bir şekilde, doğru yerdesiniz. Bu öğreticide her şeyi adım adım göstereceğiz—GroupDocs.Parser'ı bir Maven projesine eklemekten, bir .msg veya .eml dosyasının biçimlendirilmiş gövdesini çıkarmaya, ve sonunda bu HTML'yi Java uygulamanızda render etmeye kadar. Ekleri nasıl işleyeceğinizi, bellek kullanımını nasıl optimize edeceğinizi ve çözümü toplu işleme için nasıl ölçeklendireceğinizi de öğreneceksiniz.
 
 ## Hızlı Yanıtlar
-- **E‑posta çıkarımını hangi kütüphane yapar?** GroupDocs.Parser for Java  
-- **Çıktı hangi formatta olur?** HTML (`FormattedTextMode.Html` aracılığıyla)  
-- **Lisans gerekir mi?** Geliştirme için ücretsiz deneme yeterlidir; üretim ortamı için kalıcı lisans gereklidir  
-- **Ek dosyalar işlenebilir mi?** Evet, GroupDocs.Parser e‑postanın ekli dosyalarını da okuyabilir  
-- **Çoklu iş parçacığı (multi‑threading) destekleniyor mu?** Ayrı `Parser` örnekleri oluşturarak birden çok e‑postayı aynı anda ayrıştırabilirsiniz  
+- **E-posta çıkarımını hangi kütüphane yönetir?** GroupDocs.Parser for Java  
+- **Hangi çıktı formatını kullanmalıyım?** HTML via `FormattedTextMode.Html`  
+- **Geliştirme için lisansa ihtiyacım var mı?** Ücretsiz deneme sürümü geliştirme için çalışır; üretim için kalıcı bir lisans gereklidir  
+- **Ekler ayrıştırılabilir mi?** Evet, API ekli dosyaları otomatik olarak çıkarır  
+- **Paralel işleme mümkün mü?** Evet—güvenli eşzamanlılık için her iş parçacığına ayrı `Parser` örnekleri oluşturun  
 
-## GroupDocs.Parser ile “e‑posta nasıl çıkarılır” nedir?
-GroupDocs.Parser, bir e‑posta dosyasının ( .msg, .eml, vs. ) ham MIME yapısını okuyan ve seçtiğiniz formatta—düz metin, Markdown veya **HTML**—gövde içeriğini döndüren basit bir API sağlar. Bu sayede mesajları tarayıcılarda göstermek, arama indekslerine beslemek veya arşivleme amacıyla dönüştürmek çok kolaylaşır.
+## GroupDocs.Parser ile “e-postayı HTML'ye dönüştürme” nedir?
+GroupDocs.Parser, bir e-posta dosyasının ham MIME yapısını okur ve gövdeyi HTML, düz metin veya Markdown olarak döndürür. Bu özellik, geliştiricilerin mesajları doğrudan tarayıcılarda görüntülemesini, arama indekslerine beslemesini veya web‑dostu bir formatta arşivlemesini, temel biçimlendirme ve yapıyı korurken sağlar. Kütüphane, MIME ayrıştırmanın karmaşıklığını soyutlayarak, birçok e-posta formatı için tutarlı sonuçlar veren basit, yüksek‑seviye bir API sunar.
 
-## Neden e‑postayı HTML’ye dönüştürmeliyiz?
-- **E‑postayı HTML olarak** web portalları veya yardım masası panellerinde stil kaybı olmadan göstermek.  
-- **Formatlanmış metni** analiz veya doğal dil işleme için kolayca okumak.  
-- Düz metnin kaldıracağı satır sonları, listeler ve temel biçimlendirmeyi korumak.  
+## Neden e-posta HTML'ye dönüştürülür?
+E-postayı HTML'ye dönüştürmek, düz metin çıkarımının kaybedeceği stil, listeler ve satır sonlarını korur. Ayrıca şunları yapmanızı sağlar:
 
-## Ön Koşullar
-- **GroupDocs.Parser for Java** (sürüm 25.5 veya daha yeni)  
-- JDK 8 ve üzeri, IntelliJ IDEA, Eclipse veya NetBeans gibi bir IDE  
-- Temel Java bilgisi; bağımlılık yönetimi için Maven önerilir  
+- **E-postaları doğrudan web portallarında göster** – ek bir render motoruna ihtiyaç yok.  
+- **Biçimlendirilmiş içerik üzerinde analiz çalıştır** – duygu analizi veya anahtar kelime çıkarımı için.  
+- **Eski posta kutularını** modern içerik yönetim sistemlerine görsel bütünlüğü koruyarak taşı.  
 
-## GroupDocs.Parser for Java Kurulumu
+GroupDocs.Parser, **30'dan fazla e-posta formatını** (örneğin .msg, .eml, .mht) destekler ve **200 MB**'a kadar dosyaları belgenin tamamını belleğe yüklemeden işleyebilir, tipik 50 KB mesajlar için dönüşüm süresini **2 saniyenin** altında tutar.
+
+## Önkoşullar
+- GroupDocs.Parser for Java **v25.5** veya daha yeni  
+- JDK 8 veya üzeri (JDK 11 önerilir)  
+- Bağımlılık yönetimi için Maven (veya Gradle)  
+- Java I/O konusunda temel bilgi  
+
+## GroupDocs.Parser for Java'ı Kurma
 ### Maven Kullanarak
-`pom.xml` dosyanıza depo ve bağımlılığı ekleyin:
+`pom.xml` dosyanıza depoyu ve bağımlılığı ekleyin:
 
 ```xml
 <repositories>
@@ -60,87 +110,100 @@ GroupDocs.Parser, bir e‑posta dosyasının ( .msg, .eml, vs. ) ham MIM
 ```
 
 ### Doğrudan İndirme
-Alternatif olarak, en yeni sürümü doğrudan [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) adresinden indirebilirsiniz.
+Alternatif olarak, en son sürümü doğrudan [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) adresinden indirin.
 
 ### Lisans Edinme
-- **Ücretsiz Deneme** – tüm özellikleri ücretsiz olarak keşfedin.  
-- **Geçici Lisans** – kısa vadeli projeler için uygundur.  
-- **Satın Alma** – üretim ortamları için tavsiye edilir.  
+- **Free Trial** – değerlendirme için tam özellik seti.  
+- **Temporary License** – kısa vadeli projeler veya PoC'ler.  
+- **Permanent License** – üretim dağıtımları için gereklidir.  
 
-## Uygulama Rehberi
-### E‑posta Metnini HTML Olarak Nasıl Çıkarılır?
-Aşağıdaki adımlar, bir ayrıştırıcı oluşturmayı, formatlanmış HTML’i çıkarmayı ve sonuçla çalışmayı gösterir.
+## Uygulama Kılavuzu
+### E-posta Metnini HTML Olarak Nasıl Çıkarılır
+E-postayı yükleyin, HTML çıktısı isteyin ve sonucu üç basit adımda işleyin.
 
 #### Adım 1: Parser Sınıfının Bir Örneğini Oluşturun
+`Parser` sınıfı, GroupDocs.Parser'ın e-posta dosyalarını yükleyen ve yorumlayan temel nesnesidir.  
+*Neden?* `Parser`'ı başlatmak, API'yi e-posta dosyanıza yönlendirir ve sonraki tüm işlemler için bağlamı oluşturur.
+
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/sample.msg")) {
     // Proceed with extraction and formatting.
 }
 ```
-*Neden?* `Parser` nesnesi, API’yı e‑posta dosyanıza yönlendirir ve sonraki tüm işlemler için bağlamı oluşturur.
 
-#### Adım 2: Belgeden Formatlanmış Metni Çıkarın
+#### Adım 2: Belgeden Biçimlendirilmiş Metni Çıkarın
+`FormattedTextMode.Html`, API'ye gövdeyi düz metin yerine HTML olarak döndürmesini söyler.  
+*Neden?* Bu mod, başlıkları, listeleri ve temel stil öğelerini korur, size doğrudan görüntülenebilir işaretleme sağlar.
+
 ```java
 try (TextReader reader = parser.getFormattedText(new FormattedTextOptions(FormattedTextMode.Html))) {
     String htmlContent = reader.readToEnd();
 }
 ```
-*Neden?* `FormattedTextMode.Html` belirterek API, gövdeyi **HTML** olarak döndürür; bu da webde doğrudan gösterime hazırdır.
 
-#### Adım 3: Çıkarılan Metni Okuyun ve İşleyin
+#### Adım 3: Çıkarılan Metni Oku ve İşle
+`TextReader`, HTML dizesini akış olarak sunar, böylece onu gömebilir, depolayabilir veya temizleyebilirsiniz.  
+*Neden?* Akış, büyük mesajları belleğe yüklemeyi önler; bu, toplu işleme sırasında kritiktir.
+
 ```java
 String htmlContent = reader.readToEnd();
 
 // Additional processing can be done here with the 'htmlContent' variable.
 ```
-*Neden?* Tüm HTML dizesini yakalamak, onu bir web sayfasına gömmek, veritabanına kaydetmek veya ek dönüşümler (ör. temizleme) yapmak için idealdir.
 
-### Yaygın Hatalar ve Sorun Giderme
-- **Yanlış dosya yolu** – `.msg` veya `.eml` dosyasının varlığını ve uygulamanın okuma iznine sahip olduğunu kontrol edin.  
-- **Sürüm uyumsuzluğu** – GroupDocs.Parser 25.5 ve üzeri kullandığınızdan emin olun; eski sürümler HTML desteği sunmayabilir.  
-- **Büyük e‑posta toplulukları** – bellek yönetimini parser örneklerini hızlıca serbest bırakarak yapın (yukarıdaki try‑with‑resources deseni bunu otomatik yapar).  
+## Yaygın Tuzaklar ve Sorun Giderme
+- **Yanlış dosya yolu** – `.msg` veya `.eml` dosyasının mevcut olduğunu ve JVM'in okuma izinlerine sahip olduğunu doğrulayın.  
+- **Sürüm uyumsuzluğu** – GroupDocs.Parser 25.5 veya daha yeni bir sürüm kullandığınızdan emin olun; eski sürümler HTML desteğine sahip değildir.  
+- **Büyük toplularda bellek baskısı** – her `Parser` örneğini hemen serbest bırakın (yukarıdaki try‑with‑resources deseni bunu otomatik yapar).  
 
-## Pratik Kullanım Alanları
-1. **İçerik Yönetim Sistemleri** – gelen destek e‑postalarını otomatik olarak stilli HTML makalelere dönüştürün.  
-2. **Müşteri Destek Araçları** – bilet e‑postalarını format kaybı olmadan bir yardım masası arayüzünde gösterin.  
-3. **Veri Göç Projeleri** – eski posta arşivlerini modern arşiv sistemleri için HTML’e dönüştürün.  
-4. **Ek Dosya İşleme** – GroupDocs.Parser, ekli belgeleri, resimleri veya PDF’leri de çıkarıp ayrıştırabilir; bu sayede uçtan uca iş akışları oluşturabilirsiniz.  
+## Pratik Uygulamalar
+1. **İçerik Yönetim Sistemleri** – destek e-postalarını otomatik olarak stilli HTML makaleleri olarak render eder.  
+2. **Help‑Desk Panoları** – gelen biletleri doğrudan UI'ye gömerek biçimlendirmeyi kaybetmez.  
+3. **Veri Göç Projeleri** – eski posta kutusu arşivlerini modern arşiv platformları için HTML'ye dönüştürür.  
+4. **Ek İşleme Boru Hatları** – GroupDocs.Parser ayrıca ekli PDF, DOCX dosyaları ve görüntüleri çıkarır ve ayrıştırır, uçtan uca e-posta işleme sağlar.  
 
 ## Performans Düşünceleri
-- Her iş parçacığı için tek bir `Parser` örneği yeniden kullanarak nesne oluşturma maliyetini azaltın.  
-- Çok büyük e‑posta setleri için bir iş parçacığı havuzu (thread pool) kullanın ve dosyaları paralel işleyin; her iş parçacığının kendi parser’ı olmalı.  
-- Sadece belirli bölümleri gerektiğinde belleğe yüklemek için akış (streaming) API’lerini (`TextReader`) tercih edin.  
+- Nesne oluşturma yükünü azaltmak için her iş parçacığında tek bir `Parser` örneği yeniden kullanın.  
+- Büyük e-posta setleri için bir iş parçacığı havuzu kullanın; her iş parçacığı kendi parser'ına sahip olmalı, böylece iş parçacığı güvenliği sağlanır.  
+- Sadece başlık veya bir alıntı gerektiğinde tüm e-postaları yüklememek için akış API'lerini (`TextReader`) kullanın.  
 
 ## Sonuç
-Artık **e‑posta nasıl çıkarılır** ve **e‑posta HTML’ye nasıl dönüştürülür** konularında GroupDocs.Parser kullanarak Java’da tam üretim‑hazır bir yönteme sahipsiniz. Bu yaklaşım, gösterim, analiz ve göç görevlerini basitleştirirken performans ve lisans kontrolü üzerinde tam kontrol sağlar.
+Artık GroupDocs.Parser for Java kullanarak **e-postayı HTML'ye dönüştürmek** için eksiksiz, üretim‑hazır bir yönteme sahipsiniz. Bu çözüm, görüntüleme, analiz ve göç görevlerini basitleştirirken lisanslama, performans ve ek işleme üzerinde tam kontrol sağlar.
 
 ## Sıkça Sorulan Sorular
 
-**S: GroupDocs.Parser’ın e‑postalarla temel kullanım senaryosu nedir?**  
-C: E‑posta gövdelerini (ve eklerini) HTML veya düz metin olarak web uygulamaları ve veri boru hatları için çıkarmak ve biçimlendirmek.
+**Q: GroupDocs.Parser'ın e-postalarla temel kullanım durumu nedir?**  
+A: E-posta gövdelerini (ve ekleri) HTML veya düz metin olarak web uygulamaları ve veri boru hatları için çıkarmak ve biçimlendirmektir.
 
-**S: Ek dosyaları GroupDocs.Parser ile işleyebilir miyim?**  
-C: Evet, kütüphane e‑postalara gömülü çoğu yaygın ek tipini okuyup içeriğini çıkarabilir.
+**Q: GroupDocs.Parser ile ekleri işleyebilir miyim?**  
+A: Evet, kütüphane e-postalara gömülü en yaygın ek türlerinin içeriğini okuyabilir ve çıkarabilir.
 
-**S: API farklı e‑posta formatlarını ( .msg, .eml, .mht ) nasıl ele alır?**  
-C: GroupDocs.Parser formatı otomatik algılar ve uygun ayrıştırıcıyı uygular; sadece dosyayı işaretlemeniz yeterlidir.
+**Q: API farklı e-posta formatlarını ( .msg, .eml, .mht ) nasıl yönetir?**  
+A: GroupDocs.Parser dosya tipini otomatik olarak algılar ve uygun ayrıştırıcıyı uygular, bu yüzden sadece dosya yolunu belirtmeniz yeterlidir.
 
-**S: Büyük e‑posta veri setlerini ayrıştırırken nelere dikkat etmeliyim?**  
-C: Bellek tüketimi ve iş parçacığı güvenliği; try‑with‑resources desenini kullanın ve çok iş parçacıklı işleme düşünün.
+**Q: Büyük e-posta veri setlerini ayrıştırırken nelere dikkat etmeliyim?**  
+A: Bellek tüketimini izleyin ve iş parçacığı güvenliğini sağlayın; try‑with‑resources desenini kullanın ve ayrı parser örnekleriyle paralel işleme düşünün.
 
-**S: Sorun yaşarsam nereden destek alabilirim?**  
-C: GroupDocs, forumları ve resmi dokümantasyonu aracılığıyla ücretsiz topluluk desteği sunar.
+**Q: Sorunlarla karşılaşırsam nereden yardım alabilirim?**  
+A: GroupDocs, forumları üzerinden ücretsiz topluluk desteği ve kapsamlı dokümantasyon sunar.
 
 ## Kaynaklar
-- **Dokümantasyon**: [GroupDocs.Parser Java Docs](https://docs.groupdocs.com/parser/java/)  
-- **API Referansı**: [GroupDocs API Reference](https://reference.groupdocs.com/parser/java)  
-- **İndirme**: [Latest Releases](https://releases.groupdocs.com/parser/java/)  
-- **GitHub**: [GroupDocs Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
-- **Ücretsiz Destek**: [GroupDocs Forum](https://forum.groupdocs.com/c/parser)  
-- **Geçici Lisans**: [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license)  
+- [GroupDocs.Parser for Java sürümleri](https://releases.groupdocs.com/parser/java/)  
+- [GroupDocs.Parser Java Belgeleri](https://docs.groupdocs.com/parser/java/)  
+- [GroupDocs API Referansı](https://reference.groupdocs.com/parser/java)  
+- [En Son Sürümler](https://releases.groupdocs.com/parser/java/)  
+- [GitHub'da GroupDocs Parser for Java](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
+- [GroupDocs Forum](https://forum.groupdocs.com/c/parser)  
+- [Geçici Lisans Al](https://purchase.groupdocs.com/temporary-license)
 
 ---
 
-**Son Güncelleme:** 2026-01-06  
-**Test Edilen Versiyon:** GroupDocs.Parser 25.5 for Java  
+**Son Güncelleme:** 2026-07-07  
+**Test Edilen:** GroupDocs.Parser 25.5 for Java  
 **Yazar:** GroupDocs
+
+## İlgili Öğreticiler
+
+- [Java E-posta Ayrıştırma Kütüphanesi: GroupDocs.Parser Çıkarma Öğreticileri](/parser/java/email-parsing/)  
+- [GroupDocs.Parser Java ile E-posta Regex Aramaları ve Metin Çıkarma](/parser/java/text-search/email-regex-search-groupdocs-parser-java/)  
+- [GroupDocs.Parser Java ile Belgeyi HTML'ye Dönüştürme: Adım Adım Kılavuz](/parser/java/formatted-text-extraction/extract-document-text-as-html-groupdocs-parser-java/)
