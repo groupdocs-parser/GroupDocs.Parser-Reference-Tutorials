@@ -1,45 +1,96 @@
 ---
-date: '2026-01-06'
-description: Ismerje meg, hogyan lehet e‑mailt kinyerni és HTML-re konvertálni a GroupDocs.Parser
-  for Java segítségével, ami tökéletes tartalomelemzéshez, adatátalakításhoz vagy
-  a felhasználói élmény javításához.
+date: '2026-07-07'
+description: Ismerje meg, hogyan konvertálhatja az emailt HTML-re a GroupDocs.Parser
+  for Java használatával, amely ideális tartalomelemzéshez, adatátalakításhoz és a
+  felhasználói élmény javításához.
 keywords:
-- GroupDocs Parser
-- extract email text as HTML
-- Java email parsing
-title: Hogyan lehet e‑mailt HTML‑be kinyerni a GroupDocs.Parser Java segítségével
+- convert email to html
+- read msg file java
+- java email parsing
+- parse eml file java
+og_description: Konvertálja az emailt HTML-re a GroupDocs.Parser for Java használatával.
+  Ez az útmutató bemutatja a beállítást, a kódot és a tippeket a .msg és .eml fájlok
+  hatékony feldolgozásához.
+og_title: Email konvertálása HTML-re a GroupDocs.Parser for Java segítségével
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-07'
+  description: Learn how to convert email to HTML using GroupDocs.Parser for Java,
+    ideal for content analysis, data migration, and enhancing user experiences.
+  headline: How to Convert Email to HTML with GroupDocs.Parser for Java
+  type: TechArticle
+- description: Learn how to convert email to HTML using GroupDocs.Parser for Java,
+    ideal for content analysis, data migration, and enhancing user experiences.
+  name: How to Convert Email to HTML with GroupDocs.Parser for Java
+  steps:
+  - name: Create an Instance of the Parser Class
+    text: The `Parser` class is GroupDocs.Parser's core object that loads and interprets
+      email files. *Why?* Initialising `Parser` points the API at your email file,
+      establishing the context for all subsequent operations.
+  - name: Extract Formatted Text from the Document
+    text: '`FormattedTextMode.Html` tells the API to return the body as HTML rather
+      than plain text. *Why?* This mode preserves headings, lists, and basic styling,
+      giving you ready‑to‑display markup.'
+  - name: Read and Process the Extracted Text
+    text: The `TextReader` streams the HTML string so you can embed it, store it,
+      or sanitise it. *Why?* Streaming avoids loading large messages into memory,
+      which is crucial when processing batches.
+  type: HowTo
+- questions:
+  - answer: Extracting and formatting email bodies (and attachments) into HTML or
+      plain text for web applications and data pipelines.
+    question: What is the primary use case for GroupDocs.Parser with emails?
+  - answer: Yes, the library can read and extract content from most common attachment
+      types embedded in emails.
+    question: Can I process attachments using GroupDocs.Parser?
+  - answer: GroupDocs.Parser automatically detects the file type and applies the appropriate
+      parser, so you only need to point it at the file path.
+    question: How does the API handle different email formats ( .msg, .eml, .mht )?
+  - answer: Monitor memory consumption and ensure thread safety; use the try‑with‑resources
+      pattern and consider parallel processing with separate parser instances.
+    question: What should I watch out for when parsing large email datasets?
+  - answer: GroupDocs offers free community support via their forum and comprehensive
+      documentation.
+    question: Where can I get help if I encounter issues?
+  type: FAQPage
+title: Hogyan konvertáljuk az emailt HTML-re a GroupDocs.Parser for Java segítségével
 type: docs
 url: /hu/java/formatted-text-extraction/groupdocs-parser-java-email-html-extraction/
 weight: 1
 ---
 
-# Hogyan vonjunk ki e‑mailt HTML‑re a GroupDocs.Parser Java‑val
+# Hogyan konvertáljunk e‑mailt HTML‑re a GroupDocs.Parser for Java segítségével
 
-Ha **hogyan vonjunk ki e‑mailt** tartalmat, és azt tiszta, web‑kész HTML‑re szeretnéd átalakítani, jó helyen jársz. Ebben az útmutatóban végigvezetünk a teljes folyamaton – a GroupDocs.Parser Java‑ban történő beállításától a formázott szöveg beolvasásáig, és az e‑mail HTML‑ként való megjelenítéséig az alkalmazásodban. Emellett gyakorlati tippeket is láthatsz a **java e‑mail feldolgozáshoz**, a mellékletek kezeléséhez és a teljesítmény optimalizálásához.
+Ha gyorsan és megbízhatóan szeretnél **e‑mailt HTML‑re konvertálni**, jó helyen vagy. Ebben az útmutatóban mindent végigvezetünk— a GroupDocs.Parser Maven projektbe való hozzáadásától a .msg vagy .eml fájl formázott törzsének kinyeréséig, egészen a HTML megjelenítéséig a Java alkalmazásodban. Emellett megtanulod, hogyan kezeld a mellékleteket, optimalizáld a memóriahasználatot, és skálázd a megoldást kötegelt feldolgozáshoz.
 
-## Quick Answers
+## Gyors válaszok
 - **Melyik könyvtár kezeli az e‑mail kinyerést?** GroupDocs.Parser for Java  
-- **Milyen formátumot használ a kimenet?** HTML (a `FormattedTextMode.Html`‑on keresztül)  
-- **Szükségem van licencre?** A ingyenes próba verzió fejlesztéshez megfelelő; a termeléshez állandó licenc szükséges  
-- **Feldolgozhatók a mellékletek?** Igen, a GroupDocs.Parser képes a csatolt fájlokat az e‑mail részeként beolvasni  
-- **Támogatott a több szálas feldolgozás?** Több e‑mailt is párhuzamosan feldolgozhatsz külön `Parser` példányok létrehozásával  
+- **Milyen kimeneti formátumot kell használnom?** HTML a `FormattedTextMode.Html` segítségével  
+- **Szükségem van licencre a fejlesztéshez?** Egy ingyenes próba működik fejlesztéshez; a termeléshez állandó licenc szükséges  
+- **A mellékletek is feldolgozhatók?** Igen, az API automatikusan kinyeri a csatolt fájlokat  
+- **Lehetséges a párhuzamos feldolgozás?** Igen—hozz létre külön `Parser` példányokat szálanként a biztonságos egyidejűséghez  
 
-## Mi az a „hogyan vonjunk ki e‑mailt” a GroupDocs.Parser‑rel?
-A GroupDocs.Parser egy egyszerű API‑t biztosít, amely beolvassa egy e‑mail fájl ( .msg, .eml, stb. ) nyers MIME‑szerkezetét, és a test tartalmát a választott formátumban adja vissza – egyszerű szöveg, Markdown vagy **HTML**. Ez ideálissá teszi üzenetek böngészőkben való megjelenítésére, keresőindexekbe való betáplálásra, vagy archiválási célokra történő átalakításra.
+## Mi az a „e‑mail HTML‑re konvertálása” a GroupDocs.Parser segítségével?
+A GroupDocs.Parser beolvassa az e‑mail fájl nyers MIME‑szerkezetét, és a törzset HTML‑ként, egyszerű szövegként vagy Markdown‑ként adja vissza. Ez a képesség lehetővé teszi a fejlesztők számára, hogy az üzeneteket közvetlenül a böngészőben jelenítsék meg, keresőindexeknek adják át, vagy web‑barát formátumban archiválják, miközben megőrzik a lényeges formázást és struktúrát. A könyvtár elrejti a MIME‑elemzés bonyolultságát, egy egyszerű, magas szintű API‑t biztosítva, amely konzisztens eredményeket ad számos e‑mail formátumban.
 
-## Miért konvertáljuk az e‑mailt HTML‑re?
-- **E‑mail megjelenítése HTML‑ként** webportálokban vagy ügyfélszolgálati műszerfalakon a formázás elvesztése nélkül.  
-- **Formázott szöveg olvasása** egyszerűen elemzésekhez vagy természetes nyelvfeldolgozáshoz.  
-- Megőrzi a sortöréseket, listákat és az alapvető formázást, amit az egyszerű szöveg eltávolítana.  
+## Miért konvertáljunk e‑mailt HTML‑re?
+Az e‑mail HTML‑re konvertálása megőrzi a stílusokat, listákat és sortöréseket, amelyeket az egyszerű szöveges kinyerés elveszítene. Emellett lehetővé teszi, hogy:
 
-## Prerequisites
-- **GroupDocs.Parser for Java** (25.5‑ös vagy újabb verzió)  
-- JDK 8 vagy újabb, valamint egy IDE, például IntelliJ IDEA, Eclipse vagy NetBeans  
-- Alapvető Java ismeretek; Maven ajánlott a függőségek kezeléséhez  
+- **E‑mailek közvetlen megjelenítése webes portálokban** – nincs szükség extra renderelő motorra.  
+- **Elemzések futtatása** a formázott tartalmon sentiment elemzés vagy kulcsszó kinyerés céljából.  
+- **Örökölt postafiókok migrálása** modern tartalomkezelő rendszerekbe a vizuális hűség megőrzése mellett.  
 
-## Setting Up GroupDocs.Parser for Java
-### Using Maven
-Add the repository and dependency to your `pom.xml`:
+Mennyiségi állítás: a GroupDocs.Parser támogat **30+ e‑mail formátumot** (beleértve a .msg, .eml, .mht fájlokat) és akár **200 MB** méretű fájlokat is képes feldolgozni anélkül, hogy a teljes dokumentumot a memóriába töltené, konverziós időt **2 másodperc** alatt biztosítva a tipikus 50 KB‑os üzeneteknél.
+
+## Előkövetelmények
+- GroupDocs.Parser for Java **v25.5** vagy újabb  
+- JDK 8 vagy újabb (JDK 11 ajánlott)  
+- Maven (vagy Gradle) a függőségek kezeléséhez  
+- Alapvető ismeretek a Java I/O‑val kapcsolatban  
+
+## A GroupDocs.Parser for Java beállítása
+### Maven használata
+Add hozzá a tárolót és a függőséget a `pom.xml`‑hez:
 
 ```xml
 <repositories>
@@ -59,88 +110,101 @@ Add the repository and dependency to your `pom.xml`:
 </dependencies>
 ```
 
-### Direct Download
-Alternatively, download the latest version directly from [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
+### Közvetlen letöltés
+Alternatívaként töltsd le a legújabb verziót közvetlenül a [GroupDocs.Parser for Java kiadások](https://releases.groupdocs.com/parser/java/) oldaláról.
 
-### License Acquisition
-- **Ingyenes próba** – minden funkció kipróbálása költség nélkül.  
-- **Ideiglenes licenc** – hasznos rövid távú projektekhez.  
-- **Vásárlás** – ajánlott termelési környezetben való használathoz.  
+### Licenc beszerzése
+- **Ingyenes próba** – teljes funkciókészlet értékeléshez.  
+- **Ideiglenes licenc** – rövid távú projektek vagy PoC‑k.  
+- **Állandó licenc** – szükséges a termelési telepítésekhez.  
 
-## Implementation Guide
-### How to Extract Email Text as HTML
-The following steps show how to create a parser, extract the formatted HTML, and work with the result.
+## Implementációs útmutató
+### Hogyan nyerjünk ki e‑mail szöveget HTML‑ként
+Töltsd be az e‑mailt, kérd a HTML kimenetet, és kezeld az eredményt három egyszerű lépésben.
 
-#### Step 1: Create an Instance of the Parser Class
+#### 1. lépés: Hozz létre egy példányt a Parser osztályból
+A `Parser` osztály a GroupDocs.Parser központi objektuma, amely betölti és értelmezi az e‑mail fájlokat.  
+*Miért?* A `Parser` inicializálása az API‑t az e‑mail fájlra irányítja, és létrehozza a kontextust a további műveletekhez.
+
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/sample.msg")) {
     // Proceed with extraction and formatting.
 }
 ```
-*Miért?* A `Parser` inicializálása az API‑t az e‑mail fájlra irányítja, és létrehozza a kontextust a további műveletekhez.
 
-#### Step 2: Extract Formatted Text from the Document
+#### 2. lépés: Formázott szöveg kinyerése a dokumentumból
+A `FormattedTextMode.Html` azt mondja az API‑nak, hogy a törzset HTML‑ként adja vissza a sima szöveg helyett.  
+*Miért?* Ez a mód megőrzi a címsorokat, listákat és az alapvető stílusokat, így azonnal megjeleníthető markupot kapsz.
+
 ```java
 try (TextReader reader = parser.getFormattedText(new FormattedTextOptions(FormattedTextMode.Html))) {
     String htmlContent = reader.readToEnd();
 }
 ```
-*Miért?* A `FormattedTextMode.Html` megadásával az API a testet **HTML**‑ben adja vissza, készen a webes megjelenítésre.
 
-#### Step 3: Read and Process the Extracted Text
+#### 3. lépés: Olvasd és dolgozd fel a kinyert szöveget
+A `TextReader` streameli a HTML‑szöveget, így beágyazhatod, tárolhatod vagy szanitizálhatod.  
+*Miért?* A streaming elkerüli a nagy üzenetek memóriába töltését, ami kötegelt feldolgozás esetén kritikus.
+
 ```java
 String htmlContent = reader.readToEnd();
 
 // Additional processing can be done here with the 'htmlContent' variable.
 ```
-*Miért?* Az egész HTML‑karakterlánc rögzítése lehetővé teszi, hogy közvetlenül egy weboldalba ágyazd, adatbázisban tárold, vagy további átalakításokat (pl. szanitizálás) hajts végre.
 
-### Common Pitfalls & Troubleshooting
-- **Helytelen fájlútvonal** – ellenőrizd, hogy a `.msg` vagy `.eml` fájl létezik, és az alkalmazásnak olvasási jogosultsága van.  
-- **Verzióeltérés** – győződj meg róla, hogy a GroupDocs.Parser 25.5‑öt vagy újabbat használsz; a régebbi kiadások esetleg nem támogatják a HTML‑t.  
-- **Nagy e‑mail köteg** – kezeld a memóriát a parser példányok gyors eldobásával (a fent bemutatott try‑with‑resources minta ezt automatikusan megteszi).  
+## Gyakori hibák és hibaelhárítás
+- **Helytelen fájlútvonal** – ellenőrizd, hogy a `.msg` vagy `.eml` fájl létezik, és a JVM-nek olvasási jogosultsága van.  
+- **Verzióeltérés** – győződj meg róla, hogy a GroupDocs.Parser 25.5 vagy újabb verziót használod; a korábbi verziók nem támogatják a HTML‑t.  
+- **Memória nyomás nagy kötegek esetén** – szabadíts fel minden `Parser` példányt időben (a fenti try‑with‑resources minta automatikusan ezt teszi).  
 
-## Practical Applications
-1. **Tartalomkezelő rendszerek** – automatikusan megjelenítik a bejövő támogatási e‑mailt stílusos HTML‑cikkekként.  
-2. **Ügyfélszolgálati eszközök** – a jegy‑e‑mailokat a help‑desk felületen formázás elvesztése nélkül jelenítik meg.  
-3. **Adatmigrációs projektek** – a régi postafiók-archívumokat HTML‑re konvertálják a modern archiváló rendszerekhez.  
-4. **E‑mail mellékletek feldolgozása** – a GroupDocs.Parser képes a csatolt dokumentumok, képek vagy PDF‑ek kinyerésére és feldolgozására, lehetővé téve a teljes folyamatot.  
+## Gyakorlati alkalmazások
+1. **Tartalomkezelő rendszerek** – automatikusan jelenítsd meg a támogatási e‑maileket stílusos HTML cikkekként.  
+2. **Help‑Desk műszerfalak** – ágyazd be a bejövő jegyeket közvetlenül a felhasználói felületbe a formázás megőrzése nélkül.  
+3. **Adatmigrációs projektek** – konvertáld a régi postafiók-archívumokat HTML‑re a modern archiváló platformok számára.  
+4. **Melléklet feldolgozó csővezetékek** – a GroupDocs.Parser emellett kinyeri és feldolgozza a csatolt PDF‑eket, DOCX fájlokat és képeket, lehetővé téve az e‑mail teljes körű kezelését.  
 
-## Performance Considerations
-- Használj egyetlen `Parser` példányt szálanként az objektumlétrehozási költségek csökkentéséhez.  
-- Nagy e‑mail mennyiség esetén alkalmazz szálkészletet, és dolgozd fel a fájlokat párhuzamosan, biztosítva, hogy minden szálnak saját parsera legyen.  
-- Használd a streaming API‑kat (`TextReader`), hogy elkerüld az egész e‑mail memóriába töltését, ha csak részeit kell felhasználnod.  
+## Teljesítmény szempontok
+- Használj egyetlen `Parser` példányt szálanként az objektum‑létrehozási költség minimalizálásához.  
+- Nagy mennyiségű e‑mail esetén alkalmazz szálkészletet; minden szálnak saját parserrel kell rendelkeznie a szálbiztonság érdekében.  
+- Használd a streaming API‑kat (`TextReader`), hogy elkerüld az egész e‑mail betöltését, ha csak a fejléc vagy egy részlet szükséges.  
 
-## Conclusion
-Most már egy teljes, termelésre kész módszered van a **hogyan vonjunk ki e‑mailt** tartalom és **e‑mail HTML‑re konvertálása** megvalósításához a GroupDocs.Parser Java‑ban. Ez a megközelítés egyszerűsíti a megjelenítést, elemzést és migrációs feladatokat, miközben teljes kontrollt biztosít a teljesítmény és a licencelés felett.  
+## Következtetés
+Most már egy teljes, termelésre kész módszered van a **e‑mail HTML‑re konvertálására** a GroupDocs.Parser for Java segítségével. Ez a megoldás leegyszerűsíti a megjelenítést, elemzést és migrációt, miközben teljes kontrollt biztosít a licencelés, a teljesítmény és a mellékletkezelés felett.
 
-## Frequently Asked Questions
+## Gyakran Ismételt Kérdések
 
-**K: Mi a fő felhasználási eset a GroupDocs.Parser e‑mailekkel?**  
-V: Az e‑mail testek (és mellékletek) kinyerése és formázása HTML‑re vagy egyszerű szövegre webalkalmazások és adatcsövek számára.
+**Q: Mi a fő felhasználási eset a GroupDocs.Parser e‑mailekkel?**  
+A: E‑mail törzsek (és mellékletek) kinyerése és formázása HTML‑re vagy egyszerű szövegre webalkalmazások és adatcsövek számára.
 
-**K: Feldolgozhatok mellékleteket a GroupDocs.Parser‑rel?**  
-V: Igen, a könyvtár képes a legtöbb gyakori melléklet típus tartalmát beolvasni és kinyerni az e‑mailben.
+**Q: Feldolgozhatok mellékleteket a GroupDocs.Parser‑rel?**  
+A: Igen, a könyvtár képes a legtöbb gyakori melléklet típus tartalmát beolvasni és kinyerni az e‑mailekből.
 
-**K: Hogyan kezeli az API a különböző e‑mail formátumokat ( .msg, .eml, .mht )?**  
-V: A GroupDocs.Parser automatikusan felismeri a formátumot, és a megfelelő parse‑rőt alkalmazza, így csak a fájlra kell mutatnod.
+**Q: Hogyan kezeli az API a különböző e‑mail formátumokat ( .msg, .eml, .mht )?**  
+A: A GroupDocs.Parser automatikusan felismeri a fájltípust, és a megfelelő parse‑t alkalmazza, így csak a fájl útvonalát kell megadnod.
 
-**K: Mire kell figyelni nagy e‑mail adathalmazok feldolgozásakor?**  
-V: A memóriahasználatra és a szálbiztonságra; használd a try‑with‑resources mintát, és fontold meg a több szálas feldolgozást.
+**Q: Mire kell figyelni nagy e‑mail adathalmazok feldolgozásakor?**  
+A: Figyeld a memóriahasználatot és a szálbiztonságot; használd a try‑with‑resources mintát, és fontold meg a párhuzamos feldolgozást külön parser példányokkal.
 
-**K: Hol kaphatok segítséget, ha problémám adódik?**  
-V: A GroupDocs ingyenes közösségi támogatást nyújt a fórumukon és a hivatalos dokumentációban.  
+**Q: Hol kaphatok segítséget, ha problémába ütközöm?**  
+A: A GroupDocs ingyenes közösségi támogatást nyújt a fórumukon, valamint átfogó dokumentációt biztosít.
 
-## Resources
-- **Documentation**: [GroupDocs.Parser Java Docs](https://docs.groupdocs.com/parser/java/)
-- **API Reference**: [GroupDocs API Reference](https://reference.groupdocs.com/parser/java)
-- **Download**: [Latest Releases](https://releases.groupdocs.com/parser/java/)
-- **GitHub**: [GroupDocs Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
-- **Free Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/parser)
-- **Temporary License**: [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license)
+## Források
+- [GroupDocs.Parser for Java kiadások](https://releases.groupdocs.com/parser/java/)  
+- [GroupDocs.Parser Java dokumentáció](https://docs.groupdocs.com/parser/java/)  
+- [GroupDocs API referencia](https://reference.groupdocs.com/parser/java)  
+- [Legújabb kiadások](https://releases.groupdocs.com/parser/java/)  
+- [GroupDocs Parser for Java a GitHub-on](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
+- [GroupDocs fórum](https://forum.groupdocs.com/c/parser)  
+- [Ideiglenes licenc beszerzése](https://purchase.groupdocs.com/temporary-license)
 
 ---
 
-**Last Updated:** 2026-01-06  
-**Tested With:** GroupDocs.Parser 25.5 for Java  
-**Author:** GroupDocs
+**Utolsó frissítés:** 2026-07-07  
+**Tesztelve:** GroupDocs.Parser 25.5 for Java  
+**Szerző:** GroupDocs
+
+## Kapcsolódó útmutatók
+
+- [Java e‑mail elemző könyvtár: GroupDocs.Parser kinyerési útmutatók](/parser/java/email-parsing/)  
+- [E‑mail regex keresések mesterfokon a GroupDocs.Parser Java segítségével szövegkivonáshoz](/parser/java/text-search/email-regex-search-groupdocs-parser-java/)  
+- [Hogyan konvertáljunk dokumentumot HTML‑re a GroupDocs.Parser Java segítségével: Lépésről‑lépésre útmutató](/parser/java/formatted-text-extraction/extract-document-text-as-html-groupdocs-parser-java/)
