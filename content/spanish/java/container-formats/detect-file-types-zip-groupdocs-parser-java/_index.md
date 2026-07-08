@@ -1,8 +1,8 @@
 ---
-date: '2025-12-18'
-description: Aprende a detectar tipos de archivos Java dentro de archivos ZIP con
-  GroupDocs.Parser para Java. Descubre cómo leer un zip sin extraerlo e identificar
-  los archivos en el zip de manera eficiente.
+date: '2026-02-19'
+description: Aprende cómo realizar la detección de tipos de archivos Java dentro de
+  archivos ZIP con GroupDocs.Parser para Java. Descubre cómo leer un ZIP sin extraerlo,
+  identificar archivos en el ZIP y analizar las entradas del ZIP de manera eficiente.
 keywords:
 - detect file types in ZIP archives
 - GroupDocs.Parser for Java
@@ -16,34 +16,34 @@ weight: 1
 
 # Detección de Tipo de Archivo Java en Archivos ZIP con GroupDocs.Parser para Java
 
-Navegar por un archivo ZIP a menudo puede ser abrumador, especialmente cuando necesitas **detección de tipo de archivo java** sin extraer cada archivo primero. Este tutorial te muestra **cómo detectar zip** contenidos de manera eficiente usando GroupDocs.Parser para Java, para que puedas identificar rápidamente archivos en archivos zip y leer zip sin extracción.
+Navegar por un archivo ZIP a menudo puede ser abrumador, especialmente cuando necesitas **detección de tipo de archivo java** sin extraer cada archivo primero. En esta guía te mostraremos cómo **identificar archivos en zip**, **leer zip sin extracción**, y leer eficientemente **entradas zip java** usando GroupDocs.Parser. Ya sea que estés construyendo una canalización de documentos automatizada o una función de gestión de contenido, este tutorial te brinda los pasos exactos para **cómo detectar entradas zip** y **analizar zip archive con java** con confianza.
 
-## Respuestas Rápidas
+## Quick Answers
 - **¿Qué hace GroupDocs.Parser?** Analiza formatos de contenedores (ZIP, RAR, TAR) y te permite inspeccionar el contenido sin extraerlo.  
 - **¿Puedo detectar tipos de archivo sin descomprimir?** Sí – usa el método `detectFileType()` en cada `ContainerItem`.  
 - **¿Qué versión de Java se requiere?** Se recomienda JDK 8 o superior.  
 - **¿Necesito una licencia?** Hay una prueba gratuita disponible; se requiere una licencia permanente para uso en producción.  
 - **¿Se admite el procesamiento por lotes?** Absolutamente – puedes iterar sobre muchos archivos ZIP en un bucle.
 
-## ¿Qué es la Detección de Tipo de Archivo Java?
-La detección de tipo de archivo Java es el proceso de determinar programáticamente el formato de un archivo (p. ej., PDF, DOCX, PNG) basándose en su firma binaria en lugar de su extensión. Cuando se aplica a archivos ZIP, te permite **detectar el tipo de archivo zip** de cada entrada sin necesidad de extraer el archivo primero.
+## What is Java File Type Detection?
+La detección de tipo de archivo Java es el proceso de determinar programáticamente el formato de un archivo (p. ej., PDF, DOCX, PNG) basándose en su firma binaria en lugar de su extensión. Cuando se aplica a archivos ZIP, permite **detectar el tipo de archivo zip** de cada entrada sin necesidad de extraer el archivo primero.
 
-## ¿Por Qué Usar GroupDocs.Parser para Esta Tarea?
+## Why Use GroupDocs.Parser for This Task?
 - **Velocidad:** Omite el costoso paso de extracción.  
 - **Seguridad:** Evita escribir archivos temporales en disco.  
 - **Versatilidad:** Funciona con múltiples formatos de contenedor, no solo ZIP.  
-- **Facilidad de Integración:** Llamadas API simples encajan de forma natural en los flujos de trabajo Java existentes.
+- **Facilidad de integración:** Llamadas simples a la API se integran de forma natural en flujos de trabajo Java existentes.
 
-## Requisitos Previos
-- **GroupDocs.Parser for Java** — Versión 25.5 o posterior.  
-- **Java Development Kit (JDK)** — 8 o superior.  
+## Prerequisites
+- **GroupDocs.Parser para Java** — Versión 25.5 o posterior.  
+- **Java Development Kit (JDK)** — 8 o superior.  
 - Un IDE como IntelliJ IDEA, Eclipse o NetBeans.  
-- Maven (opcional, para la gestión de dependencias).  
+- Maven (opcional, para gestión de dependencias).  
 
-## Configuración de GroupDocs.Parser para Java
+## Setting Up GroupDocs.Parser for Java
 
-### Configuración de Maven
-Agrega el repositorio de GroupDocs y la dependencia a tu `pom.xml`:
+### Maven Setup
+Add the GroupDocs repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -63,21 +63,22 @@ Agrega el repositorio de GroupDocs y la dependencia a tu `pom.xml`:
 </dependencies>
 ```
 
-### Descarga Directa
-Alternativamente, puedes descargar la última versión desde [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
+### Direct Download
+Alternatively, you can download the latest version from [lanzamientos de GroupDocs.Parser para Java](https://releases.groupdocs.com/parser/java/).
 
-### Pasos para Obtener la Licencia
-- **Prueba Gratuita:** Comienza con una prueba para explorar todas las capacidades.  
-- **Licencia Temporal:** Usa una clave temporal para una evaluación prolongada.  
+### License Acquisition Steps
+- **Prueba gratuita:** Comienza con una prueba para explorar todas las capacidades.  
+- **Licencia temporal:** Usa una clave temporal para una evaluación extendida.  
 - **Compra:** Obtén una suscripción para cargas de trabajo en producción.
 
-## Guía de Implementación
+## Implementation Guide
 
-### Detección de Tipos de Archivo en Archivos ZIP
-Esta sección te guía paso a paso sobre **cómo detectar zip** entradas sin extraerlas.
+### Detecting File Types in ZIP Archives
 
-#### Paso 1: Inicializar el Parser
-Crea una instancia de `Parser` que apunte a tu archivo ZIP.
+Esta sección te guía paso a paso sobre **cómo detectar entradas zip** sin extraerlas.
+
+#### Step 1: Initialize the Parser
+Create a `Parser` instance that points to your ZIP file.
 
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/SampleZip.zip")) {
@@ -87,8 +88,8 @@ try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/SampleZip.zip")) {
 
 *¿Por qué?* Inicializar el `Parser` abre el archivo para que puedas inspeccionar su contenido.
 
-#### Paso 2: Extraer Adjuntos
-Recupera cada elemento dentro del contenedor usando `getContainer()`.
+#### Step 2: Extract Attachments
+Retrieve each item inside the container using `getContainer()`.
 
 ```java
 Iterable<ContainerItem> attachments = parser.getContainer();
@@ -97,10 +98,10 @@ if (attachments == null) {
 }
 ```
 
-*¿Por qué?* Este paso confirma que el formato del archivo es compatible y te brinda un iterable de todas las entradas.
+*¿Por qué?* Este paso confirma que el formato del archivo es compatible y te proporciona un iterable de todas las entradas.
 
-#### Paso 3: Detectar Tipos de Archivo
-Itera sobre los elementos y llama a `detectFileType()` para identificar el formato de cada archivo.
+#### Step 3: Detect File Types
+Loop through the items and call `detectFileType()` to identify each file’s format.
 
 ```java
 for (ContainerItem item : attachments) {
@@ -109,42 +110,33 @@ for (ContainerItem item : attachments) {
 }
 ```
 
-*¿Por qué?* Detectar el tipo de archivo sin extracción es eficiente para aplicaciones que necesitan enrutar archivos según su formato.
+*¿Por qué?* Detectar el tipo de archivo sin extracción es eficiente para aplicaciones que necesitan dirigir archivos según su formato.
 
-### Consejos de Solución de Problemas
+### Troubleshooting Tips
 - Verifica que la ruta del archivo ZIP sea correcta y que el archivo sea accesible.  
-- Si ves `UnsupportedOperationException`, asegúrate de que tu versión de ZIP sea compatible con GroupDocs.Parser.  
+- Si ves `UnsupportedOperationException`, asegúrate de que la versión de tu ZIP sea compatible con GroupDocs.Parser.  
 - Para archivos grandes, considera procesar los elementos en lotes más pequeños para mantener bajo el uso de memoria.
 
-## Aplicaciones Prácticas
-1. **Procesamiento Automatizado de Documentos** – Enruta rápidamente los archivos entrantes al manejador correcto según su tipo.  
-2. **Soluciones de Archivo de Datos** – Indexa el contenido del archivo sin desempaquetar, ahorrando I/O de almacenamiento.  
-3. **Sistemas de Gestión de Contenidos** – Permite a los usuarios subir paquetes ZIP y clasificar automáticamente cada documento.
+## Common Use Cases
+1. **Procesamiento de documentos automatizado** – Dirige rápidamente los archivos entrantes al manejador adecuado según su tipo.  
+2. **Soluciones de archivado de datos** – Indexa el contenido del archivo sin desempaquetar, ahorrando I/O de almacenamiento.  
+3. **Sistemas de gestión de contenido** – Permite a los usuarios subir paquetes ZIP y clasificar automáticamente cada documento.
 
-## Consideraciones de Rendimiento
-- **Monitoreo de Recursos:** Supervisa la memoria al analizar archivos enormes; cierra el `Parser` rápidamente (try‑with‑resources).  
-- **Gestión de Memoria en Java:** Ajusta el recolector de basura de la JVM para trabajos por lotes de larga duración.  
-- **Procesamiento por Lotes:** Procesa varios archivos ZIP en un bucle, reutilizando una única instancia de `Parser` cuando sea posible.
+## Performance Considerations
+- **Monitoreo de recursos:** Rastrea la memoria al analizar archivos enormes; cierra el `Parser` rápidamente (try‑with‑resources).  
+- **Gestión de memoria Java:** Ajusta el recolector de basura de la JVM para trabajos por lotes de larga duración.  
+- **Procesamiento por lotes:** Procesa varios archivos ZIP en un bucle, reutilizando una única instancia de `Parser` cuando sea posible.
 
-## Conclusión
-Ahora tienes una comprensión sólida de la **detección de tipo de archivo java** dentro de archivos ZIP usando GroupDocs.Parser para Java. Esta capacidad te permite **identificar archivos en zip** rápidamente, **leer zip sin extracción**, y crear flujos de trabajo de documentos más inteligentes.
-
-**Próximos Pasos:**  
-- Experimenta con otras opciones `FileTypeDetectionMode` para un control más granular.  
-- Explora el análisis de otros formatos de contenedor como RAR y TAR usando la misma API.  
-
----
-
-## Preguntas Frecuentes
+## Frequently Asked Questions
 
 **P: ¿Puedo usar GroupDocs.Parser para otros formatos de archivo además de ZIP?**  
-R: Sí, GroupDocs.Parser admite RAR, TAR y varios otros tipos de contenedores.
+R: Sí, GroupDocs.Parser soporta RAR, TAR y varios otros tipos de contenedores.
 
 **P: ¿Cuáles son los requisitos del sistema para usar GroupDocs.Parser?**  
 R: Un JDK 8+ compatible y cualquier IDE estándar (IntelliJ, Eclipse, NetBeans) son suficientes.
 
 **P: ¿Cómo puedo manejar archivos muy grandes de manera eficiente?**  
-R: Procesa el archivo en lotes más pequeños y supervisa la configuración de memoria de la JVM.
+R: Procesa el archivo en lotes más pequeños y monitorea la configuración de memoria de la JVM.
 
 **P: ¿Hay soporte disponible si encuentro problemas?**  
 R: Sí, se ofrece soporte gratuito a través del [foro de GroupDocs](https://forum.groupdocs.com/c/parser).
@@ -152,16 +144,18 @@ R: Sí, se ofrece soporte gratuito a través del [foro de GroupDocs](https://for
 **P: ¿Puedo probar GroupDocs.Parser antes de comprar una licencia?**  
 R: Por supuesto – comienza con la prueba gratuita para explorar todas las funciones.
 
-## Recursos
+## Resources
 - [Documentación:](https://docs.groupdocs.com/parser/java/)
-- [Referencia API:](https://reference.groupdocs.com/parser/java)
+- [Referencia de API:](https://reference.groupdocs.com/parser/java)
 - [Descarga:](https://releases.groupdocs.com/parser/java/)
 - [Repositorio GitHub:](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
-- [Soporte Gratuito:](https://forum.groupdocs.com/c/parser)
-- [Licencia Temporal:](https://purchase.groupdocs.com/temporary-license/)
+- [Soporte gratuito:](https://forum.groupdocs.com/c/parser)
+- [Licencia temporal:](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-**Última Actualización:** 2025-12-18  
-**Probado Con:** GroupDocs.Parser 25.5 for Java  
-**Autor:** GroupDocs
+**Última actualización:** 2026-02-19  
+**Probado con:** GroupDocs.Parser 25.5 para Java  
+**Autor:** GroupDocs  
+
+---
