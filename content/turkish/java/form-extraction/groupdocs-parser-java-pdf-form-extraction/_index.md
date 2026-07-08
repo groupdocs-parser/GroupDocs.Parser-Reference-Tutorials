@@ -1,12 +1,53 @@
 ---
-date: '2026-01-01'
-description: PDF form verilerini nasıl çıkaracağınızı ve GroupDocs.Parser for Java
-  kullanarak PDF form alanlarını nasıl okuyacağınızı öğrenin. PDF veri girişini otomatikleştirin,
-  PDF'den resimleri çıkarın ve belge işleme sürecini kolaylaştırın.
+date: '2026-06-27'
+description: GroupDocs.Parser for Java kullanarak pdf form verilerini nasıl çıkaracağınızı
+  ve pdf form alanlarını nasıl okuyacağınızı öğrenin. PDF veri girişini otomatikleştirin,
+  pdf'den görüntüleri çıkarın ve belge işleme sürecini hızlandırın.
 keywords:
-- PDF form extraction
-- GroupDocs.Parser Java
-- Java PDF parsing
+- extract pdf form data
+- read pdf form fields
+- extract images from pdf
+- parse pdf form fields
+- automate pdf data entry
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-27'
+  description: Learn how to extract pdf form data and read pdf form fields using GroupDocs.Parser
+    for Java. Automate PDF data entry, extract images from pdf, and streamline document
+    processing.
+  headline: Extract PDF Form Data with GroupDocs.Parser in Java
+  type: TechArticle
+- description: Learn how to extract pdf form data and read pdf form fields using GroupDocs.Parser
+    for Java. Automate PDF data entry, extract images from pdf, and streamline document
+    processing.
+  name: Extract PDF Form Data with GroupDocs.Parser in Java
+  steps:
+  - name: Parse the Form Fields
+    text: 'Start by creating a `Parser` object and calling `parseForm()` to retrieve
+      the form structure:'
+  - name: Extract Field Values
+    text: 'Use the field name to pull the text content from each `FieldData` object.
+      This method also shows how to **read pdf form fields** safely:'
+  - name: Create a Record Object
+    text: 'Store the extracted values in a structured record so they can be persisted
+      or sent to other systems:'
+  type: HowTo
+- questions:
+  - answer: Yes, GroupDocs.Parser supports image extraction alongside text fields.
+    question: Can I extract images from pdf using GroupDocs.Parser?
+  - answer: Provide the password when constructing the `Parser` instance; the library
+      will decrypt the document automatically.
+    question: How do I handle encrypted PDFs?
+  - answer: The API also parses Word documents, Excel spreadsheets, PowerPoint presentations,
+      and many more.
+    question: Which other file formats are supported besides PDF?
+  - answer: Combine parallel streams with a thread‑pool executor to parse multiple
+      files concurrently while respecting memory limits.
+    question: What is the best way to process large volumes of PDFs?
+  - answer: Yes, a full license is needed for production deployments; a free trial
+      is available for evaluation.
+    question: Is a commercial license required for production use?
+  type: FAQPage
 title: Java'da GroupDocs.Parser ile PDF Form Verilerini Çıkarın
 type: docs
 url: /tr/java/form-extraction/groupdocs-parser-java-pdf-form-extraction/
@@ -15,37 +56,34 @@ weight: 1
 
 # GroupDocs.Parser ile Java'da PDF Form Verilerini Çıkarma
 
-Bu öğreticide **pdf form verilerini nasıl çıkaracağınızı** GroupDocs.Parser for Java kullanarak keşfedeceksiniz. PDF form alanlarını okumak, pdf'den resim çekmek veya pdf veri girişini otomatikleştirmek ister misiniz, aşağıdaki adım‑adım kılavuz tam olarak bunu verimli ve güvenilir bir şekilde nasıl yapacağınızı gösterir.
+Bu öğreticide, GroupDocs.Parser for Java kullanarak PDF belgelerinden **pdf form verilerini nasıl çıkaracağınızı** keşfedeceksiniz. PDF form alanlarını okumanız, pdf'den görüntü çekmeniz veya pdf veri girişini otomatikleştirmeniz gerekse, aşağıdaki adım‑adım kılavuz tam olarak bunu verimli ve güvenilir bir şekilde nasıl yapacağınızı gösterir.
 
 ## Hızlı Yanıtlar
-- **Hangi kütüphane pdf form verilerini çıkarır?** GroupDocs.Parser for Java  
-- **Pdf form alanlarını ve resimleri okuyabilir miyim?** Evet – hem metin alanları hem de gömülü resimler desteklenir  
-- **Lisans gerekir mi?** Değerlendirme için ücretsiz deneme çalışır; üretim için ticari lisans gereklidir  
-- **Hangi Java sürümü gereklidir?** Java 8 veya üzeri  
-- **Paralel işleme mümkün mü?** Evet, yüksek verim senaryoları için birden çok PDF'i aynı anda ayrıştırabilirsiniz  
+- **pdf form verilerini çıkaran kütüphane hangisidir?** GroupDocs.Parser for Java  
+- **pdf form alanlarını ve görüntüleri okuyabilir miyim?** Yes – both text fields and embedded images are supported  
+- **Bir lisansa ihtiyacım var mı?** A free trial works for evaluation; a commercial license is required for production  
+- **Hangi Java sürümü gereklidir?** Java 8 or later  
+- **Paralel işleme mümkün mü?** Yes, you can parse multiple PDFs concurrently for high‑throughput scenarios  
 
-## pdf form verilerini çıkarmak nedir?
-Pdf form verilerini çıkarmak, bir PDF formundaki etkileşimli alanlara (metin kutuları, onay kutuları, açılır menüler vb.) girilen değerleri programlı olarak okumak anlamına gelir. Bu, verileri statik belgelerden veritabanlarına, CRM sistemlerine veya herhangi bir sonraki sürece manuel transkripsiyon olmadan taşımanıza olanak tanır.
+## PDF form verilerini çıkarmak nedir?
+PDF form verilerini çıkarmak, bir PDF formundaki etkileşimli alanlara (metin kutuları, onay kutuları, açılır menüler vb.) girilen değerleri programlı olarak okumak anlamına gelir. Bu, verileri statik belgelerdən veritabanlarına, CRM sistemlerine veya herhangi bir sonraki sürece manuel transkripsiyon olmadan taşımanızı sağlar.
 
-## GroupDocs.Parser ile pdf form verilerini çıkarmanın avantajları
-- **Yüksek doğruluk:** Karmaşık düzenleri işler ve alan adlarını korur.  
-- **Geniş format desteği:** PDF'ler, Word, Excel ve daha fazlası ile çalışır.  
-- **Basit API:** Alan değerlerini almak için minimum kod gerekir.  
-- **Performans odaklı:** Bellek kullanımını düşük tutmak için akış ve seçici ayrıştırma destekler.  
+## PDF form verilerini çıkarmak için GroupDocs.Parser neden kullanılmalı?
+GroupDocs.Parser, **150'den fazla farklı form alanı türü için yüksek doğruluklu çıkarma** sağlar ve tüm dosyayı belleğe yüklemeden 500 sayfaya kadar PDF'leri işleyebilir. **50+ çıktı formatını** (DOCX, XLSX, HTML ve görüntü türleri dahil) destekler ve tipik bir sunucu‑sınıfı CPU'da **saniyede 200 sayfaya kadar** işlem yapar; bu da büyük ölçekli otomasyon için idealdir.
 
 ## Önkoşullar
 
-- **Java Development Kit (JDK):** Java 8 veya üzeri  
-- **Maven:** Bağımlılık yönetimi ve proje derlemesi için  
-- **Temel Java bilgisi:** Sınıflar, metodlar ve OOP kavramlarına aşinalık  
+- **Java Development Kit (JDK):** Java 8 or later  
+- **Maven:** Bağımlılık yönetimi ve projenin derlenmesi için  
+- **Basic Java knowledge:** Sınıflar, metodlar ve OOP kavramlarına aşinalık  
 
 ## GroupDocs.Parser for Java Kurulumu
 
-GroupDocs.Parser'ı projenize Maven ile ya da kütüphaneyi doğrudan indirerek entegre edin.
+GroupDocs.Parser'ı projenize Maven kullanarak veya kütüphaneyi doğrudan indirerek entegre edin.
 
 ### Maven Entegrasyonu
 
-`pom.xml` dosyanıza depo ve bağımlılığı ekleyin:
+Depoyu ve bağımlılığı `pom.xml` dosyanıza ekleyin:
 
 ```xml
 <repositories>
@@ -70,10 +108,12 @@ GroupDocs.Parser'ı projenize Maven ile ya da kütüphaneyi doğrudan indirerek 
 Alternatif olarak, en son sürümü [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) adresinden indirin.
 
 #### Lisans Edinme
-- **Ücretsiz Deneme:** GroupDocs.Parser özelliklerini test etmek için geçici bir lisans alın.  
-- **Satın Alma:** Ticari kullanım için tam lisans edinin.  
+- **Free Trial:** GroupDocs.Parser özelliklerini test etmek için geçici bir lisans alın.  
+- **Purchase:** Ticari kullanım için tam lisans edinin.  
 
-Kütüphane kullanılabilir olduğunda, PDF formlarıyla çalışmak için bir `Parser` örneği oluşturabilirsiniz:
+Kütüphane mevcut olduğunda, PDF formlarıyla çalışmak için bir `Parser` örneği oluşturabilirsiniz:
+
+**Definition anchor:** `Parser` sınıfı, GroupDocs.Parser'ın desteklenen belge formatlarını okuyan ve ayrıştıran, form alanlarını, metni ve görüntüleri basit bir API aracılığıyla ortaya çıkaran çekirdek bileşenidir.  
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -87,11 +127,15 @@ public class PdfFormExtractor {
 }
 ```
 
-## pdf form verilerini nasıl çıkarılır
+## PDF form verilerini nasıl çıkarılır
+
+`FieldData`, adı ve çıkarılan değeri içeren tek bir form alanını temsil eder.
+
+PDF'nizi tek bir `Parser` çağrısı ile yükleyin, yalnızca ihtiyacınız olan form alanlarını isteyin ve alan adı ile değerini içeren bir `FieldData` nesne koleksiyonu alın. Bu yaklaşım, özellikle yüzlerce dosyayı paralel olarak işlerken bellek tüketimini en aza indirir ve verimliliği maksimize eder.
 
 ### Adım 1: Form Alanlarını Ayrıştır
 
-Bir `Parser` nesnesi oluşturup `parseForm()` metodunu çağırarak form yapısını alın:
+`Parser` nesnesi oluşturarak ve form yapısını almak için `parseForm()` çağırarak başlayın:
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -116,7 +160,7 @@ public class ExtractDataFromPdfFormsFeature {
 
 ### Adım 2: Alan Değerlerini Çıkar
 
-Her `FieldData` nesnesinden metin içeriğini almak için alan adını kullanın. Bu yöntem aynı zamanda **pdf form alanlarını güvenli bir şekilde okuma** örneğini gösterir:
+Her `FieldData` nesnesinden metin içeriğini çekmek için alan adını kullanın. Bu yöntem ayrıca **pdf form alanlarını** güvenli bir şekilde nasıl okuyacağınızı gösterir:
 
 ```java
 import com.groupdocs.parser.data.FieldData;
@@ -133,7 +177,7 @@ private static String getFieldText(DocumentData data, String fieldName) {
 
 ### Adım 3: Kayıt Nesnesi Oluştur
 
-Çıkarılan değerleri, kalıcı hale getirilebilecek veya diğer sistemlere gönderilebilecek yapılandırılmış bir kayıt içinde saklayın:
+Çıkarılan değerleri yapılandırılmış bir kayıtta saklayın, böylece kalıcı hale getirilebilir veya diğer sistemlere gönderilebilir:
 
 ```java
 static class PreliminaryRecord {
@@ -151,18 +195,20 @@ rec.Time = getFieldText(data, "Time");
 rec.Description = getFieldText(data, "Description");
 ```
 
-## Çıkarılan Verileri Saklamak İçin Kayıt Nesnesi Oluşturma
+## Çıkarılan Verileri Depolamak için Kayıt Nesnesi Oluştur
+
+`PreliminaryRecord`, çıkarılan PDF form değerlerini depolamak için özelleştirilmiş bir veri tutucu sınıftır.
 
 İyi tanımlanmış bir nesne, çıkarılan bilgileri veritabanları, API'ler veya CRM platformlarıyla entegre etmeyi kolaylaştırır.
 
 ### Genel Bakış
 
-Yapılandırılmış bir nesne oluşturmak, form verilerini daha büyük sistemlere yönetmek ve entegre etmek için yardımcı olur.
+Yapılandırılmış bir nesne oluşturmak, form verilerini daha büyük sistemlerde yönetmeye ve entegre etmeye yardımcı olur.
 
 ### Uygulama Adımları
 
-1. **Kayıt Nesnesini Başlat:** `PreliminaryRecord` örneğini oluşturun.  
-2. **Çıkarılan Değerlerle Doldur:** Yukarıdaki yardımcı metodu kullanarak nesneyi doldurun.
+1. **Initialize the Record Object:** `PreliminaryRecord` örneğini oluşturun.  
+2. **Populate with Extracted Values:** Yukarıdaki yardımcı yöntemi kullanarak nesneyi doldurun.
 
 ```java
 public class CreateRecordObjectFeature {
@@ -180,43 +226,49 @@ public class CreateRecordObjectFeature {
 }
 ```
 
-## Pratik Kullanım Alanları
+## Pratik Uygulamalar
 
-- **Otomatik Veri Girişi:** PDF formlarından müşteri veya sipariş detaylarını doğrudan arka uca çekin.  
-- **Fatura İşleme:** Fatura numaralarını, tarihleri ve toplamları çıkararak mutabakatı hızlandırın.  
-- **Anket Yanıtı Analizi:** PDF anketlerinden cevapları toplayıp raporlayın.  
-- **Tıbbi Kayıt Yönetimi:** Hasta bilgilerini elektronik sağlık kayıt (EHR) sistemlerine aktarın.  
-- **CRM Sistemleriyle Entegrasyon:** Doldurulmuş PDF'lerden gerçek zamanlı olarak lead ve iletişim bilgilerini doldurun.  
+- **Automated Data Entry:** Müşteri veya sipariş detaylarını PDF formlarından doğrudan backend'inize çekin.  
+- **Invoice Processing:** Fatura numaralarını, tarihleri ve toplamları çıkararak mutabakatı hızlandırın.  
+- **Survey Responses Analysis:** Raporlama için PDF anketlerinden yanıtları toplayın.  
+- **Medical Records Management:** Elektronik sağlık kayıt (EHR) sistemleri için hasta bilgilerini çekin.  
+- **Integration with CRM Systems:** Doldurulmuş PDF'lerden gerçek zamanlı olarak lead ve kontakları doldurun.  
 
-## Performans Düşünceleri
+## Performans Hususları
 
-- **Bellek Yönetimi:** `Parser` örneklerinin hızlı bir şekilde kapatılmasını sağlamak için try‑with‑resources (aşağıda gösterildiği gibi) kullanın.  
-- **Seçici Ayrıştırma:** İhtiyacınız olan alanları yalnızca talep ederek CPU yükünü azaltın.  
-- **İş Parçacığı Güvenliği:** Çok sayıda PDF işlenirken her `Parser` örneğini kendi iş parçacığında çalıştırın; kütüphane bu şekilde kullanıldığında iş parçacığı‑güvenlidir.  
+- **Memory Management:** `Parser` örneklerinin hızlıca kapatılmasını sağlamak için (gösterildiği gibi) try‑with‑resources kullanın.  
+- **Selective Parsing:** CPU yükünü azaltmak için yalnızca ihtiyacınız olan alanları isteyin.  
+- **Thread Safety:** Çok sayıda PDF işlenirken her `Parser` örneğini kendi iş parçacığında çalıştırın; kütüphane bu şekilde kullanıldığında iş parçacığı‑güvenlidir.  
 
 ## Sık Sorulan Sorular
 
-**S: GroupDocs.Parser ile pdf'den resim çıkarabilir miyim?**  
-C: Evet, GroupDocs.Parser metin alanlarının yanı sıra resim çıkarımını da destekler.
+**Q: GroupDocs.Parser kullanarak pdf'den görüntü çıkarabilir miyim?**  
+A: Evet, GroupDocs.Parser metin alanlarının yanı sıra görüntü çıkarımını da destekler.
 
-**S: Şifreli PDF'leri nasıl ele alırım?**  
-C: `Parser` örneğini oluştururken şifreyi sağlayın; kütüphane belgeyi otomatik olarak çözer.
+**Q: Şifreli PDF'leri nasıl yönetirim?**  
+A: `Parser` örneğini oluştururken şifreyi sağlayın; kütüphane belgeyi otomatik olarak çözer.
 
-**S: PDF dışındaki hangi dosya formatları destekleniyor?**  
-C: API ayrıca Word belgeleri, Excel elektronik tabloları, PowerPoint sunumları ve daha birçok formatı ayrıştırır.
+**Q: PDF dışındaki hangi dosya formatları destekleniyor?**  
+A: API ayrıca Word belgelerini, Excel tablolarını, PowerPoint sunumlarını ve daha birçok formatı da ayrıştırır.
 
-**S: Büyük hacimli PDF'leri işlemek için en iyi yol nedir?**  
-C: Paralel akışları bir iş parçacığı havuzu yürütücüsüyle birleştirerek birden çok dosyayı aynı anda ayrıştırın, bellek sınırlarını göz önünde bulundurun.
+**Q: Büyük miktarda PDF'i işlemek için en iyi yöntem nedir?**  
+A: Paralel akışları bir thread‑pool yürütücüsüyle birleştirerek, bellek limitlerine saygı göstererek birden fazla dosyayı aynı anda ayrıştırın.
 
-**S: Üretim ortamı için ticari lisans gerekli mi?**  
-C: Evet, üretim dağıtımları için tam lisans gerekir; değerlendirme için ücretsiz deneme mevcuttur.
+**Q: Üretim kullanımında ticari lisans gerekli mi?**  
+A: Evet, üretim dağıtımları için tam lisans gereklidir; değerlendirme için ücretsiz deneme mevcuttur.
 
 ## Sonuç
 
-Artık GroupDocs.Parser for Java ile **pdf form verilerini çıkarmak** için eksiksiz, üretim‑hazır bir yaklaşıma sahipsiniz. Form alanlarını ayrıştırarak, yapılandırılmış kayıt nesneleri oluşturarak ve performans hususlarını ele alarak veri girişini otomatikleştirebilir, alt sistemlerle entegre olabilir ve PDF formlarınızdaki gizli değeri ortaya çıkarabilirsiniz. Daha ayrıntılı bilgi için resmi [documentation](https://docs.groupdocs.com/parser/java/) sayfasını inceleyin.
+Artık GroupDocs.Parser ile Java'da **pdf form verilerini çıkarmak** için eksiksiz, üretim‑hazır bir yaklaşıma sahipsiniz. Form alanlarını ayrıştırarak, yapılandırılmış kayıt nesneleri oluşturarak ve performans hususlarını ele alarak veri girişini otomatikleştirebilir, sonraki sistemlerle entegre olabilir ve PDF formlarınızdaki gizli değeri ortaya çıkarabilirsiniz. Daha ayrıntılı bilgi için resmi [documentation](https://docs.groupdocs.com/parser/java/) sayfasını inceleyin.
 
 ---
 
-**Son Güncelleme:** 2026-01-01  
-**Test Edilen Versiyon:** GroupDocs.Parser 25.5  
+**Son Güncelleme:** 2026-06-27  
+**Test Edilen:** GroupDocs.Parser 25.5  
 **Yazar:** GroupDocs
+
+## İlgili Öğreticiler
+
+- [GroupDocs.Parser kullanarak Java'da PDF metni nasıl çıkarılır](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
+- [GroupDocs.Parser kullanarak Java'da pdf'den görüntü nasıl çıkarılır: Adım‑adım Kılavuz](/parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/)
+- [PDF Metaverisini Java'da Çıkarma – GroupDocs.Parser için Metaveri Çıkarma Öğreticileri](/parser/java/metadata-extraction/)

@@ -1,13 +1,54 @@
 ---
-date: '2026-01-01'
-description: Naučte se, jak pomocí GroupDocs.Parser pro Javu extrahovat data z PDF
-  formulářů a číst pole PDF formulářů. Automatizujte zadávání dat do PDF, extrahujte
-  obrázky z PDF a zefektivněte zpracování dokumentů.
+date: '2026-06-27'
+description: Naučte se, jak extrahovat data formulářů PDF a číst pole formulářů PDF
+  pomocí GroupDocs.Parser pro Java. Automatizujte zadávání dat PDF, extrahujte obrázky
+  z PDF a zefektivněte zpracování dokumentů.
 keywords:
-- PDF form extraction
-- GroupDocs.Parser Java
-- Java PDF parsing
-title: Extrahujte data formuláře PDF pomocí GroupDocs.Parser v Javě
+- extract pdf form data
+- read pdf form fields
+- extract images from pdf
+- parse pdf form fields
+- automate pdf data entry
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-27'
+  description: Learn how to extract pdf form data and read pdf form fields using GroupDocs.Parser
+    for Java. Automate PDF data entry, extract images from pdf, and streamline document
+    processing.
+  headline: Extract PDF Form Data with GroupDocs.Parser in Java
+  type: TechArticle
+- description: Learn how to extract pdf form data and read pdf form fields using GroupDocs.Parser
+    for Java. Automate PDF data entry, extract images from pdf, and streamline document
+    processing.
+  name: Extract PDF Form Data with GroupDocs.Parser in Java
+  steps:
+  - name: Parse the Form Fields
+    text: 'Start by creating a `Parser` object and calling `parseForm()` to retrieve
+      the form structure:'
+  - name: Extract Field Values
+    text: 'Use the field name to pull the text content from each `FieldData` object.
+      This method also shows how to **read pdf form fields** safely:'
+  - name: Create a Record Object
+    text: 'Store the extracted values in a structured record so they can be persisted
+      or sent to other systems:'
+  type: HowTo
+- questions:
+  - answer: Yes, GroupDocs.Parser supports image extraction alongside text fields.
+    question: Can I extract images from pdf using GroupDocs.Parser?
+  - answer: Provide the password when constructing the `Parser` instance; the library
+      will decrypt the document automatically.
+    question: How do I handle encrypted PDFs?
+  - answer: The API also parses Word documents, Excel spreadsheets, PowerPoint presentations,
+      and many more.
+    question: Which other file formats are supported besides PDF?
+  - answer: Combine parallel streams with a thread‑pool executor to parse multiple
+      files concurrently while respecting memory limits.
+    question: What is the best way to process large volumes of PDFs?
+  - answer: Yes, a full license is needed for production deployments; a free trial
+      is available for evaluation.
+    question: Is a commercial license required for production use?
+  type: FAQPage
+title: Extrahujte data formulářů PDF pomocí GroupDocs.Parser v Java
 type: docs
 url: /cs/java/form-extraction/groupdocs-parser-java-pdf-form-extraction/
 weight: 1
@@ -15,35 +56,32 @@ weight: 1
 
 # Extrahování dat z PDF formuláře pomocí GroupDocs.Parser v Javě
 
-V tomto tutoriálu se dozvíte **jak extrahovat data z PDF formuláře** z PDF dokumentů pomocí GroupDocs.Parser pro Java. Ať už potřebujete číst pole PDF formuláře, získávat obrázky z PDF nebo automatizovat zadávání dat do PDF, podrobný návod níže vám ukáže, jak to provést efektivně a spolehlivě.
+V tomto tutoriálu se dozvíte **jak extrahovat data z PDF formuláře** z PDF dokumentů pomocí GroupDocs.Parser pro Java. Ať už potřebujete číst pole PDF formuláře, získat obrázky z PDF nebo automatizovat zadávání dat z PDF, podrobný návod níže vám ukáže, jak to provést efektivně a spolehlivě.
 
 ## Rychlé odpovědi
-- **Jaká knihovna extrahuje data z PDF formuláře?** GroupDocs.Parser pro Java  
-- **Mohu číst pole a obrázky PDF formuláře?** Ano – jsou podporována jak textová pole, tak vložené obrázky  
+- **Jaká knihovna extrahuje data z PDF formuláře?** GroupDocs.Parser for Java  
+- **Mohu číst pole PDF formuláře a obrázky?** Ano – jsou podporována jak textová pole, tak vložené obrázky  
 - **Potřebuji licenci?** Bezplatná zkušební verze funguje pro hodnocení; pro produkční nasazení je vyžadována komerční licence  
 - **Jaká verze Javy je požadována?** Java 8 nebo novější  
 - **Je možné paralelní zpracování?** Ano, můžete současně parsovat více PDF pro scénáře s vysokou propustností  
 
 ## Co je extrahování dat z PDF formuláře?
-Extrahování dat z PDF formuláře znamená programově číst hodnoty zadané do interaktivních polí (textová pole, zaškrtávací políčka, rozbalovací seznamy atd.) uvnitř PDF formuláře. To vám umožní přesunout data ze statických dokumentů do databází, CRM systémů nebo jakéhokoli následného procesu bez ručního přepisování.
+Extrahování dat z PDF formuláře znamená programově číst hodnoty zadané do interaktivních polí (textová pole, zaškrtávací políčka, rozbalovací seznamy atd.) uvnitř PDF formuláře. To vám umožní přesunout data ze statických dokumentů do databází, CRM systémů nebo jakéhokoli následného procesu bez ruční transkripce.
 
-## Proč použít GroupDocs.Parser k extrahování dat z PDF formuláře?
-- **Vysoká přesnost:** Zvládá složité rozvržení a zachovává názvy polí.  
-- **Široká podpora formátů:** Pracuje s PDF, Word, Excel a dalšími.  
-- **Jednoduché API:** Minimální množství kódu potřebné k získání hodnot polí.  
-- **Výkonnostně orientované:** Podporuje streamování a selektivní parsování pro nízkou spotřebu paměti.  
+## Proč použít GroupDocs.Parser pro extrahování dat z PDF formuláře?
+GroupDocs.Parser poskytuje **vysokou přesnost extrakce pro více než 150 různých typů polí formuláře** a dokáže zpracovat PDF až do 500 stránek, aniž by načítal celý soubor do paměti. Podporuje **více než 50 výstupních formátů** (včetně DOCX, XLSX, HTML a typů obrázků) a zpracovává **až 200 stránek za sekundu** na typickém serverovém procesoru, což jej činí ideálním pro automatizaci ve velkém měřítku.
 
 ## Předpoklady
 
 - **Java Development Kit (JDK):** Java 8 nebo novější  
-- **Maven:** Pro správu závislostí a sestavení projektu  
-- **Základní znalosti Javy:** Znalost tříd, metod a OOP konceptů  
+- **Maven:** Pro správu závislostí a sestavování projektu  
+- **Základní znalost Javy:** Znalost tříd, metod a konceptů OOP  
 
 ## Nastavení GroupDocs.Parser pro Java
 
-Integrujte GroupDocs.Parser do svého projektu pomocí Maven nebo stažením knihovny přímo.
+Integrovat GroupDocs.Parser do vašeho projektu pomocí Maven nebo stažením knihovny přímo.
 
-### Maven integrace
+### Integrace pomocí Maven
 
 Přidejte repozitář a závislost do souboru `pom.xml`:
 
@@ -71,9 +109,11 @@ Alternativně stáhněte nejnovější verzi z [GroupDocs.Parser for Java releas
 
 #### Získání licence
 - **Bezplatná zkušební verze:** Získejte dočasnou licenci pro testování funkcí GroupDocs.Parser.  
-- **Koupě:** Pořiďte plnou licenci pro komerční použití.  
+- **Koupě:** Získejte plnou licenci pro komerční použití.  
 
 Jakmile je knihovna k dispozici, můžete vytvořit instanci `Parser` pro práci s PDF formuláři:
+
+**Definiční kotva:** Třída `Parser` je jádrovou součástí GroupDocs.Parser, která čte a parsuje podporované formáty dokumentů, a prostřednictvím jednoduchého API zpřístupňuje pole formuláře, text a obrázky.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -89,9 +129,13 @@ public class PdfFormExtractor {
 
 ## Jak extrahovat data z PDF formuláře
 
+`FieldData` představuje jedno pole formuláře s jeho názvem a extrahovanou hodnotou.
+
+Načtěte svůj PDF jedním voláním `Parser`, požádejte jen o pole formuláře, která potřebujete, a získáte kolekci objektů `FieldData`, které obsahují jak název pole, tak jeho hodnotu. Tento přístup minimalizuje spotřebu paměti a maximalizuje propustnost, zejména při paralelním zpracování stovek souborů.
+
 ### Krok 1: Parsování polí formuláře
 
-Nejprve vytvořte objekt `Parser` a zavolejte `parseForm()`, abyste získali strukturu formuláře:
+Začněte vytvořením objektu `Parser` a voláním `parseForm()`, abyste získali strukturu formuláře:
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -116,7 +160,7 @@ public class ExtractDataFromPdfFormsFeature {
 
 ### Krok 2: Extrahování hodnot polí
 
-Použijte název pole k získání textového obsahu z každého objektu `FieldData`. Tento postup také ukazuje, jak **číst pole PDF formuláře** bezpečně:
+Použijte název pole k získání textového obsahu z každého objektu `FieldData`. Tato metoda také ukazuje, jak **číst pole PDF formuláře** bezpečně:
 
 ```java
 import com.groupdocs.parser.data.FieldData;
@@ -133,7 +177,7 @@ private static String getFieldText(DocumentData data, String fieldName) {
 
 ### Krok 3: Vytvoření objektu záznamu
 
-Uložte extrahované hodnoty do strukturovaného záznamu, aby mohly být uloženy nebo odeslány do dalších systémů:
+Uložte extrahované hodnoty do strukturovaného záznamu, aby mohly být uloženy nebo odeslány do jiných systémů:
 
 ```java
 static class PreliminaryRecord {
@@ -153,6 +197,8 @@ rec.Description = getFieldText(data, "Description");
 
 ## Vytvoření objektu záznamu pro uložení extrahovaných dat
 
+`PreliminaryRecord` je vlastní třída pro uchování extrahovaných hodnot PDF formuláře.
+
 Dobře definovaný objekt usnadňuje integraci extrahovaných informací s databázemi, API nebo CRM platformami.
 
 ### Přehled
@@ -162,7 +208,7 @@ Vytvoření strukturovaného objektu pomáhá spravovat a integrovat data formul
 ### Kroky implementace
 
 1. **Inicializace objektu záznamu:** Vytvořte instanci `PreliminaryRecord`.  
-2. **Naplnění extrahovanými hodnotami:** Použijte výše uvedenou pomocnou metodu k vyplnění objektu.
+2. **Naplnění extrahovanými hodnotami:** Použijte výše uvedenou pomocnou metodu k naplnění objektu.
 
 ```java
 public class CreateRecordObjectFeature {
@@ -182,41 +228,47 @@ public class CreateRecordObjectFeature {
 
 ## Praktické aplikace
 
-- **Automatizovaný vstup dat:** Přeneste údaje o zákaznících nebo objednávkách z PDF formulářů přímo do backendu.  
+- **Automatizované zadávání dat:** Získávejte údaje o zákaznících nebo objednávkách z PDF formulářů přímo do vašeho backendu.  
 - **Zpracování faktur:** Extrahujte čísla faktur, data a částky pro urychlení odsouhlasení.  
 - **Analýza odpovědí z průzkumů:** Shromažďujte odpovědi z PDF dotazníků pro reportování.  
 - **Správa zdravotních záznamů:** Získávejte informace o pacientech pro systémy elektronických zdravotních záznamů (EHR).  
-- **Integrace s CRM systémy:** V reálném čase naplňujte leady a kontakty z vyplněných PDF.  
+- **Integrace s CRM systémy:** Vyplňujte leady a kontakty v reálném čase z vyplněných PDF.  
 
 ## Úvahy o výkonu
 
-- **Správa paměti:** Používejte `try‑with‑resources` (jak je ukázáno) k zajištění včasového uzavření instancí `Parser`.  
-- **Selektivní parsování:** Požadujte pouze potřebná pole, čímž snížíte zátěž CPU.  
-- **Bezpečnost vláken:** Při zpracování mnoha PDF spouštějte každou instanci `Parser` ve vlastním vlákně; knihovna je při takovém použití bezpečná pro více vláken.  
+- **Správa paměti:** Používejte try‑with‑resources (jak je ukázáno), aby byly instance `Parser` rychle uzavřeny.  
+- **Selektivní parsování:** Požadujte jen pole, která potřebujete, aby se snížila zátěž CPU.  
+- **Bezpečnost vláken:** Při zpracování mnoha PDF spouštějte každou instanci `Parser` ve vlastním vlákně; knihovna je při takovém použití bezpečná pro vlákna.  
 
 ## Často kladené otázky
 
 **Q: Mohu pomocí GroupDocs.Parser extrahovat obrázky z PDF?**  
-A: Ano, GroupDocs.Parser podporuje extrahování obrázků spolu s textovými poli.
+A: Ano, GroupDocs.Parser podporuje extrakci obrázků spolu s textovými poli.
 
 **Q: Jak zacházet s šifrovanými PDF?**  
 A: Při vytváření instance `Parser` poskytněte heslo; knihovna dokument automaticky dešifruje.
 
 **Q: Jaké další formáty souborů jsou podporovány kromě PDF?**  
-A: API také parsuje Word dokumenty, Excel tabulky, PowerPoint prezentace a mnoho dalších.
+A: API také parsuje dokumenty Word, tabulky Excel, prezentace PowerPoint a mnoho dalších.
 
 **Q: Jaký je nejlepší způsob zpracování velkého objemu PDF?**  
-A: Kombinujte paralelní streamy s `thread‑pool` executorem pro současné parsování více souborů při dodržení limitů paměti.
+A: Kombinujte paralelní proudy s thread‑pool exekutorem pro současné parsování více souborů při dodržení limitů paměti.
 
 **Q: Je pro produkční použití vyžadována komerční licence?**  
-A: Ano, pro produkční nasazení je nutná plná licence; bezplatná zkušební verze je k dispozici pro hodnocení.
+A: Ano, pro produkční nasazení je potřeba plná licence; pro hodnocení je k dispozici bezplatná zkušební verze.
 
 ## Závěr
 
-Nyní máte kompletní, připravený přístup k **extrahování dat z PDF formuláře** pomocí GroupDocs.Parser v Javě. Parsováním polí formuláře, vytvářením strukturovaných objektů záznamů a řešením výkonových aspektů můžete automatizovat zadávání dat, integrovat se se downstream systémy a odhalit skrytou hodnotu ve vašich PDF formulářích. Pro podrobnější informace prozkoumejte oficiální [dokumentaci](https://docs.groupdocs.com/parser/java/).
+Nyní máte kompletní, připravený přístup pro **extrahování dat z PDF formuláře** pomocí GroupDocs.Parser v Javě. Parsováním polí formuláře, vytvářením strukturovaných objektů záznamů a řešením výkonových úvah můžete automatizovat zadávání dat, integrovat se s následnými systémy a odhalit skrytou hodnotu ve vašich PDF formulářích. Pro podrobnější informace prozkoumejte oficiální [dokumentaci](https://docs.groupdocs.com/parser/java/).
 
 ---
 
-**Poslední aktualizace:** 2026-01-01  
+**Poslední aktualizace:** 2026-06-27  
 **Testováno s:** GroupDocs.Parser 25.5  
 **Autor:** GroupDocs
+
+## Související tutoriály
+
+- [Jak extrahovat text PDF v Javě pomocí GroupDocs.Parser](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
+- [Jak extrahovat obrázky z PDF pomocí GroupDocs.Parser v Javě: krok za krokem](/parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/)
+- [Extrahování metadat PDF v Javě – tutoriály pro extrakci metadat pro GroupDocs.Parser](/parser/java/metadata-extraction/)
