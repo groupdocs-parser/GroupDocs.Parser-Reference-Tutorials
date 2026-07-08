@@ -1,41 +1,42 @@
 ---
-title: "Extract page text java from OneNote using GroupDocs.Parser – Full Guide"
-description: "Learn how to extract page text java from OneNote files using GroupDocs.Parser, with java parseexception handling tips for robust Java applications."
-date: "2026-03-06"
-weight: 1
-url: "/java/text-extraction/extract-text-onenote-groupdocs-parser-java/"
+date: '2026-03-06'
+description: GroupDocs.Parser를 사용하여 OneNote 파일에서 페이지 텍스트를 Java로 추출하는 방법을 배우고, 견고한
+  Java 애플리케이션을 위한 java ParseException 처리 팁을 확인하세요.
 keywords:
 - extract text from OneNote
 - Java GroupDocs.Parser
 - OneNote document parsing in Java
+title: GroupDocs.Parser를 이용해 OneNote에서 Java 페이지 텍스트 추출 – 전체 가이드
 type: docs
+url: /ko/java/text-extraction/extract-text-onenote-groupdocs-parser-java/
+weight: 1
 ---
 
 # Extract page text java from OneNote Using GroupDocs.Parser
 
-Extracting page text java from Microsoft OneNote notebooks can be tricky, especially when you need to automate the process inside a Java application. In this guide we’ll walk through everything you need to know—from setting up the environment to handling `ParseException` errors—so you can reliably pull text from any OneNote page.
+Microsoft OneNote 노트북에서 페이지 텍스트를 추출하는 것은 특히 Java 애플리케이션 내부에서 자동화해야 할 때 까다로울 수 있습니다. 이 가이드에서는 환경 설정부터 `ParseException` 오류 처리까지, OneNote 페이지에서 텍스트를 안정적으로 가져오는 데 필요한 모든 내용을 단계별로 안내합니다.
 
 ## Quick Answers
-- **Which library handles OneNote parsing in Java?** GroupDocs.Parser.
-- **What is the primary method to get text?** `parser.getText(pageNumber)`.
-- **How do I catch parsing errors?** Use `java parseexception handling` with `try‑catch`.
-- **Do I need a license for production?** Yes, a valid GroupDocs.Parser license.
+- **Which library handles OneNote parsing in Java?** GroupDocs.Parser.  
+- **What is the primary method to get text?** `parser.getText(pageNumber)`.  
+- **How do I catch parsing errors?** Use `java parseexception handling` with `try‑catch`.  
+- **Do I need a license for production?** Yes, a valid GroupDocs.Parser license.  
 - **Can I extract text from a specific page only?** Absolutely—specify the page index when calling `getText`.
 
 ## What is “extract page text java”?
-“Extract page text java” refers to the process of programmatically retrieving the textual content of a single page (or section) from a document—here, a OneNote file—using Java code. GroupDocs.Parser provides a simple API that makes this operation straightforward and reliable.
+“Extract page text java”는 Java 코드를 사용해 문서(여기서는 OneNote 파일)의 단일 페이지(또는 섹션) 텍스트 내용을 프로그래밍 방식으로 가져오는 과정을 의미합니다. GroupDocs.Parser는 이 작업을 간단하고 신뢰할 수 있게 해주는 API를 제공합니다.
 
 ## Why use GroupDocs.Parser for OneNote text extraction?
-- **Full format support** – Handles the proprietary OneNote structure without manual parsing.
-- **Metadata access** – Lets you read page counts, titles, and other properties.
-- **Robust error handling** – Offers clear exceptions (`ParseException`) you can manage with standard Java `try‑catch`.
-- **Performance‑focused** – Stream‑based reading reduces memory footprint, perfect for large notebooks.
+- **Full format support** – OneNote 고유 구조를 수동 파싱 없이 처리합니다.  
+- **Metadata access** – 페이지 수, 제목 및 기타 속성을 읽을 수 있습니다.  
+- **Robust error handling** – 표준 Java `try‑catch` 로 관리할 수 있는 명확한 예외(`ParseException`)를 제공합니다.  
+- **Performance‑focused** – 스트림 기반 읽기로 메모리 사용량을 최소화하므로 대용량 노트북에 적합합니다.
 
 ## Prerequisites
-- **JDK 8+** – Ensure `JAVA_HOME` points to a valid JDK.
-- **IDE** – IntelliJ IDEA, Eclipse, or any Java‑compatible editor.
-- **Maven** – For dependency management (or download the JAR manually).
-- **GroupDocs.Parser license** – Trial or full license for production use.
+- **JDK 8+** – `JAVA_HOME`가 유효한 JDK를 가리키는지 확인하세요.  
+- **IDE** – IntelliJ IDEA, Eclipse 또는 Java 호환 편집기.  
+- **Maven** – 의존성 관리를 위해 (또는 JAR를 직접 다운로드).  
+- **GroupDocs.Parser license** – 트라이얼 또는 프로덕션용 정식 라이선스.
 
 ### Required Libraries and Dependencies
 Add the repository and dependency to your `pom.xml`:
@@ -140,14 +141,14 @@ import com.groupdocs.parser.data.TextReader;
 *Explanation*: `TextReader` streams the page’s text, allowing you to process or store it without loading the entire document into memory.
 
 ## Practical Applications of Extract Page Text Java
-- **Automated Summaries** – Pull key notes from meeting notebooks for quick reports.
-- **Data Migration** – Move OneNote content into databases, PDFs, or other knowledge‑base systems.
-- **Collaboration Enhancements** – Feed extracted text into chatbots or search indexes for better team productivity.
+- **Automated Summaries** – 회의 노트북에서 핵심 메모를 추출해 빠른 보고서를 작성합니다.  
+- **Data Migration** – OneNote 콘텐츠를 데이터베이스, PDF 또는 기타 지식베이스 시스템으로 이동합니다.  
+- **Collaboration Enhancements** – 추출된 텍스트를 챗봇이나 검색 인덱스로 연결해 팀 생산성을 높입니다.
 
 ## Performance & Memory Tips
-- **Use try‑with‑resources** (as shown) to auto‑close streams and free memory.
-- **Batch Process** – When handling many notebooks, process them sequentially or in small parallel groups.
-- **Avoid Full Document Loads** – Extract only the pages you need; this keeps the heap usage low.
+- **Use try‑with‑resources** (as shown) to auto‑close streams and free memory.  
+- **Batch Process** – 많은 노트북을 다룰 때는 순차적으로 혹은 작은 병렬 그룹으로 처리합니다.  
+- **Avoid Full Document Loads** – 필요한 페이지만 추출하면 힙 사용량을 낮게 유지할 수 있습니다.
 
 ## Common Issues and Solutions
 
@@ -175,7 +176,7 @@ A: Yes, when you manage resources correctly (use streaming, batch processing, an
 A: PDFs, Word documents, Excel spreadsheets, PowerPoint presentations, and many more.
 
 ## Resources
-- [GroupDocs.Parser Java Documentation](https://docs.groupdocs.com/parser/java/)
+- [GroupDocs.Parser Java Documentation](https://docs.groupdocs.com/parser/java/)  
 - [API Reference](https://reference.groupdocs.com/parser/java/)
 
 ---
