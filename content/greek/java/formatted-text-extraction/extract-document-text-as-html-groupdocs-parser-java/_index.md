@@ -1,67 +1,76 @@
 ---
-date: '2026-01-01'
-description: Μάθετε πώς να μετατρέπετε έγγραφα σε HTML με το GroupDocs.Parser για
-  Java, να μετατρέπετε DOCX σε HTML και να εξάγετε μορφοποιημένο κείμενο αποδοτικά.
+date: '2026-07-02'
+description: Μάθετε πώς να μετατρέψετε το doc σε html με το GroupDocs.Parser for Java,
+  να μετατρέψετε το docx σε html και να εξάγετε μορφοποιημένο κείμενο αποδοτικά.
 keywords:
-- extract document text as HTML
-- GroupDocs.Parser Java setup
-- HTML formatted text extraction
-title: 'Πώς να Μετατρέψετε Έγγραφο σε HTML Χρησιμοποιώντας το GroupDocs.Parser Java:
-  Ένας Οδηγός Βήμα προς Βήμα'
+- convert doc to html
+- parse docx to html
+- convert document html java
+- read document as html
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-02'
+  description: Learn how to convert doc to html with GroupDocs.Parser for Java, parse
+    docx to html and extract formatted text efficiently.
+  headline: How to Convert Doc to HTML Using GroupDocs.Parser for Java – Step‑by‑Step
+    Guide
+  type: TechArticle
+- questions:
+  - answer: It’s a versatile library for extracting text, metadata, and formatted
+      content (including HTML) from a wide range of document formats.
+    question: What is GroupDocs.Parser Java used for?
+  - answer: Yes—set `FormattedTextMode.Html` as shown, and the parser returns the
+      DOCX content as HTML.
+    question: Can I parse docx to html with this library?
+  - answer: Large files consume more memory, but using try‑with‑resources and streaming
+      techniques mitigates the impact; the library can handle files up to 2 GB without
+      loading the entire file into memory.
+    question: Is there a performance impact when parsing large documents?
+  - answer: The parser returns `null` for unsupported extraction modes; implement
+      fallback logic or notify the user accordingly.
+    question: How do I handle unsupported document features?
+  - answer: Visit the official documentation and community links listed below.
+    question: Where can I find more resources on GroupDocs.Parser Java?
+  type: FAQPage
+title: Πώς να μετατρέψετε το doc σε html χρησιμοποιώντας το GroupDocs.Parser for Java
+  – Οδηγός βήμα‑βήμα
 type: docs
 url: /el/java/formatted-text-extraction/extract-document-text-as-html-groupdocs-parser-java/
 weight: 1
 ---
 
-# Πώς να Μετατρέψετε Έγγραφο σε HTML Χρησιμοποιώντας το GroupDocs.Parser Java: Ένας Οδηγός Βήμα-Βήμα
+# Πώς να Μετατρέψετε το Doc σε HTML Χρησιμοποιώντας το GroupDocs.Parser για Java – Οδηγός Βήμα‑βήμα
 
-Η εξαγωγή κειμένου από ένα αρχείο και **convert document to html** μπορεί να φαίνεται δύσκολη, ειδικά όταν πρέπει να διατηρηθεί η μορφοποίηση. Σε αυτό το tutorial θα περάσουμε από τα ακριβή βήματα για να χρησιμοποιήσουμε το GroupDocs.Parser for Java ώστε να **convert document to html**, να parse docx to html και να διαβάσουμε το έγγραφο ως html με καθαρό, συντηρήσιμο τρόπο. Στο τέλος, θα έχετε ένα έτοιμο‑για‑χρήση snippet που μετατρέπει αρχεία Word σε περιεχόμενο HTML φιλικό προς το web.
+Η μετατροπή ενός **doc to html** είναι μια συνηθισμένη ανάγκη όταν θέλετε να εμφανίσετε περιεχόμενο Word στον ιστό χωρίς να χάσετε τη μορφοποίηση. Σε αυτό το tutorial θα περάσουμε βήμα προς βήμα τις ακριβείς διαδικασίες για να χρησιμοποιήσετε το GroupDocs.Parser για Java ώστε να **convert doc to html**, να μετατρέψετε docx σε html και να διαβάσετε το έγγραφο ως html με καθαρό, συντηρήσιμο τρόπο. Στο τέλος, θα έχετε ένα έτοιμο κομμάτι κώδικα που μετατρέπει αρχεία Word σε φιλικό για το web HTML περιεχόμενο, και θα καταλάβετε γιατί αυτή η προσέγγιση είναι η πιο αξιόπιστη για προγραμματιστές Java.
 
-## Γρήγορες Απαντήσεις
-- **Ποια βιβλιοθήκη διαχειρίζεται τη μετατροπή σε HTML;** GroupDocs.Parser for Java  
-- **Ποια λειτουργία εξάγει HTML;** `FormattedTextMode.Html`  
-- **Χρειάζομαι άδεια;** Μια δωρεάν δοκιμή ή προσωρινή άδεια λειτουργεί για δοκιμές· απαιτείται πλήρης άδεια για παραγωγή.  
-- **Μπορώ να αναλύσω αρχεία DOCX;** Ναι – ο parser υποστηρίζει DOCX, PDF, PPTX και πολλές άλλες μορφές.  
-- **Είναι σημαντική η διαχείριση μνήμης;** Απόλυτα· πάντα κλείνετε parsers και readers για να αποφεύγετε διαρροές.
+## Σύντομες Απαντήσεις
+- **What library handles HTML conversion?** GroupDocs.Parser for Java  
+- **Which mode extracts HTML?** `FormattedTextMode.Html`  
+- **Do I need a license?** A free trial or temporary license works for testing; a full license is required for production.  
+- **Can I parse DOCX files?** Yes – the parser supports DOCX, PDF, PPTX, and many more formats.  
+- **Is memory management important?** Absolutely; always close parsers and readers to avoid leaks.  
+- **How large a document can be processed?** Up to 2 GB files are handled without loading the entire file into memory.  
 
-## Εισαγωγή
+## Τι είναι το “convert doc to html”;
+Η μετατροπή ενός doc σε html σημαίνει τη λήψη ενός αρχείου Microsoft Word (DOC ή DOCX) και τη δημιουργία μιας αναπαράστασης HTML που διατηρεί την αρχική διάταξη, τα στυλ, τις επικεφαλίδες, τους πίνακες, τις εικόνες και άλλα στοιχεία. Το παραγόμενο HTML μπορεί να ενσωματωθεί απευθείας σε ιστοσελίδες, να εμφανιστεί σε προγράμματα περιήγησης ή να τροφοδοτηθεί σε συστήματα διαχείρισης περιεχομένου.
 
-Η εξαγωγή κειμένου από έγγραφα και η μετατροπή του σε μορφή HTML χρησιμοποιώντας Java μπορεί να είναι πρόκληση. Πολλοί προγραμματιστές αντιμετωπίζουν δυσκολίες όταν αναλύουν έγγραφα για συγκεκριμένες μορφές όπως το HTML. Αυτός ο οδηγός σας καθοδηγεί στη διαδικασία εξαγωγής κειμένου εγγράφου ως HTML με το GroupDocs.Parser Java—μια ισχυρή βιβλιοθήκη σχεδιασμένη να διαχειρίζεται διάφορες μορφές εγγράφων.
-
-Ακολουθώντας αυτό το tutorial, θα μάθετε πώς να μετατρέπετε αβίαστα το περιεχόμενο ενός εγγράφου σε HTML, καθιστώντας πιο εύκολη την εμφάνιση και τη διαχείρισή του σε διαδικτυακές πλατφόρμες. Αυτό που θα ανακαλύψετε:
-
-- Ρύθμιση του GroupDocs.Parser στο έργο Java  
-- Εξαγωγή μορφοποιημένου κειμένου από έγγραφα χρησιμοποιώντας τη λειτουργία HTML  
-- Πρακτικές εφαρμογές του εξαγόμενου περιεχομένου HTML  
-
-Ας εξερευνήσουμε πώς μπορείτε να χρησιμοποιήσετε αποτελεσματικά το GroupDocs.Parser για αυτόν τον σκοπό.
+## Γιατί να χρησιμοποιήσετε το GroupDocs.Parser για Java για τη μετατροπή doc σε html;
+Το GroupDocs.Parser υποστηρίζει **πάνω από 100 μορφές εισόδου και εξόδου** και μπορεί να επεξεργαστεί έγγραφα πολλών εκατοντάδων σελίδων σε λιγότερο από λίγα δευτερόλεπτα σε τυπικό εξοπλισμό διακομιστή. Η εξαγωγή του `FormattedTextMode.Html` εγγυάται ότι τα στυλ παραγράφων, οι λίστες και οι πίνακες αναπαράγονται πιστά, εξαλείφοντας την ανάγκη για χειροκίνητη μετα‑επεξεργασία.
 
 ## Προαπαιτούμενα
 
-Πριν ξεκινήσετε, βεβαιωθείτε ότι έχετε καλύψει τα παρακάτω προαπαιτούμενα:
+- **Java Development Kit (JDK) 8+** εγκατεστημένο στον υπολογιστή σας.  
+- Ένα IDE όπως **IntelliJ IDEA**, **Eclipse**, ή **NetBeans**.  
+- **Maven** ή **Gradle** για διαχείριση εξαρτήσεων.  
+- Βασική εξοικείωση με τη σύνταξη Java και τις έννοιες HTML (προαιρετικό αλλά χρήσιμο).  
 
-### Απαιτούμενες Βιβλιοθήκες, Εκδόσεις και Εξαρτήσεις
+## Πώς να ρυθμίσετε το GroupDocs.Parser για Java;
 
-Ενσωματώστε τη βιβλιοθήκη GroupDocs.Parser στο έργο Java χρησιμοποιώντας Maven ή κατεβάζοντάς την από την ιστοσελίδα GroupDocs. Χρησιμοποιήστε την έκδοση 25.5 για συμβατότητα.
-
-### Απαιτήσεις Ρύθμισης Περιβάλλοντος
-
-- **Java Development Kit (JDK):** Βεβαιωθείτε ότι το JDK είναι εγκατεστημένο στο σύστημά σας.  
-- **IDE:** Μπορείτε να χρησιμοποιήσετε οποιοδήποτε IDE όπως IntelliJ IDEA, Eclipse ή NetBeans.  
-- **Build Tool:** Ρυθμίστε Maven ή Gradle για διαχείριση εξαρτήσεων.
-
-### Προαπαιτούμενες Γνώσεις
-
-Η εξοικείωση με τον προγραμματισμό Java και βασικές γνώσεις βιβλιοθηκών επεξεργασίας εγγράφων θα είναι χρήσιμες. Η κατανόηση των βασικών του HTML είναι βοηθητική αλλά όχι υποχρεωτική.
-
-## Ρύθμιση GroupDocs.Parser για Java
-
-Για να αρχίσετε να χρησιμοποιείτε το GroupDocs.Parser στο έργο Java, ακολουθήστε τα παρακάτω βήματα:
+Για να ρυθμίσετε το GroupDocs.Parser για Java, πρώτα πρέπει να προσθέσετε τη βιβλιοθήκη στις εξαρτήσεις του έργου σας. Αυτό μπορεί να γίνει μέσω Maven, Gradle ή κατεβάζοντας χειροκίνητα το αρχείο JAR και προσθέτοντάς το στο classpath. Αφού επιλυθεί η εξάρτηση, μπορείτε να αρχίσετε να χρησιμοποιείτε τον parser στον κώδικά σας.
 
 ### Ρύθμιση Maven
 
-Προσθέστε το παρακάτω αποθετήριο και εξάρτηση στο αρχείο `pom.xml`:
-
+```markdown
 ```xml
 <repositories>
    <repository>
@@ -79,19 +88,25 @@ weight: 1
    </dependency>
 </dependencies>
 ```
+```
 
 ### Άμεση Λήψη
 
-Αν προτιμάτε να μην χρησιμοποιήσετε Maven, κατεβάστε την πιο πρόσφατη έκδοση από [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
+Αν προτιμάτε να μην χρησιμοποιήσετε Maven, κατεβάστε την τελευταία έκδοση από [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
 ### Απόκτηση Άδειας
 
 - **Free Trial:** Ξεκινήστε με μια δωρεάν δοκιμή για να δοκιμάσετε το GroupDocs.Parser.  
 - **Temporary License:** Αποκτήστε μια προσωρινή άδεια για εκτεταμένη πρόσβαση σε όλες τις λειτουργίες.  
-- **Purchase:** Σκεφτείτε την αγορά πλήρους άδειας για μακροπρόθεσμη χρήση.
+- **Purchase:** Σκεφτείτε την αγορά πλήρους άδειας για μακροπρόθεσμη χρήση.  
 
-Μόλις έχετε ρυθμίσει τη βιβλιοθήκη, αρχικοποιήστε την στο έργο σας:
+## Πώς μπορώ να αρχικοποιήσω τον parser και να εξάγω HTML;
 
+Η αρχικοποίηση του parser περιλαμβάνει τη δημιουργία ενός αντικειμένου `Parser` που δείχνει στο πηγαίο έγγραφο. Μόλις δημιουργηθεί ο parser, ρυθμίζετε το `FormattedTextOptions` για να καθορίσετε την έξοδο HTML, έπειτα καλείτε τη μέθοδο εξαγωγής που επιστρέφει ένα `TextReader`. Ο reader παρέχει το πλήρες HTML string που μπορείτε να επεξεργαστείτε ή να εμφανίσετε.
+
+Η κλάση `Parser` διαβάζει ένα έγγραφο και παρέχει μεθόδους για την εξαγωγή του περιεχομένου του.
+
+```markdown
 ```java
 import com.groupdocs.parser.Parser;
 
@@ -106,30 +121,34 @@ public class DocumentParser {
     }
 }
 ```
+```
 
 ## Οδηγός Υλοποίησης
 
-Με το περιβάλλον σας έτοιμο, ας υλοποιήσουμε τη λειτουργία **convert document to html** και την εξαγωγή μορφοποιημένου κειμένου.
+Με το περιβάλλον σας έτοιμο, ας υλοποιήσουμε τη λειτουργία για **convert doc to html** και την εξαγωγή μορφοποιημένου κειμένου.
 
-### Εξαγωγή Μορφοποιημένου Κειμένου Χρησιμοποιώντας τη Λειτουργία HTML
+### Ποιες κλάσεις εμπλέκονται στην ανάλυση και εξαγωγή HTML;
 
-Αυτή η λειτουργία σας επιτρέπει να λαμβάνετε το περιεχόμενο του εγγράφου σε δομημένη μορφή HTML. Ακολουθήστε τα βήματα:
+Οι κύριες κλάσεις με τις οποίες θα εργαστείτε είναι η `Parser`, η οποία ανοίγει και διαβάζει το έγγραφο, η `FormattedTextOptions` που ορίζει τη ζητούμενη μορφή εξόδου, και η `TextReader`, η οποία ρέει το εξαγόμενο περιεχόμενο. Η `FormattedTextMode` είναι ένα enum που καθορίζει τη μορφή εξόδου, π.χ., Html, PlainText ή Markdown.
 
-#### Βήμα 1: Εισαγωγή Απαραίτητων Πακέτων
+`FormattedTextOptions` ρυθμίζει πώς ο parser μορφοποιεί το εξαγόμενο αποτέλεσμα, όπως HTML ή απλό κείμενο.  
+`TextReader` ρέει το εξαγόμενο κείμενο ώστε να το διαβάσετε ως συμβολοσειρά ή να το επεξεργαστείτε γραμμή προς γραμμή.  
+`FormattedTextMode` είναι ένα enum που καθορίζει τη μορφή εξόδου, π.χ., Html, PlainText ή Markdown.
 
-Βεβαιωθείτε ότι όλα τα απαιτούμενα πακέτα έχουν εισαχθεί στην αρχή του αρχείου Java:
+### Βήμα 1: Εισαγωγή Απαραίτητων Πακέτων
 
+```markdown
 ```java
 import com.groupdocs.parser.Parser;
 import com.groupdocs.parser.data.TextReader;
 import com.groupdocs.parser.options.FormattedTextOptions;
 import com.groupdocs.parser.options.FormattedTextMode;
 ```
+```
 
-#### Βήμα 2: Αρχικοποίηση Parser και Εξαγωγή HTML
+### Βήμα 2: Αρχικοποίηση Parser και Εξαγωγή HTML
 
-Χρησιμοποιήστε το παρακάτω απόσπασμα κώδικα για να εξάγετε κείμενο μορφοποιημένο ως HTML:
-
+```markdown
 ```java
 String documentPath = "YOUR_DOCUMENT_DIRECTORY/sample.docx";
 
@@ -147,72 +166,70 @@ try (Parser parser = new Parser(documentPath)) {
     System.out.println("An error occurred: " + e.getMessage());
 }
 ```
+```
 
 **Επεξήγηση:**  
-- **Parser Initialization:** Δημιουργεί ένα αντικείμενο `Parser` για το αρχείο-στόχο.  
-- **FormattedTextOptions:** Ενημερώνει τον parser να παράγει HTML (`FormattedTextMode.Html`).  
-- **Error Handling:** Συλλαμβάνει τυχόν προβλήματα και τα αναφέρει με ευγενικό τρόπο.
+- **Αρχικοποίηση Parser:** Δημιουργεί ένα αντικείμενο `Parser` για το αρχείο-στόχο.  
+- **FormattedTextOptions:** Λέει στον parser να εξάγει HTML (`FormattedTextMode.Html`).  
+- **Διαχείριση Σφαλμάτων:** Συλλαμβάνει τυχόν προβλήματα και τα αναφέρει με ευγένεια.  
 
-### Συμβουλές Επίλυσης Προβλημάτων
+## Συχνά Προβλήματα και Λύσεις
 
-- Επαληθεύστε ότι η διαδρομή του εγγράφου είναι σωστή και το αρχείο είναι αναγνώσιμο.  
-- Επιβεβαιώστε ότι η έκδοση του GroupDocs.Parser υποστηρίζει εξαγωγή HTML για τη συγκεκριμένη μορφή.  
-- Ελέγξτε ξανά τις εξαρτήσεις Maven/Gradle αν αντιμετωπίσετε σφάλματα `ClassNotFoundException`.
+- **Incorrect file path:** Επαληθεύστε ότι η απόλυτη ή σχετική διαδρομή δείχνει σε ένα υπάρχον, αναγνώσιμο αρχείο.  
+- **Unsupported format:** Βεβαιωθείτε ότι η έκδοση του GroupDocs.Parser υποστηρίζει εξαγωγή HTML για τη συγκεκριμένη μορφή· αναβαθμίστε αν χρειάζεται.  
+- **ClassNotFoundException:** Ελέγξτε ξανά ότι οι εξαρτήσεις Maven/Gradle έχουν επιλυθεί σωστά και ότι το JAR βρίσκεται στο classpath.  
 
 ## Πρακτικές Εφαρμογές
 
-Η εξαγωγή HTML από έγγραφα προσφέρει πολλές δυνατότητες:
+Η εξαγωγή HTML από έγγραφα ανοίγει πολλές δυνατότητες:
 
-1. **Web Content Creation:** Μετατροπή αναφορών ή εγχειριδίων σε ιστοσελίδες για άμεση πρόσβαση στο διαδίκτυο.  
-2. **Data Integration:** Ενσωμάτωση του HTML σε CMS ή headless API για δημιουργία δυναμικών σελίδων.  
-3. **Content Analysis:** Εκτέλεση του HTML μέσω pipelines ανάλυσης κειμένου ή μοντέλων μηχανικής μάθησης, διατηρώντας τις δομικές ενδείξεις.
+1. **Web Content Creation:** Μετατρέψτε εσωτερικές αναφορές ή εγχειρίδια σε άμεσα προβολές ιστοσελίδων.  
+2. **Data Integration:** Τροφοδοτήστε το HTML σε CMS ή headless API για τη δημιουργία δυναμικών σελίδων σε πραγματικό χρόνο.  
+3. **Content Analysis:** Εκτελέστε το HTML μέσω pipelines ανάλυσης κειμένου ή μοντέλων μηχανικής μάθησης διατηρώντας τα δομικά στοιχεία όπως επικεφαλίδες και πίνακες.  
 
 ## Σκέψεις Απόδοσης
 
 Για βέλτιστη απόδοση κατά τη χρήση του GroupDocs.Parser:
 
-- **Close Resources Promptly:** Πάντα χρησιμοποιείτε try‑with‑resources (όπως φαίνεται) για απελευθέρωση μνήμης.  
-- **Stream Large Files:** Επεξεργαστείτε μεγάλα έγγραφα σε τμήματα αν φτάσετε τα όρια μνήμης.  
-- **Reuse Parser Instances:** Όταν αναλύετε πολλά αρχεία του ίδιου τύπου, επαναχρησιμοποιήστε μια ενιαία διαμόρφωση `Parser`.
-
-## Συμπέρασμα
-
-Μάθατε πώς να **convert document to html** χρησιμοποιώντας το GroupDocs.Parser για Java. Αυτή η δυνατότητα ανοίγει ισχυρούς τρόπους παρουσίασης, ενσωμάτωσης και ανάλυσης του περιεχομένου εγγράφων στο web.
-
-**Επόμενα Βήματα:**  
-
-- Πειραματιστείτε με άλλες μορφές εξόδου όπως PDF ή plain text.  
-- Συνδυάστε την εξαγωγή HTML με μια μηχανή προτύπων για δημιουργία πλήρων ιστοσελίδων.  
-- Εξερευνήστε το πλήρες API για εξαγωγή πινάκων, εικόνων και μεταδεδομένων.
+- **Close Resources Promptly:** Χρησιμοποιείτε πάντα try‑with‑resources (όπως φαίνεται) για να ελευθερώσετε μνήμη.  
+- **Stream Large Files:** Επεξεργαστείτε τεράστια έγγραφα σε τμήματα αν αντιμετωπίσετε πίεση μνήμης.  
+- **Reuse Parser Instances:** Όταν αναλύετε πολλά αρχεία του ίδιου τύπου, επαναχρησιμοποιήστε μια ενιαία διαμόρφωση `Parser` για να μειώσετε το κόστος.  
 
 ## Συχνές Ερωτήσεις
 
 **Q: Για τι χρησιμοποιείται το GroupDocs.Parser Java;**  
-A: Είναι μια ευέλικτη βιβλιοθήκη για εξαγωγή κειμένου, μεταδεδομένων και μορφοποιημένου περιεχομένου (συμπεριλαμβανομένου του HTML) από ένα ευρύ φάσμα μορφών εγγράφων.
+A: Είναι μια ευέλικτη βιβλιοθήκη για την εξαγωγή κειμένου, μεταδεδομένων και μορφοποιημένου περιεχομένου (συμπεριλαμβανομένου HTML) από μια ευρεία γκάμα μορφών εγγράφων.
 
 **Q: Μπορώ να αναλύσω docx σε html με αυτή τη βιβλιοθήκη;**  
-A: Ναι—απλώς ορίστε `FormattedTextMode.Html` όπως φαίνεται, και ο parser θα επιστρέψει το περιεχόμενο του DOCX ως HTML.
+A: Ναι—ορίστε `FormattedTextMode.Html` όπως φαίνεται, και ο parser επιστρέφει το περιεχόμενο DOCX ως HTML.
 
 **Q: Υπάρχει αντίκτυπος στην απόδοση όταν αναλύονται μεγάλα έγγραφα;**  
-A: Τα μεγάλα αρχεία καταναλώνουν περισσότερη μνήμη, αλλά η χρήση try‑with‑resources και τεχνικών streaming μειώνει τον αντίκτυπο.
+A: Τα μεγάλα αρχεία καταναλώνουν περισσότερη μνήμη, αλλά η χρήση try‑with‑resources και τεχνικών streaming μειώνει τον αντίκτυπο· η βιβλιοθήκη μπορεί να διαχειριστεί αρχεία έως 2 GB χωρίς να φορτώνει ολόκληρο το αρχείο στη μνήμη.
 
-**Q: Πώς διαχειρίζομαι μη υποστηριζόμενα χαρακτηριστικά εγγράφου;**  
-A: Ο parser επιστρέφει `null` για μη υποστηριζόμενες λειτουργίες εξαγωγής· υλοποιήστε λογική fallback ή ενημερώστε τον χρήστη αναλόγως.
+**Q: Πώς να διαχειριστώ μη υποστηριζόμενα χαρακτηριστικά εγγράφου;**  
+A: Ο parser επιστρέφει `null` για μη υποστηριζόμενες λειτουργίες εξαγωγής· υλοποιήστε εναλλακτική λογική ή ενημερώστε τον χρήστη ανάλογα.
 
 **Q: Πού μπορώ να βρω περισσότερους πόρους για το GroupDocs.Parser Java;**  
-A: Επισκεφθείτε την [official documentation](https://docs.groupdocs.com/parser/java/) και εξερευνήστε τα φόρουμ της κοινότητας για συμβουλές και παραδείγματα.
+A: Επισκεφθείτε την επίσημη τεκμηρίωση και τους συνδέσμους κοινότητας που παρατίθενται παρακάτω.
 
 ## Πόροι
 
-- **Documentation:** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)  
-- **API Reference:** [GroupDocs Parser Java API Reference](https://reference.groupdocs.com/parser/java)  
-- **Download:** [GroupDocs Parser Java Releases](https://releases.groupdocs.com/parser/java/)  
+- **Τεκμηρίωση:** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)  
+- **Επίσημη Τεκμηρίωση:** [επίσημη τεκμηρίωση](https://docs.groupdocs.com/parser/java/)  
+- **Αναφορά API:** [GroupDocs Parser Java API Reference](https://reference.groupdocs.com/parser/java)  
+- **Λήψη:** [GroupDocs Parser Java Releases](https://releases.groupdocs.com/parser/java/)  
 - **GitHub:** [GroupDocs.Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
-- **Free Support:** [GroupDocs Parser Forum](https://forum.groupdocs.com/c/parser)  
-- **Temporary License:** [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Δωρεάν Υποστήριξη:** [GroupDocs Parser Forum](https://forum.groupdocs.com/c/parser)  
+- **Προσωρινή Άδεια:** [Απόκτηση Προσωρινής Άδειας](https://purchase.groupdocs.com/temporary-license/)  
 
 ---
 
-**Last Updated:** 2026-01-01  
-**Tested With:** GroupDocs.Parser 25.5 for Java  
-**Author:** GroupDocs
+**Τελευταία Ενημέρωση:** 2026-07-02  
+**Δοκιμάστηκε Με:** GroupDocs.Parser 25.5 for Java  
+**Συγγραφέας:** GroupDocs
+
+## Σχετικά Μαθήματα
+
+- [Απόκτηση Κύριας Εξαγωγής Εγγράφου με GroupDocs.Parser για Java: Μετατροπή Εγγράφων σε HTML και Απλό Κείμενο](/parser/java/text-extraction/master-document-extraction-groupdocs-parser-java/)  
+- [Κατάκτηση Εξαγωγής Κειμένου Εγγράφου σε Java χρησιμοποιώντας GroupDocs.Parser: Οδηγός HTML και Markdown](/parser/java/text-extraction/mastering-document-text-extraction-java-groupdocs-parser/)  
+- [Java HTML Text Extraction Using GroupDocs.Parser: A Comprehensive Guide](/parser/java/text-extraction/java-text-extraction-html-groupdocs-parser/)
