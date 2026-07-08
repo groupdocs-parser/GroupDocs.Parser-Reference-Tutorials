@@ -1,32 +1,34 @@
 ---
-title: "Extract PDF Text Java with GroupDocs.Parser: A Comprehensive Guide"
-description: "Learn how to extract pdf text java using GroupDocs.Parser, a pdf to text java solution. Follow this step-by-step guide for Java document processing."
-date: "2026-03-04"
-weight: 1
-url: "/java/text-extraction/extract-text-pdfs-groupdocs-parser-java/"
+date: '2026-03-04'
+description: Tìm hiểu cách trích xuất văn bản PDF bằng Java sử dụng GroupDocs.Parser,
+  giải pháp chuyển PDF sang văn bản cho Java. Hãy làm theo hướng dẫn từng bước này
+  để xử lý tài liệu Java.
 keywords:
 - extract raw text from PDFs
 - GroupDocs.Parser Java setup
 - Java document processing
+title: 'Trích xuất văn bản PDF trong Java với GroupDocs.Parser: Hướng dẫn toàn diện'
 type: docs
+url: /vi/java/text-extraction/extract-text-pdfs-groupdocs-parser-java/
+weight: 1
 ---
 
-# Extract PDF Text Java with GroupDocs.Parser: A Comprehensive Guide
+# Trích xuất Văn bản PDF Java với GroupDocs.Parser: Hướng dẫn Toàn diện
 
-In today's data‑driven world, **extract pdf text java** is a frequent requirement for developers who need to pull content out of PDF files for analysis, search indexing, or conversion. Whether you’re building a document‑management system, a data‑pipeline, or an automated reporting tool, being able to read PDF Java‑style streams quickly and reliably can save countless hours. In this tutorial we’ll walk through the entire process of using GroupDocs.Parser for Java to extract raw text from PDFs, complete with setup instructions, code snippets, and real‑world tips.
+Trong thế giới hiện đại dựa trên dữ liệu, **extract pdf text java** là một yêu cầu thường gặp đối với các nhà phát triển cần lấy nội dung từ các tệp PDF để phân tích, lập chỉ mục tìm kiếm hoặc chuyển đổi. Dù bạn đang xây dựng hệ thống quản lý tài liệu, một pipeline dữ liệu, hay công cụ báo cáo tự động, khả năng đọc các luồng PDF kiểu Java một cách nhanh chóng và đáng tin cậy có thể tiết kiệm vô số giờ làm việc. Trong hướng dẫn này, chúng tôi sẽ đi qua toàn bộ quy trình sử dụng GroupDocs.Parser cho Java để trích xuất văn bản thô từ PDF, kèm theo hướng dẫn cài đặt, đoạn mã mẫu và các mẹo thực tế.
 
 ## Quick Answers
-- **What library lets me extract pdf text java?** GroupDocs.Parser for Java.
-- **Do I need a license?** A free trial works for evaluation; a permanent license is required for production.
-- **Which Java version is supported?** JDK 8 or higher.
-- **Can I extract text from encrypted PDFs?** Yes, after providing the password to the parser.
+- **What library lets me extract pdf text java?** GroupDocs.Parser for Java.  
+- **Do I need a license?** A free trial works for evaluation; a permanent license is required for production.  
+- **Which Java version is supported?** JDK 8 or higher.  
+- **Can I extract text from encrypted PDFs?** Yes, after providing the password to the parser.  
 - **Is batch processing possible?** Absolutely – you can loop over files and reuse the same parser instance.
 
 ## What is “extract pdf text java”?
-Extracting PDF text in Java means programmatically reading the textual content of a PDF document and returning it as plain Unicode strings. This operation is often the first step in tasks like data mining, content migration, or natural‑language processing.
+Trích xuất văn bản PDF trong Java có nghĩa là đọc nội dung văn bản của tài liệu PDF một cách lập trình và trả về dưới dạng các chuỗi Unicode thuần. Hoạt động này thường là bước đầu tiên trong các nhiệm vụ như khai thác dữ liệu, di chuyển nội dung, hoặc xử lý ngôn ngữ tự nhiên.
 
 ## Why use GroupDocs.Parser Java for PDF text extraction?
-GroupDocs.Parser offers a high‑level API that abstracts away the complexities of PDF internals, supports a wide range of document formats, and provides options for raw or formatted text extraction. Compared with lower‑level libraries, it delivers:
+GroupDocs.Parser cung cấp một API cấp cao giúp trừu tượng hoá các phức tạp bên trong PDF, hỗ trợ đa dạng các định dạng tài liệu, và cho phép lựa chọn trích xuất văn bản thô hoặc có định dạng. So với các thư viện cấp thấp hơn, nó mang lại:
 
 * **Speed** – optimized native code for fast parsing.  
 * **Accuracy** – preserves text order and layout when needed.  
@@ -35,19 +37,19 @@ GroupDocs.Parser offers a high‑level API that abstracts away the complexities 
 
 ## Prerequisites
 
-Before we dive in, make sure you have the following:
+Trước khi bắt đầu, hãy chắc chắn rằng bạn đã có những thứ sau:
 
-- **GroupDocs.Parser** (version 25.5 or later) – the core library for PDF text extraction.  
-- **Java Development Kit (JDK)** 8 or newer.  
-- An IDE such as **IntelliJ IDEA** or **Eclipse**.  
-- **Maven** for dependency management (or you can download the JAR manually).  
+- **GroupDocs.Parser** (phiên bản 25.5 hoặc mới hơn) – thư viện cốt lõi để trích xuất văn bản PDF.  
+- **Java Development Kit (JDK)** 8 hoặc mới hơn.  
+- Một IDE như **IntelliJ IDEA** hoặc **Eclipse**.  
+- **Maven** để quản lý phụ thuộc (hoặc bạn có thể tải JAR thủ công).  
 
-A basic familiarity with Java file I/O will help, but the code is self‑explanatory.
+Kiến thức cơ bản về I/O file trong Java sẽ hữu ích, nhưng mã nguồn đã được viết một cách tự giải thích.
 
 ## Setting Up GroupDocs.Parser for Java
 
 ### Maven Configuration
-If you manage dependencies with Maven, add the repository and dependency to your `pom.xml`:
+Nếu bạn quản lý phụ thuộc bằng Maven, thêm repository và dependency vào file `pom.xml` của bạn:
 
 ```xml
 <repositories>
@@ -68,7 +70,7 @@ If you manage dependencies with Maven, add the repository and dependency to your
 ```
 
 ### Direct Download
-Alternatively, download the latest version directly from [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
+Hoặc, tải phiên bản mới nhất trực tiếp từ [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
 #### License Acquisition
 - **Free Trial** – explore all features without cost.  
@@ -76,21 +78,21 @@ Alternatively, download the latest version directly from [GroupDocs.Parser for J
 - **Purchase** – obtain a full commercial license for production use.
 
 ### Basic Initialization and Setup
-After the library is on your classpath, import the core class:
+Sau khi thư viện đã có trong classpath, import lớp core:
 
 ```java
 import com.groupdocs.parser.Parser;
 ```
 
-Now you’re ready to start reading PDFs.
+Bây giờ bạn đã sẵn sàng để bắt đầu đọc các tệp PDF.
 
 ## Implementation Guide
 
-Below is a step‑by‑step **pdf text extraction example** that shows how to read a PDF file, verify that text extraction is supported, and retrieve the raw text.
+Dưới đây là một **pdf text extraction example** từng bước, cho thấy cách đọc tệp PDF, kiểm tra xem việc trích xuất văn bản có được hỗ trợ hay không, và lấy văn bản thô.
 
 ### Step 1: Initialize the Parser (read pdf java)
 
-Create a `Parser` instance that points to the PDF you want to process:
+Tạo một thể hiện `Parser` trỏ tới PDF bạn muốn xử lý:
 
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/SamplePdf.pdf")) {
@@ -102,7 +104,7 @@ try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/SamplePdf.pdf")) {
 
 ### Step 2: Verify Text Extraction Support
 
-Not every document format can expose raw text. Check the capabilities first:
+Không phải mọi định dạng tài liệu đều có thể cung cấp văn bản thô. Hãy kiểm tra khả năng trước:
 
 ```java
 if (!parser.getFeatures().isText()) {
@@ -115,7 +117,7 @@ if (!parser.getFeatures().isText()) {
 
 ### Step 3: Extract and Print the Text (pdf to text java)
 
-Use `getText` with `TextOptions(true)` to request raw extraction:
+Sử dụng `getText` với `TextOptions(true)` để yêu cầu trích xuất thô:
 
 ```java
 try (TextReader reader = parser.getText(new TextOptions(true))) {
@@ -127,7 +129,7 @@ try (TextReader reader = parser.getText(new TextOptions(true))) {
 *Why?* The `true` flag tells the parser to return the text exactly as it appears in the file, without additional formatting – perfect for downstream analytics.
 
 #### Pro Tip:
-If you need formatted output (preserving line breaks, tables, etc.), pass `new TextOptions(false)` instead.
+Nếu bạn cần đầu ra có định dạng (giữ lại ngắt dòng, bảng, v.v.), hãy truyền `new TextOptions(false)` thay thế.
 
 ### Troubleshooting Tips
 
@@ -137,7 +139,7 @@ If you need formatted output (preserving line breaks, tables, etc.), pass `new T
 
 ## Practical Applications
 
-Extracting raw text with GroupDocs.Parser opens many doors:
+Trích xuất văn bản thô với GroupDocs.Parser mở ra nhiều cơ hội:
 
 1. **Data Analysis** – pull text from financial statements, research papers, or contracts for sentiment analysis.  
 2. **Search Indexing** – feed extracted strings into Elasticsearch or Solr to make PDFs searchable.  
@@ -159,26 +161,26 @@ Extracting raw text with GroupDocs.Parser opens many doors:
 
 ## Frequently Asked Questions
 
-**Q: What is GroupDocs.Parser Java used for?**  
+**Q: GroupDocs.Parser Java được dùng để làm gì?**  
 A: It’s a powerful library for extracting text, images, and metadata from a wide variety of document formats, including PDFs.
 
-**Q: Can I extract images using GroupDocs.Parser?**  
+**Q: Tôi có thể trích xuất hình ảnh bằng GroupDocs.Parser không?**  
 A: Yes, the API also supports image extraction alongside text.
 
-**Q: Is GroupDocs.Parser compatible with all PDF versions?**  
+**Q: GroupDocs.Parser có tương thích với mọi phiên bản PDF không?**  
 A: It supports the majority of PDF specifications; for edge‑case versions, consult the official compatibility matrix.
 
-**Q: How do I handle encrypted PDFs?**  
+**Q: Làm sao để xử lý các PDF được mã hoá?**  
 A: Provide the password when initializing the parser or use the `open` method with credentials.
 
-**Q: Can I integrate GroupDocs.Parser with cloud services?**  
+**Q: Tôi có thể tích hợp GroupDocs.Parser với các dịch vụ đám mây không?**  
 A: Absolutely – the library works in any Java environment, including AWS Lambda, Azure Functions, and Google Cloud Run.
 
 ## Conclusion
 
-You now have a complete, production‑ready workflow for **extract pdf text java** using GroupDocs.Parser. By following the steps above you can reliably pull raw text from any PDF, integrate it into analytics pipelines, or feed it to search indexes. 
+Bạn đã có một quy trình hoàn chỉnh, sẵn sàng cho môi trường sản xuất để **extract pdf text java** bằng GroupDocs.Parser. Bằng cách thực hiện các bước trên, bạn có thể tin cậy lấy văn bản thô từ bất kỳ PDF nào, tích hợp vào các pipeline phân tích, hoặc đưa vào các chỉ mục tìm kiếm. 
 
-**Next Steps**
+**Các bước tiếp theo**
 
 - Experiment with different `TextOptions` settings to fine‑tune output.  
 - Combine the extracted text with GroupDocs.Conversion for format conversion.  
@@ -197,5 +199,3 @@ You now have a complete, production‑ready workflow for **extract pdf text java
 - [GitHub Repository](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
 - [Free Support Forum](https://forum.groupdocs.com/c/parser)
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)
-
----
