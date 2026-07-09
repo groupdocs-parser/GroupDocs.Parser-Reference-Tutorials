@@ -1,22 +1,25 @@
 ---
-title: "Java PDF Table Extraction using GroupDocs.Parser"
-description: "Learn java pdf table extraction with GroupDocs.Parser, covering extract invoice data pdf, password protected pdf java, and extracting multiple tables pdf."
-date: "2026-02-06"
-weight: 1
-url: "/java/table-extraction/extract-data-pdfs-tables-groupdocs-parser-java/"
+date: '2026-02-06'
+description: Aprenda extração de tabelas PDF em Java com o GroupDocs.Parser, abordando
+  extração de dados de faturas em PDF, PDF protegido por senha em Java e extração
+  de múltiplas tabelas em PDF.
 keywords:
 - java pdf table extraction
 - extract invoice data pdf
 - password protected pdf java
 - extract multiple tables pdf
 - extract pdf tables java
+title: Extração de Tabelas PDF em Java usando GroupDocs.Parser
 type: docs
+url: /pt/java/table-extraction/extract-data-pdfs-tables-groupdocs-parser-java/
+weight: 1
 ---
+
 # Java PDF Table Extraction with GroupDocs.Parser
 
-Extracting data from PDF tables is a common challenge for developers who need **java pdf table extraction** capabilities. Whether you’re automating invoice processing, pulling data from password‑protected PDFs, or handling multiple tables in a single document, GroupDocs.Parser for Java gives you a reliable, high‑performance way to turn unstructured tables into structured data you can work with programmatically.
+Extrair dados de tabelas PDF é um desafio comum para desenvolvedores que precisam de **java pdf table extraction**. Seja automatizando o processamento de faturas, extraindo dados de PDFs protegidos por senha ou lidando com várias tabelas em um único documento, o GroupDocs.Parser para Java oferece uma maneira confiável e de alto desempenho para transformar tabelas não estruturadas em dados estruturados que podem ser manipulados programaticamente.
 
-In this tutorial you’ll learn how to set up GroupDocs.Parser, define table templates, and extract data efficiently. We’ll also cover real‑world use cases like extracting invoice data PDF, handling password protected pdf java scenarios, and extracting multiple tables pdf in one go.
+Neste tutorial você aprenderá como configurar o GroupDocs.Parser, definir modelos de tabela e extrair dados de forma eficiente. Também abordaremos casos de uso reais, como extração de dados de faturas PDF, cenários de PDF java protegido por senha e extração de múltiplas tabelas PDF de uma só vez.
 
 ## Quick Answers
 - **What library supports java pdf table extraction?** GroupDocs.Parser for Java  
@@ -26,7 +29,7 @@ In this tutorial you’ll learn how to set up GroupDocs.Parser, define table tem
 - **Which Java version is required?** Java 8 or higher; JDK 11+ is recommended for best performance.  
 
 ## What is java pdf table extraction?
-Java pdf table extraction refers to the process of programmatically locating, reading, and converting tabular data embedded in PDF files into structured formats such as CSV, JSON, or Java objects. With GroupDocs.Parser, you define the exact rectangle that contains the table and let the engine handle the parsing.
+Java pdf table extraction refere‑se ao processo de localizar, ler e converter programaticamente dados tabulares incorporados em arquivos PDF para formatos estruturados como CSV, JSON ou objetos Java. Com o GroupDocs.Parser, você define o retângulo exato que contém a tabela e deixa o motor cuidar da análise.
 
 ## Why use GroupDocs.Parser for java pdf table extraction?
 - **Accuracy:** Precise rectangle‑based extraction minimizes false positives.  
@@ -40,8 +43,8 @@ Before you start, make sure you have:
 
 - **GroupDocs.Parser for Java** (version 25.5 or later).  
 - A Java Development Kit (JDK 8+).  
-- An IDE like IntelliJ IDEA or Eclipse.  
-- Basic Java knowledge and familiarity with PDF handling.
+- An IDE like IntelliJ IDEA ou Eclipse.  
+- Conhecimento básico de Java e familiaridade com manipulação de PDFs.
 
 ## Setting Up GroupDocs.Parser for Java
 
@@ -120,8 +123,8 @@ templateTable = new TemplateTable(parameters, "Details");
 ```
 
 #### Parameter Breakdown
-- **Rectangle(Point(35, 320), Size(530, 55))** – top‑left corner (X = 35, Y = 320) and width/height of the table.  
-- **"Details"** – a friendly identifier you can reference when extracting data.
+- **Rectangle(Point(35, 320), Size(530, 55))** – canto superior esquerdo (X = 35, Y = 320) e largura/altura da tabela.  
+- **"Details"** – um identificador amigável que você pode referenciar ao extrair os dados.
 
 ### Step 3: Extract the Table Content
 After defining the template, you can call the parser’s extraction methods (code omitted to keep the original block count). The parser returns rows and cells that you can map to Java objects or export to CSV/JSON.
