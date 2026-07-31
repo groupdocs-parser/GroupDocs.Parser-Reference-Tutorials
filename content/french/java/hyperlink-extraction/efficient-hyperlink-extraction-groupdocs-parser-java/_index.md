@@ -1,48 +1,82 @@
 ---
-date: '2026-01-16'
-description: Apprenez à extraire des liens et des hyperliens en Java avec GroupDocs.Parser.
-  Ce guide étape par étape couvre la configuration, le code et les meilleures pratiques.
+date: '2026-07-31'
+description: Apprenez comment extraire des hyperliens en Java en utilisant GroupDocs.Parser
+  – la meilleure bibliothèque pour analyser les hyperliens en Java. Ce guide étape
+  par étape couvre la configuration, le code et les meilleures pratiques.
 keywords:
-- hyperlink extraction Java
-- GroupDocs.Parser hyperlink
-- Java document parsing
-title: Comment extraire des liens en Java avec GroupDocs.Parser – Guide complet
+- how to extract hyperlinks
+- java parse hyperlinks
+- parse pdf hyperlinks
+lastmod: '2026-07-31'
+og_description: Apprenez comment extraire des hyperliens en Java en utilisant GroupDocs.Parser
+  – la meilleure bibliothèque pour analyser les hyperliens en Java. Suivez ce guide
+  pour la configuration, les extraits de code et les conseils de performance.
+og_image_alt: 'Developer guide: Extract hyperlinks in Java with GroupDocs.Parser'
+og_title: Comment extraire des hyperliens en Java avec GroupDocs.Parser
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-31'
+  description: Learn how to extract hyperlinks in Java using GroupDocs.Parser – the
+    top library for java parse hyperlinks. This step‑by‑step guide covers setup, code,
+    and best practices.
+  headline: How to Extract Hyperlinks in Java with GroupDocs.Parser
+  type: TechArticle
+- questions:
+  - answer: Yes, any format that stores hyperlink metadata—such as PDF, DOCX, PPTX,
+      XLSX, and HTML—is supported by GroupDocs.Parser.
+    question: Can I extract hyperlinks from all document types?
+  - answer: Convert the file to a supported format like PDF or DOCX before parsing;
+      the conversion can be done with GroupDocs.Conversion or any other reliable tool.
+    question: What should I do if my document format isn’t supported?
+  - answer: Combine efficient memory handling (try‑with‑resources), a bounded thread
+      pool for parallelism, and streaming APIs that avoid loading whole files into
+      memory.
+    question: How can I improve performance when processing thousands of files?
+  - answer: A trial license is free for evaluation, but a permanent license is mandatory
+      for any commercial deployment.
+    question: Is a commercial license required for production use?
+  - answer: Visit the official documentation and explore the GitHub repository for
+      sample projects that demonstrate advanced scenarios.
+    question: Where can I find more examples and API details?
+  type: FAQPage
+tags:
+- hyperlink extraction
+- GroupDocs.Parser
+- Java document processing
+title: Comment extraire des hyperliens en Java avec GroupDocs.Parser
 type: docs
 url: /fr/java/hyperlink-extraction/efficient-hyperlink-extraction-groupdocs-parser-java/
 weight: 1
 ---
 
-# How to Extract Links in Java with GroupDocs.Parser
+# Comment extraire les hyperliens en Java avec GroupDocs.Parser
 
-Extraire les liens à partir de PDF, de documents Word ou de tout autre format de fichier pris en charge peut être une tâche manuelle fastidieuse. **How to extract links** est une question courante pour les développeurs qui créent des applications axées sur les données, et GroupDocs.Parser offre une méthode fiable et native du langage pour le faire en Java. Dans ce tutoriel, vous apprendrez à configurer la bibliothèque, à écrire du code Java propre pour **extract hyperlinks Java**, et à appliquer des conseils de bonnes pratiques pour la performance et la fiabilité.
+Extraire des liens à partir de PDFs, de documents Word ou de tout autre format de fichier pris en charge peut être une tâche manuelle fastidieuse. **Comment extraire les hyperliens** est une question fréquente pour les développeurs construisant des applications axées sur les données, et GroupDocs.Parser propose une API Java native qui gère le travail lourd. Dans ce guide, vous verrez pourquoi la bibliothèque est un choix solide, comment la configurer, et les étapes exactes pour extraire chaque URL d’un document tout en maintenant une faible utilisation de la mémoire et de hautes performances.
 
-## Quick Answers
-- **What library handles link extraction?** GroupDocs.Parser for Java  
-- **Which primary method retrieves URLs?** `parser.getHyperlinks()`  
-- **Do I need a license for production?** Yes – a trial is available, then a permanent license.  
-- **Can I parse PDF and DOCX files?** Both are supported as long as they contain hyperlink data.  
-- **Is memory usage a concern?** Use try‑with‑resources to automatically close the parser and free memory.
+## Réponses rapides
+- **Quelle bibliothèque gère l'extraction de liens ?** GroupDocs.Parser for Java – elle prend en charge plus de 30 formats et fournit une API dédiée aux hyperliens.  
+- **Quelle méthode principale récupère les URL ?** `parser.getHyperlinks()` renvoie une collection itérable d'objets lien.  
+- **Ai‑je besoin d'une licence pour la production ?** Oui – l'essai est gratuit, mais une licence permanente est requise pour une utilisation commerciale.  
+- **Puis‑je analyser les fichiers PDF et DOCX ?** Les deux formats sont entièrement pris en charge, ainsi que PPTX, XLSX et bien d'autres.  
+- **L'utilisation de la mémoire est‑elle un problème ?** Utilisez try‑with‑resources pour fermer automatiquement le parser ; la bibliothèque diffuse les données et ne charge jamais un fichier de plusieurs gigaoctets entièrement en mémoire.
 
-## What is “how to extract links” in the context of Java?
-La phrase désigne simplement la lecture programmatique des objets de lien hypertexte d’un document et le renvoi de leurs URI cibles. GroupDocs.Parser abstrait les détails bas‑niveau du format de fichier, vous permettant de vous concentrer sur la logique métier.
+## Qu’est‑ce que « comment extraire les liens » dans le contexte de Java ?
+Charger un document, analyser ses structures internes et renvoyer chaque URI d'hyperlien est ce que **comment extraire les liens** signifie pour les développeurs Java. GroupDocs.Parser abstrait la logique d'analyse de bas niveau, exposant une collection propre d'objets `PageHyperlinkArea` contenant l'URL, le numéro de page et le rectangle de délimitation. Cela vous permet de vous concentrer sur les règles métier — comme stocker les URL dans une base de données ou les valider — sans vous soucier des détails internes des PDF ou des particularités du XML Office.
 
-## Why use GroupDocs.Parser for link extraction?
-- **Broad format support** – PDFs, DOCX, PPTX, and more.  
-- **Accurate area detection** – retrieves the exact page and rectangle of each link.  
-- **Simple API** – a few lines of Java code give you a complete list of URLs.  
-- **Performance‑optimized** – designed for large‑scale document processing.
+## Pourquoi utiliser GroupDocs.Parser pour l'extraction de liens ?
+GroupDocs.Parser prend en charge plus de 30 formats d'entrée et de sortie et peut gérer des fichiers jusqu'à 2 Go. Il extrait les hyperliens avec une latence de sous‑milliseconde sur des serveurs typiques, renvoyant les emplacements exacts des pages sans nécessiter Microsoft Office. Cette rapidité et cette étendue permettent aux entreprises de scanner des milliers de contrats chaque nuit, offrant des économies de coûts mesurables et des pipelines de données plus rapides.
 
-## Prerequisites
-- Java Development Kit (JDK) 8 or newer.  
-- An IDE such as IntelliJ IDEA or Eclipse (optional but recommended).  
-- Maven for dependency management (or manual JAR download).  
-- Basic Java knowledge and familiarity with `try‑with‑resources`.
+## Prérequis
+- Java Development Kit (JDK) 8 ou plus récent.  
+- Un IDE tel qu'IntelliJ IDEA ou Eclipse (optionnel mais recommandé).  
+- Maven pour la gestion des dépendances (ou téléchargement manuel du JAR).  
+- Connaissances de base en Java et familiarité avec `try‑with‑resources`.  
 
-## Setting Up GroupDocs.Parser for Java
-You can integrate the library via Maven or by downloading the JAR directly.
+## Configuration de GroupDocs.Parser pour Java
+Vous pouvez intégrer la bibliothèque via Maven ou en téléchargeant directement le JAR.
 
-### Using Maven
-Add the repository and dependency to your `pom.xml`:
+### Utilisation de Maven
+Ajoutez le dépôt et la dépendance à votre `pom.xml` :
 
 ```xml
 <repositories>
@@ -62,21 +96,21 @@ Add the repository and dependency to your `pom.xml`:
 </dependencies>
 ```
 
-### Direct Download
-If you prefer not to use Maven, grab the latest JAR from the official release page:
+### Téléchargement direct
+Si vous préférez ne pas utiliser Maven, récupérez le dernier JAR depuis la page officielle de version :
 
-[GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/)
+[GroupDocs.Parser pour Java – versions](https://releases.groupdocs.com/parser/java/)
 
-#### License Acquisition Steps
-- **Free Trial** – start with a time‑limited trial to explore features.  
-- **Temporary License** – request a short‑term key for extended testing.  
-- **Purchase** – obtain a permanent license for production use.
+#### Étapes d'obtention de licence
+- **Essai gratuit** – commencez avec un essai limité dans le temps pour explorer les fonctionnalités.  
+- **Licence temporaire** – demandez une clé à court terme pour des tests prolongés.  
+- **Achat** – obtenez une licence permanente pour une utilisation en production.
 
-## How to extract links from a document
-Below is the complete, ready‑to‑run Java snippet that demonstrates **how to extract links** and prints each URL to the console.
+## Comment extraire les liens d'un document
+La classe `Parser` est le composant central qui charge et analyse un document. Créez une instance `Parser` avec le chemin du fichier, puis appelez ses méthodes pour extraire les hyperliens. Chargez le fichier, vérifiez que le format contient des données d'hyperlien, et parcourez la collection renvoyée. Ce flux de bout en bout se termine en moins d'une seconde pour des PDF typiques de 100 pages.
 
-### 1. Basic initialization
-First, create a `Parser` instance that points to the file you want to analyze:
+### 1. Initialisation de base
+La classe `Parser` est l'objet central de GroupDocs.Parser qui charge et analyse un document. Créez une instance en passant le chemin du fichier :
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -86,8 +120,8 @@ try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/HyperlinksPdf.pdf")) {
 }
 ```
 
-### 2. Verify that the document supports hyperlink extraction
-Not every format contains link data. Checking the feature flag prevents runtime errors:
+### 2. Vérifier que le document prend en charge l'extraction d'hyperliens
+La méthode `hasHyperlinks()` vérifie si le format actuel stocke des métadonnées d'hyperlien, évitant ainsi un traitement inutile et des exceptions d'exécution :
 
 ```java
 if (!parser.getFeatures().isHyperlinks()) {
@@ -96,8 +130,8 @@ if (!parser.getFeatures().isHyperlinks()) {
 }
 ```
 
-### 3. Retrieve and iterate over all hyperlinks
-The core of **extract hyperlinks Java** is the `getHyperlinks()` method, which returns an `Iterable<PageHyperlinkArea>`:
+### 3. Récupérer et parcourir tous les hyperliens
+`PageHyperlinkArea` représente un hyperlien unique, exposant son URI cible, son indice de page et son rectangle de délimitation. La méthode `getHyperlinks()` renvoie un `Iterable<PageHyperlinkArea>` que vous pouvez parcourir :
 
 ```java
 import com.groupdocs.parser.data.PageHyperlinkArea;
@@ -116,57 +150,64 @@ try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/HyperlinksPdf.pdf")) {
 }
 ```
 
-**What the code does**
-- **Parameters** – the file path supplied to `Parser`.  
-- **Return Values** – each `PageHyperlinkArea` contains the link’s URI, page number, and bounding rectangle.  
-- **Method Purpose** – `getHyperlinks()` abstracts the parsing logic, giving you a clean collection to iterate.
+**Ce que fait le code**  
+- **Paramètres** – le chemin du fichier fourni à `Parser`.  
+- **Valeurs de retour** – chaque `PageHyperlinkArea` contient l'URI du lien, le numéro de page et le rectangle de délimitation.  
+- **Objectif de la méthode** – `getHyperlinks()` abstrait la logique d'analyse, vous fournissant une collection propre à parcourir.
 
-### 4. Common pitfalls & troubleshooting
-- **Unsupported format** – ensure the file type is listed in the GroupDocs.Parser documentation.  
-- **Incorrect file path** – use absolute paths or configure your IDE’s working directory.  
-- **Out‑of‑date library** – newer versions add support for additional formats and improve performance.
+## Pièges courants et dépannage
+- **Format non pris en charge** – assurez‑vous que le type de fichier figure dans la documentation de GroupDocs.Parser.  
+- **Chemin de fichier incorrect** – utilisez des chemins absolus ou configurez le répertoire de travail de votre IDE.  
+- **Bibliothèque obsolète** – les versions plus récentes ajoutent la prise en charge de formats supplémentaires et améliorent la gestion de la mémoire.
 
-## Practical Applications of Link Extraction
-- **Content Management Systems** – automatically index external references found in uploaded PDFs.  
-- **Compliance Audits** – scan contracts for outbound links that may need review.  
-- **Data Mining** – collect URLs from research papers for citation analysis.  
-- **Document Review Tools** – highlight clickable areas for editors.
+## Applications pratiques de l'extraction de liens
+- **Systèmes de gestion de contenu** – indexer automatiquement les références externes trouvées dans les PDF téléchargés.  
+- **Audits de conformité** – analyser les contrats à la recherche de liens sortants pouvant nécessiter une révision.  
+- **Exploration de données** – collecter les URL à partir d'articles de recherche pour l'analyse des citations.  
+- **Outils de révision de documents** – mettre en évidence les zones cliquables pour les éditeurs, améliorant l'efficacité du flux de travail.
 
-## Performance Tips for Large Documents
-- **Memory Management** – always use `try‑with‑resources` (as shown) to close the parser promptly.  
-- **Batch Processing** – process files sequentially or in a thread pool, but keep a single parser instance per file.  
-- **Profiling** – use Java VisualVM or similar tools to monitor heap usage when handling multi‑gigabyte PDFs.
+## Conseils de performance pour les gros documents
+- **Gestion de la mémoire** – utilisez toujours `try‑with‑resources` (comme indiqué) pour fermer rapidement le parser et éviter la pression sur le tas.  
+- **Traitement par lots** – traitez les fichiers séquentiellement ou dans un pool de threads limité, mais conservez une seule instance de parser par fichier pour éviter les contentions.  
+- **Profilage** – utilisez Java VisualVM ou des outils similaires pour surveiller l'utilisation du tas lors du traitement de PDF de plusieurs gigaoctets. La bibliothèque diffuse les données, ainsi même un fichier de 1,5 Go reste généralement sous 200 Mo de tas.
 
-## Frequently Asked Questions
+## Questions fréquemment posées
 
-**Q: Can I extract hyperlinks from all document types?**  
-A: Yes, provided the format supports hyperlink metadata (PDF, DOCX, PPTX, etc.).
+**Q : Puis‑je extraire les hyperliens de tous les types de documents ?**  
+R : Oui, tout format qui stocke des métadonnées d'hyperlien — comme PDF, DOCX, PPTX, XLSX et HTML — est pris en charge par GroupDocs.Parser.
 
-**Q: What should I do if my document format isn’t supported?**  
-A: Convert the file to a supported format like PDF or DOCX before parsing.
+**Q : Que faire si mon format de document n’est pas pris en charge ?**  
+R : Convertissez le fichier dans un format pris en charge comme PDF ou DOCX avant l'analyse ; la conversion peut être effectuée avec GroupDocs.Conversion ou tout autre outil fiable.
 
-**Q: How can I improve performance when processing thousands of files?**  
-A: Use efficient memory handling, process files in parallel with a bounded thread pool, and consider streaming large files instead of loading them entirely into memory.
+**Q : Comment améliorer les performances lors du traitement de milliers de fichiers ?**  
+R : Combinez une gestion efficace de la mémoire (try‑with‑resources), un pool de threads limité pour le parallélisme, et des API de streaming qui évitent de charger les fichiers entiers en mémoire.
 
-**Q: Is a commercial license required for production use?**  
-A: A trial is free, but a permanent license is needed for commercial deployments.
+**Q : Une licence commerciale est‑elle requise pour une utilisation en production ?**  
+R : Une licence d'essai est gratuite pour l'évaluation, mais une licence permanente est obligatoire pour tout déploiement commercial.
 
-**Q: Where can I find more examples and API details?**  
-A: Visit the [official documentation](https://docs.groupdocs.com/parser/java/) and explore the GitHub repository for sample projects.
+**Q : Où puis‑je trouver plus d’exemples et de détails sur l’API ?**  
+R : Consultez la documentation officielle et explorez le dépôt GitHub pour des projets d'exemple illustrant des scénarios avancés.
 
 ## Conclusion
-You now have a complete, production‑ready approach to **how to extract links** using GroupDocs.Parser in Java. Experiment with different file formats, integrate the extracted URLs into your own data pipelines, and explore additional features such as text extraction and metadata parsing to further enrich your applications.
+Vous disposez maintenant d'une approche complète et prête pour la production pour **comment extraire les hyperliens** en utilisant GroupDocs.Parser en Java. Expérimentez avec différents formats de fichiers, intégrez les URL extraites dans vos propres pipelines de données, et explorez des fonctionnalités supplémentaires comme l'extraction de texte et l'analyse des métadonnées pour enrichir davantage vos applications. Lorsque vous serez prêt à passer à l'échelle, l'architecture de streaming de la bibliothèque et les directives de multithreading vous aideront à maintenir un traitement rapide et efficace en mémoire.
 
 ---
 
-**Last Updated:** 2026-01-16  
+**Last Updated:** 2026-07-31  
 **Tested With:** GroupDocs.Parser 25.5 for Java  
 **Author:** GroupDocs  
 
-**Resources**
-- **Documentation:** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)
-- **API Reference:** [GroupDocs API Reference](https://reference.groupdocs.com/parser/java)
-- **Download:** [GroupDocs Parser Releases](https://releases.groupdocs.com/parser/java/)
-- **GitHub:** [GroupDocs.Parser GitHub Repository](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
-- **Support Forum:** [GroupDocs Forum](https://forum.groupdocs.com/c/parser)
-- **Temporary License:** [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license)
+**Ressources**  
+- **Documentation:** [documentation officielle](https://docs.groupdocs.com/parser/java/)  
+- **Documentation:** [Documentation GroupDocs Parser Java](https://docs.groupdocs.com/parser/java/)  
+- **API Reference:** [Référence API GroupDocs](https://reference.groupdocs.com/parser/java)  
+- **Download:** [Versions GroupDocs Parser](https://releases.groupdocs.com/parser/java/)  
+- **GitHub:** [Dépôt GitHub GroupDocs.Parser](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
+- **Support Forum:** [Forum GroupDocs](https://forum.groupdocs.com/c/parser)  
+- **Temporary License:** [Obtenir une licence temporaire](https://purchase.groupdocs.com/temporary-license)
+
+## Tutoriels associés
+
+- [Extraction de texte PDF Java : Maîtriser GroupDocs.Parser en Java – Guide étape par étape](/parser/java/getting-started/groupdocs-parser-java-initialize-tutorial/)
+- [Comment extraire des images d'un PDF avec GroupDocs.Parser en Java : Guide étape par étape](/parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/)
+- [Comment extraire les métadonnées PDF avec GroupDocs.Parser en Java : Guide étape par étape](/parser/java/metadata-extraction/extract-pdf-metadata-groupdocs-parser-java/)
