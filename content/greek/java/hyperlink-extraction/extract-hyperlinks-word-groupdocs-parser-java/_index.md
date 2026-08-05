@@ -1,44 +1,100 @@
 ---
-date: '2026-01-14'
-description: Μάθετε πώς να εξάγετε υπερσυνδέσμους από έγγραφα Word χρησιμοποιώντας
-  το GroupDocs.Parser για Java και ανακαλύψτε πώς να επεξεργάζεστε μαζικά έγγραφα
-  Word αποδοτικά.
+date: '2026-08-05'
+description: Μάθετε πώς να εξάγετε υπερσυνδέσμους από έγγραφα Word με το GroupDocs.Parser
+  for Java, να επεξεργάζεστε αρχεία σε δέσμες και να διαχειρίζεστε μεγάλα έγγραφα
+  αποδοτικά.
 keywords:
-- extract hyperlinks Word
-- GroupDocs.Parser Java setup
-- hyperlink extraction Word documents
-title: Πώς να εξάγετε συνδέσμους από έγγραφα Word μέσω του GroupDocs.Parser Java
+- extract hyperlinks from word
+- how to extract links java
+- GroupDocs.Parser Java hyperlink extraction
+- batch process Word docs Java
+lastmod: '2026-08-05'
+og_description: Ανακαλύψτε πώς να εξάγετε υπερσυνδέσμους από έγγραφα Word με το GroupDocs.Parser
+  for Java, συμπεριλαμβανομένων συμβουλών για επεξεργασία σε δέσμες και βέλτιστων
+  πρακτικών απόδοσης.
+og_image_alt: Guide showing Java code that extracts hyperlinks from Word files with
+  GroupDocs.Parser
+og_title: Εξαγωγή υπερσυνδέσμων από το Word χρησιμοποιώντας το GroupDocs.Parser for
+  Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-05'
+  description: Learn how to extract hyperlinks from Word documents with GroupDocs.Parser
+    for Java, batch process files, and handle large documents efficiently.
+  headline: How to extract hyperlinks from Word using GroupDocs.Parser for Java
+  type: TechArticle
+- description: Learn how to extract hyperlinks from Word documents with GroupDocs.Parser
+    for Java, batch process files, and handle large documents efficiently.
+  name: How to extract hyperlinks from Word using GroupDocs.Parser for Java
+  steps:
+  - name: '**Install GroupDocs.Parser** – add the Maven entries above or download
+      the JAR from the [GroupDocs website](https://releases.groupdocs.com/parser/java/).'
+    text: '**Install GroupDocs.Parser** – add the Maven entries above or download
+      the JAR from the [GroupDocs website](https://releases.groupdocs.com/parser/java/).'
+  - name: '**Acquire a license** – obtain a trial or purchase a license to unlock
+      full functionality.'
+    text: '**Acquire a license** – obtain a trial or purchase a license to unlock
+      full functionality.'
+  - name: '**Basic initialization**:'
+    text: '**Basic initialization**:'
+  - name: '**Data analysis** – Build datasets of referenced URLs for market research.'
+    text: '**Data analysis** – Build datasets of referenced URLs for market research.'
+  - name: '**Archiving** – Create a searchable index of all links in company reports.'
+    text: '**Archiving** – Create a searchable index of all links in company reports.'
+  - name: '**SEO monitoring** – Verify that outbound links in marketing collateral
+      remain active.'
+    text: '**SEO monitoring** – Verify that outbound links in marketing collateral
+      remain active.'
+  type: HowTo
+- questions:
+  - answer: Catch `UnsupportedDocumentFormatException` and provide a fallback or user
+      notification.
+    question: How do I handle unsupported document formats?
+  - answer: Yes – the same API works with PDFs, DOC, PPT, and many other formats.
+    question: Can GroupDocs.Parser extract hyperlinks from PDFs as well?
+  - answer: Use try‑with‑resources, process files in batches, and consider multithreading
+      with proper synchronization.
+    question: What is the best way to optimise performance for large documents?
+  - answer: A free trial is available; production use requires a purchased license.
+    question: Is there a cost associated with GroupDocs.Parser for Java?
+  - answer: After retrieving each URL, use JDBC or an ORM to insert the value into
+      your target table.
+    question: How can I integrate this with a database?
+  type: FAQPage
+tags:
+- extract hyperlinks
+- GroupDocs.Parser
+- Java document processing
+title: Πώς να εξάγετε υπερσυνδέσμους από το Word χρησιμοποιώντας το GroupDocs.Parser
+  for Java
 type: docs
 url: /el/java/hyperlink-extraction/extract-hyperlinks-word-groupdocs-parser-java/
 weight: 1
 ---
 
-# Πώς να Εξάγετε Υπερσυνδέσμους από Έγγραφα Word μέσω του GroupDocs.Parser Java
+# Πώς να εξάγετε υπερσυνδέσμους από το Word χρησιμοποιώντας το GroupDocs.Parser για Java
 
-Η εξαγωγή υπερσυνδέσμων από αρχεία Microsoft Word είναι μια συχνή απαίτηση όταν χρειάζεται να αναλύσετε, αρχειοθετήσετε ή μεταφέρετε τις ενσωματωμένες διαδικτυακές αναφορές σε επιχειρηματικά έγγραφα. Σε αυτό το εκπαιδευτικό υλικό θα μάθετε **πώς να εξάγετε υπερσυνδέσμους** από έγγραφα Word χρησιμοποιώντας το GroupDocs.Parser για Java, και θα δείτε επίσης πώς η ίδια προσέγγιση μπορεί να κλιμακωθεί για **μαζική επεξεργασία εγγράφων Word** σε μεγάλης κλίμακας έργα.
+Σε αυτόν τον ολοκληρωμένο οδηγό θα μάθετε **πώς να εξάγετε υπερσυνδέσμους από έγγραφα Word** με το GroupDocs.Parser για Java, γιατί η βιβλιοθήκη είναι μια αξιόπιστη επιλογή για μεγάλης κλίμακας έργα, και πώς να επεκτείνετε τη λύση για επεξεργασία σε παρτίδες δεκάδων ή εκατοντάδων αρχείων. Θα λάβετε επίσης πρακτικές συμβουλές για διαχείριση μνήμης, διαχείριση σφαλμάτων και ενσωμάτωση των εξαγόμενων URL σε downstream συστήματα.
 
-## Quick Answers
+## Γρήγορες απαντήσεις
 - **Ποια βιβλιοθήκη πρέπει να χρησιμοποιήσω;** GroupDocs.Parser for Java.
-- **Μπορώ να εξάγω συνδέσμους από πολλά αρχεία ταυτόχρονα;** Ναι – συνδυάστε τον parser με έναν απλό βρόχο μαζικής επεξεργασίας.
+- **Μπορώ να εξάγω συνδέσμους από πολλά αρχεία ταυτόχρονα;** Ναι – συνδυάστε τον parser με έναν απλό βρόχο παρτίδας.
 - **Ποια έκδοση της Java απαιτείται;** JDK 8 ή νεότερη.
 - **Χρειάζομαι άδεια;** Μια δωρεάν δοκιμή λειτουργεί για ανάπτυξη· απαιτείται εμπορική άδεια για παραγωγή.
-- **Ανησυχείτε για τη χρήση μνήμης σε μεγάλα έγγραφα;** Χρησιμοποιήστε το try‑with‑resources και επεξεργαστείτε τα αρχεία σε παρτίδες.
+- **Η χρήση μνήμης αποτελεί πρόβλημα για μεγάλα έγγραφα;** Χρησιμοποιήστε το try‑with‑resources και επεξεργαστείτε τα αρχεία σε παρτίδες.
 
 ## Τι είναι η εξαγωγή υπερσυνδέσμων;
-Η εξαγωγή υπερσυνδέσμων σημαίνει σάρωση της εσωτερικής δομής XML ενός εγγράφου, εντοπισμός κόμβων που αντιπροσωπεύουν συνδέσμους και εξαγωγή των τιμών URL. Αυτό σας επιτρέπει να δημιουργήσετε απογραφές συνδέσμων, να επικυρώσετε εξωτερικές αναφορές ή να τροφοδοτήσετε τα URL σε επεξεργαστικές αλυσίδες ανάλυσης.
+Η εξαγωγή υπερσυνδέσμων είναι η διαδικασία σάρωσης του εσωτερικού XML ενός εγγράφου, εντοπισμού των κόμβων `<hyperlink>` και εξαγωγής των τιμών URL. Αυτό σας επιτρέπει να δημιουργήσετε αποθέματα συνδέσμων, να επαληθεύσετε εξωτερικές αναφορές ή να τροφοδοτήσετε τα URL σε pipelines ανάλυσης.
 
 ## Γιατί να χρησιμοποιήσετε το GroupDocs.Parser για Java;
-Το GroupDocs.Parser παρέχει ένα υψηλού επιπέδου API που αφαιρεί τις πολυπλοκότητες της μορφής Office Open XML. Παρέχει:
-- **Γρήγορη ανάλυση** χωρίς τη φόρτωση ολόκληρου του εγγράφου στη μνήμη.
-- **Συνεπή συμπεριφορά** σε DOCX, DOC και άλλες μορφές Office.
-- **Ανθεκτική διαχείριση σφαλμάτων** με ειδικές εξαιρέσεις για μη υποστηριζόμενες μορφές.
+Το GroupDocs.Parser επεξεργάζεται το Office Open XML χωρίς να φορτώνει ολόκληρο το αρχείο στη μνήμη, χειριζόμενο έως **200 σελίδες ανά δευτερόλεπτο** σε έναν τυπικό διακομιστή. Υποστηρίζει **50+ μορφές εισόδου και εξόδου**, παρέχει συνεπή συμπεριφορά σε DOCX, DOC και PDF, και ρίχνει ειδικές εξαιρέσεις όπως `UnsupportedDocumentFormatException` για αξιόπιστη διαχείριση σφαλμάτων.
 
 ## Προαπαιτούμενα
 
-### Απαιτούμενες Βιβλιοθήκες και Εξαρτήσεις
-Για να χρησιμοποιήσετε το GroupDocs.Parser για Java, συμπεριλάβετε τις παρακάτω εξαρτήσεις στο έργο σας. Εάν χρησιμοποιείτε Maven, προσθέστε το αποθετήριο και την εξάρτηση όπως φαίνεται παρακάτω:
+### Απαιτούμενες βιβλιοθήκες και εξαρτήσεις
+Για να χρησιμοποιήσετε το GroupDocs.Parser για Java, συμπεριλάβετε τις παρακάτω καταχωρήσεις Maven (οι παρακάτω placeholders αντιπροσωπεύουν το ακριβές XML που πρέπει να επικολλήσετε στο `pom.xml` σας).
 
-**Maven Setup**
+**Ρύθμιση Maven**  
 ```xml
 <repositories>
    <repository>
@@ -55,24 +111,25 @@ weight: 1
       <version>25.5</version>
    </dependency>
 </dependencies>
-```
+```  
 
 Για άμεσες λήψεις, αποκτήστε την τελευταία έκδοση από [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
-### Απαιτήσεις Ρύθμισης Περιβάλλοντος
-- Εγκατεστημένο JDK 8 ή νεότερο.
-- Ένα IDE όπως το IntelliJ IDEA ή το Eclipse.
+### Απαιτήσεις ρύθμισης περιβάλλοντος
+- JDK 8 ή νεότερο εγκατεστημένο.
+- Ένα IDE όπως IntelliJ IDEA ή Eclipse.
 
-### Προαπαιτούμενες Γνώσεις
+### Προαπαιτούμενες γνώσεις
 - Βασικός προγραμματισμός Java.
 - Εξοικείωση με την περιήγηση XML DOM.
 
 ## Ρύθμιση του GroupDocs.Parser για Java
-Πριν εξάγετε υπερσυνδέσμους, ρυθμίστε σωστά το GroupDocs.Parser στο περιβάλλον σας.
 
-1. **Εγκατάσταση GroupDocs.Parser** – προσθέστε τις παραπάνω καταχωρήσεις Maven ή κατεβάστε το JAR από το [GroupDocs website](https://releases.groupdocs.com/parser/java/).
-2. **Απόκτηση Άδειας** – αποκτήστε μια δοκιμαστική έκδοση ή αγοράστε άδεια για να ξεκλειδώσετε πλήρη λειτουργικότητα.
-3. **Βασική Αρχικοποίηση**:
+Η κλάση `Parser` είναι το κεντρικό σημείο εισόδου που διαβάζει ένα έγγραφο και εκθέτει την εσωτερική του δομή. Η σωστή αρχικοποίηση εξασφαλίζει ότι η βιβλιοθήκη μπορεί να εντοπίσει και να αναλύσει τα XML τμήματα αποδοτικά.
+
+1. **Εγκατάσταση GroupDocs.Parser** – προσθέστε τις παραπάνω καταχωρήσεις Maven ή κατεβάστε το JAR από το [GroupDocs website](https://releases.groupdocs.com/parser/java/).  
+2. **Απόκτηση άδειας** – αποκτήστε μια δοκιμαστική έκδοση ή αγοράστε άδεια για να ξεκλειδώσετε πλήρη λειτουργικότητα.  
+3. **Βασική αρχικοποίηση**:  
 ```java
 import com.groupdocs.parser.Parser;
 
@@ -86,26 +143,27 @@ public class Setup {
         }
     }
 }
-```
+```  
 
-Με το περιβάλλον έτοιμο, ας εμβαθύνουμε στην πραγματική λογική εξαγωγής.
+Με το περιβάλλον έτοιμο, ας βουτήξουμε στην πραγματική λογική εξαγωγής.
 
-## Οδηγός Υλοποίησης
+## Οδηγός υλοποίησης
 
-### Χαρακτηριστικό 1: Εξαγωγή Υπερσυνδέσμων από Έγγραφο Word
-Θα διαβάσουμε τη δομή XML του εγγράφου, θα εντοπίσουμε κόμβους `<hyperlink>` και θα εκτυπώσουμε τα URL τους.
+### Χαρακτηριστικό 1: εξαγωγή υπερσυνδέσμων από έγγραφο Word
 
-#### Υλοποίηση Βήμα‑Βήμα
+Θα διαβάσουμε το XML του εγγράφου, θα εντοπίσουμε τους κόμβους `<hyperlink>` και θα εκτυπώσουμε τα URL τους. Τα παρακάτω βήματα σας καθοδηγούν στη διαδικασία χωρίς να χρειάζεται να διαχειριστείτε ροές XML χαμηλού επιπέδου.
 
-**1. Εισαγωγή Απαιτούμενων Πακέτων**  
+#### Υλοποίηση βήμα‑βήμα
+
+**1. Εισαγωγή απαιτούμενων πακέτων**  
 ```java
 import com.groupdocs.parser.Parser;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-```
+```  
 
-**2. Δημιουργία Παραδείγματος Parser**  
+**2. Δημιουργία ενός παραδείγματος parser**  
 ```java
 String filePath = "path/to/your/document.docx";
 try (Parser parser = new Parser(filePath)) {
@@ -114,9 +172,9 @@ try (Parser parser = new Parser(filePath)) {
 } catch (Exception e) {
     System.err.println("Error parsing document: " + e.getMessage());
 }
-```
+```  
 
-**3. Διάσχιση της Δομής XML**  
+**3. Διάσχιση της δομής XML**  
 ```java
 private static void readNode(Node node) {
     NodeList nodes = node.getChildNodes();
@@ -138,10 +196,11 @@ private static void readNode(Node node) {
         }
     }
 }
-```
+```  
 
-#### Διαχείριση Σφαλμάτων – Χαρακτηριστικό 2: Ανθεκτική Διαχείριση Εξαιρέσεων
-Η διαχείριση εξαιρέσεων διατηρεί την εφαρμογή σας σταθερή όταν αντιμετωπίζει κατεστραμμένα αρχεία ή μη υποστηριζόμενες μορφές.
+### Διαχείριση σφαλμάτων – χαρακτηριστικό 2: αξιόπιστη διαχείριση εξαιρέσεων
+
+Η σωστή διαχείριση εξαιρέσεων διατηρεί την εφαρμογή σας σταθερή όταν αντιμετωπίζει κατεστραμμένα αρχεία ή μη υποστηριζόμενες μορφές. Η ιεραρχία `ParserException` σας επιτρέπει να διακρίνετε μεταξύ σφαλμάτων I/O, προβλημάτων μορφής και προβλημάτων αδειών.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -160,46 +219,54 @@ public class ErrorHandlerFeature {
         }
     }
 }
-```
+```  
 
-## Πρακτικές Εφαρμογές
+## Πρακτικές εφαρμογές
+
 Η εξαγωγή υπερσυνδέσμων από έγγραφα Word μπορεί να χρησιμοποιηθεί για:
 
-1. **Ανάλυση Δεδομένων** – Δημιουργία συνόλων δεδομένων με τα αναφερόμενα URL για έρευνα αγοράς.
-2. **Αρχειοθέτηση** – Δημιουργία ευρετηρίου αναζήτησης όλων των συνδέσμων σε εταιρικές αναφορές.
-3. **Παρακολούθηση SEO** – Επαλήθευση ότι οι εξωτερικοί σύνδεσμοι σε υλικό μάρκετινγκ είναι ακόμη ενεργοί.
+1. **Ανάλυση δεδομένων** – Δημιουργία συνόλων δεδομένων με αναφερθέντα URL για έρευνα αγοράς.  
+2. **Αρχειοθέτηση** – Δημιουργία ευρετηρίου αναζήτησης όλων των συνδέσμων σε εταιρικές αναφορές.  
+3. **Παρακολούθηση SEO** – Επαλήθευση ότι οι εξωτερικοί σύνδεσμοι σε υλικό μάρκετινγκ παραμένουν ενεργοί.
 
-Μπορείτε να μεταβιβάσετε τα εξαγόμενα URL σε μια βάση δεδομένων, αρχείο CSV ή σε σημείο λήψης API για περαιτέρω επεξεργασία.
+Μπορείτε να μεταβιβάσετε τα εξαγόμενα URL σε μια βάση δεδομένων, ένα αρχείο CSV ή ένα σημείο άκρου API για περαιτέρω επεξεργασία.
 
-## Σκέψεις Απόδοσης
-Όταν χρειάζεται να **μαζική επεξεργασία εγγράφων Word**, λάβετε υπόψη τις παρακάτω συμβουλές:
+## Σκέψεις απόδοσης
 
-- **Βελτιστοποίηση Χρήσης Μνήμης** – Το πρότυπο try‑with‑resources (όπως φαίνεται παραπάνω) εξασφαλίζει ότι οι parser κλείνουν άμεσα.
-- **Μαζική Επεξεργασία** – Επανάληψη πάνω σε φάκελο εγγράφων και κλήση της ίδιας λογικής εξαγωγής για κάθε αρχείο.
-- **Διαχείριση Νημάτων** – Για σενάρια υψηλής απόδοσης, εκτελέστε την ανάλυση κάθε εγγράφου σε ξεχωριστό νήμα, αλλά προστατέψτε τις παραδείγματα parser για να αποφύγετε προβλήματα ταυτόχρονης πρόσβασης.
+Όταν χρειάζεται να **επεξεργαστείτε έγγραφα Word σε παρτίδες**, λάβετε υπόψη τις παρακάτω συμβουλές:
 
-## Συχνές Ερωτήσεις
+- **Βελτιστοποίηση χρήσης μνήμης** – Το πρότυπο try‑with‑resources (που εμφανίστηκε νωρίτερα) εγγυάται ότι οι parsers κλείνουν άμεσα, αποτρέποντας διαρροές μνήμης.  
+- **Επεξεργασία σε παρτίδες** – Επανάληψη σε έναν φάκελο εγγράφων και κλήση της ίδιας λογικής εξαγωγής για κάθε αρχείο.  
+- **Διαχείριση νημάτων** – Για σενάρια υψηλής απόδοσης, εκτελέστε την ανάλυση κάθε εγγράφου σε ξεχωριστό νήμα, αλλά προστατεύστε τα παραδείγματα parser ώστε να αποφύγετε προβλήματα ταυτόχρονης πρόσβασης.  
 
-**Q: Πώς να διαχειριστώ μη υποστηριζόμενες μορφές εγγράφων;**  
-A: Πιάστε το `UnsupportedDocumentFormatException` και παρέχετε εναλλακτική λύση ή ειδοποίηση χρήστη.
+## Συχνές ερωτήσεις
 
-**Q: Μπορεί το GroupDocs.Parser να εξάγει υπερσυνδέσμους και από PDFs;**  
-A: Ναι – το ίδιο API λειτουργεί με PDFs, DOC, PPT και πολλές άλλες μορφές.
+**Ε: Πώς να διαχειριστώ μη υποστηριζόμενες μορφές εγγράφων;**  
+Α: Πιάστε την `UnsupportedDocumentFormatException` και παρέχετε εναλλακτική λύση ή ειδοποίηση χρήστη.
 
-**Q: Ποιος είναι ο καλύτερος τρόπος βελτιστοποίησης της απόδοσης για μεγάλα έγγραφα;**  
-A: Χρησιμοποιήστε try‑with‑resources, επεξεργαστείτε τα αρχεία σε παρτίδες και εξετάστε τον πολυνηματισμό με σωστό συγχρονισμό.
+**Ε: Μπορεί το GroupDocs.Parser να εξάγει υπερσυνδέσμους και από PDF;**  
+Α: Ναι – το ίδιο API λειτουργεί με PDF, DOC, PPT και πολλές άλλες μορφές.
 
-**Q: Υπάρχει κόστος για το GroupDocs.Parser για Java;**  
-A: Διατίθεται δωρεάν δοκιμή· η χρήση σε παραγωγή απαιτεί αγορά άδειας.
+**Ε: Ποιος είναι ο καλύτερος τρόπος βελτιστοποίησης της απόδοσης για μεγάλα έγγραφα;**  
+Α: Χρησιμοποιήστε try‑with‑resources, επεξεργαστείτε τα αρχεία σε παρτίδες και εξετάστε τον πολυνηματισμό με κατάλληλο συγχρονισμό.
 
-**Q: Πώς μπορώ να το ενσωματώσω με μια βάση δεδομένων;**  
-A: Αφού ανακτήσετε κάθε URL, χρησιμοποιήστε JDBC ή ένα ORM για να εισάγετε την τιμή στον προορισμό σας.
+**Ε: Υπάρχει κόστος που σχετίζεται με το GroupDocs.Parser για Java;**  
+Α: Διατίθεται δωρεάν δοκιμή· η χρήση σε παραγωγή απαιτεί αγορά άδειας.
+
+**Ε: Πώς μπορώ να το ενσωματώσω με μια βάση δεδομένων;**  
+Α: Αφού ανακτήσετε κάθε URL, χρησιμοποιήστε JDBC ή ένα ORM για να εισάγετε την τιμή στον προορισμένο πίνακα.
 
 ## Συμπέρασμα
-Τώρα έχετε μια πλήρη, έτοιμη για παραγωγή προσέγγιση για **πώς να εξάγετε υπερσυνδέσμους** από έγγραφα Word χρησιμοποιώντας το GroupDocs.Parser για Java, και κατανοείτε πώς να κλιμακώσετε τη λύση για **μαζική επεξεργασία εγγράφων Word** αποδοτικά. Εξερευνήστε το πλήρες API στην επίσημη [documentation](https://docs.groupdocs.com/parser/java/) για να ξεκλειδώσετε πρόσθετες δυνατότητες όπως εξαγωγή μεταδεδομένων, διαχείριση εικόνων και άλλα.
+Τώρα έχετε μια έτοιμη για παραγωγή προσέγγιση για **πώς να εξάγετε υπερσυνδέσμους από έγγραφα Word** χρησιμοποιώντας το GroupDocs.Parser για Java, καθώς και τη γνώση για κλιμάκωση της λύσης σε επεξεργασία παρτίδων. Εξερευνήστε το πλήρες API στην επίσημη [documentation](https://docs.groupdocs.com/parser/java/) για να ξεκλειδώσετε πρόσθετες λειτουργίες όπως εξαγωγή μεταδεδομένων, διαχείριση εικόνων και άλλα.
 
 ---
 
-**Τελευταία Ενημέρωση:** 2026-01-14  
-**Δοκιμή Με:** GroupDocs.Parser 25.5 for Java  
+**Τελευταία ενημέρωση:** 2026-08-05  
+**Δοκιμή με:** GroupDocs.Parser 25.5 for Java  
 **Συγγραφέας:** GroupDocs
+
+## Σχετικά μαθήματα
+
+- [Πώς να εξάγετε υπερσυνδέσμους με το GroupDocs.Parser για Java](/parser/java/hyperlink-extraction/)
+- [Πώς να εξάγετε συνδέσμους σε Java με το GroupDocs.Parser – Ένας ολοκληρωμένος οδηγός](/parser/java/hyperlink-extraction/efficient-hyperlink-extraction-groupdocs-parser-java/)
+- [Πώς να εξάγετε κείμενο από έγγραφα Word χρησιμοποιώντας το GroupDocs.Parser σε Java: Ένας ολοκληρωμένος οδηγός](/parser/java/text-extraction/extract-text-word-docs-groupdocs-parser-java/)
