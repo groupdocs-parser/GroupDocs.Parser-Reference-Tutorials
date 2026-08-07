@@ -1,46 +1,42 @@
 ---
-date: '2025-12-18'
-description: GroupDocs Parser Java kullanarak PDF'lerden barkodları verimli bir şekilde
-  nasıl çıkaracağınızı öğrenin ve verileri XML formatına aktarın.
+date: '2026-02-19'
+description: GroupDocs.Parser kullanarak Java PDF'lerinde QR kodlarını nasıl okuyacağınızı
+  öğrenin ve barkod verilerini XML'e dışa aktarın.
 keywords:
 - Java PDF barcode extraction
 - GroupDocs.Parser for Java
 - XML export from PDF
-title: GroupDocs Parser Java ile Verimli Java PDF Barkod Çıkarma ve XML Dışa Aktarma
+title: GroupDocs.Parser ile Java PDF'lerinde QR Kodlarını Okuma
 type: docs
 url: /tr/java/barcode-extraction/java-pdf-barcode-extraction-xml-export-groupdocs-parser/
 weight: 1
 ---
 
-# Verimli Java PDF Barkod Çıkarma ve XML Dışa Aktarma ile groupdocs parser java
-
-Günümüz dijital ortamında, belgelerden barkod gibi bilgileri çıkarmak, envanter yönetimi, lojistik ve perakende gibi çeşitli sektörlerde kritik öneme sahiptir. Bu öğretici, **groupdocs parser java** kullanarak PDF'lerden barkod verilerini çıkarmayı ve bir XML dosyasına dışa aktarmayı size gösterecek.
+# Java PDF'lerde QR Kodlarını Okuma - GroupDocs.Parser ile
 
 ## Hızlı Yanıtlar
-- **groupdocs parser java ne yapar?** PDF dosyalarını okur ve barkod gibi yapılandırılmış verileri çıkarır.  
-- **Barkodlar nasıl çıkarılır?** `BarcodeOptions` yapılandırılarak ve `parser.getBarcodes()` çağrılarak.  
+- **GroupDocs.Parser for Java ne yapar?** PDF dosyalarını okur ve barkod gibi yapılandırılmış verileri çıkarır.  
+- **QR kodları nasıl çıkarılır?** `BarcodeOptions`ı QR tipiyle yapılandırıp `parser.getBarcodes()` çağırarak.  
 - **Java'da QR kodları okuyabilir miyim?** Evet—seçeneklerde barkod tipini `"QR"` olarak ayarlayın.  
-- **Lisans gerekli mi?** Test için deneme sürümü çalışır; üretim için ticari bir lisans gereklidir.  
+- **Lisans gerekli mi?** Test için deneme sürümü çalışır; üretim için ticari lisans gerekir.  
 - **Hangi Java sürümü gerekiyor?** Java 8 veya üzeri önerilir.
 
-## Önkoşullar
-### Gerekli Kütüphaneler ve Bağımlılıklar
-Bu öğreticiyi takip etmek için şunlara ihtiyacınız olacak:
-- **GroupDocs.Parser for Java** kütüphanesi (sürüm 25.5 veya daha yeni).  
-- Bağımlılık yönetimi için Maven konusunda temel bilgi.  
-- Makinenizde kurulu bir Java Geliştirme Ortamı.
+## “how to read QR” ifadesi PDF işleme bağlamında ne anlama geliyor?
+PDF'lerden QR kodlarını okumak, her sayfayı QR‑kodlu grafikler için taramak, gömülü veriyi çözmek ve bunu program dostu bir formatta döndürmek anlamına gelir. GroupDocs.Parser düşük seviyeli görüntü analizini soyutlayarak piksel manipülasyonu yerine iş mantığına odaklanmanızı sağlar.
 
-### Ortam Kurulum Gereksinimleri
-Aşağıdakilerin kurulu olduğundan emin olun:
-- Java JDK (JDK 8 veya üzeri önerilir).  
-- IntelliJ IDEA, Eclipse gibi bir IDE veya tercih ettiğiniz herhangi bir metin düzenleyici.  
-- Bağımlılıkları Maven ile yönetmeyi tercih ediyorsanız Maven.
+## QR Çıkarma için neden GroupDocs.Parser kullanılmalı?
+- **Yüksek doğruluk:** Yerleşik görüntü işleme algoritmaları düşük çözünürlüklü taramaları işler.  
+- **Performans seçenekleri:** Hız için `QualityMode.Low`, maksimum hassasiyet için `QualityMode.High` seçin.  
+- **Çapraz format desteği:** PDF'ler, görüntüler ve hatta Office belgeleriyle çalışır, böylece farklı dosya tipleri için aynı kod tabanını yeniden kullanabilirsiniz.
+
+## Önkoşullar
+- **GroupDocs.Parser for Java** (sürüm 25.5 veya üzeri).  
+- Maven veya manuel JAR indirme.  
+- Java 8+ geliştirme ortamı (IntelliJ IDEA, Eclipse veya herhangi bir editör).  
 
 ## GroupDocs.Parser for Java Kurulumu
-**groupdocs parser java** ile başlamak basittir. Maven kullanabilir ya da kütüphaneyi doğrudan web sitelerinden indirebilirsiniz.
-
 ### Maven Kullanarak
-Maven gibi bir yapı aracı kullanıyorsanız, `pom.xml` dosyanıza aşağıdaki yapılandırmayı ekleyin:
+Add the GroupDocs repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -61,15 +57,15 @@ Maven gibi bir yapı aracı kullanıyorsanız, `pom.xml` dosyanıza aşağıdaki
 ```
 
 ### Doğrudan İndirme
-Alternatif olarak, en son sürümü [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) adresinden indirebilirsiniz.
+Alternatif olarak, en son JAR dosyasını [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) adresinden indirin.
 
 #### Lisans Edinme Adımları
-- **Ücretsiz Deneme:** Tam özellikleri keşfetmek için 30‑günlük ücretsiz deneme ile başlayın.  
-- **Geçici Lisans:** Uzun süreli değerlendirme için geçici bir lisans alın.  
-- **Satın Al:** Üretim kullanımı için ticari bir lisans satın alın.
+- **Ücretsiz Deneme:** Tam özellik setiyle 30‑günlük deneme.  
+- **Geçici Lisans:** Uzatılmış değerlendirme için geçici anahtar isteyin.  
+- **Satın Alma:** Üretim dağıtımları için ticari lisans edinin.
 
 ### Temel Başlatma ve Kurulum
-Kütüphane hazır olduğunda, Java projenizde başlatın. `Parser` sınıfının basit bir örneğini nasıl oluşturacağınız aşağıdadır:
+Create a `Parser` instance that points to the PDF you want to analyze:
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -86,13 +82,9 @@ class BarcodeExtractor {
 }
 ```
 
-## groupdocs parser java ile Barkod Çıkarma
-### PDF Belgesinden Barkod Çıkarma
-#### Genel Bakış
-Bu özellik, PDF belgelerinizde gömülü barkod verilerini tanımlamanıza ve çıkarmanıza olanak tanır. Sevkiyat manifestolarından veya perakende makbuzlarından **barkod nasıl çıkarılır** gerektiğinde özellikle kullanışlıdır.
-
-#### Adım 1: Belge Desteğini Kontrol Et
-İlk olarak, belgenin barkod çıkarımını desteklediğinden emin olun:
+## Java PDF'lerde QR Kodlarını Okuma - GroupDocs.Parser Kullanarak
+### Adım 1: Barkod Desteğini Doğrula
+Before attempting extraction, confirm that the document format supports barcode scanning:
 
 ```java
 if (!parser.getFeatures().isBarcodes()) {
@@ -101,10 +93,10 @@ if (!parser.getFeatures().isBarcodes()) {
 }
 ```
 
-*Açıklama:* Bu satır, belge tipinizin barkod çıkarımına uygun olup olmadığını kontrol eder. Uygun değilse, hatalardan kaçınmak için nazikçe çıkar.
+*Açıklama:* Bu kontrol, desteklenmeyen dosya tiplerinde çalışma zamanı hatalarını önler.
 
-#### Adım 2: Barkod Seçeneklerini Ayarla
-Tarayıcıyı QR kodlarını (veya ihtiyacınız olan diğer formatları) arayacak şekilde yapılandırın. **read qr codes java** burada devreye girer:
+### Adım 2: Barkod Seçeneklerini Yapılandır (Java'da QR Kodlarını Okuma)
+Set the scanning quality and specify that you’re interested in QR codes:
 
 ```java
 import com.groupdocs.parser.options.BarcodeOptions;
@@ -113,10 +105,10 @@ import com.groupdocs.parser.options.QualityMode;
 BarcodeOptions options = new BarcodeOptions(QualityMode.Low, QualityMode.Low, "QR");
 ```
 
-*Açıklama:* Burada barkod taraması için kalite modunu tanımlıyoruz. `"QR"` parametresi, özellikle QR kodlarını çıkarmak istediğimizi belirtir.
+*Açıklama:* `QualityMode.Low` işleme hızını artırır; ekstra doğruluk gerekiyorsa `High`'a geçin. `"QR"` argümanı, motorun yalnızca QR tipi barkodları aramasını sağlar.
 
-#### Adım 3: Barkodları Çıkar
-Şimdi her sayfadan barkod verilerini alın:
+### Adım 3: QR Verisini Çıkar
+Pull the barcode information from every page of the PDF:
 
 ```java
 import com.groupdocs.parser.data.PageBarcodeArea;
@@ -125,14 +117,11 @@ import java.util.List;
 Iterable<PageBarcodeArea> barcodes = parser.getBarcodes(options);
 ```
 
-*Açıklama:* Bu satır, tanımlanan seçeneklere göre belgenizin her sayfasındaki barkod alanlarını çıkarır.
+*Açıklama:* `parser.getBarcodes` `PageBarcodeArea` nesnelerinin yinelemeli bir koleksiyonunu döndürür; her biri çözülen QR değerini ve sayfadaki konumunu içerir.
 
-### Veriyi XML Dosyasına Dışa Aktarma
-#### Genel Bakış
-Çıkarma işleminden sonra, sonraki işlemler için yapılandırılmış bir formata ihtiyacınız olacak. XML, birçok kurumsal sistemle iyi çalışır.
-
-#### Adım 1: XmlExporter'ı Başlat
-Bir dışa aktarıcı örneği oluşturun:
+## Çıkarılan Veriyi XML'e Aktarma
+### Adım 4: XML Dışa Aktarıcıyı Başlat
+Create an exporter that will transform the barcode collection into a well‑structured XML file:
 
 ```java
 import com.groupdocs.parser.export.XmlExporter;
@@ -140,60 +129,60 @@ import com.groupdocs.parser.export.XmlExporter;
 XmlExporter exporter = new XmlExporter();
 ```
 
-*Açıklama:* `XmlExporter`, barkod verilerini bir XML dosyasına dönüştürmek için başlatılır.
+*Açıklama:* `XmlExporter`, barkod nesnelerinin standart XML'e serileştirilmesini yönetir ve ERP ya da envanter sistemleriyle entegrasyon için hazır bir dosya oluşturur.
 
-#### Adım 2: Barkodları XML'e Dışa Aktar
-Çıkarılan verileri kaydedin:
+### Adım 5: XML Dosyasını Yaz
+Save the extracted QR information to disk:
 
 ```java
 exporter.exportBarcodes(barcodes, "YOUR_OUTPUT_DIRECTORY/data.xml");
 ```
 
-*Açıklama:* Bu satır dışa aktarma işlemini gerçekleştirir ve tüm çıkarılan barkodları belirtilen çıktı dizininizdeki `data.xml` dosyasına kaydeder.
+*Açıklama:* Oluşan `data.xml`, her QR kodu için bir `<Barcode>` öğesi içerir; öğe sayfa numarası, koordinatlar ve çözülen değer gibi özniteliklere sahiptir.
 
 ## Pratik Uygulamalar
-1. **Envanter Yönetimi:** Gelen sevkiyat belgelerinden ürün barkodlarını çıkararak envanter sistemlerini otomatik olarak güncelleyin.  
-2. **Tedarik Zinciri İzleme:** Barkod verileriyle sevkiyatları ve paketleri izleyerek verimli lojistik yönetimi sağlayın.  
-3. **Perakende Operasyonları:** Makbuz veya ürün etiketlerindeki QR kodlarını hızlıca tarayarak detaylı bilgi alarak müşteri hizmetlerini geliştirin.
+1. **Envanter Yönetimi:** Gelen sevkiyat PDF'lerindeki QR etiketlerini okuyarak stok veritabanlarını otomatik doldurun.  
+2. **Tedarik Zinciri Görünürlüğü:** Lojistik belgelerde gömülü QR tanımlayıcıları çıkararak paketleri gerçek zamanlı izleyin.  
+3. **Perakende Makbuzları:** Dijital makbuzlarda basılmış QR kodlarından promosyon veya garanti bilgilerini alın.
 
 ## Performans Düşünceleri
-**groupdocs parser java**'nın büyük PDF'lerde sorunsuz çalışmasını sağlamak için:
-- Belleği dikkatli yönetin; belgeler büyükse sayfaları akış olarak işleyin.  
-- Uygun `QualityMode`'u seçin—hız için `Low`, doğruluk için `High`.  
-- Performans yamalarından yararlanmak için kütüphaneyi güncel tutun.
+- **Bellek Yönetimi:** Çok büyük PDF'lerde tüm dosyayı belleğe yüklemek yerine sayfaları akış şeklinde işleyin.  
+- **QualityMode Seçimi:** Toplu işleme için `Low`, düşük çözünürlüklü taramalarla çalışırken `High`'a geçin.  
+- **Kütüphane Güncellemeleri:** En son performans iyileştirmeleri ve hata düzeltmelerinden yararlanmak için GroupDocs.Parser'ı güncel tutun.
 
-## Sonuç
-Bu rehberi izleyerek, **groupdocs parser java** kullanarak PDF'lerden barkodları nasıl çıkaracağınızı ve XML olarak dışa aktaracağınızı başarıyla öğrendiniz. Bu yetenek, envanter, lojistik ve perakende alanlarında veri alım iş akışlarını büyük ölçüde iyileştirebilir.
-
-**Sonraki Adımlar:**  
-Metin çıkarma, tablo ayrıştırma gibi ek özellikleri keşfedin veya çıktıyı ERP sisteminizle entegre edin.
+## Yaygın Sorunlar ve Çözümleme
+| Semptom | Muhtemel Neden | Çözüm |
+|---------|----------------|-------|
+| Barkod bulunamadı | Yanlış barkod tipi belirtildi | Uygun tipe (ör. `"CODE_128"`) `"QR"` yerine değiştirin. |
+| Büyük PDF'lerde bellek yetersizliği hatası | Tüm belge bir kerede yüklendi | Sayfaları tek tek işleyin veya JVM yığın boyutunu artırın (`-Xmx2g`). |
+| Boş XML dosyası | `exportBarcodes` çıkarımdan önce çağrıldı | Dışa aktarmadan önce `parser.getBarcodes(options)` veri döndürdüğünden emin olun. |
 
 ## Sıkça Sorulan Sorular
-**S: GroupDocs.Parser kullanarak görüntülerden barkod çıkarabilir miyim?**  
-C: Evet, kütüphane görüntü dosyalarından da barkod çıkarımını destekler.
+**S: GroupDocs.Parser ile görüntü dosyalarından barkod çıkarabilir miyim?**  
+C: Evet, kütüphane yaygın görüntü formatlarından (PNG, JPEG, TIFF) barkod çıkarımını destekler.
 
-**S: Hangi barkod tipleri çıkarılabilir?**  
-C: Kütüphane QR kodları, Code 39, Code 128 ve daha birçok format dahil olmak üzere çeşitli formatları destekler.
+**S: Hangi barkod formatları tanınır?**  
+C: QR, Code 39, Code 128, DataMatrix, PDF417 ve daha fazlası. Tam liste için API belgelerine bakın.
 
-**S: Büyük PDF belgelerini verimli bir şekilde nasıl yönetebilirim?**  
-C: Bellek yükünü azaltmak için belgeyi parçalar halinde işleyin veya çoklu iş parçacığı (multi‑threading) kullanın.
+**S: Şifre korumalı PDF'leri nasıl ele almalı?**  
+C: Şifreyi `Parser` yapıcısına geçirin: `new Parser(filePath, "password")`.
 
-**S: GroupDocs.Parser ticari kullanım için ücretsiz mi?**  
-C: Deneme sürümü mevcuttur; üretim dağıtımları için ticari bir lisans gereklidir.
+**S: Deneme sürümü üretim testi için yeterli mi?**  
+C: Deneme sürümü tam işlevsellik sağlar ancak çıkarılan verilere bir filigran ekler. Üretim için ticari lisans edinin.
 
-**S: Belge formatım desteklenmiyorsa ne yapmalıyım?**  
-C: En son kütüphane sürümünü kullandığınızdan emin olun ve desteklenen formatlar için belgeleri inceleyin.
+**S: PDF'im hem QR hem de doğrusal barkodlar içeriyorsa ne yapmalıyım?**  
+C: Birden fazla `BarcodeOptions` örneği oluşturun veya tüm gerekli formatları tek seferde taramak için tip dizisi geçirin.
+
+---
+
+**Son Güncelleme:** 2026-02-19  
+**Test Edilen Sürüm:** GroupDocs.Parser 25.5  
+**Yazar:** GroupDocs  
 
 ## Kaynaklar
-- [GroupDocs.Parser Java Documentation](https://docs.groupdocs.com/parser/java/)
-- [API Reference](https://reference.groupdocs.com/parser/java)
-- [Download GroupDocs.Parser](https://releases.groupdocs.com/parser/java/)
-- [GitHub Repository](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
-- [Free Support Forum](https://forum.groupdocs.com/c/parser)
-- [Temporary License Application](https://purchase.groupdocs.com/temporary-license/) 
-
----  
-
-**Son Güncelleme:** 2025-12-18  
-**Test Edilen:** GroupDocs.Parser 25.5  
-**Yazar:** GroupDocs
+- [GroupDocs.Parser Java Dokümantasyonu](https://docs.groupdocs.com/parser/java/)
+- [API Referansı](https://reference.groupdocs.com/parser/java)
+- [GroupDocs.Parser İndir](https://releases.groupdocs.com/parser/java/)
+- [GitHub Deposu](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
+- [Ücretsiz Destek Forumu](https://forum.groupdocs.com/c/parser)
+- [Geçici Lisans Başvurusu](https://purchase.groupdocs.com/temporary-license/)

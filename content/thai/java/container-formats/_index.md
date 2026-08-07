@@ -1,55 +1,122 @@
 ---
-date: 2025-12-18
-description: เรียนรู้วิธีวนซ้ำไฟล์ ZIP และตรวจจับประเภทไฟล์ ZIP ด้วยบทแนะนำ GroupDocs.Parser
-  สำหรับ Java
-title: วนซ้ำไฟล์ ZIP ด้วย GroupDocs.Parser Java
+date: 2026-02-19
+description: เรียนรู้วิธีวนซ้ำไฟล์ ZIP ใน Java ด้วย GroupDocs.Parser และทำการแยกไฟล์
+  ZIP ใน Java อย่างมีประสิทธิภาพในแอปพลิเคชัน Java ของคุณ.
+title: การวนซ้ำไฟล์ zip ด้วย Java และ GroupDocs.Parser – คู่มือฉบับสมบูรณ์
 type: docs
 url: /th/java/container-formats/
 weight: 16
 ---
 
-# ทำการวนซ้ำไฟล์ ZIP ด้วย GroupDocs.Parser Java
+ markdown.# วนซ้ำไฟล์ zip ด้วย Java และ GroupDocs.Parser
 
-บทเรียนรูปแบบคอนเทนเนอร์ของเราจะแสดงให้คุณทราบวิธี **iterate through ZIP files** โดยใช้ GroupDocs.Parser สำหรับ Java ทำให้การจัดการกับไฟล์อาร์ไคฟ์ที่ซับซ้อนเป็นเรื่องง่าย นอกจากนี้คุณจะได้เรียนรู้เทคนิคในการ **detect ZIP file type** และการสกัดเนื้อหาที่ฝังอยู่จาก PDF portfolios, อีเมล, และรูปแบบคอนเทนเนอร์อื่น ๆ คู่มือแบบขั้นตอนเหล่านี้ให้ตัวอย่างโค้ด Java อย่างละเอียดที่ช่วยคุณสร้างแอปพลิเคชันที่แข็งแรงสำหรับการประมวลผลและการนำทางเอกสารที่ซ้อนกัน
+การประมวลผลไฟล์ ZIP เป็นงานทั่วไปสำหรับนักพัฒนา Java ที่ต้องจัดการกับเอกสารขนาดใหญ่หรือเอกสารที่ซ้อนกันหลายระดับ ในบทแนะนำนี้คุณจะได้เรียนรู้ **how to iterate zip files java** ด้วย GroupDocs.Parser, ดึงข้อมูลแต่ละรายการออกโดยไม่ต้องโหลดไฟล์ทั้งหมดเข้าสู่หน่วยความจำ, และใช้เทคนิค **java zip file extraction** เพื่อทำให้กระบวนการทำงานของคุณเป็นระเบียบ ไม่ว่าคุณจะสร้างระบบจัดการเอกสาร, บริการทำดัชนี, หรือสายงานประมวลผลแบบกลุ่ม, API สตรีมมิ่งช่วยให้ทำงานกับรูปแบบคอนเทนเนอร์ที่ซับซ้อนได้อย่างปลอดภัยและมีประสิทธิภาพ
 
-## วิธีการวนซ้ำไฟล์ ZIP ด้วย GroupDocs.Parser
+## คำตอบอย่างรวดเร็ว
+- **What does “iterate zip files java” mean?** หมายถึงการอ่านแต่ละรายการภายในไฟล์ ZIP อย่างต่อเนื่องโดยใช้โค้ด Java  
+- **Why use GroupDocs.Parser?** มันให้ API สตรีมมิ่งที่ใช้หน่วยความจำน้อยและมีการตรวจจับประเภทไฟล์ในตัว  
+- **Do I need a license?** ใบอนุญาตชั่วคราวใช้สำหรับการทดสอบ; ต้องมีใบอนุญาตเชิงพาณิชย์สำหรับการใช้งานจริง  
+- **Can I handle password‑protected ZIPs?** ได้ – API ให้คุณระบุรหัสผ่านเมื่อเปิดไฟล์อาร์ไคฟ์  
+- **What Java version is required?** รองรับ Java 8 หรือสูงกว่า  
 
-เมื่อทำงานกับอาร์ไคฟ์ขนาดใหญ่หรือซ้อนกัน การวนซ้ำไฟล์ ZIP อย่างมีประสิทธิภาพเป็นสิ่งสำคัญสำหรับประสิทธิภาพและความน่าเชื่อถือ GroupDocs.Parser มี API แบบสตรีมมิ่งที่ช่วยให้คุณอ่านแต่ละรายการโดยไม่ต้องโหลดอาร์ไคฟ์ทั้งหมดเข้าสู่หน่วยความจำ วิธีนี้เหมาะสำหรับการประมวลผลเป็นชุด, การทำดัชนีเนื้อหา, หรือการสกัดข้อมูลแบบ on‑the‑fly
+## การวนซ้ำไฟล์ zip ด้วย Java คืออะไร?
+การวนซ้ำไฟล์ zip ด้วย Java หมายถึงการเดินผ่านรายการของรายการ (ไฟล์และโฟลเดอร์) ที่เก็บอยู่ในคอนเทนเนอร์ ZIP ทีละรายการและประมวลผลแต่ละรายการแบบเรียลไทม์ วิธีนี้ช่วยหลีกเลี่ยงการโหลดไฟล์อาร์ไคฟ์ทั้งหมดเข้าสู่ RAM ซึ่งสำคัญมากสำหรับไฟล์ขนาดใหญ่หรือไฟล์ที่ซ้อนกันหลายระดับ
+
+## ทำไมต้องใช้ GroupDocs.Parser สำหรับการประมวลผล ZIP ด้วย Java?
+- **Low memory footprint:** โมเดลสตรีมมิ่งอ่านข้อมูลเป็นชิ้นเล็ก ๆ  
+- **Built‑in type detection:** ตรวจจับ PDF, รูปภาพ, อีเมล ฯลฯ ภายในอาร์ไคฟ์โดยอัตโนมัติ  
+- **Unified API:** ทำงานเช่นเดียวกับคอนเทนเนอร์รูปแบบอื่น (PDF portfolios, ไฟล์ EML)  
+- **Robust error handling:** ข้ามรายการที่เสียหายอย่างราบรื่นขณะยังคงดำเนินการวนซ้ำต่อไป  
+
+## ข้อกำหนดเบื้องต้น
+- ติดตั้ง Java 8 หรือใหม่กว่า  
+- เพิ่มไลบรารี GroupDocs.Parser for Java ลงในโปรเจกต์ของคุณ (Maven/Gradle)  
+- มีคีย์ใบอนุญาตชั่วคราวหรือเต็ม (สามารถรับได้จากพอร์ทัลของ GroupDocs)  
+
+## วิธีการวนซ้ำไฟล์ zip ด้วย Java และ GroupDocs.Parser
+เมื่อคุณต้องการประมวลผลแต่ละไฟล์ภายในอาร์ไคฟ์ ZIP ให้ทำตามขั้นตอนต่อไปนี้:
+
+### ขั้นตอนที่ 1: ตั้งค่าการกำหนดค่า Parser
+สร้างอินสแตนซ์ `Parser` แล้วชี้ไปที่ไฟล์ ZIP ที่ต้องการสำรวจ วัตถุการกำหนดค่าสามารถเปิดใช้งานสตรีมมิ่งและระบุรหัสผ่านที่จำเป็นได้  
+
+### ขั้นตอนที่ 2: เปิดคอนเทนเนอร์เป็นสตรีม
+ใช้คลาส `Container` เพื่อเปิดอาร์ไคฟ์ในโหมดสตรีมมิ่ง ซึ่งจะคืนค่า iterator ที่ให้ `ContainerItem` แต่ละออบเจกต์แทนรายการแต่ละรายการ  
+
+### ขั้นตอนที่ 3: วนลูปผ่านแต่ละรายการ
+วนลูปผ่านคอลเลกชัน `ContainerItem` สำหรับแต่ละรายการคุณสามารถ:
+- ดึงชื่อและขนาดของรายการ  
+- ตรวจจับประเภทไฟล์ด้วย `FileTypeDetector`  
+- ดึงเนื้อหาเป็นสตรีมหากต้องการประมวลผลต่อ (เช่น การสกัดข้อความ)  
+
+### ขั้นตอนที่ 4: ใช้ตรรกะแบบกำหนดเองตามประเภทไฟล์
+ตามประเภทที่ตรวจจับได้ คุณอาจ:
+- รัน OCR บนรูปภาพ  
+- สกัดข้อความจาก PDF  
+- วิเคราะห์เนื้อหาอีเมลจากไฟล์ EML  
+
+### ขั้นตอนที่ 5: ทำความสะอาดทรัพยากร
+ปิดสตรีมคอนเทนเนอร์เสมอเพื่อปล่อยตัวจัดการไฟล์  
+
+> **Pro tip:** ผสาน iterator กับคำสั่ง `try‑with‑resources` ของ Java เพื่อให้ทำความสะอาดอัตโนมัติแม้เกิดข้อยกเว้น  
+
+## ตรวจจับประเภทไฟล์ ZIP ในอาร์ไคฟ์
+การระบุประเภทไฟล์ที่แน่นอนของแต่ละรายการช่วยให้คุณเลือกเส้นทางการประมวลผลที่เหมาะสม GroupDocs.Parser มีตัวตรวจจับในตัวที่อ่าน magic bytes ของไฟล์ ดังนั้นคุณไม่จำเป็นต้องเขียนการตรวจสอบเอง เพียงเรียก `detectFileType()` บนสตรีมของ `ContainerItem` ปัจจุบัน  
 
 ## บทเรียนที่พร้อมใช้งาน
 
 ### [ตรวจจับประเภทไฟล์ใน ZIP Archives ด้วย GroupDocs.Parser สำหรับ Java](./detect-file-types-zip-groupdocs-parser-java/)
-เรียนรู้วิธีการตรวจจับประเภทไฟล์ภายใน ZIP archives อย่างมีประสิทธิภาพโดยใช้ GroupDocs.Parser สำหรับ Java ปรับปรุงการจัดการเอกสารของคุณด้วยคู่มือที่ใช้งานได้จริงนี้
+เรียนรู้วิธีตรวจจับประเภทไฟล์ภายใน ZIP Archives อย่างมีประสิทธิภาพด้วย GroupDocs.Parser for Java เพื่อทำให้การจัดการเอกสารของคุณเป็นระบบ
 
-### [สกัดไฟล์แนบ PDF ด้วย GroupDocs.Parser ใน Java&#58; คู่มือเชิงลึก](./extract-attachments-pdf-groupdocs-parser-java/)
-เรียนรู้วิธีการสกัดไฟล์ที่ฝังอยู่จาก PDF portfolios อย่างง่ายดายโดยใช้ GroupDocs.Parser สำหรับ Java ปรับปรุงกระบวนการทำงานการจัดการเอกสารของคุณด้วยบทเรียนแบบขั้นตอนนี้
+### [สกัดไฟล์แนบ PDF ด้วย GroupDocs.Parser ใน Java&#58; คู่มือฉบับสมบูรณ์](./extract-attachments-pdf-groupdocs-parser-java/)
+เรียนรู้วิธีสกัดไฟล์ที่ฝังอยู่ใน PDF portfolios อย่างง่ายดายด้วย GroupDocs.Parser for Java เพื่อเพิ่มประสิทธิภาพการทำงานของคุณ
 
-### [สกัดข้อความ & Metadata จากไฟล์ ZIP ด้วย GroupDocs.Parser Java&#58; คู่มือครบสำหรับนักพัฒนา](./extract-text-metadata-zip-files-groupdocs-parser-java/)
-เรียนรู้วิธีการสกัดข้อความและ metadata จากไฟล์ ZIP อย่างมีประสิทธิภาพโดยใช้ GroupDocs.Parser ใน Java ปรับปรุงกระบวนการทำงานของคุณด้วยคู่มือที่ครอบคลุมนี้
+### [สกัดข้อความ & เมตาดาต้าจากไฟล์ ZIP ด้วย GroupDocs.Parser Java&#58; คู่มือครบสำหรับนักพัฒนา](./extract-text-metadata-zip-files-groupdocs-parser-java/)
+เรียนรู้วิธีสกัดข้อความและเมตาดาต้าจากไฟล์ ZIP อย่างมีประสิทธิภาพด้วย GroupDocs.Parser ใน Java เพื่อทำให้กระบวนการทำงานของคุณเป็นระเบียบ
 
-### [สกัดข้อความจากไฟล์ ZIP ใน Java โดยใช้ GroupDocs.Parser&#58; คู่มือเชิงลึก](./extract-text-zip-files-groupdocs-parser-java/)
-เรียนรู้วิธีการสกัดข้อความจากไฟล์ ZIP อย่างมีประสิทธิภาพโดยใช้ GroupDocs.Parser สำหรับ Java บทเรียนนี้ครอบคลุมการตั้งค่า, ตัวอย่างโค้ด, และการประยุกต์ใช้งานจริง
+### [สกัดข้อความจากไฟล์ ZIP ใน Java ด้วย GroupDocs.Parser&#58; คู่มือฉบับสมบูรณ์](./extract-text-zip-files-groupdocs-parser-java/)
+เรียนรู้วิธีสกัดข้อความจากไฟล์ ZIP อย่างมีประสิทธิภาพด้วย GroupDocs.Parser for Java บทแนะนำนี้ครอบคลุมการตั้งค่า, ตัวอย่างโค้ด, และการใช้งานจริง
 
-### [วิธีสกัดรายการคอนเทนเนอร์จากเอกสารโดยใช้ GroupDocs.Parser สำหรับ Java](./extract-container-items-groupdocs-parser-java/)
-เรียนรู้วิธีการสกัดไฟล์แนบและเอกสารที่ฝังอยู่จาก PDF, อีเมล, และอื่น ๆ อย่างมีประสิทธิภาพโดยใช้ GroupDocs.Parser ใน Java ปฏิบัติตามคู่มือแบบขั้นตอนของเรา
+### [วิธีสกัดรายการคอนเทนเนอร์จากเอกสารด้วย GroupDocs.Parser for Java](./extract-container-items-groupdocs-parser-java/)
+เรียนรู้วิธีสกัดไฟล์แนบและเอกสารฝังจาก PDF, อีเมล, และอื่น ๆ อย่างมีประสิทธิภาพด้วย GroupDocs.Parser ใน Java ตามขั้นตอนที่แนะนำ
 
-### [วนซ้ำ ZIP Archives ด้วย GroupDocs.Parser Java&#58; คู่มือเชิงลึก](./iterate-zip-archive-groupdocs-parser-java/)
-เรียนรู้วิธีการอัตโนมัติการสกัดชื่อไฟล์และขนาดจาก ZIP archives โดยใช้ GroupDocs.Parser สำหรับ Java ปรับปรุงกระบวนการทำงานของคุณด้วยคำแนะนำแบบขั้นตอน
-
-## ตรวจจับประเภทไฟล์ ZIP ใน Archives
-
-การระบุประเภทไฟล์ที่แน่นอนของแต่ละรายการภายใน ZIP archive ช่วยให้คุณใช้ตรรกะการประมวลผลที่เหมาะสม (เช่น OCR สำหรับรูปภาพ, การสกัดข้อความสำหรับเอกสาร) ด้วยตัวตรวจจับที่มาพร้อมใน GroupDocs.Parser คุณสามารถ **detect ZIP file type** อย่างรวดเร็วโดยไม่ต้องเขียนการตรวจสอบ magic‑byte เอง
+### [วนซ้ำผ่าน ZIP Archives ด้วย GroupDocs.Parser Java&#58; คู่มือฉบับสมบูรณ์](./iterate-zip-archive-groupdocs-parser-java/)
+เรียนรู้วิธีอัตโนมัติการสกัดชื่อไฟล์และขนาดจาก ZIP Archives ด้วย GroupDocs.Parser for Java เพื่อทำให้กระบวนการทำงานของคุณเป็นระบบ
 
 ## แหล่งข้อมูลเพิ่มเติม
 
-- [เอกสาร GroupDocs.Parser สำหรับ Java](https://docs.groupdocs.com/parser/java/)
-- [อ้างอิง API GroupDocs.Parser สำหรับ Java](https://reference.groupdocs.com/parser/java/)
-- [ดาวน์โหลด GroupDocs.Parser สำหรับ Java](https://releases.groupdocs.com/parser/java/)
-- [ฟอรั่ม GroupDocs.Parser](https://forum.groupdocs.com/c/parser)
-- [สนับสนุนฟรี](https://forum.groupdocs.com/)
-- [ใบอนุญาตชั่วคราว](https://purchase.groupdocs.com/temporary-license/)
+- [GroupDocs.Parser for Java Documentation](https://docs.groupdocs.com/parser/java/)
+- [GroupDocs.Parser for Java API Reference](https://reference.groupdocs.com/parser/java/)
+- [Download GroupDocs.Parser for Java](https://releases.groupdocs.com/parser/java/)
+- [GroupDocs.Parser Forum](https://forum.groupdocs.com/c/parser)
+- [Free Support](https://forum.groupdocs.com/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+
+## ปัญหาและวิธีแก้ไขที่พบบ่อย
+- **OutOfMemoryError on large archives:** ตรวจสอบว่าคุณใช้ API สตรีมมิ่ง (`Container.openAsStream()`) แทนการโหลดไฟล์ทั้งหมด  
+- **Unsupported file type detection:** ยืนยันว่า magic bytes ของไฟล์ยังสมบูรณ์; ไฟล์ที่เสียหายอาจถูกระบุผิดประเภท  
+- **Password‑protected ZIP fails to open:** ส่งรหัสผ่านไปยัง `Container.openAsStream(password)`  
+
+## คำถามที่พบบ่อย
+
+**Q: สามารถประมวลผลไฟล์ ZIP ที่ใหญ่กว่า 2 GB ได้หรือไม่?**  
+A: ได้ วิธีสตรีมมิ่งอ่านข้อมูลเป็นชิ้นเล็ก ๆ ทำให้ขนาดไฟล์ไม่เป็นข้อจำกัด  
+
+**Q: GroupDocs.Parser รองรับการอัปเดตแบบ incremental ให้กับ ZIP archive หรือไม่?**  
+A: ไลบรารีนี้มุ่งเน้นการสกัดและตรวจจับแบบอ่านอย่างเดียว สำหรับการแก้ไขให้ใช้ไลบรารี ZIP เฉพาะทางร่วมกับ Parser  
+
+**Q: จะบันทึกสถานะการประมวลผลของแต่ละรายการอย่างไร?**  
+A: ใช้ logger ภายในลูปการวนซ้ำ (เช่น SLF4J) เพื่อบันทึกชื่อรายการ, ขนาด, และประเภทที่ตรวจจับได้  
+
+**Q: มีวิธีกรองเฉพาะประเภทไฟล์บางประเภทขณะวนซ้ำหรือไม่?**  
+A: มี หลังจากตรวจจับประเภทไฟล์แล้วคุณสามารถข้ามการประมวลผลสำหรับประเภทที่ไม่ต้องการได้  
+
+**Q: ต้องเพิ่ม dependency ของ Maven อะไรบ้าง?**  
+A: เพิ่ม `com.groupdocs:groupdocs-parser` พร้อมเวอร์ชันที่เหมาะสมในไฟล์ `pom.xml`  
 
 ---
 
-**อัปเดตล่าสุด:** 2025-12-18  
-**ผู้เขียน:** GroupDocs
+** **อัปเดตล่าสุด:** 2026-02-19  
+** **ทดสอบกับ:** GroupDocs.Parser for Java 23.10  
+** **ผู้เขียน:** GroupDocs  
+
+---
