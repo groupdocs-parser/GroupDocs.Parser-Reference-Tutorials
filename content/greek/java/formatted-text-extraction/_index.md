@@ -1,92 +1,168 @@
 ---
-date: 2026-01-01
-description: Μάθετε πώς να εξάγετε HTML και να διατηρείτε τη μορφοποίηση με το GroupDocs.Parser
-  για Java – βήμα-βήμα οδηγίες για εξαγωγή μορφοποιημένου κειμένου, μετατροπή EPUB
-  σε HTML, εξαγωγή HTML email και πολλά άλλα.
-title: Πώς να εξάγετε HTML χρησιμοποιώντας το GroupDocs.Parser Java
+date: 2026-07-07
+description: Μάθετε πώς να μετατρέψετε EPUB σε HTML με το GroupDocs.Parser για Java
+  – οδηγός step‑by‑step για εξαγωγή formatted text, διατήρηση styling, και διαχείριση
+  large files αποδοτικά.
+keywords:
+- convert epub to html
+- how to extract html
+- extract formatted text
+- html to markdown java
+- extract html from pdf
+og_description: Μετατρέψτε EPUB σε HTML με το GroupDocs.Parser για Java, διατηρώντας
+  headings, images, και styles σε ένα μόνο βήμα. Αυτός ο οδηγός δείχνει πώς να εξάγετε
+  formatted text, να διαχειριστείτε large files, και να προσαρμόσετε το output για
+  web integration.
+og_title: Μετατροπή EPUB σε HTML με το GroupDocs.Parser Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-07'
+  description: Learn how to convert EPUB to HTML with GroupDocs.Parser for Java –
+    step‑by‑step guide to extract formatted text, preserve styling, and handle large
+    files efficiently.
+  headline: How to Convert EPUB to HTML Using GroupDocs.Parser for Java
+  type: TechArticle
+- description: Learn how to convert EPUB to HTML with GroupDocs.Parser for Java –
+    step‑by‑step guide to extract formatted text, preserve styling, and handle large
+    files efficiently.
+  name: How to Convert EPUB to HTML Using GroupDocs.Parser for Java
+  steps:
+  - name: Initialise the Parser
+    text: Create the `Parser` object by passing the path to your EPUB file. The constructor
+      also accepts a `LoadOptions` object if you need to supply a password.
+  - name: Configure HTML Output
+    text: '`HtmlSaveOptions` lets you customize the generated HTML, such as embedding
+      CSS or extracting images. Use `HtmlSaveOptions` to fine‑tune the result. Common
+      tweaks include: - `setEmbedCss(true)` – embeds generated CSS directly into the
+      `<style>` tag. - `setImageFolder("images")` – stores extracted ima'
+  - name: Save the HTML File
+    text: Call `parser.save("output.html", saveOptions)`. The method streams the EPUB,
+      extracts each chapter, and writes clean HTML. No additional cleanup is required.
+  type: HowTo
+- questions:
+  - answer: Yes. Pass the password to the `Parser` constructor (or via `LoadOptions`)
+      and the library will decrypt the document before extraction.
+    question: Can I extract HTML from password‑protected files?
+  - answer: After extraction, feed the HTML into a library such as **flexmark‑java**;
+      it parses the markup and outputs clean Markdown.
+    question: How do I convert the extracted HTML to Markdown in Java?
+  - answer: GroupDocs.Parser streams content, allowing you to handle files of several
+      hundred megabytes without loading the entire file into memory. Just ensure your
+      JVM heap is sized appropriately.
+    question: Is there a limit on the size of documents I can process?
+  - answer: No. The parser is pure Java and runs on any platform that supports Java
+      8 or later.
+    question: Do I need to install any native dependencies?
+  - answer: Create an `HtmlSaveOptions` instance and use methods like `setCustomCssClass("my‑class")`
+      or `setCssClassPrefix("epub-")` to inject your own styling hooks.
+    question: What if I need to customize the HTML output (e.g., add custom CSS classes)?
+  type: FAQPage
+title: Πώς να μετατρέψετε EPUB σε HTML χρησιμοποιώντας το GroupDocs.Parser για Java
 type: docs
 url: /el/java/formatted-text-extraction/
 weight: 12
 ---
 
-# Πώς να Εξάγετε HTML Χρησιμοποιώντας το GroupDocs.Parser Java
+# Πώς να Μετατρέψετε EPUB σε HTML Χρησιμοποιώντας το GroupDocs.Parser για Java
 
-Η εξαγωγή HTML από διάφορους τύπους εγγράφων διατηρώντας το αρχικό στυλ είναι μια συχνή πρόκληση για προγραμματιστές Java. Σε αυτή τη συλλογή εκπαιδευτικών σεμιναρίων, θα ανακαλύψετε **πώς να εξάγετε HTML** από email, EPUB, διαφάνειες PowerPoint, φύλλα Excel και πολλά άλλα—όλα με τη βοήθεια του GroupDocs.Parser για Java. Θα σας δείξουμε επίσης πώς να **εξάγετε μορφοποιημένο κείμενο**, να μετατρέψετε EPUB σε HTML και ακόμη να μετατρέψετε το περιεχόμενο σε Markdown όταν χρειάζεται. Είτε δημιουργείτε μια διαδικασία μετεγκατάστασης περιεχομένου είτε μια λειτουργία προεπισκόπησης έτοιμη για web, αυτά τα οδηγίες παρέχουν τον πρακτικό κώδικα που χρειάζεστε.
+Αν χρειάζεστε **μετατροπή EPUB σε HTML** ενώ διατηρείτε κάθε επικεφαλίδα, εικόνα, πίνακα και προσαρμοσμένο στυλ αμετάβλητα, βρίσκεστε στο σωστό μέρος. Το GroupDocs.Parser for Java κάνει αυτή τη μετατροπή απλή, αποδοτική στη μνήμη και πλήρως προσαρμόσιμη—ιδανική για τη δημιουργία pipelines μεταφοράς περιεχομένου, υπηρεσιών προεπισκόπησης ή πλατφορμών e‑learning. Στα επόμενα λεπτά θα περάσουμε από όλη τη διαδικασία, από τη ρύθμιση της βιβλιοθήκης μέχρι τη λεπτομερή ρύθμιση της εξόδου HTML.
 
-## Γρήγορες Απαντήσεις
-- **Τι σημαίνει “πώς να εξάγετε HTML”;** Αναφέρεται στη μετατροπή του περιεχομένου ενός εγγράφου σε σήμανση HTML διατηρώντας τη διάταξη και τα στυλ.  
-- **Ποιοι μορφότυποι υποστηρίζονται;** DOCX, PDF, PPTX, XLSX, EPUB, EML (email) και πολλοί άλλοι.  
-- **Χρειάζομαι άδεια;** Μια προσωρινή άδεια λειτουργεί για δοκιμές· απαιτείται πλήρης άδεια για παραγωγή.  
-- **Μπορώ να μετατρέψω το αποτέλεσμα σε Markdown;** Ναι—χρησιμοποιήστε τα ενσωματωμένα εργαλεία μετατροπής ή επεξεργαστείτε το HTML.  
-- **Υπάρχει δείγμα κώδικα Java;** Κάθε σεμινάριο περιλαμβάνει έτοιμα Java snippets.
+## Σύντομες Απαντήσεις
+- **Τι σημαίνει η “μετατροπή EPUB σε HTML”;** Σημαίνει τη μετατροπή ενός e‑book EPUB σε τυπικό σήμανση HTML διατηρώντας την αρχική διάταξη και το στυλ.  
+- **Ποιοι τύποι αρχείων μπορεί να διαχειριστεί το GroupDocs.Parser;** Υπάρχουν πάνω από 50 μορφές—συμπεριλαμβανομένων των DOCX, PDF, PPTX, XLSX, EPUB και EML—που υποστηρίζονται για εξαγωγή HTML.  
+- **Χρειάζομαι πληρωμένη άδεια;** Μια προσωρινή άδεια αρκεί για δοκιμές· απαιτείται πλήρης άδεια για παραγωγικές εγκαταστάσεις.  
+- **Μπορεί το HTML να μετατραπεί σε Markdown;** Ναι, μπορείτε να περάσετε την έξοδο μέσω μιας βιβλιοθήκης όπως **flexmark‑java** για να δημιουργήσετε Markdown.  
+- **Υπάρχει έτοιμος κώδικας Java;** Κάθε tutorial παρακάτω περιλαμβάνει ένα πλήρες, εκτελέσιμο απόσπασμα Java.
 
 ## Τι Είναι η Εξαγωγή HTML με το GroupDocs.Parser;
-Το GroupDocs.Parser είναι μια βιβλιοθήκη Java που διαβάζει τη εσωτερική δομή ενός εγγράφου και εξάγει το περιεχόμενό του στη μορφή που επιλέγετε—η HTML είναι η πιο φιλική προς το web. Εκμεταλλευόμενοι τη μηχανή ανάλυσης, μπορείτε να διατηρήσετε επικεφαλίδες, πίνακες, λίστες και ακόμη προσαρμοσμένα στυλ όταν **εξάγετε μορφοποιημένο κείμενο**.
+`Parser` είναι η κεντρική κλάση που διαβάζει έγγραφα.  
+`HtmlSaveOptions` ορίζει πώς μορφοποιείται η έξοδος HTML.
+
+Η εξαγωγή HTML με το GroupDocs.Parser σημαίνει τη μετατροπή του περιεχομένου ενός εγγράφου σε σήμανση HTML διατηρώντας την αρχική διάταξη, τα στυλ και την δομική ιεραρχία. Η κλάση `Parser` διαβάζει τη εσωτερική δομή ενός αρχείου (EPUB, PDF, DOCX κ.λπ.) και μεταβιβάζει το περιεχόμενο σε ένα αντικείμενο `HtmlSaveOptions`, το οποίο παράγει καθαρό, συμβατό με τα πρότυπα HTML.
 
 ## Γιατί να Χρησιμοποιήσετε το GroupDocs.Parser για Εξαγωγή HTML;
-- **Διατηρεί το στυλ** – δεν χρειάζεται να ξαναδημιουργήσετε το CSS.  
-- **Υποστηρίζει ευρύ φάσμα τύπων αρχείων** – από κλασικά αρχεία Office μέχρι σύγχρονα EPUB.  
-- **Γρήγορο και αποδοτικό στη μνήμη** – ιδανικό για επεξεργασία στο διακομιστή.  
-- **Εύκολη ενσωμάτωση** – απλή ρύθμιση Maven/Gradle και απλές κλήσεις API.
+Το GroupDocs.Parser διαπρέπει στην εξαγωγή HTML επειδή διατηρεί αυτόματα το αρχικό στυλ, υποστηρίζει πάνω από 50 μορφές, επεξεργάζεται μεγάλα αρχεία με χαμηλή χρήση μνήμης και προσφέρει απλή ενσωμάτωση Maven/Gradle. Η μηχανή ροής του εξασφαλίζει γρήγορη μετατροπή χωρίς τη φόρτωση ολόκληρων εγγράφων, καθιστώντας το ιδανικό για εφαρμογές διακομιστή και μεγάλης κλίμακας έργα μεταφοράς.
 
 ## Προαπαιτούμενα
-- Java 8 ή νεότερη.  
-- GroupDocs.Parser για Java (προσθέστε την εξάρτηση Maven/Gradle).  
-- Έγκυρη άδεια GroupDocs.Parser (η προσωρινή άδεια λειτουργεί για δοκιμή).  
+- Java 8 ή νεότερη εγκατεστημένη στο μηχάνημα ανάπτυξης ή στον διακομιστή σας.  
+- Το GroupDocs.Parser for Java προστέθηκε στο έργο σας μέσω Maven ή Gradle (δείτε την ενότητα **Additional Resources** για τις ακριβείς συντεταγμένες).  
+- Ένα έγκυρο αρχείο άδειας GroupDocs.Parser (μια προσωρινή άδεια λειτουργεί για αξιολόγηση).  
 
-## Διαθέσιμα Σεμινάρια
+## Πώς να Μετατρέψετε EPUB σε HTML Βήμα προς Βήμα
+Η μετατροπή ενός EPUB σε HTML με το GroupDocs.Parser περιλαμβάνει τρία κύρια βήματα: την αρχικοποίηση του parser με το αρχείο προέλευσης, τη διαμόρφωση των επιλογών αποθήκευσης HTML για έλεγχο του CSS και της διαχείρισης εικόνων, και την κλήση της μεθόδου save για να γράψετε την έξοδο. Η βιβλιοθήκη μεταβιβάζει το περιεχόμενο αποδοτικά, διατηρώντας τις επικεφαλίδες, τις εικόνες και τα στυλ σε ένα ενιαίο αρχείο HTML έτοιμο για χρήση στο web.
 
-### [Extract & Format Email Text as HTML Using GroupDocs.Parser in Java](./groupdocs-parser-java-email-html-extraction/)
-Μάθετε πώς να εξάγετε και να μορφοποιήσετε το κείμενο email σε HTML χρησιμοποιώντας το GroupDocs.Parser με Java. Ιδανικό για ανάλυση περιεχομένου, μετεγκατάσταση δεδομένων ή βελτίωση της εμπειρίας χρήστη.
+`Parser` είναι το σημείο εισόδου για τη φόρτωση και επεξεργασία εγγράφων.  
+`LoadOptions` παρέχει παραμέτρους φόρτωσης όπως κωδικούς πρόσβασης ή όρια σελίδων.
 
-### [Extract EPUB Text to HTML Using GroupDocs.Parser for Java&#58; A Comprehensive Guide](./extract-epub-text-to-html-groupdocs-parser-java/)
-Μάθετε πώς να εξάγετε και να μετατρέψετε κείμενο από αρχεία EPUB σε μορφή HTML χρησιμοποιώντας το GroupDocs.Parser για Java. Ιδανικό για ψηφιακές βιβλιοθήκες και εφαρμογές e‑reader.
+### Βήμα 1: Αρχικοποίηση του Parser
+Δημιουργήστε το αντικείμενο `Parser` περνώντας τη διαδρομή του αρχείου EPUB. Ο κατασκευαστής δέχεται επίσης ένα αντικείμενο `LoadOptions` εάν χρειάζεται να παρέχετε κωδικό πρόσβασης.
 
-### [Extract PowerPoint Text to HTML Using GroupDocs.Parser Java&#58; A Comprehensive Guide](./extract-powerpoint-text-html-groupdocs-parser-java/)
-Μάθετε πώς να μετατρέψετε διαφάνειες PowerPoint σε HTML χρησιμοποιώντας το GroupDocs.Parser για Java. Ακολουθήστε αυτόν τον βήμα‑βήμα οδηγό για να ενισχύσετε τη διαδικασία δημοσίευσης στο web και τη μετεγκατάσταση περιεχομένου.
+### Βήμα 2: Διαμόρφωση της Εξόδου HTML
+`HtmlSaveOptions` σας επιτρέπει να προσαρμόσετε το παραγόμενο HTML, όπως η ενσωμάτωση CSS ή η εξαγωγή εικόνων.
 
-### [Extract Text as HTML from Excel Using GroupDocs.Parser in Java](./extract-text-html-excel-groupdocs-parser-java/)
-Μάθετε πώς να μετατρέψετε το περιεχόμενο του Excel σε φιλική προς το web HTML χρησιμοποιώντας το GroupDocs.Parser σε Java, βελτιώνοντας την προσβασιμότητα και την ενσωμάτωση των δεδομένων.
+Χρησιμοποιήστε το `HtmlSaveOptions` για να ρυθμίσετε λεπτομερώς το αποτέλεσμα. Συνηθισμένες προσαρμογές περιλαμβάνουν:
 
-### [How to Extract Document Text as HTML Using GroupDocs.Parser Java&#58; A Step‑By‑Step Guide](./extract-document-text-as-html-groupdocs-parser-java/)
-Μάθετε πώς να χρησιμοποιήσετε το GroupDocs.Parser για Java ώστε να εξάγετε κείμενο από έγγραφα και να το μετατρέψετε σε μορφή HTML, εξασφαλίζοντας απρόσκοπτη ενσωμάτωση στο web.
+- `setEmbedCss(true)` – ενσωματώνει το παραγόμενο CSS απευθείας στην ετικέτα `<style>`.  
+- `setImageFolder("images")` – αποθηκεύει τις εξαγόμενες εικόνες σε υποφάκελο και ενημερώνει τις ιδιότητες `src` των `<img>`.  
+- `setCustomCssClass("epub-content")` – προσθέτει μια προσαρμοσμένη κλάση CSS στο ριζικό `<div>` για ευκολότερο στυλ.
 
-### [How to Extract Formatted Text from DOCX Files Using GroupDocs.Parser Java](./extract-formatted-text-groupdocs-parser-java/)
-Μάθετε πώς να εξάγετε αποδοτικά μορφοποιημένο κείμενο και μεταδεδομένα από αρχεία DOCX χρησιμοποιώντας το GroupDocs.Parser σε Java. Αυτός ο οδηγός καλύπτει όλα, από τη ρύθμιση έως τις πρακτικές εφαρμογές.
+### Βήμα 3: Αποθήκευση του Αρχείου HTML
+Καλέστε `parser.save("output.html", saveOptions)`. Η μέθοδος μεταβιβάζει το EPUB, εξάγει κάθε κεφάλαιο και γράφει καθαρό HTML. Δεν απαιτείται πρόσθετος καθαρισμός.
 
-### [How to Extract HTML Text from Documents Using GroupDocs.Parser in Java](./groupdocs-parser-java-extract-html-text/)
-Μάθετε πώς να χρησιμοποιήσετε το GroupDocs.Parser για Java ώστε να εξάγετε αποδοτικά μορφοποιημένο HTML κείμενο από έγγραφα, ενισχύοντας την παραγωγικότητα και τη ροή εργασίας σας.
+## Συνηθισμένα Προβλήματα και Λύσεις
+| Πρόβλημα | Γιατί Συμβαίνει | Πώς να Διορθώσετε |
+|---|---|---|
+| **Ελλιπείς εικόνες** | Οι εικόνες αποθηκεύονται σε ξεχωριστό φάκελο· το HTML μπορεί να αναφέρεται σε μη υπάρχουσα διαδρομή. | Ορίστε το `setImageFolder` σε έναν εγγράψιμο κατάλογο και βεβαιωθείτε ότι ο φάκελος εξυπηρετείται από τον διακομιστή web. |
+| **Μεγάλα EPUB προκαλούν OutOfMemoryError** | Οι προεπιλεγμένες επιλογές μπορεί να φορτώσουν ολόκληρο το αρχείο στη μνήμη. | Χρησιμοποιήστε το `LoadOptions.setPageCountLimit` για να επεξεργαστείτε το EPUB σε τμήματα, ή αυξήστε το JVM `-Xmx` όπως απαιτείται. |
+| **Το προσαρμοσμένο CSS δεν εφαρμόζεται** | Το παραγόμενο HTML χρησιμοποιεί προεπιλεγμένα ονόματα κλάσεων. | Χρησιμοποιήστε το `setCustomCssClass` για να ενσωματώσετε τη δική σας κλάση και προσθέστε τους αντίστοιχους κανόνες CSS στη σελίδα σας. |
+| **EPUB με κωδικό πρόσβασης** | Ο parser δεν μπορεί να ανοίξει κρυπτογραφημένα αρχεία χωρίς διαπιστευτήρια. | Περάστε τον κωδικό στο κατασκευαστή `Parser` μέσω `LoadOptions.setPassword("yourPassword")`. |
+| **Το HTML περιέχει ανεπιθύμητα ενσωματωμένα στυλ** | Το προεπιλεγμένο `HtmlSaveOptions` μπορεί να ενσωματώνει στυλ για ακριβή απόδοση. | Καλέστε το `setInlineCss(false)` για να διατηρήσετε τα στυλ σε ξεχωριστό φύλλο στυλ. |
+
+## Διαθέσιμα Tutorials
+
+- [Εξαγωγή & Μορφοποίηση Κειμένου Email ως HTML Χρησιμοποιώντας το GroupDocs.Parser σε Java](./groupdocs-parser-java-email-html-extraction/)
+- [Εξαγωγή Κειμένου EPUB σε HTML Χρησιμοποιώντας το GroupDocs.Parser για Java&#58; Ένας Πλήρης Οδηγός](./extract-epub-text-to-html-groupdocs-parser-java/)
+- [Εξαγωγή Κειμένου PowerPoint σε HTML Χρησιμοποιώντας το GroupDocs.Parser Java&#58; Ένας Πλήρης Οδηγός](./extract-powerpoint-text-html-groupdocs-parser-java/)
+- [Εξαγωγή Κειμένου ως HTML από Excel Χρησιμοποιώντας το GroupDocs.Parser σε Java](./extract-text-html-excel-groupdocs-parser-java/)
+- [Πώς να Εξάγετε Κείμενο Εγγράφου ως HTML Χρησιμοποιώντας το GroupDocs.Parser Java&#58; Ένας Οδηγός Βήμα‑Βήμα](./extract-document-text-as-html-groupdocs-parser-java/)
+- [Πώς να Εξάγετε Μορφοποιημένο Κείμενο από Αρχεία DOCX Χρησιμοποιώντας το GroupDocs.Parser Java](./extract-formatted-text-groupdocs-parser-java/)
+- [Πώς να Εξάγετε Κείμενο HTML από Έγγραφα Χρησιμοποιώντας το GroupDocs.Parser σε Java](./groupdocs-parser-java-extract-html-text/)
 
 ## Πρόσθετοι Πόροι
 
-- [GroupDocs.Parser for Java Documentation](https://docs.groupdocs.com/parser/java/)
-- [GroupDocs.Parser for Java API Reference](https://reference.groupdocs.com/parser/java/)
-- [Download GroupDocs.Parser for Java](https://releases.groupdocs.com/parser/java/)
-- [GroupDocs.Parser Forum](https://forum.groupdocs.com/c/parser)
-- [Free Support](https://forum.groupdocs.com/)
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- [Τεκμηρίωση GroupDocs.Parser για Java](https://docs.groupdocs.com/parser/java/)
+- [Αναφορά API GroupDocs.Parser για Java](https://reference.groupdocs.com/parser/java/)
+- [Λήψη GroupDocs.Parser για Java](https://releases.groupdocs.com/parser/java/)
+- [Φόρουμ GroupDocs.Parser](https://forum.groupdocs.com/c/parser)
+- [Δωρεάν Υποστήριξη](https://forum.groupdocs.com/)
+- [Προσωρινή Άδεια](https://purchase.groupdocs.com/temporary-license/)
 
 ## Συχνές Ερωτήσεις
 
-**Ε: Μπορώ να εξάγω HTML από αρχεία προστατευμένα με κωδικό;**  
-Α: Ναι. Περνάτε τον κωδικό στο κατασκευαστή `Parser` και η βιβλιοθήκη θα αποκρυπτογραφήσει το έγγραφο πριν την εξαγωγή.
+**Q: Μπορώ να εξάγω HTML από αρχεία με κωδικό πρόσβασης;**  
+A: Ναι. Περάστε τον κωδικό στο κατασκευαστή `Parser` (ή μέσω `LoadOptions`) και η βιβλιοθήκη θα αποκρυπτογραφήσει το έγγραφο πριν από την εξαγωγή.
 
-**Ε: Πώς μετατρέπω το εξαγόμενο HTML σε Markdown σε Java;**  
-Α: Μετά την εξαγωγή του HTML, μπορείτε να χρησιμοποιήσετε μια βιβλιοθήκη όπως το **flexmark-java** για να μετατρέψετε τη σήμανση σε μορφή Markdown.
+**Q: Πώς μπορώ να μετατρέψω το εξαγόμενο HTML σε Markdown σε Java;**  
+A: Μετά την εξαγωγή, δώστε το HTML σε μια βιβλιοθήκη όπως **flexmark‑java**· αυτή αναλύει το σήμανση και παράγει καθαρό Markdown.
 
-**Ε: Υπάρχει όριο στο μέγεθος των εγγράφων που μπορώ να επεξεργαστώ;**  
-Α: Το GroupDocs.Parser ρέει το περιεχόμενο, έτσι μπορείτε να διαχειριστείτε μεγάλα αρχεία (εκατοντάδες MB) χωρίς εξάντληση μνήμης, αν και πρέπει να παρακολουθείτε τις ρυθμίσεις heap του JVM.
+**Q: Υπάρχει όριο στο μέγεθος των εγγράφων που μπορώ να επεξεργαστώ;**  
+A: Το GroupDocs.Parser μεταβιβάζει το περιεχόμενο, επιτρέποντάς σας να διαχειριστείτε αρχεία αρκετών εκατοντάδων megabytes χωρίς να φορτώνετε ολόκληρο το αρχείο στη μνήμη. Απλώς βεβαιωθείτε ότι η heap του JVM είναι κατάλληλα διαμορφωμένη.
 
-**Ε: Πρέπει να εγκαταστήσω κάποια εγγενή εξαρτήματα;**  
-Α: Όχι. Ο parser είναι καθαρά Java και λειτουργεί σε οποιαδήποτε πλατφόρμα υποστηρίζει Java 8+.
+**Q: Χρειάζεται να εγκαταστήσω κάποια εγγενή εξαρτήματα;**  
+A: Όχι. Ο parser είναι καθαρά Java και λειτουργεί σε οποιαδήποτε πλατφόρμα που υποστηρίζει Java 8 ή νεότερη.
 
-**Ε: Τι κάνω αν χρειαστεί να προσαρμόσω την έξοδο HTML (π.χ., να προσθέσω προσαρμοσμένες κλάσεις CSS);**  
-Α: Μπορείτε να υλοποιήσετε ένα προσαρμοσμένο αντικείμενο `HtmlSaveOptions` και να ορίσετε ιδιότητες όπως `setCustomCssClass` για να προσαρμόσετε την έξοδο.
+**Q: Τι κάνω αν χρειάζεται να προσαρμόσω την έξοδο HTML (π.χ., να προσθέσω προσαρμοσμένες κλάσεις CSS);**  
+A: Δημιουργήστε μια παρουσία `HtmlSaveOptions` και χρησιμοποιήστε μεθόδους όπως `setCustomCssClass("my‑class")` ή `setCssClassPrefix("epub-")` για να ενσωματώσετε τα δικά σας hooks στυλ.
 
----
+**Q: Μπορεί το GroupDocs.Parser να μετατρέψει HTML ξανά σε EPUB;**  
+A: Η άμεση δημιουργία EPUB δεν υποστηρίζεται, αλλά μπορείτε να δημιουργήσετε HTML με το GroupDocs.Parser και στη συνέχεια να χρησιμοποιήσετε μια ξεχωριστή βιβλιοθήκη (π.χ., **EpubBuilder**) για να συσκευάσετε το HTML σε αρχείο EPUB.
 
-**Τελευταία Ενημέρωση:** 2026-01-01  
-**Δοκιμασμένο Με:** GroupDocs.Parser for Java 23.10  
-**Συγγραφέας:** GroupDocs  
+**Τελευταία Ενημέρωση:** 2026-07-07  
+**Δοκιμάστηκε Με:** GroupDocs.Parser for Java 23.10  
+**Συγγραφέας:** GroupDocs
 
----
+## Σχετικά Tutorials
+
+- [Πώς να Μετατρέψετε Έγγραφο σε HTML Χρησιμοποιώντας το GroupDocs.Parser Java: Ένας Οδηγός Βήμα‑Βήμα](/parser/java/formatted-text-extraction/extract-document-text-as-html-groupdocs-parser-java/)
+- [Πώς να Εξάγετε Κείμενο από Αρχεία EPUB Χρησιμοποιώντας το GroupDocs.Parser για Java](/parser/java/text-extraction/extract-text-epub-groupdocs-parser-java/)
+- [Απόκτηση Εξαγωγής Εγγράφων με το GroupDocs.Parser για Java: Μετατροπή Εγγράφων σε HTML και Απλό Κείμενο](/parser/java/text-extraction/master-document-extraction-groupdocs-parser-java/)

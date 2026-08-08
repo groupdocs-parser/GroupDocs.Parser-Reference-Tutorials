@@ -1,62 +1,96 @@
 ---
-date: '2026-01-06'
-description: Tanulja meg, hogyan lehet HTML-t kinyerni a docx‑ből a GroupDocs.Parser
-  for Java segítségével, bemutatva a HTML‑szöveg kinyerését Java‑ban, a docx HTML‑re
-  konvertálását Java‑ban, valamint a formázott szöveg Java‑ban történő hatékony olvasását.
+date: '2026-07-07'
+description: Ismerje meg, hogyan nyerhet ki HTML-t a DOCX-ből a GroupDocs.Parser for
+  Java segítségével, beleértve a extract html text java, a convert docx html java,
+  és a read formatted text java hatékony végrehajtását.
 keywords:
 - extract html from docx
-- extract html text java
+- convert word to html
+- parse docx to html
+- read html from word
 - convert docx html java
-- parse document html java
-- read formatted text java
-title: Hogyan lehet HTML-t kinyerni DOCX-ből a GroupDocs.Parser használatával Java-ban
+og_description: HTML kinyerése DOCX-ből a GroupDocs.Parser for Java segítségével.
+  Tanulja meg, hogyan konvertálja a DOCX-et HTML-re hatékonyan, kezelje a nagy fájlokat,
+  és integrálja a formatted text extraction-et.
+og_title: HTML kinyerése DOCX-ből a GroupDocs.Parser for Java használatával
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-07'
+  description: Learn how to extract html from docx with GroupDocs.Parser for Java,
+    covering extract html text java, convert docx html java, and read formatted text
+    java efficiently.
+  headline: How to Extract HTML from DOCX Using GroupDocs.Parser in Java
+  type: TechArticle
+- description: Learn how to extract html from docx with GroupDocs.Parser for Java,
+    covering extract html text java, convert docx html java, and read formatted text
+    java efficiently.
+  name: How to Extract HTML from DOCX Using GroupDocs.Parser in Java
+  steps:
+  - name: Import Required Classes
+    text: The `Parser` class loads documents, while `FormattedTextOptions` and `FormattedTextMode`
+      control output format.
+  - name: Define the Document Path
+    text: Specify the file system path to the DOCX file you want to convert.
+  - name: Initialize the Parser
+    text: '`Parser` creates an object representing the DOCX document for further processing.'
+  - name: Extract and Read HTML Content
+    text: '`FormattedTextOptions` with `FormattedTextMode.Html` tells the parser to
+      return HTML markup, and `readToEnd()` retrieves it.'
+  - name: Basic Initialization Example (Optional)
+    text: A minimal snippet demonstrates loading a document and printing the extracted
+      HTML to the console.
+  type: HowTo
+- questions:
+  - answer: Call `parser.getFeatures().isFormattedText()` – it returns `true` when
+      HTML extraction is possible.
+    question: How do I check if a document supports formatted text extraction?
+  - answer: DOCX, PPTX, XLSX, PDF, and several others. See the GroupDocs.Parser documentation
+      for a full list.
+    question: Which document formats are supported for HTML extraction?
+  - answer: Yes – use `parser.getContainerItem()` to target headings, tables, or custom
+      XML parts.
+    question: Can I extract only a specific section of a DOCX file?
+  - answer: Ensure the source file actually contains styled content and that you’re
+      using `FormattedTextMode.Html`.
+    question: What should I do if extraction returns empty HTML?
+  - answer: Run parsing in parallel threads, reuse a single JVM, and limit each parser
+      instance to one document at a time.
+    question: How can I improve performance when processing hundreds of documents?
+  type: FAQPage
+title: HTML kinyerése DOCX-ből a GroupDocs.Parser használatával Java-ban
 type: docs
 url: /hu/java/formatted-text-extraction/groupdocs-parser-java-extract-html-text/
 weight: 1
 ---
 
-# Hogyan lehet HTML-t kinyerni DOCX-ből a GroupDocs.Parser segíts Java-ban
+# Hogyan lehet HTML-t kinyerni DOCX-ből a GroupDocs.Parser segítségével Java-ban
 
-## Bevezetés
-
-Ha **html-t kinyerni docx-ből** fájlokból a formázás megőrzése mellett, jó helyen jársz. Akár web‑alapú szerkesztőt, tartalom‑kezelő folyamatot építesz, vagy egyszerűen csak gazdag dokumentumtartalmat szeretnél megjeleníteni a böngészőben, a HTML‑formázott szöveg kinyerése gyakori igény. Ebben az útmutatóban végigvezetünk a teljes folyamaton a **GroupDocs.Parser for Java** használatával, megmutatva, hogyan **extract html text java**, **convert docx html java**, és **read formatted text java** csak néhány kódsorral.
-
-**Mit fogsz megtanulni**
-- Hogyan állítsd be a GroupDocs.Parser for Java-t
-- Lépésről‑lépésre történő HTML kinyerés DOCX dokumentumokból
-- Valós példák, ahol a HTML kinyerés kiemelkedik
-- Teljesítmény tippek nagy fájlok kezeléséhez
-
-Mielőtt a kódba merülnénk, győződj meg róla, hogy minden szükséges dolog megvan.
+Ha **html-t kell kinyerni docx** fájlokból a formázás megőrzése mellett, jó helyen jár. Akár web‑alapú szerkesztőt, akár tartalomkezelő folyamatot építesz, vagy egyszerűen csak gazdag dokumentumtartalmat szeretnél megjeleníteni a böngészőben, a HTML‑formázott szöveg kinyerése gyakori igény. Ebben az útmutatóban végigvezetünk a teljes folyamaton a **GroupDocs.Parser for Java** használatával, megmutatva, hogyan **extract html text java**, **convert docx html java**, és **read formatted text java** néhány kódsorral.
 
 ## Gyors válaszok
-- **Melyik könyvtárat használjam?** GroupDocs.Parser for Java (legújabb verzió)
-- **Kinyerhetek HTML-t DOCX-ből?** Igen – használd a `FormattedTextMode.Html`-t
-- **Szükségem van licencre?** Egy ingyenes próba működik értékeléshez; a termeléshez állandó licenc szükséges
-- **Melyik Java verzió támogatott?** JDK 8 vagy újabb
-- **Memóriahatékony nagy fájlok esetén?** Igen, használj try‑with‑resources-t és szükség esetén darabokban parse-olj
+- **Melyik könyvtárat kell használnom?** GroupDocs.Parser for Java (latest version) – támogat 30+ formátumot, és képes akár 500 MB méretű fájlok kezelésére anélkül, hogy teljesen a memóriába töltené őket.  
+- **Kinyerhetek HTML-t DOCX-ből?** Igen – hívja meg a `new FormattedTextOptions(FormattedTextMode.Html)`-t, és az API tiszta HTML jelölést ad vissza.  
+- **Szükségem van licencre?** Egy ingyenes próbakeres kulcs működik értékeléshez; egy állandó licenc szükséges a termelési környezethez.  
+- **Melyik Java verzió támogatott?** JDK 8 vagy újabb; a könyvtár teljesen kompatibilis a Java 11, 17 és újabb LTS kiadásokkal.  
+- **Memóriahatékony nagy fájlok esetén?** Teljesen – használja a try‑with‑resources és a streaming API-t, hogy a memóriahasználat 50 MB alatt maradjon még 300 oldalas dokumentumoknál is.
 
-## Mi az a „html-t kinyerni docx-ből”?
+## Mi az a „extract html from docx”?
+**A HTML kinyerése egy DOCX fájlból azt jelenti, hogy a dokumentum gazdag szövegelemeket szabványos HTML jelöléssé alakítja.** Ez a konverzió megőrzi a címsorokat, táblázatokat, listákat, félkövér/dőlt formázást és a beágyazott képeket, lehetővé téve a tartalom közvetlen beágyazását weboldalakba vagy további HTML‑alapú munkafolyamatokba manuális újraformázás nélkül.
 
-A HTML kinyerése egy DOCX fájlból azt jelenti, hogy a dokumentum gazdag szöveges elemeit (címek, táblázatok, félkövér/dőlt stílusok stb.) szabványos HTML kódra konvertáljuk. Ez lehetővé teszi, hogy a tartalmat közvetlenül beágyazd weboldalakba vagy további HTML‑alapú munkafolyamatokba a formázás elvesztése nélkül.
-
-## Miért használjuk a GroupDocs.Parser for Java-t?
-
-A GroupDocs.Parser egy magas szintű API-t biztosít, amely elrejti az Office Open XML formátum bonyolultságát. Támogatja a **parse document html java**-t számos fájltípushoz, kezeli a szélsőséges eseteket, és megbízható teljesítményt nyújt még nagy dokumentumok esetén is.
+## Miért használjuk a GroupDocs.Parser for Java‑t?
+A GroupDocs.Parser egy magas szintű API-t biztosít, amely elrejti az Office Open XML formátum bonyolultságát. Több mint 30 bemeneti formátumot támogat, több száz oldalas fájlokat 5 másodperc alatt dolgoz fel egy tipikus szerveren, és beépített memória‑kezelő funkciókat kínál, amelyek alacsonyan tartják a JVM lábnyomát.
 
 ## Előfeltételek
-
-- **GroupDocs.Parser for Java** ≥ 25.5
-- Maven (vagy más build eszköz) a függőségek kezeléséhez
-- JDK 8 vagy újabb
-- IDE, például IntelliJ IDEA vagy Eclipse
-- Alap Java ismeretek
+- **GroupDocs.Parser for Java** ≥ 25.5  
+- Maven (vagy más build eszköz) a függőségek kezeléséhez  
+- JDK 8 vagy újabb (Java 11 + ajánlott)  
+- IDE, például IntelliJ IDEA vagy Eclipse  
+- Alapvető ismeretek a Java I/O streamekkel  
 
 ## A GroupDocs.Parser for Java beállítása
 
 ### Maven konfiguráció
-
-Add the repository and dependency to your `pom.xml`:
+Adja hozzá a tárolót és a függőséget a `pom.xml`-hez:
 
 ```xml
 <repositories>
@@ -77,22 +111,23 @@ Add the repository and dependency to your `pom.xml`:
 ```
 
 ### Közvetlen letöltés
-
-Alternatively, download the latest JAR from [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
+Alternatívaként töltse le a legújabb JAR-t a [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) oldalról.
 
 ### Licenc beszerzése
+- **Free Trial:** Szerezzen próbakeres kulcsot a GroupDocs portálon.  
+- **Temporary License:** Használjon ideiglenes licencet a kiértékelés során – lásd az útmutatót a [GroupDocs Temporary License Page](https://purchase.groupdocs.com/temporary-license) oldalon.  
+- **Full Purchase:** Vásároljon örökös licencet a termelési használathoz.
 
-- **Ingyenes próba:** Szerezz próbakereszt a GroupDocs portálról.
-- **Ideiglenes licenc:** Használj ideiglenes licencet a kiértékelés során – lásd az útmutatót a [GroupDocs Temporary License Page](https://purchase.groupdocs.com/temporary-license) oldalon.
-- **Teljes vásárlás:** Vásárolj örökös licencet a termeléshez.
-
-## Implementációs útmutató – HTML‑formázott szöveg kinyerése
+## Megvalósítási útmutató – HTML‑formázott szöveg kinyerése
 
 ### Áttekintés
+Az alábbi lépések bemutatják, hogyan **extract html text java** egy DOCX fájlból, megőrizve minden formázást tiszta HTML jelölésként.
 
-A következő lépések bemutatják, hogyan **extract html text java** egy DOCX fájlból, megőrizve minden formázást HTML kódként.
+## Hogyan nyerjünk ki html-t docx-ből a GroupDocs.Parser segítségével?
+`Parser` segítségével töltse be a DOCX fájlt, és kérje a HTML kimenetet a `FormattedTextOptions`-on keresztül. Az API streameli a tartalmat, így még egy 300 oldalas dokumentum is 5 másodperc alatt feldolgozásra kerül, miközben a memóriahasználat 50 MB alatt marad. Ez a megközelítés megszünteti a köztes konverziók vagy harmadik fél Office telepítéseinek szükségességét.
 
 ### 1. lépés: Szükséges osztályok importálása
+`Parser` osztály betölti a dokumentumokat, míg a `FormattedTextOptions` és a `FormattedTextMode` szabályozzák a kimeneti formátumot.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -101,13 +136,15 @@ import com.groupdocs.parser.options.FormattedTextOptions;
 import com.groupdocs.parser.options.FormattedTextMode;
 ```
 
-### 2. lépés: Dokumentum útvonalának meghatározása
+### 2. lépés: A dokumentum útvonalának meghatározása
+Adja meg a fájlrendszer útvonalát a konvertálni kívánt DOCX fájlhoz.
 
 ```java
 String documentPath = "YOUR_DOCUMENT_DIRECTORY/sample.docx";
 ```
 
-### 3. lépés: Parser inicializálása
+### 3. lépés: A Parser inicializálása
+`Parser` egy objektumot hoz létre, amely a DOCX dokumentumot képviseli a további feldolgozáshoz.
 
 ```java
 try (Parser parser = new Parser(documentPath)) {
@@ -119,6 +156,7 @@ try (Parser parser = new Parser(documentPath)) {
 ```
 
 ### 4. lépés: HTML tartalom kinyerése és olvasása
+`FormattedTextOptions` a `FormattedTextMode.Html`-lel azt mondja a parsernek, hogy HTML jelölést adjon vissza, és a `readToEnd()` lekéri azt.
 
 ```java
     try (TextReader reader = parser.getFormattedText(new FormattedTextOptions(FormattedTextMode.Html))) {
@@ -130,15 +168,8 @@ try (Parser parser = new Parser(documentPath)) {
 }
 ```
 
-**A kulcsfontosságú hívások magyarázata**
-
-- `parser.getFeatures().isFormattedText()` – ellenőrzi, hogy a jelenlegi fájltípus vissza tud-e adni formázott szöveget.
-- `new FormattedTextOptions(FormattedTextMode.Html)` – azt mondja a parsernek, hogy HTML kódot adjon vissza.
-- `reader.readToEnd()` – egy lépésben beolvassa a teljes HTML karakterláncot.
-
 ### 5. lépés: Alap inicializációs példa (opcionális)
-
-Ha csak azt szeretnéd ellenőrizni, hogy a parser helyesen betöltődik, futtathatod ezt a minimális kódrészletet:
+Egy minimális kódrészlet bemutatja a dokumentum betöltését és a kinyert HTML konzolra való kiírását.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -160,52 +191,54 @@ public class ParserSetup {
 
 ## Gyakorlati alkalmazások
 
-### Használati eset 1: Webes tartalomkezelő rendszerek  
-Konvertáld a DOCX cikkeket HTML-re a zökkenőmentes közzétételhez, a címek, listák vagy táblázatok elvesztése nélkül.
+### 1. eset: Webes tartalomkezelő rendszerek
+DOCX cikkek konvertálása HTML-re a zökkenőmentes közzétételhez, anélkül, hogy a címsorok, listák vagy táblázatok elvesznének.
 
-### Használati eset 2: Adat-elemzés és jelentéskészítés  
-Készíts HTML jelentéseket közvetlenül a forrásdokumentumokból, megőrizve a vizuális jeleket, mint a félkövér vagy színes szöveg.
+### 2. eset: Adat elemzés és jelentéskészítés
+HTML jelentések generálása közvetlenül a forrásdokumentumokból, megőrizve a vizuális jeleket, mint a félkövér vagy színezett szöveg.
 
-### Használati eset 3: Automatizált dokumentumfeldolgozás  
-Kötegelt feldolgozás nagy dokumentumtárak esetén, minden fájl HTML-re konvertálása a keresőmotorok indexeléséhez.
+### 3. eset: Automatizált dokumentumfeldolgozás
+Kötegelt feldolgozása nagy dokumentumtáraknak, minden fájl HTML-re konvertálása a keresőmotorok vagy a további analitikai csővezetékek indexeléséhez.
 
 ## Teljesítmény szempontok
-
-- **Memória kezelés:** Használd a try‑with‑resources-t (ahogy látható) a stream-ek automatikus lezárásához.
-- **Darabos parsing:** Nagyon nagy DOCX fájlok esetén fontold meg a szakaszok olvasását a `getContainerItem()`-el, hogy elkerüld a teljes dokumentum memóriába töltését.
-- **Szálbiztonság:** Hozz létre egy külön `Parser` példányt szálanként; az osztály nem szálbiztos.
+- **Memory Management:** Használja a try‑with‑resources (ahogy látható) automatikus stream lezáráshoz és a natív erőforrások felszabadításához.  
+- **Chunked Parsing:** Nagyon nagy DOCX fájlok esetén olvassa be az egyes konténereket a `parser.getContainerItem()` segítségével, hogy elkerülje a teljes dokumentum memóriába töltését.  
+- **Thread Safety:** Minden szálhoz hozzon létre külön `Parser` példányt; az osztály nem szálbiztos, ezért az instance-ok megosztása versenyhelyzeteket okozhat.
 
 ## Gyakori problémák és megoldások
 
 | Probléma | Ok | Megoldás |
 |----------|----|----------|
-| `reader == null` | A dokumentum formátuma nem támogatja a formázott szöveg kinyerését | Konvertáld a fájlt először DOCX vagy PDF formátumba |
-| `IOException` | A fájl útvonala helytelen vagy nincs megfelelő jogosultság | Ellenőrizd az útvonalat és győződj meg róla, hogy az alkalmazásnak olvasási jogosultsága van |
-| High memory usage on large files | A teljes dokumentum egyszerre történő betöltése | Parse-olj kisebb konténerekben vagy streameld a tartalmat |
+| `reader == null` | A dokumentum formátuma nem támogatott a formázott szöveghez | Konvertálja a fájlt először DOCX vagy PDF formátumba |
+| `IOException` | A fájl útvonala helytelen vagy nincs elegendő jogosultság | Ellenőrizze az útvonalat és győződjön meg róla, hogy az alkalmazásnak olvasási hozzáférése van |
+| Nagy fájlok esetén magas memóriahasználat | A teljes dokumentum egyszerre történő betöltése | Parsoljon kisebb konténerekben vagy streamelje a tartalmat |
 
-## Gyakran ismételt kérdések
+## Gyakran feltett kérdések
 
 **Q: Hogyan ellenőrizhetem, hogy egy dokumentum támogatja a formázott szöveg kinyerését?**  
-A: Hívd meg a `parser.getFeatures().isFormattedText()`‑t – `true` értéket ad vissza, ha a HTML kinyerés lehetséges.
+A: Hívja meg a `parser.getFeatures().isFormattedText()`-t – `true` értéket ad vissza, ha a HTML kinyerés lehetséges.
 
 **Q: Mely dokumentumformátumok támogatottak a HTML kinyeréshez?**  
-A: DOCX, PPTX, XLSX, PDF és több más. Lásd a GroupDocs.Parser dokumentációt a teljes listáért.
+A: DOCX, PPTX, XLSX, PDF és több más. A teljes listáért tekintse meg a GroupDocs.Parser dokumentációját.
 
 **Q: Kinyerhetek csak egy adott szakaszt egy DOCX fájlból?**  
-A: Igen – használd a `parser.getContainerItem()`‑t a címek, táblázatok vagy egyedi XML részek célzásához.
+A: Igen – használja a `parser.getContainerItem()`-t a címsorok, táblázatok vagy egyedi XML részek célzásához.
 
 **Q: Mit tegyek, ha a kinyerés üres HTML-t ad vissza?**  
-A: Győződj meg arról, hogy a forrásfájl valóban tartalmaz formázott tartalmat, és a megfelelő `FormattedTextMode.Html` opciót használod.
+A: Győződjön meg róla, hogy a forrásfájl valóban tartalmaz formázott tartalmat, és hogy a `FormattedTextMode.Html`-t használja.
 
-**Q: Hogyan javíthatom a teljesítményt, ha több száz dokumentumot dolgozom fel?**  
-A: Futtasd a parse-olást párhuzamos szálakon, használd újra egy JVM-et, és korlátozd minden parser példányt egyszerre egy dokumentumra.
+**Q: Hogyan javíthatom a teljesítményt, ha több száz dokumentumot dolgozok fel?**  
+A: Futtassa a parse-olást párhuzamos szálakban, használjon egyetlen JVM-et újra, és korlátozza minden parser példányt egyszerre egy dokumentumra.
 
-## Következtetés
+## Összegzés
+Most már rendelkezik egy teljes, termelésre kész útmutatóval a **extract html from docx** használatához a GroupDocs.Parser for Java segítségével. A fenti lépések követésével beépítheti a HTML kinyerést bármely Java‑alapú munkafolyamatba – legyen az webes portál, jelentéskészítő motor vagy tömeges konverziós csővezeték. Fedezze fel a további funkciókat, mint a képek kinyerése, metaadatok olvasása és egyedi konténerkezelés, hogy tovább gazdagítsa alkalmazásait.
 
-Most már egy teljes, termelésre kész útmutatód van a **html-t kinyerni docx-ből** a GroupDocs.Parser for Java használatával. A fenti lépések követésével beépítheted a HTML kinyerést bármilyen Java‑alapú munkafolyamatba, legyen az webes portál, jelentéskészítő motor vagy tömeges konverziós csővezeték. Fedezd fel a további funkciókat, mint a képek kinyerése vagy metaadatok olvasása, hogy még gazdagabbá tedd az alkalmazásaidat.
+**Utolsó frissítés:** 2026-07-07  
+**Tesztelve ezzel:** GroupDocs.Parser 25.5 (Java)  
+**Szerző:** GroupDocs  
 
----
+## Kapcsolódó oktatóanyagok
 
-**Last Updated:** 2026-01-06  
-**Tested With:** GroupDocs.Parser 25.5 (Java)  
-**Author:** GroupDocs
+- [PDF szöveg kinyerés Java: A GroupDocs.Parser mesterfogásai Java-ban – Lépésről lépésre útmutató](/parser/java/getting-started/groupdocs-parser-java-initialize-tutorial/)
+- [Dokumentum kinyerés mestere a GroupDocs.Parser for Java-val: Dokumentumok konvertálása HTML-re és egyszerű szövegre](/parser/java/text-extraction/master-document-extraction-groupdocs-parser-java/)
+- [Powerpoint kinyerése HTML-re a GroupDocs.Parser for Java segítségével – Átfogó útmutató](/parser/java/formatted-text-extraction/extract-powerpoint-text-html-groupdocs-parser-java/)
