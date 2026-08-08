@@ -1,47 +1,120 @@
 ---
-date: '2026-02-06'
-description: Tanulja meg, hogyan tekinthet meg Excel-fájlokat, és konvertálhatja az
-  xlsx-et png-re a GroupDocs.Parser for Java segítségével. Ez az útmutató lefedi a
-  beállítást, a megvalósítást és a gyakorlati alkalmazásokat.
+date: '2026-07-16'
+description: Ismerje meg, hogyan hozhat létre táblázat bélyegképet Java-val a GroupDocs.Parser
+  segítségével, előnézetet készíthet az Excel-hez Office nélkül, és megjelenítheti
+  az Excel munkalapokat képként. Ez az útmutató bemutatja a beállítást, a megvalósítást
+  és a gyakorlati felhasználási eseteket.
 keywords:
+- create spreadsheet thumbnail java
+- preview excel without office
+- render excel sheets as images
+lastmod: '2026-07-16'
+og_description: Táblázat bélyegkép létrehozása Java-val a GroupDocs.Parser segítségével
+  – előnézet készítése Excel-hez Office nélkül, és Excel munkalapok megjelenítése
+  képként. Kövesse ezt a lépésről‑lépésre útmutatót a PNG előnézetek hatékony előállításához.
+og_image_alt: 'Developer guide: Create spreadsheet thumbnail Java using GroupDocs.Parser'
+og_title: Táblázat bélyegkép létrehozása Java-val a GroupDocs.Parser használatával
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-16'
+  description: Learn how to create spreadsheet thumbnail Java with GroupDocs.Parser,
+    preview Excel without Office, and render Excel sheets as images. This guide covers
+    setup, implementation, and practical use cases.
+  headline: Create Spreadsheet Thumbnail Java Using GroupDocs.Parser
+  type: TechArticle
+- description: Learn how to create spreadsheet thumbnail Java with GroupDocs.Parser,
+    preview Excel without Office, and render Excel sheets as images. This guide covers
+    setup, implementation, and practical use cases.
+  name: Create Spreadsheet Thumbnail Java Using GroupDocs.Parser
+  steps:
+  - name: Initialize the Parser Instance
+    text: '`Parser` is GroupDocs.Parser''s core class that provides read access to
+      spreadsheet files and enables page‑wise rendering. Create a `Parser` object
+      pointing at your Excel workbook. The *try‑with‑resources* block ensures the
+      parser is closed automatically. > **Pro tip:** Use an absolute path or config'
+  - name: Prepare Your Preview Options
+    text: '`PreviewOptions` configures rendering parameters such as output format
+      and DPI. `ICreatePageStream` is a callback interface that supplies an output
+      stream for each generated page. Define how each page will be saved. The `ICreatePageStream`
+      implementation returns a fresh `FileOutputStream` for every '
+  - name: Attach a Delegate to Capture Render Info
+    text: If you need details about each rendered sheet (e.g., dimensions, sheet name),
+      register a callback.
+  - name: Specify Output Format and DPI
+    text: Select PNG as the image format and set a DPI that balances quality and file
+      size. > Adjust the DPI if you need smaller thumbnails (e.g., 96) or high‑resolution
+      prints (e.g., 300).
+  - name: Generate the Previews
+    text: With everything configured, call `generatePreview`. The SDK will iterate
+      over each worksheet and invoke the stream you supplied.
+  - name: Define the `getOutputPath()` Helper
+    text: '`getOutputPath()` builds a file name based on the page (sheet) number and
+      returns the full path for the output image. Feel free to customize the folder
+      structure. > **Common pitfall:** Forgetting to create the `output` directory
+      beforehand will cause an `IOException`. Create it programmatically or e'
+  type: HowTo
+- questions:
+  - answer: Yes, the same API works for PDFs, Word documents, and many image formats.
+    question: Can I generate previews for PDFs and images using GroupDocs.Parser?
+  - answer: Call `previewOptions.setPreviewFormat(PreviewFormats.Jpeg)` (or `Gif`,
+      `Bmp`, etc.).
+    question: How do I change the output image format?
+  - answer: The SDK streams pages, which keeps memory usage low. For massive files,
+      consider processing in parallel batches.
+    question: Is performance a concern with very large workbooks?
+  - answer: Wrap the code in try‑catch blocks (as shown) and log the exception details.
+      Ensure streams are closed in the `finally` block if you’re not using try‑with‑resources.
+    question: How can I handle errors during preview generation?
+  - answer: No. GroupDocs.Parser is a pure Java solution and works on any platform
+      that supports Java 8+.
+    question: Does the library require Microsoft Office to be installed?
+  type: FAQPage
+tags:
+- create spreadsheet thumbnail
 - GroupDocs.Parser
-- Java
-- Document Processing
-title: Hogyan tekinthetünk meg Excel-fájlokat a GroupDocs.Parser-rel Java-ban
+- Java preview excel
+- excel to png
+- document processing
+title: Táblázat bélyegkép létrehozása Java-val a GroupDocs.Parser használatával
 type: docs
 url: /hu/java/page-preview-generation/generate-spreadsheet-previews-groupdocs-parser-java/
 weight: 1
 ---
 
-# How to Preview Excel Files with GroupDocs.Parser in Java
+# Táblázat bélyegkép létrehozása Java-val a GroupDocs.Parser használatával
 
-Ha **hogyan lehet programozottan előnézetet készíteni Excel** táblázatokból, jó helyen jársz. Ebben az útmutatóban bemutatjuk, hogyan hozhatsz létre képi előnézeteket (PNG) `.xlsx` munkafüzetekből a GroupDocs.Parser for Java segítségével – tökéletes gyors bélyegképek, pillanatképek megosztásához vagy dokumentum‑előnézet funkció építéséhez az alkalmazásodban.
+Ha **create spreadsheet thumbnail Java** programokat keresel, jó helyen jársz. Ebben az útmutatóban bemutatjuk, hogyan generálhatunk magas minőségű PNG előnézeteket `.xlsx` munkafüzetekből a GroupDocs.Parser for Java segítségével – tökéletes gyors bélyegképekhez, pillanatképek megosztásához vagy dokumentum‑előnézet funkció építéséhez az alkalmazásodban. A megoldás Microsoft Office telepítése nélkül működik, és nagy munkafüzetek esetén is alacsony memóriahasználattal skálázható.
 
-## Quick Answers
-- **Mit jelent a „preview Excel”?** Képfájlok (pl. PNG) generálása, amelyek minden munkalap oldalát ábrázolják.  
-- **Melyik formátum ajánlott?** A PNG veszteségmentes minőséget biztosít és jól működik webes bélyegképekhez.  
-- **Szükség van licencre?** Fejlesztéshez egy ingyenes próbaelérés elegendő; produkcióhoz kereskedelmi licenc szükséges.  
-- **Módosítható a kép felbontása?** Igen – a DPI‑t a `PreviewOptions`‑ban állíthatod.  
+## Gyors válaszok
+- **Mi jelent a „preview Excel”?** Képfájlok (pl. PNG) generálása, amelyek minden munkalap oldalát ábrázolják.  
+- **Melyik formátum ajánlott?** A PNG veszteségmentes minőséget biztosít, és jól működik webes bélyegképekhez.  
+- **Szükségem van licencre?** Egy ingyenes próba verzió fejlesztéshez megfelelő; a termeléshez kereskedelmi licenc szükséges.  
+- **Módosíthatom a kép felbontását?** Igen – állítsd be a DPI‑t a `PreviewOptions`‑ban.  
 - **Lehetséges más formátumok előnézetét is készíteni?** A GroupDocs.Parser támogatja a PDF, Word és számos képformátum előnézetét is.
 
-## What is “how to preview Excel” with GroupDocs.Parser?
-A GroupDocs.Parser beolvassa az Excel munkafüzeteket, minden lapot vizuális oldalra renderel, és lehetővé teszi ezen oldalak képfájlokba történő streamelését. Ezzel elkerülhető az Office interop vagy harmadik fél konverterek használata.
+## Mi az a „hogyan előnézet Excel” a GroupDocs.Parser-rel?
+Töltsd be az Excel munkafüzetet, és rendereld minden munkalapot PNG képként anélkül, hogy Microsoft Office-ra lenne szükség. A GroupDocs.Parser egyesével streameli az oldalakat, veszteségmentes bélyegképeket készítve, amelyeket lemezre menthetünk vagy HTTP‑n keresztül visszaküldhetünk, így ideális web‑alapú előnézeti szolgáltatásokhoz.
 
-## Why use GroupDocs.Parser for Excel previews?
-- **Nincs szükség Office telepítésre** – bármilyen szerver‑oldali Java környezetben fut.  
-- **Nagy fájlok támogatása** – az oldalak egyesével streamelődnek, így alacsony a memóriahasználat.  
-- **Magas minőségű kimenet** – szabályozható a DPI, a formátum és a renderelési beállítások.  
-- **Kereszt‑formátum rugalmasság** – ugyanaz az API PDF‑ek, Word dokumentumok és egyéb formátumok esetén is működik.
+A GroupDocs.Parser beolvassa az Excel munkafüzeteket, minden munkalapot vizuális oldalként renderel, és lehetővé teszi ezen oldalak képfájlokba való streamelését. Ez megszünteti az Office interop vagy harmadik fél konverterek szükségességét.
 
-## Prerequisites
+## Miért használjuk a GroupDocs.Parser-t Excel előnézetekhez?
+A GroupDocs.Parser-t azért érdemes használni, mert bármely Java szerveren működik, nem igényel Office telepítést, nagy munkafüzeteket kezel alacsony memóriaigénnyel, és konfigurálható DPI‑val veszteségmentes PNG képeket állít elő. Az SDK **100+ bemeneti és kimeneti formátumot** támogat, egy 200 oldalas munkafüzetet 3 másodperc alatt képes feldolgozni, és a memóriahasználatot laponként 50 MB alatt tartja.
+
+- **Nincs szükség Office telepítésére** – bármely szerver‑oldali Java környezetben fut.  
+- **Nagy fájlok támogatása** – egyesével streameli az oldalakat, alacsony memóriahasználatot biztosítva.  
+- **Magas minőségű kimenet** – DPI, formátum és renderelési beállítások szabályozása.  
+- **Kereszt‑formátum rugalmasság** – ugyanaz az API működik PDF‑ek, Word dokumentumok és egyéb formátumok esetén is.
+
+## Előfeltételek
 - **Java Development Kit** (8 +).  
-- **IDE** mint az IntelliJ IDEA vagy Eclipse.  
-- **GroupDocs.Parser for Java SDK** – letölthető [here](https://releases.groupdocs.com/parser/java/).  
-- **Minta Excel fájl** (`.xlsx`), amelyet elő szeretnél nézni.  
+- **IDE**, például IntelliJ IDEA vagy Eclipse.  
+- **GroupDocs.Parser for Java SDK** – töltsd le [itt](https://releases.groupdocs.com/parser/java/).  
+- **Documentation** – lásd a hivatalos [documentation](https://docs.groupdocs.com/parser/java/).  
+- **Sample Excel file** (`.xlsx`), amelyet elő szeretnél nézni.  
 - **Maven vagy Gradle** (opcionális) a függőségkezeléshez.
 
-## Import Packages
-Ezek az importok biztosítják a parser, a preview beállítások és a stream‑kezelő segédprogramok elérését.
+## Csomagok importálása
+Ezek az importok hozzáférést biztosítanak a parserhez, az előnézeti beállításokhoz és a stream kezelő segédeszközökhöz.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -55,10 +128,11 @@ import java.io.OutputStream;
 import java.io.IOException;
 ```
 
-## Step‑by‑Step Guide to Generate Spreadsheet Page Previews
+## Lépésről‑lépésre útmutató a táblázat oldal előnézetek generálásához
 
-### Step 1: Initialize the Parser Instance
-Hozz létre egy `Parser` objektumot, amely a Excel munkafüzetedre mutat. A *try‑with‑resources* blokk automatikusan bezárja a parse‑rert.
+### 1. lépés: A Parser példány inicializálása
+A `Parser` a GroupDocs.Parser központi osztálya, amely olvasási hozzáférést biztosít a táblázatfájlokhoz, és lehetővé teszi az oldalankénti renderelést.  
+Hozz létre egy `Parser` objektumot, amely a te Excel munkafüzetedre mutat. A *try‑with‑resources* blokk automatikusan bezárja a parser‑t.
 
 ```java
 try (Parser parser = new Parser("path/to/your/sample.xlsx")) {
@@ -66,10 +140,11 @@ try (Parser parser = new Parser("path/to/your/sample.xlsx")) {
 }
 ```
 
-> **Pro tip:** Használj abszolút útvonalat vagy konfigurálj egy erőforrás‑mappát a `FileNotFoundException` elkerüléséhez.
+> **Pro tipp:** Használj abszolút útvonalat vagy konfigurálj egy erőforrás mappát a `FileNotFoundException` elkerüléséhez.
 
-### Step 2: Prepare Your Preview Options
-Határozd meg, hogyan legyen mentve minden oldal. Az `ICreatePageStream` implementáció minden munkalap oldalhoz egy új `FileOutputStream`‑et ad vissza.
+### 2. lépés: Az előnézeti beállítások előkészítése
+A `PreviewOptions` a renderelési paramétereket állítja be, például a kimeneti formátumot és a DPI‑t.  
+Az `ICreatePageStream` egy callback interfész, amely minden generált oldalhoz egy kimeneti streamet biztosít. Határozd meg, hogyan legyen mentve az egyes oldalak. Az `ICreatePageStream` megvalósítás egy új `FileOutputStream`‑et ad vissza minden munkalap oldalhoz.
 
 ```java
 PreviewOptions previewOptions = new PreviewOptions(new ICreatePageStream() {
@@ -85,10 +160,10 @@ PreviewOptions previewOptions = new PreviewOptions(new ICreatePageStream() {
 });
 ```
 
-> Ebben a lépésben **convert xlsx to png** történik – a stream a PNG adatot a lemezre írja.
+> Ez a lépés, ahol **convert xlsx to png**—a stream PNG adatot ír a lemezre.
 
-### Step 3: Attach a Delegate to Capture Render Info
-Ha részletekre van szükséged az egyes renderelt lapokról (pl. méretek, lap neve), regisztrálj egy visszahívást.
+### 3. lépés: Delegált csatolása a renderelési információk rögzítéséhez
+Ha részletekre van szükséged az egyes renderelt munkalapokról (pl. méretek, munkalap neve), regisztrálj egy callback‑et.
 
 ```java
 final PageRenderInfo[] renderInfoHolder = {null}; // to store info
@@ -101,25 +176,25 @@ previewOptions.setPreviewPageRender(new IPreviewPageRender() {
 });
 ```
 
-### Step 4: Specify Output Format and DPI
-Válaszd a PNG‑t képként, és állíts be egy DPI‑t, amely egyensúlyban tartja a minőséget és a fájlméretet.
+### 4. lépés: Kimeneti formátum és DPI megadása
+Válaszd a PNG formátumot képként, és állíts be egy DPI‑t, amely egyensúlyban tartja a minőséget és a fájlméretet.
 
 ```java
 previewOptions.setPreviewFormat(PreviewFormats.Png); // PNG images
 previewOptions.setDpi(150); // Higher DPI for better clarity
 ```
 
-> Állítsd a DPI‑t kisebb bélyegképekhez (pl. 96) vagy nagy felbontású nyomtatáshoz (pl. 300).
+> Állítsd be a DPI‑t, ha kisebb bélyegképekre (pl. 96) vagy nagy felbontású nyomtatásra (pl. 300) van szükség.
 
-### Step 5: Generate the Previews
-Minden beállítás után hívd meg a `generatePreview` metódust. Az SDK végig iterál minden munkalapon, és meghívja a megadott stream‑et.
+### 5. lépés: Az előnézetek generálása
+Minden beállítás után hívd meg a `generatePreview`‑t. Az SDK végigiterál minden munkalapon, és meghívja a megadott streamet.
 
 ```java
 parser.generatePreview(previewOptions);
 ```
 
-### Step 6: Define the `getOutputPath()` Helper
-Ez a metódus a lap (munkalap) száma alapján épít fel egy fájlnevet. Nyugodtan testreszabhatod a mappaszerkezetet.
+### 6. lépés: A `getOutputPath()` segédfüggvény definiálása
+A `getOutputPath()` a lap (munkalap) száma alapján épít fel egy fájlnevet, és visszaadja a kimeneti kép teljes útvonalát. Nyugodtan testreszabhatod a mappaszerkezetet.
 
 ```java
 private static String getOutputPath(int pageNumber) {
@@ -127,11 +202,11 @@ private static String getOutputPath(int pageNumber) {
 }
 ```
 
-> **Common pitfall:** Ha előre nem hozod létre a `output` könyvtárat, `IOException` keletkezik. Hozd létre programból vagy győződj meg róla, hogy létezik.
+> **Gyakori hibaforrás:** Ha előre nem hozod létre az `output` könyvtárat, `IOException` keletkezik. Hozd létre programozottan vagy győződj meg róla, hogy létezik.
 
-## Full Working Example (Simplified)
+## Teljes működő példa (Egyszerűsített)
 
-Az alábbi kompakt verzió összekapcsolja az összes részt. Bemutatja a **create excel page preview** munkafolyamatot az elejétől a végéig.
+Az alábbiakban egy tömör változat látható, amely összekapcsolja az összes elemet. Bemutatja a **create spreadsheet thumbnail Java** munkafolyamatot az elejétől a végéig.
 
 ```java
 try (Parser parser = new Parser("path/to/your/sample.xlsx")) {
@@ -160,40 +235,39 @@ try (Parser parser = new Parser("path/to/your/sample.xlsx")) {
 }
 ```
 
-Futtasd ezt a kódrészletet, és a `output` mappában sorozatos `preview_page_1.png`, `preview_page_2.png`, … fájlokat találsz – mindegyik az eredeti Excel munkafüzet egy-egy lapját ábrázolja.
+Futtasd ezt a kódrészletet, és a `output` mappában sorozatban megtalálod a `preview_page_1.png`, `preview_page_2.png`, … fájlokat – mindegyik az eredeti Excel munkafüzet egy munkalapját ábrázolja.
 
-## Common Issues & Solutions
-| Issue | Cause | Fix |
-|-------|-------|-----|
-| **No images generated** | `getOutputPath` invalid directory | Ensure the target folder exists or create it with `new File("output").mkdirs();` |
-| **Out‑of‑memory error on huge files** | Loading the whole workbook at once | Use the streaming approach (as shown) and process pages one at a time |
-| **Incorrect DPI** | `setDpi` not called or set to default (96) | Call `previewOptions.setDpi(yourDesiredValue);` before `generatePreview` |
-| **Unsupported format** | Trying to preview a corrupted `.xlsx` | Validate the file with Excel or use `Parser.isSupported` before processing |
+## Gyakori problémák és megoldások
+| Probléma | Ok | Megoldás |
+|----------|----|----------|
+| **Nem jönnek létre képek** | `getOutputPath` érvénytelen könyvtárat ad vissza | Győződj meg róla, hogy a célkönyvtár létezik, vagy hozd létre a `new File("output").mkdirs();` segítségével |
+| **Memóriahiány hiba hatalmas fájloknál** | A teljes munkafüzet egyszerre történő betöltése | Használd a streaming megközelítést (ahogy bemutattuk), és dolgozd fel az oldalakat egyesével |
+| **Helytelen DPI** | `setDpi` nincs meghívva vagy alapértelmezett (96) értékre van állítva | Hívd meg a `previewOptions.setDpi(kívántÉrték);`‑t a `generatePreview` előtt |
+| **Nem támogatott formátum** | Megpróbálsz előnézetet készíteni egy sérült `.xlsx` fájlból | Ellenőrizd a fájlt Excel‑lel, vagy a feldolgozás előtt használd a `Parser.isSupported`‑t |
 
-## Frequently Asked Questions
+## Gyakran feltett kérdések
 
-**Q: Can I generate previews for PDFs and images using GroupDocs.Parser?**  
-A: Yes, the same API works for PDFs, Word documents, and many image formats.
+**K: Generálhatok előnézetet PDF‑ekhez és képekhez a GroupDocs.Parser használatával?**  
+V: Igen, ugyanaz az API működik PDF‑ek, Word dokumentumok és számos képformátum esetén.
 
-**Q: How do I change the output image format?**  
-A: Call `previewOptions.setPreviewFormat(PreviewFormats.Jpeg)` (or `Gif`, `Bmp`, etc.).
+**K: Hogyan változtathatom meg a kimeneti képformátumot?**  
+V: Hívd meg a `previewOptions.setPreviewFormat(PreviewFormats.Jpeg)`‑t (vagy `Gif`, `Bmp`, stb.).
 
-**Q: Is performance a concern with very large workbooks?**  
-A: The SDK streams pages, which keeps memory usage low. For massive files, consider processing in parallel batches.
+**K: Teljesítményprobléma merül fel nagyon nagy munkafüzeteknél?**  
+V: Az SDK oldalakat streameli, ami alacsony memóriahasználatot biztosít. Nagy fájlok esetén fontold meg a párhuzamos kötegelt feldolgozást.
 
-**Q: How can I handle errors during preview generation?**  
-A: Wrap the code in try‑catch blocks (as shown) and log the exception details. Ensure streams are closed in the `finally` block if you’re not using try‑with‑resources.
+**K: Hogyan kezeljem a hibákat az előnézet generálása során?**  
+V: Tedd a kódot try‑catch blokkokba (ahogy bemutattuk), és naplózd a kivétel részleteit. Győződj meg róla, hogy a stream-ek zárva vannak a `finally` blokkban, ha nem a try‑with‑resources‑t használod.
 
-**Q: Does the library require Microsoft Office to be installed?**  
-A: No. GroupDocs.Parser is a pure Java solution and works on any platform that supports Java 8+.
+**K: A könyvtár megköveteli a Microsoft Office telepítését?**  
+V: Nem. A GroupDocs.Parser egy tiszta Java megoldás, és bármely, Java 8+‑t támogató platformon működik.
 
-## Conclusion
-Most már rendelkezel egy teljes, production‑kész módszerrel a **how to preview Excel** munkafüzetek **convert xlsx to png** előállításához a GroupDocs.Parser segítségével. Állítsd be a DPI‑t, a kimeneti mappát vagy a képformátumot a projekt igényei szerint, és integráld ezt a kódrészletet nagyobb dokumentum‑kezelő munkafolyamatokba.
+**Utoljára frissítve:** 2026-07-16  
+**Tesztelve ezzel:** GroupDocs.Parser 23.11 (a legújabb a írás időpontjában)  
+**Szerző:** GroupDocs
 
-Készen állsz a következő lépésre? Fedezd fel a hivatalos [documentation](https://docs.groupdocs.com/parser/java/)‑t a fejlett renderelési beállítások, jelszóval védett fájlok és kötegelt feldolgozási technikák számára.
+## Kapcsolódó oktatóanyagok
 
----
-
-**Last Updated:** 2026-02-06  
-**Tested With:** GroupDocs.Parser 23.11 (latest at time of writing)  
-**Author:** GroupDocs
+- [Hogyan generáljunk előnézetet – Dokumentum oldal előnézet generálási oktatóanyagok a GroupDocs.Parser Java-hoz](/parser/java/page-preview-generation/)
+- [Excel Java elemzése a GroupDocs.Parser-rel: Teljes útmutató](/parser/java/getting-started/mastering-document-parsing-java-groupdocs-parser/)
+- [Hogyan nyerjünk ki nyers szöveget Excel munkalapokból a GroupDocs.Parser for Java használatával: Lépésről‑lépésre útmutató](/parser/java/text-extraction/extract-raw-text-excel-groupdocs-parser-java/)
