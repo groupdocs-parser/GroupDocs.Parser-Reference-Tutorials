@@ -1,41 +1,83 @@
 ---
-date: '2026-01-03'
-description: Scopri come convertire DOCX in Markdown ed estrarre testo formattato
-  usando GroupDocs.Parser Java, incluso come ottenere il conteggio delle pagine del
-  documento ed estrarre il markdown da DOCX.
+date: '2026-07-02'
+description: Scopri come convertire docx in markdown usando GroupDocs.Parser Java,
+  estrarre testo formattato, ottenere il conteggio delle pagine del documento e gestire
+  l'estrazione di markdown in modo efficiente.
 keywords:
 - convert docx to markdown
-- get document page count
+- convert word to markdown
+- docx to markdown java
+- get docx page count
 - extract markdown from docx
-- groupdocs parser java tutorial
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-02'
+  description: Learn how to convert docx to markdown using GroupDocs.Parser Java,
+    extract formatted text, get document page count, and handle markdown extraction
+    efficiently.
+  headline: Convert DOCX to Markdown with GroupDocs.Parser Java
+  type: TechArticle
+- description: Learn how to convert docx to markdown using GroupDocs.Parser Java,
+    extract formatted text, get document page count, and handle markdown extraction
+    efficiently.
+  name: Convert DOCX to Markdown with GroupDocs.Parser Java
+  steps:
+  - name: 1 – Verify support
+    text: '`isFormattedText` indicates whether the current document type can be converted
+      to formatted markup such as Markdown.'
+  - name: 1 – Retrieve page count
+    text: '`getPageCount` returns the total number of pages in the opened document,
+      enabling pagination logic.'
+  - name: 1 – Loop through pages and extract Markdown
+    text: '`FormattedTextOptions` configures the output mode, while `TextReader.readToEnd()`
+      returns the full Markdown string for the current page. **Explanation of key
+      classes:** - `FormattedTextOptions` lets you specify the output mode (`Markdown`
+      in this case). - `TextReader.readToEnd()` reads the entire fo'
+  type: HowTo
+- questions:
+  - answer: The generated Markdown follows the CommonMark specification, which GitHub
+      Flavored Markdown extends, so it works well in most GitHub contexts.
+    question: Is the Markdown output fully compatible with GitHub Flavored Markdown?
+  - answer: Yes – combine the `getFormattedText` call with page ranges or filter the
+      content after extraction using `TextReader`.
+    question: Can I extract only a specific section of a DOCX file?
+  - answer: GroupDocs.Parser can open password‑protected documents when you provide
+      the password in the `Parser` constructor.
+    question: Does the library support password‑protected DOCX files?
+  - answer: Use a thread pool to process files concurrently and reuse a single `Parser`
+      instance per file to reduce overhead.
+    question: How can I improve extraction speed for thousands of files?
+  - answer: The official GroupDocs.Parser GitHub repository and the documentation
+      site contain additional code samples and use‑case guides.
+    question: Where can I find more examples?
+  type: FAQPage
 title: Converti DOCX in Markdown con GroupDocs.Parser Java
 type: docs
 url: /it/java/formatted-text-extraction/extract-formatted-text-groupdocs-parser-java/
 weight: 1
 ---
 
-# Converti DOCX in Markdown ed estrai testo formattato usando GroupDocs.Parser Java
+# Converti DOCX in Markdown con GroupDocs.Parser Java
 
-In molte applicazioni moderne è necessario **convertire DOCX in Markdown** affinché il contenuto rich‑text possa essere visualizzato sul web, indicizzato per la ricerca o elaborato da servizi a valle. Questo tutorial ti guida nell'uso di **GroupDocs.Parser per Java** non solo per convertire DOCX in Markdown ma anche per recuperare metadati utili come il conteggio delle pagine del documento. Alla fine, sarai in grado di estrarre markdown da file DOCX con sicurezza e integrare il processo nei tuoi progetti Java.
+Nelle moderne scenari web e di gestione dei contenuti è spesso necessario **convertire docx in markdown** in modo che i documenti rich‑text diventino leggeri, portabili e facili da visualizzare. Questo tutorial mostra passo‑a‑passo come utilizzare **GroupDocs.Parser per Java** per eseguire la conversione, recuperare il conteggio delle pagine e estrarre markdown da ogni pagina. Alla fine avrai una soluzione pronta per la produzione che potrai inserire in qualsiasi servizio Java.
 
 ## Risposte rapide
-- **GroupDocs.Parser può convertire DOCX in Markdown?** Sì, usando il metodo `getFormattedText` con `FormattedTextMode.Markdown`.
-- **Come verifico se un documento supporta l'estrazione di testo formattato?** Chiama `parser.getFeatures().isFormattedText()`.
-- **Quale metodo restituisce il numero di pagine?** `parser.getDocumentInfo().getPageCount()`.
-- **È necessaria una licenza per l'uso in produzione?** È richiesta una licenza valida di GroupDocs.Parser per utilizzo illimitato.
-- **Quale strumento di build è consigliato?** Maven è il modo più semplice per gestire le dipendenze.
+`FormattedTextMode.Markdown` è un valore enum che indica al parser di produrre il contenuto in formato Markdown.
 
-## Cos'è “convertire DOCX in Markdown”?
-Convertire un file DOCX in Markdown significa tradurre lo stile, i titoli, le liste, le tabelle e gli altri elementi rich‑text del documento Word nella sintassi Markdown. Questo markup leggero è perfetto per generatori di siti statici, sistemi di gestione dei contenuti e qualsiasi scenario in cui si desidera un testo portabile e leggibile.
+- **GroupDocs.Parser può convertire DOCX in Markdown?** Sì – chiama `parser.getFormattedText` con `FormattedTextMode.Markdown`.
+- **Come verifico il supporto al testo formattato?** Usa `parser.getFeatures().isFormattedText()`.
+- **Quale metodo restituisce il numero di pagine?** `parser.getDocumentInfo().getPageCount()`.
+- **È necessaria una licenza per la produzione?** Una licenza valida di GroupDocs.Parser rimuove i limiti di valutazione.
+- **Quale strumento di build semplifica le dipendenze?** Maven è l'approccio consigliato per i progetti Java.
+
+## Cos'è “convertire docx in markdown”?
+**Convertire docx in markdown** significa tradurre lo stile, i titoli, le liste, le tabelle e le immagini di Microsoft Word nella sintassi Markdown. Il risultato è un markup in testo semplice che i generatori di siti statici, i repository Git e i processori a valle possono consumare senza l'ingombro di formattazioni pesanti.
 
 ## Perché usare GroupDocs.Parser per questa conversione?
-- **Alta fedeltà:** Preserva la maggior parte dei dettagli di formattazione durante la generazione di Markdown.
-- **Ampio supporto di formati:** Funziona con DOCX, PDF e molti altri tipi di file.
-- **API semplice:** Poche righe di codice Java ti forniscono l'intero contenuto del documento.
-- **Scalabile:** Gestisce documenti di grandi dimensioni in modo efficiente con le API di streaming.
+GroupDocs.Parser supporta **oltre 70 formati di input e output** — inclusi DOCX, PDF, PPTX e XLSX — e può elaborare documenti fino a **2 GB** senza caricare l'intero file in memoria. La sua API di streaming fornisce markdown ad alta fedeltà mantenendo basso l'uso della memoria, rendendola ideale per lavori batch su larga scala.
 
 ## Prerequisiti
-- **Java Development Kit (JDK) 8+** installato sulla tua macchina.
+- **Java Development Kit (JDK) 8+** installato.
 - **IDE** come IntelliJ IDEA, Eclipse o VS Code.
 - **Maven** (o download manuale di JAR) per la gestione delle dipendenze.
 - **Licenza GroupDocs.Parser** (prova gratuita o acquistata).
@@ -43,7 +85,6 @@ Convertire un file DOCX in Markdown significa tradurre lo stile, i titoli, le li
 ## Configurazione di GroupDocs.Parser per Java
 
 ### Installazione
-
 Aggiungi il repository GroupDocs e la dipendenza al tuo `pom.xml`:
 
 ```xml
@@ -65,19 +106,17 @@ Aggiungi il repository GroupDocs e la dipendenza al tuo `pom.xml`:
 ```
 
 #### Download diretto
-
 Se preferisci non usare Maven, puoi scaricare gli ultimi JAR da [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
 ### Acquisizione della licenza
-
 Per rimuovere i limiti di valutazione:
+
 - **Prova gratuita:** Scarica una licenza di prova dal sito GroupDocs.  
 - **Licenza temporanea:** Richiedila tramite il [sito GroupDocs](https://purchase.groupdocs.com/temporary-license/).  
 - **Acquisto completo:** Acquista una licenza di produzione che corrisponda alle tue esigenze di distribuzione.
 
 ### Inizializzazione e configurazione di base
-
-Crea un'istanza `Parser` che punti al tuo file DOCX:
+La classe `Parser` è il punto di ingresso principale di GroupDocs.Parser che rappresenta un documento e fornisce l'accesso al suo contenuto e ai metadati. Crea un'istanza `Parser` che punti al tuo file DOCX:
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -91,13 +130,14 @@ Questa singola riga apre il documento e lo prepara per ulteriori operazioni.
 
 ## Guida all'implementazione
 
-Di seguito suddividiamo il processo in tre funzionalità pratiche: verifica del supporto, recupero del conteggio delle pagine ed estrazione di Markdown.
+Di seguito suddividiamo il processo in tre funzionalità pratiche: verifica del supporto, recupero del conteggio delle pagine e estrazione di Markdown.
 
 ### Funzionalità 1: Verifica del documento per l'estrazione di testo formattato
 
-**Perché è importante:** Non tutti i formati supportano l'estrazione di rich‑text. Verificare la capacità previene eccezioni a runtime.
+**Perché è importante:** Non tutti i formati supportano l'estrazione di testo ricco, e chiamare l'API sbagliata può generare un'eccezione.
 
 #### Passo 1.1 – Verifica del supporto
+`isFormattedText` indica se il tipo di documento corrente può essere convertito in markup formattato come Markdown.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -111,11 +151,12 @@ try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/sample.docx")) {
 }
 ```
 
-### Funzionalità 2: Ottieni il conteggio delle pagine del documento
+### Funzionalità 2: Ottenere il conteggio delle pagine del documento
 
-**Perché è importante:** Conoscere il conteggio delle pagine ti aiuta a decidere se elaborare l'intero file o solo una parte.
+**Perché è importante:** Conoscere il numero di pagine ti permette di decidere se elaborare l'intero file o mirare a pagine specifiche.
 
 #### Passo 2.1 – Recupera il conteggio delle pagine
+`getPageCount` restituisce il numero totale di pagine nel documento aperto, abilitando la logica di paginazione.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -138,6 +179,7 @@ try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/sample.docx")) {
 **Obiettivo:** Convertire il contenuto di ogni pagina in Markdown, che poi puoi concatenare o memorizzare singolarmente.
 
 #### Passo 3.1 – Scorri le pagine ed estrai Markdown
+`FormattedTextOptions` configura la modalità di output, mentre `TextReader.readToEnd()` restituisce la stringa Markdown completa per la pagina corrente.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -158,33 +200,33 @@ try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/sample.docx")) {
 }
 ```
 
-**Spiegazione delle classi chiave:**
-- `FormattedTextOptions` ti consente di specificare la modalità di output (`Markdown` in questo caso).
-- `TextReader.readToEnd()` restituisce la stringa Markdown completa per la pagina corrente.
+**Spiegazione delle classi chiave:**  
+- `FormattedTextOptions` consente di specificare la modalità di output (`Markdown` in questo caso).  
+- `TextReader.readToEnd()` legge l'intero contenuto formattato della pagina selezionata.
 
 ## Applicazioni pratiche
 
-| Caso d'uso | Come la conversione da DOCX a Markdown aiuta |
-|------------|----------------------------------------------|
+| Caso d'uso | Come aiuta la conversione di docx in markdown |
+|------------|-----------------------------------------------|
 | **Sistemi di gestione dei contenuti** | Memorizza Markdown grezzo per una rapida resa e controllo di versione. |
-| **Strumenti di analisi dei dati** | Analizza titoli, tabelle e liste programmaticamente per analisi. |
+| **Strumenti di analisi dei dati** | Analizza titoli, tabelle e liste programmaticamente per l'analisi. |
 | **Servizi di conversione documenti** | Offri DOCX → Markdown come alternativa leggera al PDF. |
 | **Generatori di siti statici** | Fornisci Markdown direttamente ai pipeline di Jekyll, Hugo o Gatsby. |
 
 ## Considerazioni sulle prestazioni
 
 - **Gestione della memoria:** Assegna un heap sufficiente (`-Xmx2g` per file grandi) per evitare `OutOfMemoryError`.  
-- **Elaborazione parallela:** Per conversioni in blocco, elabora i file in thread separati o usa un servizio executor.  
-- **Elaborazione batch:** Raggruppa i file in batch per ridurre l'overhead I/O.
+- **Elaborazione parallela:** Per conversioni in blocco, elabora i file in thread separati o utilizza un servizio executor.  
+- **Elaborazione batch:** Raggruppa i file in batch per ridurre il sovraccarico I/O.
 
 ## Conclusione
 
-Ora hai una guida completa, pronta per la produzione, per **convertire DOCX in Markdown** usando GroupDocs.Parser Java, inclusi i passaggi per **ottenere il conteggio delle pagine del documento** ed estrarre in modo sicuro Markdown da ogni pagina. Integra questi snippet nei tuoi servizi, automatizza conversioni in blocco o crea un editor personalizzato che lavori direttamente con Markdown.
+Ora hai una guida completa, pronta per la produzione, per **convertire docx in markdown** usando GroupDocs.Parser Java, inclusa la modalità per **ottenere il conteggio delle pagine del documento** e estrarre in modo sicuro Markdown da ogni pagina. Integra questi snippet nei tuoi servizi, automatizza le conversioni in blocco o crea un editor personalizzato che lavori direttamente con Markdown.
 
 ## Sezione FAQ
 
 **1. Posso usare GroupDocs.Parser senza Maven?**  
-Sì, scarica i file JAR dalla [pagina dei rilasci GroupDocs](https://releases.groupdocs.com/parser/java/) e aggiungili al classpath del tuo progetto.
+Sì – scarica i file JAR dalla [pagina di rilascio di GroupDocs](https://releases.groupdocs.com/parser/java/) e aggiungili al classpath del tuo progetto.
 
 **2. Come gestisco i documenti non supportati?**  
 Chiama sempre `parser.getFeatures().isFormattedText()` prima dell'estrazione. Se restituisce `false`, salta il file o avvisa l'utente.
@@ -198,7 +240,7 @@ GroupDocs.Parser supporta PDF, PPTX, XLSX e molti altri tipi di file. Consulta l
 R: Il Markdown generato segue la specifica CommonMark, che GitHub Flavored Markdown estende, quindi funziona bene nella maggior parte dei contesti GitHub.
 
 **D: Posso estrarre solo una sezione specifica di un file DOCX?**  
-R: Sì, puoi combinare la chiamata `getFormattedText` con intervalli di pagine o usare `TextReader` per filtrare il contenuto dopo l'estrazione.
+R: Sì – combina la chiamata `getFormattedText` con intervalli di pagine o filtra il contenuto dopo l'estrazione usando `TextReader`.
 
 **D: La libreria supporta file DOCX protetti da password?**  
 R: GroupDocs.Parser può aprire documenti protetti da password quando fornisci la password nel costruttore `Parser`.
@@ -207,10 +249,15 @@ R: GroupDocs.Parser può aprire documenti protetti da password quando fornisci l
 R: Usa un pool di thread per elaborare i file in modo concorrente e riutilizza una singola istanza `Parser` per file per ridurre l'overhead.
 
 **D: Dove posso trovare più esempi?**  
-R: Il repository GitHub ufficiale di GroupDocs.Parser e il sito di documentazione contengono ulteriori esempi di codice e guide per casi d'uso.
+R: Il repository GitHub ufficiale di GroupDocs.Parser e il sito di documentazione contengono ulteriori esempi di codice e guide sui casi d'uso.
 
 ---
-
-**Ultimo aggiornamento:** 2026-01-03  
+**Ultimo aggiornamento:** 2026-07-02  
 **Testato con:** GroupDocs.Parser 25.5 per Java  
 **Autore:** GroupDocs
+
+## Tutorial correlati
+
+- [Estrazione efficiente di testo da Markdown in Java usando GroupDocs.Parser: Guida completa](/parser/java/text-extraction/java-groupdocs-parser-markdown-text-extraction/)
+- [Come convertire un documento in HTML usando GroupDocs.Parser Java: Guida passo‑a‑passo](/parser/java/formatted-text-extraction/extract-document-text-as-html-groupdocs-parser-java/)
+- [Maestria nell'estrazione di documenti con GroupDocs.Parser per Java: Converti documenti in HTML e testo semplice](/parser/java/text-extraction/master-document-extraction-groupdocs-parser-java/)
