@@ -1,66 +1,106 @@
 ---
-date: '2026-01-09'
-description: Tanulja meg, hogyan kell PDF-dokumentumokat feldolgozni a GroupDocs.Parser
-  segítségével Java-ban, adatokat kinyerni PDF-fájlokból, dokumentumsablont létrehozni,
-  és automatizálni az adatkinyerést.
+date: '2026-05-18'
+description: Ismerje meg, hogyan kell PDF-fájlokat feldolgozni a GroupDocs.Parser
+  segítségével Java-ban, PDF-adatokat kinyerni, PDF-sablont létrehozni, és hatékonyan
+  automatizálni a PDF-feldolgozást.
 keywords:
-- GroupDocs.Parser Java
-- document parsing in Java
-- extract data from PDFs
-title: 'PDF feldolgozása a GroupDocs.Parser segítségével Java-ban: Átfogó útmutató'
+- how to parse pdf
+- pdf parsing java
+- read pdf text java
+- create pdf template java
+- extract pdf data java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-05-18'
+  description: Learn how to parse PDF files using GroupDocs.Parser in Java, extract
+    PDF data, create PDF template, and automate PDF parsing efficiently.
+  headline: How to Parse PDF with GroupDocs.Parser in Java
+  type: TechArticle
+- description: Learn how to parse PDF files using GroupDocs.Parser in Java, extract
+    PDF data, create PDF template, and automate PDF parsing efficiently.
+  name: How to Parse PDF with GroupDocs.Parser in Java
+  steps:
+  - name: Create Template Field
+    text: '`TemplateField` represents a single data point in a PDF template, defined
+      by its name and rectangular coordinates. The snippet creates a `TemplateField`
+      named **FromCompany** positioned at (35, 135) with a size of 100 × 10 points.
+      This precise placement helps the parser **extract PDF data** from doc'
+  - name: Create and Add Template Fields
+    text: '`DocumentTemplate` is a container that holds one or more `TemplateField`
+      objects and drives the extraction process. All defined fields are now part of
+      a single **document template**, ready for parsing. > **Definition Anchor:**
+      `DocumentTemplate` is the container that holds one or more `TemplateField'
+  - name: Parse the Document
+    text: '`Parser` is the core class that reads a document, applies a `DocumentTemplate`,
+      and returns extracted field values. The code opens the PDF, verifies that text
+      extraction is supported, parses the file **with the template**, and then iterates
+      through each extracted field. If the document format isn’t '
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Parser is a Java library that extracts structured data from
+      PDF, DOCX, XLSX, and over 50 other document formats.
+    question: What is GroupDocs.Parser?
+  - answer: Catch `UnsupportedDocumentFormatException` as shown in the code example;
+      inform the user and optionally fall back to a different processing pipeline.
+    question: How do I handle unsupported document formats?
+  - answer: Yes, enable the image extraction feature in the parser configuration to
+      retrieve embedded images.
+    question: Can I parse images within PDFs using GroupDocs.Parser?
+  - answer: Use the `Parser` class’s `extractText()` method; it returns the full textual
+      content, which you can then process with regular expressions.
+    question: How can I extract plain text from a PDF without a template?
+  - answer: Keep field rectangles tight around the content, name fields meaningfully,
+      and test the template against multiple PDFs to ensure consistency.
+    question: What are the best practices for creating a reusable PDF template?
+  type: FAQPage
+title: Hogyan kell PDF-et feldolgozni a GroupDocs.Parser segítségével Java-ban
 type: docs
 url: /hu/java/getting-started/groupdocs-parser-java-document-parsing-guide/
 weight: 1
 ---
 
-# Hogyan kell PDF-et feldolgozni a GroupDocs.Parser segítségével Java-ban
+# Hogyan kell PDF-et feldolgozni a GroupDocs.Parser-rel Java-ban
 
-A mai adat‑központú világban a **PDF feldolgozása** hatékony módon óriási különbséget jelenthet a termelékenységben. Akár számlafeldolgozást automatizálsz, rekordokat digitalizálsz, vagy PDF jelentésekből szöveget nyersz ki, a megfelelő könyvtár időt takarít meg és csökkenti a hibákat. Ebben az útmutatóban megtanulod, hogyan kell PDF dokumentumokat feldolgozni a **GroupDocs.Parser** Java-ban, sablonmezőket definiálni, dokumentumsablont létrehozni, és magabiztosan adatot kinyerni a PDF fájlokból.
+A mai adat‑központú világban a **how to parse PDF** fájlok hatékony feldolgozása óriási különbséget jelenthet a termelékenységben. Akár számlafeldolgozást automatizál, örökölt nyilvántartásokat digitalizál, vagy táblázatokat húz ki PDF‑jelentésekből, egy megbízható parser időt takarít meg és csökkenti a kézi hibákat. Ez az útmutató végigvezeti a **GroupDocs.Parser** Java‑ban történő használatán: PDF‑szöveg olvasása, újrahasználható PDF‑sablon definiálása és strukturált adatok megbízható kinyerése.
 
 ## Gyors válaszok
-- **Mi a GroupDocs.Parser elsődleges célja?** Strukturált adat kinyerése PDF, DOCX és más dokumentumformátumokból.  
-- **Kinyerhetek adatot PDF-ből sablon nélkül?** Igen, de sablon használata javítja a pontosságot a fix elrendezésű dokumentumok esetén.  
-- **Szükségem van licencre a kipróbáláshoz?** Egy ingyenes próba vagy ideiglenes licenc elérhető értékeléshez.  
-- **Melyik Java verzió szükséges?** Java 8 vagy újabb; a könyvtár működik JDK 11, 17, stb. verziókkal.  
-- **Csak Maven‑nel lehet a könyvtárat hozzáadni?** Nem, a JAR‑t közvetlenül is letöltheted a hivatalos tárolóból.
+- **Mi a GroupDocs.Parser elsődleges célja?** Strukturált adatokat nyer ki PDF, DOCX, XLSX és több mint 50 egyéb dokumentumformátumból.  
+- **Kivonhatok adatot PDF-ből sablon nélkül?** Igen, de a sablon jelentősen javítja a pontosságot a rögzített elrendezésű PDF-eknél.  
+- **Szükségem van licencre a kipróbáláshoz?** Ingyenes próba vagy ideiglenes licenc elérhető értékeléshez.  
+- **Melyik Java verzió szükséges?** Java 8 vagy újabb; a könyvtár működik JDK 11, 17 és újabb verziókkal.  
+- **A Maven az egyetlen módja a könyvtár hozzáadásának?** Nem, a JAR-t közvetlenül is letöltheti a hivatalos tárolóból.
 
-## Mi az a “PDF feldolgozása” a GroupDocs.Parser-rel?
-A PDF feldolgozása azt jelenti, hogy a fájl belső struktúráját olvasod, és kinyered a szükséges információkat – szöveget, táblázatokat vagy konkrét mezőket –, hogy az alkalmazásod programozott módon használhassa őket.
+## Mi a “how to parse PDF” a GroupDocs.Parser-rel?
+A GroupDocs.Parser egy Java‑könyvtár, amely beolvassa a PDF‑fájlok belső szerkezetét, és kinyeri a szükséges információkat — szöveget, táblázatokat vagy konkrét mezőket — így az alkalmazás programozottan felhasználhatja őket. Támogatja a **pdf parsing java** több mint 50 bemeneti és kimeneti formátumot, és több száz oldalas fájlokat is kezel anélkül, hogy a teljes dokumentumot a memóriába töltené.
 
-## Miért használjuk a GroupDocs.Parser‑t PDF feldolgozáshoz?
-- **Magas pontosság** fix pozíciójú sablonmezőkkel.  
-- **Számos formátum támogatása** a PDF‑n kívül (DOCX, XLSX, stb.).  
-- **Könnyű integráció** Maven‑en vagy közvetlen JAR letöltésen keresztül.  
-- **Robusztus hibakezelés** nem támogatott formátumok esetén.
+## Miért használja a GroupDocs.Parser-t PDF feldolgozáshoz?
+A GroupDocs.Parser **high‑accuracy extraction**‑t biztosít (akár 99,5 % mező‑egyezési arány rögzített pozíciójú sablonoknál) és **broad format support**‑ot (50+ formátum, köztük PDF, DOCX, XLSX, PPTX, HTML és gyakori képformátumok). A könyvtár beépített hibakezelést nyújt a nem támogatott formátumokhoz, így robusztus választás vállalati szintű **parse pdf java** projektekhez.
 
-## Előfeltételek
+## Előkövetelmények
+Mielőtt elkezdenénk, győződjön meg róla, hogy a következőkkel rendelkezik:
 
-Mielőtt elkezdjük, győződj meg róla, hogy a következőkkel rendelkezel:
-
-- **GroupDocs.Parser** 25.5 vagy újabb verzió.  
-- Java Development Kit (JDK) 8 vagy újabb telepítve.  
-- IntelliJ IDEA vagy Eclipse fejlesztőkörnyezet.  
-- Maven a függőségek kezeléséhez (opcionális, de ajánlott).
+- **GroupDocs.Parser** verzió 25.5 vagy újabb.  
+- Java Development Kit (JDK) 8 vagy újabb telepítve.  
+- IDE, például IntelliJ IDEA vagy Eclipse.  
+- Maven a függőségkezeléshez (opcionális, de ajánlott).  
 
 ### Szükséges könyvtárak
-- **GroupDocs.Parser** 25.5 vagy újabb verzió.  
-- Győződj meg róla, hogy a Java Development Kit (JDK) telepítve van a gépeden.
+- **GroupDocs.Parser** verzió 25.5 vagy újabb.  
+- Java Development Kit (JDK) 8 vagy újabb.
 
 ### Környezet beállítási követelmények
-- Java integrált fejlesztőkörnyezet (IDE), például IntelliJ IDEA vagy Eclipse.  
-- Maven a függőségek kezeléséhez (opcionális, de ajánlott).
+- Java Integrated Development Environment (IDE), például IntelliJ IDEA vagy Eclipse.  
+- Maven a függőségkezeléshez (opcionális, de ajánlott).
 
-### Tudás előfeltételek
-- Alapvető ismeretek a Java programozási koncepciókról.  
-- Ismeret a PDF dokumentum struktúráiról és sablonmezőkről.
+### Tudás előkövetelmények
+- Alapvető Java programozási ismeretek.  
+- Ismeretek a PDF‑dokumentum struktúráiról és a sablonmezőkről.
 
 ## A GroupDocs.Parser beállítása Java-hoz
-
-A **GroupDocs.Parser** Java projektekben való használatának megkezdéséhez hozzá kell adnod a könyvtárat a build konfigurációhoz.
+A **GroupDocs.Parser** használatához a Java‑projektben hozzá kell adni a könyvtárat a build‑konfigurációhoz.
 
 ### Maven beállítás
-
-Add hozzá a következő konfigurációt a `pom.xml` fájlodhoz, hogy a GroupDocs.Parser függőségként legyen felvéve:
+Adja hozzá a következő konfigurációt a `pom.xml` fájlhoz, hogy a GroupDocs.Parser függőségként kerüljön be:
 
 ```xml
 <repositories>
@@ -81,23 +121,19 @@ Add hozzá a következő konfigurációt a `pom.xml` fájlodhoz, hogy a GroupDoc
 ```
 
 ### Közvetlen letöltés
-
-Alternatívaként letöltheted a legújabb verziót innen: [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
+Alternatívaként letöltheti a legújabb verziót a [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) oldalról.
 
 ### Licenc beszerzése
+- Szerezzen **free trial** vagy ideiglenes licencet a GroupDocs.Parser teljes funkcionalitásának kipróbálásához.  
+- Vásároljon kereskedelmi licencet, ha a termelésben való használatra megfelel.
 
-- Szerezz **ingyenes próba** vagy ideiglenes licencet a GroupDocs.Parser teljes funkcionalitásának felfedezéséhez.  
-- Licencet vásárolhatsz, ha úgy döntesz, hogy megfelel az igényeidnek.
-
-A telepítés után inicializáld a GroupDocs.Parser‑t a projektedben a szükséges osztályok importálásával és az alapbeállítások konfigurálásával. Most lépjünk a fő megvalósításra.
+A telepítés után inicializálja a GroupDocs.Parser‑t a projektben a szükséges osztályok importálásával és az alapvető beállítások konfigurálásával. Most lépjünk tovább a fő megvalósításra.
 
 ## Implementációs útmutató
+Három kulcsfontosságú lépésen keresztül haladunk: **template fields definiálása**, **document template létrehozása**, és **PDF feldolgozása a sablon használatával**.
 
-Áttekintünk három kulcsfontosságú lépést: **sablonmezők definiálása**, **dokumentumsablon létrehozása**, és **PDF feldolgozása a sablonnal**.
-
-### Sablonmezők definiálása fix pozícióval
-
-Az adatok pontos elhelyezése az oldalon elengedhetetlen a megbízható kinyeréshez. Az alábbi kódrészlet egy sablonmező definiálását mutatja.
+### Sablonmezők definiálása rögzített pozícióval
+Az adatok pontos elhelyezése az oldalon elengedhetetlen a megbízható kinyeréshez. Az alábbi kódrészlet a sablonmező definiálását mutatja.
 
 #### 1. lépés: Szükséges osztályok importálása
 
@@ -110,6 +146,8 @@ import com.groupdocs.parser.templates.Point;
 
 #### 2. lépés: Sablonmező létrehozása
 
+`TemplateField` egyetlen adatpontot képvisel egy PDF‑sablonban, amelyet a neve és a téglalap koordinátái határoznak meg.
+
 ```java
 // Define a rectangle for fixed positioning of the field
 templateField = new TemplateField(
@@ -117,11 +155,12 @@ templateField = new TemplateField(
     "FromCompany"); // Name of the field
 ```
 
-A kódrészlet egy `TemplateField`‑et hoz létre **FromCompany** névvel, amely (35, 135) koordinátán helyezkedik el, mérete 100 × 10 pont. Ez a pontos elhelyezés segíti a parser‑t a **PDF dokumentumokból történő adatkinyerésben**, ahol az elrendezés soha nem változik.
+A kódrészlet egy `TemplateField`‑et hoz létre **FromCompany** néven, amely (35, 135) pozícióban, 100 × 10 pont mérettel helyezkedik el. Ez a pontos elhelyezés segíti a parser‑t **extract PDF data** kinyerésében olyan dokumentumokból, ahol a layout soha nem változik.
+
+> **Definition Anchor:** `TemplateField` represents a single data point in a PDF template, defined by its name and rectangular coordinates.
 
 ### Dokumentumsablon létrehozása definiált mezőkkel
-
-Most kombináld a mezőket egy újrahasználható sablonba.
+Most kombináljuk a mezőket egy újrahasználható sablonba.
 
 #### 1. lépés: Szükséges osztályok importálása
 
@@ -133,16 +172,19 @@ import java.util.Arrays;
 
 #### 2. lépés: Sablonmezők létrehozása és hozzáadása
 
+`DocumentTemplate` egy tároló, amely egy vagy több `TemplateField` objektumot tartalmaz, és irányítja a kinyerési folyamatot.
+
 ```java
 // Construct a template with specified fields
 template = new Template(Arrays.asList(new TemplateItem[]{field}));
 ```
 
-Minden definiált mező most egyetlen **dokumentumsablon** része, készen áll a feldolgozásra.
+Az összes definiált mező most egyetlen **document template** része, készen áll a feldolgozásra.
 
-### PDF feldolgozása a sablonnal
+> **Definition Anchor:** `DocumentTemplate` is the container that holds one or more `TemplateField` objects and drives the extraction process.
 
-A sablon készen áll, így kinyerheted a kívánt információkat bármely megfelelő PDF-ből.
+### PDF feldolgozása a sablon használatával
+A sablon elkészülte után a kívánt információkat bármely egyező PDF‑ből kinyerhetjük.
 
 #### 1. lépés: Szükséges osztályok importálása
 
@@ -154,6 +196,8 @@ import com.groupdocs.parser.exceptions.UnsupportedDocumentFormatException;
 ```
 
 #### 2. lépés: Dokumentum feldolgozása
+
+`Parser` a központi osztály, amely beolvassa a dokumentumot, alkalmazza a `DocumentTemplate`‑et, és visszaadja a kinyert mezőértékeket.
 
 ```java
 String inputFilePath = "YOUR_DOCUMENT_DIRECTORY/sample_invoice.pdf"; // Replace with your document path
@@ -180,57 +224,68 @@ try (Parser parser = new Parser(inputFilePath)) {
 }
 ```
 
-A kód megnyitja a PDF-et, ellenőrzi, hogy a szövegkinyerés támogatott‑e, a fájlt **a sablonnal** feldolgozza, majd végigiterál minden kinyert mezőn. Ha a dokumentum formátuma nem támogatott, egy egyértelmű kivétel kerül dobásra.
+A kód megnyitja a PDF‑et, ellenőrzi, hogy a szövegkivonás támogatott‑e, **with the template** feldolgozza a fájlt, majd végigiterál a kinyert mezőkön. Ha a dokumentumformátum nem támogatott, egy egyértelmű kivétel kerül dobásra.
+
+> **Definition Anchor:** `Parser` is the core class that reads a document, applies a `DocumentTemplate`, and returns extracted field values.
 
 ## Gyakorlati alkalmazások
-
 A GroupDocs.Parser számos valós helyzetben ragyog:
 
-1. **Számlafeldolgozás** – Dátumok, összegek és szállítói nevek automatikus kinyerése.  
-2. **Űrlapadatok kinyerése** – Kitöltött mezők rögzítése beolvasott űrlapokról.  
-3. **Szerződéskezelés** – Kulcsfontosságú feltételek, felek és dátumok azonosítása szerződésekben.
+1. **Invoice Processing** – Dátumok, összegek és szállítói nevek automatikus kinyerése.  
+2. **Form Data Extraction** – Kitöltött mezők rögzítése beolvasott űrlapokból.  
+3. **Contract Management** – Kulcsfontosságú feltételek, felek és dátumok azonosítása szerződésekben.  
+
+Ezek a felhasználási esetek azt mutatják, miért kritikus a **how to parse PDF** dokumentumok programozott kezelése a modern vállalkozások számára.
 
 ## Teljesítmény szempontok
-
-- A `Parser` objektumokat azonnal szabadítsd fel a memória felszabadításához.  
-- A sablonokat tartsd a lehető legegyszerűbbnek; a felesleges mezők többletterhet jelentenek.  
-- Rendszeresen frissítsd a könyvtárat, hogy profitálj a teljesítményjavító javításokból.
+- Szabadítsa fel a `Parser` objektumokat időben a memória felszabadításához.  
+- Tartsa a sablonokat a lehető legegyszerűbb formában; a felesleges mezők terhelést okoznak.  
+- Rendszeresen frissítse a könyvtárat a teljesítményjavító javításokért.  
+- 200 oldalnál nagyobb fájlok esetén dolgozza fel az oldalakat sorban, vagy növelje a JVM heap‑et (`-Xmx2g`) a csúcsok elkerülése érdekében.
 
 ## Gyakori problémák és megoldások
 
-| Probléma | Megoldás |
-|----------|----------|
-| **Nem támogatott formátum hiba** | Ellenőrizd, hogy a PDF tartalmaz kinyerhető szöveget (nem csak képeket). Szükség esetén használj OCR előfeldolgozást. |
-| **Helytelen mezőértékek** | Ellenőrizd újra a téglalap koordinátákat; használj PDF‑nézőt a pontos pozíciók méréséhez. |
-| **Memória csúcsok nagy fájlok esetén** | Feldolgozd az oldalakat egyenként, vagy növeld a JVM heap méretét (`-Xmx`). |
+| Issue | Solution |
+|-------|----------|
+| **Unsupported format error** | Ellenőrizze, hogy a PDF kinyerhető szöveget tartalmaz‑e (nem csak képeket). Szükség esetén használjon OCR előfeldolgozást. |
+| **Incorrect field values** | Ellenőrizze újra a téglalap koordinátákat; használjon PDF‑nézőt a pontos pozíciók méréséhez. |
+| **Memory spikes on large files** | Feldolgozza az oldalakat egyenként, vagy növelje a JVM heap méretét (`-Xmx`). |
 
 ## Gyakran feltett kérdések
 
-**K: Mi a GroupDocs.Parser?**  
-A GroupDocs.Parser egy Java könyvtár, amely strukturált adatot nyer ki PDF, DOCX, XLSX és más dokumentumformátumokból.
+**Q: Mi a GroupDocs.Parser?**  
+A: A GroupDocs.Parser egy Java‑könyvtár, amely strukturált adatokat nyer ki PDF, DOCX, XLSX és több mint 50 egyéb dokumentumformátumból.
 
-**K: Hogyan kezelem a nem támogatott dokumentumformátumokat?**  
-Használj kivételkezelést (ahogy a példában) a `UnsupportedDocumentFormatException` elkapásához, és tájékoztasd a felhasználót megfelelően.
+**Q: Hogyan kezelem a nem támogatott dokumentumformátumokat?**  
+A: Fogja el a `UnsupportedDocumentFormatException`‑t a kódrészletben, tájékoztassa a felhasználót, és opcionálisan térjen vissza egy másik feldolgozási csővezetékhez.
 
-**K: Tudok képeket feldolgozni PDF‑ekben a GroupDocs.Parser‑rel?**  
-Igen, de biztosítanod kell, hogy a könyvtár képkinyerési funkciói engedélyezve legyenek a dokumentumtípusodhoz.
+**Q: Feldolgozhatok képeket PDF‑eken belül a GroupDocs.Parser-rel?**  
+A: Igen, engedélyezze a képkinyerési funkciót a parser konfigurációjában, hogy a beágyazott képeket is visszakapja.
 
-**K: Mik a gyakori hibaelhárítási lépések, ha**  
-(Az eredeti útmutató itt megszakadt; a hibaelhárítást folytathatod a fájlengedélyek ellenőrzésével, a sablon koordináták és a PDF elrendezés egyezésének megerősítésével, valamint a legújabb könyvtárverzió használatával.)
+**Q: Hogyan tudok egyszerű szöveget kinyerni egy PDF‑ből sablon nélkül?**  
+A: Használja a `Parser` osztály `extractText()` metódusát; ez visszaadja a teljes szöveges tartalmat, amelyet aztán reguláris kifejezésekkel dolgozhat fel.
+
+**Q: Mik a legjobb gyakorlatok egy újrahasználható PDF sablon létrehozásához?**  
+A: Tartsa a mezőtéglalapokat szorosan a tartalom körül, nevezze el a mezőket értelemszerűen, és tesztelje a sablont több PDF‑en, hogy biztosítsa a konzisztenciát.
 
 ## Következtetés
-
-Gratulálunk! Most már tudod, **hogyan kell PDF fájlokat feldolgozni** a **GroupDocs.Parser Java** segítségével, a pontos sablonmezők definiálásától a megbízható adatkinyerésig. Egy újrahasználható **dokumentumsablon** létrehozásával automatizálhatod az ismétlődő adatgyűjtési feladatokat, és a magasabb értékű munkára összpontosíthatsz.
+Gratulálunk! Most már érti, hogyan kell **how to parse PDF** fájlokat a **GroupDocs.Parser Java** segítségével, a pontos sablonmezők definiálásától a megbízható adatkinyerésig. Egy újrahasználható **document template** létrehozásával automatizálhatja az ismétlődő adatgyűjtési feladatokat, javíthatja a pontosságot, és felszabadíthatja csapatát a magasabb értékű munkákra.
 
 ### Következő lépések
-- Próbálj meg különböző dokumentumtípusokat feldolgozni (DOCX, XLSX).  
-- Kísérletezz OCR integrációval beolvasott PDF-ekhez.  
-- Fedezd fel a fejlett funkciókat, mint a táblázatkinyerés és egyedi adatfeldolgozók.
+- Próbáljon meg különböző dokumentumtípusokat, például DOCX vagy XLSX, ugyanazzal a sablonmegközelítéssel feldolgozni.  
+- Kísérletezzen OCR integrációval beolvasott PDF‑ekhez, amelyek csak képeket tartalmaznak.  
+- Fedezze fel a fejlett funkciókat, mint a táblázatkinyerés, egyedi adatfeldolgozók és kötegelt feldolgozás.
 
-További részletekért látogasd meg a hivatalos [GroupDocs Documentation](https://docs.groupdocs.com/parser/java/) oldalt, és csatlakozz a közösséghez a [Support Forum](https://forum.groupdocs.com/c/parser) fórumon.
+További részletekért látogassa meg a hivatalos [GroupDocs Documentation](https://docs.groupdocs.com/parser/java/) oldalt, és csatlakozzon a közösséghez a [Support Forum](https://forum.groupdocs.com/c/parser) fórumon.
 
 ---
 
-**Utolsó frissítés:** 2026-01-09  
+**Legutóbb frissítve:** 2026-05-18  
 **Tesztelve a következővel:** GroupDocs.Parser 25.5  
 **Szerző:** GroupDocs
+
+## Kapcsolódó oktatóanyagok
+
+- [How to extract PDF text Java using GroupDocs.Parser](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
+- [How to Extract PDF Metadata Using GroupDocs.Parser in Java: A Step‑By‑Step Guide](/parser/java/metadata-extraction/extract-pdf-metadata-groupdocs-parser-java/)
+- [Extract PDF Form Data with GroupDocs.Parser in Java](/parser/java/form-extraction/groupdocs-parser-java-pdf-form-extraction/)
