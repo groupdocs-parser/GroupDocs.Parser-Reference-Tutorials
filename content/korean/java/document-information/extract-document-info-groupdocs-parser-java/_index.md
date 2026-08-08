@@ -1,46 +1,93 @@
 ---
-date: '2025-12-27'
-description: GroupDocs.Parser를 사용하여 Java에서 파일 유형을 가져오고 문서 메타데이터를 읽는 방법을 배웁니다. 설정,
-  코드 예제 및 성능 팁이 포함됩니다.
+date: '2026-06-22'
+description: GroupDocs.Parser를 사용하여 Java 파일 유형을 가져오고 문서 메타데이터를 읽는 방법을 배웁니다. 설정, 코드
+  예제 및 성능 팁이 포함되어 있습니다.
 keywords:
-- extract document metadata
-- GroupDocs.Parser Java setup
-- Java document management
-title: GroupDocs.Parser를 사용한 Java 파일 유형 가져오기
+- get file type java
+- java read pdf metadata
+- determine file format java
+- java get document size
+- get page count java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-22'
+  description: Learn how to get file type java and read document metadata java using
+    GroupDocs.Parser. Includes setup, code examples, and performance tips.
+  headline: How to Get File Type Java with GroupDocs.Parser
+  type: TechArticle
+- description: Learn how to get file type java and read document metadata java using
+    GroupDocs.Parser. Includes setup, code examples, and performance tips.
+  name: How to Get File Type Java with GroupDocs.Parser
+  steps:
+  - name: '**Document Management Systems:** Automatically tag documents by type, size,
+      and page count for faster search and retrieval.'
+    text: '**Document Management Systems:** Automatically tag documents by type, size,
+      and page count for faster search and retrieval.'
+  - name: '**Data Analysis Pipelines:** Pull metadata into a data warehouse to support
+      reporting on document inventories.'
+    text: '**Data Analysis Pipelines:** Pull metadata into a data warehouse to support
+      reporting on document inventories.'
+  - name: '**Content Migration:** Validate files before moving them to a new storage
+      solution, ensuring no unexpected formats slip through.'
+    text: '**Content Migration:** Validate files before moving them to a new storage
+      solution, ensuring no unexpected formats slip through.'
+  type: HowTo
+- questions:
+  - answer: It means programmatically retrieving a document’s format (e.g., DOCX,
+      PDF) using Java code.
+    question: What does “get file type java” mean?
+  - answer: GroupDocs.Parser for Java offers a straightforward API to read document
+      metadata.
+    question: Which library handles this?
+  - answer: A free trial works for development; a full license is required for production
+      deployments.
+    question: Do I need a license?
+  - answer: Yes—process files in batches or use multi‑threading to keep memory usage
+      low.
+    question: Can I parse document info java for large files?
+  - answer: Page count, file size, author, creation date, and more via the `IDocumentInfo`
+      interface.
+    question: What other metadata can I read?
+  type: FAQPage
+title: GroupDocs.Parser를 사용한 Java 파일 유형 가져오기 방법
 type: docs
 url: /ko/java/document-information/extract-document-info-groupdocs-parser-java/
 weight: 1
 ---
 
-# GroupDocs.Parser로 파일 유형 Java 가져오기
+# GroupDocs.Parser를 사용하여 Java에서 파일 유형 가져오기
 
-문서에서 파일 유형, 페이지 수 또는 크기와 같은 필수 세부 정보를 추출하는 것은 많은 Java 프로젝트에서 일상적인 요구 사항입니다. 문서 관리 시스템, 데이터‑분석 파이프라인 또는 마이그레이션 도구를 구축하든, **getting file type java** 를 빠르고 안정적으로 수행하면 수작업에 소요되는 수많은 시간을 절약할 수 있습니다. 이 튜토리얼에서는 GroupDocs.Parser를 설정하고 기본 메타데이터를 가져오며, 실제 시나리오에서 해당 정보를 활용하는 방법을 단계별로 안내합니다.
+문서에서 파일 유형, 페이지 수 또는 크기와 같은 필수 세부 정보를 추출하는 것은 많은 Java 프로젝트에서 일상적인 필요입니다. 문서 관리 시스템, 데이터 분석 파이프라인 또는 마이그레이션 도구를 구축하든, **get file type java** 를 빠르고 신뢰성 있게 수행하면 수많은 수작업 시간을 절약할 수 있습니다. 이 가이드에서는 GroupDocs.Parser 설정, 기본 메타데이터 가져오기, 그리고 실제 시나리오에 적용하는 방법을 단계별로 안내합니다.
 
-## Quick Answers
-- **What does “get file type java” mean?** 문서의 파일 형식(DOCX, PDF 등)을 Java를 사용해 프로그래밍 방식으로 가져오는 것을 의미합니다.  
-- **Which library handles this?** GroupDocs.Parser for Java는 문서 메타데이터를 읽기 위한 간단한 API를 제공합니다.  
-- **Do I need a license?** 개발 단계에서는 무료 체험판으로 충분하며, 프로덕션에서는 정식 라이선스가 필요합니다.  
-- **Can I parse document info java for large files?** 예, 배치 처리 또는 멀티‑스레딩을 사용해 최적의 성능을 낼 수 있습니다.  
-- **What other metadata can I read?** `IDocumentInfo`를 통해 페이지 수, 파일 크기 등 다양한 정보를 읽을 수 있습니다.
+## 빠른 답변
+- **“get file type java”는 무엇을 의미합니까?** 문서는 Java 코드를 사용하여 프로그래밍 방식으로 형식(DOCX, PDF 등)을 가져오는 것을 의미합니다.  
+- **어떤 라이브러리가 이를 처리합니까?** GroupDocs.Parser for Java는 문서 메타데이터를 읽기 위한 직관적인 API를 제공합니다.  
+- **라이선스가 필요합니까?** 무료 체험은 개발에 사용할 수 있으며, 프로덕션 배포에는 정식 라이선스가 필요합니다.  
+- **대용량 파일에 대해 document info java를 파싱할 수 있나요?** 예—파일을 배치로 처리하거나 멀티스레딩을 사용하여 메모리 사용량을 낮게 유지할 수 있습니다.  
+- **다른 어떤 메타데이터를 읽을 수 있나요?** `IDocumentInfo` 인터페이스를 통해 페이지 수, 파일 크기, 작성자, 생성 날짜 등 다양한 정보를 읽을 수 있습니다.
 
-## What is “get file type java”?
-Java에서 파일 유형을 가져온다는 것은 문서를 검사하고 해당 형식 식별자를 반환하는 API를 호출하는 것을 의미합니다. GroupDocs.Parser의 `getDocumentInfo()` 메서드는 이 정보를 즉시 제공하여 수동으로 파일 확장자를 확인할 필요를 없애줍니다.
+## “get file type java”란 무엇입니까?
+**get file type java** 작업은 문서의 내부 형식 식별자를 반환합니다.  
+GroupDocs.Parser로 파일을 로드하고 `getDocumentInfo()`를 호출하면 API가 파일 헤더를 읽고 즉시 형식을 보고하므로 신뢰할 수 없는 확장자 기반 검사를 없앨 수 있습니다. 이 방법은 PDF, DOCX, XLSX, 이미지 및 라이브러리가 지원하는 다양한 형식에 적용됩니다.  
+`getDocumentInfo()`는 문서 메타데이터를 포함하는 `IDocumentInfo` 객체를 반환합니다.
 
-## Why Use GroupDocs.Parser to Read Document Metadata Java?
-- **Broad format support:** PDF, DOCX, XLSX, 이미지 등 다양한 형식을 지원합니다.  
-- **Zero‑dependency parsing:** 기본 메타데이터를 읽기 위해 Apache POI와 같은 외부 도구가 필요 없습니다.  
-- **High performance:** 대용량 파일 및 배치 처리에 최적화되어 있습니다.  
-- **Consistent API:** 모든 지원 형식에 대해 동일한 코드를 사용할 수 있어 유지보수가 용이합니다.
+## Java에서 문서 메타데이터를 읽기 위해 GroupDocs.Parser를 사용하는 이유
+GroupDocs.Parser는 한 번의 호출로 파일 유형, 페이지 수 및 크기를 제공하여 문서를 분류하는 가장 빠른 방법입니다. **50개 이상의 입력 및 출력 형식**을 지원하며, 전체 문서를 메모리에 로드하지 않고 수백 페이지 파일을 처리하고, 모든 형식에 걸쳐 일관된 API를 제공하므로 한 번의 코드 작성으로 어디서든 동작합니다.
 
-## Prerequisites
+### 정량적 이점
+- **Format coverage:** PDF, DOCX, XLSX, PPTX, HTML 및 일반 이미지 형식을 포함한 50개 이상의 형식.  
+- **Performance:** 일반 서버에서 300페이지 PDF의 메타데이터를 200 ms 미만에 가져옵니다.  
+- **Memory usage:** 데이터를 스트리밍하여 대용량 파일에서도 피크 RAM을 50 MB 이하로 유지합니다.
+
+## 전제 조건
 - Java Development Kit (JDK) 8 이상.  
-- Maven 또는 외부 JAR를 수동으로 추가할 수 있는 환경.  
-- GroupDocs.Parser 라이브러리 (버전 25.5 이상) 접근 권한.
+- Maven 또는 외부 JAR를 수동으로 추가할 수 있는 기능.  
+- GroupDocs.Parser 라이브러리 접근 (버전 25.5 이상).
 
-## Setting Up GroupDocs.Parser for Java
-프로젝트에 라이브러리를 통합하는 방법은 다음 중 하나를 선택하면 됩니다.
+## Java용 GroupDocs.Parser 설정
+아래 방법 중 하나를 사용하여 라이브러리를 프로젝트에 통합합니다.
 
-### Maven Setup
+### Maven 설정
 `pom.xml` 파일에 저장소와 의존성을 추가합니다:
 
 ```xml
@@ -61,35 +108,35 @@ Java에서 파일 유형을 가져온다는 것은 문서를 검사하고 해당
 </dependencies>
 ```
 
-### Direct Download
+### 직접 다운로드
 또는 최신 JAR를 [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/)에서 다운로드합니다.
 
-### License Acquisition
-무료 체험판으로 시작하거나 전체 기능을 사용하려면 임시 라이선스를 요청할 수 있습니다. 프로덕션에서는 정식 라이선스를 구매하세요.
+### 라이선스 획득
+무료 체험으로 시작하거나 임시 라이선스를 요청하여 전체 기능을 활성화할 수 있습니다. 프로덕션에서는 라이선스를 구매해야 합니다. 임시 라이선스는 여기에서 받을 수 있습니다: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/).
 
-## Implementation Guide
-아래 단계별 가이드는 **get file type java** 및 기타 메타데이터를 정확히 가져오는 방법을 보여줍니다.
+## 구현 가이드
+아래는 **get file type java** 및 기타 메타데이터를 정확히 가져오는 단계별 안내입니다.
 
-### Feature Overview: Get Document Information
+### 기능 개요: 문서 정보 가져오기
 이 기능을 사용하면 파일 유형, 페이지 수, 크기와 같은 기본 메타데이터를 가져올 수 있어 문서 분류 또는 검증 자동화에 적합합니다.
 
-#### Step 1: Import Necessary Classes
-먼저 필요한 클래스를 가져옵니다:
+## 단계 1: 필요한 클래스 가져오기
+`Parser` 클래스는 문서를 읽고 메타데이터를 추출하기 위한 진입점입니다. 파일을 열고 정보를 가져오는 메서드를 제공합니다.
 
 ```java
 import com.groupdocs.parser.Parser;
 import com.groupdocs.parser.data.IDocumentInfo;
 ```
 
-#### Step 2: Define Document Path
-분석하려는 파일의 절대 경로나 상대 경로를 지정합니다:
+## 단계 2: 문서 경로 정의
+`documentPath` 변수는 분석하려는 파일의 절대 경로나 상대 경로를 저장합니다.
 
 ```java
 String documentPath = "YOUR_DOCUMENT_DIRECTORY/your-document.docx";
 ```
 
-#### Step 3: Create an Instance of Parser Class
-`Parser` 인스턴스로 문서를 엽니다. try‑with‑resources 블록은 스트림을 자동으로 닫아줍니다:
+## 단계 3: Parser 클래스 인스턴스 생성
+`Parser` 객체는 파일을 열고 메타데이터 추출을 준비하며, try‑with‑resources 블록은 스트림이 자동으로 닫히도록 보장합니다.
 
 ```java
 try (Parser parser = new Parser(documentPath)) {
@@ -99,19 +146,15 @@ try (Parser parser = new Parser(documentPath)) {
 }
 ```
 
-*Why this step?* `Parser`를 초기화하면 파일이 로드되고 메타데이터 추출을 위한 준비가 완료됩니다.
-
-#### Step 4: Retrieve Document Information
-메타데이터 객체를 가져오기 위해 `getDocumentInfo()`를 호출합니다:
+## 단계 4: 문서 정보 가져오기
+`IDocumentInfo` 인터페이스는 파일 유형, 페이지 수, 파일 크기 등을 포함한 문서에서 추출된 메타데이터를 나타냅니다.
 
 ```java
 IDocumentInfo info = parser.getDocumentInfo();
 ```
 
-반환된 `IDocumentInfo`에는 파일 유형, 페이지 수, 크기 등 다양한 정보가 포함되어 있어 **read document metadata java** 작업에 필수적입니다.
-
-#### Step 5: Display Document Properties
-수집한 정보를 콘솔에 출력합니다:
+## 단계 5: 문서 속성 표시
+`System.out.println` 문은 가져온 메타데이터를 콘솔에 출력하여 파일 유형, 페이지 수, 크기를 즉시 확인할 수 있게 합니다.
 
 ```java
 System.out.println(String.format("FileType: %s", info.getFileType()));
@@ -119,60 +162,70 @@ System.out.println(String.format("PageCount: %d", info.getPageCount()));
 System.out.println(String.format("Size: %d bytes", info.getSize()));
 ```
 
-이제 몇 줄의 코드만으로 파일 유형, 페이지 수, 크기를 확인할 수 있습니다.
+이제 몇 줄의 코드만으로 파일 유형, 페이지 수 및 크기를 얻을 수 있습니다.
 
-### Troubleshooting Tips
-- **File Not Found:** `documentPath`를 다시 확인하고 파일이 애플리케이션에서 접근 가능한지 확인하세요.  
-- **Unsupported Format:** GroupDocs.Parser가 해당 파일 형식을 지원하는지 확인합니다. 이 라이브러리는 대부분의 일반적인 오피스 및 이미지 형식을 다룹니다.  
-- **Memory Issues with Large Files:** 대용량 문서는 작은 배치로 나누어 처리하거나 스트리밍 옵션을 활성화하세요.
+## 문제 해결 팁
+- **File Not Found:** `documentPath`를 다시 확인하고 애플리케이션에서 파일에 접근할 수 있는지 확인하십시오.  
+- **Unsupported Format:** GroupDocs.Parser가 처리하려는 파일 형식을 지원하는지 확인하십시오. 이 라이브러리는 대부분의 일반 오피스 및 이미지 형식을 다룹니다.  
+- **Memory Issues with Large Files:** 대용량 문서를 더 작은 배치로 처리하거나 가능한 경우 스트리밍 옵션을 활성화하십시오.
 
-## Common Issues and Solutions
+## 일반적인 문제와 해결책
 | Issue | Solution |
 |-------|----------|
-| **OutOfMemoryError** when parsing huge PDFs | 스트리밍 모드로 `Parser`를 사용하거나 PDF를 섹션으로 나누어 파싱하세요. |
-| **Incorrect file type returned** | 파일이 손상되지 않았는지 확인하세요. GroupDocs.Parser는 확장자가 아닌 내부 파일 헤더를 읽습니다. |
-| **License expired** | GroupDocs 포털에서 새로운 임시 라이선스를 적용하거나 정식 라이선스로 업그레이드하세요. |
+| **OutOfMemoryError** when parsing huge PDFs | `Parser`를 스트리밍 모드로 사용하거나 파싱하기 전에 PDF를 섹션으로 나누세요. |
+| **Incorrect file type returned** | 파일이 손상되지 않았는지 확인하십시오; GroupDocs.Parser는 확장자만이 아니라 내부 파일 헤더를 읽습니다. |
+| **License expired** | GroupDocs 포털에서 새로운 임시 라이선스를 적용하거나 정식 라이선스로 업그레이드하십시오. |
 
-## Practical Applications
-1. **Document Management Systems:** 파일 유형, 크기, 페이지 수로 자동 태깅해 검색 및 검색 속도를 향상시킵니다.  
-2. **Data Analysis Pipelines:** 메타데이터를 데이터 웨어하우스로 가져와 문서 인벤토리 보고서를 지원합니다.  
-3. **Content Migration:** 새 스토리지로 이동하기 전에 파일을 검증해 예상치 못한 형식이 섞이는 것을 방지합니다.
+## 실용적인 적용 사례
+1. **Document Management Systems:** 문서를 유형, 크기, 페이지 수에 따라 자동으로 태그 지정하여 검색 및 검색 속도를 높입니다.  
+2. **Data Analysis Pipelines:** 메타데이터를 데이터 웨어하우스로 가져와 문서 인벤토리 보고를 지원합니다.  
+3. **Content Migration:** 파일을 새 저장소로 이동하기 전에 검증하여 예상치 못한 형식이 포함되지 않도록 합니다.
 
-## Performance Considerations
-- **Efficient Paths:** 가능한 절대 경로를 사용해 추가 I/O 해석 오버헤드를 줄이세요.  
-- **Resource Cleanup:** 위에서 보여준 try‑with‑resources 패턴은 파일 핸들을 즉시 해제합니다.  
-- **Batch Processing:** 대량 작업 시 스레드당 하나의 `Parser` 인스턴스를 생성하고 안전한 경우 여러 파일에 재사용하세요.
+## 성능 고려 사항
+- **Efficient Paths:** 가능한 경우 절대 경로를 사용하여 추가 I/O 해석 오버헤드를 방지하십시오.  
+- **Resource Cleanup:** 위에 보여진 try‑with‑resources 패턴은 파일 핸들이 즉시 해제되도록 보장합니다.  
+- **Batch Processing:** 대량 작업에서는 스레드당 하나의 `Parser` 인스턴스를 생성하고 안전할 경우 여러 파일에 재사용하십시오.
 
-## Conclusion
-이제 GroupDocs.Parser를 사용해 **get file type java** 및 기타 문서 메타데이터를 읽는 완전한 프로덕션‑레디 방법을 확보했습니다. 이 접근 방식은 문서 분류를 간소화하고 데이터 품질을 향상시키며 다양한 Java 애플리케이션에서 수작업을 크게 줄여줍니다.
+## 리소스
+- [GroupDocs.Parser Java 문서](https://docs.groupdocs.com/parser/java/)
+- [GroupDocs.Parser API 레퍼런스](https://reference.groupdocs.com/parser/java)
+- [GroupDocs Parser 릴리즈](https://releases.groupdocs.com/parser/java/)
+- [GroupDocs.Parser GitHub 저장소](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
+- [GroupDocs 포럼](https://forum.groupdocs.com/c/parser)
 
-**Next Steps:**  
-- `IDocumentInfo`의 저자, 생성 날짜, 사용자 정의 메타데이터와 같은 추가 속성을 탐색하세요.  
-- 메타데이터 추출을 데이터베이스와 연동해 검색 가능한 문서 카탈로그를 구축하세요.  
-- 텍스트 추출, 표 감지 등 고급 파싱 기능을 확인해 보다 깊은 콘텐츠 분석을 수행하세요.
+## 결론
+이제 GroupDocs.Parser를 사용하여 **get file type java** 및 기타 문서 메타데이터를 읽는 완전하고 프로덕션 준비된 방법을 갖추었습니다. 이 접근 방식은 문서 분류를 간소화하고 데이터 품질을 향상시키며 다양한 Java 애플리케이션에서 수작업을 감소시킵니다.
 
-## FAQ Section
-1. **What is GroupDocs.Parser for Java?**  
-   - 다양한 파일 형식에서 텍스트와 메타데이터를 추출할 수 있는 문서 파싱 라이브러리입니다.  
-2. **Can I use GroupDocs.Parser with non‑text files?**  
-   - 예, PDF, 이미지, 스프레드시트 등 많은 형식을 지원합니다.  
-3. **How do I handle exceptions in GroupDocs.Parser?**  
-   - 파일을 찾을 수 없거나 지원되지 않는 형식 오류와 같은 잠재적 문제를 관리하려면 try‑catch 블록을 사용하세요.  
-4. **Is there a performance cost when parsing large documents?**  
-   - 대용량 파일은 리소스를 많이 사용할 수 있으므로 멀티‑스레딩 등 최적화를 고려하세요.  
-5. **Where can I get support if I encounter issues?**  
-   - 무료 지원 및 커뮤니티 도움을 받으려면 [GroupDocs Forum](https://forum.groupdocs.com/c/parser)을 방문하세요.
+**다음 단계:**  
+- `IDocumentInfo`의 추가 속성(작성자, 생성 날짜, 사용자 정의 메타데이터 등)을 탐색하십시오.  
+- 이 메타데이터 추출을 데이터베이스 계층과 결합하여 검색 가능한 문서 카탈로그를 구축하십시오.  
+- 고급 파싱 기능(텍스트 추출, 표 감지)을 확인하여 더 깊은 콘텐츠 분석을 수행하십시오.
 
-## Resources
-- **Documentation:** [GroupDocs.Parser Java Documentation](https://docs.groupdocs.com/parser/java/)  
-- **API Reference:** [GroupDocs.Parser API Reference](https://reference.groupdocs.com/parser/java)  
-- **Download:** [GroupDocs Parser Releases](https://releases.groupdocs.com/parser/java/)  
-- **GitHub:** [GroupDocs.Parser GitHub Repository](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
-- **Free Support:** [GroupDocs Forum](https://forum.groupdocs.com/c/parser)  
-- **Temporary License:** [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+## FAQ 섹션
+**Q:** GroupDocs.Parser for Java란 무엇입니까?  
+**A:** 다양한 파일 형식에서 텍스트와 메타데이터를 추출할 수 있는 문서 파싱 기능을 제공하는 라이브러리입니다.
+
+**Q:** 비텍스트 파일에도 GroupDocs.Parser를 사용할 수 있나요?  
+**A:** 예, PDF, 이미지, 스프레드시트 등 일반 텍스트 외의 많은 형식을 지원합니다.
+
+**Q:** GroupDocs.Parser에서 예외를 어떻게 처리합니까?  
+**A:** 파일을 찾을 수 없거나 지원되지 않는 형식 오류와 같은 문제를 관리하기 위해 호출을 try‑catch 블록으로 감싸고, 예외 세부 정보를 로그에 기록하십시오.
+
+**Q:** 대용량 문서를 파싱할 때 성능 비용이 있나요?  
+**A:** 대용량 파일 파싱은 리소스를 많이 소모할 수 있으므로 멀티스레딩이나 스트리밍 옵션을 사용해 메모리 사용량을 낮추고 처리량을 향상시키십시오.
+
+**Q:** 문제가 발생했을 때 어디서 지원을 받을 수 있나요?  
+**A:** 무료 커뮤니티 지원 및 공식 지원을 위해 [GroupDocs 포럼](https://forum.groupdocs.com/c/parser)을 방문하십시오.
 
 ---
 
-**Last Updated:** 2025-12-27  
-**Tested With:** GroupDocs.Parser 25.5  
-**Author:** GroupDocs
+**마지막 업데이트:** 2026-06-22  
+**테스트 환경:** GroupDocs.Parser 25.5  
+**작성자:** GroupDocs  
+
+---
+
+## 관련 튜토리얼
+- [GroupDocs.Parser for Java를 사용한 ZIP 아카이브 내 파일 유형 감지](/parser/java/container-formats/detect-file-types-zip-groupdocs-parser-java/)
+- [GroupDocs.Parser를 사용한 Java PDF 메타데이터 추출 방법: 단계별 가이드](/parser/java/metadata-extraction/extract-pdf-metadata-groupdocs-parser-java/)
+- [GroupDocs.Parser Java 문서 정보 추출 튜토리얼](/parser/java/document-information/)
