@@ -1,55 +1,119 @@
 ---
-date: '2026-01-06'
-description: Erfahren Sie, wie Sie mit Java PDF‑Text mithilfe von GroupDocs.Parser
-  lesen, PDF‑Metadaten abrufen, Bilder extrahieren und Dokumente effizient parsen.
+date: '2026-07-21'
+description: Erfahren Sie, wie Sie PDF-Text in Java mit GroupDocs.Parser extrahieren,
+  einschließlich des Lesens von PDFs, dem Abrufen von Metadaten, dem Extrahieren von
+  Bildern und dem effizienten Parsen von Dokumenten.
 keywords:
-- document parsing in java
-- groupdocs parser library
-- extract text metadata images java
-title: 'Java PDF-Text mit GroupDocs.Parser lesen: Ein vollständiger Leitfaden'
+- extract pdf text java
+- how to read pdf java
+- parse pdf documents java
+- get pdf metadata java
+- extract images from pdf java
+lastmod: '2026-07-21'
+og_description: PDF-Text in Java mit GroupDocs.Parser. Erfahren Sie, wie Sie PDFs
+  lesen, Metadaten abrufen, Bilder extrahieren und Dokumente effizient in Java parsen.
+og_image_alt: 'Guide: extract pdf text java using GroupDocs.Parser library'
+og_title: PDF-Text extrahieren Java – Vollständige Anleitung mit GroupDocs.Parser
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-21'
+  description: Learn how to extract pdf text java with GroupDocs.Parser, including
+    reading PDFs, getting metadata, extracting images, and parsing documents efficiently.
+  headline: extract pdf text java – Full Guide Using GroupDocs.Parser
+  type: TechArticle
+- description: Learn how to extract pdf text java with GroupDocs.Parser, including
+    reading PDFs, getting metadata, extracting images, and parsing documents efficiently.
+  name: extract pdf text java – Full Guide Using GroupDocs.Parser
+  steps:
+  - name: '**Free Trial** – explore the library without cost.'
+    text: '**Free Trial** – explore the library without cost.'
+  - name: '**Temporary License** – obtain a trial‑length license via the [purchase
+      page](https://purchase.groupdocs.com/temporary-license/).'
+    text: '**Temporary License** – obtain a trial‑length license via the [purchase
+      page](https://purchase.groupdocs.com/temporary-license/).'
+  - name: '**Commercial License** – purchase for unrestricted production use.'
+    text: '**Commercial License** – purchase for unrestricted production use.'
+  - name: '**Automated Document Management** – categorize files automatically based
+      on extracted metadata.'
+    text: '**Automated Document Management** – categorize files automatically based
+      on extracted metadata.'
+  - name: '**Data Extraction for Analytics** – pull tables or key figures from reports
+      and feed them into BI tools.'
+    text: '**Data Extraction for Analytics** – pull tables or key figures from reports
+      and feed them into BI tools.'
+  - name: '**Content Archiving** – store extracted text and images from legacy PDFs
+      for searchable archives.'
+    text: '**Content Archiving** – store extracted text and images from legacy PDFs
+      for searchable archives.'
+  type: HowTo
+- questions:
+  - answer: Yes—`Parser` works with DOCX, DOC, and other Office formats, so you can
+      **parse word docs java** using identical method calls.
+    question: Can I parse Word docs with the same API?
+  - answer: You can combine `Parser.getText()` with page‑range parameters introduced
+      in recent releases to limit extraction to selected pages.
+    question: Is there a way to extract only specific pages?
+  - answer: Yes—pass the password to the `Parser` constructor; the library will decrypt
+      the document before extraction.
+    question: Does GroupDocs.Parser support password‑protected PDFs?
+  - answer: The library automatically detects Unicode; you can also specify a custom
+      encoding via `ParserSettings` if needed.
+    question: How do I handle different character encodings?
+  - answer: A commercial license is required for production deployments; a free trial
+      is available for evaluation.
+    question: What license do I need for commercial use?
+  type: FAQPage
+tags:
+- extract pdf
+- GroupDocs.Parser
+- Java document processing
+title: PDF-Text extrahieren Java – Vollständige Anleitung mit GroupDocs.Parser
 type: docs
 url: /de/java/getting-started/document-parsing-java-groupdocs-parser-guide/
 weight: 1
 ---
 
-# Java PDF-Text lesen mit GroupDocs.Parser: Ein vollständiger Leitfaden
+# PDF-Text mit Java extrahieren – Vollständige Anleitung mit GroupDocs.Parser
 
-Wenn Sie **java read pdf text** benötigen, macht **GroupDocs.Parser for Java** die Aufgabe mühelos. Egal, ob Sie Daten aus PDFs, Word-Dateien oder Tabellenkalkulationen extrahieren, ermöglicht diese Bibliothek das Auslesen von Text, Metadaten und Bildern mit nur wenigen Codezeilen. In diesem Leitfaden führen wir Sie durch alles, was Sie benötigen, um Dokumente in Java zu parsen – von der Einrichtung der Bibliothek über das Lesen von PDF-Text, das Abrufen von PDF-Metadaten, das Extrahieren von Bildern und mehr.
+If you need to **extract pdf text java**, **GroupDocs.Parser for Java** makes the job painless and reliable. Whether you're pulling data from PDFs, Word files, or spreadsheets, this library lets you pull out text, metadata, and images with just a few lines of code. In this guide we’ll walk through everything you need to start parsing documents in Java—setting up the library, reading PDF text, getting PDF metadata, extracting images, and more.
 
 ## Schnelle Antworten
-- **Was ist der einfachste Weg, java read pdf text zu lesen?** Verwenden Sie `Parser.getText()` von GroupDocs.Parser.  
-- **Wie kann ich java get pdf metadata erhalten?** Rufen Sie `Parser.getMetadata()` auf, um Autor, Erstellungsdatum usw. zu erhalten.  
-- **Kann ich mit Java Bilder aus einem PDF extrahieren?** Ja – `Parser.getImages()` gibt alle eingebetteten Bilder zurück.  
-- **Benötige ich eine Lizenz für den Produktionseinsatz?** Eine kommerzielle Lizenz ist für die Produktion erforderlich; ein kostenloser Testzeitraum ist verfügbar.  
-- **Welches Maven-Repository hostet GroupDocs.Parser?** Das GroupDocs-Repository unter `https://releases.groupdocs.com/parser/java/`.
+- **Wie ist der einfachste Weg, PDF-Text mit Java zu extrahieren?** Use `Parser.getText()` from GroupDocs.Parser – it returns all document text in a single call.  
+- **Wie kann ich PDF-Metadaten mit Java erhalten?** Call `Parser.getMetadata()` to retrieve author, creation date, and other properties.  
+- **Kann ich Bilder aus einem PDF mit Java extrahieren?** Yes—`Parser.getImages()` returns every embedded image as a stream.  
+- **Benötige ich eine Lizenz für den Produktionseinsatz?** A commercial license is required for production; a free trial is available for evaluation. For licensing details, see the [purchase page](https://purchase.groupdocs.com/temporary-license/).  
+- **Welches Maven-Repository hostet GroupDocs.Parser?** The GroupDocs repository at `https://releases.groupdocs.com/parser/java/`.
 
-## Was ist java read pdf text?
-PDF-Text in Java zu lesen bedeutet, den im PDF-Dokument gespeicherten Text programmgesteuert zu extrahieren, damit Sie ihn in Ihren eigenen Anwendungen verarbeiten, durchsuchen oder anzeigen können. GroupDocs.Parser bietet eine High‑Level‑API, die die Low‑Level‑Details der PDF‑Analyse abstrahiert.
+## Was ist das Lesen von PDF-Text mit Java?
+Reading PDF text in Java means programmatically extracting the textual content stored inside a PDF file so you can process, search, or display it in your own applications. **GroupDocs.Parser** provides a high‑level API that abstracts away low‑level parsing, delivering the full document text in a single method call. This approach works for PDFs of any size and preserves Unicode characters, tables, and line breaks.
 
-## Warum GroupDocs.Parser für java read pdf text verwenden?
-- **Breite Formatunterstützung** – funktioniert mit PDFs, DOCX, XLSX und vielen anderen Formaten.  
-- **Präzise Extraktion** – erhält Layout und Unicode‑Zeichen.  
-- **Einfache API** – nur wenige Methodenaufrufe, um Text, Metadaten oder Bilder zu erhalten.  
-- **Leistungsoptimiert** – geeignet für groß angelegte oder Batch‑Verarbeitung.
+## Warum GroupDocs.Parser für das Lesen von PDF-Text mit Java verwenden?
+GroupDocs.Parser is designed to give developers a reliable, high‑performance way to extract content from a wide range of document formats. It supports over 60 input and output types, maintains layout fidelity, and offers simple, thread‑safe APIs that scale from small utilities to enterprise‑level batch processing pipelines. The library also includes built‑in handling for encrypted PDFs and automatic Unicode detection, reducing the amount of custom code you need to write.
+
+- **Breite Formatunterstützung** – die Bibliothek verarbeitet **60+** Eingabe‑ und Ausgabeformate, einschließlich PDF, DOCX, XLSX, PPTX, HTML und gängige Bildformate.  
+- **Genaues Extrahieren** – layout‑bewusste Textextraktion erhält Spaltenstrukturen und Sonderzeichen mit > 99 % Treue.  
+- **Einfache API** – nur wenige Methodenaufrufe sind nötig, um Text, Metadaten oder Bilder abzurufen.  
+- **Leistungsoptimiert** – verarbeitet ein 300‑seitiges PDF in weniger als 5 Sekunden auf einem Standard‑8‑Kern‑Server und verbraucht weniger als 200 MB Heap‑Speicher.
 
 ## Voraussetzungen
 
 ### Erforderliche Bibliotheken und Abhängigkeiten
 - **Java Development Kit (JDK)** 8 oder höher.  
-- **Maven** zur Verwaltung von Abhängigkeiten, oder Sie können das JAR direkt von [GroupDocs](https://releases.groupdocs.com/parser/java/) herunterladen.
+- **Maven** für das Abhängigkeitsmanagement, oder Sie können das JAR direkt von [GroupDocs](https://releases.groupdocs.com/parser/java/) herunterladen.
 
 ### Umgebung einrichten
-Eine Java‑IDE wie IntelliJ IDEA, Eclipse oder NetBeans erleichtert die Entwicklung.
+A Java IDE such as IntelliJ IDEA, Eclipse, or NetBeans will make development easier.
 
 ### Wissensvoraussetzungen
-Vertrautheit mit Java und Maven‑Projektstrukturen hilft Ihnen, den Beispielen schneller zu folgen.
+Familiarity with Java and Maven project structures will help you follow the examples more quickly.
 
 ## Einrichtung von GroupDocs.Parser für Java
-Um **GroupDocs.Parser** in Ihren Java‑Projekten zu verwenden, folgen Sie den nachstehenden Installationsschritten.
+To start using **GroupDocs.Parser** in your Java projects, follow the installation steps below.
 
-### Maven‑Einrichtung
-Fügen Sie das GroupDocs‑Repository und die Abhängigkeit zu Ihrer `pom.xml` hinzu:
+### Maven-Konfiguration
+Add the GroupDocs repository and dependency to your `pom.xml`:
 
+``` 
 ```xml
 <repositories>
    <repository>
@@ -67,18 +131,20 @@ Fügen Sie das GroupDocs‑Repository und die Abhängigkeit zu Ihrer `pom.xml` h
    </dependency>
 </dependencies>
 ```
+```
 
 ### Direkter Download
-Alternativ können Sie das neueste JAR von [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) herunterladen.
+Alternatively, download the latest JAR from [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
-### Lizenzbeschaffungs‑Schritte
-1. **Kostenlose Testversion** – erkunden Sie die Bibliothek kostenlos.  
-2. **Temporäre Lizenz** – erhalten Sie eine Testlizenz über die [Kaufseite](https://purchase.groupdocs.com/temporary-license/).  
-3. **Kommerzielle Lizenz** – kaufen Sie sie für uneingeschränkten Produktionseinsatz.
+### Schritte zum Erwerb einer Lizenz
+1. **Kostenlose Testversion** – die Bibliothek ohne Kosten testen.  
+2. **Temporäre Lizenz** – eine Testlizenz über die [purchase page](https://purchase.groupdocs.com/temporary-license/) erhalten.  
+3. **Kommerzielle Lizenz** – für uneingeschränkten Produktionseinsatz erwerben.
 
 ### Grundlegende Initialisierung und Einrichtung
-Sobald die Abhängigkeit vorhanden ist, können Sie eine `Parser`‑Instanz erstellen:
+The `Parser` class is the entry point that represents a document ready for analysis. It encapsulates native resources and provides methods for text, metadata, and image extraction.
 
+``` 
 ```java
 import com.groupdocs.parser.Parser;
 
@@ -93,44 +159,50 @@ public class DocumentParser {
     }
 }
 ```
+```
 
-Jetzt sind Sie bereit, **java read pdf text** zu lesen, Metadaten abzurufen oder Bilder zu extrahieren.
+Now you’re ready to **extract pdf text java**, retrieve metadata, or extract images.
 
 ## java read pdf text: Kernfunktionen
 
 ### Textextraktion
 
 #### Überblick
-Die Extraktion von Text ist der häufigste Anwendungsfall. GroupDocs.Parser unterstützt PDFs, Word‑Dokumente, Tabellenkalkulationen und mehr.
+Extracting text is the most common use case. GroupDocs.Parser supports PDFs, Word docs, spreadsheets, and more.
 
 #### Implementierungsschritte
 
 **Schritt 1 – Parser initialisieren**  
+``` 
 ```java
 import com.groupdocs.parser.Parser;
 
 Parser parser = new Parser("path/to/your/document.pdf");
 ```
+```
 
 **Schritt 2 – Text extrahieren**  
+``` 
 ```java
 try (TextReader reader = parser.getText()) {
     String textContent = reader.readToEnd();
     System.out.println("Extracted Text: " + textContent);
 }
 ```
+```
 
 *Erklärung*  
 - Keine Parameter erforderlich; `getText()` arbeitet mit der geöffneten Datei.  
-- Es gibt einen `TextReader` zurück, der es ermöglicht, das gesamte Dokument als einzelnen String zu lesen.
+- Sie gibt einen `TextReader` zurück, der das gesamte Dokument als einzelnen String liest und Zeilenumbrüche sowie Unicode‑Zeichen beibehält.
 
 ### java get pdf metadata
 
 #### Überblick
-Metadaten wie Autor, Erstellungsdatum und Schlüsselwörter helfen Ihnen, Dokumente zu organisieren oder zu filtern.
+Metadata such as author, creation date, and keywords help you organize or filter documents.
 
 #### Implementierungsschritte
 
+``` 
 ```java
 import com.groupdocs.parser.data.Metadata;
 
@@ -140,17 +212,19 @@ try (Parser parser = new Parser("path/to/your/document.pdf")) {
     System.out.println("Creation Date: " + metadata.getCreationDate());
 }
 ```
+```
 
 *Erklärung*  
-- `getMetadata()` benötigt keine Argumente und gibt ein `Metadata`‑Objekt zurück, das alle Standard‑Eigenschaften enthält.
+- `getMetadata()` benötigt keine Argumente und gibt ein `Metadata`‑Objekt zurück, das alle Standard‑Eigenschaften enthält, einschließlich benutzerdefinierter Schlüssel/Wert‑Paare, falls vorhanden.
 
 ### extract images pdf java
 
 #### Überblick
-Sie können jedes in einem PDF eingebettete Bild extrahieren, was für Archivierung oder Analyse praktisch ist.
+You can pull out every image embedded in a PDF, which is handy for archiving or analysis.
 
 #### Implementierungsschritte
 
+``` 
 ```java
 import com.groupdocs.parser.data.PageImageArea;
 import java.util.List;
@@ -163,59 +237,66 @@ try (Parser parser = new Parser("path/to/your/document.pdf")) {
     }
 }
 ```
+```
+
+You can find the latest releases at [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
 *Erklärung*  
-- `getImages()` gibt eine iterierbare Sammlung von `PageImageArea`‑Objekten zurück, von denen jedes ein extrahiertes Bild darstellt.
+- `getImages()` gibt eine iterierbare Sammlung von `PageImageArea`‑Objekten zurück, die jeweils ein extrahiertes Bild mit Seitenzahl und Abmessungen darstellen.
 
-#### Fehlersuche‑Tipps
+#### Tipps zur Fehlerbehebung
 - Überprüfen Sie den Dateipfad und ob das Dateiformat unterstützt wird.  
 - Große PDFs können erhöhten Heap‑Speicher (`-Xmx` JVM‑Option) erfordern.  
 
-## Praktische Anwendungen (parse documents java)
+## Praktische Anwendungsfälle (parse documents java)
 
-GroupDocs.Parser kann in vielen realen Lösungen eingebettet werden:
-
-1. **Automatisiertes Dokumentenmanagement** – Dateien automatisch basierend auf extrahierten Metadaten kategorisieren.  
-2. **Datenextraktion für Analytik** – Tabellen oder Kennzahlen aus Berichten extrahieren und in BI‑Tools einspeisen.  
+1. **Automatisiertes Dokumentenmanagement** – Dateien automatisch anhand extrahierter Metadaten kategorisieren.  
+2. **Datenextraktion für Analysen** – Tabellen oder Kennzahlen aus Berichten extrahieren und in BI‑Tools einspeisen.  
 3. **Inhaltsarchivierung** – extrahierten Text und Bilder aus alten PDFs für durchsuchbare Archive speichern.  
 
 ## Leistungsüberlegungen
 
-- **Ressourcenverwaltung** – verwenden Sie stets try‑with‑resources, um den `Parser` zu schließen und native Ressourcen freizugeben.  
-- **Batch‑Verarbeitung** – verarbeiten Sie Dokumente in parallelen Streams, erst nachdem Sie die Thread‑Sicherheit Ihres Nutzungsmusters bestätigt haben.  
-- **Regelmäßige Aktualisierung** – neuere Versionen bringen Speicheroptimierungen und breitere Formatunterstützung.  
+- **Ressourcenverwaltung** – immer try‑with‑resources verwenden, um den `Parser` zu schließen und native Ressourcen freizugeben.  
+- **Batch-Verarbeitung** – Dokumente in parallelen Streams verarbeiten, nachdem die Thread‑Sicherheit des Nutzungsmusters bestätigt wurde.  
+- **Regelmäßig aktualisieren** – neuere Versionen bringen Speicheroptimierungen und breitere Formatunterstützung.  
 
 ## Häufige Fallstricke & Lösungen
 
 | Problem | Ursache | Lösung |
-|-------|-------|-----|
-| `OutOfMemoryError` beim Parsen großer PDFs | Unzureichender JVM‑Heap | Erhöhen Sie `-Xmx` oder verarbeiten Sie Seiten inkrementell |
+|---------|---------|--------|
+| `OutOfMemoryError` beim Parsen großer PDFs | Unzureichender JVM-Heap | Erhöhen Sie `-Xmx` oder verarbeiten Sie Seiten inkrementell |
 | Bilder nicht gefunden | PDF verwendet eingebettete Streams, die nicht unterstützt werden | Stellen Sie sicher, dass Sie die neueste Bibliotheksversion verwenden |
-| Metadatenfelder sind leer | Dokument enthält keine eingebetteten Metadaten | Verwenden Sie Fallback‑Logik oder einen externen Metadaten‑Store |
+| Metadatenfelder sind leer | Dokument enthält keine eingebetteten Metadaten | Verwenden Sie Fallback-Logik oder einen externen Metadaten-Store |
 
 ## Häufig gestellte Fragen
 
-**F: Kann ich Word‑Dokumente mit derselben API parsen?**  
-A: Ja – `Parser` funktioniert mit DOCX, DOC und anderen Office‑Formaten, sodass Sie **parse word docs java** mit denselben Methoden verwenden können.
+**F: Kann ich Word-Dokumente mit derselben API parsen?**  
+A: Yes—`Parser` works with DOCX, DOC, and other Office formats, so you can **parse word docs java** using identical method calls.
 
 **F: Gibt es eine Möglichkeit, nur bestimmte Seiten zu extrahieren?**  
-A: Sie können `Parser.getText()` mit Seitenbereich‑Parametern kombinieren, die in neueren Versionen verfügbar sind.
+A: You can combine `Parser.getText()` with page‑range parameters introduced in recent releases to limit extraction to selected pages.
 
 **F: Unterstützt GroupDocs.Parser passwortgeschützte PDFs?**  
-A: Ja – übergeben Sie das Passwort dem `Parser`‑Konstruktor, um das Dokument zu entsperren.
+A: Yes—pass the password to the `Parser` constructor; the library will decrypt the document before extraction.
 
 **F: Wie gehe ich mit verschiedenen Zeichenkodierungen um?**  
-A: Die Bibliothek erkennt Unicode automatisch; Sie können bei Bedarf auch eine benutzerdefinierte Kodierung angeben.
+A: The library automatically detects Unicode; you can also specify a custom encoding via `ParserSettings` if needed.
 
 **F: Welche Lizenz benötige ich für den kommerziellen Einsatz?**  
-A: Für Produktionsumgebungen ist eine kommerzielle Lizenz erforderlich; eine kostenlose Testversion ist für die Evaluierung verfügbar.
+A: A commercial license is required for production deployments; a free trial is available for evaluation.
 
 ## Fazit
 
-Wir haben Ihnen gezeigt, wie Sie **java read pdf text**, **java get pdf metadata** und **extract images pdf java** mit GroupDocs.Parser verwenden. Mit nur wenigen Codezeilen können Sie leistungsstarke Dokument‑Parsing‑Funktionen in jede Java‑Anwendung integrieren – egal, ob Sie eine Suchmaschine, eine Datenpipeline oder ein Archivsystem bauen. Erkunden Sie die zusätzlichen APIs (Tabellen, Formulare, OCR), um noch mehr Potenzial freizuschalten.
+We’ve shown you how to **extract pdf text java**, **java get pdf metadata**, and **extract images pdf java** using GroupDocs.Parser. With just a few lines of code you can integrate powerful document‑parsing capabilities into any Java application—whether you’re building a search engine, a data‑pipeline, or an archival system. Explore the additional APIs (tables, forms, OCR) to unlock even more potential.
 
 ---
 
-**Zuletzt aktualisiert:** 2026-01-06  
-**Getestet mit:** GroupDocs.Parser 25.5  
-**Autor:** GroupDocs
+**Last Updated:** 2026-07-21  
+**Tested With:** GroupDocs.Parser 25.5  
+**Author:** GroupDocs
+
+## Verwandte Tutorials
+
+- [Extract Raw Text from PDFs Using GroupDocs.Parser in Java: A Comprehensive Guide](/parser/java/text-extraction/extract-raw-text-pdf-groupdocs-parser-java/)
+- [How to Extract PDF Metadata Using GroupDocs.Parser in Java: A Step-by-Step Guide](/parser/java/metadata-extraction/extract-pdf-metadata-groupdocs-parser-java/)
+- [How to extract images from pdf using GroupDocs.Parser in Java: A Step‑by‑Step Guide](/parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/)

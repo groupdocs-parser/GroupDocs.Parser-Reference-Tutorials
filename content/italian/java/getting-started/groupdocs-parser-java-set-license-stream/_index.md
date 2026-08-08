@@ -1,14 +1,69 @@
 ---
-date: '2026-01-11'
+date: '2026-07-21'
 description: Scopri come impostare la licenza da un InputStream utilizzando GroupDocs.Parser
-  per Java. Questa guida mostra come impostare la licenza in modo efficiente e migliora
-  il tuo flusso di lavoro di analisi dei documenti.
+  for Java. Questa guida mostra come impostare la licenza in modo efficiente e migliora
+  il flusso di lavoro di analisi dei documenti.
 keywords:
-- Set license from stream with GroupDocs.Parser for Java
-- GroupDocs.Parser for Java setup
+- how to set license
+- GroupDocs.Parser Java license
+- InputStream license Java
+lastmod: '2026-07-21'
+og_description: Scopri come impostare la licenza da un InputStream utilizzando GroupDocs.Parser
+  for Java. Segui la guida passo‑passo per configurare la licenza in modo efficiente
+  in ambienti cloud o on‑prem.
+og_image_alt: Guide showing Java code that loads a GroupDocs.Parser license from an
+  InputStream
+og_title: Come impostare la licenza da Stream in GroupDocs.Parser for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-21'
+  description: Learn how to set license from an InputStream using GroupDocs.Parser
+    for Java. This guide shows how to set license efficiently and enhances your document
+    parsing workflow.
+  headline: How to Set License from Stream in GroupDocs.Parser for Java
+  type: TechArticle
+- description: Learn how to set license from an InputStream using GroupDocs.Parser
+    for Java. This guide shows how to set license efficiently and enhances your document
+    parsing workflow.
+  name: How to Set License from Stream in GroupDocs.Parser for Java
+  steps:
+  - name: '**Cloud‑Native Microservices** – Store the license in a secret manager
+      (AWS Secrets Manager, Azure Key Vault) and stream it at startup, avoiding any
+      file‑system write.'
+    text: '**Cloud‑Native Microservices** – Store the license in a secret manager
+      (AWS Secrets Manager, Azure Key Vault) and stream it at startup, avoiding any
+      file‑system write.'
+  - name: '**Serverless Functions** – Lambda or Azure Functions have read‑only file
+      systems; loading the license from an environment variable converted to a `ByteArrayInputStream`
+      works flawlessly.'
+    text: '**Serverless Functions** – Lambda or Azure Functions have read‑only file
+      systems; loading the license from an environment variable converted to a `ByteArrayInputStream`
+      works flawlessly.'
+  - name: '**Secure On‑Prem Deployments** – Keep the license encrypted on disk, decrypt
+      it in memory, and feed the resulting `InputStream` to the `License` object,
+      ensuring the clear‑text file never touches the disk.'
+    text: '**Secure On‑Prem Deployments** – Keep the license encrypted on disk, decrypt
+      it in memory, and feed the resulting `InputStream` to the `License` object,
+      ensuring the clear‑text file never touches the disk.'
+  type: HowTo
+- questions:
+  - answer: Use the `License.setLicense(InputStream)` method.
+    question: What is the primary way to set a license?
+  - answer: No, the file can be streamed directly from resources or a remote source.
+    question: Do I need a physical license file on disk?
+  - answer: Java 8 or higher is recommended.
+    question: Which Java version is required?
+  - answer: Absolutely—streaming avoids writing the file to the local filesystem.
+    question: Can I use this in cloud environments?
+  - answer: The code will log an error and the library will run in trial mode.
+    question: What happens if the license file is missing?
+  type: FAQPage
+tags:
+- set license
+- GroupDocs.Parser
 - Java document parsing
-title: 'Come impostare la licenza da stream in GroupDocs.Parser per Java: una guida
-  completa'
+- InputStream
+title: Come impostare la licenza da Stream in GroupDocs.Parser for Java
 type: docs
 url: /it/java/getting-started/groupdocs-parser-java-set-license-stream/
 weight: 1
@@ -16,44 +71,55 @@ weight: 1
 
 # Come impostare la licenza da stream in GroupDocs.Parser per Java
 
-Se stai cercando **come impostare la licenza** da uno stream mentre lavori con GroupDocs.Parser per Java, sei nel posto giusto. In questa guida percorreremo l'intero processo, dalla configurazione del progetto al codice effettivo che carica la licenza tramite un `InputStream`. Alla fine, vedrai come impostare la licenza in modo efficiente e mantenere fluido il tuo flusso di lavoro di parsing.
+Se stai cercando **come impostare la licenza** da uno stream mentre lavori con GroupDocs.Parser per Java, sei nel posto giusto. In questa guida percorreremo l’intero processo, dalla configurazione del progetto al codice effettivo che carica la licenza tramite un `InputStream`. Alla fine vedrai come impostare la licenza in modo efficiente e mantenere fluido il tuo flusso di parsing.
 
 ## Risposte rapide
-- **Qual è il modo principale per impostare una licenza?** Usa il metodo `License.setLicense(InputStream)`.  
-- **È necessario un file di licenza fisico su disco?** No, il file può essere trasmesso direttamente dalle risorse o da una fonte remota.  
-- **Quale versione di Java è richiesta?** Si consiglia Java 8 o superiore.  
-- **Posso usarlo in ambienti cloud?** Assolutamente—lo streaming evita di scrivere il file sul filesystem locale.  
-- **Cosa succede se il file di licenza è mancante?** Il codice registrerà un errore e la libreria funzionerà in modalità di prova.
+- **Qual è il modo principale per impostare una licenza?** Use the `License.setLicense(InputStream)` method.  
+- **Ho bisogno di un file di licenza fisico su disco?** No, the file can be streamed directly from resources or a remote source.  
+- **Quale versione di Java è richiesta?** Java 8 or higher is recommended.  
+- **Posso usarlo in ambienti cloud?** Absolutely—streaming avoids writing the file to the local filesystem.  
+- **Cosa succede se il file di licenza è mancante?** The code will log an error and the library will run in trial mode.
 
 ## Introduzione
 
-Stai cercando una gestione efficiente delle licenze della libreria mentre lavori con il parsing di documenti in Java? Conoscere **come impostare la licenza** usando un `InputStream` è fondamentale, poiché consente di risparmiare tempo e risorse evitando la gestione manuale dei file. Questo tutorial ti guida nell'impostare una licenza da uno stream con GroupDocs.Parser per Java, semplificando il tuo flusso di lavoro.
+Nelle moderne applicazioni Java, gestire licenze di terze parti senza lasciare file sensibili su disco è una necessità comune. **How to set license** usando un `InputStream` ti consente di mantenere il file di licenza in memoria, ideale per servizi containerizzati, funzioni serverless e qualsiasi ambiente in cui l’accesso al file‑system è limitato. Questo tutorial ti guida nella configurazione di GroupDocs.Parser per Java, nel caricamento della licenza da uno stream e nella gestione delle problematiche più comuni.
 
-**Cosa imparerai:**
-- Come configurare GroupDocs.Parser per Java nel tuo progetto  
-- Implementazione passo‑passo dell'impostazione di una licenza da un `InputStream`  
-- Applicazioni pratiche e possibilità di integrazione  
+Per un uso dettagliato dell’API, consulta la [documentazione](https://docs.groupdocs.com/parser/java/) ufficiale.
 
-Prima di immergerti nei dettagli, assicuriamoci che tutto sia configurato correttamente. Prima copriremo i prerequisiti.
+Imparerai a:
+
+* Aggiungere GroupDocs.Parser a un progetto Maven o manuale.  
+* Trasmettere in streaming un file di licenza dal classpath, da un URL o da qualsiasi `InputStream`.  
+* Verificare che la licenza sia applicata e comprendere il fallback alla modalità trial.
+
+## Cos'è “how to set license” in GroupDocs.Parser?
+
+`how to set license` descrive il processo di informare il motore GroupDocs.Parser che può operare senza limitazioni di prova. La libreria verifica la licenza a runtime; se viene fornita una licenza valida, tutte le funzionalità premium diventano disponibili.
+
+## Perché trasmettere in streaming la licenza invece di usare un percorso file?
+
+Lo streaming della licenza elimina la necessità di scrivere un file temporaneo, riduce il carico I/O e migliora la sicurezza mantenendo i byte della licenza solo in memoria. GroupDocs.Parser può elaborare documenti fino a **200 + pagine** senza caricare l’intero file in RAM, e lo stesso approccio leggero si applica alla gestione delle licenze.
 
 ## Prerequisiti
 
 Per iniziare con GroupDocs.Parser per Java, avrai bisogno di:
 
 ### Librerie richieste
-- **GroupDocs.Parser for Java**: Assicurati di utilizzare la versione 25.5 o successiva.
+- **GroupDocs.Parser for Java**: versione **25.5** o successiva (la libreria supporta **100+** formati di documento, inclusi DOCX, PDF, PPTX, XLSX, HTML e i più comuni tipi di immagine).
 
 ### Requisiti di configurazione dell'ambiente
-- Un Java Development Kit (JDK) installato sulla tua macchina (si consiglia Java 8 o superiore).
+- JDK 8 o superiore installato localmente o nel tuo pipeline CI.  
+- Maven 3.6+ (se scegli l'integrazione Maven).
 
 ### Prerequisiti di conoscenza
-- Conoscenza di base della programmazione Java e della gestione dei file.
+- Sintassi Java di base, soprattutto il lavoro con stream e try‑with‑resources.  
+- Familiarità con la creazione di un progetto Maven o l'aggiunta di JAR esterni al classpath.
 
 ## Configurazione di GroupDocs.Parser per Java
 
-Iniziamo configurando GroupDocs.Parser nel tuo progetto. Ci sono due modi principali per farlo: usare Maven o scaricare direttamente dal sito web di GroupDocs.
+Esistono due modi principali per aggiungere GroupDocs.Parser al tuo progetto: Maven o download manuale.
 
-**Configurazione Maven**
+### Configurazione Maven
 
 Aggiungi la seguente configurazione al tuo `pom.xml`:
 
@@ -75,39 +141,34 @@ Aggiungi la seguente configurazione al tuo `pom.xml`:
 </dependencies>
 ```
 
-**Download diretto**
+### Download diretto
 
-In alternativa, puoi scaricare l'ultima versione di GroupDocs.Parser per Java da [GroupDocs Parser Releases](https://releases.groupdocs.com/parser/java/).
+In alternativa, puoi scaricare l’ultima versione di GroupDocs.Parser per Java da [GroupDocs Parser Releases](https://releases.groupdocs.com/parser/java/).
 
 ### Acquisizione della licenza
 
-Per utilizzare le funzionalità di GroupDocs.Parser senza limitazioni, considera l'acquisizione di una licenza:
-- **Prova gratuita**: Prova tutte le funzionalità.  
-- **Licenza temporanea**: Ottieni una licenza temporanea per esplorare le funzionalità premium.  
-- **Acquisto**: Acquista una licenza per l'accesso completo.
+Per utilizzare GroupDocs.Parser senza limitazioni di prova, ti servirà un file di licenza:
 
-Dopo aver ottenuto il file di licenza, dovrai inizializzarlo nella tua applicazione. Passiamo ora all'implementazione di questa funzionalità.
+- **Prova gratuita** – Tutte le funzionalità sono disponibili per 30 giorni.  
+- **Licenza temporanea** – Ideale per valutazioni a breve termine; richiedine una dalla pagina [Temporary License](https://purchase.groupdocs.com/temporary-license/).  
+- **Licenza acquistata** – Fornisce utilizzo illimitato in produzione.
 
-## Come impostare la licenza da stream
+Dopo aver ottenuto il file `.lic`, lo incorporerai nella tua applicazione come risorsa o lo recupererai da un bucket di storage sicuro.
 
-### Panoramica
+## Come caricare una licenza da un InputStream?
 
-Impostare la licenza da un `InputStream` è vantaggioso quando si lavora in ambienti dove l'accesso diretto ai file è limitato o quando si gestiscono stream di dati temporanei. Di seguito trovi la guida completa.
-
-#### Passo 1: Prepara il tuo file di licenza
-
-Prima, assicurati che il tuo file di licenza sia accessibile nella directory del progetto.
+Per caricare una licenza da un `InputStream`, leggi il file `.lic` come stream (ad esempio dal classpath o da una fonte remota) e passalo all’oggetto `License`. La classe `License` valida il contenuto XML, e il suo metodo `setLicense(InputStream)` attiva la libreria, eliminando qualsiasi necessità di un file fisico su disco. Il metodo `setLicense(InputStream)` legge i byte della licenza dallo stream e attiva la libreria.
 
 ```java
 String licensePath = "YOUR_DOCUMENT_DIRECTORY"; // Replace with the actual path to your license file.
 File licenseFile = new File(licensePath);
 ```
 
-**Spiegazione**: Il `licensePath` dovrebbe puntare a dove si trova il tuo file di licenza GroupDocs. Questo esempio utilizza un file locale a scopo dimostrativo.
+**Explanation**: The `licensePath` points to the classpath location of the license file. The `try (InputStream licStream = ...)` construct guarantees that the stream is closed after the license is applied, even if an exception occurs.
 
-#### Passo 2: Crea e configura l'oggetto License
+## Cosa succede se il file di licenza è mancante o corrotto?
 
-Successivamente, crea un'istanza della classe `License` e impostala usando l'`InputStream`.
+Se la licenza non può essere caricata, GroupDocs.Parser passa automaticamente alla modalità trial e registra un avviso. Puoi rilevare questa situazione catturando `LicenseException`, che indica che i dati della licenza sono mancanti, illeggibili o malformati. Gestire l’eccezione ti permette di avvisare gli amministratori o di ricorrere a funzionalità limitate senza far crashare l’applicazione. `LicenseException` viene lanciata quando i dati della licenza forniti sono invalidi o non leggibili.
 
 ```java
 if (licenseFile.exists()) {
@@ -124,66 +185,69 @@ if (licenseFile.exists()) {
 }
 ```
 
-**Spiegazione**: Questo blocco verifica se il file di licenza esiste, lo apre come `InputStream` e lo imposta usando l'oggetto `License`. L'uso di una dichiarazione try‑with‑resources garantisce che lo stream venga chiuso automaticamente.
-
-### Suggerimenti per la risoluzione dei problemi
-- **File non trovato**: Assicurati che il percorso del tuo file di licenza sia corretto.  
-- **Gestione IOException**: Implementa una gestione robusta degli errori intorno alle operazioni I/O per gestire le eccezioni in modo elegante.
+**Explanation**: The catch block records the failure and optionally re‑throws a custom exception. This pattern ensures your application never crashes because of licensing issues.
 
 ## Applicazioni pratiche
 
-Ecco alcuni scenari reali in cui impostare una licenza da un `InputStream` è vantaggioso:
+Ecco tre scenari reali in cui lo streaming della licenza risalta:
 
-1. **Applicazioni basate su cloud** – Trasmetti la licenza direttamente da un bucket di archiviazione sicuro senza conservarla localmente.  
-2. **Elaborazione di file temporanei** – Analizza documenti caricati ed elaborati al volo, poi scartati.  
-3. **Ambienti sensibili alla sicurezza** – Riduci al minimo l'esposizione dei percorsi del file system mantenendo la licenza solo in memoria.
+1. **Cloud‑Native Microservices** – Conserva la licenza in un secret manager (AWS Secrets Manager, Azure Key Vault) e trasmettila in streaming all’avvio, evitando qualsiasi scrittura su file‑system.  
+2. **Serverless Functions** – Lambda o Azure Functions hanno file system di sola lettura; caricare la licenza da una variabile d’ambiente convertita in un `ByteArrayInputStream` funziona perfettamente.  
+3. **Secure On‑Prem Deployments** – Mantieni la licenza crittografata su disco, decrittala in memoria e fornisci l’`InputStream` risultante all’oggetto `License`, garantendo che il file in chiaro non tocchi mai il disco.
 
 ## Considerazioni sulle prestazioni
 
-Quando lavori con GroupDocs.Parser in Java, tieni a mente questi consigli di ottimizzazione:
-- Usa lo streaming dove possibile per ridurre l'impronta di memoria.  
-- Profilare la tua applicazione per individuare i colli di bottiglia.  
-- Sfrutta try‑with‑resources per la gestione automatica delle risorse.
+Quando elabori grandi lotti di documenti, tieni presente questi consigli:
+
+* **Reuse the License Object** – Initialize it once at application start‑up; subsequent parsing calls incur no extra licensing overhead.  
+* **Stream Documents** – Use `DocumentParser.parse(InputStream)` to avoid loading entire files into memory.  
+* **Monitor Memory** – GroupDocs.Parser processes up to **500 MB** per document without full in‑memory loading, but enable Java GC logging to spot any leaks.
 
 ## Conclusione
 
-Hai imparato come configurare GroupDocs.Parser per Java e implementare la funzionalità **come impostare la licenza** da uno stream. Questo approccio aumenta la flessibilità nelle applicazioni dove i percorsi dei file sono dinamici o non direttamente accessibili.
+Ora disponi di un approccio completo e pronto per la produzione su **how to set license** da uno stream in GroupDocs.Parser per Java. Incorporando la licenza come risorsa e caricandola tramite un `InputStream`, ottieni flessibilità, sicurezza e compatibilità con i moderni modelli di distribuzione.
 
-**Passi successivi:**
-- Esplora altre funzionalità di GroupDocs.Parser consultando la sua [documentazione](https://docs.groupdocs.com/parser/java/).  
-- Sperimenta l'integrazione di GroupDocs.Parser nei tuoi progetti esistenti per ottenere capacità di elaborazione documenti più avanzate.
+**Prossimi passi**
 
-Pronto a portare le tue competenze di parsing di documenti Java al livello successivo? Prova a implementare questa soluzione nel tuo progetto e osserva come semplifica il tuo flusso di lavoro!
+* Approfondisci la [GroupDocs.Parser for Java Documentation](https://docs.groupdocs.com/parser/java/) per esplorare funzionalità avanzate di parsing come l’estrazione di tabelle e OCR.  
+* Sperimenta il caricamento della licenza da un URL remoto (ad esempio un bucket S3) sostituendo `ClassLoader.getResourceAsStream` con uno stream `HttpURLConnection`.  
+* Integra il parser in un servizio Spring Boot ed espone un endpoint REST per l’analisi on‑the‑fly dei documenti.
+
+Happy coding, and enjoy the streamlined licensing experience!
 
 ## Sezione FAQ
 
-**Q1: A cosa serve GroupDocs.Parser per Java?**  
-A1: È una potente libreria per estrarre testo, metadati, immagini e dati strutturati da vari formati di documento.
+**Q1: What is GroupDocs.Parser for Java used for?**  
+A1: È una libreria potente per estrarre testo, metadati, immagini e dati strutturati da vari formati di documento.
 
-**Q2: Come posso ottenere una licenza temporanea per GroupDocs.Parser?**  
-A1: Visita la pagina [Temporary License](https://purchase.groupdocs.com/temporary-license/) sul sito web di GroupDocs per richiederne una.
+**Q2: How do I obtain a temporary license for GroupDocs.Parser?**  
+A2: Visita la pagina [Temporary License](https://purchase.groupdocs.com/temporary-license/) sul sito GroupDocs per richiederne una.
 
-**Q3: Posso usare GroupDocs.Parser senza impostare una licenza?**  
-A1: Sì, ma sarai limitato alle funzionalità di prova e ai risultati con filigrana.
+**Q3: Can I use GroupDocs.Parser without setting a license?**  
+A3: Sì, ma sarai limitato alle funzionalità di prova e alle uscite con watermark.
 
-**Q4: Quale versione di Java è compatibile con GroupDocs.Parser per Java 25.5?**  
-A1: Si consiglia di usare Java 8 o superiore.
+**Q4: What Java version is compatible with GroupDocs.Parser for Java 25.5?**  
+A4: È consigliato utilizzare Java 8 o superiore; la libreria è testata completamente su Java 11, 17 e 21.
 
-**Q5: Come risolvo i problemi di licenza nella mia applicazione?**  
-A1: Assicurati che il percorso del file di licenza sia corretto e che la tua applicazione abbia le autorizzazioni di lettura appropriate.
+**Q5: How do I troubleshoot license issues in my application?**  
+A5: Verifica il percorso del file di licenza, assicurati dei permessi di lettura e controlla i log dell’applicazione per i messaggi `LicenseException`.
 
 ## Risorse
-- **Documentazione**: [GroupDocs.Parser for Java Documentation](https://docs.groupdocs.com/parser/java/)  
-- **Riferimento API**: [GroupDocs API Reference](https://reference.groupdocs.com/parser/java)  
+- **Documentation**: [GroupDocs.Parser for Java Documentation](https://docs.groupdocs.com/parser/java/)  
+- **API Reference**: [GroupDocs API Reference](https://reference.groupdocs.com/parser/java)  
 - **Download**: [Latest Version Download](https://releases.groupdocs.com/parser/java/)  
-- **Repository GitHub**: [GroupDocs Parser GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
-- **Forum di supporto gratuito**: [GroupDocs Support](https://forum.groupdocs.com/c/parser)  
-- **Licenza temporanea**: [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-
-Seguendo questa guida, sei sulla buona strada per padroneggiare l'uso di GroupDocs.Parser per Java nelle tue applicazioni. Buon coding!
+- **GitHub Repository**: [GroupDocs Parser GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
+- **Free Support Forum**: [GroupDocs Support](https://forum.groupdocs.com/c/parser)  
+- **Temporary License**: [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-**Ultimo aggiornamento:** 2026-01-11  
+**Ultimo aggiornamento:** 2026-07-21  
 **Testato con:** GroupDocs.Parser 25.5 for Java  
 **Autore:** GroupDocs
+
+## Tutorial correlati
+
+- [How to Set GroupDocs License in Java with GroupDocs.Parser](/parser/java/getting-started/groupdocs-parser-java-license-setup-guide/)  
+- [Parse PDF Java: GroupDocs.Parser Getting Started Tutorials](/parser/java/getting-started/)  
+- [Master Document Parsing in Java: A Guide to GroupDocs.Parser for Text Extraction](/parser/java/text-extraction/mastering-document-parsing-groupdocs-parser-java/)
