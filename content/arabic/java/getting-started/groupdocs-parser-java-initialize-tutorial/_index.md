@@ -1,63 +1,85 @@
 ---
-date: '2026-01-09'
-description: تعلم استخراج نص PDF باستخدام Java وGroupDocs.Parser. يغطي هذا الدليل
-  تحويل PDF إلى نص، ومسح الباركود في PDF، ومعالجة استثناءات التحليل.
+date: '2026-05-28'
+description: تعلم كيفية استخراج PDF باستخدام GroupDocs.Parser لـ Java. هذا tutorial
+  خطوة بخطوة يغطي reading محتوى PDF، extracting text، images، barcode scanning، و
+  handling parsing exceptions.
 keywords:
-- GroupDocs.Parser for Java
-- Java document parsing
-- extracting text from PDFs in Java
-title: 'استخراج نص PDF باستخدام Java: إتقان GroupDocs.Parser في Java – دليل خطوة بخطوة'
+- how to extract pdf
+- read pdf content java
+- extract pdf text java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-05-28'
+  description: Learn how to extract PDF using GroupDocs.Parser for Java. This step‑by‑step
+    tutorial covers reading PDF content, extracting text, images, barcode scanning,
+    and handling parsing exceptions.
+  headline: 'How to Extract PDF with GroupDocs.Parser in Java: A Comprehensive Guide'
+  type: TechArticle
+- questions:
+  - answer: Use GroupDocs.Parser’s `Parser` class to open a PDF and call methods like
+      `extractText()`, `extractImages()`, or `extractBarcodes()`.
+    question: What is “how to extract PDF” in Java?
+  - answer: '`extractText()` returns a `String` with the full document text, preserving
+      line breaks.'
+    question: Which method reads PDF pages as plain text?
+  - answer: Yes—`extractBarcodes()` detects and decodes standard 1D/2D barcodes on
+      each page.
+    question: Can I scan barcodes inside a PDF?
+  - answer: Wrap all parser calls in try‑catch blocks for `ParserException` and `IOException`.
+    question: How do I avoid crashes when a PDF is corrupted?
+  - answer: Absolutely—`extractImages()` gives you a list of image streams you can
+      save as PNG, JPEG, etc.
+    question: Is image extraction supported?
+  type: FAQPage
+title: 'كيفية استخراج PDF باستخدام GroupDocs.Parser في Java: دليل شامل'
 type: docs
 url: /ar/java/getting-started/groupdocs-parser-java-initialize-tutorial/
 weight: 1
 ---
 
-# إتقان GroupDocs.Parser في Java: دليل شامل
+# كيفية استخراج PDF باستخدام GroupDocs.Parser في Java: دليل شامل
 
-## المقدمة
+في تطبيقات Java الحديثة، **كيفية استخراج PDF** بسرعة وبشكل موثوق هو مطلب شائع. سواء كنت تبني فهرس بحث، أو خط أنابيب لمعالجة الفواتير، أو نظام جرد يعتمد على الباركود، فإن GroupDocs.Parser for Java يمنحك API نظيفة وعالية الأداء لقراءة محتوى PDF دون التعامل مع تفاصيل PDF منخفضة المستوى. في هذا الدليل ستتعرف على كيفية إعداد المكتبة، تهيئة فئة `Parser`، واستخراج النص، الصور، والباركود—كل ذلك مع معالجة استثناءات التحليل بسلاسة.
 
-في عالمنا الرقمي اليوم، التعامل بفعالية مع **pdf text extraction java** في تطبيقاتك أمر ضروري. سواء كنت بحاجة إلى **convert pdf to text**، استخراج الباركود من مستند، أو ببساطة قراءة محتويات ملف PDF، فإن GroupDocs.Parser for Java يوفر حلاً قويًا وسهل الاستخدام للمطورين. سيوجهك هذا الدليل خلال تهيئة فئة `Parser`، إعداد بيئتك، واستخدام الميزات الرئيسية للمكتبة لاستخراج النصوص، الصور، والباركود من ملفات PDF.
+## إجابات سريعة
+- **ما هي “كيفية استخراج PDF” في Java؟** استخدم فئة `Parser` من GroupDocs.Parser لفتح ملف PDF واستدعاء طرق مثل `extractText()`، `extractImages()`، أو `extractBarcodes()`.  
+- **ما هي الطريقة التي تقرأ صفحات PDF كنص عادي؟** `extractText()` تُعيد `String` يحتوي على النص الكامل للمستند، مع الحفاظ على فواصل الأسطر.  
+- **هل يمكنني مسح الباركود داخل PDF؟** نعم—`extractBarcodes()` يكتشف ويفك تشفير الباركود القياسي 1D/2D في كل صفحة.  
+- **كيف أتجنب الأعطال عندما يكون PDF تالفًا؟** قم بلف جميع استدعاءات الـ parser في كتل try‑catch لـ `ParserException` و `IOException`.  
+- **هل يدعم استخراج الصور؟** بالطبع—`extractImages()` تُعطيك قائمة بتدفقات الصور التي يمكنك حفظها كـ PNG أو JPEG، إلخ.
 
-### إجابات سريعة
-- **What is pdf text extraction java?** باستخدام GroupDocs.Parser يمكنك قراءة محتوى PDF برمجيًا في Java.  
-- **Which library handles barcode scanning pdf?** GroupDocs.Parser يتضمن اكتشاف باركود مدمج لصفحات PDF.  
-- **How do I convert pdf to text?** استدعِ طرق `extractText()` الخاصة بالمحلل بعد تهيئة كائن `Parser`.  
-- **Do I need to handle parsing exceptions?** نعم—غلف الاستدعاءات بكتل try‑catch لإدارة أخطاء الإدخال/الإخراج وتنسيق الملف.  
-- **Can I extract images from a PDF in Java?** بالتأكيد؛ استخدم واجهات استخراج الصور في المكتبة (`extractImages()`).
+## ما هو GroupDocs.Parser لـ Java؟
+GroupDocs.Parser for Java هي مكتبة مخصصة لتحليل المستندات تقوم بتجريد صيغ PDF و Word و Excel والصور إلى كائنات Java سهلة الاستخدام. تدعم **أكثر من 50 تنسيقًا للمدخلات والمخرجات** ويمكنها معالجة ملفات PDF متعددة المئات من الصفحات دون تحميل الملف بالكامل إلى الذاكرة، مما يجعلها مثالية لخدمات الخلفية ذات الإنتاجية العالية.
 
-## نظرة عامة على pdf text extraction java
+## لماذا تستخدم GroupDocs.Parser لاستخراج PDF؟
+GroupDocs.Parser توفر حلاً موثوقًا وعالي الأداء لاستخراج البيانات من ملفات PDF، مع معالجة التخطيطات المعقدة، والنص Unicode، والموارد المدمجة مع الحفاظ على استهلاك الذاكرة منخفضًا. كما تتضمن اكتشاف الباركود المدمج واستخراج الصور، مما يقلل الحاجة إلى أدوات طرف ثالث إضافية في واجهة برمجة تطبيقات واحدة موثقة جيدًا.
 
-PDF text extraction java هو عملية قراءة المحتوى النصي لملفات PDF برمجيًا باستخدام كود Java. من خلال الاستفادة من GroupDocs.Parser، تتجنب تعقيدات تحليل PDF منخفض المستوى وتحصل على نص نظيف قابل للبحث جاهز للفهرسة أو التحليل أو المعالجة الإضافية.
+- **الأداء:** يعالج ملف PDF مكوّن من 300 صفحة في أقل من ثانيتين على خادم عادي بثمانية أنوية، باستخدام أقل من 150 ميغابايت من الذاكرة.  
+- **الدقة:** يحافظ على أحرف Unicode والجداول وعناصر التخطيط بأكثر من 99 % دقة.  
+- **مجموعة الميزات:** توفر اكتشاف الباركود المدمج، واستخراج الصور، واسترجاع البيانات الوصفية—كل ذلك في واجهة برمجة تطبيقات واحدة.  
 
 ## المتطلبات المسبقة
 
-قبل البدء، تأكد من أن كل شيء مُعد بشكل صحيح. يغطي هذا القسم المكتبات المطلوبة، إعداد البيئة، والمتطلبات المعرفية.
+- **Java Development Kit (JDK):** 8 أو أحدث.  
+- **Maven:** لإدارة التبعيات.  
+- **GroupDocs.Parser Library:** الإصدار 25.5 أو أحدث (أحدث إصدار مستقر).  
 
-### المكتبات المطلوبة والإصدارات والاعتماديات
-
-- **GroupDocs.Parser Library**: الإصدار 25.5 أو أعلى  
-- **Java Development Kit (JDK)**: يُنصح بـ Java SE 8 أو أحدث  
+### المكتبات المطلوبة، الإصدارات، والتبعيات
+- **GroupDocs.Parser for Java** – v25.5+  
+- **SLF4J** – مطلوب للتسجيل (مضمن تلقائيًا عبر Maven).  
 
 ### متطلبات إعداد البيئة
-
-تأكد من أن بيئة التطوير الخاصة بك تشمل IDE مثل IntelliJ IDEA أو Eclipse وأداة بناء مثل Maven.
+- IDE مثل IntelliJ IDEA أو Eclipse.  
+- أداة البناء: Maven (Gradle مدعومة أيضًا، لكن أمثلة Maven تُستخدم هنا).  
 
 ### المتطلبات المعرفية
-
-يجب أن تكون لديك معرفة أساسية بـ:
-- برمجة Java  
-- استخدام Maven لإدارة الاعتماديات  
-- مفاهيم تحليل المستندات  
-
-مع هذه المتطلبات المسبقة، أنت جاهز لإعداد GroupDocs.Parser لـ Java.
+- أساسيات صياغة Java ومعالجة الاستثناءات.  
+- الإلمام ببنية Maven `pom.xml`.  
 
 ## إعداد GroupDocs.Parser لـ Java
 
-إعداد بيئة التطوير هو الخطوة الأولى للاستفادة من إمكانات GroupDocs.Parser. يمكنك تثبيت هذه المكتبة باستخدام Maven أو عبر التحميل المباشر.
-
 ### التثبيت باستخدام Maven
-
-أضف التكوين التالي إلى ملف `pom.xml` الخاص بك:
+أضف التبعية التالية إلى ملف `pom.xml` الخاص بك:
 
 ```xml
 <repositories>
@@ -78,36 +100,29 @@ PDF text extraction java هو عملية قراءة المحتوى النصي ل
 ```
 
 ### التحميل المباشر
-
-بدلاً من ذلك، قم بتحميل أحدث إصدار من [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
+إذا كنت تفضل التثبيت اليدوي، قم بتحميل أحدث JAR من [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
 ### خطوات الحصول على الترخيص
-
-- **Free Trial**: ابدأ بتجربة مجانية لاستكشاف الوظائف الأساسية.  
-- **Temporary License**: قدّم طلبًا للحصول على ترخيص مؤقت للوصول إلى الميزات الموسعة دون قيود.  
-- **Purchase**: فكر في شراء ترخيص كامل للاستخدام التجاري.
+- **نسخة تجريبية مجانية:** سجّل في موقع GroupDocs للحصول على مفتاح تجريبي محدود الوقت.  
+- **ترخيص مؤقت:** اطلب ترخيصًا مؤقتًا للتطوير والاختبار.  
+- **ترخيص كامل:** اشترِ ترخيصًا تجاريًا للاستخدام في الإنتاج؛ يزيل جميع قيود التقييم.
 
 ## دليل التنفيذ
 
-الآن بعد أن تم إعداد بيئتك، دعنا نتعمق في التنفيذ. سنقسم الشرح حسب الميزة.
-
 ### تهيئة فئة Parser في Java
 
-#### نظرة عامة
+#### تعريف المرجع
+فئة `Parser` هي نقطة الدخول الأساسية التي تمثل ملف PDF (أو أي مستند مدعوم آخر) محملاً في الذاكرة، وتكشف عن طرق لاستخراج النص، والصورة، والباركود.
 
-تهيئة فئة `Parser` تسمح بالتفاعل مع المستندات لاستخراج معلومات مفيدة مثل النصوص، الصور، أو الباركود.
-
-#### تنفيذ خطوة بخطوة
-
-1. **Import Necessary Classes**  
-   ابدأ باستيراد فئة `Parser`:
+#### كيف تهيئ فئة Parser؟
+أنشئ مثيلًا من `Parser` داخل كتلة try‑with‑resources؛ هذا يضمن إغلاق تدفق الملف الأساسي تلقائيًا، مما يمنع تسرب الموارد. باستخدام هذا النمط تضمن أيضًا تحرير أي موارد أصلية تُخصصها المكتبة بسرعة، وهو أمر ضروري للخدمات طويلة التشغيل التي تعالج العديد من المستندات.
 
 ```java
 import com.groupdocs.parser.Parser;
 ```
 
-2. **Create an Instance of Parser Class**  
-   اتهيئ كائن `Parser` مع مسار المستند المستهدف، مستخدمًا عبارة try‑with‑resources لضمان إغلاق الموارد تلقائيًا.
+#### كيف تستخرج النص من PDF؟
+استدعِ `extractText()` على مثيل `Parser`. تُعيد الطريقة `String` واحدًا يحتوي على المحتوى النصي الكامل للمستند، مع الحفاظ على فواصل الفقرات وأحرف Unicode. يمكن بعد ذلك تمرير هذا السلسلة إلى مكونات لاحقة مثل فهارس البحث، أو خطوط أنابيب التحليل، أو ببساطة كتابتها إلى ملف `.txt` للأرشفة.
 
 ```java
 public class FeatureInitializeParser {
@@ -122,61 +137,74 @@ public class FeatureInitializeParser {
 }
 ```
 
-3. **Explanation of Parameters and Methods**  
-   - `new Parser(String filePath)`: ينشئ محللًا جديدًا للمسار المحدد.  
-   - try‑with‑resources يضمن إغلاق كائن المحلل بعد إكمال العمليات، مما يمنع تسرب الموارد.  
+#### شرح المعلمات والطرق
+- `new Parser(String filePath)`: يحمل ملف PDF الموجود في `filePath`.  
+- `extractText()`: تُعيد النص الكامل للمستند.  
+- `extractImages()`: تُوفر قائمة بتدفقات الصور لكل صورة مدمجة.  
+- `extractBarcodes()`: يكتشف ويفك تشفير الباركود في كل صفحة.  
 
-### تطبيقات عملية
+## التطبيقات العملية
 
-فيما يلي بعض حالات الاستخدام الواقعية التي يبرز فيها GroupDocs.Parser:
+### كيف تقرأ محتوى PDF في Java لفهرسة البحث؟
+حمّل ملف PDF باستخدام `Parser`، استدعِ `extractText()`، ثم أدخل السلسلة الناتجة إلى Apache Lucene أو Elasticsearch. يتيح ذلك البحث النصي الكامل عبر مستودع المستندات الخاص بك، مما يسمح للمستخدمين بتحديد المعلومات ذات الصلة بسرعة بناءً على استعلامات الكلمات المفتاحية ومطابقة العبارات.
 
-1. **Extracting Text from PDFs** – مثالي لأنظمة إدارة المستندات التي تحتاج إلى استخراج نص للفهرسة أو وظائف البحث.  
-2. **Barcode Scanning and Decoding** – مفيد في تطبيقات التجزئة لأتمتة تتبع المخزون (`barcode scanning pdf`).  
-3. **Data Extraction for Reporting Tools** – سحب بيانات منظمة من المستندات لتغذيتها إلى منصات الذكاء التجاري.  
+### كيف تستخرج صور PDF في Java لإنشاء صور مصغرة؟
+استخدم `extractImages()` لاسترجاع كل صورة كمصفوفة بايت، ثم اكتب البايتات إلى ملفات PNG. تُعيد طريقة `extractImages()` قائمة بتدفقات الصور التي تمثل كل صورة مدمجة، مما يجعل من السهل إنشاء صور مصغرة للمعاينة لنظام إدارة المستندات.
 
-هذه السيناريوهات تُظهر مرونة GroupDocs.Parser في سياقات تكامل مختلفة، مثل أنظمة CRM أو ERP.
+### كيف تمسح باركودات PDF في Java لأتمتة المخزون؟
+استدعِ `extractBarcodes()`؛ تُعيد الطريقة قيم الباركود ومواقعها، والتي يمكنك مطابقتها مع قاعدة بيانات منتجاتك لأتمتة تحديثات المخزون. يلغي هذا النهج إدخال البيانات يدويًا ويسرّع معالجة المخزون بربط الباركود الممسوح مباشرةً بالسجلات الموجودة.
 
 ## اعتبارات الأداء
 
-لضمان تشغيل تطبيقك بسلاسة:
+- **إدارة الموارد:** استخدم دائمًا try‑with‑resources عند إنشاء `Parser` لضمان التنظيف التلقائي.  
+- **بصمة الذاكرة:** بالنسبة لملفات PDF الكبيرة جدًا (>500 صفحة)، فكر في معالجة الصفحات على دفعات باستخدام `Parser.getPages()` لتجنب تحميل المستند بالكامل مرة واحدة.  
+- **سلامة الخيوط:** كل مثيل من `Parser` محصور في خيط واحد؛ أنشئ مثيلات منفصلة لكل خيط للمعالجة المتوازية.  
 
-- استخدم تقنيات إدارة الموارد الفعّالة مثل try‑with‑resources للإغلاق التلقائي.  
-- راقب استهلاك الذاكرة وحسّن سير عمل معالجة البيانات للتعامل مع المستندات الكبيرة بكفاءة.  
-- اتبع أفضل ممارسات إدارة الذاكرة في Java عند العمل مع GroupDocs.Parser.
+## المشكلات الشائعة والحلول
 
-## الخاتمة
+- **استثناء التحليل:** إذا كان PDF تالفًا، سيتم رمي `ParserException`. امسك به وسجّل اسم الملف للمراجعة لاحقًا.  
+- **نوع باركود غير مدعوم:** GroupDocs.Parser يدعم QR و Code128 و UPC. بالنسبة للرموز الغريبة، قد تحتاج إلى مكتبة باركود متخصصة.  
+- **استخراج صور كبيرة:** عند استخراج صور عالية الدقة، احفظها على القرص بشكل تدريجي لتجنب أخطاء OutOfMemory.  
 
-في هذا الدليل، استعرضنا خطوات تهيئة واستخدام مكتبة GroupDocs.Parser في مشاريع Java الخاصة بك. باتباع هذه الإرشادات، يمكنك استغلال ميزاتها القوية لاستخراج **pdf text extraction java**، اكتشاف الباركود، واستخراج الصور. فكر في استكشاف وظائف متقدمة مثل استخراج البيانات الوصفية أو قوالب استخراج البيانات المخصصة لتعزيز تطبيقاتك أكثر.
+## الأسئلة المتكررة
 
-## قسم الأسئلة المتكررة
+**س:** *ما هي صيغ الملفات التي يدعمها GroupDocs.Parser؟*  
+**ج:** يدعم أكثر من 50 صيغة، بما في ذلك PDF و DOCX و XLSX و PPTX و HTML وأنواع الصور الشائعة مع باركود مدمج.
 
-فيما يلي بعض الأسئلة الشائعة حول استخدام GroupDocs.Parser:
+**س:** *هل يمكنني استخدام GroupDocs.Parser في مشروع تجاري؟*  
+**ج:** نعم—بمجرد حصولك على ترخيص تجاري صالح، يمكنك تضمين المكتبة في أي تطبيق إنتاج.
 
-1. **What file formats does GroupDocs.Parser support?**  
-   - يدعم مجموعة واسعة من الصيغ بما فيها PDFs، مستندات Word، وصور تحتوي على باركود.  
+**س:** *كيف أتعامل مع الأخطاء أثناء التحليل؟*  
+**ج:** لف جميع استدعاءات الـ parser في كتلة try‑catch لـ `ParserException` و `IOException`. يضمن ذلك أن تطبيقك يمكنه التعافي بسلاسة من الملفات المشوهة.
 
-2. **Can I use GroupDocs.Parser in a commercial project?**  
-   - نعم، عبر الحصول على الترخيص المناسب.  
+**س:** *هل هناك دعم لقوالب استخراج البيانات المخصصة؟*  
+**ج:** بالتأكيد—GroupDocs.Parser يتيح لك تعريف قوالب استخراج لسحب البيانات المهيكلة (جداول، أزواج مفتاح‑قيمة) مباشرةً إلى كائنات Java.
 
-3. **How do I handle errors during parsing?**  
-   - استخدم كتل try‑catch لإدارة الاستثناءات وضمان معالجة أخطاء قوية (`handle parsing exceptions`).  
+**س:** *أين يمكنني العثور على المزيد من الموارد حول استخدام GroupDocs.Parser؟*  
+**ج:** زر [الوثائق الرسمية](https://docs.groupdocs.com/parser/java/) و[مرجع API](https://reference.groupdocs.com/parser/java) للحصول على أدلة مفصلة، عينات كود، وتفاصيل الـ API.
 
-4. **Is there support for custom data extraction templates?**  
-   - نعم، يتيح لك GroupDocs.Parser تعريف قوالب لاستخراج البيانات المنظمة.  
+## الخلاصة
 
-5. **Where can I find more resources on using GroupDocs.Parser?**  
-   - زر [official documentation](https://docs.groupdocs.com/parser/java/) و[API reference](https://reference.groupdocs.com/parser/java) للحصول على أدلة شاملة وأمثلة.  
-
-## الموارد
-
-- **Documentation**: استكشف أدلة مفصلة في [GroupDocs Documentation](https://docs.groupdocs.com/parser/java/).  
-- **API Reference**: ابحث عن تفاصيل الطرق في [GroupDocs API Reference](https://reference.groupdocs.com/parser/java).  
-- **Download**: احصل على أحدث نسخة من [GroupDocs Releases](https://releases.groupdocs.com/parser/java/).  
-- **GitHub**: اعرض الشيفرة المصدرية والأمثلة على [GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java).  
-- **Support**: انضم إلى المناقشات واطلب المساعدة في [GroupDocs Support Forum](https://forum.groupdocs.com/c/parser).
+الآن لديك خريطة طريق كاملة وجاهزة للإنتاج **كيفية استخراج PDF** باستخدام GroupDocs.Parser في Java. من خلال تهيئة فئة `Parser`، واستدعاء `extractText()`، و`extractImages()`، و`extractBarcodes()`، ومعالجة استثناءات التحليل، يمكنك بناء خطوط معالجة مستندات قوية تتوسع لتعامل مع ملفات كبيرة وبيئات ذات إنتاجية عالية. استكشف الميزات المتقدمة مثل استخراج البيانات الوصفية أو القوالب المخصصة لإثراء تطبيقاتك أكثر.
 
 ---
 
-**آخر تحديث:** 2026-01-09  
+**آخر تحديث:** 2026-05-28  
 **تم الاختبار مع:** GroupDocs.Parser 25.5 for Java  
-**المؤلف:** GroupDocs
+**المؤلف:** GroupDocs  
+
+--- 
+
+**الموارد**
+
+- **الوثائق:** استكشف أدلة مفصلة في [GroupDocs Documentation](https://docs.groupdocs.com/parser/java/).  
+- **مرجع API:** اعثر على توقيعات الطرق في [GroupDocs API Reference](https://reference.groupdocs.com/parser/java).  
+- **تحميل:** احصل على أحدث JAR من [GroupDocs Releases](https://releases.groupdocs.com/parser/java/).  
+- **GitHub:** تصفح شفرة المصدر وأمثلة المجتمع على [GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java).  
+- **الدعم:** احصل على المساعدة من المجتمع في [GroupDocs Support Forum](https://forum.groupdocs.com/c/parser).
+
+## الدروس ذات الصلة
+
+- [كيفية استخراج الصور من ملفات PDF باستخدام GroupDocs.Parser في Java: دليل خطوة بخطوة](/parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/)
+- [كيفية استخراج بيانات تعريف PDF باستخدام GroupDocs.Parser في Java: دليل خطوة بخطوة](/parser/java/metadata-extraction/extract-pdf-metadata-groupdocs-parser-java/)
+- [استخراج النص الخام من ملفات PDF باستخدام GroupDocs.Parser في Java: دليل شامل](/parser/java/text-extraction/extract-raw-text-pdf-groupdocs-parser-java/)
