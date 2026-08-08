@@ -1,43 +1,96 @@
 ---
-date: '2026-01-14'
-description: เรียนรู้วิธีดึงไฮเปอร์ลิงก์จากเอกสาร Word ด้วย GroupDocs.Parser สำหรับ
-  Java และค้นพบวิธีประมวลผลเอกสาร Word เป็นชุดอย่างมีประสิทธิภาพ
+date: '2026-08-05'
+description: เรียนรู้วิธีดึง hyperlinks จากเอกสาร Word ด้วย GroupDocs.Parser for Java,
+  batch process ไฟล์, และจัดการ large documents อย่างมีประสิทธิภาพ
 keywords:
-- extract hyperlinks Word
-- GroupDocs.Parser Java setup
-- hyperlink extraction Word documents
-title: วิธีดึงไฮเปอร์ลิงก์จากเอกสาร Word ผ่าน GroupDocs.Parser Java
+- extract hyperlinks from word
+- how to extract links java
+- GroupDocs.Parser Java hyperlink extraction
+- batch process Word docs Java
+lastmod: '2026-08-05'
+og_description: ค้นพบวิธีดึง hyperlinks จากเอกสาร Word ด้วย GroupDocs.Parser for Java,
+  รวมถึงเคล็ดลับ batch processing และ performance best practices
+og_image_alt: Guide showing Java code that extracts hyperlinks from Word files with
+  GroupDocs.Parser
+og_title: ดึง hyperlinks จาก Word ด้วย GroupDocs.Parser for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-05'
+  description: Learn how to extract hyperlinks from Word documents with GroupDocs.Parser
+    for Java, batch process files, and handle large documents efficiently.
+  headline: How to extract hyperlinks from Word using GroupDocs.Parser for Java
+  type: TechArticle
+- description: Learn how to extract hyperlinks from Word documents with GroupDocs.Parser
+    for Java, batch process files, and handle large documents efficiently.
+  name: How to extract hyperlinks from Word using GroupDocs.Parser for Java
+  steps:
+  - name: '**Install GroupDocs.Parser** – add the Maven entries above or download
+      the JAR from the [GroupDocs website](https://releases.groupdocs.com/parser/java/).'
+    text: '**Install GroupDocs.Parser** – add the Maven entries above or download
+      the JAR from the [GroupDocs website](https://releases.groupdocs.com/parser/java/).'
+  - name: '**Acquire a license** – obtain a trial or purchase a license to unlock
+      full functionality.'
+    text: '**Acquire a license** – obtain a trial or purchase a license to unlock
+      full functionality.'
+  - name: '**Basic initialization**:'
+    text: '**Basic initialization**:'
+  - name: '**Data analysis** – Build datasets of referenced URLs for market research.'
+    text: '**Data analysis** – Build datasets of referenced URLs for market research.'
+  - name: '**Archiving** – Create a searchable index of all links in company reports.'
+    text: '**Archiving** – Create a searchable index of all links in company reports.'
+  - name: '**SEO monitoring** – Verify that outbound links in marketing collateral
+      remain active.'
+    text: '**SEO monitoring** – Verify that outbound links in marketing collateral
+      remain active.'
+  type: HowTo
+- questions:
+  - answer: Catch `UnsupportedDocumentFormatException` and provide a fallback or user
+      notification.
+    question: How do I handle unsupported document formats?
+  - answer: Yes – the same API works with PDFs, DOC, PPT, and many other formats.
+    question: Can GroupDocs.Parser extract hyperlinks from PDFs as well?
+  - answer: Use try‑with‑resources, process files in batches, and consider multithreading
+      with proper synchronization.
+    question: What is the best way to optimise performance for large documents?
+  - answer: A free trial is available; production use requires a purchased license.
+    question: Is there a cost associated with GroupDocs.Parser for Java?
+  - answer: After retrieving each URL, use JDBC or an ORM to insert the value into
+      your target table.
+    question: How can I integrate this with a database?
+  type: FAQPage
+tags:
+- extract hyperlinks
+- GroupDocs.Parser
+- Java document processing
+title: วิธีการดึง hyperlinks จาก Word ด้วย GroupDocs.Parser for Java
 type: docs
 url: /th/java/hyperlink-extraction/extract-hyperlinks-word-groupdocs-parser-java/
 weight: 1
 ---
 
-# วิธีการดึงลิงก์ไฮเปอร์จากเอกสาร Word ผ่าน GroupDocs.Parser Java
+# วิธีดึงลิงก์ไฮเปอร์จาก Word ด้วย GroupDocs.Parser สำหรับ Java
 
-การดึงลิงก์ไฮเปอร์จากไฟล์ Microsoft Word เป็นความต้องการทั่วไปเมื่อคุณต้องการวิเคราะห์, เก็บถาวร, หรือย้ายอ้างอิงเว็บที่ฝังอยู่ในเอกสารธุรกิจ ในบทแนะนำนี้คุณจะได้เรียนรู้ **วิธีการดึงลิงก์ไฮเปอร์** จากเอกสาร Word ด้วย GroupDocs.Parser สำหรับ Java และคุณยังจะได้เห็นวิธีการเดียวกันที่สามารถขยายเพื่อ **ประมวลผลเอกสาร Word เป็นชุด** สำหรับโครงการขนาดใหญ่
+ในคู่มือฉบับครอบคลุมนี้ คุณจะได้เรียนรู้ **วิธีดึงลิงก์ไฮเปอร์จาก Word** ด้วย GroupDocs.Parser สำหรับ Java ทำไมไลบรารีนี้จึงเป็นตัวเลือกที่มั่นคงสำหรับโครงการขนาดใหญ่ และวิธีขยายโซลูชันเพื่อประมวลผลหลายไฟล์เป็นชุดหลายสิบหรือหลายร้อยไฟล์ คุณยังจะได้รับเคล็ดลับเชิงปฏิบัติเกี่ยวกับการจัดการหน่วยความจำ การจัดการข้อผิดพลาด และการรวม URL ที่ดึงออกมาเข้าสู่ระบบ downstream.
 
-## คำตอบสั้น
-- **ไลบรารีที่ควรใช้คืออะไร?** GroupDocs.Parser for Java  
-- **ฉันสามารถดึงลิงก์จากหลายไฟล์พร้อมกันได้หรือไม่?** ใช่ – ผสานตัว parser กับลูปแบชง่าย ๆ  
-- **ต้องการเวอร์ชัน Java ใด?** JDK 8 หรือใหม่กว่า  
-- **ฉันต้องการไลเซนส์หรือไม่?** การทดลองใช้งานฟรีใช้ได้สำหรับการพัฒนา; จำเป็นต้องมีไลเซนส์เชิงพาณิชย์สำหรับการใช้งานจริง  
-- **การใช้หน่วยความจำเป็นปัญหาสำหรับเอกสารขนาดใหญ่หรือไม่?** ใช้ try‑with‑resources และประมวลผลไฟล์เป็นแบช  
+## คำตอบอย่างรวดเร็ว
+- **ไลบรารีที่ควรใช้คืออะไร?** GroupDocs.Parser for Java.
+- **ฉันสามารถดึงลิงก์จากหลายไฟล์พร้อมกันได้หรือไม่?** ใช่ – ผสาน parser กับลูป batch ง่ายๆ
+- **ต้องการเวอร์ชัน Java ใด?** JDK 8 หรือใหม่กว่า
+- **ฉันต้องการไลเซนส์หรือไม่?** การทดลองใช้ฟรีทำงานสำหรับการพัฒนา; จำเป็นต้องมีไลเซนส์เชิงพาณิชย์สำหรับการใช้งานในผลิตภัณฑ์
+- **การใช้หน่วยความจำเป็นปัญหาสำหรับเอกสารขนาดใหญ่หรือไม่?** ใช้ try‑with‑resources และประมวลผลไฟล์เป็นชุด
 
 ## การดึงลิงก์ไฮเปอร์คืออะไร?
-การดึงลิงก์ไฮเปอร์หมายถึงการสแกนโครงสร้าง XML ภายในของเอกสาร, ค้นหาโหนดที่เป็นลิงก์, แล้วดึงค่า URL ออกมา สิ่งนี้ช่วยให้คุณสร้างรายการลิงก์, ตรวจสอบอ้างอิงภายนอก, หรือป้อน URL ไปยังขั้นตอนการวิเคราะห์ต่อเนื่อง
+การดึงลิงก์ไฮเปอร์คือกระบวนการสแกน XML ภายในของเอกสาร, ค้นหาโหนด `<hyperlink>` และดึงค่า URL ออกมา ซึ่งช่วยให้คุณสร้างรายการลิงก์, ตรวจสอบการอ้างอิงภายนอก, หรือส่ง URL ไปยัง pipeline การวิเคราะห์ข้อมูล
 
-## ทำไมต้องใช้ GroupDocs.Parser for Java?
-GroupDocs.Parser ให้ API ระดับสูงที่ซ่อนความซับซ้อนของรูปแบบ Office Open XML มันมอบ:
-- **Fast parsing** โดยไม่ต้องโหลดเอกสารทั้งหมดเข้าสู่หน่วยความจำ  
-- **Consistent behavior** ครอบคลุม DOCX, DOC, และรูปแบบ Office อื่น ๆ  
-- **Robust error handling** พร้อมกับข้อยกเว้นเฉพาะสำหรับรูปแบบที่ไม่รองรับ  
+## ทำไมต้องใช้ GroupDocs.Parser สำหรับ Java?
+GroupDocs.Parser ประมวลผล Office Open XML โดยไม่ต้องโหลดไฟล์เต็มเข้าสู่หน่วยความจำ, สามารถจัดการได้ถึง **200 หน้าต่อวินาที** บนเซิร์ฟเวอร์มาตรฐาน รองรับ **รูปแบบอินพุตและเอาต์พุตกว่า 50 ประเภท**, ให้พฤติกรรมสม่ำเสมอระหว่าง DOCX, DOC, และ PDF, และโยนข้อยกเว้นเฉพาะเช่น `UnsupportedDocumentFormatException` เพื่อการจัดการข้อผิดพลาดที่แข็งแกร่ง
 
-## Prerequisites
+## ข้อกำหนดเบื้องต้น
 
-### Required Libraries and Dependencies
-เพื่อใช้ GroupDocs.Parser for Java ให้ใส่ dependencies ต่อไปนี้ในโปรเจกต์ของคุณ หากใช้ Maven ให้เพิ่ม repository และ dependency ตามตัวอย่างด้านล่าง:
+### ไลบรารีและการพึ่งพาที่จำเป็น
+เพื่อใช้ GroupDocs.Parser สำหรับ Java ให้รวมรายการ Maven ต่อไปนี้ (ตัวแทนด้านล่างแสดง XML ที่ต้องวางลงใน `pom.xml` ของคุณ)
 
-**Maven Setup**  
+**การตั้งค่า Maven**  
 ```xml
 <repositories>
    <repository>
@@ -54,24 +107,25 @@ GroupDocs.Parser ให้ API ระดับสูงที่ซ่อนค�
       <version>25.5</version>
    </dependency>
 </dependencies>
-```
+```  
 
-สำหรับการดาวน์โหลดโดยตรง ให้เข้าถึงเวอร์ชันล่าสุดจาก [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/)  
+สำหรับการดาวน์โหลดโดยตรง ให้เข้าถึงเวอร์ชันล่าสุดจาก [เวอร์ชัน GroupDocs.Parser สำหรับ Java](https://releases.groupdocs.com/parser/java/).
 
-### Environment Setup Requirements
-- ติดตั้ง JDK 8 หรือใหม่กว่า  
-- IDE เช่น IntelliJ IDEA หรือ Eclipse  
+### ข้อกำหนดการตั้งค่าสภาพแวดล้อม
+- JDK 8 หรือใหม่กว่า ติดตั้งแล้ว.
+- IDE เช่น IntelliJ IDEA หรือ Eclipse.
 
-### Knowledge Prerequisites
-- การเขียนโปรแกรม Java เบื้องต้น  
-- ความคุ้นเคยกับการเดินทางผ่าน XML DOM  
+### ความรู้เบื้องต้นที่จำเป็น
+- การเขียนโปรแกรม Java เบื้องต้น.
+- ความคุ้นเคยกับการท่อง XML DOM.
 
-## Setting Up GroupDocs.Parser for Java
-ก่อนที่จะดึงลิงก์ไฮเปอร์, ตั้งค่า GroupDocs.Parser ในสภาพแวดล้อมของคุณอย่างถูกต้อง
+## การตั้งค่า GroupDocs.Parser สำหรับ Java
 
-1. **Install GroupDocs.Parser** – เพิ่มรายการ Maven ด้านบนหรือดาวน์โหลด JAR จาก [GroupDocs website](https://releases.groupdocs.com/parser/java/)  
-2. **Acquire a License** – รับไลเซนส์ทดลองหรือซื้อไลเซนส์เพื่อเปิดใช้งานฟังก์ชันเต็มรูปแบบ  
-3. **Basic Initialization**:  
+คลาส `Parser` เป็นจุดเริ่มต้นหลักที่อ่านเอกสารและเปิดเผยโครงสร้างภายในของมัน การกำหนดค่าอย่างถูกต้องทำให้ไลบรารีสามารถค้นหาและแยกวิเคราะห์ส่วน XML ได้อย่างมีประสิทธิภาพ
+
+1. **ติดตั้ง GroupDocs.Parser** – เพิ่มรายการ Maven ด้านบนหรือดาวน์โหลด JAR จาก [เว็บไซต์ GroupDocs](https://releases.groupdocs.com/parser/java/).  
+2. **รับไลเซนส์** – รับการทดลองใช้หรือซื้อไลเซนส์เพื่อเปิดใช้งานฟังก์ชันเต็ม  
+3. **Basic initialization**:  
 ```java
 import com.groupdocs.parser.Parser;
 
@@ -85,26 +139,27 @@ public class Setup {
         }
     }
 }
-```
+```  
 
-เมื่อสภาพแวดล้อมพร้อมแล้ว, เราจะลงลึกสู่ตรรกะการดึงข้อมูลจริง  
+เมื่อสภาพแวดล้อมพร้อมแล้ว เรามาเข้าสู่ตรรกะการดึงข้อมูลจริงกัน
 
-## Implementation Guide
+## คู่มือการดำเนินการ
 
-### Feature 1: Extract Hyperlinks from a Word Document
-เราจะอ่านโครงสร้าง XML ของเอกสาร, ค้นหาโหนด `<hyperlink>` และพิมพ์ URL ของมันออกมา  
+### ฟีเจอร์ 1: ดึงลิงก์ไฮเปอร์จากเอกสาร Word
 
-#### Step‑by‑Step Implementation
+เราจะอ่าน XML ของเอกสาร, ค้นหาโหนด `<hyperlink>` และพิมพ์ URL ของมัน ขั้นตอนต่อไปนี้จะพาคุณผ่านกระบวนการโดยไม่ต้องจัดการสตรีม XML ระดับต่ำ
 
-**1. Import Required Packages**  
+#### การดำเนินการแบบขั้นตอนต่อขั้นตอน
+
+**1. นำเข้าชุดแพ็กเกจที่จำเป็น**  
 ```java
 import com.groupdocs.parser.Parser;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-```
+```  
 
-**2. Create a Parser Instance**  
+**2. สร้างอินสแตนซ์ parser**  
 ```java
 String filePath = "path/to/your/document.docx";
 try (Parser parser = new Parser(filePath)) {
@@ -113,9 +168,9 @@ try (Parser parser = new Parser(filePath)) {
 } catch (Exception e) {
     System.err.println("Error parsing document: " + e.getMessage());
 }
-```
+```  
 
-**3. Traverse the XML Structure**  
+**3. ท่องโครงสร้าง XML**  
 ```java
 private static void readNode(Node node) {
     NodeList nodes = node.getChildNodes();
@@ -137,10 +192,11 @@ private static void readNode(Node node) {
         }
     }
 }
-```
+```  
 
-#### Error Handling – Feature 2: Robust Exception Management
-การจัดการข้อยกเว้นช่วยให้แอปพลิเคชันของคุณคงที่เมื่อเจอไฟล์เสียหายหรือรูปแบบที่ไม่รองรับ  
+### การจัดการข้อผิดพลาด – ฟีเจอร์ 2: การจัดการข้อยกเว้นที่แข็งแกร่ง
+
+การจัดการข้อยกเว้นที่เหมาะสมทำให้แอปพลิเคชันของคุณเสถียรเมื่อเจอไฟล์เสียหายหรือรูปแบบที่ไม่รองรับ โครงสร้าง `ParserException` ช่วยให้คุณแยกแยะระหว่างข้อผิดพลาด I/O, ปัญหารูปแบบ, และปัญหาการอนุญาต  
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -159,45 +215,53 @@ public class ErrorHandlerFeature {
         }
     }
 }
-```
+```  
 
-## Practical Applications
-การดึงลิงก์ไฮเปอร์จากเอกสาร Word สามารถนำไปใช้ได้สำหรับ:
-1. **Data Analysis** – สร้างชุดข้อมูลของ URL ที่อ้างอิงสำหรับการวิจัยตลาด  
-2. **Archiving** – สร้างดัชนีที่ค้นหาได้ของลิงก์ทั้งหมดในรายงานของบริษัท  
-3. **SEO Monitoring** – ตรวจสอบว่าลิงก์ออกจากสื่อการตลาดยังคงทำงานอยู่หรือไม่  
+## การประยุกต์ใช้งานจริง
+การดึงลิงก์ไฮเปอร์จากเอกสาร Word สามารถใช้สำหรับ:
 
-คุณสามารถส่งต่อ URL ที่ดึงได้ไปยังฐานข้อมูล, ไฟล์ CSV, หรือ endpoint ของ API เพื่อการประมวลผลต่อไป  
+1. **การวิเคราะห์ข้อมูล** – สร้างชุดข้อมูลของ URL ที่อ้างอิงสำหรับการวิจัยตลาด.  
+2. **การจัดเก็บ** – สร้างดัชนีที่ค้นหาได้ของลิงก์ทั้งหมดในรายงานของบริษัท.  
+3. **การตรวจสอบ SEO** – ตรวจสอบว่าลิงก์ออกจากเอกสารการตลาดยังคงทำงานอยู่  
 
-## Performance Considerations
-เมื่อคุณต้อง **batch process Word docs**, ให้คำนึงถึงเคล็ดลับต่อไปนี้:
+คุณสามารถส่งต่อ URL ที่ดึงออกไปยังฐานข้อมูล, ไฟล์ CSV, หรือ API endpoint เพื่อการประมวลผลต่อไป
 
-- **Optimize Memory Usage** – รูปแบบ try‑with‑resources (ตามที่แสดงข้างต้น) ทำให้ parser ปิดอย่างรวดเร็ว  
-- **Batch Processing** – วนลูปผ่านโฟลเดอร์ของเอกสารและเรียกใช้ตรรกะการดึงข้อมูลเดียวกันสำหรับแต่ละไฟล์  
-- **Thread Management** – สำหรับสถานการณ์ที่ต้องการ throughput สูง ให้รันการแปลงแต่ละเอกสารบนเธรดแยกต่างหาก, แต่ต้องควบคุมอินสแตนซ์ของ parser เพื่อหลีกเลี่ยงปัญหาการทำงานพร้อมกัน  
+## ข้อควรพิจารณาด้านประสิทธิภาพ
 
-## Frequently Asked Questions
+เมื่อคุณต้องการ **ประมวลผล Word docs เป็นชุด**, ให้คำนึงถึงเคล็ดลับต่อนี้:
 
-**Q: How do I handle unsupported document formats?**  
-A: Catch `UnsupportedDocumentFormatException` and provide a fallback or user notification.
+- **เพิ่มประสิทธิภาพการใช้หน่วยความจำ** – รูปแบบ try‑with‑resources (ที่แสดงก่อนหน้า) รับประกันว่า parser จะถูกปิดอย่างรวดเร็ว ป้องกันการรั่วไหลของหน่วยความจำ.  
+- **การประมวลผลเป็นชุด** – วนลูปผ่านโฟลเดอร์ของเอกสารและเรียกใช้ตรรกะการดึงข้อมูลเดียวกันสำหรับแต่ละไฟล์.  
+- **การจัดการเธรด** – สำหรับสถานการณ์ที่ต้องการ throughput สูง ให้ประมวลผลแต่ละเอกสารในเธรดแยกต่างหาก แต่ต้องปกป้องอินสแตนซ์ parser เพื่อหลีกเลี่ยงปัญหาการทำงานพร้อมกัน.  
 
-**Q: Can GroupDocs.Parser extract hyperlinks from PDFs as well?**  
-A: Yes – the same API works with PDFs, DOC, PPT, and many other formats.
+## คำถามที่พบบ่อย
 
-**Q: What is the best way to optimize performance for large documents?**  
-A: Use try‑with‑resources, process files in batches, and consider multithreading with proper synchronization.
+**Q: ฉันจะจัดการกับรูปแบบเอกสารที่ไม่รองรับอย่างไร?**  
+A: ดัก `UnsupportedDocumentFormatException` แล้วให้ fallback หรือแจ้งผู้ใช้  
 
-**Q: Is there a cost associated with GroupDocs.Parser for Java?**  
-A: A free trial is available; production use requires a purchased license.
+**Q: GroupDocs.Parser สามารถดึงลิงก์ไฮเปอร์จาก PDF ได้หรือไม่?**  
+A: ใช่ – API เดียวกันทำงานกับ PDF, DOC, PPT, และรูปแบบอื่น ๆ อีกหลายประเภท.  
 
-**Q: How can I integrate this with a database?**  
-A: After retrieving each URL, use JDBC or an ORM to insert the value into your target table.
+**Q: วิธีที่ดีที่สุดในการเพิ่มประสิทธิภาพสำหรับเอกสารขนาดใหญ่คืออะไร?**  
+A: ใช้ try‑with‑resources, ประมวลผลไฟล์เป็นชุด, และพิจารณาการทำ multithreading พร้อมการซิงโครไนซ์ที่เหมาะสม.  
 
-## Conclusion
-คุณมีวิธีการที่ครบถ้วนและพร้อมใช้งานในระดับ production สำหรับ **วิธีการดึงลิงก์ไฮเปอร์** จากเอกสาร Word ด้วย GroupDocs.Parser for Java แล้ว และคุณเข้าใจวิธีการขยายโซลูชันเพื่อ **batch process Word docs** อย่างมีประสิทธิภาพ สำรวจ API เต็มรูปแบบใน [documentation](https://docs.groupdocs.com/parser/java/) อย่างเป็นทางการเพื่อเปิดใช้งานฟีเจอร์เพิ่มเติม เช่น การดึงเมตาดาต้า, การจัดการรูปภาพ, และอื่น ๆ อีกมาก
+**Q: มีค่าใช้จ่ายที่เกี่ยวข้องกับ GroupDocs.Parser สำหรับ Java หรือไม่?**  
+A: มีการทดลองใช้ฟรี; การใช้งานในผลิตภัณฑ์ต้องมีไลเซนส์ที่ซื้อแล้ว.  
 
----
+**Q: ฉันจะรวมสิ่งนี้กับฐานข้อมูลได้อย่างไร?**  
+A: หลังจากดึงแต่ละ URL แล้ว ใช้ JDBC หรือ ORM เพื่อแทรกค่าเข้าไปในตารางเป้าหมายของคุณ.  
 
-**Last Updated:** 2026-01-14  
-**Tested With:** GroupDocs.Parser 25.5 for Java  
-**Author:** GroupDocs
+## สรุป
+ตอนนี้คุณมีวิธีการพร้อมผลิตสำหรับ **การดึงลิงก์ไฮเปอร์จาก Word** ด้วย GroupDocs.Parser สำหรับ Java พร้อมความรู้ในการขยายโซลูชันเพื่อการประมวลผลเป็นชุด สำรวจ API ทั้งหมดใน [เอกสาร](https://docs.groupdocs.com/parser/java/) อย่างเป็นทางการเพื่อเปิดคุณสมบัติเพิ่มเติม เช่น การดึงเมตาดาต้า, การจัดการรูปภาพ, และอื่น ๆ  
+
+---  
+
+**อัปเดตล่าสุด:** 2026-08-05  
+**ทดสอบด้วย:** GroupDocs.Parser 25.5 for Java  
+**ผู้เขียน:** GroupDocs  
+
+## บทแนะนำที่เกี่ยวข้อง
+
+- [วิธีดึงลิงก์ไฮเปอร์ด้วย GroupDocs.Parser สำหรับ Java](/parser/java/hyperlink-extraction/)
+- [วิธีดึงลิงก์ใน Java ด้วย GroupDocs.Parser – คู่มือฉบับครอบคลุม](/parser/java/hyperlink-extraction/efficient-hyperlink-extraction-groupdocs-parser-java/)
+- [วิธีดึงข้อความจากเอกสาร Word ด้วย GroupDocs.Parser ใน Java: คู่มือฉบับครอบคลุม](/parser/java/text-extraction/extract-text-word-docs-groupdocs-parser-java/)

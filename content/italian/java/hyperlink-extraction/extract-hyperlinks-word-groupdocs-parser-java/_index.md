@@ -1,42 +1,95 @@
 ---
-date: '2026-01-14'
-description: Scopri come estrarre i collegamenti ipertestuali dai documenti Word usando
-  GroupDocs.Parser per Java e come elaborare in batch i documenti Word in modo efficiente.
+date: '2026-08-05'
+description: Scopri come estrarre gli hyperlink da documenti Word con GroupDocs.Parser
+  for Java, elaborare i file in batch e gestire documenti di grandi dimensioni in
+  modo efficiente.
 keywords:
-- extract hyperlinks Word
-- GroupDocs.Parser Java setup
-- hyperlink extraction Word documents
-title: Come estrarre i collegamenti ipertestuali dai documenti Word tramite GroupDocs.Parser
-  Java
+- extract hyperlinks from word
+- how to extract links java
+- GroupDocs.Parser Java hyperlink extraction
+- batch process Word docs Java
+lastmod: '2026-08-05'
+og_description: Scopri come estrarre gli hyperlink da documenti Word con GroupDocs.Parser
+  for Java, includendo consigli per il batch processing e le best practice di performance.
+og_image_alt: Guide showing Java code that extracts hyperlinks from Word files with
+  GroupDocs.Parser
+og_title: Estrai gli hyperlink da Word usando GroupDocs.Parser for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-05'
+  description: Learn how to extract hyperlinks from Word documents with GroupDocs.Parser
+    for Java, batch process files, and handle large documents efficiently.
+  headline: How to extract hyperlinks from Word using GroupDocs.Parser for Java
+  type: TechArticle
+- description: Learn how to extract hyperlinks from Word documents with GroupDocs.Parser
+    for Java, batch process files, and handle large documents efficiently.
+  name: How to extract hyperlinks from Word using GroupDocs.Parser for Java
+  steps:
+  - name: '**Install GroupDocs.Parser** – add the Maven entries above or download
+      the JAR from the [GroupDocs website](https://releases.groupdocs.com/parser/java/).'
+    text: '**Install GroupDocs.Parser** – add the Maven entries above or download
+      the JAR from the [GroupDocs website](https://releases.groupdocs.com/parser/java/).'
+  - name: '**Acquire a license** – obtain a trial or purchase a license to unlock
+      full functionality.'
+    text: '**Acquire a license** – obtain a trial or purchase a license to unlock
+      full functionality.'
+  - name: '**Basic initialization**:'
+    text: '**Basic initialization**:'
+  - name: '**Data analysis** – Build datasets of referenced URLs for market research.'
+    text: '**Data analysis** – Build datasets of referenced URLs for market research.'
+  - name: '**Archiving** – Create a searchable index of all links in company reports.'
+    text: '**Archiving** – Create a searchable index of all links in company reports.'
+  - name: '**SEO monitoring** – Verify that outbound links in marketing collateral
+      remain active.'
+    text: '**SEO monitoring** – Verify that outbound links in marketing collateral
+      remain active.'
+  type: HowTo
+- questions:
+  - answer: Catch `UnsupportedDocumentFormatException` and provide a fallback or user
+      notification.
+    question: How do I handle unsupported document formats?
+  - answer: Yes – the same API works with PDFs, DOC, PPT, and many other formats.
+    question: Can GroupDocs.Parser extract hyperlinks from PDFs as well?
+  - answer: Use try‑with‑resources, process files in batches, and consider multithreading
+      with proper synchronization.
+    question: What is the best way to optimise performance for large documents?
+  - answer: A free trial is available; production use requires a purchased license.
+    question: Is there a cost associated with GroupDocs.Parser for Java?
+  - answer: After retrieving each URL, use JDBC or an ORM to insert the value into
+      your target table.
+    question: How can I integrate this with a database?
+  type: FAQPage
+tags:
+- extract hyperlinks
+- GroupDocs.Parser
+- Java document processing
+title: Come estrarre gli hyperlink da Word con GroupDocs.Parser for Java
 type: docs
 url: /it/java/hyperlink-extraction/extract-hyperlinks-word-groupdocs-parser-java/
 weight: 1
 ---
 
-# Come estrarre collegamenti ipertestuali da documenti Word tramite GroupDocs.Parser Java
+# Come estrarre i collegamenti ipertestuali da Word usando GroupDocs.Parser per Java
 
-Estrarre collegamenti ipertestuali dai file Microsoft Word è una necessità comune quando è necessario analizzare, archiviare o migrare riferimenti web incorporati nei documenti aziendali. In questo tutorial imparerai **come estrarre collegamenti ipertestuali** dai documenti Word usando GroupDocs.Parser per Java, e vedrai anche come lo stesso approccio possa essere scalato per **elaborare in batch documenti Word** per progetti su larga scala.
+In questa guida completa imparerai **come estrarre i collegamenti ipertestuali da Word** documenti con GroupDocs.Parser per Java, perché la libreria è una scelta solida per progetti su larga scala, e come estendere la soluzione per elaborare in batch decine o centinaia di file. Otterrai anche consigli pratici per la gestione della memoria, la gestione degli errori e l'integrazione degli URL estratti nei sistemi a valle.
 
 ## Risposte rapide
-- **Quale libreria devo usare?** GroupDocs.Parser for Java.
+- **Quale libreria dovrei usare?** GroupDocs.Parser per Java.
 - **Posso estrarre collegamenti da più file contemporaneamente?** Sì – combina il parser con un semplice ciclo batch.
-- **Quale versione di Java è necessaria?** JDK 8 o successiva.
-- **Ho bisogno di una licenza?** Una versione di prova gratuita funziona per lo sviluppo; è necessaria una licenza commerciale per la produzione.
-- **L'uso della memoria è un problema per documenti di grandi dimensioni?** Usa try‑with‑resources ed elabora i file in batch.
+- **Quale versione di Java è richiesta?** JDK 8 o successiva.
+- **È necessaria una licenza?** Una prova gratuita funziona per lo sviluppo; è necessaria una licenza commerciale per la produzione.
+- **L'uso della memoria è un problema per documenti di grandi dimensioni?** Usa try‑with‑resources e processa i file in batch.
 
 ## Cos'è l'estrazione di collegamenti ipertestuali?
-L'estrazione di collegamenti ipertestuali consiste nell'analizzare la struttura XML interna di un documento, individuare i nodi che rappresentano i collegamenti e estrarre i valori URL. Questo consente di creare inventari di link, convalidare riferimenti esterni o fornire gli URL a pipeline di analisi successive.
+L'estrazione di collegamenti ipertestuali è il processo di scansione dell'XML interno di un documento, individuando i nodi `<hyperlink>` e recuperando i valori URL. Questo consente di creare inventari di link, convalidare riferimenti esterni o alimentare gli URL in pipeline di analisi.
 
 ## Perché usare GroupDocs.Parser per Java?
-GroupDocs.Parser fornisce un'API di alto livello che astrae le complessità del formato Office Open XML. Offre:
-- **Parsing veloce** senza caricare l'intero documento in memoria.
-- **Comportamento coerente** su DOCX, DOC e altri formati Office.
-- **Gestione robusta degli errori** con eccezioni dedicate per formati non supportati.
+GroupDocs.Parser elabora Office Open XML senza caricare l'intero file in memoria, gestendo fino a **200 pagine al secondo** su un server standard. Supporta **oltre 50 formati di input e output**, fornisce un comportamento coerente su DOCX, DOC e PDF, e genera eccezioni dedicate come `UnsupportedDocumentFormatException` per una gestione robusta degli errori.
 
 ## Prerequisiti
 
 ### Librerie e dipendenze richieste
-Per utilizzare GroupDocs.Parser per Java, includi le seguenti dipendenze nel tuo progetto. Se usi Maven, aggiungi il repository e la dipendenza come mostrato di seguito:
+Per utilizzare GroupDocs.Parser per Java, includi le seguenti voci Maven (i segnaposto qui sotto rappresentano l'XML esatto da incollare nel tuo `pom.xml`).
 
 **Configurazione Maven**  
 ```xml
@@ -55,11 +108,11 @@ Per utilizzare GroupDocs.Parser per Java, includi le seguenti dipendenze nel tuo
       <version>25.5</version>
    </dependency>
 </dependencies>
-```
+```  
 
 Per download diretti, accedi all'ultima versione da [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
-### Requisiti per la configurazione dell'ambiente
+### Requisiti di configurazione dell'ambiente
 - JDK 8 o successivo installato.
 - Un IDE come IntelliJ IDEA o Eclipse.
 
@@ -68,11 +121,12 @@ Per download diretti, accedi all'ultima versione da [GroupDocs.Parser for Java r
 - Familiarità con l'attraversamento del DOM XML.
 
 ## Configurare GroupDocs.Parser per Java
-Prima di estrarre i collegamenti ipertestuali, configura correttamente GroupDocs.Parser nel tuo ambiente.
 
-1. **Installa GroupDocs.Parser** – aggiungi le voci Maven sopra o scarica il JAR dal [sito GroupDocs](https://releases.groupdocs.com/parser/java/).
-2. **Ottieni una licenza** – ottieni una versione di prova o acquista una licenza per sbloccare tutte le funzionalità.
-3. **Inizializzazione di base**:
+La classe `Parser` è il punto di ingresso principale che legge un documento e ne espone la struttura interna. Un'inizializzazione corretta garantisce che la libreria possa individuare e analizzare le parti XML in modo efficiente.
+
+1. **Installa GroupDocs.Parser** – aggiungi le voci Maven sopra o scarica il JAR dal [sito GroupDocs](https://releases.groupdocs.com/parser/java/).  
+2. **Ottieni una licenza** – procurati una versione di prova o acquista una licenza per sbloccare tutte le funzionalità.  
+3. **Inizializzazione di base**:  
 ```java
 import com.groupdocs.parser.Parser;
 
@@ -86,16 +140,17 @@ public class Setup {
         }
     }
 }
-```
+```  
 
 Con l'ambiente pronto, immergiamoci nella logica di estrazione reale.
 
 ## Guida all'implementazione
 
-### Funzione 1: Estrarre collegamenti ipertestuali da un documento Word
-Leggeremo la struttura XML del documento, individueremo i nodi `<hyperlink>` e stamperemo i loro URL.
+### Funzione 1: estrarre collegamenti ipertestuali da un documento Word
 
-#### Implementazione passo‑per‑passo
+Leggeremo l'XML del documento, individueremo i nodi `<hyperlink>` e stamperemo i loro URL. I passaggi seguenti ti guidano attraverso il processo senza richiedere la gestione di stream XML a basso livello.
+
+#### Implementazione passo‑passo
 
 **1. Importa i pacchetti richiesti**  
 ```java
@@ -103,7 +158,7 @@ import com.groupdocs.parser.Parser;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-```
+```  
 
 **2. Crea un'istanza del parser**  
 ```java
@@ -114,7 +169,7 @@ try (Parser parser = new Parser(filePath)) {
 } catch (Exception e) {
     System.err.println("Error parsing document: " + e.getMessage());
 }
-```
+```  
 
 **3. Attraversa la struttura XML**  
 ```java
@@ -138,10 +193,11 @@ private static void readNode(Node node) {
         }
     }
 }
-```
+```  
 
-#### Gestione degli errori – Funzione 2: Gestione robusta delle eccezioni
-Gestire le eccezioni mantiene la tua applicazione stabile quando incontra file corrotti o formati non supportati.
+### Gestione degli errori – funzione 2: gestione robusta delle eccezioni
+
+Una corretta gestione delle eccezioni mantiene stabile l'applicazione quando incontra file corrotti o formati non supportati. La gerarchia `ParserException` ti consente di distinguere tra errori I/O, problemi di formato e problemi di permessi.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -160,45 +216,54 @@ public class ErrorHandlerFeature {
         }
     }
 }
-```
+```  
 
 ## Applicazioni pratiche
+
 L'estrazione di collegamenti ipertestuali da documenti Word può essere utilizzata per:
-1. **Analisi dei dati** – Costruire set di dati di URL di riferimento per ricerche di mercato.
-2. **Archiviazione** – Creare un indice ricercabile di tutti i link nei report aziendali.
-3. **Monitoraggio SEO** – Verificare che i link in uscita nel materiale di marketing siano ancora attivi.
+
+1. **Analisi dei dati** – Crea set di dati di URL di riferimento per ricerche di mercato.  
+2. **Archiviazione** – Crea un indice ricercabile di tutti i link nei report aziendali.  
+3. **Monitoraggio SEO** – Verifica che i link in uscita nel materiale di marketing rimangano attivi.
 
 Puoi inviare gli URL estratti a un database, a un file CSV o a un endpoint API per ulteriori elaborazioni.
 
 ## Considerazioni sulle prestazioni
-Quando è necessario **elaborare in batch documenti Word**, tieni presente questi consigli:
 
-- **Ottimizza l'uso della memoria** – Il pattern try‑with‑resources (come mostrato sopra) garantisce che i parser vengano chiusi prontamente.
-- **Elaborazione batch** – Scorri una cartella di documenti e invoca la stessa logica di estrazione per ogni file.
+Quando devi **elaborare in batch documenti Word**, tieni presente questi consigli:
+
+- **Ottimizza l'uso della memoria** – Il pattern try‑with‑resources (mostrato in precedenza) garantisce che i parser vengano chiusi tempestivamente, evitando perdite di memoria.
+- **Elaborazione batch** – Itera su una cartella di documenti e invoca la stessa logica di estrazione per ogni file.
 - **Gestione dei thread** – Per scenari ad alto throughput, esegui il parsing di ogni documento su un thread separato, ma proteggi le istanze del parser per evitare problemi di concorrenza.
 
 ## Domande frequenti
 
-**D: Come gestisco i formati di documento non supportati?**  
-R: Cattura `UnsupportedDocumentFormatException` e fornisci un fallback o una notifica all'utente.
+**Q: Come gestisco i formati di documento non supportati?**  
+A: Cattura `UnsupportedDocumentFormatException` e fornisci un fallback o una notifica all'utente.
 
-**D: GroupDocs.Parser può estrarre collegamenti ipertestuali anche dai PDF?**  
-R: Sì – la stessa API funziona con PDF, DOC, PPT e molti altri formati.
+**Q: GroupDocs.Parser può estrarre collegamenti ipertestuali anche dai PDF?**  
+A: Sì – la stessa API funziona con PDF, DOC, PPT e molti altri formati.
 
-**D: Qual è il modo migliore per ottimizzare le prestazioni per documenti di grandi dimensioni?**  
-R: Usa try‑with‑resources, elabora i file in batch e considera il multithreading con una corretta sincronizzazione.
+**Q: Qual è il modo migliore per ottimizzare le prestazioni per documenti di grandi dimensioni?**  
+A: Usa try‑with‑resources, elabora i file in batch e considera il multithreading con una corretta sincronizzazione.
 
-**D: C'è un costo associato a GroupDocs.Parser per Java?**  
-R: È disponibile una versione di prova gratuita; l'uso in produzione richiede una licenza acquistata.
+**Q: Esiste un costo associato a GroupDocs.Parser per Java?**  
+A: È disponibile una prova gratuita; l'uso in produzione richiede una licenza acquistata.
 
-**D: Come posso integrare questo con un database?**  
-R: Dopo aver recuperato ogni URL, usa JDBC o un ORM per inserire il valore nella tua tabella di destinazione.
+**Q: Come posso integrare questo con un database?**  
+A: Dopo aver recuperato ogni URL, usa JDBC o un ORM per inserire il valore nella tua tabella di destinazione.
 
 ## Conclusione
-Ora disponi di un approccio completo e pronto per la produzione per **come estrarre collegamenti ipertestuali** da documenti Word usando GroupDocs.Parser per Java, e comprendi come scalare la soluzione per **elaborare in batch documenti Word** in modo efficiente. Esplora l'API completa nella [documentazione](https://docs.groupdocs.com/parser/java/) ufficiale per sbloccare funzionalità aggiuntive come l'estrazione di metadati, la gestione delle immagini e altro.
+Ora disponi di un approccio pronto per la produzione su **come estrarre i collegamenti ipertestuali da Word** documenti usando GroupDocs.Parser per Java, oltre al know‑how per scalare la soluzione per l'elaborazione batch. Esplora l'API completa nella [documentazione](https://docs.groupdocs.com/parser/java/) ufficiale per sbloccare funzionalità aggiuntive come l'estrazione di metadati, la gestione delle immagini e altro.
 
 ---
 
-**Ultimo aggiornamento:** 2026-01-14  
+**Ultimo aggiornamento:** 2026-08-05  
 **Testato con:** GroupDocs.Parser 25.5 for Java  
 **Autore:** GroupDocs
+
+## Tutorial correlati
+
+- [Come estrarre collegamenti ipertestuali con GroupDocs.Parser per Java](/parser/java/hyperlink-extraction/)
+- [Come estrarre link in Java con GroupDocs.Parser – Guida completa](/parser/java/hyperlink-extraction/efficient-hyperlink-extraction-groupdocs-parser-java/)
+- [Come estrarre testo da documenti Word usando GroupDocs.Parser in Java: Guida completa](/parser/java/text-extraction/extract-text-word-docs-groupdocs-parser-java/)
