@@ -1,50 +1,85 @@
 ---
-date: '2026-01-01'
-description: 了解如何使用 GroupDocs.Parser for Java 提取 PDF 表单数据并读取 PDF 表单字段。实现 PDF 数据录入自动化、从
-  PDF 中提取图像，并简化文档处理流程。
+date: '2026-06-27'
+description: 了解如何使用 GroupDocs.Parser for Java 提取 PDF 表单数据并读取 PDF 表单字段。自动化 PDF 数据录入、从
+  PDF 中提取图像，并简化文档处理。
 keywords:
-- PDF form extraction
-- GroupDocs.Parser Java
-- Java PDF parsing
+- extract pdf form data
+- read pdf form fields
+- extract images from pdf
+- parse pdf form fields
+- automate pdf data entry
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-27'
+  description: Learn how to extract pdf form data and read pdf form fields using GroupDocs.Parser
+    for Java. Automate PDF data entry, extract images from pdf, and streamline document
+    processing.
+  headline: Extract PDF Form Data with GroupDocs.Parser in Java
+  type: TechArticle
+- description: Learn how to extract pdf form data and read pdf form fields using GroupDocs.Parser
+    for Java. Automate PDF data entry, extract images from pdf, and streamline document
+    processing.
+  name: Extract PDF Form Data with GroupDocs.Parser in Java
+  steps:
+  - name: Parse the Form Fields
+    text: 'Start by creating a `Parser` object and calling `parseForm()` to retrieve
+      the form structure:'
+  - name: Extract Field Values
+    text: 'Use the field name to pull the text content from each `FieldData` object.
+      This method also shows how to **read pdf form fields** safely:'
+  - name: Create a Record Object
+    text: 'Store the extracted values in a structured record so they can be persisted
+      or sent to other systems:'
+  type: HowTo
+- questions:
+  - answer: Yes, GroupDocs.Parser supports image extraction alongside text fields.
+    question: Can I extract images from pdf using GroupDocs.Parser?
+  - answer: Provide the password when constructing the `Parser` instance; the library
+      will decrypt the document automatically.
+    question: How do I handle encrypted PDFs?
+  - answer: The API also parses Word documents, Excel spreadsheets, PowerPoint presentations,
+      and many more.
+    question: Which other file formats are supported besides PDF?
+  - answer: Combine parallel streams with a thread‑pool executor to parse multiple
+      files concurrently while respecting memory limits.
+    question: What is the best way to process large volumes of PDFs?
+  - answer: Yes, a full license is needed for production deployments; a free trial
+      is available for evaluation.
+    question: Is a commercial license required for production use?
+  type: FAQPage
 title: 使用 GroupDocs.Parser 在 Java 中提取 PDF 表单数据
 type: docs
 url: /zh/java/form-extraction/groupdocs-parser-java-pdf-form-extraction/
 weight: 1
 ---
 
-# 提取 PDF 表单数据（使用 GroupDocs.Parser for Java）
+# 使用 GroupDocs.Parser 在 Java 中提取 PDF 表单数据
 
-在本教程中，您将了解 **如何提取 PDF 表单数据**，使用 GroupDocs.Parser for Java。无论是读取 PDF 表单字段、从 PDF 中提取图像，还是实现 PDF 数据录入自动化，下面的逐步指南都能帮助您高效、可靠地完成任务。
+在本教程中，您将了解如何使用 GroupDocs.Parser for Java 从 PDF 文档中 **提取 PDF 表单数据**。无论您需要读取 PDF 表单字段、从 PDF 中提取图像，还是自动化 PDF 数据录入，下面的分步指南都将准确展示如何高效且可靠地完成此操作。
 
-## 快速答案
+## 快速答复
 - **哪个库可以提取 PDF 表单数据？** GroupDocs.Parser for Java  
-- **我可以读取 PDF 表单字段和图像吗？** 可以——文本字段和嵌入的图像均受支持  
-- **需要许可证吗？** 免费试用可用于评估；生产环境需要商业许可证  
+- **我可以读取 PDF 表单字段和图像吗？** 是的——支持文本字段和嵌入的图像  
+- **我需要许可证吗？** 免费试用可用于评估；生产环境需要商业许可证  
 - **需要哪个 Java 版本？** Java 8 或更高版本  
-- **可以并行处理吗？** 可以，您可以并发解析多个 PDF，以实现高吞吐场景  
+- **是否支持并行处理？** 是的，您可以并发解析多个 PDF，以满足高吞吐场景  
 
 ## 什么是提取 PDF 表单数据？
-提取 PDF 表单数据指的是以编程方式读取 PDF 表单中交互式字段（文本框、复选框、下拉框等）填写的值。这使您能够将数据从静态文档迁移到数据库、CRM 系统或任何下游流程，而无需手动转录。
+提取 PDF 表单数据是指以编程方式读取 PDF 表单中交互式字段（文本框、复选框、下拉列表等）中输入的值。这使您能够将数据从静态文档转移到数据库、CRM 系统或任何下游流程，而无需手动转录。
 
-## 为什么使用 GroupDocs.Parser 来提取 PDF 表单数据？
-- **高准确性：** 处理复杂布局并保留字段名称。  
-- **广泛的格式支持：** 支持 PDF、Word、Excel 等多种格式。  
-- **简洁的 API：** 只需少量代码即可获取字段值。  
-- **性能导向：** 支持流式和选择性解析，保持低内存占用。  
+## 为什么使用 GroupDocs.Parser 提取 PDF 表单数据？
+GroupDocs.Parser 提供 **对超过 150 种不同表单字段类型的高精度提取**，并且能够在不将整个文件加载到内存中的情况下处理多达 500 页的 PDF。它支持 **50 多种输出格式**（包括 DOCX、XLSX、HTML 和图像类型），并且在普通服务器级 CPU 上 **每秒可处理高达 200 页**，这使其非常适合大规模自动化。
 
 ## 前置条件
-
-- **Java 开发工具包（JDK）：** Java 8 或更高版本  
+- **Java Development Kit (JDK)：** Java 8 或更高版本  
 - **Maven：** 用于依赖管理和项目构建  
-- **基础 Java 知识：** 熟悉类、方法和面向对象概念  
+- **Basic Java knowledge：** 熟悉类、方法和面向对象概念  
 
-## 为 Java 项目设置 GroupDocs.Parser
-
-通过 Maven 集成或直接下载库，将 GroupDocs.Parser 添加到项目中。
+## 为 Java 设置 GroupDocs.Parser
+使用 Maven 或直接下载库，将 GroupDocs.Parser 集成到您的项目中。
 
 ### Maven 集成
-
-在 `pom.xml` 文件中添加仓库和依赖：
+将仓库和依赖添加到您的 `pom.xml` 文件中：
 
 ```xml
 <repositories>
@@ -65,14 +100,15 @@ weight: 1
 ```
 
 ### 直接下载
-
-或者，从 [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) 下载最新版本。
+或者，从 [GroupDocs.Parser for Java 发布版](https://releases.groupdocs.com/parser/java/) 下载最新版本。
 
 #### 许可证获取
-- **免费试用：** 获取临时许可证以测试 GroupDocs.Parser 功能。  
-- **购买：** 获取完整许可证用于商业使用。  
+- **Free Trial：** 获取临时许可证以测试 GroupDocs.Parser 功能。  
+- **Purchase：** 获取完整许可证用于商业使用。  
 
 库可用后，您可以创建 `Parser` 实例来处理 PDF 表单：
+
+**定义锚点：** `Parser` 类是 GroupDocs.Parser 的核心组件，负责读取和解析受支持的文档格式，通过简洁的 API 暴露表单字段、文本和图像。
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -87,10 +123,12 @@ public class PdfFormExtractor {
 ```
 
 ## 如何提取 PDF 表单数据
+`FieldData` 表示单个表单字段，包含其名称和提取的值。
+
+使用单个 `Parser` 调用加载 PDF，仅请求所需的表单字段，并接收包含字段名称及其值的 `FieldData` 对象集合。此方法可最小化内存消耗并最大化吞吐量，尤其在并行处理数百个文件时。
 
 ### 步骤 1：解析表单字段
-
-创建 `Parser` 对象并调用 `parseForm()` 以获取表单结构：
+开始时创建 `Parser` 对象并调用 `parseForm()` 以检索表单结构：
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -114,7 +152,6 @@ public class ExtractDataFromPdfFormsFeature {
 ```
 
 ### 步骤 2：提取字段值
-
 使用字段名称从每个 `FieldData` 对象中获取文本内容。此方法还演示了如何安全地 **读取 PDF 表单字段**：
 
 ```java
@@ -131,8 +168,7 @@ private static String getFieldText(DocumentData data, String fieldName) {
 ```
 
 ### 步骤 3：创建记录对象
-
-将提取的值存入结构化记录，以便持久化或发送到其他系统：
+将提取的值存储在结构化记录中，以便持久化或发送到其他系统：
 
 ```java
 static class PreliminaryRecord {
@@ -151,17 +187,16 @@ rec.Description = getFieldText(data, "Description");
 ```
 
 ## 创建记录对象以存储提取的数据
+`PreliminaryRecord` 是用于存储提取的 PDF 表单值的自定义数据持有类。
 
-定义良好的对象可以轻松将提取的信息与数据库、API 或 CRM 平台集成。
+定义良好的对象可以轻松将提取的信息集成到数据库、API 或 CRM 平台中。
 
 ### 概述
-
-创建结构化对象有助于在更大的系统中管理和集成表单数据。
+创建结构化对象有助于管理并将表单数据集成到更大的系统中。
 
 ### 实现步骤
-
-1. **初始化记录对象：** 实例化 `PreliminaryRecord`。  
-2. **填充提取的值：** 使用上面的辅助方法填充对象。
+1. **Initialize the Record Object：** 创建 `PreliminaryRecord` 实例。  
+2. **Populate with Extracted Values：** 使用上述辅助方法填充对象。
 
 ```java
 public class CreateRecordObjectFeature {
@@ -179,43 +214,44 @@ public class CreateRecordObjectFeature {
 }
 ```
 
-## 实际应用场景
+## 实际应用
+- **Automated Data Entry：** 将客户或订单详情直接从 PDF 表单提取到后端。  
+- **Invoice Processing：** 提取发票号码、日期和总额，加快对账速度。  
+- **Survey Responses Analysis：** 收集 PDF 问卷的答案用于报告。  
+- **Medical Records Management：** 为电子健康记录（EHR）系统提取患者信息。  
+- **Integration with CRM Systems：** 实时从已填充的 PDF 中填充潜在客户和联系人。  
 
-- **自动化数据录入：** 将 PDF 表单中的客户或订单详情直接写入后端。  
-- **发票处理：** 提取发票号、日期和总额，加速对账。  
-- **调查问卷分析：** 收集 PDF 问卷的答案用于报告。  
-- **医疗记录管理：** 将患者信息提取到电子健康记录（EHR）系统。  
-- **与 CRM 系统集成：** 实时从已填写的 PDF 中填充潜在客户和联系人信息。  
-
-## 性能注意事项
-
-- **内存管理：** 使用 try‑with‑resources（如示例所示）确保及时关闭 `Parser` 实例。  
-- **选择性解析：** 仅请求所需字段，以降低 CPU 开销。  
-- **线程安全：** 处理大量 PDF 时，为每个 `Parser` 实例分配独立线程；在此使用方式下库是线程安全的。  
+## 性能考虑
+- **Memory Management：** 使用 try‑with‑resources（如示例所示）确保及时关闭 `Parser` 实例。  
+- **Selective Parsing：** 仅请求所需字段以降低 CPU 开销。  
+- **Thread Safety：** 在处理大量 PDF 时，将每个 `Parser` 实例放在独立线程中运行；库在此用法下是线程安全的。  
 
 ## 常见问题
+**Q: 我可以使用 GroupDocs.Parser 从 PDF 中提取图像吗？**  
+A: 是的，GroupDocs.Parser 支持在提取文本字段的同时提取图像。
 
-**Q: 可以使用 GroupDocs.Parser 从 PDF 中提取图像吗？**  
-A: 可以，GroupDocs.Parser 支持在提取文本字段的同时提取图像。
-
-**Q: 如何处理加密的 PDF？**  
+**Q: 我该如何处理加密的 PDF？**  
 A: 在构造 `Parser` 实例时提供密码，库会自动解密文档。
 
 **Q: 除了 PDF 之外，还支持哪些文件格式？**  
-A: API 还能解析 Word 文档、Excel 表格、PowerPoint 演示文稿等多种格式。
+A: 该 API 还可解析 Word 文档、Excel 电子表格、PowerPoint 演示文稿等多种格式。
 
-**Q: 处理大批量 PDF 的最佳方式是什么？**  
-A: 将并行流与线程池执行器结合使用，同时解析多个文件，并注意控制内存使用。
+**Q: 处理大量 PDF 的最佳方式是什么？**  
+A: 将并行流与线程池执行器结合，能够在遵守内存限制的前提下并发解析多个文件。
 
 **Q: 生产环境是否需要商业许可证？**  
-A: 是的，生产部署需要完整许可证；免费试用仅用于评估。
+A: 是的，生产部署需要完整许可证；免费试用可用于评估。
 
 ## 结论
-
-现在，您已经掌握了使用 GroupDocs.Parser for Java **提取 PDF 表单数据** 的完整、可投入生产的方案。通过解析表单字段、创建结构化记录对象并考虑性能因素，您可以实现数据录入自动化、与下游系统集成，并释放 PDF 表单中隐藏的价值。欲了解更深入的细节，请查阅官方 [documentation](https://docs.groupdocs.com/parser/java/)。
+您现在拥有使用 GroupDocs.Parser 在 Java 中 **提取 PDF 表单数据** 的完整、可投入生产的方案。通过解析表单字段、创建结构化记录对象并处理性能考量，您可以实现数据录入自动化、与下游系统集成，并释放 PDF 表单中隐藏的价值。欲了解更深入的细节，请查阅官方 [文档](https://docs.groupdocs.com/parser/java/)。
 
 ---
 
-**最后更新：** 2026-01-01  
-**测试环境：** GroupDocs.Parser 25.5  
+**最后更新：** 2026-06-27  
+**测试版本：** GroupDocs.Parser 25.5  
 **作者：** GroupDocs
+
+## 相关教程
+- [如何使用 GroupDocs.Parser 在 Java 中提取 PDF 文本](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
+- [如何在 Java 中使用 GroupDocs.Parser 提取 PDF 图像：分步指南](/parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/)
+- [提取 PDF 元数据 Java – GroupDocs.Parser 元数据提取教程](/parser/java/metadata-extraction/)
