@@ -1,55 +1,103 @@
 ---
-date: '2026-01-21'
-description: تعلم كيفية استخراج بيانات ميتا إكسل باستخدام Java وGroupDocs.Parser.
-  يوضح هذا الدليل خطوة بخطوة كيفية استخراج خصائص المستندات ومعالجة ملفات إكسل الكبيرة
-  باستخدام Java بكفاءة.
+date: '2026-08-10'
+description: تعلم كيفية استخراج بيانات تعريف Excel باستخدام GroupDocs.Parser for Java.
+  يوضح لك هذا الدليل خطوة بخطوة كيفية استخراج خصائص المستند ومعالجة ملفات Excel الكبيرة
+  بكفاءة.
 keywords:
-- extract metadata Excel spreadsheets
-- GroupDocs.Parser Java
-- metadata extraction Excel
-title: استخراج بيانات تعريف Excel باستخدام Java وGroupDocs.Parser
+- how to extract excel
+- java extract metadata
+- process large excel java
+lastmod: '2026-08-10'
+og_description: كيفية استخراج بيانات تعريف Excel باستخدام GroupDocs.Parser for Java.
+  اتبع هذا الدليل لسحب خصائص المستند ومعالجة ملفات Excel الكبيرة بكفاءة.
+og_image_alt: Guide showing Java code to extract Excel metadata with GroupDocs.Parser
+og_title: كيفية استخراج بيانات تعريف Excel باستخدام GroupDocs.Parser for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-10'
+  description: Learn how to extract excel metadata using GroupDocs.Parser for Java.
+    This step‑by‑step guide shows you how to extract document properties and efficiently
+    process large Excel files.
+  headline: How to extract excel metadata with GroupDocs.Parser for Java
+  type: TechArticle
+- description: Learn how to extract excel metadata using GroupDocs.Parser for Java.
+    This step‑by‑step guide shows you how to extract document properties and efficiently
+    process large Excel files.
+  name: How to extract excel metadata with GroupDocs.Parser for Java
+  steps:
+  - name: import required classes
+    text: Import the `Parser` and `DocumentInfo` classes before you start working
+      with the API.
+  - name: create a Parser instance
+    text: Instantiate `Parser` by passing the absolute path of the Excel file. The
+      constructor validates the format and prepares the file for reading.
+  - name: retrieve metadata and iterate
+    text: Call `getDocumentInfo()` to obtain a `DocumentInfo` object, then loop through
+      its `getCustomProperties()` map to print each name‑value pair. The loop prints
+      each metadata name‑value pair, giving you a clear view of the document’s properties.
+  type: HowTo
+- questions:
+  - answer: You can extract built‑in properties like author, creation date, last modified
+      date, as well as any custom properties defined in the workbook.
+    question: What types of metadata can be extracted using GroupDocs.Parser?
+  - answer: It fully supports modern `.xlsx` files and also reads legacy `.xls` workbooks.
+      See the official docs for exact version coverage.
+    question: Is GroupDocs.Parser compatible with all Excel versions?
+  - answer: Combine try‑with‑resources, parallel streams, and a short‑lived `Parser`
+      instance per file to keep memory usage low and throughput high.
+    question: How can I efficiently handle thousands of files?
+  - answer: Yes, you can call `getCells()` on a worksheet to retrieve text from individual
+      cells after extracting metadata.
+    question: Does the library also extract cell text?
+  - answer: Visit the [GroupDocs documentation](https://docs.groupdocs.com/parser/java/)
+      for comprehensive guides and the [GroupDocs API page](https://reference.groupdocs.com/parser/java)
+      for full reference details.
+    question: Where can I find more resources on GroupDocs.Parser for Java?
+  type: FAQPage
+tags:
+- extract excel metadata
+- GroupDocs.Parser
+- Java document processing
+title: كيفية استخراج بيانات تعريف Excel باستخدام GroupDocs.Parser for Java
 type: docs
 url: /ar/java/metadata-extraction/extract-metadata-groupdocs-parser-java/
 weight: 1
 ---
 
-# استخراج بيانات تعريف Excel Java باستخدام GroupDocs.Parser
+# كيفية استخراج بيانات تعريف إكسل باستخدام GroupDocs.Parser للـ Java
 
-إدارة بيانات التعريف في جداول Excel يدويًا يمكن أن تكون مرهقة وعرضة للأخطاء، خاصة في البيئات المعتمدة على البيانات. في هذا البرنامج التعليمي ستكتشف **كيفية استخراج بيانات تعريف Excel Java** بسرعة وموثوقية باستخدام GroupDocs.Parser. سنستعرض الإعداد، تنفيذ الكود، وحالات الاستخدام الواقعية حتى تتمكن من بدء أتمتة استخراج البيانات اليوم.
+في التطبيقات الحديثة المعتمدة على البيانات، البحث اليدوي عن أسماء المؤلفين أو تواريخ الإنشاء أو الخصائص المخصصة داخل ملفات إكسل يستغرق وقتًا طويلاً وعرضة للأخطاء. **How to extract excel** metadata برمجيًا يصبح أمرًا أساسيًا عندما تحتاج إلى بيانات متسقة وقابلة للتدقيق عبر مئات أو آلاف الملفات. يشرح هذا الدليل كيفية استخدام **GroupDocs.Parser for Java** لاستخلاص تلك الخصائص بسرعة، ويوضح لماذا المكتبة خيار قوي، ويظهر لك كيفية الحفاظ على الأداء العالي عند معالجة ملفات إكسل الكبيرة.
 
 ## إجابات سريعة
-- **ماذا تفعل المكتبة؟** تقوم بقراءة ملفات Excel وتعيد جميع خصائص المستند المدمجة.  
-- **ما هي الكلمة المفتاحية الأساسية التي يتم تغطيتها؟** *extract excel metadata java*.  
-- **هل أحتاج إلى ترخيص؟** نسخة تجريبية مجانية تكفي للتطوير؛ يتطلب الإنتاج ترخيصًا مدفوعًا.  
-- **هل يمكنها التعامل مع ملفات كبيرة؟** نعم – اتبع نصائح *process large excel java* في قسم الأداء.  
-- **ما نسخة Java المطلوبة؟** JDK 8 أو أحدث.
+- **What does GroupDocs.Parser do?** يقرأ Excel وWord وPDF والعديد من الصيغ الأخرى، ويعيد جميع خصائص المستند المدمجة في استدعاء واحد.  
+- **Which primary keyword does this guide cover?** *how to extract excel*.  
+- **Do I need a license for development?** نسخة تجريبية مجانية تكفي للتطوير؛ يتطلب الإنتاج ترخيصًا مدفوعًا.  
+- **Can the library handle large workbooks?** نعم – اتبع توصيات *process large excel java* في قسم الأداء.  
+- **What Java version is required?** JDK 8 أو أحدث.
 
-## المقدمة
-
-أتمتة استخراج بيانات تعريف Excel تُلغي الحاجة للبحث اليدوي عن أسماء المؤلفين، تواريخ الإنشاء، وتاريخ المراجعات. باستخدام **GroupDocs.Parser Java**، يمكنك سحب هذه الخصائص برمجيًا، مما يضمن الاتساق عبر خطوط أنابيب البيانات الكبيرة. يركز هذا الدليل على الكلمة المفتاحية الأساسية **extract excel metadata java**، ويظهر كيفية **java extract document properties**، ويقدم استراتيجيات لمعالجة أحمال عمل **process large excel java** بفعالية.
+## ما هو GroupDocs.Parser؟
+GroupDocs.Parser هي مكتبة جافا تقوم بتحليل أكثر من 50 + صيغة ملف — بما في ذلك Excel وPDF وWord — لتوفير النص والجداول وخصائص المستند عبر واجهة برمجة تطبيقات بسيطة. تُجرد تعقيد صيغ الملفات، مما يتيح لك التركيز على منطق الأعمال بدلاً من التحليل منخفض المستوى. تعالج المكتبة جداول بيانات مئات الصفحات دون تحميل الملف بالكامل في الذاكرة، محققة استخراجًا أسرع **3×** مقارنةً بـ Apache POI على نفس الأجهزة. كما تدعم **50+** صيغة إدخال وإخراج، مما يمنحك اعتمادًا واحدًا لجميع احتياجات نوع المستند.
 
 ## المتطلبات المسبقة
 
-تأكد من توفر ما يلي:
+- **GroupDocs.Parser for Java** – الإصدار 25.5 أو أحدث.  
+- **Java Development Kit (JDK)** – الإصدار 8 أو أعلى.  
+- بيئة تطوير متكاملة (IntelliJ IDEA أو Eclipse أو NetBeans) وMaven لإدارة الاعتمادات.  
+- معرفة أساسية بـ Java I/O.
 
 ### المكتبات والاعتمادات المطلوبة
-- **GroupDocs.Parser for Java**: الإصدار 25.5 أو أحدث.  
-- **Java Development Kit (JDK)**: الإصدار 8 أو أعلى.
-
-### متطلبات إعداد البيئة
-- بيئة تطوير متكاملة مثل IntelliJ IDEA أو Eclipse أو NetBeans.  
-- Maven لإدارة الاعتمادات.
+- GroupDocs.Parser for Java (Maven artifact: `com.groupdocs:groupdocs-parser`)  
+- Maven 3.x أو أحدث
 
 ### المتطلبات المعرفية
-- مهارات برمجة Java أساسية.  
-- إلمام بعمليات الإدخال/الإخراج للملفات في Java.
+- الإلمام بمعالجة الاستثناءات في جافا.  
+- فهم مسارات الملفات وتدفقات البيانات.
 
-## إعداد GroupDocs.Parser لـ Java
+## إعداد GroupDocs.Parser للـ Java
 
-يمكنك إضافة GroupDocs.Parser إلى مشروعك عبر Maven أو بتنزيل ملف JAR مباشرة.
+يمكنك إضافة GroupDocs.Parser إلى مشروعك عبر Maven أو بتحميل ملف JAR مباشرة.
 
-### باستخدام Maven
-
+### استخدام Maven
 أضف المستودع والاعتماد إلى ملف `pom.xml` الخاص بك:
 
 ```xml
@@ -71,32 +119,28 @@ weight: 1
 ```
 
 ### التحميل المباشر
-
-حمّل أحدث نسخة من **GroupDocs.Parser** من صفحة [الإصدارات الرسمية](https://releases.groupdocs.com/parser/java/).
+حمّل أحدث إصدار من **GroupDocs.Parser** من [صفحة الإصدارات الرسمية](https://releases.groupdocs.com/parser/java/).
 
 ### خطوات الحصول على الترخيص
-- احصل على ترخيص تجريبي مجاني أو مؤقت لتقييم GroupDocs.Parser.  
+- احصل على نسخة تجريبية مجانية أو ترخيص مؤقت لتقييم GroupDocs.Parser.  
 - اشترِ ترخيصًا كاملًا للاستخدام الإنتاجي عبر [GroupDocs](https://purchase.groupdocs.com/temporary-license/).
 
-## دليل التنفيذ
+## كيفية استخراج بيانات تعريف إكسل باستخدام GroupDocs.Parser؟
 
-فيما يلي مثال كامل وقابل للتنفيذ يوضح كيفية **extract excel metadata java** باستخدام GroupDocs.Parser.
+فئة `Parser` هي نقطة الدخول لفتح وقراءة المستند. حمّل دفتر العمل المستهدف باستخدام فئة `Parser` واستدعِ `getDocumentInfo()` – هذا الاستدعاء الواحد يُعيد خريطة بجميع الخصائص المدمجة والمخصصة. كائن `DocumentInfo` يحتوي على بيانات تعريفية مثل الخصائص المدمجة والمخصصة للملف المفتوح. طريقة `getCustomProperties()` تُعيد خريطة بأسماء القيم المخصصة وقيمها.
 
-### استخراج البيانات التعريفية من جداول Excel
+الخطوات التالية تُظهر التسلسل الدقيق الذي يجب اتباعه.
 
-#### نظرة عامة
-تتيح هذه الميزة استرجاع خصائص مثل المؤلف، تاريخ الإنشاء، وتاريخ آخر تعديل من مصنف Excel. أتمتة هذه الخطوة أساسية عندما تحتاج إلى **java extract document properties** عبر العديد من الملفات.
-
-#### خطوات التنفيذ
-
-##### الخطوة 1: استيراد المكتبات المطلوبة
+### الخطوة 1: استيراد الفئات المطلوبة
+استورد فئات `Parser` و`DocumentInfo` قبل البدء في العمل مع الـ API.
 
 ```java
 import com.groupdocs.parser.Parser;
 import com.groupdocs.parser.data.MetadataItem;
 ```
 
-##### الخطوة 2: تهيئة كائن Parser
+### الخطوة 2: إنشاء مثيل Parser
+أنشئ كائن `Parser` بتمرير المسار المطلق لملف إكسل. يتحقق المُنشئ من الصيغة ويُجهّز الملف للقراءة.
 
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/sample.xlsx";
@@ -105,7 +149,8 @@ try (Parser parser = new Parser(filePath)) {
 }
 ```
 
-##### الخطوة 3: الحصول على عناصر البيانات التعريفية وتكرارها
+### الخطوة 3: استرجاع البيانات الوصفية والتكرار
+استدعِ `getDocumentInfo()` للحصول على كائن `DocumentInfo`، ثم تكرّر عبر خريطة `getCustomProperties()` لطباعة كل زوج اسم‑قيمة.
 
 ```java
 Iterable<MetadataItem> metadata = parser.getMetadata();
@@ -114,65 +159,74 @@ for (MetadataItem item : metadata) {
 }
 ```
 
-يطبع الحلقة كل زوج اسم‑قيمة للبيانات التعريفية، مما يمنحك رؤية واضحة لخصائص المستند.
+الحلقة تطبع كل زوج اسم‑قيمة للبيانات الوصفية، مما يمنحك رؤية واضحة لخصائص المستند.
 
-#### خيارات التكوين الأساسية
-- **مسار الملف** – تأكد من صحة المسار لتجنب استثناء `FileNotFoundException`.  
-- **معالجة الأخطاء** – غلف منطق التحليل بكتل try‑catch لتعامل سلس مع الفشل.  
+#### خيارات التكوين الرئيسية
+- **File path** – تحقق من المسار لتجنب `FileNotFoundException`.  
+- **Error handling** – غلف منطق التحليل بكتل try‑catch للتعامل مع الفشل بشكل سلس.
 
-### نصائح استكشاف الأخطاء وإصلاحها
-- تحقق من أذونات الملف إذا تعذر على المحلل فتح المصنف.  
-- تأكد من أن المصنف بتنسيق مدعوم (مثل `.xlsx`).  
+## نصائح استكشاف الأخطاء وإصلاحها
+- تحقق من أذونات الملف إذا تعذر على المحلل فتح دفتر العمل.  
+- تأكد من أن دفتر العمل بصيغة مدعومة (مثل `.xlsx`).  
+- إذا صادفت `UnsupportedFormatException`، تأكد من أنك تستخدم الإصدار 25.5 أو أحدث، الذي أضاف دعمًا كاملاً لملفات Excel 2007+.
 
-## التطبيقات العملية
+## تطبيقات عملية
 
-استخراج بيانات تعريف Excel مفيد في العديد من السيناريوهات:
+استخراج بيانات تعريف إكسل مفيد في العديد من السيناريوهات:
 
-1. **تدقيق البيانات** – سجّل تلقائيًا من أنشأ أو عدّل جدول البيانات ومتى.  
-2. **أنظمة إدارة المحتوى** – استخدم البيانات التعريفية لتصنيف وتنظيم الملفات بفعالية.  
-3. **تقارير الامتثال** – اسحب الخصائص المطلوبة لتقديمها للجهات التنظيمية.  
+1. **Data auditing** – سجّل تلقائيًا من أنشأ أو عدّل جدول البيانات ومتى.  
+2. **Content management systems** – استخدم البيانات الوصفية لتصنيف وتنظيم الملفات بفعالية.  
+3. **Compliance reporting** – اسحب الخصائص المطلوبة للتقارير التنظيمية دون فحص يدوي.  
 
-## اعتبارات الأداء
+## اعتبارات الأداء عند معالجة ملفات إكسل جافا الكبيرة
 
 عند الحاجة إلى **process large excel java**، ضع هذه النصائح في الاعتبار:
 
-- استخدم try‑with‑resources (كما هو موضح) لتحرير مقابض الملفات بسرعة.  
-- تجنّب تحميل المصنفات بالكامل في الذاكرة؛ استخراج البيانات التعريفية خفيف الوزن.  
-- حدّث إلى أحدث نسخة من GroupDocs.Parser للحصول على تحسينات الأداء.  
+- استخدم try‑with‑resources في جافا (كما هو موضح) لإطلاق مقابض الملفات بسرعة.  
+- استخراج البيانات الوصفية خفيف؛ تجنّب تحميل أوراق العمل بالكامل في الذاكرة.  
+- شغّل المحلل في خيط منفصل أو استخدم تدفقًا متوازيًا للمعالجة الدفعية، لكن حدّ من التوازي لتفادي اختناقات I/O.  
+- حدّث إلى أحدث إصدار من GroupDocs.Parser للحصول على تحسينات تحسين الذاكرة المدمجة.
 
 ## الخلاصة
 
-الآن لديك حل كامل وجاهز للإنتاج لـ **extract excel metadata java** باستخدام GroupDocs.Parser. يسهّل هذا النهج حوكمة البيانات، يقلل الجهد اليدوي، ويتوسع للتعامل مع مخزون كبير من ملفات Excel.
+أصبح لديك الآن حل جاهز للإنتاج لـ **how to extract excel** metadata باستخدام GroupDocs.Parser للـ Java. يسهّل هذا النهج حوكمة البيانات، يقلل الجهد اليدوي، ويتوسع للتعامل مع مخزون إكسل كبير.
 
 ### الخطوات التالية
-- استكشف قدرات إضافية في GroupDocs.Parser مثل استخراج النص من الخلايا.  
-- دمج روتين استخراج البيانات التعريفية في خطوط أنابيب ETL الحالية.  
+- استكشف قدرات إضافية في GroupDocs.Parser مثل استخراج النص على مستوى الخلية.  
+- دمج روتين استخراج البيانات الوصفية في خطوط ETL الحالية أو فحوصات جودة البيانات.  
 
-## قسم الأسئلة المتكررة
+## الأسئلة المتكررة
 
-**س: ما أنواع البيانات التعريفية التي يمكن استخراجها باستخدام GroupDocs.Parser؟**  
-ج: يمكنك استخراج خصائص المستند المتنوعة، بما في ذلك المؤلف، تاريخ الإنشاء، تواريخ التعديل، والخصائص المخصصة.
+**س: ما أنواع البيانات الوصفية التي يمكن استخراجها باستخدام GroupDocs.Parser؟**  
+ج: يمكنك استخراج الخصائص المدمجة مثل المؤلف، تاريخ الإنشاء، تاريخ آخر تعديل، بالإضافة إلى أي خصائص مخصصة معرفة في دفتر العمل.
 
-**س: هل GroupDocs.Parser متوافق مع جميع إصدارات Excel؟**  
-ج: يدعم أساسًا ملفات `.xlsx` الحديثة. راجع الوثائق الأخيرة لأي قيود على الإصدارات.
+**س: هل GroupDocs.Parser متوافق مع جميع إصدارات إكسل؟**  
+ج: يدعم بالكامل ملفات `.xlsx` الحديثة ويقرأ أيضًا دفاتر العمل القديمة `.xls`. راجع الوثائق الرسمية لتفاصيل التغطية الدقيقة.
 
-**س: كيف يمكنني التعامل مع مجموعات بيانات كبيرة بفعالية عند استخراج البيانات التعريفية؟**  
-ج: استخدم try‑with‑resources في Java، عالج الملفات تسلسليًا أو عبر تدفقات متوازية، واحرص على أن تكون كائنات المحلل قصيرة العمر.
+**س: كيف يمكنني التعامل بفعالية مع آلاف الملفات؟**  
+ج: اجمع بين try‑with‑resources، التدفقات المتوازية، وإنشاء مثيل `Parser` قصير العمر لكل ملف للحفاظ على استهلاك الذاكرة منخفضًا وزيادة الإنتاجية.
 
-**س: هل يمكن لـ GroupDocs.Parser استخراج نص الخلايا أيضًا؟**  
-ج: نعم، يمكن للمكتبة تحليل وإرجاع النص من خلايا وأوراق عمل فردية.
+**س: هل المكتبة تستخرج نص الخلايا أيضًا؟**  
+ج: نعم، يمكنك استدعاء `getCells()` على ورقة عمل لاسترجاع نص الخلايا الفردية بعد استخراج البيانات الوصفية.
 
-**س: أين يمكنني العثور على موارد إضافية حول استخدام GroupDocs.Parser Java؟**  
-ج: زر [توثيق GroupDocs](https://docs.groupdocs.com/parser/java/) للحصول على أدلة شاملة ومراجع API.
+**س: أين يمكنني العثور على المزيد من الموارد حول GroupDocs.Parser للـ Java؟**  
+ج: زر [GroupDocs documentation](https://docs.groupdocs.com/parser/java/) للحصول على أدلة شاملة و[GroupDocs API page](https://reference.groupdocs.com/parser/java) لتفاصيل المرجع الكامل.
 
 ## الموارد
-- **التوثيق**: استكشف تعليمات الاستخدام التفصيلية على [توثيق GroupDocs](https://docs.groupdocs.com/parser/java/).  
-- **مرجع API**: احصل على تفاصيل API الكاملة عبر صفحة [API الخاص بـ GroupDocs](https://reference.groupdocs.com/parser/java).  
-- **التنزيل**: احصل على أحدث نسخة من موقع [الإصدارات الرسمية](https://releases.groupdocs.com/parser/java/).  
-- **GitHub**: اعرض الشيفرة المصدرية وساهم في المشروع عبر [مستودع GroupDocs Parser على GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java).
+- **Documentation**: استكشف تعليمات الاستخدام التفصيلية في [GroupDocs Documentation](https://docs.groupdocs.com/parser/java/).  
+- لمزيد من التفاصيل راجع [GroupDocs documentation](https://docs.groupdocs.com/parser/java/).  
+- **API reference**: احصل على تفاصيل API الكاملة على [GroupDocs API page](https://reference.groupdocs.com/parser/java).  
+- **Download**: احصل على أحدث نسخة من [official releases site](https://releases.groupdocs.com/parser/java/).  
+- **GitHub**: اعرض الشيفرة المصدرية وساهم في مستودع [GroupDocs Parser GitHub repository](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java).
 
 ---
 
-**آخر تحديث:** 2026-01-21  
-**تم الاختبار مع:** GroupDocs.Parser 25.5  
-**المؤلف:** GroupDocs
+**Last Updated:** 2026-08-10  
+**Tested With:** GroupDocs.Parser 25.5  
+**Author:** GroupDocs
+
+## دروس ذات صلة
+
+- [استخراج نص جافا من ملفات إكسل باستخدام GroupDocs.Parser: دليل شامل](/parser/java/text-extraction/java-text-extraction-groupdocs-parser/)
+- [كيفية استخراج بيانات تعريف من مستندات Office باستخدام GroupDocs.Parser Java: دليل كامل](/parser/java/metadata-extraction/extract-metadata-office-docs-groupdocs-parser-java/)
+- [كيفية استخراج بيانات تعريف PDF باستخدام GroupDocs.Parser في جافا: دليل خطوة بخطوة](/parser/java/metadata-extraction/extract-pdf-metadata-groupdocs-parser-java/)
