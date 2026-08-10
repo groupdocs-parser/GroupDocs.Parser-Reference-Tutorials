@@ -1,47 +1,105 @@
 ---
-date: '2026-01-21'
-description: Leer hoe je metadata kunt extraheren en ontdek hoe je metadata kunt extraheren
-  met GroupDocs.Parser Java. Deze gids behandelt de installatie, Maven-integratie
-  en praktische extractie van documenteigenschappen.
+date: '2026-08-10'
+description: Leer hoe je metadata uit Office-documenten kunt extraheren met GroupDocs.Parser
+  voor Java, inclusief Maven setup, het extraheren van creation date in Java, en het
+  lezen van document properties in Java.
 keywords:
-- extract metadata Office documents
-- GroupDocs Parser Java setup
+- how to extract metadata
+- extract creation date java
+- read document properties java
+- GroupDocs Parser Java
 - metadata extraction Java
-title: 'Hoe metadata uit Office‑documenten te extraheren met GroupDocs.Parser Java:
-  Een volledige gids'
+lastmod: '2026-08-10'
+og_description: Ontdek hoe je metadata, inclusief author en creation date, uit Office-bestanden
+  kunt extraheren met GroupDocs.Parser Java. Stapsgewijze Maven setup, code walkthrough
+  en real‑world tips.
+og_image_alt: Guide showing Java code that extracts metadata from Word, Excel, and
+  PowerPoint files using GroupDocs.Parser
+og_title: Hoe metadata uit Office-documenten te extraheren met GroupDocs.Parser Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-10'
+  description: Learn how to extract metadata from Office documents using GroupDocs.Parser
+    for Java, including Maven setup, extracting creation date Java, and reading document
+    properties Java.
+  headline: 'How to Extract Metadata from Office Documents Using GroupDocs.Parser
+    Java: A Complete Guide'
+  type: TechArticle
+- description: Learn how to extract metadata from Office documents using GroupDocs.Parser
+    for Java, including Maven setup, extracting creation date Java, and reading document
+    properties Java.
+  name: 'How to Extract Metadata from Office Documents Using GroupDocs.Parser Java:
+    A Complete Guide'
+  steps:
+  - name: specify the document path
+    text: 'Set the absolute or relative path of the Office file you want to analyze:'
+  - name: create a `Parser` instance
+    text: 'Wrap the file path in a `Parser` object using a try‑with‑resources block
+      so the underlying stream is closed automatically: *Definition anchor:* **`MetadataItem`**
+      represents a single piece of metadata (e.g., “Author” or “Created”) and provides
+      `getName()` and `getValue()` accessors.'
+  - name: extract and iterate over metadata
+    text: 'Call `parser.getMetadata()` to retrieve an iterable collection of `MetadataItem`
+      objects, then print or store each name/value pair: The snippet prints every
+      available property, including the **java extract creation date** you asked for,
+      and any custom tags that may exist in the document.'
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Parser handles DOCX, DOC, XLSX, XLS, PPTX, PPT, and ODT formats,
+      among others, totaling over 50 supported document types.
+    question: What types of Office files are supported for metadata extraction?
+  - answer: Wrap the parsing logic in a try‑catch block, log `ParserException` details,
+      and optionally retry for transient I/O errors.
+    question: How should I handle exceptions while reading metadata?
+  - answer: Yes—pass the password to the `Parser` constructor or use `Parser.setPassword()`
+      before calling `getMetadata()`.
+    question: Can I extract metadata from password‑protected files?
+  - answer: There is no hard limit; performance depends on CPU, memory, and I/O bandwidth.
+      Batch the work in chunks of 100–500 files for optimal throughput.
+    question: Is there a limit to how many files I can process at once?
+  - answer: Missing file permissions, unsupported formats, or corrupted property sections
+      can cause `ParserException`. Always validate the file path and ensure the document
+      is not corrupted before parsing.
+    question: What are common pitfalls when extracting metadata?
+  type: FAQPage
+tags:
+- metadata extraction
+- GroupDocs.Parser
+- Java document processing
+title: 'Hoe metadata uit Office-documenten te extraheren met GroupDocs.Parser Java:
+  een volledige gids'
 type: docs
 url: /nl/java/metadata-extraction/extract-metadata-office-docs-groupdocs-parser-java/
 weight: 1
 ---
 
-# Hoe Metadata uit Office-documenten te extraheren met GroupDocs.Parser Java: Een volledige gids
+# Hoe metadata uit Office-documenten te extraheren met GroupDocs.Parser Java: een volledige gids
 
-## Introductie
-
-Zoek je een efficiënte manier om metadata zoals auteursnamen, aanmaakdatums of andere documenteigenschappen uit Microsoft Office‑documenten te extraheren? In deze tutorial leer je **hoe metadata te extraheren** snel en betrouwbaar met GroupDocs.Parser voor Java. Het extraheren van metadata is een hoeksteen voor **metadata voor documentbeheer**, waardoor je documenten kunt indexeren, auditen en workflows op schaal kunt automatiseren.
-
-**Wat je zult leren**
-- Waarom metadata‑extractie belangrijk is voor modern documentbeheer.
-- Hoe je GroupDocs.Parser Java instelt met Maven (**metadata extraction maven** integratie).
-- Stap‑voor‑stap code om **java extract creation date** en andere eigenschappen te extraheren.
-- Praktische use‑cases en prestatietips.
-- Veelvoorkomende valkuilen en advies voor probleemoplossing.
-
-Laten we eerst de vereisten doornemen voordat we beginnen!
+Metadata is het verborgen DNA van elk document—auteursnamen, aanmaak‑tijdstempels, revisiegeschiedenis en aangepaste tags. Deze informatie programmatisch kunnen ophalen stelt je in staat om **indexeren, auditen en automatiseren** van grote documentbibliotheken met vertrouwen. In deze tutorial leer je **hoe metadata te extraheren** uit Microsoft Office‑bestanden met GroupDocs.Parser voor Java, de Maven‑afhankelijkheid in te stellen en eigenschappen op te halen zoals de aanmaakdatum die Java kan begrijpen.
 
 ## Snelle antwoorden
 - **Wat is de primaire bibliotheek?** GroupDocs.Parser for Java  
-- **Welke build‑tool wordt aanbevolen?** Maven (zie de Maven‑snippet hieronder)  
-- **Kan ik documenteigenschappen lezen in Java?** Ja, gebruik `parser.getMetadata()`  
-- **Heb ik een licentie nodig?** Een tijdelijke licentie is beschikbaar voor evaluatie  
-- **Wordt batchverwerking ondersteund?** Ja, verwerk bestanden in lussen of streams  
+- **Welke build‑tool wordt aanbevolen?** Maven (see the Maven snippet below)  
+- **Kan ik documenteigenschappen lezen in Java?** Yes, call `parser.getMetadata()`  
+- **Heb ik een licentie nodig?** A temporary license is available for evaluation  
+- **Wordt batchverwerking ondersteund?** Yes, you can loop over files or stream them  
 
-## Vereisten
+## Wat is metadata‑extractie?
+Metadata‑extractie is het proces van programmatisch lezen van beschrijvende informatie die in een bestand is ingebed—zoals auteur, aanmaakdatum en aangepaste eigenschappen—zonder de inhoud van het document te openen. Deze techniek ondersteunt zoekindexering, nalevingsrapportage en geautomatiseerde classificatie‑pijplijnen.
 
-Zorg er voordat je begint voor dat je de volgende configuratie klaar hebt:
+## Waarom GroupDocs.Parser voor Java gebruiken?
+GroupDocs.Parser ondersteunt **meer dan 50 invoer‑ en uitvoerformaten** (inclusief DOCX, XLSX, PPTX en ODT) en kan **bestanden met honderden pagina's** verwerken zonder het volledige document in het geheugen te laden, dankzij de streaming‑architectuur. De bibliotheek draait op elke Java 8+ runtime en vereist geen Microsoft Office‑installatie, waardoor consistente resultaten worden geleverd op Windows-, Linux- en macOS‑omgevingen.
+
+## Voorvereisten
+
+Before you begin, make sure you have:
+
+- **JDK 8 of nieuwer** geïnstalleerd en geconfigureerd in je `PATH`.  
+- Een IDE zoals **IntelliJ IDEA** of **Eclipse** voor eenvoudig projectbeheer.  
+- Basiskennis van Java; bekendheid met Maven helpt maar is niet verplicht.  
 
 ### Vereiste bibliotheken en afhankelijkheden
-Om met GroupDocs.Parser Java te werken, zorg ervoor dat je de bibliotheek in je project opneemt. Zo doe je dat via Maven:
+Voeg het GroupDocs.Parser Maven‑artifact toe aan je `pom.xml`. Het fragment hieronder haalt de nieuwste stabiele release op:
 
 ```xml
 <repositories>
@@ -61,24 +119,15 @@ Om met GroupDocs.Parser Java te werken, zorg ervoor dat je de bibliotheek in je 
 </dependencies>
 ```
 
-Alternatief kun je de nieuwste versie direct downloaden van [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
-
-### Omgevingsconfiguratie
-- Zorg ervoor dat je een JDK (Java Development Kit) geïnstalleerd en geconfigureerd hebt.
-- Gebruik een IDE zoals IntelliJ IDEA of Eclipse voor gemakkelijker projectbeheer.
-
-### Kennisvereisten
-Een basisbegrip van Java‑programmeren is essentieel. Vertrouwdheid met Maven‑ of Gradle‑buildsystemen is handig maar niet noodzakelijk, aangezien we hier alle installatie‑stappen behandelen.
+Je kunt de JAR ook direct downloaden van de officiële release‑pagina: [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
 ## GroupDocs.Parser voor Java instellen
 
-Het instellen van je omgeving om GroupDocs.Parser te gebruiken is eenvoudig. Volg deze stappen:
-
 ### Licentie‑acquisitie
-Je kunt beginnen met het verkrijgen van een tijdelijke licentie via [GroupDocs](https://purchase.groupdocs.com/temporary-license/) om alle functies zonder beperkingen te verkennen. Voor langdurig gebruik kun je overwegen een abonnement aan te schaffen.
+Verkrijg een tijdelijke evaluatielicentie via het GroupDocs‑portaal: [GroupDocs](https://purchase.groupdocs.com/temporary-license/). Een permanente licentie is vereist voor productiegebruik.
 
-### Basisinitialisatie en configuratie
-Nadat je de afhankelijkheid in je `pom.xml` hebt opgenomen, ben je klaar om GroupDocs.Parser te initialiseren:
+### Basisinitialisatie en -configuratie
+De `Parser`‑klasse is het toegangspunt voor alle document‑parsing‑operaties. Het omvat bestandsafhandeling, formatdetectie en metadata‑extractie.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -96,26 +145,21 @@ public class FeatureMetadataExtraction {
 }
 ```
 
-Dit initialiseert het `Parser`‑object, zodat je met je document kunt werken.
+*Definitie‑anker:* **`Parser`** is de kernklasse in GroupDocs.Parser die een document‑stroom opent en methoden biedt om tekst, tabellen en metadata te lezen zonder het volledige bestand in het geheugen te laden.
 
 ## Hoe metadata te extraheren met GroupDocs.Parser Java
 
-Laten we het proces van metadata‑extractie uit een Microsoft Office‑document met GroupDocs.Parser Java stap voor stap bekijken.
+Om metadata te extraheren, laad je eerst het Office‑bestand in een `Parser`‑object, en roep je vervolgens de metadata‑API aan om alle beschikbare eigenschappen op te halen. De parser leest de document‑header zonder de volledige inhoud te laden, en retourneert een collectie van `MetadataItem`‑objecten waar je over kunt itereren. Hieronder staat een beknopt, end‑to‑end voorbeeld.
 
-### Overzicht van metadata‑extractie
-Metadata‑extractie omvat het ophalen van informatie zoals auteursdetails, aanmaakdatums en wijzigingstijden. Dit is cruciaal voor **metadata voor documentbeheer** en nalevingsrapportage.
-
-#### Stap 1: Het pad naar je document instellen
-Geef eerst het pad naar je document op:
+### Stap 1: specificeer het documentpad
+Stel het absolute of relatieve pad in van het Office‑bestand dat je wilt analyseren:
 
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/sample.docx";
 ```
 
-Zorg ervoor dat het pad naar een geldig bestand op je systeem verwijst.
-
-#### Stap 2: Een instantie van Parser maken
-Initialiseer het `Parser`‑object met het opgegeven document:
+### Stap 2: maak een `Parser`‑instance
+Wikkel het bestandspad in een `Parser`‑object met een try‑with‑resources‑blok zodat de onderliggende stroom automatisch wordt gesloten:
 
 ```java
 try (Parser parser = new Parser(filePath)) {
@@ -125,10 +169,10 @@ try (Parser parser = new Parser(filePath)) {
 }
 ```
 
-De `try‑with‑resources`‑statement zorgt ervoor dat de `Parser`‑instantie automatisch wordt gesloten, waardoor resource‑lekken worden voorkomen.
+*Definitie‑anker:* **`MetadataItem`** vertegenwoordigt een enkel stuk metadata (bijv. “Author” of “Created”) en biedt `getName()`‑ en `getValue()`‑accessors.
 
-#### Stap 3: Metadata extraheren en itereren
-Extraheren nu metadata‑items uit je document:
+### Stap 3: extraheer en itereer over metadata
+Roep `parser.getMetadata()` aan om een iterabele collectie van `MetadataItem`‑objecten op te halen, en druk vervolgens elk naam/waarde‑paar af of sla het op:
 
 ```java
 Iterable<MetadataItem> metadata = parser.getMetadata();
@@ -138,70 +182,69 @@ for (MetadataItem item : metadata) {
 }
 ```
 
-Deze code haalt een iterabele collectie van `MetadataItem`‑objecten op en print hun namen en waarden. Elke `MetadataItem` vertegenwoordigt een specifiek stuk metadata, zoals de auteur of **java extract creation date**.
-
-### Tips voor probleemoplossing
-- Controleer of je document toegankelijk is op het opgegeven pad.
-- Gebruik juiste exception‑handling om eventuele parse‑fouten zichtbaar te maken.
+Het fragment drukt elke beschikbare eigenschap af, inclusief de **java extract creation date** die je vroeg, en eventuele aangepaste tags die in het document aanwezig kunnen zijn.
 
 ## Praktische toepassingen
 
-Metadata extraheren gaat niet alleen over het lezen van eigenschappen; het gaat erom deze gegevens op betekenisvolle wijze te benutten. Hier zijn enkele praktijkvoorbeelden:
+Metadata‑extractie is niet alleen een curiositeit—het voedt real‑world oplossingen:
 
-1. **Document Management Systemen** – Categoriseer en indexeer bestanden automatisch op basis van auteur, aanmaakdatum of aangepaste tags.
-2. **Compliance‑audits** – Volg de aanmaak‑ en wijzigingsgeschiedenis van documenten om te voldoen aan regelgeving.
-3. **Data‑analyse** – Analyseer trends in document‑auteurschap, versiebeheer of gebruikspatronen.
+1. **Document management systems** – Auto‑tag bestanden op auteur of aanmaakdatum, waardoor snelle gefacetteerde zoekopdrachten mogelijk zijn.  
+2. **Regulatory compliance** – Genereer audit‑logboeken die registreren wie een bestand heeft aangemaakt of gewijzigd en wanneer.  
+3. **Data analytics** – Aggregeer metadata over duizenden contracten om trends in auteurschap of revisiecycli te ontdekken.  
 
-Integratie van GroupDocs.Parser met databases of cloudopslag kan deze oplossingen verder opschalen.
+Door GroupDocs.Parser te koppelen aan een relationele database of een NoSQL‑opslag, kun je een doorzoekbare index bouwen die bijna in realtime wordt bijgewerkt zodra nieuwe bestanden binnenkomen.
 
 ## Prestatie‑overwegingen
 
-Houd deze tips in gedachten bij het verwerken van grote hoeveelheden bestanden:
+Wanneer je grote batches moet verwerken, houd dan deze best‑practice‑tips in gedachten:
 
-- **Efficiënt resource‑gebruik** – Maak `Parser`‑instanties snel vrij (het `try‑with‑resources`‑blok helpt hier al bij).
-- **Batchverwerking** – Verwerk bestanden in batches of streams om de JVM niet te overbelasten.
-- **JVM‑afstemming** – Pas de heap‑grootte en garbage‑collection‑instellingen aan voor optimale doorvoer.
+- **Resource management** – Het eerder getoonde try‑with‑resources‑patroon garandeert dat bestands‑handles tijdig worden vrijgegeven.  
+- **Batch processing** – Gebruik Java‑streams of een producer‑consumer‑queue om bestanden parallel aan de parser te voeren, met inachtneming van de heap‑limieten van je JVM.  
+- **JVM tuning** – Voor zware workloads, vergroot de maximale heap (`-Xmx4g`) en schakel de G1‑garbage‑collector in om pauzetijden te verkorten.
+
+## Aanvullende bronnen
+
+- Officiële release‑pagina: [Laatste release](https://releases.groupdocs.com/parser/java/)  
+- Gedetailleerde documentatie: [GroupDocs Parser Java Documentatie](https://docs.groupdocs.com/parser/java/)  
+- API‑referentie: [GroupDocs Parser Java API‑referentie](https://reference.groupdocs.com/parser/java)  
+- Broncode‑repository: [GroupDocs.Parser voor Java op GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
+- Community‑ondersteuning: [GroupDocs Parser‑ondersteuning](https://forum.groupdocs.com/c/parser)  
+- Licentie‑acquisitie: [Een tijdelijke licentie verkrijgen](https://purchase.groupdocs.com/temporary-license/)
 
 ## Conclusie
 
-Je hebt nu geleerd **hoe metadata te extraheren** uit Microsoft Office‑documenten met GroupDocs.Parser Java. Deze mogelijkheid kan je document‑beheer‑pijplijnen aanzienlijk stroomlijnen, waardoor het makkelijker wordt om grote datasets met rijke, doorzoekbare informatie te verwerken.
+Je hebt nu een complete, productie‑klare handleiding voor **hoe metadata te extraheren** uit Office‑documenten met GroupDocs.Parser Java. Deze mogelijkheid stroomlijnt indexering, compliance en analytics‑pijplijnen, en geeft je directe inzage in de verborgen attributen van elk bestand.
 
 ### Volgende stappen
-- Ontdek extra GroupDocs.Parser‑functies zoals tekst‑extractie of sjabloonverwerking.
-- Combineer metadata‑extractie met een databaselaag om een doorzoekbare index te bouwen.
-- Experimenteer met batch‑taken om honderden bestanden automatisch te verwerken.
+- Duik dieper in de API om **aangepaste documenteigenschappen** of **ingesloten miniaturen** te extraheren.  
+- Combineer metadata‑extractie met **tekst‑extractie** om een full‑text zoekoplossing te bouwen.  
+- Experimenteer met **cloud‑opslagintegraties** (AWS S3, Azure Blob) om verwerking op te schalen over gedistribueerde omgevingen.
 
-Klaar om te implementeren? Voeg de code toe aan je project en begin vandaag nog met het benutten van de kracht van documenteigenschappen!
+---
 
 ## Veelgestelde vragen
 
-**Q1: Welke documenttypen kan ik metadata uit extraheren met GroupDocs.Parser?**  
-A1: GroupDocs.Parser ondersteunt een breed scala aan Microsoft Office‑formaten, waaronder Word-, Excel- en PowerPoint‑bestanden.
+**Q: Welke soorten Office‑bestanden worden ondersteund voor metadata‑extractie?**  
+A: GroupDocs.Parser verwerkt DOCX, DOC, XLSX, XLS, PPTX, PPT en ODT‑formaten, naast andere, in totaal meer dan 50 ondersteunde documenttypen.
 
-**Q2: Hoe ga ik om met uitzonderingen tijdens metadata‑extractie?**  
-A2: Omring je parse‑logica met try‑catch‑blokken en log de exception‑berichten om problemen te diagnosticeren.
+**Q: Hoe moet ik uitzonderingen afhandelen bij het lezen van metadata?**  
+A: Plaats de parsing‑logica in een try‑catch‑blok, log de details van `ParserException`, en probeer eventueel opnieuw bij tijdelijke I/O‑fouten.
 
-**Q3: Kan ik metadata extraheren uit met wachtwoord beveiligde documenten?**  
-A3: Ja, geef de benodigde inloggegevens op bij het initialiseren van de `Parser` om toegang te krijgen tot beveiligde bestanden.
+**Q: Kan ik metadata extraheren uit met wachtwoord beveiligde bestanden?**  
+A: Ja—geef het wachtwoord door aan de `Parser`‑constructor of gebruik `Parser.setPassword()` voordat je `getMetadata()` aanroept.
 
-**Q4: Is er een limiet aan het aantal bestanden dat ik tegelijk kan verwerken?**  
-A4: Er is geen harde limiet, maar de prestaties hangen af van de systeemresources; batchverwerking wordt aanbevolen voor grote sets.
+**Q: Is er een limiet aan hoeveel bestanden ik tegelijk kan verwerken?**  
+A: Er is geen harde limiet; de prestaties hangen af van CPU, geheugen en I/O‑bandbreedte. Verwerk de bestanden in batches van 100–500 voor optimale doorvoer.
 
-**Q5: Wat zijn veelvoorkomende problemen bij het extraheren van metadata?**  
-A5: Typische problemen zijn onjuiste bestandspaden, niet‑ondersteunde formaten of onvoldoende bestandsrechten.
+**Q: Wat zijn veelvoorkomende valkuilen bij het extraheren van metadata?**  
+A: Ontbrekende bestandsrechten, niet‑ondersteunde formaten of corrupte eigenschapssecties kunnen `ParserException` veroorzaken. Valideer altijd het bestandspad en zorg ervoor dat het document niet corrupt is vóór het parsen.
 
-## Bronnen
-- **Documentatie**: [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)
-- **API‑referentie**: [GroupDocs Parser Java API Reference](https://reference.groupdocs.com/parser/java)
-- **Download**: [Latest Release](https://releases.groupdocs.com/parser/java/)
-- **GitHub‑repository**: [GroupDocs.Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
-- **Gratis supportforum**: [GroupDocs Parser Support](https://forum.groupdocs.com/c/parser)
-- **Tijdelijke licentie**: [Acquire a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-
----
-
-**Laatst bijgewerkt:** 2026-01-21  
+**Laatst bijgewerkt:** 2026-08-10  
 **Getest met:** GroupDocs.Parser Java 25.5  
-**Auteur:** GroupDocs  
+**Auteur:** GroupDocs
 
----
+## Gerelateerde tutorials
+
+- [Hoe metadata te extraheren in Java met GroupDocs.Parser gids](/parser/java/metadata-extraction/master-java-metadata-extraction-groupdocs-parser/)
+- [Hoe PDF‑metadata te extraheren met GroupDocs.Parser in Java: Een stapsgewijze gids](/parser/java/metadata-extraction/extract-pdf-metadata-groupdocs-parser-java/)
+- [Hoe e‑mail‑metadata te extraheren met GroupDocs.Parser in Java – Een uitgebreide gids](/parser/java/metadata-extraction/extract-metadata-emails-groupdocs-parser-java/)
