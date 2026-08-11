@@ -1,58 +1,51 @@
 ---
-date: '2025-12-20'
-description: เรียนรู้วิธีการแตกไฟล์ zip ใน Java ด้วย GroupDocs.Parser คู่มือแบบขั้นตอนนี้แสดงวิธีการแตกไฟล์แนบ
-  zip ใน Java พร้อมการตั้งค่า ตัวอย่างโค้ด และกรณีการใช้งานจริง
+date: '2026-02-21'
+description: เรียนรู้วิธีดึงข้อความจากไฟล์ zip ใน Java ด้วย GroupDocs.Parser คู่มือขั้นตอนนี้ครอบคลุมการดึงไฟล์แนบ
+  zip ใน Java การตั้งค่า และกรณีการใช้งานจริง
 keywords:
-- extract text from zip files java
-- GroupDocs Parser Java setup
-- Java ZIP file extraction
-title: วิธีสกัดไฟล์ ZIP ใน Java ด้วยคู่มือ GroupDocs.Parser
+- extract text from zip
+- read zip attachments java
+- extract zip files java
+title: สกัดข้อความจากไฟล์ ZIP ใน Java โดยใช้ GroupDocs.Parser
 type: docs
 url: /th/java/container-formats/extract-text-zip-files-groupdocs-parser-java/
 weight: 1
 ---
 
-# วิธีการแยกไฟล์ ZIP ใน Java ด้วย GroupDocs.Parser
+# ดึงข้อความจากไฟล์ ZIP ใน Java ด้วย GroupDocs.Parser
 
-หากคุณต้องการทราบ **วิธีการแยกไฟล์ zip** ใน Java, GroupDocs.Parser ทำให้กระบวนการง่ายและเชื่อถือได้ ไม่ว่าคุณจะจัดการกับไฟล์แนบอีเมล, คลังเอกสารจำนวนมาก, หรือชุดสำรองข้อมูล, บทเรียนนี้จะพาคุณผ่านขั้นตอนทั้งหมด—ตั้งแต่การตั้งค่าโปรเจกต์จนถึงการแยกเนื้อหาข้อความของแต่ละไฟล์
+หากคุณต้องการ **extract text from zip** archives ในแอปพลิเคชัน Java, GroupDocs.Parser ให้ API ที่สะอาดและเป็นเอกภาพซึ่งจัดการงานหนักให้คุณ ไม่ว่าคุณจะทำงานกับไฟล์แนบอีเมล, การอัปโหลดเอกสารจำนวนมาก, หรือชุดสำรองข้อมูล, บทแนะนำนี้จะพาคุณผ่านทุกขั้นตอน—from การตั้งค่า Maven ไปจนถึงการวนลูปไฟล์แต่ละไฟล์ภายใน ZIP และดึงเนื้อหาที่อ่านได้ออกมา
 
-## คำตอบด่วน
-- **ควรใช้ไลบรารีอะไร?** GroupDocs.Parser for Java.  
-- **ฉันสามารถแยกข้อความจากทุกไฟล์ภายใน ZIP ได้หรือไม่?** ใช่, สำหรับทุกรูปแบบที่รองรับ.  
-- **ฉันต้องการไลเซนส์หรือไม่?** การทดลองใช้ฟรีทำงานสำหรับการประเมิน; จำเป็นต้องมีไลเซนส์ถาวรสำหรับการใช้งานในผลิตภัณฑ์.  
-- **การใช้หน่วยความจำเป็นเรื่องที่ต้องกังวลหรือไม่?** ใช้ try‑with‑resources และประมวลผลรายการแบบวนซ้ำ.  
-- **ต้องการเวอร์ชัน Java ใด?** JDK 8 หรือสูงกว่า.
+## Quick Answers
+- **What library should I use?** GroupDocs.Parser for Java.  
+- **Can I extract text from every file inside a ZIP?** Yes, for all formats supported by the parser.  
+- **Do I need a license?** A free trial works for evaluation; a permanent license is required for production.  
+- **Is memory usage a concern?** Use try‑with‑resources and process items iteratively to keep the footprint low.  
+- **Which Java version is required?** JDK 8 or higher.  
 
-## สิ่งที่คุณจะได้เรียนรู้
-- วิธีการแยกข้อความจากไฟล์ภายในไฟล์ ZIP โดยใช้ GroupDocs.Parser ใน Java.  
-- การตั้งค่า GroupDocs.Parser สำหรับ Java ด้วย Maven หรือการดาวน์โหลดโดยตรง.  
-- การนำไปใช้จริงของการแยกไฟล์แนบและการตรวจสอบการสนับสนุนคอนเทนเนอร์.  
-- ตัวอย่างการใช้งานจริงและเคล็ดลับการเพิ่มประสิทธิภาพการทำงาน.
+## What You'll Learn
+- How to **extract text from zip** files using GroupDocs.Parser in Java.  
+- Setting up the library with Maven or a direct download.  
+- Practical code for reading zip attachments Java and checking container support.  
+- Real‑world scenarios, performance tips, and troubleshooting advice.
 
-## ทำไมต้องใช้ GroupDocs.Parser สำหรับการแยกไฟล์ ZIP?
-- **Unified API** – จัดการกับเอกสารหลายสิบรูปแบบด้วยการเรียกเดียว.  
-- **Container awareness** – ตรวจจับว่า ZIP รองรับการแยกหรือไม่ก่อนการประมวลผล.  
-- **Resource‑friendly** – การจัดการสตรีมอัตโนมัติช่วยลดการใช้หน่วยความจำ.
+## Why Use GroupDocs.Parser for ZIP Extraction?
+- **Unified API** – One call handles dozens of document types, so you don’t need separate parsers.  
+- **Container awareness** – The library can tell you whether a ZIP supports extraction before you start processing.  
+- **Resource‑friendly** – Automatic stream handling and try‑with‑resources keep memory usage modest.  
 
-## ข้อกำหนดเบื้องต้น
+## Prerequisites
 
-ก่อนที่คุณจะเริ่ม, โปรดตรวจสอบว่าคุณมีสิ่งต่อไปนี้:
+Before you dive in, make sure you have:
 
-### ไลบรารีที่จำเป็น, เวอร์ชัน, และการพึ่งพา
-คุณจะต้องใช้ GroupDocs.Parser สำหรับ Java. ตรวจสอบให้แน่ใจว่าสภาพแวดล้อมการพัฒนาของคุณตั้งค่าไว้ด้วย JDK เวอร์ชันที่เข้ากันได้ (แนะนำ JDK 8 หรือสูงกว่า).
+- **JDK 8+** installed and configured.  
+- An IDE such as IntelliJ IDEA or Eclipse (any Java‑compatible editor will do).  
+- Basic familiarity with Maven (or the ability to add a JAR manually).  
 
-### ความต้องการการตั้งค่าสภาพแวดล้อม
-- ติดตั้ง Java Development Kit (JDK).  
-- IDE เช่น IntelliJ IDEA หรือ Eclipse.
+### Required Libraries, Versions, and Dependencies
+You’ll need the latest GroupDocs.Parser for Java. The Maven coordinates are shown below.
 
-### ความรู้เบื้องต้นที่จำเป็น
-ความเข้าใจพื้นฐานของการเขียนโปรแกรม Java และความคุ้นเคยกับการตั้งค่าโปรเจกต์ Maven จะเป็นประโยชน์ หากคุณยังใหม่กับสิ่งเหล่านี้, ควรศึกษาเพิ่มเติมก่อนดำเนินการต่อ.
-
-## การตั้งค่า GroupDocs.Parser สำหรับ Java
-
-เริ่มต้นด้วยการรวมไลบรารีเข้ากับโปรเจกต์ของคุณโดยใช้ Maven:
-
-**การกำหนดค่า Maven**  
+**Maven Configuration**  
 ```xml
 <repositories>
    <repository>
@@ -71,37 +64,31 @@ weight: 1
 </dependencies>
 ```
 
-**ดาวน์โหลดโดยตรง**  
-หรือคุณสามารถดาวน์โหลดเวอร์ชันล่าสุดจาก [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
+**Direct Download**  
+Alternatively, you can download the latest version from [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
-### การรับไลเซนส์
-- **Free Trial:** เริ่มต้นด้วยการทดลองใช้ฟรีเพื่อทดสอบความสามารถ.  
-- **Temporary License:** รับไลเซนส์ชั่วคราวเพื่อเข้าถึงเต็มรูปแบบโดยไม่มีข้อจำกัด.  
-- **Purchase:** สำหรับโครงการระยะยาว, พิจารณาซื้อไลเซนส์.
+### License Acquisition
+- **Free Trial:** Start with a trial to explore the capabilities.  
+- **Temporary License:** Use a temporary key for unrestricted testing.  
+- **Purchase:** For production, obtain a full license to remove evaluation limits.
 
-เมื่อคุณตั้งค่า GroupDocs.Parser ในโปรเจกต์ของคุณแล้ว, ถึงเวลาสำรวจฟังก์ชันการทำงานผ่านการนำไปใช้จริง.
+## How to extract text from zip in Java
 
-## คู่มือการนำไปใช้
+Below we split the implementation into two practical features:
 
-เราจะแบ่งส่วนนี้ออกเป็นสองฟีเจอร์หลัก: การแยกข้อความจากไฟล์ ZIP และการตรวจสอบการสนับสนุนการแยกคอนเทนเนอร์.
+1. **Extract zip attachments** – Pull the text out of each file inside the archive.  
+2. **Check container extraction support** – Verify that the ZIP can be processed and list its contents.
 
-### ฟีเจอร์ 1: แยกไฟล์แนบ ZIP
+### Feature 1 – Extract Zip Attachments
 
-**ภาพรวม**  
-ฟีเจอร์นี้มุ่งเน้นการแยกข้อความจากเนื้อหาของไฟล์ ZIP. มีประโยชน์สำหรับแอปพลิเคชันที่ต้องประมวลผลเอกสารที่จัดเก็บในรูปแบบบีบอัด.
-
-#### ขั้นตอนการนำไปใช้
-
-**ขั้นตอนที่ 1: เริ่มต้น Parser**  
-เริ่มต้นด้วยการสร้างอ็อบเจกต์ `Parser` ด้วยเส้นทางไฟล์ ZIP ที่ต้องการของคุณ:  
+#### Step 1: Initialize the Parser  
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/SampleZip.zip")) {
     // Proceed with extraction logic...
 }
 ```
 
-**ขั้นตอนที่ 2: แยกไฟล์แนบ**  
-วนลูปผ่านไฟล์แนบแต่ละไฟล์ในคอนเทนเนอร์และพยายามแยกข้อความ.  
+#### Step 2: Loop Through Attachments and Extract Text  
 ```java
 Iterable<ContainerItem> attachments = parser.getContainer();
 if (attachments == null) {
@@ -121,27 +108,21 @@ if (attachments == null) {
 }
 ```
 
-**คำอธิบาย**  
-- `parser.getContainer()`: ดึงรายการทั้งหมดภายในไฟล์ ZIP.  
-- `attachmentParser.getText()`: พยายามแยกข้อความจากแต่ละไฟล์.
+**What’s happening here?**  
+- `parser.getContainer()` returns an iterable of every entry inside the ZIP.  
+- For each `ContainerItem`, we open a dedicated `Parser` instance (`item.openParser()`).  
+- `attachmentParser.getText()` tries to read the textual content; if the format isn’t supported, we catch the exception and move on.
 
-### ฟีเจอร์ 2: ตรวจสอบการสนับสนุนการแยกคอนเทนเนอร์
+### Feature 2 – Verify Container Extraction Support
 
-**ภาพรวม**  
-ฟีเจอร์นี้ตรวจสอบว่า ZIP คอนเทนเนอร์รองรับการแยกหรือไม่และแสดงรายการเนื้อหา, ให้ข้อมูลเชิงโครงสร้างของเอกสารโดยไม่ต้องประมวลผล.
-
-#### ขั้นตอนการนำไปใช้
-
-**ขั้นตอนที่ 1: เริ่มต้น Parser**  
-เช่นเดียวกับก่อนหน้า, เริ่มต้นอ็อบเจกต์ `Parser`:  
+#### Step 1: Initialize the Parser (same as before)  
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/SampleZip.zip")) {
     // Check supported operations...
 }
 ```
 
-**ขั้นตอนที่ 2: ตรวจสอบและแสดงรายการเนื้อหา**  
-ตรวจสอบว่าการแยกรองรับหรือไม่และแสดงเส้นทางของแต่ละรายการ.  
+#### Step 2: List File Paths Inside the ZIP  
 ```java
 Iterable<ContainerItem> attachments = parser.getContainer();
 if (attachments == null) {
@@ -153,53 +134,55 @@ if (attachments == null) {
 }
 ```
 
-**คำอธิบาย**  
-- `item.getFilePath()`: ดึงเส้นทางไฟล์ของแต่ละไฟล์แนบภายใน ZIP.
+**Why this matters:**  
+Knowing the internal structure helps you decide whether to process the archive, skip unsupported files, or provide a preview to users.
 
-## การประยุกต์ใช้งานจริง
-1. **การประมวลผลไฟล์แนบอีเมล:** แยกและทำดัชนีข้อความจากไฟล์แนบอีเมลที่เก็บในไฟล์อาร์ไคฟ์โดยอัตโนมัติ.  
-2. **ระบบจัดการเอกสาร:** ผสานรวมกับระบบเพื่อจัดการการอัปโหลดเอกสารจำนวนมาก, เพื่อให้การดึงข้อมูลมีประสิทธิภาพ.  
-3. **โซลูชันสำรองและกู้คืน:** ตรวจสอบความสมบูรณ์ของเนื้อหาในระหว่างการสำรองข้อมูลโดยการแยกเส้นทางไฟล์และเนื้อหา.
+## Practical Applications
+1. **Email Attachment Processing** – Automatically extract and index text from archived email attachments.  
+2. **Document Management Systems** – Ingest bulk uploads where users zip many files together; you can still search the content.  
+3. **Backup & Restore Validation** – Verify that archived documents contain the expected text before restoring.
 
-## ข้อควรพิจารณาด้านประสิทธิภาพ
-- **เพิ่มประสิทธิภาพการใช้ทรัพยากร:** ตรวจสอบให้แอปพลิเคชันของคุณจัดการหน่วยความจำอย่างมีประสิทธิภาพ, โดยเฉพาะเมื่อประมวลผลไฟล์ ZIP ขนาดใหญ่.  
-- **แนวทางปฏิบัติที่ดีที่สุดสำหรับการจัดการหน่วยความจำใน Java:** ใช้ try‑with‑resources เพื่อปิด parser และ reader โดยอัตโนมัติ, ป้องกันการรั่วไหลของทรัพยากร.
+## Performance Considerations
+- **Iterative Processing:** The examples read one file at a time, which prevents memory spikes when dealing with large archives.  
+- **Try‑with‑Resources:** Guarantees that each `Parser` and `TextReader` is closed promptly, avoiding resource leaks.  
+- **Threading (Advanced):** For massive ZIPs you can parallelize the loop, but be sure each thread uses its own `Parser` instance.
 
-## ปัญหาที่พบบ่อยและวิธีแก้
-
-| ปัญหา | สาเหตุ | วิธีแก้ |
+## Common Issues and Solutions
+| Issue | Cause | Fix |
 |-------|-------|-----|
-| `Container extraction isn't supported` | ZIP มีรูปแบบไฟล์ที่ไม่รองรับ. | ตรวจสอบประเภทไฟล์ภายในอาร์ไคฟ์; เฉพาะรูปแบบที่รองรับเท่านั้นที่สามารถแยกได้. |
-| `UnsupportedDocumentFormatException` | รูปแบบไฟล์ที่ซ้อนอยู่ไม่ถูกจดจำโดย GroupDocs.Parser. | ข้ามไฟล์ที่ไม่รองรับหรือแปลงไฟล์ก่อนเพิ่มลงใน ZIP. |
-| การใช้หน่วยความจำพุ่งสูงกับอาร์ไคฟ์ขนาดใหญ่ | อ่านหลายไฟล์พร้อมกัน. | ประมวลผลรายการทีละรายการตามที่แสดง; หลีกเลี่ยงการโหลดเนื้อหาทั้งหมดเข้าสู่หน่วยความจำ. |
+| `Container extraction isn't supported` | The ZIP contains a format the parser can’t handle. | Verify the file types inside the archive; only supported formats can be parsed. |
+| `UnsupportedDocumentFormatException` | A nested document’s format isn’t recognized. | Skip the file, or convert it to a supported type before zipping. |
+| Memory spikes with large archives | Loading many files simultaneously. | Process items one‑by‑one as shown; avoid storing all extracted text in a collection. |
 
-## คำถามที่พบบ่อย
+## Frequently Asked Questions
 
-**Q: GroupDocs.Parser Java คืออะไร?**  
-A: เป็นไลบรารีสำหรับการแยกข้อความ, เมตาดาต้า, และรูปภาพจากรูปแบบเอกสารหลากหลายประเภท.
+**Q: What is GroupDocs.Parser Java?**  
+A: It is a library that extracts text, metadata, and images from a wide range of document formats, including PDFs, Office files, and many more.
 
-**Q: สามารถแยกไฟล์ที่ไม่ใช่ข้อความด้วยไลบรารีนี้ได้หรือไม่?**  
-A: แม้ว่าการโฟกัสหลักคือการแยกข้อความ, คุณสามารถดึงรูปภาพและเนื้อหาไบนารีที่รองรับอื่น ๆ ผ่านการเรียก API เพิ่มเติม.
+**Q: Can I extract non‑text files (e.g., images) from a zip using this library?**  
+A: The primary focus is text extraction, but you can also retrieve images and other binary content through additional API calls.
 
-**Q: จะจัดการไฟล์ ZIP ขนาดใหญ่อย่างมีประสิทธิภาพอย่างไร?**  
-A: ใช้วิธีการวนซ้ำตามที่แสดงข้างต้น, และตรวจสอบให้ปิด parser/reader แต่ละอันโดยเร็วด้วย try‑with‑resources.
+**Q: How do I handle very large ZIP files efficiently?**  
+A: Use the iterative approach demonstrated above, keep the parser inside a `try‑with‑resources` block, and avoid loading all content into memory at once.
 
-**Q: สามารถใช้ GroupDocs.Parser ในแอปพลิเคชันเชิงพาณิชย์ได้หรือไม่?**  
-A: ได้, แต่ต้องมีไลเซนส์ที่ถูกต้องสำหรับการใช้งานในผลิตภัณฑ์.
+**Q: Can GroupDocs.Parser be used in commercial applications?**  
+A: Yes, but a valid production license is required.
 
-**Q: จะหาความช่วยเหลือได้จากที่ไหนหากพบปัญหา?**  
-A: เยี่ยมชมฟอรั่มสนับสนุนฟรีที่ [GroupDocs Support Forum](https://forum.groupdocs.com/c/parser).
+**Q: Where can I get help if I run into problems?**  
+A: Visit the free support forum at [GroupDocs Support Forum](https://forum.groupdocs.com/c/parser).
 
-## แหล่งข้อมูล
-- [เอกสาร](https://docs.groupdocs.com/parser/java/)
-- [อ้างอิง API](https://reference.groupdocs.com/parser/java)
-- [ดาวน์โหลด](https://releases.groupdocs.com/parser/java/)
-- [ที่เก็บ GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
-- [สนับสนุนฟรี](https://forum.groupdocs.com/c/parser)
-- [ไลเซนส์ชั่วคราว](https://purchase.groupdocs.com/temporary-license/) 
+## Additional Resources
+- [Documentation](https://docs.groupdocs.com/parser/java/)  
+- [API Reference](https://reference.groupdocs.com/parser/java)  
+- [Download](https://releases.groupdocs.com/parser/java/)  
+- [GitHub Repository](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
+- [Free Support](https://forum.groupdocs.com/c/parser)  
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/) 
 
-เริ่มต้นการเดินทางของคุณกับ GroupDocs.Parser Java และเปิดศักยภาพของการแยกไฟล์อย่างมีประสิทธิภาพในแอปพลิเคชันของคุณ!
+Start integrating **extract text from zip** functionality today and give your Java applications the power to read every document hidden inside an archive!
 
-**อัปเดตล่าสุด:** 2025-12-20  
-**ทดสอบด้วย:** GroupDocs.Parser 25.5  
-**ผู้เขียน:** GroupDocs
+---
+
+**Last Updated:** 2026-02-21  
+**Tested With:** GroupDocs.Parser 25.5  
+**Author:** GroupDocs
