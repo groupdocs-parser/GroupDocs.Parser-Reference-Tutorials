@@ -1,43 +1,44 @@
 ---
-title: "How to Convert PPTX to Text in Java Using GroupDocs.Parser"
-description: "Learn how to convert pptx to text using GroupDocs.Parser for Java, ideal for content analysis, report generation, and automation workflows."
-date: "2026-04-05"
-weight: 1
-url: "/java/text-extraction/master-powerpoint-data-extraction-java-groupdocs-parser/"
+date: '2026-04-05'
+description: GroupDocs.Parser for Java を使用して pptx をテキストに変換する方法を学びましょう。コンテンツ分析、レポート作成、そして自動化ワークフローに最適です。
 keywords:
-  - convert pptx to text
-  - java powerpoint text extraction
-  - groupdocs parser java
+- convert pptx to text
+- java powerpoint text extraction
+- groupdocs parser java
+title: GroupDocs.Parser を使用して Java で PPTX をテキストに変換する方法
 type: docs
+url: /ja/java/text-extraction/master-powerpoint-data-extraction-java-groupdocs-parser/
+weight: 1
 ---
-# Convert PPTX to Text in Java with GroupDocs.Parser
+
+# JavaでGroupDocs.Parserを使用してPPTXをテキストに変換する
 
 If you need to **convert pptx to text**, extracting valuable data from Microsoft PowerPoint presentations is essential for many scenarios such as content analysis, automated reporting, and data migration. In this tutorial, you’ll learn how to use the GroupDocs.Parser library for Java to read slide text, count pages, and integrate the results into your own applications.
 
-## Quick Answers
-- **What library can I use?** GroupDocs.Parser for Java  
-- **Can it handle .pptx files?** Yes, it fully supports PPTX and PPT formats  
-- **Do I need a license?** A free trial works for testing; a commercial license is required for production  
-- **Which Java version is required?** JDK 8 or higher  
-- **Is Maven supported?** Absolutely – add the GroupDocs repository and dependency to your `pom.xml`
+## クイック回答
+- **どのライブラリを使用できますか？** GroupDocs.Parser for Java  
+- **.pptx ファイルを扱えますか？** はい、PPTX と PPT フォーマットを完全にサポートしています  
+- **ライセンスは必要ですか？** テスト用の無料トライアルで動作しますが、実運用には商用ライセンスが必要です  
+- **必要な Java バージョンは？** JDK 8 以上  
+- **Maven はサポートされていますか？** もちろんです – `pom.xml` に GroupDocs リポジトリと依存関係を追加してください
 
-## What is “convert pptx to text”?
+## “convert pptx to text” とは何ですか？
 Converting PPTX to text means programmatically reading the textual content of each slide in a PowerPoint presentation and outputting it as plain strings or files. This enables downstream processing like keyword extraction, summarization, or feeding the data into analytics pipelines.
 
-## Why use GroupDocs.Parser for Java?
+## Java 用 GroupDocs.Parser を使用する理由
 - **High accuracy** – preserves text order and formatting cues.  
 - **Cross‑platform** – works on Windows, Linux, and macOS.  
 - **No Office installation needed** – parses files directly without Microsoft Office.  
 - **Rich API** – gives you access to slide metadata, images, and more if you need them later.
 
-## Prerequisites
+## 前提条件
 - **Java Development Kit (JDK)** 8 or newer  
 - **Maven** for dependency management  
-- An IDE such as IntelliJ IDEA or Eclipse (optional but recommended)  
-- Basic Java knowledge (classes, loops, exception handling)
+- IntelliJ IDEA や Eclipse などの IDE（任意ですが推奨）  
+- 基本的な Java の知識（クラス、ループ、例外処理）
 
-## Setting Up GroupDocs.Parser for Java
-### Maven Setup
+## Java 用 GroupDocs.Parser の設定
+### Maven 設定
 Add the repository and dependency to your `pom.xml` file:
 
 ```xml
@@ -58,16 +59,16 @@ Add the repository and dependency to your `pom.xml` file:
 </dependencies>
 ```
 
-### Direct Download
+### 直接ダウンロード
 Alternatively, you can download the latest version of GroupDocs.Parser from [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
-#### License Acquisition
+#### ライセンス取得
 For testing purposes, you can obtain a free trial or temporary license. Visit [GroupDocs purchase page](https://purchase.groupdocs.com/temporary-license) to explore licensing options.
 
-## How to Convert PPTX to Text – Step‑by‑Step Guide
+## PPTX をテキストに変換する方法 – ステップバイステップガイド
 Below you’ll find three focused code examples that together cover the whole conversion workflow.
 
-### 1️⃣ Initialize the Parser for a PowerPoint File
+### 1️⃣ PowerPoint ファイル用 Parser の初期化
 This snippet shows how to create a `Parser` instance and retrieve basic document information such as the number of slides.
 
 ```java
@@ -88,7 +89,7 @@ public class FeatureInitializeParser {
 
 *Pro tip:* The `try‑with‑resources` block automatically closes the parser, preventing memory leaks.
 
-### 2️⃣ Iterate Over Slides in the Presentation
+### 2️⃣ プレゼンテーション内のスライドを反復処理
 Once you know how many slides exist, you can loop through them. This example prints a progress line for each slide.
 
 ```java
@@ -110,7 +111,7 @@ public class FeatureIterateSlides {
 }
 ```
 
-### 3️⃣ Extract Text from Each Slide
+### 3️⃣ 各スライドからテキストを抽出
 Finally, read the textual content of every slide using `TextReader`. This is the core of the **convert pptx to text** process.
 
 ```java
@@ -136,57 +137,55 @@ public class FeatureExtractTextFromSlide {
 
 The `readToEnd()` method returns all visible text on the slide, making it easy to concatenate or store for later processing.
 
-## Practical Applications of Converting PPTX to Text
+## PPTX をテキストに変換する実用的な応用例
 - **Content Analysis:** Pull key phrases from decks to feed natural‑language processing models.  
 - **Report Generation:** Transform slide notes into structured reports or PDFs.  
 - **Data Migration:** Move presentation content into databases, CRMs, or knowledge bases.  
 - **Search Indexing:** Index slide text for enterprise search solutions.
 
-## Performance Considerations
+## パフォーマンス上の考慮点
 - **Memory Management:** Process slides one at a time (as shown) to keep memory usage low, especially with large decks.  
 - **Caching:** If you need to read the same file repeatedly, cache the `Parser` instance or the extracted text.  
 - **Parallelism:** For massive batch jobs, consider processing multiple files concurrently, but keep an eye on JVM heap size.
 
-## Common Issues & Solutions
-| Issue | Solution |
+## よくある問題と解決策
+| 問題 | 解決策 |
 |-------|----------|
-| **OutOfMemoryError on huge presentations** | Process slides sequentially (as in the example) and avoid storing all slide text in a single collection. |
-| **Missing text from complex shapes** | Ensure you’re using the latest GroupDocs.Parser version; newer releases improve shape handling. |
-| **LicenseException** | Verify that the trial or permanent license file is correctly placed and referenced in your project. |
+| **OutOfMemoryError on huge presentations** | 例のようにスライドを順次処理し、すべてのスライドテキストを単一のコレクションに保存しないようにしてください。 |
+| **Missing text from complex shapes** | 最新の GroupDocs.Parser バージョンを使用していることを確認してください。新しいリリースではシェイプの処理が改善されています。 |
+| **LicenseException** | トライアルまたは永続ライセンスファイルがプロジェクト内で正しく配置され、参照されていることを確認してください。 |
 
-## Frequently Asked Questions
+## よくある質問
 
-**Q: Can I extract text from password‑protected PPTX files?**  
-A: Yes. Use `LoadOptions` to supply the password when creating the `Parser` instance.
+**Q: パスワードで保護された PPTX ファイルからテキストを抽出できますか？**  
+A: はい。`LoadOptions` を使用して `Parser` インスタンス作成時にパスワードを指定します。
 
-**Q: Does GroupDocs.Parser support extracting images as well?**  
-A: Absolutely. The library provides `ImageReader` APIs for retrieving embedded images.
+**Q: GroupDocs.Parser は画像の抽出もサポートしていますか？**  
+A: もちろんです。ライブラリは埋め込み画像を取得するための `ImageReader` API を提供しています。
 
-**Q: Is there a limit on the size of PPTX files I can process?**  
-A: There’s no hard limit, but very large files will consume more memory; follow the performance tips above.
+**Q: 処理できる PPTX ファイルのサイズに上限はありますか？**  
+A: 明確な上限はありませんが、非常に大きなファイルはメモリを多く消費します。上記のパフォーマンスヒントに従ってください。
 
-**Q: Can I run this code on a Linux server without a GUI?**  
-A: Yes. GroupDocs.Parser is completely headless and works on any OS that supports Java.
+**Q: GUI のない Linux サーバー上でこのコードを実行できますか？**  
+A: はい。GroupDocs.Parser は完全にヘッドレスで、Java をサポートする任意の OS で動作します。
 
-**Q: How do I integrate the extracted text into a Spring Boot service?**  
-A: Wrap the extraction logic in a service bean, inject it where needed, and return the text as part of a REST endpoint.
+**Q: 抽出したテキストを Spring Boot サービスに統合するには？**  
+A: 抽出ロジックをサービス Bean にラップし、必要な場所でインジェクトして、REST エンドポイントのレスポンスとしてテキストを返すようにします。
 
-## Conclusion
+## 結論
 You now have a complete, production‑ready guide to **convert pptx to text** using GroupDocs.Parser for Java. By initializing the parser, iterating through slides, and reading each slide’s text, you can automate virtually any workflow that requires PowerPoint content extraction.
 
-### Next Steps
-- Experiment with extracting images or slide metadata.  
-- Combine the extracted text with NLP libraries (e.g., OpenNLP, Stanford NLP) for summarization.  
-- Explore other formats supported by GroupDocs.Parser, such as DOCX, PDF, and XLSX.
+### 次のステップ
+- 画像やスライドメタデータの抽出を試してみてください。  
+- 抽出したテキストを NLP ライブラリ（例: OpenNLP、Stanford NLP）と組み合わせて要約を行う。  
+- DOCX、PDF、XLSX など、GroupDocs.Parser がサポートする他のフォーマットも調査してください。
 
 ---
 
-**Last Updated:** 2026-04-05  
-**Tested With:** GroupDocs.Parser 25.5 for Java  
-**Author:** GroupDocs  
+**最終更新日:** 2026-04-05  
+**テスト環境:** GroupDocs.Parser 25.5 for Java  
+**作者:** GroupDocs  
 
----
-
-## Resources
+## リソース
 - [GroupDocs.Parser Documentation](https://docs.groupdocs.com/parser/java/)
 - [Java Developer's Guide to Maven](https://maven.apache.org/guides/index.html)
