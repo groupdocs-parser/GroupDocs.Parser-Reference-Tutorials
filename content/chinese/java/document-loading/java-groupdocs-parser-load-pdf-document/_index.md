@@ -1,51 +1,49 @@
 ---
-date: '2025-12-24'
-description: 学习如何使用 GroupDocs.Parser（强大的 PDF 解析 Java 库）提取 PDF 文本，并提供一步步的指导。
+date: '2026-04-27'
+description: 学习使用 GroupDocs.Parser 进行 Java PDF 文本提取，这是一款强大的 Java PDF 解析库，提供一步步的指导。
 keywords:
-- GroupDocs.Parser Java
-- load PDF in Java
-- extract text from PDF
-title: 如何使用 GroupDocs.Parser 在 Java 中提取 PDF 文本
+- java pdf text extraction
+- load pdf in java
+- read pdf text java
+- extract text from pdf java
+- java pdf parsing library
+title: 使用 GroupDocs.Parser 的 Java PDF 文本提取 – 步骤指南
 type: docs
 url: /zh/java/document-loading/java-groupdocs-parser-load-pdf-document/
 weight: 1
 ---
 
-# 使用 GroupDocs.Parser 在 Java 中提取 PDF 文本
+# 使用 GroupDocs.Parser 在 Java 中进行 PDF 文本提取
 
-在 Java 应用程序中提取 **PDF 文本** 有时会像在迷宫中穿行，尤其是当你需要在各种文档布局下获得可靠的结果时。GroupDocs.Parser 简化了这一挑战，为你提供了一种快速、准确地 **extract pdf text java** 的简便方法。在本指南中，你将看到如何设置库、从磁盘加载 PDF 并提取其文本内容——全部配有清晰、易懂的说明。
+在本教程中，您将使用 GroupDocs.Parser 掌握在 Java 应用程序中进行 **java pdf text extraction**。无论是构建搜索索引、自动化发票处理，还是仅仅需要以编程方式读取 PDF 内容，本指南都会一步步带您完成——从添加库到处理大型、受密码保护的文件——让您快速获得可靠的结果。
 
-## 快速回答
-- **什么库可以帮助在 Java 中提取 PDF 文本？** GroupDocs.Parser
-- **开发时需要许可证吗？** 免费试用可用于测试；生产环境需要正式许可证。
-- **应该使用哪个 Maven 版本？** 使用来自 GroupDocs 仓库的最新稳定版（例如 25.5）。
-- **可以从受密码保护的 PDF 中提取文本吗？** 可以——在初始化 parser 时提供密码。
-- **大 PDF 的内存使用是否是个问题？** 使用 try‑with‑resources 并流式读取文本以保持低内存占用。
+## 快速答案
+- **What library helps with java pdf text extraction?** GroupDocs.Parser
+- **Do I need a license for development?** A free trial works for testing; a permanent license is required for production.
+- **Which Maven version should I use?** The latest stable release (e.g., 25.5) from the GroupDocs repository.
+- **Can I extract text from password‑protected PDFs?** Yes—provide the password when initializing the parser.
+- **Is memory usage a concern for large PDFs?** Use try‑with‑resources and stream the text to keep memory footprint low.
 
-## 什么是 “extract pdf text java”？
+## 什么是 java pdf 文本提取？
+**java pdf text extraction** 是使用 Java 代码以编程方式读取 PDF 文件中嵌入的文本内容的过程。此功能对于索引、数据挖掘、内容迁移以及构建可搜索的文档库至关重要。
 
-“extract pdf text java” 指的是使用 Java 代码以编程方式读取 PDF 文件中嵌入的文本内容的过程。这对于索引、数据挖掘或将 PDF 转换为可搜索格式等任务至关重要。
-
-## 为什么使用 GroupDocs.Parser 进行 PDF 文本提取？
-
-- **强大的格式支持** – 处理复杂的 PDF、扫描文档和混合内容文件。
-- **简洁的 API** – 几行代码即可完整访问文档文本。
-- **性能导向** – 基于流的读取降低大文件的内存压力。
-- **跨平台** – 在任何 Java 运行时上均可运行，从桌面到云环境。
+## 为什么在 java pdf 文本提取 中使用 GroupDocs.Parser？
+- **Robust format support** – Handles complex PDFs, scanned documents, and mixed‑content files.
+- **Simple API** – A few lines of code give you full access to the document’s text.
+- **Performance‑focused** – Stream‑based reading reduces memory pressure on large files.
+- **Cross‑platform** – Works on any Java runtime, from desktop to cloud environments.
 
 ## 前置条件
+在开始之前，请确保您具备：
 
-在开始之前，请确保你已经具备：
-
-- **Java Development Kit (JDK 8 或更高)** 和如 IntelliJ IDEA 或 Eclipse 的 IDE。
-- **Maven** 用于依赖管理。
-- **GroupDocs.Parser 试用版或正式许可证**（你可以先使用免费试用）。
+- **Java Development Kit (JDK 8 or newer)** 和 IntelliJ IDEA 或 Eclipse 等 IDE。  
+- **Maven** 用于依赖管理。  
+- 一个 **GroupDocs.Parser trial or permanent license**（您可以先使用免费试用版）。
 
 ## 为 Java 设置 GroupDocs.Parser
 
 ### Maven 设置
-
-将仓库和依赖添加到你的 `pom.xml`完全按照下面的示例：
+将仓库和依赖添加到您的 `pom.xml`，完全按照下面的示例操作：
 
 ```xml
 <repositories>
@@ -66,25 +64,23 @@ weight: 1
 ```
 
 ### 直接下载
-
-如果你不想使用 Maven，可从官方网站获取最新的 JAR 包：
+如果您不想使用 Maven，请从官方网站获取最新的 JAR 包：
 
 [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/)
 
-### 获取许可证
-
-先使用免费试用或请求临时许可证以解锁全部功能。对于长期项目，请购买完整许可证。
+### 许可证获取
+先使用免费试用版或请求临时许可证以解锁全部功能。对于长期项目，请购买完整许可证。
 
 ## 实现指南
 
-下面是一步步的演示，展示如何从本地磁盘加载 PDF 并提取其文本内容。
+下面提供了一个逐步演示，展示如何 **load pdf in java** 并提取其文本内容。
 
 ### 步骤 1：定义文件路径
 ```java
 // Specify the path of your document directory
 double filePath = "YOUR_DOCUMENT_DIRECTORY/your-document.pdf";
 ```
-将 `YOUR_DOCUMENT_DIRECTORY` 替换为实际包含 PDF 的文件夹路径。
+将 `YOUR_DOCUMENT_DIRECTORY` 替换为实际存放 PDF 的文件夹路径。
 
 ### 步骤 2：创建 Parser 实例
 ```java
@@ -104,63 +100,58 @@ try (TextReader reader = parser.getText()) {
     System.out.println(documentText);
 }
 ```
-如果不支持该格式，`getText()` 将返回 `null`，代码会打印提示信息。
+如果不支持该格式，`getText()` 将返回 `null`，代码会打印相应提示信息。
 
-## 常见问题及解决方案
+## 如何在 Java 中读取 PDF 文本 – 常见陷阱与解决方案
+- **Incorrect file path** – Verify the path uses forward slashes (`/`) and points to an existing PDF.  
+- **Unsupported PDF version** – Ensure you’re using the latest GroupDocs.Parser release; older versions may miss newer PDF features.  
+- **License errors** – A trial license works for development, but a production build requires a valid license file or key.  
 
-- **文件路径不正确** – 确认路径使用正斜杠 (`/`) 并指向已有的 PDF。
-- **不受支持的 PDF 版本** – 确保使用最新的 GroupDocs.Parser 版本；旧版本可能不支持新 PDF 功能。
-- **许可证错误** – 试用许可证可用于开发，但生产环境需要有效的许可证文件或密钥。
+## java pdf 解析库的实际应用
+GroupDocs.Parser 的 **java pdf text extraction** 能力在许多真实场景中大放异彩：
 
-## 实际应用
+1. **Automated Reporting** – Pull data from invoice PDFs and feed it into analytics pipelines.  
+2. **Searchable Document Repositories** – Index extracted text so users can perform full‑text searches.  
+3. **Content Migration** – Move legacy PDF content into databases, CMS platforms, or cloud storage.
 
-GroupDocs.Parser 的 **java pdf text extraction** 能力在许多实际场景中大放异彩：
-
-1. **自动化报告** – 从发票 PDF 中提取数据并导入分析流水线。
-2. **可搜索文档库** – 索引提取的文本，使用户能够进行全文搜索。
-3. **内容迁移** – 将旧版 PDF 内容迁移到数据库、CMS 平台或云存储。
-
-## 性能技巧
-
-- **流式输出** – 对小文件使用 `TextReader.readToEnd()` 没问题；对大 PDF 则逐行读取以保持低内存使用。
-- **复用 parser** – 处理大量 PDF 时，尽可能复用同一个 `Parser` 实例以降低开销。
-- **配置 JVM 参数** – 如需处理超大文档，请调整 `-Xmx`。
+## 加载 PDF 于 Java 的性能技巧
+- **Stream the output** – `TextReader.readToEnd()` is fine for small files; for large PDFs, read line‑by‑line to keep memory usage low.  
+- **Reuse the parser** – When processing many PDFs, reuse a single `Parser` instance where possible to reduce overhead.  
+- **Configure JVM flags** – Adjust `-Xmx` if you anticipate handling very large documents.
 
 ## 结论
-
-现在，你已经拥有使用 GroupDocs.Parser 进行 **extract pdf text java** 的完整、可用于生产的方案。按照这些步骤，你可以将可靠的 PDF 文本提取集成到任何程序中，无论是简单工具还是大规模企业系统。
+您现在拥有使用 GroupDocs.Parser 进行 **java pdf text extraction** 的完整、可投入生产的方案。按照这些步骤，您可以将可靠的 PDF 文本提取功能集成到任何 Java 应用程序中，无论是简单工具还是大规模企业系统。
 
 **下一步：**  
-探索诸如图像提取、元数据读取和多格式支持等额外功能，以进一步扩展你的文档处理工具包。
+Explore additional features such as image extraction, metadata reading, and multi‑format support to further extend your document processing toolkit.
 
 ---
 
-## 常见问题解答
+## 常见问题
 
-**Q: 什么是 GroupDocs.Parser for Java？**  
-A: 这是一个库，可在 Java 应用程序中对包括 PDF 在内的多种文件格式进行文档解析和文本提取。
+**Q: What is GroupDocs.Parser for Java?**  
+A: It’s a library that enables document parsing and text extraction from a wide range of file formats, including PDFs, in Java applications.
 
-**Q: 如何使用 Maven 安装 GroupDocs.Parser？**  
-A: 将 Maven 设置章节中展示的仓库和依赖添加到你的 `pom.xml` 中。
+**Q: How do I install GroupDocs.Parser using Maven?**  
+A: Add the repository and dependency shown in the Maven Setup section to your `pom.xml`.
 
-**Q: 除了 PDF，我还能使用 GroupDocs.Parser 处理其他文件类型吗？**  
-A: 可以，它支持 Word、Excel、PowerPoint 等多种格式。
+**Q: Can I use GroupDocs.Parser with other file types besides PDFs?**  
+A: Yes, it supports Word, Excel, PowerPoint, and many more formats.
 
-**Q: 如果文档不支持文本提取，我该怎么办？**  
-A: 检查该文件格式是否在库的支持列表中，或将文件转换为受支持的 PDF 版本。
+**Q: What should I do if text extraction isn’t supported for my document?**  
+A: Verify the file format is listed in the library’s supported formats or convert the file to a supported PDF version.
 
-**Q: 如何获取 GroupDocs.Parser 的临时许可证？**  
-A: 访问 [GroupDocs' purchase page](https://purchase.groupdocs.com/temporary-license/) 以请求试用许可证。
+**Q: How can I obtain a temporary license for GroupDocs.Parser?**  
+A: Visit [GroupDocs' purchase page](https://purchase.groupdocs.com/temporary-license/) to request a trial license.
 
 ## 资源
+- **Documentation:** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)
+- **API Reference:** [GroupDocs Parser API Reference](https://reference.groupdocs.com/parser/java)
+- **Download:** [Latest Releases](https://releases.groupdocs.com/parser/java/)
+- **GitHub:** [GroupDocs.Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
+- **Free Support:** [GroupDocs Forum](https://forum.groupdocs.com/c/parser)
+- **Temporary License:** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
 
-- **文档：** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)
-- **API 参考：** [GroupDocs Parser API Reference](https://reference.groupdocs.com/parser/java)
-- **下载：** [Latest Releases](https://releases.groupdocs.com/parser/java/)
-- **GitHub：** [GroupDocs.Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
-- **免费支持：** [GroupDocs Forum](https://forum.groupdocs.com/c/parser)
-- **临时许可证：** [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-
-**最后更新：** 2025-12-24  
-**测试环境：** GroupDocs.Parser 25.5 for Java  
-**作者：** GroupDocs  
+**Last Updated:** 2026-04-27  
+**Tested With:** GroupDocs.Parser 25.5 for Java  
+**Author:** GroupDocs
