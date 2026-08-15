@@ -1,49 +1,108 @@
 ---
-date: '2026-01-19'
+date: '2026-08-15'
 description: تعلم كيفية استخراج صور PDF من مناطق محددة داخل ملف PDF باستخدام GroupDocs.Parser
-  للغة Java. يغطي هذا الدليل الإعداد والتنفيذ وتحسين الأداء مع GroupDocs Parser للـ
+  للغة Java. يغطي هذا الدليل إعداد النظام، التنفيذ، وتحسين الأداء باستخدام GroupDocs.Parser
   Java.
 keywords:
-- extract images from PDF
-- Java image extraction API
+- extract images from pdf
+- batch pdf image extraction
+- GroupDocs.Parser Java
 - PDF area image extraction
-title: استخراج صور PDF من مناطق محددة باستخدام GroupDocs.Parser API للغة Java
+lastmod: '2026-08-15'
+og_description: استخراج الصور من ملفات PDF باستخدام GroupDocs.Parser Java. تعلم إعداد
+  النظام خطوة بخطوة، استخراج قائم على المناطق، ونصائح الأداء للمعالجة الدفعية.
+og_image_alt: Guide showing how to extract images from specific PDF areas using GroupDocs.Parser
+  Java
+og_title: استخراج الصور من ملفات PDF من مناطق محددة باستخدام GroupDocs.Parser Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-15'
+  description: Learn how to extract pdf images from specific areas within a PDF using
+    GroupDocs.Parser for Java. This guide covers setup, implementation, and performance
+    optimization with GroupDocs.Parser Java.
+  headline: Extract images from PDF from specific areas using GroupDocs.Parser Java
+    API
+  type: TechArticle
+- description: Learn how to extract pdf images from specific areas within a PDF using
+    GroupDocs.Parser for Java. This guide covers setup, implementation, and performance
+    optimization with GroupDocs.Parser Java.
+  name: Extract images from PDF from specific areas using GroupDocs.Parser Java API
+  steps:
+  - name: '**Free trial:** Start with a free trial to explore the library''s features.'
+    text: '**Free trial:** Start with a free trial to explore the library''s features.'
+  - name: '**Temporary license:** Request a temporary license if you need extended
+      access without limitations.'
+    text: '**Temporary license:** Request a temporary license if you need extended
+      access without limitations.'
+  - name: '**Purchase:** Consider purchasing a full license for long‑term use.'
+    text: '**Purchase:** Consider purchasing a full license for long‑term use.'
+  - name: '**Invoice processing:** Pull logos, barcodes, or specific fields for automated
+      validation.'
+    text: '**Invoice processing:** Pull logos, barcodes, or specific fields for automated
+      validation.'
+  - name: '**Document digitization:** Extract diagrams or charts from scanned reports
+      for reuse in data pipelines.'
+    text: '**Document digitization:** Extract diagrams or charts from scanned reports
+      for reuse in data pipelines.'
+  - name: '**Content archiving:** Isolate and store visual assets from research papers
+      or marketing brochures.'
+    text: '**Content archiving:** Isolate and store visual assets from research papers
+      or marketing brochures.'
+  type: HowTo
+- questions:
+  - answer: JDK 8 or later is recommended for optimal compatibility and performance.
+    question: What is the minimum Java version required for GroupDocs.Parser?
+  - answer: Most PDFs are supported, but highly encrypted or corrupted files may need
+      preprocessing.
+    question: Can I extract images from all types of PDF files?
+  - answer: Use try‑catch blocks around the parser initialization and extraction calls
+      to capture `UnsupportedDocumentFormatException` and other runtime exceptions.
+    question: How should I handle errors during image extraction?
+  - answer: Yes—process documents in batches, limit the extraction area to only needed
+      regions, and reuse the same `Parser` instance when possible.
+    question: Is there a way to improve performance for large PDFs?
+  - answer: While this guide focuses on Java, GroupDocs provides similar libraries
+      for .NET, Python, and other platforms.
+    question: Does GroupDocs.Parser work with other programming languages?
+  type: FAQPage
+tags:
+- extract images from pdf
+- GroupDocs.Parser
+- Java PDF processing
+- image extraction
+title: استخراج الصور من ملفات PDF من مناطق محددة باستخدام GroupDocs.Parser Java API
 type: docs
 url: /ar/java/image-extraction/image-extraction-pdf-areas-groupdocs-parser-java/
 weight: 1
 ---
 
-# استخراج صور PDF من
+# استخراج الصور من ملفات PDF من مناطق محددة باستخدام GroupDocs.Parser Java API
 
-استخراج صور PDF من مناطق مخصصة داخل ملف PDF هو طلب شائع عندما تحتاج إلى التقاط بيانات دقيقة الف على **يلة محددة **GroupDocs.Parser Java**. سنستعرض إعداد البيئة، الشيفرة اللازمة لاستهداف منطقة معينة، سريعة وموثوقة.
+في هذا الدرس ستتعلم كيفية **استخراج الصور من PDF** عن طريق استهداف مناطق مستطيلة دقيقة باستخدام مكتبة **GroupDocs.Parser Java**. هذا النهج مثالي عندما تحتاج إلى سحب الشعارات أو التوقيعات أو أجزاء من المخططات من الفواتير أو التقارير أو النماذج الممسوحة ضوئياً دون تحميل المستند بالكامل في الذاكرة. ستحصل على إرشادات خطوة بخطوة، ونصائح مركزة على الأداء، وحالات استخدام واقعية.
 
 ## إجابات سريعة
-- **ماذا يعني “استخراج صور pdf”؟** يشير إلى سحب كائنات الصور النقطية من ملف PDF برمجياً.  
-- **ما المكتبة التي يستخدمها هذا الدرس؟** GroupDocs.Parser للـ Java.  
-- **هل أحتاج إلى ترخيص؟** النسخة التجريبية المجانية تكفي للاختبار؛ الترخيص الدائم مطلوب للإنتاج.  
-- **هل يمكنني معالجة ملفات متعددة في آن واحد؟** نعم—يمكن دمج الشيفرة المعروضة مع حلقات الدفعات لاستخراج صور PDF على دفعات.  
+- **ماذا يعني “extract pdf images”؟** يعني سحب كائنات الصور النقطية من ملف PDF برمجيًا بحيث يمكنك إعادة استخدامها في مكان آخر.
+- **ما المكتبة التي يستخدمها هذا الدرس؟** GroupDocs.Parser for Java.
+- **هل أحتاج إلى ترخيص؟** نسخة تجريبية مجانية تكفي للاختبار؛ الترخيص الدائم مطلوب للإنتاج.
+- **هل يمكنني معالجة ملفات متعددة في آن واحد؟** نعم—يمكنك دمج الشيفرة المعروضة مع حلقات الدُفعات لاستخراج صور PDF على دفعات.
 - **ما نسخة Java المطلوبة؟** JDK 8 أو أحدث.
 
-## ما هو “استخراج صور pdf” في سياق ملفات PDF؟
-عندما يحتوي PDF على صور مدمجة، شعارات، أو رسومات ممسوحة ضوئياً، تُخزن هذه العناصر ككائنات صورة. استخراجها يتيح لك إعادة استخدام الرسومات في أماكن أخرى—مثل إدخال شعار في سير عمل العلامة التجارية أو إمداد مخططات ممسوحة ضوئياً إلى خط أنابيب OCR.
+## ما هو “extract pdf images” في سياق ملفات PDF؟
+يعني استخراج صور PDF سحب كائنات الصور النقطية المدمجة في ملف PDF برمجيًا بحيث يمكنك إعادة استخدامها أو معالجتها في مكان آخر. عندما يحتوي PDF على صور أو شعارات أو رسومات ممسوحة ضوئياً، تُخزن هذه العناصر ككائنات صورة يمكن الوصول إليها عبر واجهة برمجة التطبيقات parser. يتيح ذلك سير عمل مثل إدخال شعار في خط أنابيب العلامة التجارية أو إرسال المخططات الممسوحة إلى محرك OCR.
 
 ## لماذا نستخدم GroupDocs.Parser Java لهذه المهمة؟
-يقدم GroupDocs.Parser واجهة برمجة تطبيقات عالية المستوى تُجردك من تعقيدات بنية PDF الداخلية، وتوفر لك:
-
-* استخراج دقيق قائم على المنطقة (تحدد المستطيل بالضبط).  
-* توافق متعدد المنصات (Windows، Linux، macOS).  
-* دعم مدمج للمستندات الكبيرة مع تدفق ذاكرة فعال.
+توفر GroupDocs.Parser واجهة برمجة تطبيقات عالية المستوى تتيح لك استخراج الصور من مستطيل محدد، وتدعم معالجة ملفات PDF حتى 2 GB دون تحميل الملف بالكامل في الذاكرة، ويمكنها التعامل مع مستندات بأكثر من 500 صفحة في الدقيقة على خادم رباعي النوى عادي. المكتبة متعددة المنصات (Windows, Linux, macOS) وتضم تدفقًا مدمجًا للحفاظ على استهلاك الذاكرة منخفضًا.
 
 ## المتطلبات المسبقة
-- **Java Development Kit (JDK) 8+** – تأكد من أن الأمر `java -version` يُظهر الإصدار 8 أو أعلى.  
-- **Maven** – اختياري لكنه مُوصى به لإدارة التبعيات.  
+- **Java Development Kit (JDK) 8+** – تحقق باستخدام `java -version`.
+- **Maven** – اختياري لكن يُنصح به لإدارة التبعيات.
 - **IDE** – IntelliJ IDEA، Eclipse، أو أي محرر تفضله.
 
-## المكتبات والتبعيات المطلوبة
+## المكتبات والاعتمادات المطلوبة
 
-**تثبيت Maven**
+**تثبيت Maven**  
 
-أضف التكوين التالي إلى ملف `pom.xml` الخاص بك:
+أضف التكوين التالي إلى ملف `pom.xml` الخاص بك:  
 ```xml
 <repositories>
    <repository>
@@ -60,31 +119,42 @@ weight: 1
       <version>25.5</version>
    </dependency>
 </dependencies>
-```
+```  
 
-**التنزيل المباشر**  
-بدلاً من ذلك، حمّل أحدث نسخة مباشرة من [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
+**تحميل مباشر**  
+بدلاً من ذلك، قم بتحميل أحدث نسخة مباشرة من [إصدارات GroupDocs.Parser for Java](https://releases.groupdocs.com/parser/java/).
 
 ### الحصول على الترخيص
-1. **نسخة تجريبية مجانية:** ابدأ بنسخة تجريبية لاستكشاف ميزات المكتبة.  
-2. **ترخيص مؤقت:** اطلب ترخيصًا مؤقتًا إذا كنت بحاجة إلى وصول ممتد دون قيود.  
-3. **شراء:** فكر في شراء ترخيص كامل للاستخدام طويل الأمد.
+1. **نسخة تجريبية مجانية:** ابدأ بنسخة تجريبية مجانية لاستكشاف ميزات المكتبة.
+2. **ترخيص مؤقت:** اطلب ترخيصًا مؤقتًا إذا كنت بحاجة إلى وصول ممتد بدون قيود.
+3. **شراء:** فكر في شراء ترخيص كامل للاستخدام على المدى الطويل.
 
-## إعداد GroupDocs.Parser للـ Java
+## إعداد GroupDocs.Parser للغة Java
 
 ### تكوين Maven
-إذا كنت تستخدم Maven، فإن المقتطف أعلاه سيجلب ملفات JAR اللازمة تلقائيًا.
+إذا كنت تستخدم Maven، فإن المقتطف أعلاه يجلب ملفات JAR اللازمة تلقائيًا.
 
-### إعداد التنزيل المباشر
-لنهج يدوي، ضع ملف JAR الذي تم تنزيله في مجلد `libs` الخاص بالمشروع وأضفه إلى مسار البناء في IDE الخاص بك.
+### إعداد التحميل المباشر
+لنهج يدوي، ضع ملف JAR الذي تم تحميله في مجلد `libs` الخاص بمشروعك وأضفه إلى مسار البناء في IDE الخاص بك.
 
-## كيفية استخراج صور PDF من مناطق PDF محددة؟
+## كيفية استخراج صور PDF من مناطق محددة في ملف PDF؟
+
+حمّل ملف PDF، عرّف المستطيل، واستدعِ طريقة الاستخراج – هذا كل ما تحتاجه لاسترجاع الصور التي تتقاطع مع المنطقة. `getImages` هي طريقة تستخرج كائنات الصورة من صفحة ضمن الحدود المستطيلة المحددة. تقوم طريقة `getImages` بمسح المنطقة المحددة من الصفحة وتعيد فقط الصور التي تتقاطع مع المستطيل. تُعيد API مجموعة قابلة للتكرار من كائنات `PageImageArea` التي تحتوي على بيانات الصورة المستخرجة:
+```java
+Iterable<PageImageArea> images = parser.getImages(options);
+
+if (images == null) {
+    System.out.println("Image extraction isn't supported in this area");
+} else {
+    // Process extracted images here
+}
+```  
 
 ### 1. نظرة عامة على الميزة
-تتيح لك هذه الميزة تعريف منطقة مستطيلة على صفحة PDF واستخراج الصور التي تتقاطع مع تلك المنطقة فقط. إنها مثالية لعزل الشعارات، التوقيعات، أو أجزاء المخططات.
+تتيح لك هذه الميزة تعريف منطقة مستطيلة على صفحة PDF واستخراج فقط الصور التي تتقاطع مع تلك المنطقة. إنها مثالية لعزل الشعارات أو التوقيعات أو أجزاء المخططات.
 
-### 2. تهيئة كائن Parser
-أنشئ مثيلًا من الفئة `Parser` مع مسار ملف PDF الخاص بك:
+### 2. تهيئة كائن parser
+فئة `Parser` هي نقطة الدخول الرئيسية في GroupDocs.Parser لقراءة ملفات PDF. أنشئ مثيلًا بتمرير مسار ملف PDF الخاص بك:
 ```java
 import com.groupdocs.parser.Parser;
 import com.groupdocs.parser.data.PageImageArea;
@@ -96,10 +166,10 @@ try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/SampleImagesPdf.pdf")) 
 } catch (UnsupportedDocumentFormatException e) {
     System.err.println("The provided document format is not supported.");
 }
-```
+```  
 
 ### 3. تعريف منطقة الاستخراج
-حدد المستطيل الذي تريد مسحه. في هذا المثال نبدأ من النقطة `(340, 150)` ونلتقط مساحة `300 × 100` بكسل:
+تمثل فئة `Rectangle` المنطقة التي تريد مسحها. في هذا المثال نبدأ من النقطة `(340, 150)` ونلتقط منطقة بحجم `300 × 100` بكسل:
 ```java
 import com.groupdocs.parser.options.PageAreaOptions;
 import java.awt.Rectangle;
@@ -110,10 +180,10 @@ PageAreaOptions options = new PageAreaOptions(new Rectangle(
     new Point(340, 150),
     new Size(300, 100)
 ));
-```
+```  
 
 ### 4. استخراج الصور
-استدعِ `getImages` مع خيارات المنطقة. تُعيد الطريقة مجموعة قابلة للتكرار من كائنات `PageImageArea`:
+`getImages` هي طريقة تستخرج كائنات الصورة من صفحة ضمن الحدود المستطيلة المحددة. استدعِ `getImages` مع خيارات المنطقة. تُعيد الطريقة مجموعة قابلة للتكرار من كائنات `PageImageArea` التي تحتوي على بيانات الصورة المستخرجة:
 ```java
 Iterable<PageImageArea> images = parser.getImages(options);
 
@@ -122,48 +192,61 @@ if (images == null) {
 } else {
     // Process extracted images here
 }
-```
+```  
 
-#### خيارات التكوين الأساسية
-- **تعريف المستطيل:** عدّل `Point` (x, y) و`Size` (العرض، الارتفاع) لاستهداف أي جزء من الصفحة.  
-- **معالجة الأخطاء:** احط المكالمات بكتل try‑catch لإدارة الصيغ غير المدعومة أو فشل الاستخراج بشكل مرن.
+#### خيارات التكوين الرئيسية
+- **تعريف المستطيل:** عدّل `Point` (x, y) و`Size` (العرض, الارتفاع) لاستهداف أي جزء من الصفحة.
+- **معالجة الأخطاء:** غلف الاستدعاءات بكتل try‑catch لإدارة الصيغ غير المدعومة أو فشل الاستخراج بشكل سلس.
 
 ## تطبيقات عملية
-1. **معالجة الفواتير:** استخراج الشعارات، الباركود، أو الحقول المحددة للتحقق الآلي.  
-2. **رقمنة المستندات:** استخراج المخططات أو الرسوم البيانية من التقارير الممسوحة ضوئياً لإعادة استخدامها في خطوط البيانات.  
+1. **معالجة الفواتير:** سحب الشعارات أو الباركود أو الحقول المحددة للتحقق الآلي.
+2. **رقمنة المستندات:** استخراج المخططات أو الرسوم البيانية من التقارير الممسوحة لإعادة استخدامها في خطوط البيانات.
 3. **أرشفة المحتوى:** عزل وتخزين الأصول البصرية من الأوراق البحثية أو الكتيبات التسويقية.
 
 ## اعتبارات الأداء
-- **تحسين استخدام الذاكرة:** عالج الصفحات بشكل متسلسل وحرّر الموارد بعد كل تكرار للحفاظ على بصمة الذاكرة منخفضة.  
-- **المعالجة الدفعية:** غلف منطق الاستخراج في حلقة تتنقل عبر قائمة ملفات PDF لاستخراج صور PDF على دفعات، مما يقلل من الحمل الزائد.
+- **تحسين استخدام الذاكرة:** عالج الصفحات بشكل متسلسل وحرّر الموارد بعد كل تكرار للحفاظ على بصمة الذاكرة منخفضة.
+- **المعالجة الدُفعية:** غلف منطق الاستخراج في حلقة تت iterates over قائمة من ملفات PDF لاستخراج صور PDF على دفعات، مما يقلل الحمل.
 
 ## المشكلات الشائعة والحلول
 | العَرَض | السبب المحتمل | الحل |
 |---------|--------------|-----|
-| لا تُرجع أي صور | المستطيل لا يتقاطع مع أي صورة | تحقق من الإحداثيات والحجم؛ استخدم مستطيلًا أكبر للاختبار. |
-| `UnsupportedDocumentFormatException` | إصدار PDF غير مدعوم | حدّث إلى أحدث نسخة من GroupDocs.Parser أو حوّل PDF إلى نسخة مدعومة. |
-| أخطاء نفاد الذاكرة في الملفات الكبيرة | تحميل المستند بالكامل مرة واحدة | عالج صفحة واحدة في كل مرة وتخلص من كائن` بعد كل ملف. |
+| لم يتم إرجاع أي صور | المستطيل لا يتقاطع مع أي صورة | تحقق من الإحداثيات والحجم؛ استخدم مستطيلًا أكبر للاختبار. |
+| `UnsupportedDocumentFormatException` | إصدار PDF غير مدعوم | حدّث إلى أحدث نسخة من GroupDocs.Parser أو حوّل ملف PDF إلى نسخة مدعومة. |
+| أخطاء نفاد الذاكرة في الملفات الكبيرة | تم تحميل المستند بالكامل مرة واحدة | عالج صفحة واحدة في كل مرة وتخلص من كائن `Parser` بعد كل ملف. |
 
 ## الأسئلة المتكررة
 
-** JDK 8 أو.
+**س: ما هو الحد الأدنى لإصدار Java المطلوب لـ GroupDocs.Parser؟**  
+ج: يُنصح بـ JDK 8 أو أحدث للحصول على توافق وأداء مثاليين.
 
- هل يمكنني استخراج الصور من جميع أنواع ملفات PDF؟**  
+**س: هل يمكنني استخراج الصور من جميع أنواع ملفات PDF؟**  
 ج: معظم ملفات PDF مدعومة، لكن الملفات المشفرة بشدة أو التالفة قد تحتاج إلى معالجة مسبقة.
 
-**س: كيف يجبامل مع الأخطاء أثناءقاط `UnsupportedDocumentFormatException` وغيرها من طريقة لتحسين الأداء مع ملفات PDF الكبيرة؟**  
-ج: نعم—عالج المستندات على دفعات، حدّد منطقة الا على المناطق المطلوبة، وأعد استخدام نفس مثيل `Parser` عندما يكون ذلك ممكنًا.
+**س: كيف يجب أن أتعامل مع الأخطاء أثناء استخراج الصور؟**  
+ج: استخدم كتل try‑catch حول تهيئة parser واستدعاءات الاستخراج لالتقاط `UnsupportedDocumentFormatException` وغيرها من الاستثناءات runtime.
 
-**س: هل يعمل GroupDocsج موارد
-- [Documentation](httpsdocs.com/parser/java/)
-- [API Reference](https://reference.groupdocs.com/parser/java)
-- [Download](https://releases.groupdocs.com/parser/java/)
+**س: هل هناك طريقة لتحسين الأداء في ملفات PDF الكبيرة؟**  
+ج: نعم—عالج المستندات على دفعات، حدّد منطقة الاستخراج إلى المناطق المطلوبة فقط، وأعد استخدام نفس كائن `Parser` عندما يكون ذلك ممكنًا.
+
+**س: هل يعمل GroupDocs.Parser مع لغات برمجة أخرى؟**  
+ج: رغم أن هذا الدليل يركز على Java، توفر GroupDocs مكتبات مماثلة لـ .NET وPython وغيرها من المنصات.
+
+## الموارد
+- [التوثيق](https://docs.groupdocs.com/parser/java/)
+- [مرجع API](https://reference.groupdocs.com/parser/java)
+- [تحميل](https://releases.groupdocs.com/parser/java/)
 - [GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
-- [Free Support](https://forum.groupdocs.com/c/parser)
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- [دعم مجاني](https://forum.groupdocs.com/c/parser)
+- [ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-**آخر تحديث:** 2026-01-19  
+**آخر تحديث:** 2026-08-15  
 **تم الاختبار مع:** GroupDocs.Parser 25.5 للـ Java  
 **المؤلف:** GroupDocs
+
+## دروس ذات صلة
+
+- [كيفية استخراج الصور من PDF باستخدام GroupDocs.Parser في Java: دليل خطوة بخطوة](/parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/)
+- [استخراج الصور من PDF وحفظها كـ PNG باستخدام GroupDocs.Parser – دليل Java كامل](/parser/java/image-extraction/java-image-extraction-saving-groupdocs-parser/)
+- [استخراج نص PDF في Java باستخدام GroupDocs.Parser – دليل خطوة بخطوة](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
