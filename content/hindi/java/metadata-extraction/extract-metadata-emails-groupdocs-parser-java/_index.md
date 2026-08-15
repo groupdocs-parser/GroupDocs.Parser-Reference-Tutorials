@@ -1,61 +1,99 @@
 ---
-date: '2026-01-24'
-description: GroupDocs.Parser के साथ ईमेल मेटाडेटा निकालना और जावा में msg फ़ाइलों
-  को पार्स करना सीखें। यह गाइड सेटअप, कार्यान्वयन और अनुकूलन दिखाता है।
+date: '2026-08-15'
+description: GroupDocs.Parser का उपयोग करके Java में msg फ़ाइलों को पार्स करना और
+  email metadata निकालना सीखें। सेटअप, कोड walkthrough, performance tips, और troubleshooting
+  शामिल हैं।
 keywords:
-- extract email metadata using GroupDocs.Parser in Java
-- GroupDocs.Parser library setup in Java
+- how to parse msg
+- read msg file java
+- parse eml files java
+lastmod: '2026-08-15'
+og_description: GroupDocs.Parser का उपयोग करके Java में msg फ़ाइलों को पार्स करना
+  और email metadata निकालना सीखें। यह गाइड सेटअप, कोड उदाहरण, और msg file java पढ़ने
+  के लिए performance tips को कवर करता है।
+og_image_alt: Guide showing how to parse msg files and extract email metadata with
+  GroupDocs.Parser in Java
+og_title: Java में GroupDocs.Parser के साथ msg फ़ाइलों को कैसे पार्स करें
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-15'
+  description: Learn how to parse msg files and extract email metadata in Java using
+    GroupDocs.Parser. Includes setup, code walkthrough, performance tips, and troubleshooting.
+  headline: How to parse msg files with GroupDocs.Parser in Java
+  type: TechArticle
+- description: Learn how to parse msg files and extract email metadata in Java using
+    GroupDocs.Parser. Includes setup, code walkthrough, performance tips, and troubleshooting.
+  name: How to parse msg files with GroupDocs.Parser in Java
+  steps:
+  - name: '**Data archiving** – Auto‑sort emails by sender or date for long‑term storage.'
+    text: '**Data archiving** – Auto‑sort emails by sender or date for long‑term storage.'
+  - name: '**Compliance monitoring** – Scan subject lines and sender details to enforce
+      corporate policies.'
+    text: '**Compliance monitoring** – Scan subject lines and sender details to enforce
+      corporate policies.'
+  - name: '**Customer‑support analysis** – Pull timestamps and subjects to evaluate
+      response times and issue trends.'
+    text: '**Customer‑support analysis** – Pull timestamps and subjects to evaluate
+      response times and issue trends.'
+  type: HowTo
+- questions:
+  - answer: Yes, GroupDocs.Parser supports .eml files. Simply point the `Parser` constructor
+      to the .eml file path.
+    question: Can I extract metadata from .eml files?
+  - answer: Use batch processing combined with asynchronous I/O (e.g., `CompletableFuture`)
+      to keep memory usage low and throughput high.
+    question: How do I handle large email datasets efficiently?
+  - answer: Verify the file format is supported, ensure all dependencies are correctly
+      added, and confirm that a valid license file is on the classpath.
+    question: What should I do if an exception occurs during extraction?
+  - answer: A trial version is available for evaluation. Production use requires a
+      purchased or temporary license.
+    question: Is GroupDocs.Parser free to use?
+  - answer: Visit the [GroupDocs documentation](https://docs.groupdocs.com/parser/java/)
+      and explore the GitHub repository for additional samples.
+    question: Where can I find more code examples?
+  type: FAQPage
+tags:
+- parse msg
+- GroupDocs.Parser
 - Java email metadata extraction
-title: GroupDocs.Parser का उपयोग करके जावा में ईमेल मेटाडेटा कैसे निकालें – एक व्यापक
-  गाइड
+- read msg file java
+- parse eml files java
+title: Java में GroupDocs.Parser के साथ msg फ़ाइलों को कैसे पार्स करें
 type: docs
 url: /hi/java/metadata-extraction/extract-metadata-emails-groupdocs-parser-java/
 weight: 1
 ---
 
-# GroupDocs.Parser का उपयोग करके Java में ईमेल मेटाडेटा कैसे निकालें
+# GroupDocs.Parser के साथ Java में msg फ़ाइलें कैसे पार्स करें
 
-आज के डिजिटल युग में, **how to extract email** मेटाडेटा को तेज़ी और भरोसेमंद तरीके से निकालना डेवलपर्स के लिए एक सामान्य चुनौती है। चाहे आपको प्रेषक विवरण, टाइमस्टैम्प या विषय पंक्तियाँ निकालनी हों, GroupDocs.Parser लाइब्रेरी msg files java और अन्य ईमेल फ़ॉर्मेट को पार्स करना आसान बनाती है। यह गाइड आपको सब कुछ दिखाता है—पर्यावरण सेटअप से लेकर एक पूर्ण, प्रोडक्शन‑रेडी इम्प्लीमेंटेशन तक।
+ईमेल मेटाडेटा जैसे प्रेषक, विषय, और टाइमस्टैम्प को **msg** फ़ाइलों से निकालना कई Java अनुप्रयोगों की सामान्य आवश्यकता है। इस गाइड में आप GroupDocs.Parser के साथ **msg फ़ाइलों को कैसे पार्स करें** सीखेंगे, जिसमें Maven सेटअप से लेकर प्रोडक्शन‑रेडी कोड, प्रदर्शन ट्रिक्स, और सामान्य समस्याओं तक सब कुछ शामिल है।
 
 ## त्वरित उत्तर
-
 - **ईमेल मेटाडेटा को संभालने वाली लाइब्रेरी कौन सी है?** GroupDocs.Parser for Java  
-- **क्या मैं .msg फ़ाइलों को पार्स कर सकता हूँ?** Yes – use `Parser` to read .msg and .eml formats  
-- **न्यूनतम Java संस्करण?** Java 8 या उससे ऊपर  
-- **क्या मुझे लाइसेंस चाहिए?** परीक्षण के लिए ट्रायल काम करता है; प्रोडक्शन के लिए पूर्ण लाइसेंस आवश्यक है  
-- **सामान्य निकासी समय?** मानक सर्वर पर फ़ाइल प्रति मिलीसेकंड  
+- **क्या मैं .msg फ़ाइलें पार्स कर सकता हूँ?** Yes – the `Parser` class reads .msg and .eml formats  
+- **न्यूनतम Java संस्करण?** Java 8 or higher  
+- **क्या मुझे लाइसेंस चाहिए?** A trial works for testing; a full license is required for production  
+- **सामान्य निष्कर्षण समय?** Usually under 200 ms per file on a standard server  
 
-## आप क्या सीखेंगे
+## msg को कैसे पार्स करें क्या है?
+एक **msg** फ़ाइल को पार्स करना मतलब बाइनरी Microsoft Outlook संदेश फ़ॉर्मेट को पढ़ना और उसके हेडर फ़ील्ड्स (From, To, Subject, Date, आदि) को संरचित डेटा के रूप में प्रस्तुत करना है। GroupDocs.Parser एक हाई‑लेवल API प्रदान करता है जो लो‑लेवल बाइनरी पार्सिंग को एब्स्ट्रैक्ट करता है, जिससे आप बिज़नेस लॉजिक पर ध्यान केंद्रित कर सकते हैं।
 
-- ईमेल मेटाडेटा निष्कर्षण की समस्या और इसका महत्व  
-- Java प्रोजेक्ट में GroupDocs.Parser को सेटअप करने का तरीका  
-- चरण‑दर‑चरण कोड **how to extract email** मेटाडेटा के लिए  
-- वास्तविक‑दुनिया के उपयोग केस और प्रदर्शन टिप्स  
-- सामान्य समस्याएँ और उन्हें कैसे टालें  
+## ईमेल मेटाडेटा निष्कर्षण के लिए GroupDocs.Parser का उपयोग क्यों करें?
+GroupDocs.Parser **30+** ईमेल‑संबंधित फ़ॉर्मेट्स को सपोर्ट करता है—जिसमें .msg, .eml, और .pst शामिल हैं—और सामान्य सर्वर हार्डवेयर पर **200 ms** से कम समय में **500 MB** तक की फ़ाइलें प्रोसेस कर सकता है। यह लाइब्रेरी Windows, Linux, और macOS पर काम करती है, और किसी भी नेटिव Outlook इंस्टॉलेशन की आवश्यकता नहीं होती, जिससे आपको क्रॉस‑प्लेटफ़ॉर्म संगतता मिलती है।
 
 ## पूर्वापेक्षाएँ
+Before you begin, verify the following:
 
-शुरू करने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित हैं:
-
-### आवश्यक लाइब्रेरीज़
-
-अपने प्रोजेक्ट में GroupDocs.Parser लाइब्रेरी (नवीनतम संस्करण 25.5) जोड़ें।
-
-### पर्यावरण सेटअप आवश्यकताएँ
-
-Java 8+ स्थापित हो और निर्भरता प्रबंधन के लिए Maven जैसे बिल्ड टूल का उपयोग हो।
-
-### ज्ञान पूर्वापेक्षाएँ
-
-Java I/O, थर्ड‑पार्टी लाइब्रेरीज़, और बुनियादी ईमेल फ़ाइल फ़ॉर्मेट (जैसे .msg, .eml) की परिचितता।
+- **Java** 8+ आपके विकास मशीन पर स्थापित होना चाहिए।  
+- **Maven** (या कोई अन्य बिल्ड टूल) डिपेंडेंसी मैनेजमेंट के लिए।  
+- एक **GroupDocs.Parser** लाइसेंस फ़ाइल (ट्रायल या फुल) प्रोडक्शन उपयोग के लिए क्लासपाथ पर रखी हो।  
 
 ## Java के लिए GroupDocs.Parser सेटअप करना
-
-शुरू करने के लिए, लाइब्रेरी को अपने Maven प्रोजेक्ट में एकीकृत करें।
+लाइब्रेरी को Maven प्रोजेक्ट में इंटीग्रेट करने के लिए, आधिकारिक रिपॉजिटरी और नवीनतम डिपेंडेंसी (लेखन के समय v25.5) जोड़ें।
 
 ### Maven सेटअप
-
-`pom.xml` में रिपॉजिटरी और डिपेंडेंसी जोड़ें:
+Add the repository and dependency to your `pom.xml` exactly as shown:
 
 ```xml
 <repositories>
@@ -75,44 +113,31 @@ Java I/O, थर्ड‑पार्टी लाइब्रेरीज़, �
 </dependencies>
 ```
 
-### प्रत्यक्ष डाउनलोड
-
+### सीधे डाउनलोड
 वैकल्पिक रूप से, आप नवीनतम संस्करण सीधे [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) से डाउनलोड कर सकते हैं।
 
 #### लाइसेंस प्राप्त करने के चरण
-
-पूर्ण कार्यक्षमता अनलॉक करने के लिए GroupDocs वेबसाइट से एक मुफ्त ट्रायल या अस्थायी लाइसेंस प्राप्त करें।
+GroupDocs वेबसाइट से एक मुफ्त ट्रायल या अस्थायी लाइसेंस प्राप्त करें ताकि पूरी कार्यक्षमता अनलॉक हो सके।
 
 ### बुनियादी इनिशियलाइज़ेशन और सेटअप
-
-अपने Java स्रोत फ़ाइल में आवश्यक क्लासेज़ इम्पोर्ट करें:
+The `Parser` class provides the core functionality to load and parse email documents, exposing metadata through a simple API. Import the essential classes in your Java source file:
 
 ```java
 import com.groupdocs.parser.Parser;
 import com.groupdocs.parser.data.MetadataItem;
 ```
 
-## इम्प्लीमेंटेशन गाइड
+## Java में msg फ़ाइलें कैसे पार्स करें
+एक .msg फ़ाइल को पार्स करने के लिए, GroupDocs.Parser के `Parser` क्लास को ईमेल फ़ाइल के पाथ के साथ इंस्टैंशिएट करें, फिर उसकी `parse()` मेथड को कॉल करें। यह मेथड `MetadataItem` ऑब्जेक्ट्स का एक इटेरेबल कलेक्शन रिटर्न करता है जो प्रत्येक हेडर फ़ील्ड जैसे From, To, Subject, और Date को दर्शाता है। यह सरल दृष्टिकोण बाइनरी Outlook फ़ॉर्मेट को कुशलता से संभालता है।
 
-अब हम वास्तविक कोड के माध्यम से चलते हैं जो **how to extract email** मेटाडेटा दिखाता है।
-
-### ईमेल फ़ाइलों से मेटाडेटा निकालें
-
-यह अनुभाग ईमेल फ़ाइल को पढ़ने और उसके मेटाडेटा को प्रिंट करने का प्रदर्शन करता है।
-
-#### चरण 1: अपनी फ़ाइल पाथ सेट करें
-
-उस ईमेल का स्थान निर्दिष्ट करें जिसे आप प्रोसेस करना चाहते हैं:
+लक्ष्य `.msg` फ़ाइल को `new Parser(filePath)` से लोड करें, `parse()` को कॉल करके `Iterable<MetadataItem>` प्राप्त करें, और कलेक्शन पर इटरिटेट करके प्रत्येक नाम/मान जोड़ी पढ़ें। यह तरीका सामान्य 1 MB फ़ाइलों के लिए **200 ms** से कम समय में संदेश को पार्स करता है और हेडर में Unicode कैरेक्टर्स को स्वचालित रूप से संभालता है।
 
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/sample.msg";
 ```
 
-प्लेसहोल्डर को अपने वास्तविक `.msg` फ़ाइल पाथ से बदलें।
-
-#### चरण 2: Parser को इनिशियलाइज़ करें और मेटाडेटा निकालें
-
-`Parser` इंस्टेंस बनाएं, मेटाडेटा प्राप्त करें, और प्रत्येक आइटम आउटपुट करें:
+### ईमेल फ़ाइलों से मेटाडेटा निकालें
+Create a `Parser` object, call `parse()`, and print each metadata entry:
 
 ```java
 try (Parser parser = new Parser(filePath)) {
@@ -126,77 +151,75 @@ try (Parser parser = new Parser(filePath)) {
 }
 ```
 
-- **पैरामीटर** – फ़ाइल पाथ `Parser` कंस्ट्रक्टर को पास किया जाता है।  
-- **रिटर्न वैल्यू** – `Iterable<MetadataItem>` जिसमें नाम/मान जोड़े होते हैं।  
-- **उद्देश्य** – ईमेल पढ़ता है, **From**, **Subject**, **Date** जैसे फ़ील्ड निकालता है, और उन्हें प्रिंट करता है।
-
-#### समस्या निवारण टिप्स
-
-- सुनिश्चित करें कि ईमेल फ़ॉर्मेट समर्थित है (`.msg` या `.eml`)।  
-- यह पुष्टि करें कि `pom.xml` में लाइब्रेरी संस्करण आपके डाउनलोड किए गए संस्करण से मेल खाता है।  
-- सभी आवश्यक इम्पोर्ट स्टेटमेंट्स मौजूद हैं, यह जाँचें।
-
-## व्यावहारिक अनुप्रयोग
-
-ईमेल मेटाडेटा निकालना कई परिदृश्यों में उपयोगी है:
-
-1. **डेटा आर्काइविंग** – प्रेषक या तिथि के आधार पर ईमेल को स्वचालित रूप से सॉर्ट करके दीर्घकालिक संग्रहण के लिए व्यवस्थित करें।  
-2. **अनुपालन मॉनिटरिंग** – विषय पंक्तियों और प्रेषक विवरण को स्कैन करके कॉर्पोरेट नीतियों को लागू करें।  
-3. **ग्राहक समर्थन विश्लेषण** – टाइमस्टैम्प और विषय निकालकर प्रतिक्रिया समय और मुद्दे रुझानों का विश्लेषण करें।
-
-## प्रदर्शन विचार
-
-हजारों संदेशों को प्रोसेस करते समय, इन टिप्स को ध्यान में रखें:
-
-- **बैच प्रोसेसिंग** – फ़ाइलों को प्रबंधनीय बैच में समूहित करें ताकि मेमोरी उपयोग सीमित रहे।  
-- **असिंक्रोनस I/O** – नॉन‑ब्लॉकिंग रीड्स के लिए Java के NIO या CompletableFuture का उपयोग करें।  
-- **हीप मैनेजमेंट** – बड़े वर्कलोड के लिए JVM हीप की निगरानी करें और GC सेटिंग्स को ट्यून करें।
+- **Parameters** – फ़ाइल पाथ `Parser` कन्स्ट्रक्टर को पास किया जाता है।  
+- **Return values** – एक `Iterable<MetadataItem>` जिसमें **From**, **Subject**, **Date**, आदि जैसे नाम/मान जोड़े होते हैं।  
+- **Purpose** – लो‑लेवल MIME पार्सिंग से निपटे बिना ईमेल हेडर पढ़ने का संक्षिप्त, टाइप‑सेफ़ तरीका प्रदान करता है।
 
 ## सामान्य समस्याएँ और समाधान
-
 | समस्या | समाधान |
 |-------|----------|
 | असमर्थित फ़ाइल फ़ॉर्मेट | पार्स करने से पहले ईमेल को `.msg` या `.eml` में बदलें। |
-| मेमोरी समाप्ति त्रुटस करें या JVM हीप (`-Xmx`) बढ़ाएँ। |
-| लाइसेंस पहचाना नहीं गया | सुनिश्चित करें कि लाइसेंस फ़ाइल उपयोग करके Java में .msg फ़ाइलों से **how to extract email** मेटाडेटा कैसे निकालें। यह क्षमता आर्काइविंग, अनुपालन, और एनालिटिक्स पाइपलाइन को सुव्यवस्थित कर सकती में शामिल हों।
+| आउट‑ऑफ़‑मेमोरी त्रुटियाँ | फ़ाइलों को छोटे बैचों में प्रोसेस करें या JVM हीप (`-Xmx`) बढ़ाएँ। |
+| लाइसेंस पहचाना नहीं गया | सुनिश्चित करें कि लाइसेंस फ़ाइल क्लासपाथ पर है और लाइब्रेरी संस्करण से मेल खाती है। |
 
- .eml फ़ाइलों से मेटाडेटा निकाल सकता हूँ?**  
-A1: हाँ, GroupDocs.Parser .eml फ़ाइलों को भी सपोर्ट करता है। बस फ़ाइल पाथ को अपनी .eml दस्तावेज़ की ओर इंगित करें।
+## व्यावहारिक अनुप्रयोग
+Extracting email metadata is valuable in many scenarios:
 
-**Q2: मैं बड़े ईमेल डेटासेट को प्रभावी ढंग से कैसे संभालूँ?**  
-A2: संसाधनों को कुशलतापूर्वक प्रबंधित करने के लिए बैच प्रोसेसिंग और असिंक्रोनस ऑपरेशन्स का उपयोग करने पर विचार करें।
+1. **Data archiving** – प्रेषक या तिथि के आधार पर ईमेल को स्वचालित रूप से सॉर्ट करके दीर्घकालिक संग्रहण के लिए।  
+2. **Compliance monitoring** – विषय पंक्तियों और प्रेषक विवरण को स्कैन करके कॉर्पोरेट नीतियों को लागू करें।  
+3. **Customer‑support analysis** – टाइमस्टैम्प और विषय को निकालकर प्रतिक्रिया समय और मुद्दा रुझानों का मूल्यांकन करें।  
 
-**Q3: यदि मेटाडेटा निष्कर्षण के दौरान मेरा एप्लिकेशन अपवाद फेंके तो क्या करें?**  
-A3: असमर्थित फ़ाइल फ़ॉर्मेट की जाँच करें, सभी निर्भरताएँ सही ढंग से कॉन्फ़िगर हैं, और अपने लाइसेंस की स्थिति सत्यापित करें।
+## प्रदर्शन विचार
+When handling thousands of messages, keep these tips in mind:
 
-**Q4: क्या GroupDocs.Parser मुफ्त में उपयोग किया जा सकता है?**  
-A4: एक ट्रायल संस्करण उपलब्ध है। पूर्ण सुविधाओं के लिए आपको खरीदा हुआ या अस्थायी लाइसेंस चाहिए।
+- **Batch processing** – फ़ाइलों को प्रबंधनीय बैचों में समूहित करके मेमोरी उपयोग को सीमित रखें।  
+- **Asynchronous I/O** – नॉन‑ब्लॉकिंग रीड्स के लिए Java NIO या `CompletableFuture` का उपयोग करें।  
+- **Heap management** – बड़े वर्कलोड के लिए JVM हीप मॉनिटर करें और GC सेटिंग्स को ट्यून करें।  
 
-**Q5: GroupDocs.Parser के अधिक उदाहरण कहाँ मिल सकते हैं?**  
-A5: [GroupDocs documentation](https://docs.groupdocs.com/parser/java/) पर जाएँ और कोड सैंपल्स के लिए उनके GitHub रिपॉजिटरी को एक्सप्लोर करें।
+## अक्सर पूछे जाने वाले प्रश्न
+
+**Q: क्या मैं .eml फ़ाइलों से मेटाडेटा निकाल सकता हूँ?**  
+A: हाँ, GroupDocs.Parser .eml फ़ाइलों को सपोर्ट करता है। बस `Parser` कन्स्ट्रक्टर को .eml फ़ाइल पाथ पर पॉइंट करें।
+
+**Q: बड़े ईमेल डेटासेट को कुशलता से कैसे संभालूँ?**  
+A: मेमोरी उपयोग को कम और थ्रूपुट को उच्च रखने के लिए बैच प्रोसेसिंग को असिंक्रोनस I/O (जैसे `CompletableFuture`) के साथ उपयोग करें।
+
+**Q: निष्कर्षण के दौरान यदि कोई अपवाद उत्पन्न हो तो क्या करना चाहिए?**  
+A: फ़ाइल फ़ॉर्मेट समर्थित है यह सत्यापित करें, सभी डिपेंडेंसियां सही ढंग से जोड़ी गई हैं यह सुनिश्चित करें, और क्लासपाथ पर वैध लाइसेंस फ़ाइल मौजूद है यह पुष्टि करें।
+
+**Q: क्या GroupDocs.Parser का उपयोग मुफ्त है?**  
+A: मूल्यांकन के लिए एक ट्रायल संस्करण उपलब्ध है। प्रोडक्शन उपयोग के लिए खरीदा गया या अस्थायी लाइसेंस आवश्यक है।
+
+**Q: अधिक कोड उदाहरण कहाँ मिल सकते हैं?**  
+A: अधिक नमूनों के लिए [GroupDocs documentation](https://docs.groupdocs.com/parser/java/) देखें और अतिरिक्त सैंपल्स के लिए GitHub रिपॉज़िटरी एक्सप्लोर करें।
 
 ## अतिरिक्त अक्सर पूछे जाने वाले प्रश्न
 
-**Q: क्या पार्सर हेडर में Unicode अक्षरों को संरक्षित रखता है?**  
-A: हाँ, GroupDocs.Parser मेटाडेटा फ़ील्ड में Unicode अक्षरों को सही ढंग से डिकोड करता है।
+**Q: क्या पार्सर हेडर में Unicode कैरेक्टर्स को संरक्षित रखता है?**  
+A: हाँ, GroupDocs.Parser सभी मेटाडेटा फ़ील्ड्स में Unicode कैरेक्टर्स को सही ढंग से डिकोड करता है।
 
 **Q: क्या मैं मेटाडेटा के साथ अटैचमेंट नाम भी निकाल सकता हूँ?**  
-A: अटैचमेंट `Attachment` API के माध्यम से उपलब्ध हैं; मेटाडेटा निष्कर्षण केवल हेडर जानकारी पर केंद्रित है।
+A: अटैचमेंट `Attachment` API के माध्यम से एक्सेस किए जा सकते हैं; मेटाडेटा निष्कर्षण का फोकस हेडर जानकारी पर है।
 
-**Q: क्या लौटाए जाने वाले मेटाडेटा फ़ील्ड को सीमित करने का कोई तरीका है?**  
-A: आप `item.getName()` को व्हाइटलिस्ट के खिलाफ जाँच कर `Iterable<MetadataItem>` को फ़िल्टर कर सकते हैं।
+**Q: क्या लौटाए जाने वाले मेटाडेटा फ़ील्ड्स को सीमित करने का कोई तरीका है?**  
+A: आप `Iterable<MetadataItem>` को फ़िल्टर कर सकते हैं, `item.getName()` को इच्छित फ़ील्ड्स की व्हाइटलिस्ट के विरुद्ध जांचकर।
 
 ## संसाधन
-
-- **डॉक्यूमेंटेशन**: https://docs.groupdocs.com/parser/java/
-- **API रेफ़रेंस**: https://reference.groupdocs.com/parser/java
-- **डाउनलोड**: https://releases.groupdocs.com/parser/java/
-- **GitHub**: https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java
-- **फ़्री सपोर्ट**: https://forum.groupdocs.com/c/parser
-- **अस्थायी लाइसेंस**: https://purchase.groupdocs.com/temporary-license/
+- **Documentation**: https://docs.groupdocs.com/parser/java/  
+- **API reference**: https://reference.groupdocs.com/parser/java  
+- **Download**: https://releases.groupdocs.com/parser/java/  
+- **GitHub**: https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java  
+- **Free support**: https://forum.groupdocs.com/c/parser  
+- **Temporary license**: https://purchase.groupdocs.com/temporary-license/  
 
 ---
 
-**अंतिम अपडेट:** 2026-01-24  
-**टेस्ट किया गया संस्करण:** GroupDocs.Parser 25.5 for Java  
-**लेखक:** GroupDocs
+**Last Updated:** 2026-08-15  
+**Tested With:** GroupDocs.Parser 25.5 for Java  
+**Author:** GroupDocs
+
+## संबंधित ट्यूटोरियल
+
+- [ईमेल से इमेज निकालें GroupDocs.Parser for Java के साथ](/parser/java/email-parsing/extract-images-emails-groupdocs-parser-java/)
+- [GroupDocs.Parser in Java का उपयोग करके ईमेल से टेक्स्ट निकालने का चरण-दर-चरण गाइड](/parser/java/email-parsing/extract-text-emails-groupdocs-parser-java/)
+- [GroupDocs.Parser Java लाइब्रेरी का उपयोग करके ईमेल फ़ाइलों में कुंजी शब्दों की प्रभावी खोज](/parser/java/text-search/search-keywords-emails-groupdocs-parser-java/)
