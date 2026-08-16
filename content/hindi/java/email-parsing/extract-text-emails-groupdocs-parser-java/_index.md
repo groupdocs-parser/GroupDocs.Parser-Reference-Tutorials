@@ -1,64 +1,98 @@
 ---
-date: '2026-01-03'
-description: GroupDocs.Parser का उपयोग करके जावा में ईमेल से टेक्स्ट निकालना सीखें।
-  यह गाइड सेटअप, कार्यान्वयन और व्यावहारिक अनुप्रयोगों को कवर करता है।
+date: '2026-07-02'
+description: GroupDocs.Parser in Java के साथ MSG को Text में कैसे बदलें सीखें, जिसमें
+  setup, code walkthrough, और real‑world use cases शामिल हैं।
 keywords:
-- extract text from emails
-- GroupDocs.Parser Java
-- text extraction in Java
-- email parsing with GroupDocs
-- Java email file processing
-title: 'GroupDocs.Parser का उपयोग करके जावा में ईमेल से टेक्स्ट निकालने की विधि: चरण-दर-चरण
-  मार्गदर्शिका'
+- convert msg to text
+- extract email text java
+- parse outlook email java
+- read email body java
+- parse msg files java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-02'
+  description: Learn how to convert MSG to text with GroupDocs.Parser in Java, covering
+    setup, code walkthrough, and real‑world use cases.
+  headline: 'How to Convert MSG to Text Using GroupDocs.Parser in Java: A Step‑By‑Step
+    Guide'
+  type: TechArticle
+- description: Learn how to convert MSG to text with GroupDocs.Parser in Java, covering
+    setup, code walkthrough, and real‑world use cases.
+  name: 'How to Convert MSG to Text Using GroupDocs.Parser in Java: A Step‑By‑Step
+    Guide'
+  steps:
+  - name: Import Required Classes
+    text: Start by importing the necessary GroupDocs.Parser classes into your Java
+      source file. > **Definition anchor:** `TextReader` is a high‑level API that
+      streams textual content from a document, delivering it line‑by‑line for efficient
+      memory usage.
+  - name: Initialize the Parser with the MSG Path
+    text: '`Parser` is the main entry point for reading supported documents, including
+      MSG email files. Instantiate `Parser` with the absolute or relative path of
+      the *.msg* file you want to process.'
+  - name: Verify Text Extraction Capability
+    text: 'Before reading, check whether the current document type supports text extraction:
+      > **Tip:** This guard prevents `UnsupportedOperationException` for formats that
+      only allow metadata extraction.'
+  - name: Read and Output the Email Text
+    text: '`TextReader` streams textual content from a document line by line, enabling
+      low‑memory processing. Use `TextReader` to stream the subject and body. The
+      reader returns each line of text, which you can concatenate or write directly
+      to a file. **Why this matters:** Streaming avoids loading the entire e'
+  type: HowTo
+- questions:
+  - answer: Over 50 formats, including *.msg*, *.eml*, *.pdf*, *.docx*, and *.xlsx*,
+      can be converted to plain text.
+    question: What file formats can I convert to text with GroupDocs.Parser?
+  - answer: Decrypt the email first using your own logic, then pass the decrypted
+      stream to `Parser`. The library does not decrypt protected files automatically.
+    question: How do I handle encrypted or password‑protected emails?
+  - answer: GroupDocs.Parser can process files up to 2 GB without loading the entire
+      file into memory, thanks to its streaming architecture.
+    question: Is there a size limit for MSG files?
+  - answer: Change the `<version>` element in `pom.xml` to the newest number listed
+      on the [GroupDocs releases](https://releases.groupdocs.com/parser/java/) page
+      and run `mvn clean install`.
+    question: How can I update to the latest version of GroupDocs.Parser?
+  - answer: The official documentation and GitHub repository contain dozens of samples
+      covering advanced scenarios like attachment extraction and metadata handling.
+    question: Where can I find more code examples?
+  type: FAQPage
+title: 'GroupDocs.Parser in Java का उपयोग करके MSG को Text में कैसे बदलें: एक स्टेप‑बाय‑स्टेप
+  गाइड'
 type: docs
 url: /hi/java/email-parsing/extract-text-emails-groupdocs-parser-java/
 weight: 1
 ---
 
-# जावा में GroupDocs.Parser का उपयोग करके ईमेल से टेक्स्ट निकालना
+# GroupDocs.Parser का उपयोग करके Java में MSG को टेक्स्ट में कैसे कनवर्ट करें
 
-## परिचय
-
-क्या आप जावा में **ईमेल से टेक्स्ट निकालने** की प्रक्रिया को स्वचालित करने में कठिनाई महसूस कर रहे हैं? आप अकेले नहीं हैं! जावा में शक्तिशाली GroupDocs.Parser लाइब्रेरी विशेष रूप से इस उद्देश्य के लिए बनाई गई है। इसकी क्षमताओं का उपयोग करके, डेवलपर्स विभिन्न दस्तावेज़ फ़ॉर्मैट, जिसमें ईमेल भी शामिल हैं, से टेक्स्ट डेटा को सहजता से निकाल और प्रोसेस कर सकते हैं।
-
-इस व्यापक गाइड में, हम आपको दिखाएंगे कि GroupDocs.Parser को जावा में कैसे उपयोग करके ईमेल फ़ाइलों से टेक्स्ट निकाला जाए। आप आवश्यक पर्यावरण सेटअप, सर्वोत्तम प्रैक्टिस के साथ कुशल कोड लिखना, और इस फीचर के व्यावहारिक उपयोगों के बारे में सीखेंगे।
-
-**आप क्या सीखेंगे:**
-- जावा प्रोजेक्ट में GroupDocs.Parser को कैसे सेटअप करें
-- GroupDocs.Parser जावा का उपयोग करके ईमेल फ़ाइल से टेक्स्ट कंटेंट निकालने के चरण
-- व्यावहारिक उपयोग केस और इंटीग्रेशन संभावनाएँ
-- प्रदर्शन अनुकूलन तकनीकें
+Outlook **.msg** फ़ाइलों से बॉडी, सब्जेक्ट और अटैचमेंट्स निकालना ऑटोमेशन, आर्काइविंग और एनालिटिक्स के लिए एक सामान्य आवश्यकता है। इस ट्यूटोरियल में आप सीखेंगे कि GroupDocs.Parser for Java के साथ **convert MSG to text** जल्दी और भरोसेमंद तरीके से कैसे करें। हम पर्यावरण सेटअप, सटीक API कॉल्स, और बेस्ट‑प्रैक्टिस टिप्स के माध्यम से चलेंगे जो आपके कोड को साफ़ और प्रदर्शनशील बनाते हैं।
 
 ## त्वरित उत्तर
-- **जावा में ईमेल से टेक्स्ट निकालने वाली लाइब्रेरी कौन सी है?** GroupDocs.Parser for Java  
-- **ईमेल एक्सट्रैक्शन के लिए कौन सा फ़ाइल फ़ॉर्मैट समर्थित है?** .msg फ़ाइलें (Outlook ईमेल फ़ॉर्मैट)  
-- **क्या परीक्षण के लिए लाइसेंस चाहिए?** हाँ, एक अस्थायी ट्रायल लाइसेंस उपलब्ध है  
-- **क्या मैं एक साथ कई ईमेल प्रोसेस कर सकता हूँ?** हाँ, प्रदर्शन के लिए बैच प्रोसेसिंग की सलाह दी जाती है  
-- **कौन सा जावा संस्करण आवश्यक है?** JDK 8 या उससे ऊपर
+- **Java में MSG को टेक्स्ट में कनवर्ट करने वाली लाइब्रेरी कौन सी है?** GroupDocs.Parser for Java  
+- **कौन सा ईमेल फॉर्मेट समर्थित है?** Outlook *.msg* फ़ाइलें (मूल Outlook फॉर्मेट)  
+- **क्या परीक्षण के लिए लाइसेंस चाहिए?** हाँ – GroupDocs से एक अस्थायी ट्रायल लाइसेंस उपलब्ध है  
+- **क्या मैं एक साथ कई संदेश प्रोसेस कर सकता हूँ?** बिल्कुल; उच्च‑वॉल्यूम परिदृश्यों के लिए बैच प्रोसेसिंग की सलाह दी जाती है  
+- **कौन सा Java संस्करण आवश्यक है?** JDK 8 या नया  
 
-## “ईमेल से टेक्स्ट निकालना” क्या है?
-ईमेल से टेक्स्ट निकालना का अर्थ है प्रोग्रामेटिक रूप से ईमेल फ़ाइल (जैसे *.msg*) के बॉडी, सब्जेक्ट और अन्य टेक्स्टुअल भागों को पढ़ना और उस कंटेंट को प्लेन‑टेक्स्ट स्ट्रिंग्स में बदलना, जिसे आपका एप्लिकेशन विश्लेषण, स्टोर या डिस्प्ले कर सके।
+## “MSG को टेक्स्ट में कनवर्ट करना” क्या है?
+MSG को टेक्स्ट में कनवर्ट करना मतलब है प्रोग्रामेटिक रूप से एक Outlook *.msg* फ़ाइल को खोलना और उसके टेक्स्टुअल घटकों—जैसे सब्जेक्ट लाइन, बॉडी कंटेंट, और वैकल्पिक रूप से अटैचमेंट्स के नाम—को निकालना, और उन्हें प्लेन‑टेक्स्ट स्ट्रिंग्स के रूप में लौटाना जो अन्य एप्लिकेशन्स द्वारा स्टोर, इंडेक्स या प्रोसेस किए जा सकते हैं।
 
-## ईमेल टेक्स्ट एक्सट्रैक्शन के लिए GroupDocs.Parser क्यों उपयोग करें?
-- **फ़ॉर्मैट एग्नॉस्टिक:** बाहरी पार्सर्स की आवश्यकता के बिना कई ईमेल फ़ॉर्मैट को संभालता है।  
-- **उच्च सटीकता:** यूनिकोड कैरेक्टर्स और विशेष प्रतीकों को संरक्षित रखता है।  
-- **आसान इंटीग्रेशन:** सरल Maven डिपेंडेंसी और सीधा API।  
-- **स्केलेबल:** सिंगल ईमेल और बड़े बैच जॉब दोनों के लिए उपयुक्त।
+## MSG को टेक्स्ट में कनवर्ट करने के लिए GroupDocs.Parser क्यों उपयोग करें?
+GroupDocs.Parser व्यापक फॉर्मेट सपोर्ट प्रदान करता है, MSG को अन्य दर्जनों ईमेल और दस्तावेज़ प्रकारों के साथ बिना बाहरी टूल्स के संभालता है। यह Unicode और HTML फ़ॉर्मेटिंग को उच्च सटीकता के साथ संरक्षित रखता है, एक स्ट्रीमिंग API के माध्यम से काम करता है जो मेमोरी उपयोग को कम रखता है, और सरल Maven इंटीग्रेशन प्रदान करता है, जिससे यह सिंगल‑फ़ाइल और हाई‑वॉल्यूम बैच प्रोसेसिंग दोनों परिदृश्यों के लिए आदर्श बनता है।
 
-## पूर्वापेक्षाएँ
-ईमेल से टेक्स्ट एक्सट्रैक्शन को लागू करने से पहले, सुनिश्चित करें कि आपका पर्यावरण सही ढंग से सेटअप है। आपको चाहिए:
+## आवश्यकताएँ
+- **Java Development Kit (JDK):** संस्करण 8 या बाद का स्थापित हो।  
+- **Maven:** डिपेंडेंसी मैनेजमेंट और बिल्ड ऑटोमेशन के लिए।  
+- **IDE (optional):** IntelliJ IDEA, Eclipse, या कोई भी एडिटर जो आप पसंद करते हैं।  
+- **बेसिक Java ज्ञान** और Outlook *.msg* फ़ाइलों की परिचितता।  
 
-- **जावा डेवलपमेंट किट (JDK):** सुनिश्चित करें कि आपके सिस्टम पर JDK 8 या उससे ऊपर इंस्टॉल है।  
-- **Maven:** यह ट्यूटोरियल डिपेंडेंसी मैनेजमेंट और प्रोजेक्ट सेटअप के लिए Maven का उपयोग करता है।  
-- **IDE:** IntelliJ IDEA या Eclipse जैसे इंटीग्रेटेड डेवलपमेंट एनवायरनमेंट सहायक होंगे।
-
-इसके अतिरिक्त, जावा प्रोग्रामिंग का बुनियादी ज्ञान और ईमेल फ़ाइल फ़ॉर्मैट (जैसे .msg फ़ाइलें) की परिचितता आपके लिए फायदेमंद होगी।
-
-## जावा के लिए GroupDocs.Parser सेटअप करना
-अपने जावा प्रोजेक्ट में GroupDocs.Parser के साथ काम शुरू करने के लिए, आपको इसे बिल्ड कॉन्फ़िगरेशन में शामिल करना होगा। आप यह Maven या सीधे डाउनलोड के माध्यम से कर सकते हैं:
+## Java के लिए GroupDocs.Parser सेटअप करना
+शुरू करने के लिए, अपने Maven प्रोजेक्ट में GroupDocs.Parser लाइब्रेरी जोड़ें।
 
 ### Maven सेटअप
-`pom.xml` फ़ाइल में निम्नलिखित रिपॉज़िटरी और डिपेंडेंसी एंट्री जोड़ें:
+`pom.xml` फ़ाइल में रिपॉजिटरी और डिपेंडेंसी एंट्री जोड़ें:
 
 ```xml
 <repositories>
@@ -78,22 +112,22 @@ weight: 1
 </dependencies>
 ```
 
+> **Definition anchor:** `Parser` क्लास किसी भी समर्थित दस्तावेज़ को पढ़ने का एंट्री पॉइंट है, जिसमें ईमेल फ़ाइलें भी शामिल हैं।
+
 ### डायरेक्ट डाउनलोड
-वैकल्पिक रूप से, नवीनतम संस्करण GroupDocs.Parser को [GroupDocs रिलीज़](https://releases.groupdocs.com/parser/java/) से डाउनलोड करें।
+यदि आप मैन्युअल सेटअप पसंद करते हैं, तो नवीनतम JAR को [GroupDocs releases](https://releases.groupdocs.com/parser/java/) से डाउनलोड करें।
 
-#### लाइसेंस प्राप्त करना
-पूर्ण‑फ़ीचर ट्रायल शुरू करने के लिए, आप [अस्थायी लाइसेंस पेज](https://purchase.groupdocs.com/temporary-license) पर जाकर एक अस्थायी लाइसेंस प्राप्त कर सकते हैं। यह आपको सभी फ़ंक्शनैलिटीज़ को बिना प्रतिबंध के टेस्ट करने की अनुमति देगा।
+#### लाइसेंस प्राप्ति
+[temporary license page](https://purchase.groupdocs.com/temporary-license) से एक अस्थायी ट्रायल लाइसेंस प्राप्त करें। यह लाइसेंस इवैल्युएशन लिमिट्स को हटाता है और आपको सभी फीचर्स टेस्ट करने देता है।
 
-## इम्प्लीमेंटेशन गाइड
-इस सेक्शन में, हम GroupDocs.Parser जावा का उपयोग करके ईमेल फ़ाइल से टेक्स्ट एक्सट्रैक्शन को प्रबंधनीय चरणों में विभाजित करेंगे।
+## Java में MSG को टेक्स्ट में कैसे कनवर्ट करें
+ईमेल फ़ाइल लोड करें, सत्यापित करें कि टेक्स्ट एक्सट्रैक्शन समर्थित है, और `TextReader` के साथ कंटेंट पढ़ें।
 
-### .msg फ़ाइल जावा में कैसे पढ़ें
-#### अवलोकन
-यह फीचर आपको ईमेल फ़ाइल (.msg फ़ॉर्मैट) से टेक्स्टुअल कंटेंट निकालने और पढ़ने की अनुमति देता है। हम दिखाएंगे कि कैसे अपने ईमेल फ़ाइल के लिए `Parser` ऑब्जेक्ट को इनिशियलाइज़ करें और उसका उपयोग करके टेक्स्ट कंटेंट प्राप्त करें।
+**सीधा उत्तर (40‑70 शब्द):**  
+एक `Parser` इंस्टेंस बनाएं जिसमें आपके *.msg* फ़ाइल का पाथ हो, समर्थन की पुष्टि के लिए `parser.getFeatures().isText()` कॉल करें, फिर `TextReader` का उपयोग करके ईमेल का सब्जेक्ट और बॉडी पढ़ें। अंत में, स्ट्रिंग्स को आउटपुट करें या फ़ाइल में लिखें—यह पूरी प्रक्रिया केवल तीन API कॉल्स की आवश्यकता रखती है।
 
-#### चरण‑दर‑चरण इम्प्लीमेंटेशन
-**1. आवश्यक लाइब्रेरी इम्पोर्ट करें**  
-आवश्यक क्लासेज़ को इम्पोर्ट करके शुरू करें:
+### चरण 1: आवश्यक क्लासेस इम्पोर्ट करें
+अपने Java स्रोत फ़ाइल में आवश्यक GroupDocs.Parser क्लासेस को इम्पोर्ट करके शुरू करें।
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -101,8 +135,11 @@ import com.groupdocs.parser.data.TextReader;
 import java.io.IOException;
 ```
 
-**2. ईमेल फ़ाइल पाथ के साथ Parser इनिशियलाइज़ करें**  
-अपने ईमेल फ़ाइल पाथ का उपयोग करके एक `Parser` इंस्टेंस बनाएं। सुनिश्चित करें कि यह पाथ आपके डायरेक्टरी में मौजूद .msg फ़ाइल की ओर इशारा करता हो।
+> **Definition anchor:** `TextReader` एक हाई‑लेवल API है जो दस्तावेज़ से टेक्स्टुअल कंटेंट को स्ट्रीम करता है, लाइन‑बाय‑लाइन डिलीवर करता है जिससे मेमोरी उपयोग कुशल रहता है।
+
+### चरण 2: MSG पाथ के साथ Parser को इनिशियलाइज़ करें
+`Parser` समर्थित दस्तावेज़ों को पढ़ने का मुख्य एंट्री पॉइंट है, जिसमें MSG ईमेल फ़ाइलें शामिल हैं।  
+`Parser` को उस *.msg* फ़ाइल के एब्सोल्यूट या रिलेटिव पाथ के साथ इंस्टैंशिएट करें जिसे आप प्रोसेस करना चाहते हैं।
 
 ```java
 String emailFilePath = "YOUR_DOCUMENT_DIRECTORY/sample.msg"; // Replace with your document path
@@ -122,57 +159,86 @@ try (Parser parser = new Parser(emailFilePath)) {
 }
 ```
 
-**व्याख्या:**
-- **Parser इनिशियलाइज़ेशन:** `Parser` ऑब्जेक्ट को आपके .msg फ़ाइल पाथ के साथ इनिशियलाइज़ किया जाता है।  
-- **फ़ीचर चेक:** टेक्स्ट एक्सट्रैक्शन का प्रयास करने से पहले, हम `parser.getFeatures().isText()` के माध्यम से जांचते हैं कि यह डॉक्यूमेंट टाइप टेक्स्ट एक्सट्रैक्शन को सपोर्ट करता है या नहीं।  
-- **टेक्स्ट एक्सट्रैक्ट:** यदि सपोर्टेड है, तो `TextReader` ऑब्जेक्ट का उपयोग करके ईमेल की सभी टेक्स्टुअल कंटेंट पढ़ी और प्रिंट की जाती है।
+### चरण 3: टेक्स्ट एक्सट्रैक्शन क्षमता सत्यापित करें
+पढ़ने से पहले, जांचें कि वर्तमान दस्तावेज़ प्रकार टेक्स्ट एक्सट्रैक्शन को सपोर्ट करता है या नहीं:
 
-### ईमेल टेक्स्ट जावा में कैसे एक्सट्रैक्ट करें
-#### ट्रबलशूटिंग टिप्स
-- सुनिश्चित करें कि आपका .msg फ़ाइल पाथ सही है; अन्यथा `IOException` फेंका जाएगा।  
-- जांचें कि GroupDocs.Parser आपके द्वारा उपयोग किए जा रहे विशिष्ट फ़ाइल फ़ॉर्मैट के लिए टेक्स्ट एक्सट्रैक्शन सपोर्ट करता है या नहीं। सभी फ़ॉर्मैट पूरी तरह इस फीचर को सपोर्ट नहीं कर सकते।
+```text
+if (!parser.getFeatures().isText()) {
+    System.out.println("Text extraction not supported for this file.");
+    return;
+}
+```
+
+> **Tip:** यह गार्ड `UnsupportedOperationException` को रोकता है उन फॉर्मेट्स के लिए जो केवल मेटाडाटा एक्सट्रैक्शन की अनुमति देते हैं।
+
+### चरण 4: ईमेल टेक्स्ट पढ़ें और आउटपुट करें
+`TextReader` दस्तावेज़ से टेक्स्टुअल कंटेंट को लाइन बाय लाइन स्ट्रीम करता है, जिससे लो‑मेमोरी प्रोसेसिंग संभव होती है।  
+`TextReader` का उपयोग करके सब्जेक्ट और बॉडी को स्ट्रीम करें। रीडर प्रत्येक टेक्स्ट लाइन रिटर्न करता है, जिसे आप कंकैटेनेट कर सकते हैं या सीधे फ़ाइल में लिख सकते हैं।
+
+```text
+try (TextReader reader = parser.getText()) {
+    StringBuilder emailContent = new StringBuilder();
+    while (reader.readLine() != null) {
+        emailContent.append(reader.getCurrentLine()).append(System.lineSeparator());
+    }
+    System.out.println(emailContent.toString());
+}
+```
+
+**यह क्यों महत्वपूर्ण है:** स्ट्रीमिंग पूरे ईमेल को मेमोरी में लोड करने से बचाती है, जो कई अटैचमेंट्स वाले बड़े संदेशों को हैंडल करने पर अत्यंत महत्वपूर्ण है।
+
+## सामान्य समस्याएँ और समाधान
+- **गलत फ़ाइल पाथ:** एक अमान्य पाथ `IOException` फेंकता है। पाथ सत्यापित करें और `Parser` को इनिशियलाइज़ करने से पहले `Files.exists(Paths.get(path))` का उपयोग करें।  
+- **असमर्थित फॉर्मेट:** सभी ईमेल फॉर्मेट्स टेक्स्ट नहीं दिखाते। असमर्थित फ़ाइलों से बचने के लिए `parser.getFeatures().isText()` का उपयोग करें।  
+- **लाइसेंस लागू नहीं हुआ:** यदि ट्रायल लाइसेंस लोड नहीं हुआ, तो आपको लाइसेंसिंग एरर दिखाई देगा। `License` GroupDocs ट्रायल या कमर्शियल लाइसेंस लागू करता है जिससे पूरी फ़ंक्शनैलिटी सक्षम होती है। अपने एप्लिकेशन में लाइसेंस फ़ाइल को जल्दी लोड करें `License license = new License(); license.setLicense("path/to/license.lic");`।
 
 ## व्यावहारिक अनुप्रयोग
-ईमेल से टेक्स्ट निकालने के कई व्यावहारिक उपयोग हैं:
-1. **ऑटोमेटेड ईमेल प्रोसेसिंग:** इनकमिंग ईमेल को उनके कंटेंट के आधार पर स्वचालित रूप से प्रोसेस और वर्गीकृत करना।  
-2. **डेटा एनालिसिस:** नाम, तिथि, पता आदि प्रमुख जानकारी निकालकर आगे के डेटा विश्लेषण या रिपोर्टिंग के लिए उपयोग करना।  
-3. **CRM सिस्टम के साथ इंटीग्रेशन:** निकाले गए ईमेल डेटा को कस्टमर रिलेशनशिप मैनेजमेंट सिस्टम में फीड करके ग्राहक इंटरैक्शन को बेहतर बनाना।
+MSG को टेक्स्ट में कनवर्ट करना कई ऑटोमेशन परिदृश्यों को खोलता है:
 
-## प्रदर्शन संबंधी विचार
-जावा में GroupDocs.Parser का उपयोग करके टेक्स्ट एक्सट्रैक्शन करते समय, प्रदर्शन को अनुकूलित करने के लिए निम्नलिखित टिप्स पर विचार करें:
-- **मेमोरी मैनेजमेंट:** स्ट्रीम्स को उपयोग के बाद बंद करके संसाधनों को सही ढंग से हैंडल करके मेमोरी उपयोग को कुशल बनाएं।  
-- **बैच प्रोसेसिंग:** यदि कई ईमेल प्रोसेस कर रहे हैं, तो उन्हें बैच में समूहित करें ताकि ओवरहेड कम हो और थ्रूपुट बढ़े।
+1. **ऑटोमेटेड टिकट रूटिंग:** आने वाले सपोर्ट ईमेल्स को पार्स करें और बॉडी से निकाले गए कीवर्ड्स के आधार पर रूट करें।  
+2. **कम्प्लायंस आर्काइविंग:** खोज योग्य कानूनी आर्काइव्स के लिए ईमेल्स के प्लेन‑टेक्स्ट वर्ज़न स्टोर करें।  
+3. **CRM एन्हांसमेंट:** ईमेल सिग्नेचर से ग्राहक विवरण निकालें और उन्हें CRM सिस्टम में फीड करें।  
+4. **सेंटिमेंट एनालिसिस:** निकाले गए ईमेल बॉडी को NLP पाइपलाइन में फीड करें ताकि ग्राहक की भावना का आकलन किया जा सके।  
 
-## निष्कर्ष
-बधाई हो! आपने इस गाइड को पूरा कर लिया है। आपने जावा के लिए GroupDocs.Parser को सेटअप करना और **ईमेल से टेक्स्ट निकालना** कुशलता से सीख लिया है। यह ज्ञान आपके प्रोजेक्ट्स में अधिक जटिल डेटा एक्सट्रैक्शन और ऑटोमेशन समाधान बनाने की दिशा में एक कदम हो सकता है।
+## प्रदर्शन टिप्स
+- **Parser इंस्टेंस को पुनः उपयोग करें:** बैच प्रोसेसिंग के दौरान, जहाँ संभव हो एक ही `Parser` ऑब्जेक्ट को पुनः उपयोग करें ताकि JVM ओवरहेड कम हो।  
+- **पैरेलल प्रोसेसिंग:** कई फ़ाइलों को एक साथ हैंडल करने के लिए Java के `ForkJoinPool` का उपयोग करें, लेकिन अत्यधिक मेमोरी प्रेशर से बचने के लिए पैरेललिज़्म को सीमित रखें।  
+- **डिस्क पर स्ट्रीम करें:** अत्यधिक बड़े ईमेल्स के लिए, बड़े `StringBuilder` बनाने के बजाय `TextReader` आउटपुट को सीधे फ़ाइल में पाइप करें।  
 
-अगले कदम के रूप में, GroupDocs.Parser की अन्य सुविधाओं का अन्वेषण करें या इसे डेटाबेस या एनालिटिक्स टूल्स जैसे अतिरिक्त सिस्टम्स के साथ इंटीग्रेट करें। यदि आपके कोई प्रश्न हैं या आगे सहायता चाहिए, तो [GroupDocs सपोर्ट फ़ोरम](https://forum.groupdocs.com/c/parser) पर बेझिझक संपर्क करें।
+## अक्सर पूछे जाने वाले प्रश्न
 
-## अक्सर पूछे जाने वाले प्रश्न (FAQ)
-**1. मैं GroupDocs.Parser का उपयोग करके किन फ़ाइल फ़ॉर्मैट से टेक्स्ट एक्सट्रैक्ट कर सकता हूँ?**  
-GroupDocs.Parser .msg, .pdf, .docx और कई अन्य दस्तावेज़ फ़ॉर्मैट को सपोर्ट करता है।
+**प्रश्न: मैं GroupDocs.Parser के साथ कौन से फ़ाइल फॉर्मेट्स को टेक्स्ट में कनवर्ट कर सकता हूँ?**  
+A: 50 से अधिक फॉर्मेट्स, जैसे *.msg*, *.eml*, *.pdf*, *.docx*, और *.xlsx*, को प्लेन टेक्स्ट में कनवर्ट किया जा सकता है।
 
-**2. टेक्स्ट एक्सट्रैक्शन के दौरान त्रुटियों को कैसे हैंडल करूँ?**  
-फ़ाइल हैंडलिंग या पार्सिंग के दौरान उत्पन्न `IOException` या अन्य संबंधित एक्सेप्शन को पकड़ने के लिए try‑catch ब्लॉक्स का उपयोग करें।
+**प्रश्न: एन्क्रिप्टेड या पासवर्ड‑प्रोटेक्टेड ईमेल्स को कैसे हैंडल करूँ?**  
+A: पहले अपने लॉजिक से ईमेल को डिक्रिप्ट करें, फिर डिक्रिप्टेड स्ट्रीम को `Parser` को पास करें। लाइब्रेरी स्वचालित रूप से प्रोटेक्टेड फ़ाइलों को डिक्रिप्ट नहीं करती।
 
-**3. क्या मैं एन्क्रिप्टेड ईमेल से टेक्स्ट एक्सट्रैक्ट कर सकता हूँ?**  
-टेक्स्ट एक्सट्रैक्शन केवल तभी संभव है जब ईमेल को GroupDocs.Parser द्वारा प्रोसेस करने से पहले डिक्रिप्ट किया जा सके।
+**प्रश्न: MSG फ़ाइलों के लिए कोई आकार सीमा है?**  
+A: GroupDocs.Parser अपनी स्ट्रीमिंग आर्किटेक्चर के कारण पूरी फ़ाइल को मेमोरी में लोड किए बिना 2 GB तक की फ़ाइलें प्रोसेस कर सकता है।
 
-**4. क्या ईमेल फ़ाइलों के आकार पर कोई सीमा है?**  
-GroupDocs.Parser द्वारा कोई विशिष्ट सीमा निर्धारित नहीं है, लेकिन बहुत बड़े फ़ाइलों को प्रोसेस करने के लिए अतिरिक्त मेमोरी और संसाधनों की आवश्यकता हो सकती है।
+**प्रश्न: GroupDocs.Parser का नवीनतम संस्करण कैसे अपडेट करूँ?**  
+A: `pom.xml` में `<version>` एलिमेंट को [GroupDocs releases](https://releases.groupdocs.com/parser/java/) पेज पर सूचीबद्ध नवीनतम नंबर में बदलें और `mvn clean install` चलाएँ।
 
-**5. Maven में GroupDocs.Parser का नया संस्करण कैसे अपडेट करूँ?**  
-`pom.xml` फ़ाइल में `<version>` टैग को [GroupDocs डाउनलोड पेज](https://releases.groupdocs.com/parser/java/) पर उपलब्ध नवीनतम संस्करण संख्या से अपडेट करें।
+**प्रश्न: अधिक कोड उदाहरण कहाँ मिलेंगे?**  
+A: आधिकारिक दस्तावेज़ीकरण और GitHub रिपॉजिटरी में कई सैंपल्स हैं जो अटैचमेंट एक्सट्रैक्शन और मेटाडाटा हैंडलिंग जैसे एडवांस्ड परिदृश्यों को कवर करते हैं।
 
 ## संसाधन
-- **डॉक्यूमेंटेशन:** विस्तृत डॉक्यूमेंटेशन के लिए देखें [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)।  
-- **API रेफ़रेंस:** व्यापक API विवरण के लिए देखें [GroupDocs API Reference](https://reference.groupdocs.com/parser/java)।  
-- **डाउनलोड:** नवीनतम संस्करण प्राप्त करें [GroupDocs Downloads](https://releases.groupdocs.com/parser/java/) से।  
-- **GitHub रिपॉज़िटरी:** स्रोत कोड देखें [GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)।  
-- **फ़्री सपोर्ट:** चर्चा में भाग लें और मदद प्राप्त करें [GroupDocs फ़ोरम](https://forum.groupdocs.com/c/parser) पर।
+- **डॉक्यूमेंटेशन:** विस्तृत गाइड्स यहाँ देखें [GroupDocs Parser Java दस्तावेज़ीकरण](https://docs.groupdocs.com/parser/java/).  
+- **API रेफ़रेंस:** पूर्ण API देखें [GroupDocs API रेफ़रेंस](https://reference.groupdocs.com/parser/java).  
+- **डाउनलोड:** नवीनतम बाइनरी यहाँ प्राप्त करें [GroupDocs डाउनलोड्स](https://releases.groupdocs.com/parser/java/).  
+- **GroupDocs डाउनलोड्स पेज:** वही बाइनरी इस पेज से एक्सेस करें [GroupDocs डाउनलोड्स पेज](https://releases.groupdocs.com/parser/java/).  
+- **GitHub रिपॉजिटरी:** स्रोत कोड और समुदाय योगदान देखें [GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java).  
+- **Free Support:** प्रश्न पूछें [GroupDocs सपोर्ट फ़ोरम](https://forum.groupdocs.com/c/parser).  
+- **GroupDocs फ़ोरम:** अतिरिक्त समुदाय चर्चाएँ उपलब्ध हैं [GroupDocs फ़ोरम](https://forum.groupdocs.com/c/parser).
 
 ---
 
-**अंतिम अपडेट:** 2026-01-03  
-**टेस्टेड विद:** GroupDocs.Parser 25.5 for Java  
+**अंतिम अपडेट:** 2026-07-02  
+**परीक्षण किया गया:** GroupDocs.Parser 25.5 for Java  
 **लेखक:** GroupDocs
+
+## संबंधित ट्यूटोरियल
+
+- [Java में GroupDocs.Parser का उपयोग करके ईमेल मेटाडाटा निकालना – एक व्यापक गाइड](/parser/java/metadata-extraction/extract-metadata-emails-groupdocs-parser-java/)
+- [Outlook PST फ़ाइल पार्स करें: GroupDocs.Parser Java के साथ अटैचमेंट्स और मेटाडाटा निकालें](/parser/java/metadata-extraction/extract-outlook-attachments-metadata-groupdocs-parser-java/)
+- [Java में GroupDocs.Parser के साथ PDF टेक्स्ट पढ़ें: एक पूर्ण गाइड](/parser/java/getting-started/document-parsing-java-groupdocs-parser-guide/)

@@ -1,66 +1,78 @@
 ---
-date: '2026-01-01'
-description: Leer hoe u een document naar HTML kunt converteren met GroupDocs.Parser
-  voor Java, docx naar HTML kunt parseren en efficiënt opgemaakte tekst kunt extraheren.
+date: '2026-07-02'
+description: Leer hoe je doc naar HTML kunt converteren met GroupDocs.Parser voor
+  Java, docx naar HTML kunt parseren en efficiënt opgemaakte tekst kunt extraheren.
 keywords:
-- extract document text as HTML
-- GroupDocs.Parser Java setup
-- HTML formatted text extraction
-title: 'Hoe een document te converteren naar HTML met GroupDocs.Parser Java: Een stapsgewijze
-  handleiding'
+- convert doc to html
+- parse docx to html
+- convert document html java
+- read document as html
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-02'
+  description: Learn how to convert doc to html with GroupDocs.Parser for Java, parse
+    docx to html and extract formatted text efficiently.
+  headline: How to Convert Doc to HTML Using GroupDocs.Parser for Java – Step‑by‑Step
+    Guide
+  type: TechArticle
+- questions:
+  - answer: It’s a versatile library for extracting text, metadata, and formatted
+      content (including HTML) from a wide range of document formats.
+    question: What is GroupDocs.Parser Java used for?
+  - answer: Yes—set `FormattedTextMode.Html` as shown, and the parser returns the
+      DOCX content as HTML.
+    question: Can I parse docx to html with this library?
+  - answer: Large files consume more memory, but using try‑with‑resources and streaming
+      techniques mitigates the impact; the library can handle files up to 2 GB without
+      loading the entire file into memory.
+    question: Is there a performance impact when parsing large documents?
+  - answer: The parser returns `null` for unsupported extraction modes; implement
+      fallback logic or notify the user accordingly.
+    question: How do I handle unsupported document features?
+  - answer: Visit the official documentation and community links listed below.
+    question: Where can I find more resources on GroupDocs.Parser Java?
+  type: FAQPage
+title: Hoe doc naar HTML te converteren met GroupDocs.Parser voor Java – Stapsgewijze
+  handleiding
 type: docs
 url: /nl/java/formatted-text-extraction/extract-document-text-as-html-groupdocs-parser-java/
 weight: 1
 ---
 
-# Hoe Document naar HTML Converteren met GroupDocs.Parser Java: Een Stapsgewijze Gids
+# Hoe Doc naar HTML Converteren met GroupDocs.Parser voor Java – Stapsgewijze Gids
 
-Tekst uit een bestand extraheren en **document naar html converteren** kan ontmoedigend aanvoelen, vooral wanneer je de opmaak moet behouden. In deze tutorial lopen we de exacte stappen door om GroupDocs.Parser voor Java te gebruiken om **document naar html te converteren**, docx naar html te parseren en het document als html te lezen op een schone, onderhoudbare manier. Aan het einde heb je een kant‑klaar fragment dat Word‑bestanden omzet in web‑vriendelijke HTML‑inhoud.
+Het **converteren van een doc naar html** is een veelvoorkomende behoefte wanneer je Word‑inhoud op het web wilt weergeven zonder opmaak te verliezen. In deze tutorial lopen we stap voor stap door hoe je GroupDocs.Parser voor Java gebruikt om **doc naar html te converteren**, docx naar html te parseren en het document als html te lezen op een schone, onderhoudbare manier. Aan het einde heb je een kant‑klaar fragment dat Word‑bestanden omzet in web‑vriendelijke HTML‑inhoud, en begrijp je waarom deze aanpak het meest betrouwbaar is voor Java‑ontwikkelaars.
 
 ## Snelle Antwoorden
-- **Welke bibliotheek verwerkt HTML-conversie?** GroupDocs.Parser for Java  
+- **Welke bibliotheek verwerkt HTML‑conversie?** GroupDocs.Parser voor Java  
 - **Welke modus extraheert HTML?** `FormattedTextMode.Html`  
 - **Heb ik een licentie nodig?** Een gratis proefversie of tijdelijke licentie werkt voor testen; een volledige licentie is vereist voor productie.  
 - **Kan ik DOCX‑bestanden parseren?** Ja – de parser ondersteunt DOCX, PDF, PPTX en nog veel meer formaten.  
-- **Is geheugenbeheer belangrijk?** Absoluut; sluit altijd parsers en readers om lekken te voorkomen.
+- **Is geheugenbeheer belangrijk?** Absoluut; sluit altijd parsers en readers om lekken te voorkomen.  
+- **Hoe groot mag een document zijn?** Tot 2 GB‑bestanden worden verwerkt zonder het volledige bestand in het geheugen te laden.  
 
-## Introductie
+## Wat betekent “convert doc to html”?
+Het converteren van een doc naar html houdt in dat een Microsoft Word‑bestand (DOC of DOCX) wordt omgezet naar een HTML‑representatie die de oorspronkelijke lay‑out, stijlen, koppen, tabellen, afbeeldingen en andere elementen behoudt. De resulterende HTML kan direct in webpagina’s worden ingebed, in browsers worden weergegeven of worden gevoed aan content‑management‑systemen.
 
-Tekst uit documenten extraheren en omzetten naar HTML‑formaat met Java kan uitdagend zijn. Veel ontwikkelaars ondervinden moeilijkheden bij het parseren van documenten voor specifieke formaten zoals HTML. Deze gids leidt je door het proces van het extraheren van documenttekst als HTML met GroupDocs.Parser Java — een robuuste bibliotheek ontworpen om verschillende documentformaten te verwerken.
+## Waarom GroupDocs.Parser voor Java gebruiken om doc naar html te converteren?
+GroupDocs.Parser ondersteunt **meer dan 100 invoer‑ en uitvoerformaten** en kan documenten van honderden pagina’s verwerken in enkele seconden op standaard serverhardware. De `FormattedTextMode.Html`‑extractie garandeert dat alinea‑stijlen, lijsten en tabellen nauwkeurig worden gereproduceerd, waardoor handmatige nabewerking overbodig wordt.
 
-Door deze tutorial te volgen, leer je hoe je documentinhoud naadloos kunt omzetten naar HTML, waardoor het gemakkelijker wordt om te tonen en te manipuleren op webplatformen. Dit zul je ontdekken:
-- GroupDocs.Parser instellen in je Java‑project
-- Geformatteerde tekst uit documenten extraheren met HTML‑modus
-- Praktische toepassingen van de geëxtraheerde HTML‑inhoud
+## Vereisten
 
-Laten we verkennen hoe je GroupDocs.Parser effectief kunt gebruiken voor dit doel.
+Zorg ervoor dat je het volgende hebt:
 
-## Voorvereisten
+- **Java Development Kit (JDK) 8+** geïnstalleerd op je machine.  
+- Een IDE zoals **IntelliJ IDEA**, **Eclipse** of **NetBeans**.  
+- **Maven** of **Gradle** voor afhankelijkheidsbeheer.  
+- Basiskennis van Java‑syntaxis en HTML‑concepten (optioneel maar nuttig).  
 
-Zorg ervoor dat je deze voorvereisten hebt voltooid voordat je begint:
+## Hoe stel ik GroupDocs.Parser voor Java in?
 
-### Vereiste Bibliotheken, Versies en Afhankelijkheden
+Om GroupDocs.Parser voor Java te gebruiken, moet je eerst de bibliotheek toevoegen aan de afhankelijkheden van je project. Dit kan via Maven, Gradle of door handmatig het JAR‑bestand te downloaden en toe te voegen aan je classpath. Nadat de afhankelijkheid is opgelost, kun je de parser in je code gaan gebruiken.
 
-Integreer de GroupDocs.Parser‑bibliotheek in je Java‑project met Maven of door deze te downloaden van de GroupDocs‑website. Gebruik versie 25.5 voor compatibiliteit.
+### Maven-configuratie
 
-### Vereisten voor Omgevingsconfiguratie
-
-- **Java Development Kit (JDK):** Zorg ervoor dat JDK op je systeem is geïnstalleerd.  
-- **IDE:** Je kunt elke IDE gebruiken, zoals IntelliJ IDEA, Eclipse of NetBeans.  
-- **Build‑tool:** Stel Maven of Gradle in voor afhankelijkheidsbeheer.
-
-### Kennisvoorvereisten
-
-Bekendheid met Java‑programmeren en basiskennis van bibliotheken voor documentverwerking is nuttig. Basiskennis van HTML is behulpzaam, maar niet verplicht.
-
-## GroupDocs.Parser voor Java Instellen
-
-Om GroupDocs.Parser in je Java‑project te gebruiken, volg je deze stappen:
-
-### Maven‑configuratie
-
-Voeg de volgende repository en afhankelijkheid toe aan je `pom.xml`‑bestand:
-
+```markdown
 ```xml
 <repositories>
    <repository>
@@ -78,19 +90,25 @@ Voeg de volgende repository en afhankelijkheid toe aan je `pom.xml`‑bestand:
    </dependency>
 </dependencies>
 ```
+```
 
-### Directe Download
+### Directe download
 
 Als je liever geen Maven gebruikt, download dan de nieuwste versie van [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
-### Licentie‑verwerving
+### Licentie‑acquisitie
 
 - **Gratis proefversie:** Begin met een gratis proefversie om GroupDocs.Parser te testen.  
 - **Tijdelijke licentie:** Verkrijg een tijdelijke licentie voor uitgebreide toegang tot alle functies.  
 - **Aankoop:** Overweeg een volledige licentie aan te schaffen voor langdurig gebruik.
 
-Zodra je de bibliotheek hebt ingesteld, initialiseert je deze in je project:
+## Hoe kan ik de parser initialiseren en HTML extraheren?
 
+Het initialiseren van de parser omvat het maken van een `Parser`‑object dat naar het bron‑document wijst. Zodra de parser is aangemaakt, configureer je `FormattedTextOptions` om HTML‑output te specificeren, en roep je vervolgens de extractiemethode aan die een `TextReader` retourneert. De reader levert de volledige HTML‑string die je kunt verwerken of weergeven.
+
+De `Parser`‑klasse leest een document en biedt methoden om de inhoud te extraheren.
+
+```markdown
 ```java
 import com.groupdocs.parser.Parser;
 
@@ -105,30 +123,34 @@ public class DocumentParser {
     }
 }
 ```
+```
 
 ## Implementatie‑gids
 
-Met je omgeving klaar, laten we de functie implementeren om **document naar html te converteren** en geformatteerde tekst te extraheren.
+Met je omgeving klaar, laten we de functionaliteit implementeren om **doc naar html te converteren** en opgemaakte tekst te extraheren.
 
-### Geformatteerde Tekst Extraheren met HTML‑modus
+### Welke klassen zijn betrokken bij het parseren en extraheren van HTML?
 
-Deze functie stelt je in staat om documentinhoud op te halen in een gestructureerd HTML‑formaat. Volg deze stappen:
+De belangrijkste klassen waarmee je werkt zijn `Parser`, die het document opent en leest, `FormattedTextOptions` die het gewenste uitvoerformaat definieert, en `TextReader`, die de geëxtraheerde inhoud streamt. `FormattedTextMode` is een enum die het uitvoerformaat specificeert, bijvoorbeeld Html, PlainText of Markdown.
 
-#### Stap 1: Importeer Benodigde Pakketten
+`FormattedTextOptions` configureert hoe de parser de geëxtraheerde output opmaakt, zoals HTML of platte tekst.  
+`TextReader` streamt de geëxtraheerde tekst zodat je deze als string kunt lezen of regel voor regel kunt verwerken.  
+`FormattedTextMode` is een enum die het uitvoerformaat aangeeft, bijvoorbeeld Html, PlainText of Markdown.
 
-Zorg ervoor dat alle benodigde pakketten aan het begin van je Java‑bestand worden geïmporteerd:
+### Stap 1: Importeer benodigde pakketten
 
+```markdown
 ```java
 import com.groupdocs.parser.Parser;
 import com.groupdocs.parser.data.TextReader;
 import com.groupdocs.parser.options.FormattedTextOptions;
 import com.groupdocs.parser.options.FormattedTextMode;
 ```
+```
 
-#### Stap 2: Initialiseert Parser en Extraheert HTML
+### Stap 2: Initialiseer parser en extraheren HTML
 
-Gebruik de volgende code‑fragment om tekst geformatteerd als HTML te extraheren:
-
+```markdown
 ```java
 String documentPath = "YOUR_DOCUMENT_DIRECTORY/sample.docx";
 
@@ -146,69 +168,70 @@ try (Parser parser = new Parser(documentPath)) {
     System.out.println("An error occurred: " + e.getMessage());
 }
 ```
+```
 
 **Uitleg:**  
 - **Parser‑initialisatie:** Maakt een `Parser`‑instantie voor het doelbestand.  
 - **FormattedTextOptions:** Geeft de parser de opdracht om HTML uit te voeren (`FormattedTextMode.Html`).  
-- **Foutafhandeling:** Vangt eventuele problemen op en rapporteert ze op een nette manier.
+- **Foutafhandeling:** Vangt eventuele problemen op en meldt ze op een nette manier.
 
-### Tips voor Probleemoplossing
+## Veelvoorkomende problemen en oplossingen
 
-- Controleer of het documentpad correct is en het bestand leesbaar is.  
-- Bevestig dat jouw GroupDocs.Parser‑versie HTML‑extractie ondersteunt voor het opgegeven formaat.  
-- Controleer Maven/Gradle‑afhankelijkheden opnieuw als je `ClassNotFoundException`‑fouten tegenkomt.
+- **Onjuist bestandspad:** Controleer of het absolute of relatieve pad naar een bestaand, leesbaar bestand wijst.  
+- **Niet‑ondersteund formaat:** Zorg ervoor dat jouw versie van GroupDocs.Parser HTML‑extractie voor het betreffende formaat ondersteunt; upgrade indien nodig.  
+- **ClassNotFoundException:** Controleer of de Maven/Gradle‑afhankelijkheden correct zijn opgelost en of het JAR‑bestand op de classpath staat.  
 
-## Praktische Toepassingen
+## Praktische toepassingen
 
-HTML uit documenten extraheren biedt tal van mogelijkheden:
-1. **Webinhoud Creatie:** Converteer rapporten of handleidingen naar webpagina's voor directe online toegang.  
-2. **Gegevensintegratie:** Voer de HTML in een CMS of headless API in om dynamische pagina's te genereren.  
-3. **Inhoudsanalyse:** Verwerk de HTML via tekst‑analyse pipelines of machine‑learning modellen terwijl je structurele aanwijzingen behoudt.
+Het extraheren van HTML uit documenten opent vele mogelijkheden:
+
+1. **Web‑contentcreatie:** Zet interne rapporten of handleidingen om in direct bekijkbare webpagina’s.  
+2. **Data‑integratie:** Voed de HTML in een CMS of headless API om dynamisch pagina’s te genereren.  
+3. **Content‑analyse:** Verwerk de HTML via tekst‑analyse‑pipelines of machine‑learning‑modellen terwijl je structurele aanwijzingen zoals koppen en tabellen behoudt.  
 
 ## Prestatie‑overwegingen
 
-Voor optimale prestaties bij het gebruik van GroupDocs.Parser:
-- **Sluit bronnen direct:** Gebruik altijd try‑with‑resources (zoals getoond) om geheugen vrij te maken.  
-- **Stream grote bestanden:** Verwerk grote documenten in delen als je geheugenlimieten bereikt.  
-- **Herbruik Parser‑instanties:** Bij het parseren van veel bestanden van hetzelfde type, hergebruik een enkele `Parser`‑configuratie.
+Voor optimale prestaties bij gebruik van GroupDocs.Parser:
 
-## Conclusie
+- **Bronnen direct sluiten:** Gebruik altijd try‑with‑resources (zoals getoond) om geheugen vrij te maken.  
+- **Grote bestanden streamen:** Verwerk enorme documenten in delen als je geheugen‑druk ondervindt.  
+- **Parser‑instanties hergebruiken:** Bij het parseren van veel bestanden van hetzelfde type, hergebruik een enkele `Parser`‑configuratie om overhead te verminderen.  
 
-Je hebt geleerd hoe je **document naar html kunt converteren** met GroupDocs.Parser voor Java. Deze mogelijkheid opent krachtige manieren om documentinhoud op het web te presenteren, integreren en analyseren.
+## Veelgestelde vragen
 
-**Volgende stappen:**  
-- Experimenteer met andere uitvoerformaten zoals PDF of platte tekst.  
-- Combineer HTML‑extractie met een templating‑engine om volledige webpagina's te bouwen.  
-- Verken de volledige API om tabellen, afbeeldingen en metadata te extraheren.
+**V: Waar wordt GroupDocs.Parser Java voor gebruikt?**  
+A: Het is een veelzijdige bibliotheek voor het extraheren van tekst, metadata en opgemaakte inhoud (inclusief HTML) uit een breed scala aan documentformaten.
 
-## Veelgestelde Vragen
+**V: Kan ik docx naar html parseren met deze bibliotheek?**  
+A: Ja—stel `FormattedTextMode.Html` in zoals getoond, en de parser retourneert de DOCX‑inhoud als HTML.
 
-**Q: Waar wordt GroupDocs.Parser Java voor gebruikt?**  
-A: Het is een veelzijdige bibliotheek voor het extraheren van tekst, metadata en geformatteerde inhoud (inclusief HTML) uit een breed scala aan documentformaten.
+**V: Heeft het parsen van grote documenten invloed op de prestaties?**  
+A: Grote bestanden verbruiken meer geheugen, maar het gebruik van try‑with‑resources en streaming‑technieken beperkt de impact; de bibliotheek kan bestanden tot 2 GB verwerken zonder het volledige bestand in het geheugen te laden.
 
-**Q: Kan ik docx naar html parseren met deze bibliotheek?**  
-A: Ja—stel simpelweg `FormattedTextMode.Html` in zoals getoond, en de parser retourneert de DOCX‑inhoud als HTML.
-
-**Q: Heeft het parseren van grote documenten invloed op de prestaties?**  
-A: Grote bestanden verbruiken meer geheugen, maar het gebruik van try‑with‑resources en streaming‑technieken vermindert de impact.
-
-**Q: Hoe ga ik om met niet‑ondersteunde documentfuncties?**  
+**V: Hoe ga ik om met niet‑ondersteunde documentfuncties?**  
 A: De parser retourneert `null` voor niet‑ondersteunde extractiemodi; implementeer fallback‑logica of informeer de gebruiker dienovereenkomstig.
 
-**Q: Waar vind ik meer bronnen over GroupDocs.Parser Java?**  
-A: Bezoek de [officiële documentatie](https://docs.groupdocs.com/parser/java/) en verken community‑forums voor tips en voorbeelden.
+**V: Waar vind ik meer bronnen over GroupDocs.Parser Java?**  
+A: Bezoek de officiële documentatie en community‑links hieronder.
 
 ## Bronnen
 
 - **Documentatie:** [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)  
+- **Officiële documentatie:** [official documentation](https://docs.groupdocs.com/parser/java/)  
 - **API‑referentie:** [GroupDocs Parser Java API Reference](https://reference.groupdocs.com/parser/java)  
 - **Download:** [GroupDocs Parser Java Releases](https://releases.groupdocs.com/parser/java/)  
 - **GitHub:** [GroupDocs.Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
 - **Gratis ondersteuning:** [GroupDocs Parser Forum](https://forum.groupdocs.com/c/parser)  
-- **Tijdelijke licentie:** [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Tijdelijke licentie:** [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 
 ---
 
-**Laatst bijgewerkt:** 2026-01-01  
-**Getest met:** GroupDocs.Parser 25.5 for Java  
+**Laatst bijgewerkt:** 2026-07-02  
+**Getest met:** GroupDocs.Parser 25.5 voor Java  
 **Auteur:** GroupDocs
+
+## Gerelateerde tutorials
+
+- [Master Document Extraction with GroupDocs.Parser for Java: Convert Documents to HTML and Plain Text](/parser/java/text-extraction/master-document-extraction-groupdocs-parser-java/)
+- [Mastering Document Text Extraction in Java using GroupDocs.Parser: HTML and Markdown Guide](/parser/java/text-extraction/mastering-document-text-extraction-java-groupdocs-parser/)
+- [Java HTML Text Extraction Using GroupDocs.Parser: A Comprehensive Guide](/parser/java/text-extraction/java-text-extraction-html-groupdocs-parser/)

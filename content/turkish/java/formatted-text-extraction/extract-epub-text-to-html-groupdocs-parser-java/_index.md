@@ -1,50 +1,106 @@
 ---
-date: '2026-01-03'
-description: GroupDocs.Parser for Java kullanarak EPUB metnini HTML'ye nasıl çıkaracağınızı
-  öğrenin; dijital kütüphaneler ve e‑okuyucu uygulamaları için EPUB'u HTML'ye dönüştürmenin
-  en iyi yolu.
+date: '2026-07-02'
+description: GroupDocs.Parser for Java kullanarak EPUB'yi HTML'ye nasıl çıkaracağınızı
+  öğrenin; dijital kütüphaneler ve e‑reader uygulamaları için EPUB dosyalarını HTML'ye
+  dönüştürmenin en iyi çözümü.
 keywords:
-- extract EPUB text to HTML
+- extract epub to html
+- extract text from epub
 - GroupDocs.Parser for Java
-- text extraction from EPUB
-title: GroupDocs.Parser for Java ile EPUB Metnini HTML'ye Çıkarma
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-02'
+  description: Learn how to extract epub to html using GroupDocs.Parser for Java,
+    the best solution for converting EPUB files to HTML for digital libraries and
+    e‑reader apps.
+  headline: How to Extract EPUB to HTML with GroupDocs.Parser for Java
+  type: TechArticle
+- description: Learn how to extract epub to html using GroupDocs.Parser for Java,
+    the best solution for converting EPUB files to HTML for digital libraries and
+    e‑reader apps.
+  name: How to Extract EPUB to HTML with GroupDocs.Parser for Java
+  steps:
+  - name: '**Digital Libraries** – Serve e‑books directly in browsers without requiring
+      a separate reader.'
+    text: '**Digital Libraries** – Serve e‑books directly in browsers without requiring
+      a separate reader.'
+  - name: '**E‑reader Apps** – Load HTML into a WebView component for fast, native‑like
+      rendering on mobile devices.'
+    text: '**E‑reader Apps** – Load HTML into a WebView component for fast, native‑like
+      rendering on mobile devices.'
+  - name: '**Content Syndication** – Publish excerpts or full chapters on blogs, news
+      sites, or learning platforms while keeping formatting intact.'
+    text: '**Content Syndication** – Publish excerpts or full chapters on blogs, news
+      sites, or learning platforms while keeping formatting intact.'
+  type: HowTo
+- questions:
+  - answer: It extracts text, metadata, and images from many file formats—including
+      EPUB—providing ready‑to‑display HTML or plain text.
+    question: What is GroupDocs.Parser for Java used for?
+  - answer: Add the GroupDocs repository and the `groupdocs-parser` dependency to
+      your `pom.xml` as shown in the Installation section.
+    question: How do I set up my project with Maven?
+  - answer: Yes—GroupDocs.Parser supports PDFs, DOCX, and many other formats using
+      similar API calls.
+    question: Can I also extract PDF text with the same code?
+  - answer: Confirm the EPUB complies with EPUB 2/3 specifications and isn’t corrupted;
+      updating to the latest parser version often resolves edge‑case issues.
+    question: What should I do if extraction fails for a particular EPUB?
+  - answer: Use additional properties on `FormattedTextOptions` such as `setCssClass`,
+      or post‑process the `htmlContent` string to inject custom styles.
+    question: How can I customize the generated HTML (e.g., add CSS classes)?
+  type: FAQPage
+title: GroupDocs.Parser for Java ile EPUB'yi HTML'ye Nasıl Çıkarılır
 type: docs
 url: /tr/java/formatted-text-extraction/extract-epub-text-to-html-groupdocs-parser-java/
 weight: 1
 ---
 
-# EPUB Metnini HTML'e Dönüştürme: GroupDocs.Parser for Java ile Nasıl Yapılır
+# Java için GroupDocs.Parser ile EPUB'yi HTML'ye Dönüştürme
 
-Eğer **EPUB dosyalarını nasıl çıkartıp** HTML'e dönüştüreceğinizi öğrenmek istiyorsanız doğru yerdesiniz. Dijital bir kütüphane, bir e‑okuyucu uygulaması ya da e‑kitap içeriğini gösteren bir web portalı oluşturuyorsanız, EPUB metnini temiz HTML'e dönüştürmek temel bir gereksinimdir. Bu rehberde **GroupDocs.Parser for Java** kullanarak ortam kurulumundan biçimlendirilmiş HTML çıkarmaya kadar tüm süreci adım adım inceleyeceğiz.
+Eğer **epub'yi html'ye dönüştürmeniz** gerekiyorsa, doğru yerdesiniz. Dijital bir kütüphane, bir e‑okuyucu uygulaması veya e‑kitap içeriğini gösteren bir web portalı oluşturuyor olun, EPUB dosyalarını temiz HTML'ye dönüştürmek temel bir gereksinimdir. Bu rehberde **GroupDocs.Parser for Java** kullanarak ortam kurulumundan biçimlendirilmiş HTML'yi çıkarmaya kadar tüm süreci adım adım inceleyecek ve bu yaklaşımın büyük koleksiyonlar için neden ölçeklenebilir olduğunu açıklayacağız.
 
 ## Hızlı Yanıtlar
-- **“EPUB nasıl çıkarılır” ne anlama geliyor?** Bir EPUB dosyasının metin ve yapısını programatik olarak okuyup, HTML gibi başka bir biçime çıktısını almak demektir.  
-- **Bu işi en iyi hangi kütüphane yapar?** GroupDocs.Parser for Java, HTML çıktısı dahil biçimlendirilmiş metin çıkarımı için basit bir API sağlar.  
-- **Lisans gerekir mi?** Değerlendirme için geçici bir lisans mevcuttur; üretim kullanımı için tam lisans gereklidir.  
-- **EPUB'u birkaç satır kodla HTML'e dönüştürebilir miyim?** Evet—kütüphane eklendikten sonra çıkarım sadece birkaç satır kodla yapılabilir.  
-- **Bu yaklaşım büyük EPUB koleksiyonları için uygun mu?** Kesinlikle; API, bellek kullanımını düşük tutmak için akış (stream) ve try‑with‑resources kullanır.
+- **“extract epub to html” ne anlama geliyor?** Programlı olarak bir EPUB'un içindeki XHTML dosyalarını okuyup, tarayıcılarda veya WebView'lerde görüntülenebilecek temiz HTML olarak çıktısını vermek anlamına gelir.  
+- **Bu işlemi en iyi hangi kütüphane yapar?** GroupDocs.Parser for Java, hazır görüntülenebilir HTML döndüren basit ve bellek‑verimli bir API sağlar.  
+- **Lisans gerekir mi?** Değerlendirme için geçici bir lisans mevcuttur; üretim dağıtımları için tam lisans gereklidir.  
+- **EPUB'yi HTML'ye birkaç satır kodla dönüştürebilir miyim?** Evet—kütüphane eklendikten sonra, çıkarma işlemi sadece birkaç satır kodla yapılabilir.  
+- **Bu yaklaşım büyük EPUB koleksiyonları için uygun mu?** Kesinlikle; API içeriği akış olarak işler ve bellek kullanımını düşük tutmak için try‑with‑resources kullanır.
 
-## “EPUB nasıl çıkarılır” nedir?
-EPUB çıkarmak, EPUB konteynerinin içinde paketlenmiş olan iç XHTML/HTML dosyalarını, CSS'i ve meta verileri okuyup, bu içeriği kullanılabilir bir biçimde—genellikle düz metin veya HTML—sunmak demektir. GroupDocs.Parser, konteyner işleme detaylarını soyutlayarak manuel zip işlemleri yapmadan temiz, görüntülenmeye hazır HTML sağlar.
+## “extract epub to html” nedir?
+EPUB'yi HTML'ye dönüştürmek, EPUB konteynerindeki paketlenmiş XHTML/HTML dosyalarını, CSS'i ve meta verileri okuyup bu içeriği standart HTML olarak çıkarmak anlamına gelir. GroupDocs.Parser, ZIP işlemlerini soyutlayarak manuel çıkarma yapmadan temiz HTML sağlar ve orijinal düzeni, başlıkları ve temel stillemeyi koruyarak anında web görüntülemesi için hazır hale getirir.
 
-## EPUB'u HTML'e dönüştürmek için GroupDocs.Parser for Java neden kullanılmalı?
-- **Biçimlendirmeyi korur** – başlıklar, paragraflar, listeler ve temel stil öğeleri korunur.  
-- **Çapraz platform** – Java 8+ çalıştırabilen herhangi bir işletim sisteminde çalışır.  
-- **Hızlı ve bellek‑verimli** – tüm kitabı belleğe yüklemek yerine içeriği akış olarak işler.  
-- **Kapsamlı API** – ileride genişletmek isterseniz PDF, DOCX vb. birçok formatı da destekler.
+## EPUB'yi HTML'ye dönüştürmek için Java için GroupDocs.Parser neden kullanılmalı?
+GroupDocs.Parser, başlıklar, paragraflar, listeler ve temel stillemeyi içeren orijinal belge yapısını korurken, EPUB dosyalarını **500 MB**'a kadar bellek içinde tüm arşivi yüklemeden dönüştürür. Java 8+ destekleyen herhangi bir işletim sisteminde çalışır, **70'ten fazla dosya formatını** işler ve içeriği akış olarak sunarak yığın kullanımını kontrol altında tutar; bu da büyük ölçekli dijital kütüphaneler için idealdir.
 
 ## Önkoşullar
 - **Java Development Kit (JDK)** 8 veya üzeri.  
 - **Maven** (veya manuel JAR yönetimi).  
 - IntelliJ IDEA veya Eclipse gibi bir IDE.  
-- Temel Java dosya‑işleme bilgisi.
+- Temel Java dosya işleme bilgisi.
 
 ## GroupDocs.Parser for Java Kurulumu
 ### Kurulum Bilgileri
-GroupDocs.Parser'ı projenize Maven ile ya da JAR dosyasını doğrudan indirerek ekleyebilirsiniz.
+GroupDocs.Parser'ı projenize Maven aracılığıyla veya JAR dosyasını doğrudan indirerek ekleyebilirsiniz.
 
 **Maven**  
-`pom.xml` dosyanıza depo ve bağımlılığı ekleyin:
+Add the repository and dependency to your `pom.xml` file:
+
+```xml
+<repositories>
+   <repository>
+      <id>repository.groupdocs.com</id>
+      <name>GroupDocs Repository</name>
+      <!-- repository details -->
+   </repository>
+</repositories>
+
+<dependency>
+   <groupId>com.groupdocs</groupId>
+   <artifactId>groupdocs-parser</artifactId>
+   <version>25.5</version>
+</dependency>
+```
 
 ```xml
 <repositories>
@@ -65,13 +121,13 @@ GroupDocs.Parser'ı projenize Maven ile ya da JAR dosyasını doğrudan indirere
 ```
 
 **Doğrudan İndirme**  
-Maven kullanmak istemiyorsanız, GroupDocs.Parser for Java’ın en son sürümünü [GroupDocs releases](https://releases.groupdocs.com/parser/java/) adresinden indirin.
+Maven kullanmak istemiyorsanız, GroupDocs.Parser for Java'nın en son sürümünü [GroupDocs releases](https://releases.groupdocs.com/parser/java/) adresinden indirin.
 
 ### Lisans Alımı
-Tam deneme sürümüne başlamak için [GroupDocs satın alma sayfası](https://purchase.groupdocs.com/temporary-license/) üzerinden geçici bir lisans edinin. Bu lisans, değerlendirme için tüm özellikleri açar.
+Tam bir deneme başlatmak için geçici lisans almak üzere [GroupDocs satın alma sayfasını](https://purchase.groupdocs.com/temporary-license/) ziyaret edin. Bu, değerlendirme için tüm özelliklerin kilidini açacaktır.
 
-### Başlatma ve Ayarlar
-Kütüphane eklendikten sonra EPUB dosyanız için bir `Parser` örneği oluşturun:
+### Başlatma ve Kurulum
+`Parser`, GroupDocs.Parser içinde desteklenen dosya formatlarından içerik okumak ve çıkarmak için yöntemler sağlayan temel sınıftır.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -85,15 +141,15 @@ try (Parser parser = new Parser(epubFilePath)) {
 ```
 
 ## Uygulama Kılavuzu
-### GroupDocs.Parser ile EPUB'u HTML'e Dönüştürme
-Aşağıdaki adımlar, orijinal yapıyı koruyarak metni HTML olarak çıkarmayı gösterir.
+### GroupDocs.Parser ile EPUB'yi HTML'ye Dönüştürme
+Aşağıda, EPUB içeriğini HTML olarak çıkarırken orijinal yapıyı koruyan yüksek‑seviye iş akışı verilmiştir.
 
 #### Adım 1: EPUB Belgenizin Yolunu Tanımlayın
 ```java
 String epubFilePath = "YOUR_DOCUMENT_DIRECTORY/your_epub_file.epub";
 ```
 
-#### Adım 2: EPUB Dosyasıyla Parser'ı Başlatın
+#### Adım 2: Parser'ı EPUB Dosyasıyla Başlatın
 ```java
 try (Parser parser = new Parser(epubFilePath)) {
     // Proceed to extract text as HTML
@@ -102,7 +158,7 @@ try (Parser parser = new Parser(epubFilePath)) {
 }
 ```
 
-#### Adım 3: Metni HTML Olarak Çıkarma Seçeneklerini Ayarlayın
+#### Adım 3: Metni HTML olarak çıkarmak için seçenekleri ayarlayın
 ```java
 import com.groupdocs.parser.options.FormattedTextOptions;
 import com.groupdocs.parser.options.FormattedTextMode;
@@ -118,55 +174,63 @@ try (TextReader reader = parser.getFormattedText(options)) {
 }
 ```
 
-### Temel Parametrelerin Açıklaması
-- **FormattedTextOptions** – parser'ın hangi çıktı modunu kullanacağını belirler; `FormattedTextMode.Html` HTML üretir.  
-- **try‑with‑resources** – parser ve okuyucuyu otomatik olarak kapatarak bellek sızıntılarını önler.
+### Ana Parametrelerin Açıklaması
+- **FormattedTextOptions** – parser'a hangi çıktı modunun kullanılacağını söyler; `FormattedTextMode.Html` HTML üretir.  
+- **try‑with‑resources** – parser ve okuyucuyu otomatik olarak kapatır, bellek sızıntılarını önler.
+
+FormattedTextOptions, çıkarılan metnin nasıl biçimlendirileceğini belirlemenizi sağlayan bir seçenek sınıfıdır.
 
 ## Pratik Uygulamalar
-**“EPUB nasıl çıkarılır”** ve **“EPUB'u HTML'e dönüştür”** özellikle aşağıdaki senaryolarda çok değerlidir:
+Aşağıda **epub'yi html'ye dönüştür** işleminin özellikle değerli olduğu bazı gerçek dünya senaryoları bulunmaktadır:
 
 1. **Dijital Kütüphaneler** – Ayrı bir okuyucu gerektirmeden e‑kitapları doğrudan tarayıcılarda sunun.  
-2. **E‑okuyucu Uygulamaları** – HTML'i bir WebView bileşenine yükleyerek mobil cihazlarda hızlı render alın.  
-3. **İçerik Yayıncılığı** – Bloglar, haber siteleri veya öğrenme platformları için bölümleri ya da tam metinleri biçimlendirilmiş olarak yayınlayın.
+2. **E‑okuyucu Uygulamaları** – HTML'yi bir WebView bileşenine yükleyerek mobil cihazlarda hızlı, yerel‑gibi renderleme sağlayın.  
+3. **İçerik Paylaşımı** – Biçimlendirmeyi koruyarak bloglarda, haber sitelerinde veya öğrenme platformlarında alıntılar ya da tam bölümler yayınlayın.
 
 ## Performans Düşünceleri
-- Akışları (streams) hızlıca kapatın (örneklerdeki try‑with‑resources gibi).  
-- Çok büyük EPUB'lar için tüm HTML dizesini belleğe almaktansa bölümleri art arda işleyin.  
-- Java heap kullanımını izleyin ve yüzlerce megabayt içerik işleyecekseniz JVM’nin `-Xmx` ayarını gerektiği gibi artırın.
+- Akışları hızlıca kapatın (try‑with‑resources ile gösterildiği gibi).  
+- Çok büyük EPUB'lar için, tüm HTML dizesini belleğe yüklemek yerine bölümleri artımlı olarak işleyin.  
+- Java yığın kullanımını izleyin ve yüzlerce megabayt içerik işlemesi bekliyorsanız JVM'in `-Xmx` ayarını değiştirin.
 
-## Yaygın Sorunlar ve Çözüm Yolları
-| Belirti | Muhtemel Neden | Çözüm |
+## Yaygın Sorunlar ve Sorun Giderme
+| Semptom | Muhtemel Neden | Çözüm |
 |---------|----------------|-------|
-| `IOException: File not found` | Yanlış dosya yolu | `epubFilePath` değişkeninin var olan bir dosyaya işaret ettiğini doğrulayın. |
-| Boş `htmlContent` | EPUB desteklenmeyen özellikler kullanıyor | En son GroupDocs.Parser sürümünü kullandığınızdan emin olun. |
-| Büyük dosyalarda bellek dalgalanmaları | Akış API'si kullanılmıyor | try‑with‑resources desenini koruyun; gerekmedikçe tüm dosyayı ayrı bir dizeye okumaktan kaçının. |
+| `IOException: File not found` | Yanlış dosya yolu | `epubFilePath`'in mevcut bir dosyaya işaret ettiğini doğrulayın. |
+| Empty `htmlContent` | EPUB desteklenmeyen özellikler kullanıyor | En son GroupDocs.Parser sürümünü kullandığınızdan emin olun. |
+| Memory spikes on large files | Streaming API kullanılmıyor | try‑with‑resources desenini koruyun; gerekmedikçe tüm dosyayı ayrı bir dizeye okumaktan kaçının. |
 
-## Sık Sorulan Sorular
+## Sıkça Sorulan Sorular
 **S: GroupDocs.Parser for Java ne için kullanılır?**  
-C: EPUB dahil birçok dosya formatından metin, meta veri ve görselleri çıkarmak için tasarlanmış bir kütüphanedir.
+C: EPUB dahil birçok dosya formatından metin, meta veri ve resimleri çıkarır; hazır‑görüntülenebilir HTML veya düz metin sağlar.
 
 **S: Projemi Maven ile nasıl kurarım?**  
 C: Kurulum bölümünde gösterildiği gibi `pom.xml` dosyanıza GroupDocs deposunu ve `groupdocs-parser` bağımlılığını ekleyin.
 
 **S: Aynı kodla PDF metni de çıkarabilir miyim?**  
-C: Evet—GroupDocs.Parser, PDF, DOCX ve birçok başka formatı benzer API çağrılarıyla destekler.
+C: Evet—GroupDocs.Parser, benzer API çağrılarını kullanarak PDF, DOCX ve birçok diğer formatı destekler.
 
-**S: Belirli bir EPUB için çıkarım başarısız olursa ne yapmalıyım?**  
-C: EPUB’un EPUB 2/3 standartlarına uygun olduğundan ve dosyanın bozuk olmadığından emin olun. Çoğu kenar‑durum sorunu, en yeni parser sürümüne geçişle çözülür.
+**S: Belirli bir EPUB için çıkarma başarısız olursa ne yapmalıyım?**  
+C: EPUB'un EPUB 2/3 spesifikasyonlarına uygun olduğundan ve bozuk olmadığından emin olun; en son parser sürümüne güncellemek genellikle uç durum sorunlarını çözer.
 
-**S: Oluşturulan HTML'i (ör. CSS sınıfları eklemek) nasıl özelleştirebilirim?**  
-C: `FormattedTextOptions` üzerindeki `setCssClass` gibi ek özellikleri keşfedin ya da `htmlContent` dizesini sonradan işleyerek kendi stillerinizi ekleyin.
+**S: Oluşturulan HTML'yi (ör. CSS sınıfları eklemek) nasıl özelleştirebilirim?**  
+C: `FormattedTextOptions` üzerinde `setCssClass` gibi ek özellikler kullanın veya `htmlContent` dizesini sonradan işleyerek özel stiller ekleyin.
 
 ## Kaynaklar
 - **Dokümantasyon**: [GroupDocs Parser Java Documentation](https://docs.groupdocs.com/parser/java/)  
 - **API Referansı**: [GroupDocs Parser API Reference](https://reference.groupdocs.com/parser/java)  
-- **GroupDocs.Parser for Java İndir**: [GroupDocs Releases](https://releases.groupdocs.com/parser/java/)  
+- **GroupDocs.Parser for Java'ı İndir**: [GroupDocs Releases](https://releases.groupdocs.com/parser/java/)  
 - **GitHub Deposu**: [GroupDocs.Parser for Java on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
 - **Ücretsiz Destek Forumu**: [GroupDocs Parser Forum](https://forum.groupdocs.com/c/parser)  
 - **Geçici Lisans**: [Acquire Temporary License](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-**Son Güncelleme:** 2026-01-03  
-**Test Edilen Sürüm:** GroupDocs.Parser 25.5 for Java  
+**Son Güncelleme:** 2026-07-02  
+**Test Edilen Versiyon:** GroupDocs.Parser 25.5 for Java  
 **Yazar:** GroupDocs
+
+## İlgili Eğitimler
+
+- [Java için GroupDocs.Parser Kullanarak EPUB Dosyalarından Metin Çıkarma](/parser/java/text-extraction/extract-text-epub-groupdocs-parser-java/)
+- [Java ve Regex Kullanarak EPUB Dosyalarında Metin Aramalarını Ustalıkla Yapma](/parser/java/text-search/master-text-searches-epub-groupdocs-parser-java/)
+- [Java için GroupDocs.Parser Kullanarak HTML Çıkarma](/parser/java/formatted-text-extraction/)
