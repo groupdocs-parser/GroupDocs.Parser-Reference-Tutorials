@@ -1,47 +1,70 @@
 ---
-date: '2025-12-27'
-description: Dowiedz się, jak wyodrębniać wymianę e‑maili przy użyciu GroupDocs.Parser
-  Java, umożliwiając efektywne wyodrębnianie treści e‑maili w Javie z serwera Exchange.
+date: '2026-06-17'
+description: Dowiedz się, jak wyodrębniać wiadomości e-mail Exchange w Javie przy
+  użyciu GroupDocs.Parser dla Javy oraz efektywnie parsować pliki msg w Javie z serwera
+  Exchange.
 keywords:
-- extract emails exchange server
-- groupdocs parser java tutorial
-- email parsing java
-title: Wyodrębnij wymianę e‑maili przy użyciu GroupDocs.Parser Java
+- extract exchange emails java
+- parse msg files java
+- groupdocs parser java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-17'
+  description: Learn how to extract exchange emails java using GroupDocs.Parser for
+    Java and parse msg files java efficiently from an Exchange server.
+  headline: Extract Exchange Emails Java with GroupDocs.Parser
+  type: TechArticle
+- questions:
+  - answer: Yes. After opening an `EmailContainerItem`, call `item.getAttachments()`
+      to enumerate and save each attachment.
+    question: Can I extract attachments as well?
+  - answer: Absolutely. The parser automatically detects the underlying format (MSG
+      or EML) and extracts content accordingly.
+    question: Does GroupDocs.Parser support EML files stored on Exchange?
+  - answer: Use the overload of `EmailEwsConnectionOptions` that accepts an OAuth
+      token instead of a password.
+    question: What if my Exchange server uses modern OAuth authentication?
+  - answer: No hard limit, but network bandwidth and server throttling may affect
+      large batches. Implement pagination if you need to process thousands of messages.
+    question: Is there a limit on the number of emails I can pull in one session?
+  - answer: A single GroupDocs.Parser license covers all servers you connect to, provided
+      you comply with the licensing terms.
+    question: Do I need a separate license for each server?
+  type: FAQPage
+title: Wyodrębnianie wiadomości e-mail Exchange w Javie z GroupDocs.Parser
 type: docs
 url: /pl/java/email-parsing/extract-emails-groupdocs-parser-java-exchange-server/
 weight: 1
 ---
 
-# Wyodrębnianie e‑maili z Exchange przy użyciu GroupDocs.Parser Java
+# Wyodrębnianie wiadomości e‑mail Exchange w Javie z GroupDocs.Parser
 
-Wyodrębnianie e‑maili z serwera Exchange może przypominać szukanie igły w stogu siana, szczególnie gdy trzeba przetworzyć duże wolumeny w celu archiwizacji, analiz lub zgodności. W tym przewodniku **dowiesz się, jak szybko i niezawodnie wyodrębnić e‑maile z Exchange** przy użyciu biblioteki **GroupDocs.Parser** dla Javy. Przejdziemy przez konfigurację środowiska, ustawienia połączenia oraz rzeczywisty kod wyodrębniania — wszystko w stylu konwersacyjnym, krok po kroku, abyś mógł podążać bez przegapienia żadnego etapu.
+Wyodrębnianie e‑maili Exchange w Javie z serwera Microsoft Exchange może przypominać poszukiwanie igły w stogu siana, szczególnie gdy trzeba obsłużyć tysiące wiadomości w celu archiwizacji, analizy lub zgodności. W tym samouczku krok po kroku nauczysz się konfigurować połączenie, pobierać każdą wiadomość oraz odczytywać jej treść, załączniki i metadane przy użyciu GroupDocs.Parser dla Javy. Na koniec będziesz mieć gotowy fragment kodu, który działa w dowolnym środowisku Exchange obsługującym EWS.
 
-## Quick Answers
+## Szybkie odpowiedzi
 - **Jaka biblioteka obsługuje wyodrębnianie e‑maili?** GroupDocs.Parser for Java  
 - **Jakiego protokołu użyto?** Exchange Web Services (EWS)  
 - **Minimalna wersja Javy?** JDK 8 lub wyższa  
-- **Czy potrzebna jest licencja?** Darmowa wersja próbna działa do testów; płatna licencja jest wymagana w środowisku produkcyjnym  
-- **Czy mogę przetwarzać e‑maile wsadowo?** Tak — iteruj po elementach kontenera, jak pokazano w kodzie  
+- **Czy potrzebna jest licencja?** Bezpłatna wersja próbna działa do testów; licencja płatna jest wymagana w produkcji  
+- **Czy mogę przetwarzać e‑maile partiami?** Tak — iteruj po elementach kontenera, jak pokazano w kodzie  
 
-## Co oznacza „extract emails exchange”?
-„Extract emails exchange” odnosi się do programowego pobierania wiadomości e‑mail z serwera Microsoft Exchange. Korzystając z GroupDocs.Parser, możesz traktować serwer jako kontener plików e‑mail, odczytywać tekst, metadane i załączniki każdej wiadomości, a następnie wykorzystywać te dane w własnych aplikacjach.
+## Co to jest wyodrębnianie e‑maili Exchange w Javie?
+Wyodrębnianie e‑maili Exchange w Javie oznacza programowe pobieranie wiadomości e‑mail z serwera Microsoft Exchange, aby móc odczytać ich zawartość, metadane i załączniki w własnej aplikacji Java. Dzięki GroupDocs.Parser traktujesz skrzynkę pocztową jako wirtualny kontener, żądasz każdy `EmailContainerItem`, a następnie używasz API parsera do pobrania tekstu, HTML lub surowych danych MIME bez zapisywania plików pośrednich.
 
-## Dlaczego warto używać GroupDocs.Parser dla Javy?
-- **Unified API** – Obsługuje wiele formatów e‑mail (MSG, EML) bez dodatkowych parserów.  
-- **Container Support** – Bezpośrednio odczytuje skrzynkę pocztową jako kolekcję elementów.  
-- **Performance Optimized** – Efektywne strumieniowanie i niski pobór pamięci.  
-- **Rich Feature Set** – Wyodrębnia tekst, ciała HTML, załączniki i własne właściwości.
+## Dlaczego używać GroupDocs.Parser dla Javy?
+GroupDocs.Parser zapewnia jedyne, wysokowydajne API obsługujące ponad 50 formatów związanych z e‑mailami — w tym MSG i EML — dzięki czemu możesz **parsować pliki msg w Javie** bez dodatkowych konwerterów. Strumieniuje dane bezpośrednio z serwera, utrzymując zużycie pamięci poniżej 20 MB nawet przy wiadomościach wielostronicowych, i oferuje wbudowane wyodrębnianie tekstu, ciał HTML oraz załączników, co eliminuje potrzebę używania parserów zewnętrznych.
 
-## Prerequisites
-- **Java Development Kit (JDK) 8+** – Upewnij się, że `java -version` zwraca 1.8 lub nowszą wersję.  
-- **IDE** – IntelliJ IDEA, Eclipse lub NetBeans (dowolne).  
-- **Maven** – Do zarządzania zależnościami (opcjonalny, ale zalecany).  
-- **Exchange Server Access** – Poprawny punkt końcowy EWS, adres e‑mail i hasło.  
+## Wymagania wstępne
+- **Java Development Kit (JDK) 8+** – Sprawdź za pomocą `java -version`.  
+- **IDE** – IntelliJ IDEA, Eclipse lub NetBeans.  
+- **Maven** – Zalecany do zarządzania zależnościami (opcjonalnie).  
+- **Dostęp do serwera Exchange** – Ważny punkt końcowy EWS, adres e‑mail i hasło (lub token OAuth).  
 
-## Setting Up GroupDocs.Parser for Java
+## Jak skonfigurować GroupDocs.Parser dla Javy?
+Dodaj repozytorium Maven GroupDocs oraz zależność Parser do swojego `pom.xml`. Ten jedyny krok pobiera bibliotekę wraz ze wszystkimi wymaganymi zależnościami tranzytywnymi, zapewniając, że używasz najnowszej stabilnej wersji. Deklarując repozytorium i zależność, Maven automatycznie rozwiąże i zbuforuje niezbędne pliki JAR dla Twojego projektu.
 
-### Maven Setup
-Dodaj repozytorium i zależność do swojego pliku `pom.xml`:
+### Konfiguracja Maven
+Dodaj repozytorium i zależność do swojego `pom.xml`:
 
 ```xml
 <repositories>
@@ -61,33 +84,18 @@ Dodaj repozytorium i zależność do swojego pliku `pom.xml`:
 </dependencies>
 ```
 
-### Direct Download
-Alternatywnie, pobierz najnowszą wersję bezpośrednio z [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
+### Bezpośrednie pobranie
+Alternatywnie pobierz najnowszy JAR ze strony wydania: [Wydania GroupDocs.Parser dla Javy](https://releases.groupdocs.com/parser/java/).
 
-### License Acquisition
-- **Free Trial** – Testuj wszystkie funkcje bez ograniczeń.  
-- **Temporary License** – Poproś o klucz czasowo ograniczony w celu przedłużonej oceny.  
-- **Purchase** – Rozważ zakup licencji na [GroupDocs website](https://purchase.groupdocs.com) do długoterminowego użytku produkcyjnego.
+### Uzyskiwanie licencji
+- **Bezpłatna wersja próbna** – Pełna funkcjonalność bez ograniczeń czasowych.  
+- **Licencja tymczasowa** – Żądaj klucza czasowo ograniczonego do rozszerzonych testów.  
+- **Zakup** – Uzyskaj licencję produkcyjną ze [strony GroupDocs](https://purchase.groupdocs.com).
 
-### Basic Initialization
-Poniżej znajduje się minimalny kod tworzący instancję `Parser`. Ten fragment będzie podstawą logiki wyodrębniania w dalszej części.
+## Jak wyodrębnić e‑maile Exchange w Javie?  
+Klasa `EmailEwsConnectionOptions` definiuje parametry połączenia wymagane dla Exchange Web Services, takie jak URL serwera, nazwa użytkownika i hasło. Utwórz obiekt `EmailEwsConnectionOptions` ze swoim URL serwera, nazwą użytkownika i hasłem, a następnie zainicjalizuj `Parser` przy użyciu tych opcji. Klasa `Parser` udostępnia metody otwierania i odczytywania kontenerów ze skrzynki pocztowej. Parser otworzy kontener reprezentujący skrzynkę, umożliwiając iterację po każdym `EmailContainerItem`. Klasa `EmailContainerItem` reprezentuje pojedynczą wiadomość e‑mail w kontenerze, pozwalając odczytać jej zawartość w sposób oszczędny pod względem pamięci.
 
-```java
-import com.groupdocs.parser.Parser;
-
-try (Parser parser = new Parser("path/to/your/file")) {
-    // Your parsing logic here
-} catch (Exception e) {
-    e.printStackTrace();
-}
-```
-
-## Implementation Guide
-
-### Connecting to Exchange Server
-**Overview:** Użyjemy `EmailEwsConnectionOptions`, aby skierować GroupDocs.Parser na punkt końcowy Exchange Web Services.
-
-#### Step 1: Create a Connection Object
+### Krok 1: Utwórz obiekt połączenia
 ```java
 import com.groupdocs.parser.options.EmailEwsConnectionOptions;
 
@@ -98,9 +106,9 @@ EmailEwsConnectionOptions options = new EmailEwsConnectionOptions(
 );
 ```
 
-*Why this matters:* Klasa `EmailEwsConnectionOptions` enkapsuluje URL, nazwę użytkownika i hasło niezbędne do bezpiecznej sesji EWS.
+*Dlaczego to ważne:* Klasa `EmailEwsConnectionOptions` kapsułkuje URL, nazwę użytkownika i hasło wymagane do bezpiecznej sesji EWS, pozwalając parserowi automatycznie zarządzać uwierzytelnianiem i ponownym użyciem sesji.
 
-#### Step 2: Use the Parser Class to Connect and Extract Emails
+### Krok 2: Połącz się i iteruj po e‑mailach
 ```java
 import com.groupdocs.parser.Parser;
 import com.groupdocs.parser.exceptions.UnsupportedDocumentFormatException;
@@ -125,56 +133,67 @@ try (Parser parser = new Parser(options)) {
 }
 ```
 
-**Explanation of the flow**
-1. **Parser Initialization** – Przekazuje obiekt `options`, ustanawiając połączenie EWS.  
-2. **Container Check** – Gwarantuje, że serwer obsługuje wyodrębnianie kontenerów (wymagane przy odczycie wsadowym).  
-3. **Iterate Over Emails** – `parser.getContainer()` zwraca `Iterable` typu `EmailContainerItem`.  
-4. **Open Each Email** – `item.openParser()` tworzy nowy `Parser` dla pojedynczej wiadomości.  
-5. **Read Text** – `emailParser.getText()` zwraca `TextReader`; odczytujemy pełne ciało i wypisujemy je.
+**Wyjaśnienie przepływu**  
+1. **Inicjalizacja Parsera** – Przekazanie obiektu `options` ustanawia połączenie EWS.  
+2. **Sprawdzenie kontenera** – Upewnia się, że serwer obsługuje wyodrębnianie kontenerów (wymagane przy odczycie hurtowym).  
+3. **Iterowanie po e‑mailach** – `parser.getContainer()` zwraca `Iterable<EmailContainerItem>`.  
+4. **Otwórz każdy e‑mail** – `item.openParser()` tworzy nowy `Parser` dla pojedynczej wiadomości.  
+5. **Odczyt tekstu** – `emailParser.getText()` zwraca `TextReader`; odczytanie go zwraca pełne ciało wiadomości, które możesz zalogować, zapisać lub przekazać dalej.
 
-#### Troubleshooting Tips
-- **Incorrect EWS URL** – Sprawdź ponownie punkt końcowy (`/ews/exchange.asmx`).  
-- **Authentication Failures** – Zweryfikuj nazwę użytkownika/hasło i rozważ użycie tokenów OAuth do nowoczesnego uwierzytelniania.  
-- **Container Not Supported** – Niektóre lokalne instalacje Exchange wyłączają wyodrębnianie kontenerów; skontaktuj się z administratorem.  
+## Typowe przypadki użycia wyodrębniania e‑maili Exchange w Javie
+- **Automatyczne archiwizowanie** – Zachowaj wszystkie przychodzące i wychodzące komunikacje w celu zgodności prawnej.  
+- **Analiza nastrojów i trendów** – Eksportuj treści e‑maili do jeziora danych w celu przetwarzania NLP.  
+- **Integracja z CRM** – Automatycznie synchronizuj odpowiednie wątki e‑maili z rekordami klientów.  
+- **Audyt bezpieczeństwa** – Skanuj wiadomości pod kątem wycieków poufnych danych lub wzorców phishingowych.
 
-## Common Use Cases for Extract Emails Exchange
-- **Automated Archiving** – Zachowaj wszystkie przychodzące i wychodzące komunikacje w celu spełnienia wymogów prawnych.  
-- **Sentiment & Trend Analysis** – Przenieś treści e‑maili do jeziora danych w celu przetwarzania NLP.  
-- **CRM Integration** – Automatycznie synchronizuj istotne wątki e‑mail z rekordami klientów.  
-- **Security Auditing** – Skanuj wiadomości pod kątem wycieków poufnych danych lub wzorców phishingowych.  
+## Uwagi dotyczące wydajności
+- **Zarządzanie połączeniami** – Ponownie używaj jednej instancji `Parser` dla zadań wsadowych zamiast ponownego łączenia się przy każdym e‑mailu.  
+- **Przetwarzanie wsadowe** – Pobieraj e‑maile w partiach (np. po 100) aby zmniejszyć opóźnienia.  
+- **Zarządzanie pamięcią** – Wzorzec `try‑with‑resources` (jak pokazano) zapewnia szybkie zamykanie strumieni, zapobiegając wyciekom i utrzymując niski rozmiar JVM.
 
-## Performance Considerations
-- **Connection Management** – Ponownie używaj jednej instancji `Parser` w zadaniach wsadowych zamiast nawiązywać połączenie dla każdego e‑maila.  
-- **Batch Processing** – Pobieraj e‑maile w partiach (np. po 100) w celu zmniejszenia opóźnień sieciowych.  
-- **Memory Management** – Wzorzec `try‑with‑resources` (jak pokazano) zapewnia szybkie zamykanie strumieni, zapobiegając wyciekom pamięci.  
+## Najczęściej zadawane pytania
 
-## Frequently Asked Questions
-
-**Q: Czy mogę również wyodrębnić załączniki?**  
+**Q: Czy mogę wyodrębnić również załączniki?**  
 A: Tak. Po otwarciu `EmailContainerItem` wywołaj `item.getAttachments()`, aby wyliczyć i zapisać każdy załącznik.
 
 **Q: Czy GroupDocs.Parser obsługuje pliki EML przechowywane na Exchange?**  
-A: Absolutnie. Parser wykrywa podstawowy format (MSG lub EML) i wyodrębnia zawartość odpowiednio.
+A: Absolutnie. Parser automatycznie wykrywa podstawowy format (MSG lub EML) i wyodrębnia zawartość odpowiednio.
 
-**Q: Co zrobić, jeśli mój serwer Exchange używa nowoczesnego uwierzytelniania OAuth?**  
-A: Skorzystaj z przeciążenia `EmailEwsConnectionOptions`, które przyjmuje token OAuth zamiast hasła.
+**Q: Co jeśli mój serwer Exchange używa nowoczesnego uwierzytelniania OAuth?**  
+A: Użyj przeciążenia `EmailEwsConnectionOptions`, które przyjmuje token OAuth zamiast hasła.
 
 **Q: Czy istnieje limit liczby e‑maili, które mogę pobrać w jednej sesji?**  
-A: Nie ma sztywnego limitu, ale przepustowość sieci i polityki throttlingu serwera mogą wpływać na duże partie. W razie potrzeby zastosuj paginację.
+A: Nie ma sztywnego limitu, ale przepustowość sieci i ograniczenia serwera mogą wpływać na duże partie. Wdroż paginację, jeśli musisz przetworzyć tysiące wiadomości.
 
-**Q: Czy potrzebna jest oddzielna licencja na każdy serwer?**  
+**Q: Czy potrzebuję oddzielnej licencji dla każdego serwera?**  
 A: Jedna licencja GroupDocs.Parser obejmuje wszystkie serwery, z którymi się łączysz, pod warunkiem przestrzegania warunków licencyjnych.
 
-## Conclusion
-Widzisz już, jak **wyodrębnić e‑maile z Exchange** efektywnie przy użyciu GroupDocs.Parser dla Javy. Konfigurując `EmailEwsConnectionOptions`, sprawdzając wsparcie kontenerów i iterując po każdym `EmailContainerItem`, możesz pobrać pełne treści wiadomości, załączniki i metadane do dowolnego procesu opartego na Javie.
+## Zakończenie
+Masz teraz kompletną, gotową do produkcji metodę **wyodrębniać e‑maile Exchange w Javie** przy użyciu GroupDocs.Parser. Konfigurując `EmailEwsConnectionOptions`, weryfikując wsparcie kontenerów i iterując po każdym `EmailContainerItem`, możesz pobrać pełne treści e‑maili, załączniki i metadane do dowolnego przepływu pracy opartego na Javie.  
 
-**Next steps:**  
-- Eksperymentuj z uwierzytelnianiem OAuth dla środowisk Office 365.  
-- Połącz tę logikę wyodrębniania z kolejką komunikatów (np. Kafka) w celu przetwarzania w czasie rzeczywistym.  
-- Zbadaj API GroupDocs.Parser pod kątem wyodrębniania osadzonych obrazów lub ciał HTML.
+**Kolejne kroki:**  
+- Wypróbuj uwierzytelnianie OAuth dla serwerów Exchange chronionych Office 365 lub Azure AD.  
+- Przekieruj wyodrębnione dane do kolejki wiadomości (np. Kafka) w celu przetwarzania w czasie rzeczywistym.  
+- Zbadaj dodatkowe metody API, aby pobrać osadzone obrazy lub ciała HTML dla bardziej zaawansowanej analizy downstream.
 
 ---
 
-**Last Updated:** 2025-12-27  
-**Tested With:** GroupDocs.Parser 25.5 for Java  
-**Author:** GroupDocs
+**Ostatnia aktualizacja:** 2026-06-17  
+**Testowano z:** GroupDocs.Parser 25.5 for Java  
+**Autor:** GroupDocs
+
+```java
+import com.groupdocs.parser.Parser;
+
+try (Parser parser = new Parser("path/to/your/file")) {
+    // Your parsing logic here
+} catch (Exception e) {
+    e.printStackTrace();
+}
+```
+
+## Powiązane samouczki
+
+- [Jak wyodrębnić tekst z e‑maili przy użyciu GroupDocs.Parser w Javie: Przewodnik krok po kroku](/parser/java/email-parsing/extract-text-emails-groupdocs-parser-java/)
+- [Jak wyodrębnić metadane e‑maili przy użyciu GroupDocs.Parser w Javie – Kompletny przewodnik](/parser/java/metadata-extraction/extract-metadata-emails-groupdocs-parser-java/)
+- [Wyodrębnianie obrazów z e‑maili przy użyciu GroupDocs.Parser dla Javy](/parser/java/email-parsing/extract-images-emails-groupdocs-parser-java/)

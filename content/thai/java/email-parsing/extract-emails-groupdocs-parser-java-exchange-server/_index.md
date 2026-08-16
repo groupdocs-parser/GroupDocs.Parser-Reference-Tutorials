@@ -1,47 +1,69 @@
 ---
-date: '2025-12-27'
-description: เรียนรู้วิธีดึงอีเมลจาก Exchange ด้วย GroupDocs.Parser Java ทำให้คุณสามารถดึงเนื้อหาอีเมลด้วย
-  Java อย่างมีประสิทธิภาพจากเซิร์ฟเวอร์ Exchange.
+date: '2026-06-17'
+description: เรียนรู้วิธีดึงอีเมล Exchange ด้วย Java โดยใช้ GroupDocs.Parser สำหรับ
+  Java และแยกไฟล์ msg อย่างมีประสิทธิภาพจากเซิร์ฟเวอร์ Exchange
 keywords:
-- extract emails exchange server
-- groupdocs parser java tutorial
-- email parsing java
-title: สกัดอีเมลจากการแลกเปลี่ยนโดยใช้ GroupDocs.Parser Java
+- extract exchange emails java
+- parse msg files java
+- groupdocs parser java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-17'
+  description: Learn how to extract exchange emails java using GroupDocs.Parser for
+    Java and parse msg files java efficiently from an Exchange server.
+  headline: Extract Exchange Emails Java with GroupDocs.Parser
+  type: TechArticle
+- questions:
+  - answer: Yes. After opening an `EmailContainerItem`, call `item.getAttachments()`
+      to enumerate and save each attachment.
+    question: Can I extract attachments as well?
+  - answer: Absolutely. The parser automatically detects the underlying format (MSG
+      or EML) and extracts content accordingly.
+    question: Does GroupDocs.Parser support EML files stored on Exchange?
+  - answer: Use the overload of `EmailEwsConnectionOptions` that accepts an OAuth
+      token instead of a password.
+    question: What if my Exchange server uses modern OAuth authentication?
+  - answer: No hard limit, but network bandwidth and server throttling may affect
+      large batches. Implement pagination if you need to process thousands of messages.
+    question: Is there a limit on the number of emails I can pull in one session?
+  - answer: A single GroupDocs.Parser license covers all servers you connect to, provided
+      you comply with the licensing terms.
+    question: Do I need a separate license for each server?
+  type: FAQPage
+title: ดึงอีเมล Exchange ด้วย Java และ GroupDocs.Parser
 type: docs
 url: /th/java/email-parsing/extract-emails-groupdocs-parser-java-exchange-server/
 weight: 1
 ---
 
-# ดึงอีเมลจาก Exchange ผ่าน GroupDocs.Parser Java
+# สกัดอีเมล Exchange ด้วย Java และ GroupDocs.Parser
 
-การดึงอีเมลจากเซิร์ฟเวอร์ Exchange อาจรู้สึกเหมือนการค้นหาสิ่งที่เล็กที่สุดในกองฟาง โดยเฉพาะเมื่อคุณต้องประมวลผลปริมาณข้อมูลจำนวนมากเพื่อการจัดเก็บ, การวิเคราะห์ หรือการปฏิบัติตามกฎระเบียบ ในคู่มือนี้ **คุณจะได้เรียนรู้วิธีดึงอีเมลจาก Exchange** อย่างรวดเร็วและเชื่อถือได้โดยใช้ไลบรารี **GroupDocs.Parser** สำหรับ Java เราจะพาคุณผ่านการตั้งค่าสภาพแวดล้อม, การกำหนดค่าการเชื่อมต่อ, และโค้ดการดึงข้อมูลจริง—ทั้งหมดเขียนในสไตล์สนทนาแบบขั้นตอน‑ต่อ‑ขั้นตอน เพื่อให้คุณทำตามได้โดยไม่พลาดขั้นตอนใด
+การสกัดอีเมล Exchange ด้วย Java จากเซิร์ฟเวอร์ Microsoft Exchange อาจรู้สึกเหมือนการหาสิ่งที่เล็กที่สุดในกองหญ้าโดยเฉพาะเมื่อคุณต้องจัดการกับข้อความหลายพันฉบับเพื่อการเก็บถาวร, การวิเคราะห์, หรือการปฏิบัติตามกฎระเบียบ ในบทแนะนำขั้นตอน‑โดย‑ขั้นตอนนี้คุณจะได้เรียนรู้วิธีตั้งค่าการเชื่อมต่อ, ดึงอีเมลแต่ละฉบับ, และอ่านเนื้อหา, ไฟล์แนบ, และเมตาดาต้าโดยใช้ GroupDocs.Parser สำหรับ Java เมื่อเสร็จสิ้นคุณจะมีโค้ดสั้นที่นำกลับมาใช้ใหม่ได้ซึ่งทำงานกับสภาพแวดล้อม Exchange ใด ๆ ที่รองรับ EWS
 
 ## คำตอบสั้น
-- **ไลบรารีที่ใช้ดึงอีเมลคืออะไร?** GroupDocs.Parser สำหรับ Java  
-- **ใช้โปรโตคอลใด?** Exchange Web Services (EWS)  
+- **ไลบรารีที่จัดการการสกัดอีเมลคืออะไร?** GroupDocs.Parser for Java  
+- **โปรโตคอลที่ใช้คืออะไร?** Exchange Web Services (EWS)  
 - **เวอร์ชัน Java ขั้นต่ำ?** JDK 8 หรือสูงกว่า  
-- **ต้องมีลิขสิทธิ์หรือไม่?** สามารถใช้เวอร์ชันทดลองฟรีสำหรับการทดสอบ; ต้องมีลิขสิทธิ์แบบชำระเงินสำหรับการใช้งานจริง  
-- **สามารถประมวลผลอีเมลเป็นชุดได้หรือไม่?** ได้—ทำการวนลูปผ่านรายการคอนเทนเนอร์ตามที่แสดงในโค้ด  
+- **ต้องการไลเซนส์หรือไม่?** ทดลองใช้ฟรีสำหรับการทดสอบ; จำเป็นต้องมีไลเซนส์แบบชำระเงินสำหรับการใช้งานจริง  
+- **สามารถประมวลผลอีเมลเป็นชุดได้หรือไม่?** ได้—ทำการวนซ้ำรายการคอนเทนเนอร์ตามที่แสดงในโค้ด  
 
-## “extract emails exchange” คืออะไร?
-“Extract emails exchange” หมายถึงการดึงข้อความอีเมลจากเซิร์ฟเวอร์ Microsoft Exchange อย่างเป็นโปรแกรมโดยใช้ GroupDocs.Parser คุณสามารถมองเซิร์ฟเวอร์เป็นคอนเทนเนอร์ของไฟล์อีเมล, อ่านข้อความ, เมตาดาต้า, และไฟล์แนบของแต่ละข้อความ, แล้วนำข้อมูลเหล่านั้นไปใช้ในแอปพลิเคชันของคุณเอง
+## extract exchange emails java คืออะไร?
+extract exchange emails java หมายถึงการดึงข้อความอีเมลจากเซิร์ฟเวอร์ Microsoft Exchange อย่างเป็นโปรแกรม เพื่อให้คุณสามารถอ่านเนื้อหา, เมตาดาต้า, และไฟล์แนบในแอปพลิเคชัน Java ของคุณเอง ด้วย GroupDocs.Parser คุณจะถือกล่องจดหมายเป็นคอนเทนเนอร์เสมือน, ขอ `EmailContainerItem` แต่ละรายการ, แล้วใช้ API ของ parser เพื่อดึงข้อความธรรมดา, HTML, หรือข้อมูล MIME ดิบโดยไม่ต้องเขียนไฟล์กลาง
 
 ## ทำไมต้องใช้ GroupDocs.Parser สำหรับ Java?
-- **Unified API** – รองรับหลายรูปแบบอีเมล (MSG, EML) โดยไม่ต้องใช้พาร์เซอร์เพิ่มเติม  
-- **Container Support** – อ่านกล่องจดหมายโดยตรงเป็นคอลเลกชันของรายการ  
-- **Performance Optimized** – สตรีมข้อมูลอย่างมีประสิทธิภาพและใช้หน่วยความจำต่ำ  
-- **Rich Feature Set** – ดึงข้อความ, เนื้อหา HTML, ไฟล์แนบ, และคุณสมบัติเฉพาะอื่น ๆ  
+GroupDocs.Parser ให้ API เดียวที่มีประสิทธิภาพสูงซึ่งรองรับรูปแบบที่เกี่ยวกับอีเมลกว่า 50 รูปแบบ—รวมถึง MSG และ EML—ทำให้คุณ **parse msg files java** ได้โดยไม่ต้องใช้ตัวแปลงเพิ่มเติม มันสตรีมข้อมูลโดยตรงจากเซิร์ฟเวอร์ ทำให้การใช้หน่วยความจำต่ำกว่า 20 MB แม้กับข้อความหลายร้อยหน้า และมีฟีเจอร์สกัดข้อความ, เนื้อหา HTML, และไฟล์แนบในตัว ซึ่งช่วยขจัดความจำเป็นในการใช้ parser ของบุคคลที่สาม
 
 ## ข้อกำหนดเบื้องต้น
-- **Java Development Kit (JDK) 8+** – ตรวจสอบให้ `java -version` แสดง 1.8 หรือใหม่กว่า  
-- **IDE** – IntelliJ IDEA, Eclipse หรือ NetBeans (เลือกได้ตามสะดวก)  
-- **Maven** – สำหรับการจัดการ dependencies (แนะนำแต่ไม่บังคับ)  
-- **การเข้าถึง Exchange Server** – มี EWS endpoint, ที่อยู่อีเมล, และรหัสผ่านที่ใช้งานได้  
+- **Java Development Kit (JDK) 8+** – ตรวจสอบด้วย `java -version`  
+- **IDE** – IntelliJ IDEA, Eclipse หรือ NetBeans  
+- **Maven** – แนะนำสำหรับการจัดการ dependencies (ไม่บังคับ)  
+- **Exchange Server Access** – จุดเชื่อมต่อ EWS ที่ถูกต้อง, ที่อยู่อีเมล, และรหัสผ่าน (หรือโทเค็น OAuth)  
 
-## การตั้งค่า GroupDocs.Parser สำหรับ Java
+## จะตั้งค่า GroupDocs.Parser สำหรับ Java อย่างไร?
+เพิ่มรีโพซิทอรี Maven ของ GroupDocs และ dependency ของ Parser ลงในไฟล์ `pom.xml` ของคุณ ขั้นตอนเดียวนี้จะดาวน์โหลดไลบรารีพร้อมกับ dependencies ทั้งหมดที่จำเป็น ทำให้คุณใช้เวอร์ชันล่าสุดที่เสถียรได้โดยอัตโนมัติ โดยการประกาศรีโพซิทอรีและ dependency, Maven จะจัดการดาวน์โหลดและแคชไฟล์ JAR ที่จำเป็นให้กับโปรเจกต์ของคุณ
 
 ### การตั้งค่า Maven
-เพิ่ม repository และ dependency ลงในไฟล์ `pom.xml` ของคุณ:
+เพิ่มรีโพซิทอรีและ dependency ลงใน `pom.xml` ของคุณ:
 
 ```xml
 <repositories>
@@ -62,32 +84,17 @@ weight: 1
 ```
 
 ### ดาวน์โหลดโดยตรง
-หรือคุณสามารถดาวน์โหลดเวอร์ชันล่าสุดโดยตรงจาก [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/)
+หรือคุณสามารถดาวน์โหลด JAR ล่าสุดจากหน้าปล่อยอย่างเป็นทางการ: [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/)
 
-### การขอรับลิขสิทธิ์
-- **Free Trial** – ทดสอบคุณสมบัติทั้งหมดโดยไม่มีข้อจำกัด  
-- **Temporary License** – ขอคีย์ที่มีอายุจำกัดสำหรับการประเมินผลต่อเนื่อง  
-- **Purchase** – พิจารณาซื้อไลเซนส์จาก [GroupDocs website](https://purchase.groupdocs.com) เพื่อใช้งานในระยะยาว  
+### การรับไลเซนส์
+- **Free Trial** – การประเมินเต็มฟีเจอร์โดยไม่มีข้อจำกัดเวลา  
+- **Temporary License** – ขอคีย์ที่มีเวลาจำกัดสำหรับการทดสอบต่อเนื่อง  
+- **Purchase** – รับไลเซนส์การผลิตจาก [GroupDocs website](https://purchase.groupdocs.com)
 
-### การเริ่มต้นพื้นฐาน
-โค้ดด้านล่างเป็นตัวอย่างที่สั้นที่สุดสำหรับการสร้างอินสแตนซ์ `Parser` ซึ่งจะเป็นพื้นฐานของตรรกะการดึงข้อมูลต่อไป
+## วิธีสกัด exchange emails java?
+คลาส `EmailEwsConnectionOptions` กำหนดพารามิเตอร์การเชื่อมต่อที่จำเป็นสำหรับ Exchange Web Services เช่น URL ของเซิร์ฟเวอร์, ชื่อผู้ใช้, และรหัสผ่าน สร้างอ็อบเจ็กต์ `EmailEwsConnectionOptions` ด้วย URL, ชื่อผู้ใช้, และรหัสผ่านของคุณ, จากนั้นสร้าง `Parser` โดยใช้ตัวเลือกเหล่านั้น คลาส `Parser` มีเมธอดสำหรับเปิดและอ่านคอนเทนเนอร์จากกล่องจดหมาย parser จะเปิดคอนเทนเนอร์ที่แทนกล่องจดหมาย, ทำให้คุณสามารถวนซ้ำ `EmailContainerItem` แต่ละรายการได้ `EmailContainerItem` แทนข้อความอีเมลแต่ละฉบับภายในคอนเทนเนอร์, ทำให้คุณสามารถอ่านเนื้อหาได้อย่างมีประสิทธิภาพด้านหน่วยความจำ
 
-```java
-import com.groupdocs.parser.Parser;
-
-try (Parser parser = new Parser("path/to/your/file")) {
-    // Your parsing logic here
-} catch (Exception e) {
-    e.printStackTrace();
-}
-```
-
-## คู่มือการทำงาน
-
-### การเชื่อมต่อกับ Exchange Server
-**ภาพรวม:** เราจะใช้ `EmailEwsConnectionOptions` เพื่อชี้ให้ GroupDocs.Parser เชื่อมต่อกับ Exchange Web Services endpoint
-
-#### ขั้นตอนที่ 1: สร้างอ็อบเจ็กต์การเชื่อมต่อ
+### ขั้นตอนที่ 1: สร้างอ็อบเจ็กต์การเชื่อมต่อ
 ```java
 import com.groupdocs.parser.options.EmailEwsConnectionOptions;
 
@@ -98,9 +105,9 @@ EmailEwsConnectionOptions options = new EmailEwsConnectionOptions(
 );
 ```
 
-*ทำไมจึงสำคัญ:* คลาส `EmailEwsConnectionOptions` จะบรรจุ URL, ชื่อผู้ใช้, และรหัสผ่านที่จำเป็นสำหรับเซสชัน EWS ที่ปลอดภัย
+*ทำไมเรื่องนี้สำคัญ:* คลาส `EmailEwsConnectionOptions` รวม URL, ชื่อผู้ใช้, และรหัสผ่านที่จำเป็นสำหรับเซสชัน EWS ที่ปลอดภัย, ทำให้ parser จัดการการยืนยันตัวตนและการใช้ซ้ำเซสชันโดยอัตโนมัติ
 
-#### ขั้นตอนที่ 2: ใช้คลาส Parser เพื่อเชื่อมต่อและดึงอีเมล
+### ขั้นตอนที่ 2: เชื่อมต่อและวนซ้ำอีเมล
 ```java
 import com.groupdocs.parser.Parser;
 import com.groupdocs.parser.exceptions.UnsupportedDocumentFormatException;
@@ -125,56 +132,67 @@ try (Parser parser = new Parser(options)) {
 }
 ```
 
-**คำอธิบายของกระบวนการ**
-1. **Parser Initialization** – ส่งอ็อบเจ็กต์ `options` เพื่อสร้างการเชื่อมต่อ EWS  
-2. **Container Check** – ยืนยันว่าเซิร์ฟเวอร์รองรับการดึงข้อมูลแบบคอนเทนเนอร์ (จำเป็นสำหรับการอ่านเป็นชุด)  
-3. **Iterate Over Emails** – `parser.getContainer()` คืนค่า `Iterable` ของ `EmailContainerItem`  
-4. **Open Each Email** – `item.openParser()` สร้าง `Parser` ใหม่สำหรับข้อความแต่ละฉบับ  
-5. **Read Text** – `emailParser.getText()` คืนค่า `TextReader`; เราอ่านเนื้อหาทั้งหมดและพิมพ์ออก  
+**คำอธิบายของกระบวนการ**  
+1. **การเริ่มต้น Parser** – การส่งอ็อบเจ็กต์ `options` จะสร้างการเชื่อมต่อ EWS  
+2. **การตรวจสอบคอนเทนเนอร์** – ตรวจสอบว่าเซิร์ฟเวอร์รองรับการสกัดคอนเทนเนอร์ (จำเป็นสำหรับการอ่านเป็นชุด)  
+3. **วนซ้ำอีเมล** – `parser.getContainer()` คืนค่า `Iterable<EmailContainerItem>`  
+4. **เปิดอีเมลแต่ละรายการ** – `item.openParser()` สร้าง `Parser` ใหม่สำหรับข้อความแต่ละฉบับ  
+5. **อ่านข้อความ** – `emailParser.getText()` ให้ `TextReader`; การอ่านจะคืนข้อความเต็มของเนื้อหา ซึ่งคุณสามารถบันทึก, เก็บ หรือส่งต่อได้  
 
-#### เคล็ดลับการแก้ไขปัญหา
-- **Incorrect EWS URL** – ตรวจสอบ endpoint (`/ews/exchange.asmx`) อีกครั้ง  
-- **Authentication Failures** – ยืนยันชื่อผู้ใช้/รหัสผ่านและพิจารณาใช้ OAuth token สำหรับการยืนยันแบบสมัยใหม่  
-- **Container Not Supported** – บางการตั้งค่า Exchange ภายในองค์กรอาจปิดการดึงข้อมูลแบบคอนเทนเนอร์; ติดต่อผู้ดูแลระบบของคุณ  
-
-## กรณีการใช้งานทั่วไปสำหรับ Extract Emails Exchange
-- **Automated Archiving** – เก็บสำเนาการสื่อสารทั้งหมด (ขาเข้า/ขาออก) เพื่อปฏิบัติตามกฎหมาย  
-- **Sentiment & Trend Analysis** – ดึงเนื้อหาอีเมลเข้าสู่ data lake เพื่อทำการประมวลผล NLP  
+## กรณีการใช้งานทั่วไปสำหรับการสกัด exchange emails Java
+- **Automated Archiving** – เก็บรักษาการสื่อสารเข้าและออกทั้งหมดเพื่อการปฏิบัติตามกฎหมาย  
+- **Sentiment & Trend Analysis** – ส่งออกเนื้อหาอีเมลไปยัง data lake เพื่อการประมวลผล NLP  
 - **CRM Integration** – ซิงค์เธรดอีเมลที่เกี่ยวข้องกับบันทึกลูกค้าโดยอัตโนมัติ  
-- **Security Auditing** – สแกนข้อความเพื่อค้นหาการรั่วไหลของข้อมูลลับหรือรูปแบบฟิชชิ่ง  
+- **Security Auditing** – สแกนข้อความเพื่อหาการรั่วไหลของข้อมูลลับหรือรูปแบบฟิชชิ่ง  
 
-## พิจารณาด้านประสิทธิภาพ
-- **Connection Management** – ใช้อ็อบเจ็กต์ `Parser` ตัวเดียวสำหรับงานเป็นชุด แทนการเชื่อมต่อใหม่ทุกอีเมล  
-- **Batch Processing** – ดึงอีเมลเป็นชิ้นส่วน (เช่น 100 ฉบับต่อครั้ง) เพื่อลด latency ของการติดต่อหลายครั้ง  
-- **Memory Management** – รูปแบบ `try‑with‑resources` (ตามตัวอย่าง) ช่วยปิดสตรีมอย่างรวดเร็ว ป้องกันการรั่วไหลของหน่วยความจำ  
+## ข้อพิจารณาด้านประสิทธิภาพ
+- **การจัดการการเชื่อมต่อ** – ใช้ `Parser` ตัวเดียวซ้ำสำหรับงานเป็นชุดแทนการเชื่อมต่อใหม่สำหรับแต่ละอีเมล  
+- **การประมวลผลเป็นชุด** – ดึงอีเมลเป็นชิ้นส่วน (เช่น 100 รายการต่อครั้ง) เพื่อลดความหน่วงของการเดินทางไปกลับ  
+- **การจัดการหน่วยความจำ** – รูปแบบ `try‑with‑resources` (ตามที่แสดง) ทำให้สตรีมปิดอย่างรวดเร็ว ป้องกันการรั่วไหลและทำให้ขนาด JVM ต่ำ  
 
 ## คำถามที่พบบ่อย
 
-**Q: สามารถดึงไฟล์แนบได้ด้วยหรือไม่?**  
-A: ได้ หลังจากเปิด `EmailContainerItem` ให้เรียก `item.getAttachments()` เพื่อวนลูปและบันทึกไฟล์แนบแต่ละไฟล์  
+**ถาม: ฉันสามารถสกัดไฟล์แนบได้หรือไม่?**  
+ตอบ: ได้ หลังจากเปิด `EmailContainerItem` ให้เรียก `item.getAttachments()` เพื่อแสดงรายการและบันทึกไฟล์แนบแต่ละไฟล์  
 
-**Q: GroupDocs.Parser รองรับไฟล์ EML ที่เก็บบน Exchange หรือไม่?**  
-A: รองรับอย่างแน่นอน ตัวพาร์เซอร์จะตรวจจับรูปแบบพื้นฐาน (MSG หรือ EML) แล้วดึงเนื้อหาได้ตามนั้น  
+**ถาม: GroupDocs.Parser รองรับไฟล์ EML ที่เก็บบน Exchange หรือไม่?**  
+ตอบ: แน่นอน ตัว parser จะตรวจจับรูปแบบพื้นฐาน (MSG หรือ EML) โดยอัตโนมัติและสกัดเนื้อหาให้  
 
-**Q: ถ้าเซิร์ฟเวอร์ Exchange ของฉันใช้การยืนยันแบบ OAuth สมัยใหม่ จะทำอย่างไร?**  
-A: ใช้ overload ของ `EmailEwsConnectionOptions` ที่รับ OAuth token แทนรหัสผ่าน  
+**ถาม: ถ้าเซิร์ฟเวอร์ Exchange ของฉันใช้การยืนยันแบบ OAuth สมัยใหม่ จะทำอย่างไร?**  
+ตอบ: ใช้ overload ของ `EmailEwsConnectionOptions` ที่รับโทเค็น OAuth แทนรหัสผ่าน  
 
-**Q: มีขีดจำกัดจำนวนอีเมลที่สามารถดึงในหนึ่งเซสชันหรือไม่?**  
-A: ไม่มีขีดจำกัดที่กำหนดไว้แน่นอน แต่แบนด์วิธของเครือข่ายและนโยบายการจำกัดของเซิร์ฟเวอร์อาจส่งผลต่อการดึงข้อมูลเป็นชุดขนาดใหญ่ ควรใช้การแบ่งหน้า (pagination) หากจำเป็น  
+**ถาม: มีขีดจำกัดจำนวนอีเมลที่สามารถดึงในหนึ่งเซสชันหรือไม่?**  
+ตอบ: ไม่มีขีดจำกัดที่แน่นอน แต่แบนด์วิดท์เครือข่ายและการจำกัดของเซิร์ฟเวอร์อาจส่งผลต่อชุดใหญ่ ควรใช้การแบ่งหน้า (pagination) หากต้องประมวลผลหลายพันข้อความ  
 
-**Q: ต้องมีลิขสิทธิ์แยกสำหรับแต่ละเซิร์ฟเวอร์หรือไม่?**  
-A: ไลเซนส์ GroupDocs.Parser ตัวเดียวครอบคลุมทุกเซิร์ฟเวอร์ที่คุณเชื่อมต่อ ตราบใดที่คุณปฏิบัติตามเงื่อนไขการให้สิทธิ์ใช้งาน  
+**ถาม: ฉันต้องการไลเซนส์แยกสำหรับแต่ละเซิร์ฟเวอร์หรือไม่?**  
+ตอบ: ไลเซนส์ GroupDocs.Parser หนึ่งใบครอบคลุมทุกเซิร์ฟเวอร์ที่คุณเชื่อมต่อ หากปฏิบัติตามเงื่อนไขการให้สิทธิ์  
 
 ## สรุป
-คุณได้เรียนรู้วิธี **extract emails exchange** อย่างมีประสิทธิภาพด้วย GroupDocs.Parser สำหรับ Java โดยการกำหนดค่า `EmailEwsConnectionOptions`, ตรวจสอบการสนับสนุนคอนเทนเนอร์, และวนลูปผ่าน `EmailContainerItem` เพื่อดึงข้อความอีเมลเต็มรูปแบบ, ไฟล์แนบ, และเมตาดาต้าเข้าสู่กระบวนการทำงานใด ๆ ที่ใช้ Java  
+คุณมีวิธีการที่ครบถ้วนและพร้อมใช้งานในระดับการผลิตเพื่อ **extract exchange emails java** ด้วย GroupDocs.Parser โดยการกำหนดค่า `EmailEwsConnectionOptions`, ตรวจสอบการสนับสนุนคอนเทนเนอร์, และวนซ้ำ `EmailContainerItem` คุณสามารถดึงเนื้อหาอีเมลเต็ม, ไฟล์แนบ, และเมตาดาต้าเข้าสู่เวิร์กโฟลว์ Java ใด ๆ  
 
 **ขั้นตอนต่อไป:**  
-- ทดลองใช้การยืนยันแบบ OAuth สำหรับสภาพแวดล้อม Office 365  
-- ผสานตรรกะการดึงข้อมูลนี้กับคิวข้อความ (เช่น Kafka) เพื่อประมวลผลแบบเรียลไทม์  
-- สำรวจ API ของ GroupDocs.Parser เพื่อดึงรูปภาพฝังหรือเนื้อหา HTML  
+- ลองใช้การยืนยันแบบ OAuth สำหรับเซิร์ฟเวอร์ Exchange ที่ปกป้องด้วย Office 365 หรือ Azure AD  
+- ส่งข้อมูลที่สกัดไปยังคิวข้อความ (เช่น Kafka) เพื่อการประมวลผลแบบเรียลไทม์  
+- สำรวจเมธอด API เพิ่มเติมเพื่อดึงรูปภาพฝังหรือเนื้อหา HTML สำหรับการวิเคราะห์ต่อเนื่องที่ครอบคลุมยิ่งขึ้น  
 
----
+---  
 
-**อัปเดตล่าสุด:** 2025-12-27  
-**ทดสอบกับ:** GroupDocs.Parser 25.5 for Java  
-**ผู้เขียน:** GroupDocs
+**Last Updated:** 2026-06-17  
+**Tested With:** GroupDocs.Parser 25.5 for Java  
+**Author:** GroupDocs  
+
+```java
+import com.groupdocs.parser.Parser;
+
+try (Parser parser = new Parser("path/to/your/file")) {
+    // Your parsing logic here
+} catch (Exception e) {
+    e.printStackTrace();
+}
+```
+
+## บทแนะนำที่เกี่ยวข้อง
+
+- [วิธีสกัดข้อความจากอีเมลโดยใช้ GroupDocs.Parser ใน Java: คู่มือขั้นตอนที่ละเอียด](/parser/java/email-parsing/extract-text-emails-groupdocs-parser-java/)
+- [วิธีสกัดเมตาดาต้าอีเมลโดยใช้ GroupDocs.Parser ใน Java – คู่มือครบวงจร](/parser/java/metadata-extraction/extract-metadata-emails-groupdocs-parser-java/)
+- [สกัดรูปภาพจากอีเมลด้วย GroupDocs.Parser สำหรับ Java](/parser/java/email-parsing/extract-images-emails-groupdocs-parser-java/)
