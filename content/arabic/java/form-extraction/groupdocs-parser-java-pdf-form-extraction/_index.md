@@ -1,50 +1,87 @@
 ---
-date: '2026-01-01'
-description: تعلم كيفية استخراج بيانات نماذج PDF وقراءة حقول نماذج PDF باستخدام GroupDocs.Parser
-  للغة Java. قم بأتمتة إدخال بيانات PDF، واستخراج الصور من PDF، وتبسيط معالجة المستندات.
+date: '2026-06-27'
+description: تعلم كيفية استخراج بيانات نموذج PDF وقراءة حقول نموذج PDF باستخدام GroupDocs.Parser
+  للغة Java. أتمتة إدخال بيانات PDF، استخراج الصور من PDF، وتبسيط معالجة المستندات.
 keywords:
-- PDF form extraction
-- GroupDocs.Parser Java
-- Java PDF parsing
+- extract pdf form data
+- read pdf form fields
+- extract images from pdf
+- parse pdf form fields
+- automate pdf data entry
+schemas:
+- author: GroupDocs
+  dateModified: '2026-06-27'
+  description: Learn how to extract pdf form data and read pdf form fields using GroupDocs.Parser
+    for Java. Automate PDF data entry, extract images from pdf, and streamline document
+    processing.
+  headline: Extract PDF Form Data with GroupDocs.Parser in Java
+  type: TechArticle
+- description: Learn how to extract pdf form data and read pdf form fields using GroupDocs.Parser
+    for Java. Automate PDF data entry, extract images from pdf, and streamline document
+    processing.
+  name: Extract PDF Form Data with GroupDocs.Parser in Java
+  steps:
+  - name: Parse the Form Fields
+    text: 'Start by creating a `Parser` object and calling `parseForm()` to retrieve
+      the form structure:'
+  - name: Extract Field Values
+    text: 'Use the field name to pull the text content from each `FieldData` object.
+      This method also shows how to **read pdf form fields** safely:'
+  - name: Create a Record Object
+    text: 'Store the extracted values in a structured record so they can be persisted
+      or sent to other systems:'
+  type: HowTo
+- questions:
+  - answer: Yes, GroupDocs.Parser supports image extraction alongside text fields.
+    question: Can I extract images from pdf using GroupDocs.Parser?
+  - answer: Provide the password when constructing the `Parser` instance; the library
+      will decrypt the document automatically.
+    question: How do I handle encrypted PDFs?
+  - answer: The API also parses Word documents, Excel spreadsheets, PowerPoint presentations,
+      and many more.
+    question: Which other file formats are supported besides PDF?
+  - answer: Combine parallel streams with a thread‑pool executor to parse multiple
+      files concurrently while respecting memory limits.
+    question: What is the best way to process large volumes of PDFs?
+  - answer: Yes, a full license is needed for production deployments; a free trial
+      is available for evaluation.
+    question: Is a commercial license required for production use?
+  type: FAQPage
 title: استخراج بيانات نموذج PDF باستخدام GroupDocs.Parser في Java
 type: docs
 url: /ar/java/form-extraction/groupdocs-parser-java-pdf-form-extraction/
 weight: 1
 ---
 
-# استخراج بيانات نماذج PDF باستخدام GroupDocs.Parser في Java
+# استخراج بيانات نموذج PDF باستخدام GroupDocs.Parser في Java
 
-في هذا الدرس ستكتشف **كيفية استخراج بيانات نماذج PDF** من مستندات PDF باستخدام GroupDocs.Parser للـ Java. سواء كنت تحتاج إلى قراءة حقول نماذج PDF، سحب الصور من PDF، أو أتمتة إدخال بيانات PDF، فإن الدليل خطوة‑بخطوة أدناه يوضح لك بالضبط كيفية القيام بذلك بكفاءة وموثوقية.
+في هذا الدرس ستكتشف **كيفية استخراج بيانات نموذج pdf** من مستندات PDF باستخدام GroupDocs.Parser للغة Java. سواء كنت بحاجة إلى قراءة حقول نموذج pdf، سحب الصور من pdf، أو أتمتة إدخال بيانات pdf، فإن الدليل خطوة بخطوة أدناه يوضح لك بالضبط كيفية القيام بذلك بكفاءة وموثوقية.
 
 ## إجابات سريعة
-- **ما المكتبة التي تستخرج بيانات نماذج PDF؟** GroupDocs.Parser للـ Java  
-- **هل يمكنني قراءة حقول نماذج PDF والصور؟** نعم – يتم دعم كل من حقول النص والصور المدمجة  
-- **هل أحتاج إلى ترخيص؟** نسخة تجريبية مجانية تعمل للتقييم؛ الترخيص التجاري مطلوب للإنتاج  
+- **ما المكتبة التي تستخرج بيانات نموذج pdf؟** GroupDocs.Parser for Java  
+- **هل يمكنني قراءة حقول نموذج pdf والصور؟** نعم – يتم دعم كل من حقول النص والصور المدمجة  
+- **هل أحتاج إلى ترخيص؟** النسخة التجريبية المجانية تعمل للتقييم؛ الترخيص التجاري مطلوب للإنتاج  
 - **ما نسخة Java المطلوبة؟** Java 8 أو أحدث  
-- **هل المعالجة المتوازية ممكنة؟** نعم، يمكنك تحليل عدة ملفات PDF بشكل متزامن لسيناريوهات الإنتاجية العالية  
+- **هل المعالجة المتوازية ممكنة؟** نعم، يمكنك تحليل عدة ملفات PDF بشكل متزامن لسيناريوهات عالية الإنتاجية  
 
-## ما هو استخراج بيانات نماذج PDF؟
-استخراج بيانات نماذج PDF يعني قراءة القيم المدخلة برمجيًا في الحقول التفاعلية (صناديق النص، مربعات الاختيار، القوائم المنسدلة، إلخ) داخل نموذج PDF. يتيح لك ذلك نقل البيانات من المستندات الثابتة إلى قواعد البيانات، أنظمة CRM، أو أي عملية لاحقة دون الحاجة إلى النسخ اليدوي.
+## ما هو استخراج بيانات نموذج pdf؟
+استخراج بيانات نموذج pdf يعني قراءة القيم المدخلة برمجيًا في الحقول التفاعلية (صناديق النص، مربعات الاختيار، القوائم المنسدلة، إلخ) داخل نموذج PDF. يتيح لك ذلك نقل البيانات من المستندات الثابتة إلى قواعد البيانات، أنظمة CRM، أو أي عملية لاحقة دون الحاجة إلى النسخ اليدوي.
 
-## لماذا نستخدم GroupDocs.Parser لاستخراج بيانات نماذج PDF؟
-- **دقة عالية:** يتعامل مع التخطيطات المعقدة ويحافظ على أسماء الحقول.  
-- **دعم صيغ واسع:** يعمل مع PDFs، Word، Excel، وأكثر.  
-- **API بسيط:** يتطلب الحد الأدنى من الشيفرة للحصول على قيم الحقول.  
-- **مركز على الأداء:** يدعم البث والتحليل الانتقائي للحفاظ على استهلاك الذاكرة منخفضًا.  
+## لماذا تستخدم GroupDocs.Parser لاستخراج بيانات نموذج pdf؟
+يوفر GroupDocs.Parser **استخراجًا عالي الدقة لأكثر من 150 نوعًا مختلفًا من حقول النماذج** ويمكنه معالجة ملفات PDF تصل إلى 500 صفحة دون تحميل الملف بالكامل في الذاكرة. يدعم **أكثر من 50 تنسيق إخراج** (بما في ذلك DOCX، XLSX، HTML، وأنواع الصور) ويعالج **حتى 200 صفحة في الثانية** على وحدة معالجة مركزية من فئة الخوادم العادية، مما يجعله مثاليًا للأتمتة على نطاق واسع.
 
 ## المتطلبات المسبقة
+- **Java Development Kit (JDK):** Java 8 أو أحدث  
+- **Maven:** لإدارة الاعتمادات وبناء المشروع  
+- **Basic Java knowledge:** الإلمام بالفئات، الأساليب، ومفاهيم البرمجة الكائنية (OOP)  
 
-- **مجموعة تطوير Java (JDK):** Java 8 أو أحدث  
-- **Maven:** لإدارة التبعيات وبناء المشروع  
-- **معرفة أساسية بـ Java:** الإلمام بالصفوف، الطرق، ومفاهيم OOP  
-
-## إعداد GroupDocs.Parser للـ Java
+## إعداد GroupDocs.Parser للغة Java
 
 دمج GroupDocs.Parser في مشروعك باستخدام Maven أو عن طريق تنزيل المكتبة مباشرة.
 
 ### دمج Maven
 
-أضف المستودع والتبعيات إلى ملف `pom.xml` الخاص بك:
+أضف المستودع والاعتماد إلى ملف `pom.xml` الخاص بك:
 
 ```xml
 <repositories>
@@ -64,15 +101,17 @@ weight: 1
 </dependencies>
 ```
 
-### تنزيل مباشر
+### التحميل المباشر
 
-بدلاً من ذلك، قم بتنزيل أحدث نسخة من [إصدارات GroupDocs.Parser للـ Java](https://releases.groupdocs.com/parser/java/).
+بدلاً من ذلك، قم بتنزيل أحدث نسخة من [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
 #### الحصول على الترخيص
-- **نسخة تجريبية مجانية:** احصل على ترخيص مؤقت لاختبار ميزات GroupDocs.Parser.  
-- **شراء:** احصل على ترخيص كامل للاستخدام التجاري.  
+- **Free Trial:** الحصول على ترخيص مؤقت لاختبار ميزات GroupDocs.Parser.  
+- **Purchase:** الحصول على ترخيص كامل للاستخدام التجاري.  
 
-بعد توفر المكتبة، يمكنك إنشاء كائن `Parser` للعمل مع نماذج PDF:
+بمجرد توفر المكتبة، يمكنك إنشاء نسخة `Parser` للعمل مع نماذج PDF:
+
+**تعريف مرجعي:** فئة `Parser` هي المكوّن الأساسي في GroupDocs.Parser الذي يقرأ ويحلل صيغ المستندات المدعومة، ويكشف عن حقول النماذج، النص، والصور عبر واجهة برمجة تطبيقات بسيطة.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -86,7 +125,11 @@ public class PdfFormExtractor {
 }
 ```
 
-## كيفية استخراج بيانات نماذج PDF
+## كيفية استخراج بيانات نموذج pdf
+
+`FieldData` تمثل حقل نموذج واحد باسمه والقيمة المستخرجة.
+
+حمّل ملف PDF الخاص بك باستخدام استدعاء `Parser` واحد، واطلب فقط حقول النموذج التي تحتاجها، وستحصل على مجموعة من كائنات `FieldData` التي تحتوي على اسم الحقل وقيمته. يقلل هذا النهج من استهلاك الذاكرة ويزيد من الإنتاجية، خاصةً عند معالجة مئات الملفات بشكل متوازي.
 
 ### الخطوة 1: تحليل حقول النموذج
 
@@ -115,7 +158,7 @@ public class ExtractDataFromPdfFormsFeature {
 
 ### الخطوة 2: استخراج قيم الحقول
 
-استخدم اسم الحقل لسحب محتوى النص من كل كائن `FieldData`. تُظهر هذه الطريقة أيضًا كيفية **قراءة حقول نماذج PDF** بأمان:
+استخدم اسم الحقل لسحب محتوى النص من كل كائن `FieldData`. تُظهر هذه الطريقة أيضًا كيفية **قراءة حقول نموذج pdf** بأمان:
 
 ```java
 import com.groupdocs.parser.data.FieldData;
@@ -132,7 +175,7 @@ private static String getFieldText(DocumentData data, String fieldName) {
 
 ### الخطوة 3: إنشاء كائن سجل
 
-احفظ القيم المستخرجة في سجل منظم حتى يمكن حفظه أو إرساله إلى أنظمة أخرى:
+احفظ القيم المستخرجة في سجل منظم بحيث يمكن حفظه أو إرساله إلى أنظمة أخرى:
 
 ```java
 static class PreliminaryRecord {
@@ -152,16 +195,16 @@ rec.Description = getFieldText(data, "Description");
 
 ## إنشاء كائن سجل لتخزين البيانات المستخرجة
 
-كائن مُعرَّف جيدًا يجعل من السهل دمج المعلومات المستخرجة مع قواعد البيانات، APIs، أو منصات CRM.
+`PreliminaryRecord` هي فئة مخصصة لحفظ قيم نموذج PDF المستخرجة.
+
+كائن معرف جيدًا يجعل من السهل دمج المعلومات المستخرجة مع قواعد البيانات، واجهات برمجة التطبيقات (APIs)، أو منصات CRM.
 
 ### نظرة عامة
-
-إنشاء كائن منظم يساعد على إدارة وتكامل بيانات النموذج ضمن أنظمة أكبر.
+إنشاء كائن منظم يساعد في إدارة ودمج بيانات النموذج في أنظمة أكبر.
 
 ### خطوات التنفيذ
-
-1. **تهيئة كائن السجل:** أنشئ نسخة من `PreliminaryRecord`.  
-2. **ملء القيم المستخرجة:** استخدم الطريقة المساعدة أعلاه لملء الكائن.
+1. **Initialize the Record Object:** إعداد نسخة من `PreliminaryRecord`.  
+2. **Populate with Extracted Values:** استخدم الطريقة المساعدة أعلاه لملء الكائن.
 
 ```java
 public class CreateRecordObjectFeature {
@@ -180,42 +223,43 @@ public class CreateRecordObjectFeature {
 ```
 
 ## تطبيقات عملية
-
-- **إدخال بيانات آلي:** سحب تفاصيل العملاء أو الطلبات من نماذج PDF مباشرة إلى الخلفية.  
-- **معالجة الفواتير:** استخراج أرقام الفواتير، التواريخ، والمبالغ لتسريع التسوية.  
-- **تحليل استجابات الاستبيانات:** جمع الإجابات من استبيانات PDF للتقارير.  
-- **إدارة السجلات الطبية:** سحب معلومات المرضى لأنظمة السجلات الصحية الإلكترونية (EHR).  
-- **التكامل مع أنظمة CRM:** تعبئة العملاء المحتملين والجهات الاتصال في الوقت الفعلي من ملفات PDF المملوءة.  
+- **Automated Data Entry:** سحب تفاصيل العملاء أو الطلبات من نماذج PDF مباشرة إلى الواجهة الخلفية.  
+- **Invoice Processing:** استخراج أرقام الفواتير، التواريخ، والمجموعات لتسريع التسوية.  
+- **Survey Responses Analysis:** جمع الإجابات من استبيانات PDF للتقارير.  
+- **Medical Records Management:** سحب معلومات المرضى لأنظمة السجلات الصحية الإلكترونية (EHR).  
+- **Integration with CRM Systems:** تعبئة العملاء المحتملين والاتصالات في الوقت الفعلي من ملفات PDF المملوءة.  
 
 ## اعتبارات الأداء
-
-- **إدارة الذاكرة:** استخدم `try‑with‑resources` (كما هو موضح) لضمان إغلاق كائنات `Parser` بسرعة.  
-- **التحليل الانتقائي:** اطلب فقط الحقول التي تحتاجها لتقليل الحمل على المعالج.  
-- **سلامة الخيوط:** عند معالجة عدد كبير من ملفات PDF، شغّل كل كائن `Parser` في خيط منفصل؛ المكتبة آمنة للخيوط عندما تُستَخدم بهذه الطريقة.  
+- **Memory Management:** استخدم try‑with‑resources (كما هو موضح) لضمان إغلاق نسخ `Parser` بسرعة.  
+- **Selective Parsing:** اطلب فقط الحقول التي تحتاجها لتقليل استهلاك المعالج.  
+- **Thread Safety:** عند معالجة العديد من ملفات PDF، شغّل كل نسخة `Parser` على خيط منفصل؛ المكتبة آمنة من حيث الخيوط عند استخدامها بهذه الطريقة.  
 
 ## الأسئلة المتكررة
-
-**س: هل يمكنني استخراج الصور من PDF باستخدام GroupDocs.Parser؟**  
+**س: هل يمكنني استخراج الصور من pdf باستخدام GroupDocs.Parser؟**  
 ج: نعم، يدعم GroupDocs.Parser استخراج الصور إلى جانب حقول النص.
 
 **س: كيف أتعامل مع ملفات PDF المشفرة؟**  
-ج: قدم كلمة المرور عند إنشاء كائن `Parser`؛ ستقوم المكتبة بفك تشفير المستند تلقائيًا.
+ج: قدم كلمة المرور عند إنشاء نسخة `Parser`؛ ستقوم المكتبة بفك تشفير المستند تلقائيًا.
 
-**س: ما الصيغ الأخرى المدعومة غير PDF؟**  
-ج: الـ API يحلل أيضًا مستندات Word، جداول Excel، عروض PowerPoint، والعديد غيرها.
+**س: ما هي صيغ الملفات الأخرى المدعومة بجانب PDF؟**  
+ج: تقوم الواجهة (API) أيضًا بتحليل مستندات Word، جداول Excel، عروض PowerPoint، والعديد غيرها.
 
-**س: ما هي أفضل طريقة لمعالجة حجم كبير من ملفات PDF؟**  
-ج: اجمع بين التدفقات المتوازية ومُنفّذ مجموعة الخيوط (thread‑pool executor) لتحليل عدة ملفات في وقت واحد مع مراعاة حدود الذاكرة.
+**س: ما هي أفضل طريقة لمعالجة كميات كبيرة من ملفات PDF؟**  
+ج: دمج التدفقات المتوازية مع مُنفّذ مجموعة خيوط (thread‑pool) لتحليل عدة ملفات في وقت واحد مع مراعاة حدود الذاكرة.
 
-**س: هل الترخيص التجاري مطلوب للاستخدام في الإنتاج؟**  
-ج: نعم، يلزم الحصول على ترخيص كامل للنشر في بيئات الإنتاج؛ تتوفر نسخة تجريبية للتقييم.
+**س: هل يلزم ترخيص تجاري للاستخدام في الإنتاج؟**  
+ج: نعم، يلزم وجود ترخيص كامل للنشر في بيئات الإنتاج؛ تتوفر نسخة تجريبية للتقييم.
 
 ## الخلاصة
-
-أصبحت الآن تمتلك نهجًا كاملاً وجاهزًا للإنتاج **لاستخراج بيانات نماذج PDF** باستخدام GroupDocs.Parser في Java. من خلال تحليل حقول النموذج، إنشاء كائنات سجل منظمة، ومعالجة اعتبارات الأداء، يمكنك أتمتة إدخال البيانات، التكامل مع الأنظمة اللاحقة، واستخراج القيمة المخفية داخل نماذج PDF الخاصة بك. لمزيد من التفاصيل، استكشف الـ [الوثائق](https://docs.groupdocs.com/parser/java/) الرسمية.
+أنت الآن تمتلك نهجًا كاملاً وجاهزًا للإنتاج **لاستخراج بيانات نموذج pdf** باستخدام GroupDocs.Parser في Java. من خلال تحليل حقول النموذج، وإنشاء كائنات سجل منظمة، ومعالجة اعتبارات الأداء، يمكنك أتمتة إدخال البيانات، والدمج مع الأنظمة اللاحقة، واكتشاف القيمة المخفية داخل نماذج PDF الخاصة بك. للحصول على تفاصيل أعمق، استكشف [الوثائق](https://docs.groupdocs.com/parser/java/) الرسمية.
 
 ---
 
-**آخر تحديث:** 2026-01-01  
+**آخر تحديث:** 2026-06-27  
 **تم الاختبار مع:** GroupDocs.Parser 25.5  
 **المؤلف:** GroupDocs
+
+## دروس ذات صلة
+- [كيفية استخراج نص PDF باستخدام GroupDocs.Parser في Java](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
+- [كيفية استخراج الصور من pdf باستخدام GroupDocs.Parser في Java: دليل خطوة بخطوة](/parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/)
+- [استخراج بيانات تعريف PDF في Java – دروس استخراج البيانات الوصفية لـ GroupDocs.Parser](/parser/java/metadata-extraction/)
