@@ -66,13 +66,13 @@ tags:
 - table extraction
 - Java data parsing
 - PDF tables
-title: Java PDF Table Extraction with GroupDocs.Parser
+title: How to Extract Java PDF Tables with GroupDocs.Parser
 type: docs
 url: /java/table-extraction/
 weight: 6
 ---
 
-# Java PDF Table Extraction with GroupDocs.Parser
+# How to Extract Java PDF Tables with GroupDocs.Parser
 
 If you need to **java pdf table extraction**, you’ve come to the right place. This tutorial walks you through extracting tables from Word files, PDFs, and custom‑formatted reports using GroupDocs.Parser for Java. You’ll see how to turn raw tabular data into structured objects that your application can consume, whether you’re building a reporting engine, feeding a database, or automating data pipelines.
 
@@ -86,7 +86,7 @@ If you need to **java pdf table extraction**, you’ve come to the right place. 
 ## What is Java PDF Table Extraction?
 Java pdf table extraction is the process of programmatically locating and retrieving tabular data embedded in PDF documents using Java libraries. With GroupDocs.Parser, you can extract tables directly into Java collections, JSON, or CSV without manual parsing. This approach eliminates the need for manual copy‑paste, reduces errors, and enables automated pipelines that can handle thousands of documents daily.
 
-## Why Use GroupDocs.Parser for Table Extraction?
+## Why use GroupDocs.Parser for table extraction?
 GroupDocs.Parser supports **30+ file formats** and can extract tables from PDFs up to **500 pages** while using less than **200 MB of RAM**. Its OCR engine recognises table structures in scanned documents with **95 % accuracy**, eliminating the need for third‑party tools. These quantified capabilities make it a reliable choice for enterprise‑scale data extraction.
 
 ## Prerequisites
@@ -97,46 +97,63 @@ GroupDocs.Parser supports **30+ file formats** and can extract tables from PDFs 
 ## How to Perform Java PDF Table Extraction?
 Load your PDF, configure the parser, and call the table extraction API – the core workflow fits into three concise lines of code. The process consists of adding the library, initializing a `Parser` object with the target file, and invoking the extraction method, which returns a collection of table structures ready for further processing or export.
 
-### Step 1: Add the Maven Dependency
+### Step 1: add the maven dependency
 Include the latest GroupDocs.Parser artifact in your `pom.xml`. This single dependency brings all required parsers and OCR modules.
 
-### Step 2: Initialise the Parser
+```xml
+<dependency>
+    <groupId>com.groupdocs</groupId>
+    <artifactId>groupdocs-parser</artifactId>
+    <version>23.10</version>
+</dependency>
+```
+
+### Step 2: initialise the parser
 Create a `Parser` instance pointing to your PDF file.  
 `Parser` is the main class in GroupDocs.Parser that loads and processes documents for extraction.
 
-### Step 3: Extract Tables
+```java
+import com.groupdocs.parser.Parser;
+import com.groupdocs.parser.ParserOptions;
+
+ParserOptions options = new ParserOptions();
+options.setEnableOcr(true); // enable OCR if needed
+Parser parser = new Parser("sample.pdf", options);
+```
+
+### Step 3: extract tables
 Invoke `extractTables()` to receive a list of `Table` objects.  
 `extractTables()` extracts all tables from the loaded document and returns them as a collection of `Table` objects.  
 `Table` represents a detected table with rows and cells that can be iterated.
 
 > **Direct answer:** To extract tables from a PDF in Java, add the GroupDocs.Parser Maven dependency, instantiate `Parser` with the PDF path, and call `parser.extractTables()`. The method returns a collection of `Table` objects that you can loop through to access rows and cells, enabling you to export the data to CSV, JSON, or a database.
 
-## Common Use Cases
+## Common use cases
 - **Financial reporting:** Pull transaction tables from quarterly PDF statements into a financial database.  
 - **Invoice processing:** Extract line‑item tables from supplier invoices for automated accounting.  
 - **Research data mining:** Gather experimental results stored in PDF tables for statistical analysis.  
 
-## Tips & Best Practices
+## Tips & best practices
 - **Use OCR for scanned PDFs:** Enable the OCR module by setting `parser.getOptions().setEnableOcr(true)`.  
 - **Limit memory usage:** For very large PDFs, process pages in batches with `parser.getPageCount()` and `parser.extractTables(pageNumber)`.  
 - **Validate extracted data:** After extraction, verify row counts and cell types to catch parsing anomalies early.
 
 ## How to Extract Tables – Available Tutorials
 
-### Efficient Table Extraction from Word Documents Using GroupDocs.Parser in Java
-- [Efficient Table Extraction from Word Documents Using GroupDocs.Parser in Java](./table-extraction-word-docs-groupdocs-parser-java/)
+### Efficient table extraction from word documents using GroupDocs.Parser in java
+- [Efficient Table Extraction from Word Documents Using GroupDocs.Parser in Java]({{< relref "table-extraction-word-docs-groupdocs-parser-java/_index.md" >}})
 
 ### How to Parse Tables in Java Using GroupDocs.Parser: A Comprehensive Guide
-- [How to Parse Tables in Java Using GroupDocs.Parser&#58; A Comprehensive Guide](./parse-tables-java-groupdocs-parser/)
+- [How to Parse Tables in Java Using GroupDocs.Parser: A Comprehensive Guide]({{< relref "parse-tables-java-groupdocs-parser/_index.md" >}})
 
-### Java PDF Table Extraction Using GroupDocs.Parser: A Comprehensive Guide for Developers
-- [Java PDF Table Extraction Using GroupDocs.Parser&#58; A Comprehensive Guide for Developers](./java-pdf-table-extraction-groupdocs-parser/)
+### Java PDF table extraction using GroupDocs.Parser: a comprehensive guide for developers
+- [Java PDF Table Extraction Using GroupDocs.Parser: A Comprehensive Guide for Developers]({{< relref "java-pdf-table-extraction-groupdocs-parser/_index.md" >}})
 
-### Java Table Extraction Using GroupDocs.Parser: A Step‑By‑Step Guide
-- [Java Table Extraction Using GroupDocs.Parser&#58; A Step‑By‑Step Guide](./java-table-extraction-groupdocs-parser-guide/)
+### Java table extraction using GroupDocs.Parser: a step‑By‑Step guide
+- [Java Table Extraction Using GroupDocs.Parser: A Step‑By‑Step Guide]({{< relref "java-table-extraction-groupdocs-parser-guide/_index.md" >}})
 
-### Master Data Extraction from PDF Tables Using GroupDocs.Parser for Java
-- [Master Data Extraction from PDF Tables Using GroupDocs.Parser for Java](./extract-data-pdfs-tables-groupdocs-parser-java/)
+### Master data extraction from PDF tables using GroupDocs.Parser for java
+- [Master Data Extraction from PDF Tables Using GroupDocs.Parser for Java]({{< relref "extract-data-pdfs-tables-groupdocs-parser-java/_index.md" >}})
 
 These tutorials also demonstrate how to **extract pdf table data**, **automate pdf data extraction**, perform **pdf table extraction java** techniques, and **parse tables java** for a variety of real‑world scenarios.
 
@@ -157,7 +174,7 @@ These tutorials also demonstrate how to **extract pdf table data**, **automate p
 
 ---
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 **Q: Can I extract tables from password‑protected PDFs?**  
 A: Yes. Pass the password to the `Parser` constructor or set it via `parser.getOptions().setPassword("yourPassword")` before extraction.
