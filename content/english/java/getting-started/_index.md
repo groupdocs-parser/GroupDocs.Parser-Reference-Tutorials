@@ -126,19 +126,19 @@ A: Use a thread‑pool executor with a shared `Parser` instance and enable lazy 
 
 ## Available Tutorials
 
-### {{< relref "groupdocs-parser-java-set-license-stream/_index.md" >}}How to Set License from Stream in GroupDocs.Parser for Java: A Comprehensive Guide{{< /relref >}}
+### [How to Set License from Stream in GroupDocs.Parser for Java: A Comprehensive Guide]({{< relref "groupdocs-parser-java-set-license-stream/_index.md" >}})
 
-### {{< relref "groupdocs-parser-java-license-setup-guide/_index.md" >}}How to Set a License in Java Using GroupDocs.Parser: A Comprehensive Guide{{< /relref >}}
+### [How to Set a License in Java Using GroupDocs.Parser: A Comprehensive Guide]({{< relref "groupdocs-parser-java-license-setup-guide/_index.md" >}})
 
-### {{< relref "document-parsing-java-groupdocs-parser-guide/_index.md" >}}Implement document parsing in java using GroupDocs.Parser: a complete guide{{< /relref >}}
+### [Implement document parsing in java using GroupDocs.Parser: a complete guide]({{< relref "document-parsing-java-groupdocs-parser-guide/_index.md" >}})
 
-### {{< relref "java-groupdocs-parser-document-extraction-tutorial/_index.md" >}}Master document parsing in java with GroupDocs.Parser: a comprehensive guide{{< /relref >}}
+### [Master document parsing in java with GroupDocs.Parser: a comprehensive guide]({{< relref "java-groupdocs-parser-document-extraction-tutorial/_index.md" >}})
 
-### {{< relref "mastering-document-parsing-java-groupdocs-parser/_index.md" >}}Master document parsing in java: GroupDocs.Parser guide for PDFs and more{{< /relref >}}
+### [Master document parsing in java: GroupDocs.Parser guide for PDFs and more]({{< relref "mastering-document-parsing-java-groupdocs-parser/_index.md" >}})
 
-### {{< relref "groupdocs-parser-java-document-parsing-guide/_index.md" >}}Mastering Document Parsing with GroupDocs.Parser in Java: A Comprehensive Guide{{< /relref >}}
+### [Mastering Document Parsing with GroupDocs.Parser in Java: A Comprehensive Guide]({{< relref "groupdocs-parser-java-document-parsing-guide/_index.md" >}})
 
-### {{< relref "groupdocs-parser-java-initialize-tutorial/_index.md" >}}Mastering GroupDocs.Parser in Java: A Step‑By‑Step Guide for Document Parsing and Extraction{{< /relref >}}
+### [Mastering GroupDocs.Parser in Java: A Step‑By‑Step Guide for Document Parsing and Extraction]({{< relref "groupdocs-parser-java-initialize-tutorial/_index.md" >}})
 
 ## Additional Resources
 
@@ -159,6 +159,6 @@ A: Use a thread‑pool executor with a shared `Parser` instance and enable lazy 
 
 ## Related Tutorials
 
-- {{< relref "parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/_index.md" >}}How to extract images from pdf using GroupDocs.Parser in Java: A Step‑by‑Step Guide{{< /relref >}}
-- {{< relref "parser/java/metadata-extraction/extract-pdf-metadata-groupdocs-parser-java/_index.md" >}}How to Extract PDF Metadata Using GroupDocs.Parser in Java: A Step‑By‑Step Guide{{< /relref >}}
-- {{< relref "parser/java/text-extraction/pdf-parsing-groupdocs-parser-java-guide/_index.md" >}}Guide to PDF Parsing in Java Using GroupDocs.Parser: Text Extraction Techniques{{< /relref >}}
+- [How to extract images from pdf using GroupDocs.Parser in Java: A Step‑by‑Step Guide]({{< relref "parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/_index.md" >}})
+- [How to Extract PDF Metadata Using GroupDocs.Parser in Java: A Step‑By‑Step Guide]({{< relref "parser/java/metadata-extraction/extract-pdf-metadata-groupdocs-parser-java/_index.md" >}})
+- [Guide to PDF Parsing in Java Using GroupDocs.Parser: Text Extraction Techniques]({{< relref "parser/java/text-extraction/pdf-parsing-groupdocs-parser-java-guide/_index.md" >}})
