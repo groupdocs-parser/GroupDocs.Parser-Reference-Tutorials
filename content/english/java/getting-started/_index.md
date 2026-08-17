@@ -159,6 +159,6 @@ A: Use a thread‑pool executor with a shared `Parser` instance and enable lazy 
 
 ## Related Tutorials
 
-- [How to extract images from pdf using GroupDocs.Parser in Java: A Step‑by‑Step Guide]({{< relref "parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/_index.md" >}})
-- [How to Extract PDF Metadata Using GroupDocs.Parser in Java: A Step‑By‑Step Guide]({{< relref "parser/java/metadata-extraction/extract-pdf-metadata-groupdocs-parser-java/_index.md" >}})
-- [Guide to PDF Parsing in Java Using GroupDocs.Parser: Text Extraction Techniques]({{< relref "parser/java/text-extraction/pdf-parsing-groupdocs-parser-java-guide/_index.md" >}})
+- [How to extract images from pdf using GroupDocs.Parser in Java: A Step‑by‑Step Guide]({{< relref "java/image-extraction/extract-images-pdf-groupdocs-parser-java/_index.md" >}})
+- [How to Extract PDF Metadata Using GroupDocs.Parser in Java: A Step‑By‑Step Guide]({{< relref "java/metadata-extraction/extract-pdf-metadata-groupdocs-parser-java/_index.md" >}})
+- [Guide to PDF Parsing in Java Using GroupDocs.Parser: Text Extraction Techniques]({{< relref "java/text-extraction/pdf-parsing-groupdocs-parser-java-guide/_index.md" >}})
