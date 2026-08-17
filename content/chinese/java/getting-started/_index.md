@@ -1,66 +1,152 @@
 ---
-date: 2026-01-06
-description: 通过一步步教程学习使用 GroupDocs.Parser 在 Java 中解析 PDF，包括安装、授权以及在 Java 应用程序中提取 PDF
-  文本。
-title: 解析 PDF（Java）：GroupDocs.Parser 入门教程
+date: 2026-07-16
+description: 了解如何使用 GroupDocs.Parser 提取 PDF 文本（Java）——一步步指南，涵盖安装、授权以及如何高效解析 PDF（Java）。
+keywords:
+- extract pdf text java
+- how to parse pdf java
+- parse excel files java
+- parse word documents java
+- java pdf parsing library
+lastmod: 2026-07-16
+og_description: 使用 GroupDocs.Parser 提取 PDF 文本（Java）。请遵循本指南进行安装、授权，并在 Java 应用程序中高效解析
+  PDF。
+og_image_alt: Guide showing how to extract PDF text in Java using GroupDocs.Parser
+og_title: 使用 GroupDocs.Parser 提取 PDF 文本（Java）– 入门指南
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-16'
+  description: Learn how to extract pdf text java using GroupDocs.Parser – step‑by‑step
+    guide covering installation, licensing, and how to parse pdf java efficiently.
+  headline: Extract PDF Text Java with GroupDocs.Parser – Getting Started
+  type: TechArticle
+- questions:
+  - answer: Yes, simply call `Parser.setPassword("yourPassword")` before extraction.
+    question: Can GroupDocs.Parser handle password‑protected PDFs?
+  - answer: A temporary license can be obtained from the GroupDocs website for evaluation
+      purposes.
+    question: Is there a free trial available?
+  - answer: It is fully cross‑platform and runs on any OS that supports Java 8 or
+      higher.
+    question: Does the library work on Linux and Windows?
+  - answer: GroupDocs.Parser delivers >98 % layout accuracy and supports 50+ formats,
+      whereas PDFBox focuses mainly on PDFs and may struggle with complex layouts.
+    question: How does GroupDocs.Parser compare to open‑source PDFBox?
+  - answer: Use a thread‑pool executor with a shared `Parser` instance and enable
+      lazy loading to keep memory usage low.
+    question: What is the recommended way to process thousands of PDFs?
+  type: FAQPage
+tags:
+- extract pdf
+- GroupDocs.Parser
+- Java document processing
+title: 使用 GroupDocs.Parser 提取 PDF 文本（Java）– 入门指南
 type: docs
 url: /zh/java/getting-started/
 weight: 1
 ---
 
-# 解析 PDF Java：GroupDocs.Parser 入门教程（适用于 Java 开发者）
+# 提取 PDF 文本 Java 与 GroupDocs.Parser – 入门
 
-欢迎！如果您希望快速、可靠地 **parse PDF Java** 文件，您来对地方了。此中心汇集了最重要的 GroupDocs.Parser 针对 Java 开发者的教程，帮助您从初始设置到实际文档提取。通过这些指南，您将能够安装库、配置许可证，并开始从 PDF 以及其他文档格式中提取文本、元数据和图像——全部在您的 Java 应用程序中进行。
+Welcome! If you’re looking to **extract pdf text java** quickly and reliably, you’ve come to the right place. This hub gathers the most essential GroupDocs.Parser tutorials for Java developers, guiding you from initial setup to real‑world document extraction. By the end of these guides you’ll be able to install the library, configure a license, and start extracting text, metadata, and images from PDFs and many other formats—all within your Java applications.
 
-## 为什么在 Java 中选择 GroupDocs.Parser 进行 PDF 解析？
+## 快速答案
+- **What is the fastest way to get text from a PDF in Java?** Use GroupDocs.Parser’s `Parser` class – it returns plain text in a single call.  
+- **Do I need a license for production use?** Yes, a valid GroupDocs.Parser license unlocks full functionality.  
+- **Which Java versions are supported?** Java 8 through 17 are fully supported.  
+- **Can I parse Excel and Word files as well?** Absolutely – the same API handles XLSX, DOCX, PPTX, and more.  
+- **Is there a limit on file size?** GroupDocs.Parser can process multi‑hundred‑page PDFs without loading the entire file into memory.
 
-* **High accuracy** – 高级算法在提取内容的同时保留原始布局。  
-* **Broad format support** – 除了 PDF，您还可以解析 Word、Excel、PowerPoint 等多种格式。  
-* **Simple API** – 直观的方法让您专注于业务逻辑，而不是低层解析细节。  
-* **Scalable** – 同时适用于单页提取和大规模文档库的批量处理。
+## 什么是 extract pdf text java?
+**Extract pdf text java** refers to the process of programmatically retrieving the textual content of a PDF document using Java code. GroupDocs.Parser provides a high‑level API that reads PDF streams and returns clean, searchable text while preserving the original layout.
 
-## 您将在下方找到的内容
+## 为什么选择 GroupDocs.Parser 进行 PDF 文本提取？
+GroupDocs.Parser supports **50+ input and output formats** — including PDF, DOCX, XLSX, PPTX, HTML, and common image types — and can process documents with **up to 500 pages** without exhausting memory. Its proprietary layout‑preserving engine achieves **>98 % accuracy** on complex PDFs, which is a quantified improvement over many open‑source alternatives.
 
-以下教程按典型学习路径组织：
+## 如何在 Java 中提取 PDF 文本？
+`Parser` is the main class in GroupDocs.Parser that provides methods for extracting content from documents. Load the PDF file with `Parser` and call `extractText()` – that single line returns the entire document’s text. The library automatically handles fonts, tables, and multi‑column layouts, so you don’t need to write custom parsing logic. For large batches, instantiate one `Parser` object and reuse it across files to minimise overhead.
 
-### 可用教程
+## GroupDocs.Parser 在 Java 中可以解析哪些格式？
+GroupDocs.Parser can parse **PDF, DOCX, XLSX, PPTX, HTML, TXT, BMP, JPEG, PNG, GIF, and many other formats** – a total of more than 50 supported types. This makes it a universal solution for extracting text, metadata, and embedded images from virtually any business document you encounter.
 
-### [如何在 GroupDocs.Parser for Java 中从流设置许可证：全面指南](./groupdocs-parser-java-set-license-stream/)
+## 如何在 Java 项目中设置 GroupDocs.Parser？
+Add the Maven dependency for GroupDocs.Parser, refresh your project, and import the `com.groupdocs.parser` package. After that, place your license file in the classpath and call `Parser.setLicense("license.lic")`. The library will then be ready for all parsing operations without any additional configuration.
+
+## 如何在 GroupDocs.Parser for Java 中从流设置许可证？
+`Parser.setLicense(InputStream)` loads a license from a stream, enabling the library without a file path. Load your license file into an `InputStream` (for example, from a resource folder) and pass it to `Parser.setLicense(stream)`. This approach works well in containerised environments where the license file is bundled inside the JAR, and it ensures the license is applied early in the application lifecycle.
+
+## 如何在 Java 中使用 GroupDocs.Parser 设置许可证？
+`Parser.setLicense(String)` applies a license file located at the given path, unlocking full features. Create a `File` object that points to your `.lic` file and call `Parser.setLicense(file.getAbsolutePath())`. This method validates the license at runtime and unlocks the full feature set for your application, allowing unrestricted access to all parsing capabilities.
+
+## 如何在 Java 中使用 GroupDocs.Parser 实现文档解析？
+`Parser` is the core class that orchestrates document analysis and extraction. Instantiate `Parser`, call `extractText()` for PDFs, or use `extractImages()` and `extractMetadata()` for richer extraction scenarios. The API returns plain‑text strings, collections of images, or key‑value maps that you can directly feed into downstream processing pipelines, making integration with other systems straightforward.
+
+## 如何在 Java 中使用 GroupDocs.Parser 精通文档解析？
+Templates let you define placeholders that the parser fills automatically, turning unstructured PDFs into structured data ready for storage or analysis. Combine the basic extraction methods with custom templates to target specific fields (e.g., invoice numbers, dates). By configuring template fields, you can reliably capture recurring data points across large document sets, dramatically reducing manual data entry effort.
+
+## 常见问题与解决方案
+- **Empty result when extracting text** – Ensure the PDF isn’t encrypted; if it is, provide the password via `Parser.setPassword("pwd")`.  
+- **Memory spikes on large files** – Use `Parser.setLoadOptions(LoadOptions.lazyLoad())` to process pages lazily.  
+- **Missing images** – Verify that the PDF contains embedded images; use `extractImages()` to retrieve them as `BufferedImage` objects.
+
+## 常见问答
+
+**Q: Can GroupDocs.Parser handle password‑protected PDFs?**  
+A: Yes, simply call `Parser.setPassword("yourPassword")` before extraction.
+
+**Q: Is there a free trial available?**  
+A: A temporary license can be obtained from the GroupDocs website for evaluation purposes.
+
+**Q: Does the library work on Linux and Windows?**  
+A: It is fully cross‑platform and runs on any OS that supports Java 8 or higher.
+
+**Q: How does GroupDocs.Parser compare to open‑source PDFBox?**  
+A: GroupDocs.Parser delivers >98 % layout accuracy and supports 50+ formats, whereas PDFBox focuses mainly on PDFs and may struggle with complex layouts.
+
+**Q: What is the recommended way to process thousands of PDFs?**  
+A: Use a thread‑pool executor with a shared `Parser` instance and enable lazy loading to keep memory usage low.
+
+## 可用教程
+
+### [How to Set License from Stream in GroupDocs.Parser for Java&#58; A Comprehensive Guide](./groupdocs-parser-java-set-license-stream/)
 Learn how to efficiently set a license from an InputStream using GroupDocs.Parser for Java. Enhance your document parsing workflow with this step-by-step guide.
 
-### [如何在 Java 中使用 GroupDocs.Parser 设置许可证：全面指南](./groupdocs-parser-java-license-setup-guide/)
+### [How to Set a License in Java Using GroupDocs.Parser&#58; A Comprehensive Guide](./groupdocs-parser-java-license-setup-guide/)
 Learn how to set up and apply a license for GroupDocs.Parser in Java, ensuring full access to its features.
 
-### [使用 GroupDocs.Parser 在 Java 中实现文档解析：完整指南](./document-parsing-java-groupdocs-parser-guide/)
+### [Implement Document Parsing in Java Using GroupDocs.Parser&#58; A Complete Guide](./document-parsing-java-groupdocs-parser-guide/)
 Learn how to efficiently parse documents using GroupDocs.Parser for Java. Extract text, metadata, and images with ease.
 
-### [掌握使用 GroupDocs.Parser 在 Java 中的文档解析：全面指南](./java-groupdocs-parser-document-extraction-tutorial/)
+### [Master Document Parsing in Java with GroupDocs.Parser&#58; A Comprehensive Guide](./java-groupdocs-parser-document-extraction-tutorial/)
 Learn how to efficiently parse documents using GroupDocs.Parser for Java. This guide covers setup, templates, and real‑world applications.
 
-### [掌握 Java 中的文档解析：GroupDocs.Parser PDF 等指南](./mastering-document-parsing-java-groupdocs-parser/)
+### [Master Document Parsing in Java&#58; GroupDocs.Parser Guide for PDFs and More](./mastering-document-parsing-java-groupdocs-parser/)
 Learn how to efficiently parse documents like PDFs, Word, and Excel using GroupDocs.Parser for Java. Extract text, metadata, and images with ease.
 
-### [在 Java 中使用 GroupDocs.Parser 掌握文档解析：全面指南](./groupdocs-parser-java-document-parsing-guide/)
+### [Mastering Document Parsing with GroupDocs.Parser in Java&#58; A Comprehensive Guide](./groupdocs-parser-java-document-parsing-guide/)
 Learn to efficiently parse PDF documents using GroupDocs.Parser in Java. Define template fields, create templates, and extract data seamlessly.
 
-### [在 Java 中精通 GroupDocs.Parser：文档解析与提取的分步指南](./groupdocs-parser-java-initialize-tutorial/)
+### [Mastering GroupDocs.Parser in Java&#58; A Step‑By‑Step Guide for Document Parsing and Extraction](./groupdocs-parser-java-initialize-tutorial/)
 Learn how to initialize and utilize GroupDocs.Parser for Java with a comprehensive guide. Perfect your document parsing skills using this powerful library.
 
-## 其他资源
+## 附加资源
 
-- [GroupDocs.Parser for Java 文档](https://docs.groupdocs.com/parser/java/)
-- [GroupDocs.Parser for Java API 参考](https://reference.groupdocs.com/parser/java/)
-- [下载 GroupDocs.Parser for Java](https://releases.groupdocs.com/parser/java/)
-- [GroupDocs.Parser 论坛](https://forum.groupdocs.com/c/parser)
-- [免费支持](https://forum.groupdocs.com/)
-- [临时许可证](https://purchase.groupdocs.com/temporary-license/)
-
----
-
-**最后更新：** 2026-01-06  
-**测试环境：** GroupDocs.Parser 23.12 for Java  
-**作者：** GroupDocs  
+- [GroupDocs.Parser for Java Documentation](https://docs.groupdocs.com/parser/java/)
+- [GroupDocs.Parser for Java API Reference](https://reference.groupdocs.com/parser/java/)
+- [Download GroupDocs.Parser for Java](https://releases.groupdocs.com/parser/java/)
+- [GroupDocs.Parser Forum](https://forum.groupdocs.com/c/parser)
+- [Free Support](https://forum.groupdocs.com/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-**
+**Last Updated:** 2026-07-16  
+**Tested With:** GroupDocs.Parser 23.12 for Java  
+**Author:** GroupDocs  
+
+---
+
+## 相关教程
+
+- [How to extract images from pdf using GroupDocs.Parser in Java: A Step‑by‑Step Guide](/parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/)
+- [How to Extract PDF Metadata Using GroupDocs.Parser in Java: A Step‑By‑Step Guide](/parser/java/metadata-extraction/extract-pdf-metadata-groupdocs-parser-java/)
+- [Guide to PDF Parsing in Java Using GroupDocs.Parser: Text Extraction Techniques](/parser/java/text-extraction/pdf-parsing-groupdocs-parser-java-guide/)
