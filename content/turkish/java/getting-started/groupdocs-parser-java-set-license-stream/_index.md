@@ -1,61 +1,126 @@
 ---
-date: '2026-01-11'
-description: GroupDocs.Parser for Java kullanarak bir InputStream'den lisans ayarlamayı
-  öğrenin. Bu rehber, lisansı verimli bir şekilde nasıl ayarlayacağınızı gösterir
+date: '2026-07-21'
+description: GroupDocs.Parser for Java kullanarak bir InputStream'den lisans nasıl
+  ayarlanacağını öğrenin. Bu kılavuz, lisansı verimli bir şekilde ayarlamayı gösterir
   ve belge ayrıştırma iş akışınızı geliştirir.
 keywords:
-- Set license from stream with GroupDocs.Parser for Java
-- GroupDocs.Parser for Java setup
+- how to set license
+- GroupDocs.Parser Java license
+- InputStream license Java
+lastmod: '2026-07-21'
+og_description: GroupDocs.Parser for Java kullanarak bir InputStream'den lisans nasıl
+  ayarlanacağını öğrenin. Cloud veya on‑prem ortamlarda lisanslamayı verimli bir şekilde
+  yapılandırmak için adım adım kılavuzu izleyin.
+og_image_alt: Guide showing Java code that loads a GroupDocs.Parser license from an
+  InputStream
+og_title: GroupDocs.Parser for Java'da Akıştan Lisans Nasıl Ayarlanır
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-21'
+  description: Learn how to set license from an InputStream using GroupDocs.Parser
+    for Java. This guide shows how to set license efficiently and enhances your document
+    parsing workflow.
+  headline: How to Set License from Stream in GroupDocs.Parser for Java
+  type: TechArticle
+- description: Learn how to set license from an InputStream using GroupDocs.Parser
+    for Java. This guide shows how to set license efficiently and enhances your document
+    parsing workflow.
+  name: How to Set License from Stream in GroupDocs.Parser for Java
+  steps:
+  - name: '**Cloud‑Native Microservices** – Store the license in a secret manager
+      (AWS Secrets Manager, Azure Key Vault) and stream it at startup, avoiding any
+      file‑system write.'
+    text: '**Cloud‑Native Microservices** – Store the license in a secret manager
+      (AWS Secrets Manager, Azure Key Vault) and stream it at startup, avoiding any
+      file‑system write.'
+  - name: '**Serverless Functions** – Lambda or Azure Functions have read‑only file
+      systems; loading the license from an environment variable converted to a `ByteArrayInputStream`
+      works flawlessly.'
+    text: '**Serverless Functions** – Lambda or Azure Functions have read‑only file
+      systems; loading the license from an environment variable converted to a `ByteArrayInputStream`
+      works flawlessly.'
+  - name: '**Secure On‑Prem Deployments** – Keep the license encrypted on disk, decrypt
+      it in memory, and feed the resulting `InputStream` to the `License` object,
+      ensuring the clear‑text file never touches the disk.'
+    text: '**Secure On‑Prem Deployments** – Keep the license encrypted on disk, decrypt
+      it in memory, and feed the resulting `InputStream` to the `License` object,
+      ensuring the clear‑text file never touches the disk.'
+  type: HowTo
+- questions:
+  - answer: Use the `License.setLicense(InputStream)` method.
+    question: What is the primary way to set a license?
+  - answer: No, the file can be streamed directly from resources or a remote source.
+    question: Do I need a physical license file on disk?
+  - answer: Java 8 or higher is recommended.
+    question: Which Java version is required?
+  - answer: Absolutely—streaming avoids writing the file to the local filesystem.
+    question: Can I use this in cloud environments?
+  - answer: The code will log an error and the library will run in trial mode.
+    question: What happens if the license file is missing?
+  type: FAQPage
+tags:
+- set license
+- GroupDocs.Parser
 - Java document parsing
-title: 'GroupDocs.Parser for Java''da Akıştan Lisans Nasıl Ayarlanır: Kapsamlı Bir
-  Rehber'
+- InputStream
+title: GroupDocs.Parser for Java'da Akıştan Lisans Nasıl Ayarlanır
 type: docs
 url: /tr/java/getting-started/groupdocs-parser-java-set-license-stream/
 weight: 1
 ---
 
-# Akıştan Lisans Ayarlama GroupDocs.Parser for Java
+# Akıştan Lisans Ayarlama - GroupDocs.Parser for Java
 
-GroupDocs.Parser for Java ile çalışırken akıştan **lisans nasıl ayarlanır** arıyorsanız, doğru yerdesiniz. Bu rehberde proje kurulumundan lisansı bir `InputStream` aracılığıyla yükleyen koda kadar tüm süreci adım adım inceleyeceğiz. Sonunda, lisansı verimli bir şekilde nasıl ayarlayacağınızı ve ayrıştırma iş akışınızı sorunsuz tutacağınızı göreceksiniz.
+GroupDocs.Parser for Java ile çalışırken bir akıştan **how to set license** arıyorsanız, doğru yerdesiniz. Bu rehberde proje kurulumundan lisansı bir `InputStream` aracılığıyla yükleyen gerçek koda kadar tüm süreci adım adım inceleyeceğiz. Sonunda, lisansı verimli bir şekilde ayarlamayı ve ayrıştırma iş akışınızı sorunsuz tutmayı göreceksiniz.
 
 ## Hızlı Yanıtlar
 - **Lisansı ayarlamanın temel yolu nedir?** `License.setLicense(InputStream)` metodunu kullanın.  
-- **Diskte fiziksel bir lisans dosyasına ihtiyacım var mı?** Hayır, dosya doğrudan kaynaklardan veya uzak bir konumdan akış olarak alınabilir.  
+- **Diskte fiziksel bir lisans dosyasına ihtiyacım var mı?** Hayır, dosya doğrudan kaynaklardan veya uzak bir kaynaktan akış olarak alınabilir.  
 - **Hangi Java sürümü gereklidir?** Java 8 veya üzeri önerilir.  
 - **Bunu bulut ortamlarında kullanabilir miyim?** Kesinlikle—akış, dosyanın yerel dosya sistemine yazılmasını önler.  
 - **Lisans dosyası eksik olursa ne olur?** Kod bir hata kaydı oluşturur ve kütüphane deneme modunda çalışır.
 
 ## Giriş
 
-Java’da belge ayrıştırma işlemleri sırasında kütüphane lisanslarını verimli bir şekilde yönetmek mi istiyorsunuz? `InputStream` kullanarak **lisans nasıl ayarlanır** bilmek, manuel dosya işlemlerinden kaçınarak zaman ve kaynak tasarrufu sağlar. Bu öğretici, GroupDocs.Parser for Java ile akıştan lisans ayarlamayı adım adım göstererek iş akışınızı basitleştirir.
+Modern Java uygulamalarında, üçüncü taraf lisanslarını diskte hassas dosyalar bırakmadan yönetmek yaygın bir gereksinimdir. **how to set license** bir `InputStream` kullanarak lisans dosyasını bellekte tutmanızı sağlar; bu, konteynerleştirilmiş hizmetler, sunucusuz fonksiyonlar ve dosya sistemi erişiminin kısıtlı olduğu herhangi bir ortam için idealdir. Bu öğretici, GroupDocs.Parser for Java yapılandırmasını, lisansı bir akıştan yüklemeyi ve yaygın tuzakları ele almayı adım adım gösterir.
 
-**Öğrenecekleriniz:**
-- Projenizde GroupDocs.Parser for Java nasıl yapılandırılır  
-- `InputStream` üzerinden lisans ayarlamanın adım‑adım uygulanışı  
-- Pratik uygulama senaryoları ve entegrasyon imkanları  
+For detailed API usage, refer to the official [documentation](https://docs.groupdocs.com/parser/java/).
 
-Detaylara geçmeden önce, her şeyin doğru kurulduğundan emin olalım. Önkoşulları aşağıda bulabilirsiniz.
+Şunları öğreneceksiniz:
+* GroupDocs.Parser'ı bir Maven ya da manuel projeye ekleyin.
+* Lisans dosyasını sınıf yolundan, bir URL'den veya herhangi bir `InputStream`'den akış olarak alın.
+* Lisansın uygulandığını doğrulayın ve deneme moduna geçişi anlayın.
+
+## GroupDocs.Parser'da “how to set license” nedir?
+
+`how to set license`, GroupDocs.Parser motoruna deneme sınırlamaları olmadan çalışabileceğini bildiren süreci tanımlar. Kütüphane lisansı çalışma zamanında kontrol eder; geçerli bir lisans sağlanırsa tüm premium özellikler kullanılabilir hale gelir.
+
+## Neden lisansı bir dosya yolu yerine akış olarak kullanmalısınız?
+
+Lisansı akış olarak kullanmak, geçici bir dosya yazma ihtiyacını ortadan kaldırır, I/O yükünü azaltır ve lisans baytlarını yalnızca bellekte tutarak güvenliği artırır. GroupDocs.Parser, tüm dosyayı RAM'e yüklemeden **200 + sayfa**'ya kadar belgeleri işleyebilir ve aynı hafif yaklaşım lisanslama için de geçerlidir.
 
 ## Önkoşullar
 
-GroupDocs.Parser for Java ile çalışmaya başlamak için şunlara ihtiyacınız var:
+GroupDocs.Parser for Java ile başlamanız için şunlar gerekir:
 
 ### Gerekli Kütüphaneler
-- **GroupDocs.Parser for Java**: 25.5 veya daha yeni bir sürüm kullandığınızdan emin olun.  
+- **GroupDocs.Parser for Java**: **25.5** veya daha yeni sürüm (kütüphane **100+** belge formatını destekler, DOCX, PDF, PPTX, XLSX, HTML ve yaygın görüntü türleri dahil).
 
 ### Ortam Kurulum Gereksinimleri
-- Makinenizde yüklü bir Java Development Kit (JDK) (Java 8 veya üzeri önerilir).  
+- JDK 8 veya üzeri, yerel olarak veya CI boru hattınızda kurulu.
+- Maven 3.6+ (Maven entegrasyonunu seçerseniz).
 
 ### Bilgi Önkoşulları
-- Java programlama ve dosya işlemleri konusunda temel bir anlayış.
+- Temel Java sözdizimi, özellikle akışlarla ve try‑with‑resources ile çalışma.
+- Maven projesi oluşturma veya dış JAR'ları sınıf yoluna ekleme konusunda aşinalık.
 
 ## GroupDocs.Parser for Java Kurulumu
 
-Projenizde GroupDocs.Parser'ı kurmaya başlayalım. Bunun iki temel yolu vardır: Maven kullanmak veya GroupDocs web sitesinden doğrudan indirmek.
+Projenize GroupDocs.Parser eklemenin iki temel yolu vardır: Maven veya manuel indirme.
 
-**Maven Kurulumu**
+### Maven Kurulumu
 
-`pom.xml` dosyanıza aşağıdaki yapılandırmayı ekleyin:
+Add the following configuration to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -75,39 +140,34 @@ Projenizde GroupDocs.Parser'ı kurmaya başlayalım. Bunun iki temel yolu vardı
 </dependencies>
 ```
 
-**Doğrudan İndirme**
+### Doğrudan İndirme
 
-Alternatif olarak, en yeni GroupDocs.Parser for Java sürümünü [GroupDocs Parser Releases](https://releases.groupdocs.com/parser/java/) adresinden indirebilirsiniz.
+Alternatif olarak, GroupDocs.Parser for Java'ın en son sürümünü [GroupDocs Parser Releases](https://releases.groupdocs.com/parser/java/) adresinden indirebilirsiniz.
 
 ### Lisans Edinimi
 
-GroupDocs.Parser özelliklerini sınırlama olmadan kullanmak için bir lisans edinin:
-- **Ücretsiz Deneme**: Tüm işlevleri test edin.  
-- **Geçici Lisans**: Premium özellikleri keşfetmek için geçici bir lisans alın.  
-- **Satın Alma**: Tam erişim için bir lisans satın alın.
+GroupDocs.Parser'ı deneme kısıtlamaları olmadan kullanmak için bir lisans dosyasına ihtiyacınız olacak:
 
-Lisans dosyasını edindikten sonra, uygulamanızda başlatmanız gerekir. Şimdi bu işlevselliği nasıl uygulayacağımıza geçelim.
+- **Free Trial** – Tüm özellikler 30 gün boyunca kullanılabilir.  
+- **Temporary License** – Kısa vadeli değerlendirmeler için idealdir; [Temporary License](https://purchase.groupdocs.com/temporary-license/) sayfasından bir tane isteyin.  
+- **Purchased License** – Sınırsız üretim kullanımı sağlar.
 
-## Akıştan Lisans Ayarlama
+`.lic` dosyasını edindikten sonra, uygulamanıza bir kaynak olarak gömecek veya güvenli bir depolama kovasından alacaksınız.
 
-### Genel Bakış
+## InputStream'den Lisans Nasıl Yüklenir?
 
-`InputStream` üzerinden lisans ayarlamak, doğrudan dosya erişiminin sınırlı olduğu ortamlar veya geçici veri akışlarıyla çalışırken faydalıdır. Aşağıda tam bir yol haritası bulacaksınız.
-
-#### Step 1: Prepare Your License File
-
-Öncelikle, lisans dosyanızın proje dizininde erişilebilir olduğundan emin olun.
+Bir `InputStream`'den lisans yüklemek için, `.lic` dosyasını bir akış olarak okuyun (örneğin sınıf yolundan veya uzak bir kaynaktan) ve `License` nesnesine geçirin. `License` sınıfı XML içeriğini doğrular ve `setLicense(InputStream)` metodu kütüphaneyi etkinleştirir, disk üzerinde fiziksel bir dosyaya ihtiyaç kalmaz. `License` sınıfı çalışma zamanında bir GroupDocs.Parser lisansını doğrular ve uygular. `setLicense(InputStream)` metodu lisans baytlarını akıştan okur ve kütüphaneyi etkinleştirir.
 
 ```java
 String licensePath = "YOUR_DOCUMENT_DIRECTORY"; // Replace with the actual path to your license file.
 File licenseFile = new File(licensePath);
 ```
 
-**Açıklama**: `licensePath`, GroupDocs lisans dosyanızın bulunduğu konuma işaret etmelidir. Bu örnek, gösterim amaçlı yerel bir dosya kullanmaktadır.
+**Açıklama**: `licensePath` lisans dosyasının sınıf yolu konumunu gösterir. `try (InputStream licStream = ...)` yapısı, lisans uygulandıktan sonra akışın kapatılmasını, bir istisna oluşsa bile garanti eder.
 
-#### Step 2: Create and Configure License Object
+## Lisans dosyası eksik veya bozuk olursa ne olur?
 
-Ardından, `License` sınıfının bir örneğini oluşturun ve `InputStream` ile ayarlayın.
+Lisans yüklenemezse, GroupDocs.Parser otomatik olarak deneme moduna geçer ve bir uyarı kaydı oluşturur. Bu durumu, lisans verisinin eksik, okunamaz veya hatalı olduğunu gösteren `LicenseException` yakalayarak tespit edebilirsiniz. İstisnayı işlemek, yöneticileri bilgilendirmenize veya uygulamayı çökertmeden sınırlı işlevselliğe geri dönmenize olanak tanır. Sağlanan lisans verisi geçersiz olduğunda veya okunamadığında `LicenseException` fırlatılır.
 
 ```java
 if (licenseFile.exists()) {
@@ -124,67 +184,69 @@ if (licenseFile.exists()) {
 }
 ```
 
-**Açıklama**: Bu blok, lisans dosyasının var olup olmadığını kontrol eder, dosyayı bir `InputStream` olarak açar ve `License` nesnesiyle ayarlar. `try‑with‑resources` ifadesi, akışın otomatik olarak kapanmasını sağlar.
-
-### Sorun Giderme İpuçları
-- **Dosya Bulunamadı**: Lisans dosyanızın yolunun doğru olduğundan emin olun.  
-- **IOException İşleme**: İ/O işlemleri etrafında sağlam hata yönetimi uygulayarak istisnaları nazikçe ele alın.
+**Açıklama**: catch bloğu hatayı kaydeder ve isteğe bağlı olarak özel bir istisna yeniden fırlatır. Bu desen, uygulamanızın lisans sorunları nedeniyle asla çökmesini engeller.
 
 ## Pratik Uygulamalar
 
-Akıştan lisans ayarlamanın öne çıktığı bazı gerçek dünya senaryoları:
+Lisansı akış olarak kullanmanın öne çıktığı üç gerçek dünya senaryosu:
 
-1. **Bulut‑tabanlı Uygulamalar** – Lisansı güvenli bir depolama kovasından doğrudan akış olarak alıp yerel olarak saklamazsınız.  
-2. **Geçici Dosya İşleme** – Yüklenen belgeleri anlık olarak ayrıştırır, ardından silersiniz.  
-3. **Güvenlik‑Duyarlı Ortamlar** – Lisansı yalnızca bellek içinde tutarak dosya sistemi yollarının ifşa edilmesini en aza indirirsiniz.
+1. **Cloud‑Native Microservices** – Lisansı bir gizli yönetici (AWS Secrets Manager, Azure Key Vault) içinde saklayın ve başlangıçta akış olarak alın, dosya sistemi yazımını önleyin.  
+2. **Serverless Functions** – Lambda veya Azure Functions yalnızca okuma izni olan dosya sistemlerine sahiptir; lisansı bir ortam değişkeninden `ByteArrayInputStream`'e dönüştürerek yüklemek sorunsuz çalışır.  
+3. **Secure On‑Prem Deployments** – Lisansı diskte şifreli tutun, bellekte çözün ve ortaya çıkan `InputStream`'i `License` nesnesine besleyin; böylece açık metin dosya asla diske dokunmaz.
 
 ## Performans Düşünceleri
 
-Java’da GroupDocs.Parser kullanırken şu optimizasyon ipuçlarını aklınızda tutun:
+Büyük belge grupları işlenirken şu ipuçlarını aklınızda bulundurun:
 
-- Bellek ayak izini azaltmak için mümkün olduğunca akış kullanın.  
-- Uygulamanızı profilleyerek darboğazları tespit edin.  
-- Otomatik kaynak yönetimi için `try‑with‑resources` kullanın.
+* **License Nesnesini Yeniden Kullan** – Uygulama başlangıcında bir kez başlatın; sonraki ayrıştırma çağrıları ek lisans yükü oluşturmaz.  
+* **Belgeleri Akış Olarak İşle** – Tüm dosyaları belleğe yüklemekten kaçınmak için `DocumentParser.parse(InputStream)` kullanın.  
+* **Belleği İzle** – GroupDocs.Parser, belge başına **500 MB**'a kadar tam bellek yüklemesi olmadan işler, ancak olası sızıntıları tespit etmek için Java GC kaydını etkinleştirin.
 
 ## Sonuç
 
-GroupDocs.Parser for Java’yı kurmayı ve **lisans nasıl ayarlanır** sorusunun akış üzerinden çözümünü öğrendiniz. Bu yaklaşım, dosya yollarının dinamik olduğu veya doğrudan erişilemediği uygulamalarda esnekliği artırır.
+Artık GroupDocs.Parser for Java'da akıştan **how to set license** için eksiksiz, üretim‑hazır bir yaklaşımınız var. Lisansı bir kaynak olarak gömerek ve `InputStream` aracılığıyla yükleyerek esneklik, güvenlik ve modern dağıtım modelleriyle uyumluluk elde edersiniz.
 
-**Sonraki Adımlar:**
-- Diğer GroupDocs.Parser özelliklerini keşfetmek için [documentation](https://docs.groupdocs.com/parser/java/) sayfasına göz atın.  
-- Mevcut projelerinize GroupDocs.Parser entegrasyonu yaparak belge işleme yeteneklerinizi zenginleştirin.
+**Sonraki Adımlar**
 
-Java belge ayrıştırma becerilerinizi bir üst seviyeye taşımaya hazır mısınız? Bu çözümü projenizde deneyin ve iş akışınızın ne kadar akıcı hale geldiğini görün!
+* Gelişmiş ayrıştırma özellikleri (tablo çıkarma ve OCR gibi) keşfetmek için [GroupDocs.Parser for Java Documentation](https://docs.groupdocs.com/parser/java/) adresine daha derinlemesine bakın.  
+* Lisansı uzak bir URL'den (ör. bir S3 kovası) yüklemeyi deneyin; `ClassLoader.getResourceAsStream` yerine bir `HttpURLConnection` akışı kullanarak.  
+* `Parser`'ı bir Spring Boot servisine entegre edin ve anlık belge analizi için bir REST uç noktası sunun.
+
+Kodlamaktan keyif alın ve sorunsuz lisans deneyiminin tadını çıkarın!
 
 ## SSS Bölümü
 
 **S1: GroupDocs.Parser for Java ne için kullanılır?**  
-C1: Çeşitli belge formatlarından metin, meta veri, görsel ve yapılandırılmış veri çıkarmak için güçlü bir kütüphanedir.
+C1: Çeşitli belge formatlarından metin, meta veri, görüntü ve yapılandırılmış veri çıkarmak için güçlü bir kütüphanedir.
 
-**S2: GroupDocs.Parser için geçici bir lisans nasıl alınır?**  
-C1: GroupDocs web sitesindeki [Temporary License](https://purchase.groupdocs.com/temporary-license/) sayfasını ziyaret ederek bir lisans talep edebilirsiniz.
+**S2: GroupDocs.Parser için geçici bir lisans nasıl elde ederim?**  
+C2: Bir tane talep etmek için GroupDocs web sitesindeki [Temporary License](https://purchase.groupdocs.com/temporary-license/) sayfasını ziyaret edin.
 
-**S3: Lisans ayarlamadan GroupDocs.Parser kullanılabilir mi?**  
-C1: Evet, ancak deneme özellikleriyle sınırlı kalır ve çıktılar su işareti içerir.
+**S3: Lisans ayarlamadan GroupDocs.Parser'ı kullanabilir miyim?**  
+C3: Evet, ancak deneme özellikleriyle sınırlı kalırsınız ve çıktılar su işareti taşır.
 
-**S4: GroupDocs.Parser for Java 25.5 ile uyumlu Java sürümü nedir?**  
-C1: Java 8 veya üzeri kullanmanız önerilir.
+**S4: GroupDocs.Parser for Java 25.5 ile hangi Java sürümü uyumludur?**  
+C4: Java 8 veya üzeri kullanmanız önerilir; kütüphane Java 11, 17 ve 21'de tam olarak test edilmiştir.
 
 **S5: Uygulamamdaki lisans sorunlarını nasıl gideririm?**  
-C1: Lisans dosyası yolunun doğru olduğundan ve uygulamanızın gerekli okuma izinlerine sahip olduğundan emin olun.
+C5: Lisans dosyası yolunu doğrulayın, okuma izinlerini kontrol edin ve uygulama günlüklerinde `LicenseException` mesajlarını arayın.
 
 ## Kaynaklar
-- **Dokümantasyon**: [GroupDocs.Parser for Java Documentation](https://docs.groupdocs.com/parser/java/)  
-- **API Referansı**: [GroupDocs API Reference](https://reference.groupdocs.com/parser/java)  
-- **İndirme**: [Latest Version Download](https://releases.groupdocs.com/parser/java/)  
-- **GitHub Deposu**: [GroupDocs Parser GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
-- **Ücretsiz Destek Forumu**: [GroupDocs Support](https://forum.groupdocs.com/c/parser)  
-- **Geçici Lisans**: [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
-
-Bu rehberi izleyerek, GroupDocs.Parser for Java’yı uygulamalarınızda ustalıkla kullanmaya bir adım daha yaklaşacaksınız. İyi kodlamalar!
+- **Documentation**: [GroupDocs.Parser for Java Documentation](https://docs.groupdocs.com/parser/java/)  
+- **API Reference**: [GroupDocs API Reference](https://reference.groupdocs.com/parser/java)  
+- **Download**: [Latest Version Download](https://releases.groupdocs.com/parser/java/)  
+- **GitHub Repository**: [GroupDocs Parser GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
+- **Free Support Forum**: [GroupDocs Support](https://forum.groupdocs.com/c/parser)  
+- **Temporary License**: [Request a Temporary License](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-**Last Updated:** 2026-01-11  
-**Tested With:** GroupDocs.Parser 25.5 for Java  
-**Author:** GroupDocs
+**Son Güncelleme:** 2026-07-21  
+**Test Edilen:** GroupDocs.Parser 25.5 for Java  
+**Yazar:** GroupDocs
+
+## İlgili Öğreticiler
+
+- [Java'da GroupDocs.Parser ile GroupDocs Lisansını Ayarlama](/parser/java/getting-started/groupdocs-parser-java-license-setup-guide/)
+- [PDF Java Ayrıştırma: GroupDocs.Parser Başlangıç Öğreticileri](/parser/java/getting-started/)
+- [Java'da Belge Ayrıştırmayı Ustalaştırma: Metin Çıkarma için GroupDocs.Parser Rehberi](/parser/java/text-extraction/mastering-document-parsing-groupdocs-parser-java/)

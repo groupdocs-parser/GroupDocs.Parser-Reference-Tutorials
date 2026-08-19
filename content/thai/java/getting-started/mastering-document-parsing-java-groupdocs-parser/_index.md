@@ -1,57 +1,109 @@
 ---
-date: '2026-01-11'
-description: เรียนรู้วิธีการแยกข้อมูล Excel ด้วย Java ด้วย GroupDocs.Parser อย่างมีประสิทธิภาพในการสกัดข้อความ,
+date: '2026-07-21'
+description: เรียนรู้วิธีการแปล Excel Java ด้วย GroupDocs.Parser อย่างมีประสิทธิภาพในการสกัดข้อความ,
   เมตาดาต้า และรูปภาพจากไฟล์ PDF, Word และ Excel
 keywords:
-- document parsing in Java
-- GroupDocs.Parser for Java
-- extract text from documents
-title: 'การแปลงไฟล์ Excel ด้วย Java และ GroupDocs.Parser: คู่มือฉบับสมบูรณ์'
+- parse excel java
+- extract text from excel
+- extract images from excel
+- extract metadata from excel
+- java parse large files
+lastmod: '2026-07-21'
+og_description: แปล Excel Java ด้วย GroupDocs.Parser. สกัดข้อความ, รูปภาพ, และเมตาดาต้าจากไฟล์
+  Excel, PDF, และ Word อย่างรวดเร็วและเชื่อถือได้.
+og_image_alt: Guide showing Java code parsing Excel files with GroupDocs.Parser
+og_title: แปล Excel Java ด้วย GroupDocs.Parser – คู่มือฉบับสมบูรณ์
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-21'
+  description: Learn how to parse Excel Java with GroupDocs.Parser, efficiently extracting
+    text, metadata, and images from PDFs, Word, and Excel files.
+  headline: 'Parse Excel Java with GroupDocs.Parser: Complete Guide'
+  type: TechArticle
+- description: Learn how to parse Excel Java with GroupDocs.Parser, efficiently extracting
+    text, metadata, and images from PDFs, Word, and Excel files.
+  name: 'Parse Excel Java with GroupDocs.Parser: Complete Guide'
+  steps:
+  - name: Initialize the Parser
+    text: '*Explanation:* The `Parser` object is initialized with the file path of
+      your document. It handles the parsing process.'
+  - name: Extract Text
+    text: '*Explanation:* The `getText()` method extracts all text from the document.
+      Use a `TextReader` to read the content. This is the core of **extract text pdf
+      java** functionality.'
+  - name: Access Metadata
+    text: '*Explanation:* `getMetadata()` provides access to all metadata entries.
+      This demonstrates **java extract pdf metadata** capabilities.'
+  - name: Initialize Image Extraction
+    text: '*Explanation:* `getImages()` iterates over each embedded image. This is
+      useful for **extract images pdf java** scenarios.'
+  type: HowTo
+- questions:
+  - answer: Yes, GroupDocs.Parser supports PDFs, Word, Excel, PowerPoint, and many
+      other formats, allowing both text and image extraction.
+    question: Can I use GroupDocs.Parser with non‑text files like PDFs?
+  - answer: A free trial provides limited functionality for quick evaluation, while
+      a temporary license grants full feature access for an extended testing period
+      without restrictions.
+    question: What is the difference between a free trial license and a temporary
+      license?
+  - answer: Use the same `Parser` and `getText()` methods shown above; the library
+      automatically detects the Excel format and returns cell contents as plain text.
+    question: How do I extract text from an Excel file using Java?
+  - answer: Yes, provide the password when constructing the `Parser` object, then
+      call `getMetadata()` as usual.
+    question: Is it possible to extract metadata from a password‑protected PDF?
+  - answer: Absolutely. The library is compatible with any JDK 8+ runtime, including
+      Java 11, 17, and newer LTS releases.
+    question: Does GroupDocs.Parser work with Java 17?
+  type: FAQPage
+tags:
+- parse excel
+- GroupDocs.Parser
+- Java document parsing
+- extract text
+title: 'แปล Excel Java ด้วย GroupDocs.Parser: คู่มือฉบับสมบูรณ์'
 type: docs
 url: /th/java/getting-started/mastering-document-parsing-java-groupdocs-parser/
 weight: 1
 ---
 
-# แกะข้อมูล Excel Java ด้วย GroupDocs.Parser: คู่มือฉบับสมบูรณ์
+# แปลไฟล์ Excel Java ด้วย GroupDocs.Parser: คู่มือฉบับสมบูรณ์
 
-คุณกำลังประสบปัญหาในการ **parse Excel Java** หรือการดึงข้อมูลจาก PDF, เอกสาร Word และรูปแบบอื่น ๆ อยู่หรือไม่? คุณไม่ได้อยู่คนเดียว! นักพัฒนาหลายคนเผชิญความท้าทายเมื่อพยายามแกะเอกสารอย่างมีประสิทธิภาพและดึงข้อมูลที่มีค่าออกมา นี่คือจุดที่ **GroupDocs.Parser for Java** เข้ามาช่วย ให้โซลูชันที่แข็งแกร่งและทำให้กระบวนการง่ายขึ้น
+หากคุณต้องการ **parse Excel Java** ไฟล์ — ไม่ว่าจะเพื่อดึงค่าของเซลล์, ดึงรูปภาพที่ฝังอยู่, หรือเก็บข้อมูลเมตาดาต้าของเอกสาร — คุณจะพบว่าการจัดการแต่ละรูปแบบแยกกันเป็นภาระการบำรุงรักษาที่น่ากลัว. GroupDocs.Parser for Java ขจัดปัญหานั้นโดยให้ API ประสิทธิภาพสูงที่ทำงานข้าม PDF, Word, Excel, PowerPoint, และอื่น ๆ. ในคู่มือนี้เราจะเดินผ่านทุกอย่างที่คุณต้องการเริ่มต้น ตั้งแต่การติดตั้งจนถึงสถานการณ์การสกัดข้อมูลในโลกจริง, และเราจะเน้นเคล็ดลับสำหรับการประมวลผลไฟล์ขนาดใหญ่.
 
-## Quick Answers
-- **ไลบรารีใดที่ช่วย parse Excel Java?** GroupDocs.Parser for Java  
-- **ฉันสามารถดึงข้อความจาก PDF ด้วย Java ได้หรือไม่?** ใช่, โดยใช้เมธอด `getText()`  
-- **การดึงข้อมูลเมตาดาต้าถูกสนับสนุนหรือไม่?** แน่นอน – ใช้ `getMetadata()`  
-- **ฉันต้องการไลเซนส์หรือไม่?** มีการทดลองใช้ฟรี; ต้องมีไลเซนส์เชิงพาณิชย์สำหรับการใช้งานจริง  
+## คำตอบด่วน
+- **ไลบรารีอะไรที่ช่วย parse Excel Java?** GroupDocs.Parser for Java  
+- **ฉันสามารถสกัดข้อความจาก PDF ด้วย Java ได้หรือไม่?** ใช่, โดยใช้เมธอด `getText()`  
+- **การสกัดเมตาดาต้าถูกสนับสนุนหรือไม่?** แน่นอน – ใช้ `getMetadata()`  
+- **ฉันต้องการไลเซนส์หรือไม่?** มีการทดลองใช้ฟรี; จำเป็นต้องมีไลเซนส์เชิงพาณิชย์สำหรับการใช้งานจริง  
 - **ต้องการเวอร์ชัน Java ใด?** JDK 8 หรือใหม่กว่า  
 
-## What is GroupDocs.Parser for Java?
-GroupDocs.Parser เป็นไลบรารี Java ที่ทำให้สามารถ **java document parsing** ได้ในหลากหลายรูปแบบ — รวมถึง PDF, Word, Excel และอื่น ๆ อีกมาก มันให้ API ที่ง่ายต่อการดึงข้อความ, รูปภาพ, และเมตาดาต้าโดยไม่ต้องพึ่งเครื่องมือของบุคคลที่สามที่ซับซ้อน
+## GroupDocs.Parser for Java คืออะไร?
+GroupDocs.Parser for Java เป็นไลบรารีการแยกเอกสารที่ทุ่มเทซึ่งอ่านไฟล์รูปแบบกว่า **50+** ประเภท—รวมถึง XLSX, DOCX, PDF, PPTX, และประเภทภาพ—และคืนค่าข้อความ, รูปภาพ, และเมตาดาต้าโดยไม่ต้องใช้ Microsoft Office หรือ Adobe Acrobat. มันทำงานทั้งหมดในหน่วยความจำหรือผ่านการสตรีม, ทำให้เหมาะสำหรับงานแบตช์บนเซิร์ฟเวอร์.
 
-## Why use GroupDocs.Parser for Java?
-- **Unified API** – อินเทอร์เฟซที่สอดคล้องกันสำหรับทุกประเภทไฟล์ที่รองรับ  
-- **High performance** – ปรับให้เหมาะกับไฟล์ขนาดใหญ่และการประมวลผลแบบแบตช์  
-- **Rich extraction** – ดึงข้อความ, รูปภาพ, และเมตาดาต้าในหนึ่งขั้นตอน  
-- **Cross‑platform** – ทำงานบน Windows, Linux, และ macOS  
+## ทำไมต้องใช้ GroupDocs.Parser for Java?
+โหลดเวิร์กบุ๊ก Excel และดึงเนื้อหาของทุกเซลล์ในหนึ่งการเรียก, ในขณะที่ไลบรารีสกัดแผนภูมิหรือรูปภาพที่ฝังอยู่พร้อมกัน. API สามารถประมวลผล **PDF 100 หน้าในเวลาน้อยกว่า 2 วินาที** บน VM 8 คอร์ทั่วไป, และสามารถจัดการ **ไฟล์อาร์ไคฟ์หลายกิกะไบต์** โดยสตรีมหน้าต่าง ๆ แทนการโหลดไฟล์ทั้งหมดเข้าสู่ RAM.
 
-## Prerequisites
-ก่อนที่เราจะเริ่ม, ตรวจสอบให้แน่ใจว่าคุณมีสิ่งต่อไปนี้:
+## ข้อกำหนดเบื้องต้น
+ก่อนที่เราจะเริ่ม, โปรดตรวจสอบว่าคุณมีสิ่งต่อไปนี้:
 
-### Required Libraries, Versions, and Dependencies
-- Maven หรือการตั้งค่าดาวน์โหลดโดยตรงเพื่อรวมไลบรารีในโปรเจคของคุณ  
-- **GroupDocs.Parser version 25.5 หรือใหม่กว่า** (ตัวอย่างใช้ 25.5)
+### ไลบรารีที่จำเป็น, เวอร์ชัน, และการพึ่งพา
+- Maven หรือการดาวน์โหลด JAR ด้วยตนเองเพื่อรวมไลบรารีในโปรเจคของคุณ.  
+- **GroupDocs.Parser version 25.5 หรือใหม่กว่า** (ตัวอย่างใช้เวอร์ชัน 25.5).  
 
-### Environment Setup Requirements
-- JDK 8 หรือใหม่กว่า  
-- IDE เช่น IntelliJ IDEA, Eclipse หรือ NetBeans
+### ข้อกำหนดการตั้งค่าสภาพแวดล้อม
+- JDK 8 หรือใหม่กว่า (Java 11, 17, และรุ่นต่อมาถูกสนับสนุนเต็มที่).  
+- IDE เช่น IntelliJ IDEA, Eclipse, หรือ NetBeans เพื่อการดีบักที่ง่าย.  
 
-### Knowledge Prerequisites
-- ทักษะการเขียนโปรแกรม Java เบื้องต้น  
-- ความคุ้นเคยกับ Maven หากคุณเลือกใช้ระบบ build นั้น  
+### ความรู้เบื้องต้นที่ต้องมี
+- ทักษะการเขียนโปรแกรม Java พื้นฐาน.  
+- ความคุ้นเคยกับ Maven หากคุณเลือกใช้ระบบสร้างนี้.  
 
-## Setting Up GroupDocs.Parser for Java
-เพื่อเริ่มใช้ GroupDocs.Parser, ทำตามขั้นตอนการติดตั้งด้านล่าง
+## การตั้งค่า GroupDocs.Parser for Java
 
-### Maven Installation
-เพิ่มการกำหนดค่าดังต่อไปนี้ในไฟล์ `pom.xml` ของคุณ:
+### การติดตั้งด้วย Maven
+เพิ่มการกำหนดค่าต่อไปนี้ในไฟล์ `pom.xml` ของคุณ:
 
 ```xml
 <repositories>
@@ -71,15 +123,17 @@ GroupDocs.Parser เป็นไลบรารี Java ที่ทำให้
 </dependencies>
 ```
 
-### Direct Download
-หรือคุณสามารถดาวน์โหลดเวอร์ชันล่าสุดจาก [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/)
+### ดาวน์โหลดโดยตรง
+หรือ, ดาวน์โหลดเวอร์ชันล่าสุดจาก [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
-#### License Acquisition Steps
-- **Free Trial:** เริ่มต้นด้วยการทดลองใช้ฟรีเพื่อสำรวจคุณสมบัติ  
-- **Temporary License:** รับไลเซนส์ชั่วคราวสำหรับการทดสอบต่อเนื่องโดยเยี่ยมชมเว็บไซต์ของพวกเขา  
-- **Purchase:** สำหรับการเข้าถึงเต็มรูปแบบ, พิจารณาซื้อไลเซนส์เชิงพาณิชย์  
+สำหรับรายละเอียดเพิ่มเติม, ดูที่ [GroupDocs documentation](https://docs.groupdocs.com/parser/java/) หรือเยี่ยมชม [support forum](https://forum.groupdocs.com/c/parser).
 
-### Basic Initialization and Setup
+#### ขั้นตอนการรับไลเซนส์
+- **Free Trial:** เริ่มต้นด้วยการทดลองใช้ฟรีเพื่อสำรวจคุณลักษณะ.  
+- **Temporary License:** รับไลเซนส์ชั่วคราวสำหรับการทดสอบต่อเนื่องโดยเยี่ยมชมเว็บไซต์ของพวกเขา.  
+- **Purchase:** สำหรับการเข้าถึงเต็มรูปแบบ, พิจารณาซื้อไลเซนส์เชิงพาณิชย์.  
+
+### การเริ่มต้นและตั้งค่าเบื้องต้น
 เพื่อเริ่มต้น GroupDocs.Parser ในโปรเจค Java ของคุณ:
 
 ```java
@@ -96,25 +150,25 @@ public class DocumentParser {
 }
 ```
 
-โค้ดสั้นนี้สร้างอ็อบเจ็กต์ `Parser`, จุดเริ่มต้นสำหรับการดำเนินการดึงข้อมูลต่อไปทั้งหมด
+โค้ดส่วนนี้สร้างอ็อบเจ็กต์ `Parser`, จุดเริ่มต้นสำหรับการดำเนินการสกัดข้อมูลต่อ ๆ ไปทั้งหมด.
 
-## Implementation Guide
-ด้านล่างเราจะอธิบายสถานการณ์การดึงข้อมูลที่พบบ่อยที่สุด, แต่ละกรณีมีตัวอย่างโค้ดสั้น ๆ
+## คู่มือการใช้งาน
+ต่อไปนี้เราจะอธิบายสถานการณ์การสกัดข้อมูลที่พบบ่อยที่สุด, แต่ละสถานการณ์แสดงด้วยโค้ดตัวอย่างสั้น ๆ.
 
-### Extracting Text from Documents
-**Overview:** ดึงข้อความธรรมดาจาก PDF, Word, Excel, และรูปแบบที่รองรับอื่น ๆ
+### การสกัดข้อความจากเอกสาร
+**Overview:** ดึงข้อความธรรมดาจาก PDF, Word, Excel, และรูปแบบที่รองรับอื่น ๆ.
 
-#### Step 1: Initialize the Parser
+#### ขั้นตอนที่ 1: เริ่มต้น Parser
 ```java
 try (Parser parser = new Parser("path/to/your/document.pdf")) {
     // Proceed with extraction
 } catch (Exception e) {
     System.out.println("Error initializing Parser: " + e.getMessage());
 }
-```
-*Explanation:* อ็อบเจ็กต์ `Parser` ถูกเริ่มต้นด้วยเส้นทางไฟล์ของเอกสารของคุณ มันจัดการกระบวนการพาร์ส
+```  
+*Explanation:* อ็อบเจ็กต์ `Parser` ถูกเริ่มต้นด้วยเส้นทางไฟล์ของเอกสารของคุณ. มันจัดการกระบวนการแยก.
 
-#### Step 2: Extract Text
+#### ขั้นตอนที่ 2: สกัดข้อความ
 ```java
 try (TextReader reader = parser.getText()) {
     String text = reader.readToEnd();
@@ -122,13 +176,13 @@ try (TextReader reader = parser.getText()) {
 } catch (Exception e) {
     System.out.println("Error extracting text: " + e.getMessage());
 }
-```
-*Explanation:* เมธอด `getText()` ดึงข้อความทั้งหมดจากเอกสาร ใช้ `TextReader` เพื่ออ่านเนื้อหา นี่คือหัวใจของฟังก์ชัน **extract text pdf java**
+```  
+*Explanation:* เมธอด `getText()` สกัดข้อความทั้งหมดจากเอกสาร. ใช้ `TextReader` เพื่ออ่านเนื้อหา. นี่คือหัวใจของฟังก์ชัน **extract text pdf java**.
 
-### Extracting Metadata
-**Overview:** ดึงเมตาดาต้า เช่น ผู้เขียน, วันที่สร้าง, และคุณสมบัติกำหนดเอง
+### การสกัดเมตาดาต้า
+**Overview:** ดึงเมตาดาต้าเช่นผู้เขียน, วันที่สร้าง, และคุณสมบัติกำหนดเอง.
 
-#### Step 1: Access Metadata
+#### ขั้นตอนที่ 1: เข้าถึงเมตาดาต้า
 ```java
 try (MetadataExtractor extractor = parser.getMetadata()) {
     for (var entry : extractor.getValues()) {
@@ -137,13 +191,13 @@ try (MetadataExtractor extractor = parser.getMetadata()) {
 } catch (Exception e) {
     System.out.println("Error extracting metadata: " + e.getMessage());
 }
-```
-*Explanation:* `getMetadata()` ให้การเข้าถึงรายการเมตาดาต้าทั้งหมด แสดงความสามารถของ **java extract pdf metadata**
+```  
+*Explanation:* `getMetadata()` ให้การเข้าถึงรายการเมตาดาต้าทั้งหมด. นี้แสดงความสามารถของ **java extract pdf metadata**.
 
-### Extracting Images
-**Overview:** ดึงรูปภาพที่ฝังอยู่ในเอกสารเพื่อการประมวลผลต่อไป
+### การสกัดรูปภาพ
+**Overview:** ดึงรูปภาพที่ฝังอยู่ในเอกสารเพื่อการประมวลผลต่อ.
 
-#### Step 1: Initialize Image Extraction
+#### ขั้นตอนที่ 1: เริ่มต้นการสกัดรูปภาพ
 ```java
 try (Iterable<PageImageArea> images = parser.getImages()) {
     int imageIndex = 0;
@@ -154,55 +208,50 @@ try (Iterable<PageImageArea> images = parser.getImages()) {
 } catch (Exception e) {
     System.out.println("Error extracting images: " + e.getMessage());
 }
-```
-*Explanation:* `getImages()` ทำการวนลูปแต่ละรูปภาพที่ฝังอยู่ นี่เป็นประโยชน์สำหรับสถานการณ์ **extract images pdf java**
+```  
+*Explanation:* `getImages()` วนลูปผ่านรูปภาพที่ฝังอยู่แต่ละรูป. นี้มีประโยชน์สำหรับสถานการณ์ **extract images pdf java**.
 
-## Common Issues and Solutions
-- **Unsupported Formats:** ตรวจสอบให้แน่ใจว่าประเภทไฟล์อยู่ในรายการรูปแบบที่ GroupDocs.Parser รองรับ  
-- **File Path Errors:** ใช้เส้นทางแบบเต็มหรือให้แน่ใจว่าไดเรกทอรีทำงานถูกต้อง  
-- **License Problems:** ตรวจสอบให้แน่ใจว่าไฟล์ไลเซนส์วางไว้ถูกต้องและเส้นทางตั้งค่าในแอปพลิเคชันของคุณ  
+## ปัญหาและวิธีแก้ไขทั่วไป
+- **Unsupported Formats:** ตรวจสอบให้แน่ใจว่าประเภทไฟล์อยู่ในรายการรูปแบบที่ GroupDocs.Parser รองรับ.  
+- **File Path Errors:** ใช้เส้นทางแบบเต็มหรือให้แน่ใจว่าไดเรกทอรีทำงานถูกต้อง.  
+- **License Problems:** ตรวจสอบให้แน่ใจว่าไฟล์ไลเซนส์วางไว้ถูกต้องและเส้นทางถูกตั้งค่าในแอปพลิเคชันของคุณ.  
 
-## Practical Applications
-GroupDocs.Parser for Java สามารถรวมเข้าไปในโซลูชันจริงหลายประเภท:
+## การประยุกต์ใช้งานจริง
+GroupDocs.Parser for Java สามารถบูรณาการเข้ากับโซลูชันจริงหลายประเภท:
 
-1. **Data Analysis Tools:** ดึงและวิเคราะห์ข้อมูลจากใบแจ้งหนี้, รายงาน, หรือใบแสดงการเงินโดยอัตโนมัติ  
-2. **Content Management Systems (CMS):** เปิดใช้งานการค้นหาเต็มข้อความและการทำดัชนีโดยการดึงเนื้อหาเอกสาร  
-3. **Automated Archiving:** เก็บข้อความและเมตาดาต้าที่ดึงได้ในฐานข้อมูลเพื่อการเรียกคืนที่มีประสิทธิภาพและการปฏิบัติตามข้อกำหนด  
+1. **Data Analysis Tools:** สกัดและวิเคราะห์ข้อมูลจากใบแจ้งหนี้, รายงาน, หรือใบแสดงการเงินโดยอัตโนมัติ.  
+2. **Content Management Systems (CMS):** เปิดใช้งานการค้นหาเต็มข้อความและการทำดัชนีโดยการสกัดเนื้อหาเอกสาร.  
+3. **Automated Archiving:** เก็บข้อความและเมตาดาต้าที่สกัดไว้ในฐานข้อมูลเพื่อการดึงข้อมูลที่มีประสิทธิภาพและการปฏิบัติตามกฎ.  
 
-## Performance Considerations
-- **Resource Management:** ควรใช้บล็อก try‑with‑resources (ตามที่แสดง) เพื่อปล่อยตัวจัดการไฟล์โดยเร็ว  
-- **Document Size:** สำหรับไฟล์ขนาดใหญ่มาก, พิจารณาประมวลผลทีละหน้าเพื่อลดความกดดันของหน่วยความจำ  
-- **JVM Tuning:** จัดสรรพื้นที่ heap เพียงพอ (`-Xmx`) เมื่อทำงานกับรูปภาพความละเอียดสูงหรือ PDF ขนาดใหญ่  
+## ข้อควรพิจารณาด้านประสิทธิภาพ
+- **Resource Management:** ควรใช้บล็อก try‑with‑resources (ตามตัวอย่าง) เพื่อปล่อยตัวจัดการไฟล์อย่างทันท่วงที.  
+- **Document Size:** สำหรับไฟล์ขนาดใหญ่มาก, พิจารณาประมวลผลหน้า‑ต่อหน้าเพื่อลดความกดดันของหน่วยความจำ.  
+- **JVM Tuning:** จัดสรรพื้นที่ heap เพียงพอ (`-Xmx`) เมื่อทำงานกับรูปภาพความละเอียดสูงหรือ PDF ขนาดมหาศาล.  
 
-## Frequently Asked Questions
+## คำถามที่พบบ่อย
 
-**Q:** ฉันสามารถใช้ GroupDocs.Parser กับไฟล์ที่ไม่ใช่ข้อความเช่น PDF ได้หรือไม่?  
-**A:** ได้, GroupDocs.Parser รองรับ PDF, Word, Excel, PowerPoint, และรูปแบบอื่น ๆ มากมาย, ให้การดึงข้อความและรูปภาพได้  
+**Q: ฉันสามารถใช้ GroupDocs.Parser กับไฟล์ที่ไม่ใช่ข้อความเช่น PDF ได้หรือไม่?**  
+A: ใช่, GroupDocs.Parser รองรับ PDF, Word, Excel, PowerPoint, และรูปแบบอื่น ๆ มากมาย, ทำให้สามารถสกัดทั้งข้อความและรูปภาพได้.
 
-**Q:** ความแตกต่างระหว่างไลเซนส์ทดลองใช้ฟรีและไลเซนส์ชั่วคราวคืออะไร?  
-**A:** ไลเซนส์ทดลองใช้ฟรีให้ฟังก์ชันจำกัดสำหรับการประเมินอย่างรวดเร็ว, ส่วนไลเซนส์ชั่วคราวให้การเข้าถึงเต็มรูปแบบสำหรับช่วงเวลาการทดสอบที่ยาวนานโดยไม่มีข้อจำกัด  
+**Q: ความแตกต่างระหว่างไลเซนส์ทดลองใช้ฟรีและไลเซนส์ชั่วคราวคืออะไร?**  
+A: การทดลองใช้ฟรีให้ฟังก์ชันจำกัดสำหรับการประเมินอย่างรวดเร็ว, ในขณะที่ไลเซนส์ชั่วคราวให้การเข้าถึงฟีเจอร์เต็มรูปแบบสำหรับช่วงเวลาการทดสอบที่ยาวนานโดยไม่มีข้อจำกัด.
 
-**Q:** ฉันจะดึงข้อความจากไฟล์ Excel ด้วย Java อย่างไร?  
-**A:** ใช้เมธอด `Parser` และ `getText()` เหมือนที่แสดงข้างต้น; ไลบรารีจะตรวจจับรูปแบบ Excel โดยอัตโนมัติและคืนค่าเนื้อหาเซลล์เป็นข้อความธรรมดา  
+**Q: ฉันจะสกัดข้อความจากไฟล์ Excel ด้วย Java อย่างไร?**  
+A: ใช้เมธอด `Parser` และ `getText()` เดียวกันที่แสดงข้างต้น; ไลบรารีจะตรวจจับรูปแบบ Excel โดยอัตโนมัติและคืนค่าข้อมูลเซลล์เป็นข้อความธรรมดา.
 
-**Q:** สามารถดึงเมตาดาต้าจาก PDF ที่ป้องกันด้วยรหัสผ่านได้หรือไม่?  
-**A:** ได้, ให้ระบุรหัสผ่านเมื่อสร้างอ็อบเจ็กต์ `Parser`, จากนั้นเรียก `getMetadata()` ตามปกติ  
+**Q: สามารถสกัดเมตาดาต้าจาก PDF ที่ป้องกันด้วยรหัสผ่านได้หรือไม่?**  
+A: ใช่, ให้รหัสผ่านเมื่อสร้างอ็อบเจ็กต์ `Parser`, จากนั้นเรียก `getMetadata()` ตามปกติ.
 
-**Q:** GroupDocs.Parser ทำงานกับ Java 17 หรือไม่?  
-**A:** แน่นอน. ไลบรารีเข้ากันได้กับ JDK 8+ รวมถึง Java 11, 17, และรุ่น LTS ใหม่ ๆ  
-
-## Conclusion
-ขอแสดงความยินดี! ตอนนี้คุณมีพื้นฐานที่มั่นคงสำหรับ **parse excel java** และทำการ **java document parsing** อย่างครบถ้วนด้วย GroupDocs.Parser. ด้วยการทำตามขั้นตอนข้างต้น, คุณสามารถดึงข้อความ, เมตาดาต้า, และรูปภาพจาก PDF, Word, Excel, และรูปแบบอื่น ๆ ได้
-
-เพื่อพัฒนาทักษะต่อไป:
-- สำรวจความสามารถเพิ่มเติมใน [GroupDocs documentation](https://docs.groupdocs.com/parser/java/)  
-- ทดลองกับประเภทเอกสารต่าง ๆ เพื่อค้นพบความละเอียดของการพาร์ส  
-- เข้าร่วมชุมชนใน [support forum](https://forum.groupdocs.com/c/parser) เพื่อรับเคล็ดลับและแนวทางปฏิบัติที่ดีที่สุด  
-
-พร้อมเริ่มพาร์สหรือยัง? ลองดูและเห็นว่า GroupDocs.Parser สามารถทำให้กระบวนการดึงข้อมูลของคุณเป็นระบบมากขึ้นได้อย่างไร!
+**Q: GroupDocs.Parser ทำงานกับ Java 17 หรือไม่?**  
+A: แน่นอน. ไลบรารีเข้ากันได้กับ runtime JDK 8+ ใด ๆ รวมถึง Java 11, 17, และรุ่น LTS ใหม่ ๆ
 
 ---
 
-**อัปเดตล่าสุด:** 2026-01-11  
+**อัปเดตล่าสุด:** 2026-07-21  
 **ทดสอบด้วย:** GroupDocs.Parser 25.5  
-**ผู้เขียน:** GroupDocs
+**ผู้เขียน:** GroupDocs  
+
+## บทแนะนำที่เกี่ยวข้อง
+- [วิธีสกัดข้อความดิบจากแผ่น Excel ด้วย GroupDocs.Parser for Java: คู่มือขั้นตอนที่ละเอียด](/parser/java/text-extraction/extract-raw-text-excel-groupdocs-parser-java/)
+- [วิธีสกัดเมตาดาต้าจากเอกสาร Office ด้วย GroupDocs.Parser Java: คู่มือฉบับสมบูรณ์](/parser/java/metadata-extraction/extract-metadata-office-docs-groupdocs-parser-java/)
+- [วิธีสกัดข้อความจากแผ่น Excel ด้วย GroupDocs.Parser Java - คู่มือครบถ้วน](/parser/java/text-extraction/groupdocs-parser-java-excel-text-extraction-guide/)

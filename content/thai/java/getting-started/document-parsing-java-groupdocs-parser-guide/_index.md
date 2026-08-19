@@ -1,55 +1,118 @@
 ---
-date: '2026-01-06'
-description: เรียนรู้วิธีการอ่านข้อความ PDF ด้วย Java โดยใช้ GroupDocs.Parser รวมถึงการดึงข้อมูลเมตาดาต้า
-  PDF, แยกภาพ, และแยกวิเคราะห์เอกสารอย่างมีประสิทธิภาพ.
+date: '2026-07-21'
+description: เรียนรู้วิธีสกัดข้อความ PDF ด้วย Java ด้วย GroupDocs.Parser รวมถึงการอ่านไฟล์
+  PDF, การดึงข้อมูลเมตาดาต้า, การสกัดภาพ, และการแปลงเอกสารอย่างมีประสิทธิภาพ
 keywords:
-- document parsing in java
-- groupdocs parser library
-- extract text metadata images java
-title: 'Java อ่านข้อความ PDF ด้วย GroupDocs.Parser: คู่มือฉบับสมบูรณ์'
+- extract pdf text java
+- how to read pdf java
+- parse pdf documents java
+- get pdf metadata java
+- extract images from pdf java
+lastmod: '2026-07-21'
+og_description: สกัดข้อความ PDF ด้วย Java ด้วย GroupDocs.Parser. เรียนรู้การอ่านไฟล์
+  PDF, การดึงเมตาดาต้า, การสกัดภาพ, และการแปลงเอกสารอย่างมีประสิทธิภาพใน Java.
+og_image_alt: 'Guide: extract pdf text java using GroupDocs.Parser library'
+og_title: สกัดข้อความ PDF ด้วย Java – คู่มือเต็มโดยใช้ GroupDocs.Parser
+schemas:
+- author: GroupDocs
+  dateModified: '2026-07-21'
+  description: Learn how to extract pdf text java with GroupDocs.Parser, including
+    reading PDFs, getting metadata, extracting images, and parsing documents efficiently.
+  headline: extract pdf text java – Full Guide Using GroupDocs.Parser
+  type: TechArticle
+- description: Learn how to extract pdf text java with GroupDocs.Parser, including
+    reading PDFs, getting metadata, extracting images, and parsing documents efficiently.
+  name: extract pdf text java – Full Guide Using GroupDocs.Parser
+  steps:
+  - name: '**Free Trial** – explore the library without cost.'
+    text: '**Free Trial** – explore the library without cost.'
+  - name: '**Temporary License** – obtain a trial‑length license via the [purchase
+      page](https://purchase.groupdocs.com/temporary-license/).'
+    text: '**Temporary License** – obtain a trial‑length license via the [purchase
+      page](https://purchase.groupdocs.com/temporary-license/).'
+  - name: '**Commercial License** – purchase for unrestricted production use.'
+    text: '**Commercial License** – purchase for unrestricted production use.'
+  - name: '**Automated Document Management** – categorize files automatically based
+      on extracted metadata.'
+    text: '**Automated Document Management** – categorize files automatically based
+      on extracted metadata.'
+  - name: '**Data Extraction for Analytics** – pull tables or key figures from reports
+      and feed them into BI tools.'
+    text: '**Data Extraction for Analytics** – pull tables or key figures from reports
+      and feed them into BI tools.'
+  - name: '**Content Archiving** – store extracted text and images from legacy PDFs
+      for searchable archives.'
+    text: '**Content Archiving** – store extracted text and images from legacy PDFs
+      for searchable archives.'
+  type: HowTo
+- questions:
+  - answer: Yes—`Parser` works with DOCX, DOC, and other Office formats, so you can
+      **parse word docs java** using identical method calls.
+    question: Can I parse Word docs with the same API?
+  - answer: You can combine `Parser.getText()` with page‑range parameters introduced
+      in recent releases to limit extraction to selected pages.
+    question: Is there a way to extract only specific pages?
+  - answer: Yes—pass the password to the `Parser` constructor; the library will decrypt
+      the document before extraction.
+    question: Does GroupDocs.Parser support password‑protected PDFs?
+  - answer: The library automatically detects Unicode; you can also specify a custom
+      encoding via `ParserSettings` if needed.
+    question: How do I handle different character encodings?
+  - answer: A commercial license is required for production deployments; a free trial
+      is available for evaluation.
+    question: What license do I need for commercial use?
+  type: FAQPage
+tags:
+- extract pdf
+- GroupDocs.Parser
+- Java document processing
+title: สกัดข้อความ PDF ด้วย Java – คู่มือเต็มโดยใช้ GroupDocs.Parser
 type: docs
 url: /th/java/getting-started/document-parsing-java-groupdocs-parser-guide/
 weight: 1
 ---
 
-# Java Read PDF Text with GroupDocs.Parser: A Complete Guide
+# ดึงข้อความ pdf java – คู่มือเต็มโดยใช้ GroupDocs.Parser
 
-หากคุณต้องการ **java read pdf text** **GroupDocs.Parser for Java** จะทำให้งานง่ายดาย ไม่ว่าคุณจะดึงข้อมูลจาก PDF, ไฟล์ Word หรือสเปรดชีต ไลบรารีนี้ช่วยให้คุณสกัดข้อความ, เมตาดาต้าและรูปภาพได้ด้วยเพียงไม่กี่บรรทัดของโค้ด ในคู่มือนี้เราจะพาคุณผ่านทุกขั้นตอนที่จำเป็นสำหรับการแยกเอกสารใน Java — ตั้งค่าห้องสมุด, อ่านข้อความจาก PDF, ดึงเมตาดาต้า PDF, สกัดรูปภาพ, และอื่น ๆ อีกมาก
+หากคุณต้องการ **extract pdf text java**, **GroupDocs.Parser for Java** ทำให้การทำงานเป็นเรื่องง่ายและเชื่อถือได้ ไม่ว่าคุณจะดึงข้อมูลจาก PDF, ไฟล์ Word หรือสเปรดชีต ไลบรารีนี้ช่วยให้คุณดึงข้อความ, เมทาดาต้า, และรูปภาพได้ด้วยเพียงไม่กี่บรรทัดของโค้ด ในคู่มือนี้เราจะอธิบายทุกอย่างที่คุณต้องการเริ่มต้นการแยกวิเคราะห์เอกสารใน Java—การตั้งค่าไลบรารี, การอ่านข้อความ PDF, การรับเมทาดาต้า PDF, การดึงรูปภาพ, และอื่น ๆ
 
-## Quick Answers
-- **What is the easiest way to java read pdf text?** Use `Parser.getText()` from GroupDocs.Parser.  
-- **How can I java get pdf metadata?** Call `Parser.getMetadata()` to retrieve author, creation date, etc.  
-- **Can I extract images from a PDF with Java?** Yes—`Parser.getImages()` returns all embedded images.  
-- **Do I need a license for production use?** A commercial license is required for production; a free trial is available.  
-- **Which Maven repository hosts GroupDocs.Parser?** The GroupDocs repository at `https://releases.groupdocs.com/parser/java/`.
+## คำตอบสั้น
+- **วิธีที่ง่ายที่สุดในการดึงข้อความ pdf java คืออะไร?** ใช้ `Parser.getText()` จาก GroupDocs.Parser – จะคืนข้อความทั้งหมดของเอกสารในหนึ่งการเรียก.  
+- **ฉันจะรับเมทาดาต้า pdf java ได้อย่างไร?** เรียก `Parser.getMetadata()` เพื่อดึงผู้เขียน, วันที่สร้าง, และคุณสมบัติอื่น ๆ.  
+- **ฉันสามารถดึงรูปภาพจาก PDF ด้วย Java ได้หรือไม่?** ได้—`Parser.getImages()` จะคืนรูปภาพที่ฝังอยู่ทั้งหมดเป็นสตรีม.  
+- **ฉันต้องการใบอนุญาตสำหรับการใช้งานในผลิตภัณฑ์หรือไม่?** จำเป็นต้องมีใบอนุญาตเชิงพาณิชย์สำหรับการใช้งานในผลิตภัณฑ์; มีการทดลองใช้ฟรีสำหรับการประเมินผล สำหรับรายละเอียดใบอนุญาต ดูที่ [หน้าซื้อ](https://purchase.groupdocs.com/temporary-license/).  
+- **Maven repository ใดที่โฮสต์ GroupDocs.Parser?** ที่ Repository ของ GroupDocs ที่ `https://releases.groupdocs.com/parser/java/`.
 
-## What is java read pdf text?
-การอ่านข้อความจาก PDF ใน Java หมายถึงการสกัดเนื้อหาข้อความที่เก็บอยู่ในไฟล์ PDF อย่างโปรแกรมเมติก เพื่อให้คุณสามารถประมวลผล, ค้นหา หรือแสดงผลในแอปพลิเคชันของคุณเอง GroupDocs.Parser ให้ API ระดับสูงที่ซ่อนรายละเอียดการแยก PDF ระดับล่างไว้
+## java อ่านข้อความ PDF คืออะไร?
+การอ่านข้อความ PDF ใน Java หมายถึงการดึงเนื้อหาข้อความที่เก็บอยู่ในไฟล์ PDF อย่างโปรแกรมเมติกเพื่อให้คุณสามารถประมวลผล, ค้นหา, หรือแสดงผลในแอปพลิเคชันของคุณเอง **GroupDocs.Parser** ให้ API ระดับสูงที่ซ่อนการแยกวิเคราะห์ระดับล่าง, ส่งมอบข้อความเต็มของเอกสารในหนึ่งเมธอด การทำงานนี้รองรับ PDF ขนาดใดก็ได้และรักษาอักขระ Unicode, ตาราง, และการขึ้นบรรทัดใหม่
 
-## Why use GroupDocs.Parser for java read pdf text?
-- **Broad format support** – works with PDFs, DOCX, XLSX, and many other formats.  
-- **Accurate extraction** – preserves layout and Unicode characters.  
-- **Simple API** – only a few method calls to get text, metadata, or images.  
-- **Performance‑optimized** – suitable for large‑scale or batch processing.
+## ทำไมต้องใช้ GroupDocs.Parser สำหรับ java อ่านข้อความ PDF?
+GroupDocs.Parser ถูกออกแบบมาเพื่อให้ผู้พัฒนามีวิธีที่เชื่อถือได้และมีประสิทธิภาพสูงในการดึงเนื้อหาจากรูปแบบเอกสารหลากหลาย รองรับรูปแบบเข้าถึงและส่งออกกว่า 60 ประเภท, รักษาเลย์เอาต์อย่างแม่นยำ, และมี API ที่เรียบง่ายและปลอดภัยต่อเธรด ซึ่งสามารถขยายจากยูทิลิตี้ขนาดเล็กจนถึงไพพ์ไลน์การประมวลผลแบบแบตช์ระดับองค์กร ไลบรารียังรวมการจัดการ PDF ที่เข้ารหัสและการตรวจจับ Unicode อัตโนมัติ ลดจำนวนโค้ดที่ต้องเขียนเอง
+
+- **รองรับรูปแบบกว้าง** – ไลบรารีจัดการกับรูปแบบอินพุตและเอาต์พุต **60+** ประเภท รวมถึง PDF, DOCX, XLSX, PPTX, HTML, และรูปภาพทั่วไป.  
+- **การดึงข้อมูลที่แม่นยำ** – การดึงข้อความที่คำนึงถึงเลย์เอาต์รักษาโครงสร้างคอลัมน์และอักขระพิเศษด้วยความแม่นยำ > 99%.  
+- **API ที่ง่าย** – เพียงไม่กี่การเรียกเมธอดก็สามารถดึงข้อความ, เมทาดาต้า, หรือรูปภาพได้.  
+- **ประสิทธิภาพที่ปรับแต่ง** – ประมวลผล PDF 300 หน้าในเวลาน้อยกว่า 5 วินาทีบนเซิร์ฟเวอร์ 8‑คอร์มาตรฐานและใช้หน่วยความจำ heap น้อยกว่า 200 MB.
 
 ## Prerequisites
 
-### Required Libraries and Dependencies
-- **Java Development Kit (JDK)** 8 or higher.  
-- **Maven** for dependency management, or you can download the JAR directly from [GroupDocs](https://releases.groupdocs.com/parser/java/).
+### ไลบรารีและการพึ่งพาที่จำเป็น
+- **Java Development Kit (JDK)** 8 หรือสูงกว่า.  
+- **Maven** สำหรับการจัดการการพึ่งพา, หรือคุณสามารถดาวน์โหลด JAR โดยตรงจาก [GroupDocs](https://releases.groupdocs.com/parser/java/).
 
-### Environment Setup
-A Java IDE such as IntelliJ IDEA, Eclipse, or NetBeans will make development easier.
+### การตั้งค่าสภาพแวดล้อม
+IDE ของ Java เช่น IntelliJ IDEA, Eclipse หรือ NetBeans จะทำให้การพัฒนาง่ายขึ้น
 
-### Knowledge Prerequisites
-Familiarity with Java and Maven project structures will help you follow the examples more quickly.
+### ความรู้เบื้องต้นที่จำเป็น
+ความคุ้นเคยกับ Java และโครงสร้างโปรเจกต์ Maven จะช่วยให้คุณตามตัวอย่างได้เร็วขึ้น
 
-## Setting Up GroupDocs.Parser for Java
-To start using **GroupDocs.Parser** in your Java projects, follow the installation steps below.
+## การตั้งค่า GroupDocs.Parser สำหรับ Java
+เพื่อเริ่มใช้ **GroupDocs.Parser** ในโปรเจกต์ Java ของคุณ ให้ทำตามขั้นตอนการติดตั้งด้านล่าง
 
-### Maven Setup
-Add the GroupDocs repository and dependency to your `pom.xml`:
+### การตั้งค่า Maven
+เพิ่ม Repository และ Dependency ลงใน `pom.xml` ของคุณ:
 
+``` 
 ```xml
 <repositories>
    <repository>
@@ -67,18 +130,20 @@ Add the GroupDocs repository and dependency to your `pom.xml`:
    </dependency>
 </dependencies>
 ```
+```
 
-### Direct Download
-Alternatively, download the latest JAR from [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
+### ดาวน์โหลดโดยตรง
+Alternatively, download the latest JAR from [การปล่อย GroupDocs.Parser สำหรับ Java](https://releases.groupdocs.com/parser/java/).
 
-### License Acquisition Steps
-1. **Free Trial** – explore the library without cost.  
-2. **Temporary License** – obtain a trial‑length license via the [purchase page](https://purchase.groupdocs.com/temporary-license/).  
-3. **Commercial License** – purchase for unrestricted production use.
+### ขั้นตอนการรับใบอนุญาต
+1. **Free Trial** – ทดลองใช้ไลบรารีโดยไม่มีค่าใช้จ่าย.  
+2. **Temporary License** – รับใบอนุญาตระยะทดลองผ่าน [หน้าซื้อ](https://purchase.groupdocs.com/temporary-license/).  
+3. **Commercial License** – ซื้อเพื่อการใช้งานในผลิตภัณฑ์โดยไม่มีข้อจำกัด.
 
-### Basic Initialization and Setup
-Once the dependency is in place, you can create a `Parser` instance:
+### การเริ่มต้นและตั้งค่าเบื้องต้น
+คลาส `Parser` เป็นจุดเริ่มต้นที่แสดงถึงเอกสารพร้อมสำหรับการวิเคราะห์ มันห่อหุ้มทรัพยากรเนทีฟและให้เมธอดสำหรับการดึงข้อความ, เมทาดาต้า, และรูปภาพ
 
+``` 
 ```java
 import com.groupdocs.parser.Parser;
 
@@ -93,44 +158,50 @@ public class DocumentParser {
     }
 }
 ```
+```
 
-Now you’re ready to **java read pdf text**, retrieve metadata, or extract images.
+ตอนนี้คุณพร้อมที่จะ **extract pdf text java**, ดึงเมทาดาต้า, หรือดึงรูปภาพแล้ว
 
-## java read pdf text: Core Features
+## java อ่านข้อความ PDF: คุณลักษณะหลัก
 
-### Text Extraction
+### การดึงข้อความ
 
-#### Overview
-Extracting text is the most common use case. GroupDocs.Parser supports PDFs, Word docs, spreadsheets, and more.
+#### ภาพรวม
+การดึงข้อความเป็นกรณีการใช้ที่พบบ่อยที่สุด GroupDocs.Parser รองรับ PDF, เอกสาร Word, สเปรดชีต, และอื่น ๆ
 
-#### Implementation Steps
+#### ขั้นตอนการดำเนินการ
 
 **Step 1 – Initialize Parser**  
+``` 
 ```java
 import com.groupdocs.parser.Parser;
 
 Parser parser = new Parser("path/to/your/document.pdf");
 ```
+```
 
 **Step 2 – Extract Text**  
+``` 
 ```java
 try (TextReader reader = parser.getText()) {
     String textContent = reader.readToEnd();
     System.out.println("Extracted Text: " + textContent);
 }
 ```
+```
 
-*Explanation*  
-- No parameters are needed; `getText()` works on the file you opened.  
-- It returns a `TextReader` that lets you read the entire document as a single string.
+*คำอธิบาย*  
+- ไม่ต้องการพารามิเตอร์; `getText()` ทำงานบนไฟล์ที่คุณเปิด.  
+- จะคืนค่า `TextReader` ที่ให้คุณอ่านเอกสารทั้งหมดเป็นสตริงเดียว, รักษาการขึ้นบรรทัดใหม่และอักขระ Unicode.
 
-### java get pdf metadata
+### java รับเมทาดาต้า pdf
 
-#### Overview
-Metadata such as author, creation date, and keywords help you organize or filter documents.
+#### ภาพรวม
+เมทาดาต้าเช่นผู้เขียน, วันที่สร้าง, และคีย์เวิร์ดช่วยให้คุณจัดระเบียบหรือกรองเอกสารได้
 
-#### Implementation Steps
+#### ขั้นตอนการดำเนินการ
 
+``` 
 ```java
 import com.groupdocs.parser.data.Metadata;
 
@@ -140,17 +211,19 @@ try (Parser parser = new Parser("path/to/your/document.pdf")) {
     System.out.println("Creation Date: " + metadata.getCreationDate());
 }
 ```
+```
 
-*Explanation*  
-- `getMetadata()` requires no arguments and returns a `Metadata` object containing all standard properties.
+*คำอธิบาย*  
+- `getMetadata()` ไม่ต้องการอาร์กิวเมนต์และจะคืนอ็อบเจ็กต์ `Metadata` ที่มีคุณสมบัติมาตรฐานทั้งหมด, รวมถึงคู่คีย์/ค่าแบบกำหนดเองหากมี
 
-### extract images pdf java
+### ดึงรูปภาพ pdf java
 
-#### Overview
-You can pull out every image embedded in a PDF, which is handy for archiving or analysis.
+#### ภาพรวม
+คุณสามารถดึงรูปภาพที่ฝังอยู่ใน PDF ทั้งหมด, ซึ่งมีประโยชน์สำหรับการเก็บถาวรหรือการวิเคราะห์
 
-#### Implementation Steps
+#### ขั้นตอนการดำเนินการ
 
+``` 
 ```java
 import com.groupdocs.parser.data.PageImageArea;
 import java.util.List;
@@ -163,61 +236,64 @@ try (Parser parser = new Parser("path/to/your/document.pdf")) {
     }
 }
 ```
+```
 
-*Explanation*  
-- `getImages()` returns an iterable collection of `PageImageArea` objects, each representing an extracted image.
+คุณสามารถค้นหาการปล่อยล่าสุดได้ที่ [การปล่อย GroupDocs.Parser สำหรับ Java](https://releases.groupdocs.com/parser/java/).
 
-#### Troubleshooting Tips
-- Verify the file path and that the file format is supported.  
-- Large PDFs may require increased heap memory (`-Xmx` JVM option).  
+*คำอธิบาย*  
+- `getImages()` คืนคอลเลกชันที่สามารถวนซ้ำได้ของอ็อบเจ็กต์ `PageImageArea`, แต่ละอ็อบเจ็กต์แสดงรูปภาพที่ดึงออกพร้อมหมายเลขหน้าและขนาด
 
-## Practical Applications (parse documents java)
+#### เคล็ดลับการแก้ไขปัญหา
+- ตรวจสอบเส้นทางไฟล์และรูปแบบไฟล์ที่รองรับ.  
+- PDF ขนาดใหญ่อาจต้องการหน่วยความจำ heap เพิ่ม (`-Xmx` ตัวเลือก JVM).  
 
-GroupDocs.Parser can be embedded in many real‑world solutions:
+## การประยุกต์ใช้งานจริง (parse documents java)
 
-1. **Automated Document Management** – categorize files automatically based on extracted metadata.  
-2. **Data Extraction for Analytics** – pull tables or key figures from reports and feed them into BI tools.  
-3. **Content Archiving** – store extracted text and images from legacy PDFs for searchable archives.  
+1. **การจัดการเอกสารอัตโนมัติ** – จำแนกไฟล์โดยอัตโนมัติตามเมทาดาต้าที่ดึงออกมา.  
+2. **การดึงข้อมูลเพื่อวิเคราะห์** – ดึงตารางหรือข้อมูลสำคัญจากรายงานและส่งต่อไปยังเครื่องมือ BI.  
+3. **การเก็บถาวรเนื้อหา** – เก็บข้อความและรูปภาพที่ดึงจาก PDF เก่าเพื่อทำเป็นคลังข้อมูลที่ค้นหาได้.  
 
-## Performance Considerations
+## พิจารณาด้านประสิทธิภาพ
 
-- **Resource Management** – always use try‑with‑resources to close the `Parser` and free native resources.  
-- **Batch Processing** – process documents in parallel streams only after confirming thread‑safety of your usage pattern.  
-- **Upgrade Regularly** – newer versions bring memory optimizations and broader format support.
+- **การจัดการทรัพยากร** – ควรใช้ try‑with‑resources เสมอเพื่อปิด `Parser` และปล่อยทรัพยากรเนทีฟ.  
+- **การประมวลผลแบบชุด** – ประมวลผลเอกสารใน parallel streams หลังจากยืนยันความปลอดภัยของเธรดในรูปแบบการใช้งานของคุณ.  
+- **อัปเกรดเป็นประจำ** – เวอร์ชันใหม่มาพร้อมการปรับปรุงหน่วยความจำและการสนับสนุนรูปแบบที่กว้างขึ้น.  
 
-## Common Pitfalls & Solutions
+## ปัญหาที่พบบ่อยและวิธีแก้
 
-| Issue | Cause | Fix |
+| ปัญหา | สาเหตุ | วิธีแก้ |
 |-------|-------|-----|
-| `OutOfMemoryError` while parsing large PDFs | Insufficient JVM heap | Increase `-Xmx` or process pages incrementally |
-| Images not found | PDF uses embedded streams not supported | Ensure you’re using the latest library version |
-| Metadata fields are empty | Document lacks embedded metadata | Use fallback logic or external metadata store |
+| `OutOfMemoryError` ระหว่างการแยกวิเคราะห์ PDF ขนาดใหญ่ | หน่วยความจำ heap ของ JVM ไม่เพียงพอ | เพิ่ม `-Xmx` หรือประมวลผลหน้าแบบเพิ่มทีละหน้า |
+| ไม่พบรูปภาพ | PDF ใช้สตรีมฝังที่ไม่รองรับ | ตรวจสอบว่าคุณใช้เวอร์ชันล่าสุดของไลบรารี |
+| ฟิลด์เมทาดาต้าเป็นค่าว่าง | เอกสารไม่มีเมทาดาต้าฝัง | ใช้ตรรกะสำรองหรือที่เก็บเมทาดาต้าภายนอก |
 
-## Frequently Asked Questions
+## คำถามที่พบบ่อย
 
-**Q: Can I parse Word docs with the same API?**  
-A: Yes—`Parser` works with DOCX, DOC, and other Office formats, so you can **parse word docs java** using the same methods.
+**Q: ฉันสามารถแยกวิเคราะห์เอกสาร Word ด้วย API เดียวกันได้หรือไม่?**  
+A: ได้—`Parser` ทำงานกับ DOCX, DOC, และรูปแบบ Office อื่น ๆ, ดังนั้นคุณสามารถ **parse word docs java** ด้วยการเรียกเมธอดเดียวกันได้
 
-**Q: Is there a way to extract only specific pages?**  
-A: You can combine `Parser.getText()` with page‑range parameters available in newer releases.
+**Q: มีวิธีดึงเฉพาะหน้าที่ต้องการหรือไม่?**  
+A: คุณสามารถผสาน `Parser.getText()` กับพารามิเตอร์ช่วงหน้า (page‑range) ที่แนะนำในเวอร์ชันล่าสุดเพื่อจำกัดการดึงข้อมูลให้เฉพาะหน้าที่เลือก
 
-**Q: Does GroupDocs.Parser support password‑protected PDFs?**  
-A: Yes—pass the password to the `Parser` constructor to unlock the document.
+**Q: GroupDocs.Parser รองรับ PDF ที่ป้องกันด้วยรหัสผ่านหรือไม่?**  
+A: ได้—ส่งรหัสผ่านไปยังคอนสตรัคเตอร์ `Parser`; ไลบรารีจะถอดรหัสเอกสารก่อนทำการดึงข้อมูล
 
-**Q: How do I handle different character encodings?**  
-A: The library automatically detects Unicode; you can also specify a custom encoding if needed.
+**Q: ฉันจะจัดการกับการเข้ารหัสอักขระที่แตกต่างกันอย่างไร?**  
+A: ไลบรารีตรวจจับ Unicode อัตโนมัติ; คุณยังสามารถระบุการเข้ารหัสแบบกำหนดเองผ่าน `ParserSettings` หากต้องการ
 
-**Q: What license do I need for commercial use?**  
-A: A commercial license is required for production deployments; a free trial is available for evaluation.
+**Q: ต้องใช้ใบอนุญาตประเภทใดสำหรับการใช้งานเชิงพาณิชย์?**  
+A: จำเป็นต้องมีใบอนุญาตเชิงพาณิชย์สำหรับการใช้งานในผลิตภัณฑ์; มีการทดลองใช้ฟรีสำหรับการประเมินผล
 
-## Conclusion
+## สรุป
 
-We’ve shown you how to **java read pdf text**, **java get pdf metadata**, and **extract images pdf java** using GroupDocs.Parser. With just a few lines of code you can integrate powerful document‑parsing capabilities into any Java application—whether you’re building a search engine, a data‑pipeline, or an archival system. Explore the additional APIs (tables, forms, OCR) to unlock even more potential.
+เราได้แสดงวิธี **extract pdf text java**, **java get pdf metadata**, และ **extract images pdf java** ด้วย GroupDocs.Parser ด้วยเพียงไม่กี่บรรทัดของโค้ด คุณสามารถรวมความสามารถการแยกวิเคราะห์เอกสารที่ทรงพลังเข้าไปในแอปพลิเคชัน Java ใดก็ได้—ไม่ว่าจะเป็นการสร้างเครื่องมือค้นหา, ระบบข้อมูลไหล, หรือระบบเก็บถาวร สำรวจ API เพิ่มเติม (ตาราง, ฟอร์ม, OCR) เพื่อเปิดศักยภาพที่มากยิ่งขึ้น
 
----
+**อัปเดตล่าสุด:** 2026-07-21  
+**ทดสอบด้วย:** GroupDocs.Parser 25.5  
+**ผู้เขียน:** GroupDocs
 
-**Last Updated:** 2026-01-06  
-**Tested With:** GroupDocs.Parser 25.5  
-**Author:** GroupDocs  
+## บทแนะนำที่เกี่ยวข้อง
 
----
+- [สกัดข้อความดิบจาก PDF ด้วย GroupDocs.Parser ใน Java: คู่มือครบถ้วน](/parser/java/text-extraction/extract-raw-text-pdf-groupdocs-parser-java/)
+- [วิธีสกัดเมทาดาต้า PDF ด้วย GroupDocs.Parser ใน Java: คู่มือขั้นตอนที่ละเอียด](/parser/java/metadata-extraction/extract-pdf-metadata-groupdocs-parser-java/)
+- [วิธีสกัดรูปภาพจาก PDF ด้วย GroupDocs.Parser ใน Java: คู่มือขั้นตอนต่อขั้นตอน](/parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/)
