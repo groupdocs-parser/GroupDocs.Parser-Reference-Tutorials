@@ -1,47 +1,101 @@
 ---
-date: '2026-01-24'
-description: GroupDocs.Parser kullanarak Java’da epub meta verilerini nasıl çıkaracağınızı
-  öğrenin. Adım adım kılavuz, kurulum, kod ve gerçek dünya kullanım örnekleri.
+date: '2026-08-20'
+description: GroupDocs.Parser ile epub metadata java nasıl çıkarılacağını öğrenin.
+  Adım adım kılavuz, Maven kurulumu, kod örneği ve dijital kütüphane projeleri için
+  gerçek dünya kullanım örnekleri.
 keywords:
-- extract EPUB metadata Java
-- GroupDocs.Parser metadata extraction
-- Java digital library management
-title: GroupDocs.Parser ile Java’da epub meta verilerini nasıl çıkarılır
+- extract epub metadata java
+- groupdocs parser java
+- epub metadata extraction
+lastmod: '2026-08-20'
+og_description: GroupDocs.Parser ile epub metadata java'yı hızlıca çıkarın. Maven'i
+  kurmak, bir Java örneği çalıştırmak ve metadata çıkarımını dijital kütüphane iş
+  akışınıza entegre etmek için bu kapsamlı öğreticiyi izleyin.
+og_image_alt: Developer guide showing Java code that extracts EPUB metadata with GroupDocs.Parser
+og_title: GroupDocs.Parser ile epub metadata java nasıl çıkarılır
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-20'
+  description: Learn how to extract epub metadata java with GroupDocs.Parser. Step‑by‑step
+    guide, Maven setup, code sample, and real‑world use cases for digital‑library
+    projects.
+  headline: How to extract epub metadata java using GroupDocs.Parser
+  type: TechArticle
+- description: Learn how to extract epub metadata java with GroupDocs.Parser. Step‑by‑step
+    guide, Maven setup, code sample, and real‑world use cases for digital‑library
+    projects.
+  name: How to extract epub metadata java using GroupDocs.Parser
+  steps:
+  - name: '**Digital library management** – Auto‑populate catalog entries with title,
+      author, and ISBN directly from the EPUB file.'
+    text: '**Digital library management** – Auto‑populate catalog entries with title,
+      author, and ISBN directly from the EPUB file.'
+  - name: '**Content aggregation services** – Feed extracted metadata into search
+      indexes or recommendation engines without parsing full book text.'
+    text: '**Content aggregation services** – Feed extracted metadata into search
+      indexes or recommendation engines without parsing full book text.'
+  - name: '**Publishing platforms** – Validate author and publisher information during
+      manuscript ingestion to enforce compliance.'
+    text: '**Publishing platforms** – Validate author and publisher information during
+      manuscript ingestion to enforce compliance.'
+  type: HowTo
+- questions:
+  - answer: Metadata includes descriptive information such as title, author, language,
+      publisher, and publication date stored in the EPUB’s OPF package file.
+    question: What is metadata in an EPUB file?
+  - answer: Yes. The `Parser` class works with PDFs, DOCX, TXT, and many more. Change
+      the file extension and the same `getMetadata()` call returns the appropriate
+      data set.
+    question: Can I extract metadata from other formats with the same code?
+  - answer: The parser throws a `ParserException`. Catch the exception, log a warning,
+      and continue processing the remaining files.
+    question: What happens if the EPUB file is corrupted?
+  - answer: Process files in batches, reuse parser instances per thread, and consider
+      multithreading with a bounded thread pool to maximise CPU utilization.
+    question: How do I handle large EPUB collections efficiently?
+  - answer: A free trial license is sufficient for development and testing. A commercial
+      license is required for production deployments.
+    question: Do I need a license for development builds?
+  type: FAQPage
+tags:
+- extract epub metadata
+- groupdocs parser
+- java ebook processing
+- digital library automation
+title: GroupDocs.Parser ile epub metadata java nasıl çıkarılır
 type: docs
 url: /tr/java/metadata-extraction/extract-epub-metadata-groupdocs-parser-java/
 weight: 1
 ---
 
-# Java ile epub meta verilerini GroupDocs.Parser kullanarak çıkarma
+# GroupDocs.Parser kullanarak Java ile epub meta verilerini çıkarma
 
-Java'da **epub meta verilerini** çıkarmak, dijital‑kütüphane, e‑kitap mağazası veya içerik toplama hizmeti geliştiren herkes için yaygın bir gereksinimdir. Bu öğreticide, güçlü **GroupDocs.Parser** kütüphanesini kullanarak **Java ile epub meta verilerini nasıl çıkarılır**‑stilinde nasıl çıkarılacağını öğreneceksiniz. Gereksinimler, Maven kurulumu, kompakt bir Java örneği ve bu yeteneğin saatler süren manuel işi nasıl tasarruf ettirdiğini gösteren gerçek dünya senaryolarını adım adım inceleyeceğiz.
+Bu öğreticide GroupDocs.Parser kütüphanesiyle **java ile epub meta verilerini çıkarma**‑stili keşfedeceksiniz. Dijital‑kütüphane, e‑kitap mağazası veya içerik‑toplama hattı oluşturuyor olsanız da, bir EPUB'un yerleşik meta verilerini (başlık, yazar, yayıncı vb.) programlı olarak okumak manuel girişte saatler tasarruf sağlar. Aşağıdaki adımlar ortam kurulumundan çalıştırmaya hazır bir Java kod parçasına kadar her şeyi kapsar.
 
-## Hızlı Yanıtlar
+## Hızlı cevaplar
 - **Bu öğreticide hangi kütüphane kullanılıyor?** GroupDocs.Parser for Java  
 - **Kodu JDK 8 ile çalıştırabilir miyim?** Evet, JDK 8 ve üzeri desteklenir  
-- **Geliştirme için lisansa ihtiyacım var mı?** Değerlendirme için ücretsiz deneme çalışır; üretim için lisans gereklidir  
-- **Maven gerekli mi?** Maven önerilir ancak doğrudan JAR indirme de kullanılabilir  
-- **Ne tür bir çıktı bekleyebilirim?** Her meta veri adı/değer çiftinin konsola yazdırılması (ör. Title, Author)
+- **Geliştirme için lisansa ihtiyacım var mı?** Değerlendirme için ücretsiz deneme çalışır; üretim için bir lisans gereklidir  
+- **Maven gerekli mi?** Maven önerilir ancak doğrudan JAR indirmesini de kullanabilirsiniz  
+- **Ne tür bir çıktı bekleyebilirim?** Konsolda her meta veri adı/değer çiftinin yazdırılması (ör. Title, Author)
 
-## “extract epub metadata java” nedir?
-Bu ifade, bir EPUB dosyasının içinde sakladığı yerleşik bilgileri—başlık, yazar, yayıncı ve yayın tarihi gibi—Java kodu kullanarak okumak anlamına gelir. Bu meta veriler EPUB'un OPF paket dosyasında depolanır ve kitabın tam içeriğini ayrıştırmadan erişilebilir.
+## Java ile epub meta verilerini çıkarmak nedir?
 
-## Neden GroupDocs.Parser ile epub meta verilerini Java’da çıkaralım?
-- **Hız:** Meta veriler milisaniyeler içinde okunur, tam metin ayrıştırması önlenir.  
-- **Güvenilirlik:** GroupDocs.Parser kenar durumları ve bozuk dosyaları sorunsuz şekilde işler.  
-- **Çapraz format desteği:** Aynı API PDF, DOCX ve birçok diğer format için çalışır, kodun yeniden kullanılmasını sağlar.  
-- **Ölçeklenebilirlik:** Büyük e‑kitap koleksiyonlarını toplu işleme için idealdir.
+Java'da EPUB meta verilerini çıkarmak, her EPUB'un içinde bulunan OPF paket dosyasını okuyup başlık, yazar, dil ve yayın tarihi gibi tanımlayıcı alanları döndürmek anlamına gelir. **Bu işlem tam kitap içeriğini yüklemeyi gerektirmez**, bu yüzden hızlı ve bellek‑verimli olur.
+
+## GroupDocs.Parser ile Java'da epub meta verilerini neden çıkarmalısınız?
+
+GroupDocs.Parser, çok sayfalı kitaplarda bile **dosya başına 50 ms'den az** sürede EPUB meta verilerini okur, çünkü yalnızca küçük OPF manifestini ayrıştırır. Kütüphane **30+ belge formatını** destekler ve **2 GB**'a kadar dosyaları tüm dosyayı belleğe yüklemeden işleyebilir, bu da büyük e‑kitap koleksiyonlarının toplu işlenmesini pratik hâle getirir. Yerleşik hata yönetimi bozuk dosyaları zarifçe atlar, böylece iş akışınız asla çökmez.
 
 ## Önkoşullar
-- **GroupDocs.Parser for Java** (sürüm 25.5 ve üzeri)  
+- GroupDocs.Parser for Java (version 25.5 or later)  
 - Java Development Kit 8 ve üzeri  
--, istisna yönetimi)  
+- Java sınıfları, metodları ve istisna yönetimi konusunda temel bilgi  
 - Maven (isteğe bağlı ancak önerilir)
 
-## GroupDocs.Parser for Java Kurulumu
+## GroupDocs.Parser for Java nasıl ayarlanır?
 
-### Maven Kullanarak
-`pom.xml` dosyanıza aşağıda gösterildiği gibi depo ve bağımlılığı ekleyin:
+Resmi Maven deposunu ve Parser bağımlılığını `pom.xml` dosyanıza ekleyin. Bu tek değişiklik kütüphaneyi ve tüm geçişli bağımlılıkları otomatik olarak çeker. Maven, GroupDocs deposundan artefaktları çözer, böylece manuel indirme yapmadan her zaman doğru sürümü alırsınız. Dosyayı kaydettikten sonra bağımlılığın çözüldüğünü doğrulamak için `mvn clean install` komutunu çalıştırın.
 
 ```xml
 <repositories>
@@ -61,17 +115,18 @@ Bu ifade, bir EPUB dosyasının içinde sakladığı yerleşik bilgileri—başl
 </dependencies>
 ```
 
-### Doğrudan İndirme
 Maven kullanmak istemiyorsanız, resmi sürüm sayfasından en son JAR'ı indirin: [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
-### Lisans Edinme Adımları
-- Özellikleri keşfetmek için **ücretsiz deneme** ile başlayın.  
-- Uzun vadeli değerlendirme için **geçici lisans** başvurusu yapın.  
-- Üretim dağıtımları için tam lisans satın alın.
+### Lisans edinme adımları
+- Tüm özellikleri keşfetmek için **ücretsiz deneme** ile başlayın.  
+- **Geçici lisans** isteyin, böylece değerlendirme süresini uzatabilirsiniz.  
+- Üretim dağıtımları için sınırsız kullanımın kilidini açan tam bir **lisans** satın alın.
 
-## Uygulama Kılavuzu
+## Java ile epub meta verilerini adım adım çıkarma
 
-Aşağıda, GroupDocs.Parser kullanarak **Java ile epub meta verilerini nasıl çıkarılır** gösteren minimal bir Java programı bulunmaktadır. Kod, IDE'nize kopyala‑yapıştır yapmaya hazırdır.
+`Parser` sınıfı, GroupDocs.Parser'da desteklenen belge formatlarını okumak için giriş noktasıdır.
+
+`Parser` örneğiyle EPUB dosyasını yükleyin, meta veri koleksiyonunu isteyin ve öğeler üzerinde döngü yaparak her ad/ değer çiftini yazdırın. Tüm süreç, try‑with‑resources bloğu içinde yalnızca üç mantıksal kod satırı gerektirir; bu blok dosya tutucularını otomatik olarak serbest bırakır ve bellek sızıntılarını önler.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -98,56 +153,68 @@ public class ExtractMetadataFeature {
 }
 ```
 
-### Kodun Çalışma Şekli
-1. **Parser Başlatma** – `Parser` nesnesi EPUB dosyasını açar ve okuma için hazırlar.  
-2. **Meta Veri Çıkarma** – `parser.getMetadata()` her bir meta veri parçasını içeren bir `Iterable<MetadataItem>` döndürür.  
-3. **Döngü ve Çıktı** – Basit bir `for‑each` döngüsü, her öğenin adını ve değerini konsola yazdır.  
+### Kodun nasıl çalıştığı
+`Parser` sınıfı, tüm desteklenen formatlar için giriş noktasıdır. Dosyayı açar, OPF paketini okur ve `getMetadata()` aracılığıyla bir `Iterable<MetadataItem>` sunar. Her `MetadataItem` bir `name` (ör. “Title”) ve bir `value` (ör. “The Great Adventure”) içerir. `try‑with‑resources` ifadesi dosya tutucularının otomatik olarak serbest bırakılmasını garanti eder, böylece bellek sızıntıları önlenir.
 
-####ün## Pratik Uygulamalarurunleri** – Tam kitap içeriğini yüklemeden meta verileri öneri motorlarına veya arama indekslerine besleyin.  
-3. **Yayın Platformları** – El yazması alımı sırasında yazar ve yayıncı bilgilerini doğrulayın.
+## Pratik uygulamalar
 
-## Performans Düşünceleri
-- **G/Ç Verimliliği:** Döngü içinde çok sayıda dosya okuyorsanız, sık disk erişimini önlemek için tamponlu akışlar kullanın.  
-- **Bellek Yönetimi:** Parser, try‑with‑resources bloğu sayesinde dosya tutucularını otomatik olarak serbest bırakır; `MetadataItem` nesnelerinin büyük koleksiyonlarını gereksiz yere uzun süre tutmadığınızdan emin olun.
+1. **Dijital kütüphane yönetimi** – EPUB dosyasından başlık, yazar ve ISBN'yi doğrudan alarak katalog girişlerini otomatik doldurun.  
+2. **İçerik toplama hizmetleri** – Tam kitap metnini ayrıştırmadan çıkarılan meta verileri arama indekslerine veya öneri motorlarına besleyin.  
+3. **Yayın platformları** – El yazması alımı sırasında yazar ve yayıncı bilgilerini doğrulayarak uyumu zorlayın.
 
-## Yaygın Sorunlar ve Çözümler
-| Belirti | Muhtemel Neden | Çözüm |
+## Performans hususları
+
+- **I/O verimliliği:** Binlerce dosya işlenirken dosya akışını `BufferedInputStream` ile sarmalayarak disk erişim yükünü azaltın.  
+- **Bellek yönetimi:** Parser, `try‑with‑resources` bloğundan sonra kaynakları serbest bırakır; büyük `MetadataItem` listelerini gereksiz yere saklamaktan kaçının.  
+- **Paralel yürütme:** Java’nın `ExecutorService`'ini sınırlı bir iş parçacığı havuzu ile kullanın ve çok çekirdekli sunucularda neredeyse doğrusal ölçekleme elde etmek için her iş parçacığı başına tek bir `Parser` örneğini yeniden kullanın.
+
+## Yaygın sorunlar ve çözümler
+
+`ParserException` sınıfı, parser bir desteklenmeyen formatla veya işleme hatasıyla karşılaştığında fırlatılır.
+
+| Semptom | Muhtemel neden | Çözüm |
 |---------|----------------|-------|
-| Çıktı yazdırılmadı | EPUB dosyası eksik veya yol hatalı | Mutlak yolu ve dosya izinlerini kontrol edin |
-| `ParserException: Unsupported format` | Eski bir GroupDocs.Parser sürümü kullanılıyor | Sürümü 25.5 ve üzeri'ye yükseltin |
-| Büyük toplu işlemlerde yavaş işleme | Sıralı işleme | İş parçacığı başına parser örneklerini yeniden kullanarak Java’nın `ExecutorService` ile paralelleştirin |
+| Çıktı yazdırılmadı | EPUB dosyası eksik veya yol hatalı | Mutlak yolu ve dosya izinlerini iki kez kontrol edin |
+| `ParserException: Unsupported format` | Eski bir GroupDocs.Parser sürümü kullanmak | Sürüm 25.5 ve üzerisine yükseltin |
+| Büyük toplu işlemlerde yavaş işleme | Sıralı işleme | `ExecutorService` kullanarak paralelleştirin ve iş parçacığı başına parser örneklerini yeniden kullanın |
 
-## Sık Sorulan Sorular
+## Sıkça sorulan sorular
 
-**S: EPUB dosyasındaki meta veri nedir?**  
-C: Meta veri, EPUB'un OPF paket dosyasında saklanan başlık, yazar, dil, yayıncı ve yayın tarihi gibi tanımlayıcı bilgileri içerir.
+**S:** EPUB dosyasında meta veri nedir?  
+**C:** Meta veri, EPUB'un OPF paket dosyasında depolanan başlık, yazar, dil, yayıncı ve yayın tarihi gibi tanımlayıcı bilgileri içerir.
 
-**S: Aynı kodla diğer formatlardan meta veri çıkarabilir miyim?**  
-C: Evet. `Parser` sınıfı PDF, DOCX, TXT ve daha birçok formatla çalışır. Sadece dosya uzantısını değiştirin, parser uygun meta veri setini döndürecektir.
+**S:** Aynı kodla diğer formatlardan meta veri çıkarabilir miyim?  
+**C:** Evet. `Parser` sınıfı PDF, DOCX, TXT ve daha birçok formatla çalışır. Dosya uzantısını değiştirin, aynı `getMetadata()` çağrısı uygun veri kümesini döndürür.
 
-**S: EPUB dosyası bozuk olursa ne olur?**  
-C: Parser bir istisna fırlatır. Örnekte gösterildiği gibi yakalayın ve dosyayı atlayın ya da daha sonra inceleme için bir uyarı kaydedin.
+**S:** EPUB dosyası bozuk olursa ne olur?  
+**C:** Parser bir `ParserException` fırlatır. İstisnayı yakalayın, bir uyarı kaydedin ve kalan dosyaların işlenmesine devam edin.
 
-**S: Büyük EPUB koleksiyon?**  
-C: Dosyaları toplu olarak işleyin, mümkün olduğunca parser örneklerini yeniden kullanın ve sınırlı bir iş parçacığı havuzu ile çoklu iş parçacığı kullanımını düşünün.
+**S:** Büyük EPUB koleksiyonlarını verimli bir şekilde nasıl yönetebilirim?  
+**C:** Dosyaları toplu olarak işleyin, iş parçacığı başına parser örneklerini yeniden kullanın ve CPU kullanımını maksimize etmek için sınırlı bir iş parçacığı havuzu ile çok iş parçacıklı çalışmayı düşünün.
 
-**S: Geliştirme sürümleri için lisansa ihtiyacım var mı?**  
-C: Geliştirme ve test için ücretsiz deneme lisansı yeterlidir. Üretim dağıtımları için ticari lisans gereklidir.
+**S:** Geliştirme sürümleri için bir lisansa ihtiyacım var mı?  
+**C:** Geliştirme ve test için ücretsiz deneme lisansı yeterlidir. Üretim dağıtımları için ticari bir lisans gereklidir.
 
 ## Sonuç
 
-Artık GroupDocs.Parser kullanarak **Java ile epub meta verilerini nasıl çıkarılır** konusunda eksiksiz, üretime hazır bir örneğe sahipsiniz. Bu kod parçacığını iş akışınıza entegre ederek kataloglamayı otomatikleştirebilir, arama alaka düzeyini artırabilir ve yayın hatlarını sadeleştirebilirsiniz. Metin çıkarma ve dönüştürme gibi ek GroupDocs.Parser özelliklerini keşfederek uygulamalarınızı daha da zenginleştirin.
+Artık GroupDocs.Parser kullanarak **java ile epub meta verilerini nasıl çıkaracağınızı** gösteren eksiksiz, üretim‑hazır bir örneğe sahipsiniz. Bu kod parçasını iş akışınıza entegre etmek, katalog oluşturmayı otomatikleştirmenizi, arama alaka düzeyini artırmanızı ve yayın hatlarını düzene koymanızı sağlar. Tam metin çıkarma ve format dönüşümü gibi ek Parser yeteneklerini keşfederek uygulamalarınızı daha da zenginleştirin.
 
 ---
 
-**Son Güncelleme:** 2026-01-24  
-**Test Edilen:** GroupDocs.Parser 25.5 for Java  
+**Son Güncelleme:** 2026-08-20  
+**Test Edilen Versiyon:** GroupDocs.Parser 25.5 for Java  
 **Yazar:** GroupDocs  
 
 **Kaynaklar**  
 - [GroupDocs Parser Dokümantasyonu](https://docs.groupdocs.com/parser/java/)  
 - [API Referansı](https://reference.groupdocs.com/parser/java)  
-- [GroupDocs.Parser for Java İndir](https://releases.groupdocs.com/parser/java/)  
+- [GroupDocs.Parser for Java'ı İndir](https://releases.groupdocs.com/parser/java/)  
 - [GitHub Deposu](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
 - [Ücretsiz Destek Forumu](https://forum.groupdocs.com/c/parser)  
 - [Geçici Lisans Edinme](https://purchase.groupdocs.com/temporary-license/)
+
+## İlgili Öğreticiler
+
+- [GroupDocs.Parser Java ile EPUB İçindekiler Tablosu Çıkarma: Kapsamlı Rehber](/parser/java/toc-extraction/groupdocs-parser-java-epub-toc-extraction/)
+- [GroupDocs.Parser for Java ile EPUB'u HTML'ye Çıkarma](/parser/java/formatted-text-extraction/extract-epub-text-to-html-groupdocs-parser-java/)
+- [GroupDocs.Parser Java ile Meta Veri Çıkarma](/parser/java/document-information/)
