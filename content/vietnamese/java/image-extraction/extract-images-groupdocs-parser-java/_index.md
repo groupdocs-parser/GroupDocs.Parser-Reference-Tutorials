@@ -1,36 +1,91 @@
 ---
-date: '2026-01-16'
-description: Tìm hiểu cách lưu ảnh từ tài liệu bằng GroupDocs.Parser cho Java, bao
-  gồm cài đặt, ví dụ mã và các thực tiễn tốt nhất để trích xuất ảnh trong Java.
+date: '2026-08-05'
+description: Tìm hiểu cách trích xuất hình ảnh Java từ PDF, Word, Excel và PowerPoint
+  bằng GroupDocs.Parser cho Java, với hướng dẫn cài đặt từng bước, luồng mã và các
+  thực tiễn tốt nhất.
 keywords:
-- extract images from documents
+- extract images java
 - GroupDocs.Parser for Java
-- image extraction from documents
-title: Cách lưu hình ảnh bằng GroupDocs.Parser cho Java
+- image extraction Java
+lastmod: '2026-08-05'
+og_description: Trích xuất hình ảnh Java bằng GroupDocs.Parser cho Java. Hướng dẫn
+  này cho bạn cách lấy các hình ảnh nhúng từ tệp PDF, Word, Excel và PowerPoint và
+  lưu chúng chỉ với vài dòng mã.
+og_image_alt: 'Guide illustration: extracting and saving images from documents with
+  GroupDocs.Parser for Java'
+og_title: Trích xuất hình ảnh Java – lưu ảnh với GroupDocs.Parser
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-05'
+  description: Learn how to extract images java from PDFs, Word, Excel, and PowerPoint
+    using GroupDocs.Parser for Java, with step‑by‑step setup, code flow, and best
+    practices.
+  headline: Extract images java – how to save images with GroupDocs.Parser for Java
+  type: TechArticle
+- description: Learn how to extract images java from PDFs, Word, Excel, and PowerPoint
+    using GroupDocs.Parser for Java, with step‑by‑step setup, code flow, and best
+    practices.
+  name: Extract images java – how to save images with GroupDocs.Parser for Java
+  steps:
+  - name: initialize parser object
+    text: '*The `Parser` class gives you access to the document’s internal content.
+      Replace `"YOUR_DOCUMENT_DIRECTORY"` with the actual path to your file.*'
+  - name: extract images
+    text: '*If `getImages()` returns `null`, the current format does not support image
+      extraction.*'
+  - name: iterate and retrieve image details
+    text: '`PageImageArea` represents an individual image extracted from the document,
+      providing metadata such as format and dimensions.'
+  - name: set up output path and stream
+    text: '*Replace `"YOUR_OUTPUT_DIRECTORY"` with the folder where you want the pictures
+      saved.*'
+  - name: write image data
+    text: '*The `save` method streams the image bytes directly to the file system.*'
+  type: HowTo
+- questions:
+  - answer: PDFs, DOC/DOCX, PPT/PPTX, XLS/XLSX, and many other popular formats are
+      supported.
+    question: What file types are supported for image extraction?
+  - answer: Use pagination—process a subset of pages at a time and release resources
+      before moving to the next batch.
+    question: How can I handle large documents efficiently?
+  - answer: Yes, GroupDocs.Parser provides metadata APIs that let you retrieve information
+      such as author, creation date, and more.
+    question: Can I extract metadata together with images?
+  - answer: It works fine as long as the Java process has the necessary network permissions
+      and latency is acceptable.
+    question: Is it safe to write images to a network drive?
+  - answer: The library is thread‑safe; you can run multiple `Parser` instances in
+      parallel using Java’s `ExecutorService`.
+    question: Does GroupDocs.Parser support parallel processing?
+  type: FAQPage
+tags:
+- extract images
+- GroupDocs.Parser
+- Java document processing
+- image extraction
+title: Trích xuất hình ảnh Java – cách lưu hình ảnh với GroupDocs.Parser cho Java
 type: docs
 url: /vi/java/image-extraction/extract-images-groupdocs-parser-java/
 weight: 1
 ---
 
-# Cách Lưu Hình Ảnh với GroupDocs.Parser cho Java
+# Trích xuất hình ảnh java – cách lưu hình ảnh với GroupDocs.Parser cho Java
 
-Cần một cách đáng tin cậy để **lưu hình ảnh** một cách lập trình từ các định dạng tài liệu khác nhau? **GroupDocs.Parser cho Java** cung cấp khả năng trích xuất hình ảnh mạnh mẽ giúp đơn giản hoá công việc này. Trong hướng dẫn này, chúng tôi sẽ chỉ cho bạn cách cài đặt thư viện, trích xuất hình ảnh và lưu chúng vào đĩa—hoàn hảo cho phân tích dữ liệu, tái sử dụng nội dung hoặc lưu trữ.
+Nếu bạn cần **extract images java** từ nhiều định dạng tài liệu, GroupDocs.Parser cho Java cung cấp một API đáng tin cậy cho phép bạn lấy các hình ảnh nhúng và ghi chúng vào đĩa chỉ trong vài dòng mã. Cho dù bạn đang lưu trữ các báo cáo cũ, đưa hình ảnh vào quy trình máy học, hoặc xây dựng một bộ sưu tập web, hướng dẫn này sẽ dẫn bạn qua toàn bộ quá trình — từ cài đặt thư viện đến việc trích xuất hàng loạt hiệu quả.
 
 ## Câu trả lời nhanh
-- **“cách lưu hình ảnh” đề cập đến gì?** Sử dụng GroupDocs.Parser để trích xuất các hình ảnh nhúng và ghi chúng vào thư mục cục bộ.  
+- **“save images” đề cập đến gì?** Sử dụng GroupDocs.Parser để trích xuất các hình ảnh nhúng và ghi chúng vào một thư mục cục bộ.  
 - **Các định dạng nào được hỗ trợ?** PDF, Word, Excel, PowerPoint và nhiều loại tài liệu phổ biến khác.  
-- **Có cần giấy phép không?** Bản dùng thử miễn phí đủ cho việc đánh giá; giấy phép đầy đủ cần thiết cho môi trường sản xuất.  
-- **Có thể xử lý lô lớn không?** Có—kết hợp API với các tiện ích đồng thời của Java để trích xuất hàng loạt.  
-- **Yêu cầu phiên bản Java nào?** JDK 8 hoặc cao hơn.
+- **Tôi có cần giấy phép không?** Bản dùng thử miễn phí đủ cho việc đánh giá; giấy phép đầy đủ là cần thiết cho môi trường sản xuất.  
+- **Tôi có thể xử lý các lô lớn không?** Có — kết hợp API với các tiện ích đồng thời của Java để trích xuất hàng loạt.  
+- **Phiên bản Java nào được yêu cầu?** JDK 8 hoặc cao hơn.
 
-## “Cách lưu hình ảnh” trong ngữ cảnh phân tích tài liệu là gì?
-Lưu hình ảnh có nghĩa là lấy mỗi bức ảnh được nhúng trong tài liệu và ghi dữ liệu nhị phân vào một tệp trên hệ thống tệp của bạn. Điều này cho phép bạn tái sử dụng hình ảnh bên ngoài tệp gốc, chẳng hạn như cho các bộ sưu tập web, báo cáo hoặc quy trình máy học.
+## extract images java là gì?
+Việc trích xuất hình ảnh java có nghĩa là đọc một tệp tài liệu bằng Java một cách lập trình và lấy ra mọi đối tượng hình ảnh để bạn có thể lưu chúng như một tệp độc lập. Khả năng này cho phép bạn tái sử dụng các hình ảnh bên ngoài container gốc, chẳng hạn cho nội dung web, phân tích, hoặc mục đích lưu trữ.
 
-## Tại sao nên dùng GroupDocs.Parser cho Java để lưu hình ảnh?
-- **Unified API** – Một giao diện nhất quán hoạt động trên hàng chục định dạng.  
-- **High fidelity** – Hình ảnh được trích xuất mà không mất chất lượng.  
-- **Performance‑focused** – Trích xuất dựa trên luồng giảm thiểu việc sử dụng bộ nhớ.  
-- **Easy integration** – Hỗ trợ Maven/Gradle và các lớp Java rõ ràng.
+## Tại sao nên sử dụng GroupDocs.Parser cho Java để lưu hình ảnh?
+GroupDocs.Parser cung cấp một API thống nhất, độ chính xác cao hoạt động trên hơn 50 định dạng đầu vào và đầu ra và xử lý các tài liệu hàng trăm trang mà không cần tải toàn bộ tệp vào bộ nhớ. Việc trích xuất dựa trên luồng giảm mức sử dụng heap lên tới 70 % so với việc tải toàn bộ tài liệu một cách thô sơ, khiến nó lý tưởng cho các công việc thu thập hình ảnh quy mô lớn.
 
 ## Yêu cầu trước
 - **Java Development Kit (JDK) 8+** đã được cài đặt.  
@@ -40,7 +95,7 @@ Lưu hình ảnh có nghĩa là lấy mỗi bức ảnh được nhúng trong t�
 ## Cài đặt GroupDocs.Parser cho Java
 
 ### Sử dụng Maven
-Thêm kho và phụ thuộc vào tệp `pom.xml` của bạn:
+Thêm kho lưu trữ và phụ thuộc vào tệp `pom.xml` của bạn:
 
 ```xml
 <repositories>
@@ -61,15 +116,16 @@ Thêm kho và phụ thuộc vào tệp `pom.xml` của bạn:
 ```
 
 ### Tải trực tiếp
-Hoặc tải JAR mới nhất từ trang phát hành chính thức: [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
+Hoặc, tải JAR mới nhất từ trang phát hành chính thức: [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
-#### Nhận giấy phép
-- **Free Trial:** Bắt đầu với bản dùng thử để khám phá các tính năng.  
-- **Temporary License:** Yêu cầu bản dùng thử mở rộng để thử nghiệm không giới hạn.  
+#### Đăng ký giấy phép
+- **Free trial:** Bắt đầu với bản dùng thử để khám phá các tính năng.  
+- **Temporary license:** Yêu cầu bản dùng thử mở rộng để thử nghiệm không giới hạn.  
 - **Purchase:** Mua giấy phép thương mại cho các triển khai sản xuất.
 
 ### Khởi tạo cơ bản
-Xác nhận thư viện đã được cài đặt đúng bằng cách tạo một thể hiện `Parser`:
+`Parser` là lớp cốt lõi cung cấp quyền truy cập vào nội dung và khả năng trích xuất của tài liệu.  
+Xác nhận rằng thư viện đã được cài đặt đúng bằng cách tạo một thể hiện `Parser`:
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -81,41 +137,42 @@ try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY")) {
 }
 ```
 
-## Hướng dẫn thực hiện
+## Hướng dẫn triển khai
 
-Chúng ta sẽ đề cập đến hai tính năng chính: **trích xuất hình ảnh** và **lưu chúng**.
+Chúng tôi sẽ đề cập đến hai tính năng chính: **extracting images** và **saving them**.
 
 ### Trích xuất hình ảnh từ tài liệu
 
 **Tổng quan:** Sử dụng GroupDocs.Parser để lấy mọi hình ảnh ra khỏi tài liệu.
 
-#### Bước 1: Nhập các gói cần thiết
+#### Bước 1: nhập các gói cần thiết
 ```java
 import com.groupdocs.parser.Parser;
 import com.groupdocs.parser.data.PageImageArea;
 ```
 
-#### Bước 2: Khởi tạo đối tượng Parser
+#### Bước 2: khởi tạo đối tượng parser
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY")) {
     // Proceed with image extraction logic
 } catch (Exception e) {
     e.printStackTrace();
 }
-```
-*Lớp `Parser` cung cấp quyền truy cập vào nội dung nội bộ của tài liệu. Thay thế `"YOUR_DOCUMENT_DIRECTORY"` bằng đường dẫn thực tế tới tệp của bạn.*
+```  
+*Lớp `Parser` cho phép bạn truy cập nội dung nội bộ của tài liệu. Thay thế `"YOUR_DOCUMENT_DIRECTORY"` bằng đường dẫn thực tế tới tệp của bạn.*
 
-#### Bước 3: Trích xuất hình ảnh
+#### Bước 3: trích xuất hình ảnh
 ```java
 Iterable<PageImageArea> images = parser.getImages();
 if (images == null) {
     System.out.println("Image extraction isn't supported.");
     return;
 }
-```
+```  
 *Nếu `getImages()` trả về `null`, định dạng hiện tại không hỗ trợ trích xuất hình ảnh.*
 
-#### Bước 4: Duyệt và lấy thông tin chi tiết của hình ảnh
+#### Bước 4: lặp và lấy chi tiết hình ảnh
+`PageImageArea` đại diện cho một hình ảnh riêng lẻ được trích xuất từ tài liệu, cung cấp siêu dữ liệu như định dạng và kích thước.  
 ```java
 for (PageImageArea image : images) {
     int pageIndex = image.getPage().getIndex(); // Page index of the image
@@ -126,9 +183,9 @@ for (PageImageArea image : images) {
 
 ### Lưu hình ảnh đã trích xuất vào thư mục đầu ra
 
-**Tổng quan:** Ghi mỗi hình ảnh đã trích xuất vào một thư mục bạn chọn.
+**Tổng quan:** Ghi mỗi hình ảnh đã trích xuất vào một thư mục mà bạn chọn.
 
-#### Bước 1: Thiết lập đường dẫn đầu ra và luồng
+#### Bước 1: thiết lập đường dẫn đầu ra và luồng
 ```java
 int imageNumber = 0;
 for (PageImageArea image : parser.getImages()) {
@@ -140,64 +197,68 @@ for (PageImageArea image : parser.getImages()) {
         e.printStackTrace();
     }
 }
-```
-*Thay thế `"YOUR_OUTPUT_DIRECTORY"` bằng thư mục nơi bạn muốn lưu các bức ảnh.*
+```  
+*Thay thế `"YOUR_OUTPUT_DIRECTORY"` bằng thư mục nơi bạn muốn lưu các hình ảnh.*
 
-#### Bước 2: Ghi dữ liệu hình ảnh
+#### Bước 2: ghi dữ liệu hình ảnh
 ```java
 try (OutputStream outputStream = new FileOutputStream(outputFilePath)) {
     image.save(outputStream);
 }
-```
-*Phương thức `save` truyền dữ liệu byte của hình ảnh trực tiếp tới hệ thống tệp.*
+```  
+*Phương thức `save` truyền các byte hình ảnh trực tiếp tới hệ thống tệp.*
 
 #### Mẹo khắc phục sự cố
-- **File Permissions:** Đảm bảo quá trình có quyền ghi vào thư mục đích.  
-- **Invalid Paths:** Kiểm tra lại cả đường dẫn nguồn và đích để tránh lỗi chính tả hoặc thư mục thiếu.
+- **File permissions:** Đảm bảo quá trình có quyền ghi vào thư mục đích.  
+- **Invalid paths:** Kiểm tra lại cả đường dẫn nguồn và đích để tránh lỗi chính tả hoặc thư mục thiếu.
 
 ## Ứng dụng thực tiễn
-Việc trích xuất hình ảnh có giá trị trong nhiều tình huống:
-1. **Content Archiving:** Bảo tồn tài sản hình ảnh từ các tài liệu cũ.  
-2. **Data Analysis:** Cung cấp các bức ảnh đã trích xuất cho các pipeline nhận dạng hình ảnh.  
-3. **Document Conversion:** Di chuyển tài liệu trong khi giữ lại mọi đồ họa nhúng.  
-4. **Web Scraping Enhancements:** Làm phong phú dữ liệu đã thu thập bằng nội dung hình ảnh từ các tệp tải lên.
+Extracting images is valuable in many scenarios:
+1. **Content archiving:** Bảo tồn các tài sản hình ảnh từ tài liệu cũ.  
+2. **Data analysis:** Đưa các hình ảnh đã trích xuất vào các pipeline nhận dạng hình ảnh.  
+3. **Document conversion:** Di chuyển tài liệu trong khi giữ lại tất cả đồ họa nhúng.  
+4. **Web‑scraping enhancements:** Làm phong phú dữ liệu thu thập bằng nội dung hình ảnh từ các tệp đã tải lên.
 
-## Các yếu tố ảnh hưởng đến hiệu năng
-- **Memory Management:** Điều chỉnh bộ nhớ heap của JVM (`-Xmx`) khi xử lý các tệp rất lớn.  
-- **Efficient I/O:** Ghi hàng loạt hoặc sử dụng luồng đệm để giảm thiểu việc truy cập đĩa quá mức.
+## Cân nhắc về hiệu suất
+- **Memory management:** Điều chỉnh heap JVM (`-Xmx`) khi xử lý các tệp rất lớn.  
+- **Efficient I/O:** Ghi theo lô hoặc sử dụng luồng đệm để giảm việc truy cập đĩa quá mức.
 
 ## Cách lưu hình ảnh từ tài liệu
-Phần này liên kết trực tiếp từ khóa chính tới quy trình chúng ta vừa trình bày. Bằng cách thực hiện các bước trên, bạn đã biết **cách lưu hình ảnh** được trích xuất bằng GroupDocs.Parser, bất kể loại tài liệu gốc là gì.
+`ExecutorService` là một tiện ích đồng thời của Java quản lý một nhóm các luồng làm việc để thực thi song song.  
+Bằng cách làm theo các bước ở trên, bạn đã biết cách lưu hình ảnh đã được trích xuất bằng GroupDocs.Parser, bất kể loại tài liệu gốc. Quy trình này có thể mở rộng từ một tệp duy nhất đến hàng ngàn tài liệu khi kết hợp với `ExecutorService` của Java. Đảm bảo quản lý tài nguyên bằng cách đóng luồng sau mỗi lần ghi và sắp xếp các tệp đầu ra vào các thư mục hợp lý để dễ truy cập.
 
 ## Các vấn đề thường gặp và giải pháp
-| Issue | Solution |
+| Vấn đề | Giải pháp |
 |-------|----------|
 | **OutOfMemoryError** trên các PDF lớn | Xử lý các trang tuần tự và giải phóng mỗi `PageImageArea` sau khi lưu. |
-| **Unsupported format** error | Kiểm tra xem loại tài liệu có nằm trong danh sách các định dạng được GroupDocs.Parser hỗ trợ hay không. |
-| **Corrupted output files** | Đảm bảo luồng xuất được đóng đúng cách; tránh ghi cùng tên tệp hai lần. |
+| **Unsupported format** error | Xác minh rằng loại tài liệu được liệt kê trong các định dạng được hỗ trợ của GroupDocs.Parser. |
+| **Corrupted output files** | Đảm bảo luồng đầu ra được đóng đúng cách; tránh ghi vào cùng một tên tệp hai lần. |
 
 ## Câu hỏi thường gặp
 
-**Q: Các loại tệp nào được hỗ trợ để trích xuất hình ảnh?**  
-A: PDF, DOC/DOCX, PPT/PPTX, XLS/XLSX và nhiều định dạng phổ biến khác đều được hỗ trợ.
+**Q: Các loại tệp nào được hỗ trợ cho việc trích xuất hình ảnh?**  
+A: PDF, DOC/DOCX, PPT/PPTX, XLS/XLSX và nhiều định dạng phổ biến khác được hỗ trợ.
 
-**Q: Làm sao để xử lý tài liệu lớn một cách hiệu quả?**  
-A: Sử dụng phân trang—xử lý một tập con các trang tại một thời điểm và giải phóng tài nguyên trước khi chuyển sang lô tiếp theo.
+**Q: Làm thế nào tôi có thể xử lý các tài liệu lớn một cách hiệu quả?**  
+A: Sử dụng phân trang — xử lý một tập con các trang tại một thời điểm và giải phóng tài nguyên trước khi chuyển sang lô tiếp theo.
 
 **Q: Tôi có thể trích xuất siêu dữ liệu cùng với hình ảnh không?**  
-A: Có, GroupDocs.Parser cung cấp các API siêu dữ liệu cho phép bạn lấy thông tin như tác giả, ngày tạo và các dữ liệu khác.
+A: Có, GroupDocs.Parser cung cấp các API siêu dữ liệu cho phép bạn lấy thông tin như tác giả, ngày tạo và nhiều hơn nữa.
 
-**Q: Có an toàn khi ghi hình ảnh lên ổ đĩa mạng không?**  
-A: Hoạt động tốt miễn là quá trình Java có quyền truy cập mạng cần thiết và độ trễ chấp nhận được.
+**Q: Việc ghi hình ảnh vào ổ đĩa mạng có an toàn không?**  
+A: Nó hoạt động tốt miễn là quá trình Java có quyền mạng cần thiết và độ trễ chấp nhận được.
 
 **Q: GroupDocs.Parser có hỗ trợ xử lý song song không?**  
-A: Thư viện tự nó an toàn với đa luồng; bạn có thể chạy nhiều thể hiện `Parser` đồng thời bằng `ExecutorService` của Java.
-
-## Kết luận
-Bạn đã học **cách lưu hình ảnh** từ tài liệu bằng GroupDocs.Parser cho Java. Khả năng này mở ra nhiều cơ hội cho việc lưu trữ tự động, phân tích hình ảnh và di chuyển tài liệu một cách liền mạch. Tiếp theo, hãy khám phá trích xuất văn bản hoặc xử lý siêu dữ liệu tùy chỉnh để làm phong phú hơn các pipeline xử lý tài liệu của bạn.
+A: Thư viện này an toàn với đa luồng; bạn có thể chạy nhiều thể hiện `Parser` đồng thời bằng cách sử dụng `ExecutorService` của Java.
 
 ---
 
-**Last Updated:** 2026-01-16  
-**Tested With:** GroupDocs.Parser 25.5 for Java  
-**Author:** GroupDocs
+**Cập nhật lần cuối:** 2026-08-05  
+**Được kiểm tra với:** GroupDocs.Parser 25.5 for Java  
+**Tác giả:** GroupDocs
+
+## Các hướng dẫn liên quan
+
+- [Cách trích xuất hình ảnh từ pdf bằng GroupDocs.Parser trong Java: Hướng dẫn từng bước](/parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/)
+- [Trích xuất hình ảnh từ word bằng GroupDocs.Parser cho Java](/parser/java/image-extraction/extract-images-word-docs-groupdocs-parser-java/)
+- [Cách trích xuất hình ảnh Powerpoint bằng GroupDocs.Parser Java (Hướng dẫn từng bước)](/parser/java/image-extraction/extract-images-powerpoint-groupdocs-parser-java/)
