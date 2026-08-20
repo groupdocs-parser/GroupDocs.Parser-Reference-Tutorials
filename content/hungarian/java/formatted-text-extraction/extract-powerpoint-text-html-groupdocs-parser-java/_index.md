@@ -1,41 +1,47 @@
 ---
-date: '2026-05-23'
-description: Ismerje meg, hogyan konvertálhatja a pptx-et html-re a GroupDocs.Parser
-  for Java segítségével. Ez a lépésről‑lépésre útmutató bemutatja, hogyan lehet a
-  PowerPoint diát HTML-be kinyerni Java-val webes közzétételhez.
+date: '2026-08-20'
+description: Ismerje meg, hogyan lehet pptx szöveget HTML-be kinyerni a GroupDocs.Parser
+  for Java használatával. Ez az útmutató megmutatja, hogyan lehet a PowerPoint-ot
+  gyorsan HTML-ként menteni.
 keywords:
-- convert pptx to html
-- extract powerpoint to html
-- generate html from pptx
+- extract pptx text
+- save powerpoint as html
+- pptx to html java
+- convert presentation to html
+- extract powerpoint slides html
+lastmod: '2026-08-20'
+og_description: Ismerje meg, hogyan lehet pptx szöveget HTML-be kinyerni a GroupDocs.Parser
+  for Java használatával. Ez az útmutató megmutatja, hogyan lehet a PowerPoint-ot
+  gyorsan HTML-ként menteni.
+og_image_alt: 'Tutorial: extract pptx text to HTML using GroupDocs.Parser Java library'
+og_title: Hogyan lehet pptx szöveget HTML-be kinyerni a GroupDocs for Java segítségével
 schemas:
 - author: GroupDocs
-  dateModified: '2026-05-23'
-  description: Learn how to convert pptx to html using GroupDocs.Parser for Java.
-    This step‑by‑step guide shows how to extract PowerPoint slides to HTML with Java
-    for web publishing.
-  headline: Convert PPTX to HTML Using GroupDocs.Parser for Java – A Comprehensive
-    Guide
+  dateModified: '2026-08-20'
+  description: Learn how to extract pptx text to HTML using GroupDocs.Parser for Java.
+    This step‑by‑step guide shows how to save PowerPoint as HTML for web publishing.
+  headline: How to extract pptx text as HTML with GroupDocs for Java
   type: TechArticle
-- description: Learn how to convert pptx to html using GroupDocs.Parser for Java.
-    This step‑by‑step guide shows how to extract PowerPoint slides to HTML with Java
-    for web publishing.
-  name: Convert PPTX to HTML Using GroupDocs.Parser for Java – A Comprehensive Guide
+- description: Learn how to extract pptx text to HTML using GroupDocs.Parser for Java.
+    This step‑by‑step guide shows how to save PowerPoint as HTML for web publishing.
+  name: How to extract pptx text as HTML with GroupDocs for Java
   steps:
-  - name: Create a `Parser` Instance
+  - name: Create a `Parser` instance
     text: 'Provide the path to your PowerPoint file: `Parser` is GroupDocs.Parser’s
       top‑level object that encapsulates a document and exposes extraction APIs. It
       automatically detects the file type, so you don’t need separate handlers for
       PPTX versus PPT.'
-  - name: Set Options for HTML Extraction
+  - name: Set options for HTML extraction
     text: '`FormattedTextOptions` configures the output format and extraction settings
       for the parser. Tell the parser you want HTML output: `FormattedTextOptions`
       lets you specify the output format, whether to include hidden text, and other
       fine‑tuning parameters. Setting `setOutputFormat(OutputFormat.HTML)` '
-  - name: Extract Text Using a `TextReader`
+  - name: Extract text using a `TextReader`
     text: '`TextReader` reads the formatted content from a `Parser` instance according
       to the specified options. Read the formatted HTML text: The `formattedText`
       variable now holds the PowerPoint’s text in clean HTML format, ready for web
-      publishing. You can write it to a file, store it in a database, or inje'
+      publishing. You can write it to a file, store it in a database, or inject it
+      directly into a servlet response.'
   type: HowTo
 - questions:
   - answer: As of this writing, version 25.5 is the current release. Check the official
@@ -54,51 +60,47 @@ schemas:
       instance when possible, and monitor JVM heap size to avoid OutOfMemory errors.
     question: How can I improve performance for bulk conversions?
   type: FAQPage
-title: PPTX konvertálása HTML-re a GroupDocs.Parser for Java használatával – Átfogó
-  útmutató
+tags:
+- extract pptx text
+- GroupDocs.Parser
+- Java document processing
+- HTML conversion
+title: Hogyan lehet pptx szöveget HTML-be kinyerni a GroupDocs for Java segítségével
 type: docs
 url: /hu/java/formatted-text-extraction/extract-powerpoint-text-html-groupdocs-parser-java/
 weight: 1
 ---
 
-# PPTX konvertálása HTML-re a GroupDocs.Parser for Java segítségével
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
 
-A PowerPoint‑prezentáció HTML‑re konvertálása gyakori igény, amikor **convert pptx to html**‑t szeretnél webes közzétételhez, tartalomkezelő rendszer migrációhoz vagy automatizált jelentéskészítéshez. Ebben az útmutatóban megtanulod, hogyan lehet a PowerPointot HTML‑re kinyerni a GroupDocs.Parser for Java segítségével, a könyvtár telepítésétől a kapott markup kezeléséig. A végére egy termelésre kész kódrészletet kapsz, amelyet bármely Java‑alapú webalkalmazásba beilleszthetsz.
+# Hogyan lehet pptx szöveget HTML-ként kinyerni a GroupDocs for Java segítségével
+
+Ebben az oktatóanyagban megtanulja, hogyan **nyerhet ki pptx szöveget**, és alakíthatja azt tiszta HTML-é a GroupDocs.Parser for Java használatával. Akár diák közzétételére van szüksége egy weboldalon, tartalom migrálására egy CMS-be, vagy automatizált jelentéskészítésre, az alábbi lépések egy termelésre kész megoldást nyújtanak, amely bármely Java‑alapú szerveren működik.
 
 ## Gyors válaszok
-- **Mit jelent a “extract powerpoint to html”?** Ez azt jelenti, hogy a PPTX fájl szöveges tartalmát beolvassa, és tiszta HTML‑markupként adja ki.  
-- **Melyik könyvtár támogatja ezt Java‑ban?** A GroupDocs.Parser for Java egyszerű API‑t biztosít a HTML‑kinyeréshez.  
-- **Szükségem van licencre?** Egy ingyenes próba vagy ideiglenes licenc elegendő értékeléshez; a termeléshez fizetett licenc szükséges.  
-- **Használhatom nagy prezentációkhoz?** Igen – használja a Java try‑with‑resources mechanizmusát a memória hatékony kezeléséhez.  
-- **Kész a kimenet webes közzétételre?** A generált HTML tiszta, és közvetlenül beágyazható a weboldalakba.
+- **Mi jelent a „extract powerpoint to html”?** Ez azt jelenti, hogy egy PPTX fájl szöveges tartalmát beolvassuk, és tiszta HTML‑mark-upként adjuk ki.  
+- **Melyik könyvtár támogatja ezt Java-ban?** A GroupDocs.Parser for Java egyszerű API‑t biztosít a HTML‑kinyeréshez.  
+- **Szükségem van licencre?** Egy ingyenes próba vagy ideiglenes licenc elegendő a kiértékeléshez; a termeléshez fizetett licenc szükséges.  
+- **Használhatom nagy bemutatókhoz?** Igen – használja a Java try‑with‑resources mechanizmusát a memória hatékony kezelése érdekében.  
+- **Kész a kimenet a webes közzétételre?** A generált HTML tiszta, és közvetlenül beágyazható a weboldalakba.
 
-## Mi a “convert pptx to html”?
-**Convert pptx to html** a folyamat, amely a PowerPoint diák tartalmát szabványos HTML elemekké alakítja, hogy a böngészők megjeleníthessék az eredeti Office alkalmazás nélkül. Ez az átalakítás megőrzi a címsorokat, bekezdéseket, listákat és az alapvető stílusokat, miközben eltávolítja a tulajdonosi bináris adatokat.
+## Mi az a „convert pptx to html”?
+A „convert pptx to html” folyamat a PowerPoint diák tartalmát alakítja át szabványos HTML‑mark-upra. Ez a transzformáció kinyeri a címsorokat, bekezdéseket, listákat és az alapvető formázást, miközben eldobja a tulajdonos bináris adatokat, lehetővé téve a böngészők számára a diák megjelenítését az Office csomag nélkül. Az eredmény könnyű, kereshető, és egyszerűen stílusozható CSS‑sel.
 
-## Miért használjuk a GroupDocs.Parser for Java‑t?
-A GroupDocs.Parser **50+ bemeneti és kimeneti formátumot** támogat (beleértve a DOCX, XLSX, PDF és PPTX formátumokat), és több száz oldalas dokumentumokat képes feldolgozni anélkül, hogy az egész fájlt a memóriába töltené, így a konverziós sebesség akár **3 × gyorsabb** is lehet sok nyílt forráskódú alternatívánál. A tisztán Java‑os megvalósításnak köszönhetően nincsenek natív függőségek, ami ideálissá teszi felhő‑natív telepítésekhez.
-
-## Mit fogsz megtanulni
-Ebben az útmutatóban megtanulod, hogyan telepítsd a könyvtárat, konfiguráld a kinyerési beállításokat, dolgozd fel a PPTX fájlokat, és integráld a kapott HTML‑t Java webalkalmazásokba. Emellett megismered a teljesítmény‑tippeket, a hibakezelési stratégiákat és a legjobb gyakorlatokat a konverzió termelési környezetben történő telepítéséhez.
-
-- A GroupDocs.Parser for Java beállítása
-- Lépésről‑lépésre történő PowerPoint szöveg kinyerése HTML‑ként
-- Valós példák, mint a webes közzététel és a tartalom migráció
-- Teljesítmény‑tippek nagy fájlok kezeléséhez
+## Miért használja a GroupDocs.Parser for Java-t?
+A GroupDocs.Parser for Java egy tisztán Java‑alapú könyvtár, amely **50+ bemeneti és kimeneti formátumot** támogat, és akár **2 GB**‑os dokumentumokat is képes kezelni a teljes fájl memóriába töltése nélkül. A benchmarkok **3‑szoros gyorsabb** konverziós sebességet mutatnak sok nyílt forráskódú alternatívához képest, így ideális nagy áteresztőképességű webszolgáltatásokhoz és felhőalapú telepítésekhez.
 
 ## Előfeltételek
-
-Mielőtt elkezdenénk, győződj meg róla, hogy rendelkezel:
-
-- **Java Development Kit (JDK)** telepítve (JDK 8 vagy újabb).  
-- Alapvető ismeretek a **Maven** projektstruktúrával.  
-- Hozzáférés egy PowerPoint fájlhoz (`.pptx`), amelyet konvertálni szeretnél.  
+- Java Development Kit (JDK 8 vagy újabb) telepítve.  
+- Maven‑alapú projekt (vagy a JAR manuális hozzáadása).  
+- Egy PowerPoint fájl (`.pptx`), amelyet konvertálni szeretne.  
 
 ## A GroupDocs.Parser for Java beállítása
 
 ### Maven beállítás
-
-Add hozzá a tárolót és a függőséget a `pom.xml` fájlodhoz:
+Adja hozzá a tárolót és a függőséget a `pom.xml` fájlhoz:
 
 ```xml
 <repositories>
@@ -119,16 +121,14 @@ Add hozzá a tárolót és a függőséget a `pom.xml` fájlodhoz:
 ```
 
 ### Közvetlen letöltés
-
-Alternatívaként töltsd le a legújabb verziót közvetlenül a [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) oldalról.
+Alternatív megoldásként töltheti le a legújabb verziót közvetlenül a [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) oldalról.
 
 #### Licenc beszerzése
-- Szerezz **ingyenes próba** vagy kérj **ideiglenes licencet** a teljes funkciók kipróbálásához.  
-- Vásárolj licencet, ha a könyvtárat termelésben szeretnéd használni.
+- Szerezzen be egy **ingyenes próbát** vagy kérjen **ideiglenes licencet** a teljes funkciók felfedezéséhez. Egyet a [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/) oldalról kaphat.  
+- Vásároljon licencet, ha a könyvtárat termelésben kívánja használni.
 
 ### Alap inicializálás és beállítás
-
-`Parser` a fő osztály, amely egy dokumentumot képvisel, és módszereket biztosít a formázott szöveg kinyeréséhez. Győződj meg róla, hogy a könyvtár a classpath‑on van, majd importáld a fő osztályt:
+A `Parser` a magosztály, amely egy dokumentumot képvisel, és kinyerési metódusokat biztosít. Importálja a osztályt, miután a könyvtár a classpath‑ban van:
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -138,14 +138,13 @@ import com.groupdocs.parser.Parser;
 ## Implementációs útmutató
 
 ### Áttekintés
-A szöveg HTML‑ként történő kinyerése lehetővé teszi, hogy a diák tartalmát közvetlenül a weboldalakba ágyazd, kiküszöbölve a kézi másolás‑beillesztés szükségességét.
+A szöveg HTML‑ként való kinyerése lehetővé teszi a diák tartalmának közvetlen beágyazását weboldalakba, kiküszöbölve a kézi másolás‑beillesztés szükségességét, és automatikusan megőrizve az alapformázást.
 
-## Hogyan konvertáljuk a PPTX-et HTML-re a GroupDocs.Parser segítségével?
-
-Töltsd be a PPTX fájlt a `new Parser("presentation.pptx")` segítségével, állítsd be a `FormattedTextOptions`‑t HTML kimenethez, és hívd meg a `read`‑et egy `TextReader`‑en. Ez a háromlépéses minta a tipikus 30 diából álló bemutató esetén egy másodpercnél gyorsabban végrehajtja a konverziót, miközben a try‑with‑resources segítségével automatikusan és hatékonyan kezeli az erőforrások felszabadítását.
+## Hogyan konvertálja a pptx-et HTML-re a GroupDocs.Parser segítségével?
+Töltse be a PPTX fájlt a `new Parser("presentation.pptx")` hívással, állítsa be a `FormattedTextOptions`‑t HTML‑kimenethez, majd hívja a `read`‑t egy `TextReader`‑en. Ez a háromlépéses minta egy tipikus 30 diából álló bemutató esetén egy másodpercnél gyorsabban végrehajtja a konverziót, miközben a try‑with‑resources segítségével hatékonyan kezeli az erőforrások tisztítását.
 
 ### 1. lépés: `Parser` példány létrehozása
-Add meg a PowerPoint fájl elérési útját:
+A `Parser` osztály a GroupDocs.Parser legfelső szintű objektuma, amely egyetlen dokumentumot tárol a memóriában. Adja meg a PowerPoint fájl elérési útját:
 
 ```java
 String pptxPath = "YOUR_DOCUMENT_DIRECTORY/sample-presentation.pptx";
@@ -155,21 +154,19 @@ try (Parser parser = new Parser(pptxPath)) {
 }
 ```
 
-`Parser` a GroupDocs.Parser felső‑szintű objektuma, amely egy dokumentumot kapszuláz, és kinyerési API‑kat biztosít. Automatikusan felismeri a fájltípust, így nem szükséges külön kezelő PPTX és PPT esetén.
+A `Parser` automatikusan felismeri a fájltípust, így nem kell külön kezelőket használni PPTX vagy PPT esetén.
 
-### 2. lépés: HTML kinyerés beállításai
-`FormattedTextOptions` konfigurálja a kimeneti formátumot és a kinyerési beállításokat a parser számára.  
-Mondd meg a parsernek, hogy HTML kimenetet szeretnél:
+### 2. lépés: HTML kinyerés beállításainak megadása
+A `FormattedTextOptions` konfigurálja a kimeneti formátumot és a kinyerési beállításokat a parser számára. Az `OutputFormat` egy enum, amely meghatározza a kívánt kimeneti típust, például HTML vagy egyszerű szöveg. Jelezze a parsernek, hogy HTML‑kimenetet szeretne:
 
 ```java
 double htmlOptions = new FormattedTextOptions(FormattedTextMode.Html);
 ```
 
-`FormattedTextOptions` lehetővé teszi a kimeneti formátum, a rejtett szöveg belefoglalása és egyéb finomhangolási paraméterek megadását. A `setOutputFormat(OutputFormat.HTML)` beállítása biztosítja, hogy az eredmény készen álljon a böngészőkre.
+A `setOutputFormat(OutputFormat.HTML)` beállítása biztosítja, hogy az eredmény csak szabványos HTML‑címkéket tartalmazzon, így biztonságosan beilleszthető a weboldalakba.
 
-### 3. lépés: Szöveg kinyerése `TextReader` segítségével
-`TextReader` a megadott beállítások szerint olvassa a formázott tartalmat egy `Parser` példányból.  
-Olvasd be a formázott HTML szöveget:
+### 3. lépés: szöveg kinyerése `TextReader` használatával
+A `TextReader` a megadott opciók szerint olvassa a formázott tartalmat egy `Parser` példányból. Olvassa be a formázott HTML‑szöveget:
 
 ```java
 try (TextReader reader = parser.getFormattedText(options)) {
@@ -177,66 +174,69 @@ try (TextReader reader = parser.getFormattedText(options)) {
 }
 ```
 
-A `formattedText` változó most már a PowerPoint szövegét tartalmazza tiszta HTML formátumban, készen a webes közzétételre. Írhatod fájlba, tárolhatod adatbázisban, vagy közvetlenül egy servlet válaszba injektálhatod.
+A `formattedText` változó most már a PowerPoint szövegét tartalmazza tiszta HTML‑formátumban, készen a webes közzétételre. Írhatja fájlba, tárolhatja adatbázisban, vagy közvetlenül egy servlet válaszba injektálhatja.
 
 #### Hibaelhárítási tippek
-- Ellenőrizd, hogy a fájl elérési útja helyes, és a fájl hozzáférhető.  
-- Győződj meg róla, hogy kompatibilis verziót használsz a GroupDocs.Parser‑ból (az útmutató a 25.5‑ös verziót célozza).  
-- Ellenőrizd a kivétel üzeneteket engedélyezési vagy nem támogatott formátumú problémák miatt.
+- Ellenőrizze, hogy a fájl elérési útja helyes és a fájl elérhető.  
+- Győződjön meg róla, hogy a GroupDocs.Parser kompatibilis verzióját használja (az oktatóanyag a 25.5‑ös verzióra céloz).  
+- Vizsgálja meg a kivétel üzeneteket engedélyezési vagy nem támogatott formátumú problémák esetén.
 
 ## Gyakorlati alkalmazások
-
-- **Webes közzététel PowerPoint diák** – Konvertáld a prezentációkat beágyazható HTML fragmentumokká blogok vagy portálok számára.  
-- **Tartalom migráció** – Mozgasd a diák tartalmát olyan CMS platformokra, amelyek HTML bemenetet fogadnak.  
-- **Adat elemzés** – Szerezz szöveges adatokat a prezentációkból jelentéskészítéshez vagy érzelemelemzéshez.
+1. **PowerPoint diák webes közzététele** – Konvertálja a bemutatókat beágyazható HTML‑töredékekké blogok vagy portálok számára.  
+2. **Tartalom migráció** – Mozgassa át a diák tartalmát olyan CMS platformokra, amelyek HTML‑bemenetet fogadnak.  
+3. **Adatelemzés** – Húzza ki a szöveges adatokat a bemutatókból jelentések vagy érzelemelemzés céljából.
 
 ## Teljesítmény szempontok
-
-- **try‑with‑resources** használata (ahogy látható) az áramlások automatikus lezárásához és a memória felszabadításához.  
-- Nagyon nagy `.pptx` fájlok esetén dolgozd fel a diákot kötegekben, hogy alacsonyan tartsd a JVM heap használatát.  
-- Figyeld a CPU‑t és a memóriát profilozó eszközökkel, amikor több száz prezentációra skálázol; a GroupDocs.Parser akár **2 GB**‑os fájlokat is képes kezelni teljes memóriába betöltés nélkül.
+- Használja a **try‑with‑resources**‑t (ahogy a példában látható) a stream‑ek automatikus lezárásához és a memória felszabadításához.  
+- Nagyon nagy `.pptx` fájlok esetén dolgozzon diákonként batch‑ben, hogy alacsonyan tartsa a JVM heap használatát.  
+- A GroupDocs.Parser akár **2 GB**‑os fájlokat is képes kezelni a teljes dokumentum memóriába töltése nélkül, és egy tipikus 200 diás bemutatót két másodpercnél gyorsabban dolgoz fel egy standard szerveren.
 
 ## Következtetés
-
-Most már egy teljes, termelésre kész módszered van a **convert pptx to html** végrehajtására a GroupDocs.Parser for Java segítségével. Ez a technika leegyszerűsíti a webes közzétételt, egyszerűsíti a tartalom migrációt, és lehetővé teszi a prezentációs adatok automatizált elemzését.
+Most már rendelkezik egy teljes, termelésre kész módszerrel a **pptx szöveg** kinyerésére és HTML‑ként való mentésére a GroupDocs.Parser for Java segítségével. Ez a technika egyszerűsíti a webes közzétételt, megkönnyíti a tartalom migrációt, és lehetővé teszi a prezentációs adatok automatizált elemzését.
 
 ### Következő lépések
-- Kísérletezz különböző `FormattedTextOptions` beállításokkal (pl. képek belefoglalása).  
-- Fedezd fel a teljes API‑t a hivatalos [documentation](https://docs.groupdocs.com/parser/java/) oldalon, fejlett forgatókönyvekhez, mint a diák jegyzeteinek vagy egyedi stílusok kinyerése.
+- Kísérletezzen különböző `FormattedTextOptions`‑okkal (például képek vagy diák jegyzetek belefoglalása).  
+- Fedezze fel a teljes API‑t a hivatalos [dokumentációban](https://docs.groupdocs.com/parser/java/) a fejlett szcenáriókhoz, mint egyedi stílusok vagy batch‑feldolgozás.
 
-## Gyakran Ismételt Kérdések
+## Gyakran ismételt kérdések
 
-**Q: Mi a legújabb verziója a GroupDocs.Parser‑nak?**  
-A: A jelenlegi írás időpontjában a 25.5‑ös verzió a legújabb kiadás. Ellenőrizd a hivatalos oldalt a frissítésekért.
+**Q: Mi a legújabb verziója a GroupDocs.Parser‑nek?**  
+A: Ennek a cikknek a írásakor a 25.5‑ös verzió a legfrissebb kiadás. A frissítéseket a hivatalos oldalon ellenőrizheti.
 
 **Q: Kinyerhetek szöveget más formátumokból is, mint a PowerPoint?**  
-A: Igen, a GroupDocs.Parser támogatja a PDF, Word, Excel és sok más dokumentumtípust.
+A: Igen, a GroupDocs.Parser támogatja a PDF, Word, Excel és számos más dokumentumtípust.
 
-**Q: A kinyerés `FileNotFoundException` hibával bukik. Mit tegyek?**  
-A: Ellenőrizd újra a fájl elérési útját, győződj meg róla, hogy a fájl létezik, és ellenőrizd, hogy a Java folyamatnak olvasási jogosultsága van-e.
+**Q: A kinyerés `FileNotFoundException`‑nal hibázik. Mit tegyek?**  
+A: Ellenőrizze újra a fájl elérési útját, győződjön meg róla, hogy a fájl létezik, és ellenőrizze, hogy a Java folyamatnak van‑e olvasási jogosultsága.
 
-**Q: Biztonságos a generált HTML-t közvetlenül egy weboldalba beilleszteni?**  
-A: A HTML alapvető címkéket tartalmaz, mint a `<p>`, `<b>` és `<i>`. Biztonságos, de a felhasználó által feltöltött tartalom szűrése mindig jó gyakorlat.
+**Q: Biztonságos-e a generált HTML közvetlenül egy weboldalba illeszteni?**  
+A: A HTML alapvető címkéket tartalmaz, mint `<p>`, `<b>` és `<i>`. Biztonságos, de a felhasználó által feltöltött tartalom szűrése mindig ajánlott.
 
 **Q: Hogyan javíthatom a teljesítményt tömeges konverziók esetén?**  
-A: Fájlokat sorban dolgozd fel egy fix szálkészlettel, ahol lehetséges, használd újra a `Parser` példányt, és figyeld a JVM heap méretét, hogy elkerüld az OutOfMemory hibákat.
+A: Fájlokat sorban dolgozzon fel egy fix szálú pool‑al, amennyiben lehetséges, újrahasználja a `Parser` példányt, és figyelje a JVM heap méretét, hogy elkerülje az OutOfMemory hibákat.
 
 ---
 
-**Utolsó frissítés:** 2026-05-23  
-**Tesztelve ezzel:** GroupDocs.Parser 25.5 for Java  
+**Legutóbb frissítve:** 2026-08-20  
+**Tesztelve:** GroupDocs.Parser 25.5 for Java  
 **Szerző:** GroupDocs  
 
 ## Erőforrások
-- **Documentation**: [GroupDocs Documentation](https://docs.groupdocs.com/parser/java/)
-- **API Reference**: [API Reference](https://reference.groupdocs.com/parser/java)
-- **Download**: [GroupDocs Downloads](https://releases.groupdocs.com/parser/java/)
-- **GitHub**: [GroupDocs on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
-- **Free Support**: [GroupDocs Forum](https://forum.groupdocs.com/c/parser)
-- **Temporary License**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Dokumentáció**: [documentation](https://docs.groupdocs.com/parser/java/)  
+- **API referencia**: [API Reference](https://reference.groupdocs.com/parser/java)  
+- **Letöltés**: [GroupDocs Downloads](https://releases.groupdocs.com/parser/java/)  
+- **GitHub**: [GroupDocs on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
+- **Ingyenes támogatás**: [GroupDocs Forum](https://forum.groupdocs.com/c/parser)
 
 ## Kapcsolódó oktatóanyagok
 
-- [Extract Text from PowerPoint PPTX Files Using GroupDocs.Parser in Java](/parser/java/text-extraction/extract-text-ppt-groupdocs-parser-java/)
-- [How to Extract Images from PowerPoint Using GroupDocs.Parser Java (Step‑By‑Step Guide)](/parser/java/image-extraction/extract-images-powerpoint-groupdocs-parser-java/)
-- [How to Convert Document to HTML Using GroupDocs.Parser Java: A Step‑By‑Step Guide](/parser/java/formatted-text-extraction/extract-document-text-as-html-groupdocs-parser-java/)
+- [Szöveg kinyerése PowerPoint PPTX fájlokból a GroupDocs.Parser Java-ban](/parser/java/text-extraction/extract-text-ppt-groupdocs-parser-java/)
+- [Hogyan nyerjen ki képeket PowerPointból a GroupDocs.Parser Java (lépésről‑lépésre útmutató)](/parser/java/image-extraction/extract-images-powerpoint-groupdocs-parser-java/)
+- [Hogyan konvertáljon dokumentumot HTML-re a GroupDocs.Parser Java segítségével: Lépésről‑lépésre útmutató](/parser/java/formatted-text-extraction/extract-document-text-as-html-groupdocs-parser-java/)
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
