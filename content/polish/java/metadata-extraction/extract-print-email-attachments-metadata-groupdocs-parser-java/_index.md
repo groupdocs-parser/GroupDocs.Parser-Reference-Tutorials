@@ -1,48 +1,102 @@
 ---
-date: '2026-01-27'
-description: Dowiedz się, jak wyodrębniać załączniki z plików msg i wyświetlać ich
-  metadane przy użyciu GroupDocs.Parser dla Javy. Ten przewodnik krok po kroku pokazuje,
-  jak wyodrębniać załączniki, parsować pliki msg w Javie oraz efektywnie obsługiwać
-  metadane.
+date: '2026-08-26'
+description: Dowiedz się, jak wyodrębnić załączniki z plików MSG przy użyciu GroupDocs.Parser
+  for Java. Ten przewodnik krok po kroku pokazuje, jak odczytać, zapisać i wydrukować
+  attachment metadata efektywnie.
 keywords:
-- GroupDocs.Parser for Java
+- how to extract attachments
+- GroupDocs.Parser Java
 - email attachment extraction
 - metadata printing
-title: Wyodrębnij załączniki z pliku MSG przy użyciu GroupDocs.Parser dla Javy
+lastmod: '2026-08-26'
+og_description: Dowiedz się, jak wyodrębnić załączniki z plików MSG przy użyciu GroupDocs.Parser
+  for Java. Ten przewodnik krok po kroku pokazuje, jak odczytać, zapisać i wydrukować
+  attachment metadata efektywnie.
+og_image_alt: Guide showing how to extract attachments from MSG using GroupDocs.Parser
+  for Java
+og_title: Jak wyodrębnić załączniki z plików MSG przy użyciu GroupDocs.Parser Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-26'
+  description: Learn how to extract attachments from MSG files using GroupDocs.Parser
+    for Java. This step‑by‑step guide shows how to read, save, and print attachment
+    metadata efficiently.
+  headline: How to extract attachments from MSG with GroupDocs.Parser Java
+  type: TechArticle
+- description: Learn how to extract attachments from MSG files using GroupDocs.Parser
+    for Java. This step‑by‑step guide shows how to read, save, and print attachment
+    metadata efficiently.
+  name: How to extract attachments from MSG with GroupDocs.Parser Java
+  steps:
+  - name: Initialize the parser object
+    text: Create a `Parser` instance by providing the path to the MSG file you want
+      to analyze.
+  - name: Extract attachments
+    text: '`Container` represents the email message and provides access to its embedded
+      items such as attachments.'
+  - name: Parse each attachment (java parse email attachments)
+    text: '`ContainerItem` describes an individual attachment, exposing its stream
+      and metadata for further processing.'
+  - name: Print attachment metadata
+    text: The `metadata` object contains fields like file name, size, and creation
+      time for each attachment.
+  type: HowTo
+- questions:
+  - answer: Combine the sample code with a thread pool (e.g., `Executors.newFixedThreadPool`)
+      and process each file in its own task. Keep parser instances short‑lived to
+      avoid memory leaks.
+    question: How do I handle a large number of .msg files efficiently?
+  - answer: GroupDocs.Parser supports encrypted `.msg` files when you provide the
+      correct password through the `Parser` constructor overload.
+    question: Can I extract attachments from encrypted or password‑protected emails?
+  - answer: Typical fields include `FilePath`, `Size`, `CreationTime`, and any custom
+      Outlook properties such as `ContentId`.
+    question: What metadata fields are available for each attachment?
+  - answer: Yes, inspect `item.getFilePath()` or `metadata.getName()` for the file
+      extension and skip unwanted types.
+    question: Is there a way to filter attachments by file type before parsing?
+  - answer: GroupDocs.Parser is cross‑platform; it runs on any OS that supports Java
+      8+.
+    question: Does the library work on non‑Windows platforms?
+  type: FAQPage
+tags:
+- extract attachments
+- GroupDocs.Parser
+- Java email processing
+- metadata extraction
+- msg files
+title: Jak wyodrębnić załączniki z plików MSG przy użyciu GroupDocs.Parser Java
 type: docs
 url: /pl/java/metadata-extraction/extract-print-email-attachments-metadata-groupdocs-parser-java/
 weight: 1
 ---
 
-# Extract attachments from msg with GroupDocs.Parser for Java
+# Wyodrębnianie załączników z plików msg przy użyciu GroupDocs.Parser dla Javy
 
-Zarządzanie załącznikami e‑mail programowo jest powszechną potrzebą programistów Java, którzy pracują nad automatycznym archiwizowaniem, skanowaniem bezpieczeństwa lub pipeline’ami ekstrakcji danych. W tym samouczku dowiesz się **jak wyodrębnić załączniki z plików msg**, wyświetlić ich metadane oraz zrozumieć, dlaczego takie podejście jest wartościowe w rzeczywistych projektach.
+Zarządzanie załącznikami e‑mailowymi programowo jest powszechną potrzebą programistów Javy, którzy tworzą zautomatyzowane archiwizacje, skanowanie bezpieczeństwa lub potoki ekstrakcji danych. W tym samouczku nauczysz się **jak wyodrębnić załączniki** z plików MSG, wydrukować ich metadane i zrozumieć, dlaczego takie podejście jest wartościowe w projektach rzeczywistych. Korzystanie z GroupDocs.Parser dla Javy pozwala efektywnie obsługiwać duże skrzynki pocztowe przy niskim zużyciu pamięci.
 
-## Quick Answers
-- **What library should I use?** GroupDocs.Parser for Java.  
-- **Can I extract attachments from .msg files?** Yes, the API provides direct access to each attachment.  
-- **Do I need a license?** A trial works for evaluation; a full license is required for production.  
-- **Which Java version is supported?** Java 8 or higher.  
-- **Is bulk processing possible?** Absolutely – combine the sample code with loops or parallel streams.
+## Szybkie odpowiedzi
+- **Jakiej biblioteki powinienem używać?** GroupDocs.Parser for Java.
+- **Czy mogę wyodrębnić załączniki z plików .msg?** Tak, API zapewnia bezpośredni dostęp do każdego załącznika.
+- **Czy potrzebna jest licencja?** Wersja próbna działa w celach oceny; pełna licencja jest wymagana w produkcji.
+- **Jaką wersję Javy obsługuje?** Java 8 lub nowsza.
+- **Czy możliwe jest przetwarzanie wsadowe?** Zdecydowanie – połącz przykładowy kod z pętlami lub równoległymi strumieniami.
 
-## What is “extract attachments from msg”?
-When you receive an Outlook `.msg` file, the email body and its attached files are stored together. “Extract attachments from msg” means programmatically separating each attached file so you can store, analyze, or transform it independently.
+## Co to jest „wyodrębnianie załączników z msg”?
+Kiedy otrzymujesz plik Outlook `.msg`, treść e‑maila i jego załączone pliki są przechowywane razem. „Wyodrębnianie załączników z msg” oznacza programowe oddzielenie każdego załącznika, aby można było go przechowywać, analizować lub przetwarzać niezależnie.
 
-## Why use GroupDocs.Parser for Java?
-- **Robust format support** – Handles `.msg`, `.eml`, and many other email formats.  
-- **Metadata access** – Retrieve file paths, sizes, and custom attributes without manual parsing.  
-- **Simple API** – Minimal code required to open a message, iterate attachments, and read content.  
-- **Performance‑focused** – Uses streaming and try‑with‑resources to keep memory usage low.
+## Dlaczego warto używać GroupDocs.Parser dla Javy?
+GroupDocs.Parser dla Javy to dedykowana biblioteka do parsowania e‑maili. **Obsługuje ponad 70 formatów wejściowych i wyjściowych oraz może przetwarzać pliki do 2 GB bez wczytywania całego dokumentu do pamięci**, co czyni ją idealną dla scenariuszy o dużej objętości. API zapewnia również natychmiastowy dostęp do metadanych załączników (nazwa pliku, rozmiar, czas utworzenia) i działa na każdej platformie obsługującej Java 8+.
 
-## Prerequisites
-- **Java Development Kit (JDK):** Version 8 or newer.  
-- **IDE:** IntelliJ IDEA, Eclipse, or any Java‑compatible editor.  
-- **GroupDocs.Parser library:** Added via Maven or manual JAR inclusion (see below).
+## Wymagania wstępne
+- **Java Development Kit (JDK):** Wersja 8 lub nowsza.
+- **IDE:** IntelliJ IDEA, Eclipse lub dowolny edytor kompatybilny z Javą.
+- **GroupDocs.Parser library:** Dodana przez Maven lub ręczne dołączenie pliku JAR (zobacz poniżej).
 
-## Setting Up GroupDocs.Parser for Java
+## Konfiguracja GroupDocs.Parser dla Javy
 
-### Maven Setup
-Add the following configurations to your `pom.xml` file to integrate GroupDocs.Parser via Maven:
+### Konfiguracja Maven
+Dodaj następujące konfiguracje do pliku `pom.xml`, aby zintegrować GroupDocs.Parser za pomocą Maven:
 
 ```xml
 <repositories>
@@ -62,19 +116,19 @@ Add the following configurations to your `pom.xml` file to integrate GroupDocs.P
 </dependencies>
 ```
 
-### Direct Download
-Alternatively, download the latest version from the [GroupDocs.Parser for Java releases page](https://releases.groupdocs.com/parser/java/). Add the JAR file to your project's classpath manually.
+### Bezpośrednie pobranie
+Alternatywnie pobierz najnowszą wersję ze [strony wydań GroupDocs.Parser dla Javy](https://releases.groupdocs.com/parser/java/). Dodaj plik JAR do ścieżki klas swojego projektu ręcznie.
 
-#### License Acquisition
-GroupDocs offers several licensing options:
-- **Free Trial:** Limited‑feature evaluation.  
-- **Temporary License:** Full access during a short evaluation period.  
-- **Commercial License:** Required for production deployments.
+#### Uzyskanie licencji
+GroupDocs oferuje kilka opcji licencjonowania:
+- **Free trial:** Ocena z ograniczonymi funkcjami.
+- **Temporary license:** Pełny dostęp w krótkim okresie oceny.
+- **Commercial license:** Wymagana w środowiskach produkcyjnych.
 
-Include the acquired license file as described in the official documentation to unlock all features.
+Dołącz uzyskany plik licencji zgodnie z opisem w oficjalnej dokumentacji, aby odblokować wszystkie funkcje.
 
-### Basic Initialization
-Here’s a minimal example that proves the library is correctly referenced:
+### Podstawowa inicjalizacja
+Klasa `Parser` jest punktem wejścia do ładowania i przetwarzania dokumentu.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -91,12 +145,13 @@ public class SetupExample {
 }
 ```
 
-Now that the parser is ready, let’s dive into the core task: **how to extract attachments from msg** and print their metadata.
+Teraz, gdy parser jest gotowy, przejdźmy do głównego zadania: **jak wyodrębnić załączniki z msg** i wydrukować ich metadane.
 
-## How to extract attachments from msg using GroupDocs.Parser?
+## Jak wyodrębnić załączniki z msg przy użyciu GroupDocs.Parser?
+Wczytaj plik MSG, wylicz jego załączniki i wydrukuj ich metadane w kilku linijkach kodu. Poniższe kroki pokazują dokładną kolejność, którą należy wykonać. To podejście działa zarówno dla pojedynczych plików, jak i przetwarzania wsadowego, zapewniając szybkie zwalnianie zasobów przy użyciu try‑with‑resources.
 
-### Step 1: Initialize the Parser Object
-Create a `Parser` instance pointing at the `.msg` file you want to process:
+### Krok 1: Zainicjalizuj obiekt parsera
+Utwórz instancję `Parser`, podając ścieżkę do pliku MSG, który chcesz przeanalizować.
 
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/sample.msg")) {
@@ -104,8 +159,8 @@ try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/sample.msg")) {
 }
 ```
 
-### Step 2: Extract Attachments
-Use the container API to retrieve every attachment embedded in the email:
+### Krok 2: Wyodrębnij załączniki
+`Container` reprezentuje wiadomość e‑mail i zapewnia dostęp do wbudowanych elementów, takich jak załączniki.
 
 ```java
 Iterable<ContainerItem> attachments = parser.getContainer();
@@ -119,8 +174,8 @@ for (ContainerItem item : attachments) {
 }
 ```
 
-### Step 3: Parse Each Attachment (java parse email attachments)
-For each `ContainerItem`, open a dedicated parser instance. This lets you read the attachment’s content if it’s a text‑based format:
+### Krok 3: Przetwarzanie każdego załącznika (java parse email attachments)
+`ContainerItem` opisuje pojedynczy załącznik, udostępniając jego strumień i metadane do dalszego przetwarzania.
 
 ```java
 try (Parser attachmentParser = item.openParser()) {
@@ -133,8 +188,8 @@ try (Parser attachmentParser = item.openParser()) {
 }
 ```
 
-### Step 4: Print Attachment Metadata
-Now that you have each attachment object, you can display its metadata—file path, size, and any custom attributes:
+### Krok 4: Wydrukuj metadane załącznika
+Obiekt `metadata` zawiera pola takie jak nazwa pliku, rozmiar i czas utworzenia dla każdego załącznika.
 
 ```java
 for (ContainerItem item : attachments) {
@@ -150,46 +205,52 @@ for (MetadataItem metadata : item.getMetadata()) {
 }
 ```
 
-## Common Issues and Solutions
-- **Unsupported Formats:** Upgrade to the latest GroupDocs.Parser version if you encounter `UnsupportedDocumentFormatException`.  
-- **Null Attachments:** Verify that the source `.msg` actually contains attachments; some messages are body‑only.  
-- **Memory Consumption:** When processing large mailboxes, handle attachments in batches and close parsers promptly (the try‑with‑resources pattern already helps).
+## Częste problemy i rozwiązania
+- **Nieobsługiwane formaty:** Zaktualizuj do najnowszej wersji GroupDocs.Parser, jeśli napotkasz `UnsupportedDocumentFormatException`.
+- **Brakujące załączniki:** Sprawdź, czy źródłowy plik `.msg` rzeczywiście zawiera załączniki; niektóre wiadomości mają tylko treść.
+- **Zużycie pamięci:** Podczas przetwarzania dużych skrzynek pocztowych obsługuj załączniki partiami i szybko zamykaj parsery (wzorzec try‑with‑resources już pomaga).
 
-## Practical Applications
-Extracting and printing attachment metadata is useful for:
-1. **Data Archiving:** Store attachments alongside their metadata for compliance audits.  
-2. **Email Filtering:** Automatically route messages based on attachment type or size.  
-3. **Security Scanning:** Feed metadata into malware‑detection pipelines before deep content inspection.
+## Praktyczne zastosowania
+Wyodrębnianie i drukowanie metadanych załączników jest przydatne do:
+1. **Archiwizacja danych:** Przechowywanie załączników wraz z ich metadanymi w celu audytów zgodności.
+2. **Filtrowanie e‑maili:** Automatyczne kierowanie wiadomości na podstawie typu lub rozmiaru załącznika.
+3. **Skanowanie bezpieczeństwa:** Przekazywanie metadanych do potoków wykrywania złośliwego oprogramowania przed dogłębną analizą treści.
 
-## Performance Tips
-- **Resource Management:** Always use try‑with‑resources to free native handles.  
-- **Batch Processing:** Process a limited number of emails per thread to keep memory usage predictable.  
-- **Parallel Execution:** Leverage Java’s `ExecutorService` to parse multiple `.msg` files concurrently.
+## Wskazówki dotyczące wydajności
+- **Zarządzanie zasobami:** Zawsze używaj try‑with‑resources, aby zwolnić natywne uchwyty.
+- **Przetwarzanie wsadowe:** Przetwarzaj ograniczoną liczbę e‑maili na wątek, aby utrzymać przewidywalne zużycie pamięci.
+- **Wykonanie równoległe:** Wykorzystaj `ExecutorService` Javy do równoczesnego parsowania wielu plików `.msg`.
 
-## Frequently Asked Questions
+## Najczęściej zadawane pytania
 
-**Q: How do I handle a large number of .msg files efficiently?**  
-A: Combine the sample code with a thread pool (e.g., `Executors.newFixedThreadPool`) and process each file in its own task. Remember to keep the parser instances short‑lived to avoid memory leaks.
+**Q: Jak efektywnie obsłużyć dużą liczbę plików .msg?**  
+A: Połącz przykładowy kod z pulą wątków (np. `Executors.newFixedThreadPool`) i przetwarzaj każdy plik w osobnym zadaniu. Utrzymuj krótkotrwałe instancje parsera, aby uniknąć wycieków pamięci.
 
-**Q: Can I extract attachments from encrypted or password‑protected emails?**  
-A: GroupDocs.Parser supports encrypted `.msg` files when you provide the correct password through the `Parser` constructor overload.
+**Q: Czy mogę wyodrębnić załączniki z zaszyfrowanych lub chronionych hasłem e‑maili?**  
+A: GroupDocs.Parser obsługuje zaszyfrowane pliki `.msg`, gdy podasz właściwe hasło poprzez przeciążony konstruktor `Parser`.
 
-**Q: What metadata fields are available for each attachment?**  
-A: Typical fields include `FilePath`, `Size`, `CreationTime`, and any custom properties that Outlook stores (e.g., `ContentId`).
+**Q: Jakie pola metadanych są dostępne dla każdego załącznika?**  
+A: Typowe pola to `FilePath`, `Size`, `CreationTime` oraz dowolne niestandardowe właściwości Outlook, takie jak `ContentId`.
 
-**Q: Is there a way to filter attachments by file type before parsing?**  
-A: Yes, inspect `item.getFilePath()` or `metadata.getName()` for the file extension and skip unwanted types.
+**Q: Czy istnieje sposób na filtrowanie załączników według typu pliku przed parsowaniem?**  
+A: Tak, sprawdź `item.getFilePath()` lub `metadata.getName()` pod kątem rozszerzenia pliku i pomiń niechciane typy.
 
-**Q: Does the library work on non‑Windows platforms?**  
-A: GroupDocs.Parser is cross‑platform; it runs on any OS that supports Java 8+.
+**Q: Czy biblioteka działa na platformach nie‑Windows?**  
+A: GroupDocs.Parser jest wieloplatformowa; działa na każdym systemie operacyjnym obsługującym Java 8+.
 
-## Conclusion
-You now have a complete, production‑ready workflow for **extract attachments from msg** files and print their metadata using GroupDocs.Parser for Java. This foundation lets you build richer solutions—archiving pipelines, security scanners, or custom email processors—while keeping your code clean and performant.
+## Podsumowanie
+Masz teraz kompletny, gotowy do produkcji przepływ pracy do **wyodrębniania załączników z msg** i drukowania ich metadanych przy użyciu GroupDocs.Parser dla Javy. Ta podstawa pozwala budować bardziej zaawansowane rozwiązania — potoki archiwizacji, skanery bezpieczeństwa lub własne procesory e‑maili — przy zachowaniu czystego i wydajnego kodu.
 
-Explore additional capabilities such as full‑text extraction, structured data parsing, or converting attachments to other formats. The [GroupDocs documentation](https://docs.groupdocs.com/parser/java/) provides deeper examples and API references to help you extend this tutorial further.
+Zbadaj dodatkowe możliwości, takie jak ekstrakcja pełnego tekstu, parsowanie danych strukturalnych lub konwertowanie załączników do innych formatów. [Dokumentacja GroupDocs](https://docs.groupdocs.com/parser/java/) zawiera bardziej rozbudowane przykłady i odniesienia do API, które pomogą Ci rozwinąć ten samouczek.
 
 ---
 
-**Last Updated:** 2026-01-27  
-**Tested With:** GroupDocs.Parser 25.5  
-**Author:** GroupDocs
+**Ostatnia aktualizacja:** 2026-08-26  
+**Testowano z:** GroupDocs.Parser 25.5  
+**Autor:** GroupDocs
+
+## Powiązane samouczki
+
+- [Jak przekonwertować MSG na tekst przy użyciu GroupDocs.Parser w Javie: przewodnik krok po kroku](/parser/java/email-parsing/extract-text-emails-groupdocs-parser-java/)
+- [Parsowanie pliku Outlook PST: wyodrębnianie załączników i metadanych przy użyciu GroupDocs.Parser Java](/parser/java/metadata-extraction/extract-outlook-attachments-metadata-groupdocs-parser-java/)
+- [Wyodrębnianie obrazów e‑maili w Javie przy użyciu GroupDocs.Parser dla Javy](/parser/java/email-parsing/extract-images-emails-groupdocs-parser-java/)

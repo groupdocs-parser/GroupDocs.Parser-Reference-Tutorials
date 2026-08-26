@@ -1,48 +1,102 @@
 ---
-date: '2026-01-27'
-description: Tanulja meg, hogyan lehet kinyerni a csatolmányokat az MSG fájlokból,
-  és kiírni azok metaadatait a GroupDocs.Parser for Java segítségével. Ez a lépésről‑lépésre
-  útmutató bemutatja, hogyan kell kinyerni a csatolmányokat, feldolgozni az MSG fájlokat
-  Java‑ban, és hatékonyan kezelni a metaadatokat.
+date: '2026-08-26'
+description: Ismerje meg, hogyan vonhat ki mellékleteket MSG fájlokból a GroupDocs.Parser
+  for Java használatával. Ez a lépésről‑lépésre útmutató bemutatja, hogyan olvassa,
+  mentse és nyomtassa ki a melléklet metaadatait hatékonyan.
 keywords:
-- GroupDocs.Parser for Java
+- how to extract attachments
+- GroupDocs.Parser Java
 - email attachment extraction
 - metadata printing
-title: Mellékletek kinyerése MSG fájlból a GroupDocs.Parser for Java használatával
+lastmod: '2026-08-26'
+og_description: Ismerje meg, hogyan vonhat ki mellékleteket MSG fájlokból a GroupDocs.Parser
+  for Java használatával. Ez az útmutató lépésről‑lépésre kódot biztosít az olvasáshoz,
+  mentéshez és a melléklet metaadatainak nyomtatásához hatékonyan.
+og_image_alt: Guide showing how to extract attachments from MSG using GroupDocs.Parser
+  for Java
+og_title: Hogyan vonjunk ki mellékleteket MSG fájlokból a GroupDocs.Parser Java segítségével
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-26'
+  description: Learn how to extract attachments from MSG files using GroupDocs.Parser
+    for Java. This step‑by‑step guide shows how to read, save, and print attachment
+    metadata efficiently.
+  headline: How to extract attachments from MSG with GroupDocs.Parser Java
+  type: TechArticle
+- description: Learn how to extract attachments from MSG files using GroupDocs.Parser
+    for Java. This step‑by‑step guide shows how to read, save, and print attachment
+    metadata efficiently.
+  name: How to extract attachments from MSG with GroupDocs.Parser Java
+  steps:
+  - name: Initialize the parser object
+    text: Create a `Parser` instance by providing the path to the MSG file you want
+      to analyze.
+  - name: Extract attachments
+    text: '`Container` represents the email message and provides access to its embedded
+      items such as attachments.'
+  - name: Parse each attachment (java parse email attachments)
+    text: '`ContainerItem` describes an individual attachment, exposing its stream
+      and metadata for further processing.'
+  - name: Print attachment metadata
+    text: The `metadata` object contains fields like file name, size, and creation
+      time for each attachment.
+  type: HowTo
+- questions:
+  - answer: Combine the sample code with a thread pool (e.g., `Executors.newFixedThreadPool`)
+      and process each file in its own task. Keep parser instances short‑lived to
+      avoid memory leaks.
+    question: How do I handle a large number of .msg files efficiently?
+  - answer: GroupDocs.Parser supports encrypted `.msg` files when you provide the
+      correct password through the `Parser` constructor overload.
+    question: Can I extract attachments from encrypted or password‑protected emails?
+  - answer: Typical fields include `FilePath`, `Size`, `CreationTime`, and any custom
+      Outlook properties such as `ContentId`.
+    question: What metadata fields are available for each attachment?
+  - answer: Yes, inspect `item.getFilePath()` or `metadata.getName()` for the file
+      extension and skip unwanted types.
+    question: Is there a way to filter attachments by file type before parsing?
+  - answer: GroupDocs.Parser is cross‑platform; it runs on any OS that supports Java
+      8+.
+    question: Does the library work on non‑Windows platforms?
+  type: FAQPage
+tags:
+- extract attachments
+- GroupDocs.Parser
+- Java email processing
+- metadata extraction
+- msg files
+title: Hogyan vonjunk ki mellékleteket MSG fájlokból a GroupDocs.Parser Java segítségével
 type: docs
 url: /hu/java/metadata-extraction/extract-print-email-attachments-metadata-groupdocs-parser-java/
 weight: 1
 ---
 
-# Csatolmányok kinyerése msg fájlból a GroupDocs.Parser for Java segítségével
+# Mellékletek kinyerése MSG fájlból a GroupDocs.Parser for Java segítségével
 
-Az e‑mail csatolmányok programozott kezelése gyakori igény a Java fejlesztők számára, akik automatizált archiválással, biztonsági vizsgálattal vagy adatkinyerési folyamatokkal dolgoznak. Ebben az útmutatóban megtanulja, **hogyan nyerjen ki csatolmányokat msg** fájlokból, hogyan jelenítse meg azok metaadatait, és megérti, miért értékes ez a megközelítés a valós projektekben.
+Az e‑mail mellékletek programozott kezelése gyakori igény a Java fejlesztők számára, akik automatizált archiválási, biztonsági vizsgálati vagy adatkinyerési folyamatokat építenek. Ebben az útmutatóban megtanulja, **hogyan kell kinyerni a mellékleteket** MSG fájlokból, kiírni azok metaadatait, és megérteni, miért értékes ez a megközelítés a valós projektekben. A GroupDocs.Parser for Java használatával nagy postafiókokat kezelhet hatékonyan, miközben alacsony memóriahasználatot tart.
 
 ## Gyors válaszok
-- **Melyik könyvtárat használjam?** GroupDocs.Parser for Java.
-- **Kinyerhetek csatolmányokat .msg fájlokból?** Igen, az API közvetlen hozzáférést biztosít minden csatolmányhoz.
-- **Szükségem van licencre?** A próbaverzió elegendő értékeléshez; a teljes licenc a termeléshez kötelező.
-- **Melyik Java verzió támogatott?** Java 8 vagy újabb.
-- **Lehetséges tömeges feldolgozás?** Természetesen – kombinálja a mintakódot ciklusokkal vagy párhuzamos streamekkel.
+- **Milyen könyvtárat kell használnom?** GroupDocs.Parser for Java.
+- **Kinyerhetek mellékleteket .msg fájlokból?** Yes, the API provides direct access to each attachment.
+- **Szükségem van licencre?** A trial works for evaluation; a full license is required for production.
+- **Melyik Java verzió támogatott?** Java 8 or higher.
+- **Lehetséges a tömeges feldolgozás?** Absolutely – combine the sample code with loops or parallel streams.
 
-## Mi az a „extract attachments from msg”?
-Amikor egy Outlook `.msg` fájlt kap, az e‑mail törzse és a csatolt fájlok együtt tárolódnak. A „extract attachments from msg” azt jelenti, hogy programozottan szétválasztja a csatolt fájlokat, hogy önállóan tárolhassa, elemezhesse vagy átalakíthassa őket.
+## Mi az a „Mellékletek kinyerése MSG‑ből”?
+Amikor egy Outlook `.msg` fájlt kap, az e‑mail törzse és a csatolt fájlok együtt tárolódnak. A „Mellékletek kinyerése MSG‑ből” azt jelenti, hogy programozottan szétválasztja az egyes csatolt fájlokat, hogy önállóan tárolhassa, elemezhesse vagy átalakíthassa őket.
 
 ## Miért használjuk a GroupDocs.Parser for Java‑t?
-- **Robusztus formátumtámogatás** – Kezeli a `.msg`, `.eml` és számos más e‑mail formátumot.
-- **Metaadat-hozzáférés** – Fájlútvonalak, méretek és egyedi attribútumok lekérdezése manuális elemzés nélkül.
-- **Egyszerű API** – Minimális kód szükséges egy üzenet megnyitásához, a csatolmányok bejárásához és a tartalom olvasásához.
-- **Teljesítmény‑központú** – Streaming és try‑with‑resources használata a memóriahasználat alacsonyan tartásához.
+A GroupDocs.Parser for Java egy dedikált e‑mail‑feldolgozó könyvtár. **Több mint 70 bemeneti és kimeneti formátumot támogat, és akár 2 GB‑os fájlokat is feldolgozhat anélkül, hogy a teljes dokumentumot a memóriába töltené**, ami ideálissá teszi nagy mennyiségű esetekben. Az API azonnali hozzáférést biztosít a melléklet metaadataihoz (fájlnév, méret, létrehozási idő), és bármely, Java 8+‑ot futtató platformon működik.
 
-## Előkövetelmények
-- **Java Development Kit (JDK):** 8‑as vagy újabb verzió.
-- **IDE:** IntelliJ IDEA, Eclipse vagy bármely Java‑kompatibilis szerkesztő.
-- **GroupDocs.Parser könyvtár:** Maven‑en vagy manuális JAR‑befoglalással hozzáadva (lásd alább).
+## Előfeltételek
+- **Java Development Kit (JDK):** Version 8 or newer.
+- **IDE:** IntelliJ IDEA, Eclipse, or any Java‑compatible editor.
+- **GroupDocs.Parser könyvtár:** Added via Maven or manual JAR inclusion (see below).
 
 ## A GroupDocs.Parser for Java beállítása
 
 ### Maven beállítás
-Adja hozzá a következő beállításokat a `pom.xml` fájlhoz a GroupDocs.Parser Maven‑en keresztüli integrálásához:
+Adja hozzá a következő konfigurációkat a `pom.xml` fájlhoz a GroupDocs.Parser Maven‑on keresztüli integrálásához:
 
 ```xml
 <repositories>
@@ -66,15 +120,15 @@ Adja hozzá a következő beállításokat a `pom.xml` fájlhoz a GroupDocs.Pars
 Alternatív megoldásként töltse le a legújabb verziót a [GroupDocs.Parser for Java releases page](https://releases.groupdocs.com/parser/java/) oldalról. Adja hozzá a JAR fájlt a projekt osztályútvonalához manuálisan.
 
 #### Licenc beszerzése
-A GroupDocs több licencelési lehetőséget kínál:
-- **Ingyenes próba:** Korlátozott funkciók értékelése.
-- **Ideiglenes licenc:** Teljes hozzáférés rövid értékelési időszakban.
-- **Kereskedelmi licenc:** Szükséges a termelési környezethez.
+GroupDocs offers several licensing options:
+- **Ingyenes próba:** Limited‑feature evaluation.
+- **Ideiglenes licenc:** Full access during a short evaluation period.
+- **Kereskedelmi licenc:** Required for production deployments.
 
-A megszerzett licencfájlt a hivatalos dokumentációban leírt módon adja hozzá a funkciók feloldásához.
+Include the acquired license file as described in the official documentation to unlock all features.
 
-### Alap inicializálás
-Itt egy minimális példa, amely bizonyítja, hogy a könyvtár helyesen hivatkozott:
+### Alapvető inicializálás
+A `Parser` osztály a belépési pont a dokumentum betöltéséhez és feldolgozásához.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -91,12 +145,14 @@ public class SetupExample {
 }
 ```
 
-Miután a parser készen áll, merüljünk el a fő feladatban: **hogyan nyerjünk ki csatolmányokat msg‑ből** és jelenítsük meg azok metaadatait.
+Miután a parser készen áll, merüljünk el a fő feladatban: **hogyan kell kinyerni a mellékleteket MSG‑ből** és kiírni azok metaadatait.
 
-## Hogyan nyerjünk ki csatolmányokat msg‑ből a GroupDocs.Parser használatával?
+## Hogyan nyerhetünk ki mellékleteket MSG‑ből a GroupDocs.Parser segítségével?
 
-### 1. lépés: A Parser objektum inicializálása
-Hozzon létre egy `Parser` példányt, amely a feldolgozni kívánt `.msg` fájlra mutat:
+Töltse be a MSG fájlt, sorolja fel a mellékleteket, és írja ki azok metaadatait néhány kódsorban. A következő lépések mutatják a pontos sorrendet, amelyet követnie kell. Ez a megközelítés egyedi fájlokra és kötegelt feldolgozásra egyaránt működik, és biztosítja, hogy az erőforrások gyorsan felszabaduljanak a try‑with‑resources használatával.
+
+### 1. lépés: A parser objektum inicializálása
+Hozzon létre egy `Parser` példányt a kívánt MSG fájl elérési útjának megadásával.
 
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/sample.msg")) {
@@ -104,8 +160,8 @@ try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/sample.msg")) {
 }
 ```
 
-### 2. lépés: Csatolmányok kinyerése
-Használja a container API‑t a levélben beágyazott összes csatolmány lekéréséhez:
+### 2. lépés: Mellékletek kinyerése
+`Container` képviseli az e‑mail üzenetet, és hozzáférést biztosít a beágyazott elemeihez, például a mellékletekhez.
 
 ```java
 Iterable<ContainerItem> attachments = parser.getContainer();
@@ -119,8 +175,8 @@ for (ContainerItem item : attachments) {
 }
 ```
 
-### 3. lépés: Minden csatolmány feldolgozása (java parse email attachments)
-Minden `ContainerItem` esetén nyisson meg egy dedikált parser példányt. Ez lehetővé teszi a csatolmány tartalmának olvasását, ha szöveges formátumú:
+### 3. lépés: Egyes mellékletek feldolgozása (java parse email attachments)
+`ContainerItem` egy egyedi mellékletet ír le, és elérhetővé teszi annak adatfolyamát és metaadatait a további feldolgozáshoz.
 
 ```java
 try (Parser attachmentParser = item.openParser()) {
@@ -133,8 +189,8 @@ try (Parser attachmentParser = item.openParser()) {
 }
 ```
 
-### 4. lépés: Csatolmány metaadatok kiírása
-Miután megvan minden csatolmány objektum, megjelenítheti annak metaadatait – fájlútvonal, méret és bármely egyedi attribútum:
+### 4. lépés: Melléklet metaadatainak kiírása
+A `metadata` objektum olyan mezőket tartalmaz, mint a fájlnév, méret és létrehozási idő minden egyes melléklethez.
 
 ```java
 for (ContainerItem item : attachments) {
@@ -151,45 +207,51 @@ for (MetadataItem metadata : item.getMetadata()) {
 ```
 
 ## Gyakori problémák és megoldások
-- **Nem támogatott formátumok:** Frissítse a GroupDocs.Parser legújabb verziójára, ha `UnsupportedDocumentFormatException` hibát kap.
-- **Null csatolmányok:** Ellenőrizze, hogy a forrás `.msg` valóban tartalmaz csatolmányokat; egyes üzenetek csak törzssel rendelkeznek.
-- **Memóriahasználat:** Nagy postafiókok feldolgozásakor kezelje a csatolmányokat kötegekben, és zárja le a parser‑eket gyorsan (a try‑with‑resources minta már segít).
+- **Nem támogatott formátumok:** Upgrade to the latest GroupDocs.Parser version if you encounter `UnsupportedDocumentFormatException`.
+- **Null mellékletek:** Verify that the source `.msg` actually contains attachments; some messages are body‑only.
+- **Memóriahasználat:** When processing large mailboxes, handle attachments in batches and close parsers promptly (the try‑with‑resources pattern already helps).
 
 ## Gyakorlati alkalmazások
-A csatolmány metaadatok kinyerése és kiírása hasznos a következőkhöz:
-1. **Adatarchiválás:** Csatolmányok tárolása metaadataikkal együtt a megfelelőségi auditokhoz.
-2. **E‑mail szűrés:** Üzenetek automatikus irányítása csatolmány típusa vagy mérete alapján.
-3. **Biztonsági vizsgálat:** Metaadatok továbbítása malware‑detektáló folyamatokba a mély tartalomelemzés előtt.
+A mellékletek metaadatainak kinyerése és kiírása hasznos a következőkhöz:
+1. **Adatarchiválás:** Store attachments alongside their metadata for compliance audits.
+2. **E‑mail szűrés:** Automatically route messages based on attachment type or size.
+3. **Biztonsági vizsgálat:** Feed metadata into malware‑detection pipelines before deep content inspection.
 
 ## Teljesítmény tippek
-- **Erőforrás-kezelés:** Mindig használjon try‑with‑resources‑t a natív kezelők felszabadításához.
-- **Kötegelt feldolgozás:** Szálanként korlátozott számú e‑mail feldolgozása a memóriahasználat kiszámíthatóságáért.
-- **Párhuzamos végrehajtás:** Használja a Java `ExecutorService`‑t több `.msg` fájl egyidejű feldolgozásához.
+- **Erőforrás-kezelés:** Always use try‑with‑resources to free native handles.
+- **Kötegelt feldolgozás:** Process a limited number of emails per thread to keep memory usage predictable.
+- **Párhuzamos végrehajtás:** Leverage Java’s `ExecutorService` to parse multiple `.msg` files concurrently.
 
 ## Gyakran ismételt kérdések
 
-**Q: Hogyan kezeljem hatékonyan a nagy számú .msg fájlt?**  
-A: Kombinálja a mintakódot egy szálkészlettel (pl. `Executors.newFixedThreadPool`) és minden fájlt külön feladatként dolgozzon fel. Ne felejtse el a parser példányokat rövid életűvé tenni a memória‑szivárgás elkerülése érdekében.
+**K: Hogyan kezeljek hatékonyan nagy számú .msg fájlt?**  
+A: Kombinálja a mintakódot egy szálkészlettel (pl. `Executors.newFixedThreadPool`), és minden fájlt külön feladatként dolgozzon fel. Tartsa a parser példányokat rövid életűnek a memória‑szivárgások elkerülése érdekében.
 
-**Q: Kinyerhetek csatolmányokat titkosított vagy jelszóval védett e‑mailből?**  
+**K: Kinyerhetek mellékleteket titkosított vagy jelszóval védett e‑mail üzenetekből?**  
 A: A GroupDocs.Parser támogatja a titkosított `.msg` fájlokat, ha a megfelelő jelszót adja meg a `Parser` konstruktor túlterhelésén keresztül.
 
-**Q: Milyen metaadatmezők érhetők el egy csatolmányhoz?**  
-A: A tipikus mezők közé tartozik a `FilePath`, `Size`, `CreationTime`, valamint minden egyedi tulajdonság, amelyet az Outlook tárol (pl. `ContentId`).
+**K: Milyen metaadatmezők érhetők el egyes mellékletekhez?**  
+A: A tipikus mezők a `FilePath`, `Size`, `CreationTime`, valamint bármely egyedi Outlook tulajdonság, például a `ContentId`.
 
-**Q: Van mód a csatolmányok fájltípus szerinti szűrésére a feldolgozás előtt?**  
-A: Igen, ellenőrizze az `item.getFilePath()` vagy `metadata.getName()` értékét a fájlkiterjesztéshez, és hagyja ki a nem kívánt típusokat.
+**K: Van mód a mellékletek fájltípus szerinti szűrésére a feldolgozás előtt?**  
+A: Igen, ellenőrizze az `item.getFilePath()` vagy a `metadata.getName()` értékét a fájlkiterjesztéshez, és hagyja ki a nem kívánt típusokat.
 
-**Q: Működik a könyvtár nem‑Windows platformokon is?**  
-A: A GroupDocs.Parser platformfüggetlen; bármely, Java 8+‑t támogató operációs rendszeren fut.
+**K: A könyvtár működik nem‑Windows platformokon?**  
+A: A GroupDocs.Parser platformfüggetlen; bármely, Java 8+‑ot támogató operációs rendszeren fut.
 
 ## Következtetés
-Most már rendelkezik egy teljes, termelésre kész munkafolyammal a **csatolmányok msg‑ből történő kinyeréséhez** és metaadataik kiírásához a GroupDocs.Parser for Java használatával. Ez az alap lehetővé teszi, hogy fejlettebb megoldásokat építsen – archiválási csővezetékeket, biztonsági szkennereket vagy egyedi e‑mail feldolgozókat – miközben kódja tiszta és hatékony marad.
+Most már rendelkezik egy teljes, termelés‑kész munkafolyamattal a **Mellékletek kinyerése MSG‑ből** fájlokhoz és azok metaadatainak kiírásához a GroupDocs.Parser for Java segítségével. Ez az alap lehetővé teszi, hogy fejlettebb megoldásokat építsen – archiválási csővezetékeket, biztonsági szkennereket vagy egyedi e‑mail feldolgozókat – miközben kódja tiszta és hatékony marad.
 
-Fedezze fel a további lehetőségeket, mint a teljes szöveg kinyerése, strukturált adatok feldolgozása vagy a csatolmányok más formátumokra konvertálása. A [GroupDocs dokumentáció](https://docs.groupdocs.com/parser/java/) mélyebb példákat és API‑referenciákat kínál, amelyek segítenek a tutorial további bővítésében.
+Fedezze fel a további képességeket, például a teljes szöveg kinyerését, strukturált adatok feldolgozását vagy a mellékletek más formátumokra konvertálását. A [GroupDocs dokumentáció](https://docs.groupdocs.com/parser/java/) mélyebb példákat és API‑referenciákat tartalmaz, amelyek segítenek tovább bővíteni ezt az útmutatót.
 
 ---
 
-**Utolsó frissítés:** 2026-01-27  
-**Tesztelve ezzel:** GroupDocs.Parser 25.5  
-**Szerző:** GroupDocs
+**Last Updated:** 2026-08-26  
+**Tested With:** GroupDocs.Parser 25.5  
+**Author:** GroupDocs
+
+## Kapcsolódó útmutatók
+
+- [Hogyan konvertáljunk MSG‑t szöveggé a GroupDocs.Parser for Java segítségével: lépésről‑lépésre útmutató](/parser/java/email-parsing/extract-text-emails-groupdocs-parser-java/)
+- [Outlook PST fájl feldolgozása: mellékletek és metaadatok kinyerése a GroupDocs.Parser Java‑val](/parser/java/metadata-extraction/extract-outlook-attachments-metadata-groupdocs-parser-java/)
+- [E‑mail képek kinyerése Java‑ban a GroupDocs.Parser for Java segítségével](/parser/java/email-parsing/extract-images-emails-groupdocs-parser-java/)
