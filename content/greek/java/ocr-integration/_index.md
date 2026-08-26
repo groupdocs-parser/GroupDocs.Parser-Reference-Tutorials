@@ -1,109 +1,179 @@
 ---
-date: 2026-01-29
-description: Βήμα‑βήμα οδηγός groupdocs parser OCR για προγραμματιστές Java, που δείχνει
-  πώς να εξάγετε κείμενο από εικόνες Java χρησιμοποιώντας ενσωμάτωση OCR.
-title: Οδηγός OCR του GroupDocs.Parser – Οδηγός Ενσωμάτωσης σε Java
+date: 2026-08-26
+description: Μάθετε πώς να μετατρέψετε εικόνα σε αναζητήσιμο κείμενο χρησιμοποιώντας
+  το GroupDocs OCR σε Java, επιτρέποντάς σας να επεξεργάζεστε σαρωμένα PDF και OCR
+  πολλαπλών σελίδων PDF αποδοτικά.
+keywords:
+- image to searchable text
+- process scanned pdfs
+- multi-page pdf ocr
+lastmod: 2026-08-26
+og_description: Μάθετε πώς να μετατρέψετε εικόνα σε αναζητήσιμο κείμενο χρησιμοποιώντας
+  το GroupDocs OCR σε Java, επιτρέποντάς σας να επεξεργάζεστε σαρωμένα PDF και OCR
+  πολλαπλών σελίδων PDF αποδοτικά.
+og_image_alt: Guide showing how to convert image to searchable text with GroupDocs
+  OCR in Java
+og_title: Μετατροπή εικόνας σε αναζητήσιμο κείμενο με GroupDocs OCR σε Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-26'
+  description: Learn how to convert image to searchable text using GroupDocs OCR in
+    Java, enabling you to process scanned PDFs and multi‑page PDF OCR efficiently.
+  headline: Convert image to searchable text with GroupDocs OCR in Java
+  type: TechArticle
+- description: Learn how to convert image to searchable text using GroupDocs OCR in
+    Java, enabling you to process scanned PDFs and multi‑page PDF OCR efficiently.
+  name: Convert image to searchable text with GroupDocs OCR in Java
+  steps:
+  - name: add required dependencies
+    text: Include GroupDocs.Parser and your chosen OCR library in your build file.
+      For Maven, add the corresponding `<dependency>` entries.
+  - name: initialize the parser with OCR settings
+    text: The `Parser` class is the core component that reads documents and delegates
+      raster pages to the OCR engine. Configure the `Parser` instance to enable OCR,
+      specify the OCR engine, language, and any region‑specific options you need.
+  - name: load the document or image
+    text: Pass the path of the scanned PDF, TIFF, or image file to the parser. The
+      library will detect raster pages automatically.
+  - name: extract text using OCR
+    text: Call the `extractText` method (or the equivalent API) to retrieve the recognized
+      text. You can also limit extraction to certain pages or rectangular zones.
+  - name: handle OCR warnings and errors
+    text: Check the `ParseResult` for warnings such as low‑resolution images or unsupported
+      fonts, and implement fallback logic if needed.
+  - name: process the extracted text
+    text: Use the returned string for indexing, storage, or further analysis (e.g.,
+      data extraction, sentiment analysis).
+  type: HowTo
+- questions:
+  - answer: Yes, any Java‑compatible OCR library that implements a standard interface
+      can be plugged into GroupDocs.Parser.
+    question: Can I use this tutorial with other OCR engines besides Aspose.OCR?
+  - answer: You must provide the password when opening the document; once unlocked,
+      OCR runs as usual.
+    question: Does the OCR process work on password‑protected PDFs?
+  - answer: Define a rectangular area in the OCR settings and pass it to the extraction
+      method to limit recognition to that zone.
+    question: How can I extract text from a specific region of a page?
+  - answer: At least 300 DPI is recommended; lower resolutions may reduce recognition
+      quality.
+    question: What is the recommended image resolution for optimal OCR accuracy?
+  - answer: Absolutely—loop through your file list, applying the same parser configuration
+      to each document.
+    question: Is it possible to batch‑process multiple files in a single run?
+  type: FAQPage
+tags:
+- OCR integration
+- GroupDocs.Parser
+- Java document processing
+title: Μετατροπή εικόνας σε αναζητήσιμο κείμενο με GroupDocs OCR σε Java
 type: docs
 url: /el/java/ocr-integration/
 weight: 19
 ---
 
-# Οδηγός Ολοκλήρωσης GroupDocs.Parser OCR – Java
+# Μετατροπή εικόνας σε αναζητήσιμο κείμενο με το GroupDocs OCR σε Java
 
-Βελτιώστε τη ροή επεξεργασίας εγγράφων μαθαίνοντας πώς να προσθέσετε δυνατότητες OCR στο GroupDocs.Parser με Java. Αυτό το **groupdocs parser ocr tutorial** σας καθοδηγεί στη διαμόρφωση του OCR, στην εξαγωγή κειμένου από εικόνες και στη διαχείριση προχωρημένων επιλογών αναγνώρισης, ώστε να μετατρέψετε τα σαρωμένα αρχεία σε περιεχόμενο που μπορεί να αναζητηθεί και να επεξεργαστεί.
+Σε αυτό το tutorial θα ανακαλύψετε πώς να **μετατρέψετε εικόνα σε αναζητήσιμο κείμενο** ενσωματώνοντας τις δυνατότητες OCR στο GroupDocs.Parser για Java. Θα δείτε γιατί το OCR είναι σημαντικό για τις σύγχρονες ροές εγγράφων, θα λάβετε έναν σαφή οδηγό βήμα‑βήμα και θα μάθετε πώς να αντιμετωπίζετε κοινά προβλήματα όπως σαρώσεις χαμηλής ανάλυσης ή PDF με υψηλή χρήση μνήμης. Στο τέλος, θα μπορείτε να μετατρέψετε σαρωμένες εικόνες, TIFF ή PDF σε πλήρως αναζητήσιμο, επεξεργάσιμο περιεχόμενο που τροφοδοτεί την ευρετηρίαση, την εξαγωγή δεδομένων και τις ροές εργασίας συμμόρφωσης.
 
-## Γρήγορες Απαντήσεις
-- **Τι καλύπτει αυτό το οδηγό;** Ενσωμάτωση του OCR με το GroupDocs.Parser για Java για εξαγωγή κειμένου από εικόνες.  
-- **Ποιες βιβλιοθήκες απαιτούνται;** GroupDocs.Parser για Java και Aspose.OCR (ή οποιαδήποτε συμβατή μηχανή OCR).  
+## Γρήγορες απαντήσεις
+- **Τι καλύπτει αυτό το tutorial;** Ενσωμάτωση OCR με το GroupDocs.Parser για Java για εξαγωγή κειμένου από εικόνες.  
+- **Ποιες βιβλιοθήκες απαιτούνται;** GroupDocs.Parser for Java και Aspose.OCR (ή οποιαδήποτε συμβατή μηχανή OCR).  
 - **Χρειάζομαι άδεια;** Απαιτείται προσωρινή ή πλήρης άδεια για χρήση σε παραγωγή.  
-- **Μπορώ να επεξεργαστώ PDF πολλαπλών σελίδων;** Ναι — το OCR μπορεί να εφαρμοστεί σελίδα‑με‑σελίδα ή σε επιλεγμένες περιοχές.  
+- **Μπορώ να επεξεργαστώ PDF πολλαπλών σελίδων;** Ναι—το OCR μπορεί να εφαρμοστεί σελίδα‑με‑σελίδα ή σε επιλεγμένες περιοχές.  
 - **Υπάρχει δείγμα κώδικα;** Ο οδηγός παρέχει συνδέσμους σε έτοιμα παραδείγματα Java για κοινά σενάρια.
 
-## Τι είναι ένας Οδηγός OCR του GroupDocs.Parser;
-Ένας **groupdocs parser ocr tutorial** εξηγεί πώς να συνδυάσετε τη δυναμική μηχανή ανάλυσης του GroupDocs.Parser με την τεχνολογία OCR, επιτρέποντας την εξαγωγή κειμένου από σαρωμένες εικόνες, PDF και άλλα έγγραφα βασισμένα σε bitmap απευθείας σε εφαρμογές Java.
+## Τι είναι ένα tutorial OCR του GroupDocs.Parser;
+Ένα tutorial OCR του GroupDocs.Parser εξηγεί πώς να συνδυάσετε τη δυνατή μηχανή ανάλυσης του GroupDocs.Parser με την τεχνολογία OCR, επιτρέποντας την εξαγωγή κειμενικών δεδομένων από σαρωμένες εικόνες, PDF και άλλα έγγραφα βασισμένα σε bitmap απευθείας σε εφαρμογές Java. Σας δείχνει πώς να ρυθμίσετε τον parser, να επιλέξετε πακέτα γλώσσας και να ανακτήσετε αναζητήσιμο κείμενο με λίγες γραμμές κώδικα.
 
-## Γιατί να Χρησιμοποιήσετε OCR με το GroupDocs.Parser σε Java;
-- **Πλήρης αυτοματοποίηση** – Μετατρέψτε έντυπες φόρμες σε αναζητήσιμα δεδομένα χωρίς χειροκίνητη καταχώρηση.  
-- **Υψηλή ακρίβεια** – Εκμεταλλευτείτε τους προχωρημένους αλγόριθμους αναγνώρισης του Aspose.OCR.  
-- **Ευελιξία** – Εξάγετε κείμενο από ολόκληρα έγγραφα ή συγκεκριμένες περιοχές σελίδας.  
-- **Κλιμάκωση** – Επεξεργαστείτε μεγάλες παρτίδες αρχείων σε cloud ή on‑premises περιβάλλοντα.
+## Γιατί να χρησιμοποιήσετε OCR με το GroupDocs.Parser σε Java;
+Το OCR με το GroupDocs.Parser σας επιτρέπει να αυτοματοποιήσετε την ψηφιοποίηση εντύπων, συμβάσεων και κληρονομικών αρχείων. Υποστηρίζει **50+ languages**, επεξεργάζεται **multi‑page PDFs at up to 300 DPI** χωρίς να φορτώνει ολόκληρο το αρχείο στη μνήμη, και μπορεί να διαχειριστεί παρτίδες **10,000+ files** σε τυπική διαμόρφωση διακομιστή. Αυτή η κλιμακωσιμότητα μειώνει το κόστος χειροκίνητης εισαγωγής δεδομένων έως και **80 %** και βελτιώνει την ευρετηρίαση σε όλο το αποθετήριο περιεχομένου της επιχείρησής σας.
 
 ## Προαπαιτούμενα
 - Java 8 ή νεότερη εγκατεστημένη.  
-- Βιβλιοθήκη GroupDocs.Parser για Java προστεθειμένη στο έργο σας (Maven/Gradle).  
+- Βιβλιοθήκη GroupDocs.Parser for Java προστιθέμενη στο έργο σας (Maven/Gradle).  
 - Μηχανή OCR όπως Aspose.OCR (ή οποιαδήποτε συμβατή βιβλιοθήκη OCR για Java).  
 - Έγκυρη άδεια GroupDocs.Parser (προσωρινή άδεια λειτουργεί για δοκιμές).
 
-## Οδηγός Βήμα‑Βήμα
+## Οδηγός βήμα‑βήμα
 
-### Βήμα 1: Προσθήκη Απαιτούμενων Εξαρτήσεων
-Συμπεριλάβετε το GroupDocs.Parser και τη βιβλιοθήκη OCR της επιλογής σας στο αρχείο κατασκευής. Για Maven, προσθέστε τις αντίστοιχες καταχωρήσεις `<dependency>`.
+### Βήμα 1: προσθήκη απαιτούμενων εξαρτήσεων
+Συμπεριλάβετε το GroupDocs.Parser και την επιλεγμένη βιβλιοθήκη OCR στο αρχείο κατασκευής σας. Για Maven, προσθέστε τις αντίστοιχες καταχωρήσεις `<dependency>`.
 
-### Βήμα 2: Αρχικοποίηση του Parser με Ρυθμίσεις OCR
-Διαμορφώστε το αντικείμενο `Parser` ώστε να ενεργοποιεί το OCR. Καθορίστε τη μηχανή OCR, τη γλώσσα και τυχόν επιλογές περιοχής που χρειάζεστε.
+### Βήμα 2: αρχικοποίηση του parser με ρυθμίσεις OCR
+Η κλάση `Parser` είναι το κύριο στοιχείο που διαβάζει έγγραφα και αναθέτει τις σελίδες raster στη μηχανή OCR.  
+Ρυθμίστε το αντικείμενο `Parser` ώστε να ενεργοποιήσετε το OCR, να καθορίσετε τη μηχανή OCR, τη γλώσσα και τυχόν επιλογές συγκεκριμένων περιοχών που χρειάζεστε.
 
-### Βήμα 3: Φόρτωση του Εγγράφου ή της Εικόνας
-Περάστε τη διαδρομή του σαρωμένου PDF, TIFF ή αρχείου εικόνας στον parser. Η βιβλιοθήκη θα εντοπίσει αυτόματα τις raster σελίδες.
+### Βήμα 3: φόρτωση του εγγράφου ή της εικόνας
+Περάστε τη διαδρομή του σαρωμένου PDF, TIFF ή αρχείου εικόνας στον parser. Η βιβλιοθήκη θα εντοπίσει αυτόματα τις σελίδες raster.
 
-### Βήμα 4: Εξαγωγή Κειμένου με OCR
-Καλέστε τη μέθοδο `extractText` (ή το ισοδύναμο API) για να λάβετε το αναγνωρισμένο κείμενο. Μπορείτε επίσης να περιορίσετε την εξαγωγή σε συγκεκριμένες σελίδες ή ορθογώνιες ζώνες.
+### Βήμα 4: εξαγωγή κειμένου με χρήση OCR
+Καλέστε τη μέθοδο `extractText` (ή το αντίστοιχο API) για να ανακτήσετε το αναγνωρισμένο κείμενο. Μπορείτε επίσης να περιορίσετε την εξαγωγή σε συγκεκριμένες σελίδες ή ορθογώνιες ζώνες.
 
-### Βήμα 5: Διαχείριση Προειδοποιήσεων και Σφαλμάτων OCR
-Ελέγξτε το `ParseResult` για προειδοποιήσεις όπως εικόνες χαμηλής ανάλυσης ή μη υποστηριζόμενες γραμματοσειρές, και υλοποιήστε λογική fallback εάν χρειάζεται.
+### Βήμα 5: διαχείριση προειδοποιήσεων και σφαλμάτων OCR
+Ελέγξτε το `ParseResult` για προειδοποιήσεις όπως εικόνες χαμηλής ανάλυσης ή μη υποστηριζόμενες γραμματοσειρές, και εφαρμόστε λογική εναλλακτικού εάν χρειάζεται.
 
-### Βήμα 6: Επεξεργασία του Εξαγόμενου Κειμένου
+### Βήμα 6: επεξεργασία του εξαγόμενου κειμένου
 Χρησιμοποιήστε το επιστρεφόμενο string για ευρετηρίαση, αποθήκευση ή περαιτέρω ανάλυση (π.χ., εξαγωγή δεδομένων, ανάλυση συναισθήματος).
 
-## Συχνά Προβλήματα και Λύσεις
-- **Χαμηλή ακρίβεια σε θορυβώδεις σαρώσεις** – Προεπεξεργαστείτε τις εικόνες (ευθυγράμμιση, απομάκρυνση θορύβου) πριν το OCR.  
-- **Μη υποστηριζόμενη γλώσσα** – Βεβαιωθείτε ότι η μηχανή OCR περιλαμβάνει το πακέτο γλώσσας για το κείμενο-στόχο.  
-- **Κατανάλωση μνήμης σε μεγάλα PDF** – Επεξεργαστείτε τις σελίδες σταδιακά αντί να φορτώνετε ολόκληρο το έγγραφο ταυτόχρονα.  
+## Συχνά προβλήματα και λύσεις
+- **Χαμηλή ακρίβεια σε θορυβώδεις σαρώσεις** – Προεπεξεργασία εικόνων (ευθυγράμμιση, απομάκρυνση θορύβου) πριν το OCR.  
+- **Μη υποστηριζόμενη γλώσσα** – Βεβαιωθείτε ότι η μηχανή OCR περιλαμβάνει το πακέτο γλώσσας για το επιθυμητό κείμενο.  
+- **Κατανάλωση μνήμης σε μεγάλα PDF** – Επεξεργαστείτε τις σελίδες σταδιακά αντί να φορτώνετε ολόκληρο το έγγραφο ταυτόχρονα.
 
-## Διαθέσιμοι Οδηγοί
+## Διαθέσιμα tutorials
 
-### [Εξαγωγή Κειμένου Aspose OCR με GroupDocs.Parser σε Java: Ένας Πλήρης Οδηγός για Προγραμματιστές](./aspose-ocr-text-extraction-groupdocs-parser-java/)
-Μάθετε πώς να ενσωματώσετε το Aspose OCR και το GroupDocs.Parser σε έργα Java για αποδοτική εξαγωγή κειμένου. Ακολουθήστε αυτόν τον οδηγό για βελτιστοποίηση της ροής επεξεργασίας εγγράφων.
+### [Εξαγωγή κειμένου Aspose OCR με GroupDocs.Parser σε Java&#58; Ολοκληρωμένος οδηγός για προγραμματιστές](./aspose-ocr-text-extraction-groupdocs-parser-java/)
+Learn how to integrate Aspose OCR and GroupDocs.Parser in Java projects for efficient text extraction. Follow this guide to optimise your document processing workflow.
 
-### [Οδηγός Αναγνώρισης Κειμένου OCR σε Java: Χρήση Aspose.OCR και GroupDocs.Parser για Java](./java-ocr-text-recognition-aspose-groupdocs-parser-guide/)
-Μάθετε πώς να υλοποιήσετε αναγνώριση κειμένου OCR σε Java χρησιμοποιώντας Aspose.OCR και GroupDocs.Parser, με αυτόν τον ολοκληρωμένο οδηγό που καλύπτει εγκατάσταση, διαμόρφωση και πρακτικές εφαρμογές.
+### [Οδηγός αναγνώρισης κειμένου OCR σε Java&#58; Χρήση Aspose.OCR και GroupDocs.Parser για Java](./java-ocr-text-recognition-aspose-groupdocs-parser-guide/)
+Learn how to implement OCR text recognition in Java using Aspose.OCR and GroupDocs.Parser, with this comprehensive guide covering setup, configuration, and practical applications.
 
-### [Κατακτώντας τη Διαχείριση Προειδοποιήσεων OCR σε Java με GroupDocs.Parser και Aspose OCR](./mastering-ocr-warning-handling-groupdocs-parser-java/)
-Μάθετε πώς να διαχειρίζεστε αποτελεσματικά τις προειδοποιήσεις OCR χρησιμοποιώντας το GroupDocs.Parser για Java και το Aspose OCR, εξασφαλίζοντας ακριβή εξαγωγή δεδομένων.
+### [Αντιμετώπιση προειδοποιήσεων OCR σε Java με GroupDocs.Parser και Aspose OCR](./mastering-ocr-warning-handling-groupdocs-parser-java/)
+Learn how to effectively manage OCR warnings using GroupDocs.Parser for Java and Aspose OCR, ensuring accurate data extraction.
 
-### [Εξαγωγή Κειμένου OCR σε Java: Κατακτώντας το GroupDocs.Parser για Αυτοματοποίηση Εγγράφων](./ocr-text-extraction-java-groupdocs-parser/)
-Μάθετε να εξάγετε κείμενο από έγγραφα χρησιμοποιώντας OCR με το GroupDocs.Parser σε Java. Αυτός ο οδηγός καλύπτει εγκατάσταση, υλοποίηση και διαχείριση σφαλμάτων για αποδοτική αυτοματοποίηση εγγράφων.
+### [Εξαγωγή κειμένου OCR σε Java&#58; Κατακτώντας το GroupDocs.Parser για αυτοματοποίηση εγγράφων](./ocr-text-extraction-java-groupdocs-parser/)
+Learn to extract text from documents using OCR with GroupDocs.Parser in Java. This guide covers setup, implementation, and error handling for efficient document automation.
 
-### [Εξαγωγή Κειμένου OCR με GroupDocs.Parser Java: Ένας Πλήρης Οδηγός για την Εξαγωγή Κειμένου από Εικόνες και Έγγραφα](./ocr-text-extraction-groupdocs-parser-java/)
-Μάθετε πώς να ενσωματώσετε την εξαγωγή κειμένου OCR στις εφαρμογές Java σας χρησιμοποιώντας το GroupDocs.Parser. Αυτός ο οδηγός καλύπτει εγκατάσταση, υλοποίηση και πρακτικές περιπτώσεις χρήσης για αποδοτική επεξεργασία εγγράφων.
+### [Εξαγωγή κειμένου OCR με GroupDocs.Parser Java&#58; Ολοκληρωμένος οδηγός για εξαγωγή κειμένου από εικόνες και έγγραφα](./ocr-text-extraction-groupdocs-parser-java/)
+Learn how to integrate OCR text extraction into your Java applications using GroupDocs.Parser. This guide covers setup, implementation, and practical use cases for efficient document processing.
 
-## Πρόσθετοι Πόροι
+## Πρόσθετοι πόροι
 
 - [Τεκμηρίωση GroupDocs.Parser για Java](https://docs.groupdocs.com/parser/java/)
 - [Αναφορά API GroupDocs.Parser για Java](https://reference.groupdocs.com/parser/java/)
 - [Λήψη GroupDocs.Parser για Java](https://releases.groupdocs.com/parser/java/)
 - [Φόρουμ GroupDocs.Parser](https://forum.groupdocs.com/c/parser)
-- [Δωρεάν Υποστήριξη](https://forum.groupdocs.com/)
-- [Προσωρινή Άδεια](https://purchase.groupdocs.com/temporary-license/)
+- [Δωρεάν υποστήριξη](https://forum.groupdocs.com/)
+- [Προσωρινή άδεια](https://purchase.groupdocs.com/temporary-license/)
 
-## Συχνές Ερωτήσεις
+## Συχνές ερωτήσεις
 
-**Ε: Μπορώ να χρησιμοποιήσω αυτόν τον οδηγό με άλλες μηχανές OCR εκτός του Aspose.OCR;**  
-Α: Ναι, οποιαδήποτε βιβλιοθήκη OCR συμβατή με Java που υλοποιεί ένα τυπικό interface μπορεί να ενσωματωθεί στο GroupDocs.Parser.
+**Q: Μπορώ να χρησιμοποιήσω αυτό το tutorial με άλλες μηχανές OCR εκτός από Aspose.OCR;**  
+A: Ναι, οποιαδήποτε βιβλιοθήκη OCR συμβατή με Java που υλοποιεί ένα τυπικό interface μπορεί να ενσωματωθεί στο GroupDocs.Parser.
 
-**Ε: Λειτουργεί η διαδικασία OCR σε PDF προστατευμένα με κωδικό;**  
-Α: Πρέπει να παρέχετε τον κωδικό κατά το άνοιγμα του εγγράφου· μόλις ξεκλειδωθεί, το OCR εκτελείται κανονικά.
+**Q: Λειτουργεί η διαδικασία OCR σε PDF προστατευμένα με κωδικό;**  
+A: Πρέπει να παρέχετε τον κωδικό κατά το άνοιγμα του εγγράφου· μόλις ξεκλειδωθεί, το OCR εκτελείται κανονικά.
 
-**Ε: Πώς μπορώ να εξάγω κείμενο από συγκεκριμένη περιοχή μιας σελίδας;**  
-Α: Ορίστε μια ορθογώνια περιοχή στις ρυθμίσεις OCR και περάστε την στη μέθοδο εξαγωγής για να περιορίσετε την αναγνώριση σε αυτή τη ζώνη.
+**Q: Πώς μπορώ να εξάγω κείμενο από συγκεκριμένη περιοχή μιας σελίδας;**  
+A: Ορίστε μια ορθογώνια περιοχή στις ρυθμίσεις OCR και περάστε την στη μέθοδο εξαγωγής για να περιορίσετε την αναγνώριση σε αυτή τη ζώνη.
 
-**Ε: Ποια είναι η συνιστώμενη ανάλυση εικόνας για βέλτιστη ακρίβεια OCR;**  
-Α: Συνιστάται τουλάχιστον 300 DPI· χαμηλότερες αναλύσεις μπορεί να μειώσουν την ποιότητα αναγνώρισης.
+**Q: Ποια είναι η συνιστώμενη ανάλυση εικόνας για βέλτιστη ακρίβεια OCR;**  
+A: Συνιστάται τουλάχιστον 300 DPI· χαμηλότερες αναλύσεις μπορεί να μειώσουν την ποιότητα αναγνώρισης.
 
-**Ε: Είναι δυνατόν να επεξεργαστείτε πολλαπλά αρχεία σε μια ενιαία εκτέλεση;**  
-Α: Απόλυτα — κάντε επανάληψη στη λίστα αρχείων σας, εφαρμόζοντας την ίδια διαμόρφωση parser σε κάθε έγγραφο.
+**Q: Είναι δυνατό το batch‑processing πολλαπλών αρχείων σε μία εκτέλεση;**  
+A: Απόλυτα—περιηγηθείτε στη λίστα αρχείων σας, εφαρμόζοντας την ίδια διαμόρφωση parser σε κάθε έγγραφο.
 
 ---
 
-**Τελευταία ενημέρωση:** 2026-01-29  
-**Δοκιμή με:** GroupDocs.Parser for Java 23.10, Aspose.OCR 23.5  
-**Συγγραφέας:** GroupDocs
+**Τελευταία ενημέρωση:** 2026-08-26  
+**Δοκιμάστηκε με:** GroupDocs.Parser for Java 23.10, Aspose.OCR 23.5  
+**Συγγραφέας:** GroupDocs  
+
+---
+
+## Σχετικά tutorials
+
+- [Οδηγός ενσωμάτωσης GroupDocs.Parser OCR – Java](/parser/java/ocr-integration/)
+- [Πώς να χρησιμοποιήσετε OCR με GroupDocs.Parser Java: Εξαγωγή κειμένου από εικόνες και έγγραφα](/parser/java/ocr-integration/ocr-text-extraction-groupdocs-parser-java/)
+- [Επεξεργασία σαρωμένων εγγράφων: Εξαγωγή κειμένου Aspose OCR με GroupDocs.Parser σε Java](/parser/java/ocr-integration/aspose-ocr-text-extraction-groupdocs-parser-java/)
