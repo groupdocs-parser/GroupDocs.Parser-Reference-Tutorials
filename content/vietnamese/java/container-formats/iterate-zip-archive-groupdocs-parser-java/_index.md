@@ -1,15 +1,22 @@
 ---
-date: '2026-05-23'
-description: Tìm hiểu cách duyệt ZIP archive Java bằng GroupDocs.Parser for Java,
-  trích xuất tên và kích thước tệp, và xử lý các tệp lưu trữ lớn một cách hiệu quả.
+date: '2026-08-26'
+description: Tìm hiểu cách liệt kê các tệp trong các kho lưu trữ zip bằng GroupDocs
+  Parser for Java, trích xuất tên tệp zip và kiểm tra kích thước tệp zip một cách
+  hiệu quả. Hỗ trợ các kho lưu trữ lớn lên tới 2 GB.
 keywords:
-- iterate zip archive java
+- list files in zip
 - extract zip file names
-- read zip without extraction
-- java process zip archives
+- verify zip file sizes
+lastmod: '2026-08-26'
+og_description: Tìm hiểu cách liệt kê các tệp trong các kho lưu trữ zip bằng GroupDocs
+  Parser for Java, trích xuất tên tệp zip và kiểm tra kích thước tệp zip một cách
+  hiệu quả. Hỗ trợ các kho lưu trữ lớn lên tới 2 GB.
+og_image_alt: Guide showing how to list files in zip archives using GroupDocs Parser
+  for Java
+og_title: Cách liệt kê các tệp trong zip bằng GroupDocs Parser for Java
 schemas:
 - author: GroupDocs
-  dateModified: '2026-05-23'
+  dateModified: '2026-08-26'
   description: Learn how to iterate zip archive java using GroupDocs.Parser for Java,
     extract file names and sizes, and handle large archives efficiently.
   headline: GroupDocs Parser Java Tutorial - Iterate Through ZIP Archives
@@ -60,34 +67,48 @@ schemas:
       a free trial is available for evaluation.
     question: Is a license required for production use?
   type: FAQPage
-title: Hướng dẫn GroupDocs Parser Java - Duyệt qua ZIP Archives
+tags:
+- list files in zip
+- extract zip file names
+- verify zip file sizes
+- GroupDocs Parser
+- Java archive processing
+title: Cách liệt kê các tệp trong zip bằng GroupDocs Parser for Java
 type: docs
 url: /vi/java/container-formats/iterate-zip-archive-groupdocs-parser-java/
 weight: 1
 ---
 
-# Lặp qua ZIP Archive Java với GroupDocs Parser
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
 
-Trong **GroupDocs Parser Java tutorial** này, bạn sẽ khám phá cách **iterate zip archive java** nhanh chóng và đáng tin cậy. Bằng cách tải một tệp ZIP bằng lớp `Parser`, bạn có thể lấy tên và kích thước của mỗi mục mà không cần giải nén toàn bộ lưu trữ—hoàn hảo cho việc kiểm kê, báo cáo tuân thủ, hoặc cung cấp siêu dữ liệu cho các hệ thống downstream. Phương pháp này hoạt động với JDK 8+ và mở rộng tới các lưu trữ có hàng trăm trang.
+# Cách liệt kê các tệp trong zip bằng GroupDocs Parser cho Java
+
+Trong **GroupDocs Parser Java tutorial** này, bạn sẽ học cách **liệt kê các tệp trong zip** một cách nhanh chóng và đáng tin cậy. Bằng cách tải một tệp ZIP bằng lớp `Parser`, bạn có thể lấy tên và kích thước của mỗi mục mà không cần giải nén toàn bộ kho lưu trữ — phù hợp cho việc kiểm kê, báo cáo tuân thủ, hoặc cung cấp siêu dữ liệu cho các hệ thống downstream. Phương pháp này hoạt động với JDK 8+ và mở rộng lên các kho lưu trữ hàng trăm trang lên tới 2 GB.
 
 ## Câu trả lời nhanh
-- **Nội dung của hướng dẫn này là gì?** Lặp qua ZIP archives và trích xuất siêu dữ liệu tệp với GroupDocs.Parser cho Java.  
-- **Tôi có cần giấy phép không?** Bản dùng thử miễn phí hoạt động cho việc đánh giá; giấy phép vĩnh viễn cần thiết cho môi trường production.  
-- **Phiên bản Java nào được yêu cầu?** JDK 8 hoặc mới hơn.  
-- **Tôi có thể xử lý các loại archive khác không?** Có—GroupDocs.Parser cũng hỗ trợ RAR, TAR, 7z và hơn nữa.  
-- **Thời gian triển khai mất bao lâu?** Thông thường dưới 15 phút cho cấu hình cơ bản.
+- **Mục tiêu của hướng dẫn này là gì?** Duyệt qua các kho ZIP và trích xuất siêu dữ liệu tệp bằng GroupDocs.Parser cho Java.  
+- **Tôi có cần giấy phép không?** Bản dùng thử miễn phí đủ cho việc đánh giá; giấy phép vĩnh viễn cần thiết cho môi trường sản xuất.  
+- **Yêu cầu phiên bản Java nào?** JDK 8 hoặc mới hơn.  
+- **Tôi có thể xử lý các loại kho lưu trữ khác không?** Có — GroupDocs.Parser cũng hỗ trợ RAR, TAR, 7z và nhiều định dạng khác.  
+- **Thời gian triển khai mất bao lâu?** Thông thường dưới 15 phút cho một cấu hình cơ bản.
 
-## GroupDocs Parser Java Tutorial là gì?
-Một **GroupDocs Parser Java tutorial** là một hướng dẫn ngắn gọn, từng bước, cho thấy cách nhúng thư viện GroupDocs.Parser vào các dự án Java, cho phép bạn đọc, trích xuất và thao tác dữ liệu từ nhiều định dạng tài liệu và container. Nó hướng dẫn bạn qua quá trình cài đặt, các đoạn mã mẫu và các thực tiễn tốt nhất, giúp các nhà phát triển ở mọi trình độ có thể bắt đầu nhanh chóng.
+## GroupDocs Parser Java tutorial là gì?
 
-## Tại sao phải lặp qua ZIP archives?
-Lặp qua ZIP archives cho phép bạn **kiểm tra nội dung mà không cần giải nén toàn bộ**, tạo báo cáo kiểm kê, xác thực tính toàn vẹn của tệp, và cung cấp siêu dữ liệu cho các hệ thống downstream—tất cả trong khi giữ mức sử dụng bộ nhớ thấp. Cách tiếp cận này cũng giảm tải I/O và tránh rủi ro ghi đè lên các tệp hiện có trên máy chủ, đảm bảo quy trình kiểm toán an toàn hơn.  
-- **Tốc độ:** Bạn có thể liệt kê hàng nghìn mục trong chưa tới một giây trên máy chủ tiêu chuẩn.  
-- **An toàn:** Không cần ghi tệp tạm thời vào đĩa, giảm thiểu rủi ro bảo mật.  
-- **Khả năng mở rộng:** Xử lý các archive lên tới 2 GB mà không cần tải toàn bộ tệp vào bộ nhớ.
+Một **GroupDocs Parser Java tutorial** là một hướng dẫn ngắn gọn, từng bước, chỉ cách nhúng thư viện GroupDocs.Parser vào dự án Java, cho phép bạn đọc, trích xuất và thao tác dữ liệu từ nhiều định dạng tài liệu và container. Nó hướng dẫn bạn qua quá trình cài đặt, các đoạn mã mẫu và các thực tiễn tốt nhất, giúp các nhà phát triển ở mọi trình độ có thể bắt đầu nhanh chóng.
 
-## Yêu cầu trước
-- **IDE:** IntelliJ IDEA, Eclipse, hoặc bất kỳ trình chỉnh sửa nào tương thích với Java.  
+## Tại sao phải duyệt qua các kho ZIP?
+
+Duyệt qua các kho ZIP cho phép bạn **kiểm tra nội dung mà không cần giải nén toàn bộ**, tạo báo cáo kiểm kê, xác thực tính toàn vẹn của tệp và cung cấp siêu dữ liệu cho các hệ thống downstream — đồng thời giữ mức sử dụng bộ nhớ thấp. Phương pháp này cũng giảm tải I/O và tránh nguy cơ ghi đè các tệp hiện có trên máy chủ, đảm bảo quy trình kiểm toán an toàn hơn.  
+
+- **Tốc độ:** Bạn có thể liệt kê hàng ngàn mục trong chưa đầy một giây trên máy chủ tiêu chuẩn.  
+- **An toàn:** Không cần ghi tệp tạm thời ra đĩa, giảm rủi ro bảo mật.  
+- **Khả năng mở rộng:** Xử lý các kho lưu trữ lên tới 2 GB mà không tải toàn bộ tệp vào bộ nhớ.
+
+## Prerequisites
+
+- **IDE:** IntelliJ IDEA, Eclipse hoặc bất kỳ trình chỉnh sửa Java nào tương thích.  
 - **JDK:** Phiên bản 8 hoặc mới hơn.  
 - **Maven** (tùy chọn nhưng được khuyến nghị) để quản lý phụ thuộc.  
 
@@ -112,7 +133,7 @@ Lặp qua ZIP archives cho phép bạn **kiểm tra nội dung mà không cần 
 </dependencies>
 ```
 
-Bạn cũng có thể xem tất cả các bản phát hành tại [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
+Bạn cũng có thể xem tất cả các phiên bản tại [phiên bản GroupDocs.Parser cho Java](https://releases.groupdocs.com/parser/java/).
 
 ```xml
 <repositories>
@@ -132,13 +153,13 @@ Bạn cũng có thể xem tất cả các bản phát hành tại [GroupDocs.Par
 </dependencies>
 ```
 
-Hoặc tải phiên bản mới nhất trực tiếp từ [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
+Hoặc tải phiên bản mới nhất trực tiếp từ [phiên bản GroupDocs.Parser cho Java](https://releases.groupdocs.com/parser/java/). Để biết thêm hướng dẫn, xem [tài liệu mới nhất](https://docs.groupdocs.com/parser/java/).
 
-### Yêu cầu cài đặt môi trường
+### Yêu cầu môi trường cài đặt
 - Một IDE hiện đại như IntelliJ IDEA hoặc Eclipse.  
-- JDK 8 hoặc mới hơn đã được cài đặt trên máy của bạn.
+- JDK 8 hoặc mới hơn đã được cài đặt trên máy.
 
-### Kiến thức cần thiết
+### Kiến thức nền tảng
 - Lập trình Java cơ bản.  
 - Quen thuộc với Maven (hoặc xử lý JAR thủ công).  
 - Hiểu biết về khái niệm tệp ZIP (có ích nhưng không bắt buộc).
@@ -146,20 +167,20 @@ Hoặc tải phiên bản mới nhất trực tiếp từ [GroupDocs.Parser for 
 ## Cài đặt GroupDocs.Parser cho Java
 
 ### Cài đặt qua Maven
-Thêm các đoạn mã repository và dependency đã hiển thị ở trên vào `pom.xml` của bạn. Maven sẽ tự động tải thư viện.
+Thêm các đoạn mã repository và dependency đã hiển thị ở trên vào `pom.xml`. Maven sẽ tự động tải thư viện.
 
 ### Phương pháp tải trực tiếp
-1. Truy cập [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).  
+1. Truy cập [phiên bản GroupDocs.Parser cho Java](https://releases.groupdocs.com/parser/java/).  
 2. Tải bộ JAR mới nhất.  
 3. Thêm các tệp JAR vào đường dẫn xây dựng của dự án.
 
 ### Các bước lấy giấy phép
-- **Free Trial:** Bắt đầu với bản dùng thử để khám phá tính năng.  
-- **Temporary License:** Yêu cầu để đánh giá kéo dài.  
-- **Purchase:** Mua giấy phép đầy đủ để sử dụng không giới hạn trong môi trường production.
+- **Bản dùng thử:** Bắt đầu với bản dùng thử để khám phá các tính năng.  
+- **Giấy phép tạm thời:** Yêu cầu để kéo dài thời gian đánh giá.  
+- **Mua bản quyền:** Nhận giấy phép đầy đủ để sử dụng không giới hạn trong môi trường sản xuất.
 
 ### Khởi tạo và cài đặt cơ bản
-Để xác minh thư viện hoạt động, chạy ví dụ đơn giản sau:
+Để xác nhận thư viện hoạt động, chạy ví dụ đơn giản sau:
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -175,42 +196,39 @@ public class ZipArchiveExample {
 }
 ```
 
-Nếu console in ra *Initialization successful!*, bạn đã sẵn sàng để đi sâu hơn.
+Nếu console in ra *Initialization successful!*, bạn đã sẵn sàng để tiếp tục.
 
 ## Hướng dẫn triển khai
 
-### Làm thế nào để lặp qua các mục trong ZIP archive bằng Java?
-Tải ZIP của bạn bằng một instance `Parser` và lặp qua mỗi `ContainerItem` để đọc tên và kích thước tệp—toàn bộ thao tác này hoàn thành trong hai bước ngắn gọn. Khối `try‑with‑resources` đảm bảo archive được đóng tự động, ngăn ngừa rò rỉ tài nguyên. Phương pháp này hoạt động cho cả archive nhỏ và lớn, cung cấp hiệu năng ổn định bất kể số lượng mục.
+### Bạn duyệt các mục trong kho ZIP bằng Java như thế nào?
 
-### Lặp qua các mục trong ZIP Archive
+Tải ZIP của bạn bằng một thể hiện `Parser` và lặp qua mỗi `ContainerItem` để đọc tên tệp và kích thước — đây là cốt lõi của **liệt kê các tệp trong zip**. Khối `try‑with‑resources` đảm bảo kho lưu trữ được đóng tự động, ngăn ngừa rò rỉ tài nguyên. Phương pháp này hoạt động cho cả kho lưu trữ nhỏ và lớn, cung cấp hiệu năng ổn định bất kể số lượng mục.
 
 #### Tổng quan
-Lặp qua ZIP archive cho phép bạn truy cập lập trình vào mỗi mục, cho phép đọc siêu dữ liệu như tên tệp và kích thước mà không cần giải nén toàn bộ archive.
+Duyệt qua một kho ZIP cho phép bạn truy cập lập trình vào mỗi mục, đọc siêu dữ liệu như tên tệp và kích thước mà không cần giải nén toàn bộ kho.
 
-#### Triển khai từng bước
+#### Thực hiện từng bước
 
-**Bước 1: Khởi tạo đối tượng Parser**  
-Tạo một instance `Parser` trỏ tới tệp ZIP của bạn.
+**Bước 1: khởi tạo đối tượng parser**  
+`Parser` là lớp chính của GroupDocs.Parser để mở các tệp container. Tạo một thể hiện `Parser` trỏ tới tệp ZIP của bạn.
 
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/sample.zip")) {
     // The parser is now ready for use
 }
 ```  
-*Definition:* Lớp `Parser` là điểm vào của GroupDocs.Parser để mở và kiểm tra các tệp container.  
-*Explanation:* Đối tượng `Parser` quản lý quyền truy cập vào archive. Sử dụng *try‑with‑resources* đảm bảo dọn dẹp đúng cách.
+*Giải thích:* Đối tượng `Parser` quản lý quyền truy cập vào kho lưu trữ. Sử dụng *try‑with‑resources* đảm bảo dọn dẹp đúng cách.
 
-**Bước 2: Trích xuất các attachment từ Container**  
-Lấy danh sách có thể lặp được của tất cả các mục bên trong ZIP.
+**Bước 2: trích xuất tệp đính kèm từ container**  
+`ContainerItem` đại diện cho một mục đơn lẻ (tệp hoặc thư mục) trong container như kho ZIP. Lấy danh sách iterable của tất cả các mục trong ZIP.
 
 ```java
 Iterable<ContainerItem> attachments = parser.getContainer();
 ```  
-*Definition:* `ContainerItem` đại diện cho một mục duy nhất (tệp hoặc thư mục) trong một container như ZIP archive.  
-*Explanation:* `getContainer()` trả về một tập hợp các đối tượng `ContainerItem`, mỗi đối tượng đại diện cho một tệp hoặc thư mục trong archive.
+*Giải thích:* `getContainer()` trả về một collection các đối tượng `ContainerItem`, mỗi đối tượng đại diện cho một tệp hoặc thư mục trong kho.
 
-**Bước 3: Kiểm tra hỗ trợ và lặp qua các Attachment**  
-Xác nhận rằng việc trích xuất container được hỗ trợ, sau đó lặp qua mỗi mục.
+**Bước 3: kiểm tra hỗ trợ và duyệt qua các tệp đính kèm**  
+Xác nhận rằng việc trích xuất container được hỗ trợ, sau đó lặp qua mỗi mục. Vòng lặp in ra tên và kích thước của mỗi mục, cung cấp một bản kiểm kê nhanh của kho.
 
 ```java
 if (attachments == null) {
@@ -222,75 +240,82 @@ if (attachments == null) {
     }
 }
 ```  
-*Explanation:* Luôn kiểm tra hỗ trợ trước khi lặp. Vòng lặp in ra tên và kích thước của mỗi mục, cung cấp một danh sách kiểm kê nhanh của archive.
+*Giải thích:* Luôn xác minh hỗ trợ trước khi duyệt. Vòng lặp in ra tên và kích thước của mỗi mục, cung cấp kết quả “liệt kê các tệp trong zip” mà bạn cần.
 
-**Bước 4: Xử lý ngoại lệ**  
-Bắt các lỗi liên quan đến định dạng một cách nhẹ nhàng.
+**Bước 4: xử lý ngoại lệ**  
+Bắt các lỗi liên quan đến định dạng một cách nhẹ nhàng để tránh treo ứng dụng khi gặp kho không hỗ trợ hoặc bị hỏng.
 
 ```java
 } catch (UnsupportedDocumentFormatException e) {
     System.err.println("Document format is not supported.");
 }
 ```  
-*Explanation:* Điều này đảm bảo các archive không được hỗ trợ hoặc bị hỏng không làm ứng dụng của bạn bị sập và cung cấp phản hồi rõ ràng.
+*Giải thích:* Điều này đảm bảo các kho không được hỗ trợ hoặc bị hỏng không làm ứng dụng của bạn sập và cung cấp phản hồi rõ ràng.
 
 #### Mẹo khắc phục sự cố
-- Xác minh đường dẫn tệp ZIP đúng và có thể truy cập.  
-- Đảm bảo bạn đang sử dụng phiên bản GroupDocs.Parser hỗ trợ trích xuất container; tham khảo [documentation](https://docs.groupdocs.com/parser/java/).  
-- Nếu nhận được `UnsupportedDocumentFormatException`, kiểm tra lại xem loại archive có được hỗ trợ không hoặc cập nhật lên phiên bản thư viện mới nhất.
+- Kiểm tra lại đường dẫn tệp ZIP có đúng và có thể truy cập không.  
+- Đảm bảo bạn đang dùng phiên bản GroupDocs.Parser hỗ trợ trích xuất container; tham khảo [tài liệu mới nhất](https://docs.groupdocs.com/parser/java/).  
+- Nếu nhận được `UnsupportedDocumentFormatException`, kiểm tra lại xem loại kho có được hỗ trợ không hoặc cập nhật lên phiên bản thư viện mới nhất.
 
 ## Ứng dụng thực tiễn
 
-1. **Data Management:** Xây dựng báo cáo kiểm kê các tệp lưu trong backup.  
-2. **Backup Verification:** Xác nhận kích thước tệp khớp với giá trị mong đợi trước khi khôi phục.  
-3. **Content Aggregation:** Thu thập siêu dữ liệu trước khi xử lý tài liệu hàng loạt.  
-4. **CRM Integration:** Tự động điền thông tin vào hồ sơ với chi tiết tệp được trích xuất từ archive đã tải lên.  
-5. **Compliance Reporting:** Tạo danh sách sẵn sàng kiểm toán của các tài sản đã lưu trữ.
+1. **Quản lý dữ liệu:** Xây dựng báo cáo kiểm kê các tệp lưu trong sao lưu.  
+2. **Xác thực sao lưu:** Xác nhận kích thước tệp khớp với giá trị mong đợi trước khi khôi phục.  
+3. **Tổng hợp nội dung:** Thu thập siêu dữ liệu trước khi xử lý tài liệu hàng loạt.  
+4. **Tích hợp CRM:** Tự động điền hồ sơ với chi tiết tệp được trích xuất từ các kho tải lên.  
+5. **Báo cáo tuân thủ:** Tạo danh sách tài sản lưu trữ sẵn sàng cho kiểm toán.
 
 ## Các cân nhắc về hiệu năng
 
-- **Memory Management:** Sử dụng *try‑with‑resources* (như đã trình bày) để giải phóng tài nguyên kịp thời.  
-- **Batch Processing:** Đối với các archive lớn, xử lý các mục theo lô nhỏ hơn để tránh tăng đột biến bộ nhớ.  
-- **Parallel Execution:** Khi xử lý nhiều archive, cân nhắc sử dụng parallel streams của Java hoặc executor services để tăng tốc xử lý.
+- **Quản lý bộ nhớ:** Sử dụng *try‑with‑resources* (như đã minh họa) để giải phóng tài nguyên kịp thời.  
+- **Xử lý theo lô:** Đối với các kho lớn, xử lý các mục theo các lô nhỏ để tránh tăng đột biến bộ nhớ.  
+- **Thực thi song song:** Khi xử lý nhiều kho, cân nhắc sử dụng parallel streams của Java hoặc executor services để tăng tốc.
 
 ## Các vấn đề thường gặp và giải pháp
 
 | Vấn đề | Nguyên nhân | Giải pháp |
-|-------|-------|----------|
-| `Container extraction isn't supported.` | Sử dụng phiên bản thư viện cũ. | Nâng cấp lên bản phát hành GroupDocs.Parser mới nhất. |
-| `UnsupportedDocumentFormatException` | Kiểu archive không được nhận dạng. | Xác minh tệp là ZIP được hỗ trợ hoặc chuyển sang định dạng container được hỗ trợ. |
-| No output printed | `attachments` returned `null`. | Đảm bảo ZIP không rỗng và đường dẫn đúng. |
-| Memory overflow on large archives | Loading all entries at once. | Xử lý các mục theo khối hoặc sử dụng streaming APIs nếu có. |
+|-------|-------------|----------|
+| `Container extraction isn't supported.` | Sử dụng phiên bản thư viện cũ. | Nâng cấp lên phiên bản GroupDocs.Parser mới nhất. |
+| `UnsupportedDocumentFormatException` | Kiểu kho không được nhận dạng. | Xác minh tệp là ZIP được hỗ trợ hoặc chuyển sang định dạng container được hỗ trợ. |
+| No output printed | `attachments` trả về `null`. | Đảm bảo ZIP không rỗng và đường dẫn đúng. |
+| Memory overflow on large archives | Tải tất cả các mục cùng lúc. | Xử lý các mục theo lô hoặc sử dụng API streaming nếu có. |
 
 ## Câu hỏi thường gặp
 
-**Q: Mục đích chính của GroupDocs.Parser cho Java là gì?**  
-A: Nó đơn giản hoá việc trích xuất dữ liệu và siêu dữ liệu từ nhiều định dạng tài liệu và container, cho phép tự động hoá việc tạo kiểm kê, lập chỉ mục nội dung và di chuyển dữ liệu.
+**Q:** Mục đích chính của GroupDocs.Parser cho Java là gì?  
+**A:** Nó đơn giản hoá việc trích xuất dữ liệu và siêu dữ liệu từ nhiều định dạng tài liệu và container, cho phép tự động hoá tạo báo cáo kiểm kê, lập chỉ mục nội dung và di chuyển dữ liệu.
 
-**Q: Tôi có thể xử lý các định dạng archive khác ngoài ZIP không?**  
-A: Có, GroupDocs.Parser cũng hỗ trợ RAR, TAR, 7z và các loại container khác.
+**Q:** Tôi có thể xử lý các định dạng kho lưu trữ khác ngoài ZIP không?  
+**A:** Có, GroupDocs.Parser cũng hỗ trợ RAR, TAR, 7z và các loại container khác.
 
-**Q: Tôi nên làm gì nếu gặp `UnsupportedDocumentFormatException`?**  
-A: Xác minh rằng định dạng archive của bạn có trong danh sách các định dạng được hỗ trợ trên [latest documentation](https://docs.groupdocs.com/parser/java/) hoặc nâng cấp lên phiên bản thư viện mới nhất.
+**Q:** Tôi nên làm gì nếu gặp `UnsupportedDocumentFormatException`?  
+**A:** Kiểm tra xem định dạng kho của bạn có nằm trong danh sách được hỗ trợ trên [tài liệu mới nhất](https://docs.groupdocs.com/parser/java/) hoặc nâng cấp lên phiên bản thư viện mới nhất.
 
-**Q: Làm thế nào để xử lý hiệu quả các tệp ZIP rất lớn?**  
-A: Sử dụng xử lý theo lô, truyền dữ liệu các mục khi có thể, và cân nhắc thực hiện lặp song song trên nhiều luồng.
+**Q:** Làm sao để xử lý hiệu quả các tệp ZIP rất lớn?  
+**A:** Sử dụng xử lý theo lô, stream các mục khi có thể, và cân nhắc song song hoá việc duyệt qua nhiều kho bằng các luồng hoặc executor services.
 
-**Q: Có cần giấy phép cho việc sử dụng trong môi trường production không?**  
-A: Một giấy phép GroupDocs.Parser hợp lệ là bắt buộc cho triển khai production; bản dùng thử miễn phí có sẵn để đánh giá.
+**Q:** Có cần giấy phép cho việc sử dụng trong môi trường sản xuất không?  
+**A:** Cần một giấy phép GroupDocs.Parser hợp lệ cho triển khai sản xuất; bản dùng thử chỉ dành cho đánh giá.
 
 ## Kết luận
 
-Trong **GroupDocs Parser Java tutorial** này, bạn đã học cách cài đặt GroupDocs.Parser, lặp qua các mục trong ZIP archive và trích xuất siêu dữ liệu hữu ích như tên và kích thước tệp. Những kỹ thuật này giảm công sức thủ công, nâng cao độ chính xác dữ liệu và tích hợp mượt mà với các hệ thống downstream. Khám phá các tính năng bổ sung như chuyển đổi tài liệu hoặc trích xuất văn bản để mở rộng sức mạnh của GroupDocs.Parser trong các ứng dụng Java của bạn.
+Trong **GroupDocs Parser Java tutorial** này, bạn đã học cách cài đặt GroupDocs.Parser, duyệt qua các mục trong kho ZIP và trích xuất siêu dữ liệu hữu ích như tên tệp và kích thước. Những kỹ thuật này giảm công việc thủ công, nâng cao độ chính xác dữ liệu và tích hợp mượt mà với các hệ thống downstream. Khám phá các tính năng bổ sung như chuyển đổi tài liệu hoặc trích xuất văn bản để mở rộng sức mạnh của GroupDocs.Parser trong các ứng dụng Java của bạn.
 
 ---
 
-**Cập nhật lần cuối:** 2026-05-23  
-**Đã kiểm tra với:** GroupDocs.Parser 25.5 for Java  
+**Cập nhật lần cuối:** 2026-08-26  
+**Được kiểm tra với:** GroupDocs.Parser 25.5 for Java  
 **Tác giả:** GroupDocs
 
-## Hướng dẫn liên quan
+## Các hướng dẫn liên quan
 
-- [Phát hiện loại tệp Java trong ZIP Archives bằng GroupDocs.Parser cho Java](/parser/java/container-formats/detect-file-types-zip-groupdocs-parser-java/)
-- [Cách trích xuất các mục Container từ tài liệu bằng GroupDocs.Parser cho Java](/parser/java/container-formats/extract-container-items-groupdocs-parser-java/)
+- [Phát hiện loại tệp Java trong các kho ZIP bằng GroupDocs.Parser cho Java](/parser/java/container-formats/detect-file-types-zip-groupdocs-parser-java/)
+- [Cách trích xuất các mục container từ tài liệu bằng GroupDocs.Parser cho Java](/parser/java/container-formats/extract-container-items-groupdocs-parser-java/)
 - [Trích xuất Văn bản & Siêu dữ liệu từ tệp ZIP bằng GroupDocs.Parser Java: Hướng dẫn đầy đủ cho nhà phát triển](/parser/java/container-formats/extract-text-metadata-zip-files-groupdocs-parser-java/)
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

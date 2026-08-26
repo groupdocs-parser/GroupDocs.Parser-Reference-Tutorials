@@ -1,15 +1,22 @@
 ---
-date: '2026-05-23'
-description: เรียนรู้วิธีการวนซ้ำไฟล์ ZIP ด้วย Java โดยใช้ GroupDocs.Parser for Java,
-  ดึงชื่อไฟล์และขนาด, และจัดการไฟล์เก็บข้อมูลขนาดใหญ่อย่างมีประสิทธิภาพ.
+date: '2026-08-26'
+description: เรียนรู้วิธีแสดงรายการไฟล์ใน zip archive ด้วย GroupDocs Parser for Java,
+  ดึงชื่อไฟล์ zip และตรวจสอบขนาดไฟล์ zip อย่างมีประสิทธิภาพ รองรับ archive ขนาดใหญ่ถึง
+  2 GB.
 keywords:
-- iterate zip archive java
+- list files in zip
 - extract zip file names
-- read zip without extraction
-- java process zip archives
+- verify zip file sizes
+lastmod: '2026-08-26'
+og_description: เรียนรู้วิธีแสดงรายการไฟล์ใน zip archive ด้วย GroupDocs Parser for
+  Java, ดึงชื่อไฟล์ zip และตรวจสอบขนาดไฟล์ zip อย่างมีประสิทธิภาพ รองรับ archive ขนาดใหญ่ถึง
+  2 GB.
+og_image_alt: Guide showing how to list files in zip archives using GroupDocs Parser
+  for Java
+og_title: วิธีแสดงรายการไฟล์ใน zip ด้วย GroupDocs Parser for Java
 schemas:
 - author: GroupDocs
-  dateModified: '2026-05-23'
+  dateModified: '2026-08-26'
   description: Learn how to iterate zip archive java using GroupDocs.Parser for Java,
     extract file names and sizes, and handle large archives efficiently.
   headline: GroupDocs Parser Java Tutorial - Iterate Through ZIP Archives
@@ -60,62 +67,53 @@ schemas:
       a free trial is available for evaluation.
     question: Is a license required for production use?
   type: FAQPage
-title: บทเรียน GroupDocs Parser Java - การวนซ้ำผ่านไฟล์ ZIP
+tags:
+- list files in zip
+- extract zip file names
+- verify zip file sizes
+- GroupDocs Parser
+- Java archive processing
+title: วิธีแสดงรายการไฟล์ใน zip ด้วย GroupDocs Parser for Java
 type: docs
 url: /th/java/container-formats/iterate-zip-archive-groupdocs-parser-java/
 weight: 1
 ---
 
-# วนซ้ำไฟล์ ZIP ใน Java ด้วย GroupDocs Parser
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
 
-ใน **GroupDocs Parser Java tutorial** นี้ คุณจะได้ค้นพบวิธี **วนซ้ำไฟล์ ZIP ใน Java** อย่างรวดเร็วและเชื่อถือได้ โดยการโหลดไฟล์ ZIP ด้วยคลาส `Parser` คุณสามารถดึงชื่อและขนาดของแต่ละรายการได้โดยไม่ต้องแตกไฟล์ทั้งหมด — เหมาะสำหรับการตรวจสอบสินค้าคงคลัง, รายงานการปฏิบัติตาม, หรือการป้อน metadata ไปยังระบบ downstream. วิธีนี้ทำงานกับ JDK 8+ และสามารถขยายได้ถึงไฟล์หลายร้อยหน้า.
+# วิธีแสดงรายการไฟล์ใน zip ด้วย GroupDocs Parser สำหรับ Java
+
+ใน **GroupDocs Parser Java tutorial** นี้คุณจะได้เรียนรู้วิธี **แสดงรายการไฟล์ใน zip** อย่างรวดเร็วและเชื่อถือได้ โดยการโหลดไฟล์ ZIP ด้วยคลาส `Parser` คุณสามารถดึงชื่อและขนาดของแต่ละรายการได้โดยไม่ต้องแตกไฟล์ทั้งหมด—เหมาะสำหรับการตรวจสอบรายการ, รายงานการปฏิบัติตาม, หรือการส่งเมตาดาต้าไปยังระบบ downstream วิธีนี้ทำงานกับ JDK 8+ และสามารถจัดการกับไฟล์ขนาดหลายร้อยหน้า สูงสุดถึง 2 GB
 
 ## คำตอบสั้น
-- **บทเรียนนี้ครอบคลุมอะไร?** การวนซ้ำไฟล์ ZIP และการดึง metadata ของไฟล์ด้วย GroupDocs.Parser สำหรับ Java.  
-- **ฉันต้องการไลเซนส์หรือไม่?** การทดลองใช้ฟรีทำงานสำหรับการประเมิน; จำเป็นต้องมีไลเซนส์ถาวรสำหรับการใช้งานจริง.  
-- **ต้องการเวอร์ชัน Java ใด?** JDK 8 หรือใหม่กว่า.  
-- **ฉันสามารถประมวลผลประเภทไฟล์อาร์ไคฟ์อื่นได้หรือไม่?** ได้—GroupDocs.Parser ยังรองรับ RAR, TAR, 7z และอื่น ๆ อีกมาก.  
-- **ใช้เวลานานเท่าไหร่ในการทำงานนี้?** โดยทั่วไปใช้เวลาน้อยกว่า 15 นาทีสำหรับการตั้งค่าเบื้องต้น.
+- **บทเรียนนี้ครอบคลุมอะไร?** การวนลูป ZIP archives และดึงเมตาดาต้าไฟล์ด้วย GroupDocs.Parser สำหรับ Java  
+- **ต้องมีลิขสิทธิ์หรือไม่?** มี trial ฟรีสำหรับการประเมิน; ต้องมีลิขสิทธิ์ถาวรสำหรับการใช้งานจริง  
+- **ต้องใช้ Java เวอร์ชันใด?** JDK 8 หรือใหม่กว่า  
+- **สามารถประมวลผลประเภท archive อื่นได้หรือไม่?** ได้—GroupDocs.Parser รองรับ RAR, TAR, 7z และอื่น ๆ อีกมาก  
+- **ใช้เวลาติดตั้งเท่าไหร่?** ปกติใช้เวลาน้อยกว่า 15 นาทีสำหรับการตั้งค่าเบื้องต้น
 
-## GroupDocs Parser Java Tutorial คืออะไร?
+## GroupDocs Parser Java tutorial คืออะไร?
 
-A **GroupDocs Parser Java tutorial** เป็นคู่มือสั้น ๆ ที่อธิบายขั้นตอนโดยละเอียดที่แสดงวิธีฝังไลบรารี GroupDocs.Parser ลงในโครงการ Java ทำให้คุณสามารถอ่าน, ดึงออก, และจัดการข้อมูลจากรูปแบบเอกสารและคอนเทนเนอร์ที่หลากหลายได้ มันจะนำคุณผ่านการตั้งค่า, ตัวอย่างโค้ด, และแนวปฏิบัติที่ดีที่สุด ทำให้ผู้พัฒนาทุกระดับทักษะสามารถเริ่มต้นได้อย่างรวดเร็ว.
+**GroupDocs Parser Java tutorial** คือคู่มือสั้น ๆ ที่อธิบายขั้นตอนการนำไลบรารี GroupDocs.Parser ไปใช้ในโปรเจกต์ Java เพื่ออ่าน, แตกและจัดการข้อมูลจากรูปแบบเอกสารและคอนเทนเนอร์หลากหลาย มันจะพาคุณผ่านการตั้งค่า, ตัวอย่างโค้ด, และแนวปฏิบัติที่ดีที่สุด ทำให้ผู้พัฒนาทุกระดับสามารถเริ่มต้นได้อย่างรวดเร็ว
 
-## ทำไมต้องวนซ้ำไฟล์ ZIP?
+## ทำไมต้องวนลูปผ่าน ZIP archives?
 
-การวนซ้ำไฟล์ ZIP ทำให้คุณ **ตรวจสอบเนื้อหาโดยไม่ต้องแตกไฟล์ทั้งหมด** สร้างรายงานสินค้าคงคลัง, ตรวจสอบความสมบูรณ์ของไฟล์, และป้อน metadata ไปยังระบบ downstream — ทั้งหมดนี้โดยใช้หน่วยความจำน้อย วิธีนี้ยังลดภาระ I/O และหลีกเลี่ยงความเสี่ยงของการเขียนทับไฟล์ที่มีอยู่บนเซิร์ฟเวอร์, ทำให้กระบวนการตรวจสอบปลอดภัยยิ่งขึ้น.  
-- **ความเร็ว:** คุณสามารถแสดงรายการหลายพันรายการได้ภายในไม่กี่วินาทีบนเซิร์ฟเวอร์ทั่วไป.  
-- **ความปลอดภัย:** ไม่จำเป็นต้องเขียนไฟล์ชั่วคราวลงดิสก์ ลดความเสี่ยงด้านความปลอดภัย.  
-- **ความสามารถในการขยาย:** รองรับไฟล์อาร์ไคฟ์ขนาดถึง 2 GB โดยไม่ต้องโหลดไฟล์ทั้งหมดเข้าสู่หน่วยความจำ.
+การวนลูปผ่าน ZIP archives ช่วยให้คุณ **ตรวจสอบเนื้อหาโดยไม่ต้องแตกไฟล์ทั้งหมด**, สร้างรายงานรายการ, ตรวจสอบความสมบูรณ์ของไฟล์, และส่งเมตาดาต้าไปยังระบบ downstream—all while keeping memory usage low วิธีนี้ยังลดภาระ I/O และหลีกเลี่ยงความเสี่ยงของการเขียนทับไฟล์ที่มีอยู่บนเซิร์ฟเวอร์ ทำให้กระบวนการตรวจสอบปลอดภัยยิ่งขึ้น  
+
+- **ความเร็ว:** สามารถแสดงรายการหลายพันรายการได้ภายในไม่กี่วินาทีบนเซิร์ฟเวอร์ทั่วไป  
+- **ความปลอดภัย:** ไม่ต้องเขียนไฟล์ชั่วคราวลงดิสก์ ลดความเสี่ยงด้านความปลอดภัย  
+- **ความสามารถขยาย:** รองรับ archive ขนาดถึง 2 GB โดยไม่ต้องโหลดไฟล์ทั้งหมดเข้าสู่หน่วยความจำ
 
 ## ข้อกำหนดเบื้องต้น
 
-- **IDE:** IntelliJ IDEA, Eclipse หรือเครื่องมือแก้ไขที่รองรับ Java ใด ๆ.  
-- **JDK:** เวอร์ชัน 8 หรือใหม่กว่า.  
-- **Maven** (เป็นตัวเลือกแต่แนะนำ) สำหรับการจัดการ dependencies.  
+- **IDE:** IntelliJ IDEA, Eclipse หรือ editor ที่รองรับ Java ใด ๆ  
+- **JDK:** เวอร์ชัน 8 หรือใหม่กว่า  
+- **Maven** (ไม่บังคับแต่แนะนำ) สำหรับจัดการ dependency  
 
-### ไลบรารีและ Dependencies ที่จำเป็น
-ตรวจสอบให้แน่ใจว่าโครงการของคุณรวม dependencies เหล่านี้ผ่าน Maven หรือดาวน์โหลดโดยตรง หากใช้ Maven ให้เพิ่มการกำหนดค่าเหล่านี้ในไฟล์ `pom.xml` ของคุณ:
-
-```xml
-<repositories>
-   <repository>
-      <id>repository.groupdocs.com</id>
-      <name>GroupDocs Repository</name>
-      <url>https://releases.groupdocs.com/parser/java/</url>
-   </repository>
-</repositories>
-
-<dependencies>
-   <dependency>
-      <groupId>com.groupdocs</groupId>
-      <artifactId>groupdocs-parser</artifactId>
-      <version>25.5</version>
-   </dependency>
-</dependencies>
-```
-
-คุณยังสามารถดูเวอร์ชันทั้งหมดได้ที่ [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
+### ไลบรารีและ dependency ที่ต้องใช้
+ตรวจสอบให้โปรเจกต์ของคุณรวม dependency เหล่านี้ผ่าน Maven หรือดาวน์โหลดโดยตรง หากใช้ Maven ให้เพิ่มการกำหนดค่าต่อไปนี้ในไฟล์ `pom.xml` ของคุณ:
 
 ```xml
 <repositories>
@@ -135,31 +133,51 @@ A **GroupDocs Parser Java tutorial** เป็นคู่มือสั้น 
 </dependencies>
 ```
 
-หรือดาวน์โหลดเวอร์ชันล่าสุดโดยตรงจาก [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
+คุณสามารถดูเวอร์ชันทั้งหมดได้ที่ [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/)
 
-### ข้อกำหนดการตั้งค่าสภาพแวดล้อม
-- IDE สมัยใหม่เช่น IntelliJ IDEA หรือ Eclipse.  
-- JDK 8 หรือใหม่กว่า ติดตั้งบนเครื่องของคุณ.
+```xml
+<repositories>
+   <repository>
+      <id>repository.groupdocs.com</id>
+      <name>GroupDocs Repository</name>
+      <url>https://releases.groupdocs.com/parser/java/</url>
+   </repository>
+</repositories>
 
-### ความรู้ที่ต้องมีก่อน
-- ความรู้พื้นฐานการเขียนโปรแกรม Java.  
-- ความคุ้นเคยกับ Maven (หรือการจัดการ JAR ด้วยตนเอง).  
-- ความเข้าใจแนวคิดไฟล์ ZIP (เป็นประโยชน์แต่ไม่จำเป็น).
+<dependencies>
+   <dependency>
+      <groupId>com.groupdocs</groupId>
+      <artifactId>groupdocs-parser</artifactId>
+      <version>25.5</version>
+   </dependency>
+</dependencies>
+```
+
+หรือดาวน์โหลดเวอร์ชันล่าสุดโดยตรงจาก [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) สำหรับข้อมูลเพิ่มเติม ดูที่ [latest documentation](https://docs.groupdocs.com/parser/java/)
+
+### ความต้องการในการตั้งค่าสภาพแวดล้อม
+- IDE สมัยใหม่ เช่น IntelliJ IDEA หรือ Eclipse  
+- JDK 8 หรือใหม่กว่า ติดตั้งบนเครื่องของคุณ
+
+### ความรู้พื้นฐานที่ต้องมี
+- การเขียนโปรแกรม Java เบื้องต้น  
+- ความคุ้นเคยกับ Maven (หรือการจัดการ JAR ด้วยตนเอง)  
+- ความเข้าใจพื้นฐานเกี่ยวกับไฟล์ ZIP (ไม่จำเป็นแต่เป็นประโยชน์)
 
 ## การตั้งค่า GroupDocs.Parser สำหรับ Java
 
 ### การติดตั้งผ่าน Maven
-เพิ่ม repository และ snippet ของ dependency ที่แสดงข้างต้นลงในไฟล์ `pom.xml` ของคุณ Maven จะดึงไลบรารีโดยอัตโนมัติ.
+เพิ่ม repository และ dependency ที่แสดงด้านบนลงใน `pom.xml` Maven จะดึงไลบรารีให้โดยอัตโนมัติ
 
 ### วิธีดาวน์โหลดโดยตรง
-1. เยี่ยมชม [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).  
-2. ดาวน์โหลด JAR bundle ล่าสุด.  
-3. เพิ่มไฟล์ JAR ไปยัง build path ของโครงการของคุณ.
+1. ไปที่ [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/)  
+2. ดาวน์โหลด JAR bundle ล่าสุด  
+3. เพิ่มไฟล์ JAR ลงใน build path ของโปรเจกต์
 
-### ขั้นตอนการรับไลเซนส์
-- **Free Trial:** เริ่มต้นด้วยการทดลองใช้เพื่อสำรวจฟีเจอร์.  
-- **Temporary License:** ขอไลเซนส์ชั่วคราวสำหรับการประเมินต่อเนื่อง.  
-- **Purchase:** ซื้อไลเซนส์เต็มรูปแบบสำหรับการใช้งานในผลิตภัณฑ์โดยไม่จำกัด.
+### ขั้นตอนการขอรับลิขสิทธิ์
+- **Trial ฟรี:** เริ่มต้นด้วย trial เพื่อสำรวจฟีเจอร์  
+- **ลิขสิทธิ์ชั่วคราว:** ขอเพื่อการประเมินระยะยาว  
+- **ซื้อ:** รับลิขสิทธิ์เต็มสำหรับการใช้งานใน production ไม่จำกัด
 
 ### การเริ่มต้นและตั้งค่าเบื้องต้น
 เพื่อยืนยันว่าไลบรารีทำงานได้ ให้รันตัวอย่างง่าย ๆ นี้:
@@ -178,42 +196,39 @@ public class ZipArchiveExample {
 }
 ```
 
-หากคอนโซลพิมพ์ *Initialization successful!*, คุณพร้อมที่จะดำเนินการต่อ.
+หากคอนโซลพิมพ์ *Initialization successful!* คุณพร้อมที่จะดำเนินการต่อ
 
 ## คู่มือการนำไปใช้
 
-### คุณจะวนซ้ำรายการไฟล์ ZIP ใน Java อย่างไร?
-โหลดไฟล์ ZIP ของคุณด้วยอินสแตนซ์ `Parser` แล้ววนลูปผ่านแต่ละ `ContainerItem` เพื่ออ่านชื่อไฟล์และขนาด — การดำเนินการทั้งหมดนี้เสร็จในสองขั้นตอนสั้น ๆ บล็อก `try‑with‑resources` จะทำให้ไฟล์อาร์ไคฟ์ปิดโดยอัตโนมัติ ป้องกันการรั่วของทรัพยากร วิธีนี้ทำงานได้ทั้งไฟล์ขนาดเล็กและใหญ่ ให้ประสิทธิภาพสม่ำเสมอไม่ว่าจำนวนรายการจะเท่าใด.
+### วิธีวนลูปรายการใน ZIP archive ด้วย Java?
 
-### การวนซ้ำรายการไฟล์ ZIP
+โหลด ZIP ด้วยอินสแตนซ์ `Parser` แล้ววนลูป `ContainerItem` แต่ละรายการเพื่ออ่านชื่อไฟล์และขนาด — นี่คือหัวใจของ **การแสดงรายการไฟล์ใน zip** `try‑with‑resources` จะปิด archive โดยอัตโนมัติ ป้องกันการรั่วของทรัพยากร วิธีนี้ทำงานได้ทั้ง archive ขนาดเล็กและใหญ่ ให้ประสิทธิภาพคงที่ไม่ว่า entry จะมีกี่รายการ
 
 #### ภาพรวม
-การวนซ้ำไฟล์ ZIP ให้คุณเข้าถึงแต่ละรายการแบบโปรแกรมเมติก ทำให้คุณสามารถอ่าน metadata เช่น ชื่อไฟล์และขนาดโดยไม่ต้องแตกไฟล์ทั้งหมด.
+การวนลูปผ่าน ZIP archive ให้คุณเข้าถึงแต่ละ entry โปรแกรมได้ ทำให้สามารถอ่านเมตาดาต้าเช่นชื่อไฟล์และขนาดโดยไม่ต้องแตกไฟล์ทั้งหมด
 
-#### การดำเนินการตามขั้นตอน
+#### การทำตามขั้นตอน
 
-**ขั้นตอนที่ 1: เริ่มต้นอ็อบเจ็กต์ Parser**  
-Create a `Parser` instance that points to your ZIP file.
+**ขั้นตอนที่ 1: สร้างอ็อบเจกต์ parser**  
+`Parser` เป็นคลาสหลักของ GroupDocs.Parser สำหรับเปิดไฟล์คอนเทนเนอร์ สร้างอินสแตนซ์ `Parser` ที่ชี้ไปยังไฟล์ ZIP ของคุณ
 
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/sample.zip")) {
     // The parser is now ready for use
 }
 ```  
-*Definition:* คลาส `Parser` เป็นจุดเริ่มต้นของ GroupDocs.Parser สำหรับการเปิดและตรวจสอบไฟล์คอนเทนเนอร์.  
-*Explanation:* อ็อบเจ็กต์ `Parser` จัดการการเข้าถึงอาร์ไคฟ์ ใช้ *try‑with‑resources* เพื่อรับประกันการทำความสะอาดที่เหมาะสม.
+*คำอธิบาย:* อ็อบเจกต์ `Parser` จัดการการเข้าถึง archive การใช้ *try‑with‑resources* รับประกันการทำความสะอาดที่เหมาะสม
 
-**ขั้นตอนที่ 2: ดึง Attachments จาก Container**  
-Retrieve an iterable list of all items inside the ZIP.
+**ขั้นตอนที่ 2: ดึง attachment จากคอนเทนเนอร์**  
+`ContainerItem` แทน entry หนึ่ง (ไฟล์หรือโฟลเดอร์) ภายในคอนเทนเนอร์ เช่น ZIP ดึงรายการ iterable ของทุก item ภายใน ZIP
 
 ```java
 Iterable<ContainerItem> attachments = parser.getContainer();
 ```  
-*Definition:* `ContainerItem` แสดงรายการเดียว (ไฟล์หรือโฟลเดอร์) ภายในคอนเทนเนอร์เช่นไฟล์ ZIP.  
-*Explanation:* `getContainer()` คืนค่าคอลเลกชันของอ็อบเจ็กต์ `ContainerItem` แต่ละอันแทนไฟล์หรือโฟลเดอร์ภายในอาร์ไคฟ์.
+*คำอธิบาย:* `getContainer()` คืนคอลเลกชันของอ็อบเจกต์ `ContainerItem` แต่ละอันแทนไฟล์หรือโฟลเดอร์ใน archive
 
-**ขั้นตอนที่ 3: ตรวจสอบการสนับสนุนและวนซ้ำ Attachments**  
-Confirm that container extraction is supported, then loop through each item.
+**ขั้นตอนที่ 3: ตรวจสอบการสนับสนุนและวนลูป attachment**  
+ยืนยันว่าการดึงคอนเทนเนอร์ได้รับการสนับสนุน แล้ววนลูปแต่ละ item ลูปจะพิมพ์ชื่อและขนาดของแต่ละ entry ให้คุณเห็นรายการ inventory อย่างรวดเร็ว
 
 ```java
 if (attachments == null) {
@@ -225,75 +240,82 @@ if (attachments == null) {
     }
 }
 ```  
-*Explanation:* ตรวจสอบการสนับสนุนก่อนทำการวนซ้ำเสมอ ลูปจะพิมพ์ชื่อและขนาดของแต่ละรายการ ให้คุณได้รายการสินค้าคงคลังอย่างรวดเร็วของอาร์ไคฟ์.
+*คำอธิบาย:* ควรตรวจสอบการสนับสนุนก่อนวนลูป ลูปพิมพ์ชื่อและขนาดของแต่ละ entry ให้ผลลัพธ์ “list files in zip” ที่ต้องการ
 
-**ขั้นตอนที่ 4: จัดการ Exceptions**  
-Catch format‑related errors gracefully.
+**ขั้นตอนที่ 4: จัดการข้อยกเว้น**  
+ดักจับข้อผิดพลาดที่เกี่ยวกับรูปแบบไฟล์อย่างสุภาพ เพื่อหลีกเลี่ยงการหยุดทำงานเมื่อเจอ archive ที่ไม่รองรับหรือเสียหาย
 
 ```java
 } catch (UnsupportedDocumentFormatException e) {
     System.err.println("Document format is not supported.");
 }
 ```  
-*Explanation:* สิ่งนี้ทำให้แน่ใจว่าอาร์ไคฟ์ที่ไม่รองรับหรือเสียหายจะไม่ทำให้แอปพลิเคชันของคุณหยุดทำงานและให้ข้อเสนอแนะที่ชัดเจน.
+*คำอธิบาย:* ทำให้แอปพลิเคชันไม่หยุดทำงานเมื่อเจอ archive ที่ไม่รองรับหรือเสียหาย และให้ข้อมูลตอบกลับที่ชัดเจน
 
-#### เคล็ดลับการแก้ไขปัญหา
-- ตรวจสอบว่าเส้นทางไฟล์ ZIP ถูกต้องและเข้าถึงได้.  
-- ตรวจสอบว่าคุณใช้เวอร์ชันของ GroupDocs.Parser ที่รองรับการดึงคอนเทนเนอร์; ดูที่ [documentation](https://docs.groupdocs.com/parser/java/).  
-- หากคุณได้รับ `UnsupportedDocumentFormatException` ให้ตรวจสอบอีกครั้งว่าประเภทอาร์ไคฟ์ได้รับการสนับสนุนหรืออัปเดตเป็นเวอร์ชันล่าสุดของไลบรารี.
+#### เคล็ดลับการแก้ปัญหา
+- ตรวจสอบว่า path ของไฟล์ ZIP ถูกต้องและเข้าถึงได้  
+- ตรวจสอบว่าคุณใช้เวอร์ชัน GroupDocs.Parser ที่รองรับการดึงคอนเทนเนอร์; ดูที่ [latest documentation](https://docs.groupdocs.com/parser/java/)  
+- หากได้รับ `UnsupportedDocumentFormatException` ให้ตรวจสอบว่าไฟล์เป็น ZIP ที่รองรับหรืออัปเดตไลบรารีเป็นเวอร์ชันล่าสุด
 
 ## การประยุกต์ใช้งานจริง
 
-1. **Data Management:** สร้างรายงานสินค้าคงคลังของไฟล์ที่เก็บในสำรองข้อมูล.  
-2. **Backup Verification:** ยืนยันว่าขนาดไฟล์ตรงกับค่าที่คาดหวังก่อนทำการกู้คืน.  
-3. **Content Aggregation:** รวบรวม metadata ก่อนประมวลผลเอกสารเป็นชุด.  
-4. **CRM Integration:** เติมข้อมูลบันทึกอัตโนมัติด้วยรายละเอียดไฟล์ที่ดึงจากอาร์ไคฟ์ที่อัปโหลด.  
-5. **Compliance Reporting:** สร้างรายการที่พร้อมสำหรับการตรวจสอบของสินทรัพย์ที่เก็บไว้.
+1. **การจัดการข้อมูล:** สร้างรายงาน inventory ของไฟล์ที่เก็บใน backup  
+2. **การตรวจสอบ backup:** ยืนยันขนาดไฟล์ตรงกับค่าที่คาดไว้ก่อนกู้คืน  
+3. **การรวบรวมเนื้อหา:** เก็บเมตาดาต้าก่อนประมวลผลเอกสารเป็นชุดใหญ่  
+4. **การเชื่อมต่อ CRM:** เติมข้อมูลบันทึกอัตโนมัติด้วยรายละเอียดไฟล์จาก archive ที่อัปโหลด  
+5. **การรายงานการปฏิบัติตาม:** สร้างรายการ audit‑ready ของสินทรัพย์ที่เก็บใน archive  
 
-## การพิจารณาประสิทธิภาพ
+## พิจารณาด้านประสิทธิภาพ
 
-- **Memory Management:** ใช้ *try‑with‑resources* (ตามที่แสดง) เพื่อปล่อยทรัพยากรอย่างรวดเร็ว.  
-- **Batch Processing:** สำหรับอาร์ไคฟ์ขนาดใหญ่ ให้ประมวลผลรายการเป็นชุดเล็ก ๆ เพื่อหลีกเลี่ยงการเพิ่มขึ้นของหน่วยความจำ.  
-- **Parallel Execution:** เมื่อจัดการหลายอาร์ไคฟ์ พิจารณาใช้ parallel streams ของ Java หรือ executor services เพื่อเร่งการประมวลผล.
+- **การจัดการหน่วยความจำ:** ใช้ *try‑with‑resources* (ตามตัวอย่าง) เพื่อปล่อยทรัพยากรโดยเร็ว  
+- **การประมวลผลเป็นชุด:** สำหรับ archive ขนาดใหญ่ ให้ประมวลผลเป็น batch เล็ก ๆ เพื่อลดการกระตุ้นหน่วยความจำ  
+- **การประมวลผลแบบขนาน:** เมื่อต้องจัดการหลาย archive พร้อมกัน พิจารณาใช้ parallel streams หรือ executor services ของ Java เพื่อเร่งความเร็ว
 
-## ปัญหาทั่วไปและวิธีแก้
+## ปัญหาที่พบบ่อยและวิธีแก้
 
 | ปัญหา | สาเหตุ | วิธีแก้ |
 |-------|-------|----------|
-| `Container extraction isn't supported.` | ใช้เวอร์ชันไลบรารีเก่า | อัปเกรดเป็นรุ่นล่าสุดของ GroupDocs.Parser |
-| `UnsupportedDocumentFormatException` | ประเภทอาร์ไคฟ์ไม่รู้จัก | ตรวจสอบว่าไฟล์เป็น ZIP ที่รองรับหรือเปลี่ยนเป็นคอนเทนเนอร์ที่รองรับ |
-| No output printed | `attachments` returned `null`. | ตรวจสอบว่า ZIP ไม่ว่างและเส้นทางถูกต้อง |
-| Memory overflow on large archives | โหลดรายการทั้งหมดพร้อมกัน | ประมวลผลรายการเป็นชิ้นส่วนหรือใช้ API สตรีมมิ่งหากมี |
+| `Container extraction isn't supported.` | ใช้ไลบรารีเวอร์ชันเก่า | อัปเกรดเป็น GroupDocs.Parser เวอร์ชันล่าสุด |
+| `UnsupportedDocumentFormatException` | ประเภท archive ไม่ได้รับการรับรอง | ยืนยันว่าไฟล์เป็น ZIP ที่รองรับหรือเปลี่ยนเป็นคอนเทนเนอร์ที่รองรับ |
+| ไม่มีการพิมพ์ผลลัพธ์ | `attachments` คืนค่า `null` | ตรวจสอบว่า ZIP ไม่ว่างและ path ถูกต้อง |
+| หน่วยความจำเต็มกับ archive ขนาดใหญ่ | โหลด entry ทั้งหมดพร้อมกัน | ประมวลผล entry เป็นชิ้นส่วนหรือใช้ API streaming หากมี |
 
 ## คำถามที่พบบ่อย
 
-**Q: การใช้งานหลักของ GroupDocs.Parser สำหรับ Java คืออะไร?**  
-A: มันทำให้การดึงข้อมูลและ metadata จากรูปแบบเอกสารและคอนเทนเนอร์ที่หลากหลายเป็นเรื่องง่าย ช่วยให้สามารถทำอัตโนมัติของการสร้างสินค้าคงคลัง, การทำดัชนีเนื้อหา, และการย้ายข้อมูลได้.
+**ถาม:** GroupDocs.Parser for Java มีการใช้งานหลักอะไร?  
+**ตอบ:** มันทำให้การดึงข้อมูลและเมตาดาต้าจากรูปแบบเอกสารและคอนเทนเนอร์หลายประเภทเป็นเรื่องง่าย ช่วยอัตโนมัติการสร้าง inventory, การทำ indexing เนื้อหา, และการย้ายข้อมูล
 
-**Q: ฉันสามารถประมวลผลรูปแบบอาร์ไคฟ์อื่นนอกจาก ZIP ได้หรือไม่?**  
-A: ได้, GroupDocs.Parser ยังรองรับ RAR, TAR, 7z และประเภทคอนเทนเนอร์อื่น ๆ.
+**ถาม:** สามารถประมวลผลรูปแบบ archive อื่นนอกจาก ZIP ได้หรือไม่?  
+**ตอบ:** ได้, GroupDocs.Parser รองรับ RAR, TAR, 7z และประเภทคอนเทนเนอร์อื่น ๆ อีกหลายประเภท
 
-**Q: ควรทำอย่างไรหากพบ `UnsupportedDocumentFormatException`?**  
-A: ตรวจสอบว่าประเภทอาร์ไคฟ์ของคุณอยู่ในรายการรูปแบบที่รองรับใน [latest documentation](https://docs.groupdocs.com/parser/java/) หรืออัปเกรดเป็นเวอร์ชันล่าสุดของไลบรารี.
+**ถาม:** ควรทำอย่างไรหากเจอ `UnsupportedDocumentFormatException`?  
+**ตอบ:** ตรวจสอบว่า archive ของคุณอยู่ในรายการรูปแบบที่รองรับใน [latest documentation](https://docs.groupdocs.com/parser/java/) หรืออัปเกรดไลบรารีเป็นเวอร์ชันล่าสุด
 
-**Q: ฉันจะจัดการไฟล์ ZIP ขนาดใหญ่อย่างมีประสิทธิภาพได้อย่างไร?**  
-A: ใช้การประมวลผลเป็นชุด, สตรีมรายการเมื่อเป็นไปได้, และพิจารณาการทำงานแบบขนานของการวนซ้ำในหลายเธรด.
+**ถาม:** จะจัดการกับไฟล์ ZIP ขนาดใหญ่มากอย่างมีประสิทธิภาพอย่างไร?  
+**ตอบ:** ใช้การประมวลผลเป็น batch, สตรีม entry เมื่อเป็นไปได้, และพิจารณา parallelize การวนลูปในหลาย ๆ เธรด
 
-**Q: จำเป็นต้องมีไลเซนส์สำหรับการใช้งานในผลิตภัณฑ์หรือไม่?**  
-A: จำเป็นต้องมีไลเซนส์ GroupDocs.Parser ที่ถูกต้องสำหรับการใช้งานในผลิตภัณฑ์; มีการทดลองใช้ฟรีสำหรับการประเมินผล.
+**ถาม:** จำเป็นต้องมีลิขสิทธิ์สำหรับการใช้งานใน production หรือไม่?  
+**ตอบ:** ต้องมีลิขสิทธิ์ GroupDocs.Parser ที่ถูกต้องสำหรับการใช้งานใน production; มี trial ฟรีสำหรับการประเมิน
 
 ## สรุป
 
-ใน **GroupDocs Parser Java tutorial** นี้ คุณได้เรียนรู้วิธีตั้งค่า GroupDocs.Parser, วนซ้ำรายการไฟล์ ZIP, และดึง metadata ที่เป็นประโยชน์เช่นชื่อไฟล์และขนาด เทคนิคเหล่านี้ช่วยลดความพยายามด้วยมือ, ปรับปรุงความแม่นยำของข้อมูล, และผสานรวมอย่างราบรื่นกับระบบ downstream. สำรวจฟีเจอร์เพิ่มเติมเช่นการแปลงเอกสารหรือการดึงข้อความเพื่อขยายพลังของ GroupDocs.Parser ในแอปพลิเคชัน Java ของคุณ.
+ใน **GroupDocs Parser Java tutorial** นี้คุณได้เรียนรู้วิธีตั้งค่า GroupDocs.Parser, วนลูปรายการใน ZIP archive, และดึงเมตาดาต้าที่มีประโยชน์เช่นชื่อไฟล์และขนาด เทคนิคเหล่านี้ช่วยลดความพยายามแบบแมนนวล, ปรับปรุงความแม่นยำของข้อมูล, และเชื่อมต่ออย่างราบรื่นกับระบบ downstream สำรวจฟีเจอร์เพิ่มเติมเช่นการแปลงเอกสารหรือการดึงข้อความเพื่อขยายพลังของ GroupDocs.Parser ในแอปพลิเคชัน Java ของคุณต่อไป
 
 ---
 
-**อัปเดตล่าสุด:** 2026-05-23  
-**ทดสอบด้วย:** GroupDocs.Parser 25.5 for Java  
-**ผู้เขียน:** GroupDocs
+**Last Updated:** 2026-08-26  
+**Tested With:** GroupDocs.Parser 25.5 for Java  
+**Author:** GroupDocs
 
-## บทแนะนำที่เกี่ยวข้อง
+## บทเรียนที่เกี่ยวข้อง
 
-- [การตรวจจับประเภทไฟล์ Java ในไฟล์ ZIP ด้วย GroupDocs.Parser for Java](/parser/java/container-formats/detect-file-types-zip-groupdocs-parser-java/)
-- [วิธีดึง Container Items จากเอกสารด้วย GroupDocs.Parser for Java](/parser/java/container-formats/extract-container-items-groupdocs-parser-java/)
-- [ดึงข้อความและ Metadata จากไฟล์ ZIP ด้วย GroupDocs.Parser Java: คู่มือฉบับสมบูรณ์สำหรับนักพัฒนา](/parser/java/container-formats/extract-text-metadata-zip-files-groupdocs-parser-java/)
+- [Java File Type Detection in ZIP Archives Using GroupDocs.Parser for Java](/parser/java/container-formats/detect-file-types-zip-groupdocs-parser-java/)
+- [How to Extract Container Items from Documents Using GroupDocs.Parser for Java](/parser/java/container-formats/extract-container-items-groupdocs-parser-java/)
+- [Extract Text & Metadata from ZIP Files Using GroupDocs.Parser Java: A Complete Guide for Developers](/parser/java/container-formats/extract-text-metadata-zip-files-groupdocs-parser-java/)
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

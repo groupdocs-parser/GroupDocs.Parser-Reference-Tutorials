@@ -1,16 +1,22 @@
 ---
-date: '2026-05-23'
-description: Leer hoe u zip-archieven in Java kunt doorlopen met GroupDocs.Parser
-  voor Java, bestandsnamen en -groottes kunt extraheren en grote archieven efficiënt
-  kunt verwerken.
+date: '2026-08-26'
+description: Leer hoe u bestanden in zip-archieven kunt weergeven met GroupDocs Parser
+  for Java, zip-bestandsnamen kunt extraheren en zip-bestandsgroottes efficiënt kunt
+  verifiëren. Ondersteunt grote archieven tot 2 GB.
 keywords:
-- iterate zip archive java
+- list files in zip
 - extract zip file names
-- read zip without extraction
-- java process zip archives
+- verify zip file sizes
+lastmod: '2026-08-26'
+og_description: Leer hoe u bestanden in zip-archieven kunt weergeven met GroupDocs
+  Parser for Java, zip-bestandsnamen kunt extraheren en zip-bestandsgroottes efficiënt
+  kunt verifiëren. Ondersteunt grote archieven tot 2 GB.
+og_image_alt: Guide showing how to list files in zip archives using GroupDocs Parser
+  for Java
+og_title: Hoe bestanden in zip weergeven met GroupDocs Parser for Java
 schemas:
 - author: GroupDocs
-  dateModified: '2026-05-23'
+  dateModified: '2026-08-26'
   description: Learn how to iterate zip archive java using GroupDocs.Parser for Java,
     extract file names and sizes, and handle large archives efficiently.
   headline: GroupDocs Parser Java Tutorial - Iterate Through ZIP Archives
@@ -61,20 +67,30 @@ schemas:
       a free trial is available for evaluation.
     question: Is a license required for production use?
   type: FAQPage
-title: GroupDocs Parser Java Tutorial - Doorloop ZIP-archieven
+tags:
+- list files in zip
+- extract zip file names
+- verify zip file sizes
+- GroupDocs Parser
+- Java archive processing
+title: Hoe bestanden in zip weergeven met GroupDocs Parser for Java
 type: docs
 url: /nl/java/container-formats/iterate-zip-archive-groupdocs-parser-java/
 weight: 1
 ---
 
-# Itereren door ZIP-archief Java met GroupDocs Parser
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
 
-In deze **GroupDocs Parser Java tutorial** ontdek je hoe je **zip-archief java** snel en betrouwbaar kunt itereren. Door een ZIP‑bestand te laden met de `Parser`‑klasse, kun je de naam en grootte van elk item ophalen zonder het volledige archief uit te pakken — perfect voor inventariscontroles, nalevingsrapportage of het voeden van metadata naar downstream‑systemen. De aanpak werkt met JDK 8+ en schaalt tot archieven van honderden pagina's.
+# Hoe bestanden in zip te vermelden met GroupDocs Parser voor Java
+
+In deze **GroupDocs Parser Java tutorial** leer je hoe je **bestanden in zip** archieven snel en betrouwbaar kunt vermelden. Door een ZIP‑bestand te laden met de `Parser`‑klasse, kun je de naam en grootte van elk item ophalen zonder het hele archief uit te pakken — perfect voor inventariscontroles, compliance‑rapportage of het voeden van metadata naar downstream‑systemen. De aanpak werkt met JDK 8+ en schaalt tot archieven van honderden pagina's tot 2 GB.
 
 ## Snelle antwoorden
 - **Waar gaat deze tutorial over?** Itereren door ZIP‑archieven en het extraheren van bestandsmetadata met GroupDocs.Parser voor Java.  
 - **Heb ik een licentie nodig?** Een gratis proefversie werkt voor evaluatie; een permanente licentie is vereist voor productie.  
-- **Welke Java‑versie is vereist?** JDK 8 of later.  
+- **Welke Java‑versie is vereist?** JDK 8 of hoger.  
 - **Kan ik andere archieftypen verwerken?** Ja — GroupDocs.Parser ondersteunt ook RAR, TAR, 7z en meer.  
 - **Hoe lang duurt de implementatie?** Meestal minder dan 15 minuten voor een basisopzet.
 
@@ -84,15 +100,16 @@ Een **GroupDocs Parser Java tutorial** is een beknopte, stapsgewijze gids die la
 
 ## Waarom door ZIP‑archieven itereren?
 
-Itereren door ZIP‑archieven stelt je in staat om **inhoud te auditen zonder volledige extractie**, inventarisrapporten te genereren, bestandsintegriteit te valideren en metadata naar downstream‑systemen te voeren — allemaal terwijl het geheugenverbruik laag blijft. Deze aanpak vermindert ook de I/O‑overhead en voorkomt het risico van overschrijven van bestaande bestanden op de server, wat zorgt voor een veiliger auditproces.  
-- **Snelheid:** Je kunt duizenden items in minder dan een seconde op een typische server opsommen.  
-- **Veiligheid:** Geen tijdelijke bestanden naar schijf schrijven, waardoor de beveiligingsrisico's afnemen.  
+Itereren door ZIP‑archieven stelt je in staat om **inhoud te auditen zonder volledige extractie**, inventarisrapporten te genereren, bestandsintegriteit te valideren en metadata naar downstream‑systemen te voeren — allemaal terwijl het geheugenverbruik laag blijft. Deze aanpak vermindert ook de I/O‑overhead en voorkomt het risico van het overschrijven van bestaande bestanden op de server, wat zorgt voor een veiliger auditproces.  
+
+- **Snelheid:** Je kunt duizenden items in minder dan een seconde op een typische server vermelden.  
+- **Veiligheid:** Geen noodzaak om tijdelijke bestanden naar schijf te schrijven, waardoor de beveiligingsrisico's afnemen.  
 - **Schaalbaarheid:** Verwerkt archieven tot 2 GB zonder het volledige bestand in het geheugen te laden.
 
-## Voorvereisten
+## Vereisten
 
-- **IDE:** IntelliJ IDEA, Eclipse, of een Java‑compatibele editor.  
-- **JDK:** Versie 8 of nieuwer.  
+- **IDE:** IntelliJ IDEA, Eclipse of een willekeurige Java‑compatibele editor.  
+- **JDK:** Versie 8 of nieuwer.  
 - **Maven** (optioneel maar aanbevolen) voor afhankelijkheidsbeheer.  
 
 ### Vereiste bibliotheken en afhankelijkheden
@@ -136,15 +153,15 @@ Je kunt ook alle releases bekijken op [GroupDocs.Parser for Java releases](https
 </dependencies>
 ```
 
-Of download de nieuwste versie direct van [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
+Of download de nieuwste versie rechtstreeks van de [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/). Voor extra begeleiding, zie de [laatste documentatie](https://docs.groupdocs.com/parser/java/).
 
 ### Vereisten voor omgeving configuratie
 - Een moderne IDE zoals IntelliJ IDEA of Eclipse.  
 - JDK 8 of later geïnstalleerd op je machine.
 
-### Kennisvoorvereisten
+### Kennisvereisten
 - Basis Java‑programmering.  
-- Vertrouwdheid met Maven (of handmatige JAR‑afhandeling).  
+- Bekendheid met Maven (of handmatige JAR‑afhandeling).  
 - Begrip van ZIP‑bestandconcepten (handig maar niet verplicht).
 
 ## GroupDocs.Parser voor Java instellen
@@ -153,8 +170,8 @@ Of download de nieuwste versie direct van [GroupDocs.Parser for Java releases](h
 Voeg de repository‑ en afhankelijkheidsfragmenten die hierboven worden getoond toe aan je `pom.xml`. Maven haalt de bibliotheek automatisch op.
 
 ### Directe downloadmethode
-1. Bezoek [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).  
-2. Download de nieuwste JAR‑bundel.  
+1. Bezoek de [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).  
+2. Download de nieuwste JAR‑bundle.  
 3. Voeg de JAR‑bestanden toe aan het build‑pad van je project.
 
 ### Stappen voor licentie‑acquisitie
@@ -163,7 +180,7 @@ Voeg de repository‑ en afhankelijkheidsfragmenten die hierboven worden getoond
 - **Aankoop:** Verkrijg een volledige licentie voor onbeperkt productiegebruik.
 
 ### Basisinitialisatie en configuratie
-Om te verifiëren dat de bibliotheek werkt, voer je dit eenvoudige voorbeeld uit:
+Om te verifiëren dat de bibliotheek werkt, voer dit eenvoudige voorbeeld uit:
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -185,37 +202,33 @@ Als de console *Initialization successful!* afdrukt, ben je klaar om dieper te d
 
 ### Hoe itereer je ZIP‑archiefitems in Java?
 
-Laad je ZIP met een `Parser`‑instance en loop door elk `ContainerItem` om de bestandsnaam en grootte te lezen — deze volledige bewerking voltooit zich in twee beknopte stappen. Het `try‑with‑resources`‑blok zorgt ervoor dat het archief automatisch wordt gesloten, waardoor resource‑lekken worden voorkomen. De methode werkt zowel voor kleine als grote archieven en biedt consistente prestaties ongeacht het aantal items.
-
-### Itereren door ZIP‑archiefitems
+Laad je ZIP met een `Parser`‑instantie en loop door elk `ContainerItem` om de bestandsnaam en grootte te lezen — dit is de kern van **bestanden in zip vermelden** archieven. Het `try‑with‑resources`‑blok zorgt ervoor dat het archief automatisch wordt gesloten, waardoor resource‑lekken worden voorkomen. De methode werkt zowel voor kleine als grote archieven en levert consistente prestaties ongeacht het aantal items.
 
 #### Overzicht
-Itereren door een ZIP‑archief geeft je programmatische toegang tot elk item, waardoor je metadata zoals bestandsnaam en grootte kunt lezen zonder het volledige archief uit te pakken.
+Itereren door een ZIP‑archief geeft je programmatische toegang tot elk item, waardoor je metadata zoals bestandsnaam en grootte kunt lezen zonder het hele archief uit te pakken.
 
 #### Stapsgewijze implementatie
 
-**Stap 1: Initialiseer het Parser‑object**  
-Maak een `Parser`‑instance die naar je ZIP‑bestand wijst.
+**Stap 1: initialiseert het parser‑object**  
+`Parser` is de belangrijkste toegangsklasse van GroupDocs.Parser voor het openen van containerbestanden. Maak een `Parser`‑instantie die naar je ZIP‑bestand wijst.
 
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/sample.zip")) {
     // The parser is now ready for use
 }
 ```  
-*Definitie:* De `Parser`‑klasse is het toegangspunt van GroupDocs.Parser voor het openen en inspecteren van containerbestanden.  
 *Uitleg:* Het `Parser`‑object beheert de toegang tot het archief. Het gebruik van *try‑with‑resources* garandeert een juiste opruiming.
 
-**Stap 2: Haal bijlagen uit de container**  
-Haal een doorloopbare lijst op van alle items binnen de ZIP.
+**Stap 2: haal bijlagen uit de container**  
+`ContainerItem` vertegenwoordigt een enkel item (bestand of map) binnen een container zoals een ZIP‑archief. Haal een doorloopbare lijst op van alle items in de ZIP.
 
 ```java
 Iterable<ContainerItem> attachments = parser.getContainer();
 ```  
-*Definitie:* `ContainerItem` vertegenwoordigt een enkel item (bestand of map) binnen een container zoals een ZIP‑archief.  
-*Uitleg:* `getContainer()` retourneert een collectie van `ContainerItem`‑objecten, elk een bestand of map binnen het archief.
+*Uitleg:* `getContainer()` retourneert een collectie van `ContainerItem`‑objecten, elk een bestand of map binnen het archief representerend.
 
-**Stap 3: Controleer ondersteuning en itereren over bijlagen**  
-Bevestig dat container‑extractie wordt ondersteund, en loop vervolgens door elk item.
+**Stap 3: controleer ondersteuning en itereren over bijlagen**  
+Bevestig dat container‑extractie wordt ondersteund, en loop vervolgens door elk item. De lus drukt de naam en grootte van elk item af, waardoor je snel een inventaris van het archief krijgt.
 
 ```java
 if (attachments == null) {
@@ -227,10 +240,10 @@ if (attachments == null) {
     }
 }
 ```  
-*Uitleg:* Controleer altijd de ondersteuning voordat je iterereert. De lus drukt de naam en grootte van elk item af, waardoor je een snel overzicht van het archief krijgt.
+*Uitleg:* Controleer altijd de ondersteuning voordat je gaat itereren. De lus drukt de naam en grootte van elk item af, waardoor je het “list files in zip” resultaat krijgt dat je nodig hebt.
 
-**Stap 4: Afhandelen van uitzonderingen**  
-Vang format‑gerelateerde fouten op een nette manier af.
+**Stap 4: afhandelen van uitzonderingen**  
+Vang formatgerelateerde fouten op een nette manier af om crashes te voorkomen bij niet‑ondersteunde of corrupte archieven.
 
 ```java
 } catch (UnsupportedDocumentFormatException e) {
@@ -241,16 +254,16 @@ Vang format‑gerelateerde fouten op een nette manier af.
 
 #### Tips voor probleemoplossing
 - Controleer of het pad naar het ZIP‑bestand correct en toegankelijk is.  
-- Zorg ervoor dat je een versie van GroupDocs.Parser gebruikt die container‑extractie ondersteunt; raadpleeg de [documentatie](https://docs.groupdocs.com/parser/java/).  
-- Als je `UnsupportedDocumentFormatException` ontvangt, controleer dan of het archieftype wordt ondersteund of werk bij naar de nieuwste bibliotheekversie.
+- Zorg ervoor dat je een versie van GroupDocs.Parser gebruikt die container‑extractie ondersteunt; raadpleeg de [laatste documentatie](https://docs.groupdocs.com/parser/java/).  
+- Als je `UnsupportedDocumentFormatException` ontvangt, controleer dan dubbel of het archieftype wordt ondersteund of werk bij naar de nieuwste bibliotheekrelease.
 
 ## Praktische toepassingen
 
 1. **Gegevensbeheer:** Bouw inventarisrapporten van bestanden die in back-ups zijn opgeslagen.  
-2. **Back-up verificatie:** Bevestig dat bestandsgroottes overeenkomen met verwachte waarden vóór herstel.  
+2. **Backup‑verificatie:** Bevestig dat bestandsgroottes overeenkomen met verwachte waarden vóór het herstellen.  
 3. **Inhoudsaggregatie:** Verzamel metadata voordat je documenten in bulk verwerkt.  
-4. **CRM‑integratie:** Vul records automatisch in met bestandsdetails die uit geüploade archieven zijn gehaald.  
-5. **Nalevingsrapportage:** Genereer audit‑klare lijsten van gearchiveerde assets.
+4. **CRM‑integratie:** Automatisch records vullen met bestandsdetails die uit geüploade archieven zijn geëxtraheerd.  
+5. **Compliance‑rapportage:** Genereer audit‑klare lijsten van gearchiveerde assets.
 
 ## Prestatie‑overwegingen
 
@@ -260,17 +273,17 @@ Vang format‑gerelateerde fouten op een nette manier af.
 
 ## Veelvoorkomende problemen en oplossingen
 
-| Issue | Cause | Solution |
-|-------|-------|----------|
+| Probleem | Oorzaak | Oplossing |
+|----------|---------|-----------|
 | `Container extraction isn't supported.` | Gebruik van een oudere bibliotheekversie. | Upgrade naar de nieuwste GroupDocs.Parser‑release. |
 | `UnsupportedDocumentFormatException` | Archieftype niet herkend. | Controleer of het bestand een ondersteunde ZIP is of schakel over naar een ondersteund containerformaat. |
-| No output printed | `attachments` retourneerde `null`. | Zorg ervoor dat de ZIP niet leeg is en het pad correct is. |
-| Memory overflow on large archives | Alle items in één keer laden. | Verwerk items in delen of gebruik streaming‑API's indien beschikbaar. |
+| Geen uitvoer afgedrukt | `attachments` returned `null`. | Zorg ervoor dat de ZIP niet leeg is en het pad correct is. |
+| Geheugen‑overloop bij grote archieven | Alle items in één keer laden. | Verwerk items in delen of gebruik streaming‑API's indien beschikbaar. |
 
 ## Veelgestelde vragen
 
 **Q: Wat is het primaire gebruik van GroupDocs.Parser voor Java?**  
-A: Het vereenvoudigt het extraheren van gegevens en metadata uit een breed scala aan document‑ en containerformaten, waardoor automatisering van inventarisgeneratie, inhoudsindexering en datamigratie mogelijk wordt.
+A: Het vereenvoudigt het extraheren van gegevens en metadata uit een breed scala aan document‑ en containerformaten, waardoor automatisering van inventarisgeneratie, inhouds‑indexering en datamigratie mogelijk wordt.
 
 **Q: Kan ik andere archiefformaten verwerken naast ZIP?**  
 A: Ja, GroupDocs.Parser ondersteunt ook RAR, TAR, 7z en andere containertypen.
@@ -286,16 +299,23 @@ A: Een geldige GroupDocs.Parser‑licentie is vereist voor productie‑implement
 
 ## Conclusie
 
-In deze **GroupDocs Parser Java tutorial** heb je geleerd hoe je GroupDocs.Parser instelt, door ZIP‑archiefitems iterereert en bruikbare metadata zoals bestandsnamen en -groottes extraheert. Deze technieken verminderen handmatige inspanning, verbeteren de gegevensnauwkeurigheid en integreren soepel met downstream‑systemen. Verken extra functies zoals documentconversie of teksteextractie om de kracht van GroupDocs.Parser in je Java‑applicaties verder uit te breiden.
+In deze **GroupDocs Parser Java tutorial** heb je geleerd hoe je GroupDocs.Parser instelt, door ZIP‑archiefitems iterereert en nuttige metadata zoals bestandsnamen en -groottes extraheert. Deze technieken verminderen handmatige inspanning, verbeteren de gegevensnauwkeurigheid en integreren soepel met downstream‑systemen. Ontdek extra functies zoals documentconversie of teksteextractie om de kracht van GroupDocs.Parser in je Java‑applicaties verder uit te breiden.
 
 ---
 
-**Laatst bijgewerkt:** 2026-05-23  
+**Laatst bijgewerkt:** 2026-08-26  
 **Getest met:** GroupDocs.Parser 25.5 for Java  
 **Auteur:** GroupDocs
 
 ## Gerelateerde tutorials
 
-- [Java-bestandsdetectie in ZIP‑archieven met GroupDocs.Parser voor Java](/parser/java/container-formats/detect-file-types-zip-groupdocs-parser-java/)
+- [Java-bestandstype detectie in ZIP‑archieven met GroupDocs.Parser voor Java](/parser/java/container-formats/detect-file-types-zip-groupdocs-parser-java/)
 - [Hoe containeritems uit documenten te extraheren met GroupDocs.Parser voor Java](/parser/java/container-formats/extract-container-items-groupdocs-parser-java/)
-- [Tekst & metadata uit ZIP‑bestanden extraheren met GroupDocs.Parser Java: Een complete gids voor ontwikkelaars](/parser/java/container-formats/extract-text-metadata-zip-files-groupdocs-parser-java/)
+- [Tekst en metadata extraheren uit ZIP‑bestanden met GroupDocs.Parser Java: Een volledige gids voor ontwikkelaars](/parser/java/container-formats/extract-text-metadata-zip-files-groupdocs-parser-java/)
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
