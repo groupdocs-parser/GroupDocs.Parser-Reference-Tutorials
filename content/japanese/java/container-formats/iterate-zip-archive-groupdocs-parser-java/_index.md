@@ -77,10 +77,6 @@ url: /ja/java/container-formats/iterate-zip-archive-groupdocs-parser-java/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # GroupDocs Parser for Java を使用した zip 内のファイル一覧の取得方法
 
 この **GroupDocs Parser Java チュートリアル** では、ZIP アーカイブ内の **ファイル一覧を取得** する方法を迅速かつ確実に学びます。`Parser` クラスで ZIP ファイルを読み込むことで、アーカイブ全体を展開せずに各エントリの名前とサイズを取得できます。インベントリチェック、コンプライアンス報告、またはメタデータを下流システムに渡す際に最適です。この手法は JDK 8+ で動作し、最大 2 GB、数百ページ規模のアーカイブにもスケールします。
@@ -310,10 +306,3 @@ A: 本番環境でのデプロイには有効な GroupDocs.Parser ライセン�
 - [Java で ZIP アーカイブ内のファイルタイプ検出（GroupDocs.Parser for Java 使用）](/parser/java/container-formats/detect-file-types-zip-groupdocs-parser-java/)
 - [GroupDocs.Parser for Java を使用したドキュメントからコンテナ項目を抽出する方法](/parser/java/container-formats/extract-container-items-groupdocs-parser-java/)
 - [GroupDocs.Parser Java で ZIP ファイルからテキストとメタデータを抽出する完全ガイド（開発者向け）](/parser/java/container-formats/extract-text-metadata-zip-files-groupdocs-parser-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

@@ -197,8 +197,3 @@ Sie haben nun ein vollständiges, produktionsbereites Rezept für **java pdf tex
 - **GitHub‑Repository:** [GroupDocs.Parser GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
 - **Kostenloses Support‑Forum:** [GroupDocs Parser Forum](https://forum.groupdocs.com/c/parser)  
 - **Temporäre Lizenz:** [Apply for GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/)
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

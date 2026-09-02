@@ -199,8 +199,3 @@ A: Конечно. Пройдитесь по каталогу, применит�
 **Last Updated:** 2026-04-21  
 **Tested With:** GroupDocs.Parser for Java 25.5  
 **Author:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

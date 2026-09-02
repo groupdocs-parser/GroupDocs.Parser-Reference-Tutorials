@@ -198,8 +198,3 @@ A: Chắc chắn. Lặp qua một thư mục, áp dụng cùng một logic tìm 
 **Cập nhật lần cuối:** 2026-04-21  
 **Đã kiểm tra với:** GroupDocs.Parser for Java 25.5  
 **Tác giả:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

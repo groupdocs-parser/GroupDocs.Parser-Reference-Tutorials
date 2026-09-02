@@ -197,8 +197,3 @@ A: 當然可以。遍歷目錄、套用相同搜尋邏輯，並將每個檔案�
 **Last Updated:** 2026-04-21  
 **Tested With:** GroupDocs.Parser for Java 25.5  
 **Author:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

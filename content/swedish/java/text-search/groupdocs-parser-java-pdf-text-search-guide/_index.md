@@ -199,8 +199,3 @@ A: Absolut. Loop igenom en katalog, tillämpa samma söklogik och lagra varje fi
 **Senast uppdaterad:** 2026-04-21  
 **Testat med:** GroupDocs.Parser for Java 25.5  
 **Författare:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

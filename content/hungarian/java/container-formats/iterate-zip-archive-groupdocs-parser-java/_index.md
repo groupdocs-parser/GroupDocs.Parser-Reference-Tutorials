@@ -80,10 +80,6 @@ url: /hu/java/container-formats/iterate-zip-archive-groupdocs-parser-java/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Hogyan listázzuk a fájlokat zip-ben a GroupDocs Parser for Java használatával
 
 Ebben a **GroupDocs Parser Java tutorial**-ban megtanulod, hogyan **listázhatsz fájlokat zip** archívumokban gyorsan és megbízhatóan. A ZIP fájl betöltésével a `Parser` osztály segítségével kiolvashatod minden bejegyzés nevét és méretét anélkül, hogy az egész archívumot kibontanád – tökéletes készletellenőrzéshez, megfelelőségi jelentésekhez vagy metaadatok továbbításához az alrendszerekbe. A megközelítés JDK 8+ verzióval működik, és több száz oldalas archívumokig, akár 2 GB-ig skálázható.
@@ -313,10 +309,3 @@ Ebben a **GroupDocs Parser Java tutorial**‑ban megtanultad, hogyan állítsd b
 - [Java fájltípus-észlelés ZIP archívumokban a GroupDocs.Parser for Java használatával](/parser/java/container-formats/detect-file-types-zip-groupdocs-parser-java/)
 - [Hogyan nyerjünk ki konténer elemeket dokumentumokból a GroupDocs.Parser for Java használatával](/parser/java/container-formats/extract-container-items-groupdocs-parser-java/)
 - [Szöveg és metaadatok kinyerése ZIP fájlokból a GroupDocs.Parser Java-val: Teljes útmutató fejlesztőknek](/parser/java/container-formats/extract-text-metadata-zip-files-groupdocs-parser-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

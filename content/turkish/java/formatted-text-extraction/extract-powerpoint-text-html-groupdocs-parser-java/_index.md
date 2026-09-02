@@ -69,10 +69,6 @@ url: /tr/java/formatted-text-extraction/extract-powerpoint-text-html-groupdocs-p
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # pptx metnini HTML olarak çıkarmak GroupDocs for Java ile
 
 Bu öğreticide **pptx metnini çıkarmayı** ve GroupDocs.Parser for Java kullanarak temiz HTML'e dönüştürmeyi öğreneceksiniz. Slaytları bir web sitesinde yayınlamanız, içeriği bir CMS'ye taşımanız veya otomatik raporlama yapmanız gerekse, aşağıdaki adımlar herhangi bir Java tabanlı sunucuda çalışan üretim‑hazır bir çözüm sunar.
@@ -231,10 +227,3 @@ A: Dosyaları sabit bir iş parçacığı havuzu ile sıralı işleyin, mümkün
 - [PowerPoint PPTX Dosyalarından Metin Çıkarma GroupDocs.Parser ile Java'da](/parser/java/text-extraction/extract-text-ppt-groupdocs-parser-java/)
 - [PowerPoint'ten Görüntü Çıkarma GroupDocs.Parser Java ile (Adım‑Adım Kılavuz)](/parser/java/image-extraction/extract-images-powerpoint-groupdocs-parser-java/)
 - [Belgeyi HTML'e Dönüştürme GroupDocs.Parser Java ile: Adım‑Adım Kılavuz](/parser/java/formatted-text-extraction/extract-document-text-as-html-groupdocs-parser-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

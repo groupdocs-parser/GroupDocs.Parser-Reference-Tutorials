@@ -79,10 +79,6 @@ url: /vi/java/container-formats/iterate-zip-archive-groupdocs-parser-java/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Cách liệt kê các tệp trong zip bằng GroupDocs Parser cho Java
 
 Trong **GroupDocs Parser Java tutorial** này, bạn sẽ học cách **liệt kê các tệp trong zip** một cách nhanh chóng và đáng tin cậy. Bằng cách tải một tệp ZIP bằng lớp `Parser`, bạn có thể lấy tên và kích thước của mỗi mục mà không cần giải nén toàn bộ kho lưu trữ — phù hợp cho việc kiểm kê, báo cáo tuân thủ, hoặc cung cấp siêu dữ liệu cho các hệ thống downstream. Phương pháp này hoạt động với JDK 8+ và mở rộng lên các kho lưu trữ hàng trăm trang lên tới 2 GB.
@@ -312,10 +308,3 @@ Trong **GroupDocs Parser Java tutorial** này, bạn đã học cách cài đặ
 - [Phát hiện loại tệp Java trong các kho ZIP bằng GroupDocs.Parser cho Java](/parser/java/container-formats/detect-file-types-zip-groupdocs-parser-java/)
 - [Cách trích xuất các mục container từ tài liệu bằng GroupDocs.Parser cho Java](/parser/java/container-formats/extract-container-items-groupdocs-parser-java/)
 - [Trích xuất Văn bản & Siêu dữ liệu từ tệp ZIP bằng GroupDocs.Parser Java: Hướng dẫn đầy đủ cho nhà phát triển](/parser/java/container-formats/extract-text-metadata-zip-files-groupdocs-parser-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

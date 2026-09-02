@@ -200,8 +200,3 @@ R : Absolument. Parcourez un répertoire, appliquez la même logique de recher
 **Dernière mise à jour :** 2026-04-21  
 **Testé avec :** GroupDocs.Parser pour Java 25.5  
 **Auteur :** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

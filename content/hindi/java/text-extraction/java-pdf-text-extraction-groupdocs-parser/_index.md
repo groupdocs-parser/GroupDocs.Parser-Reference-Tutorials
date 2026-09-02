@@ -198,8 +198,3 @@ A: विस्तृत गाइड और API रेफ़रेंसेज�
 - **GitHub रिपॉजिटरी:** [GroupDocs.Parser GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
 - **फ्री सपोर्ट फ़ोरम:** [GroupDocs Parser Forum](https://forum.groupdocs.com/c/parser)
 - **टेम्पररी लाइसेंस:** [Apply for GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/)
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

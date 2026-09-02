@@ -79,10 +79,6 @@ url: /cs/java/container-formats/iterate-zip-archive-groupdocs-parser-java/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Jak vypsat soubory v zipu pomocí GroupDocs Parser pro Java
 
 V tomto **GroupDocs Parser Java tutoriálu** se naučíte, jak **vypsat soubory v zipu** archivů rychle a spolehlivě. Načtením ZIP souboru pomocí třídy `Parser` můžete získat název a velikost každé položky, aniž byste museli rozbalit celý archiv — ideální pro inventarizaci, zprávy o souladu nebo předávání metadat do downstream systémů. Přístup funguje s JDK 8+ a škáluje na archivů s několika stovkami stránek až do 2 GB.
@@ -312,10 +308,3 @@ V tomto **GroupDocs Parser Java tutoriálu** jste se naučili, jak nastavit Grou
 - [Detekce typu souboru v ZIP archivech v Javě pomocí GroupDocs.Parser pro Java](/parser/java/container-formats/detect-file-types-zip-groupdocs-parser-java/)
 - [Jak extrahovat položky kontejneru z dokumentů pomocí GroupDocs.Parser pro Java](/parser/java/container-formats/extract-container-items-groupdocs-parser-java/)
 - [Extrahování textu a metadat ze ZIP souborů pomocí GroupDocs.Parser Java: Kompletní průvodce pro vývojáře](/parser/java/container-formats/extract-text-metadata-zip-files-groupdocs-parser-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

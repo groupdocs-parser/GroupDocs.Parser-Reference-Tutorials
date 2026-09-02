@@ -200,8 +200,3 @@ C: Kesinlikle. Bir dizini döngüye alıp aynı arama mantığını uygulayarak 
 **Son Güncelleme:** 2026-04-21  
 **Test Edilen Versiyon:** GroupDocs.Parser for Java 25.5  
 **Yazar:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

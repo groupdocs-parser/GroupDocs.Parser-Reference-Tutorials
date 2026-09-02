@@ -198,8 +198,3 @@ Artık GroupDocs.Parser kullanarak **java pdf text extraction** ve **pdf page co
 - **GitHub Deposu:** [GroupDocs.Parser GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
 - **Ücretsiz Destek Forumu:** [GroupDocs Parser Forum](https://forum.groupdocs.com/c/parser)  
 - **Geçici Lisans:** [Apply for GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/)  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

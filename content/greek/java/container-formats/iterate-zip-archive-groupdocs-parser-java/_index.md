@@ -79,10 +79,6 @@ url: /el/java/container-formats/iterate-zip-archive-groupdocs-parser-java/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Πώς να καταγράψετε αρχεία σε zip χρησιμοποιώντας το GroupDocs Parser για Java
 
 Σε αυτό το **GroupDocs Parser Java tutorial** θα μάθετε πώς να **καταγράψετε αρχεία σε zip** αρχεία γρήγορα και αξιόπιστα. Φορτώνοντας ένα αρχείο ZIP με την κλάση `Parser`, μπορείτε να εξάγετε το όνομα και το μέγεθος κάθε καταχώρησης χωρίς να εξάγετε ολόκληρο το αρχείο—ιδανικό για ελέγχους αποθεμάτων, αναφορές συμμόρφωσης ή τροφοδοσία μεταδεδομένων σε downstream συστήματα. Η προσέγγιση λειτουργεί με JDK 8+ και κλιμακώνεται σε αρχεία πολλών εκατοντάδων σελίδων έως 2 GB.
@@ -312,10 +308,3 @@ if (attachments == null) {
 - [Ανίχνευση τύπου αρχείου Java σε αρχεία ZIP χρησιμοποιώντας το GroupDocs.Parser για Java](/parser/java/container-formats/detect-file-types-zip-groupdocs-parser-java/)
 - [Πώς να εξάγετε στοιχεία container από έγγραφα χρησιμοποιώντας το GroupDocs.Parser για Java](/parser/java/container-formats/extract-container-items-groupdocs-parser-java/)
 - [Εξαγωγή κειμένου & μεταδεδομένων από αρχεία ZIP χρησιμοποιώντας το GroupDocs.Parser Java: Ολοκληρωμένος οδηγός για προγραμματιστές](/parser/java/container-formats/extract-text-metadata-zip-files-groupdocs-parser-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

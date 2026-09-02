@@ -79,10 +79,6 @@ url: /ar/java/container-formats/iterate-zip-archive-groupdocs-parser-java/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # كيفية سرد الملفات في zip باستخدام GroupDocs Parser للـ Java
 
 في هذا **GroupDocs Parser Java tutorial** ستتعلم كيفية **قائمة الملفات داخل zip** الأرشيفات بسرعة وموثوقية. عن طريق تحميل ملف ZIP باستخدام الفئة `Parser`، يمكنك استخراج اسم كل إدخال وحجمه دون استخراج الأرشيف بالكامل—مثالي لفحص الجرد، تقارير الامتثال، أو تغذية البيانات الوصفية إلى الأنظمة اللاحقة. يعمل النهج مع JDK 8+ ويتوسع إلى أرشيفات متعددة المئات من الصفحات حتى 2 GB.
@@ -312,10 +308,3 @@ if (attachments == null) {
 - [اكتشاف نوع ملف Java في أرشيفات ZIP باستخدام GroupDocs.Parser للـ Java](/parser/java/container-formats/detect-file-types-zip-groupdocs-parser-java/)
 - [كيفية استخراج عناصر الحاوية من المستندات باستخدام GroupDocs.Parser للـ Java](/parser/java/container-formats/extract-container-items-groupdocs-parser-java/)
 - [استخراج النص والبيانات الوصفية من ملفات ZIP باستخدام GroupDocs.Parser Java: دليل كامل للمطورين](/parser/java/container-formats/extract-text-metadata-zip-files-groupdocs-parser-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

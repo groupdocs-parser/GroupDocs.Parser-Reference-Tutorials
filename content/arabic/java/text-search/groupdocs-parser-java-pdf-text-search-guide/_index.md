@@ -199,8 +199,3 @@ try (Parser parser = new Parser(filePath)) {
 **آخر تحديث:** 2026-04-21  
 **تم الاختبار مع:** GroupDocs.Parser for Java 25.5  
 **المؤلف:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

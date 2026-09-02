@@ -198,8 +198,3 @@ A: แน่นอน. วนผ่านไดเรกทอรี, ใช้�
 **อัปเดตล่าสุด:** 2026-04-21  
 **ทดสอบกับ:** GroupDocs.Parser for Java 25.5  
 **ผู้เขียน:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

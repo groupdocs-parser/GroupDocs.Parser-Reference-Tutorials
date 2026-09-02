@@ -77,10 +77,6 @@ url: /zh/java/container-formats/iterate-zip-archive-groupdocs-parser-java/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # 如何使用 GroupDocs Parser for Java 列出 zip 中的文件
 
 在本 **GroupDocs Parser Java 教程** 中，您将学习如何快速、可靠地 **列出 zip** 压缩包中的文件。通过使用 `Parser` 类加载 ZIP 文件，您可以在不解压整个压缩包的情况下获取每个条目的名称和大小——这对于清点、合规报告或将元数据传递给下游系统非常适用。该方法适用于 JDK 8+，并可扩展至多达 2 GB、数百页的压缩包。
@@ -310,10 +306,3 @@ if (attachments == null) {
 - [使用 GroupDocs.Parser for Java 检测 ZIP 压缩包中文件类型](/parser/java/container-formats/detect-file-types-zip-groupdocs-parser-java/)
 - [使用 GroupDocs.Parser for Java 从文档中提取容器项](/parser/java/container-formats/extract-container-items-groupdocs-parser-java/)
 - [使用 GroupDocs.Parser Java 提取 ZIP 文件的文本和元数据：开发者完整指南](/parser/java/container-formats/extract-text-metadata-zip-files-groupdocs-parser-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

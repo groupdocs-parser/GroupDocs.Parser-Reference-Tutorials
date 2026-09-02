@@ -200,8 +200,3 @@ A: Απόλυτα. Επανάληψη σε έναν φάκελο, εφαρμογ
 **Τελευταία Ενημέρωση:** 2026-04-21  
 **Δοκιμάστηκε Με:** GroupDocs.Parser for Java 25.5  
 **Συγγραφέας:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

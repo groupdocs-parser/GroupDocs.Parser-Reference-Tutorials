@@ -198,8 +198,3 @@ Ora hai una ricetta completa, pronta per la produzione, per **java pdf text extr
 - **Repository GitHub:** [GroupDocs.Parser GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
 - **Forum di supporto gratuito:** [GroupDocs Parser Forum](https://forum.groupdocs.com/c/parser)  
 - **Licenza temporanea:** [Apply for GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/)
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

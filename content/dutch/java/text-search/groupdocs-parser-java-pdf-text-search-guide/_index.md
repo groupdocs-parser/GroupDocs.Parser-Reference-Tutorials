@@ -200,8 +200,3 @@ A: Zeker. Loop door een map, pas dezelfde zoeklogica toe, en sla de resultaten v
 **Laatst bijgewerkt:** 2026-04-21  
 **Getest met:** GroupDocs.Parser for Java 25.5  
 **Auteur:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

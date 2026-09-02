@@ -71,10 +71,6 @@ url: /vi/java/formatted-text-extraction/extract-powerpoint-text-html-groupdocs-p
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Cách trích xuất văn bản pptx thành HTML với GroupDocs cho Java
 
 Trong hướng dẫn này, bạn sẽ học cách **trích xuất văn bản pptx** và chuyển nó thành HTML sạch bằng cách sử dụng GroupDocs.Parser cho Java. Cho dù bạn cần xuất bản các slide trên website, di chuyển nội dung vào CMS, hoặc thực hiện báo cáo tự động, các bước dưới đây sẽ cung cấp cho bạn giải pháp sẵn sàng cho sản xuất và hoạt động trên bất kỳ máy chủ dựa trên Java nào.
@@ -232,10 +228,3 @@ A: Xử lý các tệp tuần tự bằng một pool thread cố định, tái s
 - [Trích xuất Văn bản từ Tệp PowerPoint PPTX bằng GroupDocs.Parser trong Java](/parser/java/text-extraction/extract-text-ppt-groupdocs-parser-java/)
 - [Cách Trích xuất Hình ảnh từ PowerPoint bằng GroupDocs.Parser Java (Hướng dẫn Từng Bước)](/parser/java/image-extraction/extract-images-powerpoint-groupdocs-parser-java/)
 - [Cách Chuyển đổi Tài liệu sang HTML bằng GroupDocs.Parser Java: Hướng dẫn Từng Bước](/parser/java/formatted-text-extraction/extract-document-text-as-html-groupdocs-parser-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

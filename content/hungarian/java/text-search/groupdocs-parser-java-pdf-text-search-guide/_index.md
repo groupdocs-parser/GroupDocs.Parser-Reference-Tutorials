@@ -200,8 +200,3 @@ A: Teljesen. Iteráljon egy könyvtáron, alkalmazza ugyanazt a keresési logik�
 **Utolsó frissítés:** 2026-04-21  
 **Tesztelve ezzel:** GroupDocs.Parser for Java 25.5  
 **Szerző:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

@@ -199,8 +199,3 @@ Masz teraz kompletny, gotowy do produkcji przepis na **java pdf text extraction*
 - **Repozytorium GitHub:** [GroupDocs.Parser GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
 - **Forum wsparcia:** [GroupDocs Parser Forum](https://forum.groupdocs.com/c/parser)  
 - **Tymczasowa licencja:** [Apply for GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/)
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

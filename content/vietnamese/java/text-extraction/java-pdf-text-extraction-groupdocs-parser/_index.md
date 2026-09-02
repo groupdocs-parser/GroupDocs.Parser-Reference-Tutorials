@@ -198,8 +198,3 @@ Bạn đã có một công thức hoàn chỉnh, sẵn sàng cho môi trường 
 - **Kho GitHub:** [GroupDocs.Parser trên GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
 - **Diễn đàn hỗ trợ miễn phí:** [Diễn đàn GroupDocs Parser](https://forum.groupdocs.com/c/parser)  
 - **Giấy phép tạm thời:** [Đăng ký Giấy phép Tạm thời của GroupDocs](https://purchase.groupdocs.com/temporary-license/)
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

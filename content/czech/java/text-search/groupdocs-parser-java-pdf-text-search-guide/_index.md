@@ -199,8 +199,3 @@ A: Rozhodně. Procházejte adresář, aplikujte stejnou logiku vyhledávání a 
 **Poslední aktualizace:** 2026-04-21  
 **Testováno s:** GroupDocs.Parser for Java 25.5  
 **Autor:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

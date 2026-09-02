@@ -77,10 +77,6 @@ url: /zh-hant/java/container-formats/iterate-zip-archive-groupdocs-parser-java/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # 如何使用 GroupDocs Parser for Java 列出 zip 檔案中的檔案
 
 在本 **GroupDocs Parser Java 教學** 中，您將學會如何快速且可靠地 **列出 zip 檔案** 內的檔案。透過使用 `Parser` 類別載入 ZIP 檔，您可以在不解壓整個壓縮檔的情況下取得每個條目的名稱與大小——非常適合進行清點、合規報告，或將中繼資料輸入下游系統。此方法支援 JDK 8+，且可擴展至多達 2 GB 的大型壓縮檔。
@@ -312,10 +308,3 @@ A: 生產環境必須使用有效的 GroupDocs.Parser 授權；同時提供免�
 - [使用 GroupDocs.Parser for Java 在 ZIP 壓縮檔中偵測檔案類型的 Java 教學](/parser/java/container-formats/detect-file-types-zip-groupdocs-parser-java/)
 - [如何使用 GroupDocs.Parser for Java 從文件中提取容器項目](/parser/java/container-formats/extract-container-items-groupdocs-parser-java/)
 - [使用 GroupDocs.Parser Java 從 ZIP 檔案提取文字與中繼資料：開發者完整指南](/parser/java/container-formats/extract-text-metadata-zip-files-groupdocs-parser-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

@@ -197,8 +197,3 @@ A: もちろんです。ディレクトリをループし、同じ検索ロジ�
 **最終更新日:** 2026-04-21  
 **テスト済み:** GroupDocs.Parser for Java 25.5  
 **作者:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

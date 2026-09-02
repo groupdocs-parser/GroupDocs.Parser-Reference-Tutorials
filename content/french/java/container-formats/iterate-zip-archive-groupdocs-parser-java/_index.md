@@ -80,10 +80,6 @@ url: /fr/java/container-formats/iterate-zip-archive-groupdocs-parser-java/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Comment lister les fichiers dans un zip avec GroupDocs Parser pour Java
 
 Dans ce **GroupDocs Parser Java tutorial** vous apprendrez à **lister les fichiers dans un zip** rapidement et de manière fiable. En chargeant un fichier ZIP avec la classe `Parser`, vous pouvez extraire le nom et la taille de chaque entrée sans extraire l’ensemble de l’archive — idéal pour les contrôles d’inventaire, les rapports de conformité ou l’alimentation des métadonnées dans les systèmes en aval. Cette approche fonctionne avec JDK 8+ et s’adapte aux archives de plusieurs centaines de pages jusqu’à 2 GB.
@@ -313,10 +309,3 @@ Dans ce **GroupDocs Parser Java tutorial**, vous avez appris à configurer Group
 - [Détection du type de fichier Java dans les archives ZIP avec GroupDocs.Parser pour Java](/parser/java/container-formats/detect-file-types-zip-groupdocs-parser-java/)
 - [Comment extraire les éléments de conteneur des documents avec GroupDocs.Parser pour Java](/parser/java/container-formats/extract-container-items-groupdocs-parser-java/)
 - [Extraire le texte et les métadonnées des fichiers ZIP avec GroupDocs.Parser Java : guide complet pour les développeurs](/parser/java/container-formats/extract-text-metadata-zip-files-groupdocs-parser-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

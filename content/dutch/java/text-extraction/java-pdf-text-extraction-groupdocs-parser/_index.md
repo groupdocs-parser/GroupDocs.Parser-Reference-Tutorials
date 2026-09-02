@@ -197,8 +197,3 @@ U heeft nu een volledige, productie‑klare handleiding voor **java pdf text ext
 - **GitHub‑repository:** [GroupDocs.Parser GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
 - **Gratis ondersteuningsforum:** [GroupDocs Parser Forum](https://forum.groupdocs.com/c/parser)  
 - **Tijdelijke licentie:** [Apply for GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/)
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

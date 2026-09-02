@@ -69,10 +69,6 @@ url: /ko/java/formatted-text-extraction/extract-powerpoint-text-html-groupdocs-p
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # GroupDocs for Java를 사용하여 pptx 텍스트를 HTML로 추출하는 방법
 
 이 튜토리얼에서는 **pptx 텍스트를 추출**하고 GroupDocs.Parser for Java를 사용하여 깨끗한 HTML로 변환하는 방법을 배웁니다. 웹사이트에 슬라이드를 게시하거나, CMS로 콘텐츠를 마이그레이션하거나, 자동 보고서를 실행해야 할 경우, 아래 단계는 모든 Java 기반 서버에서 작동하는 프로덕션 준비 솔루션을 제공합니다.
@@ -230,10 +226,3 @@ A: 고정된 스레드 풀로 파일을 순차적으로 처리하고, 가능한 
 - [Java에서 GroupDocs.Parser를 사용하여 PowerPoint PPTX 파일에서 텍스트 추출](/parser/java/text-extraction/extract-text-ppt-groupdocs-parser-java/)
 - [Java용 GroupDocs.Parser로 PowerPoint에서 이미지 추출 방법 (단계별 가이드)](/parser/java/image-extraction/extract-images-powerpoint-groupdocs-parser-java/)
 - [Java용 GroupDocs.Parser를 사용하여 문서를 HTML로 변환하는 방법: 단계별 가이드](/parser/java/formatted-text-extraction/extract-document-text-as-html-groupdocs-parser-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

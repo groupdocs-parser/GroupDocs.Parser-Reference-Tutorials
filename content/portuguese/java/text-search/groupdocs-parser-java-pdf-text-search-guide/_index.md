@@ -200,8 +200,3 @@ A: Absolutamente. Percorra um diretório, aplique a mesma lógica de pesquisa e 
 **Última atualização:** 2026-04-21  
 **Testado com:** GroupDocs.Parser for Java 25.5  
 **Autor:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

@@ -77,10 +77,6 @@ url: /ko/java/container-formats/iterate-zip-archive-groupdocs-parser-java/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # GroupDocs Parser for Java를 사용하여 zip 파일 목록 나열하기
 
 이 **GroupDocs Parser Java tutorial**에서는 **zip 파일 목록을 나열**하는 방법을 빠르고 신뢰성 있게 배웁니다. `Parser` 클래스로 ZIP 파일을 로드하면 전체 아카이브를 추출하지 않고도 각 항목의 이름과 크기를 가져올 수 있어 인벤토리 검사, 규정 준수 보고, 또는 메타데이터를 하위 시스템에 전달하는 데 적합합니다. 이 방법은 JDK 8+에서 작동하며 최대 2 GB, 수백 페이지 아카이브까지 확장됩니다.
@@ -310,10 +306,3 @@ A: 예, 프로덕션 배포에는 유효한 GroupDocs.Parser 라이선스가 필
 - [Java에서 ZIP 아카이브 파일 유형 감지 (GroupDocs.Parser for Java 사용)](/parser/java/container-formats/detect-file-types-zip-groupdocs-parser-java/)
 - [GroupDocs.Parser for Java를 사용하여 문서에서 컨테이너 항목 추출하기](/parser/java/container-formats/extract-container-items-groupdocs-parser-java/)
 - [GroupDocs.Parser Java로 ZIP 파일에서 텍스트 및 메타데이터 추출: 개발자를 위한 완전 가이드](/parser/java/container-formats/extract-text-metadata-zip-files-groupdocs-parser-java/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

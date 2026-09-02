@@ -200,8 +200,3 @@ A: Absolut. Durchlaufen Sie ein Verzeichnis, wenden Sie dieselbe Suchlogik an un
 **Zuletzt aktualisiert:** 2026-04-21  
 **Getestet mit:** GroupDocs.Parser for Java 25.5  
 **Autor:** GroupDocs  
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}

@@ -196,8 +196,3 @@ A: Посетите [GroupDocs Documentation](https://docs.groupdocs.com/parser/
 - **Репозиторий GitHub:** [GroupDocs.Parser GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
 - **Форум бесплатной поддержки:** [GroupDocs Parser Forum](https://forum.groupdocs.com/c/parser)
 - **Временная лицензия:** [Apply for GroupDocs Temporary License](https://purchase.groupdocs.com/temporary-license/)
-
-{< /blocks/products/pf/tutorial-page-section >}
-{< /blocks/products/pf/main-container >}
-{< /blocks/products/pf/main-wrap-class >}
-{< blocks/products/products-backtop-button >}
