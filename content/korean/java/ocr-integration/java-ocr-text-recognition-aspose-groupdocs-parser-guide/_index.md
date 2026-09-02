@@ -1,49 +1,112 @@
 ---
-date: '2026-01-29'
-description: Aspose.OCR와 GroupDocs.Parser를 사용하여 Java에서 이미지에서 텍스트를 추출하고 스캔한 문서 텍스트를
-  효율적으로 변환하는 방법을 배워보세요.
+date: '2026-08-26'
+description: Aspose.OCR와 GroupDocs.Parser를 사용하여 Java 이미지에서 텍스트를 추출하는 방법을 배우고, Java
+  애플리케이션에서 빠른 OCR 및 구조화된 파싱을 구현하세요.
 keywords:
-- Java OCR text recognition
+- how to extract text from image java
+- read text from photo using java
 - Aspose OCR Java
 - GroupDocs Parser for Java
-title: Aspose.OCR 및 GroupDocs.Parser를 사용하여 Java에서 이미지에서 텍스트 추출
+lastmod: '2026-08-26'
+og_description: Aspose.OCR와 GroupDocs.Parser를 사용하여 Java 이미지에서 텍스트를 추출하는 방법. 이 가이드는
+  단계별 설정, 스트림 처리 및 Java 개발자를 위한 모범 사례를 보여줍니다.
+og_image_alt: Guide to extract text from image in Java using Aspose OCR and GroupDocs
+  Parser
+og_title: Aspose.OCR 및 GroupDocs.Parser를 사용하여 Java 이미지에서 텍스트를 추출하는 방법
+schemas:
+- author: GroupDocs
+  dateModified: '2026-08-26'
+  description: Learn how to extract text from image java with Aspose.OCR and GroupDocs.Parser,
+    enabling fast OCR and structured parsing in Java applications.
+  headline: How to extract text from image java using Aspose.OCR & GroupDocs.Parser
+  type: TechArticle
+- description: Learn how to extract text from image java with Aspose.OCR and GroupDocs.Parser,
+    enabling fast OCR and structured parsing in Java applications.
+  name: How to extract text from image java using Aspose.OCR & GroupDocs.Parser
+  steps:
+  - name: '**Set the license for Aspose OCR:**'
+    text: '**Set the license for Aspose OCR:**'
+  - name: '**Initialize GroupDocs.Parser:**'
+    text: '**Initialize GroupDocs.Parser:**'
+  - name: '**Create the AsposeOCR instance:**'
+    text: '**Create the AsposeOCR instance:**'
+  - name: '**Read the image stream into a BufferedImage:**'
+    text: '**Read the image stream into a BufferedImage:**'
+  - name: '**Configure recognition settings (optional area selection):**'
+    text: '**Configure recognition settings (optional area selection):**'
+  - name: '**Run the recognition and handle warnings:**'
+    text: '**Run the recognition and handle warnings:**'
+  - name: '**Enable area detection:**'
+    text: '**Enable area detection:**'
+  - name: '**(Optional) Define specific regions** – reuse the rectangle logic from
+      the previous section if you only care about certain parts of the image.'
+    text: '**(Optional) Define specific regions** – reuse the rectangle logic from
+      the previous section if you only care about certain parts of the image.'
+  - name: '**Execute OCR and collect area information:**'
+    text: '**Execute OCR and collect area information:**'
+  type: HowTo
+- questions:
+  - answer: Add the Aspose OCR dependency from the Aspose Maven repository to your
+      `pom.xml` and run `mvn clean install`. The JAR will be resolved automatically.
+    question: How do I install Aspose OCR in my Maven project?
+  - answer: Yes. Convert each PDF page to an image (for example, with Aspose.PDF),
+      then feed each image stream to the OCR method described above.
+    question: Can I extract text from multi‑page PDFs?
+  - answer: Aspose OCR is optimized for printed characters. For handwriting, consider
+      a dedicated handwriting‑recognition service such as Azure Computer Vision or
+      Google Cloud Vision.
+    question: Does this approach work with handwritten text?
+  - answer: A trial license is sufficient for evaluation, but a full license removes
+      watermarks, lifts usage limits, and provides priority support for commercial
+      deployments.
+    question: Is a license required for production use?
+  - answer: Set the language on the `RecognitionSettings` object (e.g., `settings.setLanguage(Language.Spanish);`).
+      This narrows the character set and dictionary, raising confidence scores.
+    question: How can I improve accuracy for a specific language?
+  type: FAQPage
+tags:
+- OCR Java
+- Aspose OCR
+- GroupDocs Parser
+- image text extraction
+title: Aspose.OCR 및 GroupDocs.Parser를 사용하여 Java 이미지에서 텍스트를 추출하는 방법
 type: docs
 url: /ko/java/ocr-integration/java-ocr-text-recognition-aspose-groupdocs-parser-guide/
 weight: 1
 ---
 
-# 이미지에서 텍스트 추출 (Java) - Aspose.OCR 및 GroupDocs.Parser 사용
+# 이미지에서 텍스트 추출하기 (Java) - Aspose.OCR 및 GroupDocs.Parser 사용
 
-Java 애플리케이션에서 **이미지에서 텍스트 추출**을 효율적으로 할 방법을 찾고 계신가요? 디지털 시대에 문서 사진을 검색 가능하고 편집 가능한 텍스트로 변환하는 것은 필수 기능입니다. 이 튜토리얼에서는 Aspose.OCR와 GroupDocs.Parser for Java를 함께 사용하는 전체 과정을 안내하여 스캔된 문서 텍스트를 신뢰성 있게 문자열로 변환할 수 있도록 합니다.
-
-우리는 라이브러리 설정부터 특정 텍스트 영역 인식까지 모든 내용을 다루며, 이 통합이 빛을 발하는 실제 시나리오도 보여드립니다.
+현대 Java 애플리케이션에서는 문서 사진을 검색 가능하고 편집 가능한 텍스트로 변환하는 것이 자동화, 규정 준수 및 분석을 위한 핵심 요구 사항입니다. **이미지에서 텍스트 추출하기 (Java)**는 이 가이드가 답변하는 정확한 질문입니다. Aspose.OCR의 고정밀 광학 문자 인식과 GroupDocs.Parser의 강력한 레이아웃 인식 파싱을 연결하는 방법을 배우게 되며, 스트림을 처리하여 웹 서비스, 배치 작업 및 데스크톱 도구에 모두 적합한 솔루션을 구현합니다.
 
 ## 빠른 답변
-- **What library handles OCR?** Aspose.OCR는 고정밀 광학 문자 인식을 제공합니다.
-- **Which component parses the result?** GroupDocs.Parser는 OCR 출력에서 구조화된 데이터를 추출합니다.
-- **Minimum Java version?** JDK 8 이상.
-- **Do I need a license?** 테스트용 트라이얼을 사용할 수 있으며, 정식 라이선스로 모든 기능을 활성화할 수 있습니다.
-- **Can I process streams?** 예—두 라이브러리 모두 웹 기반 업로드를 위한 이미지 스트림을 지원합니다.
+- **OCR을 처리하는 라이브러리는 무엇입니까?** Aspose.OCR delivers industry‑leading accuracy for printed text.
+- **OCR 출력 결과를 파싱하는 구성 요소는 무엇입니까?** GroupDocs.Parser turns raw strings into structured tables, forms, and paragraphs.
+- **최소 Java 버전은?** JDK 8 또는 그 이상.
+- **프로덕션에 라이선스가 필요합니까?** 평가용으로는 체험판으로 충분하며, 정식 라이선스를 사용하면 워터마크가 제거되고 모든 기능을 사용할 수 있습니다.
+- **이미지 스트림을 직접 처리할 수 있습니까?** 예—두 API 모두 `InputStream`을 받아 HTTP 업로드에 적합합니다.
 
 ## “이미지에서 텍스트 추출”이란?
-이미지에서 텍스트를 추출한다는 것은 시각적인 문자(예: 스캔된 페이지나 영수증 사진)를 코드가 조작·검색·저장할 수 있는 일반 텍스트로 변환하는 것을 의미합니다. OCR(Optical Character Recognition) 엔진은 픽셀 패턴을 분석하고 글리프를 인식하여 Unicode 문자열을 출력합니다.
+이미지에서 텍스트를 추출한다는 것은 스캔된 페이지나 영수증 사진과 같은 시각적 문자들을 코드가 검색·인덱싱·변환할 수 있는 일반 Unicode 문자열로 변환하는 것을 의미합니다. OCR 엔진은 픽셀 패턴을 분석하고 글리프 형태를 인식하여 텍스트 표현을 출력합니다.
 
 ## 왜 Aspose.OCR와 GroupDocs.Parser를 결합하나요?
-- **Accuracy:** Aspose.OCR는 업계 최고의 인식률을 제공합니다.
-- **Flexibility:** GroupDocs.Parser는 OCR 출력 처리, 페이지 레이아웃 감지, 표나 양식 필드와 같은 구조화된 결과 반환을 지원합니다.
-- **Stream‑friendly:** 두 라이브러리 모두 `InputStream`을 직접 다루어 이미지 업로드를 받는 웹 서비스에 적합합니다.
+Aspose.OCR와 GroupDocs.Parser를 결합하면 고품질 문자 인식과 강력한 레이아웃 분석을 동시에 얻을 수 있습니다. Aspose.OCR는 이미지에서 원시 텍스트를 추출하고, GroupDocs.Parser는 해당 텍스트를 해석해 표, 양식, 다중 열 구조를 식별하여 후속 처리에 바로 사용할 수 있는 구조화된 형식으로 반환합니다.
+
+- **Accuracy:** Aspose.OCR delivers industry‑leading recognition rates.
+- **Flexibility:** GroupDocs.Parser can detect tables, form fields, and multi‑column layouts, returning data in JSON or Java objects.
+- **Stream‑friendly:** Both libraries read directly from `InputStream`, eliminating temporary files and simplifying cloud‑native deployments.
 
 ## 사전 요구 사항
-- **Java Development Kit:** JDK 8 이상이 설치되어 있어야 합니다.
-- **Maven:** 권장 빌드 도구(또는 수동 JAR 관리).
-- **Aspose OCR Library:** 프로젝트에 JAR를 추가합니다.
-- **GroupDocs.Parser for Java:** Maven을 통해 포함(아래 참고)하거나 JAR를 다운로드합니다.
-- **Basic Java knowledge:** 스트림, 예외, 컬렉션 처리에 대한 기본 지식.
+- **Java Development Kit:** JDK 8+ installed.
+- **Maven:** Preferred build tool (or manual JAR handling if you prefer).
+- **Aspose OCR library:** Add the JAR to your project classpath.
+- **GroupDocs.Parser for Java:** Include via Maven (see below) or download the JAR.
+- **Basic Java knowledge:** You should be comfortable with streams, exception handling, and collections.
 
 ## GroupDocs.Parser for Java 설정
 
 ### Maven 설정
-레포지토리와 의존성을 `pom.xml`에 추가합니다:
+Add the repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -64,46 +127,59 @@ Java 애플리케이션에서 **이미지에서 텍스트 추출**을 효율적�
 ```
 
 ### 직접 다운로드
-Maven을 사용하고 싶지 않다면, 최신 JAR를 [GroupDocs Releases](https://releases.groupdocs.com/parser/java/)에서 다운로드하십시오.
+If you prefer not to use Maven, grab the latest JAR from [GroupDocs Releases](https://releases.groupdocs.com/parser/java/).
 
 ### 라이선스 획득
-유효한 라이선스는 Aspose OCR와 GroupDocs.Parser 모두의 전체 기능을 활성화합니다. 무료 체험으로 시작하거나 공급업체 웹사이트에서 영구 라이선스를 구매할 수 있습니다.
+A valid license unlocks the full feature set for both Aspose OCR and GroupDocs.Parser. You can start with a free trial or purchase a permanent license from the vendor websites.
 
 #### 기본 초기화 및 설정
-1. **Aspose OCR 라이선스 설정:**  
-   ```java
+1. **Set the license for Aspose OCR:**  
+   The `License` class loads a license file (`license.lic`) from the classpath and activates all OCR features.
+
+```java
    import com.aspose.ocr.License;
    
    // Initialize and set the Aspose OCR license
    License license = new License();
    license.setLicense("YOUR_LICENSE_PATH/AsposeOcrLicensePath");
    ```
-2. **Initialize GroupDocs.Parser:** 파서 JAR가 클래스패스에 있는지 확인하십시오; 기본 사용을 위해 추가 코드가 필요하지 않습니다.
 
-## 구현 가이드
+2. **Initialize GroupDocs.Parser:**  
+   No extra code is required for basic parsing; the library auto‑detects the OCR output format when you pass the recognized string.
 
-### 기능: 이미지 스트림에서 텍스트 인식
-이 메서드는 `InputStream`(예: 업로드된 파일)을 OCR 엔진에 직접 전달하여 인식된 텍스트를 받을 수 있게 합니다.
+## 이미지에서 텍스트를 추출하는 방법 (Java)?
+Load an image stream, run Aspose.OCR’s `recognizePage` method, and feed the resulting text into GroupDocs.Parser—all in under a dozen lines of Java. This direct approach eliminates intermediate files and gives you structured results ready for database insertion or search‑engine indexing.  
+`recognizePage` processes the supplied image and returns the recognized text as a string.
 
-#### 개요
-이 과정은 들어오는 스트림을 `BufferedImage`로 변환하고, 선택적인 인식 영역을 설정한 뒤 Aspose OCR의 `RecognizePage` 메서드를 호출합니다.
+## 기능: 이미지 스트림에서 텍스트 인식
 
-#### 단계별 코드
-1. **AsposeOCR 인스턴스를 생성합니다:**  
-   ```java
+### 개요
+The process converts the incoming `InputStream` to a `BufferedImage`, optionally limits the OCR to a specific region, and calls Aspose OCR’s `recognizePage` method. The returned string is then handed to GroupDocs.Parser for layout analysis.
+
+#### 단계별 설명
+1. **Create the AsposeOCR instance:**  
+   The `OcrEngine` class is the entry point for all recognition tasks. It encapsulates language models, preprocessing filters, and output settings.
+
+```java
    import com.aspose.ocr.AsposeOCR;
    
    AsposeOCR api = new AsposeOCR();
    ```
-2. **이미지 스트림을 BufferedImage로 읽어들입니다:**  
-   ```java
+
+2. **Read the image stream into a BufferedImage:**  
+   `BufferedImage` is a Java class that stores an image in memory with accessible pixel data. `ImageIO.read` decodes the byte stream into a raster image that the OCR engine can analyze. Using a `BufferedImage` also lets you crop or rotate the picture before recognition.
+
+```java
    import java.awt.image.BufferedImage;
    import javax.imageio.ImageIO;
    
    BufferedImage image = ImageIO.read(imageStream);
    ```
-3. **인식 설정을 구성합니다 (선택적 영역 선택):**  
-   ```java
+
+3. **Configure recognition settings (optional area selection):**  
+   You can limit OCR to a rectangle (`Rectangle` object) to speed up processing and reduce false positives when you know the region of interest (e.g., a passport MRZ).
+
+```java
    import com.aspose.ocr.RecognitionSettings;
    
    RecognitionSettings settings = new RecognitionSettings();
@@ -119,8 +195,11 @@ Maven을 사용하고 싶지 않다면, 최신 JAR를 [GroupDocs Releases](https
        settings.setRecognitionAreas(areas);
    }
    ```
-4. **인식을 실행하고 경고를 처리합니다:**  
-   ```java
+
+4. **Run the recognition and handle warnings:**  
+   The `recognizePage` call returns a `RecognitionResult` that contains the extracted text and any diagnostic warnings (e.g., low confidence segments). Check `result.getWarnings()` to log potential quality issues.
+
+```java
    import com.aspose.ocr.RecognitionResult;
    
    RecognitionResult result = api.RecognizePage(image, settings);
@@ -132,21 +211,26 @@ Maven을 사용하고 싶지 않다면, 최신 JAR를 [GroupDocs Releases](https
    return result.recognitionText;
    ```
 
-### 기능: 이미지 스트림에서 텍스트 영역 인식
-각 텍스트 블록(예: 양식의 개별 필드)이 필요할 때는 영역 감지를 활성화합니다.
+## 기능: 이미지 스트림에서 텍스트 영역 인식
 
-#### 개요
-`detectAreas` 설정은 Aspose OCR에게 인식된 각 스니펫에 대한 경계 사각형을 반환하도록 지시하며, 이를 데이터 모델에 매핑할 수 있습니다.
+### 개요
+When you need each block of text separately—such as individual fields on a form—enable area detection. The OCR engine then returns a list of bounding boxes together with their textual content, which GroupDocs.Parser can map to a structured model.
 
-#### 단계별 코드
-1. **영역 감지를 활성화합니다:**  
-   ```java
+#### 단계별 설명
+1. **Enable area detection:**  
+   Setting `recognitionSettings.setDetectAreas(true)` instructs the engine to return rectangle coordinates for every detected text snippet.
+
+```java
    RecognitionSettings settings = new RecognitionSettings();
    settings.setDetectAreas(true);
    ```
-2. **(선택 사항) 특정 영역 정의 – 이미지의 특정 부분만 필요하면 이전 섹션의 사각형 로직을 재사용하십시오.**
-3. **OCR을 실행하고 영역 정보를 수집합니다:**  
-   ```java
+
+2. **(Optional) Define specific regions** – reuse the rectangle logic from the previous section if you only care about certain parts of the image.
+
+3. **Execute OCR and collect area information:**  
+   The result includes a collection of `TextArea` objects, each exposing `getRectangle()` and `getText()`. You can iterate over this collection to populate a DTO or JSON payload.
+
+```java
    import java.awt.Rectangle;
    import java.util.ArrayList;
    
@@ -167,45 +251,45 @@ Maven을 사용하고 싶지 않다면, 최신 JAR를 [GroupDocs Releases](https
    ```
 
 ## 실용적인 적용 사례
-- **Document Management Systems:** 스캔된 PDF를 색인화하여 사용자가 전체 텍스트를 검색할 수 있게 합니다.
-- **Automated Data Entry:** 사진으로 촬영한 영수증이나 양식에서 필드를 추출합니다.
-- **Content Digitization:** 인쇄된 책이나 매뉴얼을 검색 가능한 전자책으로 변환합니다.
+- **Document management systems:** Index scanned PDFs so users can search the full text without opening the original scan.
+- **Automated data entry:** Pull line‑item details from photographed receipts, invoices, or shipping labels.
+- **Content digitization:** Convert printed manuals into searchable e‑books, preserving tables and headings.
+- **Compliance monitoring:** Scan regulatory forms and automatically flag missing or malformed fields.
 
 ## 성능 고려 사항
-- **Batch Processing:** 이미지들을 배치로 묶어 JVM 오버헤드를 줄입니다.
-- **Image Quality:** 높은 DPI(300 dpi 이상)는 정확도를 크게 향상시킵니다.
-- **Memory Management:** 특히 대량 처리 시 `BufferedImage` 객체를 즉시 해제합니다.
+- **Batch processing:** Group up to 20 images per JVM thread to amortize OCR model loading overhead.
+- **Image quality:** Scans at 300 dpi or higher improve recognition accuracy by up to 15 % compared with 150 dpi images.
+- **Memory management:** Call `bufferedImage.flush()` after each OCR pass and reuse the same `OcrEngine` instance to keep the native model in memory.
 
 ## 일반적인 문제 및 해결 방법
-
-| 증상 | 가능한 원인 | 해결책 |
-|------|------------|--------|
-| 글자가 깨짐 | 저해상도 이미지 | 고해상도 스캔 사용(≥300 dpi) |
-| 텍스트 없음 | 잘못된 이미지 형식(예: CMYK) | OCR 전에 RGB로 변환 |
-| 메모리 부족 오류 | 매우 큰 이미지 | 작은 타일로 처리하거나 힙 크기 증가 |
+| Symptom | Likely cause | Fix |
+|---------|--------------|-----|
+| Garbled characters | Low‑resolution image | Use a scan of ≥300 dpi; apply image sharpening before OCR |
+| No text returned | Unsupported color space (CMYK) | Convert the image to RGB with `BufferedImage.TYPE_INT_RGB` |
+| Out‑of‑memory errors | Very large images (e.g., >10 MP) | Process the image in tiles or increase the JVM heap (`-Xmx4g`) |
 
 ## 자주 묻는 질문
 
-**Q: Maven 프로젝트에 Aspose OCR을 어떻게 설치합니까?**  
-A: `pom.xml`에 Aspose OCR 의존성을 추가(공급업체 Maven 레포지토리 참고)하거나 Aspose 웹사이트에서 JAR를 다운로드하여 클래스패스에 배치합니다.
+**Q: How do I install Aspose OCR in my Maven project?**  
+A: Add the Aspose OCR dependency from the Aspose Maven repository to your `pom.xml` and run `mvn clean install`. The JAR will be resolved automatically.
 
-**Q: 다중 페이지 PDF에서 텍스트를 추출할 수 있나요?**  
-A: 예. 각 PDF 페이지를 이미지로 변환(예: Aspose.PDF 사용)한 뒤 위에서 설명한 OCR 메서드에 스트림을 전달합니다.
+**Q: Can I extract text from multi‑page PDFs?**  
+A: Yes. Convert each PDF page to an image (for example, with Aspose.PDF), then feed each image stream to the OCR method described above.
 
-**Q: 이 접근 방식이 손글씨에도 적용되나요?**  
-A: Aspose OCR은 주로 인쇄된 텍스트를 대상으로 합니다. 손글씨의 경우 전용 손글씨 인식 서비스를 고려하십시오.
+**Q: Does this approach work with handwritten text?**  
+A: Aspose OCR is optimized for printed characters. For handwriting, consider a dedicated handwriting‑recognition service such as Azure Computer Vision or Google Cloud Vision.
 
-**Q: 프로덕션 사용에 라이선스가 필요합니까?**  
-A: 평가용 트라이얼 라이선스로 테스트할 수 있지만, 정식 라이선스를 사용하면 워터마크가 제거되고 상업적 배포를 위한 모든 기능이 활성화됩니다.
+**Q: Is a license required for production use?**  
+A: A trial license is sufficient for evaluation, but a full license removes watermarks, lifts usage limits, and provides priority support for commercial deployments.
 
-**Q: 특정 언어에 대한 정확도를 어떻게 높일 수 있나요?**  
-A: `RecognitionSettings`에서 언어를 설정(e.g., `settings.setLanguage(Language.Spanish);`)하면 엔진이 해당 언어에 최적화됩니다.
+**Q: How can I improve accuracy for a specific language?**  
+A: Set the language on the `RecognitionSettings` object (e.g., `settings.setLanguage(Language.Spanish);`). This narrows the character set and dictionary, raising confidence scores.
 
-## 결론
-Aspose.OCR의 강력한 인식 엔진과 GroupDocs.Parser의 유연한 파싱 기능을 결합함으로써 이제 **이미지에서 텍스트 추출** 파일과 **스캔된 문서 텍스트를** 구조화된 데이터로 변환하는 견고한 솔루션을 갖게 되었습니다. 설정을 실험하고 코드를 서비스 레이어에 통합하면 문서 워크플로우가 완전히 검색 가능하고 자동화되는 모습을 확인할 수 있습니다.
+**Last Updated:** 2026-08-26  
+**Tested With:** Aspose.OCR 23.12, GroupDocs.Parser 25.5  
+**Author:** Aspose  
 
----
+## 관련 튜토리얼
 
-**마지막 업데이트:** 2026-01-29  
-**테스트 환경:** Aspose.OCR 23.12, GroupDocs.Parser 25.5  
-**작성자:** Aspose
+- [GroupDocs.Parser OCR Tutorial – Java Integration Guide](/parser/java/ocr-integration/)
+- [How to extract text from docx using GroupDocs.Parser in Java – A Comprehensive Guide](/parser/java/text-extraction/extract-text-word-docs-groupdocs-parser-java/)

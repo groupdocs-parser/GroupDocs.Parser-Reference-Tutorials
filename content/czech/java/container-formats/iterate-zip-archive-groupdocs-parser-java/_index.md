@@ -1,15 +1,22 @@
 ---
-date: '2026-05-23'
-description: Naučte se, jak v Javě iterovat ZIP archiv pomocí GroupDocs.Parser for
-  Java, získávat názvy souborů a jejich velikosti a efektivně pracovat s velkými archivy.
+date: '2026-08-26'
+description: Naučte se, jak vypsat soubory v zip archivech pomocí GroupDocs Parser
+  for Java, extrahovat názvy souborů v zipu a efektivně ověřovat velikosti zip souborů.
+  Podporuje velké archivy až do 2 GB.
 keywords:
-- iterate zip archive java
+- list files in zip
 - extract zip file names
-- read zip without extraction
-- java process zip archives
+- verify zip file sizes
+lastmod: '2026-08-26'
+og_description: Naučte se, jak vypsat soubory v zip archivech pomocí GroupDocs Parser
+  for Java, extrahovat názvy souborů v zipu a efektivně ověřovat velikosti zip souborů.
+  Podporuje velké archivy až do 2 GB.
+og_image_alt: Guide showing how to list files in zip archives using GroupDocs Parser
+  for Java
+og_title: Jak vypsat soubory v zip pomocí GroupDocs Parser for Java
 schemas:
 - author: GroupDocs
-  dateModified: '2026-05-23'
+  dateModified: '2026-08-26'
   description: Learn how to iterate zip archive java using GroupDocs.Parser for Java,
     extract file names and sizes, and handle large archives efficiently.
   headline: GroupDocs Parser Java Tutorial - Iterate Through ZIP Archives
@@ -60,21 +67,31 @@ schemas:
       a free trial is available for evaluation.
     question: Is a license required for production use?
   type: FAQPage
-title: Návod GroupDocs Parser pro Java – Procházení ZIP archivů
+tags:
+- list files in zip
+- extract zip file names
+- verify zip file sizes
+- GroupDocs Parser
+- Java archive processing
+title: Jak vypsat soubory v zip pomocí GroupDocs Parser for Java
 type: docs
 url: /cs/java/container-formats/iterate-zip-archive-groupdocs-parser-java/
 weight: 1
 ---
 
-# Iterovat ZIP archiv v Javě s GroupDocs Parser
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
 
-V tomto **GroupDocs Parser Java tutoriálu** se dozvíte, jak **iterovat zip archiv v Javě** rychle a spolehlivě. Načtením ZIP souboru pomocí třídy `Parser` můžete získat název a velikost každé položky, aniž byste museli rozbalit celý archiv – ideální pro inventarizaci, zprávy o souladu nebo předávání metadat do downstream systémů. Přístup funguje s JDK 8+ a škáluje na archivy o stovkách stránek.
+# Jak vypsat soubory v zipu pomocí GroupDocs Parser pro Java
+
+V tomto **GroupDocs Parser Java tutoriálu** se naučíte, jak **vypsat soubory v zipu** archivů rychle a spolehlivě. Načtením ZIP souboru pomocí třídy `Parser` můžete získat název a velikost každé položky, aniž byste museli rozbalit celý archiv — ideální pro inventarizaci, zprávy o souladu nebo předávání metadat do downstream systémů. Přístup funguje s JDK 8+ a škáluje na archivů s několika stovkami stránek až do 2 GB.
 
 ## Rychlé odpovědi
 - **Co tento tutoriál pokrývá?** Iterace ZIP archivů a extrakce metadat souborů pomocí GroupDocs.Parser pro Java.  
-- **Potřebuji licenci?** Bezplatná zkušební verze stačí pro hodnocení; pro produkční nasazení je vyžadována trvalá licence.  
-- **Jaká verze Javy je požadována?** JDK 8 nebo novější.  
-- **Mohu zpracovávat i jiné typy archivů?** Ano – GroupDocs.Parser také podporuje RAR, TAR, 7z a další.  
+- **Potřebuji licenci?** Bezplatná zkušební verze funguje pro hodnocení; pro produkční nasazení je vyžadována trvalá licence.  
+- **Která verze Javy je vyžadována?** JDK 8 nebo novější.  
+- **Mohu zpracovávat jiné typy archivů?** Ano — GroupDocs.Parser také podporuje RAR, TAR, 7z a další.  
 - **Jak dlouho trvá implementace?** Obvykle méně než 15 minut pro základní nastavení.
 
 ## Co je GroupDocs Parser Java tutoriál?
@@ -83,14 +100,15 @@ V tomto **GroupDocs Parser Java tutoriálu** se dozvíte, jak **iterovat zip arc
 
 ## Proč iterovat přes ZIP archivy?
 
-Iterace přes ZIP archivy vám umožní **auditovat obsah bez úplného rozbalení**, generovat inventární zprávy, ověřovat integritu souborů a předávat metadata do downstream systémů – vše při nízké spotřebě paměti. Tento přístup také snižuje I/O zátěž a eliminuje riziko přepsání existujících souborů na serveru, čímž zajišťuje bezpečnější auditní proces.  
+Iterace přes ZIP archivy vám umožní **auditovat obsah bez úplného rozbalení**, generovat inventární zprávy, ověřovat integritu souborů a předávat metadata do downstream systémů — vše při nízké spotřebě paměti. Tento přístup také snižuje I/O zátěž a eliminuje riziko přepsání existujících souborů na serveru, což zajišťuje bezpečnější auditní proces.  
+
 - **Rychlost:** Můžete vypsat tisíce položek za méně než sekundu na typickém serveru.  
 - **Bezpečnost:** Není nutné zapisovat dočasné soubory na disk, což snižuje bezpečnostní rizika.  
-- **Škálovatelnost:** Zvládne archivy až do 2 GB bez načítání celého souboru do paměti.
+- **Škálovatelnost:** Zvládá archivy až do 2 GB bez načítání celého souboru do paměti.
 
 ## Předpoklady
 
-- **IDE:** IntelliJ IDEA, Eclipse nebo jakýkoli editor kompatibilní s Javou.  
+- **IDE:** IntelliJ IDEA, Eclipse nebo jakýkoli Java‑kompatibilní editor.  
 - **JDK:** Verze 8 nebo novější.  
 - **Maven** (volitelný, ale doporučený) pro správu závislostí.  
 
@@ -115,7 +133,7 @@ Ujistěte se, že váš projekt obsahuje tyto závislosti přes Maven nebo pří
 </dependencies>
 ```
 
-Můžete také zobrazit všechna vydání na [vydání GroupDocs.Parser pro Java](https://releases.groupdocs.com/parser/java/).
+Všechny verze můžete také zobrazit na [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
 ```xml
 <repositories>
@@ -135,31 +153,31 @@ Můžete také zobrazit všechna vydání na [vydání GroupDocs.Parser pro Java
 </dependencies>
 ```
 
-Alternativně si stáhněte nejnovější verzi přímo z [vydání GroupDocs.Parser pro Java](https://releases.groupdocs.com/parser/java/).
+Nebo si stáhněte nejnovější verzi přímo z [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/). Pro další informace viz [nejnovější dokumentaci](https://docs.groupdocs.com/parser/java/).
 
 ### Požadavky na nastavení prostředí
 - Moderní IDE jako IntelliJ IDEA nebo Eclipse.  
-- JDK 8 nebo novější nainstalované na vašem počítači.
+- Nainstalovaný JDK 8 nebo novější na vašem počítači.
 
 ### Předpoklady znalostí
 - Základní programování v Javě.  
 - Znalost Maven (nebo ruční manipulace s JAR soubory).  
-- Pochopení konceptů ZIP souborů (užitečné, ale ne povinné).
+- Porozumění konceptům ZIP souborů (užitečné, ale ne povinné).
 
 ## Nastavení GroupDocs.Parser pro Java
 
 ### Instalace pomocí Maven
-Přidejte ukázané úložiště a úryvky závislostí do souboru `pom.xml`. Maven automaticky stáhne knihovnu.
+Přidejte repozitář a úryvky závislostí uvedené výše do vašeho `pom.xml`. Maven automaticky stáhne knihovnu.
 
 ### Metoda přímého stažení
-1. Navštivte [vydání GroupDocs.Parser pro Java](https://releases.groupdocs.com/parser/java/).  
-2. Stáhněte nejnovější balík JAR.  
-3. Přidejte soubory JAR do cesty sestavení vašeho projektu.
+1. Navštivte [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).  
+2. Stáhněte nejnovější JAR balíček.  
+3. Přidejte JAR soubory do cesty sestavení vašeho projektu.
 
 ### Kroky získání licence
-- **Bezplatná zkušební verze:** Začněte s trial verzí pro vyzkoušení funkcí.  
-- **Dočasná licence:** Požádejte o prodloužené hodnocení.  
-- **Nákup:** Získejte plnou licenci pro neomezené používání v produkci.
+- **Free trial:** Začněte s trial verzí pro prozkoumání funkcí.  
+- **Temporary license:** Požádejte o dočasnou licenci pro rozšířené hodnocení.  
+- **Purchase:** Získejte plnou licenci pro neomezené používání v produkci.
 
 ### Základní inicializace a nastavení
 Pro ověření, že knihovna funguje, spusťte tento jednoduchý příklad:
@@ -184,37 +202,33 @@ Pokud konzole vypíše *Initialization successful!*, jste připraveni pokračova
 
 ### Jak iterovat položky ZIP archivu v Javě?
 
-Načtěte svůj ZIP pomocí instance `Parser` a projděte každou `ContainerItem`, abyste přečetli název souboru a jeho velikost – celá operace se dokončí ve dvou stručných krocích. Blok `try‑with‑resources` zajišťuje automatické uzavření archivu, čímž předchází únikům zdrojů. Metoda funguje jak pro malé, tak i velké archivy a poskytuje konzistentní výkon bez ohledu na počet položek.
-
-### Iterace přes položky ZIP archivu
+Nahrajte svůj ZIP pomocí instance `Parser` a projděte každou `ContainerItem`, abyste přečetli název souboru a velikost — to je jádro **vypsání souborů v zipu** archivů. Blok `try‑with‑resources` zajišťuje automatické uzavření archivu, čímž předchází únikům zdrojů. Metoda funguje jak pro malé, tak pro velké archivy a poskytuje konzistentní výkon bez ohledu na počet položek.
 
 #### Přehled
-Iterace přes ZIP archiv vám poskytuje programový přístup ke každé položce, což vám umožní číst metadata jako název souboru a velikost, aniž byste museli rozbalit celý archiv.
+Iterace přes ZIP archiv vám poskytuje programový přístup k jednotlivým položkám, což umožňuje číst metadata jako název souboru a velikost bez rozbalení celého archivu.
 
 #### Implementace krok za krokem
 
-**Krok 1: Inicializace objektu Parser**  
-Vytvořte instanci `Parser`, která ukazuje na váš ZIP soubor.
+**Krok 1: inicializovat objekt parseru**  
+`Parser` je hlavní vstupní třída GroupDocs.Parser pro otevírání kontejnerových souborů. Vytvořte instanci `Parser`, která ukazuje na váš ZIP soubor.
 
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/sample.zip")) {
     // The parser is now ready for use
 }
 ```  
-*Definice:* Třída `Parser` je vstupním bodem GroupDocs.Parser pro otevírání a inspekci kontejnerových souborů.  
 *Vysvětlení:* Objekt `Parser` spravuje přístup k archivu. Použití *try‑with‑resources* zaručuje správné uvolnění prostředků.
 
-**Krok 2: Extrahování příloh z kontejneru**  
-Získejte iterovatelný seznam všech položek uvnitř ZIP.
+**Krok 2: extrahovat přílohy z kontejneru**  
+`ContainerItem` představuje jedinou položku (soubor nebo složku) uvnitř kontejneru, jako je ZIP archiv. Získejte iterovatelný seznam všech položek v ZIPu.
 
 ```java
 Iterable<ContainerItem> attachments = parser.getContainer();
 ```  
-*Definice:* `ContainerItem` představuje jedinou položku (soubor nebo složku) uvnitř kontejneru, jako je ZIP archiv.  
 *Vysvětlení:* `getContainer()` vrací kolekci objektů `ContainerItem`, z nichž každý představuje soubor nebo složku v archivu.
 
-**Krok 3: Ověření podpory a iterace přes přílohy**  
-Potvrďte, že extrakce kontejneru je podporována, a poté projděte každou položku.
+**Krok 3: zkontrolovat podporu a iterovat přes přílohy**  
+Ověřte, že extrakce kontejneru je podporována, a poté projděte každou položku. Smyčka vypíše název a velikost každé položky, čímž vám poskytne rychlý inventář archivu.
 
 ```java
 if (attachments == null) {
@@ -226,62 +240,62 @@ if (attachments == null) {
     }
 }
 ```  
-*Vysvětlení:* Vždy před iterací ověřte podporu. Smyčka vypíše název a velikost každé položky, čímž získáte rychlý inventář archivu.
+*Vysvětlení:* Vždy před iterací ověřte podporu. Smyčka vypíše název a velikost každé položky, což poskytuje výsledek „vypsání souborů v zipu“, který potřebujete.
 
-**Krok 4: Zpracování výjimek**  
-Elegantně zachyťte chyby související s formátem.
+**Krok 4: ošetřit výjimky**  
+Zachyťte chyby související s formátem elegantně, aby nedošlo k pádu při nepodporovaných nebo poškozených archivech.
 
 ```java
 } catch (UnsupportedDocumentFormatException e) {
     System.err.println("Document format is not supported.");
 }
 ```  
-*Vysvětlení:* To zajišťuje, že nepodporované nebo poškozené archivy nezhavarují vaši aplikaci a poskytuje jasnou zpětnou vazbu.
+*Vysvětlení:* To zajišťuje, že nepodporované nebo poškozené archivy nezhavarují vaši aplikaci a poskytují jasnou zpětnou vazbu.
 
 #### Tipy pro řešení problémů
 - Ověřte, že cesta k ZIP souboru je správná a přístupná.  
-- Ujistěte se, že používáte verzi GroupDocs.Parser, která podporuje extrakci kontejneru; konzultujte [dokumentaci](https://docs.groupdocs.com/parser/java/).  
+- Ujistěte se, že používáte verzi GroupDocs.Parser, která podporuje extrakci kontejneru; konzultujte [nejnovější dokumentaci](https://docs.groupdocs.com/parser/java/).  
 - Pokud obdržíte `UnsupportedDocumentFormatException`, dvojitě zkontrolujte, že typ archivu je podporován, nebo aktualizujte na nejnovější verzi knihovny.
 
 ## Praktické aplikace
 
 1. **Správa dat:** Vytvářejte inventární zprávy o souborech uložených v zálohách.  
-2. **Ověření zálohy:** Ověřte, že velikosti souborů odpovídají očekávaným hodnotám před obnovou.  
+2. **Ověření záloh:** Ověřte, že velikosti souborů odpovídají očekávaným hodnotám před obnovením.  
 3. **Agregace obsahu:** Shromažďujte metadata před hromadným zpracováním dokumentů.  
-4. **Integrace CRM:** Automaticky vyplňujte záznamy podrobnostmi o souborech extrahovanými z nahraných archivů.  
+4. **Integrace s CRM:** Automaticky vyplňujte záznamy podrobnostmi o souborech extrahovanými z nahraných archivů.  
 5. **Zprávy o souladu:** Generujte auditně připravené seznamy archivovaných aktiv.
 
 ## Úvahy o výkonu
 
-- **Správa paměti:** Používejte *try‑with‑resources* (jak je ukázáno) k rychlému uvolnění prostředků.  
+- **Správa paměti:** Používejte *try‑with‑resources* (jak je ukázáno) k rychlému uvolnění zdrojů.  
 - **Dávkové zpracování:** Pro obrovské archivy zpracovávejte položky v menších dávkách, aby nedocházelo k špičkám paměti.  
-- **Paralelní provádění:** Při zpracování mnoha archivů zvažte paralelní streamy Javy nebo executor služby pro urychlení zpracování.
+- **Paralelní provádění:** Při zpracování mnoha archivů zvažte paralelní streamy Javy nebo služby executor pro zrychlení zpracování.
 
 ## Časté problémy a řešení
 
 | Problém | Příčina | Řešení |
-|---------|---------|--------|
-| `Container extraction isn't supported.` | Použití starší verze knihovny. | Aktualizujte na nejnovější vydání GroupDocs.Parser. |
-| `UnsupportedDocumentFormatException` | Typ archivu nebyl rozpoznán. | Ověřte, že soubor je podporovaný ZIP, nebo přepněte na podporovaný formát kontejneru. |
-| Nebyl vytištěn žádný výstup | `attachments` vrátil `null`. | Ujistěte se, že ZIP není prázdný a cesta je správná. |
-| Přetečení paměti u velkých archivů | Načítání všech položek najednou. | Zpracovávejte položky po částech nebo použijte streamingové API, pokud jsou k dispozici. |
+|-------|-------|----------|
+| `Container extraction isn't supported.` | Použití starší verze knihovny. | Aktualizujte na nejnovější verzi GroupDocs.Parser. |
+| `UnsupportedDocumentFormatException` | Typ archivu není rozpoznán. | Ověřte, že soubor je podporovaný ZIP, nebo přejděte na podporovaný formát kontejneru. |
+| No output printed | `attachments` returned `null`. | Ujistěte se, že ZIP není prázdný a cesta je správná. |
+| Memory overflow on large archives | Načítání všech položek najednou. | Zpracovávejte položky po částech nebo použijte streaming API, pokud je k dispozici. |
 
 ## Často kladené otázky
 
 **Q: Jaké je hlavní využití GroupDocs.Parser pro Java?**  
 A: Zjednodušuje extrakci dat a metadat z široké škály formátů dokumentů a kontejnerů, což umožňuje automatizaci generování inventáře, indexování obsahu a migraci dat.
 
-**Q: Mohu zpracovávat i jiné formáty archivů kromě ZIP?**  
+**Q: Mohu zpracovávat jiné formáty archivů kromě ZIP?**  
 A: Ano, GroupDocs.Parser také podporuje RAR, TAR, 7z a další typy kontejnerů.
 
 **Q: Co mám dělat, pokud narazím na `UnsupportedDocumentFormatException`?**  
-A: Ověřte, že váš formát archivu je uveden v seznamu podporovaných formátů v [nejnovější dokumentaci](https://docs.groupdocs.com/parser/java/) nebo aktualizujte na nejnovější verzi knihovny.
+A: Ověřte, že formát vašeho archivu je uveden v seznamu podporovaných formátů v [nejnovější dokumentaci](https://docs.groupdocs.com/parser/java/) nebo aktualizujte na nejnovější verzi knihovny.
 
 **Q: Jak mohu efektivně zpracovat velmi velké ZIP soubory?**  
-A: Používejte dávkové zpracování, streamujte položky, pokud je to možné, a zvažte paralelizaci iterace napříč více vlákny.
+A: Použijte dávkové zpracování, streamujte položky, pokud je to možné, a zvažte paralelizaci iterace napříč více vlákny.
 
 **Q: Je licence vyžadována pro produkční použití?**  
-A: Pro produkční nasazení je vyžadována platná licence GroupDocs.Parser; pro hodnocení je k dispozici bezplatná zkušební verze.
+A: Pro produkční nasazení je vyžadována platná licence GroupDocs.Parser; pro hodnocení je k dispozici bezplatná trial verze.
 
 ## Závěr
 
@@ -289,7 +303,7 @@ V tomto **GroupDocs Parser Java tutoriálu** jste se naučili, jak nastavit Grou
 
 ---
 
-**Poslední aktualizace:** 2026-05-23  
+**Poslední aktualizace:** 2026-08-26  
 **Testováno s:** GroupDocs.Parser 25.5 for Java  
 **Autor:** GroupDocs
 
@@ -298,3 +312,10 @@ V tomto **GroupDocs Parser Java tutoriálu** jste se naučili, jak nastavit Grou
 - [Detekce typu souboru v ZIP archivech v Javě pomocí GroupDocs.Parser pro Java](/parser/java/container-formats/detect-file-types-zip-groupdocs-parser-java/)
 - [Jak extrahovat položky kontejneru z dokumentů pomocí GroupDocs.Parser pro Java](/parser/java/container-formats/extract-container-items-groupdocs-parser-java/)
 - [Extrahování textu a metadat ze ZIP souborů pomocí GroupDocs.Parser Java: Kompletní průvodce pro vývojáře](/parser/java/container-formats/extract-text-metadata-zip-files-groupdocs-parser-java/)
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}

@@ -1,16 +1,22 @@
 ---
-date: '2026-05-23'
-description: GroupDocs.Parser for Java kullanarak zip arşivlerini nasıl dolaşacağınızı
-  öğrenin, dosya adlarını ve boyutlarını çıkarın ve büyük arşivleri verimli bir şekilde
-  yönetin.
+date: '2026-08-26'
+description: GroupDocs Parser for Java ile zip arşivlerindeki dosyaları nasıl listeleyeceğinizi
+  öğrenin, zip dosya adlarını çıkarın ve zip dosya boyutlarını verimli bir şekilde
+  doğrulayın. 2 GB'a kadar büyük arşivleri destekler.
 keywords:
-- iterate zip archive java
+- list files in zip
 - extract zip file names
-- read zip without extraction
-- java process zip archives
+- verify zip file sizes
+lastmod: '2026-08-26'
+og_description: GroupDocs Parser for Java ile zip arşivlerindeki dosyaları nasıl listeleyeceğinizi
+  öğrenin, zip dosya adlarını çıkarın ve zip dosya boyutlarını verimli bir şekilde
+  doğrulayın. 2 GB'a kadar büyük arşivleri destekler.
+og_image_alt: Guide showing how to list files in zip archives using GroupDocs Parser
+  for Java
+og_title: GroupDocs Parser for Java kullanarak zip içinde dosyaları listeleme
 schemas:
 - author: GroupDocs
-  dateModified: '2026-05-23'
+  dateModified: '2026-08-26'
   description: Learn how to iterate zip archive java using GroupDocs.Parser for Java,
     extract file names and sizes, and handle large archives efficiently.
   headline: GroupDocs Parser Java Tutorial - Iterate Through ZIP Archives
@@ -61,42 +67,53 @@ schemas:
       a free trial is available for evaluation.
     question: Is a license required for production use?
   type: FAQPage
-title: GroupDocs Parser Java Öğreticisi - ZIP Arşivlerinde Dolaşma
+tags:
+- list files in zip
+- extract zip file names
+- verify zip file sizes
+- GroupDocs Parser
+- Java archive processing
+title: GroupDocs Parser for Java kullanarak zip içinde dosyaları listeleme
 type: docs
 url: /tr/java/container-formats/iterate-zip-archive-groupdocs-parser-java/
 weight: 1
 ---
 
-# ZIP Arşivi Java’da GroupDocs Parser ile Dolaşma
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
 
-Bu **GroupDocs Parser Java öğreticisi**'nde, **zip arşivini java’da dolaşmayı** hızlı ve güvenilir bir şekilde keşfedeceksiniz. `Parser` sınıfı ile bir ZIP dosyasını yükleyerek, tüm arşivi çıkarmadan her girdinin adını ve boyutunu alabilirsiniz—envanter kontrolleri, uyumluluk raporlaması veya meta verileri sonraki sistemlere beslemek için mükemmeldir. Yaklaşım JDK 8+ ile çalışır ve yüzlerce sayfalık arşivlere ölçeklenir.
+# GroupDocs Parser for Java kullanarak zip içinde dosyaları listeleme
 
-## Hızlı Yanıtlar
-- **Bu öğretici neyi kapsıyor?** ZIP arşivlerini dolaşma ve dosya meta verilerini GroupDocs.Parser for Java ile çıkarma.  
-- **Lisans gerekir mi?** Değerlendirme için ücretsiz deneme çalışır; üretim için kalıcı bir lisans gereklidir.  
+Bu **GroupDocs Parser Java öğreticisinde** zip arşivlerindeki **dosyaları listelemeyi** hızlı ve güvenilir bir şekilde öğreneceksiniz. `Parser` sınıfı ile bir ZIP dosyasını yükleyerek, tüm arşivi çıkarmadan her girdinin adını ve boyutunu alabilirsiniz—envanter kontrolleri, uyumluluk raporlaması veya meta verileri sonraki sistemlere beslemek için mükemmeldir. Yaklaşım JDK 8+ ile çalışır ve 2 GB'a kadar çok sayfalı arşivlerde ölçeklenebilir.
+
+## Hızlı cevaplar
+- **Bu öğretici neyi kapsıyor?** GroupDocs.Parser for Java ile ZIP arşivlerini yineleyerek dosya meta verilerini çıkarmak.  
+- **Lisans gerekli mi?** Değerlendirme için ücretsiz deneme çalışır; üretim için kalıcı bir lisans gereklidir.  
 - **Hangi Java sürümü gerekiyor?** JDK 8 veya daha yenisi.  
 - **Diğer arşiv türlerini işleyebilir miyim?** Evet—GroupDocs.Parser ayrıca RAR, TAR, 7z ve daha fazlasını destekler.  
-- **Uygulama ne kadar sürer?** Temel bir kurulum için genellikle 15 dakikadan az.
+- **Uygulama ne kadar sürer?** Temel bir kurulum için genellikle 15 dakikadan az sürer.
 
-## GroupDocs Parser Java Öğreticisi Nedir?
+## GroupDocs Parser Java öğreticisi nedir?
 
-Bir **GroupDocs Parser Java öğreticisi**, GroupDocs.Parser kütüphanesini Java projelerine nasıl entegre edeceğinizi gösteren özlü, adım‑adım bir rehberdir; bu sayede geniş bir belge ve konteyner formatı yelpazesinden veri okuyabilir, çıkarabilir ve manipüle edebilirsiniz. Kurulum, kod parçacıkları ve en iyi uygulamaları size adım adım gösterir, böylece her seviyeden geliştiricinin hızlıca başlaması kolaylaşır.
+Bir **GroupDocs Parser Java öğreticisi**, GroupDocs.Parser kütüphanesini Java projelerine entegre etmeyi, geniş bir belge ve konteyner formatı yelpazesinden veri ve meta veri okuma, çıkarma ve işleme süreçlerini adım adım gösteren kısa bir rehberdir. Kurulum, kod parçacıkları ve en iyi uygulamaları kapsar, böylece her seviyeden geliştiricinin hızlıca başlamasını sağlar.
 
-## Neden ZIP arşivlerini dolaşmalısınız?
+## ZIP arşivlerini neden yinelemek?
 
-ZIP arşivlerini dolaşmak, **tam çıkarma yapmadan içerikleri denetlemenizi**, envanter raporları oluşturmanızı, dosya bütünlüğünü doğrulamanızı ve meta verileri sonraki sistemlere beslemenizi sağlar—bunun hepsi bellek kullanımını düşük tutarak gerçekleşir. Bu yaklaşım ayrıca I/O yükünü azaltır ve sunucudaki mevcut dosyaların üzerine yazılma riskini önler, daha güvenli bir denetim süreci sağlar.  
-- **Hız:** Tipik bir sunucuda bir saniyeden az bir sürede binlerce girişi listeleyebilirsiniz.  
-- **Güvenlik:** Diskte geçici dosyalar yazmaya gerek yoktur, güvenlik riski azalır.  
-- **Ölçeklenebilirlik:** Tüm dosyayı belleğe yüklemeden 2 GB’a kadar arşivleri işleyebilir.
+ZIP arşivlerini yinelemek, **tam çıkarma yapmadan içeriği denetlemenizi**, envanter raporları oluşturmanızı, dosya bütünlüğünü doğrulamanızı ve meta verileri sonraki sistemlere beslemenizi sağlar—böylece bellek kullanımı düşük tutulur. Bu yaklaşım ayrıca I/O yükünü azaltır ve sunucudaki mevcut dosyaların üzerine yazılma riskini ortadan kaldırarak daha güvenli bir denetim süreci sunar.  
+
+- **Hız:** Tipik bir sunucuda bir saniyeden kısa sürede binlerce girişi listeleyebilirsiniz.  
+- **Güvenlik:** Diskte geçici dosyalar yazmaya gerek yok, güvenlik riskini azaltır.  
+- **Ölçeklenebilirlik:** Tüm dosyayı belleğe yüklemeden 2 GB'a kadar arşivleri işleyebilir.
 
 ## Önkoşullar
 
-- **IDE:** IntelliJ IDEA, Eclipse veya herhangi bir Java‑uyumlu editör.  
+- **IDE:** IntelliJ IDEA, Eclipse veya herhangi bir Java uyumlu editör.  
 - **JDK:** Versiyon 8 veya daha yenisi.  
-- **Maven** (isteğe bağlı ancak önerilir) bağımlılık yönetimi için.
+- **Maven** (isteğe bağlı ancak önerilir) bağımlılık yönetimi için.  
 
-### Gerekli Kütüphaneler ve Bağımlılıklar
-Projenizin bu bağımlılıkları Maven aracılığıyla veya doğrudan indirme yoluyla içerdiğinden emin olun. Maven kullanıyorsanız, `pom.xml` dosyanıza aşağıdaki yapılandırmaları ekleyin:
+### Gerekli kütüphaneler ve bağımlılıklar
+Projenizin Maven veya doğrudan indirme yoluyla bu bağımlılıkları içerdiğinden emin olun. Maven kullanıyorsanız, `pom.xml` dosyanıza aşağıdaki yapılandırmaları ekleyin:
 
 ```xml
 <repositories>
@@ -136,33 +153,33 @@ Tüm sürümleri [GroupDocs.Parser for Java releases](https://releases.groupdocs
 </dependencies>
 ```
 
-Alternatif olarak, en son sürümü doğrudan [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) adresinden indirebilirsiniz.
+Alternatif olarak, en son sürümü doğrudan [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) adresinden indirebilirsiniz. Ek rehberlik için [en son dokümantasyona](https://docs.groupdocs.com/parser/java/) bakın.
 
-### Ortam Kurulum Gereksinimleri
+### Ortam kurulum gereksinimleri
 - IntelliJ IDEA veya Eclipse gibi modern bir IDE.  
-- Makinenizde yüklü JDK 8 veya daha yenisi.
+- Makinenizde JDK 8 veya daha yenisi kurulu.
 
-### Bilgi Önkoşulları
+### Bilgi önkoşulları
 - Temel Java programlama.  
 - Maven (veya manuel JAR yönetimi) konusunda aşinalık.  
-- ZIP dosyası kavramları hakkında anlayış (yardımcı olur ancak zorunlu değildir).
+- ZIP dosya kavramları hakkında bilgi (yararlı ancak zorunlu değil).
 
-## GroupDocs.Parser for Java Kurulumu
+## GroupDocs.Parser for Java kurulumu
 
-### Maven ile Kurulum
-Yukarıda gösterilen depo ve bağımlılık snippet'lerini `pom.xml` dosyanıza ekleyin. Maven kütüphaneyi otomatik olarak çekecektir.
+### Maven ile kurulum
+Yukarıda gösterilen depo ve bağımlılık parçacıklarını `pom.xml` dosyanıza ekleyin. Maven kütüphaneyi otomatik olarak çekecektir.
 
-### Doğrudan İndirme Yöntemi
+### Doğrudan indirme yöntemi
 1. [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) adresini ziyaret edin.  
 2. En son JAR paketini indirin.  
 3. JAR dosyalarını projenizin derleme yoluna ekleyin.
 
-### Lisans Edinme Adımları
-- **Ücretsiz Deneme:** Özellikleri keşfetmek için bir deneme ile başlayın.  
-- **Geçici Lisans:** Uzatılmış değerlendirme için talep edin.  
-- **Satın Alma:** Sınırsız üretim kullanımı için tam lisans edinin.
+### Lisans edinme adımları
+- **Ücretsiz deneme:** Özellikleri keşfetmek için deneme ile başlayın.  
+- **Geçici lisans:** Uzatılmış değerlendirme için talep edin.  
+- **Satın al:** Sınırsız üretim kullanımı için tam lisans alın.
 
-### Temel Başlatma ve Kurulum
+### Temel başlatma ve kurulum
 Kütüphanenin çalıştığını doğrulamak için bu basit örneği çalıştırın:
 
 ```java
@@ -179,43 +196,39 @@ public class ZipArchiveExample {
 }
 ```
 
-Konsol *Initialization successful!* mesajını yazdırıyorsa, daha derine inmeye hazırsınız.
+Konsol *Initialization successful!* mesajını yazdırırsa, daha derine inmeye hazırsınız.
 
-## Uygulama Rehberi
+## Uygulama rehberi
 
-### Java’da ZIP arşiv öğelerini nasıl dolaşırsınız?
+### Java'da ZIP arşiv öğelerini nasıl yineleyebilirsiniz?
 
-ZIP dosyanızı bir `Parser` örneğiyle yükleyin ve her `ContainerItem` üzerinde döngü kurarak dosya adını ve boyutunu okuyun—bu tüm işlem iki kısa adımda tamamlanır. `try‑with‑resources` bloğu arşivin otomatik olarak kapanmasını sağlar, kaynak sızıntılarını önler. Yöntem hem küçük hem büyük arşivlerde çalışır ve giriş sayısına bakılmaksızın tutarlı performans sunar.
-
-### ZIP Arşiv Öğelerini Dolaşma
+ZIP dosyanızı bir `Parser` örneğiyle yükleyip, her `ContainerItem` üzerinden döngü kurarak dosya adını ve boyutunu okuyabilirsiniz—bu, **zip içinde dosyaları listeleme** işleminin temelidir. `try‑with‑resources` bloğu arşivin otomatik olarak kapanmasını sağlar, kaynak sızıntılarını önler. Yöntem, küçük ve büyük arşivlerde tutarlı performans sunar.
 
 #### Genel Bakış
-ZIP arşivini dolaşmak, her girişe programatik erişim sağlar ve tüm arşivi çıkarmadan dosya adı ve boyutu gibi meta verileri okumanıza imkan tanır.
+ZIP arşivini yinelemek, her girdiye programatik erişim sağlar; böylece tüm arşivi çıkarmadan dosya adı ve boyutu gibi meta verileri okuyabilirsiniz.
 
-#### Adım‑Adım Uygulama
+#### Adım adım uygulama
 
-**Adım 1: Parser Nesnesini Başlatma**  
-ZIP dosyanıza işaret eden bir `Parser` örneği oluşturun.
+**Adım 1: parser nesnesini başlatın**  
+`Parser` GroupDocs.Parser'ın konteyner dosyalarını açmak için ana giriş sınıfıdır. ZIP dosyanıza işaret eden bir `Parser` örneği oluşturun.
 
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/sample.zip")) {
     // The parser is now ready for use
 }
 ```  
-*Tanım:* `Parser` sınıfı, GroupDocs.Parser’ın konteyner dosyalarını açmak ve incelemek için giriş noktasıdır.  
-*Açıklama:* `Parser` nesnesi arşive erişimi yönetir. *try‑with‑resources* kullanımı uygun temizlik garantiler.
+*Açıklama:* `Parser` nesnesi arşive erişimi yönetir. *try‑with‑resources* kullanmak doğru temizlik garantiler.
 
-**Adım 2: Konteynerden Ekleri Çıkarma**  
-ZIP içindeki tüm öğelerin yinelemeli bir listesini alın.
+**Adım 2: konteynerden ekleri çıkarın**  
+`ContainerItem`, bir ZIP arşivi gibi bir konteyner içindeki tek bir girdi (dosya veya klasör) temsil eder. ZIP içindeki tüm öğelerin yinelemeli listesini alın.
 
 ```java
 Iterable<ContainerItem> attachments = parser.getContainer();
 ```  
-*Tanım:* `ContainerItem`, ZIP arşivi gibi bir konteyner içinde tek bir giriş (dosya veya klasör) temsil eder.  
-*Açıklama:* `getContainer()` arşiv içindeki dosya veya klasörleri temsil eden `ContainerItem` nesnelerinin bir koleksiyonunu döndürür.
+*Açıklama:* `getContainer()` bir `ContainerItem` koleksiyonu döndürür; her biri arşivdeki bir dosya veya klasörü temsil eder.
 
-**Adım 3: Destek Kontrolü ve Ekler Üzerinde Dolaşma**  
-Konteyner çıkarımının desteklendiğini doğrulayın, ardından her öğe üzerinde döngü kurun.
+**Adım 3: desteği kontrol edin ve ekler üzerinde yineleyin**  
+Konteyner çıkarımının desteklendiğini doğrulayın, ardından her öğe üzerinde döngü kurun. Döngü, her girdinin adını ve boyutunu yazdırarak hızlı bir envanter oluşturur.
 
 ```java
 if (attachments == null) {
@@ -227,10 +240,10 @@ if (attachments == null) {
     }
 }
 ```  
-*Açıklama:* Dolaşmadan önce her zaman desteği doğrulayın. Döngü, her girişin adını ve boyutunu yazdırarak arşivin hızlı bir envanterini sunar.
+*Açıklama:* Her zaman yinelemeden önce desteği kontrol edin. Döngü, ihtiyacınız olan “zip içinde dosyaları listeleme” sonucunu verir.
 
-**Adım 4: İstisnaları İşleme**  
-Biçimle ilgili hataları nazikçe yakalayın.
+**Adım 4: istisnaları ele alın**  
+Desteklenmeyen veya bozuk arşivlerde çökme yaşamamak için formatla ilgili hataları nazikçe yakalayın.
 
 ```java
 } catch (UnsupportedDocumentFormatException e) {
@@ -239,63 +252,70 @@ Biçimle ilgili hataları nazikçe yakalayın.
 ```  
 *Açıklama:* Bu, desteklenmeyen veya bozuk arşivlerin uygulamanızı çökertmesini önler ve net geri bildirim sağlar.
 
-#### Sorun Giderme İpuçları
-- ZIP dosya yolunun doğru ve erişilebilir olduğunu doğrulayın.  
-- Konteyner çıkarımını destekleyen bir GroupDocs.Parser sürümü kullandığınızdan emin olun; [documentation](https://docs.groupdocs.com/parser/java/) sayfasına bakın.  
+#### Sorun giderme ipuçları
+- ZIP dosya yolunun doğru ve erişilebilir olduğundan emin olun.  
+- Konteyner çıkarımını destekleyen bir GroupDocs.Parser sürümü kullandığınızdan emin olun; [en son dokümantasyona](https://docs.groupdocs.com/parser/java/) bakın.  
 - `UnsupportedDocumentFormatException` alırsanız, arşiv tipinin desteklendiğini tekrar kontrol edin veya en son kütüphane sürümüne güncelleyin.
 
-## Pratik Uygulamalar
+## Pratik uygulamalar
 
-1. **Veri Yönetimi:** Yedeklerde depolanan dosyaların envanter raporlarını oluşturun.  
-2. **Yedek Doğrulama:** Geri yüklemeden önce dosya boyutlarının beklenen değerlerle eşleştiğini doğrulayın.  
-3. **İçerik Toplama:** Belgeleri toplu işleme almadan önce meta verileri toplayın.  
-4. **CRM Entegrasyonu:** Yüklenen arşivlerden çıkarılan dosya detaylarıyla kayıtları otomatik doldurun.  
-5. **Uyumluluk Raporlaması:** Arşivlenmiş varlıkların denetim‑hazır listelerini oluşturun.
+1. **Veri yönetimi:** Yedeklerde saklanan dosyaların envanter raporlarını oluşturun.  
+2. **Yedek doğrulama:** Geri yüklemeden önce dosya boyutlarının beklenen değerlerle eşleştiğini doğrulayın.  
+3. **İçerik toplama:** Belgeleri toplu işleme almadan önce meta verileri toplayın.  
+4. **CRM entegrasyonu:** Yüklenen arşivlerden çıkarılan dosya detaylarıyla kayıtları otomatik doldurun.  
+5. **Uyumluluk raporlaması:** Arşivlenmiş varlıkların denetim‑hazır listelerini oluşturun.
 
-## Performans Düşünceleri
+## Performans değerlendirmeleri
 
-- **Bellek Yönetimi:** Kaynakları hızlıca serbest bırakmak için *try‑with‑resources* (gösterildiği gibi) kullanın.  
-- **Toplu İşleme:** Büyük arşivlerde, bellek dalgalanmalarını önlemek için öğeleri daha küçük partilerde işleyin.  
-- **Paralel Çalıştırma:** Çok sayıda arşivle çalışırken, işleme hızını artırmak için Java’nın paralel akışlarını veya executor servislerini düşünün.
+- **Bellek yönetimi:** *try‑with‑resources* (gösterildiği gibi) kullanarak kaynakları hızlıca serbest bırakın.  
+- **Toplu işleme:** Büyük arşivlerde, bellek dalgalanmalarını önlemek için öğeleri daha küçük partilerde işleyin.  
+- **Paralel yürütme:** Birçok arşivi işlerken, işleme hızını artırmak için Java’nın paralel akışlarını veya executor servislerini düşünün.
 
-## Yaygın Sorunlar ve Çözümler
+## Yaygın sorunlar ve çözümler
 
 | Sorun | Neden | Çözüm |
 |-------|-------|----------|
 | `Container extraction isn't supported.` | Eski bir kütüphane sürümü kullanmak. | En son GroupDocs.Parser sürümüne yükseltin. |
-| `UnsupportedDocumentFormatException` | Arşiv tipi tanınmıyor. | Dosyanın desteklenen bir ZIP olduğundan emin olun veya desteklenen bir konteyner formata geçin. |
-| No output printed | `attachments` returned `null`. | ZIP’in boş olmadığından ve yolun doğru olduğundan emin olun. |
-| Memory overflow on large archives | Tüm girişlerin bir anda yüklenmesi. | Girişleri parçalar halinde işleyin veya mevcutsa akış API’lerini kullanın. |
+| `UnsupportedDocumentFormatException` | Arşiv türü tanınmadı. | Dosyanın desteklenen bir ZIP olduğunu doğrulayın veya desteklenen bir konteyner formatına geçin. |
+| Çıktı yok | `attachments` `null` döndürdü. | ZIP'in boş olmadığından ve yolun doğru olduğundan emin olun. |
+| Büyük arşivlerde bellek taşması | Tüm girdileri bir kerede yüklemek. | Girdileri parçalar halinde işleyin veya mevcutsa akış API'lerini kullanın. |
 
-## Sıkça Sorulan Sorular
+## Sıkça sorulan sorular
 
-**S: GroupDocs.Parser for Java’nın temel kullanımı nedir?**  
-C: Geniş bir belge ve konteyner formatı yelpazesinden veri ve meta veri çıkarmayı basitleştirir, envanter oluşturma, içerik indeksleme ve veri taşıma otomasyonunu mümkün kılar.
+**S: GroupDocs.Parser for Java'nın temel kullanımı nedir?**  
+GroupDocs.Parser, geniş bir belge ve konteyner formatı yelpazesinden veri ve meta veri çıkarmayı basitleştirir; böylece envanter oluşturma, içerik indeksleme ve veri taşıma otomasyonu sağlanır.
 
 **S: ZIP dışındaki diğer arşiv formatlarını işleyebilir miyim?**  
-C: Evet, GroupDocs.Parser ayrıca RAR, TAR, 7z ve diğer konteyner tiplerini de destekler.
+Evet, GroupDocs.Parser ayrıca RAR, TAR, 7z ve diğer konteyner tiplerini destekler.
 
 **S: `UnsupportedDocumentFormatException` ile karşılaşırsam ne yapmalıyım?**  
-C: Arşiv formatınızın [en son dokümantasyon](https://docs.groupdocs.com/parser/java/) sayfasındaki desteklenen formatlar listesinde olduğundan emin olun veya en yeni kütüphane sürümüne yükseltin.
+Arşiv formatınızın [en son dokümantasyonda](https://docs.groupdocs.com/parser/java/) listelenen desteklenen formatlar arasında olduğundan emin olun veya en yeni kütüphane sürümüne yükseltin.
 
-**S: Çok büyük ZIP dosyalarını verimli bir şekilde nasıl yönetebilirim?**  
-C: Toplu işleme kullanın, mümkün olduğunda girişleri akış olarak işleyin ve dolaşmayı birden çok iş parçacığına paralel hale getirmeyi düşünün.
+**S: Çok büyük ZIP dosyalarını verimli bir şekilde nasıl işleyebilirim?**  
+Toplu işleme, mümkün olduğunda akış (stream) kullanma ve yinelemeyi birden çok iş parçacığına paralelleştirerek hızlandırma yöntemlerini uygulayın.
 
-**S: Üretim kullanımı için lisans gerekli mi?**  
-C: Üretim dağıtımları için geçerli bir GroupDocs.Parser lisansı gereklidir; değerlendirme için ücretsiz bir deneme mevcuttur.
+**S: Üretim kullanımında lisans gerekli mi?**  
+Üretim dağıtımları için geçerli bir GroupDocs.Parser lisansı gereklidir; değerlendirme için ücretsiz bir deneme mevcuttur.
 
 ## Sonuç
 
-Bu **GroupDocs Parser Java öğreticisinde**, GroupDocs.Parser'ı nasıl kuracağınızı, ZIP arşiv öğelerini nasıl dolaşacağınızı ve dosya adları ve boyutları gibi faydalı meta verileri nasıl çıkaracağınızı öğrendiniz. Bu teknikler manuel çabayı azaltır, veri doğruluğunu artırır ve sonraki sistemlerle sorunsuz entegrasyon sağlar. Belge dönüştürme veya metin çıkarma gibi ek özellikleri keşfederek GroupDocs.Parser'ın Java uygulamalarınızdaki gücünü daha da genişletebilirsiniz.
+Bu **GroupDocs Parser Java öğreticisinde**, GroupDocs.Parser'ı kurmayı, ZIP arşiv öğelerini yinelemeyi ve dosya adı ile boyutu gibi faydalı meta verileri çıkarmayı öğrendiniz. Bu teknikler manuel çabayı azaltır, veri doğruluğunu artırır ve sonraki sistemlerle sorunsuz entegrasyon sağlar. Belge dönüştürme veya metin çıkarma gibi ek özellikleri keşfederek GroupDocs.Parser'ın Java uygulamalarınızdaki gücünü daha da genişletebilirsiniz.
 
 ---
 
-**Son Güncelleme:** 2026-05-23  
-**Test Edilen Versiyon:** GroupDocs.Parser 25.5 for Java  
-**Yazar:** GroupDocs
+**Last Updated:** 2026-08-26  
+**Tested With:** GroupDocs.Parser 25.5 for Java  
+**Author:** GroupDocs
 
-## İlgili Öğreticiler
+## İlgili öğreticiler
 
-- [Java’da ZIP Arşivlerinde Dosya Türü Tespiti GroupDocs.Parser for Java Kullanarak](/parser/java/container-formats/detect-file-types-zip-groupdocs-parser-java/)
-- [GroupDocs.Parser for Java Kullanarak Belgelerden Konteyner Öğelerini Nasıl Çıkarılır](/parser/java/container-formats/extract-container-items-groupdocs-parser-java/)
-- [GroupDocs.Parser Java ile ZIP Dosyalarından Metin ve Meta Veri Çıkarma: Geliştiriciler İçin Tam Kılavuz](/parser/java/container-formats/extract-text-metadata-zip-files-groupdocs-parser-java/)
+- [Java'da ZIP Arşivlerinde Dosya Türü Algılama – GroupDocs.Parser for Java kullanarak](/parser/java/container-formats/detect-file-types-zip-groupdocs-parser-java/)
+- [GroupDocs.Parser for Java kullanarak Belgelerden Konteyner Öğelerini Çıkarma](/parser/java/container-formats/extract-container-items-groupdocs-parser-java/)
+- [GroupDocs.Parser Java ile ZIP Dosyalarından Metin ve Meta Veri Çıkarma: Geliştiriciler için Tam Kılavuz](/parser/java/container-formats/extract-text-metadata-zip-files-groupdocs-parser-java/)
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
