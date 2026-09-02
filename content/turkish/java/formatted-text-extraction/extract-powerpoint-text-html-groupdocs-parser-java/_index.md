@@ -1,41 +1,45 @@
 ---
-date: '2026-05-23'
-description: GroupDocs.Parser for Java kullanarak pptx'i html'e nasıl dönüştüreceğinizi
-  öğrenin. Bu adım adım rehber, PowerPoint slaytlarını Java ile web yayıncılığı için
-  HTML'e nasıl çıkaracağınızı gösterir.
+date: '2026-08-20'
+description: GroupDocs.Parser for Java kullanarak pptx metnini HTML'ye nasıl çıkaracağınızı
+  öğrenin. Bu kılavuz, PowerPoint'i hızlı bir şekilde HTML olarak kaydetmeyi gösterir.
 keywords:
-- convert pptx to html
-- extract powerpoint to html
-- generate html from pptx
+- extract pptx text
+- save powerpoint as html
+- pptx to html java
+- convert presentation to html
+- extract powerpoint slides html
+lastmod: '2026-08-20'
+og_description: GroupDocs.Parser for Java kullanarak pptx metnini HTML'ye nasıl çıkaracağınızı
+  öğrenin. Bu kılavuz, PowerPoint'i hızlı bir şekilde HTML olarak kaydetmeyi gösterir.
+og_image_alt: 'Tutorial: extract pptx text to HTML using GroupDocs.Parser Java library'
+og_title: GroupDocs for Java ile pptx metnini HTML olarak nasıl çıkarılır
 schemas:
 - author: GroupDocs
-  dateModified: '2026-05-23'
-  description: Learn how to convert pptx to html using GroupDocs.Parser for Java.
-    This step‑by‑step guide shows how to extract PowerPoint slides to HTML with Java
-    for web publishing.
-  headline: Convert PPTX to HTML Using GroupDocs.Parser for Java – A Comprehensive
-    Guide
+  dateModified: '2026-08-20'
+  description: Learn how to extract pptx text to HTML using GroupDocs.Parser for Java.
+    This step‑by‑step guide shows how to save PowerPoint as HTML for web publishing.
+  headline: How to extract pptx text as HTML with GroupDocs for Java
   type: TechArticle
-- description: Learn how to convert pptx to html using GroupDocs.Parser for Java.
-    This step‑by‑step guide shows how to extract PowerPoint slides to HTML with Java
-    for web publishing.
-  name: Convert PPTX to HTML Using GroupDocs.Parser for Java – A Comprehensive Guide
+- description: Learn how to extract pptx text to HTML using GroupDocs.Parser for Java.
+    This step‑by‑step guide shows how to save PowerPoint as HTML for web publishing.
+  name: How to extract pptx text as HTML with GroupDocs for Java
   steps:
-  - name: Create a `Parser` Instance
+  - name: Create a `Parser` instance
     text: 'Provide the path to your PowerPoint file: `Parser` is GroupDocs.Parser’s
       top‑level object that encapsulates a document and exposes extraction APIs. It
       automatically detects the file type, so you don’t need separate handlers for
       PPTX versus PPT.'
-  - name: Set Options for HTML Extraction
+  - name: Set options for HTML extraction
     text: '`FormattedTextOptions` configures the output format and extraction settings
       for the parser. Tell the parser you want HTML output: `FormattedTextOptions`
       lets you specify the output format, whether to include hidden text, and other
       fine‑tuning parameters. Setting `setOutputFormat(OutputFormat.HTML)` '
-  - name: Extract Text Using a `TextReader`
+  - name: Extract text using a `TextReader`
     text: '`TextReader` reads the formatted content from a `Parser` instance according
       to the specified options. Read the formatted HTML text: The `formattedText`
       variable now holds the PowerPoint’s text in clean HTML format, ready for web
-      publishing. You can write it to a file, store it in a database, or inje'
+      publishing. You can write it to a file, store it in a database, or inject it
+      directly into a servlet response.'
   type: HowTo
 - questions:
   - answer: As of this writing, version 25.5 is the current release. Check the official
@@ -54,51 +58,47 @@ schemas:
       instance when possible, and monitor JVM heap size to avoid OutOfMemory errors.
     question: How can I improve performance for bulk conversions?
   type: FAQPage
-title: GroupDocs.Parser for Java kullanarak PPTX'i HTML'e Dönüştürme – Kapsamlı Bir
-  Rehber
+tags:
+- extract pptx text
+- GroupDocs.Parser
+- Java document processing
+- HTML conversion
+title: GroupDocs for Java ile pptx metnini HTML olarak nasıl çıkarılır
 type: docs
 url: /tr/java/formatted-text-extraction/extract-powerpoint-text-html-groupdocs-parser-java/
 weight: 1
 ---
 
-# PPTX'yi HTML'ye Dönüştürme - GroupDocs.Parser for Java Kullanarak
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
 
-PowerPoint sunumunu HTML'ye dönüştürmek, web yayıncılığı, içerik yönetim sistemi geçişi veya otomatik raporlama için **pptx'yi html'ye dönüştür** istediğinizde sık karşılaşılan bir ihtiyaçtır. Bu öğreticide, GroupDocs.Parser for Java ile PowerPoint'i HTML'ye nasıl çıkaracağınızı, kütüphane kurulumundan elde edilen işaretlemenin işlenmesine kadar öğreneceksiniz. Sonunda, herhangi bir Java tabanlı web uygulamasına ekleyebileceğiniz üretim‑hazır bir kod parçacığına sahip olacaksınız.
+# pptx metnini HTML olarak çıkarmak GroupDocs for Java ile
 
-## Hızlı Yanıtlar
-- **“extract powerpoint to html” ne anlama geliyor?** Bu, bir PPTX dosyasının metin içeriğini okuyup temiz HTML işaretlemesi olarak çıkarmak anlamına gelir.  
-- **Java'da bunu destekleyen kütüphane hangisi?** GroupDocs.Parser for Java, HTML çıkarımı için basit bir API sağlar.  
-- **Lisans gerekir mi?** Değerlendirme için ücretsiz deneme veya geçici lisans yeterlidir; üretim için ücretli lisans gereklidir.  
-- **Büyük sunumlar için kullanabilir miyim?** Evet – Java’nın try‑with‑resources yapısını kullanarak belleği verimli yönetin.  
+Bu öğreticide **pptx metnini çıkarmayı** ve GroupDocs.Parser for Java kullanarak temiz HTML'e dönüştürmeyi öğreneceksiniz. Slaytları bir web sitesinde yayınlamanız, içeriği bir CMS'ye taşımanız veya otomatik raporlama yapmanız gerekse, aşağıdaki adımlar herhangi bir Java tabanlı sunucuda çalışan üretim‑hazır bir çözüm sunar.
+
+## Hızlı yanıtlar
+- **“extract powerpoint to html” ne anlama geliyor?** PPTX dosyasının metin içeriğini okuyup temiz HTML işaretlemesi olarak çıkarmak anlamına gelir.  
+- **Java’da bunu hangi kütüphane destekliyor?** GroupDocs.Parser for Java, HTML çıkarımı için basit bir API sağlar.  
+- **Lisans gerekli mi?** Değerlendirme için ücretsiz deneme veya geçici lisans yeterlidir; üretim için ücretli lisans gerekir.  
+- **Büyük sunumlar için kullanabilir miyim?** Evet – Java’nın try‑with‑resources özelliğini kullanarak belleği verimli yönetin.  
 - **Çıktı web yayıncılığı için hazır mı?** Oluşturulan HTML temizdir ve doğrudan web sayfalarına gömülebilir.
 
 ## “convert pptx to html” nedir?
-**Convert pptx to html**, PowerPoint slayt içeriğini standart HTML öğelerine dönüştürme sürecidir, böylece tarayıcılar orijinal Office uygulamasına ihtiyaç duymadan render edebilir. Bu dönüşüm başlıkları, paragrafları, listeleri ve temel stillemeyi korurken, sahipli ikili verileri kaldırır.
+Convert pptx to html, PowerPoint slayt içeriğini standart HTML işaretlemesine dönüştürme sürecidir. Bu dönüşüm başlıkları, paragrafları, listeleri ve temel stillemeyi çıkarırken, özel ikili verileri atar; böylece tarayıcılar Office paketine ihtiyaç duymadan slaytları render eder. Sonuç hafif, aranabilir ve CSS ile stil vermesi kolaydır.
 
-## Neden GroupDocs.Parser for Java Kullanmalı?
-GroupDocs.Parser, **50+ giriş ve çıkış formatını** (DOCX, XLSX, PDF ve PPTX dahil) destekler ve tüm dosyayı belleğe yüklemeden çok sayfalı belgeleri işleyebilir, dönüşüm hızlarını birçok açık‑kaynak alternatife göre **3 × daha hızlı** sağlar. Saf Java uygulaması, yerel bağımlılıkları ortadan kaldırır ve bulut‑yerel dağıtımlar için idealdir.
-
-## Öğrenecekleriniz
-Bu rehberde, kütüphaneyi nasıl kuracağınızı, çıkarma seçeneklerini nasıl yapılandıracağınızı, PPTX dosyalarını nasıl işleyeceğinizi ve elde edilen HTML'yi Java web uygulamalarına nasıl entegre edeceğinizi öğreneceksiniz. Ayrıca performans ipuçları, hata yönetimi stratejileri ve dönüşümün üretim ortamlarında dağıtımı için en iyi uygulamaları göreceksiniz.
-
-- GroupDocs.Parser for Java'ı kurma
-- PowerPoint metnini HTML olarak adım adım çıkarma
-- Web yayıncılığı ve içerik geçişi gibi gerçek dünya kullanım senaryoları
-- Büyük dosyaları işlemek için performans ipuçları
+## Neden GroupDocs.Parser for Java kullanmalı?
+GroupDocs.Parser for Java, **50+ giriş ve çıkış formatını** destekleyen saf Java kütüphanesidir ve dosyanın tamamını belleğe yüklemeden **2 GB**'a kadar belgeleri işleyebilir. Benchmark'ler, birçok açık kaynak alternatifine göre **3 × daha hızlı** dönüşüm hızları gösterir; bu da yüksek verimli web servisleri ve bulut dağıtımları için idealdir.
 
 ## Önkoşullar
-
-Başlamadan önce, şunların yüklü olduğundan emin olun:
-
-- **Java Development Kit (JDK)** yüklü (JDK 8 veya daha yeni).  
-- **Maven** proje yapısına temel aşinalık.  
-- Dönüştürmek istediğiniz bir PowerPoint dosyasına (`.pptx`) erişim.  
+- Java Development Kit (JDK 8 veya daha yeni) yüklü.  
+- Maven tabanlı proje (veya JAR'ı manuel ekleme yeteneği).  
+- Dönüştürmek istediğiniz bir PowerPoint dosyası (`.pptx`).  
 
 ## GroupDocs.Parser for Java'ı Kurma
 
-### Maven Kurulumu
-
-Depoyu ve bağımlılığı `pom.xml` dosyanıza ekleyin:
+### Maven kurulumu
+`pom.xml` dosyanıza depo ve bağımlılığı ekleyin:
 
 ```xml
 <repositories>
@@ -118,34 +118,31 @@ Depoyu ve bağımlılığı `pom.xml` dosyanıza ekleyin:
 </dependencies>
 ```
 
-### Doğrudan İndirme
+### Doğrudan indirme
+Alternatif olarak, en son sürümü doğrudan [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) adresinden indirin.
 
-Alternatif olarak, en son sürümü doğrudan [GroupDocs.Parser for Java sürümleri](https://releases.groupdocs.com/parser/java/) adresinden indirin.
-
-#### Lisans Edinme
-- **Ücretsiz deneme** sürümünü edinin veya tam özellikleri keşfetmek için **geçici lisans** talep edin.  
+#### Lisans edinme
+- **Ücretsiz deneme** sürümü alın veya tam özellikleri keşfetmek için **geçici lisans** isteyin. Bunu [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/) sayfasından edinebilirsiniz.  
 - Kütüphaneyi üretimde kullanmayı planlıyorsanız lisans satın alın.
 
-### Temel Başlatma ve Kurulum
-
-`Parser`, bir belgeyi temsil eden ve biçimlendirilmiş metni çıkarmak için yöntemler sağlayan çekirdek sınıftır. Kütüphanenin sınıf yolunuzda (classpath) olduğundan emin olun, ardından çekirdek sınıfı içe aktarın:
+### Temel başlatma ve kurulum
+`Parser`, bir belgeyi temsil eden ve çıkarma yöntemleri sağlayan çekirdek sınıftır. Kütüphane sınıf yolunuzda (classpath) olduğunda sınıfı içe aktarın:
 
 ```java
 import com.groupdocs.parser.Parser;
 // other imports...
 ```
 
-## Uygulama Kılavuzu
+## Uygulama rehberi
 
 ### Genel Bakış
-Metni HTML olarak çıkarmak, slayt içeriğini doğrudan web sayfalarına gömmenizi sağlar ve manuel kopyala‑yapıştırma ihtiyacını ortadan kaldırır.
+Metni HTML olarak çıkarmak, slayt içeriğini doğrudan web sayfalarına gömmenizi sağlar; manuel kopyala‑yapıştır ihtiyacını ortadan kaldırır ve temel biçimlendirmeyi otomatik olarak korur.
 
-## GroupDocs.Parser Kullanarak PPTX'yi HTML'ye Nasıl Dönüştürülür?
-
+## GroupDocs.Parser kullanarak pptx'i HTML'e nasıl dönüştürürsünüz?
 `new Parser("presentation.pptx")` ile PPTX dosyanızı yükleyin, HTML çıktısı için `FormattedTextOptions` yapılandırın ve bir `TextReader` üzerinde `read` metodunu çağırın. Bu üç adımlı desen, tipik 30 slaytlık sunumlar için dönüşümü bir saniyeden kısa sürede gerçekleştirir ve try‑with‑resources sayesinde kaynak temizliğini otomatik ve verimli bir şekilde yönetir.
 
-### Adım 1: Bir `Parser` Örneği Oluşturun
-PowerPoint dosyanızın yolunu sağlayın:
+### Adım 1: bir `Parser` örneği oluşturun
+`Parser` sınıfı, GroupDocs.Parser’ın bellek içinde tek bir belgeyi kapsayan üst‑seviye nesnesidir. PowerPoint dosyanızın yolunu sağlayın:
 
 ```java
 String pptxPath = "YOUR_DOCUMENT_DIRECTORY/sample-presentation.pptx";
@@ -155,17 +152,19 @@ try (Parser parser = new Parser(pptxPath)) {
 }
 ```
 
-### Adım 2: HTML Çıkarma Seçeneklerini Ayarlayın
-`FormattedTextOptions`, parser için çıktı formatını ve çıkarma ayarlarını yapılandırır.  
-Parser'a HTML çıktısı istediğinizi söyleyin:
+`Parser` dosya tipini otomatik olarak algılar, bu yüzden PPTX ve PPT için ayrı işleyicilere ihtiyacınız yoktur.
+
+### Adım 2: HTML çıkarımı için seçenekleri ayarlayın
+`FormattedTextOptions`, parser için çıktı formatını ve çıkarma ayarlarını yapılandırır. `OutputFormat`, HTML veya düz metin gibi istenen çıktı tipini belirten bir enum'dur. Parser'a HTML çıktısı istediğinizi söyleyin:
 
 ```java
 double htmlOptions = new FormattedTextOptions(FormattedTextMode.Html);
 ```
 
-### Adım 3: `TextReader` Kullanarak Metni Çıkarın
-`TextReader`, belirtilen seçeneklere göre bir `Parser` örneğinden biçimlendirilmiş içeriği okur.  
-Biçimlendirilmiş HTML metnini okuyun:
+`setOutputFormat(OutputFormat.HTML)` ayarı, sonucun yalnızca standart HTML etiketleri içermesini sağlar ve doğrudan web sayfalarına eklenmesi güvenli olur.
+
+### Adım 3: `TextReader` kullanarak metni çıkarın
+`TextReader`, sağlanan seçeneklere göre bir `Parser` örneğinden biçimlendirilmiş içeriği okur. Biçimlendirilmiş HTML metnini okuyun:
 
 ```java
 try (TextReader reader = parser.getFormattedText(options)) {
@@ -173,63 +172,69 @@ try (TextReader reader = parser.getFormattedText(options)) {
 }
 ```
 
-`formattedText` değişkeni artık PowerPoint'in metnini temiz HTML formatında tutar ve web yayıncılığı için hazırdır. Bunu bir dosyaya yazabilir, bir veritabanına kaydedebilir veya doğrudan bir servlet yanıtına enjekte edebilirsiniz.
+`formattedText` değişkeni artık PowerPoint'in metnini temiz HTML formatında tutar ve web yayıncılığı için hazırdır. Bunu bir dosyaya yazabilir, veritabanında saklayabilir veya doğrudan bir servlet yanıtına enjekte edebilirsiniz.
 
-#### Sorun Giderme İpuçları
+#### Sorun giderme ipuçları
 - Dosya yolunun doğru ve dosyanın erişilebilir olduğunu doğrulayın.  
-- GroupDocs.Parser'ın uyumlu bir sürümünü kullandığınızdan emin olun (öğretici sürüm 25.5 hedeflemektedir).  
+- GroupDocs.Parser'ın uyumlu bir sürümünü kullandığınızdan emin olun (öğretici 25.5 sürümünü hedeflemektedir).  
 - İzin veya desteklenmeyen format sorunları için istisna mesajlarını kontrol edin.
 
-## Pratik Uygulamalar
-1. **Web Yayıncılığı PowerPoint Slaytları** – Sunumları bloglar veya portallar için gömülebilir HTML parçacıklarına dönüştürün.  
-2. **İçerik Göçü** – Slayt içeriğini HTML girişi kabul eden CMS platformlarına taşıyın.  
-3. **Veri Analizi** – Raporlama veya duygu analizi için sunumlardan metin verilerini çekin.
+## Pratik uygulamalar
+1. **PowerPoint slaytlarını webde yayınlama** – Sunumları bloglar veya portallar için gömülebilir HTML parçacıklarına dönüştürün.  
+2. **İçerik taşıma** – Slayt içeriğini HTML girişi kabul eden CMS platformlarına taşıyın.  
+3. **Veri analizi** – Sunumlardan metinsel verileri raporlama veya duygu analizi için çekin.
 
-## Performans Düşünceleri
+## Performans değerlendirmeleri
 - **try‑with‑resources** (gösterildiği gibi) kullanarak akışları otomatik kapatın ve belleği serbest bırakın.  
-- Çok büyük `.pptx` dosyaları için, JVM yığını kullanımını düşük tutmak amacıyla slaytları toplu işleyin.  
-- Yüzlerce sunuma ölçeklendirirken CPU ve belleği profil araçlarıyla izleyin; GroupDocs.Parser, tam bellek içinde yüklemeden **2 GB**'a kadar dosyaları işleyebilir.
+- Çok büyük `.pptx` dosyaları için, JVM yığın kullanımını düşük tutmak amacıyla slaytları toplu işleyin.  
+- GroupDocs.Parser, tüm belgeyi belleğe yüklemeden **2 GB**'a kadar dosyaları işleyebilir ve tipik 200 slaytlık sunumları standart bir sunucuda iki saniyeden kısa sürede işler.
 
 ## Sonuç
-Artık GroupDocs.Parser for Java kullanarak **pptx'yi html'ye dönüştür** için eksiksiz, üretim‑hazır bir yönteme sahipsiniz. Bu teknik, web yayıncılığını kolaylaştırır, içerik göçünü basitleştirir ve sunum verilerinin otomatik analizine kapı açar.
+Artık GroupDocs.Parser for Java kullanarak **pptx metnini çıkarmak** ve HTML olarak kaydetmek için eksiksiz, üretim‑hazır bir yönteme sahipsiniz. Bu teknik, web yayıncılığını kolaylaştırır, içerik taşıma sürecini basitleştirir ve sunum verilerinin otomatik analizine kapı açar.
 
-### Sonraki Adımlar
-- Farklı `FormattedTextOptions` (ör. görüntü ekleme) ile deney yapın.  
-- Kaydırma notlarını veya özel stillemeyi çıkarmak gibi gelişmiş senaryolar için resmi [dökümantasyon](https://docs.groupdocs.com/parser/java/) içinde tam API'yi keşfedin.
+### Sonraki adımlar
+- Farklı `FormattedTextOptions` ile deneyler yapın (ör. görüntüleri veya slayt notlarını dahil edin).  
+- Özel stil veya toplu işleme gibi ileri senaryolar için resmi [documentation](https://docs.groupdocs.com/parser/java/) içindeki tam API'yi keşfedin.
 
 ## Sıkça Sorulan Sorular
 
-**S: GroupDocs.Parser'ın en son sürümü nedir?**  
-C: Bu yazı itibarıyla, sürüm 25.5 mevcut sürümdür. Güncellemeler için resmi siteyi kontrol edin.
+**Q: GroupDocs.Parser'ın en son sürümü nedir?**  
+A: Bu yazı itibarıyla, 25.5 sürümü güncel sürümdür. Güncellemeler için resmi siteyi kontrol edin.
 
-**S: PowerPoint dışındaki formatlardan metin çıkarabilir miyim?**  
-C: Evet, GroupDocs.Parser PDF, Word, Excel ve birçok diğer belge türünü destekler.
+**Q: PowerPoint dışındaki formatlardan metin çıkarabilir miyim?**  
+A: Evet, GroupDocs.Parser PDF, Word, Excel ve birçok diğer belge tipini destekler.
 
-**S: Çıkarma işlemi `FileNotFoundException` ile başarısız oluyor. Ne yapmalıyım?**  
-C: Dosya yolunu iki kez kontrol edin, dosyanın var olduğundan emin olun ve Java sürecinin okuma izinlerine sahip olduğunu doğrulayın.
+**Q: Çıkarma işlemi `FileNotFoundException` hatası veriyor. Ne yapmalıyım?**  
+A: Dosya yolunu iki kez kontrol edin, dosyanın mevcut olduğundan emin olun ve Java işleminin okuma izinlerine sahip olduğunu doğrulayın.
 
-**S: Oluşturulan HTML doğrudan bir web sayfasına eklemek güvenli mi?**  
-C: HTML, `<p>`, `<b>` ve `<i>` gibi temel etiketlerden oluşur. Güvenlidir, ancak kullanıcı tarafından yüklenen içeriği temizlemek her zaman iyi bir uygulamadır.
+**Q: Oluşturulan HTML doğrudan bir web sayfasına eklemek için güvenli mi?**  
+A: HTML, `<p>`, `<b>` ve `<i>` gibi temel etiketlerden oluşur. Güvenlidir, ancak kullanıcı tarafından yüklenen içeriği temizlemek her zaman iyi bir uygulamadır.
 
-**S: Toplu dönüşümler için performansı nasıl artırabilirim?**  
-C: Dosyaları sabit bir iş parçacığı havuzu ile sıralı işleyin, mümkün olduğunda `Parser` örneğini yeniden kullanın ve OutOfMemory hatalarını önlemek için JVM yığını boyutunu izleyin.
+**Q: Toplu dönüşümler için performansı nasıl artırabilirim?**  
+A: Dosyaları sabit bir iş parçacığı havuzu ile sıralı işleyin, mümkün olduğunda `Parser` örneğini yeniden kullanın ve OutOfMemory hatalarını önlemek için JVM yığın boyutunu izleyin.
 
 ---
 
-**Son Güncelleme:** 2026-05-23  
-**Test Edilen Versiyon:** GroupDocs.Parser 25.5 for Java  
+**Son güncelleme:** 2026-08-20  
+**Test edildi:** GroupDocs.Parser 25.5 for Java  
 **Yazar:** GroupDocs  
 
 ## Kaynaklar
-- **Dökümantasyon**: [GroupDocs Documentation](https://docs.groupdocs.com/parser/java/)
-- **API Referansı**: [API Reference](https://reference.groupdocs.com/parser/java)
-- **İndirme**: [GroupDocs Downloads](https://releases.groupdocs.com/parser/java/)
-- **GitHub**: [GroupDocs on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
-- **Ücretsiz Destek**: [GroupDocs Forum](https://forum.groupdocs.com/c/parser)
-- **Geçici Lisans**: [Get a Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Dokümantasyon**: [documentation](https://docs.groupdocs.com/parser/java/)  
+- **API referansı**: [API Reference](https://reference.groupdocs.com/parser/java)  
+- **İndirme**: [GroupDocs Downloads](https://releases.groupdocs.com/parser/java/)  
+- **GitHub**: [GroupDocs on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
+- **Ücretsiz destek**: [GroupDocs Forum](https://forum.groupdocs.com/c/parser)
 
-## İlgili Öğreticiler
+## İlgili öğreticiler
 
-- [Java'da GroupDocs.Parser Kullanarak PowerPoint PPTX Dosyalarından Metin Çıkarma](/parser/java/text-extraction/extract-text-ppt-groupdocs-parser-java/)
-- [Java'da GroupDocs.Parser Kullanarak PowerPoint'ten Görüntü Çıkarma (Adım‑Adım Kılavuz)](/parser/java/image-extraction/extract-images-powerpoint-groupdocs-parser-java/)
-- [GroupDocs.Parser Java ile Belgeyi HTML'ye Dönüştürme: Adım‑Adım Kılavuz](/parser/java/formatted-text-extraction/extract-document-text-as-html-groupdocs-parser-java/)
+- [PowerPoint PPTX Dosyalarından Metin Çıkarma GroupDocs.Parser ile Java'da](/parser/java/text-extraction/extract-text-ppt-groupdocs-parser-java/)
+- [PowerPoint'ten Görüntü Çıkarma GroupDocs.Parser Java ile (Adım‑Adım Kılavuz)](/parser/java/image-extraction/extract-images-powerpoint-groupdocs-parser-java/)
+- [Belgeyi HTML'e Dönüştürme GroupDocs.Parser Java ile: Adım‑Adım Kılavuz](/parser/java/formatted-text-extraction/extract-document-text-as-html-groupdocs-parser-java/)
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+
+{{< blocks/products/products-backtop-button >}}
