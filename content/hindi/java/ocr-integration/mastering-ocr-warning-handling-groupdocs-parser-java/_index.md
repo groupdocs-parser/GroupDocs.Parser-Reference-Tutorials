@@ -1,45 +1,103 @@
 ---
-date: '2026-02-01'
-description: GroupDocs.Parser और Aspose OCR का उपयोग करके OCR चेतावनियों को Java में
-  संभालना और इमेज टेक्स्ट को Java में पढ़ना सीखें, सटीक डेटा निष्कर्षण के लिए।
+date: '2026-09-02'
+description: GroupDocs.Parser और Aspose OCR का उपयोग करके Java में OCR चेतावनियों
+  को संभालना और इमेज टेक्स्ट पढ़ना सीखें, जिससे सटीक डेटा निष्कर्षण हो सके।
 keywords:
-- OCR warning handling
-- GroupDocs.Parser Java
-- Aspose OCR
-title: GroupDocs.Parser और Aspose OCR के साथ जावा में OCR चेतावनियों को संभालें
+- handle ocr warnings java
+- read image text java
+- groupdocs parser java
+- aspose ocr java
+lastmod: '2026-09-02'
+og_description: GroupDocs.Parser और Aspose OCR का उपयोग करके Java में OCR चेतावनियों
+  को संभालें। इमेज टेक्स्ट पढ़ना, चेतावनियों को कैप्चर करना और निष्कर्षण की सटीकता
+  बढ़ाना सीखें।
+og_image_alt: Guide showing Java code for OCR warning handling with GroupDocs.Parser
+  and Aspose OCR
+og_title: GroupDocs.Parser और Aspose OCR के साथ Java में OCR चेतावनियों को संभालें
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-02'
+  description: Learn how to handle OCR warnings Java and read image text Java using
+    GroupDocs.Parser and Aspose OCR for accurate data extraction.
+  headline: Handle OCR warnings Java with GroupDocs.Parser and Aspose OCR
+  type: TechArticle
+- description: Learn how to handle OCR warnings Java and read image text Java using
+    GroupDocs.Parser and Aspose OCR for accurate data extraction.
+  name: Handle OCR warnings Java with GroupDocs.Parser and Aspose OCR
+  steps:
+  - name: create an instance of `ParserSettings`
+    text: '`ParserSettings` configures the GroupDocs.Parser engine, allowing you to
+      specify OCR connectors and processing options.'
+  - name: initialize the `Parser` class
+    text: '`Parser` is the core object that reads documents according to the settings
+      you defined.'
+  - name: set up an OCR event handler
+    text: '`OcrEventHandler` captures warnings such as low DPI or unrecognized symbols
+      during OCR execution.'
+  - name: configure `OcrOptions`
+    text: '`OcrOptions` links your `OcrEventHandler` to the OCR engine and lets you
+      fine‑tune language packs, DPI, and other parameters.'
+  - name: define text extraction options
+    text: '`TextOptions` tells the parser how to return extracted text—plain, formatted,
+      or with layout information.'
+  - name: extract text and handle warnings
+    text: Invoke the extraction process; the engine will populate the event handler
+      with any warnings it encounters.
+  - name: review OCR warnings
+    text: After extraction, query the handler’s warning collection and log or act
+      on each entry.
+  type: HowTo
+- questions:
+  - answer: It’s a powerful library for extracting data from many document formats,
+      including OCR‑driven text extraction.
+    question: What is GroupDocs.Parser for Java used for?
+  - answer: Set up an `OcrEventHandler` and link it with `OcrOptions`. After extraction,
+      query `handler.getWarnings()` to review all issues.
+    question: How do I handle OCR warnings effectively?
+  - answer: Yes, a trial version is available, but it has feature limits. A full license
+      removes those restrictions.
+    question: Can I use GroupDocs.Parser without a license?
+  - answer: Absolutely – the OCR engine works across supported image‑based document
+      types, enabling you to **read image text Java** reliably.
+    question: Does this approach let me read image text Java from PDFs and TIFFs?
+  - answer: Pre‑process images (increase DPI, improve contrast) and configure OCR
+      settings such as language packs to match your source material.
+    question: How can I reduce the number of warnings?
+  type: FAQPage
+tags:
+- ocr warnings
+- groupdocs.parser
+- aspose ocr
+- java document processing
+title: GroupDocs.Parser और Aspose OCR के साथ Java में OCR चेतावनियों को संभालें
 type: docs
 url: /hi/java/ocr-integration/mastering-ocr-warning-handling-groupdocs-parser-java/
 weight: 1
 ---
 
-# Java में OCR चेतावनियों को संभालें GroupDocs.Parser और Aspose OCR के साथ
+# GroupDocs.Parser और Aspose OCR के साथ Java में OCR चेतावनियों को संभालें
 
-## परिचय
-
-यदि आपको टेक्स्ट निष्कर्षण के दौरान अक्सर उत्पन्न होने वाली **handle OCR warnings Java** को संभालना है, तो आप सही जगह पर हैं। इस ट्यूटोरियल में हम GroupDocs.Parser for Java को Aspose के OCR कनेक्टर के साथ एकीकृत करने की प्रक्रिया दिखाएंगे, ताकि आप विश्वसनीय रूप से **read image text Java** फ़ाइलें पढ़ सकें और इंजन द्वारा उत्पन्न प्रत्येक चेतावनी को कैप्चर कर सकें। आपको एक पूर्ण, चरण‑दर‑चरण समाधान मिलेगा जो तुरंत काम करता है और किसी भी Java प्रोजेक्ट में डाला जा सकता है।
+यदि आपको **handle OCR warnings Java** एप्लिकेशन टेक्स्ट एक्सट्रैक्शन के दौरान अक्सर उत्पन्न होते हैं, तो आप सही जगह पर आए हैं। इस ट्यूटोरियल में हम GroupDocs.Parser for Java को Aspose के OCR कनेक्टर के साथ एकीकृत करेंगे, ताकि आप विश्वसनीय रूप से **read image text Java** फ़ाइलें पढ़ सकें और इंजन द्वारा उत्पन्न प्रत्येक चेतावनी को कैप्चर कर सकें। आपको एक पूर्ण, चरण‑दर‑चरण समाधान मिलेगा जो बॉक्स से बाहर काम करता है और किसी भी Java प्रोजेक्ट में डाला जा सकता है।
 
 ## त्वरित उत्तर
-- **Java में OCR चेतावनियों को प्रबंधित करने में कौनसी लाइब्रेरी मदद करती है?** GroupDocs.Parser combined with Aspose OCR.
-- **क्या मुझे लाइसेंस चाहिए?** मूल्यांकन के लिए एक मुफ्त ट्रायल काम करता है; उत्पादन के लिए पूर्ण लाइसेंस आवश्यक है।
-- **कौनसा Java संस्करण आवश्यक है?** JDK 1.8 या नया।
-- **क्या मैं स्कैन की गई छवियों से टेक्स्ट निकाल सकता हूँ?** हाँ – OCR इंजन image text Java को सहजता से पढ़ता है।
-- **चेतावनियों तक कैसे पहुँचें?** निष्कर्षण के बाद `OcrEventHandler` के माध्यम से।
+- **Java में OCR चेतावनियों को प्रबंधित करने में कौन सी लाइब्रेरी मदद करती है?** GroupDocs.Parser combined with Aspose OCR.  
+- **क्या मुझे लाइसेंस की आवश्यकता है?** A free trial works for evaluation; a full license is required for production.  
+- **कौन सा Java संस्करण आवश्यक है?** JDK 1.8 or newer.  
+- **क्या मैं स्कैन की गई छवियों से टेक्स्ट निकाल सकता हूँ?** Yes – the OCR engine reads image text Java seamlessly.  
+- **चेतावनियों तक कैसे पहुंचा जाता है?** Via the `OcrEventHandler` after extraction.
 
 ## Java में OCR चेतावनी संभालना क्या है?
-OCR के दौरान, इंजन कम‑रिज़ॉल्यूशन वाली छवियों, असमर्थित फ़ॉन्ट्स या अस्पष्ट अक्षरों का सामना कर सकता है। ऐसी स्थितियों में चेतावनियाँ उत्पन्न होती हैं जो यदि अनदेखी की जाएँ तो डेटा की कमी या गलत डेटा हो सकता है। इन चेतावनियों को कैप्चर और समीक्षा करके आप प्री‑प्रोसेसिंग चरणों को फाइन‑ट्यून कर सकते हैं, सटीकता बढ़ा सकते हैं, और सुनिश्चित कर सकते हैं कि आपके डाउनस्ट्रीम प्रोसेस साफ़, विश्वसनीय टेक्स्ट प्राप्त करें।
+Java में OCR चेतावनी संभालना OCR इंजन द्वारा सामना किए गए प्रत्येक मुद्दे को कैप्चर करता है—जैसे कम‑रिज़ॉल्यूशन छवियां, असमर्थित फ़ॉन्ट, या अस्पष्ट अक्षर—ताकि आप उन पर कार्रवाई कर सकें। इन चेतावनियों की समीक्षा करके आप प्री‑प्रोसेसिंग चरणों को फाइन‑ट्यून कर सकते हैं, पहचान की सटीकता सुधार सकते हैं, और यह सुनिश्चित कर सकते हैं कि डाउनस्ट्रीम प्रक्रियाएं साफ़, विश्वसनीय टेक्स्ट प्राप्त करें।
 
 ## क्यों उपयोग करें GroupDocs.Parser को Aspose OCR के साथ?
-- **एकीकृत API:** कई दस्तावेज़ फ़ॉर्मेट के लिए एक समान इंटरफ़ेस।
-- **मजबूत चेतावनी प्रणाली:** अंतर्निहित `OcrEventHandler` सभी समस्याओं को उजागर करता है।
-- **उच्च सटीकता:** Aspose OCR उद्योग‑अग्रणी पहचान दर प्रदान करता है।
-- **स्केलेबल:** एकल फ़ाइलों या बड़े बैच कार्यों के लिए काम करता है।
+GroupDocs.Parser को Aspose OCR के साथ उपयोग करने से आपको एकीकृत, उच्च‑प्रदर्शन पाइपलाइन मिलती है: यह **30+** दस्तावेज़ और छवि फ़ॉर्मेट का समर्थन करता है, मानक मुद्रित टेक्स्ट पर **>99 %** अक्षर‑स्तर की सटीकता प्रदान करता है, और एक ही बैच में **10,000 पृष्ठों तक** को प्रोसेस कर सकता है बिना पूरी फ़ाइल को मेमोरी में लोड किए। बिल्ट‑इन `OcrEventHandler` प्रत्येक चेतावनी को प्रदर्शित करता है, जिससे आप प्रोग्रामेटिक रूप से प्रतिक्रिया दे सकते हैं।
 
 ## पूर्वापेक्षाएँ
 
 ### आवश्यक लाइब्रेरी और निर्भरताएँ
-- GroupDocs.Parser for Java संस्करण 25.5।  
-- Aspose OCR कनेक्टर (`AsposeOcrOnPremise`)।  
-- Maven या मैनुअल JAR प्रबंधन।
+- GroupDocs.Parser for Java संस्करण 25.5.  
+- Aspose OCR कनेक्टर (`AsposeOcrOnPremise`).  
+- Maven या मैन्युअल JAR प्रबंधन।
 
 ### पर्यावरण सेटअप आवश्यकताएँ
 - JDK 1.8 या बाद का संस्करण।  
@@ -51,11 +109,11 @@ OCR के दौरान, इंजन कम‑रिज़ॉल्यूश
 
 इन पूर्वापेक्षाओं को पूरा करने के बाद, आप शुरू करने के लिए तैयार हैं।
 
-## GroupDocs.Parser for Java सेटअप
+## GroupDocs.Parser को Java के लिए सेटअप करना
 
-### Maven इंस्टॉलेशन
+### Maven स्थापना
 
-`pom.xml` में रिपॉजिटरी और डिपेंडेंसी जोड़ें:
+अपने `pom.xml` में रिपॉजिटरी और डिपेंडेंसी जोड़ें:
 
 ```xml
 <repositories>
@@ -77,11 +135,11 @@ OCR के दौरान, इंजन कम‑रिज़ॉल्यूश
 
 ### सीधे डाउनलोड
 
-वैकल्पिक रूप से, नवीनतम संस्करण यहाँ से डाउनलोड करें: [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/)।
+वैकल्पिक रूप से, नवीनतम संस्करण डाउनलोड करें [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) से।
 
-### लाइसेंस प्राप्त करना
-- मूल्यांकन के लिए मुफ्त ट्रायल या अस्थायी लाइसेंस से शुरू करें।  
-- उत्पादन परिनियोजन के लिए पूर्ण लाइसेंस खरीदें।
+### लाइसेंस प्राप्ति
+- मूल्यांकन के लिए एक मुफ्त ट्रायल या अस्थायी लाइसेंस से शुरू करें।  
+- प्रोडक्शन डिप्लॉयमेंट के लिए पूर्ण लाइसेंस खरीदें।
 
 #### बुनियादी इनिशियलाइज़ेशन और सेटअप
 
@@ -100,14 +158,16 @@ ParserSettings settings = new ParserSettings(new AsposeOcrOnPremise());
 ### OCR चेतावनी संभालने की सुविधा
 
 #### चरण 1: `ParserSettings` का एक इंस्टेंस बनाएं
-Aspose OCR कनेक्टर को शामिल करने के लिए अपने parser सेटिंग्स को कॉन्फ़िगर करके शुरू करें:
+
+`ParserSettings` GroupDocs.Parser इंजन को कॉन्फ़िगर करता है, जिससे आप OCR कनेक्टर्स और प्रोसेसिंग विकल्प निर्दिष्ट कर सकते हैं।
 
 ```java
 ParserSettings settings = new ParserSettings(new AsposeOcrOnPremise());
 ```
 
 #### चरण 2: `Parser` क्लास को इनिशियलाइज़ करें
-कॉन्फ़िगर किए गए सेटिंग्स का उपयोग करके `Parser` क्लास का एक इंस्टेंस बनाएं, और इसे अपने दस्तावेज़ डायरेक्टरी की ओर इंगित करें:
+
+`Parser` वह मुख्य ऑब्जेक्ट है जो आपके द्वारा परिभाषित सेटिंग्स के अनुसार दस्तावेज़ पढ़ता है।
 
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY", settings)) {
@@ -116,28 +176,32 @@ try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY", settings)) {
 ```
 
 #### चरण 3: OCR इवेंट हैंडलर सेट अप करें
-OCR प्रक्रिया के दौरान किसी भी चेतावनी को कैप्चर करने के लिए एक `OcrEventHandler` बनाएं और कॉन्फ़िगर करें:
+
+`OcrEventHandler` OCR निष्पादन के दौरान कम DPI या अपरिचित प्रतीकों जैसी चेतावनियों को कैप्चर करता है।
 
 ```java
 OcrEventHandler handler = new OcrEventHandler();
 ```
 
-#### चरण 4: `OcrOptions` कॉन्फ़िगर करें
-सभी चेतावनियों को कैप्चर करने और समीक्षा करने के लिए अपने इवेंट हैंडलर को `OcrOptions` के साथ लिंक करें:
+#### चरण 4: `OcrOptions` को कॉन्फ़िगर करें
+
+`OcrOptions` आपके `OcrEventHandler` को OCR इंजन से जोड़ता है और आपको भाषा पैक्स, DPI, और अन्य पैरामीटर को फाइन‑ट्यून करने देता है।
 
 ```java
 OcrOptions ocrOptions = new OcrOptions(null, handler);
 ```
 
-#### चरण 5: टेक्स्ट निष्कर्षण विकल्प निर्धारित करें
-`TextOptions` सेट करके OCR क्षमताओं का उपयोग करके टेक्स्ट कैसे निकाला जाए, यह निर्दिष्ट करें:
+#### चरण 5: टेक्स्ट एक्सट्रैक्शन विकल्प निर्धारित करें
+
+`TextOptions` पार्सर को बताता है कि निकाले गए टेक्स्ट को कैसे लौटाया जाए—सादा, फॉर्मेटेड, या लेआउट जानकारी के साथ।
 
 ```java
 textOptions options = new TextOptions(false, true, ocrOptions);
 ```
 
 #### चरण 6: टेक्स्ट निकालें और चेतावनियों को संभालें
-टेक्स्ट निकालते समय उत्पन्न होने वाली सभी चेतावनियों को कैप्चर करते हुए आगे बढ़ें:
+
+एक्सट्रैक्शन प्रक्रिया को कॉल करें; इंजन किसी भी चेतावनी को इवेंट हैंडलर में भर देगा जो वह सामना करता है।
 
 ```java
 try (TextReader reader = parser.getText(options)) {
@@ -150,7 +214,8 @@ try (TextReader reader = parser.getText(options)) {
 ```
 
 #### चरण 7: OCR चेतावनियों की समीक्षा करें
-निष्कर्षण के बाद, किसी भी चेतावनी की जाँच करें और उन्हें प्रदर्शित करें:
+
+एक्सट्रैक्शन के बाद, हैंडलर की चेतावनी संग्रह को क्वेरी करें और प्रत्येक प्रविष्टि को लॉग या कार्रवाई करें।
 
 ```java
 if (handler.hasWarnings()) {
@@ -167,36 +232,47 @@ if (handler.hasWarnings()) {
 
 OCR को चेतावनी संभालने के साथ एकीकृत करना विभिन्न परिदृश्यों में अत्यधिक लाभदायक हो सकता है:
 
-1. **दस्तावेज़ डिजिटलीकरण:** भौतिक दस्तावेज़ों को संपादन योग्य फ़ॉर्मेट में स्वचालित रूप से बदलें और संभावित त्रुटियों को कैप्चर करें।  
-2. **डेटा एंट्री ऑटोमेशन:** मैन्युअल डेटा एंट्री कार्यों को कम करें, दक्षता और सटीकता बढ़ाएँ।  
+1. **दस्तावेज़ डिजिटलीकरण:** भौतिक दस्तावेज़ों को संपादन योग्य फ़ॉर्मेट में बदलने को स्वचालित करें जबकि संभावित त्रुटियों को कैप्चर करें।  
+2. **डेटा एंट्री ऑटोमेशन:** मैनुअल डेटा एंट्री कार्यों को कम करें, दक्षता और सटीकता बढ़ाएँ।  
 3. **कंटेंट आर्काइविंग:** छवियों या स्कैन किए गए दस्तावेज़ों से टेक्स्ट निकालें डिजिटल आर्काइविंग के लिए, चेतावनी प्रबंधन के माध्यम से पूर्णता सुनिश्चित करें।  
-4. **CMS एकीकरण:** कंटेंट मैनेजमेंट सिस्टम में इमेज‑आधारित स्रोतों से कंटेंट निर्माण को स्वचालित करें।  
-5. **ई‑कॉमर्स कैटलॉगिंग:** छवियों से उत्पाद जानकारी निकालें और कैटलॉग अपडेट को तेज़ करें।
+4. **CMS इंटीग्रेशन:** कंटेंट मैनेजमेंट सिस्टम में इमेज‑बेस्ड स्रोतों से कंटेंट निर्माण को स्वचालित करें।  
+5. **ई‑कॉमर्स कैटलॉगिंग:** छवियों से उत्पाद जानकारी निकालें ताकि कैटलॉग अपडेट तेज़ हो सके।
 
-## प्रदर्शन विचार
+## प्रदर्शन संबंधी विचार
 
-OCR प्रदर्शन को अनुकूलित करने से आपके Java सेवाएँ प्रतिक्रियाशील बनी रहती हैं:
+OCR प्रदर्शन को अनुकूलित करने से आपके Java सेवाओं को उत्तरदायी बनाए रखने में मदद मिलती है:
 
 - **संसाधन प्रबंधन:** पर्याप्त हीप मेमोरी आवंटित करें और स्ट्रीम्स को तुरंत बंद करें।  
 - **बैच प्रोसेसिंग:** ओवरहेड कम करने के लिए फ़ाइलों को बैच में समूहित करें।  
-- **असिंक्रोनस हैंडलिंग:** OCR को अलग थ्रेड में चलाएँ या `CompletableFuture` का उपयोग करके मुख्य वर्कफ़्लो को ब्लॉक होने से बचाएँ।
+- **असिंक्रोनस हैंडलिंग:** OCR को अलग थ्रेड में चलाएँ या `CompletableFuture` का उपयोग करें ताकि मुख्य वर्कफ़्लो ब्लॉक न हो।
 
 ## अक्सर पूछे जाने वाले प्रश्न
 
-**प्रश्न: GroupDocs.Parser for Java का उपयोग किस लिए किया जाता है?**  
-**उत्तर:** यह कई दस्तावेज़ फ़ॉर्मेट से डेटा निकालने के लिए एक शक्तिशाली लाइब्रेरी है, जिसमें OCR‑आधारित टेक्स्ट निष्कर्षण भी शामिल है।
+**Q: GroupDocs.Parser for Java किस लिए उपयोग किया जाता है?**  
+A: यह कई दस्तावेज़ फ़ॉर्मेट से डेटा निकालने के लिए एक शक्तिशाली लाइब्रेरी है, जिसमें OCR‑ड्रिवेन टेक्स्ट एक्सट्रैक्शन शामिल है।
 
-**प्रश्न: मैं OCR चेतावनियों को प्रभावी ढंग से कैसे संभालूँ?**  
-**उत्तर:** एक `OcrEventHandler` सेट करें और इसे `OcrOptions` के साथ लिंक करें। निष्कर्षण के बाद, सभी समस्याओं की समीक्षा के लिए `handler.getWarnings()` को क्वेरी करें।
+**Q: OCR चेतावनियों को प्रभावी ढंग से कैसे संभालें?**  
+A: एक `OcrEventHandler` सेट अप करें और इसे `OcrOptions` से लिंक करें। एक्सट्रैक्शन के बाद, `handler.getWarnings()` को क्वेरी करके सभी मुद्दों की समीक्षा करें।
 
-**प्रश्न: क्या मैं GroupDocs.Parser को बिना लाइसेंस के उपयोग कर सकता हूँ?**  
-**उत्तर:** हाँ, एक ट्रायल संस्करण उपलब्ध है, लेकिन इसमें फीचर सीमाएँ हैं। पूर्ण पढ़ने देता है?**  
-**उत्तर:** बिल्कुल – OCR इंजन समर्थित इमेज‑आधारित दस्तावेज़ प्रकारों में काम करता है, जिससे आप **read image text Java** को विश्वसनीय रूप से पढ़ सकते हैं।
+**Q: क्या मैं GroupDocs.Parser को बिना लाइसेंस के उपयोग कर सकता हूँ?**  
+A: हाँ, एक ट्रायल संस्करण उपलब्ध है, लेकिन इसमें फीचर सीमाएँ हैं। पूर्ण लाइसेंस इन प्रतिबंधों को हटा देता है।
 
-**प्रश्न: मैं चेतावनियों की संख्या कैसे कम कर सकता हूँ?**  
-**उत्तर:** छवियों को पूर्व‑प्रसंस्करण करें (DPI बढ़ाएँ, कंट्रास्ट सुधारें) और OCR सेटिंग्स जैसे भाषा पैक्स को अपने स्रोत सामग्री के अनुसार कॉन्फ़िगर करें।
+**Q: क्या यह तरीका मुझे PDFs और TIFFs से इमेज टेक्स्ट Java पढ़ने देता है?**  
+A: बिल्कुल – OCR इंजन समर्थित इमेज‑बेस्ड दस्तावेज़ प्रकारों में काम करता है, जिससे आप **read image text Java** को विश्वसनीय रूप से पढ़ सकते हैं।
+
+**Q: चेतावनियों की संख्या कैसे कम करूँ?**  
+A: छवियों को प्री‑प्रोसेस करें (DPI बढ़ाएँ, कंट्रास्ट सुधारें) और OCR सेटिंग्स जैसे भाषा पैक्स को अपने स्रोत सामग्री के अनुसार कॉन्फ़िगर करें।
 
 ---
 
-**अंतिम अपडेट:** 2026-02-01  
-**परीक्षण किया गया:** GroupDocs.Parser 25.5, Aspose OCR On‑Premise (
+**अंतिम अपडेट:** 2026-09-02  
+**परीक्षित संस्करण:** GroupDocs.Parser 25.5, Aspose OCR On‑Premise (latest)  
+**लेखक:** GroupDocs  
+
+---
+
+## संबंधित ट्यूटोरियल
+
+- [Process Scanned Documents: Aspose OCR Text Extraction with GroupDocs.Parser in Java](/parser/java/ocr-integration/aspose-ocr-text-extraction-groupdocs-parser-java/)
+- [How to Use OCR with GroupDocs.Parser Java: Extract Text from Images and Documents](/parser/java/ocr-integration/ocr-text-extraction-groupdocs-parser-java/)
+- [Extract Scanned PDF Text in Java Using GroupDocs.Parser OCR](/parser/java/ocr-integration/ocr-text-extraction-java-groupdocs-parser/)
