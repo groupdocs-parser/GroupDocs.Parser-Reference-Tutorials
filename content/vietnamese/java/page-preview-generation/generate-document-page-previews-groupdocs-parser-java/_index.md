@@ -1,9 +1,7 @@
 ---
 date: '2026-09-12'
-description: Render pdf pages as images in Java with GroupDocs.Parser, enabling fast
-  page thumbnail extraction and document preview generation.
-images:
-- /java/page-preview-generation/generate-document-page-previews-groupdocs-parser-java/og-image.png
+description: Chuyển đổi các trang pdf thành hình ảnh trong Java với GroupDocs.Parser,
+  cho phép trích xuất thumbnail trang nhanh và tạo preview tài liệu.
 keywords:
 - render pdf pages as images
 - convert pdf to image java
@@ -11,11 +9,11 @@ keywords:
 - pdf preview library java
 - preview pdf documents java
 lastmod: '2026-09-12'
-og_description: Render pdf pages as images in Java using GroupDocs.Parser. This guide
-  shows you how to generate high‑quality page thumbnails quickly, with code samples,
-  performance tips, and troubleshooting advice.
+og_description: Chuyển đổi các trang pdf thành hình ảnh trong Java bằng GroupDocs.Parser.
+  Hướng dẫn này chỉ cho bạn cách tạo thumbnail trang chất lượng cao nhanh chóng, với
+  code samples, performance tips, và troubleshooting advice.
 og_image_alt: Tutorial showing how to render PDF pages as images in Java with GroupDocs.Parser
-og_title: Render PDF pages as images in Java with GroupDocs.Parser
+og_title: Chuyển đổi các trang PDF thành hình ảnh trong Java với GroupDocs.Parser
 schemas:
 - author: GroupDocs
   dateModified: '2026-09-12'
@@ -64,44 +62,44 @@ tags:
 - render pdf
 - groupdocs.parser
 - java document processing
-title: How to render pdf pages as images in java using groupdocs.parser
+title: Cách chuyển đổi các trang pdf thành hình ảnh trong java bằng GroupDocs.Parser
 type: docs
-url: /java/page-preview-generation/generate-document-page-previews-groupdocs-parser-java/
+url: /vi/java/page-preview-generation/generate-document-page-previews-groupdocs-parser-java/
 weight: 1
 ---
 
-# How to render pdf pages as images in java using groupdocs.parser
+# Cách render các trang pdf thành hình ảnh trong java bằng groupdocs.parser
 
-Generating visual previews of PDF files is a common requirement for modern document‑centric applications. By **rendering pdf pages as images**, you can display thumbnails in a file browser, let users skim contracts, or feed page snapshots into downstream workflows without opening the full document. This tutorial walks you through installing GroupDocs.Parser for Java and producing page‑by‑page image previews, complete with performance best practices and real‑world use‑case tips.
+Generating visual previews of PDF files is a common requirement for modern document‑centric applications. By **render các trang pdf thành hình ảnh**, you can display thumbnails in a file browser, let users skim contracts, or feed page snapshots into downstream workflows without opening the full document. This tutorial walks you through installing GroupDocs.Parser for Java and producing page‑by‑page image previews, complete with performance best practices and real‑world use‑case tips.
 
-## Quick answers
-- **What library creates PDF previews in Java?** GroupDocs.Parser for Java.  
-- **Which primary keyword does this guide target?** *render pdf pages as images*.  
-- **Do I need a license?** A free trial or temporary license works for testing; a full license is required for production.  
-- **Can I extract images from each PDF page?** Yes – the preview generation process also provides **extract pdf page images** capability.  
-- **What Java version is required?** JDK 8 or later.
+## Câu trả lời nhanh
+- **Thư viện nào tạo preview PDF trong Java?** GroupDocs.Parser for Java.  
+- **Từ khóa chính mà hướng dẫn này nhắm tới là gì?** *render pdf pages as images*.  
+- **Tôi có cần giấy phép không?** A free trial or temporary license works for testing; a full license is required for production.  
+- **Tôi có thể trích xuất hình ảnh từ mỗi trang PDF không?** Yes – the preview generation process also provides **extract pdf page images** capability.  
+- **Phiên bản Java nào được yêu cầu?** JDK 8 or later.
 
-## What is render pdf pages as images in java?
+## Render các trang pdf thành hình ảnh trong java là gì?
 Rendering PDF pages as images means converting each page into a raster format such as PNG or JPEG so that the content can be shown instantly in a web or desktop UI. GroupDocs.Parser handles parsing, rasterization, and output formatting through a simple Java API, removing the need for third‑party rendering engines.
 
-## Why generate pdf page previews with GroupDocs.Parser?
+## Tại sao tạo preview trang pdf với GroupDocs.Parser?
 Generating PDF page previews with GroupDocs.Parser gives developers a fast, reliable way to create visual snapshots of documents without loading the entire file into memory. It supports high‑resolution rendering, multiple output formats, and can be integrated into batch or on‑demand services, making it ideal for document portals and review tools.
 
 GroupDocs.Parser is a **pdf preview library java** that delivers:
 
-* **Speed:** Renders pages on demand without loading the entire document into memory, allowing multi‑hundred‑page PDFs to be processed in under a second per page on typical server hardware.  
-* **Quality:** Supports output resolutions from 72 dpi (thumbnail) up to 300 dpi (print‑quality) and lets you choose PNG, JPEG, or BMP formats.  
-* **Flexibility:** Works with PDFs, DOCX, XLSX, PPTX, and over 50 other formats, making it ideal for **convert pdf to image java** scenarios across heterogeneous document pipelines.  
-* **Scalability:** Designed for enterprise workloads—batch jobs, cloud services, and on‑premise document management systems can reuse a single `Parser` instance to handle thousands of files concurrently.
+* **Tốc độ:** Renders pages on demand without loading the entire document into memory, allowing multi‑hundred‑page PDFs to be processed in under a second per page on typical server hardware.  
+* **Chất lượng:** Supports output resolutions from 72 dpi (thumbnail) up to 300 dpi (print‑quality) and lets you choose PNG, JPEG, or BMP formats.  
+* **Tính linh hoạt:** Works with PDFs, DOCX, XLSX, PPTX, and over 50 other formats, making it ideal for **convert pdf to image java** scenarios across heterogeneous document pipelines.  
+* **Khả năng mở rộng:** Designed for enterprise workloads—batch jobs, cloud services, and on‑premise document management systems can reuse a single `Parser` instance to handle thousands of files concurrently.
 
-## Prerequisites
-- Java Development Kit (JDK) 8+ installed.  
-- Maven as the build tool (or manual JAR download).  
-- Basic familiarity with Java project structure.  
+## Yêu cầu trước
+- Java Development Kit (JDK) 8+ đã được cài đặt.  
+- Maven làm công cụ xây dựng (hoặc tải JAR thủ công).  
+- Hiểu biết cơ bản về cấu trúc dự án Java.  
 
-## Setting up GroupDocs.Parser for Java
+## Cài đặt GroupDocs.Parser cho Java
 
-### Maven dependency
+### Phụ thuộc Maven
 Add the GroupDocs repository and the parser dependency to your `pom.xml`:
 
 ```xml
@@ -122,13 +120,13 @@ Add the GroupDocs repository and the parser dependency to your `pom.xml`:
 </dependencies>
 ```
 
-### Direct download (alternative)
+### Tải trực tiếp (thay thế)
 Alternatively, download the latest JAR from [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
-### License acquisition
+### Đăng ký giấy phép
 Obtain a free trial or a temporary license to unlock full functionality. For production deployments, purchase a permanent license.
 
-### Basic initialization
+### Khởi tạo cơ bản
 `Parser` is the core class that loads and parses a document. Below is the minimal code required to create a `Parser` instance for a PDF document:
 
 ```java
@@ -137,9 +135,9 @@ import com.groupdocs.parser.Parser;
 Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/document.pdf");
 ```
 
-## Step‑by‑step implementation
+## Triển khai từng bước
 
-### Step 1: create the parser instance
+### Bước 1: tạo instance parser
 We use a try‑with‑resources block to ensure the parser is closed automatically, which releases native resources and avoids memory leaks.
 
 ```java
@@ -149,7 +147,7 @@ try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/document.pdf")) {
 ```
 *Why?* This guarantees that all native resources are released, preventing memory leaks.
 
-### Step 2: define preview options
+### Bước 2: xác định tùy chọn preview
 `PreviewOptions` lets you specify where each page image will be saved, the image format, and the resolution. The lambda receives the page number and returns an `OutputStream` for that page:
 
 ```java
@@ -165,7 +163,7 @@ PreviewOptions previewOptions = new PreviewOptions((pageNumber) -> {
 ```
 *Why?* This gives you full control over file naming, location, and format (PNG by default).
 
-### Step 3: generate the previews
+### Bước 3: tạo preview
 `getImages` returns a collection of `PageImage` objects, each representing a rendered page. You can further process these objects—for example, adding watermarks or converting to another format.
 
 ```java
@@ -175,39 +173,39 @@ parser.getImages(previewOptions).forEach(pageImage -> {
 ```
 *Why?* `getImages` returns a collection of `PageImage` objects, allowing further processing such as adding watermarks or converting to another format.
 
-## Common issues & solutions
-- **Incorrect document path** – double‑check the absolute or relative path you pass to `Parser`.  
-- **Insufficient write permissions** – ensure the output directory exists and the JVM has write access.  
-- **Out‑of‑memory errors on large PDFs** – process pages in batches or increase the JVM heap size (`-Xmx2g`).  
+## Các vấn đề thường gặp & giải pháp
+- **Đường dẫn tài liệu không đúng** – double‑check the absolute or relative path you pass to `Parser`.  
+- **Quyền ghi không đủ** – ensure the output directory exists and the JVM has write access.  
+- **Lỗi hết bộ nhớ khi xử lý PDF lớn** – process pages in batches or increase the JVM heap size (`-Xmx2g`).  
 
-## Practical use cases
-1. **Document management systems** – Show thumbnail previews in file browsers for faster navigation.  
-2. **Legal review platforms** – Allow attorneys to skim contracts without opening each file fully.  
-3. **E‑learning portals** – Render lecture notes as preview images for quick content previews.  
+## Các trường hợp sử dụng thực tế
+1. **Hệ thống quản lý tài liệu** – Show thumbnail previews in file browsers for faster navigation.  
+2. **Nền tảng xem xét pháp lý** – Allow attorneys to skim contracts without opening each file fully.  
+3. **Cổng học trực tuyến** – Render lecture notes as preview images for quick content previews.  
 
-## Performance tips
-- **Adjust image quality** in `PreviewOptions` to balance speed vs. fidelity.  
-- **Reuse the same `Parser` instance** when generating previews for multiple documents in a batch job.  
-- **Leverage the try‑with‑resources pattern** (as shown) to automatically close streams and free memory.  
+## Mẹo hiệu năng
+- **Điều chỉnh chất lượng hình ảnh** in `PreviewOptions` to balance speed vs. fidelity.  
+- **Tái sử dụng cùng một instance `Parser`** when generating previews for multiple documents in a batch job.  
+- **Áp dụng mẫu try‑with‑resources** (as shown) to automatically close streams and free memory.  
 
-## Frequently asked questions
+## Câu hỏi thường gặp
 
-**Q: What is GroupDocs.Parser for Java?**  
+**Q: GroupDocs.Parser cho Java là gì?**  
 A: GroupDocs.Parser for Java is a **pdf preview library java** that extracts text, metadata, and images from over 50 document formats, including PDF, DOCX, and XLSX.
 
-**Q: Can I use GroupDocs.Parser with other programming languages?**  
+**Q: Tôi có thể sử dụng GroupDocs.Parser với các ngôn ngữ lập trình khác không?**  
 A: The core library is Java‑specific, but GroupDocs provides equivalent SDKs for .NET, Python, and other platforms.
 
-**Q: Which file formats are supported for preview generation?**  
+**Q: Các định dạng tệp nào được hỗ trợ để tạo preview?**  
 A: PDF, DOCX, XLSX, PPTX, HTML, TXT, and more than 50 additional formats are supported for **preview pdf documents java**.
 
-**Q: How should I handle exceptions when generating previews?**  
+**Q: Tôi nên xử lý ngoại lệ như thế nào khi tạo preview?**  
 A: Wrap the preview code in a try‑catch block, logging `ParserException` and any `IOException` to diagnose path or permission issues.
 
-**Q: Can I customize the output preview format?**  
+**Q: Tôi có thể tùy chỉnh định dạng preview đầu ra không?**  
 A: Yes, `PreviewOptions` lets you choose PNG, JPEG, BMP, or TIFF and set the DPI to control image size and quality.
 
-## Conclusion
+## Kết luận
 You now know **how to render pdf pages as images** in Java using GroupDocs.Parser, from project setup to generating high‑quality thumbnails. Integrate this capability into any Java‑based solution that needs fast visual access to document content, and extend it with GroupDocs.Parser’s text extraction, metadata reading, and conversion features for a complete document processing pipeline.
 
 **Next steps**  
@@ -229,7 +227,7 @@ You now know **how to render pdf pages as images** in Java using GroupDocs.Parse
 - [Temporary License](https://purchase.groupdocs.com/temporary-license/)  
 - Explore additional features of GroupDocs.Parser via [GroupDocs on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
 
-## Related Tutorials
+## Hướng dẫn liên quan
 
 - [How to Load PDF from URL with GroupDocs.Parser for Java](/parser/java/document-loading/)
 - [Extract Images Pdf Groupdocs Parser Java](/parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/)
