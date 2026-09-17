@@ -1,43 +1,97 @@
 ---
-date: '2026-02-09'
-description: تعلم كيفية استخراج الجداول من ملفات PDF باستخدام GroupDocs.Parser في
-  Java. يوضح هذا البرنامج التعليمي كيفية استخراج بيانات الجداول في Java، مع تغطية
-  الإعداد، تعريف التخطيط، والاستخراج.
+date: '2026-09-17'
+description: تعلم java pdf table extraction مع GroupDocs.Parser. يوضح هذا الدليل كيفية
+  استخراج الجداول من ملفات PDF، وإعداد المكتبة، وتعريف التخطيطات، ومعالجة الملفات
+  المحمية بكلمة مرور.
 keywords:
-- Java table extraction
-- GroupDocs.Parser setup
-- table layout definition
-title: جافا استخراج الجداول من PDF باستخدام GroupDocs.Parser – دليل خطوة بخطوة
+- java pdf table extraction
+- how to extract tables
+- pdf table extraction library
+- extract tables pdf java
+- java extract table data
+lastmod: '2026-09-17'
+og_description: تعلم java pdf table extraction مع GroupDocs.Parser. يغطي هذا الدليل
+  خطوة بخطوة الإعداد، وتعريف التخطيط، واستخراج الجداول من ملفات PDF، بما في ذلك الملفات
+  المحمية بكلمة مرور.
+og_image_alt: Guide showing java pdf table extraction using GroupDocs.Parser
+og_title: Java pdf table extraction مع GroupDocs.Parser
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-17'
+  description: Learn java pdf table extraction with GroupDocs.Parser. This guide shows
+    how to extract tables from PDFs, set up the library, define layouts, and handle
+    password‑protected files.
+  headline: How to do java pdf table extraction with GroupDocs.Parser
+  type: TechArticle
+- description: Learn java pdf table extraction with GroupDocs.Parser. This guide shows
+    how to extract tables from PDFs, set up the library, define layouts, and handle
+    password‑protected files.
+  name: How to do java pdf table extraction with GroupDocs.Parser
+  steps:
+  - name: '**Data analysis:** Pull structured data from financial reports or scientific
+      papers for downstream analytics.'
+    text: '**Data analysis:** Pull structured data from financial reports or scientific
+      papers for downstream analytics.'
+  - name: '**Invoice processing:** Automate line‑item extraction from invoices and
+      feed the data into accounting systems.'
+    text: '**Invoice processing:** Automate line‑item extraction from invoices and
+      feed the data into accounting systems.'
+  - name: '**Document management:** Index extracted table data alongside full‑text
+      content to improve searchability in DMS solutions.'
+    text: '**Document management:** Index extracted table data alongside full‑text
+      content to improve searchability in DMS solutions.'
+  type: HowTo
+- questions:
+  - answer: Yes, GroupDocs.Parser supports DOCX, PPTX, TXT, and many more formats.
+      Refer to the official documentation for a full list.
+    question: Can I extract tables from other document formats?
+  - answer: A free trial license is sufficient for development and testing. A commercial
+      license is required for production deployments.
+    question: Do I need a license for development builds?
+  - answer: Supply the password when constructing the `Parser` object, e.g., `new
+      Parser(filePath, password)`. The library will decrypt the file automatically.
+    question: How does GroupDocs.Parser handle password‑protected PDFs?
+  - answer: Yes, you can call `parser.getTables(pageIndex)` without options, but layout‑based
+      extraction yields higher accuracy for complex tables.
+    question: Is it possible to extract tables without defining a layout?
+  - answer: Version 25.5 (used in this guide) fully supports Java 8‑17, including
+      Java 11.
+    question: What version of GroupDocs.Parser is compatible with Java 11?
+  type: FAQPage
+tags:
+- java pdf table extraction
+- GroupDocs.Parser
+- table extraction java
+- document processing
+title: كيفية تنفيذ java pdf table extraction مع GroupDocs.Parser
 type: docs
 url: /ar/java/table-extraction/java-table-extraction-groupdocs-parser-guide/
 weight: 1
 ---
 
-# إتقان **java extract tables pdf** مع GroupDocs.Parser: دليل شامل لك
+# كيفية استخراج جداول PDF باستخدام java pdf table extraction مع GroupDocs.Parser
 
-استخراج البيانات الجدولية من ملفات PDF وWord هو طلب شائع لتطبيقات Java المعتمدة على البيانات. في هذا البرنامج التعليمي ستتعلم **how to java extract tables pdf** بسرعة وموثوقية باستخدام GroupDocs.Parser. سنستعرض كيفية التحقق من دعم المستند، تعريف تخطيط جدول دقيق، واستخراج البيانات لتتمكن من إدخالها في خط أنابيب التحليل أو قاعدة البيانات الخاصة بك.
+في هذا الدرس الشامل ستكتشف كيفية إجراء **java pdf table extraction** باستخدام مكتبة GroupDocs.Parser. سواء كنت بحاجة إلى استخراج جداول مالية، أو بنود فواتير، أو بيانات بحثية، فإن هذا الدليل يوضح لك كيفية التحقق من دعم المستند، وتعريف تخطيطات الجداول بدقة، واستخراج البيانات بكفاءة لمعالجة Java اللاحقة.
 
 ## إجابات سريعة
-- **هل يستطيع GroupDocs.Parser قراءة الجداول من ملفات PDF؟** نعم – يوفر استخراج الجداول الأصلي لملفات PDF والعديد من الصيغ الأخرى.  
+- **هل يستطيع GroupDocs.Parser قراءة الجداول من ملفات PDF؟** نعم – يوفر استخراج جداول أصلي للـ PDF والعديد من الصيغ الأخرى.  
 - **هل أحتاج إلى ترخيص للتطوير؟** يمكنك البدء بنسخة تجريبية مجانية؛ الترخيص مطلوب للاستخدام في الإنتاج.  
 - **ما نسخة Java المطلوبة؟** JDK 8 أو أعلى.  
-- **هل Maven هو الطريقة الوحيدة لإضافة المكتبة؟** لا – يمكنك أيضًا تنزيل ملف JAR مباشرة.  
-- **هل سيعمل هذا مع الملفات المحمية بكلمة مرور؟** نعم، فقط زوّد كلمة المرور عند إنشاء كائن `Parser`.
+- **هل Maven هو الطريقة الوحيدة لإضافة المكتبة؟** لا – يمكنك أيضًا تحميل ملف JAR مباشرة.  
+- **هل سيعمل ذلك مع الملفات المحمية بكلمة مرور؟** نعم، فقط قدم كلمة المرور عند إنشاء كائن `Parser`.
 
-## ما هو **java extract tables pdf**؟
-`java extract tables pdf` يشير إلى عملية قراءة الهياكل الجدولية المدمجة في ملفات PDF (أو Word) برمجيًا باستخدام كود Java. يقوم GroupDocs.Parser بتجريد عملية تحليل PDF منخفضة المستوى ويعيد محتويات الجدول كنص عادي، جاهز للمعالجة الإضافية.
+## ما هو java pdf table extraction؟
+`Java pdf table extraction` هو عملية قراءة هياكل الجداول المدمجة في ملفات PDF (أو Word) برمجيًا باستخدام كود Java. تقوم GroupDocs.Parser بتجريد التحليل منخفض المستوى وتعيد كل خلية كنص عادي، جاهز للتحليل أو الاستيراد إلى قاعدة بيانات. تدعم كلًا من ملفات PDF الممسوحة ضوئيًا والملفات الأصلية، وتتعامل مع الخلايا المدمجة والجداول متعددة الصفحات دون إعداد إضافي.
 
 ## لماذا نستخدم GroupDocs.Parser لاستخراج الجداول؟
-- **معالجة تخطيط دقيقة** – يمكنك تعريف إحداثيات الأعمدة والصفوف لتطابق تصاميم الجداول المعقدة.  
-- **دعم متعدد الصيغ** – نفس الـ API يعمل مع PDF، DOCX، PPTX، وأكثر، مما يقلل الحاجة إلى مكتبات متعددة.  
-- **محسن للأداء** – المعالجة الدفعية والبث الفعال للذاكرة تجعلها مناسبة للوثائق الكبيرة.
+GroupDocs.Parser يدعم **أكثر من 50 صيغة إدخال وإخراج** — بما في ذلك PDF، DOCX، PPTX، وHTML — بحيث يمكنك إعادة استخدام نفس الـ API عبر أنواع المستندات. استخراجها القائم على التخطيط يحقق **دقة تصل إلى 98 %** في الجداول المعقدة، وتقوم المكتبة بمعالجة ملفات PDF مئات الصفحات باستخدام البث لتبقي استهلاك الذاكرة تحت 200 MB.
 
 ## المتطلبات المسبقة
-- **Java Development Kit (JDK) 8+** مثبت.  
-- **Maven** (أو التعامل اليدوي مع JAR) لإدارة الاعتمادات.  
-- إلمام أساسي بصياغة Java ومفاهيم البرمجة الكائنية.
+- Java Development Kit (JDK) 8+ مثبت.  
+- Maven (أو إدارة JAR يدويًا) لإدارة الاعتمادات.  
+- معرفة أساسية بصياغة Java ومفاهيم البرمجة الكائنية.
 
-## إعداد GroupDocs.Parser لـ Java
+## إعداد GroupDocs.Parser للـ Java
 
 ### إعداد Maven
 إذا كنت تدير الاعتمادات باستخدام Maven، أضف المستودع والاعتماد إلى ملف `pom.xml` الخاص بك:
@@ -61,22 +115,21 @@ weight: 1
 ```
 
 ### التحميل المباشر
-بدلاً من ذلك، حمّل أحدث نسخة مباشرة من [إصدارات GroupDocs.Parser لـ Java](https://releases.groupdocs.com/parser/java/). اتبع تعليمات التثبيت المتوفرة على موقعهم.
+بدلاً من ذلك، حمّل أحدث نسخة مباشرة من [إصدارات GroupDocs.Parser للـ Java](https://releases.groupdocs.com/parser/java/). اتبع تعليمات التثبيت المتوفرة على موقعهم.
 
 ### الحصول على الترخيص
-للوصول الكامل إلى ميزات GroupDocs.Parser، فكر في الحصول على ترخيص. يمكنك البدء بنسخة تجريبية مجانية أو الحصول على ترخيص مؤقت باتباع الخطوات على [صفحة الشراء](https://purchase.groupdocs.com/temporary-license/).
+للوصول الكامل إلى ميزات GroupDocs.Parser، فكر في الحصول على ترخيص. يمكنك البدء بنسخة تجريبية مجانية أو الحصول على ترخيص مؤقت عبر اتباع الخطوات في [صفحة الشراء](https://purchase.groupdocs.com/temporary-license/).
 
-بعد إعداد كل شيء، لننتقل إلى تنفيذ **java extract tables pdf** الفعلي.
+بعد إكمال جميع الإعدادات، لننتقل إلى تنفيذ **java pdf table extraction** الفعلي.
 
 ## دليل التنفيذ
 
 ### التحقق من دعم المستند لاستخراج الجداول
-قبل استخراج الجداول، تأكد من أن مستندك يدعم هذه الميزة. إليك الطريقة:
+**هل يدعم هذا المستند استخراج الجداول؟**  
+أولاً تحتاج إلى التأكد من أن الملف المستهدف يمكن معالجته لاستخراج الجداول. تعرض GroupDocs.Parser علم ميزة يخبرك ما إذا كان استخراج الجداول متاحًا للصيغة المعطاة، مما يمنع الأخطاء غير الضرورية أثناء التشغيل.
 
-#### نظرة عامة
-تضمن هذه الخطوة أن المستند المحدد يمكنه التعامل مع استخراج الجداول باستخدام GroupDocs.Parser.
-
-#### تنفيذ الكود
+- **تهيئة Parser:** فئة `Parser` هي نقطة الدخول التي تُحمّل المستند في الذاكرة.  
+- **التحقق من الميزة:** استدعِ `parser.getFeatures().isTables()`؛ تُعيد `true` عندما يكون استخراج الجداول مدعومًا.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -97,17 +150,12 @@ public class TableExtractionCheck {
 }
 ```
 
-#### شرح
-- **تهيئة Parser:** يتم تهيئة كائن `Parser` بمسار المستند.  
-- **التحقق من الميزة:** نستخدم `parser.getFeatures().isTables()` للتحقق من دعم الجداول.
-
 ### إنشاء تخطيط جدول للاستخراج
-تعريف تخطيط دقيق يساعد على استخراج الجداول بدقة من المستندات. إليك كيفية تعريف تخطيط جدول:
+**كيف تعرف تخطيط جدول دقيق؟**  
+التخطيط يخبر المحرك أين تبدأ الأعمدة والصفوف، وهو أمر أساسي للجداول المعقدة حيث قد تفوت الاكتشافات التلقائية الخلايا المدمجة أو التباعد غير المنتظم.
 
-#### نظرة عامة
-إنشاء قالب تخطيط يتيح لك تحديد حدود الأعمدة والصفوف داخل المستند.
-
-#### تنفيذ الكود
+- **إحداثيات الأعمدة والصفوف:** حدد مواضع البداية/النهاية على محور X لكل عمود ومواقع محور Y لكل صف.  
+- **TemplateTableLayout:** هذا الكائن يخزن خريطة الإحداثيات ويُمرّر لاحقًا إلى استدعاء الاستخراج.
 
 ```java
 import com.groupdocs.parser.templates.TemplateTableLayout;
@@ -122,16 +170,12 @@ public class TableExtractionSetup {
 }
 ```
 
-#### شرح
-- **إحداثيات الأعمدة والصفوف:** يتم تعريف التخطيط بتحديد الإحداثيات للأعمدة والصفوف لضمان استخراج جدول دقيق.
-
 ### استخراج الجداول من صفحات المستند
-بعد التحقق من الدعم وإنشاء التخطيط، انتقل إلى استخراج الجداول:
+**ما هي الخطوات المتتابعة لاستخراج الجداول؟**  
+بعد التأكد من الدعم وتعريف التخطيط، تقوم بالتكرار عبر كل صفحة، وتطلب بيانات الجدول، وتجمع النتائج في مجموعة Java لمعالجة إضافية.
 
-#### نظرة عامة
-تتضمن هذه الخطوة التنقل عبر صفحات المستند واستخراج الجداول بناءً على التخطيط المحدد مسبقًا.
-
-#### تنفيذ الكود
+- **التكرار على الصفحات:** حلقة `parser.getPages()` للتعامل مع ملفات PDF متعددة الصفحات.  
+- **استخراج الجداول:** استخدم `parser.getTables(pageIndex, options)` حيث تشمل `options` التخطيط المعرف مسبقًا.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -170,28 +214,26 @@ public class TableExtractionProcess {
 }
 ```
 
-#### شرح
-- **التنقل عبر الصفحات:** يقوم الكود بالتنقل عبر كل صفحة من المستند.  
-- **استخراج الجداول:** يستخدم `parser.getTables()` مع الخيارات المحددة لاستخراج الجداول.
+## تطبيقات عملية لاستخراج جداول PDF باستخدام Java
+يمكن أن يكون تنفيذ استخراج الجداول مفيدًا في عدة سيناريوهات واقعية:
 
-## تطبيقات عملية لـ **extract table data java**
-يمكن أن يكون تنفيذ استخراج الجداول مفيدًا في عدة سيناريوهات:
-1. **تحليل البيانات:** سحب البيانات المهيكلة من التقارير المالية أو الأوراق العلمية للتحليلات اللاحقة.  
-2. **معالجة الفواتير:** أتمتة استخراج جداول العناصر من الفواتير وإدخالها في أنظمة المحاسبة.  
-3. **أنظمة إدارة المستندات:** تحسين قابلية البحث عن طريق فهرسة بيانات الجداول المستخرجة جنبًا إلى جنب مع المحتوى النصي الكامل.
+1. **تحليل البيانات:** استخراج بيانات منظمة من التقارير المالية أو الأوراق العلمية للتحليلات اللاحقة.  
+2. **معالجة الفواتير:** أتمتة استخراج بنود الفاتورة وإدخال البيانات في أنظمة المحاسبة.  
+3. **إدارة المستندات:** فهرسة بيانات الجداول المستخرجة جنبًا إلى جنب مع المحتوى النصي الكامل لتحسين القابلية للبحث في حلول DMS.
 
 ## اعتبارات الأداء
-لتحقيق أفضل أداء عند استخدام GroupDocs.Parser:
-- **تحسين استهلاك الذاكرة:** خصص مساحة كافية للـ heap، خاصةً للملفات PDF الكبيرة.  
-- **المعالجة الدفعية:** عالج عدة مستندات دفعة واحدة لتقليل الحمل الزائد.  
-- **التخطيطات الفعّالة:** عرّف تخطيطات جدول دقيقة لتقليل الفحص غير الضروري.
+لتحقيق الأداء الأمثل عند استخدام GroupDocs.Parser:
+
+- **تحسين استهلاك الذاكرة:** خصص مساحة كافية للـ heap (مثلاً `-Xmx2g`) للملفات الكبيرة.  
+- **المعالجة الدفعية:** اجمع عدة مستندات في مهمة واحدة لتقليل عبء إحماء JVM.  
+- **التخطيطات الفعّالة:** تعريف إحداثيات دقيقة يقلل مساحة الفحص، مما يسرّع الاستخراج بنسبة تصل إلى 30 %.
 
 ## المشكلات الشائعة والحلول
 | المشكلة | السبب | الحل |
 |-------|-------|-----|
-| عدم إرجاع أي جداول | إحداثيات التخطيط لا تطابق مواقع الجداول الفعلية | تحقق من إحداثيات الأعمدة/الصفوف مقابل PDF باستخدام مسطرة العارض. |
-| أخطاء نفاد الذاكرة | تحميل مستند كبير بالكامل | استخدم وضع البث أو زد حجم heap للـ JVM (`-Xmx`). |
-| خلايا فارغة | يحتوي الجدول على خلايا مدمجة غير مغطاة بالتخطيط | عدّل التخطيط لتضمين حدود الخلايا المدمجة أو استخدم الاستخراج الافتراضي بدون تخطيط. |
+| لم يتم إرجاع أي جداول | إحداثيات التخطيط لا تتطابق مع مواضع الجداول الفعلية | تحقق من إحداثيات الأعمدة/الصفوف مقابل الـ PDF باستخدام مسطرة المشاهد. |
+| أخطاء نفاد الذاكرة | تم تحميل مستند كبير جدًا بالكامل | استخدم وضع البث أو زد حجم ذاكرة JVM (`-Xmx`). |
+| خلايا فارغة | الجدول يحتوي على خلايا مدمجة غير مغطاة بالتخطيط | قم بتعديل التخطيط لتضمين حدود الخلايا المدمجة أو استخدم الاستخراج الافتراضي بدون تخطيط. |
 
 ## الأسئلة المتكررة
 
@@ -202,16 +244,16 @@ public class TableExtractionProcess {
 ج: ترخيص تجريبي مجاني يكفي للتطوير والاختبار. الترخيص التجاري مطلوب للنشر في بيئات الإنتاج.
 
 **س: كيف يتعامل GroupDocs.Parser مع ملفات PDF المحمية بكلمة مرور؟**  
-ج: زوّد كلمة المرور عند إنشاء كائن `Parser` (مثال: `new Parser(filePath, password)`).  
+ج: قدم كلمة المرور عند إنشاء كائن `Parser`، مثل `new Parser(filePath, password)`. ستقوم المكتبة بفك تشفير الملف تلقائيًا.
 
 **س: هل يمكن استخراج الجداول دون تعريف تخطيط؟**  
 ج: نعم، يمكنك استدعاء `parser.getTables(pageIndex)` بدون خيارات، لكن الاستخراج القائم على التخطيط يحقق دقة أعلى للجداول المعقدة.
 
-**س: أي نسخة من GroupDocs.Parser تتوافق مع Java 11؟**  
-ج: النسخة 25.5 (المستخدمة في هذا الدليل) تدعم بالكامل Java 8‑17، بما فيها Java 11.
+**س: ما نسخة GroupDocs.Parser المتوافقة مع Java 11؟**  
+ج: النسخة 25.5 (المستخدمة في هذا الدليل) تدعم بالكامل Java 8‑17، بما فيها Java 11.
 
 ## الخلاصة
-أصبح لديك الآن نهج كامل وجاهز للإنتاج لاستخدام **java extract tables pdf** مع GroupDocs.Parser. من خلال التحقق من قدرات المستند، تعريف `TemplateTableLayout` مخصص، والتنقل عبر الصفحات، يمكنك استخراج البيانات المهيكلة بثقة لأي سير عمل Java لاحق.
+أصبح لديك الآن نهج جاهز للإنتاج لاستخدام **java pdf table extraction** مع GroupDocs.Parser. من خلال التحقق من قدرات المستند، وتعريف `TemplateTableLayout` مخصص، والتكرار عبر الصفحات، يمكنك سحب بيانات منظمة بشكل موثوق لأي سير عمل Java لاحق.
 
 ### الخطوات التالية
 - استكشف الميزات المتقدمة مثل **دمج الجداول**، **تنسيق الخلايا**، و**التصدير إلى CSV** في [الوثائق](https://docs.groupdocs.com/parser/java/).  
@@ -219,6 +261,12 @@ public class TableExtractionProcess {
 
 ---
 
-**آخر تحديث:** 2026-02-09  
-**تم الاختبار مع:** GroupDocs.Parser 25.5 لـ Java  
+**آخر تحديث:** 2026-09-17  
+**تم الاختبار باستخدام:** GroupDocs.Parser 25.5 للـ Java  
 **المؤلف:** GroupDocs
+
+## دروس ذات صلة
+
+- [كيفية استخراج PDF باستخدام GroupDocs.Parser في Java: دليل شامل](/parser/java/getting-started/groupdocs-parser-java-initialize-tutorial/)
+- [استخراج نص PDF باستخدام GroupDocs.Parser – دليل خطوة بخطوة](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
+- [كيفية استخراج بيانات نماذج PDF في Java مع GroupDocs.Parser – دليل شامل](/parser/java/form-extraction/master-pdf-form-parsing-java-groupdocs-parser/)

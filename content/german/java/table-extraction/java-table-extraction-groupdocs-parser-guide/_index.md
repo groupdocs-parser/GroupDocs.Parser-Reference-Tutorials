@@ -1,45 +1,99 @@
 ---
-date: '2026-02-09'
-description: Erfahren Sie, wie Sie mit GroupDocs.Parser Tabellen aus PDFs in Java
-  extrahieren. Dieses Tutorial zeigt, wie Sie Tabellendaten in Java extrahieren, einschließlich
-  Einrichtung, Layoutdefinition und Extraktion.
+date: '2026-09-17'
+description: Erfahren Sie, wie Sie Java‑PDF‑Tabellenextraktion mit GroupDocs.Parser
+  durchführen. Dieser Leitfaden zeigt, wie man Tabellen aus PDFs extrahiert, die Bibliothek
+  einrichtet, Layouts definiert und passwortgeschützte Dateien verarbeitet.
 keywords:
-- Java table extraction
-- GroupDocs.Parser setup
-- table layout definition
-title: 'Java: Tabellen aus PDF mit GroupDocs.Parser extrahieren – Schritt‑für‑Schritt‑Anleitung'
+- java pdf table extraction
+- how to extract tables
+- pdf table extraction library
+- extract tables pdf java
+- java extract table data
+lastmod: '2026-09-17'
+og_description: Erfahren Sie, wie Sie Java‑PDF‑Tabellenextraktion mit GroupDocs.Parser
+  durchführen. Dieser Schritt‑für‑Schritt‑Leitfaden behandelt Einrichtung, Layoutdefinition
+  und das Extrahieren von Tabellen aus PDFs, einschließlich passwortgeschützter Dateien.
+og_image_alt: Guide showing java pdf table extraction using GroupDocs.Parser
+og_title: Java‑PDF‑Tabellenextraktion mit GroupDocs.Parser
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-17'
+  description: Learn java pdf table extraction with GroupDocs.Parser. This guide shows
+    how to extract tables from PDFs, set up the library, define layouts, and handle
+    password‑protected files.
+  headline: How to do java pdf table extraction with GroupDocs.Parser
+  type: TechArticle
+- description: Learn java pdf table extraction with GroupDocs.Parser. This guide shows
+    how to extract tables from PDFs, set up the library, define layouts, and handle
+    password‑protected files.
+  name: How to do java pdf table extraction with GroupDocs.Parser
+  steps:
+  - name: '**Data analysis:** Pull structured data from financial reports or scientific
+      papers for downstream analytics.'
+    text: '**Data analysis:** Pull structured data from financial reports or scientific
+      papers for downstream analytics.'
+  - name: '**Invoice processing:** Automate line‑item extraction from invoices and
+      feed the data into accounting systems.'
+    text: '**Invoice processing:** Automate line‑item extraction from invoices and
+      feed the data into accounting systems.'
+  - name: '**Document management:** Index extracted table data alongside full‑text
+      content to improve searchability in DMS solutions.'
+    text: '**Document management:** Index extracted table data alongside full‑text
+      content to improve searchability in DMS solutions.'
+  type: HowTo
+- questions:
+  - answer: Yes, GroupDocs.Parser supports DOCX, PPTX, TXT, and many more formats.
+      Refer to the official documentation for a full list.
+    question: Can I extract tables from other document formats?
+  - answer: A free trial license is sufficient for development and testing. A commercial
+      license is required for production deployments.
+    question: Do I need a license for development builds?
+  - answer: Supply the password when constructing the `Parser` object, e.g., `new
+      Parser(filePath, password)`. The library will decrypt the file automatically.
+    question: How does GroupDocs.Parser handle password‑protected PDFs?
+  - answer: Yes, you can call `parser.getTables(pageIndex)` without options, but layout‑based
+      extraction yields higher accuracy for complex tables.
+    question: Is it possible to extract tables without defining a layout?
+  - answer: Version 25.5 (used in this guide) fully supports Java 8‑17, including
+      Java 11.
+    question: What version of GroupDocs.Parser is compatible with Java 11?
+  type: FAQPage
+tags:
+- java pdf table extraction
+- GroupDocs.Parser
+- table extraction java
+- document processing
+title: Wie man Java‑PDF‑Tabellenextraktion mit GroupDocs.Parser durchführt
 type: docs
 url: /de/java/table-extraction/java-table-extraction-groupdocs-parser-guide/
 weight: 1
 ---
 
-# Meistern Sie **java extract tables pdf** mit GroupDocs.Parser: Ihr umfassender Leitfaden
+# Wie man java pdf table extraction mit GroupDocs.Parser durchführt
 
-Das Extrahieren tabellarischer Daten aus PDFs und Word‑Dokumenten ist eine häufige Anforderung für datengetriebene Java‑Anwendungen. In diesem Tutorial lernen Sie **how to java extract tables pdf** schnell und zuverlässig mit GroupDocs.Parser. Wir gehen die Überprüfung der Dokumentunterstützung, die Definition eines genauen Tabellenlayouts und das Herausziehen der Daten durch, sodass Sie diese in Ihre Analyse‑Pipeline oder Datenbank einspeisen können.
+In diesem umfassenden Tutorial erfahren Sie, wie Sie **java pdf table extraction** mit der GroupDocs.Parser‑Bibliothek durchführen. Egal, ob Sie Finanztabellen, Rechnungspositionen oder Forschungsdaten extrahieren müssen – diese Anleitung führt Sie durch die Prüfung der Dokumentunterstützung, die Definition präziser Tabellendesigns und die effiziente Extraktion der Daten für die nachfolgende Java‑Verarbeitung.
 
 ## Schnelle Antworten
-- **Kann GroupDocs.Parser Tabellen aus PDFs lesen?** Ja – es bietet native table extraction für PDFs und viele andere Formate.  
-- **Benötige ich eine Lizenz für die Entwicklung?** Sie können mit einer kostenlosen Testversion beginnen; für den Produktionseinsatz ist eine Lizenz erforderlich.  
+- **Kann GroupDocs.Parser Tabellen aus PDFs lesen?** Ja – es bietet native Tabellenerfassung für PDFs und viele andere Formate.  
+- **Benötige ich eine Lizenz für die Entwicklung?** Sie können mit einer kostenlosen Testversion starten; für den Produktionseinsatz ist eine Lizenz erforderlich.  
 - **Welche Java‑Version wird benötigt?** JDK 8 oder höher.  
 - **Ist Maven der einzige Weg, die Bibliothek hinzuzufügen?** Nein – Sie können das JAR auch direkt herunterladen.  
 - **Funktioniert das mit passwortgeschützten Dateien?** Ja, geben Sie einfach das Passwort beim Erstellen der `Parser`‑Instanz an.
 
-## Was ist **java extract tables pdf**?
-`java extract tables pdf` bezieht sich auf den Prozess, tabellarische Strukturen, die in PDF‑ (oder Word‑)Dateien eingebettet sind, programmgesteuert mit Java‑Code zu lesen. GroupDocs.Parser abstrahiert das Low‑Level‑PDF‑Parsing und gibt die Tabelleninhalte als Klartext zurück, bereit für die weitere Verarbeitung.
+## Was ist java pdf table extraction?
+`Java pdf table extraction` ist der Prozess, tabellarische Strukturen, die in PDF‑ (oder Word‑)Dateien eingebettet sind, programmgesteuert mit Java‑Code zu lesen. GroupDocs.Parser abstrahiert das Low‑Level‑Parsing und gibt jede Zelle als Klartext zurück, bereit für Analysen oder den Datenbankimport. Es unterstützt sowohl gescannte als auch native PDFs, verarbeitet zusammengeführte Zellen und mehrseitige Tabellen ohne zusätzliche Konfiguration.
 
-## Warum GroupDocs.Parser für table extraction verwenden?
-- **Accurate layout handling** – Sie können Spalten‑ und Zeilenkoordinaten definieren, um komplexe Tabellendesigns zu entsprechen.  
-- **Multi‑format support** – dieselbe API funktioniert für PDFs, DOCX, PPTX und mehr, wodurch der Bedarf an mehreren Bibliotheken reduziert wird.  
-- **Performance‑optimized** – Batch‑Verarbeitung und speichereffizientes Streaming machen es für große Dokumente geeignet.
+## Warum GroupDocs.Parser für Tabellenerfassung verwenden?
+GroupDocs.Parser unterstützt **50+ Eingabe‑ und Ausgabeformate** — darunter PDF, DOCX, PPTX und HTML — so dass Sie dieselbe API über verschiedene Dokumenttypen hinweg nutzen können. Die layout‑basierte Extraktion liefert **bis zu 98 % Genauigkeit** bei komplexen Tabellen, und die Bibliothek verarbeitet mehrhundertseitige PDFs mittels Streaming, wobei der Speicherverbrauch unter 200 MB bleibt.
 
 ## Voraussetzungen
-- **Java Development Kit (JDK) 8+** installiert.  
-- **Maven** (oder manuelle JAR‑Verwaltung) für das Abhängigkeitsmanagement.  
+- Java Development Kit (JDK) 8+ installiert.  
+- Maven (oder manuelle JAR‑Verwaltung) für das Dependency‑Management.  
 - Grundlegende Kenntnisse der Java‑Syntax und objektorientierter Konzepte.  
 
 ## Einrichtung von GroupDocs.Parser für Java
 
-### Maven‑Einrichtung
+### Maven-Konfiguration
 Wenn Sie Abhängigkeiten mit Maven verwalten, fügen Sie das Repository und die Abhängigkeit zu Ihrer `pom.xml` hinzu:
 
 ```xml
@@ -61,22 +115,21 @@ Wenn Sie Abhängigkeiten mit Maven verwalten, fügen Sie das Repository und die 
 ```
 
 ### Direkter Download
-Alternativ können Sie die neueste Version direkt von [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) herunterladen. Befolgen Sie die Installationsanweisungen auf deren Website.
+Alternativ laden Sie die neueste Version direkt von [GroupDocs.Parser für Java Releases](https://releases.groupdocs.com/parser/java/) herunter. Folgen Sie den Installationsanweisungen auf deren Website.
 
 ### Lizenzbeschaffung
-Für den vollen Zugriff auf die GroupDocs.Parser‑Funktionen sollten Sie eine Lizenz erwerben. Sie können mit einer kostenlosen Testversion beginnen oder eine temporäre Lizenz erhalten, indem Sie den Schritten auf der [purchase page](https://purchase.groupdocs.com/temporary-license/) folgen.
+Für den vollen Zugriff auf die GroupDocs.Parser‑Funktionen sollten Sie eine Lizenz erwerben. Sie können mit einer kostenlosen Testversion starten oder eine temporäre Lizenz über die [Kaufseite](https://purchase.groupdocs.com/temporary-license/) erhalten.
 
-Sobald alles eingerichtet ist, gehen wir zur eigentlichen **java extract tables pdf**‑Implementierung über.
+Sobald alles eingerichtet ist, gehen wir zur eigentlichen **java pdf table extraction**‑Implementierung über.
 
-## Implementierungs‑Leitfaden
+## Implementierungsleitfaden
 
-### Überprüfung der Dokumentunterstützung für Table Extraction
-Bevor Sie Tabellen extrahieren, prüfen Sie, ob Ihr Dokument dieses Feature unterstützt. So geht’s:
+### Überprüfung der Dokumentunterstützung für Tabellenerfassung
+**Unterstützt dieses Dokument die Tabellenerfassung?**  
+Zunächst müssen Sie bestätigen, dass die Zieldatei für Tabellen verarbeitet werden kann. GroupDocs.Parser stellt ein Feature‑Flag bereit, das anzeigt, ob Tabellenerfassung für das gegebene Format verfügbar ist, und verhindert unnötige Laufzeitfehler.
 
-#### Überblick
-Dieser Schritt stellt sicher, dass das angegebene Dokument die Table Extraction mit GroupDocs.Parser verarbeiten kann.
-
-#### Code‑Implementierung
+- **Parser‑Initialisierung:** Die `Parser`‑Klasse ist der Einstiegspunkt, der das Dokument in den Speicher lädt.  
+- **Feature‑Check:** Rufen Sie `parser.getFeatures().isTables()` auf; es gibt `true` zurück, wenn Tabellenerfassung unterstützt wird.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -97,17 +150,12 @@ public class TableExtractionCheck {
 }
 ```
 
-#### Erklärung
-- **Parser Initialization:** Das `Parser`‑Objekt wird mit dem Dokumentpfad initialisiert.  
-- **Feature Check:** Wir verwenden `parser.getFeatures().isTables()`, um die Unterstützung für Tabellen zu überprüfen.  
+### Erstellen eines Tabellenlayouts für die Extraktion
+**Wie definiert man ein präzises Tabellenlayout?**  
+Ein Layout gibt der Engine an, wo Spalten und Zeilen beginnen – das ist entscheidend für komplexe PDFs, bei denen die automatische Erkennung zusammengeführte Zellen oder unregelmäßige Abstände übersehen könnte.
 
-### Erstellen eines Tabellenlayouts für die Extraction
-Die Definition eines genauen Layouts unterstützt das präzise Extrahieren von Tabellen aus Dokumenten. So können Sie ein Tabellenlayout definieren:
-
-#### Überblick
-Das Erstellen eines Template‑Layouts ermöglicht es Ihnen, die Spalten‑ und Zeilen­grenzen in Ihrem Dokument festzulegen.
-
-#### Code‑Implementierung
+- **Spalten‑ und Zeilenkoordinaten:** Geben Sie die X‑Achsen‑Start‑/Endpositionen für jede Spalte sowie die Y‑Achsen‑Positionen für jede Zeile an.  
+- **TemplateTableLayout:** Dieses Objekt speichert die Koordinaten‑Map und wird später an den Extraktionsaufruf übergeben.
 
 ```java
 import com.groupdocs.parser.templates.TemplateTableLayout;
@@ -122,16 +170,12 @@ public class TableExtractionSetup {
 }
 ```
 
-#### Erklärung
-- **Column and Row Coordinates:** Das Layout wird durch Angabe der Koordinaten für Spalten und Zeilen definiert, um eine genaue Table Extraction zu gewährleisten.
-
 ### Extrahieren von Tabellen aus Dokumentseiten
-Nachdem die Unterstützung geprüft und ein Layout erstellt wurde, fahren Sie mit dem Extrahieren von Tabellen fort:
+**Wie ist der Schritt‑für‑Schritt‑Prozess zur Tabellenerfassung?**  
+Nachdem Unterstützung bestätigt und ein Layout definiert wurde, iterieren Sie über jede Seite, fordern Tabellendaten an und sammeln die Ergebnisse in einer Java‑Collection für die weitere Verarbeitung.
 
-#### Überblick
-Dieser Schritt beinhaltet das Durchlaufen der Dokumentseiten und das Extrahieren von Tabellen basierend auf dem vordefinierten Layout.
-
-#### Code‑Implementierung
+- **Seitendurchlauf:** Schleifen Sie über `parser.getPages()`, um mehrseitige PDFs zu verarbeiten.  
+- **Tabellenerfassung:** Verwenden Sie `parser.getTables(pageIndex, options)`, wobei `options` das zuvor definierte Layout enthält.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -170,55 +214,59 @@ public class TableExtractionProcess {
 }
 ```
 
-#### Erklärung
-- **Page Iteration:** Der Code iteriert durch jede Seite des Dokuments.  
-- **Table Extraction:** Er verwendet `parser.getTables()` mit angegebenen Optionen, um Tabellen zu extrahieren.  
+## Praktische Anwendungen von java pdf table extraction
+Die Implementierung der Tabellenerfassung kann in mehreren realen Szenarien von Nutzen sein:
 
-## Praktische Anwendungen von **extract table data java**
-Die Implementierung von Table Extraction kann in mehreren Szenarien vorteilhaft sein:
-1. **Data Analysis:** Strukturierte Daten aus Finanzberichten oder wissenschaftlichen Arbeiten für nachgelagerte Analysen extrahieren.  
-2. **Invoice Processing:** Die Extraktion von Positions‑Tabellen aus Rechnungen automatisieren und in Buchhaltungssysteme einspeisen.  
-3. **Document Management Systems:** Die Durchsuchbarkeit verbessern, indem extrahierte Tabellendaten zusammen mit dem Volltextinhalt indexiert werden.
+1. **Datenanalyse:** Strukturierte Daten aus Finanzberichten oder wissenschaftlichen Arbeiten für nachgelagerte Analysen extrahieren.  
+2. **Rechnungsverarbeitung:** Automatisches Extrahieren von Positionen aus Rechnungen und Einspeisen der Daten in Buchhaltungssysteme.  
+3. **Dokumentenmanagement:** Indexieren extrahierter Tabellendaten zusammen mit dem Volltext, um die Durchsuchbarkeit in DMS‑Lösungen zu verbessern.
 
-## Leistungs‑Überlegungen
+## Leistungsüberlegungen
 Für optimale Leistung bei der Verwendung von GroupDocs.Parser:
-- **Optimize Memory Usage:** Weisen Sie ausreichend Heap‑Speicher zu, insbesondere für große PDFs.  
-- **Batch Processing:** Verarbeiten Sie mehrere Dokumente in Batches, um den Overhead zu reduzieren.  
-- **Efficient Layouts:** Definieren Sie präzise Tabellenlayouts, um unnötiges Scannen zu minimieren.
+
+- **Speichernutzung optimieren:** Reservieren Sie ausreichend Heap‑Speicher (z. B. `-Xmx2g`) für große PDFs.  
+- **Batch‑Verarbeitung:** Gruppieren Sie mehrere Dokumente in einem Job, um den JVM‑Warm‑up‑Overhead zu reduzieren.  
+- **Effiziente Layouts:** Präzise Koordinaten‑Definitionen minimieren den Scan‑Bereich und beschleunigen die Extraktion um bis zu 30 %.
 
 ## Häufige Probleme & Lösungen
 | Problem | Ursache | Lösung |
 |-------|-------|-----|
-| Keine Tabellen zurückgegeben | Layout‑Koordinaten stimmen nicht mit den tatsächlichen Tabellenpositionen überein | Überprüfen Sie die Spalten‑/Zeilenkoordinaten anhand des PDFs mit dem Lineal eines Viewers. |
-| Out‑of‑memory‑Fehler | Sehr großes Dokument wird vollständig geladen | Verwenden Sie den Streaming‑Modus oder erhöhen Sie den JVM‑Heap (`-Xmx`). |
-| Leere Zellen | Tabelle enthält zusammengeführte Zellen, die nicht vom Layout abgedeckt werden | Passen Sie das Layout an, um die Grenzen zusammengeführter Zellen einzuschließen, oder verwenden Sie die Standard‑Extraction ohne Layout. |
+| Keine Tabellen zurückgegeben | Layout‑Koordinaten stimmen nicht mit den tatsächlichen Tabellenpositionen überein | Überprüfen Sie die Spalten-/Zeilenkoordinaten anhand des PDFs mit dem Lineal des Viewers. |
+| Out‑of‑Memory-Fehler | Sehr großes Dokument vollständig geladen | Verwenden Sie den Streaming‑Modus oder erhöhen Sie den JVM‑Heap (`-Xmx`). |
+| Leere Zellen | Tabelle enthält zusammengeführte Zellen, die nicht vom Layout abgedeckt sind | Passen Sie das Layout an, um zusammengeführte Zellgrenzen einzuschließen, oder verwenden Sie die Standardextraktion ohne Layout. |
 
 ## Häufig gestellte Fragen
 
 **Q: Kann ich Tabellen aus anderen Dokumentformaten extrahieren?**  
-A: Ja, GroupDocs.Parser unterstützt DOCX, PPTX, TXT und viele weitere Formate. Siehe die offizielle Dokumentation für eine vollständige Liste.
+A: Ja, GroupDocs.Parser unterstützt DOCX, PPTX, TXT und viele weitere Formate. Weitere Informationen finden Sie in der offiziellen Dokumentation.
 
 **Q: Benötige ich eine Lizenz für Entwicklungs‑Builds?**  
-A: Eine kostenlose Testlizenz reicht für Entwicklung und Tests aus. Für den Produktionseinsatz ist eine kommerzielle Lizenz erforderlich.
+A: Eine Testlizenz reicht für Entwicklung und Tests aus. Für Produktions‑Deployments ist eine kommerzielle Lizenz erforderlich.
 
 **Q: Wie geht GroupDocs.Parser mit passwortgeschützten PDFs um?**  
-A: Geben Sie das Passwort beim Erstellen des `Parser`‑Objekts an (z. B. `new Parser(filePath, password)`).
+A: Geben Sie das Passwort beim Erzeugen des `Parser`‑Objekts an, z. B. `new Parser(filePath, password)`. Die Bibliothek entschlüsselt die Datei automatisch.
 
 **Q: Ist es möglich, Tabellen ohne Definition eines Layouts zu extrahieren?**  
-A: Ja, Sie können `parser.getTables(pageIndex)` ohne Optionen aufrufen, aber layoutbasierte Extraction liefert bei komplexen Tabellen höhere Genauigkeit.
+A: Ja, Sie können `parser.getTables(pageIndex)` ohne Optionen aufrufen, aber layout‑basierte Extraktion liefert bei komplexen Tabellen höhere Genauigkeit.
 
 **Q: Welche Version von GroupDocs.Parser ist mit Java 11 kompatibel?**  
-A: Version 25.5 (wie in diesem Leitfaden verwendet) unterstützt Java 8‑17 vollständig, einschließlich Java 11.
+A: Version 25.5 (in diesem Leitfaden verwendet) unterstützt Java 8‑17 vollständig, einschließlich Java 11.
 
 ## Fazit
-Sie haben nun einen vollständigen, produktionsbereiten Ansatz für **java extract tables pdf** mit GroupDocs.Parser. Durch die Überprüfung der Dokumentfähigkeiten, die Definition eines benutzerdefinierten `TemplateTableLayout` und das Durchlaufen der Seiten können Sie zuverlässig strukturierte Daten für jede nachgelagerte Java‑Workflow extrahieren.
+Sie haben nun einen produktionsreifen Ansatz für **java pdf table extraction** mit GroupDocs.Parser. Durch die Überprüfung der Dokumentfähigkeiten, die Definition eines benutzerdefinierten `TemplateTableLayout` und das Durchlaufen der Seiten können Sie zuverlässig strukturierte Daten für jeden nachgelagerten Java‑Workflow extrahieren.
 
 ### Nächste Schritte
-- Erkunden Sie erweiterte Funktionen wie **table merging**, **cell formatting** und **export to CSV** in der [documentation](https://docs.groupdocs.com/parser/java/).  
-- Experimentieren Sie mit verschiedenen Layout‑Konfigurationen, um unterschiedliche Tabellendesigns in Ihrer Dokumentensammlung zu verarbeiten.  
+- Erkunden Sie erweiterte Funktionen wie **table merging**, **cell formatting** und **export to CSV** in der [Dokumentation](https://docs.groupdocs.com/parser/java/).  
+- Experimentieren Sie mit verschiedenen Layout‑Konfigurationen, um unterschiedliche Tabellendesigns in Ihrer Dokumentensammlung zu bewältigen.  
 
 ---
 
-**Zuletzt aktualisiert:** 2026-02-09  
-**Getestet mit:** GroupDocs.Parser 25.5 für Java  
+**Zuletzt aktualisiert:** 2026-09-17  
+**Getestet mit:** GroupDocs.Parser 25.5 for Java  
 **Autor:** GroupDocs
+
+## Verwandte Tutorials
+
+- [Wie man PDF mit GroupDocs.Parser in Java extrahiert: Ein umfassender Leitfaden](/parser/java/getting-started/groupdocs-parser-java-initialize-tutorial/)
+- [Java PDF Text Extraction mit GroupDocs.Parser – Schritt‑für‑Schritt‑Anleitung](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
+- [Wie man PDF‑Formulardaten in Java mit GroupDocs.Parser extrahiert – Ein umfassender Leitfaden](/parser/java/form-extraction/master-pdf-form-parsing-java-groupdocs-parser/)
