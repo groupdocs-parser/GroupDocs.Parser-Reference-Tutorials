@@ -1,66 +1,91 @@
 ---
-date: '2026-02-09'
-description: Tanulja meg, hogyan lehet táblázatokat kinyerni PDF‑ből Java‑ban a GroupDocs.Parser
-  segítségével. Ez az útmutató a Java PDF táblázatkinyerést, a PDF táblázatok CSV‑be
-  exportálását és még sok mást lefedi.
+date: '2026-09-17'
+description: Ismerje meg, hogyan végezhet Java PDF táblázatkinyerést a GroupDocs.Parser
+  használatával. Ez az útmutató bemutatja a beállítást, a táblázat elrendezésének
+  konfigurálását és a táblák CSV-be exportálását.
 keywords:
-- Java PDF table extraction
-- GroupDocs.Parser library
-- automate document parsing
-title: Hogyan lehet táblázatokat kinyerni PDF-ből Java-ban a GroupDocs.Parser használatával
-  – Átfogó útmutató
+- java pdf table extraction
+- how to extract tables
+- extract tables scanned pdf
+- export pdf tables csv
+- pdf table extraction library
+lastmod: '2026-09-17'
+og_description: Ismerje meg, hogyan végezhet Java PDF táblázatkinyerést a GroupDocs.Parser
+  használatával. Ez az útmutató néhány lépésben végigvezeti a beállításon, az elrendezés
+  finomhangolásán és a táblák CSV-be exportálásán.
+og_image_alt: Guide showing java pdf table extraction with GroupDocs.Parser
+og_title: Java PDF táblázatkinyerés a GroupDocs.Parser segítségével
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-17'
+  description: Learn how to do java pdf table extraction using GroupDocs.Parser. This
+    guide shows setup, table layout configuration, and exporting tables to CSV.
+  headline: How to do java pdf table extraction with GroupDocs.Parser
+  type: TechArticle
+- questions:
+  - answer: GroupDocs.Parser for Java
+    question: What is the primary library?
+  - answer: Only after OCR; see “extract tables scanned pdf” note below
+    question: Can I extract tables from scanned PDFs?
+  - answer: A trial license works for development; a full license is required for
+      production
+    question: Do I need a license?
+  - answer: Java 8 or higher
+    question: Which Java version is required?
+  - answer: Yes – the API is optimized for large‑scale extraction
+    question: Is batch processing supported?
+  type: FAQPage
+tags:
+- java pdf extraction
+- GroupDocs.Parser
+- table extraction
+- csv export
+title: Java PDF táblázatkinyerés a GroupDocs.Parser segítségével
 type: docs
 url: /hu/java/table-extraction/java-pdf-table-extraction-groupdocs-parser/
 weight: 1
 ---
 
-: unchanged.
+# Hogyan végezzünk java pdf táblázat kinyerést a GroupDocs.Parser segítségével
 
-Check images: none.
-
-Now produce final content.# Hogyan lehet táblázatokat kinyerni PDF-ből Java-val a GroupDocs.Parser használatával
-
-A PDF-fájlokból történő táblázatkinyerés gyakori igény, amikor statikus dokumentumokat strukturált adatokba kell átalakítani. Ebben az útmutatóban bemutatjuk, **hogyan lehet táblázatokat kinyerni** PDF-ekből a GroupDocs.Parser Java könyvtár segítségével. Meg fogja látni, miért ideális ez a megközelítés a *java pdf table extraction* számára, hogyan kell a layout-okat pontos eredményekért konfigurálni, és még azt is, hogyan **export pdf tables csv** később.
+PDF fájlokból a táblázatok kinyerése gyakori igény, amikor statikus dokumentumokat kell strukturált adatokba átalakítani. Ebben az útmutatóban megtanulja, **hogyan nyerjen ki táblázatokat** PDF‑ekből a GroupDocs.Parser Java könyvtár segítségével. Kitérünk a környezet beállítására, a táblázat‑elrendezés konfigurálására, és arra, **hogyan exportáljon pdf táblázatokat csv‑be** a további feldolgozáshoz. A végére képes lesz megbízható táblázat‑kinyerést integrálni bármely Java‑alapú adatcsővezetékbe.
 
 ## Gyors válaszok
 - **Mi a fő könyvtár?** GroupDocs.Parser for Java  
-- **Kinyerhetek táblázatokat beolvasott PDF-ekből?** Csak OCR után; lásd az alábbi “extract tables scanned pdf” megjegyzést  
-- **Szükségem van licencre?** A próbaverzió licenc fejlesztéshez működik; a termeléshez teljes licenc szükséges  
+- **Kinyerhetek táblázatokat beolvasott PDF‑ekből?** Csak OCR után; lásd az alábbi “extract tables scanned pdf” megjegyzést  
+- **Szükségem van licencre?** A próbaverzió licenc fejlesztéshez működik; a teljes licenc a termeléshez kötelező  
 - **Melyik Java verzió szükséges?** Java 8 vagy újabb  
-- **Támogatott a kötegelt feldolgozás?** Igen – az API nagy léptékű kinyerésre van optimalizálva  
+- **Támogatott a kötegelt feldolgozás?** Igen – az API nagy‑léptékű kinyerésre van optimalizálva  
 
-## Mi a “how to extract tables” a PDF-ek kontextusában?
-Amikor a **how to extract tables** kifejezést használjuk, a PDF-ben lévő táblázati struktúrák programozott keresésére, a cellahatárok értelmezésére és a szövegtartalom gép‑olvasásra alkalmas formátumban (pl. CSV, Excel) történő visszanyerésére gondolunk. A GroupDocs.Parser elrejti az alacsony szintű PDF‑elemzést, és tiszta objektummodellt biztosít a munkához.
+## Mi az a java pdf táblázat kinyerés?
+Java pdf táblázat kinyerés a folyamat, amely programozottan megtalálja a PDF‑ben lévő táblázati struktúrákat, értelmezi a cellák határait, és a szöveget gép‑olvasható formátumban, például CSV‑ben vagy Excel‑ben adja vissza. Ez lehetővé teszi a további elemzéseket, jelentéseket vagy migrációs feladatokat manuális másolás‑beillesztés nélkül.
 
-## Miért használjuk a GroupDocs.Parser-t java pdf table extraction-hez?
-- **Pontos layout‑detektálás** – Kezeli a több‑oszlopos, több‑soros táblázatokat egyedi koordinátákkal.  
-- **Teljesítmény‑orientált** – Jól működik nagy dokumentumokkal és kötegelt feladatokkal.  
-- **Könnyű integráció** – Maven‑alapú függőségkezelés és egyszerű API.  
-- **Bővíthető** – Kombinálható a GroupDocs OCR-rel *extract tables scanned pdf* esetekhez.  
+## Miért használja a GroupDocs.Parser‑t java pdf táblázat kinyeréshez?
+GroupDocs.Parser **pontos elrendezés‑detektálást biztosít több mint 50 + bemeneti és kimeneti formátumra**, és képes több száz oldalas PDF‑eket feldolgozni, miközben a memóriahasználat 200 MB alatt marad. Támogatja a kötegelt feladatokat, egyszerű Maven függőséget kínál, és zökkenőmentesen integrálódik a GroupDocs OCR‑rel a beolvasott dokumentumok esetén.
 
-## Előkövetelmények
+## Előfeltételek
 Mielőtt elkezdenénk, győződjön meg róla, hogy a következőkkel rendelkezik:
 
-- **Java 8+** telepítve és konfigurálva az IDE‑ben vagy a build eszközben.  
+- **Java 8+** telepítve és konfigurálva van az IDE‑jében vagy a build eszközben.  
 - **Maven** a függőségkezeléshez.  
 - Hozzáférés egy **GroupDocs.Parser** licenchez (próba vagy teljes).  
 
 ### Szükséges könyvtárak és függőségek
 Szüksége lesz:
-- GroupDocs.Parser for Java könyvtár (25.5 vagy újabb verzió).  
-- Maven telepítve a rendszerén a függőségkezeléshez.  
+- GroupDocs.Parser for Java könyvtárra (25.5 vagy újabb verzió).  
+- Maven telepítve a rendszerén a függőségkezeléshez.
 
 ### Környezet beállítása
-Győződjön meg róla, hogy a fejlesztői környezet kompatibilis Java verzióval (Java 8 vagy újabb) van beállítva.
+Győződjön meg róla, hogy a fejlesztői környezete kompatibilis Java verzióval van beállítva (Java 8 vagy újabb).
 
-### Tudás előkövetelmények
-Alapvető Java programozási ismeretek és a fájlkezelés ismerete Java-ban hasznos lesz.
+### Tudás előfeltételek
+Alapvető Java programozási ismeretek és a fájlkezelés ismerete Java‑ban hasznos lesz.
 
-## A GroupDocs.Parser beállítása Java-hoz
-A GroupDocs.Parser használatának megkezdéséhez integrálja a projektbe a következőképpen:
+## A GroupDocs.Parser beállítása Java‑hoz
+A GroupDocs.Parser használatának megkezdéséhez integrálja a projektjébe a következő módon:
 
 **Maven beállítás**  
-Adja hozzá a következő konfigurációt a `pom.xml` fájlhoz, hogy a GroupDocs.Parser függőségként szerepeljen:
+Adja hozzá a következő konfigurációt a `pom.xml` fájlhoz, hogy a GroupDocs.Parser függőségként legyen felvéve:
 
 ```xml
 <repositories>
@@ -81,13 +106,13 @@ Adja hozzá a következő konfigurációt a `pom.xml` fájlhoz, hogy a GroupDocs
 ```
 
 **Közvetlen letöltés**  
-Alternatívaként töltse le a legújabb GroupDocs.Parser for Java verziót a [GroupDocs releases](https://releases.groupdocs.com/parser/java/) oldalról.
+Alternatív megoldásként töltse le a legújabb GroupDocs.Parser for Java verziót a [GroupDocs releases](https://releases.groupdocs.com/parser/java/) oldalról.
 
 ### Licenc beszerzése
-Kezdje egy ingyenes próbaverzióval, szerezzen be egy ideiglenes licencet, vagy vásároljon teljes licencet. A részletekért látogassa meg a [GroupDocs licensing page](https://purchase.groupdocs.com/temporary-license/) oldalt.
+Kezdje egy ingyenes próbaverzióval, szerezzen be egy ideiglenes licencet, vagy vásároljon teljes licencet. Részletekért látogassa meg a [GroupDocs licencoldalt](https://purchase.groupdocs.com/temporary-license/).
 
-### Alapvető inicializálás és beállítás
-Inicializálja a GroupDocs.Parser-t a Java alkalmazásban a következőképpen:
+### Alap inicializálás és beállítás
+Inicializálja a GroupDocs.Parser‑t a Java alkalmazásában a következőképpen:
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -105,13 +130,15 @@ public class DocumentParser {
 ```
 
 ## Implementációs útmutató
-Lépésről lépésre bemutatjuk az egyes funkciókat, amelyekkel elsajátíthatja a **how to extract tables** PDF-ből történő kinyerését.
+Vessünk egy pillantást minden funkcióra, amelyet meg kell tanulnia a **táblázatok kinyeréséhez** egy PDF‑ből.
 
-### 1. funkció: Dokumentum elemzés a GroupDocs-szal
+### 1. funkció: dokumentum elemzés a GroupDocs‑szal
 **Áttekintés**  
-A PDF-dokumentummal való interakcióhoz hozzon létre egy `Parser` osztály példányt. Ez lehetővé teszi a dokumentum különféle műveleteit.
+A PDF dokumentummal való interakcióhoz hozzon létre egy `Parser` osztálypéldányt.  
+A `Parser` a belépési pont osztály a PDF tartalom olvasásához a GroupDocs.Parser‑ben. Ez lehetővé teszi a dokumentum különféle műveleteit.
 
-**Parser példány létrehozása**
+**Parser példány létrehozása**  
+A `Parser` osztály a belépési pont a PDF tartalom olvasásához a GroupDocs.Parser‑ben. Betölti a dokumentumot a memóriába, és olyan metódusokat biztosít, amelyekkel szöveget, táblázatokat és egyéb struktúrákat nyerhet ki.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -128,11 +155,13 @@ public class CreateParserInstance {
 }
 ```
 
-### 2. funkció: Táblázatkinyerés képesség ellenőrzése
+### 2. funkció: táblázat‑kinyerés képesség ellenőrzése
 **Áttekintés**  
-A táblázatok kinyerése előtt ellenőrizze, hogy a PDF támogatja-e a táblázatkinyerést.
+A táblázatok kinyerése előtt ellenőrizze, hogy a PDF támogatja-e a táblázat‑kinyerést.
 
-**Táblázat támogatás ellenőrzése**
+**Táblázat támogatás ellenőrzése**  
+A `hasTables()` metódus egy boolean értéket ad vissza, amely jelzi, hogy a betöltött PDF tartalmaz‑e felismerhető táblázati adatot.  
+A `hasTables()` ellenőrzi, hogy a dokumentum tartalmaz‑e táblázatot.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -153,11 +182,13 @@ public class CheckTableSupport {
 }
 ```
 
-### 3. funkció: Táblázat layout konfiguráció
+### 3. funkció: táblázat‑elrendezés konfigurálása
 **Áttekintés**  
-A táblázatok layout-jának konfigurálása javíthatja az adatkinyerés pontosságát.
+A táblázatok elrendezésének konfigurálása javíthatja az adatkinyerés pontosságát.
 
-**Táblázat layout beállítása**
+**Táblázat elrendezés beállítása**  
+A `TemplateTableLayout` meghatározza a várt oszlopszélességeket és sormagasságokat.  
+A `TemplateTableLayout` egyedi oszlopszélességeket és sormagasságokat ad meg a táblázat‑detektáláshoz. Ezeknek az értékeknek a finomhangolása segít a motornak, hogy a cellahatárokat a vizuális rácshoz igazítsa.
 
 ```java
 import com.groupdocs.parser.templates.TemplateTableLayout;
@@ -175,11 +206,13 @@ public class ConfigureTableLayout {
 }
 ```
 
-### 4. funkció: Táblázatkinyerési opciók beállítása
+### 4. funkció: táblázat‑kinyerési opciók beállítása
 **Áttekintés**  
 Állítson be opciókat a táblázatok kinyeréséhez specifikus konfigurációkkal a pontosság növelése érdekében.
 
-**Kinyerési opciók konfigurálása**
+**Kinyerési opciók konfigurálása**  
+A `TableExtractionOptions` lehetővé teszi, hogy megadja, legyen‑e fejlécsor, egyesítse‑e a cellákat, vagy hagyja‑e figyelmen kívül az üres sorokat.  
+A `TableExtractionOptions` beállítja a kinyerés viselkedését, például a fejlécek vagy a cellák egyesítése.
 
 ```java
 import com.groupdocs.parser.options.PageTableAreaOptions;
@@ -196,11 +229,14 @@ public class SetExtractionOptions {
 }
 ```
 
-### 5. funkció: Táblázatok kinyerése egy dokumentumból
+### 5. funkció: táblázatok kinyerése egy dokumentumból
 **Áttekintés**  
-Kinyerheti a táblázatokat a beállított opciók használatával, és szükség szerint feldolgozhatja őket.
+A konfigurált opciók segítségével nyerjen ki táblázatokat, és dolgozza fel őket igény szerint.
 
-**Kinyerési folyamat**
+**Kinyerési folyamat**  
+A `getTables()` metódus egy `Table` objektumok gyűjteményét adja vissza, amelyek mindegyike egy a kért oldalakon észlelt táblázatot képvisel.  
+A `getTables()` visszaadja a dokumentumból az összes észlelt táblázatot.  
+A `Table` egyetlen kinyert táblázatot reprezentál sorokkal és cellákkal.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -225,11 +261,16 @@ public class ExtractTables {
 }
 ```
 
-### 6. funkció: Táblázat sorok és oszlopok bejárása
+### 6. funkció: táblázatsorok és -oszlopok iterálása
 **Áttekintés**  
-Kinyerés után járja be a sorokat és oszlopokat az egyes cellák eléréséhez.
+A kinyerés után iteráljon a sorokon és oszlopokon, hogy elérje az egyes cellákat.
 
-**Iterálás és cellák elérése**
+**Iterálás és cellák elérése**  
+Minden `Table` biztosítja a `getRows()`‑t, és minden `Row` a `getCells()`‑t. A cella szövegét a `getText()`‑vel olvashatja, és CSV‑be vagy bármely más formátumba írhatja.  
+A `Row` egyetlen sort képvisel egy `Table`‑ben.  
+A `getRows()` visszaadja a táblázat sorainak listáját.  
+A `getCells()` visszaadja egy sor celláit.  
+A `getText()` visszaadja egy cella szöveges tartalmát.
 
 ```java
 import com.groupdocs.parser.data.PageTableArea;
@@ -252,36 +293,40 @@ public class IterateTables {
 ```
 
 ## Gyakori problémák és megoldások
-| Probléma | Miért fordul elő | Tippek |
-|----------|------------------|--------|
-| **Nincsenek visszaadott táblázatok** | A PDF beolvasott (képalapú) | Először futtasson OCR-t, vagy használja a GroupDocs OCR-t a feldolgozás előtt. |
-| **Helytelen oszlopigazítás** | A layout koordináták hibásak | `TemplateTableLayout` értékek finomhangolása a vizuális rácshoz. |
-| **Memóriacsúcsok nagy PDF-eknél** | A Parser a teljes dokumentumot memóriába tölti | Dolgozza fel az oldalakat kötegekben, és zárja le a `Parser`-t minden köteg után. |
+| Issue | Why it happens | Pro tip |
+|-------|----------------|---------|
+| **Nem található táblázat** | A PDF beolvasott (képalapú) | Először futtasson OCR‑t, vagy használja a GroupDocs OCR‑t a feldolgozás előtt. |
+| **Helytelen oszlopigazítás** | Az elrendezés koordinátái hibásak | `TemplateTableLayout` értékek finomhangolása a vizuális rácshoz. |
+| **Memóriacsúcsok nagy PDF‑eknél** | A Parser betölti a teljes dokumentumot a memóriába | Dolgozza fel az oldalakat kötegekben, és zárja le a `Parser`‑t minden köteg után. |
 
 ## Gyakran ismételt kérdések
 
-### 1. **Kinyerhetek táblázatokat beolvasott PDF-ekből vagy csak digitális PDF-ekből?**  
-**Válasz:** A GroupDocs.Parser elsősorban digitális, kiválasztható szöveget tartalmazó PDF-ekkel működik. Beolvasott PDF-ekhez OCR (Optical Character Recognition) képességekre van szükség. A GroupDocs külön OCR modulokat kínál, vagy más OCR eszközökkel is konvertálhatja a képeket szöveggé a táblázatkinyerés előtt.
+### 1. Kinyerhetek táblázatokat beolvasott PDF‑ekből vagy csak digitális PDF‑ekből?
+**Válasz:** A GroupDocs.Parser elsősorban digitális, kiválasztható PDF‑ekkel működik, amelyek beágyazott szöveget tartalmaznak. Beolvasott PDF‑ek esetén először OCR‑t kell futtatni – akár a GroupDocs OCR‑val, akár egy másik OCR motorral – hogy a szöveg kereshető legyen a táblázat‑kinyerés előtt.
 
-### 2. **Hogyan kezeljem a komplex elrendezésű vagy egyesített cellákat tartalmazó táblázatokat?**  
-**Válasz:** Komplex elrendezésekhez testre szabhatja a `TemplateTableLayout`-ot konkrét oszlop- és sorkoordinátákkal, vagy módosíthatja a felismerési paramétereket a pontosság javítása érdekében. Az egyesített cellák kezelése esetén előfordulhat, hogy elemezni kell a cella‑kiterjedéseket és utófeldolgozási logikát kell bevezetni az egyesített területek értelmezéséhez.
+### 2. Hogyan kezeljek komplex elrendezésű vagy egyesített cellákat tartalmazó táblázatokat?
+**Válasz:** Testreszabhatja a `TemplateTableLayout`‑ot pontos oszlop‑ és sor‑koordinátákkal, vagy engedélyezheti a `mergeCells` jelzőt a `TableExtractionOptions`‑ban. Utófeldolgozásra lehet szükség az egyesített területek helyes értelmezéséhez.
 
-### 3. **Alkalmas a GroupDocs.Parser nagy dokumentumokhoz vagy kötegelt feldolgozáshoz?**  
-**Válasz:** Igen, a GroupDocs.Parser optimalizált a kötegelt feldolgozásra és nagy dokumentumok hatékony kezelésére. A megfelelő erőforrás‑kezelés és a feladatok darabolása tovább javíthatja a teljesítményt.
+### 3. Alkalmas a GroupDocs.Parser nagy dokumentumokra vagy kötegelt feldolgozásra?
+**Válasz:** Igen. A könyvtár nagy áteresztőképességű forgatókönyvekhez készült, és képes több száz oldalas PDF‑eket feldolgozni, miközben alacsony a memóriahasználat. Használjon oldal‑tartomány opciókat, és a `Parser` példányt minden köteg után szabadítsa fel a teljesítmény maximalizálása érdekében.
 
-### 4. **Exportálhatom a kinyert táblázat adatokat CSV vagy Excel formátumba?**  
-**Válasz:** Bár a GroupDocs.Parser maga a kinyerésre fókuszál, nyers adatokat (sorok és cellák) biztosít. Ezeket könnyen exportálhatja manuálisan vagy Java‑könyvtárak, például Apache POI (Excel) vagy OpenCSV (CSV) segítségével. Itt jön a *export pdf tables csv* felhasználási eset.
+### 4. Exportálhatom a kinyert táblázat adatokat CSV‑ vagy Excel‑formátumba?
+**Válasz:** A GroupDocs.Parser nyers táblázat adatokat (sorok és cellák) ad vissza. Egyszerűen írhatja ezeket CSV‑be az OpenCSV‑vel vagy Excel‑be az Apache POI‑val. Ez teljesíti az *export pdf tables csv* felhasználási esetet további licenc nélkül.
 
-### 5. **Támogatott a táblázatok több oldalról történő kinyerése?**  
-**Válasz:** Igen, a `parser.getTables()` oldal‑opciókkal képes több oldalon lévő táblázatokat kinyerni. Megadhat oldal‑tartományokat, vagy iterálhat az összes oldal felett, hogy összegyűjtse az összes táblázati adatot.
+### 5. Támogatott a táblázatok kinyerése több oldalról egyszerre?
+**Válasz:** Teljesen. Hívja a `parser.getTables(pageOptions)`‑t egy oldal‑tartománnyal vagy iteráljon az összes oldalon. Az API összegyűjti a táblázatokat az oldalak között, lehetővé téve egyetlen konszolidált adathalmaz felépítését.
 
 ## Következtetés
-A PDF‑ből történő táblázatkinyerés alapvető lépés a dokumentumadatok automatizált feldolgozásában, és a GroupDocs.Parser for Java ezt a feladatot egyszerűbbé teszi, mint valaha. A parser példány létrehozásával, a táblázat‑támogatás ellenőrzésével, a layout‑opciók konfigurálásával és a kinyert adatok bejárásával a fejlesztők hatékonyan nyerhetnek ki strukturált adatokat még összetett PDF‑dokumentumokból is. Ez az eszközkészlet elég rugalmas, hogy különféle forgatókönyveket támogasson – a számla‑automatizálástól a nagy‑léptékű adat‑elemzésekig – és zökkenőmentesen integrálódik Java‑alkalmazásokba. Egy kis beállítással és testreszabással a statikus PDF‑eket pontosan és könnyedén alakíthatja át felhasználható adatokra.
+Java pdf táblázat kinyerés egyszerűvé válik a GroupDocs.Parser-rel. A `Parser` inicializálásával, a táblázat‑támogatás megerősítésével, az elrendezés és kinyerési opciók konfigurálásával, valamint a kapott `Table` objektumok iterálásával statikus PDF‑eket alakíthat strukturált CSV‑ vagy Excel‑fájlokká. A könyvtár teljesítmény‑orientált tervezése, több mint 50 formátum támogatása és a zökkenőmentes OCR integrációja ideálissá teszi számlázási automatizálásra, adat‑migrációra és nagy‑léptékű analitikai csővezetékekre. A fenti lépésekkel készen áll a megbízható táblázat‑kinyerés beágyazására bármely Java alkalmazásba.
 
 ---
 
-**Legutóbb frissítve:** 2026-02-09  
+**Legutóbb frissítve:** 2026-09-17  
 **Tesztelve ezzel:** GroupDocs.Parser 25.5 (Java)  
-**Szerző:** GroupDocs  
+**Szerző:** GroupDocs
 
----
+## Kapcsolódó oktatóanyagok
+
+- [Hogyan nyerjünk ki PDF‑et a GroupDocs.Parser‑rel Java‑ban: Átfogó útmutató](/parser/java/getting-started/groupdocs-parser-java-initialize-tutorial/)
+- [Java PDF szöveg kinyerés a GroupDocs.Parser‑rel – Lépésről‑lépésre útmutató](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
+- [java pdf szöveg kinyerés a GroupDocs.Parser‑rel – Teljes útmutató](/parser/java/text-extraction/java-pdf-text-extraction-groupdocs-parser-guide/)

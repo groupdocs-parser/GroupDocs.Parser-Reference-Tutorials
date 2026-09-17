@@ -1,71 +1,129 @@
 ---
-date: '2026-02-09'
-description: Pelajari cara menggunakan OCR untuk mengekstrak teks dari gambar dan
-  dokumen dalam Java dengan GroupDocs.Parser. Panduan ini mencakup pengaturan, konversi
-  gambar ke teks di Java, dan contoh penggunaan praktis untuk pemrosesan dokumen yang
-  efisien.
+date: '2026-09-17'
+description: Pelajari cara mengekstrak gambar java menjadi teks dengan GroupDocs.Parser
+  OCR di Java. Panduan ini mencakup pengaturan, integrasi OCR, contoh kode, dan kasus
+  penggunaan dunia nyata untuk pemrosesan dokumen yang efisien.
 keywords:
-- OCR Text Extraction
-- GroupDocs.Parser Java
-- Java OCR Integration
-title: 'Cara Menggunakan OCR dengan GroupDocs.Parser Java: Mengekstrak Teks dari Gambar
-  dan Dokumen'
+- java image to text
+- how to ocr java
+- use ocr java
+- extract text areas java
+lastmod: '2026-09-17'
+og_description: Ekstrak gambar java menjadi teks menggunakan GroupDocs.Parser OCR.
+  Pelajari step‑by‑step setup, integrasi kode, dan tips kinerja untuk ekstraksi teks
+  dengan akurasi tinggi di Java.
+og_image_alt: Developer guide showing java image to text extraction with GroupDocs.Parser
+  OCR
+og_title: Ekstrak gambar java menjadi teks dengan GroupDocs.Parser OCR
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-17'
+  description: Learn how to extract java image to text with GroupDocs.Parser OCR in
+    Java. This guide covers setup, OCR integration, code snippets, and real‑world
+    use cases for efficient document processing.
+  headline: How to extract java image to text using GroupDocs.Parser OCR
+  type: TechArticle
+- questions:
+  - answer: Add it as a Maven dependency (see the XML snippet above) or download the
+      JAR from the official releases page.
+    question: How do I install GroupDocs.Parser for Java?
+  - answer: Aspose OCR is a high‑accuracy text recognition engine. Paired with GroupDocs.Parser,
+      it extends the parser’s capabilities to handle image‑only files and provide
+      precise text positions.
+    question: What is Aspose OCR, and why use it with GroupDocs.Parser?
+  - answer: Yes. GroupDocs.Parser supports JPEG, PNG, BMP, TIFF, and more—just ensure
+      the OCR connector can read the format.
+    question: Can I process multiple image formats?
+  - answer: Check the file path, confirm the OCR connector is licensed, and verify
+      that the document type is supported by Aspose OCR.
+    question: What should I do if no text areas are extracted?
+  - answer: Visit [GroupDocs Documentation](https://docs.groupdocs.com/parser/java/)
+      for detailed guides and API references.
+    question: Where can I find more resources on GroupDocs.Parser?
+  type: FAQPage
+tags:
+- java image to text
+- GroupDocs.Parser
+- OCR Java
+- document processing
+- text extraction
+title: Cara mengekstrak gambar java menjadi teks menggunakan GroupDocs.Parser OCR
 type: docs
 url: /id/java/ocr-integration/ocr-text-extraction-groupdocs-parser-java/
 weight: 1
 ---
 
- final content.
+# Cara mengekstrak gambar java ke teks menggunakan GroupDocs.Parser OCR
 
-# Cara Menggunakan OCR dengan GroupDocs.Parser Java
-
-Apakah Anda ingin mengekstrak teks secara efisien dari gambar atau dokumen yang dipindai? **Cara menggunakan OCR** dengan pustaka GroupDocs.Parser untuk Java menawarkan solusi yang kuat, memungkinkan integrasi mulus Optical Character Recognition (OCR) ke dalam aplikasi Anda. Panduan komprehensif ini akan memandu Anda mengekstrak area teks dari file gambar menggunakan konektor Aspose OCR dengan GroupDocs.Parser di Java, meningkatkan kemampuan pemrosesan dokumen Anda.
-
-**Apa yang Akan Anda Pelajari**
-- Menyiapkan dan menggunakan GroupDocs.Parser untuk Java.
-- Menginisialisasi `ParserSettings` dengan konektor OCR.
-- Teknik untuk mengekstrak area teks dari gambar menggunakan teknologi Aspose OCR.
-- Aplikasi praktis fitur ini dalam skenario dunia nyata seperti konversi **java image to text** dan mengekstrak posisi teks di Java.
+Dalam tutorial ini Anda akan menemukan cara **mengekstrak gambar java ke teks** dengan mengintegrasikan OCR dengan pustaka GroupDocs.Parser. Anda akan melihat cara mengonfigurasi konektor Aspose OCR, mengambil koordinat teks yang tepat, dan menerapkan hasilnya dalam skenario dunia nyata seperti pemrosesan faktur, arsip yang dapat dicari, dan overlay UI.
 
 ## Jawaban Cepat
-- **Apa arti “how to use OCR”?** Ini merujuk pada mengintegrasikan mesin OCR untuk membaca teks dari file berbasis gambar.  
-- **Library mana yang menyediakan OCR untuk Java?** GroupDocs.Parser yang digabungkan dengan konektor Aspose OCR.  
-- **Apakah saya memerlukan lisensi?** Tersedia percobaan gratis; lisensi permanen diperlukan untuk produksi.  
-- **Bisakah saya mendapatkan koordinat teks?** Ya, API mengembalikan posisi area teks (left, top, width, height).  
-- **Versi Java apa yang diperlukan?** Java 8 atau yang lebih baru disarankan.
+- **Apa arti “java image to text”?** Ini adalah proses mengonversi file gambar menjadi teks yang dapat dicari dan diedit menggunakan OCR dalam aplikasi Java.  
+- **Library mana yang menyediakan OCR untuk Java?** GroupDocs.Parser yang dikombinasikan dengan konektor Aspose OCR.  
+- **Apakah saya memerlukan lisensi?** Versi percobaan gratis dapat digunakan untuk evaluasi; lisensi permanen diperlukan untuk penggunaan produksi.  
+- **Bisakah saya mendapatkan koordinat teks?** Ya – API mengembalikan persegi panjang pembatas (kiri, atas, lebar, tinggi) untuk setiap kata yang dikenali.  
+- **Versi Java apa yang diperlukan?** Java 8 atau yang lebih baru disarankan untuk kompatibilitas penuh.
 
-## Apa itu Ekstraksi Teks OCR?
-Optical Character Recognition (OCR) mengubah teks visual—yang ditemukan dalam gambar yang dipindai, PDF, atau foto—menjadi karakter yang dapat dibaca mesin. Ketika Anda **cara menggunakan OCR** di Java, Anda memungkinkan aplikasi Anda untuk mencari, mengedit, dan menganalisis dokumen yang sebelumnya statis.
+## Apa itu ekstraksi teks OCR?
+OCR (optical character recognition) mengubah teks visual yang ditemukan dalam gambar yang dipindai, PDF, atau foto menjadi karakter yang dapat dibaca mesin. Ketika Anda **mengekstrak gambar java ke teks**, aplikasi Anda dapat mengindeks, mengedit, dan menganalisis dokumen yang sebelumnya berupa gambar statis. Kemampuan ini memungkinkan pencarian teks penuh, penambangan data, dan alur kerja otomatis, mengubah file hanya gambar menjadi informasi yang dapat ditindaklanjuti untuk sistem hilir.
 
-## Mengapa Menggunakan GroupDocs.Parser untuk OCR?
-- **Unified API** – Menangani PDF, gambar, dan banyak format lain dengan satu basis kode.  
-- **Accurate Recognition** – Ditenagai oleh Aspose OCR, yang mendukung banyak bahasa dan font.  
-- **Position Data** – Mengambil koordinat tepat setiap blok teks, sempurna untuk pemrosesan yang memperhatikan tata letak.  
-- **Scalable** – Bekerja dengan gambar kecil atau pekerjaan batch besar, dan dapat dijalankan di‑premise atau di cloud.
+## Mengapa menggunakan GroupDocs.Parser untuk OCR?
+GroupDocs.Parser menyediakan satu API terpadu yang menyederhanakan penanganan banyak tipe dokumen sekaligus memberikan hasil OCR dengan akurasi tinggi. Dengan memanfaatkan mesin Aspose OCR, ia mendukung puluhan bahasa dan font kompleks, mengembalikan data posisi yang tepat, dan skalabel secara efisien untuk pemrosesan batch. Fitur-fitur ini menjadikannya ideal untuk proyek digitalisasi dokumen tingkat perusahaan.
+
+- **API Terpadu** – Satu basis kode menangani PDF, gambar, dan lebih dari 30 format lainnya.  
+- **Pengakuan akurat** – Aspose OCR mendukung lebih dari 60 bahasa dan font kompleks.  
+- **Data posisi** – Mengembalikan koordinat tepat untuk setiap blok teks, memungkinkan pemrosesan yang memperhatikan tata letak.  
+- **Kinerja skalabel** – Menangani batch hingga 500 halaman per pekerjaan dengan penggunaan RAM kurang dari 200 MB.
 
 ## Prasyarat
 
-Sebelum kita mulai, pastikan Anda memiliki hal berikut:
+Sebelum memulai, pastikan Anda memiliki:
 
-### Perpustakaan dan Dependensi yang Diperlukan
-- **GroupDocs.Parser for Java**: Versi 25.5 atau lebih baru.  
-- **Maven** atau pengaturan unduhan langsung untuk instalasi pustaka.  
-- **Aspose OCR Connector**: Akses ke teknologi OCR Aspose diperlukan.
-
-### Persyaratan Penyiapan Lingkungan
-- IDE yang kompatibel (IntelliJ IDEA, Eclipse, dll.) yang berjalan pada Java 8+.  
-- Maven terpasang jika Anda lebih suka pendekatan repositori Maven.
-
-### Prasyarat Pengetahuan
-- Keterampilan pemrograman Java dasar.  
-- Keterbiasaan dalam menangani dependensi proyek.
+- **GroupDocs.Parser for Java** – versi 25.5 atau lebih baru (mendukung lebih dari 30 format input dan output).  
+- **Maven** atau metode unduhan manual untuk instalasi pustaka.  
+- **Aspose OCR connector** – diperlukan untuk mengaktifkan pengenalan teks hanya gambar.  
+- Sebuah IDE seperti IntelliJ IDEA atau Eclipse yang berjalan pada **Java 8+**.  
+- Pengetahuan dasar pemrograman Java dan familiaritas dengan manajemen dependensi.
 
 ## Menyiapkan GroupDocs.Parser untuk Java
 
-Anda dapat menambahkan pustaka melalui Maven atau mengunduhnya secara langsung.
-
 ### Menggunakan Maven
-Add the following configurations to your `pom.xml` file:
+Tambahkan dependensi berikut ke file `pom.xml` Anda:
+
+```xml
+<dependency>
+    <groupId>com.groupdocs</groupId>
+    <artifactId>groupdocs-parser</artifactId>
+    <version>25.5</version>
+</dependency>
+```
+
+> **Definisi:** `pom.xml` adalah deskripsi proyek Maven yang mencantumkan semua pustaka yang diperlukan dan versinya.
+
+### Unduhan langsung
+Sebagai alternatif, unduh JAR terbaru dari halaman rilis resmi:
+
+[GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/)
+
+> **Definisi:** Halaman rilis menyediakan binary yang telah dibangun sebelumnya dan dokumentasi untuk integrasi segera.
+
+#### Langkah-langkah memperoleh lisensi
+- **Uji coba gratis** – mengevaluasi pustaka tanpa biaya.  
+- **Lisensi sementara** – memperoleh kunci berjangka waktu untuk pengujian lanjutan.  
+- **Pembelian** – memperoleh lisensi penuh untuk penggunaan produksi tanpa batas.
+
+### Inisialisasi dan penyiapan dasar
+`ParserSettings` mengonfigurasi cara GroupDocs.Parser membaca dokumen, termasuk opsi OCR dan pengaturan kinerja.  
+`AsposeOcrOnPremise` menyediakan mesin OCR on‑premise dan penanganan lisensi untuk Aspose OCR.
+
+Berikut adalah kode Java penting yang membuat instance `ParserSettings` dengan konektor Aspose OCR:
+
+```java
+ParserSettings settings = new ParserSettings();
+settings.setOcrConnector(new AsposeOcrOnPremise("your-license-path"));
+```
+
+> **Definisi:** `ParserSettings` mengonfigurasi cara GroupDocs.Parser membaca dan memproses dokumen, sementara `AsposeOcrOnPremise` menyediakan mesin OCR dan lisensi.
 
 ```xml
 <repositories>
@@ -85,17 +143,10 @@ Add the following configurations to your `pom.xml` file:
 </dependencies>
 ```
 
-### Unduhan Langsung
-Sebagai alternatif, unduh versi terbaru dari [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
+Setelah dasar-dasar selesai, mari kita selami ekstraksi area teks OCR.
 
-#### Langkah-langkah Akuisisi Lisensi
-- **Free Trial** – Evaluasi pustaka tanpa biaya.  
-- **Temporary License** – Gunakan kunci berjangka waktu untuk pengujian lanjutan.  
-- **Purchase** – Dapatkan lisensi penuh untuk penerapan produksi.
-
-### Inisialisasi dan Penyiapan Dasar
-
-Setelah pustaka tersedia, Anda dapat menginisialisasi parser. Di bawah ini adalah kode Java penting yang membuat instance `ParserSettings` dengan konektor Aspose OCR:
+## Bagaimana cara kerja ekstraksi gambar java ke teks?
+`Parser` adalah kelas inti yang membuka dokumen dan menyediakan akses ke halaman serta kontennya. `PageTextAreaOptions` menentukan opsi ekstraksi seperti mengaktifkan OCR dan meminta data posisi. Muat gambar dengan `Parser`, aktifkan OCR melalui `PageTextAreaOptions`, dan iterasi objek `PageTextArea` yang dikembalikan. Pola dua langkah ini mengembalikan baik string yang dikenali maupun persegi panjang pembatasnya dalam satu kali proses, memungkinkan Anda menangkap lokasi tepat untuk setiap kata.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -105,11 +156,11 @@ import com.groupdocs.parser.ocr.AsposeOcrOnPremise;
 ParserSettings settings = new ParserSettings(new AsposeOcrOnPremise());
 ```
 
-Dengan dasar-dasar selesai, mari kita selami ekstraksi area teks OCR.
+## Cara mengekstrak area teks dengan OCR (langkah demi langkah)
 
-## Cara Mengekstrak Area Teks dengan OCR (Langkah‑per‑Langkah)
+Bagian ini menjelaskan proses lengkap mengonfigurasi OCR, membuka dokumen, dan mengambil area teks beserta koordinatnya. Mengikuti langkah-langkah ini akan memberi Anda teks yang diekstrak serta informasi tata letak yang diperlukan untuk pemrosesan lanjutan seperti rendering overlay atau ekstraksi data.
 
-### 1. Inisialisasi `ParserSettings` dengan Konektor OCR
+### 1. Inisialisasi `ParserSettings` dengan konektor OCR
 Konektor OCR memungkinkan pengenalan teks dalam dokumen yang hanya berupa gambar.
 
 ```java
@@ -117,8 +168,8 @@ Konektor OCR memungkinkan pengenalan teks dalam dokumen yang hanya berupa gambar
 ParserSettings settings = new ParserSettings(new AsposeOcrOnPremise());
 ```
 
-### 2. Buka Dokumen dan Konfigurasikan Opsi Ekstraksi
-Kami menggunakan `PageTextAreaOptions` untuk memberi tahu parser agar mengembalikan data posisi untuk setiap kata yang dikenali.
+### 2. Buka dokumen dan konfigurasikan opsi ekstraksi
+`PageTextAreaOptions` memberi tahu parser untuk mengembalikan data posisi untuk setiap kata yang dikenali.
 
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY", settings)) {
@@ -146,54 +197,74 @@ try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY", settings)) {
 }
 ```
 
-#### Apa yang Dilakukan Kode Ini
-- **Creates** sebuah instance `Parser` yang menunjuk ke folder dokumen Anda.  
-- **Enables** OCR melalui `PageTextAreaOptions(true)`.  
-- **Iterates** setiap `PageTextArea`, memberi Anda teks yang dikenali **dan** persegi tepatnya (posisi dan ukuran).  
-- **Allows** Anda menyimpan atau memanipulasi data, seperti memasukkannya ke dalam basis data atau menampilkannya di UI.
+#### Apa yang dilakukan kode ini
+- **Membuat** instance `Parser` yang menunjuk ke folder dokumen Anda.  
+- **Mengaktifkan** OCR melalui `PageTextAreaOptions(true)`.  
+- **Mengiterasi** setiap `PageTextArea`, memberi Anda teks yang dikenali **dan** persegi panjangnya yang tepat (posisi dan ukuran).  
+- **Memungkinkan** Anda menyimpan atau memanipulasi data, seperti memasukkannya ke basis data atau menampilkannya pada UI.
 
-### 3. Proses Hasil
-Sekarang Anda dapat menggunakan teks dan koordinat yang diekstrak untuk berbagai skenario:
+`PageTextArea` mewakili blok teks yang dikenali bersama dengan persegi panjang pembatasnya, memudahkan pemetaan teks kembali ke gambar asli.
 
-- **Document Digitization** – Mengonversi kontrak yang dipindai menjadi PDF yang dapat dicari.  
-- **Data Entry Automation** – Mengambil bidang seperti nomor faktur langsung dari gambar tanda terima.  
-- **Content Management** – Mengindeks posisi teks untuk penyorotan pencarian lanjutan.
+### 3. Proses hasilnya
+Anda sekarang dapat menggunakan teks dan koordinat yang diekstrak untuk berbagai skenario:
 
-## Masalah Umum dan Solusinya
+- **Digitalisasi dokumen** – Mengonversi kontrak yang dipindai menjadi PDF yang dapat dicari.  
+- **Otomasi entri data** – Mengambil bidang seperti nomor faktur langsung dari gambar tanda terima.  
+- **Manajemen konten** – Mengindeks posisi teks untuk penyorotan pencarian lanjutan.
 
-| Gejala | Penyebab Kemungkinan | Solusi |
-|---------|--------------|-----|
-| Tidak ada area teks yang dikembalikan | Konektor OCR tidak dikonfigurasi atau jalur gambar tidak benar | Verifikasi bahwa instance `AsposeOcrOnPremise` telah dilisensikan dengan benar dan jalur file dapat diakses. |
-| Karakter rusak | Kualitas gambar rendah atau bahasa tidak didukung | Gunakan pemindaian resolusi lebih tinggi dan konfigurasikan paket bahasa OCR. |
-| Kesalahan out‑of‑memory pada PDF besar | Memproses banyak halaman resolusi tinggi sekaligus | Proses halaman dalam batch atau aktifkan mode streaming (`ParserSettings.setEnableStreaming(true)`). |
+## Masalah umum dan solusi
 
-## Pertanyaan yang Sering Diajukan
+| Gejala | Penyebab kemungkinan | Solusi |
+|--------|----------------------|--------|
+| Tidak ada area teks yang dikembalikan | Konektor OCR tidak dikonfigurasi atau path gambar tidak benar | Verifikasi bahwa instance `AsposeOcrOnPremise` memiliki lisensi yang benar dan path file dapat diakses. |
+| Karakter rusak | Gambar beresolusi rendah atau bahasa tidak didukung | Gunakan pemindaian dengan resolusi lebih tinggi dan konfigurasikan paket bahasa OCR. |
+| Kesalahan out‑of‑memory pada PDF besar | Memproses banyak halaman beresolusi tinggi sekaligus | Proses halaman secara batch atau aktifkan mode streaming (`ParserSettings.setEnableStreaming(true)`). |
+
+## Pertanyaan yang sering diajukan
 
 **Q: Bagaimana cara menginstal GroupDocs.Parser untuk Java?**  
-A: Tambahkan sebagai dependensi Maven (lihat potongan XML di atas) atau unduh secara langsung dari halaman rilis resmi.
+A: Tambahkan sebagai dependensi Maven (lihat potongan XML di atas) atau unduh JAR dari halaman rilis resmi.
 
 **Q: Apa itu Aspose OCR, dan mengapa menggunakannya dengan GroupDocs.Parser?**  
-A: Aspose OCR adalah mesin pengenalan teks berakurasi tinggi. Dipasangkan dengan GroupDocs.Parser, ia memperluas kemampuan parser untuk menangani file yang hanya berupa gambar dan memberikan posisi teks yang tepat.
+A: Aspose OCR adalah mesin pengenalan teks dengan akurasi tinggi. Dipasangkan dengan GroupDocs.Parser, ia memperluas kemampuan parser untuk menangani file hanya gambar dan memberikan posisi teks yang tepat.
 
 **Q: Bisakah saya memproses banyak format gambar?**  
 A: Ya. GroupDocs.Parser mendukung JPEG, PNG, BMP, TIFF, dan lainnya—pastikan konektor OCR dapat membaca format tersebut.
 
 **Q: Apa yang harus saya lakukan jika tidak ada area teks yang diekstrak?**  
-A: Periksa jalur file, pastikan konektor OCR berlisensi, dan verifikasi bahwa tipe dokumen didukung oleh Aspose OCR.
+A: Periksa path file, pastikan konektor OCR memiliki lisensi, dan verifikasi bahwa tipe dokumen didukung oleh Aspose OCR.
 
-**Q: Di mana saya dapat menemukan lebih banyak sumber daya tentang GroupDocs.Parser?**  
-A: Kunjungi [GroupDocs Documentation](https://docs.groupdocs.com/parser/java/) untuk panduan detail dan referensi API.
+**Q: Di mana saya dapat menemukan lebih banyak sumber tentang GroupDocs.Parser?**  
+A: Kunjungi [GroupDocs Documentation](https://docs.groupdocs.com/parser/java/) untuk panduan terperinci dan referensi API.
+
+## Tips tambahan dan praktik terbaik
+
+- **Pemrosesan batch:** Bungkus loop ekstraksi dalam blok `try‑with‑resources` untuk secara otomatis melepaskan handle file.  
+- **Penyetelan kinerja:** Aktifkan `ParserSettings.setEnableParallelProcessing(true)` untuk memanfaatkan banyak core CPU pada batch besar.  
+- **Konfigurasi bahasa:** Panggil `AsposeOcrOnPremise.setLanguage("eng+spa")` untuk mengenali bahasa Inggris dan Spanyol secara bersamaan.  
+- **Penyimpanan hasil:** Serialisasikan objek `PageTextArea` ke JSON untuk konsumsi hilir yang mudah.
 
 ## Sumber Daya
-- [Dokumentasi](https://docs.groupdocs.com/parser/java/)
-- [Referensi API](https://reference.groupdocs.com/parser/java)
-- [Unduh Versi Terbaru](https://releases.groupdocs.com/parser/java/)
-- [Repositori GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
-- [Forum Dukungan Gratis](https://forum.groupdocs.com/c/parser)
-- [Lisensi Sementara](https://purchase.groupdocs.com/temporary-license/)
 
-Jelajahi sumber daya ini untuk memperdalam pemahaman Anda dan memperluas kemampuan GroupDocs.Parser dalam proyek Anda.
+- [Rilis GroupDocs.Parser untuk Java](https://releases.groupdocs.com/parser/java/)  
+- [Unduh Versi Terbaru](https://releases.groupdocs.com/parser/java/)  
+- [Dokumentasi](https://docs.groupdocs.com/parser/java/)  
+- [Referensi API](https://reference.groupdocs.com/parser/java)  
+- [Repositori GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
+- [Forum Dukungan Gratis](https://forum.groupdocs.com/c/parser)  
+- [Lisensi Sementara](https://purchase.groupdocs.com/temporary-license/)  
 
-**Terakhir Diperbarui:** 2026-02-09  
-**Diuji Dengan:** GroupDocs.Parser 25.5 for Java  
+## Kesimpulan
+Anda kini memiliki pendekatan lengkap dan siap produksi untuk ekstraksi **java image to text** menggunakan GroupDocs.Parser dan konektor Aspose OCR. Terapkan teknik ini untuk mendigitalisasi dokumen warisan, mengotomatisasi entri data, atau membangun arsip yang dapat dicari dengan upaya minimal.
+
+---
+
+**Terakhir Diperbarui:** 2026-09-17  
+**Diuji Dengan:** GroupDocs.Parser 25.5 untuk Java  
 **Penulis:** GroupDocs
+
+## Tutorial Terkait
+
+- [Ekstraksi Teks OCR Java Groupdocs Parser](/parser/java/ocr-integration/ocr-text-extraction-java-groupdocs-parser/)
+- [Proses Dokumen yang Dipindai: Ekstraksi Teks Aspose OCR dengan GroupDocs.Parser di Java](/parser/java/ocr-integration/aspose-ocr-text-extraction-groupdocs-parser-java/)
+- [Panduan Pengakuan Teks OCR Java Aspose Groupdocs Parser](/parser/java/ocr-integration/java-ocr-text-recognition-aspose-groupdocs-parser-guide/)

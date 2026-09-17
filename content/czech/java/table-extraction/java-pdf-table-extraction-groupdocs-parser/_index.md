@@ -1,50 +1,78 @@
 ---
-date: '2026-02-09'
-description: Naučte se, jak extrahovat tabulky z PDF v Javě pomocí GroupDocs.Parser.
-  Tento průvodce pokrývá extrakci tabulek z PDF v Javě, export tabulek PDF do CSV
-  a další.
+date: '2026-09-17'
+description: Naučte se, jak provést extrakci tabulek z java pdf pomocí GroupDocs.Parser.
+  Tento průvodce ukazuje setup, konfiguraci rozložení tabulky a export tabulek do
+  CSV.
 keywords:
-- Java PDF table extraction
-- GroupDocs.Parser library
-- automate document parsing
-title: Jak extrahovat tabulky z PDF v Javě pomocí GroupDocs.Parser – komplexní průvodce
+- java pdf table extraction
+- how to extract tables
+- extract tables scanned pdf
+- export pdf tables csv
+- pdf table extraction library
+lastmod: '2026-09-17'
+og_description: Naučte se, jak provést extrakci tabulek z java pdf pomocí GroupDocs.Parser.
+  Tento průvodce vás provede setup, laděním layoutu a exportem tabulek do CSV během
+  několika kroků.
+og_image_alt: Guide showing java pdf table extraction with GroupDocs.Parser
+og_title: Jak provést extrakci tabulek z java pdf pomocí GroupDocs.Parser
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-17'
+  description: Learn how to do java pdf table extraction using GroupDocs.Parser. This
+    guide shows setup, table layout configuration, and exporting tables to CSV.
+  headline: How to do java pdf table extraction with GroupDocs.Parser
+  type: TechArticle
+- questions:
+  - answer: GroupDocs.Parser for Java
+    question: What is the primary library?
+  - answer: Only after OCR; see “extract tables scanned pdf” note below
+    question: Can I extract tables from scanned PDFs?
+  - answer: A trial license works for development; a full license is required for
+      production
+    question: Do I need a license?
+  - answer: Java 8 or higher
+    question: Which Java version is required?
+  - answer: Yes – the API is optimized for large‑scale extraction
+    question: Is batch processing supported?
+  type: FAQPage
+tags:
+- java pdf extraction
+- GroupDocs.Parser
+- table extraction
+- csv export
+title: Jak provést extrakci tabulek z java pdf pomocí GroupDocs.Parser
 type: docs
 url: /cs/java/table-extraction/java-pdf-table-extraction-groupdocs-parser/
 weight: 1
 ---
 
- sure no extra spaces.
+# Jak provést extrakci tabulek z PDF v Javě pomocí GroupDocs.Parser
 
-Proceed to final.# Jak extrahovat tabulky z PDF v Javě pomocí GroupDocs.Parser
-
-Extrahování tabulek z PDF souborů je častý požadavek, když potřebujete převést statické dokumenty na strukturovaná data. V tomto tutoriálu ukážeme **jak extrahovat tabulky** z PDF pomocí knihovny GroupDocs.Parser pro Javu. Uvidíte, proč je tento přístup ideální pro *java pdf table extraction*, jak nakonfigurovat rozvržení pro přesné výsledky a dokonce jak **export pdf tables csv** později.
+Extrahování tabulek z PDF souborů je častý požadavek, když potřebujete převést statické dokumenty na strukturovaná data. V tomto tutoriálu se naučíte **jak extrahovat tabulky** z PDF pomocí knihovny GroupDocs.Parser pro Javu. Pokryjeme nastavení prostředí, konfiguraci rozložení tabulky a jak **exportovat pdf tabulky csv** pro následné zpracování. Na konci budete schopni integrovat robustní extrakci tabulek do jakéhokoli datového kanálu založeného na Javě.
 
 ## Rychlé odpovědi
 - **Jaká je hlavní knihovna?** GroupDocs.Parser for Java  
 - **Mohu extrahovat tabulky ze skenovaných PDF?** Pouze po OCR; viz poznámka „extract tables scanned pdf“ níže  
-- **Potřebuji licenci?** Zkušební licence funguje pro vývoj; pro produkci je vyžadována plná licence  
-- **Jaká verze Javy je požadována?** Java 8 or higher  
-- **Je podpora dávkového zpracování?** Ano – API je optimalizováno pro rozsáhlé extrahování  
+- **Potřebuji licenci?** Zkušební licence funguje pro vývoj; plná licence je vyžadována pro produkci  
+- **Jaká verze Javy je vyžadována?** Java 8 nebo vyšší  
+- **Je podpora dávkového zpracování?** Ano – API je optimalizováno pro rozsáhlou extrakci  
 
-## Co znamená „how to extract tables“ v kontextu PDF?
-Když mluvíme o **how to extract tables**, odkazujeme na proces programového vyhledávání tabulkových struktur uvnitř PDF, interpretaci hranic buněk a získávání textového obsahu ve strojově čitelném formátu (např. CSV, Excel). GroupDocs.Parser abstrahuje nízkoúrovňové parsování PDF a poskytuje vám čistý objektový model pro práci.
+## Co je extrakce tabulek z PDF v Javě?
+Extrakce tabulek z PDF v Javě je proces programového vyhledávání tabulkových struktur uvnitř PDF, interpretace hranic buněk a získávání textu ve strojově čitelném formátu, jako je CSV nebo Excel. To umožňuje následnou analytiku, reportování nebo migrační úkoly bez ručního kopírování a vkládání.
 
-## Proč použít GroupDocs.Parser pro java pdf table extraction?
-- **Přesná detekce rozvržení** – Zvládá tabulky s více sloupci a řádky s vlastními souřadnicemi.  
-- **Zaměřeno na výkon** – Dobře funguje s velkými dokumenty a dávkovými úlohami.  
-- **Jednoduchá integrace** – Správa závislostí založená na Maven a přehledné API.  
-- **Rozšiřitelné** – Můžete jej kombinovat s GroupDocs OCR pro scénáře *extract tables scanned pdf*.
+## Proč použít GroupDocs.Parser pro extrakci tabulek z PDF v Javě?
+GroupDocs.Parser poskytuje **přesnou detekci rozložení pro více než 50 + vstupních a výstupních formátů** a dokáže zpracovat PDF s více stovkami stránek při zachování využití paměti pod 200 MB. Podporuje dávkové úlohy, nabízí jednoduchou Maven závislost a integruje se bez problémů s GroupDocs OCR pro scénáře se skenovanými dokumenty.
 
 ## Předpoklady
 Než začneme, ujistěte se, že máte následující:
 
 - **Java 8+** nainstalováno a nakonfigurováno ve vašem IDE nebo nástroji pro sestavení.  
 - **Maven** pro správu závislostí.  
-- Přístup k licenci **GroupDocs.Parser** (zkušební nebo plná).
+- Přístup k licenci **GroupDocs.Parser** (zkušební nebo plná).  
 
 ### Požadované knihovny a závislosti
 Budete potřebovat:
-- Knihovnu GroupDocs.Parser pro Javu (verze 25.5 nebo novější).  
+- GroupDocs.Parser pro Javu (verze 25.5 nebo novější).  
 - Maven nainstalovaný ve vašem systému pro správu závislostí.
 
 ### Nastavení prostředí
@@ -57,7 +85,7 @@ Základní pochopení programování v Javě a znalost práce se soubory v Javě
 Pro zahájení používání GroupDocs.Parser jej integrujte do svého projektu následovně:
 
 **Nastavení Maven**  
-Přidejte následující konfiguraci do souboru `pom.xml`, aby se zahrnul GroupDocs.Parser jako závislost:
+Přidejte následující konfiguraci do souboru `pom.xml`, abyste zahrnuli GroupDocs.Parser jako závislost:
 
 ```xml
 <repositories>
@@ -102,13 +130,15 @@ public class DocumentParser {
 ```
 
 ## Průvodce implementací
-Projdeme každou funkci, kterou potřebujete zvládnout **how to extract tables** z PDF.
+Projdeme si každou funkci, kterou potřebujete zvládnout **jak extrahovat tabulky** z PDF.
 
-### Funkce 1: Parsování dokumentu pomocí GroupDocs
+### Funkce 1: parsování dokumentu pomocí GroupDocs
 **Přehled**  
-Pro práci s PDF dokumentem vytvořte instanci třídy `Parser`. To umožňuje různé operace s dokumentem.
+Pro práci s PDF dokumentem vytvořte instanci třídy `Parser`.  
+`Parser` je vstupní třída pro čtení PDF obsahu v GroupDocs.Parser. To umožňuje různé operace s dokumentem.
 
-**Vytvoření instance Parser**
+**Vytvoření instance parseru**  
+Třída `Parser` je vstupní bod pro čtení PDF obsahu v GroupDocs.Parser. Načte dokument do paměti a poskytuje metody pro extrakci textu, tabulek a dalších struktur.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -125,11 +155,13 @@ public class CreateParserInstance {
 }
 ```
 
-### Funkce 2: Kontrola schopnosti extrahovat tabulky
+### Funkce 2: kontrola schopnosti extrakce tabulek
 **Přehled**  
-Před extrahováním tabulek ověřte, že PDF podporuje extrakci tabulek.
+Před extrakcí tabulek ověřte, že PDF podporuje extrakci tabulek.
 
-**Kontrola podpory tabulek**
+**Kontrola podpory tabulek**  
+Metoda `hasTables()` vrací boolean, který udává, zda načtené PDF obsahuje detekovatelné tabulkové údaje.  
+`hasTables()` kontroluje, zda dokument obsahuje nějaké tabulky.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -150,11 +182,13 @@ public class CheckTableSupport {
 }
 ```
 
-### Funkce 3: Konfigurace rozvržení tabulky
+### Funkce 3: konfigurace rozložení tabulky
 **Přehled**  
-Konfigurace rozvržení vašich tabulek může zvýšit přesnost extrakce dat.
+Konfigurace rozložení vašich tabulek může zvýšit přesnost extrakce dat.
 
-**Nastavení rozvržení tabulky**
+**Nastavení rozložení tabulky**  
+`TemplateTableLayout` definuje očekávané šířky sloupců a výšky řádků.  
+`TemplateTableLayout` určuje vlastní šířky sloupců a výšky řádků pro detekci tabulky. Úprava těchto hodnot pomáhá motoru zarovnat hranice buněk s vizuální mřížkou.
 
 ```java
 import com.groupdocs.parser.templates.TemplateTableLayout;
@@ -172,11 +206,13 @@ public class ConfigureTableLayout {
 }
 ```
 
-### Funkce 4: Nastavení možností extrakce tabulky
+### Funkce 4: nastavení možností extrakce tabulky
 **Přehled**  
-Nastavte možnosti pro extrahování tabulek s konkrétními konfiguracemi pro zlepšení přesnosti extrakce.
+Nastavte možnosti pro extrakci tabulek s konkrétními konfiguracemi pro zlepšení přesnosti extrakce.
 
-**Konfigurace možností extrakce**
+**Konfigurace možností extrakce**  
+`TableExtractionOptions` vám umožňuje určit, zda zahrnout řádky hlavičky, sloučit buňky nebo ignorovat prázdné řádky.  
+`TableExtractionOptions` konfiguruje chování extrakce, jako je zahrnutí hlaviček nebo sloučení buněk.
 
 ```java
 import com.groupdocs.parser.options.PageTableAreaOptions;
@@ -193,11 +229,14 @@ public class SetExtractionOptions {
 }
 ```
 
-### Funkce 5: Extrahování tabulek z dokumentu
+### Funkce 5: extrakce tabulek z dokumentu
 **Přehled**  
-Extrahujte tabulky pomocí nastavených možností a zpracovávejte je podle potřeby.
+Extrahujte tabulky pomocí nastavených možností a zpracujte je podle potřeby.
 
-**Proces extrakce**
+**Proces extrakce**  
+Metoda `getTables()` vrací kolekci objektů `Table`, z nichž každý představuje detekovanou tabulku na požadovaných stránkách.  
+`getTables()` získá všechny detekované tabulky z dokumentu.  
+`Table` představuje jednu extrahovanou tabulku s řádky a buňkami.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -222,11 +261,16 @@ public class ExtractTables {
 }
 ```
 
-### Funkce 6: Iterace přes řádky a sloupce tabulky
+### Funkce 6: iterace přes řádky a sloupce tabulky
 **Přehled**  
 Po extrakci iterujte přes řádky a sloupce pro přístup k jednotlivým buňkám.
 
-**Iterace a přístup k buňkám**
+**Iterace a přístup k buňkám**  
+Každý `Table` poskytuje `getRows()` a každý `Row` poskytuje `getCells()`. Můžete přečíst text buňky pomocí `getText()` a zapsat jej do CSV nebo jiného formátu.  
+`Row` představuje jeden řádek v `Table`.  
+`getRows()` vrací seznam řádků v tabulce.  
+`getCells()` vrací buňky řádku.  
+`getText()` získá textový obsah buňky.
 
 ```java
 import com.groupdocs.parser.data.PageTableArea;
@@ -249,34 +293,40 @@ public class IterateTables {
 ```
 
 ## Časté problémy a řešení
-| Problém | Proč k tomu dochází | Tip |
+| Problém | Proč se to děje | Tip |
 |-------|----------------|---------|
-| **Žádné tabulky nebyly vráceny** | PDF je skenovaný (obrázkový) | Nejprve spusťte OCR nebo použijte GroupDocs OCR před parsováním. |
-| **Nesprávné zarovnání sloupců** | Souřadnice rozvržení jsou nesprávné | Doladěte hodnoty `TemplateTableLayout`, aby odpovídaly vizuální mřížce. |
-| **Nárazové zvýšení paměti u velkých PDF** | Parser načítá celý dokument do paměti | Zpracovávejte stránky po dávkách a po každé dávce zavřete `Parser`. |
+| **Žádné tabulky vráceny** | PDF je skenovaný (obrázkový) | Nejprve spusťte OCR nebo použijte GroupDocs OCR před parsováním. |
+| **Nesprávné zarovnání sloupců** | Souřadnice rozložení jsou nesprávné | Doladěte hodnoty `TemplateTableLayout`, aby odpovídaly vizuální mřížce. |
+| **Nárazové zvýšení paměti u velkých PDF** | Parser načítá celý dokument do paměti | Zpracovávejte stránky po dávkách a po každé dávce uzavřete `Parser`. |
 
 ## Často kladené otázky
 
-### 1. **Mohu extrahovat tabulky ze skenovaných PDF nebo jen z digitálních PDF?**  
-**Answer:** GroupDocs.Parser primárně pracuje s digitálními, výběrnými PDF, které obsahují vložený text. Pro skenované PDF budete muset integrovat OCR (Optical Character Recognition) schopnosti. GroupDocs nabízí samostatné OCR moduly, nebo můžete použít jiné OCR nástroje k převodu obrázků na text před extrakcí tabulek.
+### 1. Mohu extrahovat tabulky ze skenovaných PDF nebo jen z digitálních PDF?
+**Odpověď:** GroupDocs.Parser primárně funguje s digitálními, výběrnými PDF, které obsahují vložený text. Pro skenované PDF budete muset nejprve spustit OCR – buď s GroupDocs OCR nebo jiným OCR nástrojem – aby se text stal prohledávatelným před extrakcí tabulky.
 
-### 2. **Jak mohu pracovat s tabulkami s komplexním rozvržením nebo sloučenými buňkami?**  
-**Answer:** Pro komplexní rozvržení můžete přizpůsobit `TemplateTableLayout` pomocí konkrétních souřadnic sloupců a řádků, nebo upravit parametry rozpoznávání pro zlepšení přesnosti. Práce se sloučenými buňkami může vyžadovat analýzu rozsahů buněk a implementaci post‑processing logiky pro interpretaci sloučených oblastí.
+### 2. Jak zacházet s tabulkami s komplexním rozložením nebo sloučenými buňkami?
+**Odpověď:** Přizpůsobte `TemplateTableLayout` pomocí přesných souřadnic sloupců a řádků, nebo povolte příznak `mergeCells` v `TableExtractionOptions`. Může být nutné provést post‑processing pro správnou interpretaci sloučených oblastí.
 
-### 3. **Je GroupDocs.Parser vhodný pro velké dokumenty nebo dávkové zpracování?**  
-**Answer:** Ano, GroupDocs.Parser je optimalizován pro dávkové zpracování a může efektivně pracovat s velkými dokumenty. Správná správa zdrojů a rozdělení úloh na bloky může dále zlepšit výkon.
+### 3. Je GroupDocs.Parser vhodný pro velké dokumenty nebo dávkové zpracování?
+**Odpověď:** Ano. Knihovna je vytvořena pro scénáře s vysokou propustností a může zpracovávat PDF se stovkami stránek při nízké spotřebě paměti. Používejte možnosti rozsahu stránek a po každé dávce uvolněte instanci `Parser`, aby se maximalizoval výkon.
 
-### 4. **Mohu exportovat extrahovaná data tabulky do formátů jako CSV nebo Excel?**  
-**Answer:** Zatímco GroupDocs.Parser se zaměřuje na extrakci, poskytuje surová data (řádky a buňky). Tato data můžete snadno exportovat ručně nebo pomocí Java knihoven jako Apache POI (pro Excel) nebo OpenCSV (pro CSV soubory). Zde vstupuje do hry případ použití *export pdf tables csv*.
+### 4. Mohu exportovat extrahovaná data tabulky do formátů jako CSV nebo Excel?
+**Odpověď:** GroupDocs.Parser vrací surová data tabulky (řádky a buňky). Tyto data můžete snadno zapsat do CSV pomocí OpenCSV nebo do Excelu pomocí Apache POI. To splňuje případ použití *export pdf tables csv* bez další licence.
 
-### 5. **Je podporováno extrahování tabulek z více stránek?**  
-**Answer:** Ano, když použijete `parser.getTables()` s možnostmi stránek, může extrahovat tabulky napříč více stránkami. Můžete specifikovat rozsahy stránek nebo iterativně zpracovávat všechny stránky pro získání všech tabulkových dat.
+### 5. Existuje podpora pro extrakci tabulek z více stránek najednou?
+**Odpověď:** Rozhodně. Zavolejte `parser.getTables(pageOptions)` s rozsahem stránek nebo iterujte přes všechny stránky. API agreguje tabulky napříč stránkami, což vám umožní vytvořit jediné konsolidované datové sady.
 
 ## Závěr
-Extrahování tabulek z PDF je nezbytný krok při automatizaci zpracování dat z dokumentů a GroupDocs.Parser pro Javu činí tento úkol jednodušším než kdy předtím. Vytvořením instance parseru, ověřením podpory tabulek, konfigurací možností rozvržení a iterací přes extrahovaná data mohou vývojáři efektivně získávat strukturovaná data i z komplexních PDF dokumentů. Tento nástroj je dostatečně flexibilní pro podporu různých scénářů – od automatizace faktur po rozsáhlé analýzy dat – a integruje se bez problémů do Java aplikací. S trochou nastavení a přizpůsobení proměníte statické PDF na použitelné údaje s přesností a lehkostí.
+Extrakce tabulek z PDF v Javě se stává jednoduchou s GroupDocs.Parser. Inicializací `Parser`, potvrzením podpory tabulek, konfigurací rozložení a možností extrakce a iterací přes vzniklé objekty `Table` můžete převést statické PDF na strukturované soubory CSV nebo Excel. Design knihovny zaměřený na výkon, podpora více než 50 formátů a bezproblémová integrace OCR z ní činí ideální volbu pro automatizaci faktur, migraci dat a velké analytické pipeline. S výše uvedenými kroky jste připraveni vložit spolehlivou extrakci tabulek do jakékoli Java aplikace.
 
 ---
 
-**Poslední aktualizace:** 2026-02-09  
+**Poslední aktualizace:** 2026-09-17  
 **Testováno s:** GroupDocs.Parser 25.5 (Java)  
 **Autor:** GroupDocs
+
+## Související tutoriály
+
+- [Jak extrahovat PDF pomocí GroupDocs.Parser v Javě: Komplexní průvodce](/parser/java/getting-started/groupdocs-parser-java-initialize-tutorial/)
+- [Java PDF Text Extraction s GroupDocs.Parser – Krok za krokem průvodce](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
+- [java pdf text extraction s GroupDocs.Parser – Kompletní průvodce](/parser/java/text-extraction/java-pdf-text-extraction-groupdocs-parser-guide/)

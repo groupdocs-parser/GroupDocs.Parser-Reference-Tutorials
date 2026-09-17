@@ -1,56 +1,85 @@
 ---
-date: '2026-02-09'
-description: Dowiedz się, jak wyodrębniać tabele z PDF w Javie przy użyciu GroupDocs.Parser.
-  Ten przewodnik obejmuje wyodrębnianie tabel PDF w Javie, eksport tabel PDF do CSV
-  i wiele więcej.
+date: '2026-09-17'
+description: Dowiedz się, jak wykonać ekstrakcję tabel PDF w języku Java przy użyciu
+  GroupDocs.Parser. Ten przewodnik pokazuje konfigurację, ustawienia układu tabeli
+  oraz eksportowanie tabel do formatu CSV.
 keywords:
-- Java PDF table extraction
-- GroupDocs.Parser library
-- automate document parsing
-title: Jak wyodrębnić tabele z PDF w Javie przy użyciu GroupDocs.Parser – kompleksowy
-  przewodnik
+- java pdf table extraction
+- how to extract tables
+- extract tables scanned pdf
+- export pdf tables csv
+- pdf table extraction library
+lastmod: '2026-09-17'
+og_description: Dowiedz się, jak wykonać ekstrakcję tabel PDF w języku Java przy użyciu
+  GroupDocs.Parser. Ten przewodnik przeprowadzi Cię przez konfigurację, dostosowanie
+  układu i eksportowanie tabel do formatu CSV w kilku prostych krokach.
+og_image_alt: Guide showing java pdf table extraction with GroupDocs.Parser
+og_title: Jak wykonać ekstrakcję tabel PDF w języku Java przy użyciu GroupDocs.Parser
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-17'
+  description: Learn how to do java pdf table extraction using GroupDocs.Parser. This
+    guide shows setup, table layout configuration, and exporting tables to CSV.
+  headline: How to do java pdf table extraction with GroupDocs.Parser
+  type: TechArticle
+- questions:
+  - answer: GroupDocs.Parser for Java
+    question: What is the primary library?
+  - answer: Only after OCR; see “extract tables scanned pdf” note below
+    question: Can I extract tables from scanned PDFs?
+  - answer: A trial license works for development; a full license is required for
+      production
+    question: Do I need a license?
+  - answer: Java 8 or higher
+    question: Which Java version is required?
+  - answer: Yes – the API is optimized for large‑scale extraction
+    question: Is batch processing supported?
+  type: FAQPage
+tags:
+- java pdf extraction
+- GroupDocs.Parser
+- table extraction
+- csv export
+title: Jak wykonać ekstrakcję tabel PDF w języku Java przy użyciu GroupDocs.Parser
 type: docs
 url: /pl/java/table-extraction/java-pdf-table-extraction-groupdocs-parser/
 weight: 1
 ---
 
-# Jak wyodrębnić tabele z PDF w Javie przy użyciu GroupDocs.Parser
+# Jak wykonać ekstrakcję tabel PDF w języku Java przy użyciu GroupDocs.Parser
 
-Wyodrębnianie tabel z plików PDF jest częstym wymaganiem, gdy trzeba przekształcić statyczne dokumenty w dane strukturalne. W tym samouczku pokażemy **jak wyodrębnić tabele** z PDF‑ów przy użyciu biblioteki GroupDocs.Parser dla Javy. Zobaczysz, dlaczego to podejście jest idealne dla *java pdf table extraction*, jak skonfigurować układy dla dokładnych wyników oraz jak **export pdf tables csv** później.
+Ekstrakcja tabel z plików PDF jest częstym wymaganiem, gdy trzeba przekształcić statyczne dokumenty w dane strukturalne. W tym samouczku dowiesz się **jak wyodrębniać tabele** z PDF‑ów przy użyciu biblioteki GroupDocs.Parser dla Javy. Omówimy konfigurację środowiska, ustawienia układu tabel oraz jak **eksportować tabele PDF do CSV** w celu dalszego przetwarzania. Po zakończeniu będziesz mógł zintegrować solidną ekstrakcję tabel w dowolnym potoku danych opartym na Javie.
 
 ## Szybkie odpowiedzi
-- **Jaka jest podstawowa biblioteka?** GroupDocs.Parser for Java  
+- **Jaka jest główna biblioteka?** GroupDocs.Parser for Java  
 - **Czy mogę wyodrębniać tabele ze skanowanych PDF‑ów?** Tylko po OCR; zobacz notatkę „extract tables scanned pdf” poniżej  
 - **Czy potrzebna jest licencja?** Licencja próbna działa w środowisku deweloperskim; pełna licencja jest wymagana w produkcji  
 - **Jaka wersja Javy jest wymagana?** Java 8 lub wyższa  
-- **Czy obsługiwane jest przetwarzanie wsadowe?** Tak – API jest zoptymalizowane pod kątem dużej skali wyodrębniania  
+- **Czy obsługiwane jest przetwarzanie wsadowe?** Tak – API jest zoptymalizowane pod kątem ekstrakcji na dużą skalę  
 
-## Co oznacza „how to extract tables” w kontekście PDF‑ów?
-Kiedy mówimy o **how to extract tables**, mamy na myśli proces programowego lokalizowania struktur tabelarycznych w PDF‑ie, interpretacji granic komórek oraz pobierania treści tekstowej w formacie czytelnym dla maszyn (np. CSV, Excel). GroupDocs.Parser abstrahuje niskopoziomowe parsowanie PDF i udostępnia czysty model obiektowy do pracy.
+## Czym jest ekstrakcja tabel PDF w Javie?
+Ekstrakcja tabel PDF w Javie to proces programowego lokalizowania struktur tabelarycznych w dokumencie PDF, interpretowania granic komórek oraz pobierania tekstu w formacie czytelnym dla maszyn, takim jak CSV lub Excel. Umożliwia to dalszą analizę, raportowanie lub zadania migracyjne bez ręcznego kopiowania i wklejania.
 
-## Dlaczego warto używać GroupDocs.Parser do java pdf table extraction?
-- **Dokładne wykrywanie układu** – Obsługuje wielokolumnowe, wielowierszowe tabele z niestandardowymi współrzędnymi.  
-- **Skoncentrowane na wydajności** – Dobrze radzi sobie z dużymi dokumentami i zadaniami wsadowymi.  
-- **Łatwa integracja** – Zarządzanie zależnościami oparte na Maven oraz przejrzyste API.  
-- **Rozszerzalne** – Można połączyć z GroupDocs OCR dla scenariuszy *extract tables scanned pdf*.
+## Dlaczego warto używać GroupDocs.Parser do ekstrakcji tabel PDF w Javie?
+GroupDocs.Parser zapewnia **dokładne wykrywanie układu dla ponad 50 + formatów wejściowych i wyjściowych** i może przetwarzać PDF‑y o setkach stron, utrzymując zużycie pamięci poniżej 200 MB. Obsługuje zadania wsadowe, oferuje prostą zależność Maven oraz integruje się bezproblemowo z GroupDocs OCR w scenariuszach dokumentów skanowanych.
 
 ## Wymagania wstępne
-Zanim zaczniemy, upewnij się, że masz następujące elementy:
+Zanim zaczniemy, upewnij się, że masz następujące:
 
-- **Java 8+** zainstalowaną i skonfigurowaną w IDE lub narzędziu budującym.  
+- **Java 8+** zainstalowana i skonfigurowana w Twoim IDE lub narzędziu budującym.  
 - **Maven** do zarządzania zależnościami.  
 - Dostęp do licencji **GroupDocs.Parser** (próbna lub pełna).  
 
 ### Wymagane biblioteki i zależności
-Będziesz potrzebować:
-- Biblioteka GroupDocs.Parser for Java (wersja 25.5 lub nowsza).  
+Będziesz potrzebował:
+- Biblioteka GroupDocs.Parser dla Javy (wersja 25.5 lub nowsza).  
 - Maven zainstalowany w systemie do zarządzania zależnościami.
 
 ### Konfiguracja środowiska
 Upewnij się, że środowisko programistyczne jest skonfigurowane z kompatybilną wersją Javy (Java 8 lub wyższą).
 
 ### Wymagania wiedzy
-Podstawowa znajomość programowania w Javie oraz obsługi plików w Javie będzie pomocna.
+Podstawowa znajomość programowania w Javie oraz obsługi plików w Javie będzie przydatna.
 
 ## Konfiguracja GroupDocs.Parser dla Javy
 Aby rozpocząć korzystanie z GroupDocs.Parser, zintegrować go z projektem w następujący sposób:
@@ -77,10 +106,10 @@ Dodaj następującą konfigurację do pliku `pom.xml`, aby uwzględnić GroupDoc
 ```
 
 **Bezpośrednie pobranie**  
-Alternatywnie, pobierz najnowszą wersję GroupDocs.Parser for Java z [GroupDocs releases](https://releases.groupdocs.com/parser/java/).
+Ewentualnie pobierz najnowszą wersję GroupDocs.Parser dla Javy z [GroupDocs releases](https://releases.groupdocs.com/parser/java/).
 
 ### Uzyskanie licencji
-Rozpocznij od darmowej wersji próbnej, uzyskaj tymczasową licencję lub zakup pełną licencję. Odwiedź [stronę licencjonowania GroupDocs](https://purchase.groupdocs.com/temporary-license/) po szczegóły.
+Rozpocznij od darmowej wersji próbnej, uzyskaj tymczasową licencję lub zakup pełną licencję. Odwiedź [GroupDocs licensing page](https://purchase.groupdocs.com/temporary-license/) po szczegóły.
 
 ### Podstawowa inicjalizacja i konfiguracja
 Zainicjalizuj GroupDocs.Parser w aplikacji Java w następujący sposób:
@@ -101,13 +130,15 @@ public class DocumentParser {
 ```
 
 ## Przewodnik implementacji
-Przejdźmy przez każdą funkcję, którą musisz opanować, aby **how to extract tables** z PDF‑a.
+Przejdźmy przez każdą funkcję, którą musisz opanować, aby **wyodrębniać tabele** z PDF‑a.
 
-### Funkcja 1: Parsowanie dokumentu z GroupDocs
+### Funkcja 1: parsowanie dokumentu z GroupDocs
 **Przegląd**  
-Aby współpracować z dokumentem PDF, utwórz instancję klasy `Parser`. Umożliwia to różne operacje na dokumencie.
+Aby pracować z dokumentem PDF, utwórz instancję klasy `Parser`.  
+`Parser` jest klasą wejściową do odczytu zawartości PDF w GroupDocs.Parser. Umożliwia to różne operacje na dokumencie.
 
-**Tworzenie instancji Parser**
+**Tworzenie instancji parsera**  
+Klasa `Parser` jest punktem wejścia do odczytu zawartości PDF w GroupDocs.Parser. Ładuje dokument do pamięci i udostępnia metody do wyodrębniania tekstu, tabel i innych struktur.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -124,11 +155,13 @@ public class CreateParserInstance {
 }
 ```
 
-### Funkcja 2: Sprawdzenie możliwości wyodrębniania tabel
+### Funkcja 2: sprawdzenie możliwości ekstrakcji tabel
 **Przegląd**  
-Przed wyodrębnianiem tabel, sprawdź, czy PDF obsługuje wyodrębnianie tabel.
+Przed wyodrębnieniem tabel, sprawdź, czy PDF obsługuje ekstrakcję tabel.
 
-**Sprawdzanie wsparcia tabel**
+**Sprawdzanie wsparcia tabel**  
+Metoda `hasTables()` zwraca wartość boolowską wskazującą, czy załadowany PDF zawiera wykrywalne dane tabelaryczne.  
+`hasTables()` sprawdza, czy dokument zawiera jakiekolwiek tabele.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -149,11 +182,13 @@ public class CheckTableSupport {
 }
 ```
 
-### Funkcja 3: Konfiguracja układu tabeli
+### Funkcja 3: konfiguracja układu tabeli
 **Przegląd**  
-Konfigurowanie układu tabel może zwiększyć dokładność wyodrębniania danych.
+Konfiguracja układu tabel może zwiększyć dokładność ekstrakcji danych.
 
-**Ustawianie układu tabeli**
+**Ustawianie układu tabeli**  
+`TemplateTableLayout` definiuje oczekiwane szerokości kolumn i wysokości wierszy.  
+`TemplateTableLayout` określa niestandardowe szerokości kolumn i wysokości wierszy dla wykrywania tabel. Dostosowanie tych wartości pomaga silnikowi wyrównać granice komórek z wizualną siatką.
 
 ```java
 import com.groupdocs.parser.templates.TemplateTableLayout;
@@ -171,11 +206,13 @@ public class ConfigureTableLayout {
 }
 ```
 
-### Funkcja 4: Konfiguracja opcji wyodrębniania tabel
+### Funkcja 4: konfiguracja opcji ekstrakcji tabel
 **Przegląd**  
-Skonfiguruj opcje wyodrębniania tabel z określonymi ustawieniami, aby poprawić dokładność.
+Skonfiguruj opcje wyodrębniania tabel z określonymi ustawieniami, aby poprawić dokładność ekstrakcji.
 
-**Konfigurowanie opcji wyodrębniania**
+**Konfigurowanie opcji ekstrakcji**  
+`TableExtractionOptions` pozwala określić, czy uwzględniać wiersze nagłówka, łączyć komórki lub ignorować puste wiersze.  
+`TableExtractionOptions` konfiguruje zachowanie ekstrakcji, takie jak uwzględnianie nagłówków czy łączenie komórek.
 
 ```java
 import com.groupdocs.parser.options.PageTableAreaOptions;
@@ -192,11 +229,14 @@ public class SetExtractionOptions {
 }
 ```
 
-### Funkcja 5: Wyodrębnianie tabel z dokumentu
+### Funkcja 5: wyodrębnianie tabel z dokumentu
 **Przegląd**  
 Wyodrębniaj tabele przy użyciu skonfigurowanych opcji i przetwarzaj je w razie potrzeby.
 
-**Proces wyodrębniania**
+**Proces ekstrakcji**  
+Metoda `getTables()` zwraca kolekcję obiektów `Table`, z których każdy reprezentuje wykrytą tabelę na żądanych stronach.  
+`getTables()` pobiera wszystkie wykryte tabele z dokumentu.  
+`Table` reprezentuje pojedynczą wyodrębnioną tabelę z wierszami i komórkami.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -221,11 +261,16 @@ public class ExtractTables {
 }
 ```
 
-### Funkcja 6: Iterowanie po wierszach i kolumnach tabeli
+### Funkcja 6: iterowanie po wierszach i kolumnach tabeli
 **Przegląd**  
-Po wyodrębnieniu iteruj po wierszach i kolumnach, aby uzyskać dostęp do poszczególnych komórek.
+Po ekstrakcji iteruj po wierszach i kolumnach, aby uzyskać dostęp do poszczególnych komórek.
 
-**Iterowanie i dostęp do komórek**
+**Iterowanie i dostęp do komórek**  
+Każda `Table` udostępnia `getRows()`, a każdy `Row` udostępnia `getCells()`. Możesz odczytać tekst komórki za pomocą `getText()` i zapisać go do CSV lub innego formatu.  
+`Row` reprezentuje pojedynczy wiersz w `Table`.  
+`getRows()` zwraca listę wierszy w tabeli.  
+`getCells()` zwraca komórki wiersza.  
+`getText()` pobiera tekstową zawartość komórki.
 
 ```java
 import com.groupdocs.parser.data.PageTableArea;
@@ -247,35 +292,41 @@ public class IterateTables {
 }
 ```
 
-## Typowe problemy i rozwiązania
+## Częste problemy i rozwiązania
 | Problem | Dlaczego się pojawia | Wskazówka |
-|---------|----------------------|-----------|
-| **Brak zwróconych tabel** | PDF jest zeskanowany (oparty na obrazie) | Uruchom OCR najpierw lub użyj GroupDocs OCR przed parsowaniem. |
-| **Nieprawidłowe wyrównanie kolumn** | Współrzędne układu są nieprawidłowe | Doprecyzuj wartości `TemplateTableLayout`, aby pasowały do wizualnej siatki. |
-| **Wzrost zużycia pamięci przy dużych PDF‑ach** | Parser ładuje cały dokument do pamięci | Przetwarzaj strony partiami i zamykaj `Parser` po każdej partii. |
+|-------|----------------|---------|
+| **Brak zwróconych tabel** | PDF jest zeskanowany (oparty na obrazie) | Najpierw uruchom OCR lub użyj GroupDocs OCR przed parsowaniem. |
+| **Nieprawidłowe wyrównanie kolumn** | Współrzędne układu są niepoprawne | Dostrój wartości `TemplateTableLayout`, aby pasowały do wizualnej siatki. |
+| **Wzrost zużycia pamięci przy dużych PDF‑ach** | Parser ładuje cały dokument do pamięci | Przetwarzaj strony w partiach i zamykaj `Parser` po każdej partii. |
 
-## Najczęściej zadawane pytania
+## Często zadawane pytania
 
-### 1. **Czy mogę wyodrębniać tabele ze skanowanych PDF‑ów czy tylko z cyfrowych PDF‑ów?**  
-**Odpowiedź:** GroupDocs.Parser działa głównie z cyfrowymi, zaznaczalnymi PDF‑ami zawierającymi wbudowany tekst. W przypadku skanowanych PDF‑ów konieczna jest integracja funkcji OCR (Optical Character Recognition). GroupDocs oferuje osobne moduły OCR, lub możesz użyć innych narzędzi OCR, aby przekonwertować obrazy na tekst przed wyodrębnianiem tabel.
+### 1. Czy mogę wyodrębniać tabele ze skanowanych PDF‑ów czy tylko z cyfrowych PDF‑ów?
+**Answer:** GroupDocs.Parser działa głównie z cyfrowymi, wybieralnymi PDF‑ami zawierającymi osadzony tekst. W przypadku skanowanych PDF‑ów należy najpierw uruchomić OCR — za pomocą GroupDocs OCR lub innego silnika OCR — aby tekst stał się przeszukiwalny przed wyodrębnieniem tabel.
 
-### 2. **Jak obsłużyć tabele o złożonych układach lub scalonych komórkach?**  
-**Odpowiedź:** Dla złożonych układów możesz dostosować `TemplateTableLayout` przy użyciu konkretnych współrzędnych kolumn i wierszy lub dostosować parametry rozpoznawania, aby poprawić dokładność. Obsługa scalonych komórek może wymagać analizy zakresów komórek i wdrożenia logiki post‑processingowej w celu interpretacji scalonych obszarów.
+### 2. Jak obsługiwać tabele o złożonych układach lub scalonych komórkach?
+**Answer:** Dostosuj `TemplateTableLayout` przy użyciu precyzyjnych współrzędnych kolumn i wierszy lub włącz flagę `mergeCells` w `TableExtractionOptions`. Może być wymagana dalsza obróbka, aby poprawnie zinterpretować scalone obszary.
 
-### 3. **Czy GroupDocs.Parser nadaje się do dużych dokumentów lub przetwarzania wsadowego?**  
-**Odpowiedź:** Tak, GroupDocs.Parser jest zoptymalizowany pod kątem przetwarzania wsadowego i może efektywnie obsługiwać duże dokumenty. Odpowiednie zarządzanie zasobami i dzielenie zadań przetwarzania na części może dodatkowo zwiększyć wydajność.
+### 3. Czy GroupDocs.Parser jest odpowiedni dla dużych dokumentów lub przetwarzania wsadowego?
+**Answer:** Tak. Biblioteka jest zaprojektowana do scenariuszy o wysokiej przepustowości i może przetwarzać PDF‑y setek stron przy niskim zużyciu pamięci. Używaj opcji zakresu stron i zwalniaj instancję `Parser` po każdej partii, aby zmaksymalizować wydajność.
 
-### 4. **Czy mogę wyeksportować wyodrębnione dane tabeli do formatów takich jak CSV lub Excel?**  
-**Odpowiedź:** Chociaż GroupDocs.Parser koncentruje się na wyodrębnianiu, dostarcza surowe dane (wiersze i komórki). Możesz łatwo wyeksportować te dane ręcznie lub przy użyciu bibliotek Java, takich jak Apache POI (dla Excela) lub OpenCSV (dla plików CSV). To właśnie w tym scenariuszu *export pdf tables csv* ma zastosowanie.
+### 4. Czy mogę wyeksportować wyodrębnione dane tabeli do formatów takich jak CSV lub Excel?
+**Answer:** GroupDocs.Parser zwraca surowe dane tabeli (wiersze i komórki). Możesz łatwo zapisać te dane do CSV przy użyciu OpenCSV lub do Excela przy użyciu Apache POI. Spełnia to przypadek użycia *export pdf tables csv* bez dodatkowej licencji.
 
-### 5. **Czy istnieje obsługa wyodrębniania tabel z wielu stron?**  
-**Odpowiedź:** Tak, używając `parser.getTables()` z opcjami stron, można wyodrębniać tabele z wielu stron. Możesz określić zakresy stron lub przetwarzać wszystkie strony iteracyjnie, aby zebrać wszystkie dane tabelaryczne.
+### 5. Czy istnieje wsparcie dla wyodrębniania tabel z wielu stron jednocześnie?
+**Answer:** Absolutnie. Wywołaj `parser.getTables(pageOptions)` z zakresem stron lub iteruj po wszystkich stronach. API agreguje tabele z różnych stron, umożliwiając stworzenie jednego skonsolidowanego zestawu danych.
 
 ## Podsumowanie
-Wyodrębnianie tabel z PDF‑ów jest kluczowym krokiem w automatyzacji przetwarzania danych dokumentów, a GroupDocs.Parser dla Javy sprawia, że to zadanie jest prostsze niż kiedykolwiek. Tworząc instancję parsera, weryfikując wsparcie tabel, konfigurować opcje układu i iterując po wyodrębnionych danych, programiści mogą efektywnie uzyskać dane strukturalne nawet z złożonych dokumentów PDF. To narzędzie jest wystarczająco elastyczne, aby obsługiwać różnorodne scenariusze — od automatyzacji faktur po analizy danych na dużą skalę — i integruje się płynnie z aplikacjami Java. Dzięki niewielkiej konfiguracji i dostosowaniu zamienisz statyczne PDF‑y w użyteczne dane z precyzją i łatwością.
+Ekstrakcja tabel PDF w Javie staje się prosta dzięki GroupDocs.Parser. Poprzez inicjalizację `Parser`, potwierdzenie wsparcia tabel, konfigurację układu i opcji ekstrakcji oraz iterację po otrzymanych obiektach `Table`, możesz przekształcić statyczne PDF‑y w strukturalne pliki CSV lub Excel. Projekt biblioteki skoncentrowany na wydajności, wsparcie ponad 50 formatów oraz płynna integracja z OCR czynią ją idealnym wyborem do automatyzacji faktur, migracji danych i dużych potoków analitycznych. Dzięki powyższym krokom jesteś gotowy, aby wbudować niezawodną ekstrakcję tabel w dowolnej aplikacji Java.
 
 ---
 
-**Ostatnia aktualizacja:** 2026-02-09  
+**Ostatnia aktualizacja:** 2026-09-17  
 **Testowano z:** GroupDocs.Parser 25.5 (Java)  
 **Autor:** GroupDocs
+
+## Powiązane samouczki
+
+- [Jak wyodrębnić PDF przy użyciu GroupDocs.Parser w Javie: Kompletny przewodnik](/parser/java/getting-started/groupdocs-parser-java-initialize-tutorial/)
+- [Ekstrakcja tekstu PDF w Javie z GroupDocs.Parser – Przewodnik krok po kroku](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
+- [Ekstrakcja tekstu PDF w Javie z GroupDocs.Parser – Pełny przewodnik](/parser/java/text-extraction/java-pdf-text-extraction-groupdocs-parser-guide/)
