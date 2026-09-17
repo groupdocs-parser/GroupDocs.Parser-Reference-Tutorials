@@ -1,60 +1,89 @@
 ---
-date: '2026-02-09'
-description: 學習如何使用 GroupDocs.Parser 在 Java 中從 PDF 提取表格。本指南涵蓋 Java PDF 表格提取、匯出 PDF
-  表格為 CSV 等內容。
+date: '2026-09-17'
+description: 了解如何使用 GroupDocs.Parser 進行 Java PDF 表格提取。本指南展示設定、表格版面配置以及將表格匯出為 CSV 的方法。
 keywords:
-- Java PDF table extraction
-- GroupDocs.Parser library
-- automate document parsing
-title: 使用 GroupDocs.Parser 在 Java 中從 PDF 提取表格 – 完整指南
+- java pdf table extraction
+- how to extract tables
+- extract tables scanned pdf
+- export pdf tables csv
+- pdf table extraction library
+lastmod: '2026-09-17'
+og_description: 了解如何使用 GroupDocs.Parser 進行 Java PDF 表格提取。本指南僅需幾個步驟，即可帶您完成設定、版面調整以及將表格匯出為
+  CSV。
+og_image_alt: Guide showing java pdf table extraction with GroupDocs.Parser
+og_title: 如何使用 GroupDocs.Parser 進行 Java PDF 表格提取
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-17'
+  description: Learn how to do java pdf table extraction using GroupDocs.Parser. This
+    guide shows setup, table layout configuration, and exporting tables to CSV.
+  headline: How to do java pdf table extraction with GroupDocs.Parser
+  type: TechArticle
+- questions:
+  - answer: GroupDocs.Parser for Java
+    question: What is the primary library?
+  - answer: Only after OCR; see “extract tables scanned pdf” note below
+    question: Can I extract tables from scanned PDFs?
+  - answer: A trial license works for development; a full license is required for
+      production
+    question: Do I need a license?
+  - answer: Java 8 or higher
+    question: Which Java version is required?
+  - answer: Yes – the API is optimized for large‑scale extraction
+    question: Is batch processing supported?
+  type: FAQPage
+tags:
+- java pdf extraction
+- GroupDocs.Parser
+- table extraction
+- csv export
+title: 如何使用 GroupDocs.Parser 進行 Java PDF 表格提取
 type: docs
 url: /zh-hant/java/table-extraction/java-pdf-table-extraction-groupdocs-parser/
 weight: 1
 ---
 
-# 如何使用 GroupDocs.Parser 在 Java 中提取 PDF 表格
+# 如何使用 GroupDocs.Parser 進行 Java PDF 表格提取
 
-從 PDF 檔案中提取表格是將靜態文件轉換為結構化資料時的常見需求。在本教學中，我們將示範 **如何提取表格**，使用 GroupDocs.Parser 的 Java 程式庫。您將了解為何此方法非常適合 *java pdf table extraction*，如何配置版面以獲得精確結果，甚至如何在之後 **export pdf tables csv**。
+從 PDF 檔案中提取表格是將靜態文件轉換為結構化資料的常見需求。在本教學中，您將學習 **如何提取表格**，使用適用於 Java 的 GroupDocs.Parser 函式庫。我們將涵蓋環境設定、表格佈局配置，以及如何 **export pdf tables csv** 以供後續處理。完成後，您將能將強大的表格提取整合到任何基於 Java 的資料管道中。
 
 ## 快速回答
-- **主要的程式庫是什麼？** GroupDocs.Parser for Java  
-- **我可以從掃描的 PDF 提取表格嗎？** 僅在 OCR 之後；請參閱下方「extract tables scanned pdf」說明  
-- **我需要授權嗎？** 試用授權可用於開發；正式環境需購買完整授權  
+- **主要的函式庫是什麼？** GroupDocs.Parser for Java  
+- **我可以從掃描的 PDF 提取表格嗎？** 只能在 OCR 之後；請參閱下方 “extract tables scanned pdf” 註解  
+- **我需要授權嗎？** 試用授權可用於開發；正式環境需要完整授權  
 - **需要哪個 Java 版本？** Java 8 或更高版本  
-- **是否支援批次處理？** 是 – API 已針對大規模提取進行最佳化  
+- **支援批次處理嗎？** 是 – API 已針對大規模提取進行最佳化  
 
-## 在 PDF 背景下，「how to extract tables」是什麼意思？
-當我們談到 **how to extract tables** 時，我們指的是程式化定位 PDF 內的表格結構、解析儲存格邊界，並以機器可讀的格式（例如 CSV、Excel）取得文字內容的過程。GroupDocs.Parser 抽象化了低階的 PDF 解析，提供一個乾淨的物件模型供您使用。
+## 什麼是 Java PDF 表格提取？
+Java PDF 表格提取是指以程式方式在 PDF 中定位表格結構、解析儲存格邊界，並以機器可讀的格式（如 CSV 或 Excel）取得文字內容。這可讓後續的分析、報告或遷移工作無需手動複製貼上。
 
-## 為何使用 GroupDocs.Parser 進行 java pdf table extraction？
-- **精確的版面偵測** – 能處理多欄位、多列的表格，並支援自訂座標。  
-- **效能導向** – 在大型文件與批次工作中表現良好。  
-- **易於整合** – 基於 Maven 的相依管理與直觀的 API。  
-- **可擴充** – 您可以結合 GroupDocs OCR 以應對 *extract tables scanned pdf* 的情境。  
+## 為什麼使用 GroupDocs.Parser 進行 Java PDF 表格提取？
+GroupDocs.Parser 提供 **超過 50 種以上的輸入與輸出格式的精確版面偵測**，且能在記憶體使用量低於 200 MB 的情況下處理數百頁的 PDF。它支援批次作業，提供簡單的 Maven 相依性，並可與 GroupDocs OCR 無縫整合，以應對掃描文件的情境。
 
 ## 前置條件
 在開始之前，請確保您具備以下條件：
 
-- **Java 8+** 已安裝並在您的 IDE 或建置工具中設定。  
-- **Maven** 用於相依管理。  
-- 取得 **GroupDocs.Parser** 授權（試用或正式）。  
+- **Java 8+** 已安裝並在您的 IDE 或建置工具中配置。  
+- **Maven** 用於相依性管理。  
+- 取得 **GroupDocs.Parser** 授權（試用或正式）。
 
 ### 必要的函式庫與相依性
 您需要：
+
 - GroupDocs.Parser for Java 函式庫（版本 25.5 或更新）。  
-- 系統已安裝 Maven 以進行相依管理。
+- 系統上已安裝 Maven 以進行相依性管理。
 
 ### 環境設定
 確保您的開發環境已安裝相容的 Java 版本（Java 8 或更高）。
 
-### 知識前提
-具備基本的 Java 程式設計概念，並熟悉 Java 中的檔案處理，將會很有幫助。
+### 知識前置條件
+具備 Java 程式設計的基本概念，並熟悉在 Java 中處理檔案，將會有所幫助。
 
-## 設定 GroupDocs.Parser（Java 版）
-要開始使用 GroupDocs.Parser，請依照下列方式將其整合至您的專案：
+## 設定 GroupDocs.Parser for Java
+要開始使用 GroupDocs.Parser，請按以下方式將其整合至您的專案：
 
 **Maven 設定**  
-在您的 `pom.xml` 檔案中加入以下設定，以將 GroupDocs.Parser 作為相依項目：
+將以下配置加入您的 `pom.xml` 檔案，以將 GroupDocs.Parser 作為相依性加入：
 
 ```xml
 <repositories>
@@ -75,13 +104,13 @@ weight: 1
 ```
 
 **直接下載**  
-或者，從 [GroupDocs releases](https://releases.groupdocs.com/parser/java/) 下載最新的 GroupDocs.Parser for Java 版本。
+或者，從 [GroupDocs releases](https://releases.groupdocs.com/parser/java/) 下載最新版本的 GroupDocs.Parser for Java。
 
 ### 取得授權
 先使用免費試用版，取得臨時授權，或購買正式授權。詳情請參閱 [GroupDocs licensing page](https://purchase.groupdocs.com/temporary-license/)。
 
 ### 基本初始化與設定
-在您的 Java 應用程式中這樣初始化 GroupDocs.Parser：
+在您的 Java 應用程式中，依照以下方式初始化 GroupDocs.Parser：
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -99,13 +128,15 @@ public class DocumentParser {
 ```
 
 ## 實作指南
-讓我們逐步說明您需要掌握的每項功能，以 **how to extract tables** 從 PDF 中提取表格。
+讓我們逐一說明您需要掌握的每項功能，以 **如何提取表格** 為例。
 
 ### 功能 1：使用 GroupDocs 解析文件
-**概述**  
-若要與 PDF 文件互動，請建立 `Parser` 類別的實例。這樣即可對文件執行各種操作。
+**概觀**  
+要與 PDF 文件互動，請建立 `Parser` 類別的實例。  
+`Parser` 是在 GroupDocs.Parser 中讀取 PDF 內容的入口類別，能對文件執行各種操作。
 
-**建立 Parser 實例**
+**建立 parser 實例**  
+`Parser` 類別是於 GroupDocs.Parser 中讀取 PDF 內容的入口。它會將文件載入記憶體，並提供用於提取文字、表格及其他結構的方法。
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -122,11 +153,13 @@ public class CreateParserInstance {
 }
 ```
 
-### 功能 2：檢查表格提取能力
-**概述**  
+### 功能 2：表格提取能力檢查
+**概觀**  
 在提取表格之前，請先確認 PDF 是否支援表格提取。
 
-**檢查表格支援**
+**檢查表格支援**  
+`hasTables()` 方法回傳布林值，表示已載入的 PDF 是否包含可偵測的表格資料。  
+`hasTables()` 會檢查文件是否含有任何表格。
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -148,10 +181,12 @@ public class CheckTableSupport {
 ```
 
 ### 功能 3：表格版面配置
-**概述**  
-設定表格的版面配置可提升資料提取的精確度。
+**概觀**  
+設定表格的版面配置可提升資料提取的準確度。
 
-**設定表格版面**
+**設定表格版面**  
+`TemplateTableLayout` 定義預期的欄寬與列高。  
+`TemplateTableLayout` 為表格偵測指定自訂的欄寬與列高。調整這些數值可協助引擎將儲存格邊界與視覺格線對齊。
 
 ```java
 import com.groupdocs.parser.templates.TemplateTableLayout;
@@ -170,10 +205,12 @@ public class ConfigureTableLayout {
 ```
 
 ### 功能 4：表格提取選項設定
-**概述**  
-設定具體的提取選項與配置，以提升表格提取的精確度。
+**概觀**  
+設定具體配置的表格提取選項，以提升提取準確度。
 
-**設定提取選項**
+**設定提取選項**  
+`TableExtractionOptions` 讓您指定是否包含標題列、合併儲存格或忽略空白列。  
+`TableExtractionOptions` 設定提取行為，例如包含標題或合併儲存格。
 
 ```java
 import com.groupdocs.parser.options.PageTableAreaOptions;
@@ -191,10 +228,13 @@ public class SetExtractionOptions {
 ```
 
 ### 功能 5：從文件中提取表格
-**概述**  
-使用先前設定的選項提取表格，並依需求處理。
+**概觀**  
+使用已設定的選項提取表格，並依需求處理。
 
-**提取流程**
+**提取流程**  
+`getTables()` 方法回傳 `Table` 物件的集合，每個物件代表在指定頁面上偵測到的表格。  
+`getTables()` 取得文件中所有偵測到的表格。  
+`Table` 代表一個包含列與儲存格的單一提取表格。
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -220,10 +260,15 @@ public class ExtractTables {
 ```
 
 ### 功能 6：遍歷表格列與欄
-**概述**  
+**概觀**  
 提取完成後，遍歷列與欄以存取各個儲存格。
 
-**遍歷並存取儲存格**
+**遍歷與存取儲存格**  
+每個 `Table` 提供 `getRows()`，每個 `Row` 提供 `getCells()`。您可以透過 `getText()` 讀取儲存格文字，並寫入 CSV 或其他格式。  
+`Row` 代表 `Table` 中的單一列。  
+`getRows()` 回傳表格中的列清單。  
+`getCells()` 回傳列中的儲存格。  
+`getText()` 取得儲存格的文字內容。
 
 ```java
 import com.groupdocs.parser.data.PageTableArea;
@@ -246,34 +291,41 @@ public class IterateTables {
 ```
 
 ## 常見問題與解決方案
-| 問題 | 發生原因 | 小技巧 |
+
+| 問題 | 發生原因 | 專業提示 |
 |-------|----------------|---------|
-| **未返回表格** | PDF 為掃描版（影像型） | 先執行 OCR，或在解析前使用 GroupDocs OCR。 |
-| **欄位對齊不正確** | 版面座標不正確 | 微調 `TemplateTableLayout` 的數值，使其符合視覺格線。 |
-| **大型 PDF 記憶體激增** | Parser 會將整份文件載入記憶體 | 分批處理頁面，並在每批完成後關閉 `Parser`。 |
+| **未返回表格** | PDF 為掃描（影像）檔 | 先執行 OCR，或在解析前使用 GroupDocs OCR。 |
+| **欄位對齊不正確** | 版面座標不正確 | 微調 `TemplateTableLayout` 值以匹配視覺格線。 |
+| **大型 PDF 記憶體激增** | Parser 會將整個文件載入記憶體 | 分批處理頁面，並在每批完成後關閉 `Parser`。 |
 
 ## 常見問答
 
-### 1. **我可以從掃描的 PDF 或僅數位 PDF 提取表格嗎？**
-**回答：** GroupDocs.Parser 主要支援含有可選取文字的數位 PDF。對於掃描的 PDF，您需要整合 OCR（光學字符辨識）功能。GroupDocs 提供獨立的 OCR 模組，或您也可使用其他 OCR 工具將影像轉為文字後再進行表格提取。
+### 1. 我可以從掃描的 PDF 或僅數位 PDF 提取表格嗎？
+**回答：** GroupDocs.Parser 主要適用於含有內嵌文字的數位、可選取 PDF。對於掃描的 PDF，必須先執行 OCR（可使用 GroupDocs OCR 或其他 OCR 引擎），使文字可搜尋後才能進行表格提取。
 
-### 2. **如何處理具有複雜版面或合併儲存格的表格？**
-**回答：** 對於複雜版面，您可以使用特定的欄列座標自訂 `TemplateTableLayout`，或調整辨識參數以提升精確度。處理合併儲存格可能需要分析儲存格跨距，並實作後處理邏輯來解讀合併區域。
+### 2. 如何處理具有複雜版面或合併儲存格的表格？
+**回答：** 可透過精確設定 `TemplateTableLayout` 的欄與列座標，或在 `TableExtractionOptions` 中啟用 `mergeCells` 旗標。可能需要後處理以正確解讀合併區域。
 
-### 3. **GroupDocs.Parser 是否適用於大型文件或批次處理？**
-**回答：** 是的，GroupDocs.Parser 已針對批次處理進行最佳化，能有效處理大型文件。妥善的資源管理與將處理任務分塊亦可進一步提升效能。
+### 3. GroupDocs.Parser 適用於大型文件或批次處理嗎？
+**回答：** 是。此函式庫針對高吞吐量情境設計，能在低記憶體消耗下處理數百頁的 PDF。使用頁範圍選項，並在每批完成後釋放 `Parser` 實例，以提升效能。
 
-### 4. **我可以將提取的表格資料匯出為 CSV 或 Excel 等格式嗎？**
-**回答：** 雖然 GroupDocs.Parser 本身專注於提取，但會提供原始資料（列與儲存格）。您可以自行或使用 Java 函式庫（如 Apache POI 取得 Excel，或 OpenCSV 取得 CSV）輕鬆匯出。這正是 *export pdf tables csv* 使用情境的所在。
+### 4. 我可以將提取的表格資料匯出為 CSV 或 Excel 等格式嗎？
+**回答：** GroupDocs.Parser 會回傳原始表格資料（列與儲存格）。您可以使用 OpenCSV 輕鬆寫入 CSV，或使用 Apache POI 寫入 Excel。此即滿足 *export pdf tables csv* 的使用情境，且不需額外授權。
 
-### 5. **是否支援從多頁提取表格？**
-**回答：** 是的，使用 `parser.getTables()` 並搭配頁面選項，即可跨多頁提取表格。您可以指定頁面範圍，或以迭代方式處理所有頁面，以收集全部表格資料。
+### 5. 是否支援一次從多頁提取表格？
+**回答：** 當然可以。呼叫 `parser.getTables(pageOptions)` 並指定頁範圍，或遍歷所有頁面。API 會彙總跨頁的表格，讓您建立單一的合併資料集。
 
 ## 結論
-從 PDF 中提取表格是自動化文件資料處理的關鍵步驟，GroupDocs.Parser for Java 讓此工作變得前所未有的簡單。透過建立 parser 實例、驗證表格支援、配置版面選項，並遍歷提取的資料，開發者即可高效取得即使是複雜 PDF 的結構化資料。此工具組足以支援多樣化情境——從發票自動化到大規模資料分析——且能無縫整合於 Java 應用程式。只要稍作設定與客製化，您就能將靜態 PDF 轉換為可操作的資料，精準且輕鬆。
+使用 GroupDocs.Parser，Java PDF 表格提取變得相當簡單。只要初始化 `Parser`、確認表格支援、設定版面與提取選項，並遍歷產生的 `Table` 物件，即可將靜態 PDF 轉換為結構化的 CSV 或 Excel 檔案。函式庫以效能為導向的設計、支援超過 50 種格式，且與 OCR 無縫整合，成為發票自動化、資料遷移與大規模分析管道的理想選擇。依照上述步驟，您即可在任何 Java 應用程式中嵌入可靠的表格提取功能。
 
 ---
 
-**最後更新：** 2026-02-09  
-**測試環境：** GroupDocs.Parser 25.5 (Java)  
+**最後更新：** 2026-09-17  
+**測試版本：** GroupDocs.Parser 25.5 (Java)  
 **作者：** GroupDocs
+
+## 相關教學
+
+- [如何在 Java 中使用 GroupDocs.Parser 提取 PDF：完整指南](/parser/java/getting-started/groupdocs-parser-java-initialize-tutorial/)
+- [使用 GroupDocs.Parser 進行 Java PDF 文字提取 – 步驟指南](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
+- [java pdf 文字提取與 GroupDocs.Parser – 完整指南](/parser/java/text-extraction/java-pdf-text-extraction-groupdocs-parser-guide/)

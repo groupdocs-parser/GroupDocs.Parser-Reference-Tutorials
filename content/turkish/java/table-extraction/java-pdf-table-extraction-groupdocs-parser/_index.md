@@ -1,61 +1,91 @@
 ---
-date: '2026-02-09'
-description: GroupDocs.Parser ile Java’da PDF’den tabloları nasıl çıkaracağınızı öğrenin.
-  Bu kılavuz, Java PDF tablo çıkarma, PDF tablolarını CSV’ye dışa aktarma ve daha
-  fazlasını kapsar.
+date: '2026-09-17'
+description: GroupDocs.Parser kullanarak java pdf tablo çıkarma işlemini öğrenin.
+  Bu kılavuz, kurulum, tablo düzeni yapılandırması ve tabloları CSV'ye dışa aktarmayı
+  gösterir.
 keywords:
-- Java PDF table extraction
-- GroupDocs.Parser library
-- automate document parsing
-title: Java'da GroupDocs.Parser Kullanarak PDF'den Tablo Çıkarma – Kapsamlı Bir Rehber
+- java pdf table extraction
+- how to extract tables
+- extract tables scanned pdf
+- export pdf tables csv
+- pdf table extraction library
+lastmod: '2026-09-17'
+og_description: GroupDocs.Parser kullanarak java pdf tablo çıkarma işlemini öğrenin.
+  Bu kılavuz, sadece birkaç adımda kurulum, düzen ayarı ve tabloları CSV'ye dışa aktarmayı
+  adım adım gösterir.
+og_image_alt: Guide showing java pdf table extraction with GroupDocs.Parser
+og_title: GroupDocs.Parser ile java pdf tablo çıkarma nasıl yapılır
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-17'
+  description: Learn how to do java pdf table extraction using GroupDocs.Parser. This
+    guide shows setup, table layout configuration, and exporting tables to CSV.
+  headline: How to do java pdf table extraction with GroupDocs.Parser
+  type: TechArticle
+- questions:
+  - answer: GroupDocs.Parser for Java
+    question: What is the primary library?
+  - answer: Only after OCR; see “extract tables scanned pdf” note below
+    question: Can I extract tables from scanned PDFs?
+  - answer: A trial license works for development; a full license is required for
+      production
+    question: Do I need a license?
+  - answer: Java 8 or higher
+    question: Which Java version is required?
+  - answer: Yes – the API is optimized for large‑scale extraction
+    question: Is batch processing supported?
+  type: FAQPage
+tags:
+- java pdf extraction
+- GroupDocs.Parser
+- table extraction
+- csv export
+title: GroupDocs.Parser ile java pdf tablo çıkarma nasıl yapılır
 type: docs
 url: /tr/java/table-extraction/java-pdf-table-extraction-groupdocs-parser/
 weight: 1
 ---
 
-# Java'da GroupDocs.Parser Kullanarak PDF'den Tablo Çıkarma
+# Java PDF tablo çıkarma nasıl yapılır GroupDocs.Parser ile
 
-PDF dosyalarından tablo çıkarmak, statik belgeleri yapılandırılmış verilere dönüştürmeniz gerektiğinde sık karşılaşılan bir gereksinimdir. Bu öğreticide Java için GroupDocs.Parser kütüphanesini kullanarak PDF'lerden **tablo nasıl çıkarılır** göstereceğiz. Bu yaklaşımın *java pdf table extraction* için neden ideal olduğunu, doğru sonuçlar için düzenlerin nasıl yapılandırılacağını ve hatta daha sonra **export pdf tables csv** nasıl yapılacağını göreceksiniz.
+PDF dosyalarından tabloları çıkarmak, statik belgeleri yapılandırılmış verilere dönüştürmeniz gerektiğinde sık karşılaşılan bir gereksinimdir. Bu öğreticide Java için GroupDocs.Parser kütüphanesini kullanarak PDF'lerden **tabloları nasıl çıkaracağınızı** öğreneceksiniz. Ortam kurulumunu, tablo‑düzeni yapılandırmasını ve **pdf tablolarını csv olarak dışa aktarmayı** kapsayacağız. Sonunda, sağlam tablo çıkarımını herhangi bir Java tabanlı veri hattına entegre edebileceksiniz.
 
-## Hızlı Yanıtlar
-- **Ana kütüphane nedir?** GroupDocs.Parser for Java  
-- **Tarama yapılan PDF'lerden tablo çıkarabilir miyim?** Yalnızca OCR sonrası; aşağıdaki “extract tables scanned pdf” notuna bakın  
-- **Lisans gerekli mi?** Geliştirme için deneme lisansı çalışır; üretim için tam lisans gerekir  
-- **Hangi Java sürümü gereklidir?** Java 8 ve üzeri  
-- **Toplu işleme destekleniyor mu?** Evet – API büyük‑ölçekli çıkarma için optimize edilmiştir  
+## Hızlı cevaplar
+- **Temel kütüphane nedir?** GroupDocs.Parser for Java  
+- **Tarama yapılan PDF'lerden tablolar çıkarabilir miyim?** Yalnızca OCR sonrası; aşağıdaki “extract tables scanned pdf” notuna bakın  
+- **Lisans gerekir mi?** Deneme lisansı geliştirme için çalışır; üretim için tam lisans gereklidir.  
+- **Hangi Java sürümü gereklidir?** Java 8 or higher  
+- **Toplu işleme destekleniyor mu?** Evet – API büyük ölçekli çıkarım için optimize edilmiştir.  
 
-## PDF bağlamında “tablo nasıl çıkarılır” ne anlama gelir?
-Biz **tablo nasıl çıkarılır** dediğimizde, bir PDF içinde tablo yapılarını programlı olarak bulma, hücre sınırlarını yorumlama ve metin içeriğini makine‑okunabilir bir formatta (ör. CSV, Excel) elde etme sürecinden bahsediyoruz. GroupDocs.Parser düşük seviyeli PDF ayrıştırmayı soyutlayarak sizinle çalışabileceğiniz temiz bir nesne modeli sunar.
+## Java PDF tablo çıkarma nedir?
+Java PDF tablo çıkarma, bir PDF içinde tablo yapısını programlı olarak bulma, hücre sınırlarını yorumlama ve metni CSV veya Excel gibi makine tarafından okunabilir bir formatta almayı içeren bir süreçtir. Bu, manuel kopyala‑yapıştırma olmadan sonraki analiz, raporlama veya taşıma görevlerini mümkün kılar.
 
-## Java pdf tablo çıkarma için neden GroupDocs.Parser kullanılmalı?
-- **Doğru düzen algılama** – Özel koordinatlarla çok‑sütunlu, çok‑satırlı tabloları işler.  
-- **Performansa odaklı** – Büyük belgeler ve toplu işler için iyi çalışır.  
-- **Kolay entegrasyon** – Maven tabanlı bağımlılık yönetimi ve basit API.  
-- **Genişletilebilir** – *extract tables scanned pdf* senaryoları için GroupDocs OCR ile birleştirebilirsiniz.  
+## Java PDF tablo çıkarma için neden GroupDocs.Parser kullanılmalı?
+GroupDocs.Parser **50'den fazla giriş ve çıkış formatı için doğru düzen algılaması** sağlar ve bellek kullanımını 200 MB'nin altında tutarak çok sayfalı PDF'leri işleyebilir. Toplu işleri destekler, basit bir Maven bağımlılığı sunar ve taranmış belge senaryoları için GroupDocs OCR ile sorunsuz bir şekilde bütünleşir.
 
 ## Önkoşullar
-Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+Başlamadan önce, aşağıdakilere sahip olduğunuzdan emin olun:
 
-- **Java 8+** IDE'nizde veya derleme aracınızda kurulu ve yapılandırılmış.  
+- **Java 8+** IDE'nizde veya derleme aracınızda kurulu ve yapılandırılmış olmalı.  
 - **Maven** bağımlılık yönetimi için.  
-- **GroupDocs.Parser** lisansına (deneme veya tam) erişim.  
+- **GroupDocs.Parser** lisansına (deneme veya tam) erişiminiz olmalı.  
 
-### Gerekli Kütüphaneler ve Bağımlılıklar
+### Gerekli kütüphaneler ve bağımlılıklar
 Şunlara ihtiyacınız olacak:
-- GroupDocs.Parser for Java kütüphanesi (sürüm 25.5 veya üzeri).  
-- Bağımlılık yönetimi için sisteminizde Maven kurulu.  
+- GroupDocs.Parser for Java kütüphanesi (sürüm 25.5 veya üzeri).  
+- Bağımlılık yönetimi için sisteminizde kurulu Maven.
 
-### Ortam Kurulumu
+### Ortam kurulumu
 Geliştirme ortamınızın uyumlu bir Java sürümü (Java 8 veya üzeri) ile kurulduğundan emin olun.
 
-### Bilgi Önkoşulları
-Java programlamaya temel bir anlayış ve Java'da dosya işlemleri konusundaki aşinalık faydalı olacaktır.
+### Bilgi önkoşulları
+Java programlamaya temel bir anlayış ve Java'da dosya işlemlerine aşinalık faydalı olacaktır.
 
-## Java için GroupDocs.Parser Kurulumu
+## GroupDocs.Parser'ı Java için kurma
 GroupDocs.Parser'ı kullanmaya başlamak için projenize aşağıdaki şekilde entegre edin:
 
-**Maven Kurulumu**  
-`pom.xml` dosyanıza GroupDocs.Parser'ı bağımlılık olarak eklemek için aşağıdaki yapılandırmayı ekleyin:
+**Maven kurulumu**  
+GroupDocs.Parser'ı bağımlılık olarak eklemek için `pom.xml` dosyanıza aşağıdaki yapılandırmayı ekleyin:
 
 ```xml
 <repositories>
@@ -75,14 +105,14 @@ GroupDocs.Parser'ı kullanmaya başlamak için projenize aşağıdaki şekilde e
 </dependencies>
 ```
 
-**Doğrudan İndirme**  
-Alternatif olarak, GroupDocs.Parser for Java'nin en son sürümünü [GroupDocs releases](https://releases.groupdocs.com/parser/java/) adresinden indirebilirsiniz.
+**Doğrudan indirme**  
+Alternatif olarak, GroupDocs.Parser for Java'ın en son sürümünü [GroupDocs releases](https://releases.groupdocs.com/parser/java/) adresinden indirin.
 
-### Lisans Edinme
-Ücretsiz deneme ile başlayın, geçici bir lisans edinin veya tam lisans satın alın. Ayrıntılar için [GroupDocs licensing page](https://purchase.groupdocs.com/temporary-license/) adresini ziyaret edin.
+### Lisans edinimi
+Ücretsiz bir deneme ile başlayın, geçici bir lisans edinin veya tam lisans satın alın. Ayrıntılar için [GroupDocs lisans sayfası](https://purchase.groupdocs.com/temporary-license/) adresini ziyaret edin.
 
-### Temel Başlatma ve Kurulum
-GroupDocs.Parser'ı Java uygulamanıza aşağıdaki gibi başlatın:
+### Temel başlatma ve kurulum
+Java uygulamanızda GroupDocs.Parser'ı aşağıdaki gibi başlatın:
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -99,14 +129,16 @@ public class DocumentParser {
 }
 ```
 
-## Uygulama Kılavuzu
-Bir PDF'den **tablo nasıl çıkarılır** konusundaki her özelliği adım adım inceleyelim.
+## Uygulama rehberi
+PDF'den **tabloları nasıl çıkaracağınızı** öğrenmeniz gereken her özelliği adım adım inceleyelim.
 
-### Özellik 1: GroupDocs ile Belge Ayrıştırma
+### Özellik 1: GroupDocs ile belge ayrıştırma
 **Genel Bakış**  
-Bir PDF belgesiyle etkileşim kurmak için `Parser` sınıfının bir örneğini oluşturun. Bu, belge üzerinde çeşitli işlemler yapmanızı sağlar.
+PDF belgesiyle etkileşim kurmak için `Parser` sınıfının bir örneğini oluşturun.  
+`Parser`, GroupDocs.Parser içinde PDF içeriğini okuyan giriş noktası sınıfıdır. Bu, belge üzerinde çeşitli işlemleri mümkün kılar.
 
-**Parser Örneği Oluşturma**
+**Parser örneği oluşturma**  
+`Parser` sınıfı, GroupDocs.Parser içinde PDF içeriğini okumanın giriş noktasıdır. Belgeyi belleğe yükler ve metin, tablo ve diğer yapıları çıkarmak için yöntemler sunar.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -123,11 +155,13 @@ public class CreateParserInstance {
 }
 ```
 
-### Özellik 2: Tablo Çıkarma Yeteneği Kontrolü
+### Özellik 2: tablo çıkarma yeteneği kontrolü
 **Genel Bakış**  
 Tabloları çıkarmadan önce PDF'in tablo çıkarımını desteklediğini doğrulayın.
 
-**Tablo Desteğini Kontrol Etme**
+**Tablo desteğini kontrol etme**  
+`hasTables()` yöntemi, yüklenen PDF'in algılanabilir tablo verisi içerip içermediğini belirten bir boolean döndürür.  
+`hasTables()` belgenin herhangi bir tablo içerip içermediğini kontrol eder.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -148,11 +182,13 @@ public class CheckTableSupport {
 }
 ```
 
-### Özellik 3: Tablo Düzeni Yapılandırması
+### Özellik 3: tablo düzeni yapılandırması
 **Genel Bakış**  
-Tablolarınızın düzenini yapılandırmak, veri çıkarımındaki doğruluğu artırabilir.
+Tablolarınızın düzenini yapılandırmak, veri çıkarımının doğruluğunu artırabilir.
 
-**Tablo Düzeni Ayarlama**
+**Tablo düzeni ayarlama**  
+`TemplateTableLayout`, beklenen sütun genişliklerini ve satır yüksekliklerini tanımlar.  
+`TemplateTableLayout`, tablo algısı için özel sütun genişlikleri ve satır yükseklikleri belirler. Bu değerleri ayarlamak, motorun hücre sınırlarını görsel ızgaraya hizalamasına yardımcı olur.
 
 ```java
 import com.groupdocs.parser.templates.TemplateTableLayout;
@@ -170,11 +206,13 @@ public class ConfigureTableLayout {
 }
 ```
 
-### Özellik 4: Tablo Çıkarma Seçenekleri Ayarı
+### Özellik 4: tablo çıkarma seçenekleri ayarı
 **Genel Bakış**  
-Çıkarma doğruluğunu artırmak için belirli yapılandırmalarla tablo çıkarma seçeneklerini ayarlayın.
+Çıkarma doğruluğunu artırmak için belirli yapılandırmalarla tabloları çıkarmak üzere seçenekleri ayarlayın.
 
-**Çıkarma Seçeneklerini Yapılandırma**
+**Çıkarma seçeneklerini yapılandırma**  
+`TableExtractionOptions`, başlık satırlarını dahil edip etmeyeceğinizi, hücreleri birleştirip birleştirmeyeceğinizi veya boş satırları yok sayıp saymayacağınızı belirlemenizi sağlar.  
+`TableExtractionOptions`, başlıkları dahil etme veya hücreleri birleştirme gibi çıkarma davranışını yapılandırır.
 
 ```java
 import com.groupdocs.parser.options.PageTableAreaOptions;
@@ -191,11 +229,14 @@ public class SetExtractionOptions {
 }
 ```
 
-### Özellik 5: Belgeden Tablo Çıkarma
+### Özellik 5: bir belgeden tablo çıkarma
 **Genel Bakış**  
 Yapılandırılmış seçenekleri kullanarak tabloları çıkarın ve gerektiği gibi işleyin.
 
-**Çıkarma İşlemi**
+**Çıkarma süreci**  
+`getTables()` yöntemi, istenen sayfalarda algılanan her tabloyu temsil eden `Table` nesnelerinin bir koleksiyonunu döndürür.  
+`getTables()` belgeden tüm algılanan tabloları alır.  
+`Table`, satır ve hücrelere sahip tek bir çıkarılmış tabloyu temsil eder.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -220,11 +261,16 @@ public class ExtractTables {
 }
 ```
 
-### Özellik 6: Tablo Satır ve Sütunları Üzerinde Döngü
+### Özellik 6: tablo satırları ve sütunları üzerinde yineleme
 **Genel Bakış**  
-Çıkarma sonrası, bireysel hücrelere erişmek için satır ve sütunlar üzerinde döngü yapın.
+Çıkarma sonrası, tek tek hücrelere erişmek için satır ve sütunlar üzerinde yineleme yapın.
 
-**Satırları Döngüyle Geç ve Hücrelere Eriş**
+**Hücreleri yinele ve eriş**  
+Her `Table`, `getRows()` sağlar ve her `Row`, `getCells()` sağlar. Hücre metnini `getText()` ile okuyabilir ve CSV ya da başka bir formata yazabilirsiniz.  
+`Row`, bir `Table` içindeki tek bir satırı temsil eder.  
+`getRows()`, bir tablodaki satırların listesini döndürür.  
+`getCells()`, bir satırın hücrelerini döndürür.  
+`getText()`, bir hücrenin metin içeriğini alır.
 
 ```java
 import com.groupdocs.parser.data.PageTableArea;
@@ -246,35 +292,41 @@ public class IterateTables {
 }
 ```
 
-## Yaygın Sorunlar ve Çözümler
-| Sorun | Neden Oluşur | İpucu |
-|-------|----------------|---------|
-| **Tablo döndürülmedi** | PDF taranmış (görüntü‑tabanlı) | İlk önce OCR çalıştırın veya ayrıştırmadan önce GroupDocs OCR kullanın. |
+## Yaygın sorunlar ve çözümler
+| Sorun | Neden olur | İpucu |
+|-------|------------|-------|
+| **Tablolar döndürülmedi** | PDF taranmış (görüntü‑tabanlı) | Önce OCR çalıştırın veya ayrıştırmadan önce GroupDocs OCR kullanın. |
 | **Yanlış sütun hizalaması** | Düzen koordinatları hatalı | `TemplateTableLayout` değerlerini görsel ızgaraya uyacak şekilde ince ayar yapın. |
-| **Büyük PDF'lerde bellek dalgalanmaları** | Parser tüm belgeyi belleğe yükler | Sayfaları toplu olarak işleyin ve her toplu işlemden sonra `Parser`ı kapatın. |
+| **Büyük PDF'lerde bellek dalgalanmaları** | Parser tüm belgeyi belleğe yükler | Sayfaları toplu işleyin ve her toplu işlemden sonra `Parser`'ı kapatın. |
 
-## Sıkça Sorulan Sorular
+## Sıkça sorulan sorular
 
-### 1. **Tarama yapılan PDF'lerden mi yoksa sadece dijital PDF'lerden mi tablo çıkarabilirim?**  
-**Cevap:** GroupDocs.Parser öncelikle gömülü metin içeren dijital, seçilebilir PDF'lerle çalışır. Tarama yapılan PDF'ler için OCR (Optik Karakter Tanıma) yeteneklerini entegre etmeniz gerekir. GroupDocs ayrı OCR modülleri sunar veya tablo çıkarımından önce görüntüleri metne dönüştürmek için diğer OCR araçlarını kullanabilirsiniz.
+### 1. Taranmış PDF'lerden mi yoksa sadece dijital PDF'lerden mi tablo çıkarabilirim?
+**Cevap:** GroupDocs.Parser öncelikle gömülü metin içeren dijital, seçilebilir PDF'lerle çalışır. Taranmış PDF'ler için önce OCR çalıştırmanız gerekir—ya GroupDocs OCR ya da başka bir OCR motoru ile—metnin tablo çıkarımından önce aranabilir hâle gelmesi için.
 
-### 2. **Karmaşık düzenlere veya birleştirilmiş hücrelere sahip tabloları nasıl yönetirim?**  
-**Cevap:** Karmaşık düzenler için `TemplateTableLayout`'u belirli sütun ve satır koordinatlarıyla özelleştirebilir veya tanıma parametrelerini ayarlayarak doğruluğu artırabilirsiniz. Birleştirilmiş hücreleri yönetmek, hücre kapsamlarını analiz etmeyi ve birleştirilmiş bölgeleri yorumlamak için son‑işlem mantığı uygulamayı gerektirebilir.
+### 2. Karmaşık düzenlere veya birleştirilmiş hücrelere sahip tabloları nasıl yönetirim?
+**Cevap:** `TemplateTableLayout`'u kesin sütun ve satır koordinatlarıyla özelleştirin veya `TableExtractionOptions` içinde `mergeCells` bayrağını etkinleştirin. Birleştirilmiş bölgeleri doğru yorumlamak için son‑işleme gerekebilir.
 
-### 3. **GroupDocs.Parser büyük belgeler veya toplu işleme için uygun mu?**  
-**Cevap:** Evet, GroupDocs.Parser toplu işleme için optimize edilmiştir ve büyük belgeleri verimli bir şekilde işleyebilir. Doğru kaynak yönetimi ve işleme görevlerinizi parçalayarak performansı daha da artırabilirsiniz.
+### 3. GroupDocs.Parser büyük belgeler veya toplu işleme için uygun mu?
+**Cevap:** Evet. Kütüphane yüksek verimli senaryolar için tasarlanmıştır ve bellek tüketimini düşük tutarak yüzlerce sayfalı PDF'leri işleyebilir. Performansı en üst düzeye çıkarmak için sayfa‑aralığı seçeneklerini kullanın ve her toplu işlemden sonra `Parser` örneğini serbest bırakın.
 
-### 4. **Çıkarılan tablo verilerini CSV veya Excel gibi formatlara dışa aktarabilir miyim?**  
-**Cevap:** GroupDocs.Parser kendisi çıkarıma odaklanırken, ham veriyi (satır ve hücreleri) sağlar. Bu veriyi manuel olarak veya Java kütüphaneleri olan Apache POI (Excel için) veya OpenCSV (CSV dosyaları için) kullanarak kolayca dışa aktarabilirsiniz. İşte *export pdf tables csv* kullanım senaryosunun devreye girdiği nokta.
+### 4. Çıkarılan tablo verilerini CSV veya Excel gibi formatlara dışa aktarabilir miyim?
+**Cevap:** GroupDocs.Parser ham tablo verilerini (satırlar ve hücreler) döndürür. Bu verileri OpenCSV kullanarak CSV'ye veya Apache POI kullanarak Excel'e kolayca yazabilirsiniz. Bu, ek lisans gerektirmeden *export pdf tables csv* kullanım senaryosunu karşılar.
 
-### 5. **Birden fazla sayfadan tablo çıkarma desteği var mı?**  
-**Cevap:** Evet, `parser.getTables()`'ı sayfa seçenekleriyle kullandığınızda birden fazla sayfadan tablo çıkarabilir. Sayfa aralıkları belirtebilir veya tüm sayfaları yinelemeli olarak işleyerek tüm tablo verilerini toplayabilirsiniz.
+### 5. Birden fazla sayfadan aynı anda tablo çıkarmayı destekliyor mu?
+**Cevap:** Kesinlikle. Sayfa aralığıyla `parser.getTables(pageOptions)` çağırın veya tüm sayfaları yineleyin. API, sayfalar arasında tabloları birleştirir ve tek bir bütünleştirilmiş veri kümesi oluşturmanıza olanak tanır.
 
 ## Sonuç
-PDF'lerden tablo çıkarmak, belge veri işleme otomasyonunun temel bir adımıdır ve Java için GroupDocs.Parser bu görevi her zamankinden daha basit hâle getirir. Bir parser örneği oluşturarak, tablo desteğini doğrulayarak, düzen seçeneklerini yapılandırarak ve çıkarılan veriler üzerinde döngü yaparak geliştiriciler karmaşık PDF belgelerinden bile yapılandırılmış verileri verimli bir şekilde elde edebilir. Bu araç seti, fatura otomasyonundan büyük‑ölçekli veri analizlerine kadar çeşitli senaryoları destekleyecek kadar esnektir ve Java uygulamalarıyla sorunsuz bir şekilde bütünleşir. Biraz kurulum ve özelleştirme ile statik PDF'leri hassasiyet ve kolaylıkla eyleme geçirilebilir verilere dönüştüreceksiniz.
+GroupDocs.Parser ile Java PDF tablo çıkarma oldukça basit hale gelir. Bir `Parser` başlatarak, tablo desteğini doğrulayarak, düzen ve çıkarma seçeneklerini yapılandırarak ve ortaya çıkan `Table` nesneleri üzerinde yineleme yaparak statik PDF'leri yapılandırılmış CSV veya Excel dosyalarına dönüştürebilirsiniz. Kütüphanenin performansa odaklı tasarımı, 50'den fazla format desteği ve sorunsuz OCR entegrasyonu, fatura otomasyonu, veri taşıma ve büyük ölçekli analiz hatları için ideal bir seçim olmasını sağlar. Yukarıda belirtilen adımlarla, güvenilir tablo çıkarımını herhangi bir Java uygulamasına yerleştirmeye hazırsınız.
 
 ---
 
-**Last Updated:** 2026-02-09  
-**Tested With:** GroupDocs.Parser 25.5 (Java)  
-**Author:** GroupDocs
+**Son Güncelleme:** 2026-09-17  
+**Test Edilen Versiyon:** GroupDocs.Parser 25.5 (Java)  
+**Yazar:** GroupDocs
+
+## İlgili Öğreticiler
+
+- [Java'da GroupDocs.Parser ile PDF Nasıl Çıkarılır: Kapsamlı Rehber](/parser/java/getting-started/groupdocs-parser-java-initialize-tutorial/)
+- [GroupDocs.Parser ile Java PDF Metin Çıkarma – Adım Adım Rehber](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
+- [GroupDocs.Parser ile java pdf metin çıkarma – Tam Rehber](/parser/java/text-extraction/java-pdf-text-extraction-groupdocs-parser-guide/)

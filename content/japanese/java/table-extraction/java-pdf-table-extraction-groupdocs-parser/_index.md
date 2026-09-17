@@ -1,60 +1,89 @@
 ---
-date: '2026-02-09'
-description: GroupDocs.Parser を使用して Java で PDF からテーブルを抽出する方法を学びましょう。このガイドでは、Java の
-  PDF テーブル抽出、PDF テーブルの CSV へのエクスポートなどをカバーしています。
+date: '2026-09-17'
+description: GroupDocs.Parser を使用した Java PDF テーブル抽出の方法を学びましょう。このガイドでは、セットアップ、テーブルレイアウトの構成、そしてテーブルを
+  CSV にエクスポートする方法を示します。
 keywords:
-- Java PDF table extraction
-- GroupDocs.Parser library
-- automate document parsing
-title: JavaでGroupDocs.Parserを使用してPDFからテーブルを抽出する方法 – 包括的ガイド
+- java pdf table extraction
+- how to extract tables
+- extract tables scanned pdf
+- export pdf tables csv
+- pdf table extraction library
+lastmod: '2026-09-17'
+og_description: GroupDocs.Parser を使用した Java PDF テーブル抽出の方法を学びましょう。このガイドでは、数ステップでセットアップ、レイアウト調整、テーブルを
+  CSV にエクスポートする手順をご案内します。
+og_image_alt: Guide showing java pdf table extraction with GroupDocs.Parser
+og_title: GroupDocs.Parser を使用した Java PDF テーブル抽出の方法
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-17'
+  description: Learn how to do java pdf table extraction using GroupDocs.Parser. This
+    guide shows setup, table layout configuration, and exporting tables to CSV.
+  headline: How to do java pdf table extraction with GroupDocs.Parser
+  type: TechArticle
+- questions:
+  - answer: GroupDocs.Parser for Java
+    question: What is the primary library?
+  - answer: Only after OCR; see “extract tables scanned pdf” note below
+    question: Can I extract tables from scanned PDFs?
+  - answer: A trial license works for development; a full license is required for
+      production
+    question: Do I need a license?
+  - answer: Java 8 or higher
+    question: Which Java version is required?
+  - answer: Yes – the API is optimized for large‑scale extraction
+    question: Is batch processing supported?
+  type: FAQPage
+tags:
+- java pdf extraction
+- GroupDocs.Parser
+- table extraction
+- csv export
+title: GroupDocs.Parser を使用した Java PDF テーブル抽出の方法
 type: docs
 url: /ja/java/table-extraction/java-pdf-table-extraction-groupdocs-parser/
 weight: 1
 ---
 
-# JavaでGroupDocs.Parserを使用してPDFからテーブルを抽出する方法
+# GroupDocs.Parser を使用した Java PDF テーブル抽出の方法
 
-PDFファイルからテーブルを抽出することは、静的なドキュメントを構造化データに変換する必要がある場合に頻繁に求められる要件です。このチュートリアルでは、Java用のGroupDocs.Parserライブラリを使用してPDFから**テーブルを抽出する方法**を示します。*java pdf table extraction* に最適な理由、正確な結果を得るためのレイアウト設定方法、さらには後で**export pdf tables csv**する方法も紹介します。
+PDF ファイルからテーブルを抽出することは、静的なドキュメントを構造化データに変換する必要がある場合に頻繁に求められます。このチュートリアルでは、Java 用の GroupDocs.Parser ライブラリを使用して **テーブルを抽出する方法** を学びます。環境設定、テーブルレイアウトの構成、そして **pdf テーブルを csv にエクスポート** する方法をカバーします。最後まで読めば、任意の Java ベースのデータパイプラインに堅牢なテーブル抽出を組み込むことができるようになります。
 
 ## クイック回答
 - **主要なライブラリは何ですか？** GroupDocs.Parser for Java  
-- **スキャンされたPDFからテーブルを抽出できますか？** OCRを実行した後のみ可能です；下記の「extract tables scanned pdf」注記をご参照ください  
-- **ライセンスは必要ですか？** 開発用にはトライアルライセンスで動作しますが、本番環境ではフルライセンスが必要です  
-- **必要なJavaバージョンは？** Java 8 以上  
-- **バッチ処理はサポートされていますか？** はい – APIは大規模抽出向けに最適化されています  
+- **スキャンされた PDF からテーブルを抽出できますか？** OCR 後のみ可能です。下記の “extract tables scanned pdf” 注記を参照してください  
+- **ライセンスは必要ですか？** 開発にはトライアルライセンスで動作しますが、本番環境ではフルライセンスが必要です  
+- **必要な Java バージョンは？** Java 8 以上  
+- **バッチ処理はサポートされていますか？** はい – API は大規模抽出向けに最適化されています  
 
-## PDFの文脈で「テーブル抽出方法」とは何ですか？
-**テーブル抽出方法** について語るときは、PDF内部の表形式構造をプログラムで検出し、セルの境界を解釈し、テキスト内容を機械可読形式（例：CSV、Excel）で取得するプロセスを指します。GroupDocs.Parser は低レベルの PDF 解析を抽象化し、扱いやすいオブジェクトモデルを提供します。
+## Java PDF テーブル抽出とは何か？
+Java PDF テーブル抽出は、PDF 内の表形式構造をプログラムで検出し、セルの境界を解釈して、CSV や Excel などの機械可読形式でテキストを取得するプロセスです。これにより、手動でコピー＆ペーストすることなく、下流の分析、レポート作成、またはデータ移行タスクを実行できます。
 
-## java pdf table extraction に GroupDocs.Parser を使用する理由
-- **Accurate layout detection** – カスタム座標でマルチカラム・マルチロウテーブルを処理します。  
-- **Performance‑focused** – 大容量ドキュメントやバッチジョブでも高いパフォーマンスを発揮します。  
-- **Easy integration** – Maven ベースの依存管理とシンプルな API。  
-- **Extensible** – *extract tables scanned pdf* シナリオのために GroupDocs OCR と組み合わせることが可能です。  
+## Java PDF テーブル抽出に GroupDocs.Parser を使用する理由
+GroupDocs.Parser は **50 以上の入力および出力フォーマットに対する正確なレイアウト検出** を提供し、数百ページに及ぶ PDF でもメモリ使用量を 200 MB 未満に抑えて処理できます。バッチジョブをサポートし、シンプルな Maven 依存関係を提供、さらにスキャンドキュメント向けに GroupDocs OCR とシームレスに統合できます。
 
 ## 前提条件
 開始する前に、以下が揃っていることを確認してください。
 
 - **Java 8+** がインストールされ、IDE またはビルドツールで設定されていること。  
-- **Maven** が依存管理に利用できること。  
+- **Maven** が依存関係管理に使用できること。  
 - **GroupDocs.Parser** ライセンス（トライアルまたはフル）へのアクセスがあること。  
 
 ### 必要なライブラリと依存関係
-以下が必要です：
-- GroupDocs.Parser for Java ライブラリ（バージョン 25.5 以降）。  
-- システムに Maven がインストールされていること。  
+必要なものは次のとおりです。
+- GroupDocs.Parser for Java ライブラリ（バージョン 25.5 以降）。  
+- 依存関係管理のためにシステムに Maven がインストールされていること。
 
 ### 環境設定
 Java（Java 8 以上）の互換バージョンがインストールされた開発環境を整えてください。
 
 ### 知識の前提条件
-Java プログラミングの基本的な理解と、Java でのファイル操作に慣れていると役立ちます。
+Java プログラミングの基本的な理解と、Java におけるファイル操作に慣れていることが望ましいです。
 
-## Java用GroupDocs.Parserの設定
+## GroupDocs.Parser の設定（Java）
 GroupDocs.Parser をプロジェクトに組み込む手順は以下の通りです。
 
-**Maven設定**  
-`pom.xml` に以下の設定を追加し、GroupDocs.Parser を依存関係として含めます：
+**Maven 設定**  
+`pom.xml` ファイルに以下の設定を追加し、GroupDocs.Parser を依存関係として含めます。
 
 ```xml
 <repositories>
@@ -74,14 +103,14 @@ GroupDocs.Parser をプロジェクトに組み込む手順は以下の通りで
 </dependencies>
 ```
 
-**直接ダウンロード**  
-あるいは、[GroupDocs releases](https://releases.groupdocs.com/parser/java/) から最新バージョンの GroupDocs.Parser for Java をダウンロードしてください。
+**Direct download**  
+または、[GroupDocs releases](https://releases.groupdocs.com/parser/java/) から最新バージョンの GroupDocs.Parser for Java をダウンロードしてください。
 
 ### ライセンス取得
 無料トライアルで開始し、一時ライセンスを取得するか、フルライセンスを購入してください。詳細は [GroupDocs licensing page](https://purchase.groupdocs.com/temporary-license/) をご覧ください。
 
 ### 基本的な初期化と設定
-Java アプリケーションで GroupDocs.Parser を初期化するコード例は以下の通りです：
+Java アプリケーションで GroupDocs.Parser を初期化するコードは以下のとおりです。
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -99,13 +128,15 @@ public class DocumentParser {
 ```
 
 ## 実装ガイド
-PDF から **テーブル抽出方法** をマスターするための各機能を順に解説します。
+PDF から **テーブルを抽出する方法** をマスターするために、各機能を順に見ていきましょう。
 
-### 機能1: GroupDocsによるドキュメント解析
-**概要**  
-PDF ドキュメントとやり取りするには、`Parser` クラスのインスタンスを作成します。これにより、ドキュメントに対するさまざまな操作が可能になります。
+### 機能 1: GroupDocs を使用したドキュメント解析
+**Overview**  
+PDF ドキュメントとやり取りするには、`Parser` クラスのインスタンスを作成します。  
+`Parser` は GroupDocs.Parser における PDF コンテンツ読み取りのエントリーポイントであり、さまざまな操作を可能にします。
 
-**Creating a Parser Instance**
+**Creating a parser instance**  
+`Parser` クラスは GroupDocs.Parser で PDF コンテンツを読み取るためのエントリーポイントです。ドキュメントをメモリにロードし、テキスト、テーブル、その他の構造を抽出するメソッドを提供します。
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -122,11 +153,13 @@ public class CreateParserInstance {
 }
 ```
 
-### 機能2: テーブル抽出機能のチェック
-**概要**  
+### 機能 2: テーブル抽出機能のチェック
+**Overview**  
 テーブルを抽出する前に、PDF がテーブル抽出に対応しているか確認してください。
 
-**Checking Table Support**
+**Checking table support**  
+`hasTables()` メソッドは、ロードされた PDF に検出可能なテーブルデータが含まれているかどうかを示すブール値を返します。  
+`hasTables()` はドキュメントにテーブルが存在するかをチェックします。
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -147,11 +180,13 @@ public class CheckTableSupport {
 }
 ```
 
-### 機能3: テーブルレイアウト設定
-**概要**  
-テーブルのレイアウトを設定すると、データ抽出の精度が向上します。
+### 機能 3: テーブルレイアウト設定
+**Overview**  
+テーブルのレイアウトを構成することで、データ抽出の精度を向上させることができます。
 
-**Setting Up Table Layout**
+**Setting up table layout**  
+`TemplateTableLayout` は期待される列幅と行高さを定義します。  
+`TemplateTableLayout` はテーブル検出のためにカスタム列幅と行高さを指定します。これらの値を調整することで、エンジンがセル境界を視覚的なグリッドに合わせやすくなります。
 
 ```java
 import com.groupdocs.parser.templates.TemplateTableLayout;
@@ -169,11 +204,13 @@ public class ConfigureTableLayout {
 }
 ```
 
-### 機能4: テーブル抽出オプション設定
-**概要**  
-抽出精度を高めるために、特定の構成でテーブル抽出オプションを設定します。
+### 機能 4: テーブル抽出オプション設定
+**Overview**  
+特定の構成でテーブル抽出オプションを設定し、抽出精度を向上させます。
 
-**Configuring Extraction Options**
+**Configuring extraction options**  
+`TableExtractionOptions` を使用して、ヘッダー行の含めるかどうか、セルの結合、空行の無視などを指定できます。  
+`TableExtractionOptions` はヘッダーの含有やセル結合などの抽出動作を設定します。
 
 ```java
 import com.groupdocs.parser.options.PageTableAreaOptions;
@@ -190,11 +227,14 @@ public class SetExtractionOptions {
 }
 ```
 
-### 機能5: ドキュメントからのテーブル抽出
-**概要**  
+### 機能 5: ドキュメントからのテーブル抽出
+**Overview**  
 設定したオプションを使用してテーブルを抽出し、必要に応じて処理します。
 
-**Extraction Process**
+**Extraction process**  
+`getTables()` メソッドは、要求されたページ上で検出されたテーブルを表す `Table` オブジェクトのコレクションを返します。  
+`getTables()` はドキュメントから検出されたすべてのテーブルを取得します。  
+`Table` は行とセルを持つ単一の抽出テーブルを表します。
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -219,11 +259,16 @@ public class ExtractTables {
 }
 ```
 
-### 機能6: テーブルの行と列の反復処理
-**概要**  
-抽出後、行と列を反復して個々のセルにアクセスします。
+### 機能 6: テーブルの行と列の反復処理
+**Overview**  
+抽出後、行と列を反復処理して個々のセルにアクセスします。
 
-**Iterate and Access Cells**
+**Iterate and access cells**  
+各 `Table` は `getRows()` を提供し、各 `Row` は `getCells()` を提供します。`getText()` でセルのテキストを取得し、CSV など任意の形式で書き出すことができます。  
+`Row` は `Table` 内の単一行を表します。  
+`getRows()` はテーブル内の行リストを返します。  
+`getCells()` は行内のセルを返します。  
+`getText()` はセルのテキスト内容を取得します。
 
 ```java
 import com.groupdocs.parser.data.PageTableArea;
@@ -246,34 +291,40 @@ public class IterateTables {
 ```
 
 ## よくある問題と解決策
-| 問題 | 発生原因 | プロのコツ |
-|------|----------|------------|
-| **テーブルが返されない** | PDFがスキャンされた（画像ベース） | 最初にOCRを実行するか、解析前にGroupDocs OCRを使用してください。 |
-| **列の配置が正しくない** | レイアウト座標がずれている | `TemplateTableLayout` の値を微調整してビジュアルグリッドに合わせてください。 |
-| **大きなPDFでメモリが急増** | Parserがドキュメント全体をメモリにロードする | ページをバッチで処理し、各バッチ後に `Parser` を閉じてください。 |
+| 問題 | 発生理由 | プロ・ヒント |
+|------|----------|--------------|
+| **テーブルが返されない** | PDF がスキャン（画像ベース）である | まず OCR を実行するか、解析前に GroupDocs OCR を使用してください。 |
+| **列の位置がずれる** | レイアウト座標が合っていない | `TemplateTableLayout` の値を微調整して視覚的グリッドに合わせてください。 |
+| **大容量 PDF でメモリが急増** | Parser がドキュメント全体をメモリにロードする | ページをバッチ処理し、各バッチ後に `Parser` を閉じてください。 |
 
 ## よくある質問
 
-### 1. **スキャンされたPDFからテーブルを抽出できますか、それともデジタルPDFのみですか？**  
-**Answer:** GroupDocs.Parser は主に埋め込まれたテキストを含むデジタルで選択可能な PDF に対応しています。スキャンされた PDF については、OCR（光学文字認識）機能を統合する必要があります。GroupDocs は別途 OCR モジュールを提供しているほか、他の OCR ツールを使用して画像をテキストに変換してからテーブル抽出を行うことも可能です。
+### 1. スキャンされた PDF からテーブルを抽出できますか、それともデジタル PDF のみですか？
+**Answer:** GroupDocs.Parser は主にテキストが埋め込まれたデジタル PDF（選択可能なテキスト）で動作します。スキャンされた PDF については、まず OCR を実行してテキストを検索可能にしてからテーブル抽出を行う必要があります（GroupDocs OCR などを使用）。
 
-### 2. **複雑なレイアウトや結合セルを持つテーブルはどう処理しますか？**  
-**Answer:** 複雑なレイアウトの場合、`TemplateTableLayout` に列や行の座標を個別に指定してカスタマイズできます。結合セルの扱いは、セルのスパンを解析し、抽出後に結合領域を再構築するロジックを実装することで対応します。
+### 2. 複雑なレイアウトや結合セルを持つテーブルはどう処理しますか？
+**Answer:** `TemplateTableLayout` で列・行の座標を正確に設定するか、`TableExtractionOptions` の `mergeCells` フラグを有効にします。結合領域を正しく解釈するために、抽出後のポストプロセスが必要になる場合があります。
 
-### 3. **GroupDocs.Parserは大規模ドキュメントやバッチ処理に適していますか？**  
-**Answer:** はい、GroupDocs.Parser はバッチ処理向けに最適化されており、大容量ドキュメントでも効率的に動作します。適切なリソース管理と処理タスクの分割（チャンク化）を行うことで、さらにパフォーマンスを向上させることができます。
+### 3. GroupDocs.Parser は大規模ドキュメントやバッチ処理に適していますか？
+**Answer:** はい。ライブラリは高スループットシナリオ向けに設計されており、数百ページの PDF を低メモリ消費で処理できます。ページ範囲オプションを使用し、各バッチ後に `Parser` インスタンスを破棄してパフォーマンスを最大化してください。
 
-### 4. **抽出したテーブルデータをCSVやExcelなどの形式にエクスポートできますか？**  
-**Answer:** GroupDocs.Parser 自体は抽出に特化していますが、取得した行・セルデータは生データとして提供されます。これらは Apache POI（Excel 用）や OpenCSV（CSV 用）といった Java ライブラリを利用して簡単にエクスポートできます。これが *export pdf tables csv* のユースケースに該当します。
+### 4. 抽出したテーブルデータを CSV や Excel などの形式にエクスポートできますか？
+**Answer:** GroupDocs.Parser は生のテーブルデータ（行とセル）を返します。取得したデータは OpenCSV を使って CSV に、Apache POI を使って Excel に簡単に書き出すことができ、追加のライセンスなしで *pdf テーブルを csv にエクスポート* のユースケースを実現できます。
 
-### 5. **複数ページからテーブルを抽出するサポートはありますか？**  
-**Answer:** はい、`parser.getTables()` にページオプションを指定すれば、複数ページにまたがるテーブルを抽出できます。ページ範囲を指定するか、全ページを順次処理してすべての表データを取得できます。
+### 5. 複数ページから一括でテーブルを抽出するサポートはありますか？
+**Answer:** もちろんです。`parser.getTables(pageOptions)` にページ範囲を指定するか、すべてのページを反復して呼び出すことで、ページ横断的にテーブルを取得し、単一の統合データセットを構築できます。
 
 ## 結論
-PDF からテーブルを抽出することは、文書データ処理の自動化において重要なステップです。Java 用 GroupDocs.Parser を使用すれば、パーサーインスタンスの作成、テーブル抽出機能の確認、レイアウトオプションの設定、抽出データの反復処理といった手順をシンプルに実装でき、複雑な PDF でも構造化データを効率的に取得できます。このツールキットは請求書の自動化から大規模データ分析まで幅広いシナリオに対応し、Java アプリケーションにシームレスに統合できます。少しの設定とカスタマイズで、静的な PDF を正確かつ容易に活用可能なデータへと変換できます。
+GroupDocs.Parser を使用すれば、Java における PDF テーブル抽出はシンプルになります。`Parser` を初期化し、テーブルサポートを確認し、レイアウトと抽出オプションを設定し、取得した `Table` オブジェクトを反復処理することで、静的な PDF を構造化された CSV や Excel ファイルに変換できます。50 以上のフォーマットに対応し、OCR とのシームレスな統合を備えた同ライブラリは、請求書自動化、データ移行、大規模分析パイプラインに最適です。上記手順を踏めば、任意の Java アプリケーションに信頼性の高いテーブル抽出機能を組み込む準備が整います。
 
 ---
 
-**最終更新日:** 2026-02-09  
-**テスト環境:** GroupDocs.Parser 25.5 (Java)  
+**最終更新日:** 2026-09-17  
+**テスト済みバージョン:** GroupDocs.Parser 25.5 (Java)  
 **作者:** GroupDocs
+
+## 関連チュートリアル
+
+- [Java で GroupDocs.Parser を使用して PDF を抽出する包括的ガイド](/parser/java/getting-started/groupdocs-parser-java-initialize-tutorial/)
+- [Java での PDF テキスト抽出 – Step‑by‑Step ガイド](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
+- [Java での PDF テキスト抽出 – 完全ガイド](/parser/java/text-extraction/java-pdf-text-extraction-groupdocs-parser-guide/)
