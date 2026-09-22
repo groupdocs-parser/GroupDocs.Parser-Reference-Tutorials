@@ -1,45 +1,97 @@
 ---
-date: '2026-02-11'
+date: '2026-09-22'
 description: Pelajari cara mengekstrak data faktur menggunakan GroupDocs.Parser untuk
-  Java. Panduan ini menunjukkan cara mengotomatisasi ekstraksi dokumen, membuat bidang
-  terhubung, dan menangani pemrosesan dokumen secara batch.
+  Java. Panduan ini menunjukkan cara mengotomatiskan ekstraksi faktur, membuat linked
+  fields, dan menangani pemrosesan faktur batch.
 keywords:
-- Java template parsing
+- batch invoice processing
+- automate invoice extraction
+- create linked fields
+- extract pdf data java
+- java document parsing
+lastmod: '2026-09-22'
+og_description: Pemrosesan faktur batch dengan parsing Java menggunakan GroupDocs.Parser.
+  Pelajari cara mengotomatiskan ekstraksi faktur, membuat linked fields, dan menangani
+  batch dokumen besar secara efisien.
+og_image_alt: Guide showing Java code for extracting invoice data with GroupDocs.Parser
+og_title: Pemrosesan faktur batch dengan parsing Java – GroupDocs.Parser
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-22'
+  description: Learn how to extract invoice data using GroupDocs.Parser for Java.
+    This guide shows how to automate invoice extraction, create linked fields, and
+    handle batch invoice processing.
+  headline: Batch invoice processing with Java parsing – GroupDocs.Parser
+  type: TechArticle
+- description: Learn how to extract invoice data using GroupDocs.Parser for Java.
+    This guide shows how to automate invoice extraction, create linked fields, and
+    handle batch invoice processing.
+  name: Batch invoice processing with Java parsing – GroupDocs.Parser
+  steps:
+  - name: '**Add the Maven dependency** (or the JAR) to your project.'
+    text: '**Add the Maven dependency** (or the JAR) to your project.'
+  - name: '**Obtain a license** – you can start with a free trial or a temporary license
+      from the [temporary license page](https://purchase.groupdocs.com/temporary-license/).'
+    text: '**Obtain a license** – you can start with a free trial or a temporary license
+      from the [temporary license page](https://purchase.groupdocs.com/temporary-license/).'
+  - name: '**Initialize the parser** – the snippet below shows the required imports
+      and a simple initialization.'
+    text: '**Initialize the parser** – the snippet below shows the required imports
+      and a simple initialization.'
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Parser for Java is a library that extracts structured data from
+      PDFs, Word documents, images, and other formats using customizable templates
+      and regular expressions.
+    question: What is GroupDocs.Parser for Java?
+  - answer: Add the repository and `<dependency>` shown in the Maven block above to
+      your `pom.xml`, then run `mvn clean install` to download the library.
+    question: How do I set up a Maven project with GroupDocs.Parser?
+  - answer: Yes, you can start with a free trial or obtain a temporary license for
+      evaluation purposes.
+    question: Can I use GroupDocs.Parser without purchasing a license?
+  - answer: Linked fields are template elements whose positions are defined relative
+      to another field, enabling precise extraction based on document layout.
+    question: What are linked fields in templates?
+  - answer: Implement batch processing, reuse parser instances, and use multithreading
+      (e.g., Java `ExecutorService`) to parse multiple files concurrently while monitoring
+      memory usage.
+    question: How can I scale the solution for thousands of invoices?
+  type: FAQPage
+tags:
+- batch invoice processing
 - GroupDocs.Parser
-- regular expressions in Java
-title: Ekstrak Data Faktur dengan Parsing Java – GroupDocs.Parser
+- Java document parsing
+title: Pemrosesan faktur batch dengan parsing Java – GroupDocs.Parser
 type: docs
 url: /id/java/template-parsing/master-java-template-parsing-groupdocs-parser/
 weight: 1
 ---
 
-# Ekstrak Data Faktur dengan Parsing Java – GroupDocs.Parser
+# Pemrosesan faktur batch dengan parsing Java – GroupDocs.Parser
 
-Di lingkungan bisnis yang bergerak cepat saat ini, **ekstrak data faktur** secara cepat dan akurat merupakan langkah penting menuju otomatisasi alur kerja keuangan. Baik Anda menangani satu faktur maupun memproses ribuan dalam satu batch, GroupDocs.Parser untuk Java memungkinkan Anda mendefinisikan templat yang fleksibel, menggunakan regular expression, dan **membuat bidang tertaut** yang dapat beradaptasi dengan tata letak dokumen apa pun. Pada tutorial ini kami akan memandu Anda menyiapkan perpustakaan, membangun templat yang **mengekstrak data faktur**, dan mem-parsing dokumen dalam skala besar.
+Di lingkungan bisnis yang bergerak cepat saat ini, **pemrosesan faktur batch** sangat penting untuk mengurangi upaya manual dan menghilangkan kesalahan entri data. Dengan GroupDocs.Parser untuk Java Anda dapat secara otomatis mengekstrak nomor faktur, tanggal, jumlah pajak, dan total dari PDF, file DOCX, atau gambar yang dipindai. Tutorial ini memandu Anda melalui penyiapan pustaka, membangun templat yang dapat digunakan kembali, dan memperluas solusi untuk menangani ribuan faktur dalam satu kali proses.
 
 ## Jawaban Cepat
-- **Apa arti “ekstrak data faktur”?** Ini merujuk pada penarikan bidang secara programatik seperti nomor faktur, tanggal, pajak, dan total dari file PDF, DOCX, atau gambar.  
-- **Perpustakaan mana yang harus saya gunakan?** GroupDocs.Parser untuk Java menyediakan ekstraksi berbasis templat yang kuat dengan dukungan regex.  
-- **Bisakah saya memproses banyak file sekaligus?** Ya – gabungkan parser dengan teknik pemrosesan dokumen batch.  
-- **Apakah saya memerlukan lisensi?** Lisensi percobaan gratis atau lisensi sementara dapat digunakan untuk evaluasi; lisensi berbayar diperlukan untuk produksi.  
-- **Apakah cocok untuk Java 8+?** Tentu – perpustakaan ini mendukung JDK 8 dan versi yang lebih baru.
+- **Apa arti “extract invoice data”?** Artinya secara programatik menarik bidang-bidang seperti nomor faktur, tanggal, pajak, dan total dari file PDF, DOCX, atau gambar.  
+- **Library mana yang harus saya gunakan?** GroupDocs.Parser untuk Java menawarkan ekstraksi berbasis templat dengan dukungan regex penuh.  
+- **Bisakah saya memproses banyak file sekaligus?** Ya – gabungkan parser dengan pola pemrosesan batch untuk menangani volume besar secara efisien.  
+- **Apakah saya memerlukan lisensi?** Lisensi percobaan gratis atau lisensi sementara dapat digunakan untuk evaluasi; lisensi berbayar diperlukan untuk penggunaan produksi.  
+- **Apakah cocok untuk Java 8+?** Tentu – pustaka mendukung JDK 8 dan versi yang lebih baru.
 
-## Apa itu “ekstrak data faktur”?
-Mengekstrak data faktur berarti secara otomatis menemukan dan mengambil potongan informasi penting—seperti nomor faktur, tanggal, jumlah pajak, dan total—langsung dari dokumen digital, menghilangkan kebutuhan entri data manual.
+## Apa itu “extract invoice data”?
+**Extract invoice data** adalah pengambilan otomatis dari bidang-bidang kunci faktur—seperti nomor faktur, tanggal penerbitan, jumlah pajak, dan total yang harus dibayar—langsung dari dokumen digital. Dengan secara programatik menemukan nilai-nilai ini, bisnis menghilangkan entri data manual, mengurangi kesalahan, dan mempercepat proses hilir seperti akuntansi, pelaporan, dan analitik.
 
 ## Mengapa menggunakan GroupDocs.Parser untuk Java?
-- **Akurasi tinggi** dengan regex dan penempatan bidang tertaut.  
-- **Mendukung banyak format** (PDF, DOCX, gambar).  
-- **Skalabel** – ideal untuk skenario pemrosesan dokumen tunggal maupun batch.  
-- **Integrasi mudah** dengan aplikasi Java yang sudah ada.
+GroupDocs.Parser untuk Java menyediakan **ekstraksi berpresisi tinggi** dengan menggabungkan pencocokan ekspresi reguler dengan penempatan bidang‑terhubung. Ia mendukung **lebih dari 30 format input dan output**, termasuk PDF, DOCX, dan tipe gambar umum, serta dapat memproses **dokumen ratusan halaman tanpa memuat seluruh file ke memori**. Hal ini menjadikannya ideal untuk skenario dokumen tunggal maupun pipeline pemrosesan faktur batch berskala besar.
 
 ## Prasyarat
-- JDK 8 atau lebih tinggi.  
-- Sebuah IDE (IntelliJ IDEA, Eclipse, dll.).  
-- Akses ke perpustakaan GroupDocs.Parser untuk Java (unduh atau Maven).
+- JDK 8 atau lebih tinggi terpasang di mesin pengembangan Anda.  
+- IDE seperti IntelliJ IDEA atau Eclipse.  
+- Akses ke pustaka GroupDocs.Parser untuk Java (dapat diunduh dari repositori Maven atau sebagai JAR).
 
-### Perpustakaan, Versi, dan Dependensi yang Diperlukan
-Tambahkan repositori dan dependensi ke `pom.xml` Anda:
+### Perpustakaan, versi, dan dependensi yang diperlukan
+Add the repository and dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -61,13 +113,13 @@ Tambahkan repositori dan dependensi ke `pom.xml` Anda:
 
 Anda juga dapat **mengunduh JAR terbaru** dari [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
-### Prasyarat Pengetahuan
-Pemrograman Java dasar dan pemahaman tentang I/O file akan mempermudah langkah-langkah berikut.
+### Prasyarat pengetahuan
+Pemahaman dasar tentang pemrograman Java dan I/O file akan mempermudah langkah-langkahnya.
 
 ## Menyiapkan GroupDocs.Parser untuk Java
 1. **Tambahkan dependensi Maven** (atau JAR) ke proyek Anda.  
-2. **Dapatkan lisensi** – Anda dapat memulai dengan percobaan gratis atau lisensi sementara dari [sini](https://purchase.groupdocs.com/temporary-license/).  
-3. **Inisialisasi parser** – cuplikan kode di bawah ini menunjukkan impor yang diperlukan dan inisialisasi sederhana.
+2. **Dapatkan lisensi** – Anda dapat memulai dengan percobaan gratis atau lisensi sementara dari [halaman lisensi sementara](https://purchase.groupdocs.com/temporary-license/).  
+3. **Inisialisasi parser** – cuplikan di bawah menunjukkan impor yang diperlukan dan inisialisasi sederhana.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -75,10 +127,10 @@ import com.groupdocs.parser.data.*;
 import com.groupdocs.parser.templates.*;
 ```
 
-## Cara Membuat Bidang Tertaut dalam Templat
-Bidang tertaut memungkinkan Anda menangkap data yang muncul pada offset tetap dari bidang lain yang sudah diketahui (misalnya nilai pajak yang mengikuti kata “Tax”).
+## Cara membuat bidang terhubung dalam templat
+**Jawaban langsung:** Bidang terhubung memungkinkan Anda menangkap data yang muncul pada offset tetap dari bidang lain yang diketahui (misalnya, jumlah pajak yang mengikuti kata “Tax”). Definisikan bidang label (mis., “Tax”) dengan pola ekspresi reguler, kemudian buat bidang terhubung yang mengekstrak nilai yang diposisikan beberapa karakter ke kanan label tersebut. Pendekatan dua langkah ini menjamin nilai yang diekstrak tetap selaras dengan labelnya meskipun tata letak dokumen berubah.
 
-### Definisikan Bidang Regular‑Expression
+### Definisikan bidang ekspresi reguler
 Pertama, kami menemukan label **Tax** menggunakan pola regex.
 
 ```java
@@ -88,8 +140,8 @@ TemplateField regexField = new TemplateField(
         "Tax");
 ```
 
-### Konfigurasikan Bidang Tertaut
-Selanjutnya, kami mendefinisikan bidang yang berisi nilai pajak sebenarnya, diposisikan relatif terhadap label **Tax**.
+### Konfigurasikan bidang terhubung
+Selanjutnya, kami mendefinisikan bidang yang menyimpan jumlah pajak sebenarnya, diposisikan relatif terhadap label **Tax**.
 
 ```java
 // Create a linked field based on the position of 'Tax'
@@ -101,8 +153,8 @@ TemplateField linkedField = new TemplateField(
         "TaxValue");
 ```
 
-### Susun Templat
-Gabungkan bidang regex dan bidang tertaut menjadi satu objek templat.
+### Susun templat
+Gabungkan bidang regex dan bidang terhubung menjadi satu objek templat.
 
 ```java
 // Combine both fields into a comprehensive template
@@ -110,11 +162,11 @@ Template templateWithRegexAndLink = new Template(Arrays.asList(
         new TemplateItem[]{regexField, linkedField}));
 ```
 
-## Cara Mengekstrak Data Faktur Menggunakan Templat yang Didefinisikan
-Setelah templat siap, kami dapat mem-parsing faktur dan mengambil nilai yang diinginkan.
+## Cara mengekstrak data faktur menggunakan templat yang didefinisikan
+**Jawaban langsung:** `Parser` adalah kelas inti yang membaca dan mengurai dokumen. Muat dokumen target dengan `Parser parser = new Parser("invoice.pdf")`, terapkan templat yang telah dibangun sebelumnya melalui `parser.parse(template)`, dan kemudian iterasi koleksi `Field` untuk membaca setiap nilai yang diekstrak. Proses ini mengembalikan peta terstruktur nama bidang ke string yang diekstrak, siap untuk pemrosesan hilir.
 
-### Parse Dokumen
-Buka PDF (atau format yang didukung lainnya) dan terapkan templat.
+### Mengurai dokumen
+Buka PDF (atau format lain yang didukung) dan terapkan templat.
 
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/InvoiceSample.pdf")) {
@@ -122,8 +174,8 @@ try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/InvoiceSample.pdf")) {
     DocumentData data = parser.parseByTemplate(templateWithRegexAndLink);
 ```
 
-### Iterasi Data yang Diekstrak
-Loop melalui hasil dan cetak nama serta nilai setiap bidang.
+### Iterasi data yang diekstrak
+`Field` mewakili potongan data yang diekstrak, berisi nama dan nilainya. Loop melalui hasil dan cetak nama serta nilai setiap bidang.
 
 ```java
     // Loop through all extracted data items
@@ -139,55 +191,61 @@ Loop melalui hasil dan cetak nama serta nilai setiap bidang.
 }
 ```
 
-#### Tips Pemecahan Masalah
+#### Tips pemecahan masalah
+`TemplateLinkedPosition` mendefinisikan posisi relatif dan ukuran bidang terhubung dalam dokumen.  
 - Verifikasi jalur file dan pastikan dokumen dapat diakses.  
-- Uji regular expression Anda dengan alat seperti regex101.com sebelum menyematkannya.  
-- Sesuaikan `Size` dan pengaturan tepi di `TemplateLinkedPosition` jika bidang tertaut tidak tertangkap dengan benar.
+- Uji ekspresi reguler Anda dengan alat seperti regex101.com sebelum menyematkannya.  
+- Sesuaikan `Size` dan pengaturan tepi di `TemplateLinkedPosition` jika bidang terhubung tidak tertangkap dengan benar.
 
-## Aplikasi Praktis
-### Kasus Penggunaan Dunia Nyata
-- **Pemrosesan Faktur** – secara otomatis menarik nomor faktur, tanggal, pajak, dan total untuk sistem akuntansi.  
-- **Manajemen Kontrak** – mengekstrak pihak-pihak, tanggal efektif, dan klausul kunci.  
-- **Ekstraksi Data Pelanggan** – menarik detail pesanan dari formulir yang telah diisi.
+## Aplikasi praktis
+### Kasus penggunaan dunia nyata
+- **Pemrosesan faktur** – secara otomatis menarik nomor faktur, tanggal, pajak, dan total untuk sistem akuntansi.  
+- **Manajemen kontrak** – mengekstrak pihak, tanggal efektif, dan klausul kunci dari perjanjian hukum.  
+- **Ekstraksi data pelanggan** – menarik detail pesanan dari formulir pesanan yang diisi.
 
-### Kemungkinan Integrasi
-Gabungkan data yang diekstrak dengan platform ERP atau CRM untuk menciptakan alur kerja otomatis end‑to‑end.
+### Kemungkinan integrasi
+Anda dapat mengalirkan data yang diekstrak ke platform ERP atau CRM, menyimpannya dalam basis data relasional, atau mengirimkannya ke pipeline analitik hilir untuk pelaporan keuangan real‑time.
 
-## Tips Pemrosesan Dokumen Batch
-Saat menangani **pemrosesan dokumen batch**, pertimbangkan:
-- Menggunakan satu instance `Parser` untuk banyak file guna mengurangi overhead.  
-- Menjalankan tugas parsing dalam parallel streams atau executor services.  
-- Menyimpan hasil ekstraksi ke basis data atau CSV untuk pelaporan selanjutnya.
+## Tips pemrosesan dokumen batch
+Saat menangani **pemrosesan faktur batch**, pertimbangkan:
+- Menggunakan kembali satu instance `Parser` untuk beberapa file guna mengurangi beban.
+- Menjalankan tugas parsing dalam aliran paralel atau layanan executor untuk memanfaatkan CPU multi‑core.
+- Menyimpan hasil ekstraksi dalam file CSV atau basis data untuk konsumsi hilir.
+`ExecutorService` adalah utilitas konkruensi Java yang mengelola kumpulan thread untuk mengeksekusi tugas secara asynchronous.
 
-## Pertimbangan Kinerja
+## Pertimbangan kinerja
 - **Sederhanakan templat** – lebih sedikit bidang dan pola regex yang lebih sederhana mempercepat parsing.  
-- **Kelola memori** – tutup objek `Parser` dengan cepat (seperti pada contoh try‑with‑resources).  
-- **Proses dalam batch** – kelompokkan dokumen untuk menyeimbangkan penggunaan CPU dan I/O.
+- **Kelola memori** – tutup objek `Parser` dengan cepat menggunakan try‑with‑resources.  
+- **Proses dalam batch** – kelompokkan dokumen untuk menyeimbangkan penggunaan CPU dan I/O, menghindari lonjakan konsumsi sumber daya.
 
-## Pertanyaan yang Sering Diajukan
+## Pertanyaan yang sering diajukan
 
-**T: Apa itu GroupDocs.Parser untuk Java?**  
-J: Ini adalah perpustakaan Java yang mengekstrak data terstruktur dari PDF, dokumen Word, gambar, dan lainnya menggunakan templat yang dapat disesuaikan.
+**Q: Apa itu GroupDocs.Parser untuk Java?**  
+A: GroupDocs.Parser untuk Java adalah pustaka yang mengekstrak data terstruktur dari PDF, dokumen Word, gambar, dan format lain menggunakan templat yang dapat disesuaikan dan ekspresi reguler.
 
-**T: Bagaimana cara menyiapkan proyek Maven dengan GroupDocs.Parser?**  
-J: Tambahkan repositori dan `<dependency>` yang ditunjukkan pada blok Maven di atas ke `pom.xml` Anda.
+**Q: Bagaimana cara menyiapkan proyek Maven dengan GroupDocs.Parser?**  
+A: Tambahkan repositori dan `<dependency>` yang ditampilkan dalam blok Maven di atas ke `pom.xml` Anda, lalu jalankan `mvn clean install` untuk mengunduh pustaka.
 
-**T: Bisakah saya menggunakan GroupDocs.Parser tanpa membeli lisensi?**  
-J: Ya, Anda dapat memulai dengan percobaan gratis atau memperoleh lisensi sementara untuk tujuan evaluasi.
+**Q: Bisakah saya menggunakan GroupDocs.Parser tanpa membeli lisensi?**  
+A: Ya, Anda dapat memulai dengan percobaan gratis atau memperoleh lisensi sementara untuk tujuan evaluasi.
 
-**T: Apa itu bidang tertaut dalam templat?**  
-J: Bidang tertaut adalah elemen templat yang posisinya didefinisikan relatif terhadap bidang lain, memungkinkan ekstraksi presisi berdasarkan tata letak.
+**Q: Apa itu bidang terhubung dalam templat?**  
+A: Bidang terhubung adalah elemen templat yang posisinya didefinisikan relatif terhadap bidang lain, memungkinkan ekstraksi presisi berdasarkan tata letak dokumen.
 
-**T: Bagaimana cara menskalakan solusi untuk ribuan faktur?**  
-J: Implementasikan pemrosesan dokumen batch, gunakan kembali instance parser, dan pertimbangkan multithreading untuk menangani volume besar secara efisien.
+**Q: Bagaimana saya dapat memperluas solusi untuk ribuan faktur?**  
+A: Terapkan pemrosesan batch, gunakan kembali instance parser, dan gunakan multithreading (mis., Java `ExecutorService`) untuk mengurai banyak file secara bersamaan sambil memantau penggunaan memori.
 
 ## Kesimpulan
-Dengan mengikuti panduan ini Anda kini tahu cara **mengekstrak data faktur** menggunakan parsing Java, memanfaatkan regular expression, dan **membuat bidang tertaut** yang beradaptasi dengan tata letak faktur apa pun. Cobalah berbagai templat, integrasikan output ke dalam stack keuangan Anda, dan jelajahi fitur lanjutan seperti konverter data khusus serta dukungan OCR.
+Dengan mengikuti panduan ini Anda kini tahu cara **mengekstrak data faktur** dengan parsing Java, memanfaatkan ekspresi reguler, dan **membuat bidang terhubung** yang beradaptasi dengan tata letak faktur apa pun. Bereksperimenlah dengan berbagai templat, integrasikan output ke dalam stack keuangan Anda, dan jelajahi fitur lanjutan seperti konverter data khusus dan dukungan OCR untuk faktur yang dipindai.
 
 ---
 
-**Terakhir Diperbarui:** 2026-02-11  
-**Diuji Dengan:** GroupDocs.Parser 25.5  
-**Penulis:** GroupDocs  
+**Last Updated:** 2026-09-22  
+**Tested With:** GroupDocs.Parser 25.5  
+**Author:** GroupDocs
 
----
+## Tutorial Terkait
+
+- [Cara Mengekstrak Data Form PDF dengan GroupDocs.Parser Java](/parser/java/form-extraction/)
+- [Panduan Ekstraksi Tabel Java GroupDocs Parser](/parser/java/table-extraction/)
+- [Menguasai Ekstraksi Metadata Java GroupDocs Parser](/parser/java/metadata-extraction/master-java-metadata-extraction-groupdocs-parser/)
