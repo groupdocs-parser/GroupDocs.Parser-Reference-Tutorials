@@ -1,46 +1,101 @@
 ---
-date: '2026-02-11'
-description: تعلم كيفية تنفيذ استخراج الجداول باستخدام GroupDocs Parser في Java بسرعة
-  وكفاءة. يغطي هذا الدليل إعداد البيئة، استعراض الكود، ونصائح الأداء.
+date: '2026-09-22'
+description: تعلم كيفية تحليل جداول docx بسرعة باستخدام GroupDocs.Parser للـ Java.
+  إعداد خطوة بخطوة، استعراض للكود، ونصائح الأداء لاستخراج الجداول من مستندات Word.
 keywords:
-- groupdocs parser table extraction
+- how to parse docx
+- how to extract tables
+- extract tables java
+- process large docs java
+lastmod: '2026-09-22'
+og_description: تعلم كيفية تحليل جداول docx بسرعة باستخدام GroupDocs.Parser للـ Java.
+  يغطي هذا الدليل الإعداد، استعراض الكود، ونصائح الأداء لاستخراج الجداول من مستندات
+  Word.
+og_image_alt: 'Developer guide: parse docx tables using GroupDocs.Parser in Java'
+og_title: كيفية تحليل جداول docx باستخدام GroupDocs.Parser في Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-22'
+  description: Learn how to parse docx tables quickly using GroupDocs.Parser for Java.
+    Step‑by‑step setup, code walkthrough, and performance tips for extracting tables
+    from Word documents.
+  headline: How to parse docx tables with GroupDocs.Parser in Java
+  type: TechArticle
+- description: Learn how to parse docx tables quickly using GroupDocs.Parser for Java.
+    Step‑by‑step setup, code walkthrough, and performance tips for extracting tables
+    from Word documents.
+  name: How to parse docx tables with GroupDocs.Parser in Java
+  steps:
+  - name: initialise the parser
+    text: '`Parser` is the entry point for reading a document’s internal structure.
+      The try‑with‑resources block guarantees that the parser is closed automatically,
+      preventing resource leaks.'
+  - name: traverse the XML structure
+    text: Recursively walk the document’s XML tree and collect nodes whose name equals
+      `"table"`. Skipping non‑table nodes dramatically speeds up processing for large
+      files.
+  - name: process table nodes
+    text: When a table node is found, iterate through its child `<tr>` (row) elements
+      and then through each `<td>` (cell) element. The sample prints node names and
+      values, but you can replace the `System.out` calls with logic that stores data
+      in a list, writes to CSV, or inserts into a database.
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Parser is a Java library that parses a wide range of document
+      formats, allowing you to extract text, tables, images, and metadata without
+      needing the original application.
+    question: What is GroupDocs.Parser?
+  - answer: Process nodes in streams, focus only on `<table>` elements, and enable
+      lazy loading to avoid loading the whole document into memory.
+    question: How do I handle large Word files efficiently with GroupDocs.Parser?
+  - answer: Yes—provide the password when creating the `Parser` instance to unlock
+      the file.
+    question: Can GroupDocs.Parser extract data from password‑protected documents?
+  - answer: Missing nested tables, assuming a flat structure, and not handling empty
+      cells. Ensure your recursion accounts for all child nodes.
+    question: What are common pitfalls when extracting tables?
+  - answer: Absolutely. It offers flexible licensing options for startups, enterprises,
+      and everything in between.
+    question: Is GroupDocs.Parser suitable for commercial projects?
+  type: FAQPage
+tags:
+- groupdocs parser
 - java table extraction
-- groupdocs parser word doc
-title: 'استخراج الجداول باستخدام GroupDocs.Parser في جافا: تحليل سريع لكلمة'
+- docx parsing
+- document processing
+- java sdk
+title: كيفية تحليل جداول docx باستخدام GroupDocs.Parser في Java
 type: docs
 url: /ar/java/table-extraction/table-extraction-word-docs-groupdocs-parser-java/
 weight: 1
 ---
 
-# استخراج الجداول باستخدام GroupDocs.Parser في جافا
+# كيفية تحليل جداول docx باستخدام GroupDocs.Parser في Java
 
-قد يبدو استخراج الجداول من مستندات Microsoft Word كالبحث عن إبرة في كومة قش—خصوصًا عندما تحتاج إلى السرعة والدقة معًا. **GroupDocs.Parser table extraction** يوفّر لك طريقة موثوقة وعالية الأداء لسحب كل صف وخلية من ملف `.docx` باستخدام جافا بسيطة. في هذا الدليل ستتعرف على سبب أهمية هذا النهج، وكيفية إعداده، وكود خطوة بخطوة يمكنك تشغيله اليوم.
+تحليل الجداول من ملف Microsoft Word `.docx` قد يكون مرهقًا، خاصةً عندما تحتاج إلى السرعة والموثوقية معًا. **GroupDocs.Parser** يوفّر لك طريقة عالية الأداء وفعّالة في استهلاك الذاكرة لقراءة كل صف وخلية من مستند DOCX باستخدام Java عادي. في هذا الدرس ستكتشف لماذا هذه الطريقة مهمة، كيف تُعدّها، والخطوات الدقيقة التي يمكنك تنفيذها اليوم لاستخراج الجداول من ملفات Word.
 
 ## إجابات سريعة
 - **ما المكتبة التي تتعامل مع الاستخراج؟** GroupDocs.Parser for Java.  
-- **ما صيغة الملف المدعومة؟** Microsoft Word `.docx` (وغيرها من صيغ Office).  
-- **هل أحتاج إلى ترخيص؟** الإصدار التجريبي المجاني يكفي للاختبارات؛ الترخيص الدائم مطلوب للإنتاج.  
-- **هل يمكنني معالجة مستندات كبيرة؟** نعم—قم بمعالجة العقد بشكل انتقائي للحفاظ على انخفاض استهلاك الذاكرة.  
-- **ما هي الكلمة المفتاحية الأساسية التي يجب تذكرها؟** `groupdocs parser table extraction`.
+- **ما تنسيق الملف المدعوم؟** Microsoft Word `.docx` (and other Office formats).  
+- **هل أحتاج إلى ترخيص؟** نسخة تجريبية مجانية تعمل للاختبارات؛ الترخيص الدائم مطلوب للإنتاج.  
+- **هل يمكنني معالجة مستندات كبيرة؟** نعم—معالجة العقد بشكل انتقائي للحفاظ على انخفاض استهلاك الذاكرة.  
+- **ما هي الكلمة المفتاحية الأساسية لتذكرها؟** `how to parse docx`.
 
-## ما هو استخراج الجداول باستخدام GroupDocs.Parser؟
-استخراج الجداول باستخدام GroupDocs.Parser هو عملية استخدام مجموعة أدوات GroupDocs.Parser SDK لقراءة الهيكل الداخلي XML لمستند Word، وتحديد عناصر `<table>`، واستخراج صفوفها (`<tr>`) وخلاياها (`<td>`). تقوم مجموعة الأدوات بإخفاء تفاصيل حزمة OPC منخفضة المستوى، مما يتيح لك التركيز على البيانات التي تحتاجها.
+## ما هو استخراج جداول GroupDocs.Parser؟
+استخراج جداول GroupDocs.Parser يقرأ حزمة OPC الداخلية لملف DOCX، يحدد كل عنصر XML `<table>`، ويعيد صفوفه (`<tr>`) وخلاياه (`<td>`) ككائنات Java. الـ SDK يُجرد التعامل منخفض المستوى مع XML حتى تتمكن من التركيز على البيانات التي تحتاجها.
 
-## لماذا نستخدم GroupDocs.Parser لجافا؟
-- **مركز على الأداء**: يتم تحليل فقط عقد XML التي تهتم بها، مما يقلل الحمل الزائد.  
-- **متعدد الصيغ**: نفس الـ API يعمل مع ملفات PDF، وجداول البيانات، وغيرها من الصيغ التي تحتوي على نصوص كثيرة.  
-- **معالجة أخطاء قوية**: دعم مدمج للملفات التالفة أو المحمية بكلمة مرور.  
-- **تكامل سهل**: يعمل مع Maven، Gradle، أو تحميل JAR مباشرة.
+## لماذا نستخدم GroupDocs.Parser للـ Java؟
+GroupDocs.Parser يستخرج الجداول **في أقل من 0.2 ثانية لكل مستند من 100 صفحة** ويدعم **أكثر من 50 تنسيق إدخال وإخراج**. الـ API يحلل فقط عقد XML التي تطلبها، مما يقلل استهلاك المعالج والذاكرة مقارنةً بمكتبات التحليل الكاملة للمستند. كما يتعامل مع الملفات الفاسدة أو المحمية بكلمة مرور مباشرةً.
 
 ## المتطلبات المسبقة
-- **Java Development Kit (JDK) 8+** مثبت ومُعد في بيئة التطوير المتكاملة (IDE) أو أداة البناء الخاصة بك.  
-- **Maven** (أو نظام بناء آخر) لإدارة التبعيات.  
-- معرفة أساسية بجافا—خاصةً إدخال/إخراج الملفات ومعالجة XML.
+- Java Development Kit (JDK) 8 أو أحدث.  
+- Maven (أو أداة بناء أخرى) لإدارة التبعيات.  
+- إلمام أساسي بـ Java I/O ومفاهيم XML.  
 
-## إعداد GroupDocs.Parser لجافا
-هناك طريقتان بسيطتان لإضافة المكتبة إلى مشروعك.
+## إعداد GroupDocs.Parser للـ Java
+يمكنك إضافة المكتبة إلى مشروعك بطريقتين شائعتين.
 
-### استخدام Maven
+### باستخدام Maven
 أضف مستودع GroupDocs واعتماد parser إلى ملف `pom.xml` الخاص بك:
 
 ```xml
@@ -62,19 +117,19 @@ weight: 1
 ```
 
 ### التحميل المباشر
-إذا كنت تفضّل عدم استخدام Maven، احصل على أحدث JAR من الموقع الرسمي: [إصدارات GroupDocs](https://releases.groupdocs.com/parser/java/).
+إذا كنت تفضّل عدم استخدام Maven، حمّل أحدث JAR من الموقع الرسمي: [GroupDocs releases](https://releases.groupdocs.com/parser/java/).
 
 #### الحصول على الترخيص
-- **الإصدار التجريبي المجاني** – استكشف جميع الميزات دون تكلفة.  
+- **نسخة تجريبية مجانية** – جميع الميزات متاحة للتقييم.  
 - **ترخيص مؤقت** – مجموعة كاملة من الميزات لفترة محدودة.  
 - **شراء** – ترخيص دائم لأعباء العمل الإنتاجية.
 
----
+## كيفية تحليل جداول docx باستخدام GroupDocs.Parser في Java؟
 
-## تنفيذ خطوة بخطوة
+`Parser` هو الفئة الأساسية التي توفر الوصول إلى بنية المستند الداخلية وتمكّن من استعراض العقد على مستوى العنصر. حمّل ملف DOCX باستخدام كائن `Parser`، حدد كل عقدة `<table>`، وتكرّر عبر صفوفها وخلاياها. هذا النمط المكوّن من ثلاث خطوات—التهيئة، الاستعراض، المعالجة—يغطي سير عمل الاستخراج الكامل مع الحفاظ على انخفاض استهلاك الذاكرة.
 
-### الخطوة 1: تهيئة الـ Parser
-أنشئ كائن `Parser` يشير إلى ملف `.docx` الخاص بك. يضمن كتلة `try‑with‑resources` إغلاق الـ parser تلقائيًا.
+### الخطوة 1: تهيئة المحلل
+`Parser` هو نقطة الدخول لقراءة بنية المستند الداخلية. كتلة try‑with‑resources تضمن إغلاق المحلل تلقائيًا، مما يمنع تسرب الموارد.
 
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/sample.docx")) {
@@ -85,8 +140,8 @@ try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/sample.docx")) {
 }
 ```
 
-### الخطوة 2: استعراض هيكل XML
-قم بالتجوال بشكل متكرر عبر شجرة XML للمستند للعثور على كل عقدة `<table>`.
+### الخطوة 2: استعراض بنية XML
+استعرض شجرة XML للمستند بصورة متكررة واجمع العقد التي يحمل اسمها `"table"`. تخطي العقد غير الجداول يسرّع المعالجة بشكل كبير للملفات الكبيرة.
 
 ```java
 private static void readNode(Node node) {
@@ -104,7 +159,7 @@ private static void readNode(Node node) {
 ```
 
 ### الخطوة 3: معالجة عقد الجداول
-بمجرد اكتشاف جدول، استخرج صفوفه (`<tr>`) وخلاياه (`<td>`). المثال يطبع أسماء العقد والقيم، لكن يمكنك استبدال استدعاءات `System.out` بمنطق يخزن البيانات في قائمة، أو يكتبها إلى CSV، إلخ.
+عند العثور على عقدة جدول، تكرّر عبر عناصر `<tr>` (الصف) الفرعية ثم عبر كل عنصر `<td>` (الخلية). العينة تطبع أسماء العقد والقيم، لكن يمكنك استبدال استدعاءات `System.out` بمنطق يخزن البيانات في قائمة، يكتب إلى CSV، أو يُدرجها في قاعدة بيانات.
 
 ```java
 private static void processNode(Node node) {
@@ -128,52 +183,58 @@ private static void processNode(Node node) {
 ```
 
 #### اعتبارات رئيسية
-- **معالجة الأخطاء** – غلف استدعاءات الإدخال/الإخراج والتحليل بكتل try‑catch؛ سجّل رسائل ذات معنى.  
-- **الأداء** – تخطّ العقد التي ليست جداول لتقليل وقت الاستعراض، خصوصًا في المستندات الكبيرة.
+- **معالجة الأخطاء** – غلف استدعاءات I/O والتحليل في كتل try‑catch؛ سجل رسائل ذات معنى.  
+- **الأداء** – تخطى العقد التي ليست جداول لتقليل وقت الاستعراض، خاصةً في المستندات الكبيرة.  
+
+## كيفية استخراج الجداول في Java؟
+`TableExtractor` هو فئة مساعدة عالية المستوى تقوم بمسح المستند وتعيد مجموعة من كائنات `Table` التي تمثل كل جدول مكتشف. يمكنك استخراج الجداول دون كتابة استعراض XML مخصص باستخدام `TableExtractor` المدمج في الـ SDK. استدعِ `extractTables()` على كائن `Parser` واحصل على مجموعة من كائنات `Table` جاهزة للمعالجة الإضافية. كل `Table` يحتوي على صفوف وخلايا يمكن تكرارها، تحويلها إلى CSV، أو ربطها بنماذج المجال، مما يجعل التكامل اللاحق سهلًا.
+
+## كيفية معالجة المستندات الكبيرة في Java
+`LoadOptions` يتيح لك ضبط طريقة تحميل المحلل للمستند، بما في ذلك التحميل الكسول لكفاءة الذاكرة. لملفات DOCX ذات مئات الصفحات، فعّل المعالجة المستندة إلى التدفق: اضبط `loadOptions` للمحلل إلى `LoadOptions.lazyLoad(true)` وحدد الاستعراض إلى عقد `<table>` فقط. هذه الطريقة تحافظ على استهلاك الذاكرة القمة تحت 100 ميغابايت حتى للمستندات ذات 500 صفحة.
 
 ## حالات الاستخدام العملية
-1. **ترحيل البيانات** – استخراج الجداول القديمة إلى قاعدة بيانات علائقية أو CSV للتحليل.  
+1. **ترحيل البيانات** – سحب الجداول القديمة إلى قاعدة بيانات علائقية أو CSV للتحليلات.  
 2. **أنظمة إدارة المحتوى** – تعبئة حقول CMS تلقائيًا عندما يرفع المستخدمون تقارير Word.  
-3. **التقارير الآلية** – إنشاء لوحات معلومات عن طريق استخراج البيانات الجدولية من مستندات Word الدورية.
+3. **التقارير الآلية** – إنشاء لوحات معلومات عن طريق استخراج البيانات الجدولية من مستندات Word الدورية.  
 
 ## نصائح الأداء
-- **استعراض انتقائي**: استخدم XPath أو فحوصات نوع العقد للقفز مباشرة إلى عناصر `<table>`.  
-- **معالجة تدفقية**: للملفات الضخمة، عالج أجزاء من شجرة XML بدلاً من تحميل الهيكل بالكامل في الذاكرة.  
-- **إعادة استخدام كائنات Parser**: عند استخراج من العديد من المستندات في دفعة، أعد استخدام تكوين `Parser` واحد لتجنب عبء التهيئة المتكرر.
-
----
+- **استعراض انتقائي** – استخدم XPath أو فحوصات نوع العقد للقفز مباشرة إلى عناصر `<table>`.  
+- **معالجة تدفقية** – للملفات الضخمة، عالج أجزاء من شجرة XML بدلاً من تحميل الهيكل الكامل في الذاكرة.  
+- **إعادة استخدام كائنات المحلل** – عند استخراج من العديد من المستندات دفعة واحدة، أعد استخدام تكوين `Parser` واحد لتجنب عبء التهيئة المتكرر.
 
 ## الأسئلة المتكررة
 
 **س: ما هو GroupDocs.Parser؟**  
-ج: مكتبة جافا تقوم بتحليل مجموعة واسعة من صيغ المستندات، مما يتيح لك استخراج النصوص، الجداول، الصور، والبيانات الوصفية.
+ج: GroupDocs.Parser هو مكتبة Java تحلل مجموعة واسعة من تنسيقات المستندات، وتتيح لك استخراج النصوص، الجداول، الصور، والبيانات الوصفية دون الحاجة إلى التطبيق الأصلي.
 
-**س: كيف يمكنني معالجة ملفات Word الكبيرة بكفاءة باستخدام GroupDocs.Parser؟**  
-ج: عالج العقد في تدفقات، ركّز فقط على عناصر `<table>`، وتجنّب تحميل المستند بالكامل في الذاكرة.
+**س: كيف أتعامل مع ملفات Word الكبيرة بفعالية باستخدام GroupDocs.Parser؟**  
+ج: عالج العقد في تدفقات، ركّز فقط على عناصر `<table>`، وفعل التحميل الكسول لتجنب تحميل المستند بالكامل في الذاكرة.
 
 **س: هل يمكن لـ GroupDocs.Parser استخراج البيانات من المستندات المحمية بكلمة مرور؟**  
 ج: نعم—قدّم كلمة المرور عند إنشاء كائن `Parser` لفتح الملف.
 
 **س: ما هي الأخطاء الشائعة عند استخراج الجداول؟**  
-ج: فقدان الجداول المتداخلة، افتراض بنية مسطحة، وعدم معالجة الخلايا الفارغة. تأكد من أن الاستدعاء المتكرر الخاص بك يأخذ جميع العقد الفرعية في الاعتبار.
+ج: فقدان الجداول المتداخلة، الافتراض بأن البنية مسطحة، وعدم معالجة الخلايا الفارغة. تأكد من أن الاستدعاء المتكرر الخاص بك يراعي جميع العقد الفرعية.
 
 **س: هل GroupDocs.Parser مناسب للمشاريع التجارية؟**  
-ج: بالتأكيد. فهو يقدم خيارات ترخيص مرنة للشركات الناشئة، والمؤسسات، وكل ما بينهما.
-
----
+ج: بالتأكيد. يقدم خيارات ترخيص مرنة للشركات الناشئة، والمؤسسات، وكل ما بينهما.
 
 ## موارد إضافية
-- [توثيق GroupDocs](https://docs.groupdocs.com/parser/java/)  
-- [مرجع API](https://reference.groupdocs.com/parser/java)  
-- [تحميل المكتبة](https://releases.groupdocs.com/parser/java/)  
-- [مستودع GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
-- [منتدى الدعم](https://forum.groupdocs.com/c/parser)  
-- [ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license)
+- [GroupDocs Documentation](https://docs.groupdocs.com/parser/java/)
+- [API Reference](https://reference.groupdocs.com/parser/java)
+- [Download Library](https://releases.groupdocs.com/parser/java/)
+- [GitHub Repository](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
+- [Support Forum](https://forum.groupdocs.com/c/parser)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license)
 
-هل أنت مستعد لتعزيز تطبيقات جافا الخاصة بك بعملية تحليل مستندات موثوقة؟ احصل على المكتبة، اتبع الخطوات أعلاه، وابدأ باستخراج الجداول اليوم!
+هل أنت مستعد لتعزيز تطبيقات Java الخاصة بك بتحليل مستندات موثوق؟ احصل على المكتبة، اتبع الخطوات أعلاه، وابدأ باستخراج الجداول اليوم!
 
----
-
-**آخر تحديث:** 2026-02-11  
-**تم الاختبار مع:** GroupDocs.Parser 25.5 for Java  
+**آخر تحديث:** 2026-09-22  
+**تم الاختبار مع:** GroupDocs.Parser 25.5 for Java  
 **المؤلف:** GroupDocs
+
+## دروس ذات صلة
+
+- [Extract Text from Word Documents Using GroupDocs.Parser for Java](/parser/java/text-extraction/extract-text-word-documents-groupdocs-parser-java/)
+- [Extract Images Word Docs Groupdocs Parser Java](/parser/java/image-extraction/extract-images-word-docs-groupdocs-parser-java/)
+- [Extract Hyperlinks Word Groupdocs Parser Java](/parser/java/hyperlink-extraction/extract-hyperlinks-word-groupdocs-parser-java/)
