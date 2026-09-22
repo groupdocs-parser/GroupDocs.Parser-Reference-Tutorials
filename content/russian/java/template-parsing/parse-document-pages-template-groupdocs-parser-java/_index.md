@@ -80,10 +80,6 @@ url: /ru/java/template-parsing/parse-document-pages-template-groupdocs-parser-ja
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Как извлечь штрих‑код из PDF с помощью GroupDocs.Parser Java
 
 Парсинг PDF‑документов по шаблону — распространённая задача, когда нужно извлечь структурированные данные, такие как штрих‑коды, QR‑коды или поля форм. В этом руководстве вы узнаете **как извлечь штрих‑код из PDF** с помощью GroupDocs.Parser для Java, шаг за шагом. Мы начнём с настройки окружения, определим шаблон штрих‑кода, пройдём по страницам и завершим проверкой извлечённых значений.
@@ -274,9 +270,3 @@ A: API синхронный, но вы можете обернуть вызов�
 - [Извлечение штрих‑кода с конкретной страницы – PDF Java | GroupDocs.Parser](/parser/java/barcode-extraction/)
 - [Как парсить страницы PDF‑документа по шаблону с помощью GroupDocs.Parser для Java](/parser/java/template-parsing/parse-document-pages-template-groupdocs-parser-java/)
 - [Извлечение текста из PDF на Java с помощью GroupDocs.Parser – Пошаговое руководство](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

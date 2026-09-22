@@ -80,10 +80,6 @@ url: /de/java/template-parsing/parse-document-pages-template-groupdocs-parser-ja
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Wie man Barcodes aus PDF mit GroupDocs.Parser Java extrahiert
 
 Das Parsen von PDF‑Dokumenten nach Vorlage ist ein gängiges Bedürfnis, wenn Sie strukturierte Daten wie Barcodes, QR‑Codes oder Formularfelder extrahieren müssen. In diesem Tutorial lernen Sie **wie man Barcodes aus PDF** mit GroupDocs.Parser für Java Schritt für Schritt extrahiert. Wir beginnen mit der Einrichtung der Umgebung, definieren eine Barcode‑Vorlage, gehen die seitenweise Analyse durch und schließen mit der Verifizierung der extrahierten Werte ab.
@@ -274,9 +270,3 @@ Sie haben nun eine vollständige, produktionsreife Anleitung zum **Extrahieren v
 - [Barcode-Extraktion spezifische Seite – PDF Java | GroupDocs.Parser](/parser/java/barcode-extraction/)
 - [Wie man PDF‑Dokumentseiten per Vorlage mit GroupDocs.Parser für Java parsed](/parser/java/template-parsing/parse-document-pages-template-groupdocs-parser-java/)
 - [Java PDF Textextraktion mit GroupDocs.Parser – Schritt‑für‑Schritt‑Leitfaden](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}
