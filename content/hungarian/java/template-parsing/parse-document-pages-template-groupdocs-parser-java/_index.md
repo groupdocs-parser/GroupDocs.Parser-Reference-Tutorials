@@ -80,10 +80,6 @@ url: /hu/java/template-parsing/parse-document-pages-template-groupdocs-parser-ja
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Hogyan lehet vonalkódot kinyerni PDF-ből a GroupDocs.Parser Java segítségével
 
 A PDF dokumentumok sablon szerinti feldolgozása gyakori igény, amikor strukturált adatokat, például vonalkódokat, QR-kódokat vagy űrlapmezőket kell kinyerni. Ebben az útmutatóban megtanulja, **hogyan vonalkódot nyerhet ki PDF-ből** a GroupDocs.Parser for Java használatával, lépésről lépésre. Elkezdjük a környezet beállításával, definiálunk egy vonalkód sablont, végigjárjuk az oldalankénti feldolgozást, és befejezzük a kinyert értékek ellenőrzésével.
@@ -275,9 +271,3 @@ Most már rendelkezik egy teljes, termelésre kész útmutatóval a **vonalkód 
 - [Vonalkód kinyerése adott oldalról – PDF Java | GroupDocs.Parser](/parser/java/barcode-extraction/)
 - [Hogyan dolgozzuk fel a PDF dokumentum oldalait sablon alapján a GroupDocs.Parser for Java használatával](/parser/java/template-parsing/parse-document-pages-template-groupdocs-parser-java/)
 - [Java PDF szövegkivonás a GroupDocs.Parser‑rel – Lépésről‑lépésre útmutató](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

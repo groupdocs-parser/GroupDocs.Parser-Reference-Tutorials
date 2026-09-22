@@ -78,10 +78,6 @@ url: /th/java/template-parsing/parse-document-pages-template-groupdocs-parser-ja
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # วิธีดึงบาร์โค้ดจาก PDF ด้วย GroupDocs.Parser Java
 
 การแยกวิเคราะห์เอกสาร PDF ตามเทมเพลตเป็นความต้องการทั่วไปเมื่อคุณต้องการดึงข้อมูลเชิงโครงสร้างเช่นบาร์โค้ด, QR code หรือฟิลด์ฟอร์ม ในบทแนะนำนี้คุณจะได้เรียนรู้ **วิธีดึงบาร์โค้ดจาก PDF** ด้วย GroupDocs.Parser สำหรับ Java ทีละขั้นตอน เราจะเริ่มด้วยการตั้งค่าสภาพแวดล้อม, กำหนดเทมเพลตบาร์โค้ด, ทำการแยกวิเคราะห์หน้า‑ต่อ‑หน้า, และสรุปด้วยการตรวจสอบค่าที่ดึงออกมา
@@ -270,9 +266,3 @@ A: API เป็นแบบ synchronous, แต่คุณสามารถ�
 - [การดึงบาร์โค้ดจากหน้าเฉพาะ – PDF Java | GroupDocs.Parser](/parser/java/barcode-extraction/)
 - [วิธีแยกวิเคราะห์หน้าของเอกสาร PDF ตามเทมเพลตด้วย GroupDocs.Parser for Java](/parser/java/template-parsing/parse-document-pages-template-groupdocs-parser-java/)
 - [การดึงข้อความจาก PDF ด้วย Java และ GroupDocs.Parser – คู่มือขั้นตอน](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

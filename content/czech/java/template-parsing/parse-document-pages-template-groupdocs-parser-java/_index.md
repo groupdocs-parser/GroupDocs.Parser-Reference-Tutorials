@@ -80,10 +80,6 @@ url: /cs/java/template-parsing/parse-document-pages-template-groupdocs-parser-ja
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Jak extrahovat čárový kód z PDF pomocí GroupDocs.Parser Java
 
 Parsování PDF dokumentů pomocí šablony je běžná potřeba, když potřebujete získat strukturovaná data, jako jsou čárové kódy, QR kódy nebo formulářová pole. V tomto tutoriálu se naučíte **jak extrahovat čárový kód z PDF** pomocí GroupDocs.Parser pro Java, krok za krokem. Začneme nastavením prostředí, definováním šablony čárového kódu, projdeme parsování stránku po stránce a skončíme ověřením extrahovaných hodnot.
@@ -274,9 +270,3 @@ Nyní máte kompletní, připravený průvodce pro **extrahování čárového k
 - [Extrahování čárového kódu na konkrétní stránce – PDF Java | GroupDocs.Parser](/parser/java/barcode-extraction/)
 - [Jak parsovat stránky PDF dokumentu pomocí šablony pomocí GroupDocs.Parser pro Java](/parser/java/template-parsing/parse-document-pages-template-groupdocs-parser-java/)
 - [Extrahování textu z PDF v Javě pomocí GroupDocs.Parser – krok za krokem](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

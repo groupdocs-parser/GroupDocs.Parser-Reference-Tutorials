@@ -78,10 +78,6 @@ url: /sv/java/template-parsing/parse-document-pages-template-groupdocs-parser-ja
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Hur man extraherar streckkod från PDF med GroupDocs.Parser Java
 
 Att analysera PDF‑dokument efter mall är ett vanligt krav när du behöver hämta strukturerad data som streckkoder, QR‑koder eller formulärfält. I den här handledningen lär du dig **hur man extraherar streckkod från PDF** med GroupDocs.Parser för Java, steg för steg. Vi börjar med miljöinställningarna, definierar en streckkodsmall, går igenom sid‑för‑sid‑analys och avslutar med verifiering av de extraherade värdena.
@@ -272,8 +268,3 @@ Du har nu en komplett, produktionsklar genomgång för **extrahering av streckko
 - [Barcode Extraction Specific Page – PDF Java | GroupDocs.Parser](/parser/java/barcode-extraction/)
 - [How to Parse PDF Document Pages by Template Using GroupDocs.Parser for Java](/parser/java/template-parsing/parse-document-pages-template-groupdocs-parser-java/)
 - [Java PDF Text Extraction with GroupDocs.Parser – Step‑by‑Step Guide](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}
