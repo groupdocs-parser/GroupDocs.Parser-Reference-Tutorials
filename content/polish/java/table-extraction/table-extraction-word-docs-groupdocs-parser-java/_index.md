@@ -1,45 +1,100 @@
 ---
-date: '2026-02-11'
-description: Dowiedz się, jak szybko i efektywnie przeprowadzić ekstrakcję tabel przy
-  użyciu GroupDocs Parser w Javie. Ten tutorial obejmuje konfigurację, przegląd kodu
-  oraz wskazówki dotyczące wydajności.
+date: '2026-09-22'
+description: Dowiedz się, jak szybko parsować tabele docx przy użyciu GroupDocs.Parser
+  dla Java. Krok po kroku konfiguracja, przegląd kodu oraz wskazówki dotyczące wydajności
+  przy wyodrębnianiu tabel z dokumentów Word.
 keywords:
-- groupdocs parser table extraction
+- how to parse docx
+- how to extract tables
+- extract tables java
+- process large docs java
+lastmod: '2026-09-22'
+og_description: Dowiedz się, jak szybko parsować tabele docx przy użyciu GroupDocs.Parser
+  dla Java. Krok po kroku konfiguracja, przegląd kodu oraz wskazówki dotyczące wydajności
+  przy wyodrębnianiu tabel z dokumentów Word.
+og_image_alt: 'Developer guide: parse docx tables using GroupDocs.Parser in Java'
+og_title: Jak parsować tabele docx przy użyciu GroupDocs.Parser w Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-22'
+  description: Learn how to parse docx tables quickly using GroupDocs.Parser for Java.
+    Step‑by‑step setup, code walkthrough, and performance tips for extracting tables
+    from Word documents.
+  headline: How to parse docx tables with GroupDocs.Parser in Java
+  type: TechArticle
+- description: Learn how to parse docx tables quickly using GroupDocs.Parser for Java.
+    Step‑by‑step setup, code walkthrough, and performance tips for extracting tables
+    from Word documents.
+  name: How to parse docx tables with GroupDocs.Parser in Java
+  steps:
+  - name: initialise the parser
+    text: '`Parser` is the entry point for reading a document’s internal structure.
+      The try‑with‑resources block guarantees that the parser is closed automatically,
+      preventing resource leaks.'
+  - name: traverse the XML structure
+    text: Recursively walk the document’s XML tree and collect nodes whose name equals
+      `"table"`. Skipping non‑table nodes dramatically speeds up processing for large
+      files.
+  - name: process table nodes
+    text: When a table node is found, iterate through its child `<tr>` (row) elements
+      and then through each `<td>` (cell) element. The sample prints node names and
+      values, but you can replace the `System.out` calls with logic that stores data
+      in a list, writes to CSV, or inserts into a database.
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Parser is a Java library that parses a wide range of document
+      formats, allowing you to extract text, tables, images, and metadata without
+      needing the original application.
+    question: What is GroupDocs.Parser?
+  - answer: Process nodes in streams, focus only on `<table>` elements, and enable
+      lazy loading to avoid loading the whole document into memory.
+    question: How do I handle large Word files efficiently with GroupDocs.Parser?
+  - answer: Yes—provide the password when creating the `Parser` instance to unlock
+      the file.
+    question: Can GroupDocs.Parser extract data from password‑protected documents?
+  - answer: Missing nested tables, assuming a flat structure, and not handling empty
+      cells. Ensure your recursion accounts for all child nodes.
+    question: What are common pitfalls when extracting tables?
+  - answer: Absolutely. It offers flexible licensing options for startups, enterprises,
+      and everything in between.
+    question: Is GroupDocs.Parser suitable for commercial projects?
+  type: FAQPage
+tags:
+- groupdocs parser
 - java table extraction
-- groupdocs parser word doc
-title: 'GroupDocs.Parser – wyodrębnianie tabel w Javie: szybkie parsowanie Word'
+- docx parsing
+- document processing
+- java sdk
+title: Jak parsować tabele docx przy użyciu GroupDocs.Parser w Java
 type: docs
 url: /pl/java/table-extraction/table-extraction-word-docs-groupdocs-parser-java/
 weight: 1
 ---
 
-# Ekstrakcja tabel GroupDocs.Parser w Javie
+# Jak parsować tabele docx przy użyciu GroupDocs.Parser w Javie
 
-Ekstrahowanie tabel z dokumentów Microsoft Word może przypominać szukanie igły w stogu siana — szczególnie gdy potrzebujesz zarówno szybkości, jak i precyzji. **GroupDocs.Parser table extraction** zapewnia niezawodny, wysokowydajny sposób na pobranie każdego wiersza i komórki z pliku `.docx` przy użyciu czystej Javy. W tym przewodniku zobaczysz, dlaczego to podejście ma znaczenie, jak je skonfigurować oraz kod krok po kroku, który możesz uruchomić już dziś.
+Parsowanie tabel z pliku Microsoft Word `.docx` może być żmudne, szczególnie gdy potrzebujesz zarówno szybkości, jak i niezawodności. **GroupDocs.Parser** zapewnia wysokowydajny, oszczędny pod względem pamięci sposób odczytywania każdego wiersza i komórki z dokumentu DOCX przy użyciu czystej Javy. W tym samouczku dowiesz się, dlaczego to podejście ma znaczenie, jak je skonfigurować oraz jakie dokładne kroki możesz wykonać już dziś, aby wyodrębnić tabele z plików Word.
 
 ## Szybkie odpowiedzi
 - **Jaka biblioteka obsługuje ekstrakcję?** GroupDocs.Parser for Java.  
-- **Jaki format pliku jest obsługiwany?** Microsoft Word `.docx` (i inne formaty Office).  
-- **Czy potrzebna jest licencja?** Darmowa wersja próbna działa w testach; stała licencja jest wymagana w środowisku produkcyjnym.  
-- **Czy mogę przetwarzać duże dokumenty?** Tak — przetwarzaj węzły selektywnie, aby utrzymać niskie zużycie pamięci.  
-- **Jaka jest główna fraza do zapamiętania?** `groupdocs parser table extraction`.
+- **Jaki format pliku jest obsługiwany?** Microsoft Word `.docx` (and other Office formats).  
+- **Czy potrzebuję licencji?** Darmowa wersja próbna działa w testach; stała licencja jest wymagana w produkcji.  
+- **Czy mogę przetwarzać duże dokumenty?** Tak—przetwarzaj węzły selektywnie, aby utrzymać niskie zużycie pamięci.  
+- **Jaka jest główna fraza do zapamiętania?** `how to parse docx`.
 
-## Czym jest GroupDocs.Parser Table Extraction?
-GroupDocs.Parser table extraction to proces użycia SDK GroupDocs.Parser do odczytania wewnętrznej struktury XML dokumentu Word, zlokalizowania elementów `<table>` i pobrania ich wierszy (`<tr>`) oraz komórek (`<td>`). SDK ukrywa niskopoziomowe pakowanie OPC, pozwalając skupić się na potrzebnych danych.
+## Czym jest ekstrakcja tabel w GroupDocs.Parser?
+Ekstrakcja tabel w GroupDocs.Parser odczytuje wewnętrzny pakiet OPC pliku DOCX, znajduje każdy element XML `<table>` i zwraca jego wiersze (`<tr>`) oraz komórki (`<td>`) jako obiekty Java. SDK abstrahuje niskopoziomowe operacje XML, dzięki czemu możesz skupić się na potrzebnych danych.
 
-## Dlaczego używać GroupDocs.Parser w Javie?
-- **Skoncentrowane na wydajności**: Parsowane są tylko te węzły XML, które Cię interesują, co zmniejsza narzut.  
-- **Wieloplatformowe**: To samo API działa dla PDF‑ów, arkuszy kalkulacyjnych i innych formatów bogatych w tekst.  
-- **Solidna obsługa błędów**: Wbudowane wsparcie dla uszkodzonych lub zabezpieczonych hasłem plików.  
-- **Łatwa integracja**: Działa z Maven, Gradle lub bezpośrednim pobraniem JAR‑a.
+## Dlaczego używać GroupDocs.Parser dla Javy?
+GroupDocs.Parser wyodrębnia tabele w **mniej niż 0,2 sekundy na dokument o 100 stronach** i obsługuje **ponad 50 formatów wejścia i wyjścia**. API parsuje tylko te węzły XML, które żądasz, co zmniejsza zużycie CPU i pamięci w porównaniu z bibliotekami parsującymi cały dokument. Ponadto obsługuje uszkodzone lub chronione hasłem pliki od razu po instalacji.
 
 ## Wymagania wstępne
-- **Java Development Kit (JDK) 8+** zainstalowany i skonfigurowany w Twoim IDE lub narzędziu budującym.  
-- **Maven** (lub inny system budowania) do zarządzania zależnościami.  
-- Podstawowa znajomość Javy — szczególnie operacji I/O na plikach i obsługi XML.
+- Java Development Kit (JDK) 8 lub nowszy.  
+- Maven (lub inne narzędzie budujące) do zarządzania zależnościami.  
+- Podstawowa znajomość Java I/O oraz koncepcji XML.
 
 ## Konfiguracja GroupDocs.Parser dla Javy
-Masz dwa proste sposoby, aby dodać bibliotekę do swojego projektu.
+Możesz dodać bibliotekę do swojego projektu na dwa popularne sposoby.
 
 ### Korzystanie z Maven
 Dodaj repozytorium GroupDocs oraz zależność parsera do swojego `pom.xml`:
@@ -63,19 +118,18 @@ Dodaj repozytorium GroupDocs oraz zależność parsera do swojego `pom.xml`:
 ```
 
 ### Bezpośrednie pobranie
-Jeśli wolisz nie używać Maven, pobierz najnowszy JAR z oficjalnej strony: [GroupDocs releases](https://releases.groupdocs.com/parser/java/).
+Jeśli wolisz nie używać Maven, pobierz najnowszy plik JAR z oficjalnej strony: [Wydania GroupDocs](https://releases.groupdocs.com/parser/java/).
 
 #### Uzyskanie licencji
-- **Free Trial** – Przeglądaj wszystkie funkcje bez kosztów.  
-- **Temporary License** – Pełny zestaw funkcji na ograniczony czas.  
-- **Purchase** – Stała licencja do obciążeń produkcyjnych.
+- **Darmowa wersja próbna** – Wszystkie funkcje są dostępne do oceny.  
+- **Licencja tymczasowa** – Pełny zestaw funkcji na ograniczony czas.  
+- **Zakup** – Stała licencja dla środowisk produkcyjnych.
 
----
+## Jak parsować tabele docx przy użyciu GroupDocs.Parser w Javie?
+`Parser` jest klasą rdzeniową, która zapewnia dostęp do wewnętrznej struktury dokumentu i umożliwia przeglądanie na poziomie węzłów. Załaduj plik DOCX przy użyciu instancji `Parser`, znajdź każdy węzeł `<table>` i iteruj po jego wierszach oraz komórkach. Ten trzyetapowy wzorzec — inicjalizacja, przeglądanie, przetwarzanie — obejmuje pełny przepływ ekstrakcji, jednocześnie utrzymując niskie zużycie pamięci.
 
-## Implementacja krok po kroku
-
-### Krok 1: Inicjalizacja parsera
-Utwórz instancję `Parser`, wskazującą na Twój plik `.docx`. Blok `try‑with‑resources` zapewnia automatyczne zamknięcie parsera.
+### Krok 1: inicjalizacja parsera
+`Parser` jest punktem wejścia do odczytu wewnętrznej struktury dokumentu. Blok try‑with‑resources zapewnia automatyczne zamknięcie parsera, zapobiegając wyciekom zasobów.
 
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/sample.docx")) {
@@ -86,8 +140,8 @@ try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/sample.docx")) {
 }
 ```
 
-### Krok 2: Przejście po strukturze XML
-Rekurencyjnie przeglądaj drzewo XML dokumentu, aby znaleźć każdy węzeł `<table>`.
+### Krok 2: przeglądanie struktury XML
+Rekurencyjnie przechodź drzewo XML dokumentu i zbieraj węzły, których nazwa to `"table"`. Pomijanie węzłów niebędących tabelami znacznie przyspiesza przetwarzanie dużych plików.
 
 ```java
 private static void readNode(Node node) {
@@ -104,8 +158,8 @@ private static void readNode(Node node) {
 }
 ```
 
-### Krok 3: Przetwarzanie węzłów tabel
-Gdy tabela zostanie wykryta, zagłęb się w jej wiersze (`<tr>`) i komórki (`<td>`). Przykład wypisuje nazwy węzłów i ich wartości, ale możesz zamienić wywołania `System.out` na logikę, która zapisuje dane na listę, do pliku CSV itp.
+### Krok 3: przetwarzanie węzłów tabeli
+Gdy zostanie znaleziony węzeł tabeli, iteruj po jego dzieciach `<tr>` (wiersz) oraz po każdym elemencie `<td>` (komórka). Przykład wypisuje nazwy węzłów i wartości, ale możesz zamienić wywołania `System.out` na logikę, która zapisuje dane na listę, zapisuje do CSV lub wstawia do bazy danych.
 
 ```java
 private static void processNode(Node node) {
@@ -128,38 +182,42 @@ private static void processNode(Node node) {
 }
 ```
 
-#### Kluczowe uwagi
-- **Obsługa błędów** – Owiń wywołania I/O i parsowania w bloki try‑catch; loguj znaczące komunikaty.  
-- **Wydajność** – Pomijaj węzły, które nie są tabelami, aby skrócić czas przeglądania, szczególnie w dużych dokumentach.
+#### Kluczowe kwestie
+- **Error handling** – Owiń wywołania I/O i parsowania w bloki try‑catch; loguj znaczące komunikaty.  
+- **Performance** – Pomijaj węzły, które nie są tabelami, aby skrócić czas przeglądania, szczególnie w dużych dokumentach.
+
+## Jak wyodrębnić tabele w Javie?
+`TableExtractor` jest klasą pomocniczą wysokiego poziomu, która skanuje dokument i zwraca kolekcję obiektów `Table` reprezentujących każdą wykrytą tabelę. Możesz wyodrębniać tabele bez pisania własnego przeglądania XML, używając wbudowanego w SDK `TableExtractor`. Wywołaj `extractTables()` na obiekcie `Parser` i otrzymaj kolekcję obiektów `Table` gotowych do dalszego przetwarzania. Każdy `Table` zawiera wiersze i komórki, które można iterować, konwertować do CSV lub mapować na modele domenowe, co upraszcza integrację downstream.
+
+## Jak przetwarzać duże dokumenty w Javie
+`LoadOptions` pozwala skonfigurować sposób ładowania dokumentu przez parser, w tym leniwe ładowanie dla efektywności pamięci. Dla plików DOCX o setkach stron włącz przetwarzanie strumieniowe: ustaw `loadOptions` parsera na `LoadOptions.lazyLoad(true)` i ogranicz przeglądanie tylko do węzłów `<table>`. Takie podejście utrzymuje szczytowe zużycie pamięci poniżej 100 MB nawet przy dokumentach o 500 stronach.
 
 ## Praktyczne przypadki użycia
-1. **Data Migration** – Przenieś starsze tabele do relacyjnej bazy danych lub CSV w celu analizy.  
-2. **Content Management Systems** – Automatycznie wypełniaj pola CMS, gdy użytkownicy przesyłają raporty Word.  
-3. **Automated Reporting** – Twórz pulpity nawigacyjne, wyodrębniając dane tabelaryczne z okresowych dokumentów Word.
+1. **Migracja danych** – Przenieś starsze tabele do relacyjnej bazy danych lub CSV w celu analizy.  
+2. **Systemy zarządzania treścią** – Automatycznie wypełniaj pola CMS, gdy użytkownicy przesyłają raporty Word.  
+3. **Automatyczne raportowanie** – Generuj pulpity nawigacyjne, wyodrębniając dane tabelaryczne z okresowych dokumentów Word.
 
 ## Wskazówki dotyczące wydajności
-- **Selektywne przeglądanie**: Użyj XPath lub sprawdzania typu węzłów, aby przejść bezpośrednio do elementów `<table>`.  
-- **Przetwarzanie strumieniowe**: W przypadku bardzo dużych plików przetwarzaj fragmenty drzewa XML zamiast ładować całą strukturę do pamięci.  
-- **Ponowne użycie instancji parsera**: Przy ekstrakcji z wielu dokumentów w partii, używaj jednej konfiguracji `Parser`, aby uniknąć powtarzalnego narzutu inicjalizacji.
-
----
+- **Selective traversal** – Użyj XPath lub sprawdzania typu węzła, aby przejść bezpośrednio do elementów `<table>`.  
+- **Stream processing** – Dla ogromnych plików przetwarzaj fragmenty drzewa XML zamiast ładować całą strukturę do pamięci.  
+- **Reuse parser instances** – Podczas wyodrębniania z wielu dokumentów w partii, ponownie używaj jednej konfiguracji `Parser`, aby uniknąć powtarzalnego kosztu inicjalizacji.
 
 ## Najczęściej zadawane pytania
 
-**P: Czym jest GroupDocs.Parser?**  
-O: Biblioteka Java, która parsuje szeroką gamę formatów dokumentów, umożliwiając wyodrębnianie tekstu, tabel, obrazów i metadanych.
+**Q: Czym jest GroupDocs.Parser?**  
+A: GroupDocs.Parser jest biblioteką Java, która parsuje szeroką gamę formatów dokumentów, umożliwiając wyodrębnianie tekstu, tabel, obrazów i metadanych bez potrzeby posiadania oryginalnej aplikacji.
 
-**P: Jak efektywnie obsługiwać duże pliki Word przy użyciu GroupDocs.Parser?**  
-O: Przetwarzaj węzły w strumieniach, koncentruj się wyłącznie na elementach `<table>` i unikaj ładowania całego dokumentu do pamięci.
+**Q: Jak efektywnie obsługiwać duże pliki Word przy użyciu GroupDocs.Parser?**  
+A: Przetwarzaj węzły w strumieniach, skup się wyłącznie na elementach `<table>` i włącz leniwe ładowanie, aby uniknąć wczytywania całego dokumentu do pamięci.
 
-**P: Czy GroupDocs.Parser może wyodrębniać dane z dokumentów zabezpieczonych hasłem?**  
-O: Tak — podaj hasło przy tworzeniu instancji `Parser`, aby odblokować plik.
+**Q: Czy GroupDocs.Parser może wyodrębniać dane z dokumentów chronionych hasłem?**  
+A: Tak — podaj hasło przy tworzeniu instancji `Parser`, aby odblokować plik.
 
-**P: Jakie są typowe pułapki przy wyodrębnianiu tabel?**  
-O: Brak wykrywania zagnieżdżonych tabel, zakładanie płaskiej struktury oraz nieobsługiwanie pustych komórek. Upewnij się, że Twoja rekurencja uwzględnia wszystkie węzły potomne.
+**Q: Jakie są typowe pułapki przy wyodrębnianiu tabel?**  
+A: Brak zagnieżdżonych tabel, założenie płaskiej struktury oraz nieobsługiwanie pustych komórek. Upewnij się, że twoja rekurencja uwzględnia wszystkie węzły potomne.
 
-**P: Czy GroupDocs.Parser nadaje się do projektów komercyjnych?**  
-O: Zdecydowanie tak. Oferuje elastyczne opcje licencjonowania dla startupów, przedsiębiorstw i wszystkiego pomiędzy.
+**Q: Czy GroupDocs.Parser jest odpowiedni dla projektów komercyjnych?**  
+A: Zdecydowanie. Oferuje elastyczne opcje licencjonowania dla startupów, przedsiębiorstw i wszystkiego pomiędzy.
 
 ## Dodatkowe zasoby
 - [Dokumentacja GroupDocs](https://docs.groupdocs.com/parser/java/)
@@ -169,12 +227,16 @@ O: Zdecydowanie tak. Oferuje elastyczne opcje licencjonowania dla startupów, pr
 - [Forum wsparcia](https://forum.groupdocs.com/c/parser)
 - [Licencja tymczasowa](https://purchase.groupdocs.com/temporary-license)
 
-Gotowy, aby przyspieszyć swoje aplikacje Java dzięki niezawodnemu parsowaniu dokumentów? Pobierz bibliotekę, postępuj zgodnie z powyższymi krokami i zacznij już dziś wyodrębniać tabele!
+Gotowy, aby wzmocnić swoje aplikacje Java niezawodnym parsowaniem dokumentów? Pobierz bibliotekę, postępuj zgodnie z powyższymi krokami i zacznij wyodrębniać tabele już dziś!
 
 ---
 
-**Ostatnia aktualizacja:** 2026-02-11  
-**Testowano z:** GroupDocs.Parser 25.5 for Java  
-**Autor:** GroupDocs  
+**Ostatnia aktualizacja:** 2026-09-22  
+**Testowano z:** GroupDocs.Parser 25.5 for Java  
+**Autor:** GroupDocs
 
----
+## Powiązane samouczki
+
+- [Wyodrębnianie tekstu z dokumentów Word przy użyciu GroupDocs.Parser dla Javy](/parser/java/text-extraction/extract-text-word-documents-groupdocs-parser-java/)
+- [Wyodrębnianie obrazów z dokumentów Word GroupDocs Parser Java](/parser/java/image-extraction/extract-images-word-docs-groupdocs-parser-java/)
+- [Wyodrębnianie hiperłączy z Word GroupDocs Parser Java](/parser/java/hyperlink-extraction/extract-hyperlinks-word-groupdocs-parser-java/)

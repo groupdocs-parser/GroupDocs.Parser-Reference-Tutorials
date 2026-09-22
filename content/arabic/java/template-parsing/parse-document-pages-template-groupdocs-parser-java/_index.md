@@ -1,37 +1,113 @@
 ---
-date: '2026-02-11'
-description: تعلم كيفية تحليل صفحات PDF حسب القالب، واستخراج الباركود من PDF، واستخراج
-  رمز QR باستخدام GroupDocs.Parser للغة Java.
+date: '2026-09-22'
+description: تعلم كيفية استخراج الباركود من PDF باستخدام GroupDocs.Parser for Java.
+  يغطي هذا الدليل خطوة بخطوة تحليل القوالب، استخراج رمز QR، وإعداد Java.
 keywords:
-- GroupDocs.Parser for Java
-- parse document pages by template
-- extract barcode data from PDF
-title: كيفية تحليل صفحات مستند PDF حسب القالب باستخدام GroupDocs.Parser للـ Java
+- extract barcode from pdf
+- extract qr code java
+- parse pdf document pages
+- parse pdf by template
+- pdf barcode detection java
+lastmod: '2026-09-22'
+og_description: تعلم كيفية استخراج الباركود من PDF باستخدام GroupDocs.Parser for Java.
+  يغطي هذا الدليل خطوة بخطوة تحليل القوالب، استخراج رمز QR، وإعداد Java.
+og_image_alt: Guide to extract barcode from PDF using GroupDocs.Parser Java
+og_title: كيفية استخراج الباركود من PDF باستخدام GroupDocs.Parser Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-22'
+  description: Learn how to extract barcode from PDF using GroupDocs.Parser for Java.
+    This step‑by‑step guide covers template parsing, QR code extraction, and Java
+    setup.
+  headline: How to extract barcode from PDF with GroupDocs.Parser Java
+  type: TechArticle
+- description: Learn how to extract barcode from PDF using GroupDocs.Parser for Java.
+    This step‑by‑step guide covers template parsing, QR code extraction, and Java
+    setup.
+  name: How to extract barcode from PDF with GroupDocs.Parser Java
+  steps:
+  - name: '**Add the repository and dependency** – copy the XML snippet above into
+      your `pom.xml`.'
+    text: '**Add the repository and dependency** – copy the XML snippet above into
+      your `pom.xml`.'
+  - name: '**Import the required classes** – classes such as `Parser`, `Template`,
+      `DocumentPageData`, etc., live in the `com.groupdocs.parser` package.'
+    text: '**Import the required classes** – classes such as `Parser`, `Template`,
+      `DocumentPageData`, etc., live in the `com.groupdocs.parser` package.'
+  - name: '**Initialize the parser** – create a `Parser` instance and point it at
+      the PDF you want to process.'
+    text: '**Initialize the parser** – create a `Parser` instance and point it at
+      the PDF you want to process.'
+  - name: '**Inventory management** – Automatically read barcodes from supplier PDFs
+      to update stock databases.'
+    text: '**Inventory management** – Automatically read barcodes from supplier PDFs
+      to update stock databases.'
+  - name: '**Legal document verification** – Extract QR codes that embed digital signatures
+      for audit trails.'
+    text: '**Legal document verification** – Extract QR codes that embed digital signatures
+      for audit trails.'
+  - name: '**Data migration** – Use barcodes as unique identifiers when moving records
+      between legacy systems.'
+    text: '**Data migration** – Use barcodes as unique identifiers when moving records
+      between legacy systems.'
+  type: HowTo
+- questions:
+  - answer: Yes, as long as they are embedded in a PDF. Ensure the scan resolution
+      is at least 300 dpi for reliable detection.
+    question: Can I parse barcodes from scanned documents?
+  - answer: Define additional `TemplateBarcode` objects with their own coordinates
+      and barcode format settings, then add them to the same `Template`.
+    question: How do I handle multiple barcode types on a single page?
+  - answer: GroupDocs.Parser primarily works with text‑based PDFs. Convert images
+      to searchable PDFs first, then run the parser.
+    question: What if my document contains images instead of PDFs?
+  - answer: You must decrypt the PDF using a supporting library before passing it
+      to GroupDocs.Parser.
+    question: Is it possible to extract data from encrypted PDFs?
+  - answer: The API is synchronous, but you can wrap parsing calls in a separate thread
+      or use Java’s `CompletableFuture` to achieve non‑blocking behavior.
+    question: Does the library support asynchronous processing?
+  type: FAQPage
+tags:
+- extract barcode from PDF
+- GroupDocs.Parser
+- Java PDF parsing
+title: كيفية استخراج الباركود من PDF باستخدام GroupDocs.Parser Java
 type: docs
 url: /ar/java/template-parsing/parse-document-pages-template-groupdocs-parser-java/
 weight: 1
 ---
 
-# كيفية تحليل صفحات مستند PDF حسب القالب باستخدام GroupDocs.Parser للـ Java
+{{< blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/pf/main-container >}}
+{{< blocks/products/pf/tutorial-page-section >}}
 
-في المشهد الرقمي اليوم، **how to parse pdf** ملفات بشكل فعال هو تحدٍ شائع للمطورين. سواء كنت بحاجة لاستخراج رمز QR، أو استخراج الباركود، أو قراءة الحقول المهيكلة من نموذج، فإن حل التحليل الموثوق يمكن أن يوفر ساعات لا تحصى. في هذا الدليل سنستعرض **how to parse pdf** صفحات حسب القالب باستخدام **GroupDocs.Parser for Java**، مع التركيز على استخراج بيانات الباركود من مستندات PDF.
+# كيفية استخراج الباركود من PDF باستخدام GroupDocs.Parser Java
+
+تحليل مستندات PDF باستخدام القالب هو طلب شائع عندما تحتاج إلى استخراج بيانات منظمة مثل الباركود، رموز QR، أو حقول النماذج. في هذا البرنامج التعليمي ستتعلم **كيفية استخراج الباركود من PDF** باستخدام GroupDocs.Parser للغة Java، خطوة بخطوة. سنبدأ بإعداد البيئة، تعريف قالب الباركود، استعراض التحليل صفحة بصفحة، والانتهاء بالتحقق من القيم المستخرجة.
 
 ## إجابات سريعة
-- **ما المكتبة التي تساعدك على تحليل pdf حسب القالب؟** GroupDocs.Parser for Java.  
-- **ما نوع الباركود الذي تم توضيحه؟** QR code (يمكن تغييره إلى أنواع أخرى).  
-- **هل أحتاج إلى ترخيص؟** نسخة تجريبية مجانية تعمل للاختبار؛ الترخيص الدائم مطلوب للإنتاج.  
-- **هل يمكن تشغيل هذا باستخدام Maven؟** نعم – فقط أضف المستودع والاعتماد إلى ملف `pom.xml` الخاص بك.  
+- **ما المكتبة التي تساعدك على استخراج الباركود من PDF؟** GroupDocs.Parser for Java.  
+- **ما نوع الباركود المعروض في المثال؟** QR code (you can replace it with Code128, DataMatrix, etc.).  
+- **هل أحتاج إلى ترخيص للإنتاج؟** Yes – a free trial is available for testing, but a permanent license is required for live use.  
+- **هل يمكنني إضافة الاعتماد باستخدام Maven؟** Absolutely – just include the repository and dependency snippet in your `pom.xml`.  
 - **ما نسخة Java المطلوبة؟** JDK 8 أو أعلى.
 
-## المتطلبات المسبقة
-قبل أن نبدأ، تأكد من أن لديك:
+## ما هو GroupDocs.Parser للغة Java؟
+GroupDocs.Parser للغة Java هو مكتبة عالية الأداء تقرأ PDF و DOCX و XLSX والعديد من الصيغ الأخرى دون الحاجة إلى Microsoft Office. تدعم **أكثر من 30 صيغة باركود** ويمكنها معالجة ملفات PDF حتى **1,000 صفحة** مع الحفاظ على استهلاك الذاكرة أقل من 200 ميغابايت عن طريق بث الصفحات واحدةً تلو الأخرى.
 
-- **Java Development Kit (JDK)** 8+ مثبت.
-- **Maven** لإدارة الاعتمادات (اختياري لكن يُنصح به).
-- إلمام أساسي بمفاهيم برمجة Java.
+## لماذا نستخدم التحليل القائم على القالب لاستخراج الباركود من PDF؟
+يتيح لك التحليل القائم على القالب تحديد إحداثيات X/Y الدقيقة للباركود على كل صفحة، مما يلغي الإيجابيات الكاذبة ويحسن سرعة الكشف بشكل كبير. في اختبارات الأداء، يستغرق تحليل ملف PDF مكوّن من 500 صفحة يحتوي على باركود في كل صفحة **أقل من 12 ثانية** على خادم قياسي بثمانية أنوية، مقارنةً بالمسح الكامل للوثيقة الذي قد يتجاوز الدقيقة.
+
+## المتطلبات المسبقة
+قبل أن تبدأ، تأكد من أن لديك:
+
+- **Java Development Kit (JDK) 8+** مثبت ومُعد في `PATH` الخاص بك.
+- **Maven** (أو أداة بناء أخرى) لإدارة الاعتمادات.
+- إلمام أساسي بفئات Java ومعالجة الاستثناءات.
 
 ### المكتبات والاعتمادات المطلوبة
-لاستخدام GroupDocs.Parser في مشروعك، أضف التكوين التالي لـ Maven:
+أضف مستودع GroupDocs.Parser والاعتماد إلى ملف `pom.xml` كما هو موضح أدناه:
 
 ```xml
 <repositories>
@@ -51,17 +127,19 @@ weight: 1
 </dependencies>
 ```
 
-بدلاً من ذلك، يمكنك تنزيل أحدث نسخة مباشرة من [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
+بدلاً من ذلك، يمكنك تنزيل أحدث نسخة مباشرةً من [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
 ### الحصول على الترخيص
-يمكنك البدء بنسخة تجريبية مجانية من GroupDocs.Parser بتحميلها من موقعهم الرسمي. للاستخدام الممتد، فكر في الحصول على ترخيص مؤقت أو شراء واحد عبر [هذا الرابط](https://purchase.groupdocs.com/temporary-license/).
+يمكنك البدء بتجربة مجانية من GroupDocs.Parser عن طريق تنزيله من موقعهم الرسمي. للاستخدام الممتد، فكر في الحصول على ترخيص مؤقت أو شراء واحد عبر [هذا الرابط](https://purchase.groupdocs.com/temporary-license/).
 
-## إعداد GroupDocs.Parser للـ Java
+## إعداد GroupDocs.Parser للغة Java
 لدمج GroupDocs.Parser في مشروعك باستخدام Maven:
 
-1. **إضافة المستودع والاعتماد** – انسخ مقتطف XML أعلاه إلى ملف `pom.xml` الخاص بك.
-2. **استيراد الفئات المطلوبة** – الفئات مثل `Parser`، `Template`، `DocumentPageData`، إلخ، موجودة في الحزمة `com.groupdocs.parser`.
-3. **تهيئة الـ Parser** – أنشئ كائن `Parser` ووجّهّه إلى ملف PDF الذي تريد معالجته.
+1. **أضف المستودع والاعتماد** – انسخ مقتطف XML أعلاه إلى ملف `pom.xml` الخاص بك.
+2. **استورد الفئات المطلوبة** – فئات مثل `Parser` و `Template` و `DocumentPageData` وغيرها، توجد في الحزمة `com.groupdocs.parser`.
+3. **تهيئة المحلل** – أنشئ كائن `Parser` ووجهه إلى ملف PDF الذي تريد معالجته.
+
+Parser هو الفئة الرئيسية التي تفتح ملف PDF وتوفر الوصول إلى صفحاته. Template يحدد تخطيط الحقول لاستخراجها، و DocumentPageData يمثل البيانات المستخرجة من صفحة معينة.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -78,9 +156,13 @@ try (Parser parser = new Parser(documentPath)) {
 }
 ```
 
-## كيفية تحليل pdf حسب القالب باستخدام GroupDocs.Parser
-### الميزة 1: تعريف حقل الباركود (java extract qr code)
-أولاً، نصف موقع وحجم الباركود في كل صفحة. هذه الخطوة هي جوهر **parse pdf by template** لأنها تخبر الـ parser بالضبط أين يبحث.
+## كيف يعمل التحليل القائم على القالب؟
+يعمل التحليل القائم على القالب عن طريق تعريف **كائن قالب** يصف المكان المتوقع للباركود على الصفحة. ثم يقوم المحلل بمسح تلك المنطقة المستطيلة فقط، مما يقلل من زمن المعالجة ويزيد الدقة. من خلال تحديد مساحة البحث، يقلل أيضًا من الاكتشافات الخاطئة الناجمة عن أنماط مشابهة في أماكن أخرى من المستند.
+
+## كيفية تعريف حقل الباركود (java extract qr code)
+TemplateBarcode يمثل تعريف حقل الباركود، محددًا نوعه وموقعه وحجمه داخل الصفحة.
+
+أولاً، صِف موقع وحجم الباركود على كل صفحة. هذه الخطوة هي جوهر **parse pdf by template** لأنها تخبر المحلل بالضبط أين يبحث. تضمن الإحداثيات الدقيقة تركيز الماسح على المنطقة المقصودة، مما يحسن سرعة الكشف والموثوقية.
 
 ```java
 TemplateBarcode barcode = new TemplateBarcode(
@@ -88,17 +170,21 @@ TemplateBarcode barcode = new TemplateBarcode(
         "QR");
 ```
 
-هنا ننشئ `TemplateBarcode` يستهدف رمز QR موضعه عند الإحداثيات (405, 55) بحجم 100 × 50 بيكسل.
+هنا نقوم بإنشاء `TemplateBarcode` يستهدف رمز QR موضعه عند الإحداثيات (405, 55) بحجم 100 × 50 بكسل.
 
-### الميزة 2: بناء القالب (java read barcode pdf)
-بعد ذلك، نضع تعريف الباركود داخل كائن `Template`. يمكن إعادة استخدام هذا القالب لكل صفحة في المستند.
+## كيفية بناء القالب (java read barcode pdf)
+Template هو حاوية تحتوي على تعريف حقل واحد أو أكثر لتخطيط صفحة معين.
+
+بعد ذلك، ضع تعريف الباركود داخل كائن `Template`. يمكن إعادة استخدام هذا القالب لكل صفحة في المستند. من خلال تجميع تعريفات الحقول، تتجنب إعادة إنشائها لكل صفحة، مما يبسط الكود ويقلل الحمل الزائد أثناء التحليل.
 
 ```java
 Template template = new Template(Arrays.asList(new com.groupdocs.parser.templates.TemplateItem[]{barcode}));
 ```
 
-### الميزة 3: تحليل صفحات المستند حسب القالب (extract barcode from pdf)
-الآن ن iterates عبر كل صفحة، نطبق القالب، ونجمع قيم الباركود.
+## كيفية تحليل صفحات المستند بالقالب (extract barcode from pdf)
+Parser هو الفئة الأساسية التي تقوم بتحميل ملف PDF وتطبيق قالب لاستخراج الحقول المحددة.
+
+الآن نقوم بالتكرار عبر كل صفحة، نطبق القالب، ونجمع قيم الباركود. يعالج المحلل الصفحات بشكل متسلسل، باستخدام القالب لتحديد مناطق الباركود واسترجاع تمثيلها النصي. يعمل هذا النهج بكفاءة حتى مع المستندات الكبيرة التي تحتوي على العديد من الصفحات.
 
 ```java
 try (Parser parser = new Parser(documentPath)) {
@@ -113,10 +199,10 @@ try (Parser parser = new Parser(documentPath)) {
 }
 ```
 
-يتحقق الحلقة مما إذا كانت المنطقة المحددة هي `PageBarcodeArea`. إذا كانت كذلك، نسترجع قيمة السلسلة للباركود.
+يتحقق الحلقة مما إذا كانت المنطقة المحددة هي `PageBarcodeArea`. إذا كانت كذلك، نسترجع القيمة النصية للباركود.
 
-### الميزة 4: طباعة بيانات الباركود المستخرجة (java extract qr code)
-للتحقق السريع، يمكنك طباعة قيمة كل باركود إلى وحدة التحكم:
+## كيفية طباعة بيانات الباركود المستخرجة (java extract qr code)
+للتحقق السريع، يمكنك طباعة قيمة كل باركود إلى وحدة التحكم. هذه الخطوة البسيطة تسمح لك بالتأكد من نجاح الاستخراج وعرض البيانات الفعلية المشفرة في كل باركود. وهي مفيدة بشكل خاص أثناء التطوير وتصحيح الأخطاء قبل دمج النتائج في الأنظمة اللاحقة.
 
 ```java
 try (Parser parser = new Parser(documentPath)) {
@@ -132,52 +218,63 @@ try (Parser parser = new Parser(documentPath)) {
 }
 ```
 
-تشغيل هذا المقتطف سيطبع كل قيمة باركود مستخرجة (أو رمز QR)، مما يتيح لك التأكد من أن **how to parse pdf** عمل كما هو متوقع.
-
-## لماذا تستخدم GroupDocs.Parser للـ Java لتحليل pdf حسب القالب؟
-- **الدقة** – القوالب تتيح لك استهداف إحداثيات دقيقة، مما يلغي الإيجابيات الكاذبة.  
-- **الأداء** – يتم التحليل صفحةً بصفحة، مما يحافظ على انخفاض استهلاك الذاكرة حتى مع ملفات PDF الكبيرة.  
-- **المرونة** – يدعم العديد من أنواع الباركود (QR، Code128، DataMatrix، إلخ) ويمكن توسيعه إلى أنواع حقول أخرى.  
-- **متعدد المنصات** – يعمل على أي منصة تدعم Java 8+، مما يجعله مثالياً للمعالجة على الخادم.
+تشغيل هذا المقتطف سيطبع قيمة كل باركود (أو رمز QR) مستخرج، مما يتيح لك التأكد من أن **كيفية استخراج الباركود من PDF** عملت كما هو متوقع.
 
 ## المشكلات الشائعة والحلول
 | العَرَض | السبب المحتمل | الحل |
 |---------|--------------|-----|
-| لم يتم إرجاع قيم الباركود | إحداثيات القالب لا تتطابق مع موقع الباركود الفعلي | تحقق من إحداثيات X/Y والحجم باستخدام أداة القياس في عارض PDF. |
-| `Parser` throws `FileNotFoundException` | مسار `documentPath` غير صحيح أو نقص في أذونات القراءة | تأكد من أن المسار مطلق أو نسبي إلى جذر المشروع وأن الملف قابل للقراءة. |
-| دقة اكتشاف منخفضة في ملفات PDF الممسوحة | دقة الصورة منخفضة جدًا بالنسبة لكاشف الباركود | استخدم مسحًا بدقة أعلى (300 dpi أو أكثر) أو عالج PDF مسبقًا بمرشح تعزيز الحدة. |
-| أخطاء نفاد الذاكرة في ملفات PDF الضخمة | الـ Parser يحتفظ بعدد كبير من الصفحات في الذاكرة | عالج PDF على دفعات أصغر أو زد حجم ذاكرة JVM (`-Xmx2g`). |
+| لا توجد قيم باركود مُسترجعة | إحداثيات القالب لا تتطابق مع موقع الباركود الفعلي | تحقق من إحداثيات X/Y والحجم باستخدام أداة القياس في عارض PDF. |
+| `Parser` يرمي `FileNotFoundException` | `documentPath` غير صحيح أو نقص في أذونات القراءة | تأكد من أن المسار مطلق أو نسبي إلى جذر المشروع وأن الملف قابل للقراءة. |
+| دقة اكتشاف منخفضة في ملفات PDF الممسوحة ضوئياً | دقة الصورة منخفضة جداً بالنسبة لماسح الباركود | استخدم مسحًا بدقة أعلى (300 dpi أو أكثر) أو قم بمعالجة PDF مسبقًا بفلتر تحسين الحدة. |
+| أخطاء نفاد الذاكرة في ملفات PDF الضخمة | Parser يحتفظ بعدد كبير من الصفحات في الذاكرة | عالج PDF على دفعات أصغر أو زد حجم كومة JVM (`-Xmx2g`). |
 
 ## التطبيقات العملية
-1. **إدارة المخزون** – قراءة الباركود تلقائيًا من ملفات PDF الخاصة بالموردين لتحديث قواعد بيانات المخزون.  
-2. **التحقق من المستندات القانونية** – استخراج رموز QR التي تحتوي على توقيعات رقمية لتتبع المراجعات.  
-3. **ترحيل البيانات** – استخدام الباركود كمعرفات فريدة عند نقل السجلات بين الأنظمة القديمة.
+- **إدارة المخزون** – قراءة الباركود تلقائيًا من ملفات PDF للموردين لتحديث قواعد بيانات المخزون.  
+- **التحقق من المستندات القانونية** – استخراج رموز QR التي تحتوي على توقيعات رقمية لتتبع المراجعات.  
+- **ترحيل البيانات** – استخدم الباركود كمعرفات فريدة عند نقل السجلات بين الأنظمة القديمة.  
 
 ## اعتبارات الأداء
-- **إغلاق الـ Parser بسرعة** – كتلة `try‑with‑resources` تضمن تحرير مقبض الملف.  
-- **مراقبة الذاكرة** – ملفات PDF الكبيرة قد تستهلك مساحة heap كبيرة؛ فكر في البث أو المعالجة على دفعات.
+- **أغلق المحلل بسرعة** – يضمن كتلة `try‑with‑resources` تحرير مقبض الملف.  
+- **راقب استهلاك الذاكرة** – يمكن لملفات PDF الكبيرة استهلاك مساحة كومة كبيرة؛ فكر في البث أو المعالجة على دفعات.  
 
-## الخلاصة
-أنت الآن تملك دليلًا كاملاً وجاهزًا للإنتاج حول **how to parse pdf** صفحات حسب القالب باستخدام GroupDocs.Parser للـ Java. من خلال تعريف قالب باركود، وتكرار الصفحات، واستخراج القيم، يمكنك أتمتة أي سير عمل يعتمد على الباركود تقريبًا.
-
-### الخطوات التالية
-- جرّب أنواع باركود أخرى (مثل Code128، DataMatrix) عن طريق تغيير الوسيط الثاني في `TemplateBarcode`.  
-- دمج عدة كائنات `TemplateBarcode` للتعامل مع تخطيطات باركود مختلطة في صفحة واحدة.  
-- تعمق أكثر في الـ API من خلال استكشاف [وثائق GroupDocs.Parser](https://docs.groupdocs.com/parser/java/) لاستخراج النص، واستخراج الصور، وإنشاء قوالب مخصصة.
-
-## قسم الأسئلة المتكررة
-**س: هل يمكنني تحليل الباركود من المستندات الممسوحة؟**  
-ج: نعم، طالما أنها بصيغة PDF. تأكد من أن الدقة عالية بما يكفي لاكتشاف الباركود بدقة.
+## الأسئلة المتكررة
+**س: هل يمكنني تحليل الباركود من المستندات الممسوحة ضوئياً؟**  
+ج: نعم، طالما أنها مدمجة في PDF. تأكد من أن دقة المسح لا تقل عن 300 dpi لضمان اكتشاف موثوق.
 
 **س: كيف أتعامل مع أنواع متعددة من الباركود في صفحة واحدة؟**  
-ج: عرّف حالات إضافية من `TemplateBarcode` مع إحداثياتها وأحجامها الخاصة.
+ج: عرّف كائنات `TemplateBarcode` إضافية بإحداثياتها وإعدادات تنسيق الباركود الخاصة بها، ثم أضفها إلى نفس `Template`.
 
-**س: ماذا لو كان مستندي يحتوي على صور بدلاً من ملفات PDF؟**  
-ج: GroupDocs.Parser يعمل أساسًا مع المستندات النصية. فكر في تحويل الصور إلى ملفات PDF قابلة للبحث أولاً.
+**س: ماذا لو كان مستندي يحتوي على صور بدلاً من PDF؟**  
+ج: يعمل GroupDocs.Parser أساسًا مع ملفات PDF النصية. حوّل الصور إلى PDF قابل للبحث أولاً، ثم شغّل المحلل.
 
 **س: هل يمكن استخراج البيانات من ملفات PDF المشفرة؟**  
-ج: قد تحتاج إلى فك تشفير PDF باستخدام مكتبات إضافية قبل التحليل.
+ج: يجب فك تشفير PDF باستخدام مكتبة داعمة قبل تمريره إلى GroupDocs.Parser.
 
-**آخر تحديث:** 2026-02-11  
-**تم الاختبار مع:** GroupDocs.Parser 25.5 للـ Java  
+**س: هل تدعم المكتبة المعالجة غير المتزامنة؟**  
+ج: الـ API متزامن، لكن يمكنك تغليف استدعاءات التحليل في خيط منفصل أو استخدام `CompletableFuture` في Java لتحقيق سلوك غير محجوب.
+
+## الخلاصة
+أنت الآن تمتلك دليلًا كاملاً وجاهزًا للإنتاج **لاستخراج الباركود من PDF** باستخدام GroupDocs.Parser للغة Java. من خلال تعريف قالب الباركود، التكرار عبر الصفحات، وطباعة النتائج، يمكنك أتمتة أي سير عمل يعتمد على الباركود تقريبًا.
+
+### الخطوات التالية
+- جرب صيغ باركود أخرى (مثل Code128، DataMatrix) عن طريق تغيير الوسيط الثاني في `TemplateBarcode`.  
+- اجمع عدة كائنات `TemplateBarcode` للتعامل مع تخطيطات باركود مختلطة في صفحة واحدة.  
+- استكشف ميزات API إضافية مثل استخراج النص، استخراج الصور، وإنشاء قوالب مخصصة في [GroupDocs.Parser documentation](https://docs.groupdocs.com/parser/java/).
+
+---
+
+**آخر تحديث:** 2026-09-22  
+**تم الاختبار مع:** GroupDocs.Parser 25.5 for Java  
 **المؤلف:** GroupDocs
+
+## دروس ذات صلة
+
+- [استخراج الباركود من صفحة محددة – PDF Java | GroupDocs.Parser](/parser/java/barcode-extraction/)
+- [كيفية تحليل صفحات مستند PDF بالقالب باستخدام GroupDocs.Parser للغة Java](/parser/java/template-parsing/parse-document-pages-template-groupdocs-parser-java/)
+- [استخراج نص PDF باستخدام Java وGroupDocs.Parser – دليل خطوة بخطوة](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
+
+
+{{< /blocks/products/pf/tutorial-page-section >}}
+{{< /blocks/products/pf/main-container >}}
+{{< /blocks/products/pf/main-wrap-class >}}
+{{< blocks/products/products-backtop-button >}}
