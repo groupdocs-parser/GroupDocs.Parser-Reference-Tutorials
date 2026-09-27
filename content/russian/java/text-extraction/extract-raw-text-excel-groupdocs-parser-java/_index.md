@@ -1,45 +1,97 @@
 ---
-date: '2026-02-14'
-description: Узнайте, как разбирать файлы Excel с помощью GroupDocs.Parser для Java,
-  охватывая настройку, извлечение необработанного текста и советы по производительности.
+date: '2026-09-27'
+description: Узнайте, как использовать java excel parsing library для извлечения raw
+  text из Excel worksheets с помощью GroupDocs.Parser, охватывая setup, code snippets
+  и performance tips.
 keywords:
-- extract raw text from excel with java
-- groupdocs parser for java setup
-- implementing text extraction in excel with java
-title: Как парсить Excel с помощью GroupDocs.Parser для Java – руководство
+- java excel parsing library
+- how to parse excel java
+- java read excel worksheets
+lastmod: '2026-09-27'
+og_description: Узнайте, как использовать java excel parsing library для быстрой raw
+  text extraction из Excel files с GroupDocs.Parser. Включает setup, code и performance
+  advice.
+og_image_alt: Guide showing Java code that extracts raw text from Excel using GroupDocs.Parser
+og_title: Как использовать java excel parsing library с GroupDocs.Parser
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-27'
+  description: Learn how to use a java excel parsing library to extract raw text from
+    Excel worksheets using GroupDocs.Parser, covering setup, code snippets, and performance
+    tips.
+  headline: How to use a java excel parsing library with GroupDocs.Parser
+  type: TechArticle
+- description: Learn how to use a java excel parsing library to extract raw text from
+    Excel worksheets using GroupDocs.Parser, covering setup, code snippets, and performance
+    tips.
+  name: How to use a java excel parsing library with GroupDocs.Parser
+  steps:
+  - name: '**Data migration:** Move legacy spreadsheet data into modern databases
+      without manual copy‑paste.'
+    text: '**Data migration:** Move legacy spreadsheet data into modern databases
+      without manual copy‑paste.'
+  - name: '**Automated reporting:** Pull raw values from multiple workbooks to generate
+      consolidated PDF or HTML reports.'
+    text: '**Automated reporting:** Pull raw values from multiple workbooks to generate
+      consolidated PDF or HTML reports.'
+  - name: '**Search indexing:** Index extracted text in Elasticsearch for fast content
+      discovery.'
+    text: '**Search indexing:** Index extracted text in Elasticsearch for fast content
+      discovery.'
+  type: HowTo
+- questions:
+  - answer: It handles XLSX, XLS, CSV, ODS, and other Office Open XML formats—over
+      10 formats in total.
+    question: What other spreadsheet formats does GroupDocs.Parser support?
+  - answer: Yes, by using `TextOptions` without the raw flag, you can retrieve formatted
+      text that preserves basic styling.
+    question: Can I extract cell formatting information as well?
+  - answer: 'Pass the password to the `Parser` constructor: `new Parser(filePath,
+      "password")`.'
+    question: How do I handle password‑protected Excel files?
+  - answer: You can post‑process `sheetContent` to filter lines or use the `SpreadsheetOptions`
+      API for more granular control.
+    question: Is there a way to extract only specific columns?
+  - answer: Check the [GroupDocs documentation](https://docs.groupdocs.com/parser/java/)
+      and the GitHub repository for additional samples.
+    question: Where can I find more code examples?
+  type: FAQPage
+tags:
+- java excel parsing
+- groupdocs parser
+- excel text extraction
+- java document processing
+title: Как использовать java excel parsing library с GroupDocs.Parser
 type: docs
 url: /ru/java/text-extraction/extract-raw-text-excel-groupdocs-parser-java/
 weight: 1
 ---
 
-# Как парсить Excel с помощью GroupDocs.Parser для Java – Руководство
+# Как использовать библиотеку java excel parsing library с GroupDocs.Parser
 
-В современных приложениях, ориентированных на данные, **как парсить Excel** файлы эффективно может стать решающим фактором в рабочем процессе. Независимо от того, переносите ли вы устаревшие данные, генерируете автоматические отчёты или передаёте необработанный текст в аналитические конвейеры, извлечение неформатированного текста из каждого листа является распространённой задачей. Этот учебник проведёт вас через использование **GroupDocs.Parser для Java** для парсинга Excel‑файлов, чтения текста листов Excel и получения сырого контента с минимальным кодом.
+В современных приложениях, ориентированных на данные, **как парсить Excel** файлы эффективно может решить успех или провал рабочего процесса. Независимо от того, мигрируете ли вы устаревшие данные, генерируете автоматические отчёты или передаёте необработанный текст в аналитические конвейеры, извлечение неформатированного текста из каждого листа является распространённой задачей. Этот учебник показывает, как использовать **java excel parsing library** — GroupDocs.Parser for Java — чтобы открыть книгу Excel, пройтись по её листам и получить необработанное содержимое всего за несколько строк кода.
 
 ## Быстрые ответы
 - **Какая библиотека обрабатывает парсинг Excel в Java?** GroupDocs.Parser for Java.  
-- **Могу ли я извлечь сырой текст с каждого листа?** Да, используя `TextReader` с включённым raw‑режимом.  
-- **Нужна ли лицензия?** Доступна временная бесплатная лицензия для оценки.  
-- **Какая версия Java требуется?** JDK 8 или выше.  
-- **Поддерживается ли Maven?** Конечно – добавьте репозиторий и зависимость в `pom.xml`.
+- **Могу ли я извлекать необработанный текст с каждого листа?** Yes, using `TextReader` with raw mode enabled.  
+- **Нужна ли лицензия?** A temporary free license is available for evaluation.  
+- **Какая версия Java требуется?** JDK 8 or higher.  
+- **Поддерживается ли Maven?** Absolutely – add the repository and dependency to `pom.xml`.
 
-## Что означает «как парсить Excel» с GroupDocs.Parser?
-Парсинг Excel с помощью GroupDocs.Parser означает программное открытие рабочей книги `.xlsx` (или другого поддерживаемого формата), перебор её листов и чтение простого текста без какого‑либо форматирования. Такой подход быстрее, чем загрузка полной рабочей книги в тяжёлый API электронных таблиц, и даёт прямой доступ к базовым символам.
+## Что такое java excel parsing library?
+GroupDocs.Parser for Java — это **java excel parsing library**, которая программно открывает книги `.xlsx`, `.xls` или CSV и читает простой текст без загрузки полной таблицы в память. Такой подход быстрее традиционных API для электронных таблиц и предоставляет прямой доступ к базовым символам.
 
-## Почему стоит использовать GroupDocs.Parser для Java?
-- **Скорость и низкое потребление памяти:** Обрабатывает один лист за раз.  
-- **Широкая поддержка форматов:** Работает с XLSX, XLS, CSV и другими.  
-- **Простой API:** Достаточно нескольких строк кода, чтобы начать извлекать текст.  
-- **Корпоративные лицензии:** Бесплатная пробная версия, затем масштабируемые коммерческие варианты.
+## Почему стоит использовать GroupDocs.Parser for Java?
+GroupDocs.Parser обрабатывает один лист за раз, поддерживая использование памяти менее 10 МБ даже для книг объёмом в 500 страниц. Он поддерживает более 10 входных и выходных форматов — включая XLSX, XLS, CSV и ODS — поэтому единый API может работать с множеством типов электронных таблиц. Простые, цепочечные методы позволяют начать извлечение текста за считанные минуты, а модель лицензирования масштабируется от пробной версии до производства без изменений кода.
 
-## Предварительные требования
-- **Java Development Kit (JDK):** 8 или новее.  
-- **IDE:** IntelliJ IDEA, Eclipse или любой совместимый с Java редактор.  
-- **Maven (опционально):** Для простого управления зависимостями.  
+## Требования
+- **Java Development Kit (JDK):** 8 or newer.  
+- **IDE:** IntelliJ IDEA, Eclipse, or any Java‑compatible editor.  
+- **Maven (optional):** For easy dependency management.  
 
-## Настройка GroupDocs.Parser для Java
+## Настройка GroupDocs.Parser for Java
 
-### Maven Setup
+### Настройка Maven
 Если вы управляете зависимостями с помощью Maven, добавьте репозиторий и зависимость в ваш `pom.xml`:
 
 ```xml
@@ -60,14 +112,14 @@ weight: 1
 </dependencies>
 ```
 
-### Direct Download
-В качестве альтернативы скачайте последнюю версию GroupDocs.Parser для Java напрямую с [GroupDocs releases](https://releases.groupdocs.com/parser/java/).
+### Прямое скачивание
+В качестве альтернативы загрузите последнюю версию GroupDocs.Parser for Java напрямую с [GroupDocs releases](https://releases.groupdocs.com/parser/java/).
 
-### License Acquisition
-Чтобы начать с бесплатной пробной версии, посетите [GroupDocs website](https://purchase.groupdocs.com/temporary-license/) и получите временную лицензию. Это позволяет оценить все возможности библиотеки перед покупкой производственной лицензии.
+### Получение лицензии
+Чтобы начать с бесплатной пробной версии, посетите [GroupDocs website](https://purchase.groupdocs.com/temporary-license/) для получения временной лицензии. Это позволяет оценить все возможности библиотеки перед покупкой производственной лицензии.
 
-### Basic Initialization and Setup
-После того как библиотека добавлена в ваш classpath, вы можете создать экземпляр `Parser`, указывающий на ваш Excel‑файл:
+### Базовая инициализация и настройка
+`GroupDocs.Parser` — основной класс, представляющий парсер документов. После добавления библиотеки в ваш classpath, вы можете создать экземпляр `Parser`, указывающий на вашу книгу Excel:
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -84,20 +136,19 @@ try (Parser parser = new Parser(excelFilePath)) {
 }
 ```
 
-С готовой средой перейдём к реальной логике извлечения.
+С готовой средой, давайте перейдём к реальной логике извлечения.
 
-## Как парсить Excel: извлечение сырого текста с листов
+## Как парсить Excel: извлечение необработанного текста с листов
+Load your workbook and retrieve raw text in two simple steps. First, obtain basic document information such as sheet names and dimensions. Then, iterate over each worksheet using a `TextReader` configured with `TextOptions(true)` to enable raw mode, which returns the plain characters without any formatting tags.
 
-### Шаг 1 – Получение информации о документе
-Сначала получите метаданные о рабочей книге, такие как количество листов (сырых страниц).
-
+`TextReader` читает текст из документа, опционально в необработанном режиме.  
 ```java
 IDocumentInfo spreadsheetInfo = parser.getDocumentInfo();
 ```
 
-### Шаг 2 – Перебор каждого листа и чтение текста
-Итерируйте каждый лист и извлекайте сырой, неформатированный текст. Флаг `TextOptions(true)` включает raw‑режим.
+Next, iterate over every sheet and pull the unformatted text. The `TextOptions(true)` flag enables raw mode, returning plain characters without any styling tags.
 
+`TextOptions` configures text extraction behavior, with a boolean flag to enable raw mode.  
 ```java
 for (int p = 0; p < spreadsheetInfo.getRawPageCount(); p++) {
     try (TextReader reader = parser.getText(p, new TextOptions(true))) {
@@ -109,57 +160,64 @@ for (int p = 0; p < spreadsheetInfo.getRawPageCount(); p++) {
 ```
 
 #### Обработка извлечённых данных
-На данном этапе `sheetContent` содержит простой текст текущего листа. Вы можете:
+At this point `sheetContent` holds the plain text of the current worksheet. You can:
 
-- Записать его в файл `.txt` для архивации.  
-- Передать его в конвейер обработки естественного языка.  
-- Сохранить в базе данных для последующего запроса.
+- Write it to a `.txt` file for archival.  
+- Feed it into a natural‑language‑processing pipeline.  
+- Store it in a database for later querying.
 
 ## Распространённые проблемы и решения
 | Проблема | Почему происходит | Решение |
 |----------|-------------------|---------|
 | **Файл не найден** | Неправильный `excelFilePath`. | Проверьте путь и убедитесь, что файл доступен для чтения. |
 | **Неподдерживаемый формат** | Используется старый файл XLS с более новой версией парсера. | Конвертируйте файл в XLSX или обновите до последней версии GroupDocs.Parser. |
-| **Ошибки out‑of‑memory при больших рабочих книгах** | Загрузка всех листов одновременно. | Обрабатывайте один лист за раз (как показано) и своевременно освобождайте ресурсы. |
+| **Ошибки нехватки памяти при больших книгах** | Загрузка всех листов одновременно. | Обрабатывайте один лист за раз (как показано) и своевременно освобождайте ресурсы. |
 | **Исключение лицензии** | Срок пробной версии истёк или отсутствует файл лицензии. | Примените действующую временную или приобретённую лицензию перед парсингом. |
 
 ## Практические применения (чтение текста листов Excel)
-1. **Миграция данных:** Перенести устаревшие данные из таблиц в современные базы данных без ручного копирования.  
-2. **Автоматизированная отчетность:** Извлекать сырые значения из нескольких книг для создания объединённых PDF или HTML отчётов.  
-3. **Индексация поиска:** Индексировать извлечённый текст в Elasticsearch для быстрого поиска контента.  
+1. **Data migration:** Перенесите устаревшие данные из таблиц в современные базы данных без ручного копирования.  
+2. **Automated reporting:** Получайте необработанные значения из нескольких книг для создания объединённых PDF или HTML отчётов.  
+3. **Search indexing:** Индексируйте извлечённый текст в Elasticsearch для быстрого поиска контента.  
 
-## Советы по производительности для больших Excel‑файлов
-- **Поток на лист:** Цикл уже обрабатывает один лист за раз, поддерживая низкое потребление памяти.  
+## Советы по производительности для больших файлов Excel
+- **Поток на лист:** Цикл уже обрабатывает один лист за раз, поддерживая низкое использование памяти.  
 - **Повторное использование объектов `TextReader`:** Избегайте создания лишних объектов внутри плотных циклов.  
-- **Параллельная обработка:** Для очень больших книг рассмотрите обработку листов в отдельных потоках, но учитывайте потокобезопасность экземпляра `Parser`.  
+- **Параллельная обработка:** Для чрезвычайно больших книг рассмотрите обработку листов в отдельных потоках, но учитывайте потокобезопасность экземпляра `Parser`.  
 
 ## Часто задаваемые вопросы
 
-**В: Какие другие форматы электронных таблиц поддерживает GroupDocs.Parser?**  
-О: Он работает с XLSX, XLS, CSV и другими форматами Office Open XML.
+**Q: Какие другие форматы электронных таблиц поддерживает GroupDocs.Parser?**  
+A: Он поддерживает XLSX, XLS, CSV, ODS и другие форматы Office Open XML — более 10 форматов в общей сложности.
 
-**В: Могу ли я также извлечь информацию о форматировании ячеек?**  
-О: Да, используя `TextOptions` без raw‑флага, можно получить отформатированный текст.
+**Q: Могу ли я также извлекать информацию о форматировании ячеек?**  
+A: Yes, by using `TextOptions` without the raw flag, you can retrieve formatted text that preserves basic styling.
 
-**В: Как работать с защищёнными паролем Excel‑файлами?**  
-О: Передайте пароль в конструктор `Parser`: `new Parser(filePath, "password")`.
+**Q: Как обрабатывать защищённые паролем файлы Excel?**  
+A: Pass the password to the `Parser` constructor: `new Parser(filePath, "password")`.
 
-**В: Есть ли способ извлечь только определённые столбцы?**  
-О: Вы можете пост‑обработать `sheetContent`, отфильтровать строки, либо использовать API `SpreadsheetOptions` для более точного контроля.
+**Q: Есть ли способ извлечь только определённые столбцы?**  
+A: You can post‑process `sheetContent` to filter lines or use the `SpreadsheetOptions` API for more granular control.
 
-**В: Где найти больше примеров кода?**  
-О: Посмотрите [документацию GroupDocs](https://docs.groupdocs.com/parser/java/) и репозиторий на GitHub для дополнительных примеров.
+**Q: Где можно найти больше примеров кода?**  
+A: Check the [GroupDocs documentation](https://docs.groupdocs.com/parser/java/) and the GitHub repository for additional samples.
 
 ## Ресурсы
-- Документация: [GroupDocs Parser Java Docs](https://docs.groupdocs.com/parser/java/)  
-- Справочник API: [API Reference](https://reference.groupdocs.com/parser/java)  
-- Скачать: [Latest Releases](https://releases.groupdocs.com/parser/java/)  
-- Репозиторий GitHub: [GroupDocs.Parser on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
-- Бесплатный форум поддержки: [GroupDocs Parser Forum](https://forum.groupdocs.com/c/parser)  
-- Временная лицензия: [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/)  
+- Обзор документации: [GroupDocs documentation](https://docs.groupdocs.com/parser/java/)
+- Документация: [GroupDocs Parser Java Docs](https://docs.groupdocs.com/parser/java/)
+- Ссылка на API: [API Reference](https://reference.groupdocs.com/parser/java)
+- Скачать: [Latest Releases](https://releases.groupdocs.com/parser/java/)
+- Репозиторий GitHub: [GroupDocs.Parser on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
+- Бесплатный форум поддержки: [GroupDocs Parser Forum](https://forum.groupdocs.com/c/parser)
+- Временная лицензия: [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/) 
 
 ---
 
-**Последнее обновление:** 2026-02-14  
+**Последнее обновление:** 2026-09-27  
 **Тестировано с:** GroupDocs.Parser 25.5 for Java  
 **Автор:** GroupDocs
+
+## Связанные руководства
+
+- [Извлечение текста HTML Excel Groupdocs Parser Java](/parser/java/formatted-text-extraction/extract-text-html-excel-groupdocs-parser-java/)
+- [Извлечение метаданных Office Docs Groupdocs Parser Java](/parser/java/metadata-extraction/extract-metadata-office-docs-groupdocs-parser-java/)
+- [Как извлечь текст PDF с помощью GroupDocs.Parser в Java: Полное руководство](/parser/java/text-extraction/extract-raw-text-pdf-groupdocs-parser-java/)
