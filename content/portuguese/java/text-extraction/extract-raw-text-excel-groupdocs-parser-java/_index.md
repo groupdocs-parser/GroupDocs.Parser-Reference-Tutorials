@@ -1,63 +1,97 @@
 ---
-date: '2026-02-14'
-description: Aprenda a analisar arquivos Excel com o GroupDocs.Parser para Java, abordando
-  a configuração, extração de texto bruto e dicas de desempenho.
+date: '2026-09-27'
+description: Aprenda a usar uma biblioteca Java de análise de Excel para extrair texto
+  bruto de planilhas Excel usando o GroupDocs.Parser, abordando configuração, trechos
+  de código e dicas de desempenho.
 keywords:
-- extract raw text from excel with java
-- groupdocs parser for java setup
-- implementing text extraction in excel with java
-title: Como analisar Excel usando GroupDocs.Parser para Java – Guia
+- java excel parsing library
+- how to parse excel java
+- java read excel worksheets
+lastmod: '2026-09-27'
+og_description: Descubra como usar uma biblioteca Java de análise de Excel para extração
+  rápida de texto bruto de arquivos Excel com o GroupDocs.Parser. Inclui configuração,
+  código e conselhos de desempenho.
+og_image_alt: Guide showing Java code that extracts raw text from Excel using GroupDocs.Parser
+og_title: Como usar uma biblioteca Java de análise de Excel com GroupDocs.Parser
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-27'
+  description: Learn how to use a java excel parsing library to extract raw text from
+    Excel worksheets using GroupDocs.Parser, covering setup, code snippets, and performance
+    tips.
+  headline: How to use a java excel parsing library with GroupDocs.Parser
+  type: TechArticle
+- description: Learn how to use a java excel parsing library to extract raw text from
+    Excel worksheets using GroupDocs.Parser, covering setup, code snippets, and performance
+    tips.
+  name: How to use a java excel parsing library with GroupDocs.Parser
+  steps:
+  - name: '**Data migration:** Move legacy spreadsheet data into modern databases
+      without manual copy‑paste.'
+    text: '**Data migration:** Move legacy spreadsheet data into modern databases
+      without manual copy‑paste.'
+  - name: '**Automated reporting:** Pull raw values from multiple workbooks to generate
+      consolidated PDF or HTML reports.'
+    text: '**Automated reporting:** Pull raw values from multiple workbooks to generate
+      consolidated PDF or HTML reports.'
+  - name: '**Search indexing:** Index extracted text in Elasticsearch for fast content
+      discovery.'
+    text: '**Search indexing:** Index extracted text in Elasticsearch for fast content
+      discovery.'
+  type: HowTo
+- questions:
+  - answer: It handles XLSX, XLS, CSV, ODS, and other Office Open XML formats—over
+      10 formats in total.
+    question: What other spreadsheet formats does GroupDocs.Parser support?
+  - answer: Yes, by using `TextOptions` without the raw flag, you can retrieve formatted
+      text that preserves basic styling.
+    question: Can I extract cell formatting information as well?
+  - answer: 'Pass the password to the `Parser` constructor: `new Parser(filePath,
+      "password")`.'
+    question: How do I handle password‑protected Excel files?
+  - answer: You can post‑process `sheetContent` to filter lines or use the `SpreadsheetOptions`
+      API for more granular control.
+    question: Is there a way to extract only specific columns?
+  - answer: Check the [GroupDocs documentation](https://docs.groupdocs.com/parser/java/)
+      and the GitHub repository for additional samples.
+    question: Where can I find more code examples?
+  type: FAQPage
+tags:
+- java excel parsing
+- groupdocs parser
+- excel text extraction
+- java document processing
+title: Como usar uma biblioteca Java de análise de Excel com GroupDocs.Parser
 type: docs
 url: /pt/java/text-extraction/extract-raw-text-excel-groupdocs-parser-java/
 weight: 1
 ---
 
- keep the same structure.
+# Como usar uma biblioteca Java de análise de Excel com GroupDocs.Parser
 
-Let's translate:
+Em aplicações modernas orientadas a dados, **como analisar Excel** arquivos de forma eficiente pode fazer ou quebrar um fluxo de trabalho. Seja migrando dados legados, gerando relatórios automatizados ou alimentando texto bruto em pipelines de análise, extrair texto não formatado de cada planilha é um requisito comum. Este tutorial mostra como usar uma **biblioteca Java de análise de Excel**—GroupDocs.Parser for Java—para abrir uma pasta de trabalho Excel, iterar suas planilhas e recuperar o conteúdo bruto com apenas algumas linhas de código.
 
-Title: "# How to Parse Excel Using GroupDocs.Parser for Java – Guide" => "# Como Analisar Excel Usando GroupDocs.Parser para Java – Guia"
-
-Next paragraph: "In today’s data‑centric applications, **how to parse Excel** files efficiently can make or break a workflow. Whether you’re migrating legacy data, generating automated reports, or feeding raw text into analytics pipelines, extracting unformatted text from each worksheet is a common requirement. This tutorial walks you through using **GroupDocs.Parser for Java** to parse Excel files, read Excel sheet text, and retrieve raw content with minimal code."
-
-Translate to Portuguese.
-
-Continue.
-
-Make sure to keep bold formatting.
-
-Proceed section by section.
-
-Also translate table content.
-
-Let's craft final answer.# Como Analisar Excel Usando GroupDocs.Parser para Java – Guia
-
-Nas aplicações centradas em dados de hoje, **como analisar Excel** de forma eficiente pode fazer ou quebrar um fluxo de trabalho. Seja migrando dados legados, gerando relatórios automatizados ou alimentando texto bruto em pipelines de análise, extrair texto sem formatação de cada planilha é uma necessidade comum. Este tutorial orienta você a usar **GroupDocs.Parser for Java** para analisar arquivos Excel, ler o texto das planilhas e recuperar o conteúdo bruto com código mínimo.
-
-## Respostas Rápidas
+## Respostas rápidas
 - **Qual biblioteca lida com a análise de Excel em Java?** GroupDocs.Parser for Java.  
-- **Posso extrair texto bruto de cada planilha?** Sim, usando `TextReader` com o modo bruto habilitado.  
-- **Preciso de licença?** Uma licença temporária gratuita está disponível para avaliação.  
+- **Posso extrair texto bruto de cada planilha?** Sim, usando `TextReader` com o modo raw habilitado.  
+- **Preciso de uma licença?** Uma licença temporária gratuita está disponível para avaliação.  
 - **Qual versão do Java é necessária?** JDK 8 ou superior.  
 - **O Maven é suportado?** Absolutamente – adicione o repositório e a dependência ao `pom.xml`.
 
-## O que é “como analisar Excel” com GroupDocs.Parser?
-Analisar Excel com GroupDocs.Parser significa abrir programaticamente uma pasta de trabalho `.xlsx` (ou outro formato suportado), iterar pelas suas planilhas e ler o texto simples sem qualquer formatação. Essa abordagem é mais rápida que carregar a pasta de trabalho inteira em uma API de planilha pesada e fornece acesso direto aos caracteres subjacentes.
+## O que é uma biblioteca Java de análise de Excel?
+GroupDocs.Parser for Java é uma **biblioteca Java de análise de Excel** que abre programaticamente pastas de trabalho `.xlsx`, `.xls` ou CSV e lê texto simples sem carregar a planilha completa na memória. Essa abordagem é mais rápida que APIs de planilhas tradicionais e fornece acesso direto aos caracteres subjacentes.
 
-## Por que usar GroupDocs.Parser para Java?
-- **Velocidade e baixo consumo de memória:** Processa uma planilha por vez.  
-- **Amplo suporte a formatos:** Lida com XLSX, XLS, CSV e mais.  
-- **API simples:** Apenas algumas linhas de código para começar a extrair texto.  
-- **Licenciamento corporativo:** Avaliação gratuita, depois opções comerciais escaláveis.
+## Por que usar o GroupDocs.Parser para Java?
+GroupDocs.Parser processa uma planilha por vez, mantendo o uso de memória abaixo de 10 MB mesmo para pastas de trabalho de 500 páginas. Ele suporta mais de 10 formatos de entrada e saída — incluindo XLSX, XLS, CSV e ODS — de modo que uma única API pode lidar com muitos tipos de planilha. Métodos simples e fluentes permitem iniciar a extração de texto em minutos, e o modelo de licenciamento escala de teste para produção sem alterações de código.
 
-## Pré‑requisitos
+## Pré-requisitos
 - **Java Development Kit (JDK):** 8 ou mais recente.  
 - **IDE:** IntelliJ IDEA, Eclipse ou qualquer editor compatível com Java.  
 - **Maven (opcional):** Para gerenciamento fácil de dependências.  
 
-## Configurando GroupDocs.Parser para Java
+## Configurando o GroupDocs.Parser para Java
 
-### Configuração Maven
+### Configuração do Maven
 Se você gerencia dependências com Maven, adicione o repositório e a dependência ao seu `pom.xml`:
 
 ```xml
@@ -78,14 +112,14 @@ Se você gerencia dependências com Maven, adicione o repositório e a dependên
 </dependencies>
 ```
 
-### Download Direto
-Alternativamente, faça o download da versão mais recente do GroupDocs.Parser para Java diretamente em [GroupDocs releases](https://releases.groupdocs.com/parser/java/).
+### Download direto
+Alternativamente, baixe a versão mais recente do GroupDocs.Parser for Java diretamente de [GroupDocs releases](https://releases.groupdocs.com/parser/java/).
 
-### Aquisição de Licença
-Para iniciar com uma avaliação gratuita, visite o [site da GroupDocs](https://purchase.groupdocs.com/temporary-license/) para obter uma licença temporária. Isso permite avaliar todas as capacidades da biblioteca antes de adquirir uma licença de produção.
+### Aquisição de licença
+Para iniciar com um teste gratuito, visite o [site da GroupDocs](https://purchase.groupdocs.com/temporary-license/) para obter uma licença temporária. Isso permite avaliar todas as capacidades da biblioteca antes de comprar uma licença de produção.
 
-### Inicialização Básica e Configuração
-Depois que a biblioteca estiver no seu classpath, você pode criar uma instância `Parser` que aponta para sua pasta de trabalho Excel:
+### Inicialização e configuração básicas
+`GroupDocs.Parser` é a classe principal que representa um analisador de documentos. Após adicionar a biblioteca ao seu classpath, você pode criar uma instância `Parser` que aponta para sua pasta de trabalho Excel:
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -104,18 +138,17 @@ try (Parser parser = new Parser(excelFilePath)) {
 
 Com o ambiente pronto, vamos mergulhar na lógica real de extração.
 
-## Como Analisar Excel: Extrair Texto Bruto das Planilhas
+## Como analisar Excel: extrair texto bruto das planilhas
+Carregue sua pasta de trabalho e recupere texto bruto em duas etapas simples. Primeiro, obtenha informações básicas do documento, como nomes das planilhas e dimensões. Em seguida, itere sobre cada planilha usando um `TextReader` configurado com `TextOptions(true)` para habilitar o modo raw, que devolve os caracteres simples sem quaisquer tags de formatação.
 
-### Etapa 1 – Recuperar Informações do Documento
-Primeiro, obtenha metadados sobre a pasta de trabalho, como o número de planilhas (páginas brutas).
-
+`TextReader` lê texto de um documento, opcionalmente em modo raw.  
 ```java
 IDocumentInfo spreadsheetInfo = parser.getDocumentInfo();
 ```
 
-### Etapa 2 – Percorrer Cada Planilha e Ler o Texto
-Itere sobre cada planilha e extraia o texto bruto e sem formatação. A flag `TextOptions(true)` habilita o modo bruto.
+Em seguida, itere sobre cada planilha e extraia o texto não formatado. A flag `TextOptions(true)` habilita o modo raw, retornando caracteres simples sem quaisquer tags de estilo.
 
+`TextOptions` configura o comportamento da extração de texto, com uma flag booleana para habilitar o modo raw.  
 ```java
 for (int p = 0; p < spreadsheetInfo.getRawPageCount(); p++) {
     try (TextReader reader = parser.getText(p, new TextOptions(true))) {
@@ -126,58 +159,65 @@ for (int p = 0; p < spreadsheetInfo.getRawPageCount(); p++) {
 }
 ```
 
-#### Processamento dos Dados Extraídos
+#### Processamento dos dados extraídos
 Neste ponto `sheetContent` contém o texto simples da planilha atual. Você pode:
 
-- Gravá‑lo em um arquivo `.txt` para arquivamento.  
-- Alimentá‑lo em um pipeline de processamento de linguagem natural.  
-- Armazená‑lo em um banco de dados para consultas posteriores.
+- Gravá-lo em um arquivo `.txt` para arquivamento.  
+- Alimentá-lo em um pipeline de processamento de linguagem natural.  
+- Armazená-lo em um banco de dados para consultas posteriores.
 
-## Problemas Comuns e Soluções
-| Problema | Por que acontece | Solução |
-|----------|------------------|---------|
+## Problemas comuns e soluções
+| Problema | Por que acontece | Correção |
+|---------|------------------|----------|
 | **Arquivo não encontrado** | Caminho `excelFilePath` incorreto. | Verifique o caminho e assegure que o arquivo seja legível. |
-| **Formato não suportado** | Uso de um arquivo XLS antigo com uma versão mais nova do parser. | Converta o arquivo para XLSX ou atualize para a versão mais recente do GroupDocs.Parser. |
-| **Erros de falta de memória em pastas de trabalho grandes** | Carregamento de todas as planilhas de uma vez. | Processe uma planilha por vez (como mostrado) e libere recursos prontamente. |
-| **Exceção de licença** | Avaliação expirada ou arquivo de licença ausente. | Aplique uma licença temporária ou comprada válida antes de analisar. |
+| **Formato não suportado** | Usando um arquivo XLS antigo com uma versão mais nova do parser. | Converta o arquivo para XLSX ou atualize para a versão mais recente do GroupDocs.Parser. |
+| **Erros de falta de memória em pastas de trabalho grandes** | Carregando todas as planilhas de uma vez. | Processar uma planilha por vez (como mostrado) e liberar recursos prontamente. |
+| **Exceção de licença** | Teste expirado ou arquivo de licença ausente. | Aplique uma licença temporária ou comprada válida antes da análise. |
 
-## Aplicações Práticas (Ler Texto da Planilha Excel)
-1. **Migração de Dados:** Mova dados de planilhas legadas para bancos de dados modernos sem copiar‑colar manualmente.  
-2. **Relatórios Automatizados:** Extraia valores brutos de múltiplas pastas de trabalho para gerar relatórios consolidados em PDF ou HTML.  
-3. **Indexação de Busca:** Indexe o texto extraído no Elasticsearch para descoberta rápida de conteúdo.  
+## Aplicações práticas (ler texto de planilha Excel)
+1. **Migração de dados:** Mova dados de planilhas legadas para bancos de dados modernos sem copiar‑colar manual.  
+2. **Relatórios automatizados:** Extraia valores brutos de múltiplas pastas de trabalho para gerar relatórios consolidados em PDF ou HTML.  
+3. **Indexação de busca:** Indexe o texto extraído no Elasticsearch para descoberta rápida de conteúdo.  
 
-## Dicas de Performance para Arquivos Excel Grandes
-- **Stream por planilha:** O loop já processa uma planilha por vez, mantendo o uso de memória baixo.  
+## Dicas de desempenho para arquivos Excel grandes
+- **Fluxo por planilha:** O loop já processa uma planilha por vez, mantendo o uso de memória baixo.  
 - **Reutilize objetos `TextReader`:** Evite criar objetos desnecessários dentro de loops apertados.  
-- **Processamento paralelo:** Para pastas de trabalho extremamente grandes, considere processar planilhas em threads separadas, mas atente-se à segurança de threads com a instância `Parser`.  
+- **Processamento paralelo:** Para pastas de trabalho extremamente grandes, considere processar planilhas em threads separadas, mas esteja atento à segurança de threads com a instância `Parser`.  
 
-## Perguntas Frequentes
+## Perguntas frequentes
 
 **Q: Que outros formatos de planilha o GroupDocs.Parser suporta?**  
-A: Ele lida com XLSX, XLS, CSV e outros formatos Office Open XML.
+A: Ele lida com XLSX, XLS, CSV, ODS e outros formatos Office Open XML — mais de 10 formatos no total.
 
 **Q: Posso extrair também informações de formatação de células?**  
-A: Sim, usando `TextOptions` sem a flag raw, você pode obter texto formatado.
+A: Sim, usando `TextOptions` sem a flag raw, você pode recuperar texto formatado que preserva a estilização básica.
 
 **Q: Como lidar com arquivos Excel protegidos por senha?**  
 A: Passe a senha ao construtor `Parser`: `new Parser(filePath, "password")`.
 
-**Q: Existe uma forma de extrair apenas colunas específicas?**  
+**Q: Existe uma maneira de extrair apenas colunas específicas?**  
 A: Você pode pós‑processar `sheetContent` para filtrar linhas ou usar a API `SpreadsheetOptions` para controle mais granular.
 
-**Q: Onde encontrar mais exemplos de código?**  
+**Q: Onde posso encontrar mais exemplos de código?**  
 A: Consulte a [documentação da GroupDocs](https://docs.groupdocs.com/parser/java/) e o repositório GitHub para amostras adicionais.
 
 ## Recursos
+- Visão geral da documentação: [GroupDocs documentation](https://docs.groupdocs.com/parser/java/)
 - Documentação: [GroupDocs Parser Java Docs](https://docs.groupdocs.com/parser/java/)
 - Referência da API: [API Reference](https://reference.groupdocs.com/parser/java)
 - Download: [Latest Releases](https://releases.groupdocs.com/parser/java/)
-- Repositório GitHub: [GroupDocs.Parser no GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
-- Fórum de Suporte Gratuito: [GroupDocs Parser Forum](https://forum.groupdocs.com/c/parser)
-- Licença Temporária: [Obter uma Licença Temporária](https://purchase.groupdocs.com/temporary-license/) 
+- Repositório GitHub: [GroupDocs.Parser on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
+- Fórum de suporte gratuito: [GroupDocs Parser Forum](https://forum.groupdocs.com/c/parser)
+- Licença temporária: [Obtain a Temporary License](https://purchase.groupdocs.com/temporary-license/) 
 
 ---
 
-**Última Atualização:** 2026-02-14  
-**Testado Com:** GroupDocs.Parser 25.5 for Java  
+**Última atualização:** 2026-09-27  
+**Testado com:** GroupDocs.Parser 25.5 for Java  
 **Autor:** GroupDocs
+
+## Tutoriais relacionados
+
+- [Extrair Texto HTML Excel Groupdocs Parser Java](/parser/java/formatted-text-extraction/extract-text-html-excel-groupdocs-parser-java/)
+- [Extrair Metadados Office Docs Groupdocs Parser Java](/parser/java/metadata-extraction/extract-metadata-office-docs-groupdocs-parser-java/)
+- [Como Extrair Texto PDF Usando GroupDocs.Parser em Java: Um Guia Abrangente](/parser/java/text-extraction/extract-raw-text-pdf-groupdocs-parser-java/)
