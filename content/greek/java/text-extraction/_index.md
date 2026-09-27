@@ -1,161 +1,245 @@
 ---
-date: 2026-02-14
-description: Οδηγοί βήμα-βήμα για την εξαγωγή κειμένου PDF με Java και τη μετατροπή
-  εγγράφων σε HTML χρησιμοποιώντας το GroupDocs.Parser για Java.
-title: Εξαγωγή κειμένου PDF Java – Οδηγοί εξαγωγής κειμένου GroupDocs.Parser
+date: 2026-09-27
+description: Μάθετε πώς να εξάγετε κείμενο PDF σε Java με το GroupDocs.Parser, να
+  μετατρέψετε PDF σε HTML και να διαχειρίζεστε πίνακες αποδοτικά. Οδηγός βήμα-βήμα
+  για προγραμματιστές.
+keywords:
+- how to extract pdf
+- convert pdf to html
+- extract pdf text java
+- extract pdf tables java
+- generate html from pdf
+lastmod: 2026-09-27
+og_description: Μάθετε πώς να εξάγετε κείμενο PDF σε Java με το GroupDocs.Parser,
+  να μετατρέψετε PDF σε HTML και να διαχειρίζεστε πίνακες αποδοτικά. Οδηγός βήμα-βήμα
+  για προγραμματιστές.
+og_image_alt: Guide showing how to extract PDF text and convert to HTML using GroupDocs.Parser
+  for Java
+og_title: Πώς να εξάγετε PDF σε Java – Οδηγός GroupDocs.Parser
+schemas:
+- author: GroupDocs
+  dateModified: '2026-09-27'
+  description: Learn how to extract PDF text in Java with GroupDocs.Parser, convert
+    PDFs to HTML, and handle tables efficiently. Step-by-step guide for developers.
+  headline: How to extract PDF with Java using GroupDocs.Parser
+  type: TechArticle
+- questions:
+  - answer: Yes—simply pass the password to the `Parser` constructor or the `load`
+      method, and extraction works as usual.
+    question: Can I extract text from encrypted or password‑protected PDFs?
+  - answer: Plain text, HTML, Markdown, and you can also retrieve layout‑aware text
+      areas for custom formatting.
+    question: Which output formats does GroupDocs.Parser support for conversion?
+  - answer: Absolutely. Use the `PageOptions` class to specify a page range before
+      calling the extraction method.
+    question: Is there a way to extract only specific pages from a PDF?
+  - answer: GroupDocs.Parser offers higher‑level APIs, built‑in support for many file
+      types, and superior handling of complex layouts compared to low‑level libraries
+      like PDFBox.
+    question: How does “extract PDF text Java” differ from using Apache PDFBox?
+  - answer: Always use the latest Maven release; it includes bug fixes, performance
+      improvements, and support for new document formats.
+    question: What version of GroupDocs.Parser should I use?
+  type: FAQPage
+tags:
+- pdf extraction
+- GroupDocs.Parser
+- Java document processing
+- convert PDF
+- html generation
+title: Πώς να εξάγετε PDF με Java χρησιμοποιώντας το GroupDocs.Parser
 type: docs
 url: /el/java/text-extraction/
 weight: 3
 ---
 
-:** 2026-02-14  
-**Δοκιμάστηκε Με:** GroupDocs.Parser 23.12 for Java  
-**Συγγραφέας:** GroupDocs
+# Πώς να εξάγετε PDF με Java χρησιμοποιώντας το GroupDocs.Parser
 
-Now ensure we preserve formatting: bold with **.
+**GroupDocs.Parser** είναι μια βιβλιοθήκη Java που διαβάζει και εξάγει περιεχόμενο από πάνω από 100 μορφές εγγράφων, παρέχοντας κείμενο υψηλής πιστότητας, HTML και δεδομένα που λαμβάνουν υπόψη τη διάταξη. Αν χρειάζεστε **πώς να εξάγετε pdf** γρήγορα και αξιόπιστα, βρίσκεστε στο σωστό μέρος. Αυτό το κέντρο συγκεντρώνει όλα τα πρακτικά tutorials του GroupDocs.Parser για Java που σας δείχνουν πώς να εξάγετε ακατέργαστο κείμενο, να διατηρήσετε τη μορφοποίηση, να διατηρήσετε τη διάταξη και ακόμη **να μετατρέψετε έγγραφα σε HTML**. Είτε δημιουργείτε ευρετήριο αναζήτησης, είτε παράγετε αναφορές, είτε τροφοδοτείτε δεδομένα σε pipeline μηχανικής μάθησης, αυτά τα guides σας παρέχουν έτοιμο κώδικα και σαφείς εξηγήσεις.
 
-Now produce final output with all translated content.
-
-Check for any code blocks: none.
-
-Check for any shortcodes: none.
-
-Check for any images: none.
-
-Check for any inline code: we kept backticks.
-
-Check for any HTML entities: we kept &#58;.
-
-Now produce final answer.# Εξαγωγή Κειμένου PDF Java – Μαθήματα Εξαγωγής Κειμένου για GroupDocs.Parser Java
-
-Αν χρειάζεστε **extract PDF text Java** γρήγορα και αξιόπιστα, βρίσκεστε στο σωστό μέρος. Αυτό το κέντρο συγκεντρώνει όλα τα πρακτικά μαθήματα GroupDocs.Parser Java που σας δείχνουν πώς να εξάγετε ακατέργαστο κείμενο, να διατηρήσετε τη μορφοποίηση, να διατηρήσετε τη διάταξη, και ακόμη **convert documents to HTML**. Είτε δημιουργείτε ευρετήριο αναζήτησης, είτε παράγετε αναφορές, είτε τροφοδοτείτε δεδομένα σε μια αλυσίδα μηχανικής μάθησης, αυτά τα οδηγία παρέχουν έτοιμο κώδικα και σαφείς εξηγήσεις.
-
-## Γρήγορες Απαντήσεις
+## Γρήγορες απαντήσεις
 - **Τι σημαίνει “extract PDF text Java”;**  
-  Αναφέρεται στη χρήση της βιβλιοθήκης GroupDocs.Parser σε Java για την ανάγνωση του κειμενικού περιεχομένου των αρχείων PDF.  
+  Αναφέρεται στη χρήση της βιβλιοθήκης GroupDocs.Parser σε Java για την ανάγνωση του κειμενικού περιεχομένου αρχείων PDF.
 - **Μπορώ να διατηρήσω την αρχική διάταξη;**  
-  Ναι—χρησιμοποιήστε τη λειτουργία εξαγωγής “accurate” ή τα APIs text‑area για να διατηρήσετε στήλες, πίνακες και αλλαγές γραμμής.  
+  Ναι—χρησιμοποιήστε τη λειτουργία εξαγωγής “accurate” ή τα API `text‑area` για να διατηρήσετε στήλες, πίνακες και αλλαγές γραμμής.
 - **Υποστηρίζεται η μετατροπή σε HTML;**  
-  Απόλυτα. Το GroupDocs.Parser μπορεί να εξάγει HTML, το οποίο σας επιτρέπει να **convert documents to HTML** για δημοσίευση στο web.  
+  Απόλυτα. Το GroupDocs.Parser μπορεί να παράγει HTML, το οποίο σας επιτρέπει **να μετατρέψετε έγγραφα σε HTML** για δημοσίευση στο web.
 - **Χρειάζομαι άδεια;**  
-  Μια προσωρινή άδεια λειτουργεί για ανάπτυξη· απαιτείται πλήρης άδεια για χρήση σε παραγωγή.  
+  Μια προσωρινή άδεια λειτουργεί για ανάπτυξη· απαιτείται πλήρης άδεια για παραγωγική χρήση.
 - **Ποια εξάρτηση Maven απαιτείται;**  
-  Προσθέστε `com.groupdocs:groupdocs-parser` με την τελευταία έκδοση στο `pom.xml` σας.
+  Προσθέστε `com.groupdocs:groupdocs-parser` με την τελευταία έκδοση στο `pom.xml`.
 
-## Τι είναι το “extract PDF text Java”;
-Η εξαγωγή κειμένου PDF με Java σημαίνει προγραμματιστική ανάγνωση των κειμενικών δεδομένων που αποθηκεύονται μέσα σε ένα αρχείο PDF. Το GroupDocs.Parser αφαιρεί την πολυπλοκότητα του χαμηλού επιπέδου parsing PDF, παρέχοντάς σας ένα απλό API για την ανάκτηση απλού κειμένου, μορφοποιημένου HTML/Markdown ή περιοχών κειμένου με γνώση διάταξης.
+## Τι σημαίνει “extract PDF text Java”;
+Η εξαγωγή κειμένου PDF με Java σημαίνει προγραμματιστική ανάγνωση των κειμενικών δεδομένων που αποθηκεύονται μέσα σε ένα αρχείο PDF. Χρησιμοποιώντας το GroupDocs.Parser, μπορείτε να ανακτήσετε απλό κείμενο, μορφοποιημένο HTML/Markdown ή κείμενο‑aware περιοχές με λίγες κλήσεις API, εξαλείφοντας την ανάγκη να αναλύσετε τη δομή του PDF μόνοι σας.
 
 ## Γιατί να χρησιμοποιήσετε το GroupDocs.Parser για εξαγωγή κειμένου PDF;
-- **Υψηλή ακρίβεια** – Διαχειρίζεται σύνθετα PDFs με πίνακες, στήλες και μεικτές γλώσσες.  
-- **Πολλαπλές μορφές εξόδου** – Απλό κείμενο, HTML, Markdown ή προσαρμοσμένα δομημένα δεδομένα.  
-- **Διαπλατφορμική** – Λειτουργεί σε Windows, Linux και macOS με οποιοδήποτε runtime Java 8+.  
-- **Ενσωματωμένη ασφάλεια** – Υποστηρίζει PDFs με κωδικό πρόσβασης και κρυπτογραφημένες ροές.
+Το GroupDocs.Parser προσφέρει τη πιο ακριβή μηχανή εξαγωγής στην αγορά, υποστηρίζοντας **πάνω από 50 μορφές εισόδου και εξόδου** και διαχειρίζεται PDF έως **500 σελίδες** χωρίς να φορτώνει ολόκληρο το αρχείο στη μνήμη. Οι ενσωματωμένες λειτουργίες ασφαλείας σας επιτρέπουν την επεξεργασία PDF με κωδικό πρόσβασης, και η βιβλιοθήκη λειτουργεί σε οποιοδήποτε runtime Java 8+ σε Windows, Linux και macOS.
+
+## Πώς λειτουργεί η διαδικασία εξαγωγής;
+Η κλάση `Parser` είναι το κύριο συστατικό που χρησιμοποιείται για τη φόρτωση και ανάγνωση εγγράφων.  
+Ένα αντικείμενο `TextArea` αντιπροσωπεύει ένα μπλοκ κειμένου με τις συντεταγμένες του στη σελίδα.  
+
+Φορτώστε ένα έγγραφο με την κλάση `Parser`, επιλέξτε λειτουργία εξαγωγής (απλό κείμενο, HTML ή text‑area) και καλέστε τη σχετική μέθοδο. Η βιβλιοθήκη εσωτερικά αναλύει τα streams περιεχομένου του PDF, ανασυνθέτει τη λογική σειρά ανάγνωσης και επιστρέφει το αποτέλεσμα ως συμβολοσειρά ή συλλογή αντικειμένων `TextArea`.
+
+## Ποιες μορφές εξόδου υποστηρίζονται;
+Το GroupDocs.Parser μπορεί να δημιουργήσει **απλό κείμενο**, **HTML**, **Markdown** και **προσαρμοσμένο JSON**. Επίσης εκθέτει αντικείμενα `TextArea` χαμηλού επιπέδου, τα οποία αντιπροσωπεύουν ορθογώνια μπλοκ κειμένου διατηρώντας την αρχική θέση στη σελίδα. Χρησιμοποιώντας αυτά τα αντικείμενα μπορείτε να δημιουργήσετε CSV, XML ή εγγραφές βάσης δεδομένων που διατηρούν τη δομή στήλης και πίνακα, καθώς και να εξάγετε συγκεκριμένες περιοχές για περαιτέρω επεξεργασία.
 
 ## Προαπαιτούμενα
 - Εγκατεστημένο Java 8 ή νεότερο.  
 - Σύστημα κατασκευής Maven ή Gradle.  
-- Έγκυρη άδεια GroupDocs.Parser (προσωρινή άδεια για δοκιμές).
+- Έγκυρη άδεια GroupDocs.Parser (προσωρινή άδεια για δοκιμές).  
 
-## Διαθέσιμα Μαθήματα
+## Διαθέσιμα tutorials
 
-### [Αποτελεσματική Εξαγωγή Κειμένου από Markdown σε Java Χρησιμοποιώντας το GroupDocs.Parser&#58; Ένας Πλήρης Οδηγός](./java-groupdocs-parser-markdown-text-extraction/)
+### [Αποτελεσματική εξαγωγή κειμένου από Markdown σε Java χρησιμοποιώντας το GroupDocs.Parser: Ένας ολοκληρωμένος οδηγός](./java-groupdocs-parser-markdown-text-extraction/)
+Μάθετε πώς να εξάγετε αποτελεσματικά κείμενο από αρχεία markdown χρησιμοποιώντας τη δυναμική βιβλιοθήκη GroupDocs.Parser σε Java. Αυτός ο οδηγός παρέχει βήμα‑βήμα οδηγίες για προγραμματιστές.
 
-### [Εξαγωγή Ακατέργαστου Κειμένου από PDFs Χρησιμοποιώντας το GroupDocs.Parser Java&#58; Ένας Πλήρης Οδηγός](./extract-text-pdfs-groupdocs-parser-java/)
+### [Εξαγωγή ακατέργαστου κειμένου από PDF χρησιμοποιώντας το GroupDocs.Parser Java: Ένας ολοκληρωμένος οδηγός](./extract-text-pdfs-groupdocs-parser-java/)
+Μάθετε πώς να εξάγετε αποδοτικά κείμενο από έγγραφα PDF χρησιμοποιώντας το GroupDocs.Parser Java με αυτό το βήμα‑βήμα tutorial. Ιδανικό για προγραμματιστές και αναλυτές δεδομένων.
 
-### [Εξαγωγή Ακατέργαστου Κειμένου από PDFs Χρησιμοποιώντας το GroupDocs.Parser σε Java&#58; Ένας Πλήρης Οδηγός](./extract-raw-text-pdf-groupdocs-parser-java/)
+### [Εξαγωγή ακατέργαστου κειμένου από PDF χρησιμοποιώντας το GroupDocs.Parser σε Java: Ένας ολοκληρωμένος οδηγός](./extract-raw-text-pdf-groupdocs-parser-java/)
+Μάθετε πώς να εξάγετε αποδοτικά ακατέργαστο κείμενο από έγγραφα PDF χρησιμοποιώντας το GroupDocs.Parser για Java. Ακολουθήστε αυτόν τον οδηγό βήμα‑βήμα για να ενσωματώσετε ισχυρές δυνατότητες εξαγωγής κειμένου στις εφαρμογές σας.
 
-### [Εξαγωγή Περιοχών Κειμένου από Έγγραφα με το GroupDocs.Parser για Java&#58; Ένας Πλήρης Οδηγός](./extract-text-areas-groupdocs-parser-java/)
+### [Εξαγωγή Text Areas από έγγραφα με το GroupDocs.Parser για Java: Ένας ολοκληρωμένος οδηγός](./extract-text-areas-groupdocs-parser-java/)
+Μάθετε πώς να εξάγετε αποδοτικά περιοχές κειμένου από έγγραφα χρησιμοποιώντας το GroupDocs.Parser σε Java. Ακολουθήστε αυτόν τον λεπτομερή οδηγό για να βελτιστοποιήσετε τις εργασίες επεξεργασίας εγγράφων.
 
-### [Εξαγωγή Κειμένου από Microsoft OneNote Χρησιμοποιώντας το GroupDocs.Parser σε Java&#58; Ένας Πλήρης Οδηγός](./extract-text-from-onenote-groupdocs-parser-java/)
+### [Εξαγωγή κειμένου από Microsoft OneNote χρησιμοποιώντας το GroupDocs.Parser σε Java: Ένας ολοκληρωμένος οδηγός](./extract-text-from-onenote-groupdocs-parser-java/)
+Μάθετε πώς να εξάγετε αποδοτικά κείμενο από έγγραφα Microsoft OneNote χρησιμοποιώντας το GroupDocs.Parser για Java. Αυτός ο οδηγός καλύπτει τη ρύθμιση, την υλοποίηση και τις βέλτιστες πρακτικές.
 
-### [Εξαγωγή Κειμένου από PDFs Χρησιμοποιώντας το GroupDocs.Parser για Java&#58; Ένας Πλήρης Οδηγός](./extract-text-pdf-groupdocs-parser-java-guide/)
+### [Εξαγωγή κειμένου από PDF χρησιμοποιώντας το GroupDocs.Parser για Java: Ένας ολοκληρωμένος οδηγός](./extract-text-pdf-groupdocs-parser-java-guide/)
+Μάθετε πώς να εξάγετε αποδοτικά κείμενο από αρχεία PDF χρησιμοποιώντας το GroupDocs.Parser για Java. Αυτός ο οδηγός καλύπτει τη ρύθμιση, την υλοποίηση και πρακτικές εφαρμογές.
 
-### [Εξαγωγή Κειμένου από PDFs Χρησιμοποιώντας το GroupDocs.Parser σε Java&#58; Ένας Πλήρης Οδηγός](./java-groupdocs-parser-pdf-text-extraction/)
+### [Εξαγωγή κειμένου από PDF χρησιμοποιώντας το GroupDocs.Parser σε Java: Ένας ολοκληρωμένος οδηγός](./java-groupdocs-parser-pdf-text-extraction/)
+Μάθετε πώς να εξάγετε αποδοτικά κείμενο από αρχεία PDF χρησιμοποιώντας τη βιβλιοθήκη GroupDocs.Parser σε Java. Αυτός ο ολοκληρωμένος οδηγός καλύπτει τη ρύθμιση, την υλοποίηση και τις βέλτιστες πρακτικές.
 
-### [Εξαγωγή Κειμένου από Έγγραφα με Προστασία Κωδικού Χρησιμοποιώντας το GroupDocs.Parser Java&#58; Ένας Πλήρης Οδηγός](./groupdocs-parser-java-extract-text-password-protected-documents/)
+### [Εξαγωγή κειμένου από έγγραφα με κωδικό πρόσβασης χρησιμοποιώντας το GroupDocs.Parser Java: Ένας ολοκληρωμένος οδηγός](./groupdocs-parser-java-extract-text-password-protected-documents/)
+Μάθετε πώς να χρησιμοποιήσετε το GroupDocs.Parser για Java για να εξάγετε κείμενο από έγγραφα με κωδικό πρόσβασης χωρίς κόπο. Αυτός ο οδηγός καλύπτει τη ρύθμιση, παραδείγματα κώδικα και πρακτικές εφαρμογές.
 
-### [Εξαγωγή Κειμένου από Αρχεία PowerPoint PPTX Χρησιμοποιώντας το GroupDocs.Parser σε Java](./extract-text-groupdocs-parser-java-pptx/)
+### [Εξαγωγή κειμένου από αρχεία PowerPoint PPTX χρησιμοποιώντας το GroupDocs.Parser σε Java](./extract-text-groupdocs-parser-java-pptx/)
+Μάθετε πώς να εξάγετε αποδοτικά ακατέργαστο κείμενο από παρουσιάσεις PowerPoint χρησιμοποιώντας το GroupDocs.Parser για Java, συμπεριλαμβανομένης της ρύθμισης και πρακτικών εφαρμογών.
 
-### [Εξαγωγή Κειμένου από Έγγραφα Word Χρησιμοποιώντας το GroupDocs.Parser σε Java](./extract-text-word-documents-groupdocs-parser-java/)
+### [Εξαγωγή κειμένου από έγγραφα Word χρησιμοποιώντας το GroupDocs.Parser σε Java](./extract-text-word-documents-groupdocs-parser-java/)
+Μάθετε πώς να εξάγετε αποδοτικά κείμενο από έγγραφα Microsoft Word χρησιμοποιώντας το GroupDocs.Parser για Java, με βήμα‑βήμα οδηγίες και πρακτικές εφαρμογές.
 
-### [Εξαγωγή Τριών Λέξεων Επισήμανσης από PDFs Χρησιμοποιώντας το GroupDocs.Parser σε Java&#58; Ένας Πλήρης Οδηγός](./extract-three-word-highlights-pdf-java-groupdocs-parser/)
+### [Εξαγωγή τριών‑λέξεων επισημάνσεων από PDF χρησιμοποιώντας το GroupDocs.Parser σε Java: Ένας ολοκληρωμένος οδηγός](./extract-three-word-highlights-pdf-java-groupdocs-parser/)
+Μάθετε πώς να εξάγετε τριών‑λέξεων επισημάνσεις από PDF χρησιμοποιώντας το GroupDocs.Parser σε Java. Αυτός ο οδηγός καλύπτει τη ρύθμιση, παραδείγματα κώδικα και πρακτικές εφαρμογές.
 
-### [Οδηγός για Parsing PDF σε Java Χρησιμοποιώντας το GroupDocs.Parser&#58; Τεχνικές Εξαγωγής Κειμένου](./pdf-parsing-groupdocs-parser-java-guide/)
+### [Οδηγός ανάλυσης PDF σε Java χρησιμοποιώντας το GroupDocs.Parser: Τεχνικές εξαγωγής κειμένου](./pdf-parsing-groupdocs-parser-java-guide/)
+Μάθετε πώς να εξάγετε αποδοτικά κείμενο από PDF χρησιμοποιώντας το GroupDocs.Parser για Java με κανονικές εκφράσεις. Βελτιώστε τις εργασίες επεξεργασίας δεδομένων σας.
 
-### [Πώς να Εξάγετε Ακατέργαστο Κείμενο από Φύλλα Excel Χρησιμοποιώντας το GroupDocs.Parser για Java&#58; Οδηγός Βήμα-Βήμα](./extract-raw-text-excel-groupdocs-parser-java/)
+### [Πώς να εξάγετε ακατέργαστο κείμενο από φύλλα Excel χρησιμοποιώντας το GroupDocs.Parser για Java: Οδηγός βήμα‑βήμα](./extract-raw-text-excel-groupdocs-parser-java/)
+Μάθετε πώς να εξάγετε αποδοτικά ακατέργαστα δεδομένα κειμένου από φύλλα Excel χρησιμοποιώντας το GroupDocs.Parser για Java. Αυτός ο οδηγός βήμα‑βήμα καλύπτει τη ρύθμιση, υλοποίηση και βελτιστοποίηση.
 
-### [Πώς να Εξάγετε Κείμενο από Αρχεία EPUB Χρησιμοποιώντας το GroupDocs.Parser για Java](./extract-text-epub-groupdocs-parser-java/)
+### [Πώς να εξάγετε κείμενο από αρχεία EPUB χρησιμοποιώντας το GroupDocs.Parser για Java](./extract-text-epub-groupdocs-parser-java/)
+Μάθετε πώς να εξάγετε κείμενο από αρχεία EPUB χρησιμοποιώντας το GroupDocs.Parser σε Java. Αυτός ο οδηγός βήμα‑βήμα καλύπτει τη ρύθμιση, υλοποίηση κώδικα και πρακτικές εφαρμογές.
 
-### [Πώς να Εξάγετε Κείμενο από Φύλλα Excel Χρησιμοποιώντας το GroupDocs.Parser Java - Ένας Πλήρης Οδηγός](./groupdocs-parser-java-excel-text-extraction-guide/)
+### [Πώς να εξάγετε κείμενο από φύλλα Excel χρησιμοποιώντας το GroupDocs.Parser Java - Ένας ολοκληρωμένος οδηγός](./groupdocs-parser-java-excel-text-extraction-guide/)
+Μάθετε πώς να εξάγετε αποδοτικά δεδομένα κειμένου από φύλλα Excel χρησιμοποιώντας το GroupDocs.Parser για Java. Αυτός ο οδηγός βήμα‑βήμα καλύπτει τη ρύθμιση, υλοποίηση και πρακτικές εφαρμογές.
 
-### [Πώς να Εξάγετε Κείμενο από OneNote χρησιμοποιώντας το GroupDocs.Parser σε Java&#58; Ένας Πλήρης Οδηγός](./extract-text-onenote-groupdocs-parser-java/)
+### [Πώς να εξάγετε κείμενο από OneNote χρησιμοποιώντας το GroupDocs.Parser σε Java: Ένας ολοκληρωμένος οδηγός](./extract-text-onenote-groupdocs-parser-java/)
+Μάθετε πώς να εξάγετε αποδοτικά κείμενο από αρχεία Microsoft OneNote χρησιμοποιώντας τη δυναμική βιβλιοθήκη GroupDocs.Parser σε Java. Ιδανικό για αυτοματοποίηση εργασιών ανάλυσης εγγράφων.
 
-### [Πώς να Εξάγετε Κείμενο από Παρουσιάσεις PowerPoint Χρησιμοποιώντας το GroupDocs.Parser για Java&#58; Ένας Πλήρης Οδηγός](./extract-text-ppt-groupdocs-parser-java/)
+### [Πώς να εξάγετε κείμενο από παρουσιάσεις PowerPoint χρησιμοποιώντας το GroupDocs.Parser για Java: Ένας ολοκληρωμένος οδηγός](./extract-text-ppt-groupdocs-parser-java/)
+Μάθετε πώς να εξάγετε αποδοτικά κείμενο από παρουσιάσεις PowerPoint χρησιμοποιώντας το GroupDocs.Parser για Java. Αυτός ο οδηγός καλύπτει τη ρύθμιση, υλοποίηση και πρακτικές εφαρμογές.
 
-### [Πώς να Εξάγετε Κείμενο από Έγγραφα Word Χρησιμοποιώντας το GroupDocs.Parser σε Java&#58; Ένας Πλήρης Οδηγός](./extract-text-word-docs-groupdocs-parser-java/)
+### [Πώς να εξάγετε κείμενο από έγγραφα Word χρησιμοποιώντας το GroupDocs.Parser σε Java: Ένας ολοκληρωμένος οδηγός](./extract-text-word-docs-groupdocs-parser-java/)
+Μάθετε πώς να εξάγετε αποδοτικά κείμενο από έγγραφα Microsoft Word χρησιμοποιώντας το GroupDocs.Parser για Java. Ακολουθήστε αυτόν τον βήμα‑βήμα οδηγό και βελτιώστε τις εφαρμογές επεξεργασίας εγγράφων σας.
 
-### [Java HTML Εξαγωγή Κειμένου Χρησιμοποιώντας το GroupDocs.Parser&#58; Ένας Πλήρης Οδηγός](./java-text-extraction-html-groupdocs-parser/)
+### [Java HTML Text Extraction Using GroupDocs.Parser: Ένας ολοκληρωμένος οδηγός](./java-text-extraction-html-groupdocs-parser/)
+Μάθετε πώς να εξάγετε αποδοτικά κείμενο από έγγραφα HTML χρησιμοποιώντας το GroupDocs.Parser σε Java. Αυτός ο οδηγός καλύπτει τη ρύθμιση, υλοποίηση και πρακτικές εφαρμογές.
 
-### [Java PDF Οδηγός Εξαγωγής Κειμένου Χρησιμοποιώντας το GroupDocs.Parser&#58; Ένας Πλήρης Οδηγός για Προγραμματιστές](./java-pdf-text-extraction-groupdocs-parser-guide/)
+### [Java PDF Text Extraction Guide Using GroupDocs.Parser: Ένας ολοκληρωμένος οδηγός για προγραμματιστές](./java-pdf-text-extraction-groupdocs-parser-guide/)
+Κατακτήστε την εξαγωγή κειμένου PDF με Java χρησιμοποιώντας το GroupDocs.Parser. Αυτός ο οδηγός προσφέρει βήμα‑βήμα οδηγίες, πρακτικές εφαρμογές και συμβουλές βελτιστοποίησης για αποδοτική επεξεργασία εγγράφων.
 
-### [Java PDF Εξαγωγή Κειμένου&#58; Master GroupDocs.Parser για Αποτελεσματική Διαχείριση Δεδομένων](./java-pdf-text-extraction-groupdocs-parser/)
+### [Java PDF Text Extraction: Master GroupDocs.Parser for Efficient Data Handling](./java-pdf-text-extraction-groupdocs-parser/)
+Μάθετε πώς να εξάγετε αποδοτικά κείμενο από PDF και να ανακτήσετε πληροφορίες εγγράφου χρησιμοποιώντας τη βιβλιοθήκη GroupDocs.Parser για Java.
 
-### [Java Εξαγωγή Περιοχών Κειμένου με το GroupDocs.Parser&#58; Ένας Πλήρης Οδηγός για Προγραμματιστές](./implement-text-area-extraction-java-groupdocs-parser/)
+### [Java Text Area Extraction with GroupDocs.Parser: Ένας ολοκληρωμένος οδηγός για προγραμματιστές](./implement-text-area-extraction-java-groupdocs-parser/)
+Μάθετε πώς να εξάγετε αποδοτικά περιοχές κειμένου από έγγραφα χρησιμοποιώντας Java και GroupDocs.Parser. Αυτός ο οδηγός καλύπτει τη ρύθμιση, βασικές λειτουργίες και πρακτικές εφαρμογές.
 
-### [Java Οδηγός Εξαγωγής Κειμένου Χρησιμοποιώντας το GroupDocs.Parser&#58; Ένας Πλήρης Tutorial](./java-text-extraction-groupdocs-parser-guide/)
+### [Java Text Extraction Guide Using GroupDocs.Parser: Ένας ολοκληρωμένος οδηγός](./java-text-extraction-groupdocs-parser-guide/)
+Μάθετε πώς να εξάγετε αποδοτικά κείμενο από διάφορες μορφές εγγράφων χρησιμοποιώντας το GroupDocs.Parser για Java. Αυτός ο ολοκληρωμένος οδηγός καλύπτει τη ρύθμιση, υλοποίηση και βελτιστοποίηση.
 
-### [Java Εξαγωγή Κειμένου από Αρχεία Excel Χρησιμοποιώντας το GroupDocs.Parser&#58; Ένας Πλήρης Οδηγός](./java-text-extraction-groupdocs-parser/)
+### [Java Text Extraction from Excel Files Using GroupDocs.Parser: Ένας ολοκληρωμένος οδηγός](./java-text-extraction-groupdocs-parser/)
+Μάθετε πώς να εξάγετε αποδοτικά κείμενο από λογιστικά φύλλα Excel χρησιμοποιώντας Java και τη βιβλιοθήκη GroupDocs.Parser. Ακολουθήστε αυτόν τον βήμα‑βήμα οδηγό για απρόσκοπτη υλοποίηση.
 
-### [Java Εξαγωγή Κειμένου με το GroupDocs.Parser&#58; Ένας Πλήρης Οδηγός για Προγραμματιστές](./java-text-extraction-guide-groupdocs-parser/)
+### [Java Text Extraction with GroupDocs.Parser: Ένας ολοκληρωμένος οδηγός για προγραμματιστές](./java-text-extraction-guide-groupdocs-parser/)
+Μάθετε πώς να εξάγετε αποδοτικά κείμενο από διάφορους τύπους εγγράφων χρησιμοποιώντας το GroupDocs.Parser για Java. Αυτός ο οδηγός καλύπτει τη ρύθμιση, υλοποίηση και συμβουλές βελτιστοποίησης.
 
-### [Java Εξαγωγή Κειμένου&#58; Mastering GroupDocs.Parser για Αποτελεσματική Ανάκτηση Δεδομένων από URLs και Streams](./java-text-extraction-groupdocs-parser-tutorial/)
+### [Java Text Extraction: Mastering GroupDocs.Parser for Efficient Data Retrieval from URLs and Streams](./java-text-extraction-groupdocs-parser-tutorial/)
+Μάθετε πώς να χρησιμοποιήσετε το GroupDocs.Parser για Java ώστε να εξάγετε αποδοτικά κείμενο από έγγραφα που φιλοξενούνται online ή τοπικά. Ιδανικό για ανάλυση δεδομένων και ανάκτηση περιεχομένου.
 
-### [Master Εξαγωγή Εγγράφων με το GroupDocs.Parser για Java&#58; Convert Documents to HTML και Plain Text](./master-document-extraction-groupdocs-parser-java/)
+### [Master Document Extraction with GroupDocs.Parser for Java: Convert Documents to HTML and Plain Text](./master-document-extraction-groupdocs-parser-java/)
+Μάθετε πώς να χρησιμοποιήσετε το GroupDocs.Parser για Java ώστε να εξάγετε αποδοτικά κείμενο από έγγραφα, μετατρέποντάς τα σε HTML ή απλό κείμενο.
 
-### [Master Parsing Εγγράφων σε Java&#58; Ένας Οδηγός για GroupDocs.Parser για Εξαγωγή Κειμένου](./mastering-document-parsing-groupdocs-parser-java/)
+### [Master Document Parsing in Java: Ένας οδηγός για GroupDocs.Parser για εξαγωγή κειμένου](./mastering-document-parsing-groupdocs-parser-java/)
+Μάθετε πώς να αυτοματοποιήσετε την εξαγωγή κειμένου από έγγραφα χρησιμοποιώντας το GroupDocs.Parser για Java. Αυτός ο οδηγός καλύπτει τη ρύθμιση, υλοποίηση και βελτιστοποίηση απόδοσης.
 
-### [Master Διαχείριση Εξαιρέσεων στην Εξαγωγή Κειμένου Word με το GroupDocs.Parser για Java](./groupdocs-parser-java-exception-handling-word-extraction/)
+### [Master Exception Handling in Word Text Extraction with GroupDocs.Parser for Java](./groupdocs-parser-java-exception-handling-word-extraction/)
+Μάθετε πώς να διαχειρίζεστε αποτελεσματικά εξαιρέσεις κατά την εξαγωγή κειμένου από έγγραφα Word χρησιμοποιώντας το GroupDocs.Parser για Java. Εξασφαλίστε αξιόπιστη και χωρίς σφάλματα ανάλυση εγγράφων.
 
-### [Master Java PDF Parsing με το GroupDocs.Parser&#58; Ο Πλήρης Οδηγός σας για Εξαγωγή Δεδομένων](./java-pdf-parsing-groupdocs-parser-guide/)
+### [Master Java PDF Parsing with GroupDocs.Parser: Your Complete Guide to Data Extraction](./java-pdf-parsing-groupdocs-parser-guide/)
+Μάθετε πώς να εξάγετε αποδοτικά δεδομένα από PDF χρησιμοποιώντας το GroupDocs.Parser για Java. Αυτός ο οδηγός καλύπτει τη ρύθμιση, πρότυπα και πρακτικές εφαρμογές.
 
-### [Master Logging & Parsing Εγγράφων σε Java με το GroupDocs.Parser](./mastering-logging-parsing-java-groupdocs-parser/)
+### [Master Logging & Document Parsing in Java with GroupDocs.Parser](./mastering-logging-parsing-java-groupdocs-parser/)
+Μάθετε πώς να υλοποιήσετε προσαρμοσμένο logging και να αναλύσετε έγγραφα αποδοτικά χρησιμοποιώντας το GroupDocs.Parser σε Java. Βελτιώστε τη διαχείριση σφαλμάτων και την απόδοση της εφαρμογής σας.
 
-### [Master PDF Parsing με το GroupDocs.Parser Java&#58; Οδηγός Βήμα-Βήμα για Προσαρμοσμένα Templates](./master-pdf-parsing-groupdocs-parser-java/)
+### [Master PDF Parsing with GroupDocs.Parser Java: Ένας βήμα‑βήμα οδηγός για προσαρμοσμένα πρότυπα](./master-pdf-parsing-groupdocs-parser-java/)
+Μάθετε πώς να αναλύετε αποδοτικά έγγραφα PDF χρησιμοποιώντας προσαρμοσμένα πρότυπα με το GroupDocs.Parser για Java. Αυτός ο οδηγός καλύπτει τη ρύθμιση, δημιουργία προτύπων και εξαγωγή δεδομένων.
 
-### [Master PDF Εξαγωγή Κειμένου Χρησιμοποιώντας το GroupDocs.Parser Java](./master-text-extraction-groupdocs-parser-java/)
+### [Master PDF Text Extraction Using GroupDocs.Parser Java](./master-text-extraction-groupdocs-parser-java/)
+Μάθετε πώς να εξάγετε αποδοτικά κείμενο από PDF με το GroupDocs.Parser για Java. Αυτός ο οδηγός καλύπτει τη ρύθμιση, υλοποίηση και πρακτικές εφαρμογές.
 
-### [Master Εξαγωγή Δεδομένων PowerPoint σε Java Χρησιμοποιώντας το GroupDocs.Parser για Ανάλυση Κειμένου και Αυτοματοποίηση](./master-powerpoint-data-extraction-java-groupdocs-parser/)
+### [Master PowerPoint Data Extraction in Java Using GroupDocs.Parser for Text Analysis and Automation](./master-powerpoint-data-extraction-java-groupdocs-parser/)
+Μάθετε πώς να εξάγετε κείμενο από παρουσιάσεις PowerPoint χρησιμοποιώντας το GroupDocs.Parser για Java. Ιδανικό για ανάλυση περιεχομένου, δημιουργία αναφορών και αυτοματοποιημένες ροές εργασίας.
 
-### [Master Εξαγωγή Κειμένου από Έγγραφα Χρησιμοποιώντας το GroupDocs.Parser Java&#58; Οδηγός Βήμα-Βήμα](./text-extraction-groupdocs-parser-java-tutorial/)
+### [Master Text Extraction from Documents Using GroupDocs.Parser Java: Ένας βήμα‑βήμα οδηγός](./text-extraction-groupdocs-parser-java-tutorial/)
+Μάθετε πώς να εξάγετε αποδοτικά κείμενο από PDF και άλλα έγγραφα χρησιμοποιώντας το GroupDocs.Parser για Java. Αυτός ο ολοκληρωμένος οδηγός καλύπτει τη ρύθμιση, υλοποίηση και πρακτικές εφαρμογές.
 
-### [Mastering Εξαγωγή Κειμένου Εγγράφων σε Java χρησιμοποιώντας το GroupDocs.Parser&#58; Οδηγός HTML και Markdown](./mastering-document-text-extraction-java-groupdocs-parser/)
+### [Mastering Document Text Extraction in Java using GroupDocs.Parser: HTML and Markdown Guide](./mastering-document-text-extraction-java-groupdocs-parser/)
+Μάθετε πώς να εξάγετε κείμενο από έγγραφα σε Java με το GroupDocs.Parser. Μετατρέψτε το περιεχόμενο σε HTML και Markdown για δημοσίευση στο web και τεκμηρίωση.
 
-## Πρόσθετοι Πόροι
+## Πρόσθετοι πόροι
 
-- [Τεκμηρίωση GroupDocs.Parser για Java](https://docs.groupdocs.com/parser/java/)
-- [Αναφορά API GroupDocs.Parser για Java](https://reference.groupdocs.com/parser/java/)
-- [Λήψη GroupDocs.Parser για Java](https://releases.groupdocs.com/parser/java/)
-- [Φόρουμ GroupDocs.Parser](https://forum.groupdocs.com/c/parser)
-- [Δωρεάν Υποστήριξη](https://forum.groupdocs.com/)
-- [Προσωρινή Άδεια](https://purchase.groupdocs.com/temporary-license/)
+- [GroupDocs.Parser for Java Documentation](https://docs.groupdocs.com/parser/java/)
+- [GroupDocs.Parser for Java API Reference](https://reference.groupdocs.com/parser/java/)
+- [Download GroupDocs.Parser for Java](https://releases.groupdocs.com/parser/java/)
+- [GroupDocs.Parser Forum](https://forum.groupdocs.com/c/parser)
+- [Free Support](https://forum.groupdocs.com/)
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/)
 
-## Συχνές Ερωτήσεις
+## Συχνές ερωτήσεις
 
-**Q: Μπορώ να εξάγω κείμενο από κρυπτογραφημένα ή προστατευμένα με κωδικό PDFs;**  
-A: Ναι—απλώς περάστε τον κωδικό στον κατασκευαστή `Parser` ή στη μέθοδο `load`, και η εξαγωγή λειτουργεί όπως συνήθως.
+**Ε: Μπορώ να εξάγω κείμενο από κρυπτογραφημένα ή προστατευμένα με κωδικό PDF;**  
+Α: Ναι—απλώς περάστε τον κωδικό στο κατασκευαστή `Parser` ή στη μέθοδο `load`, και η εξαγωγή λειτουργεί όπως συνήθως.
 
-**Q: Ποιες μορφές εξόδου υποστηρίζει το GroupDocs.Parser για μετατροπή;**  
-A: Απλό κείμενο, HTML, Markdown, και μπορείτε επίσης να ανακτήσετε περιοχές κειμένου με γνώση διάταξης για προσαρμοσμένη μορφοποίηση.
+**Ε: Ποιες μορφές εξόδου υποστηρίζει το GroupDocs.Parser για μετατροπή;**  
+Α: Απλό κείμενο, HTML, Markdown, και μπορείτε επίσης να ανακτήσετε περιοχές κειμένου που διατηρούν τη διάταξη για προσαρμοσμένη μορφοποίηση.
 
-**Q: Υπάρχει τρόπος να εξάγω μόνο συγκεκριμένες σελίδες από ένα PDF;**  
-A: Απόλυτα. Χρησιμοποιήστε την κλάση `PageOptions` για να καθορίσετε ένα εύρος σελίδων πριν καλέσετε τη μέθοδο εξαγωγής.
+**Ε: Υπάρχει τρόπος να εξάγω μόνο συγκεκριμένες σελίδες από ένα PDF;**  
+Α: Απόλυτα. Χρησιμοποιήστε την κλάση `PageOptions` για να ορίσετε εύρος σελίδων πριν καλέσετε τη μέθοδο εξαγωγής.
 
-**Q: Πώς διαφέρει το “extract PDF text Java” από τη χρήση του Apache PDFBox;**  
-A: Το GroupDocs.Parser προσφέρει APIs υψηλότερου επιπέδου, ενσωματωμένη υποστήριξη για πολλούς τύπους αρχείων και ανώτερη διαχείριση σύνθετων διατάξεων σε σύγκριση με βιβλιοθήκες χαμηλού επιπέδου όπως το PDFBox.
+**Ε: Πώς διαφέρει το “extract PDF text Java” από τη χρήση του Apache PDFBox;**  
+Α: Το GroupDocs.Parser προσφέρει APIs υψηλότερου επιπέδου, ενσωματωμένη υποστήριξη για πολλές μορφές αρχείων και καλύτερη διαχείριση σύνθετων διατάξεων σε σύγκριση με τις χαμηλού επιπέδου βιβλιοθήκες όπως το PDFBox.
 
-**Q: Ποια έκδοση του GroupDocs.Parser πρέπει να χρησιμοποιήσω;**  
-A: Πάντα χρησιμοποιήστε την πιο πρόσφατη έκδοση Maven· περιλαμβάνει διορθώσεις σφαλμάτων, βελτιώσεις απόδοσης και υποστήριξη για νέες μορφές εγγράφων.
+**Ε: Ποια έκδοση του GroupDocs.Parser πρέπει να χρησιμοποιήσω;**  
+Α: Πάντα χρησιμοποιήστε την τελευταία έκδοση Maven· περιλαμβάνει διορθώσεις σφαλμάτων, βελτιώσεις απόδοσης και υποστήριξη νέων μορφών εγγράφων.
 
-**Τελευταία Ενημέρωση:** 2026-02-14  
-**Δοκιμάστηκε Με:** GroupDocs.Parser 23.12 for Java  
+## Συχνά προβλήματα και αντιμετώπιση
+
+- **Απουσία κειμένου μετά την εξαγωγή** – Βεβαιωθείτε ότι το PDF δεν είναι μόνο σκαναρισμένη εικόνα· αν είναι, εκτελέστε OCR πρώτα χρησιμοποιώντας το πρόσθετο GroupDocs.OCR.  
+- **Παραμόρφωση διάταξης** – Μεταβείτε στη λειτουργία εξαγωγής `Accurate` ή χρησιμοποιήστε αντικείμενα `TextArea` για να ξαναχτίσετε πίνακες χειροκίνητα.  
+- **Σφάλματα out‑of‑memory σε μεγάλα αρχεία** – Ενεργοποιήστε τη λειτουργία streaming (`Parser.setLoadOptions(new LoadOptions().setUseMemoryCache(true))`) ώστε η βιβλιοθήκη να επεξεργάζεται τις σελίδες διαδοχικά.  
+- **Σφάλματα άδειας** – Επαληθεύστε ότι το προσωρινό αρχείο άδειας βρίσκεται στο classpath και ότι η ημερομηνία λήξης του δεν έχει περάσει.
+
+---
+
+**Τελευταία ενημέρωση:** 2026-09-27  
+**Δοκιμασμένο με:** GroupDocs.Parser 23.12 for Java  
 **Συγγραφέας:** GroupDocs
+
+## Σχετικά tutorials
+
+- [Extract Data Pdfs Tables Groupdocs Parser Java](/parser/java/table-extraction/extract-data-pdfs-tables-groupdocs-parser-java/)
+- [How to extract PDF form data in Java with GroupDocs.Parser – A Comprehensive Guide](/parser/java/form-extraction/master-pdf-form-parsing-java-groupdocs-parser/)
+- [How to Convert Doc to HTML Using GroupDocs.Parser for Java – Step‑by‑Step Guide](/parser/java/formatted-text-extraction/extract-document-text-as-html-groupdocs-parser-java/)
