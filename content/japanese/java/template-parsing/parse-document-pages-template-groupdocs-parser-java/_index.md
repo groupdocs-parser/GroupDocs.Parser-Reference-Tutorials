@@ -78,10 +78,6 @@ url: /ja/java/template-parsing/parse-document-pages-template-groupdocs-parser-ja
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # PDFからバーコードを抽出する方法（GroupDocs.Parser Java）
 
 テンプレートによるPDFドキュメントの解析は、バーコード、QRコード、フォームフィールドなどの構造化データを取得する必要がある場合に一般的な要件です。このチュートリアルでは、GroupDocs.Parser for Java を使用して **PDFからバーコードを抽出する方法** をステップバイステップで学びます。環境設定からバーコードテンプレートの定義、ページ単位の解析、抽出結果の検証までを順に解説します。
@@ -270,8 +266,3 @@ A: API は同期的ですが、解析呼び出しを別スレッドでラップ�
 - [バーコード抽出 特定ページ – PDF Java | GroupDocs.Parser](/parser/java/barcode-extraction/)
 - [GroupDocs.Parser for Java を使用したテンプレートによる PDF 文書ページの解析方法](/parser/java/template-parsing/parse-document-pages-template-groupdocs-parser-java/)
 - [Java PDF テキスト抽出 with GroupDocs.Parser – ステップバイステップガイド](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

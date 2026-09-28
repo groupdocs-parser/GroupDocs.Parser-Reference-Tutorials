@@ -80,10 +80,6 @@ url: /pl/java/template-parsing/parse-document-pages-template-groupdocs-parser-ja
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Jak wyodrębnić kod kreskowy z PDF przy użyciu GroupDocs.Parser Java
 
 Parsowanie dokumentów PDF według szablonu jest powszechnym wymaganiem, gdy trzeba pobrać ustrukturyzowane dane, takie jak kody kreskowe, kody QR lub pola formularzy. W tym samouczku nauczysz się **jak wyodrębnić kod kreskowy z PDF** przy użyciu GroupDocs.Parser dla Javy, krok po kroku. Zacznijemy od konfiguracji środowiska, zdefiniujemy szablon kodu kreskowego, przejdziemy przez parsowanie stron po stronie, a na koniec zweryfikujemy wyodrębnione wartości.
@@ -275,9 +271,3 @@ Masz teraz kompletny, gotowy do produkcji przewodnik po **wyodrębnianiu kodu kr
 - [Wyodrębnianie kodu kreskowego z konkretnej strony – PDF Java | GroupDocs.Parser](/parser/java/barcode-extraction/)
 - [Jak parsować strony dokumentu PDF przy użyciu szablonu z GroupDocs.Parser dla Javy](/parser/java/template-parsing/parse-document-pages-template-groupdocs-parser-java/)
 - [Wyodrębnianie tekstu PDF w Javie z GroupDocs.Parser – Przewodnik krok po kroku](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

@@ -80,10 +80,6 @@ url: /id/java/template-parsing/parse-document-pages-template-groupdocs-parser-ja
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Cara mengekstrak barcode dari PDF dengan GroupDocs.Parser Java
 
 Menganalisis dokumen PDF dengan template adalah kebutuhan umum ketika Anda perlu mengambil data terstruktur seperti barcode, kode QR, atau bidang formulir. Dalam tutorial ini Anda akan belajar **cara mengekstrak barcode dari PDF** menggunakan GroupDocs.Parser untuk Java, langkah demi langkah. Kami akan memulai dengan penyiapan lingkungan, mendefinisikan template barcode, melangkah melalui parsing halaman demi halaman, dan mengakhiri dengan verifikasi nilai yang diekstrak.
@@ -274,9 +270,3 @@ Anda kini memiliki panduan lengkap yang siap produksi untuk **mengekstrak barcod
 - [Ekstraksi Barcode Halaman Spesifik – PDF Java | GroupDocs.Parser](/parser/java/barcode-extraction/)
 - [Cara Mem-Parsing Halaman Dokumen PDF dengan Template Menggunakan GroupDocs.Parser untuk Java](/parser/java/template-parsing/parse-document-pages-template-groupdocs-parser-java/)
 - [Ekstraksi Teks PDF Java dengan GroupDocs.Parser – Panduan Langkah‑per‑Langkah](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

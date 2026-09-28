@@ -79,10 +79,6 @@ url: /vi/java/template-parsing/parse-document-pages-template-groupdocs-parser-ja
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Cách trích xuất mã vạch từ PDF với GroupDocs.Parser Java
 
 Phân tích tài liệu PDF theo mẫu là một yêu cầu phổ biến khi bạn cần lấy dữ liệu có cấu trúc như mã vạch, mã QR, hoặc các trường biểu mẫu. Trong hướng dẫn này, bạn sẽ học **cách trích xuất mã vạch từ PDF** bằng cách sử dụng GroupDocs.Parser cho Java, từng bước một. Chúng tôi sẽ bắt đầu với việc thiết lập môi trường, định nghĩa mẫu mã vạch, thực hiện phân tích từng trang, và kết thúc bằng việc xác minh các giá trị đã trích xuất.
@@ -273,9 +269,3 @@ Bạn đã có một hướng dẫn đầy đủ, sẵn sàng cho môi trường
 - [Trích xuất mã vạch trang cụ thể – PDF Java | GroupDocs.Parser](/parser/java/barcode-extraction/)
 - [Cách phân tích các trang tài liệu PDF theo mẫu bằng GroupDocs.Parser cho Java](/parser/java/template-parsing/parse-document-pages-template-groupdocs-parser-java/)
 - [Trích xuất văn bản PDF bằng Java với GroupDocs.Parser – Hướng dẫn từng bước](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

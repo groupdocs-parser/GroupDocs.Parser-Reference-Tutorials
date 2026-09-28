@@ -80,10 +80,6 @@ url: /hi/java/template-parsing/parse-document-pages-template-groupdocs-parser-ja
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # PDF से बारकोड निकालने के लिए GroupDocs.Parser Java के साथ कैसे करें
 
 टेम्प्लेट के आधार पर PDF दस्तावेज़ों को पार्स करना एक सामान्य आवश्यकता है जब आपको बारकोड, QR कोड, या फ़ॉर्म फ़ील्ड जैसे संरचित डेटा निकालने की ज़रूरत होती है। इस ट्यूटोरियल में आप GroupDocs.Parser for Java का उपयोग करके **PDF से बारकोड निकालने का तरीका** चरण‑दर‑चरण सीखेंगे। हम पर्यावरण सेटअप से शुरू करेंगे, एक बारकोड टेम्प्लेट परिभाषित करेंगे, पृष्ठ‑दर‑पृष्ठ पार्सिंग करेंगे, और निकाले गए मानों की पुष्टि के साथ समाप्त करेंगे।
@@ -271,8 +267,3 @@ A: API सिंक्रोनस है, लेकिन आप पार्�
 - [बारकोड निष्कर्षण विशिष्ट पृष्ठ – PDF Java | GroupDocs.Parser](/parser/java/barcode-extraction/)
 - [GroupDocs.Parser for Java का उपयोग करके टेम्प्लेट द्वारा PDF दस्तावेज़ पृष्ठों को कैसे पार्स करें](/parser/java/template-parsing/parse-document-pages-template-groupdocs-parser-java/)
 - [GroupDocs.Parser के साथ Java PDF टेक्स्ट एक्सट्रैक्शन – स्टेप‑बाय‑स्टेप गाइड](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

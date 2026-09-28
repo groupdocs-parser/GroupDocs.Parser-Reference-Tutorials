@@ -78,10 +78,6 @@ url: /it/java/template-parsing/parse-document-pages-template-groupdocs-parser-ja
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Come estrarre il codice a barre da PDF con GroupDocs.Parser Java
 
 L'analisi dei documenti PDF tramite modello è una necessità comune quando è necessario estrarre dati strutturati come codici a barre, codici QR o campi modulo. In questo tutorial imparerai **come estrarre il codice a barre da PDF** usando GroupDocs.Parser per Java, passo dopo passo. Inizieremo con la configurazione dell'ambiente, definiremo un modello di codice a barre, esamineremo l'analisi pagina per pagina e termineremo con la verifica dei valori estratti.
@@ -272,8 +268,3 @@ Ora hai una guida completa e pronta per la produzione per **estrarre il codice a
 - [Estrazione di codice a barre pagina specifica – PDF Java | GroupDocs.Parser](/parser/java/barcode-extraction/)
 - [Come analizzare le pagine di documenti PDF tramite template usando GroupDocs.Parser per Java](/parser/java/template-parsing/parse-document-pages-template-groupdocs-parser-java/)
 - [Estrazione di testo PDF Java con GroupDocs.Parser – Guida passo‑passo](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

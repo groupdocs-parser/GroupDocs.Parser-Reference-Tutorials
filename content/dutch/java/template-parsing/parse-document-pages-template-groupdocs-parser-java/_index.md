@@ -80,10 +80,6 @@ url: /nl/java/template-parsing/parse-document-pages-template-groupdocs-parser-ja
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Hoe barcode uit PDF te extraheren met GroupDocs.Parser Java
 
 Het parseren van PDF‑documenten op basis van een sjabloon is een veelvoorkomende eis wanneer je gestructureerde gegevens zoals barcodes, QR‑codes of formuliervelden moet ophalen. In deze tutorial leer je **hoe barcode uit PDF te extraheren** met GroupDocs.Parser voor Java, stap voor stap. We beginnen met het opzetten van de omgeving, definiëren een barcodesjabloon, lopen pagina‑voor‑pagina parsing door, en eindigen met verificatie van de geëxtraheerde waarden.
@@ -273,9 +269,3 @@ Je hebt nu een volledige, productie‑klare walkthrough voor **barcode uit PDF e
 - [Barcode‑extractie specifieke pagina – PDF Java | GroupDocs.Parser](/parser/java/barcode-extraction/)
 - [Hoe PDF‑documentpagina's te parseren met sjabloon met GroupDocs.Parser voor Java](/parser/java/template-parsing/parse-document-pages-template-groupdocs-parser-java/)
 - [Java PDF‑tekstextractie met GroupDocs.Parser – Stapsgewijze gids](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

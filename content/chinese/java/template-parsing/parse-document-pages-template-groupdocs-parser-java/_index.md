@@ -78,10 +78,6 @@ url: /zh/java/template-parsing/parse-document-pages-template-groupdocs-parser-ja
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # 如何使用 GroupDocs.Parser Java 从 PDF 中提取条形码
 
 通过模板解析 PDF 文档是当您需要提取条形码、二维码或表单字段等结构化数据时的常见需求。在本教程中，您将学习使用 GroupDocs.Parser for Java **如何从 PDF 中提取条形码**，一步一步进行。我们将从环境设置开始，定义条形码模板，逐页解析，并最终验证提取的值。
@@ -272,9 +268,3 @@ A: API 为同步的，但您可以将解析调用包装在单独的线程中，�
 - [特定页面条形码提取 – PDF Java | GroupDocs.Parser](/parser/java/barcode-extraction/)
 - [如何使用 GroupDocs.Parser for Java 通过模板解析 PDF 文档页面](/parser/java/template-parsing/parse-document-pages-template-groupdocs-parser-java/)
 - [Java PDF 文本提取使用 GroupDocs.Parser – 步骤指南](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

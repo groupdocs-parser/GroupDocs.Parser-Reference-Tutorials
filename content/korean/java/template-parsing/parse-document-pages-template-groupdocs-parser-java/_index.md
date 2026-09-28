@@ -78,10 +78,6 @@ url: /ko/java/template-parsing/parse-document-pages-template-groupdocs-parser-ja
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # PDF에서 GroupDocs.Parser Java를 사용하여 바코드 추출하는 방법
 
 템플릿을 사용하여 PDF 문서를 파싱하는 것은 바코드, QR 코드 또는 양식 필드와 같은 구조화된 데이터를 추출해야 할 때 흔히 요구되는 작업입니다. 이 튜토리얼에서는 GroupDocs.Parser for Java를 사용하여 **PDF에서 바코드를 추출하는 방법**을 단계별로 배웁니다. 환경 설정, 바코드 템플릿 정의, 페이지별 파싱 과정을 살펴보고 추출된 값 검증까지 진행합니다.
@@ -272,9 +268,3 @@ A: API는 동기식이지만 파싱 호출을 별도 스레드에 감싸거나 J
 - [바코드 추출 특정 페이지 – PDF Java | GroupDocs.Parser](/parser/java/barcode-extraction/)
 - [GroupDocs.Parser for Java를 사용한 템플릿 기반 PDF 문서 페이지 파싱 방법](/parser/java/template-parsing/parse-document-pages-template-groupdocs-parser-java/)
 - [Java PDF 텍스트 추출 with GroupDocs.Parser – 단계별 가이드](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

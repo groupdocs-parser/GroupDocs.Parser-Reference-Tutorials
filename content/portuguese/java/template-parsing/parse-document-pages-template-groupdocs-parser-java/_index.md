@@ -80,10 +80,6 @@ url: /pt/java/template-parsing/parse-document-pages-template-groupdocs-parser-ja
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Como extrair código de barras de PDF com GroupDocs.Parser Java
 
 Analisar documentos PDF por modelo é uma necessidade comum quando você precisa extrair dados estruturados como códigos de barras, códigos QR ou campos de formulário. Neste tutorial você aprenderá **como extrair código de barras de PDF** usando GroupDocs.Parser para Java, passo a passo. Começaremos com a configuração do ambiente, definiremos um modelo de código de barras, percorreremos a análise página por página e finalizaremos com a verificação dos valores extraídos.
@@ -274,9 +270,3 @@ Agora você tem um guia completo e pronto para produção de **extração de có
 - [Extração de Código de Barras Página Específica – PDF Java | GroupDocs.Parser](/parser/java/barcode-extraction/)
 - [Como analisar páginas de documentos PDF por modelo usando GroupDocs.Parser para Java](/parser/java/template-parsing/parse-document-pages-template-groupdocs-parser-java/)
 - [Extração de Texto PDF em Java com GroupDocs.Parser – Guia passo a passo](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

@@ -80,10 +80,6 @@ url: /tr/java/template-parsing/parse-document-pages-template-groupdocs-parser-ja
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # PDF'den barkod çıkarmak için GroupDocs.Parser Java
 
 Şablon bazlı PDF belgelerini ayrıştırmak, barkodlar, QR kodları veya form alanları gibi yapılandırılmış verileri çekmeniz gerektiğinde yaygın bir gereksinimdir. Bu öğreticide GroupDocs.Parser for Java kullanarak **PDF'den barkod çıkarma** adım adım öğreneceksiniz. Ortam kurulumuyla başlayacak, bir barkod şablonu tanımlayacak, sayfa sayfa ayrıştırmayı gösterecek ve çıkarılan değerlerin doğrulamasıyla sonlandıracağız.
@@ -272,9 +268,3 @@ Artık GroupDocs.Parser for Java kullanarak **PDF'den barkod çıkarma** için e
 - [Barcode Extraction Specific Page – PDF Java | GroupDocs.Parser](/parser/java/barcode-extraction/)
 - [How to Parse PDF Document Pages by Template Using GroupDocs.Parser for Java](/parser/java/template-parsing/parse-document-pages-template-groupdocs-parser-java/)
 - [Java PDF Text Extraction with GroupDocs.Parser – Step‑by‑Step Guide](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}

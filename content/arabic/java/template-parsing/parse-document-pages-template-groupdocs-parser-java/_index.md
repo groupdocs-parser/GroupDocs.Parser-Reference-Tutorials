@@ -78,10 +78,6 @@ url: /ar/java/template-parsing/parse-document-pages-template-groupdocs-parser-ja
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # كيفية استخراج الباركود من PDF باستخدام GroupDocs.Parser Java
 
 تحليل مستندات PDF باستخدام القالب هو طلب شائع عندما تحتاج إلى استخراج بيانات منظمة مثل الباركود، رموز QR، أو حقول النماذج. في هذا البرنامج التعليمي ستتعلم **كيفية استخراج الباركود من PDF** باستخدام GroupDocs.Parser للغة Java، خطوة بخطوة. سنبدأ بإعداد البيئة، تعريف قالب الباركود، استعراض التحليل صفحة بصفحة، والانتهاء بالتحقق من القيم المستخرجة.
@@ -272,9 +268,3 @@ try (Parser parser = new Parser(documentPath)) {
 - [استخراج الباركود من صفحة محددة – PDF Java | GroupDocs.Parser](/parser/java/barcode-extraction/)
 - [كيفية تحليل صفحات مستند PDF بالقالب باستخدام GroupDocs.Parser للغة Java](/parser/java/template-parsing/parse-document-pages-template-groupdocs-parser-java/)
 - [استخراج نص PDF باستخدام Java وGroupDocs.Parser – دليل خطوة بخطوة](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
-
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/products-backtop-button >}}
