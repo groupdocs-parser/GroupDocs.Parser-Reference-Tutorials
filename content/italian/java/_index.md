@@ -1,163 +1,196 @@
 ---
-date: 2026-02-16
-description: Impara come estrarre testo in Java usando GroupDocs.Parser per Java e
-  scopri come estrarre immagini in Java e cercare testo nei documenti in Java per
-  una potente elaborazione dei documenti.
+date: 2026-10-07
+description: Scopri come estrarre testo in Java usando GroupDocs.Parser, oltre a estrarre
+  immagini, cercare testo e gestire moduli—tutto con una pure Java API.
 is_root: true
-linktitle: GroupDocs.Parser for Java Tutorials
-title: Estrai testo Java – Tutorial di GroupDocs.Parser
+keywords:
+- how to extract text
+- extract text java
+- how to extract images
+- extract form data java
+- java extract text pdf
+lastmod: 2026-10-07
+linktitle: Tutorial di GroupDocs.Parser per Java
+og_description: How to extract text in Java with GroupDocs.Parser API ti consente
+  di estrarre testo semplice, immagini e metadati da PDF, DOCX e oltre 100 formati.
+  Usa metodi semplici per un'estrazione rapida e accurata.
+og_image_alt: Guide showing Java code extracting text and images using GroupDocs.Parser
+og_title: Come estrarre testo in Java con GroupDocs.Parser API
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-07'
+  description: Learn how to extract text in Java using GroupDocs.Parser, plus extract
+    images, search text, and handle forms—all with a pure Java API.
+  headline: How to extract text in Java with GroupDocs.Parser API
+  type: TechArticle
+- questions:
+  - answer: Add the Maven dependency, create a `Parser` instance with your file path,
+      and call `extractText()`. This one‑line call returns the entire document’s plain
+      text.
+    question: How do I begin extracting text with Java?
+  - answer: Yes. After loading the document, invoke `extractImages()` on the same
+      parser instance to retrieve every embedded picture.
+    question: Can I extract images while extracting text?
+  - answer: Use `search()` with either a simple keyword string or a regular‑expression
+      pattern. Pass a `SearchOptions` object to enable case‑insensitivity, whole‑word
+      matching, or result pagination.
+    question: What options exist for searching within a document?
+  - answer: Absolutely. Provide the password when constructing the `Parser` object;
+      the library decrypts the document automatically.
+    question: Does the API support password‑protected files?
+  - answer: There is no hard size limit, but processing multi‑gigabyte files benefits
+      from the streaming API to keep memory usage low.
+    question: Is there a limit on file size?
+  type: FAQPage
+tags:
+- extract text
+- GroupDocs.Parser
+- Java document processing
+title: Come estrarre testo in Java con GroupDocs.Parser API
 type: docs
 url: /it/java/
 weight: 10
 ---
 
-16  
-**Testato Con:** GroupDocs.Parser for Java 23.12  
-**Autore:** GroupDocs"
+# Come estrarre testo in Java con GroupDocs.Parser
 
-Now ensure we keep markdown formatting.
+Nelle moderne applicazioni aziendali, **come estrarre testo** da una varietà di formati di documento è un requisito fondamentale. Che tu stia costruendo un indice di ricerca, generando un report o migrando file legacy, GroupDocs.Parser per Java ti offre un modo pure‑Java, senza dipendenze, per estrarre testo semplice, contenuto formattato, immagini, metadati e dati di modulo da PDF, DOCX, XLSX e molto altro. Questo tutorial ti guida attraverso i passaggi essenziali, spiega perché la libreria si distingue e mostra come gestire scenari comuni come file di grandi dimensioni, documenti protetti da password e ricerca veloce del testo.
 
-Also ensure we didn't miss any shortcodes (none). Ensure all links remain.
-
-Now produce final content.# Estrazione del Testo Java – Tutorial di GroupDocs.Parser
-
-Nell'attuale panorama digitale, **extract text java** è una capacità critica per qualsiasi applicazione che lavora con i documenti. GroupDocs.Parser per Java ti offre un modo rapido e affidabile per estrarre testo semplice, contenuto formattato, immagini, metadati e altro — senza necessità di strumenti esterni. Che tu stia creando un indice di ricerca, generando report o semplicemente abbia bisogno di leggere dati da PDF, DOCX o altri formati, questa guida ti mostrerà come svolgere il lavoro in modo efficiente.
-
-## Risposte Rapide
-- **Che cosa significa “extract text java”?** Si riferisce all'uso di librerie Java (come GroupDocs.Parser) per recuperare programmaticamente il contenuto testuale dai file di documento.  
-- **Posso anche estrarre immagini?** Sì — usa la stessa API per **how to extract images java** da qualsiasi documento supportato.  
-- **La ricerca è supportata?** Assolutamente — GroupDocs.Parser ti consente di **search text in documents java** con parole chiave o espressioni regolari.  
-- **Ho bisogno di una licenza?** È disponibile una prova gratuita; è necessaria una licenza commerciale per l'uso in produzione.  
-- **Quali versioni di Java sono supportate?** Java 8 e successive sono pienamente compatibili.  
-- **Come estraggo i dati del modulo?** Il parser fornisce il metodo `extractFormData()` per lo scenario **extract form data java**.  
-- **Posso cercare il testo del documento in modo efficiente?** Sì, usa il metodo integrato `search()` per **search document text java** con alte prestazioni.
+## Risposte rapide
+- **Che cosa significa “extract text java”?** Significa utilizzare una libreria Java — in particolare GroupDocs.Parser — per leggere programmaticamente un file documento e restituirne il contenuto testuale.  
+- **Posso anche estrarre immagini?** Sì — chiama l'API di estrazione immagini della stessa istanza del parser per recuperare ogni immagine incorporata.  
+- **La ricerca è supportata?** Assolutamente — utilizza il metodo integrato `search(String query)` per individuare parole chiave o pattern di espressioni regolari.  
+- **Ho bisogno di una licenza?** Una chiave di prova gratuita funziona per la valutazione; è necessaria una licenza commerciale per le distribuzioni in produzione.  
+- **Quali versioni di Java sono supportate?** Java 8 e versioni successive sono pienamente compatibili con l'SDK attuale.  
+- **Come estraggo i dati di modulo?** Chiama il metodo `extractFormData()`, che restituisce una mappa di nomi dei campi e dei loro valori.  
+- **Posso cercare il testo del documento in modo efficiente?** Sì — passa un oggetto `SearchOptions` alla chiamata `search()` per ricerche case‑insensitive o basate su regex che scalano a migliaia di pagine.
 
 ## Che cos'è “extract text java”?
-“Extract text java” descrive il processo di lettura di un file documento (PDF, DOCX, XLSX, ecc.) in un'applicazione Java e l'estrazione del suo contenuto testuale. Questo consente attività successive come indicizzazione, analisi o trasformazione dei contenuti.
+**How to extract text java** si riferisce al processo di caricamento di un documento (PDF, DOCX, XLSX, ecc.) in un'applicazione Java e al recupero del suo contenuto testuale grezzo o formattato tramite un'API. GroupDocs.Parser legge la struttura del file, decodifica i flussi di testo e restituisce una stringa o una collezione di frammenti di testo, consentendo l'indicizzazione, l'analisi o le pipeline di trasformazione successive.
 
 ## Perché usare GroupDocs.Parser per Java?
-- **All‑in‑one solution** – Gestisce testo, immagini, tabelle, metadati e altro da oltre 100 formati di file.  
-- **No external dependencies** – Pure Java, nessuna necessità di Office, Adobe o altri software di terze parti.  
-- **High performance** – Scegli tra estrazione accurata (preserva il layout) ed estrazione grezza (ottimizzata per velocità).  
-- **Search‑ready** – Le capacità di ricerca integrate ti permettono di individuare parole chiave o pattern istantaneamente.  
-- **Form & data extraction** – API dedicate per **extract form data java** rendono la gestione dei moduli PDF senza problemi.  
+GroupDocs.Parser gestisce **oltre 100 formati di file** — inclusi PDF, DOCX, XLSX, PPTX, HTML e i comuni tipi di immagine — senza richiedere software esterno come Adobe Acrobat o Microsoft Office. Elabora documenti di centinaia di pagine rapidamente su hardware server tipico e offre due modalità di estrazione: *preserve layout* per output consapevole delle colonne e *raw* per la massima velocità. La libreria fornisce inoltre **search**, **form‑data extraction** e **metadata retrieval** nativi, rendendola una soluzione tutto‑in‑uno per applicazioni incentrate sui documenti.
 
-## Casi d'Uso Comuni
-- **Search engines**: Indicizza collezioni di documenti estraendo testo semplice e inviandolo a Lucene o Elasticsearch.  
-- **Content migration**: Sposta documenti legacy in un CMS estraendo testo, immagini e metadati.  
-- **Compliance auditing**: Scansiona contratti per clausole specifiche usando **search document text java**.  
-- **Form processing**: Estrai i valori dei campi dai moduli PDF per flussi di lavoro automatizzati.
+## Casi d'uso comuni
+- **Motori di ricerca** – Alimenta il testo semplice estratto in Lucene, Elasticsearch o OpenSearch per l'indicizzazione full‑text.  
+- **Migrazione di contenuti** – Sposta PDF e file Word legacy in un CMS estraendo testo, immagini e metadati in un'unica operazione.  
+- **Audit di conformità** – Scansiona i contratti per clausole specifiche usando l'API `search()`.  
+- **Elaborazione di moduli** – Automatizza la gestione delle fatture estraendo i campi modulo PDF con `extractFormData()`.
 
 ## Prerequisiti
-- Runtime Java 8+ (o più recente) installato.  
+- Runtime Java 8+ installato sulla tua macchina di sviluppo o sul server.  
 - Maven o Gradle per la gestione delle dipendenze.  
-- Una licenza valida di GroupDocs.Parser per Java (o chiave di prova).
+- Una chiave di licenza valida per GroupDocs.Parser per Java (o una chiave di prova per la valutazione).
 
-## Categorie di Tutorial
+## Categorie di tutorial
 
 ### [Iniziare](./getting-started/)
-Tutorial passo‑passo per l'installazione di GroupDocs.Parser, la licenza, la configurazione e l'analisi di base dei documenti in applicazioni Java.
+Tutorial passo‑a‑passo per installare la libreria, applicare una licenza ed eseguire il tuo primo codice di parsing del documento.
 
-### [Caricamento del Documento](./document-loading/)
-Tutorial completi per caricare documenti da varie fonti (disco locale, stream, URL) e gestire file protetti da password usando GroupDocs.Parser per Java.
+### [Caricamento documento](./document-loading/)
+Guide per caricare documenti da disco locale, stream, URL e gestire file protetti da password.
 
-### [Estrazione del Testo](./text-extraction/)
-Tutorial passo‑passo per estrarre testo semplice, testo formattato e testo con informazioni di layout dai documenti usando GroupDocs.Parser per Java.
+### [Estrazione testo](./text-extraction/)
+Tutorial che dimostrano tecniche di estrazione di testo semplice, testo formattato e preservazione del layout.
 
-### [Ricerca del Testo](./text-search/)
-Impara a cercare testo usando parole chiave, espressioni regolari e opzioni di ricerca avanzate con questi tutorial Java di GroupDocs.Parser.
+### [Ricerca testo](./text-search/)
+Impara a cercare usando parole chiave, espressioni regolari e `SearchOptions` avanzate.
 
-### [Estrazione Immagini](./image-extraction/)
-Tutorial completi per estrarre immagini da vari formati di documento e salvarle come file usando GroupDocs.Parser per Java.
+### [Estrazione immagini](./image-extraction/)
+Guide complete per estrarre ogni immagine incorporata e salvarla su disco.
 
-### [Estrazione Tabelle](./table-extraction/)
-Tutorial passo‑passo per estrarre e processare tabelle dai documenti usando GroupDocs.Parser per Java.
+### [Estrazione tabelle](./table-extraction/)
+Come estrarre dati tabulari e convertirli in CSV o JSON.
 
-### [Estrazione Metadati](./metadata-extraction/)
-Impara a estrarre e processare i metadati e le proprietà dei documenti con questi tutorial Java di GroupDocs.Parser.
+### [Estrazione metadati](./metadata-extraction/)
+Recupera le proprietà del documento come autore, data di creazione e campi di metadati personalizzati.
 
-### [Estrazione Collegamenti Ipertestuali](./hyperlink-extraction/)
-Tutorial completi per estrarre collegamenti ipertestuali da documenti, pagine e aree specifiche usando GroupDocs.Parser per Java.
+### [Estrazione collegamenti ipertestuali](./hyperlink-extraction/)
+Estrai e risolvi i collegamenti ipertestuali da qualsiasi tipo di documento supportato.
 
-### [Estrazione Indice (TOC)](./toc-extraction/)
-Tutorial passo‑passo per estrarre e navigare l'indice dei documenti usando GroupDocs.Parser per Java.
+### [Estrazione indice](./toc-extraction/)
+Naviga ed estrai l'indice di un documento.
 
-### [Estrazione Codice a Barre](./barcode-extraction/)
-Impara a estrarre e processare codici a barre da documenti e aree specifiche della pagina con questi tutorial Java di GroupDocs.Parser.
+### [Estrazione codici a barre](./barcode-extraction/)
+Rileva e decodifica i codici a barre incorporati in PDF o immagini.
 
-### [Estrazione Moduli](./form-extraction/)
-Tutorial completi per estrarre e processare dati da moduli PDF e altri campi dei documenti usando GroupDocs.Parser per Java.
+### [Estrazione moduli](./form-extraction/)
+Estrai i campi modulo PDF, le selezioni a discesa e le caselle di controllo.
 
-### [Estrazione Testo Formattato](./formatted-text-extraction/)
-Tutorial passo‑passo per estrarre testo con formattazione in HTML, Markdown e altri formati usando GroupDocs.Parser per Java.
+### [Estrazione testo formattato](./formatted-text-extraction/)
+Esporta il testo con formattazione HTML, Markdown o RTF.
 
-### [Parsing di Template](./template-parsing/)
-Impara a usare i template per estrarre dati strutturati dai documenti con questi tutorial Java di GroupDocs.Parser.
+### [Parsing di template](./template-parsing/)
+Usa i template per mappare le sezioni del documento a modelli di dati strutturati.
 
-### [Parsing Email](./email-parsing/)
-Tutorial completi per estrarre email, allegati e metadati da vari formati di posta elettronica usando GroupDocs.Parser per Java.
+### [Parsing email](./email-parsing/)
+Estrai il corpo delle email, gli allegati e i metadati da file .eml e .msg.
 
-### [Informazioni sul Documento](./document-information/)
-Tutorial passo‑passo per recuperare informazioni sul documento, funzionalità supportate e dettagli dei formati di file usando GroupDocs.Parser per Java.
+### [Informazioni documento](./document-information/)
+Interroga le funzionalità supportate, le capacità dei formati e i dettagli di versione.
 
-### [Formati Contenitore](./container-formats/)
-Impara a lavorare con archivi ZIP, portfolio PDF e altri formati contenitore con questi tutorial Java di GroupDocs.Parser.
+### [Formati contenitore](./container-formats/)
+Lavora con archivi ZIP, portfolio PDF e altri tipi di contenitore.
 
-### [Generazione Anteprima Pagina](./page-preview-generation/)
-Tutorial passo‑passo per generare anteprime di pagina e miniature da vari formati di documento usando GroupDocs.Parser per Java.
+### [Generazione anteprima pagina](./page-preview-generation/)
+Genera miniature o anteprime a pagina intera per una rapida ispezione visiva.
 
 ### [Integrazione OCR](./ocr-integration/)
-Impara a implementare funzionalità di Riconoscimento Ottico dei Caratteri (OCR) per l'estrazione di testo basata su immagini con questi tutorial Java di GroupDocs.Parser.
+Aggiungi il riconoscimento ottico dei caratteri per estrarre testo da immagini scannerizzate.
 
-### [Integrazione Database](./database-integration/)
-Tutorial completi per estrarre dati da database e integrarli con connessioni di database usando GroupDocs.Parser per Java.
+### [Integrazione database](./database-integration/)
+Collega il parser a database relazionali per l'elaborazione in blocco.
 
-## Come estrarre form data java?
-GroupDocs.Parser fornisce un metodo semplice `extractFormData()` che restituisce una collezione di nomi di campo e valori. Questo è ideale per automatizzare l'elaborazione di fatture, l'analisi di sondaggi o qualsiasi flusso di lavoro che dipende da input di modulo.
+## Come estrarre dati di modulo java?
+**Usa il metodo `extractFormData()` per recuperare una mappa di nomi dei campi e valori in una singola chiamata.** Questo metodo analizza i moduli PDF o Word e restituisce una `Map<String, String>` dove ogni chiave è il nome del campo modulo e il valore è il contenuto fornito dall'utente. È ideale per automatizzare l'elaborazione delle fatture, l'analisi dei sondaggi o qualsiasi flusso di lavoro che si basi su input strutturati.
 
-## Come cercare documento text java?
-Usa il metodo `search(String query)` per individuare frasi esatte o pattern di espressioni regolari. L'API restituisce i numeri di pagina e estratti di snippet, facilitando l'evidenziazione dei risultati nei componenti UI.
+## Come cercare testo documento java?
+**Chiama il metodo `search(String query)` per individuare frasi esatte o pattern di espressioni regolari in tutto il documento.** Il metodo restituisce una collezione di oggetti `SearchResult` che contengono i numeri di pagina e frammenti evidenziati, consentendoti di visualizzare i risultati in un'interfaccia utente o di alimentarli in analisi successive. Per corrispondenze case‑insensitive o fuzzy, passa un'istanza configurata di `SearchOptions` insieme alla query.
 
-## Problemi Comuni e Soluzioni
-- **Consumo di memoria con file di grandi dimensioni** – Passa alle API di streaming (`Parser.open(InputStream)`) per elaborare i documenti a blocchi.  
-- **Layout errato nel testo estratto** – Usa l'opzione “preserve layout” per mantenere colonne e tabelle allineate.  
-- **Immagini mancanti** – Assicurati che il documento non sia protetto da password o crittografato; fornisci la password al caricamento.  
+## Problemi comuni e soluzioni
+- **Consumo di memoria con file di grandi dimensioni** – Passa all'API di streaming (`Parser.open(InputStream)`) per leggere i documenti a blocchi, riducendo l'uso dell'heap.  
+- **Layout errato nel testo estratto** – Abilita l'opzione “preserve layout”; mantiene allineate colonne, tabelle e rientri.  
+- **Immagini mancanti** – Verifica che il documento sorgente non sia criptato; se lo è, fornisci la password durante il caricamento del file.  
 
 ## Supporto
-Se incontri problemi o hai domande su GroupDocs.Parser per Java, puoi:
+- Visita il [portale della documentazione](https://docs.groupdocs.com/parser/java/)
+- Sfoglia il [Riferimento API](https://reference.groupdocs.com/parser/java/)
+- Chiedi assistenza sul [forum GroupDocs](https://forum.groupdocs.com/c/parser)
+- Consulta gli [esempi di codice su GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
 
-- Visita il [documentation portal](https://docs.groupdocs.com/parser/java/)
-- Visita il [API Reference](https://reference.groupdocs.com/parser/java/)
-- Chiedi assistenza sul [GroupDocs forum](https://forum.groupdocs.com/c/parser)
-- Consulta gli [code examples on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
+Inizia a esplorare i nostri tutorial oggi per sbloccare tutto il potenziale del parsing dei documenti e dell'estrazione dei dati nelle tue applicazioni Java.
 
-Inizia a esplorare i nostri tutorial oggi per sbloccare tutto il potenziale dell'analisi dei documenti e dell'estrazione dei dati nelle tue applicazioni Java.
+## Domande frequenti
 
-## Domande Frequenti
+**D: Come inizio a estrarre testo con Java?**  
+R: Aggiungi la dipendenza Maven, crea un'istanza `Parser` con il percorso del tuo file e chiama `extractText()`. Questa chiamata a una riga restituisce il testo semplice dell'intero documento.
 
-**Q: Come inizio a estrarre testo con Java?**  
-A: Aggiungi la dipendenza Maven di GroupDocs.Parser, inizializza l'oggetto `Parser` con il tuo file e chiama `extractText()` — il modo più semplice per **extract text java**.
+**D: Posso estrarre immagini mentre estraggo testo?**  
+R: Sì. Dopo aver caricato il documento, invoca `extractImages()` sulla stessa istanza del parser per recuperare ogni immagine incorporata.
 
-**Q: Posso estrarre immagini mentre estraggo testo?**  
-A: Sì. Usa la stessa istanza del parser e chiama `extractImages()`. Questo copre lo scenario **how to extract images java**.
+**D: Quali opzioni esistono per la ricerca all'interno di un documento?**  
+R: Usa `search()` con una semplice stringa di parole chiave o un pattern di espressione regolare. Passa un oggetto `SearchOptions` per abilitare la ricerca case‑insensitive, la corrispondenza di parole intere o la paginazione dei risultati.
 
-**Q: Quali opzioni esistono per la ricerca all'interno di un documento?**  
-A: Puoi cercare tramite parole chiave semplici o espressioni regolari usando il metodo `search()`, soddisfacendo il requisito **search text in documents java**.
+**D: L'API supporta file protetti da password?**  
+R: Assolutamente. Fornisci la password quando costruisci l'oggetto `Parser`; la libreria decripta automaticamente il documento.
 
-**Q: L'API supporta file protetti da password?**  
-A: Assolutamente. Fornisci la password al caricamento del documento e il parser gestirà la decrittazione automaticamente.
+**D: Esiste un limite di dimensione del file?**  
+R: Non c'è un limite rigido, ma l'elaborazione di file multi‑gigabyte beneficia dell'API di streaming per mantenere basso l'uso della memoria.
 
-**Q: Esiste un limite di dimensione del file?**  
-A: Sebbene non ci sia un limite rigido, i file molto grandi beneficiano delle API di streaming e dell'elaborazione incrementale per ridurre il consumo di memoria.
+**D: Come posso estrarre i dati di modulo da un PDF?**  
+R: Chiama `extractFormData()`; restituisce una mappa di nomi dei campi ai loro valori inviati, gestendo caselle di controllo, pulsanti radio e campi di testo.
 
-**Q: Come posso estrarre i dati del modulo da un PDF?**  
-A: Chiama `extractFormData()` sull'istanza del parser; restituisce una mappa di nomi di campo e valori, soddisfacendo la necessità **extract form data java**.
-
-**Q: Qual è il modo migliore per eseguire una ricerca di testo veloce?**  
-A: Usa il metodo `search()` con l'oggetto `SearchOptions` per abilitare ricerche case‑insensitive e basate su regex, perfetto per **search document text java**.
+**D: Qual è il modo migliore per eseguire una ricerca di testo veloce?**  
+R: Usa `search()` insieme a un'istanza `SearchOptions` che disabilita le funzionalità non necessarie (come l'evidenziazione) quando ti servono solo i numeri di pagina, migliorando notevolmente le prestazioni su grandi collezioni.
 
 ---
 
-**Ultimo Aggiornamento:** 2026-02-16  
-**Testato Con:** GroupDocs.Parser for Java 23.12  
+**Ultimo aggiornamento:** 2026-10-07  
+**Testato con:** GroupDocs.Parser for Java 23.12  
 **Autore:** GroupDocs
+
+## Tutorial correlati
+
+- [Estrazione testo PDF Java e ricerca con GroupDocs.Parser API](/parser/java/text-search/java-pdf-search-groupdocs-parser-api-guide/)
+- [Come estrarre dati di modulo PDF con GroupDocs.Parser Java](/parser/java/form-extraction/)
+- [Estrai immagini PDF GroupDocs Parser Java](/parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/)

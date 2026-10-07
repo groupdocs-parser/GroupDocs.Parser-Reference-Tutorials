@@ -1,150 +1,160 @@
 ---
-date: 2026-02-16
-description: GroupDocs.Parser for Java를 사용하여 Java에서 텍스트를 추출하는 방법을 배우고, Java에서 이미지를
-  추출하고 문서 내 텍스트를 검색하는 방법을 알아보세요. 강력한 문서 처리를 위한 기능입니다.
+date: 2026-10-07
+description: GroupDocs.Parser를 사용하여 Java에서 텍스트를 추출하는 방법을 배우고, 이미지 추출, 텍스트 검색 및 양식
+  처리를 순수 Java API만으로 수행하는 방법을 알아보세요.
 is_root: true
-linktitle: GroupDocs.Parser for Java Tutorials
-title: 텍스트 추출 Java – GroupDocs.Parser 튜토리얼
+keywords:
+- how to extract text
+- extract text java
+- how to extract images
+- extract form data java
+- java extract text pdf
+lastmod: 2026-10-07
+linktitle: Java용 GroupDocs.Parser 튜토리얼
+og_description: Java에서 GroupDocs.Parser API를 사용하면 PDF, DOCX 및 100개 이상의 형식에서 일반 텍스트,
+  이미지 및 메타데이터를 추출할 수 있습니다. 간단한 메서드를 사용하여 빠르고 정확하게 추출하세요.
+og_image_alt: Guide showing Java code extracting text and images using GroupDocs.Parser
+og_title: Java에서 GroupDocs.Parser API를 사용하여 텍스트 추출하는 방법
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-07'
+  description: Learn how to extract text in Java using GroupDocs.Parser, plus extract
+    images, search text, and handle forms—all with a pure Java API.
+  headline: How to extract text in Java with GroupDocs.Parser API
+  type: TechArticle
+- questions:
+  - answer: Add the Maven dependency, create a `Parser` instance with your file path,
+      and call `extractText()`. This one‑line call returns the entire document’s plain
+      text.
+    question: How do I begin extracting text with Java?
+  - answer: Yes. After loading the document, invoke `extractImages()` on the same
+      parser instance to retrieve every embedded picture.
+    question: Can I extract images while extracting text?
+  - answer: Use `search()` with either a simple keyword string or a regular‑expression
+      pattern. Pass a `SearchOptions` object to enable case‑insensitivity, whole‑word
+      matching, or result pagination.
+    question: What options exist for searching within a document?
+  - answer: Absolutely. Provide the password when constructing the `Parser` object;
+      the library decrypts the document automatically.
+    question: Does the API support password‑protected files?
+  - answer: There is no hard size limit, but processing multi‑gigabyte files benefits
+      from the streaming API to keep memory usage low.
+    question: Is there a limit on file size?
+  type: FAQPage
+tags:
+- extract text
+- GroupDocs.Parser
+- Java document processing
+title: Java에서 GroupDocs.Parser API를 사용하여 텍스트 추출하는 방법
 type: docs
 url: /ko/java/
 weight: 10
 ---
 
-# 텍스트 추출 Java – GroupDocs.Parser 튜토리얼
+# Java에서 GroupDocs.Parser를 사용하여 텍스트 추출하는 방법
 
-오늘날 디지털 환경에서 **extract text java**는 문서와 작업하는 모든 애플리케이션에 필수적인 기능입니다. GroupDocs.Parser for Java는 외부 도구 없이도 일반 텍스트, 포맷된 콘텐츠, 이미지, 메타데이터 등을 빠르고 안정적으로 추출할 수 있는 방법을 제공합니다. 검색 인덱스를 구축하거나, 보고서를 생성하거나, PDF, DOCX 등 다양한 형식의 데이터를 읽어야 할 때, 이 가이드는 작업을 효율적으로 수행하는 방법을 보여줍니다.
+현대 기업 애플리케이션에서는 다양한 문서 형식에서 **텍스트 추출 방법**을 구현하는 것이 기본적인 요구 사항입니다. 검색 인덱스를 구축하든, 보고서를 생성하든, 레거시 파일을 마이그레이션하든, GroupDocs.Parser for Java는 순수 Java, 종속성 없는 방식으로 PDF, DOCX, XLSX 등에서 일반 텍스트, 포맷된 콘텐츠, 이미지, 메타데이터 및 폼 데이터를 추출할 수 있게 해줍니다. 이 튜토리얼은 필수 단계를 안내하고, 라이브러리의 장점을 설명하며, 대용량 파일, 암호 보호 문서, 빠른 텍스트 검색과 같은 일반적인 시나리오를 처리하는 방법을 보여줍니다.
 
 ## 빠른 답변
-- **What does “extract text java” mean?** 이는 Java 라이브러리(예: GroupDocs.Parser)를 사용하여 문서 파일에서 텍스트 콘텐츠를 프로그래밍 방식으로 가져오는 것을 의미합니다.  
-- **Can I also extract images?** 예—동일한 API를 사용하여 지원되는 모든 문서에서 **how to extract images java**를 추출할 수 있습니다.  
-- **Is searching supported?** 전적으로 지원됩니다—GroupDocs.Parser를 사용하면 키워드나 정규식을 이용해 **search text in documents java**를 수행할 수 있습니다.  
-- **Do I need a license?** 무료 체험판을 사용할 수 있으며, 프로덕션 사용을 위해서는 상용 라이선스가 필요합니다.  
-- **What Java versions are supported?** Java 8 및 그 이후 버전과 완전히 호환됩니다.  
-- **How do I extract form data?** 파서는 `extractFormData()` 메서드를 제공하여 **extract form data java** 시나리오를 지원합니다.  
-- **Can I search document text efficiently?** 예, 고성능의 **search document text java**를 위해 내장된 `search()` 메서드를 사용하십시오.
+- **“extract text java”는 무엇을 의미합니까?** Java 라이브러리—특히 GroupDocs.Parser—를 사용하여 프로그래밍 방식으로 문서 파일을 읽고 텍스트 콘텐츠를 반환한다는 의미입니다.  
+- **이미지도 추출할 수 있나요?** 예—같은 파서 인스턴스의 이미지‑추출 API를 호출하면 모든 삽입된 그림을 가져올 수 있습니다.  
+- **검색이 지원되나요?** 물론—내장된 `search(String query)` 메서드를 사용해 키워드나 정규식 패턴을 찾을 수 있습니다.  
+- **라이선스가 필요합니까?** 평가용 무료 체험 키로 사용 가능하며, 프로덕션 배포에는 상용 라이선스가 필요합니다.  
+- **지원되는 Java 버전은 무엇입니까?** Java 8 이상이면 현재 SDK와 완전히 호환됩니다.  
+- **폼 데이터를 어떻게 추출합니까?** `extractFormData()` 메서드를 호출하면 필드 이름과 값의 맵을 반환합니다.  
+- **문서 텍스트를 효율적으로 검색할 수 있나요?** 예—`SearchOptions` 객체를 `search()` 호출에 전달하면 대소문자 구분 없이 또는 정규식 기반 검색을 수행하여 수천 페이지까지 확장할 수 있습니다.
 
-## “extract text java”란 무엇인가요?
-“Extract text java”는 Java 애플리케이션에서 문서 파일(PDF, DOCX, XLSX 등)을 읽고 텍스트 콘텐츠를 추출하는 과정을 의미합니다. 이를 통해 인덱싱, 분석, 콘텐츠 변환과 같은 후속 작업을 수행할 수 있습니다.
+## “extract text java”란 무엇입니까?
+**How to extract text java**는 Java 애플리케이션에서 문서(PDF, DOCX, XLSX 등)를 로드하고 API를 통해 원시 또는 포맷된 텍스트 콘텐츠를 가져오는 과정을 의미합니다. GroupDocs.Parser는 파일 구조를 읽고 텍스트 스트림을 디코딩하여 문자열 또는 텍스트 조각 컬렉션을 반환하므로 후속 인덱싱, 분석 또는 변환 파이프라인에 활용할 수 있습니다.
 
-## 왜 GroupDocs.Parser for Java를 사용해야 할까요?
-- **All‑in‑one solution** – 100개 이상의 파일 형식에서 텍스트, 이미지, 표, 메타데이터 등을 처리합니다.  
-- **No external dependencies** – 순수 Java이며 Office, Adobe 등 타사 소프트웨어가 필요 없습니다.  
-- **High performance** – 레이아웃을 유지하는 정확한 추출과 속도에 최적화된 원시 추출 중 선택할 수 있습니다.  
-- **Search‑ready** – 내장 검색 기능으로 키워드나 패턴을 즉시 찾을 수 있습니다.  
-- **Form & data extraction** – **extract form data java** 전용 API를 통해 PDF 양식 처리를 손쉽게 할 수 있습니다.  
+## Java용 GroupDocs.Parser를 사용하는 이유
+GroupDocs.Parser는 **100+ file formats**를 지원합니다—PDF, DOCX, XLSX, PPTX, HTML 및 일반 이미지 형식 등을 포함하며 Adobe Acrobat이나 Microsoft Office와 같은 외부 소프트웨어가 필요 없습니다. 일반 서버 하드웨어에서 수백 페이지 문서를 빠르게 처리하며, 두 가지 추출 모드를 제공합니다: *preserve layout*은 컬럼을 인식한 출력을, *raw*는 최대 속도를 제공합니다. 또한 라이브러리는 네이티브 **search**, **form‑data extraction**, **metadata retrieval** 기능을 제공하여 문서 중심 애플리케이션을 위한 원스톱 솔루션이 됩니다.
 
 ## 일반적인 사용 사례
-- **Search engines**: 일반 텍스트를 추출하여 Lucene 또는 Elasticsearch에 전달함으로써 문서 컬렉션을 인덱싱합니다.  
-- **Content migration**: 텍스트, 이미지, 메타데이터를 추출하여 레거시 문서를 CMS로 이전합니다.  
-- **Compliance auditing**: 계약서에서 특정 조항을 스캔하기 위해 **search document text java**를 사용합니다.  
-- **Form processing**: PDF 양식에서 필드 값을 추출하여 자동 워크플로에 활용합니다.
+- **검색 엔진** – 추출된 일반 텍스트를 Lucene, Elasticsearch 또는 OpenSearch에 전달해 전체 텍스트 인덱싱을 수행합니다.  
+- **콘텐츠 마이그레이션** – 레거시 PDF와 Word 파일을 CMS로 이동하면서 텍스트, 이미지 및 메타데이터를 한 번에 가져옵니다.  
+- **컴플라이언스 감사** – `search()` API를 사용해 계약서에서 특정 조항을 스캔합니다.  
+- **폼 처리** – `extractFormData()`를 사용해 PDF 폼 필드를 자동으로 추출해 인보이스 처리 등을 자동화합니다.
 
-## 사전 요구 사항
-- Java 8 이상 런타임이 설치되어 있어야 합니다.  
-- Maven 또는 Gradle을 사용한 의존성 관리.  
-- 유효한 GroupDocs.Parser for Java 라이선스(또는 체험 키).
+## 전제 조건
+- 개발 머신 또는 서버에 Java 8+ 런타임이 설치되어 있어야 합니다.  
+- 의존성 관리를 위한 Maven 또는 Gradle이 필요합니다.  
+- 유효한 GroupDocs.Parser for Java 라이선스 키(또는 평가용 체험 키)가 필요합니다.
 
 ## 튜토리얼 카테고리
 
 ### [시작하기](./getting-started/)
-GroupDocs.Parser 설치, 라이선스, 설정 및 Java 애플리케이션에서 기본 문서 파싱에 대한 단계별 튜토리얼입니다.
-
 ### [문서 로드](./document-loading/)
-다양한 소스(로컬 디스크, 스트림, URL)에서 문서를 로드하고 GroupDocs.Parser for Java를 사용해 비밀번호로 보호된 파일을 처리하는 완전한 튜토리얼입니다.
-
 ### [텍스트 추출](./text-extraction/)
-GroupDocs.Parser for Java를 사용하여 일반 텍스트, 포맷된 텍스트 및 레이아웃 정보를 포함한 텍스트를 추출하는 단계별 튜토리얼입니다.
-
 ### [텍스트 검색](./text-search/)
-키워드, 정규식 및 고급 검색 옵션을 활용해 텍스트를 검색하는 방법을 다루는 GroupDocs.Parser Java 튜토리얼입니다.
-
 ### [이미지 추출](./image-extraction/)
-다양한 문서 형식에서 이미지를 추출하고 파일로 저장하는 완전한 튜토리얼이며, GroupDocs.Parser for Java를 사용합니다.
-
 ### [표 추출](./table-extraction/)
-GroupDocs.Parser for Java를 사용하여 문서에서 표를 추출하고 처리하는 단계별 튜토리얼입니다.
-
 ### [메타데이터 추출](./metadata-extraction/)
-이 GroupDocs.Parser Java 튜토리얼을 통해 문서 메타데이터와 속성을 추출하고 처리하는 방법을 배웁니다.
-
 ### [하이퍼링크 추출](./hyperlink-extraction/)
-GroupDocs.Parser for Java를 사용해 문서, 페이지 및 특정 영역에서 하이퍼링크를 추출하는 완전한 튜토리얼입니다.
-
 ### [목차 추출](./toc-extraction/)
-GroupDocs.Parser for Java를 사용하여 문서 목차를 추출하고 탐색하는 단계별 튜토리얼입니다.
-
 ### [바코드 추출](./barcode-extraction/)
-이 GroupDocs.Parser Java 튜토리얼을 통해 문서와 특정 페이지 영역에서 바코드를 추출하고 처리하는 방법을 배웁니다.
-
 ### [폼 추출](./form-extraction/)
-GroupDocs.Parser for Java를 사용해 PDF 양식 및 기타 문서 필드에서 데이터를 추출하고 처리하는 완전한 튜토리얼입니다.
-
 ### [포맷된 텍스트 추출](./formatted-text-extraction/)
-GroupDocs.Parser for Java를 사용하여 HTML, Markdown 및 기타 형식에서 포맷된 텍스트를 추출하는 단계별 튜토리얼입니다.
-
 ### [템플릿 파싱](./template-parsing/)
-이 GroupDocs.Parser Java 튜토리얼을 통해 템플릿을 사용해 문서에서 구조화된 데이터를 추출하는 방법을 배웁니다.
-
 ### [이메일 파싱](./email-parsing/)
-GroupDocs.Parser for Java를 사용해 다양한 이메일 형식에서 이메일, 첨부 파일 및 메타데이터를 추출하는 완전한 튜토리얼입니다.
-
 ### [문서 정보](./document-information/)
-GroupDocs.Parser for Java를 사용하여 문서 정보, 지원 기능 및 파일 형식 세부 정보를 검색하는 단계별 튜토리얼입니다.
-
 ### [컨테이너 형식](./container-formats/)
-이 GroupDocs.Parser Java 튜토리얼을 통해 ZIP 아카이브, PDF 포트폴리오 및 기타 컨테이너 형식을 다루는 방법을 배웁니다.
-
 ### [페이지 미리보기 생성](./page-preview-generation/)
-GroupDocs.Parser for Java를 사용해 다양한 문서 형식에서 페이지 미리보기 및 썸네일을 생성하는 단계별 튜토리얼입니다.
-
 ### [OCR 통합](./ocr-integration/)
-이 GroupDocs.Parser Java 튜토리얼을 통해 이미지 기반 텍스트 추출을 위한 광학 문자 인식(OCR) 기능을 구현하는 방법을 배웁니다.
-
 ### [데이터베이스 통합](./database-integration/)
-GroupDocs.Parser for Java를 사용해 데이터베이스에서 데이터를 추출하고 데이터베이스 연결과 통합하는 완전한 튜토리얼입니다.
 
-## How to extract form data java?
-GroupDocs.Parser는 필드 이름과 값을 컬렉션으로 반환하는 간단한 `extractFormData()` 메서드를 제공합니다. 이는 청구서 처리 자동화, 설문 조사 분석 또는 양식 입력에 의존하는 모든 워크플로에 이상적입니다.
+## Java에서 폼 데이터 추출하는 방법?
+**`extractFormData()` 메서드를 사용하면 한 번의 호출로 필드 이름과 값의 맵을 가져올 수 있습니다.** 이 메서드는 PDF 또는 Word 폼을 파싱하여 `Map<String, String>`을 반환하며, 각 키는 폼 필드 이름이고 값은 사용자가 입력한 내용입니다. 인보이스 처리, 설문 조사 분석, 구조화된 입력에 의존하는 모든 워크플로에 이상적입니다.
 
-## How to search document text java?
-`search(String query)` 메서드를 사용하여 정확한 구문이나 정규식 패턴을 찾을 수 있습니다. API는 페이지 번호와 스니펫 발췌를 반환하므로 UI 구성 요소에서 결과를 강조 표시하기 쉽습니다.
+## Java에서 문서 텍스트 검색 방법?
+**`search(String query)` 메서드를 호출하면 전체 문서에서 정확한 구문이나 정규식 패턴을 찾을 수 있습니다.** 이 메서드는 페이지 번호와 하이라이트된 스니펫을 포함하는 `SearchResult` 객체 컬렉션을 반환하므로 UI에 결과를 표시하거나 후속 분석에 활용할 수 있습니다. 대소문자 구분 없이 또는 퍼지 매칭이 필요할 경우, `SearchOptions` 인스턴스를 쿼리와 함께 전달하면 됩니다.
 
 ## 일반적인 문제 및 해결책
-- **Memory consumption with large files** – 스트리밍 API(`Parser.open(InputStream)`)로 전환하여 문서를 청크 단위로 처리합니다.  
-- **Incorrect layout in extracted text** – 열과 표가 정렬되도록 “preserve layout” 옵션을 사용합니다.  
-- **Missing images** – 문서가 비밀번호로 보호되거나 암호화되지 않았는지 확인하고, 로드 시 비밀번호를 제공하십시오.
+- **대용량 파일에서 메모리 사용량** – 스트리밍 API(`Parser.open(InputStream)`)를 사용해 문서를 청크 단위로 읽어 힙 사용량을 줄이세요.  
+- **추출된 텍스트의 레이아웃 오류** – “preserve layout” 옵션을 활성화하면 컬럼, 표, 들여쓰기가 정렬된 상태로 유지됩니다.  
+- **이미지가 누락됨** – 원본 문서가 암호화되지 않았는지 확인하고, 암호화된 경우 로드 시 비밀번호를 제공하세요.  
 
 ## 지원
-- [문서 포털](https://docs.groupdocs.com/parser/java/)을 방문하십시오.  
-- [API Reference](https://reference.groupdocs.com/parser/java/)를 확인하십시오.  
-- [GroupDocs forum](https://forum.groupdocs.com/c/parser)에서 도움을 요청하십시오.  
-- [code examples on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)를 참고하십시오.
+GroupDocs.Parser for Java에 대한 문제나 질문이 있으면 다음을 이용하세요:
 
-오늘 바로 튜토리얼을 탐색하여 Java 애플리케이션에서 문서 파싱 및 데이터 추출의 전체 잠재력을 활용해 보세요.
+- [documentation portal](https://docs.groupdocs.com/parser/java/) 방문  
+- [API Reference](https://reference.groupdocs.com/parser/java/) 확인  
+- [GroupDocs forum](https://forum.groupdocs.com/c/parser)에서 도움 요청  
+- [code examples on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java) 검토  
+
+오늘 바로 튜토리얼을 시작해 Java 애플리케이션에서 문서 파싱 및 데이터 추출의 전체 잠재력을 활용하세요.
 
 ## 자주 묻는 질문
 
-**Q: Java로 텍스트 추출을 시작하려면 어떻게 해야 하나요?**  
-A: GroupDocs.Parser Maven 의존성을 추가하고, 파일로 `Parser` 객체를 초기화한 뒤 `extractText()`를 호출하면 됩니다—**extract text java**를 수행하는 가장 간단한 방법입니다.
+**Q: Java로 텍스트 추출을 어떻게 시작합니까?**  
+A: Maven 의존성을 추가하고, 파일 경로로 `Parser` 인스턴스를 생성한 뒤 `extractText()`를 호출합니다. 이 한 줄 호출로 문서 전체의 일반 텍스트를 반환합니다.
 
-**Q: 텍스트를 추출하면서 이미지를 추출할 수 있나요?**  
-A: 예. 동일한 파서 인스턴스를 사용하고 `extractImages()`를 호출하면 됩니다. 이는 **how to extract images java** 시나리오를 지원합니다.
+**Q: 텍스트를 추출하면서 이미지를 동시에 추출할 수 있나요?**  
+A: 예. 문서를 로드한 후 같은 파서 인스턴스에서 `extractImages()`를 호출하면 모든 삽입된 그림을 가져올 수 있습니다.
 
-**Q: 문서 내 검색을 위한 옵션에는 무엇이 있나요?**  
-A: `search()` 메서드를 사용하여 일반 키워드 또는 정규식을 통해 검색할 수 있으며, **search text in documents java** 요구 사항을 충족합니다.
+**Q: 문서 내 검색 옵션에는 어떤 것이 있나요?**  
+A: `search()`를 간단한 키워드 문자열이나 정규식 패턴과 함께 사용할 수 있습니다. `SearchOptions` 객체를 전달하면 대소문자 구분 없이, 전체 단어 매칭, 결과 페이지네이션 등을 활성화할 수 있습니다.
 
-**Q: API가 비밀번호로 보호된 파일을 지원하나요?**  
-A: 예. 문서를 로드할 때 비밀번호를 제공하면 파서가 자동으로 복호화를 처리합니다.
+**Q: API가 암호 보호 파일을 지원하나요?**  
+A: 물론입니다. `Parser` 객체를 생성할 때 비밀번호를 제공하면 라이브러리가 자동으로 문서를 복호화합니다.
 
 **Q: 파일 크기에 제한이 있나요?**  
-A: 엄격한 제한은 없지만, 매우 큰 파일은 스트리밍 API와 단계적 처리를 사용하면 메모리 사용량을 줄이는 데 도움이 됩니다.
+A: 명시적인 크기 제한은 없지만, 멀티 기가바이트 파일을 처리할 때는 스트리밍 API를 사용해 메모리 사용량을 낮추는 것이 좋습니다.
 
-**Q: PDF에서 양식 데이터를 어떻게 추출할 수 있나요?**  
-A: 파서 인스턴스에서 `extractFormData()`를 호출하면 필드 이름과 값을 매핑한 맵을 반환하며, **extract form data java** 요구를 충족합니다.
+**Q: PDF에서 폼 데이터를 어떻게 추출합니까?**  
+A: `extractFormData()`를 호출하면 필드 이름과 제출된 값의 맵을 반환하며, 체크박스, 라디오 버튼, 텍스트 필드 등을 처리합니다.
 
 **Q: 빠른 텍스트 검색을 수행하는 가장 좋은 방법은 무엇인가요?**  
-A: `SearchOptions` 객체와 함께 `search()` 메서드를 사용하면 대소문자 구분 없이 및 정규식 기반 검색을 활성화할 수 있어 **search document text java**에 최적입니다.
+A: `search()`와 함께 `SearchOptions` 인스턴스를 사용해 페이지 번호만 필요할 경우 하이라이팅과 같은 불필요한 기능을 비활성화하면 대규모 컬렉션에서도 성능이 크게 향상됩니다.
 
-**마지막 업데이트:** 2026-02-16  
-**테스트 환경:** GroupDocs.Parser for Java 23.12  
+---
+
+**마지막 업데이트:** 2026-10-07  
+**테스트 대상:** GroupDocs.Parser for Java 23.12  
 **작성자:** GroupDocs
+
+## 관련 튜토리얼
+
+- [Java PDF Text Extraction and Search with GroupDocs.Parser API](/parser/java/text-search/java-pdf-search-groupdocs-parser-api-guide/)
+- [How to Extract PDF Form Data with GroupDocs.Parser Java](/parser/java/form-extraction/)
+- [Extract Images Pdf Groupdocs Parser Java](/parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/)
