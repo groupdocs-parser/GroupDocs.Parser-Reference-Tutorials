@@ -1,151 +1,198 @@
 ---
-date: 2026-02-16
-description: Naučte se, jak pomocí GroupDocs.Parser pro Javu extrahovat text v Javě,
-  a objevte, jak v Javě extrahovat obrázky a vyhledávat text v dokumentech pro výkonné
-  zpracování dokumentů.
+date: 2026-10-07
+description: Naučte se, jak extrahovat text v Javě pomocí GroupDocs.Parser, dále extrahovat
+  obrázky, vyhledávat text a pracovat s formuláři — vše pomocí čistého Java API.
 is_root: true
-linktitle: GroupDocs.Parser for Java Tutorials
-title: Extrahování textu v Javě – GroupDocs.Parser tutoriály
+keywords:
+- how to extract text
+- extract text java
+- how to extract images
+- extract form data java
+- java extract text pdf
+lastmod: 2026-10-07
+linktitle: Návody GroupDocs.Parser pro Javu
+og_description: Jak extrahovat text v Javě pomocí GroupDocs.Parser API vám umožní
+  získat prostý text, obrázky a metadata z PDF, DOCX a více než 100 formátů. Použijte
+  jednoduché metody pro rychlou a přesnou extrakci.
+og_image_alt: Guide showing Java code extracting text and images using GroupDocs.Parser
+og_title: Jak extrahovat text v Javě pomocí GroupDocs.Parser API
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-07'
+  description: Learn how to extract text in Java using GroupDocs.Parser, plus extract
+    images, search text, and handle forms—all with a pure Java API.
+  headline: How to extract text in Java with GroupDocs.Parser API
+  type: TechArticle
+- questions:
+  - answer: Add the Maven dependency, create a `Parser` instance with your file path,
+      and call `extractText()`. This one‑line call returns the entire document’s plain
+      text.
+    question: How do I begin extracting text with Java?
+  - answer: Yes. After loading the document, invoke `extractImages()` on the same
+      parser instance to retrieve every embedded picture.
+    question: Can I extract images while extracting text?
+  - answer: Use `search()` with either a simple keyword string or a regular‑expression
+      pattern. Pass a `SearchOptions` object to enable case‑insensitivity, whole‑word
+      matching, or result pagination.
+    question: What options exist for searching within a document?
+  - answer: Absolutely. Provide the password when constructing the `Parser` object;
+      the library decrypts the document automatically.
+    question: Does the API support password‑protected files?
+  - answer: There is no hard size limit, but processing multi‑gigabyte files benefits
+      from the streaming API to keep memory usage low.
+    question: Is there a limit on file size?
+  type: FAQPage
+tags:
+- extract text
+- GroupDocs.Parser
+- Java document processing
+title: Jak extrahovat text v Javě pomocí GroupDocs.Parser API
 type: docs
 url: /cs/java/
 weight: 10
 ---
 
-# Extrahování textu Java – GroupDocs.Parser Tutoriály
+# Jak extrahovat text v Javě s GroupDocs.Parser
 
-V dnešním digitálním prostředí je **extract text java** kritickou schopností pro každou aplikaci pracující s dokumenty. GroupDocs.Parser pro Java vám poskytuje rychlý a spolehlivý způsob, jak získat prostý text, formátovaný obsah, obrázky, metadata a další — bez potřeby externích nástrojů. Ať už vytváříte vyhledávací index, generujete zprávy nebo jen potřebujete číst data z PDF, DOCX nebo jiných formátů, tento průvodce vám ukáže, jak úkol zvládnout efektivně.
+V moderních podnikových aplikacích je **jak extrahovat text** z různých formátů dokumentů základní požadavek. Ať už vytváříte vyhledávací index, generujete zprávu nebo migrujete staré soubory, GroupDocs.Parser pro Javu vám poskytuje čistě‑Java, bez závislostí, způsob, jak získat prostý text, formátovaný obsah, obrázky, metadata a data formulářů z PDF, DOCX, XLSX a dalších. Tento tutoriál vás provede nezbytnými kroky, vysvětlí, proč je knihovna výjimečná, a ukáže, jak řešit běžné scénáře, jako jsou velké soubory, dokumenty chráněné heslem a rychlé vyhledávání textu.
 
 ## Rychlé odpovědi
-- **Co znamená “extract text java”?** Jedná se o používání Java knihoven (jako GroupDocs.Parser) k programatickému získávání textového obsahu z dokumentových souborů.  
-- **Mohu také extrahovat obrázky?** Ano — použijte stejné API k **how to extract images java** z libovolného podporovaného dokumentu.  
-- **Je podporováno vyhledávání?** Rozhodně — GroupDocs.Parser vám umožňuje **search text in documents java** pomocí klíčových slov nebo regulárních výrazů.  
-- **Potřebuji licenci?** K dispozici je bezplatná zkušební verze; pro produkční použití je vyžadována komerční licence.  
-- **Jaké verze Javy jsou podporovány?** Java 8 a novější jsou plně kompatibilní.  
-- **Jak extrahuji data z formuláře?** Parser poskytuje metodu `extractFormData()` pro scénář **extract form data java**.  
-- **Mohu efektivně vyhledávat text v dokumentu?** Ano, použijte vestavěnou metodu `search()` pro **search document text java** s vysokým výkonem.
+- **Co znamená “extract text java”?** Znamená to použití Java knihovny—konkrétně GroupDocs.Parser—k programovému načtení souboru dokumentu a vrácení jeho textového obsahu.  
+- **Mohu také extrahovat obrázky?** Ano—voláním API pro extrakci obrázků ze stejné instance parseru získáte každý vložený obrázek.  
+- **Je podporováno vyhledávání?** Rozhodně—použijte vestavěnou metodu `search(String query)`, která najde klíčová slova nebo vzory regulárních výrazů.  
+- **Potřebuji licenci?** Klíč pro bezplatnou zkušební verzi funguje pro hodnocení; pro produkční nasazení je vyžadována komerční licence.  
+- **Jaké verze Javy jsou podporovány?** Java 8 a novější jsou plně kompatibilní s aktuálním SDK.  
+- **Jak extrahuji data formuláře?** Zavolejte metodu `extractFormData()`, která vrací mapu názvů polí a jejich hodnot.  
+- **Mohu efektivně vyhledávat text v dokumentu?** Ano—předávejte objekt `SearchOptions` volání `search()` pro vyhledávání bez rozlišení velikosti písmen nebo založené na regulárních výrazech, které škálují na tisíce stránek.
 
 ## Co je “extract text java”?
-“Extract text java” popisuje proces čtení dokumentového souboru (PDF, DOCX, XLSX, atd.) v Java aplikaci a získání jeho textového obsahu. To umožňuje následné úkoly, jako je indexování, analytika nebo transformace obsahu.
+**How to extract text java** odkazuje na proces načtení dokumentu (PDF, DOCX, XLSX, atd.) v Java aplikaci a získání jeho surového nebo formátovaného textového obsahu pomocí API. GroupDocs.Parser čte strukturu souboru, dekóduje textové proudy a vrací řetězec nebo kolekci textových fragmentů, což umožňuje následné indexování, analytiku nebo transformační pipeline.
 
-## Proč používat GroupDocs.Parser pro Java?
-- **All‑in‑one řešení** – Zpracovává text, obrázky, tabulky, metadata a další z více než 100 formátů souborů.  
-- **Žádné externí závislosti** – Čistá Java, není potřeba Office, Adobe ani jiný software třetích stran.  
-- **Vysoký výkon** – Vyberte mezi přesným extrahováním (zachovává rozvržení) a surovým extrahováním (optimalizované pro rychlost).  
-- **Připraveno pro vyhledávání** – Vestavěné vyhledávací funkce vám umožní okamžitě najít klíčová slova nebo vzory.  
-- **Extrahování formulářů a dat** – Vyhrazená API pro **extract form data java** usnadňují práci s PDF formuláři.  
+## Proč používat GroupDocs.Parser pro Javu?
+GroupDocs.Parser podporuje **100+ formátů souborů**—včetně PDF, DOCX, XLSX, PPTX, HTML a běžných typů obrázků—bez nutnosti externího softwaru jako Adobe Acrobat nebo Microsoft Office. Zpracovává dokumenty o stovkách stránek rychle na typickém serverovém hardware a nabízí dva režimy extrakce: *preserve layout* pro výstup s ohledem na sloupce a *raw* pro maximální rychlost. Knihovna také poskytuje nativní **search**, **form‑data extraction** a **metadata retrieval**, což z ní činí komplexní řešení pro aplikace zaměřené na dokumenty.
 
 ## Běžné případy použití
-- **Vyhledávače**: Indexujte kolekce dokumentů extrahováním prostého textu a předávejte jej do Lucene nebo Elasticsearch.  
-- **Migrace obsahu**: Přesuňte starší dokumenty do CMS extrahováním textu, obrázků a metadat.  
-- **Audit souladu**: Prohledejte smlouvy na konkrétní klauzule pomocí **search document text java**.  
-- **Zpracování formulářů**: Získejte hodnoty polí z PDF formulářů pro automatizované pracovní postupy.
+- **Vyhledávače** – Přeneste extrahovaný prostý text do Lucene, Elasticsearch nebo OpenSearch pro full‑textové indexování.  
+- **Migrace obsahu** – Přesuňte staré PDF a Word soubory do CMS tím, že najednou získáte text, obrázky a metadata.  
+- **Audit souladu** – Prohledejte smlouvy na konkrétní klauzule pomocí API `search()`.  
+- **Zpracování formulářů** – Automatizujte zpracování faktur extrahováním polí PDF formulářů pomocí `extractFormData()`.
 
 ## Předpoklady
-- Java 8+ (nebo novější) runtime nainstalován.  
+- Java 8+ runtime nainstalovaný na vašem vývojovém počítači nebo serveru.  
 - Maven nebo Gradle pro správu závislostí.  
-- Platná licence GroupDocs.Parser pro Java (nebo zkušební klíč).
+- Platný licenční klíč GroupDocs.Parser pro Javu (nebo zkušební klíč pro hodnocení).
 
 ## Kategorie tutoriálů
 
 ### [Začínáme](./getting-started/)
-Step-by-step tutorials for GroupDocs.Parser installation, licensing, setup, and basic document parsing in Java applications.
+Step‑by‑step tutorials for installing the library, applying a license, and running your first document‑parsing code.
 
-### [Načítání dokumentů](./document-loading/)
-Complete tutorials for loading documents from various sources (local disk, stream, URL) and handling password‑protected files using GroupDocs.Parser for Java.
+### [Načítání dokumentu](./document-loading/)
+Guides for loading documents from local disk, streams, URLs, and handling password‑protected files.
 
 ### [Extrahování textu](./text-extraction/)
-Step‑by‑step tutorials for extracting plain text, formatted text, and text with layout information from documents using GroupDocs.Parser for Java.
+Tutorials that demonstrate plain‑text, formatted‑text, and layout‑preserving extraction techniques.
 
 ### [Vyhledávání textu](./text-search/)
-Learn to search text using keywords, regular expressions, and advanced search options with these GroupDocs.Parser Java tutorials.
+Learn to search using keywords, regular expressions, and advanced `SearchOptions`.
 
 ### [Extrahování obrázků](./image-extraction/)
-Complete tutorials for extracting images from various document formats and saving them as files using GroupDocs.Parser for Java.
+Complete walkthroughs for pulling every embedded image and saving it to disk.
 
 ### [Extrahování tabulek](./table-extraction/)
-Step‑by‑step tutorials for extracting and processing tables from documents using GroupDocs.Parser for Java.
+How to extract tabular data and convert it to CSV or JSON.
 
 ### [Extrahování metadat](./metadata-extraction/)
-Learn to extract and process document metadata and properties with these GroupDocs.Parser Java tutorials.
+Retrieve document properties such as author, creation date, and custom metadata fields.
 
-### [Extrahování hypertextových odkazů](./hyperlink-extraction/)
-Complete tutorials for extracting hyperlinks from documents, pages, and specific areas using GroupDocs.Parser for Java.
+### [Extrahování hyperodkazů](./hyperlink-extraction/)
+Extract and resolve hyperlinks from any supported document type.
 
-### [Extrahování obsahu](./toc-extraction/)
-Step‑by‑step tutorials for extracting and navigating document table of contents using GroupDocs.Parser for Java.
+### [Extrahování obsahu (TOC)](./toc-extraction/)
+Navigate and extract a document’s table of contents.
 
 ### [Extrahování čárových kódů](./barcode-extraction/)
-Learn to extract and process barcodes from documents and specific page areas with these GroupDocs.Parser Java tutorials.
+Detect and decode barcodes embedded in PDFs or images.
 
 ### [Extrahování formulářů](./form-extraction/)
-Complete tutorials for extracting and processing data from PDF forms and other document fields using GroupDocs.Parser for Java.
+Extract PDF form fields, dropdown selections, and checkboxes.
 
 ### [Extrahování formátovaného textu](./formatted-text-extraction/)
-Step‑by‑step tutorials for extracting text with formatting in HTML, Markdown, and other formats using GroupDocs.Parser for Java.
+Export text with HTML, Markdown, or RTF formatting.
 
 ### [Parsování šablon](./template-parsing/)
-Learn to use templates for extracting structured data from documents with these GroupDocs.Parser Java tutorials.
+Use templates to map document sections to structured data models.
 
 ### [Parsování e‑mailů](./email-parsing/)
-Complete tutorials for extracting emails, attachments, and metadata from various email formats using GroupDocs.Parser for Java.
+Extract email bodies, attachments, and metadata from .eml and .msg files.
 
 ### [Informace o dokumentu](./document-information/)
-Step‑by‑step tutorials for retrieving document information, supported features, and file format details using GroupDocs.Parser for Java.
+Query supported features, format capabilities, and version details.
 
 ### [Formáty kontejnerů](./container-formats/)
-Learn to work with ZIP archives, PDF portfolios, and other container formats with these GroupDocs.Parser Java tutorials.
+Work with ZIP archives, PDF portfolios, and other container types.
 
 ### [Generování náhledů stránek](./page-preview-generation/)
-Step‑by‑step tutorials for generating page previews and thumbnails from various document formats using GroupDocs.Parser for Java.
+Generate thumbnails or full‑page previews for quick visual inspection.
 
 ### [Integrace OCR](./ocr-integration/)
-Learn to implement Optical Character Recognition (OCR) features for image‑based text extraction with these GroupDocs.Parser Java tutorials.
+Add Optical Character Recognition to extract text from scanned images.
 
 ### [Integrace databáze](./database-integration/)
-Complete tutorials for extracting data from databases and integrating with database connections using GroupDocs.Parser for Java.
+Connect the parser to relational databases for bulk processing.
 
-## Jak extrahovat data z formuláře java?
-GroupDocs.Parser poskytuje jednoduchou metodu `extractFormData()`, která vrací kolekci názvů polí a jejich hodnot. To je ideální pro automatizaci zpracování faktur, analýzu průzkumů nebo jakýkoli pracovní postup, který se spoléhá na vstupy z formulářů.
+## Jak extrahovat data formuláře java?
+**Použijte metodu `extractFormData()` k získání mapy názvů polí a jejich hodnot v jediném volání.** Tato metoda parsuje PDF nebo Word formuláře a vrací `Map<String, String>`, kde každý klíč je název pole formuláře a hodnota je uživatelem poskytnutý obsah. Je ideální pro automatizaci zpracování faktur, analýzu průzkumů nebo jakýkoli workflow, který se spoléhá na strukturovaný vstup.
 
 ## Jak vyhledávat text v dokumentu java?
-Použijte metodu `search(String query)` k vyhledání přesných frází nebo vzorů regulárních výrazů. API vrací čísla stránek a úryvky, což usnadňuje zvýraznění výsledků v UI komponentách.
+**Zavolejte metodu `search(String query)`, která najde přesné fráze nebo vzory regulárních výrazů v celém dokumentu.** Metoda vrací kolekci objektů `SearchResult`, které obsahují čísla stránek a zvýrazněné úryvky, což vám umožní zobrazit výsledky v uživatelském rozhraní nebo je předat do následné analytiky. Pro vyhledávání bez rozlišení velikosti písmen nebo fuzzy shodu předávejte nakonfigurovanou instanci `SearchOptions` spolu s dotazem.
 
-## Časté problémy a řešení
-- **Spotřeba paměti u velkých souborů** – Přepněte na streamingové API (`Parser.open(InputStream)`) pro zpracování dokumentů po částech.  
-- **Nesprávné rozvržení v extrahovaném textu** – Použijte volbu „preserve layout“ pro zachování sloupců a tabulek v zarovnání.  
-- **Chybějící obrázky** – Ujistěte se, že dokument není chráněn heslem nebo šifrován; při načítání poskytněte heslo.
+## Běžné problémy a řešení
+- **Spotřeba paměti u velkých souborů** – Přepněte na streaming API (`Parser.open(InputStream)`) pro čtení dokumentů po částech, čímž snížíte využití haldy.  
+- **Nesprávné rozložení v extrahovaném textu** – Aktivujte možnost „preserve layout“; zachová sloupce, tabulky a odsazení zarovnané.  
+- **Chybějící obrázky** – Ověřte, že zdrojový dokument není šifrovaný; pokud je, při načítání souboru poskytněte heslo.
 
 ## Podpora
-- Navštivte [dokumentační portál](https://docs.groupdocs.com/parser/java/)
-- Navštivte [API Reference](https://reference.groupdocs.com/parser/java/)
-- Požádejte o pomoc na [GroupDocs forum](https://forum.groupdocs.com/c/parser)
-- Podívejte se na [code examples on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
+Pokud narazíte na jakékoli problémy nebo máte otázky ohledně GroupDocs.Parser pro Javu, můžete:
+
+- Navštivte [portál dokumentace](https://docs.groupdocs.com/parser/java/)
+- Prohlédněte si [API Reference](https://reference.groupdocs.com/parser/java/)
+- Požádejte o pomoc na [fóru GroupDocs](https://forum.groupdocs.com/c/parser)
+- Prohlédněte [ukázky kódu na GitHubu](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
 
 Začněte dnes prozkoumávat naše tutoriály a odemkněte plný potenciál parsování dokumentů a extrakce dat ve vašich Java aplikacích.
 
 ## Často kladené otázky
 
-**Q: Jak začít extrahovat text pomocí Javy?**  
-A: Přidejte Maven závislost GroupDocs.Parser, inicializujte objekt `Parser` s vaším souborem a zavolejte `extractText()` — nejjednodušší způsob, jak **extract text java**.
+**Q: Jak začnu extrahovat text v Javě?**  
+A: Přidejte Maven závislost, vytvořte instanci `Parser` s cestou k souboru a zavolejte `extractText()`. Toto jednorázové volání vrátí celý prostý text dokumentu.
 
 **Q: Mohu extrahovat obrázky při extrahování textu?**  
-A: Ano. Použijte stejnou instanci parseru a zavolejte `extractImages()`. To pokrývá scénář **how to extract images java**.
+A: Ano. Po načtení dokumentu zavolejte `extractImages()` na stejné instanci parseru a získáte každý vložený obrázek.
 
 **Q: Jaké možnosti existují pro vyhledávání v dokumentu?**  
-A: Můžete vyhledávat pomocí prostých klíčových slov nebo regulárních výrazů pomocí metody `search()`, čímž splníte požadavek **search text in documents java**.
+A: Použijte `search()` buď s jednoduchým řetězcem klíčového slova, nebo s regulárním výrazem. Předávejte objekt `SearchOptions` pro povolení vyhledávání bez rozlišení velikosti písmen, hledání celých slov nebo stránkování výsledků.
 
 **Q: Podporuje API soubory chráněné heslem?**  
-A: Rozhodně. Poskytněte heslo při načítání dokumentu a parser automaticky provede dešifrování.
+A: Rozhodně. Poskytněte heslo při vytváření objektu `Parser`; knihovna dokument automaticky dešifruje.
 
 **Q: Existuje limit velikosti souboru?**  
-A: I když neexistuje pevný limit, velmi velké soubory těží ze streamingových API a inkrementálního zpracování ke snížení spotřeby paměti.
+A: Neexistuje pevný limit velikosti, ale zpracování souborů o velikosti několika gigabajtů těží ze streaming API, aby se udržovalo nízké využití paměti.
 
-**Q: Jak mohu extrahovat data z formuláře z PDF?**  
-A: Zavolejte `extractFormData()` na instanci parseru; vrátí mapu názvů polí a jejich hodnot, čímž řeší potřebu **extract form data java**.
+**Q: Jak mohu extrahovat data formuláře z PDF?**  
+A: Zavolejte `extractFormData()`; vrací mapu názvů polí k jejich odeslaným hodnotám, zpracovává zaškrtávací políčka, přepínače a textová pole.
 
 **Q: Jaký je nejlepší způsob, jak provést rychlé vyhledávání textu?**  
-A: Použijte metodu `search()` s objektem `SearchOptions`, který umožňuje vyhledávání bez rozlišení velkých a malých písmen a na základě regulárních výrazů, ideální pro **search document text java**.
+A: Použijte `search()` spolu s instancí `SearchOptions`, která vypne zbytečné funkce (např. zvýrazňování), pokud potřebujete jen čísla stránek, což dramaticky zlepší výkon u velkých kolekcí.
 
-**Poslední aktualizace:** 2026-02-16  
+---
+
+**Poslední aktualizace:** 2026-10-07  
 **Testováno s:** GroupDocs.Parser for Java 23.12  
 **Autor:** GroupDocs
+
+## Související tutoriály
+
+- [Extrahování textu PDF v Javě a vyhledávání s GroupDocs.Parser API](/parser/java/text-search/java-pdf-search-groupdocs-parser-api-guide/)
+- [Jak extrahovat data PDF formuláře s GroupDocs.Parser Java](/parser/java/form-extraction/)
+- [Extrahování obrázků PDF GroupDocs Parser Java](/parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/)
