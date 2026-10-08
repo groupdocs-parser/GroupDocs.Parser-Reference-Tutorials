@@ -72,10 +72,6 @@ url: /el/java/barcode-extraction/java-barcode-support-check-groupdocs-parser/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Πώς να χρησιμοποιήσετε την ανίχνευση barcode του GroupDocs.Parser σε Java
 
 ## Γρήγορες απαντήσεις
@@ -221,10 +217,3 @@ public class CheckBarcodeSupport {
 - [extract barcodes java – Χρήση GroupDocs.Parser για Java](/parser/java/barcode-extraction/extract-barcodes-groupdocs-parser-java/)
 - [Read QR Code Java – Κατακτήστε την Ανάλυση Barcode με GroupDocs.Parser](/parser/java/barcode-extraction/java-barcode-parsing-groupdocs-parser-guide/)
 
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

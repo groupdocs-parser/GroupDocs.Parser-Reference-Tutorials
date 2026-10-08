@@ -71,10 +71,6 @@ url: /vi/java/barcode-extraction/java-barcode-support-check-groupdocs-parser/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Cách sử dụng phát hiện mã vạch của groupdocs parser trong Java
 
 Trong các ứng dụng hiện đại tập trung vào tài liệu, **groupdocs parser barcode detection** cho phép bạn nhanh chóng kiểm tra xem một tệp PDF có chứa mã vạch có thể trích xuất hay không trước khi bắt đầu quy trình trích xuất tốn kém. Hướng dẫn này sẽ chỉ cho bạn cách cài đặt GroupDocs.Parser cho Java, viết mã tối thiểu để thực hiện kiểm tra, và xử lý các vấn đề thường gặp để bạn có thể tự tin phát hiện mã vạch trong bất kỳ tệp PDF nào.
@@ -224,10 +220,3 @@ A: Có, miễn là runtime Java và JAR của GroupDocs.Parser được bao gồ
 - [extract barcodes java – Sử dụng GroupDocs.Parser cho Java](/parser/java/barcode-extraction/extract-barcodes-groupdocs-parser-java/)
 - [Đọc QR Code Java – Thành thạo phân tích mã vạch với GroupDocs.Parser](/parser/java/barcode-extraction/java-barcode-parsing-groupdocs-parser-guide/)
 
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}

@@ -71,10 +71,6 @@ url: /nl/java/barcode-extraction/java-barcode-support-check-groupdocs-parser/
 weight: 1
 ---
 
-{{< blocks/products/pf/main-wrap-class >}}
-{{< blocks/products/pf/main-container >}}
-{{< blocks/products/pf/tutorial-page-section >}}
-
 # Hoe gebruik je groupdocs parser barcode-detectie in Java
 
 In moderne document‑gerichte toepassingen, **groupdocs parser barcode detection** stelt je in staat om snel te verifiëren of een PDF extracteerbare barcodes bevat voordat je een kostbaar extractieproces start. Deze tutorial leidt je door het installeren van GroupDocs.Parser voor Java, het schrijven van de minimale code om de controle uit te voeren, en het behandelen van veelvoorkomende valkuilen zodat je met vertrouwen barcodes in elk PDF‑bestand kunt detecteren.
@@ -222,10 +218,3 @@ A: Ja, zolang de Java‑runtime en de GroupDocs.Parser‑JAR zijn opgenomen in h
 - [extract barcodes java – Gebruik GroupDocs.Parser voor Java](/parser/java/barcode-extraction/extract-barcodes-groupdocs-parser-java/)
 - [Lees QR‑code Java – Beheers barcode‑parsing met GroupDocs.Parser](/parser/java/barcode-extraction/java-barcode-parsing-groupdocs-parser-guide/)
 
-
-{{< /blocks/products/pf/tutorial-page-section >}}
-
-{{< /blocks/products/pf/main-container >}}
-{{< /blocks/products/pf/main-wrap-class >}}
-
-{{< blocks/products/products-backtop-button >}}
