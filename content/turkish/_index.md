@@ -1,82 +1,106 @@
 ---
 additionalTitle: GroupDocs API References
-date: 2026-02-19
-description: GroupDocs.Parser öğreticisini öğrenin; .NET ve Java ile verimli belge
-  çıkarma, metin çıkarma ve belge ayrıştırma için. Tablolar, görseller, barkod çıkarma,
-  OCR ve daha fazlası hakkında adım adım rehberleri keşfedin.
+date: 2026-10-12
+description: GroupDocs.Parser öğreticisi ile .NET ve Java kullanarak verimli belge
+  çıkarma, metin çıkarma ve belge ayrıştırmayı öğrenin. Tablolar, görseller, barkod
+  çıkarma, OCR ve daha fazlası için adım adım kılavuzları keşfedin.
 is_root: true
 keywords:
+- groupdocs.parser tutorial
 - document parsing
 - text extraction
 - data extraction
-- pdf parser
-- word parser
+lastmod: 2026-10-12
+linktitle: GroupDocs.Parser Öğreticileri
+og_description: GroupDocs.Parser öğreticisi, .NET veya Java kullanarak 50+ formatta
+  metin, tablo, görsel ve barkod nasıl çıkarılacağını gösterir. Belge ayrıştırmada
+  hızlıca ustalaşın.
+og_image_alt: Guide to using GroupDocs.Parser for extracting data from PDFs, Word,
+  Excel and more
+og_title: GroupDocs.Parser öğreticisi – belge ayrıştırma ustalığını açığa çıkarın
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-12'
+  description: Learn the GroupDocs.Parser tutorial for efficient document extraction,
+    text extraction, and document parsing with .NET & Java. Explore step‑by‑step guides
+    on tables, images, barcode extraction, OCR, and more.
+  headline: GroupDocs.Parser tutorial – unlock document parsing mastery
+  type: TechArticle
+- questions:
+  - answer: Yes, the library runs on any platform that supports .NET 6+ or Java 8+,
+      making it ideal for Docker containers and serverless functions.
+    question: Can I use GroupDocs.Parser in a cloud‑native microservice?
+  - answer: Absolutely – you pass the password to the `Parser` constructor or the
+      relevant load options, and the library decrypts the document on the fly.
+    question: Does GroupDocs.Parser handle password‑protected files?
+  - answer: The streaming architecture allows processing of files larger than 2 GB;
+      memory consumption stays under 200 MB because pages are processed sequentially.
+    question: What is the maximum file size the parser can handle?
+  - answer: Yes, the built‑in OCR engine supports more than 100 languages, including
+      Chinese, Arabic, and Cyrillic scripts.
+    question: Is OCR available for languages beyond English?
+  - answer: Use the `DataTable` objects returned by `ExtractTable()` and map them
+      to your ORM or ADO.NET commands; the tutorials include a sample that writes
+      tables directly to SQL Server.
+    question: How do I integrate extracted data with a database?
+  type: FAQPage
+tags:
+- groupdocs parser
+- document parsing
+- .net parsing
+- java parsing
 - extract tables
-- extract images
-- barcode extraction
-- OCR
-- Java document parser
-- .NET document parser
-linktitle: GroupDocs.Parser Tutorials
-title: GroupDocs.Parser öğreticisi – Belge Ayrıştırma Ustalığını Açığa Çıkar
-type: docs
+title: GroupDocs.Parser öğreticisi – belge ayrıştırma ustalığını açığa çıkarın
 url: /tr/
 weight: 11
 ---
 
- final markdown with all translations.
+# GroupDocs.Parser öğreticisi – belge ayrıştırma ustalığını ortaya çıkarın
 
-Check for any code blocks: none.
+Eğer PDF'lerden, Word dosyalarından, Excel sayfalarından ve onlarca diğer formattan veri çıkarmanıza yardımcı olacak bir **GroupDocs.Parser tutorial** arıyorsanız, doğru yerdesiniz. Bu merkez, **.NET** ve **Java** geliştiricileri için en kapsamlı, güncel kaynakları bir araya getirerek ham belgeleri hızlı ve güvenilir bir şekilde yapılandırılmış bilgiye dönüştürmeyi gösterir.
 
-Check for images: none.
+## Hızlı cevaplar
+- **GroupDocs.Parser ne yapar?** 50'den fazla belge formatından metin, tablo, görüntü, barkod, meta veri ve daha fazlasını çıkarır.  
+- **Hangi platformlar destekleniyor?** Hem .NET (Framework, .NET Core, .NET 5/6) hem de Java.  
+- **Microsoft Office veya Adobe Acrobat gerekir mi?** Harici kurulumlar gerekli değildir.  
+- **Büyük dosyaları işleyebilir miyim?** Evet – kütüphane verileri akış olarak işler ve 500 sayfalık PDF'lerde bellek kullanımını 200 MB'nin altında tutar.  
+- **Üretim için lisans zorunlu mu?** Üretim için geçerli bir GroupDocs lisansı gereklidir; değerlendirme için ücretsiz deneme mevcuttur.
 
-Check for shortcodes: we kept them.
+## GroupDocs.Parser nedir?
+GroupDocs.Parser, 50'den fazla dosya formatından metin, tablo, görüntü, barkod ve meta verileri çıkaran çapraz platform bir kütüphanedir. .NET ve Java için tek, tutarlı bir API sağlar, böylece ayrıştırma mantığını bir kez yazar ve her yerde çalıştırabilirsiniz. Biçim‑özeliklerini dahili olarak işleyerek, kütüphane düşük seviyeli dosya işlemleri yerine iş kurallarına odaklanmanızı sağlar.
 
-Make sure not to translate URLs.
+## GroupDocs.Parser ile belge ayrıştırma nasıl çalışır?
+`Parser` sınıfı, bir belgeyi açan ve çeşitli çıkarıcılarına erişim sağlayan temel giriş noktasıdır. Belgeyi `Parser` sınıfı ile bir kez yüklersiniz, ardından uygun çıkarıcıyı (metin, tablo, görüntü, barkod, OCR vb.) çağırırsınız. Motor dosyayı akış olarak işler, yapısını algılar ve yineleyebileceğiniz, filtreleyebileceğiniz veya doğrudan depolayabileceğiniz güçlü tipli nesneler döndürür. Bu yaklaşım, birden fazla üçüncü‑taraf aracına duyulan ihtiyacı ortadan kaldırır ve kod bakımını azaltır.
 
-Now produce final content.# GroupDocs.Parser tutorial – Belge Ayrıştırma Ustalığını Açığa Çıkarın
+## Neden belge ayrıştırma için GroupDocs.Parser seçilmeli?
+GroupDocs.Parser **nicel faydalar** sunar: **50+ giriş ve çıkış formatını** destekler, tipik bir sunucuda 500‑sayfalık PDF'yi 3 saniyenin altında işler ve akış mimarisi sayesinde 200 MB'den az RAM kullanır. Kütüphane ayrıca 30+ semboloji için yerleşik barkod algılama ve 100'den fazla dil için OCR sağlar; tüm bunlar harici bağımlılıklar olmadan gerçekleşir.
 
-Eğer PDF'lerden, Word dosyalarından, Excel sayfalarından ve onlarca diğer formattan veri çıkarmanıza yardımcı olacak bir **GroupDocs.Parser tutorial** arıyorsanız, doğru yerdesiniz. Bu merkez, **.NET** ve **Java** geliştiricileri için en kapsamlı, güncel kaynakları bir araya getirerek ham belgeleri hızlı ve güvenilir bir şekilde yapılandırılmış bilgiye dönüştürmenizi gösterir.
+## Hızlı başlangıç
+1. **SDK'yı kurun** – .NET için NuGet paketi `GroupDocs.Parser` veya Java için Maven artefaktını ekleyin.  
+2. **Geçici bir lisans edinin** – değerlendirme filigranlarından kaçınmak için ücretsiz deneme anahtarını kullanın.  
+3. **İlk dosyanızı yükleyin** – dosya yolu ile `Parser` örneği oluşturun, `ExtractText()` (veya başka bir çıkarıcı) metodunu çağırın ve sonucu yazdırın.  
+   - `ExtractText()` metodu, yüklenen belgenin düz metnini döndürür.  
+4. **Örneği çalıştırın** – sağlanan konsol projeleri kutudan çıkar çıkmaz derlenir ve çalıştırılır.
 
-## Bulacaklarınızın Hızlı Özeti
+### .NET'te GroupDocs.Parser kullanmaya nasıl başlanır?
+NuGet paketini ekleyin, bir `Parser` örneği oluşturun ve `ExtractText()` metodunu çağırın – bu, bir PDF, DOCX veya XLSX dosyasından düz metin almanız için yeterlidir. Büyük toplularda aynı `Parser` nesnesini yeniden kullanın ve bellek kullanımını düşük tutmak için akış modunu etkinleştirin.
 
-- Adım adım rehberler: düz metin, biçimlendirilmiş metin, tablolar, görseller ve hiperlinkler çıkarma.  
-- Belge şablonları, barkod algılama ve OCR ile çalışma konusunda ayrıntılı talimatlar.  
-- GroupDocs.Parser API'sinin en iyi uygulama kullanımını gösteren, çalıştırmaya hazır kod örnekleri.  
-- Performans ayarı, lisanslama ve veritabanları veya bulut depolama entegrasyonu üzerine ipuçları.  
+### Java'da GroupDocs.Parser kullanmaya nasıl başlanır?
+Maven bağımlılığını ekleyin, hedef dosyayla `Parser` örneği oluşturun ve `extractText()` metodunu çağırın – bu metod, tam belge metnini içeren bir `String` döndürür. Daha zengin veri için `extractTable()` veya `extractImage()` kullanın ve taranmış PDF'lerle çalışırken `setOcrOptions()` ile OCR'ı etkinleştirin.
 
-Aşağıda, platforma göre düzenlenmiş tam öğretici listesini bulacaksınız.
-
-## GroupDocs.Parser tutorial genel bakışı
-
-**GroupDocs.Parser tutorial** koleksiyonu, hızlı bir şekilde üretken olmanızı sağlamak için tasarlanmıştır. Arama indekslemesi için düz metin çekmeniz, veri analizi için tablolar toplamanız veya görsel inceleme için görselleri çıkarmanız gerekse, her rehber size tam API çağrılarını, yapılandırma adımlarını ve yaygın tuzakları gösterir.
-
-## Belge ayrıştırma GroupDocs.Parser ile nasıl çalışır?
-
-GroupDocs.Parser, her dosya formatının karmaşıklığını tek, tutarlı bir .NET veya Java API'si altında soyutlar. Bir belgeyi bir kez yüklersiniz, ardından özel çıkarıcıları (metin, tablo, görsel, barkod, OCR vb.) çağırırsınız. Kütüphane format‑özel tuhaflıkları yönetir, böylece dosya‑formatı ile uğraşmak yerine iş mantığına odaklanabilirsiniz.
-
-## Neden belge ayrıştırma için GroupDocs.Parser'ı seçmelisiniz?
-
-- **Cross‑platform consistency** – .NET ve Java'da aynı ayrıştırma mantığını yazarak tekrarı azaltın.  
-- **Broad format support** – PDF, Word, Excel, PowerPoint, EPUB, e‑posta dosyaları ve arşivler dahil 50'den fazla format.  
-- **Advanced extraction features** – Biçimlendirilmiş metin, düzen koruma, barkod algılama, OCR ve şablon‑tabanlı veri çıkarma.  
-- **Performance‑optimized** – Büyük dosyalar için düşük bellek ayak izi ve hızlı işleme.  
-- **Zero external dependencies** – Microsoft Office, Adobe Acrobat veya diğer üçüncü‑taraf kurulumlarına ihtiyaç yok.  
-
-### .NET için GroupDocs.Parser Öğreticileri
+## .NET için GroupDocs.Parser öğreticileri
 
 {{% alert color="primary" %}}
-GroupDocs.Parser for .NET, metin çıkarma, biçimlendirilmiş metin çıkarma, belge şablonu işleme, tablo çıkarma, görsel çıkarma, hiperlink çıkarma, şablonlardan veri çıkarma, barkod çıkarma, OCR çıkarma, belge yükleme ve Word, PDF ve Excel belgelerinin işlenmesini kolaylaştıran kapsamlı bir öğretici ve örnek seti sunar. Bu kaynaklar, geliştiricilerin çeşitli belge işleme görevlerini verimli bir şekilde yönetmelerini sağlar ve belgelerden değerli bilgileri hassasiyet ve kolaylıkla çıkarmalarına olanak tanır.
+.NET için GroupDocs.Parser, metin çıkarma, biçimlendirilmiş metin çıkarma, belge şablonu işleme, tablo çıkarma, görüntü çıkarma, hiperlink çıkarma, şablonlardan veri çıkarma, barkod çıkarma, OCR çıkarma, belge yükleme ve Word, PDF ve Excel belgelerinin işlenmesi gibi kapsamlı bir öğretici ve örnek seti sunar. Bu kaynaklar, geliştiricilerin çeşitli belge işleme görevlerini verimli bir şekilde yönetmelerini sağlar ve belgelerden değerli bilgileri hassasiyetle ve kolaylıkla çıkarmalarına olanak tanır.
 {{% /alert %}}
 
-İşte bazı faydalı kaynakların bağlantıları:
-
+Bunlar bazı faydalı kaynaklara bağlantılardır:
 - [Başlarken](./net/getting-started/)
 - [Metin Çıkarma](./net/text-extraction/)
 - [Biçimlendirilmiş Metin Çıkarma](./net/formatted-text-extraction/)
 - [Belge Şablonu İşleme](./net/document-template-processing/)
 - [Tablo Çıkarma](./net/table-extraction/)
-- [Görsel Çıkarma](./net/image-extraction/)
+- [Görüntü Çıkarma](./net/image-extraction/)
 - [Hiperlink Çıkarma](./net/hyperlink-extraction/)
 - [Şablonlardan Veri Çıkarma](./net/data-extraction-from-templates/)
 - [Barkod Çıkarma](./net/barcode-extraction/)
@@ -98,19 +122,18 @@ GroupDocs.Parser for .NET, metin çıkarma, biçimlendirilmiş metin çıkarma, 
 - [OCR Entegrasyonu](./net/ocr-integration/)
 - [Veritabanı Entegrasyonu](./net/database-integration/)
 
-### Java için GroupDocs.Parser Öğreticileri
+### Java için GroupDocs.Parser öğreticileri
 
 {{% alert color="primary" %}}
-GroupDocs.Parser for Java, Java geliştiricilerinin belge ayrıştırma yeteneklerini ustalaşmaları için kapsamlı öğreticiler ve örnekler sunar. Temel metin çıkarımdan gelişmiş şablon‑tabanlı veri çıkarımına kadar, bu kaynaklar meta veri çıkarma, tablo ayrıştırma, görsel çıkarma ve barkod tanıma dahil geniş bir işlevselliği kapsar. PDF, Word, Excel, PowerPoint, e‑postalar ve daha fazlası gibi çeşitli belge formatlarını işleme konusunda adım adım rehberlerimiz, güçlü belge ayrıştırma özelliklerini Java uygulamalarınıza entegre etmenize yardımcı olur.
+Java için GroupDocs.Parser, Java geliştiricilerinin belge ayrıştırma yeteneklerini ustalaştırmaları için kapsamlı öğreticiler ve örnekler sunar. Temel metin çıkarımdan gelişmiş şablon‑tabanlı veri çıkarımına kadar, bu kaynaklar meta veri çıkarma, tablo ayrıştırma, görüntü çıkarma ve barkod tanıma dahil geniş bir işlevselliği kapsar. PDF, Word, Excel, PowerPoint, e‑postalar ve daha fazlası gibi çeşitli belge formatlarını işlemek için adım‑adım rehberlerimiz, güçlü belge ayrıştırma özelliklerini Java uygulamalarınıza entegre etmenize yardımcı olur.
 {{% /alert %}}
 
 Bu temel Java kaynaklarını keşfedin:
-
 - [Başlarken](./java/getting-started/)
 - [Belge Yükleme](./java/document-loading/)
 - [Metin Çıkarma](./java/text-extraction/)
 - [Metin Arama](./java/text-search/)
-- [Görsel Çıkarma](./java/image-extraction/)
+- [Görüntü Çıkarma](./java/image-extraction/)
 - [Tablo Çıkarma](./java/table-extraction/)
 - [Meta Veri Çıkarma](./java/metadata-extraction/)
 - [Hiperlink Çıkarma](./java/hyperlink-extraction/)
@@ -128,30 +151,36 @@ Bu temel Java kaynaklarını keşfedin:
 - [Veritabanı Entegrasyonu](./java/database-integration/)
 
 ## GroupDocs.Parser öğreticisinden en iyi şekilde yararlanma
-
-- **“Getting Started” rehberi** ile platformunuz için SDK'yı kurun, geçici bir lisans alın ve ilk çıkarımınızı çalıştırın.  
-- **Bir kullanım senaryosu seçin** (ör. finansal raporlar için tablo çıkarma) ve ilgili öğreticiyi izleyin; adım adım kod, hangi sınıfların ve metodların çağrılacağını tam olarak gösterir.  
-- **Özellikleri birleştirin** – yalnızca görsel içeren bir PDF'de OCR çalıştırabilir, ardından ortaya çıkan metni ve barkodları tek bir işlem hattında çıkarabilirsiniz.  
+- **Platformunuz için “Başlarken” kılavuzu** ile başlayın; SDK'yı kurun, geçici bir lisans edinin ve ilk çıkarımınızı çalıştırın.  
+- **Bir kullanım senaryosu seçin** (ör. finansal raporlar için tablo çıkarma) ve ilgili öğreticiyi izleyin; adım‑adım kod, hangi sınıfların ve metodların çağrılacağını tam olarak gösterir.  
+- **Özellikleri birleştirin** – görüntü‑sadece PDF üzerinde OCR çalıştırabilir, ardından ortaya çıkan metni ve barkodları tek bir işlem hattında çıkarabilirsiniz.  
 - **Performans ipucu:** Büyük toplu işlemlerde `Parser` örneğini yeniden kullanın ve bellek kullanımını düşük tutmak için akış modunu etkinleştirin.  
 - **Sorun giderme:** Bir belge yüklenemezse, API referansındaki dosya formatı destek tablosunu kontrol edin ve dosyanın şifre korumalı olmadığından emin olun; şifre gerekiyorsa şifreyi sağlayın.  
 
-## Sonraki Adımlar
+## Sıkça Sorulan Sorular
 
-Artık **GroupDocs.Parser tutorial** kaynaklarının tam paketini incelediğinize göre, şunları yapabilirsiniz:
+**S: GroupDocs.Parser'ı bulut‑yerel bir mikro hizmette kullanabilir miyim?**  
+C: Evet, kütüphane .NET 6+ veya Java 8+ destekleyen herhangi bir platformda çalışır, bu da Docker konteynerleri ve sunucusuz işlevler için idealdir.
 
-1. GitHub deposundan örnek projeleri klonlayın.  
-2. Parser'ı mevcut .NET veya Java hizmetinize entegre edin.  
-3. Örnekleri özel mantıkla genişletin — örneğin çıkarılan tabloları ilişkisel bir veritabanına kaydetmek veya OCR sonuçlarını bir makine öğrenimi modeline beslemek.  
+**S: GroupDocs.Parser şifre korumalı dosyaları işleyebilir mi?**  
+C: Kesinlikle – şifreyi `Parser` yapıcısına veya ilgili yükleme seçeneklerine geçirirsiniz ve kütüphane belgeyi anında çözer.
 
-Ek yardıma ihtiyacınız olursa, topluluk forumumuz ve destek kanallarımız size yardımcı olmaya hazır.
+**S: Ayrıştırıcının işleyebileceği maksimum dosya boyutu nedir?**  
+C: Akış mimarisi, 2 GB'den büyük dosyaların işlenmesine izin verir; sayfalar sıralı işlendiği için bellek tüketimi 200 MB'nin altında kalır.
 
-- [Ücretsiz deneme indirin](https://releases.groupdocs.com/)
-- [API Belgeleri](https://reference.groupdocs.com/)
-- [Geçici lisans alın](https://purchase.groupdocs.com/temporary-license/)
-- [Forumumuzu ziyaret edin](https://forum.groupdocs.com/c/parser/)
+**S: OCR İngilizce dışındaki diller için mevcut mu?**  
+C: Evet, yerleşik OCR motoru Çince, Arapça ve Kiril alfabesi dahil 100'den fazla dili destekler.
 
----
+**S: Çıkarılan verileri bir veritabanına nasıl entegre ederim?**  
+C: `ExtractTable()` tarafından döndürülen `DataTable` nesnelerini kullanın ve bunları ORM'nize veya ADO.NET komutlarınıza eşleyin; öğreticiler, tabloları doğrudan SQL Server'a yazan bir örnek içerir.
 
-**Son Güncelleme:** 2026-02-19  
-**Test Edilen Versiyon:** GroupDocs.Parser latest release (as of 2026)  
+## Ek kaynaklar
+
+- [Ücretsiz deneme sürümünü indirin](https://releases.groupdocs.com/) – değerlendirme için en son GroupDocs.Parser ikili dosyalarını edinin.  
+- [API Dokümantasyonu](https://reference.groupdocs.com/) – tüm sınıflar, metodlar ve yapılandırma seçenekleri için ayrıntılı referans.  
+- [Geçici lisans alın](https://purchase.groupdocs.com/temporary-license/) – geliştirme ve test için kısa vadeli bir lisans anahtarı isteyin.  
+- [Forumumuzu ziyaret edin](https://forum.groupdocs.com/c/parser/) – sorular sorun, örnekler paylaşın ve topluluktan yardım alın.
+
+**Son Güncelleme:** 2026-10-12  
+**Test Edilen Sürüm:** GroupDocs.Parser en son sürüm (2026 itibarıyla)  
 **Yazar:** GroupDocs

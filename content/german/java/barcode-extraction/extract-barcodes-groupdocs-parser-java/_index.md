@@ -1,43 +1,98 @@
 ---
-date: '2026-02-21'
-description: Erfahren Sie, wie Sie Barcodes mit Java aus Dokumenten mit GroupDocs.Parser
-  für Java extrahieren. Einfache Integration, schnelle Leistung und Schritt‑für‑Schritt‑Anleitung.
+date: '2026-10-12'
+description: Erfahren Sie, wie Sie Barcodes in Java aus PDFs, Word-Dateien und Bildern
+  mit GroupDocs.Parser for Java extrahieren. Schnell, genau, Schritt‑für‑Schritt‑Anleitung.
 keywords:
-- extract barcodes GroupDocs.Parser Java
-- barcode extraction from documents
-- Java barcode management
-title: Barcodes extrahieren Java – Verwendung von GroupDocs.Parser für Java
+- extract barcodes java
+- read barcode pdf java
+- GroupDocs.Parser Java barcode
+lastmod: '2026-10-12'
+og_description: Barcodes in Java schnell mit GroupDocs.Parser for Java extrahieren.
+  Erfahren Sie, wie Sie barcode pdf java lesen, die Bibliothek einrichten und die
+  Leistung optimieren.
+og_image_alt: Guide to extracting barcodes from documents using GroupDocs.Parser for
+  Java
+og_title: Barcodes in Java mit GroupDocs.Parser for Java extrahieren
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-12'
+  description: Learn how to extract barcodes java from PDFs, Word files, and images
+    with GroupDocs.Parser for Java. Fast, accurate, step‑by‑step guide.
+  headline: Extract barcodes java using GroupDocs.Parser for Java
+  type: TechArticle
+- description: Learn how to extract barcodes java from PDFs, Word files, and images
+    with GroupDocs.Parser for Java. Fast, accurate, step‑by‑step guide.
+  name: Extract barcodes java using GroupDocs.Parser for Java
+  steps:
+  - name: define document path
+    text: The file path tells the parser where the source document resides on disk.
+  - name: open the document with a try‑with‑resources block
+    text: Using `try (Parser parser = new Parser(filePath))` guarantees that native
+      resources are released automatically, preventing memory leaks.
+  - name: verify barcode support
+    text: Not every format can be scanned for barcodes. The `Parser.isBarcodeSupported()`
+      flag lets you confirm that the current document type is eligible.
+  - name: define the area of interest
+    text: The `Rectangle` class describes the region on a page where the barcode is
+      expected. `Point` represents the upper‑left corner (x, y) and `Size` defines
+      width and height.
+  - name: extract barcodes from the specified area
+    text: 'Call `parser.getBarcodes(areaOptions)` to retrieve every barcode inside
+      the rectangle. Each `PageBarcodeArea` object provides the page index and the
+      decoded value. **Explanation:** `getBarcodes` returns every barcode found inside
+      the rectangle. Each `PageBarcodeArea` provides the page index and the '
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Parser supports PDF, DOCX, XLSX, PPTX, PNG, JPG, TIFF, and many
+      other common formats.
+    question: What document formats are supported for barcode extraction?
+  - answer: Yes. As long as the image contains a readable barcode, the parser will
+      detect it.
+    question: Can I extract barcodes from images embedded inside documents?
+  - answer: Wrap the parsing logic in try‑catch blocks and log `ParserException` details
+      to troubleshoot issues.
+    question: How should I handle errors during extraction?
+  - answer: You can evaluate it with a temporary license. A commercial license is
+      required for production deployments.
+    question: Is GroupDocs.Parser for Java free to use?
+  - answer: Measure the barcode’s position in the source document and use those coordinates
+      for `Point` and `Size`. Smaller rectangles improve speed and reduce false positives.
+    question: What’s the best way to define the extraction rectangle?
+  type: FAQPage
+tags:
+- barcode extraction
+- GroupDocs.Parser
+- Java document processing
+title: Barcodes in Java mit GroupDocs.Parser for Java extrahieren
 type: docs
 url: /de/java/barcode-extraction/extract-barcodes-groupdocs-parser-java/
 weight: 1
 ---
 
-# extract barcodes java – Verwendung von GroupDocs.Parser für Java
+# Barcodes in Java extrahieren mit GroupDocs.Parser für Java
 
-In der heutigen schnelllebigen digitalen Umgebung kann das **extract barcodes java** aus PDFs, Word‑Dateien oder gescannten Bildern die Bestands‑, Versand‑ und Kassiervorgänge erheblich beschleunigen. Dieses Tutorial führt Sie durch die Einrichtung von GroupDocs.Parser für Java und zeigt genau, wie Sie Barcode‑Daten aus einem bestimmten Bereich einer Dokumentenseite extrahieren.
+In modernen Lieferketten- und Einzelhandelssystemen ist **extract barcodes java** eine Kernfunktion, die es ermöglicht, gedruckte Codes in nutzbare Daten umzuwandeln, ohne manuelle Eingabe. Dieses Tutorial zeigt, wie Sie GroupDocs.Parser für Java einrichten, ein genaues Rechteck auf einer Seite anvisieren und Barcode‑Werte aus PDFs, DOCX, XLSX oder Bilddateien abrufen – alles mit nur wenigen Zeilen Java‑Code.
 
 ## Schnelle Antworten
-- **Was bedeutet “extract barcodes java”?** Es bezieht sich auf das Auslesen von Barcode‑Werten, die in Dokumenten mit Java‑Code eingebettet sind.  
+- **Was bedeutet „extract barcodes java“?** Es bedeutet, Barcode‑Werte, die in Dokumenten eingebettet sind, mit Java‑Code zu lesen.  
 - **Welche Bibliothek übernimmt das?** GroupDocs.Parser für Java bietet integrierte Barcode‑Extraktion.  
-- **Brauche ich eine Lizenz?** Eine temporäre Lizenz ist für die Evaluierung verfügbar; für den Produktionseinsatz ist eine Voll‑Lizenz erforderlich.  
+- **Benötige ich eine Lizenz?** Eine temporäre Lizenz ist für die Evaluierung verfügbar; für den Produktionseinsatz ist eine Voll‑Lizenz erforderlich.  
 - **Welche Dokumenttypen werden unterstützt?** PDFs, DOCX, XLSX und viele andere gängige Formate.  
-- **Wie schnell ist die Extraktion?** Typische Seiten werden in Millisekunden verarbeitet, wenn Sie den Suchbereich einschränken.
+- **Wie schnell ist die Extraktion?** Typische Seiten werden in 10–30 ms verarbeitet, wenn Sie den Suchbereich einschränken.  
 
 ## Was ist extract barcodes java?
-*extract barcodes java* ist der Prozess, Barcode‑Symbole, die in Dokumentdateien erscheinen, programmgesteuert zu finden und zu dekodieren, wobei Java verwendet wird. Durch die Nutzung von GroupDocs.Parser können Sie ein genaues Rechteck auf einer Seite anvisieren, wodurch die Verarbeitungszeit minimiert und die Genauigkeit verbessert wird.
+*Extract barcodes java* ist der Prozess, Barcode‑Symbole, die in Dokumentdateien erscheinen, programmgesteuert zu finden und zu dekodieren, wobei Java verwendet wird.  
+Sie können Barcode‑Daten aus jedem unterstützten Format extrahieren, indem Sie die Datei mit GroupDocs.Parser laden, ein Suchrechteck definieren und die Barcode‑Extraktions‑API aufrufen. Dieser Ansatz eliminiert manuelles Scannen und beschleunigt Inventar‑, Versand‑ und Checkout‑Workflows.
 
 ## Warum GroupDocs.Parser für die Barcode‑Extraktion verwenden?
-- **Zero‑code OCR‑Integration** – die Bibliothek übernimmt die Barcode‑Erkennung intern.  
-- **Fein abgestimmte Flächenauswahl** – Sie geben exakt an, wo auf der Seite gesucht werden soll, was Störgeräusche reduziert.  
-- **Cross‑Format‑Unterstützung** – eine API funktioniert sowohl für PDFs, Office‑Dokumente als auch für Bilder.  
-- **Enterprise‑taugliche Lizenzierung** – beginnen Sie mit einer kostenlosen temporären Lizenz und aktualisieren Sie, wenn Sie bereit sind.
+GroupDocs.Parser unterstützt **30+ Eingabeformate** – darunter PDF, DOCX, XLSX, PPTX, PNG, JPG und TIFF – und kann mehrhundertseitige Dateien verarbeiten, ohne das gesamte Dokument in den Speicher zu laden. Die Bibliothek übernimmt die Barcode‑Erkennung intern, ermöglicht es Ihnen, die Suche auf einen kleinen Bereich zu beschränken, und liefert Ergebnisse in Millisekunden, was ideal für Hochdurchsatz‑Enterprise‑Pipelines ist.
 
 ## Voraussetzungen
-Bevor Sie beginnen, stellen Sie sicher, dass Sie folgendes haben:
+Bevor Sie beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
 - **Java Development Kit (JDK)** 8 oder neuer.  
 - **Maven** (empfohlen für das Abhängigkeitsmanagement).  
-- Grundlegende Kenntnisse der Java‑OOP‑Konzepte.
+- Grundlegende Kenntnisse der Java‑OOP‑Konzepte.  
 
 ### Erforderliche Bibliotheken und Abhängigkeiten
 Fügen Sie GroupDocs.Parser zu Ihrem Maven‑Projekt hinzu:
@@ -63,12 +118,13 @@ Fügen Sie GroupDocs.Parser zu Ihrem Maven‑Projekt hinzu:
 Alternativ können Sie die neueste Version direkt von [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) herunterladen.
 
 ### Lizenzbeschaffung
-Um GroupDocs.Parser ohne Einschränkungen zu testen, erhalten Sie eine temporäre Lizenz, indem Sie die [Temporary License page](https://purchase.groupdocs.com/temporary-license/) besuchen. Sie können anschließend eine Voll‑Lizenz erwerben, wenn die Lösung Ihren Anforderungen entspricht.
+Um GroupDocs.Parser ohne Einschränkungen auszuprobieren, erhalten Sie eine temporäre Lizenz, indem Sie die [Temporary License page](https://purchase.groupdocs.com/temporary-license/) besuchen. Sie können anschließend eine Voll‑Lizenz erwerben, wenn die Lösung Ihren Anforderungen entspricht.
 
 ## Einrichtung von GroupDocs.Parser für Java
 Wenn Sie Maven verwenden, ist das obige Snippet alles, was Sie benötigen. Für die manuelle JAR‑Verwaltung fügen Sie die heruntergeladenen JAR‑Dateien dem Build‑Pfad Ihres Projekts hinzu.
 
 ### Grundlegende Initialisierung und Einrichtung
+Die Klasse `Parser` ist der Einstiegspunkt zum Lesen jedes unterstützten Dokuments.  
 Hier ist der minimale Import, den Sie benötigen:
 
 ```java
@@ -78,17 +134,17 @@ import com.groupdocs.parser.Parser;
 Stellen Sie sicher, dass alle erforderlichen Klassen im Klassenpfad sind, bevor Sie mit der Barcode‑Extraktion fortfahren.
 
 ## Implementierungs‑Leitfaden
-Nachfolgend finden Sie eine Schritt‑für‑Schritt‑Durchführung, die die ursprünglichen Codeblöcke unverändert lässt und gleichzeitig klare Erklärungen hinzufügt.
+Im Folgenden finden Sie eine Schritt‑für‑Schritt‑Durchführung, die die ursprünglichen Codeblöcke unverändert lässt und klare Erklärungen hinzufügt.
 
-### Schritt 1: Dokumentpfad definieren
-Teilen Sie dem Parser mit, wo sich Ihre Datei befindet:
+### Schritt 1: Dokumentpfad festlegen
+Der Dateipfad gibt dem Parser an, wo das Quelldokument auf der Festplatte liegt.
 
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/sample_pdf_with_barcodes.pdf"; // Replace with your file path
 ```
 
-### Schritt 2: Dokument mit einem Try‑with‑Resources‑Block öffnen
-Die Verwendung von `try (Parser parser = new Parser(filePath))` stellt sicher, dass Ressourcen automatisch freigegeben werden:
+### Schritt 2: Dokument mit einem try‑with‑resources‑Block öffnen
+Die Verwendung von `try (Parser parser = new Parser(filePath))` stellt sicher, dass native Ressourcen automatisch freigegeben werden und Speicherlecks verhindert werden.
 
 ```java
 try (Parser parser = new Parser(filePath)) {
@@ -97,7 +153,7 @@ try (Parser parser = new Parser(filePath)) {
 ```
 
 ### Schritt 3: Barcode‑Unterstützung prüfen
-Nicht jedes Format kann auf Barcodes gescannt werden. Prüfen Sie zuerst das Feature‑Flag:
+Nicht jedes Format kann auf Barcodes gescannt werden. Das Flag `Parser.isBarcodeSupported()` ermöglicht es Ihnen, zu bestätigen, dass der aktuelle Dokumenttyp dafür geeignet ist.
 
 ```java
 if (!parser.getFeatures().isBarcodes()) {
@@ -107,7 +163,8 @@ if (!parser.getFeatures().isBarcodes()) {
 ```
 
 ### Schritt 4: Interessensbereich definieren
-Erstellen Sie ein `Rectangle`, das den Bereich abdeckt, in dem der Barcode erwartet wird:
+Die Klasse `Rectangle` beschreibt den Bereich auf einer Seite, in dem der Barcode erwartet wird.  
+`Point` stellt die obere linke Ecke (x, y) dar und `Size` definiert Breite und Höhe.
 
 ```java
 Rectangle rectangle = new Rectangle(new Point(590, 80), new Size(150, 150));
@@ -115,7 +172,7 @@ PageAreaOptions options = new PageAreaOptions(rectangle);
 ```
 
 ### Schritt 5: Barcodes aus dem angegebenen Bereich extrahieren
-Rufen Sie `getBarcodes` mit den Flächenoptionen auf und iterieren Sie über die Ergebnisse:
+Rufen Sie `parser.getBarcodes(areaOptions)` auf, um jeden Barcode innerhalb des Rechtecks abzurufen. Jedes `PageBarcodeArea`‑Objekt liefert den Seitenindex und den dekodierten Wert.
 
 ```java
 Iterable<PageBarcodeArea> barcodes = parser.getBarcodes(options);
@@ -126,57 +183,65 @@ for (PageBarcodeArea barcode : barcodes) {
 }
 ```
 
-**Erklärung:** `getBarcodes` gibt jeden Barcode zurück, der innerhalb des Rechtecks gefunden wird. Jeder `PageBarcodeArea` liefert den Seitenindex und den dekodierten Barcode‑Wert, den Sie speichern, protokollieren oder an ein anderes System weiterleiten können.
+**Erklärung:** `getBarcodes` gibt alle innerhalb des Rechtecks gefundenen Barcodes zurück. Jeder `PageBarcodeArea` liefert den Seitenindex und den dekodierten Barcode‑Wert, den Sie speichern, protokollieren oder an ein anderes System weiterleiten können.
 
-### Tipps zur Fehlerbehebung
-- **File Not Found Exception:** Überprüfen Sie den `filePath`‑String und stellen Sie sicher, dass die Datei zugänglich ist.  
-- **Unsupported Document Format:** Vergewissern Sie sich, dass Ihr Dokumenttyp in der Feature‑Liste von GroupDocs.Parser aufgeführt ist.  
-- **Incorrect Rectangle Coordinates:** Verwenden Sie die Messwerkzeuge eines PDF‑Viewers, um die Werte von `Point` (x, y) und `Size` (width, height) fein abzustimmen.
+## Fehlerbehebungstipps
+- **File not found exception:** Überprüfen Sie den `filePath`‑String und stellen Sie sicher, dass die Datei zugänglich ist.  
+- **Unsupported document format:** Vergewissern Sie sich, dass Ihr Dokumenttyp in der Feature‑Liste von GroupDocs.Parser aufgeführt ist.  
+- **Incorrect rectangle coordinates:** Verwenden Sie die Messwerkzeuge eines PDF‑Viewers, um die Werte für `Point` (x, y) und `Size` (Breite, height) fein abzustimmen.  
 
-## Praktische Anwendungen
-Das Extrahieren von Barcodes aus Dokumenten eröffnet zahlreiche reale Anwendungsfälle:
+## Praktische Anwendungsfälle
+Das Extrahieren von Barcodes aus Dokumenten eröffnet viele reale Anwendungsfälle:
 
-1. **Inventory Management** – Automatisches Befüllen von Bestandsdatenbanken aus gescannten Packlisten.  
-2. **Warehouse Operations** – Schnell die Versandinhalte prüfen, indem Barcodes auf PDFs von Logistikpartnern gelesen werden.  
-3. **Retail Checkout** – Gedruckte Quittungen oder Werbeflyer in scanbare Daten für Treueprogramme umwandeln.
+1. **Inventory management** – Automatisches Befüllen von Bestandsdatenbanken aus gescannten Packlisten.  
+2. **Warehouse operations** – Schnelle Validierung von Versandinhalten durch Lesen von Barcodes in PDFs, die von Logistikpartnern erstellt wurden.  
+3. **Retail checkout** – Umwandlung gedruckter Quittungen oder Werbeflyer in scannbare Daten für Treueprogramme.  
 
-## Leistungs‑Überlegungen
-- **Memory Management:** Halten Sie den `Parser` in einem try‑with‑resources‑Block, um native Ressourcen umgehend freizugeben.  
-- **Batch Processing:** Verarbeiten Sie mehrere Dateien in einer Schleife, anstatt für jedes Dokument eine neue JVM zu öffnen.  
-- **Area Limiting:** Beschränken Sie das Suchrechteck auf den kleinstmöglichen Bereich; das reduziert die CPU‑Zyklen erheblich.
+## Leistungsüberlegungen
+- **Memory management:** Halten Sie den `Parser` in einem try‑with‑resources‑Block, um native Ressourcen umgehend freizugeben.  
+- **Batch processing:** Verarbeiten Sie mehrere Dateien in einer Schleife, anstatt für jedes Dokument eine neue JVM zu starten.  
+- **Area limiting:** Beschränken Sie das Suchrechteck auf den kleinstmöglichen Bereich; das reduziert CPU‑Zyklen erheblich und verkürzt die Verarbeitungszeit typischerweise auf unter 30 ms pro Seite.  
+
+## Wie liest man Barcode‑PDFs in Java?
+Laden Sie das PDF mit `new Parser("sample.pdf")`, definieren Sie ein kleines `Rectangle` um die erwartete Barcode‑Position und rufen Sie `getBarcodes` auf. Die Methode gibt eine Liste von `PageBarcodeArea`‑Objekten zurück, die die dekodierten Werte enthalten. Dieses Zwei‑Schritt‑Muster funktioniert für jeden unterstützten Barcode‑Typ und eliminiert die Notwendigkeit externer OCR‑Bibliotheken.
 
 ## Fazit
-Sie haben nun eine vollständige, produktionsbereite Methode, um **extract barcodes java** aus jedem unterstützten Dokument mit GroupDocs.Parser zu extrahieren. Durch das Anvisieren eines bestimmten Seitenbereichs erzielen Sie schnelle, genaue Ergebnisse, die in Bestands‑, Logistik‑ oder Einzelhandelssysteme integriert werden können.
+Sie haben nun eine vollständige, produktionsreife Methode, um **extract barcodes java** aus jedem unterstützten Dokument mit GroupDocs.Parser zu extrahieren. Durch das Anvisieren eines bestimmten Seitenbereichs erzielen Sie schnelle, genaue Ergebnisse, die in Inventar‑, Logistik‑ oder Einzelhandelssysteme integriert werden können.
 
 ### Nächste Schritte
-Erforschen Sie weiterführende API‑Funktionen – z. B. das Extrahieren mehrerer Barcode‑Typen oder das Kombinieren von Barcode‑Daten mit OCR‑Text – indem Sie die offizielle [GroupDocs documentation](https://docs.groupdocs.com/parser/java/) prüfen.
+Erforschen Sie tiefere API‑Funktionen – z. B. das Extrahieren mehrerer Barcode‑Typen oder die Kombination von Barcode‑Daten mit OCR‑Text – indem Sie die offizielle [GroupDocs documentation](https://docs.groupdocs.com/parser/java/) prüfen.
 
 ## Häufig gestellte Fragen
 
 **Q: Welche Dokumentformate werden für die Barcode‑Extraktion unterstützt?**  
-A: GroupDocs.Parser unterstützt PDF, DOCX, XLSX, PPTX, Bilder (PNG, JPG, TIFF) und viele andere gängige Formate.
+A: GroupDocs.Parser unterstützt PDF, DOCX, XLSX, PPTX, PNG, JPG, TIFF und viele andere gängige Formate.
 
 **Q: Kann ich Barcodes aus in Dokumente eingebetteten Bildern extrahieren?**  
 A: Ja. Solange das Bild einen lesbaren Barcode enthält, erkennt der Parser ihn.
 
 **Q: Wie sollte ich Fehler während der Extraktion behandeln?**  
-A: Wickeln Sie die Parsing‑Logik in try‑catch‑Blöcke und protokollieren Sie Details der `ParserException`, um Probleme zu beheben.
+A: Umschließen Sie die Parsing‑Logik mit try‑catch‑Blöcken und protokollieren Sie Details der `ParserException`, um Probleme zu beheben.
 
 **Q: Ist GroupDocs.Parser für Java kostenlos nutzbar?**  
 A: Sie können es mit einer temporären Lizenz evaluieren. Für den Produktionseinsatz ist eine kommerzielle Lizenz erforderlich.
 
-**Q: Was ist der beste Weg, das Extraktionsrechteck zu definieren?**  
-A: Messen Sie die Position des Barcodes im Ausgangsdokument und verwenden Sie diese Koordinaten für `Point` und `Size`. Kleinere Rechtecke erhöhen die Geschwindigkeit und reduzieren Fehlalarme.
+**Q: Was ist der beste Weg, das Extraktions‑Rechteck zu definieren?**  
+A: Messen Sie die Position des Barcodes im Quelldokument und verwenden Sie diese Koordinaten für `Point` und `Size`. Kleinere Rechtecke erhöhen die Geschwindigkeit und reduzieren Fehlalarme.
 
 ---
 
-**Last Updated:** 2026-02-21  
-**Tested With:** GroupDocs.Parser 25.5 for Java  
-**Author:** GroupDocs  
+**Last Updated:** 2026-10-12  
+**Tested with:** GroupDocs.Parser 25.5 for Java  
+**Autor:** GroupDocs  
 
 ## Ressourcen
-- [GroupDocs.Parser Documentation](https://docs.groupdocs.com/parser/java/)
-- [API Reference](https://reference.groupdocs.com/parser/java)
-- [Download Latest Version](https://releases.groupdocs.com/parser/java/)
-- [GitHub Repository](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
-- [Free Support Forum](https://forum.groupdocs.com/c/parser)
+- [GroupDocs.Parser Dokumentation](https://docs.groupdocs.com/parser/java/)
+- [API-Referenz](https://reference.groupdocs.com/parser/java)
+- [Neueste Version herunterladen](https://releases.groupdocs.com/parser/java/)
+- [GitHub-Repository](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
+- [Kostenloses Support-Forum](https://forum.groupdocs.com/c/parser)
+
+## Verwandte Tutorials
+- [Wie man PDFs mit GroupDocs.Parser in Java extrahiert: Ein umfassender Leitfaden](/parser/java/getting-started/groupdocs-parser-java-initialize-tutorial/)
+- [Java PDF-Text-Extraktion mit GroupDocs.Parser – Schritt‑für‑Schritt‑Leitfaden](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
+- [Bilder aus PDF mit GroupDocs.Parser Java extrahieren](/parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/)

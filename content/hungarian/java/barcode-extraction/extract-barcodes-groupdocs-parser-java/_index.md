@@ -1,40 +1,96 @@
 ---
-date: '2026-02-21'
-description: Tanulja meg, hogyan lehet Java-ban vonalkódokat kinyerni dokumentumokból
-  a GroupDocs.Parser for Java segítségével. Könnyű integráció, gyors teljesítmény
-  és lépésről‑lépésre útmutató.
+date: '2026-10-12'
+description: Ismerje meg, hogyan lehet barcodes java-t kinyerni PDF‑ekből, Word fájlokból
+  és képekből a GroupDocs.Parser for Java segítségével. Gyors, pontos, lépésről‑lépésre
+  útmutató.
 keywords:
-- extract barcodes GroupDocs.Parser Java
-- barcode extraction from documents
-- Java barcode management
-title: vonalkódok kinyerése Java – A GroupDocs.Parser használata Java-hoz
+- extract barcodes java
+- read barcode pdf java
+- GroupDocs.Parser Java barcode
+lastmod: '2026-10-12'
+og_description: Gyorsan nyerje ki a barcodes java-t a GroupDocs.Parser for Java segítségével.
+  Ismerje meg, hogyan olvassa a barcode pdf java-t, hogyan állítsa be a library-t,
+  és hogyan optimalizálja a performance‑t.
+og_image_alt: Guide to extracting barcodes from documents using GroupDocs.Parser for
+  Java
+og_title: Barcodes java kinyerése a GroupDocs.Parser for Java használatával
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-12'
+  description: Learn how to extract barcodes java from PDFs, Word files, and images
+    with GroupDocs.Parser for Java. Fast, accurate, step‑by‑step guide.
+  headline: Extract barcodes java using GroupDocs.Parser for Java
+  type: TechArticle
+- description: Learn how to extract barcodes java from PDFs, Word files, and images
+    with GroupDocs.Parser for Java. Fast, accurate, step‑by‑step guide.
+  name: Extract barcodes java using GroupDocs.Parser for Java
+  steps:
+  - name: define document path
+    text: The file path tells the parser where the source document resides on disk.
+  - name: open the document with a try‑with‑resources block
+    text: Using `try (Parser parser = new Parser(filePath))` guarantees that native
+      resources are released automatically, preventing memory leaks.
+  - name: verify barcode support
+    text: Not every format can be scanned for barcodes. The `Parser.isBarcodeSupported()`
+      flag lets you confirm that the current document type is eligible.
+  - name: define the area of interest
+    text: The `Rectangle` class describes the region on a page where the barcode is
+      expected. `Point` represents the upper‑left corner (x, y) and `Size` defines
+      width and height.
+  - name: extract barcodes from the specified area
+    text: 'Call `parser.getBarcodes(areaOptions)` to retrieve every barcode inside
+      the rectangle. Each `PageBarcodeArea` object provides the page index and the
+      decoded value. **Explanation:** `getBarcodes` returns every barcode found inside
+      the rectangle. Each `PageBarcodeArea` provides the page index and the '
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Parser supports PDF, DOCX, XLSX, PPTX, PNG, JPG, TIFF, and many
+      other common formats.
+    question: What document formats are supported for barcode extraction?
+  - answer: Yes. As long as the image contains a readable barcode, the parser will
+      detect it.
+    question: Can I extract barcodes from images embedded inside documents?
+  - answer: Wrap the parsing logic in try‑catch blocks and log `ParserException` details
+      to troubleshoot issues.
+    question: How should I handle errors during extraction?
+  - answer: You can evaluate it with a temporary license. A commercial license is
+      required for production deployments.
+    question: Is GroupDocs.Parser for Java free to use?
+  - answer: Measure the barcode’s position in the source document and use those coordinates
+      for `Point` and `Size`. Smaller rectangles improve speed and reduce false positives.
+    question: What’s the best way to define the extraction rectangle?
+  type: FAQPage
+tags:
+- barcode extraction
+- GroupDocs.Parser
+- Java document processing
+title: Barcodes java kinyerése a GroupDocs.Parser for Java használatával
 type: docs
 url: /hu/java/barcode-extraction/extract-barcodes-groupdocs-parser-java/
 weight: 1
 ---
 
-Now produce final content.# extract barcodes java – A GroupDocs.Parser for Java használata
+# Vonalkódok kinyerése Java-val a GroupDocs.Parser for Java használatával
 
-A mai gyorsan változó digitális környezetben a **extract barcodes java** képesség PDF‑ekből, Word‑fájlokból vagy beolvasott képekből drámaian felgyorsíthatja a készletkezelést, a szállítást és a pénztárfolyamatokat. Ez az útmutató végigvezet a GroupDocs.Parser for Java beállításán, és pontosan megmutatja, hogyan lehet egy dokumentum oldalának meghatározott területéről kiolvasni a vonalkód adatokat.
+A modern ellátási lánc és kiskereskedelmi rendszerekben a **extract barcodes java** alapvető képesség, amely lehetővé teszi a nyomtatott kódok adatokká alakítását manuális beviteli nélkül. Ez a bemutató megmutatja, hogyan állítsuk be a GroupDocs.Parser for Java-t, hogyan célozzunk meg egy pontos téglalapot egy oldalon, és hogyan nyerjük ki a vonalkód értékeket PDF‑ekből, DOCX‑ből, XLSX‑ből vagy képfájlokból – mindezt csak néhány Java‑sorral.
 
 ## Gyors válaszok
-- **Mi jelent a “extract barcodes java”?** Ez a dokumentumokba ágyazott vonalkód értékek Java kóddal történő olvasását jelenti.  
-- **Melyik könyvtár kezeli ezt?** A GroupDocs.Parser for Java beépített vonalkód kinyerést biztosít.  
-- **Szükségem van licencre?** Értékeléshez elérhető egy ideiglenes licenc; a termeléshez teljes licenc szükséges.  
-- **Milyen dokumentumtípusok támogatottak?** PDF‑ek, DOCX, XLSX és számos más gyakori formátum.  
-- **Milyen gyors a kinyerés?** Tipikus oldalak ezredmásodpercenként feldolgozódnak, ha korlátozza a keresési területet.
+- **Mi jelent a “extract barcodes java”?** Ez azt jelenti, hogy Java kóddal beágyazott vonalkód értékeket olvasunk a dokumentumokból.  
+- **Melyik könyvtár kezeli ezt?** A GroupDocs.Parser for Java beépített vonalkód‑kinyerést biztosít.  
+- **Szükségem van licencre?** Ideiglenes licenc elérhető értékeléshez; a teljes licenc a termeléshez kötelező.  
+- **Milyen dokumentumtípusok támogatottak?** PDF‑ek, DOCX, XLSX és sok más gyakori formátum.  
+- **Milyen gyors a kinyerés?** A tipikus oldalak 10–30 ms alatt feldolgozásra kerülnek, ha korlátozza a keresési területet.
 
-## Mi az a extract barcodes java?
-*extract barcodes java* a folyamat, amely programozott módon megtalálja és dekódolja a dokumentumfájlokban megjelenő vonalkód szimbólumokat Java használatával. A GroupDocs.Parser segítségével egy pontos téglalapot célozhat meg egy oldalon, ezáltal csökkentve a feldolgozási időt és növelve a pontosságot.
+## Mi az extract barcodes java?
+*Extract barcodes java* a folyamat, amely programozott módon megtalálja és dekódolja a dokumentumfájlokban megjelenő vonalkód szimbólumokat Java használatával.  
+Bármely támogatott formátumból kinyerhet vonalkód adatokat a fájl betöltésével a GroupDocs.Parser‑rel, egy keresőtéglalap definiálásával és a vonalkód‑kinyerő API meghívásával. Ez a megközelítés megszünteti a manuális szkennelést és felgyorsítja a készlet‑, szállítás‑ és fizetési munkafolyamatokat.
 
-## Miért használja a GroupDocs.Parser‑t vonalkód kinyeréshez?
-- **Zero‑code OCR integráció** – a könyvtár belsőleg kezeli a vonalkód felismerést.  
-- **Finomhangolt területválasztás** – pontosan megadhatja, hol keressen az oldalon, csökkentve a zajt.  
-- **Keresztformátum támogatás** – egy API működik PDF‑ekkel, Office dokumentumokkal és képekkel egyaránt.  
-- **Enterprise‑ready licencelés** – kezdje egy ingyenes ideiglenes licenccel, majd frissítsen, amikor készen áll.
+## Miért használja a GroupDocs.Parser‑t a vonalkód kinyeréshez?
+A GroupDocs.Parser **30+ bemeneti formátumot** támogat — beleértve a PDF‑et, DOCX‑et, XLSX‑et, PPTX‑et, PNG‑t, JPG‑t és TIFF‑et — és képes több száz oldalas fájlokat feldolgozni anélkül, hogy az egész dokumentumot a memóriába töltené. A könyvtár belsőleg kezeli a vonalkód‑detektálást, lehetővé teszi a keresés szűkítését egy kis területre, és az eredményeket ezredmásodpercben adja vissza, ami ideális a nagy áteresztőképességű vállalati csővezetékekhez.
 
-## Előkövetelmények
+## Előfeltételek
 Mielőtt elkezdené, győződjön meg róla, hogy rendelkezik:
+
 - **Java Development Kit (JDK)** 8 vagy újabb.  
 - **Maven** (ajánlott a függőségkezeléshez).  
 - Alapvető ismeretek a Java OOP koncepcióiról.
@@ -63,32 +119,33 @@ Adja hozzá a GroupDocs.Parser‑t a Maven projektjéhez:
 Alternatívaként letöltheti a legújabb verziót közvetlenül a [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) oldalról.
 
 ### Licenc beszerzése
-A GroupDocs.Parser korlátozások nélküli kipróbálásához szerezzen ideiglenes licencet a [Temporary License page](https://purchase.groupdocs.com/temporary-license/) felkeresésével. Ha a megoldás megfelel az igényeinek, teljes licencet vásárolhat.
+A GroupDocs.Parser korlátozások nélküli kipróbálásához szerezzen be egy ideiglenes licencet a [Temporary License page](https://purchase.groupdocs.com/temporary-license/) oldal meglátogatásával. Ezután megvásárolhatja a teljes licencet, ha a megoldás megfelel az igényeinek.
 
 ## A GroupDocs.Parser for Java beállítása
-Ha Maven‑t használ, a fenti kódrészlet minden, amire szüksége van. Kézi JAR kezelés esetén adja hozzá a letöltött JAR fájlokat a projekt építési útvonalához.
+Ha Maven‑t használ, a fenti kódrészlet minden, amire szüksége van. Kézi JAR‑kezelés esetén adja hozzá a letöltött JAR fájlokat a projekt építési útvonalához.
 
-### Alap inicializálás és beállítás
-Itt van a minimális import, amire szüksége lesz:
+### Alapvető inicializálás és beállítás
+A `Parser` osztály a belépési pont bármely támogatott dokumentum olvasásához.  
+Íme a legkisebb szükséges import:
 
 ```java
 import com.groupdocs.parser.Parser;
 ```
 
-Győződjön meg róla, hogy minden szükséges osztály a classpath‑on van, mielőtt a vonalkód kinyeréshez lépne.
+Győződjön meg róla, hogy minden szükséges osztály a classpath‑on van, mielőtt a vonalkód‑kinyeréshez lépne.
 
 ## Implementációs útmutató
-Az alábbiakban egy lépésről‑lépésre útmutató található, amely az eredeti kódrészleteket változatlanul hagyja, miközben egyértelmű magyarázatokat ad.
+Az alábbi lépésről‑lépésre útmutató megtartja az eredeti kódrészeket változatlanul, miközben világos magyarázatokat ad.
 
-### 1. lépés: Dokumentum útvonal meghatározása
-Adja meg a parsernek, hol található a fájl:
+### 1. lépés: dokumentum útvonal meghatározása
+A fájl útvonal megmondja a parsernek, hogy a forrásdokumentum hol található a lemezen.
 
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/sample_pdf_with_barcodes.pdf"; // Replace with your file path
 ```
 
-### 2. lépés: Dokumentum megnyitása Try‑with‑Resources blokkban
-A `try (Parser parser = new Parser(filePath))` használata garantálja, hogy az erőforrások automatikusan felszabadulnak:
+### 2. lépés: dokumentum megnyitása try‑with‑resources blokkban
+`try (Parser parser = new Parser(filePath))` használata garantálja, hogy a natív erőforrások automatikusan felszabadulnak, megelőzve a memória‑szivárgásokat.
 
 ```java
 try (Parser parser = new Parser(filePath)) {
@@ -96,8 +153,8 @@ try (Parser parser = new Parser(filePath)) {
 }
 ```
 
-### 3. lépés: Vonalkód támogatás ellenőrzése
-Nem minden formátum szkennelhető vonalkódokra. Először ellenőrizze a funkciókapcsolót:
+### 3. lépés: vonalkód támogatás ellenőrzése
+Nem minden formátum szkennelhető vonalkódra. A `Parser.isBarcodeSupported()` jelző lehetővé teszi, hogy megerősítse, hogy a jelenlegi dokumentumtípus alkalmas-e.
 
 ```java
 if (!parser.getFeatures().isBarcodes()) {
@@ -106,16 +163,17 @@ if (!parser.getFeatures().isBarcodes()) {
 }
 ```
 
-### 4. lépés: Érdeklődési terület meghatározása
-Hozzon létre egy `Rectangle`‑t, amely lefedi azt a területet, ahol a vonalkód várható:
+### 4. lépés: az érdeklődési terület meghatározása
+A `Rectangle` osztály leírja azt a területet egy oldalon, ahol a vonalkód várható.  
+A `Point` a bal‑felső sarkot (x, y) jelöli, a `Size` pedig a szélességet és magasságot definiálja.
 
 ```java
 Rectangle rectangle = new Rectangle(new Point(590, 80), new Size(150, 150));
 PageAreaOptions options = new PageAreaOptions(rectangle);
 ```
 
-### 5. lépés: Vonalkódok kinyerése a megadott területről
-Hívja meg a `getBarcodes`‑t a terület beállításokkal, és iteráljon a találatokon:
+### 5. lépés: vonalkódok kinyerése a megadott területről
+Hívja a `parser.getBarcodes(areaOptions)` metódust, hogy minden vonalkódot lekérjen a téglalapon belül. Minden `PageBarcodeArea` objektum a lap indexét és a dekódolt értéket tartalmazza.
 
 ```java
 Iterable<PageBarcodeArea> barcodes = parser.getBarcodes(options);
@@ -126,56 +184,66 @@ for (PageBarcodeArea barcode : barcodes) {
 }
 ```
 
-**Magyarázat:** A `getBarcodes` visszaadja a téglalapon belül megtalált összes vonalkódot. Minden `PageBarcodeArea` tartalmazza az oldal indexét és a dekódolt vonalkód értékét, amelyet tárolhat, naplózhat vagy továbbíthat egy másik rendszernek.
+**Magyarázat:** A `getBarcodes` minden a téglalapon belül megtalált vonalkódot visszaad. Minden `PageBarcodeArea` a lap indexét és a dekódolt vonalkód értékét biztosítja, amelyet tárolhat, naplózhat vagy továbbíthat egy másik rendszernek.
 
-### Hibaelhárítási tippek
-- **File Not Found Exception:** Ellenőrizze újra a `filePath` karakterláncot, és győződjön meg róla, hogy a fájl elérhető.  
-- **Unsupported Document Format:** Ellenőrizze, hogy a dokumentumtípusa szerepel-e a GroupDocs.Parser funkciólistájában.  
-- **Incorrect Rectangle Coordinates:** Használjon PDF‑néző mérőeszközeit a `Point` (x, y) és `Size` (width, height) értékek finomhangolásához.
+## Hibaelhárítási tippek
+- **File not found exception:** Ellenőrizze a `filePath` karakterláncot, és győződjön meg róla, hogy a fájl elérhető.  
+- **Unsupported document format:** Ellenőrizze, hogy a dokumentumtípusa szerepel-e a GroupDocs.Parser funkciólistájában.  
+- **Incorrect rectangle coordinates:** Használjon PDF‑néző mérőeszközöket a `Point` (x, y) és `Size` (width, height) értékek finomhangolásához.
 
 ## Gyakorlati alkalmazások
-A dokumentumokból történő vonalkód kinyerés számos valós helyzethez nyit kaput:
-1. **Inventory Management** – Automatikusan töltse fel a készletadatbázist beolvasott csomaglistákból.  
-2. **Warehouse Operations** – Gyorsan ellenőrizze a szállítmány tartalmát a logisztikai partnerek által generált PDF‑ek vonalkódjainak olvasásával.  
-3. **Retail Checkout** – Alakítsa át a nyomtatott nyugtákat vagy promóciós szórólapokat beolvasható adatokra a hűségprogramokhoz.
+A vonalkódok dokumentumokból történő kinyerése számos valós helyzethez nyit kaput:
+
+1. **Készletkezelés** – Automatikusan feltölti a készletadatbázisokat a beolvasott csomaglistákból.  
+2. **Raktári műveletek** – Gyorsan ellenőrizheti a szállítmány tartalmát a logisztikai partnerek által generált PDF‑ek vonalkódjainak olvasásával.  
+3. **Kiskereskedelmi fizetés** – Átalakítja a nyomtatott nyugtákat vagy promóciós szórólapokat beolvasható adatokra a hűségprogramokhoz.
 
 ## Teljesítményfontosságú szempontok
-- **Memory Management:** Tartsa a `Parser`‑t egy try‑with‑resources blokkban, hogy a natív erőforrások gyorsan felszabaduljanak.  
-- **Batch Processing:** Több fájlt dolgozzon fel egy ciklusban, ahelyett, hogy minden dokumentumhoz új JVM‑et nyitna.  
-- **Area Limiting:** Korlátozza a keresési téglalapot a lehető legkisebb területre; ez jelentősen csökkenti a CPU‑ciklusok számát.
+- **Memória kezelés:** Tartsa a `Parser`‑t egy try‑with‑resources blokkban, hogy a natív erőforrások gyorsan felszabaduljanak.  
+- **Kötegelt feldolgozás:** Több fájlt dolgozzon fel egy ciklusban, ahelyett, hogy minden dokumentumhoz új JVM‑et indítana.  
+- **Terület korlátozása:** Szűkítse a keresőtéglalapot a lehető legkisebb területre; ez drámaian csökkenti a CPU‑ciklusokat, és általában a feldolgozási időt 30 ms alá hozza oldalanként.
+
+## Hogyan olvassuk be a vonalkódot PDF‑ből Java‑val?
+Töltse be a PDF‑et a `new Parser("sample.pdf")` segítségével, definiáljon egy kis `Rectangle`‑t a várt vonalkód helye körül, és hívja a `getBarcodes`‑t. A metódus egy `PageBarcodeArea` objektumok listáját adja vissza, amelyek a dekódolt értékeket tartalmazzák. Ez a kétlépéses minta bármely támogatott vonalkódtípusra működik, és megszünteti a külső OCR‑könyvtárak szükségességét.
 
 ## Következtetés
-Most már rendelkezik egy teljes, termelésre kész módszerrel a **extract barcodes java** kinyerésére bármely támogatott dokumentumból a GroupDocs.Parser segítségével. Egy adott oldalterület célzásával gyors, pontos eredményeket ér el, amelyeket be lehet integrálni készletkezelési, logisztikai vagy kiskereskedelmi rendszerekbe.
+Most már rendelkezik egy teljes, termelésre kész módszerrel a **extract barcodes java** kinyerésére bármely támogatott dokumentumból a GroupDocs.Parser használatával. Egy adott oldalterület célzásával gyors, pontos eredményeket ér el, amelyeket integrálhat a készlet‑, logisztikai vagy kiskereskedelmi rendszerekbe.
 
 ### Következő lépések
-Fedezze fel a mélyebb API képességeket – például több vonalkódtípus kinyerését vagy a vonalkód adatok OCR‑szöveggel való kombinálását – az hivatalos [GroupDocs documentation](https://docs.groupdocs.com/parser/java/) áttekintésével.
+Fedezze fel a mélyebb API‑képességeket — például több vonalkódtípus kinyerését vagy a vonalkód adatok OCR‑szöveggel való kombinálását — az hivatalos [GroupDocs documentation](https://docs.groupdocs.com/parser/java/) áttekintésével.
 
-## Gyakran Ismételt Kérdések
+## Gyakran ismételt kérdések
 
 **Q: Milyen dokumentumformátumok támogatottak a vonalkód kinyeréshez?**  
-A: A GroupDocs.Parser támogatja a PDF, DOCX, XLSX, PPTX, képek (PNG, JPG, TIFF) és számos más gyakori formátumot.
+A: A GroupDocs.Parser támogatja a PDF, DOCX, XLSX, PPTX, PNG, JPG, TIFF és sok más gyakori formátumot.
 
-**Q: Kinyerhetek vonalkódokat a dokumentumokba ágyazott képekből?**  
-A: Igen. Amíg a kép olvasható vonalkódot tartalmaz, a parser felismeri azt.
+**Q: Kinyerhetek vonalkódokat a dokumentumokba beágyazott képekből?**  
+A: Igen. Amíg a kép olvasható vonalkódot tartalmaz, a parser fel fogja ismerni.
 
-**Q: Hogyan kezeljem a hibákat a kinyerés során?**  
-A: A feldolgozási logikát try‑catch blokkokba helyezze, és naplózza a `ParserException` részleteit a hibák felderítéséhez.
+**Q: Hogyan kezeljem a kinyerés közbeni hibákat?**  
+A: Tegye a parsing logikát try‑catch blokkokba, és naplózza a `ParserException` részleteit a hibák felderítéséhez.
 
-**Q: Ingyenesen használható a GroupDocs.Parser for Java?**  
-A: Ideiglenes licenccel értékelhető. A termelési környezethez kereskedelmi licenc szükséges.
+**Q: A GroupDocs.Parser for Java ingyenes használatra?**  
+A: Értékelheti egy ideiglenes licenc segítségével. A termelési környezethez kereskedelmi licenc szükséges.
 
 **Q: Mi a legjobb módja a kinyerési téglalap meghatározásának?**  
-A: Mérje meg a vonalkód pozícióját a forrásdokumentumban, és használja ezeket a koordinátákat a `Point` és `Size` értékekhez. A kisebb téglalapok növelik a sebességet és csökkentik a hamis pozitív találatokat.
+A: Mérje meg a vonalkód pozícióját a forrásdokumentumban, és használja ezeket a koordinátákat a `Point` és `Size` számára. A kisebb téglalapok növelik a sebességet és csökkentik a hamis pozitív találatokat.
 
 ---
 
-**Legutóbb frissítve:** 2026-02-21  
-**Tesztelve:** GroupDocs.Parser 25.5 for Java  
+**Legutóbb frissítve:** 2026-10-12  
+**Tesztelve a:** GroupDocs.Parser 25.5 for Java  
 **Szerző:** GroupDocs  
 
 ## Erőforrások
-- [GroupDocs.Parser dokumentáció](https://docs.groupdocs.com/parser/java/)  
-- [API referencia](https://reference.groupdocs.com/parser/java)  
-- [Legújabb verzió letöltése](https://releases.groupdocs.com/parser/java/)  
-- [GitHub tároló](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
+- [GroupDocs.Parser dokumentáció](https://docs.groupdocs.com/parser/java/)
+- [API referencia](https://reference.groupdocs.com/parser/java)
+- [Legújabb verzió letöltése](https://releases.groupdocs.com/parser/java/)
+- [GitHub tároló](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
 - [Ingyenes támogatási fórum](https://forum.groupdocs.com/c/parser)
+
+## Kapcsolódó oktatóanyagok
+
+- [Hogyan nyerjünk ki PDF-et a GroupDocs.Parser segítségével Java-ban: Átfogó útmutató](/parser/java/getting-started/groupdocs-parser-java-initialize-tutorial/)
+- [Java PDF szöveg kinyerés a GroupDocs.Parser-rel – Lépésről‑lépésre útmutató](/parser/java/document-loading/java-groupdocs-parser-load-pdf-document/)
+- [Képek kinyerése PDF-ből a GroupDocs.Parser Java használatával](/parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/)

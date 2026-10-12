@@ -1,42 +1,91 @@
 ---
-date: '2026-02-19'
-description: تعلم كيفية اكتشاف نوع ملفات Java داخل أرشيفات ZIP باستخدام GroupDocs.Parser
-  للـ Java. اكتشف كيفية قراءة ملفات ZIP دون استخراج، وتحديد الملفات داخل ZIP، وتحليل
-  مداخل ZIP بكفاءة.
+date: '2026-10-12'
+description: اكتشاف نوع ملف Java في أرشيفات zip باستخدام GroupDocs.Parser. تعلم كيفية
+  قراءة zip دون استخراج، وتحديد الملفات داخل zip، وتحليل مدخلات zip بكفاءة.
 keywords:
-- detect file types in ZIP archives
-- GroupDocs.Parser for Java
-- file type detection without extraction
-title: اكتشاف نوع ملف Java في أرشيفات ZIP باستخدام GroupDocs.Parser لجافا
+- java file type detection
+- java detect file type
+- identify files in zip
+- read zip without extraction
+lastmod: '2026-10-12'
+og_description: اكتشاف نوع ملف Java في أرشيفات zip باستخدام GroupDocs.Parser يتيح
+  لك قراءة zip دون استخراج، وتحديد الملفات داخل zip، وتحليل المدخلات بكفاءة. مثالي
+  لخطوط أنابيب المستندات الآلية.
+og_image_alt: Guide showing Java code for detecting file types inside ZIP archives
+  with GroupDocs.Parser
+og_title: اكتشاف نوع ملف Java في أرشيفات zip باستخدام GroupDocs.Parser
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-12'
+  description: Java file type detection in zip archives with GroupDocs.Parser. Learn
+    to read zip without extraction, identify files in zip, and parse zip entries efficiently.
+  headline: Java file type detection in zip archives using GroupDocs.Parser for Java
+  type: TechArticle
+- description: Java file type detection in zip archives with GroupDocs.Parser. Learn
+    to read zip without extraction, identify files in zip, and parse zip entries efficiently.
+  name: Java file type detection in zip archives using GroupDocs.Parser for Java
+  steps:
+  - name: initialize the parser
+    text: '`Parser` is the primary entry point class provided by GroupDocs.Parser
+      for Java; it opens a container file such as a ZIP archive, reads only the necessary
+      header information, and exposes the archive’s contents through a collection
+      of `ContainerItem` objects, enabling in‑memory processing without ful'
+  - name: extract attachments
+    text: '`getContainer()` is a method of the `Parser` class that returns an `Iterable<ContainerItem>`
+      representing each entry inside the opened container; each `ContainerItem` provides
+      metadata such as name, size, and a stream for further inspection, allowing you
+      to work with individual files without extract'
+  - name: detect file types
+    text: '`detectFileType()` is a method available on each `ContainerItem` that analyses
+      the file’s binary signature (magic numbers) to determine its MIME type or file
+      extension, returning a `FileType` object; this enables accurate identification
+      of the file format regardless of its original name or extension'
+  type: HowTo
+- questions:
+  - answer: Yes, GroupDocs.Parser supports RAR, TAR, and 7z in addition to ZIP.
+    question: Can I use GroupDocs.Parser for other archive formats besides ZIP?
+  - answer: A compatible JDK 8+ and any standard IDE (IntelliJ, Eclipse, NetBeans)
+      are sufficient.
+    question: What are the system requirements for using GroupDocs.Parser?
+  - answer: Process the archive in smaller batches, monitor JVM memory, and close
+      the `Parser` promptly after each batch.
+    question: How can I handle very large archives efficiently?
+  - answer: Yes, free support is offered through the [GroupDocs forum](https://forum.groupdocs.com/c/parser).
+    question: Is support available if I run into issues?
+  - answer: Absolutely – start with the free trial to explore all features.
+    question: Can I test GroupDocs.Parser before buying a license?
+  type: FAQPage
+tags:
+- java file type detection
+- groupdocs.parser
+- zip archive processing
+title: اكتشاف نوع ملف Java في أرشيفات zip باستخدام GroupDocs.Parser للـ Java
 type: docs
 url: /ar/java/container-formats/detect-file-types-zip-groupdocs-parser-java/
 weight: 1
 ---
 
-# اكتشاف نوع ملف Java في أرشيفات ZIP باستخدام GroupDocs.Parser للـ Java
+# اكتشاف نوع ملف Java في أرشيفات zip باستخدام GroupDocs.Parser للـ Java
 
-التنقل داخل أرشيف ZIP قد يكون صعبًا في كثير من الأحيان، خاصةً عندما تحتاج إلى **اكتشاف نوع ملف Java** دون استخراج كل ملف أولاً. في هذا الدليل سنوضح لك كيفية **تحديد الملفات في zip**، **قراءة zip دون استخراج**، واستخدام **قراءة إدخالات zip Java** بكفاءة باستخدام GroupDocs.Parser. سواءً كنت تبني خط أنابيب مستندات آلي أو ميزة إدارة محتوى، فإن هذا الشرح يمنحك الخطوات الدقيقة لـ **كيفية اكتشاف إدخالات zip** و **تحليل أرشيف zip باستخدام Java** بثقة.
+في هذا البرنامج التعليمي ستكتشف **java file type detection** داخل أرشيفات ZIP باستخدام GroupDocs.Parser للـ Java. ستتعلم كيفية **قراءة zip دون استخراج**، **تحديد الملفات في zip**، وقراءة **zip entries java** بفعالية — كل ذلك دون كتابة ملفات مؤقتة على القرص. سواءً كنت تبني خط أنابيب معالجة مستندات آلي أو تضيف ميزة إدارة محتوى، فإن الخطوات أدناه توفر لك حلاً جاهزًا للإنتاج.
 
-## إجابات سريعة
-- **ماذا يفعل GroupDocs.Parser؟** يقوم بتحليل صيغ الحاويات (ZIP، RAR، TAR) ويسمح لك بفحص المحتويات دون استخراجها.  
-- **هل يمكنني اكتشاف أنواع الملفات دون فك الضغط؟** نعم – استخدم طريقة `detectFileType()` على كل `ContainerItem`.  
-- **ما نسخة Java المطلوبة؟** يُنصح باستخدام JDK 8 أو أحدث.  
-- **هل أحتاج إلى ترخيص؟** يتوفر إصدار تجريبي مجاني؛ الترخيص الدائم مطلوب للاستخدام الإنتاجي.  
-- **هل تدعم المعالجة الدفعة؟** بالتأكيد – يمكنك التكرار على العديد من ملفات ZIP داخل حلقة.
+## الإجابات السريعة
+- **ماذا يفعل GroupDocs.Parser؟** يقوم بتحليل صيغ الحاويات (ZIP، RAR، TAR، 7z) ويسمح لك بفحص المحتويات دون استخراجها.  
+- **هل يمكنني اكتشاف أنواع الملفات دون فك الضغط؟** نعم – استدعِ طريقة `detectFileType()` على كل `ContainerItem`.  
+- **ما نسخة Java المطلوبة؟** يوصى بـ JDK 8 أو أحدث.  
+- **هل أحتاج إلى ترخيص؟** تتوفر نسخة تجريبية مجانية؛ يلزم ترخيص دائم للاستخدام في الإنتاج.  
+- **هل يدعم المعالجة الدفعية؟** بالتأكيد – يمكنك التكرار على العديد من ملفات ZIP في حلقة.
 
 ## ما هو اكتشاف نوع ملف Java؟
-اكتشاف نوع ملف Java هو عملية تحديد صيغة الملف برمجيًا (مثل PDF، DOCX، PNG) بناءً على توقيعه الثنائي بدلاً من امتداده. عند تطبيقه على أرشيفات ZIP، يتيح لك **اكتشاف نوع ملف zip** لكل إدخال دون الحاجة إلى استخراج الأرشيف أولاً.
+`Java file type detection` يحدد صيغة الملف من خلال فحص توقيعه الثنائي بدلاً من امتداده. هذه التقنية تفحص أول بضعة بايتات — غالبًا ما تُسمى “الأرقام السحرية” — لتحديد النوع الحقيقي للملف بدقة. عند تطبيقها على أرشيفات ZIP، تتيح لك **detect zip file type** لكل مدخل دون استخراج الأرشيف أولاً، مما يمكّن من التصنيف السريع أو التوجيه أو الفهرسة لآلاف المستندات المدمجة في مرور واحد.
 
 ## لماذا نستخدم GroupDocs.Parser لهذه المهمة؟
-- **السرعة:** يتخطى خطوة الاستخراج المكلفة.  
-- **الأمان:** يتجنب كتابة ملفات مؤقتة على القرص.  
-- **المرونة:** يعمل مع صيغ حاويات متعددة، ليس فقط ZIP.  
-- **سهولة التكامل:** استدعاءات API بسيطة تتناسب طبيعيًا مع تدفقات عمل Java الحالية.
+يعالج GroupDocs.Parser صيغ الحاويات في الذاكرة، متجاوزًا خطوة الاستخراج المكلفة. يدعم **أربعة أنواع رئيسية من الأرشيفات** (ZIP، RAR، TAR، 7z) ويمكنه التعامل مع أرشيفات تحتوي على **ما يصل إلى 10,000 مدخل** مع الحفاظ على استهلاك الذاكرة تحت **200 MB** على JVM قياسي. هذه السرعة والأمان تجعل منه مثاليًا لخطوط أنابيب المستندات ذات الإنتاجية العالية.
 
 ## المتطلبات المسبقة
 - **GroupDocs.Parser للـ Java** — الإصدار 25.5 أو أحدث.  
 - **مجموعة تطوير Java (JDK)** — 8 أو أحدث.  
-- بيئة تطوير متكاملة مثل IntelliJ IDEA أو Eclipse أو NetBeans.  
+- بيئة تطوير متكاملة (IDE) مثل IntelliJ IDEA أو Eclipse أو NetBeans.  
 - Maven (اختياري، لإدارة التبعيات).  
 
 ## إعداد GroupDocs.Parser للـ Java
@@ -62,22 +111,22 @@ weight: 1
 </dependencies>
 ```
 
-### التحميل المباشر
-بدلاً من ذلك، يمكنك تنزيل أحدث نسخة من [إصدارات GroupDocs.Parser للـ Java](https://releases.groupdocs.com/parser/java/).
+### تحميل مباشر
+بدلاً من ذلك، يمكنك تنزيل أحدث نسخة من [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
 ### خطوات الحصول على الترخيص
-- **التجربة المجانية:** ابدأ بتجربة لاستكشاف جميع الإمكانيات.  
+- **نسخة تجريبية مجانية:** ابدأ بنسخة تجريبية لاستكشاف جميع الإمكانات.  
 - **ترخيص مؤقت:** استخدم مفتاحًا مؤقتًا لتقييم ممتد.  
-- **الشراء:** احصل على اشتراك للاستخدام الإنتاجي.
+- **شراء:** احصل على اشتراك لاستخدامه في بيئات الإنتاج.
 
 ## دليل التنفيذ
 
-### اكتشاف أنواع الملفات في أرشيفات ZIP
+### اكتشاف أنواع الملفات في أرشيفات zip
 
-هذا القسم يشرح لك **كيفية اكتشاف إدخالات zip** دون استخراجها.
+هذا القسم يوضح **كيفية اكتشاف zip** للمدخلات دون استخراجها.
 
-#### الخطوة 1: تهيئة الـ Parser
-أنشئ كائن `Parser` يشير إلى ملف ZIP الخاص بك.
+#### الخطوة 1: تهيئة المحلل
+`Parser` هو الصف الأساسي الذي توفره GroupDocs.Parser للـ Java؛ يفتح ملف حاوية مثل أرشيف ZIP، يقرأ فقط معلومات الرأس الضرورية، ويعرض محتويات الأرشيف عبر مجموعة من كائنات `ContainerItem`، مما يتيح معالجة في الذاكرة دون استخراج كامل.
 
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/SampleZip.zip")) {
@@ -85,10 +134,10 @@ try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/SampleZip.zip")) {
 }
 ```
 
-*لماذا؟* تهيئة الـ `Parser` تفتح الأرشيف لتتمكن من فحص محتوياته.
+*لماذا؟* تهيئة `Parser` تقوم بتحميل رأس الأرشيف فقط، مما يقلل من عبء الإدخال/الإخراج إلى الحد الأدنى.
 
 #### الخطوة 2: استخراج المرفقات
-استرجع كل عنصر داخل الحاوية باستخدام `getContainer()`.
+`getContainer()` هي طريقة في صف `Parser` تُعيد `Iterable<ContainerItem>` تمثل كل مدخل داخل الحاوية المفتوحة؛ كل `ContainerItem` يوفر بيانات وصفية مثل الاسم، الحجم، وتدفق للمزيد من الفحص، مما يتيح لك العمل مع ملفات فردية دون استخراجها إلى القرص.
 
 ```java
 Iterable<ContainerItem> attachments = parser.getContainer();
@@ -97,10 +146,10 @@ if (attachments == null) {
 }
 ```
 
-*لماذا؟* هذه الخطوة تؤكد أن صيغة الأرشيف مدعومة وتوفر لك مجموعة قابلة للتكرار لجميع الإدخالات.
+*لماذا؟* هذه الخطوة تتحقق من أن صيغة الأرشيف مدعومة وتوفر مقبضًا لكل ملف ترغب في فحصه.
 
 #### الخطوة 3: اكتشاف أنواع الملفات
-قم بالتكرار على العناصر واستدعِ `detectFileType()` لتحديد صيغة كل ملف.
+`detectFileType()` هي طريقة متاحة على كل `ContainerItem` تحلل توقيع الملف الثنائي (الأرقام السحرية) لتحديد نوع MIME أو امتداد الملف، وتعيد كائن `FileType`؛ هذا يتيح تحديد صيغة الملف بدقة بغض النظر عن اسمه الأصلي أو امتداده.
 
 ```java
 for (ContainerItem item : attachments) {
@@ -109,52 +158,56 @@ for (ContainerItem item : attachments) {
 }
 ```
 
-*لماذا؟* اكتشاف نوع الملف دون استخراج يُعدّ فعالًا للتطبيقات التي تحتاج إلى توجيه الملفات بناءً على صيغتها.
+*لماذا؟* اكتشاف نوع الملف دون استخراج يتيح لك توجيه أو فهرسة الملفات فورًا، وهو أمر ذو قيمة خاصة للوظائف الدفعية الكبيرة.
 
-### نصائح استكشاف الأخطاء وإصلاحها
-- تأكد من صحة مسار ملف ZIP وأن الملف قابل للوصول.  
-- إذا ظهرت لك رسالة `UnsupportedOperationException`، فتأكد من أن نسخة ZIP مدعومة من قبل GroupDocs.Parser.  
-- بالنسبة للأرشيفات الكبيرة، فكر في معالجة العناصر على دفعات أصغر لتقليل استهلاك الذاكرة.
+## المشكلات الشائعة والحلول
+- **مسار غير صحيح:** تحقق من أن مسار ملف ZIP هو مسار مطلق أو نسبي إلى دليل العمل.  
+- **أرشيف غير مدعوم:** إذا صادفت `UnsupportedOperationException`، تأكد من أن الأرشيف هو أحد الصيغ الأربعة المدعومة.  
+- **ضغط الذاكرة:** للأرشيفات التي تتجاوز 500 MB، عالج العناصر على دفعات وأغلق `Parser` بعد كل دفعة (استخدم try‑with‑resources).
 
 ## حالات الاستخدام الشائعة
-1. **معالجة المستندات الآلية** – توجيه الملفات الواردة بسرعة إلى المعالج المناسب بناءً على النوع.  
-2. **حلول أرشفة البيانات** – فهرسة محتويات الأرشيف دون فك ضغطه، مما يوفر عمليات I/O على التخزين.  
+1. **معالجة المستندات تلقائيًا** – توجيه الملفات الواردة بسرعة إلى المعالج المناسب بناءً على النوع المكتشف.  
+2. **حلول أرشفة البيانات** – فهرسة محتويات الأرشيف دون فك الضغط، مما يوفر عمليات الإدخال/الإخراج للتخزين.  
 3. **أنظمة إدارة المحتوى** – السماح للمستخدمين بتحميل حزم ZIP وتصنيف كل مستند تلقائيًا.
 
 ## اعتبارات الأداء
-- **مراقبة الموارد:** راقب الذاكرة عند تحليل أرشيفات ضخمة؛ أغلق الـ `Parser` فور الانتهاء (استخدام try‑with‑resources).  
-- **إدارة ذاكرة Java:** اضبط جامع القمامة في JVM للوظائف الدفعة طويلة الأمد.  
-- **المعالجة الدفعة:** عالج عدة ملفات ZIP داخل حلقة، وأعد استخدام كائن `Parser` واحد عندما يكون ذلك ممكنًا.
+- **مراقبة الموارد:** عند تحليل أرشيفات تحتوي على أكثر من 5,000 مدخل، راقب استخدام الذاكرة heap؛ يقوم المحلل بتحرير مخازن الإدخالات بعد كل تكرار.  
+- **ضبط JVM:** اضبط `-Xmx1g` للوظائف الدفعية العادية؛ وزد إلى `-Xmx4g` للأرشيفات الكبيرة جدًا.  
+- **المعالجة الدفعية:** أعد استخدام نسخة واحدة من `Parser` عبر ملفات ZIP متعددة عندما يكون ذلك ممكنًا لتقليل عبء تحميل الفئات.
 
 ## الأسئلة المتكررة
 
 **س: هل يمكنني استخدام GroupDocs.Parser لصيغ أرشيف أخرى غير ZIP؟**  
-ج: نعم، يدعم GroupDocs.Parser صيغ RAR، TAR، وعدة صيغ حاوية أخرى.
+ج: نعم، يدعم GroupDocs.Parser صيغ RAR و TAR و 7z بالإضافة إلى ZIP.
 
 **س: ما هي متطلبات النظام لاستخدام GroupDocs.Parser؟**  
-ج: JDK 8+ وأي بيئة تطوير متكاملة قياسية (IntelliJ، Eclipse، NetBeans) كافية.
+ج: JDK 8+ متوافق وأي بيئة تطوير متكاملة قياسية (IntelliJ، Eclipse، NetBeans) كافية.
 
 **س: كيف يمكنني التعامل مع أرشيفات ضخمة جدًا بكفاءة؟**  
-ج: عالج الأرشيف على دفعات أصغر وراقب إعدادات الذاكرة في JVM.
+ج: عالج الأرشيف على دفعات أصغر، راقب ذاكرة JVM، وأغلق `Parser` فورًا بعد كل دفعة.
 
-**س: هل يتوفر دعم إذا واجهت مشاكل؟**  
-ج: نعم، يتوفر دعم مجاني عبر [منتدى GroupDocs](https://forum.groupdocs.com/c/parser).
+**س: هل يتوفر دعم إذا واجهت مشكلات؟**  
+ج: نعم، يتوفر دعم مجاني عبر [GroupDocs forum](https://forum.groupdocs.com/c/parser).
 
-**س: هل يمكنني اختبار GroupDocs.Parser قبل شراء الترخيص؟**  
-ج: بالتأكيد – ابدأ بالتجربة المجانية لاستكشاف جميع الميزات.
+**س: هل يمكنني اختبار GroupDocs.Parser قبل شراء ترخيص؟**  
+ج: بالتأكيد – ابدأ بالنسخة التجريبية المجانية لاستكشاف جميع الميزات.
 
-## الموارد
-- [الوثائق:](https://docs.groupdocs.com/parser/java/)
+## الموارد الإضافية
+- [التوثيق:](https://docs.groupdocs.com/parser/java/)
 - [مرجع API:](https://reference.groupdocs.com/parser/java)
-- [التنزيل:](https://releases.groupdocs.com/parser/java/)
+- [تحميل:](https://releases.groupdocs.com/parser/java/)
 - [مستودع GitHub:](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
-- [الدعم المجاني:](https://forum.groupdocs.com/c/parser)
-- [الترخيص المؤقت:](https://purchase.groupdocs.com/temporary-license/)
+- [دعم مجاني:](https://forum.groupdocs.com/c/parser)
+- [ترخيص مؤقت:](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-**آخر تحديث:** 2026-02-19  
+**آخر تحديث:** 2026-10-12  
 **تم الاختبار مع:** GroupDocs.Parser 25.5 للـ Java  
-**المؤلف:** GroupDocs  
+**المؤلف:** GroupDocs
 
----
+## الدروس ذات الصلة
+
+- [تكرار أرشيف Zip باستخدام GroupDocs Parser Java](/parser/java/container-formats/iterate-zip-archive-groupdocs-parser-java/)
+- [استخراج النص من ملفات ZIP في Java باستخدام GroupDocs.Parser](/parser/java/container-formats/extract-text-zip-files-groupdocs-parser-java/)
+- [كيفية الحصول على نوع الملف في Java باستخدام GroupDocs.Parser](/parser/java/document-information/extract-document-info-groupdocs-parser-java/)

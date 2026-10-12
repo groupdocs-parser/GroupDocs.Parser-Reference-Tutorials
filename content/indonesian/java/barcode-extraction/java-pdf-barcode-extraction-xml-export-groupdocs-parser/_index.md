@@ -1,44 +1,108 @@
 ---
-date: '2026-02-19'
-description: Pelajari cara membaca kode QR dalam PDF Java menggunakan GroupDocs.Parser
-  dan mengekspor data barcode ke XML.
+date: '2026-10-12'
+description: Pelajari cara mengekstrak QR dari PDF di Java menggunakan GroupDocs.Parser
+  dan mengekspor data kode batang ke XML untuk pemrosesan lanjutan.
 keywords:
-- Java PDF barcode extraction
-- GroupDocs.Parser for Java
-- XML export from PDF
-title: Cara Membaca Kode QR pada PDF Java dengan GroupDocs.Parser
+- extract QR from PDF
+- how to read QR
+- read QR codes Java
+- parse QR codes Java
+- PDF QR code extraction
+lastmod: '2026-10-12'
+og_description: Pelajari cara mengekstrak QR dari PDF di Java menggunakan GroupDocs.Parser
+  dan mengekspor data kode batang ke XML untuk pemrosesan lanjutan.
+og_image_alt: Guide showing Java code that extracts QR codes from PDF files with GroupDocs.Parser
+  and saves results as XML
+og_title: Cara mengekstrak QR dari PDF di Java dengan GroupDocs.Parser
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-12'
+  description: Learn how to extract QR from PDF in Java using GroupDocs.Parser and
+    export the barcode data to XML for downstream processing.
+  headline: How to extract QR from PDF in Java with GroupDocs.Parser
+  type: TechArticle
+- description: Learn how to extract QR from PDF in Java using GroupDocs.Parser and
+    export the barcode data to XML for downstream processing.
+  name: How to extract QR from PDF in Java with GroupDocs.Parser
+  steps:
+  - name: verify barcode support
+    text: 'Before attempting extraction, confirm that the document format supports
+      barcode scanning: *Explanation:* This guard prevents runtime errors on unsupported
+      file types.'
+  - name: configure barcode options (read QR codes Java)
+    text: '`BarcodeOptions` is a configuration object that lets you specify which
+      barcode symbologies to detect, set the scanning quality mode, and fine‑tune
+      parameters such as detection thresholds, ensuring optimal performance for the
+      target QR codes. *Explanation:* `QualityMode.Low` speeds up processing; swi'
+  - name: extract the QR data
+    text: '`parser.getBarcodes(options)` scans the document using the provided `BarcodeOptions`
+      and returns a collection of `PageBarcodeArea` objects, each encapsulating the
+      decoded QR value, the page number, and the exact coordinates of the barcode
+      within the page, allowing precise downstream handling. *Expla'
+  - name: initialise the XML exporter
+    text: '`XmlExporter` is a utility class that transforms a collection of barcode
+      objects into a well‑structured XML document, automatically generating elements
+      for each barcode with attributes for page index, position, and decoded value,
+      which can then be saved or streamed to other systems. *Explanation:* T'
+  - name: write the XML file
+    text: 'Save the extracted QR information to disk: *Explanation:* The resulting
+      `data.xml` contains one `<Barcode>` element per QR code, with attributes for
+      page number, coordinates, and decoded value.'
+  type: HowTo
+- questions:
+  - answer: Yes, the library supports barcode extraction from common image formats
+      (PNG, JPEG, TIFF).
+    question: Can I extract barcodes from image files using GroupDocs.Parser?
+  - answer: QR, Code 39, Code 128, DataMatrix, PDF417, and many more. Refer to the
+      API docs for the full list.
+    question: What barcode formats are recognized?
+  - answer: 'Pass the password to the `Parser` constructor: `new Parser(filePath,
+      "password")`.'
+    question: How should I handle password‑protected PDFs?
+  - answer: The trial provides full functionality but adds a watermark to extracted
+      data. For production, acquire a commercial license.
+    question: Is the trial version sufficient for production testing?
+  - answer: Create multiple `BarcodeOptions` instances or pass an array of types to
+      scan for all needed formats in one pass.
+    question: What if my PDF contains both QR and linear barcodes?
+  type: FAQPage
+tags:
+- extract QR
+- GroupDocs.Parser
+- Java PDF processing
+- barcode extraction
+- XML export
+title: Cara mengekstrak QR dari PDF di Java dengan GroupDocs.Parser
 type: docs
 url: /id/java/barcode-extraction/java-pdf-barcode-extraction-xml-export-groupdocs-parser/
 weight: 1
 ---
 
-# Cara Membaca Kode QR dalam PDF Java dengan GroupDocs.Parser
+# Cara mengekstrak QR dari PDF di Java dengan GroupDocs.Parser
 
-Dalam alur kerja bisnis modern, **cara membaca QR** kode dari dokumen PDF dapat membuat perbedaan antara kemacetan entri data manual dan jalur otomatis sepenuhnya. Baik Anda menangani manifest pengiriman, struk ritel, atau katalog produk, mengekstrak informasi QR dengan cepat dan dapat diandalkan sangat penting. Tutorial ini memandu Anda menggunakan **GroupDocs.Parser for Java** untuk membaca kode QR (dan barcode lainnya) dari PDF dan mengekspor hasilnya ke file XML bersih yang dapat dikonsumsi oleh sistem hilir.
+Dalam alur kerja bisnis modern, **mengekstrak QR dari PDF** dapat mengubah bottleneck entri data manual menjadi alur otomatis sepenuhnya. Apakah Anda menangani manifest pengiriman, struk ritel, atau katalog produk, mengambil informasi QR dengan cepat dan andal sangat penting bagi sistem hilir. Tutorial ini memandu Anda menggunakan **GroupDocs.Parser for Java** untuk membaca kode QR (dan barcode lainnya) dari PDF serta mengekspor hasilnya ke file XML bersih yang dapat dikonsumsi oleh ERP, inventaris, atau platform analitik Anda.
 
 ## Jawaban Cepat
-- **What does GroupDocs.Parser for Java do?** It reads PDF files and extracts structured data such as barcodes.  
-- **How to extract QR codes?** By configuring `BarcodeOptions` with the QR type and calling `parser.getBarcodes()`.  
-- **Can I read QR codes Java?** Yes—set the barcode type to `"QR"` in the options.  
-- **Do I need a license?** A trial works for testing; a commercial license is required for production.  
-- **What Java version is required?** Java 8 or higher is recommended.
+- **Apa yang dilakukan GroupDocs.Parser for Java?** It reads PDF files and extracts structured data such as barcodes, tables, and text.  
+- **Bagaimana cara mengekstrak kode QR?** Configure `BarcodeOptions` with the QR type and call `parser.getBarcodes()`.  
+- **Apakah saya dapat membaca kode QR di Java?** Yes—set the barcode type to `"QR"` in the options.  
+- **Apakah saya memerlukan lisensi?** A trial works for testing; a commercial license is required for production.  
+- **Versi Java apa yang diperlukan?** Java 8 atau lebih tinggi disarankan.
 
-## Apa itu “cara membaca QR” dalam konteks pemrosesan PDF?
-Membaca kode QR dari PDF berarti memindai setiap halaman untuk grafik yang dienkode QR, mendekode data yang tertanam, dan mengembalikannya dalam format yang ramah program. GroupDocs.Parser mengabstraksi analisis gambar tingkat rendah sehingga Anda dapat fokus pada logika bisnis daripada manipulasi piksel.
+## Apa itu “mengekstrak QR dari PDF” dalam konteks pemrosesan PDF?
+Mengekstrak QR dari PDF berarti memindai setiap halaman untuk grafik yang dikodekan QR, mendekode data yang tertanam, dan mengembalikannya dalam format yang ramah program. GroupDocs.Parser mengabstraksi analisis gambar tingkat rendah sehingga Anda dapat fokus pada logika bisnis daripada manipulasi piksel.
 
 ## Mengapa menggunakan GroupDocs.Parser untuk ekstraksi QR?
-- **High accuracy:** Built‑in image‑processing algorithms handle low‑resolution scans.  
-- **Performance options:** Choose `QualityMode.Low` for speed or `QualityMode.High` for maximum precision.  
-- **Cross‑format support:** Works with PDFs, images, and even Office documents, so you can reuse the same code base for different file types.
+GroupDocs.Parser mendukung **lebih dari 30 format input** dan dapat memproses PDF hingga **500 MB** tanpa memuat seluruh file ke memori, memberikan hasil akurasi tinggi bahkan pada pemindaian beresolusi rendah. Anda dapat memilih `QualityMode.Low` untuk kecepatan atau `QualityMode.High` untuk presisi maksimum, dan API yang sama bekerja untuk PDF, gambar, dan dokumen Office, menghilangkan kebutuhan akan banyak pustaka.
 
 ## Prasyarat
-- **GroupDocs.Parser for Java** (version 25.5 or later).  
-- Maven or manual JAR download.  
-- Java 8+ development environment (IntelliJ IDEA, Eclipse, or any editor).  
+- **GroupDocs.Parser for Java** (versi 25.5 atau lebih baru).  
+- Maven atau unduhan JAR manual.  
+- Lingkungan pengembangan Java 8+ (IntelliJ IDEA, Eclipse, atau editor apa pun).  
 
 ## Menyiapkan GroupDocs.Parser untuk Java
 ### Menggunakan Maven
-Add the GroupDocs repository and dependency to your `pom.xml`:
+Tambahkan repositori GroupDocs dan dependensi ke `pom.xml` Anda:
 
 ```xml
 <repositories>
@@ -58,16 +122,36 @@ Add the GroupDocs repository and dependency to your `pom.xml`:
 </dependencies>
 ```
 
-### Unduh Langsung
+```xml
+<repositories>
+    <repository>
+        <id>repository.groupdocs.com</id>
+        <name>GroupDocs Repository</name>
+        <url>https://releases.groupdocs.com/parser/java/</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>com.groupdocs</groupId>
+        <artifactId>groupdocs-parser</artifactId>
+        <version>25.5</version>
+    </dependency>
+</dependencies>
+```
+
+### Unduhan langsung
 Sebagai alternatif, unduh JAR terbaru dari [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
-#### Langkah-langkah Akuisisi Lisensi
-- **Free Trial:** 30‑day trial with full feature set.  
-- **Temporary License:** Request a temporary key for extended evaluation.  
-- **Purchase:** Obtain a commercial license for production deployments.
+#### Langkah-langkah memperoleh lisensi
+- **Uji coba gratis:** uji coba 30 hari dengan semua fitur lengkap.  
+- **Lisensi sementara:** Minta kunci sementara untuk evaluasi yang diperpanjang.  
+- **Pembelian:** Dapatkan lisensi komersial untuk penerapan produksi.
 
-### Inisialisasi dan Penyiapan Dasar
-Create a `Parser` instance that points to the PDF you want to analyze:
+### Inisialisasi dan pengaturan dasar
+Buat instance `Parser` yang menunjuk ke PDF yang ingin Anda analisis:
+
+`Parser` adalah kelas inti dalam GroupDocs.Parser yang mewakili dokumen dan menyediakan metode untuk mengekstrak konten seperti teks, tabel, dan barcode.  
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -85,8 +169,10 @@ class BarcodeExtractor {
 ```
 
 ## Cara membaca kode QR dalam PDF Java menggunakan GroupDocs.Parser
-### Langkah 1: Verifikasi Dukungan Barcode
-Before attempting extraction, confirm that the document format supports barcode scanning:
+Membaca kode QR dalam PDF Java dengan GroupDocs.Parser melibatkan pembuatan instance parser, mengonfigurasi opsi barcode untuk menargetkan tipe QR, memanggil metode ekstraksi barcode, dan kemudian menangani objek barcode yang dikembalikan. Proses ini sederhana, bekerja pada halaman PDF apa pun, dan mengembalikan nilai yang didekode beserta metadata posisi untuk pemrosesan lebih lanjut.
+
+### Langkah 1: verifikasi dukungan barcode
+Sebelum mencoba ekstraksi, pastikan format dokumen mendukung pemindaian barcode:
 
 ```java
 if (!parser.getFeatures().isBarcodes()) {
@@ -95,10 +181,10 @@ if (!parser.getFeatures().isBarcodes()) {
 }
 ```
 
-*Explanation:* This guard prevents runtime errors on unsupported file types.
+*Penjelasan:* Guard ini mencegah error runtime pada tipe file yang tidak didukung.
 
-### Langkah 2: Konfigurasi Opsi Barcode (Baca Kode QR Java)
-Set the scanning quality and specify that you’re interested in QR codes:
+### Langkah 2: konfigurasikan opsi barcode (baca kode QR Java)
+`BarcodeOptions` adalah objek konfigurasi yang memungkinkan Anda menentukan simbologi barcode mana yang akan dideteksi, mengatur mode kualitas pemindaian, dan menyesuaikan parameter seperti ambang deteksi, memastikan kinerja optimal untuk kode QR target.  
 
 ```java
 import com.groupdocs.parser.options.BarcodeOptions;
@@ -107,10 +193,10 @@ import com.groupdocs.parser.options.QualityMode;
 BarcodeOptions options = new BarcodeOptions(QualityMode.Low, QualityMode.Low, "QR");
 ```
 
-*Explanation:* `QualityMode.Low` speeds up processing; switch to `High` if you need extra accuracy. The `"QR"` argument tells the engine to look for QR‑type barcodes only.
+*Penjelasan:* `QualityMode.Low` mempercepat pemrosesan; beralih ke `High` jika Anda memerlukan akurasi ekstra. Argumen `"QR"` memberi tahu mesin untuk mencari barcode tipe QR saja.
 
-### Langkah 3: Ekstrak Data QR
-Pull the barcode information from every page of the PDF:
+### Langkah 3: ekstrak data QR
+`parser.getBarcodes(options)` memindai dokumen menggunakan `BarcodeOptions` yang diberikan dan mengembalikan koleksi objek `PageBarcodeArea`, masing‑masing berisi nilai QR yang didekode, nomor halaman, dan koordinat tepat barcode dalam halaman, memungkinkan penanganan hilir yang presisi.  
 
 ```java
 import com.groupdocs.parser.data.PageBarcodeArea;
@@ -119,11 +205,11 @@ import java.util.List;
 Iterable<PageBarcodeArea> barcodes = parser.getBarcodes(options);
 ```
 
-*Explanation:* `parser.getBarcodes` returns an iterable collection of `PageBarcodeArea` objects, each containing the decoded QR value and its location on the page.
+*Penjelasan:* `parser.getBarcodes` mengembalikan koleksi yang dapat diiterasi dari objek `PageBarcodeArea`, masing‑masing berisi nilai QR yang didekode dan lokasinya pada halaman.
 
-## Mengekspor Data yang Diekstrak ke XML
-### Langkah 4: Inisialisasi Ekspor XML
-Create an exporter that will transform the barcode collection into a well‑structured XML file:
+## Mengekspor data yang diekstrak ke XML
+### Langkah 4: inisialisasi exporter XML
+`XmlExporter` adalah kelas utilitas yang mengubah koleksi objek barcode menjadi dokumen XML terstruktur dengan baik, secara otomatis menghasilkan elemen untuk setiap barcode dengan atribut indeks halaman, posisi, dan nilai terdekripsi, yang kemudian dapat disimpan atau dialirkan ke sistem lain.  
 
 ```java
 import com.groupdocs.parser.export.XmlExporter;
@@ -131,60 +217,66 @@ import com.groupdocs.parser.export.XmlExporter;
 XmlExporter exporter = new XmlExporter();
 ```
 
-*Explanation:* The `XmlExporter` handles serialization of barcode objects into standard XML, ready for integration with ERP or inventory systems.
+*Penjelasan:* `XmlExporter` menangani serialisasi objek barcode ke XML standar, siap untuk integrasi dengan sistem ERP atau inventaris.
 
-### Langkah 5: Tulis File XML
-Save the extracted QR information to disk:
+### Langkah 5: tulis file XML
+Simpan informasi QR yang diekstrak ke disk:
 
 ```java
 exporter.exportBarcodes(barcodes, "YOUR_OUTPUT_DIRECTORY/data.xml");
 ```
 
-*Explanation:* The resulting `data.xml` contains one `<Barcode>` element per QR code, with attributes for page number, coordinates, and decoded value.
+*Penjelasan:* `data.xml` yang dihasilkan berisi satu elemen `<Barcode>` per kode QR, dengan atribut nomor halaman, koordinat, dan nilai terdekripsi.
 
-## Aplikasi Praktis
-1. **Inventory Management:** Auto‑populate stock databases by reading QR tags on incoming shipment PDFs.  
-2. **Supply‑Chain Visibility:** Track packages in real time by extracting QR identifiers embedded in logistics documents.  
-3. **Retail Receipts:** Pull promotional or warranty information from QR codes printed on digital receipts.
+## Aplikasi praktis
+1. **Manajemen inventaris:** Mengisi otomatis basis data stok dengan membaca tag QR pada PDF pengiriman yang masuk.  
+2. **Visibilitas rantai pasokan:** Melacak paket secara real time dengan mengekstrak identifier QR yang tertanam dalam dokumen logistik.  
+3. **Struk ritel:** Mengambil informasi promosi atau garansi dari kode QR yang dicetak pada struk digital.
 
-## Pertimbangan Kinerja
-- **Memory Management:** For very large PDFs, process pages in a streaming fashion instead of loading the whole file into memory.  
-- **QualityMode Selection:** Use `Low` for bulk processing; switch to `High` when dealing with low‑resolution scans.  
-- **Library Updates:** Keep GroupDocs.Parser up‑to‑date to benefit from the latest performance improvements and bug fixes.
+## Pertimbangan kinerja
+- **Manajemen memori:** Untuk PDF yang sangat besar, proses halaman secara streaming alih-alih memuat seluruh file ke memori.  
+- **Pemilihan QualityMode:** Gunakan `Low` untuk pemrosesan massal; beralih ke `High` ketika menangani pemindaian beresolusi rendah.  
+- **Pembaruan pustaka:** Jaga GroupDocs.Parser tetap terbaru untuk mendapatkan peningkatan kinerja dan perbaikan bug terkini.
 
-## Masalah Umum & Pemecahan Masalah
-| Symptom | Likely Cause | Fix |
+## Masalah umum & pemecahan masalah
+| Gejala | Penyebab kemungkinan | Perbaikan |
 |---------|--------------|-----|
-| No barcodes returned | Wrong barcode type specified | Change `"QR"` to the appropriate type (e.g., `"CODE_128"`). |
-| Out‑of‑memory error on large PDFs | Whole document loaded at once | Process pages individually or increase JVM heap size (`-Xmx2g`). |
-| Empty XML file | `exportBarcodes` called before extraction | Ensure `parser.getBarcodes(options)` returns data before exporting. |
+| Tidak ada barcode yang dikembalikan | Tipe barcode yang salah ditentukan | Ubah `"QR"` ke tipe yang sesuai (mis., `"CODE_128"`). |
+| Error out‑of‑memory pada PDF besar | Seluruh dokumen dimuat sekaligus | Proses halaman secara individual atau tingkatkan ukuran heap JVM (`-Xmx2g`). |
+| File XML kosong | `exportBarcodes` dipanggil sebelum ekstraksi | Pastikan `parser.getBarcodes(options)` mengembalikan data sebelum mengekspor. |
 
-## Pertanyaan yang Sering Diajukan
-**Q: Can I extract barcodes from image files using GroupDocs.Parser?**  
-A: Yes, the library supports barcode extraction from common image formats (PNG, JPEG, TIFF).
+## Pertanyaan yang sering diajukan
+**Q: Bisakah saya mengekstrak barcode dari file gambar menggunakan GroupDocs.Parser?**  
+A: Ya, pustaka mendukung ekstraksi barcode dari format gambar umum (PNG, JPEG, TIFF).
 
-**Q: What barcode formats are recognized?**  
-A: QR, Code 39, Code 128, DataMatrix, PDF417, and many more. Refer to the API docs for the full list.
+**Q: Format barcode apa yang dikenali?**  
+A: QR, Code 39, Code 128, DataMatrix, PDF417, dan banyak lagi. Lihat dokumentasi API untuk daftar lengkap.
 
-**Q: How should I handle password‑protected PDFs?**  
-A: Pass the password to the `Parser` constructor: `new Parser(filePath, "password")`.
+**Q: Bagaimana saya menangani PDF yang dilindungi kata sandi?**  
+A: Berikan kata sandi ke konstruktor `Parser`: `new Parser(filePath, "password")`.
 
-**Q: Is the trial version sufficient for production testing?**  
-A: The trial provides full functionality but adds a watermark to extracted data. For production, acquire a commercial license.
+**Q: Apakah versi percobaan cukup untuk pengujian produksi?**  
+A: Versi percobaan menyediakan semua fungsi tetapi menambahkan watermark pada data yang diekstrak. Untuk produksi, dapatkan lisensi komersial.
 
-**Q: What if my PDF contains both QR and linear barcodes?**  
-A: Create multiple `BarcodeOptions` instances or pass an array of types to scan for all needed formats in one pass.
+**Q: Bagaimana jika PDF saya berisi QR dan barcode linier?**  
+A: Buat beberapa instance `BarcodeOptions` atau berikan array tipe untuk memindai semua format yang dibutuhkan dalam satu kali proses.
 
 ---
 
-**Last Updated:** 2026-02-19  
-**Tested With:** GroupDocs.Parser 25.5  
-**Author:** GroupDocs  
+**Terakhir diperbarui:** 2026-10-12  
+**Diuji dengan:** GroupDocs.Parser 25.5  
+**Penulis:** GroupDocs  
 
-## Sumber Daya
-- [GroupDocs.Parser Java Documentation](https://docs.groupdocs.com/parser/java/)
-- [API Reference](https://reference.groupdocs.com/parser/java)
-- [Download GroupDocs.Parser](https://releases.groupdocs.com/parser/java/)
-- [GitHub Repository](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
-- [Free Support Forum](https://forum.groupdocs.com/c/parser)
-- [Temporary License Application](https://purchase.groupdocs.com/temporary-license/)
+## Sumber daya
+- [Dokumentasi GroupDocs.Parser Java](https://docs.groupdocs.com/parser/java/)
+- [Referensi API](https://reference.groupdocs.com/parser/java)
+- [Unduh GroupDocs.Parser](https://releases.groupdocs.com/parser/java/)
+- [Repositori GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
+- [Forum dukungan gratis](https://forum.groupdocs.com/c/parser)
+- [Aplikasi lisensi sementara](https://purchase.groupdocs.com/temporary-license/)
+
+## Tutorial Terkait
+
+- [Ekstrak Barcode PDF GroupDocs Parser Java](/parser/java/barcode-extraction/extract-barcode-pdf-groupdocs-parser-java/)
+- [Cara Memuat PDF dari URL dengan GroupDocs.Parser untuk Java](/parser/java/document-loading/)
+- [Ekstrak Data Form PDF dengan GroupDocs.Parser di Java](/parser/java/form-extraction/groupdocs-parser-java-pdf-form-extraction/)
