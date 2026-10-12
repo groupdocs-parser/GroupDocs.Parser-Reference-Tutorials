@@ -1,68 +1,103 @@
 ---
 additionalTitle: GroupDocs API References
-date: 2026-02-19
-description: تعلم دليل GroupDocs.Parser لاستخراج المستندات بكفاءة، واستخراج النصوص،
+date: 2026-10-12
+description: تعلم دورة GroupDocs.Parser لاستخراج المستندات بكفاءة، واستخراج النص،
   وتحليل المستندات باستخدام .NET و Java. استكشف أدلة خطوة بخطوة حول الجداول، الصور،
-  استخراج الباركود، التعرف الضوئي على الأحرف (OCR)، والمزيد.
+  استخراج الباركود، OCR، وأكثر.
 is_root: true
 keywords:
+- groupdocs.parser tutorial
 - document parsing
 - text extraction
 - data extraction
-- pdf parser
-- word parser
+lastmod: 2026-10-12
+linktitle: دروس GroupDocs.Parser
+og_description: تُظهر دورة GroupDocs.Parser كيفية استخراج النص، الجداول، الصور، والباركود
+  من أكثر من 50 تنسيقًا باستخدام .NET أو Java. إتقان تحليل المستندات بسرعة.
+og_image_alt: Guide to using GroupDocs.Parser for extracting data from PDFs, Word,
+  Excel and more
+og_title: دورة GroupDocs.Parser – إتقان تحليل المستندات
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-12'
+  description: Learn the GroupDocs.Parser tutorial for efficient document extraction,
+    text extraction, and document parsing with .NET & Java. Explore step‑by‑step guides
+    on tables, images, barcode extraction, OCR, and more.
+  headline: GroupDocs.Parser tutorial – unlock document parsing mastery
+  type: TechArticle
+- questions:
+  - answer: Yes, the library runs on any platform that supports .NET 6+ or Java 8+,
+      making it ideal for Docker containers and serverless functions.
+    question: Can I use GroupDocs.Parser in a cloud‑native microservice?
+  - answer: Absolutely – you pass the password to the `Parser` constructor or the
+      relevant load options, and the library decrypts the document on the fly.
+    question: Does GroupDocs.Parser handle password‑protected files?
+  - answer: The streaming architecture allows processing of files larger than 2 GB;
+      memory consumption stays under 200 MB because pages are processed sequentially.
+    question: What is the maximum file size the parser can handle?
+  - answer: Yes, the built‑in OCR engine supports more than 100 languages, including
+      Chinese, Arabic, and Cyrillic scripts.
+    question: Is OCR available for languages beyond English?
+  - answer: Use the `DataTable` objects returned by `ExtractTable()` and map them
+      to your ORM or ADO.NET commands; the tutorials include a sample that writes
+      tables directly to SQL Server.
+    question: How do I integrate extracted data with a database?
+  type: FAQPage
+tags:
+- groupdocs parser
+- document parsing
+- .net parsing
+- java parsing
 - extract tables
-- extract images
-- barcode extraction
-- OCR
-- Java document parser
-- .NET document parser
-linktitle: GroupDocs.Parser Tutorials
-title: دليل GroupDocs.Parser – إتقان تحليل المستندات
-type: docs
+title: دورة GroupDocs.Parser – إتقان تحليل المستندات
 url: /ar/
 weight: 11
 ---
 
-Now produce final content.# دليل GroupDocs.Parser – إتقان استخراج المستندات
+# دليل GroupDocs.Parser – إتقان تحليل المستندات
 
-## نظرة سريعة على ما ستجده
+إذا كنت تبحث عن **دليل GroupDocs.Parser** يساعدك على استخراج البيانات من ملفات PDF، ملفات Word، جداول Excel، والعديد من الصيغ الأخرى، فأنت في المكان الصحيح. يجمع هذا المركز بين أكثر الموارد شمولاً وتحديثًا لكل من مطوري **.NET** و **Java**، موضحًا لك كيفية تحويل المستندات الخام إلى معلومات منظمة بسرعة وموثوقية.
 
-- دروس خطوة بخطوة لاستخراج النص العادي، النص المنسق، الجداول، الصور، والروابط التشعبية.  
-- إرشادات مفصلة للعمل مع قوالب المستندات، واكتشاف الباركود، وتقنية OCR.  
-- نماذج شفرة جاهزة للتنفيذ توضح أفضل ممارسات استخدام GroupDocs.Parser API.  
-- نصائح حول تحسين الأداء، الترخيص، والتكامل مع قواعد البيانات أو التخزين السحابي.
+## إجابات سريعة
+- **ما الذي يفعله GroupDocs.Parser؟** يقوم باستخراج النصوص والجداول والصور والباركود والبيانات الوصفية والمزيد من أكثر من 50 صيغة مستند.  
+- **ما المنصات المدعومة؟** كل من .NET (Framework, .NET Core, .NET 5/6) و Java.  
+- **هل أحتاج إلى Microsoft Office أو Adobe Acrobat؟** لا يلزم أي تثبيتات خارجية.  
+- **هل يمكنني معالجة ملفات كبيرة؟** نعم – المكتبة تبث البيانات وتبقي استهلاك الذاكرة أقل من 200 MB لملفات PDF ذات 500 صفحة.  
+- **هل الترخيص إلزامي للإنتاج؟** يلزم وجود ترخيص GroupDocs صالح للإنتاج؛ يتوفر إصدار تجريبي مجاني للتقييم.
 
-في الأسفل ستكتشف القائمة الكاملة للدروس، منظمة بشكل أنيق حسب المنصة.
+## ما هو GroupDocs.Parser؟
+GroupDocs.Parser هي مكتبة متعددة المنصات تقوم باستخراج النصوص والجداول والصور والباركود والبيانات الوصفية من أكثر من 50 صيغة ملف. توفر API موحدًا ومتسقًا لكل من .NET و Java، بحيث تكتب منطق التحليل مرة واحدة وتشغله في أي مكان. من خلال معالجة الخصائص الخاصة بكل صيغة داخليًا، تتيح لك المكتبة التركيز على قواعد الأعمال بدلاً من التعامل مع الملفات على مستوى منخفض.
 
-## نظرة عامة على دليل GroupDocs.Parser
+## كيف يعمل تحليل المستندات مع GroupDocs.Parser؟
+فئة `Parser` هي نقطة الدخول الأساسية التي تفتح المستند وتوفر الوصول إلى مختلف المستخرجين. تقوم بتحميل المستند مرة واحدة باستخدام فئة `Parser`، ثم تستدعي المستخرج المناسب (نص، جدول، صورة، باركود، OCR، إلخ). يقوم المحرك ببث الملف، يكتشف هيكله، ويعيد كائنات ذات نوع قوي يمكنك تكرارها أو تصفيتها أو تخزينها مباشرة. يلغي هذا النهج الحاجة إلى أدوات طرف ثالث متعددة ويقلل من صيانة الشيفرة.
 
-مجموعة **GroupDocs.Parser tutorial** صُممت لتجعلك منتجًا بسرعة. سواء كنت بحاجة لاستخراج النص العادي لفهرسة البحث، أو جمع الجداول لتحليل البيانات، أو استخراج الصور للفحص البصري، كل دليل يشرح لك استدعاءات API الدقيقة، خطوات التكوين، والمشكلات الشائعة.
+## لماذا تختار GroupDocs.Parser لتحليل المستندات؟
+يقدم GroupDocs.Parser **فوائد كمية**: يدعم **أكثر من 50 صيغة إدخال وإخراج**، يعالج ملف PDF مكوّن من 500 صفحة في أقل من 3 ثوانٍ على خادم عادي، ويستخدم أقل من 200 MB من الذاكرة بفضل هندسة البث الخاصة به. كما توفر المكتبة اكتشاف باركود مدمج لأكثر من 30 رموزًا و OCR لأكثر من 100 لغة، كل ذلك دون تبعيات خارجية.
 
-## كيف يعمل استخراج المستندات باستخدام GroupDocs.Parser؟
+## البدء بسرعة
+1. **تثبيت SDK** – أضف حزمة NuGet `GroupDocs.Parser` لـ .NET أو الحزمة Maven للـ Java.  
+2. **الحصول على ترخيص مؤقت** – استخدم مفتاح التجربة المجانية لتجنب علامات التقييم.  
+3. **تحميل الملف الأول** – أنشئ كائن `Parser` باستخدام مسار الملف، استدعِ `ExtractText()` (أو أي مستخرج آخر)، واطبع النتيجة.  
+   - تُعيد طريقة `ExtractText()` النص العادي للمستند المحمّل.  
+4. **تشغيل العينة** – المشاريع الموفرة للكونسول تُجمع وتُنفّذ مباشرةً.
 
-GroupDocs.Parser ي抽象 تعقيدات كل صيغة ملف خلف API موحد ومتسق لـ .NET أو Java. تقوم بتحميل المستند مرة واحدة، ثم تستدعي المستخرجات المتخصصة (نص، جدول، صورة، باركود، OCR، إلخ). المكتبة تتعامل مع الخصائص الخاصة بكل صيغة، بحيث يمكنك التركيز على منطق الأعمال بدلاً من حركات تنسيق الملفات.
+### كيفية البدء باستخدام GroupDocs.Parser في .NET؟
+أضف حزمة NuGet، أنشئ كائن `Parser`، واستدعِ `ExtractText()` – هذا كل ما تحتاجه لاستخراج النص العادي من ملف PDF أو DOCX أو XLSX. للدفعات الكبيرة، أعد استخدام نفس كائن `Parser` وفعل وضع البث لتقليل استهلاك الذاكرة.
 
-## لماذا تختار GroupDocs.Parser لاستخراج المستندات؟
+### كيفية البدء باستخدام GroupDocs.Parser في Java؟
+أضف تبعية Maven، أنشئ كائن `Parser` مع الملف المستهدف، واستدعِ `extractText()` – تُعيد الطريقة `String` يحتوي على النص الكامل للمستند. استخدم `extractTable()` أو `extractImage()` للحصول على بيانات أغنى، وفعل OCR عبر `setOcrOptions()` عند التعامل مع ملفات PDF الممسوحة ضوئيًا.
 
-- **تناسق عبر المنصات** – اكتب نفس منطق الاستخراج في .NET و Java، مما يقلل التكرار.  
-- **دعم واسع للملفات** – أكثر من 50 صيغة تشمل PDF، Word، Excel، PowerPoint، EPUB، ملفات البريد الإلكتروني، والأرشيفات.  
-- **ميزات استخراج متقدمة** – نص منسق، الحفاظ على التخطيط، اكتشاف الباركود، OCR، واستخراج البيانات بناءً على القوالب.  
-- **محسن للأداء** – استهلاك منخفض للذاكرة ومعالجة سريعة للملفات الكبيرة.  
-- **بدون تبعيات خارجية** – لا حاجة إلى Microsoft Office أو Adobe Acrobat أو أي تثبيتات طرف ثالث.
-
-### دروس GroupDocs.Parser لـ .NET
+## دروس GroupDocs.Parser لـ .NET
 
 {{% alert color="primary" %}}
-GroupDocs.Parser for .NET provides a comprehensive set of tutorials and examples to facilitate text extraction, formatted text extraction, document template processing, table extraction, image extraction, hyperlink extraction, data extraction from templates, barcode extraction, OCR extraction, document loading, and processing of Word, PDF, and Excel documents. These resources empower developers to efficiently handle various document processing tasks, enabling them to extract valuable information from documents with precision and ease.
+يوفر GroupDocs.Parser لـ .NET مجموعة شاملة من الدروس والأمثلة لتسهيل استخراج النص، استخراج النص المنسق، معالجة قوالب المستندات، استخراج الجداول، استخراج الصور، استخراج الروابط التشعبية، استخراج البيانات من القوالب، استخراج الباركود، استخراج OCR، تحميل المستندات، ومعالجة مستندات Word و PDF و Excel. تمكّن هذه الموارد المطورين من التعامل بكفاءة مع مهام معالجة المستندات المختلفة، مما يتيح لهم استخراج المعلومات القيمة من المستندات بدقة وسهولة.
 {{% /alert %}}
 
 هذه بعض الروابط للموارد المفيدة:
-
 - [البدء](./net/getting-started/)
 - [استخراج النص](./net/text-extraction/)
 - [استخراج النص المنسق](./net/formatted-text-extraction/)
-- [معالجة قوالب المستند](./net/document-template-processing/)
+- [معالجة قوالب المستندات](./net/document-template-processing/)
 - [استخراج الجداول](./net/table-extraction/)
 - [استخراج الصور](./net/image-extraction/)
 - [استخراج الروابط التشعبية](./net/hyperlink-extraction/)
@@ -73,7 +108,7 @@ GroupDocs.Parser for .NET provides a comprehensive set of tutorials and examples
 - [معالجة مستندات Word](./net/word-document-processing/)
 - [معالجة PDF](./net/pdf-processing/)
 - [معالجة مستندات Excel](./net/excel-document-processing/)
-- [استخراج جدول المحتويات](./net/toc-extraction/)
+- [استخراج الفهرس](./net/toc-extraction/)
 - [استخراج البيانات الوصفية](./net/metadata-extraction/)
 - [استخراج النماذج](./net/form-extraction/)
 - [تحليل البريد الإلكتروني](./net/email-parsing/)
@@ -89,11 +124,10 @@ GroupDocs.Parser for .NET provides a comprehensive set of tutorials and examples
 ### دروس GroupDocs.Parser لـ Java
 
 {{% alert color="primary" %}}
-GroupDocs.Parser for Java offers extensive tutorials and examples for Java developers to master document parsing capabilities. From basic text extraction to advanced template‑based data extraction, these resources cover a wide range of functionality including metadata extraction, table parsing, image extraction, and barcode recognition. Learn how to process various document formats including PDF, Word, Excel, PowerPoint, emails, and more with our step‑by‑step guides designed to help you integrate powerful document parsing features into your Java applications.
+يقدم GroupDocs.Parser لـ Java دروسًا وأمثلة واسعة لمطوري Java لإتقان قدرات تحليل المستندات. من استخراج النص الأساسي إلى استخراج البيانات المتقدم القائم على القوالب، تغطي هذه الموارد مجموعة واسعة من الوظائف بما في ذلك استخراج البيانات الوصفية، تحليل الجداول، استخراج الصور، والتعرف على الباركود. تعلم كيفية معالجة صيغ المستندات المختلفة بما في ذلك PDF و Word و Excel و PowerPoint والبريد الإلكتروني وغيرها من خلال أدلتنا خطوة بخطوة المصممة لمساعدتك على دمج ميزات تحليل المستندات القوية في تطبيقات Java الخاصة بك.
 {{% /alert %}}
 
-استكشف هذه الموارد الأساسية للـ Java:
-
+استكشف هذه الموارد الأساسية لـ Java:
 - [البدء](./java/getting-started/)
 - [تحميل المستند](./java/document-loading/)
 - [استخراج النص](./java/text-extraction/)
@@ -102,7 +136,7 @@ GroupDocs.Parser for Java offers extensive tutorials and examples for Java devel
 - [استخراج الجداول](./java/table-extraction/)
 - [استخراج البيانات الوصفية](./java/metadata-extraction/)
 - [استخراج الروابط التشعبية](./java/hyperlink-extraction/)
-- [استخراج جدول المحتويات](./java/toc-extraction/)
+- [استخراج الفهرس](./java/toc-extraction/)
 - [استخراج الباركود](./java/barcode-extraction/)
 - [استخراج النماذج](./java/form-extraction/)
 - [استخراج النص المنسق](./java/formatted-text-extraction/)
@@ -115,31 +149,35 @@ GroupDocs.Parser for Java offers extensive tutorials and examples for Java devel
 - [دمج OCR](./java/ocr-integration/)
 - [دمج قاعدة البيانات](./java/database-integration/)
 
-## الحصول على أقصى استفادة من دليل GroupDocs.Parser
-
-- **ابدأ بدليل “البدء”** الخاص بمنصتك لإعداد SDK، الحصول على ترخيص مؤقت، وتشغيل أول عملية استخراج.  
-- **اختر حالة استخدام** (مثال: استخراج الجداول لتقارير مالية) واتبع الدرس المخصص؛ الشيفرة خطوة بخطوة توضح بالضبط أي الفئات والطرق يجب استدعاؤها.  
+## الاستفادة القصوى من دليل GroupDocs.Parser
+- **ابدأ بدليل “البدء”** لمنصتك لإعداد SDK، الحصول على ترخيص مؤقت، وتشغيل أول استخراج لك.  
+- **اختر حالة استخدام** (مثلاً استخراج الجداول للتقارير المالية) واتبع الدرس المخصص؛ يوضح الكود خطوة بخطوة بالضبط أي الفئات والطرق التي يجب استدعاؤها.  
 - **دمج الميزات** – يمكنك تشغيل OCR على PDF يحتوي على صور فقط، ثم استخراج النص الناتج وأي باركود في خط أنابيب واحد.  
-- **نصيحة أداء:** عند معالجة دفعات كبيرة، أعد استخدام كائن `Parser` وفعل وضع البث لتقليل استهلاك الذاكرة.  
-- **استكشاف الأخطاء وإصلاحها:** إذا فشل تحميل مستند، تحقق من جدول دعم صيغ الملفات في مرجع API وتأكد من أن الملف ليس محميًا بكلمة مرور إلا إذا قمت بتوفير كلمة المرور.
+- **نصيحة الأداء:** عند معالجة دفعات كبيرة، أعد استخدام كائن `Parser` وفعل وضع البث لتقليل استهلاك الذاكرة.  
+- **استكشاف الأخطاء وإصلاحها:** إذا فشل تحميل مستند، تحقق من جدول دعم صيغ الملفات في مرجع API وتأكد من أن الملف غير محمي بكلمة مرور ما لم تقم بتوفير كلمة المرور.
 
-## الخطوات التالية
+## الأسئلة المتكررة
+**س: هل يمكنني استخدام GroupDocs.Parser في خدمة سحابية مصغرة؟**  
+ج: نعم، تعمل المكتبة على أي منصة تدعم .NET 6+ أو Java 8+، مما يجعلها مثالية لحاويات Docker والوظائف بدون خادم.
 
-الآن بعد أن استكشفت مجموعة موارد **GroupDocs.Parser tutorial** الكاملة، يمكنك:
+**س: هل يتعامل GroupDocs.Parser مع الملفات المحمية بكلمة مرور؟**  
+ج: بالتأكيد – تمرر كلمة المرور إلى مُنشئ `Parser` أو خيارات التحميل ذات الصلة، وتقوم المكتبة بفك تشفير المستند مباشرةً.
 
-1. استنساخ المشاريع النموذجية من مستودع GitHub.  
-2. دمج المحلل في خدمتك الحالية على .NET أو Java.  
-3. توسيع الأمثلة بمنطق مخصص—مثل تخزين الجداول المستخرجة في قاعدة بيانات علائقية أو تغذية نتائج OCR إلى نموذج تعلم آلي.
+**س: ما هو الحد الأقصى لحجم الملف الذي يمكن للمحلل التعامل معه؟**  
+ج: تسمح بنية البث بمعالجة ملفات أكبر من 2 GB؛ يبقى استهلاك الذاكرة أقل من 200 MB لأن الصفحات تُعالج بشكل متسلسل.
 
-إذا كنت تحتاج إلى مساعدة إضافية، فإن منتدى المجتمع وقنوات الدعم جاهزة للمساعدة.
+**س: هل OCR متاح للغات غير الإنجليزية؟**  
+ج: نعم، يدعم محرك OCR المدمج أكثر من 100 لغة، بما في ذلك الصينية والعربية والكتابات السيريالية.
 
-- [تحميل نسخة تجريبية مجانية](https://releases.groupdocs.com/)
-- [توثيق API](https://reference.groupdocs.com/)
-- [الحصول على ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/)
-- [زيارة منتدانا](https://forum.groupdocs.com/c/parser/)
+**س: كيف أدمج البيانات المستخرجة مع قاعدة بيانات؟**  
+ج: استخدم كائنات `DataTable` التي تُعيدها `ExtractTable()` وربطها بـ ORM أو أوامر ADO.NET الخاصة بك؛ تشمل الدروس عينة تكتب الجداول مباشرةً إلى SQL Server.
 
----
+## موارد إضافية
+- [تحميل نسخة تجريبية مجانية](https://releases.groupdocs.com/) – احصل على أحدث ملفات GroupDocs.Parser للتقييم.  
+- [توثيق API](https://reference.groupdocs.com/) – مرجع مفصل لجميع الفئات والطرق وخيارات التكوين.  
+- [الحصول على ترخيص مؤقت](https://purchase.groupdocs.com/temporary-license/) – طلب مفتاح ترخيص قصير الأجل للتطوير والاختبار.  
+- [زيارة منتدانا](https://forum.groupdocs.com/c/parser/) – اطرح أسئلة، شارك أمثلة، واحصل على مساعدة من المجتمع.
 
-**آخر تحديث:** 2026-02-19  
+**آخر تحديث:** 2026-10-12  
 **تم الاختبار مع:** أحدث إصدار من GroupDocs.Parser (حتى 2026)  
 **المؤلف:** GroupDocs

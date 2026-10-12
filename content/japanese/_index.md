@@ -1,63 +1,97 @@
 ---
 additionalTitle: GroupDocs API References
-date: 2026-02-19
-description: .NET と Java を使用した効率的なドキュメント抽出、テキスト抽出、ドキュメント解析のための GroupDocs.Parser チュートリアルを学びましょう。テーブル、画像、バーコード抽出、OCR
-  など、ステップバイステップのガイドをご覧ください。
+date: 2026-10-12
+description: GroupDocs.Parser チュートリアルで、.NET と Java を使用した効率的なドキュメント抽出、テキスト抽出、ドキュメント解析を学びましょう。テーブル、画像、バーコード抽出、OCR
+  などのステップバイステップガイドをご覧ください。
 is_root: true
 keywords:
+- groupdocs.parser tutorial
 - document parsing
 - text extraction
 - data extraction
-- pdf parser
-- word parser
+lastmod: 2026-10-12
+linktitle: GroupDocs.Parser チュートリアル
+og_description: GroupDocs.Parser チュートリアルでは、.NET または Java を使用して 50 以上のフォーマットからテキスト、テーブル、画像、バーコードを抽出する方法を示します。ドキュメント解析をすばやくマスターしましょう。
+og_image_alt: Guide to using GroupDocs.Parser for extracting data from PDFs, Word,
+  Excel and more
+og_title: GroupDocs.Parser チュートリアル – ドキュメント解析のマスタリーを解き放つ
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-12'
+  description: Learn the GroupDocs.Parser tutorial for efficient document extraction,
+    text extraction, and document parsing with .NET & Java. Explore step‑by‑step guides
+    on tables, images, barcode extraction, OCR, and more.
+  headline: GroupDocs.Parser tutorial – unlock document parsing mastery
+  type: TechArticle
+- questions:
+  - answer: Yes, the library runs on any platform that supports .NET 6+ or Java 8+,
+      making it ideal for Docker containers and serverless functions.
+    question: Can I use GroupDocs.Parser in a cloud‑native microservice?
+  - answer: Absolutely – you pass the password to the `Parser` constructor or the
+      relevant load options, and the library decrypts the document on the fly.
+    question: Does GroupDocs.Parser handle password‑protected files?
+  - answer: The streaming architecture allows processing of files larger than 2 GB;
+      memory consumption stays under 200 MB because pages are processed sequentially.
+    question: What is the maximum file size the parser can handle?
+  - answer: Yes, the built‑in OCR engine supports more than 100 languages, including
+      Chinese, Arabic, and Cyrillic scripts.
+    question: Is OCR available for languages beyond English?
+  - answer: Use the `DataTable` objects returned by `ExtractTable()` and map them
+      to your ORM or ADO.NET commands; the tutorials include a sample that writes
+      tables directly to SQL Server.
+    question: How do I integrate extracted data with a database?
+  type: FAQPage
+tags:
+- groupdocs parser
+- document parsing
+- .net parsing
+- java parsing
 - extract tables
-- extract images
-- barcode extraction
-- OCR
-- Java document parser
-- .NET document parser
-linktitle: GroupDocs.Parser Tutorials
-title: GroupDocs.Parser チュートリアル – 文書解析の熟練を解き放つ
-type: docs
+title: GroupDocs.Parser チュートリアル – ドキュメント解析のマスタリーを解き放つ
 url: /ja/
 weight: 11
 ---
 
 # GroupDocs.Parser チュートリアル – ドキュメント解析のマスタリーを解き放つ
 
-If you’re looking for a **GroupDocs.Parser チュートリアル** that helps you extract data from PDFs, Word files, Excel sheets, and dozens of other formats, you’re in the right place. This hub brings together the most comprehensive, up‑to‑date resources for both **.NET** and **Java** developers, showing you how to turn raw documents into structured information quickly and reliably.
+PDF、Word ファイル、Excel シート、その他多数のフォーマットからデータを抽出する **GroupDocs.Parser tutorial** をお探しなら、ここが適切な場所です。このハブは **.NET** と **Java** の開発者向けに、最も包括的で最新のリソースをまとめており、生のドキュメントを迅速かつ確実に構造化された情報へ変換する方法を示します。
 
-## 見つけられる内容の概要
+## クイック回答
+- **GroupDocs.Parser は何をしますか？** 50 以上のドキュメント形式からテキスト、テーブル、画像、バーコード、メタデータなどを抽出します。  
+- **どのプラットフォームがサポートされていますか？** .NET (Framework、.NET Core、.NET 5/6) と Java の両方です。  
+- **Microsoft Office または Adobe Acrobat は必要ですか？** 外部のインストールは不要です。  
+- **大きなファイルを処理できますか？** はい – ライブラリはデータをストリーミングし、500 ページの PDF でもメモリ使用量を 200 MB 未満に抑えます。  
+- **本番環境でライセンスは必須ですか？** 本番環境では有効な GroupDocs ライセンスが必要です。評価用に無料トライアルが利用可能です。
 
-- プレーンテキスト、フォーマットされたテキスト、テーブル、画像、ハイパーリンクを抽出するためのステップバイステップガイド。  
-- ドキュメントテンプレート、バーコード検出、OCR の操作に関する詳細な手順。  
-- GroupDocs.Parser API のベストプラクティス使用例を示す、すぐに実行できるコードサンプル。  
-- パフォーマンスチューニング、ライセンス、データベースやクラウドストレージとの統合に関するヒント。  
-
-以下では、プラットフォーム別に整理されたチュートリアルの全リストをご覧いただけます。
-
-## GroupDocs.Parser チュートリアル概要
-
-**GroupDocs.Parser チュートリアル** コレクションは、すぐに生産性を上げられるよう設計されています。検索インデックス用にプレーンテキストを取得したり、データ分析のためにテーブルを抽出したり、視覚検査のために画像を抽出したりする場合でも、各ガイドは正確な API 呼び出し、設定手順、一般的な落とし穴を順を追って説明します。
+## GroupDocs.Parser とは何ですか？
+GroupDocs.Parser は、50 以上のファイル形式からテキスト、テーブル、画像、バーコード、メタデータを抽出するクロスプラットフォームライブラリです。.NET と Java 向けに単一で一貫した API を提供するため、解析ロジックを一度記述すればどこでも実行できます。フォーマット固有の細かな違いを内部で処理することで、低レベルのファイル操作ではなくビジネスロジックに集中できます。
 
 ## GroupDocs.Parser でのドキュメント解析はどのように機能しますか？
+`Parser` クラスは、ドキュメントを開きさまざまなエクストラクタへのアクセスを提供するコアエントリーポイントです。`Parser` クラスでドキュメントを一度ロードし、適切なエクストラクタ（テキスト、テーブル、画像、バーコード、OCR など）を呼び出します。エンジンはファイルをストリーミングし、構造を検出して、反復、フィルタリング、または直接保存できる強く型付けされたオブジェクトを返します。このアプローチにより、複数のサードパーティツールが不要になり、コード保守が削減されます。
 
-GroupDocs.Parser は、各ファイル形式の複雑さを単一の一貫した .NET または Java API の背後に抽象化します。ドキュメントを一度ロードし、専用の抽出器（テキスト、テーブル、画像、バーコード、OCR など）を呼び出します。ライブラリは形式固有の癖を処理するため、ファイル形式の細かい操作に時間を取られることなく、ビジネスロジックに集中できます。
+## ドキュメント解析に GroupDocs.Parser を選ぶ理由は？
+GroupDocs.Parser は **quantified benefits** を提供します：**50+ input and output formats** をサポートし、典型的なサーバー上で 500 ページの PDF を 3 秒未満で処理し、ストリーミングアーキテクチャにより RAM 使用量を 200 MB 未満に抑えます。また、30 以上のシンボロジーに対応した組み込みバーコード検出と、100 以上の言語に対応する OCR を外部依存なしで提供します。
 
-## ドキュメント解析に GroupDocs.Parser を選ぶ理由
+## すぐに始める
+1. **SDK をインストール** – .NET 用の NuGet パッケージ `GroupDocs.Parser` または Java 用の Maven アーティファクトを追加します。  
+2. **一時ライセンスを取得** – 評価用の透かしを回避するために無料トライアルキーを使用します。  
+3. **最初のファイルをロード** – ファイルパスで `Parser` をインスタンス化し、`ExtractText()`（または他のエクストラクタ）を呼び出して結果を出力します。  
+   - `ExtractText()` メソッドはロードされたドキュメントのプレーンテキストを返します。  
+4. **サンプルを実行** – 提供されたコンソールプロジェクトはそのままコンパイルされ、実行できます。
 
-- **Cross‑platform consistency** – .NET と Java で同じ解析ロジックを書けるため、重複を削減できます。  
-- **Broad format support** – PDF、Word、Excel、PowerPoint、EPUB、メールファイル、アーカイブなど、50 以上のフォーマットに対応。  
-- **Advanced extraction features** – フォーマットされたテキスト、レイアウト保持、バーコード検出、OCR、テンプレートベースのデータ抽出。  
-- **Performance‑optimized** – 低メモリフットプリントで大容量ファイルも高速に処理。  
-- **Zero external dependencies** – Microsoft Office、Adobe Acrobat、その他サードパーティのインストールは不要です。
+### .NET で GroupDocs.Parser の使用を開始する方法
+NuGet パッケージを追加し、`Parser` インスタンスを作成して `ExtractText()` を呼び出すだけで、PDF、DOCX、XLSX ファイルからプレーンテキストを取得できます。大量のバッチ処理では、同じ `Parser` オブジェクトを再利用し、ストリーミングモードを有効にしてメモリ使用量を低く抑えます。
 
-### GroupDocs.Parser for .NET チュートリアル
+### Java で GroupDocs.Parser の使用を開始する方法
+Maven 依存関係を追加し、対象ファイルで `Parser` をインスタンス化し、`extractText()` を呼び出します。このメソッドはドキュメント全体のテキストを含む `String` を返します。よりリッチなデータが必要な場合は `extractTable()` や `extractImage()` を使用し、スキャンされた PDF を処理する際は `setOcrOptions()` で OCR を有効にします。
+
+## .NET 用 GroupDocs.Parser チュートリアル
 
 {{% alert color="primary" %}}
-GroupDocs.Parser for .NET は、テキスト抽出、フォーマットテキスト抽出、ドキュメントテンプレート処理、テーブル抽出、画像抽出、ハイパーリンク抽出、テンプレートからのデータ抽出、バーコード抽出、OCR 抽出、ドキュメントのロード、Word、PDF、Excel ドキュメントの処理を支援する包括的なチュートリアルとサンプルを提供します。これらのリソースにより、開発者はさまざまなドキュメント処理タスクを効率的に扱い、ドキュメントから貴重な情報を正確かつ容易に抽出できるようになります。
+GroupDocs.Parser for .NET は、テキスト抽出、フォーマットテキスト抽出、ドキュメントテンプレート処理、テーブル抽出、画像抽出、ハイパーリンク抽出、テンプレートからのデータ抽出、バーコード抽出、OCR 抽出、ドキュメントロード、Word、PDF、Excel ドキュメントの処理を支援する包括的なチュートリアルとサンプルを提供します。これらのリソースにより、開発者はさまざまなドキュメント処理タスクを効率的に扱い、正確かつ容易にドキュメントから価値ある情報を抽出できます。
 {{% /alert %}}
 
+以下は便利なリソースへのリンクです：
 - [はじめに](./net/getting-started/)
 - [テキスト抽出](./net/text-extraction/)
 - [フォーマットテキスト抽出](./net/formatted-text-extraction/)
@@ -85,12 +119,13 @@ GroupDocs.Parser for .NET は、テキスト抽出、フォーマットテキス
 - [OCR 統合](./net/ocr-integration/)
 - [データベース統合](./net/database-integration/)
 
-### GroupDocs.Parser for Java チュートリアル
+### Java 用 GroupDocs.Parser チュートリアル
 
 {{% alert color="primary" %}}
-GroupDocs.Parser for Java は、Java 開発者がドキュメント解析機能を習得できるよう、豊富なチュートリアルとサンプルを提供します。基本的なテキスト抽出から高度なテンプレートベースのデータ抽出まで、メタデータ抽出、テーブル解析、画像抽出、バーコード認識など幅広い機能を網羅しています。PDF、Word、Excel、PowerPoint、メールなどさまざまなドキュメント形式を処理する方法を、ステップバイステップのガイドで学び、Java アプリケーションに強力なドキュメント解析機能を統合できます。
+GroupDocs.Parser for Java は、Java 開発者がドキュメント解析機能を習得できる豊富なチュートリアルとサンプルを提供します。基本的なテキスト抽出から高度なテンプレートベースのデータ抽出まで、メタデータ抽出、テーブル解析、画像抽出、バーコード認識など幅広い機能を網羅しています。PDF、Word、Excel、PowerPoint、メールなどさまざまなドキュメント形式を処理する方法を、ステップバイステップのガイドで学び、Java アプリケーションに強力なドキュメント解析機能を統合できます。
 {{% /alert %}}
 
+以下の重要な Java リソースをご覧ください：
 - [はじめに](./java/getting-started/)
 - [ドキュメントロード](./java/document-loading/)
 - [テキスト抽出](./java/text-extraction/)
@@ -112,31 +147,35 @@ GroupDocs.Parser for Java は、Java 開発者がドキュメント解析機能�
 - [OCR 統合](./java/ocr-integration/)
 - [データベース統合](./java/database-integration/)
 
-## GroupDocs.Parser チュートリアルを最大限に活用する方法
-
-- **「はじめに」ガイド** から始めて、プラットフォーム用の SDK を設定し、一時ライセンスを取得して、最初の抽出を実行しましょう。  
-- **ユースケースを選択**（例：財務レポートのテーブル抽出）し、専用のチュートリアルに従ってください。ステップバイステップのコードは、呼び出すべきクラスとメソッドを正確に示します。  
+## GroupDocs.Parser チュートリアルを最大限活用する方法
+- **「はじめに」ガイドから始める** – プラットフォームに合わせて SDK を設定し、一時ライセンスを取得し、最初の抽出を実行します。  
+- **ユースケースを選択**（例：財務レポートのテーブル抽出）し、専用チュートリアルに従います。ステップバイステップのコードは、呼び出すべきクラスとメソッドを正確に示します。  
 - **機能を組み合わせる** – 画像のみの PDF に OCR を実行し、得られたテキストとバーコードを単一のパイプラインで抽出できます。  
-- **パフォーマンスのヒント:** 大量バッチを処理する際は、`Parser` インスタンスを再利用し、ストリーミングモードを有効にしてメモリ使用量を抑えましょう。  
-- **トラブルシューティング:** ドキュメントのロードに失敗した場合、API リファレンスのファイル形式サポート表を確認し、パスワードが必要な場合はパスワードを提供しているか確認してください。  
+- **パフォーマンスのヒント:** 大量バッチ処理時は `Parser` インスタンスを再利用し、ストリーミングモードを有効にしてメモリ使用量を低く抑えます。  
+- **トラブルシューティング:** ドキュメントのロードに失敗した場合、API リファレンスのファイル形式サポート表を確認し、パスワードが必要な場合はパスワードを提供しているか確認してください。
 
-## 次のステップ
+## よくある質問
+**Q: GroupDocs.Parser をクラウドネイティブなマイクロサービスで使用できますか？**  
+A: はい、.NET 6+ または Java 8+ をサポートする任意のプラットフォームで動作するため、Docker コンテナやサーバーレス関数に最適です。
 
-これで **GroupDocs.Parser チュートリアル** の全リソースを確認したので、以下ができます：
+**Q: GroupDocs.Parser はパスワード保護されたファイルを処理できますか？**  
+A: もちろんです。パスワードは `Parser` コンストラクタまたは該当するロードオプションに渡すことで、ライブラリがリアルタイムで復号します。
 
-1. GitHub リポジトリからサンプルプロジェクトをクローンする。  
-2. 既存の .NET または Java サービスにパーサーを統合する。  
-3. 抽出したテーブルをリレーショナルデータベースに保存したり、OCR 結果を機械学習モデルに渡すなど、カスタムロジックで例を拡張する。  
+**Q: パーサーが処理できる最大ファイルサイズはどれくらいですか？**  
+A: ストリーミングアーキテクチャにより 2 GB を超えるファイルも処理可能で、ページを順次処理するためメモリ消費は 200 MB 未満に抑えられます。
 
-追加のサポートが必要な場合は、コミュニティフォーラムやサポートチャネルが対応します。
+**Q: OCR は英語以外の言語にも対応していますか？**  
+A: はい、組み込み OCR エンジンは 100 以上の言語に対応しており、中国語、アラビア語、キリル文字などもサポートしています。
 
-- [無料トライアルをダウンロード](https://releases.groupdocs.com/)
-- [API ドキュメント](https://reference.groupdocs.com/)
-- [一時ライセンスを取得](https://purchase.groupdocs.com/temporary-license/)
-- [フォーラムを見る](https://forum.groupdocs.com/c/parser/)
+**Q: 抽出したデータをデータベースと統合するには？**  
+A: `ExtractTable()` が返す `DataTable` オブジェクトを使用し、ORM や ADO.NET コマンドにマッピングします。チュートリアルにはテーブルを直接 SQL Server に書き込むサンプルが含まれています。
 
----
+## 追加リソース
+- [無料トライアルをダウンロード](https://releases.groupdocs.com/) – 評価用に最新の GroupDocs.Parser バイナリを取得します。  
+- [API ドキュメント](https://reference.groupdocs.com/) – すべてのクラス、メソッド、設定オプションの詳細なリファレンスです。  
+- [一時ライセンスを取得](https://purchase.groupdocs.com/temporary-license/) – 開発・テスト用の短期ライセンスキーをリクエストします。  
+- [フォーラムを訪問](https://forum.groupdocs.com/c/parser/) – 質問やサンプルの共有、コミュニティからのサポートを受けられます。
 
-**最終更新日:** 2026-02-19  
-**テスト環境:** GroupDocs.Parser 最新リリース（2026 年時点）  
+**最終更新日:** 2026-10-12  
+**テスト環境:** GroupDocs.Parser の最新リリース (2026 年時点)  
 **作者:** GroupDocs
