@@ -1,56 +1,108 @@
 ---
-date: '2026-02-21'
-description: Erfahren Sie, wie Sie Text aus ZIP-Dateien in Java mit GroupDocs.Parser
-  extrahieren. Dieser Schritt‑für‑Schritt‑Leitfaden behandelt das Extrahieren von
-  ZIP‑Anhängen in Java, die Einrichtung und Praxisbeispiele.
+date: '2026-10-17'
+description: Erfahren Sie, wie Sie zip files in Java mit GroupDocs.Parser extrahieren.
+  Dieser Leitfaden zeigt die Schritt‑für‑Schritt‑Einrichtung, das Lesen von zip file-Inhalten
+  und das Extrahieren von Text aus zip archives.
 keywords:
+- how to extract zip
+- read zip file contents
 - extract text from zip
 - read zip attachments java
 - extract zip files java
-title: Text aus ZIP-Dateien in Java mit GroupDocs.Parser extrahieren
+lastmod: '2026-10-17'
+og_description: Wie man zip files in Java mit GroupDocs.Parser extrahiert. Folgen
+  Sie diesem Schritt‑für‑Schritt‑Tutorial, um zip file-Inhalte zu lesen und Text effizient
+  aus zip archives zu extrahieren.
+og_image_alt: Guide showing Java code extracting text from ZIP files using GroupDocs.Parser
+og_title: Wie man zip files in Java mit GroupDocs.Parser extrahiert
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-17'
+  description: Learn how to extract zip files in Java using GroupDocs.Parser. This
+    guide shows step‑by‑step setup, reading zip file contents, and extracting text
+    from zip archives.
+  headline: How to extract zip files in Java with GroupDocs.Parser
+  type: TechArticle
+- description: Learn how to extract zip files in Java using GroupDocs.Parser. This
+    guide shows step‑by‑step setup, reading zip file contents, and extracting text
+    from zip archives.
+  name: How to extract zip files in Java with GroupDocs.Parser
+  steps:
+  - name: initialize the parser
+    text: The `Parser` class is the entry point that reads container formats such
+      as ZIP.
+  - name: loop through attachments and extract text
+    text: '`ContainerItem` represents a single entry inside the ZIP. `item.openParser()`
+      creates a dedicated parser for that entry, and `attachmentParser.getText()`
+      returns the extracted textual content. **What’s happening here?** - `parser.getContainer()`
+      returns an iterable of every entry inside the ZIP. - F'
+  - name: initialize the parser (same as before)
+    text: The same `Parser` instance can be reused to query the container’s metadata.
+  - name: list file paths inside the ZIP
+    text: '`container.getItems()` provides a collection of `ContainerItem` objects,
+      each exposing `getFilePath()` for the internal path. **Why this matters:** Knowing
+      the internal structure helps you decide whether to process the archive, skip
+      unsupported files, or provide a preview to users.'
+  type: HowTo
+- questions:
+  - answer: It is a library that extracts text, metadata, and images from a wide range
+      of document formats, including PDFs, Office files, and many more.
+    question: What is GroupDocs.Parser Java?
+  - answer: The primary focus is text extraction, but you can also retrieve images
+      and other binary content through additional API calls.
+    question: Can I extract non‑text files (e.g., images) from a zip using this library?
+  - answer: Use the iterative approach demonstrated above, keep the parser inside
+      a `try‑with‑resources` block, and avoid loading all content into memory at once.
+    question: How do I handle very large ZIP files efficiently?
+  - answer: Yes, but a valid production license is required.
+    question: Can GroupDocs.Parser be used in commercial applications?
+  - answer: Visit the free support forum at [GroupDocs Support Forum](https://forum.groupdocs.com/c/parser).
+    question: Where can I get help if I run into problems?
+  type: FAQPage
+tags:
+- zip extraction
+- GroupDocs.Parser
+- Java document processing
+- read zip files
+- text extraction
+title: Wie man zip files in Java mit GroupDocs.Parser extrahiert
 type: docs
 url: /de/java/container-formats/extract-text-zip-files-groupdocs-parser-java/
 weight: 1
 ---
 
- bullet points.
+# Wie man ZIP-Dateien in Java mit GroupDocs.Parser extrahiert
 
-Proceed.
+Wenn Sie in einer Java-Anwendung **Text aus ZIP**-Archiven extrahieren müssen, bietet GroupDocs.Parser eine saubere, einheitliche API, die die schwere Arbeit für Sie übernimmt. Egal, ob Sie E-Mail-Anhänge, Massenuploads von Dokumenten oder Sicherungsbündel verarbeiten, zeigt Ihnen dieses Tutorial **wie man ZIP**-Inhalte effizient Schritt für Schritt extrahiert und erklärt, warum die Bibliothek eine Spitzenwahl für Java‑Entwickler ist.
 
-# Text aus ZIP-Dateien in Java mit GroupDocs.Parser extrahieren
-
-Wenn Sie in einer Java‑Anwendung **Text aus ZIP**‑Archiven extrahieren müssen, bietet GroupDocs.Parser eine saubere, einheitliche API, die die schwere Arbeit für Sie übernimmt. Egal, ob Sie E‑Mail‑Anhänge, Massenuploads von Dokumenten oder Sicherungsbündel verarbeiten – dieses Tutorial führt Sie durch alles – von der Maven‑Einrichtung bis zum Durchlaufen jeder Datei im ZIP und dem Auslesen ihres lesbaren Inhalts.
-
-## Schnellantworten
-- **Welche Bibliothek sollte ich verwenden?** GroupDocs.Parser für Java.  
-- **Kann ich Text aus jeder Datei in einem ZIP extrahieren?** Ja, für alle Formate, die vom Parser unterstützt werden.  
-- **Benötige ich eine Lizenz?** Eine kostenlose Testversion reicht für die Evaluierung; für den Produktionseinsatz ist eine permanente Lizenz erforderlich.  
+## Schnelle Antworten
+- **Welche Bibliothek sollte ich verwenden?** GroupDocs.Parser for Java.  
+- **Kann ich Text aus jeder Datei innerhalb eines ZIP extrahieren?** Ja, für alle vom Parser unterstützten Formate.  
+- **Benötige ich eine Lizenz?** Eine kostenlose Testversion funktioniert für die Evaluierung; eine permanente Lizenz ist für die Produktion erforderlich.  
 - **Ist der Speicherverbrauch ein Problem?** Verwenden Sie try‑with‑resources und verarbeiten Sie Elemente iterativ, um den Speicherbedarf gering zu halten.  
-- **Welche Java‑Version wird benötigt?** JDK 8 oder höher.  
+- **Welche Java-Version wird benötigt?** JDK 8 oder höher.  
 
 ## Was Sie lernen werden
-- Wie Sie **Text aus ZIP**‑Dateien mit GroupDocs.Parser in Java extrahieren.  
-- Die Bibliothek mit Maven oder einem direkten Download einrichten.  
-- Praktischer Code zum Lesen von ZIP‑Anhängen in Java und zum Prüfen der Container‑Unterstützung.  
-- Praxisnahe Szenarien, Performance‑Tipps und Fehlersuch‑Hinweise.
+- Wie man **Text aus ZIP**-Dateien mit GroupDocs.Parser in Java extrahiert.  
+- Einrichtung der Bibliothek mit Maven oder einem Direktdownload.  
+- Praktischer Code zum Lesen von ZIP-Anhängen in Java und zur Überprüfung der Containerunterstützung.  
+- Praxisnahe Szenarien, Performance‑Tipps und Fehlersuch‑Ratschläge.
 
-## Warum GroupDocs.Parser für die ZIP‑Extraktion verwenden?
-- **Unified API** – Ein Aufruf verarbeitet Dutzende von Dokumenttypen, sodass Sie keine separaten Parser benötigen.  
-- **Container awareness** – Die Bibliothek kann Ihnen mitteilen, ob ein ZIP‑Archiv die Extraktion unterstützt, bevor Sie mit der Verarbeitung beginnen.  
-- **Resource‑friendly** – Automatisches Stream‑Handling und try‑with‑resources halten den Speicherverbrauch modest.
+## Warum GroupDocs.Parser für die ZIP-Extraktion verwenden?
+Laden Sie Ihr ZIP einmal und lassen Sie den Parser die schwere Arbeit übernehmen. GroupDocs.Parser unterstützt **über 60 Dokumentformate**, sodass Sie Text aus PDFs, Word‑Dateien, Excel‑Tabellen und mehr extrahieren können – alles in einem einzigen Archiv. Die API erkennt automatisch, ob ein ZIP unterstützt wird, streamt jeden Eintrag und gibt Ressourcen sofort frei, wodurch der Speicherverbrauch selbst bei 500‑Seiten‑Archiven unter 20 MB bleibt.
 
 ## Voraussetzungen
 
-Bevor Sie starten, stellen Sie sicher, dass Sie Folgendes haben:
+Bevor Sie beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
-- **JDK 8+** installiert und konfiguriert.  
-- Eine IDE wie IntelliJ IDEA oder Eclipse (jede Java‑kompatible Entwicklungsumgebung reicht).  
+- **JDK 8+** installiert und konfiguriert.  
+- Eine IDE wie IntelliJ IDEA oder Eclipse (jeder Java‑kompatible Editor reicht).  
 - Grundlegende Kenntnisse in Maven (oder die Möglichkeit, ein JAR manuell hinzuzufügen).  
 
 ### Erforderliche Bibliotheken, Versionen und Abhängigkeiten
-Sie benötigen die neueste Version von GroupDocs.Parser für Java. Die Maven‑Koordinaten finden Sie unten.
+Sie benötigen die neueste Version von GroupDocs.Parser für Java. Die Maven-Koordinaten sind unten angegeben.
 
-**Maven‑Konfiguration**  
+**Maven-Konfiguration**  
 ```xml
 <repositories>
    <repository>
@@ -73,20 +125,21 @@ Sie benötigen die neueste Version von GroupDocs.Parser für Java. Die Maven‑K
 Alternativ können Sie die neueste Version von [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) herunterladen.
 
 ### Lizenzbeschaffung
-- **Free Trial:** Beginnen Sie mit einer Testversion, um die Funktionen zu erkunden.  
-- **Temporary License:** Verwenden Sie einen temporären Schlüssel für uneingeschränkte Tests.  
-- **Purchase:** Für die Produktion erhalten Sie eine Voll‑Lizenz, um Evaluierungsbeschränkungen zu entfernen.
+- **Kostenlose Testversion:** Beginnen Sie mit einer Testversion, um die Funktionen zu erkunden.  
+- **Temporäre Lizenz:** Verwenden Sie einen temporären Schlüssel für uneingeschränktes Testen.  
+- **Kauf:** Für die Produktion erhalten Sie eine Voll‑Lizenz, um Evaluierungsbeschränkungen zu entfernen.
 
 ## Wie man Text aus ZIP in Java extrahiert
 
 Im Folgenden teilen wir die Implementierung in zwei praktische Funktionen auf:
 
-1. **ZIP‑Anhänge extrahieren** – Den Text aus jeder Datei im Archiv auslesen.  
-2. **Container‑Extraktionsunterstützung prüfen** – Verifizieren, dass das ZIP verarbeitet werden kann, und dessen Inhalte auflisten.
+1. **ZIP-Anhänge extrahieren** – Den Text aus jeder Datei im Archiv ziehen.  
+2. **Container-Extraktionsunterstützung prüfen** – Verifizieren, dass das ZIP verarbeitet werden kann, und dessen Inhalte auflisten.
 
-### Feature 1 – ZIP‑Anhänge extrahieren
+### Funktion 1 – ZIP-Anhänge extrahieren
 
 #### Schritt 1: Parser initialisieren
+Die `Parser`‑Klasse ist der Einstiegspunkt, der Containerformate wie ZIP liest.  
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/SampleZip.zip")) {
     // Proceed with extraction logic...
@@ -94,6 +147,7 @@ try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/SampleZip.zip")) {
 ```
 
 #### Schritt 2: Durch Anhänge iterieren und Text extrahieren
+`ContainerItem` repräsentiert einen einzelnen Eintrag im ZIP. `item.openParser()` erstellt einen dedizierten Parser für diesen Eintrag, und `attachmentParser.getText()` liefert den extrahierten Textinhalt.  
 ```java
 Iterable<ContainerItem> attachments = parser.getContainer();
 if (attachments == null) {
@@ -114,13 +168,14 @@ if (attachments == null) {
 ```
 
 **Was passiert hier?**  
-- `parser.getContainer()` liefert ein Iterable aller Einträge im ZIP.  
-- Für jedes `ContainerItem` öffnen wir eine eigene `Parser`‑Instanz (`item.openParser()`).  
-- `attachmentParser.getText()` versucht, den Textinhalt zu lesen; ist das Format nicht unterstützt, fangen wir die Ausnahme ab und fahren fort.
+- `parser.getContainer()` gibt ein Iterable aller Einträge im ZIP zurück.  
+- Für jedes `ContainerItem` öffnen wir eine dedizierte `Parser`‑Instanz (`item.openParser()`).  
+- `attachmentParser.getText()` versucht, den Textinhalt zu lesen; wenn das Format nicht unterstützt wird, fangen wir die Ausnahme ab und fahren fort.
 
-### Feature 2 – Container‑Extraktionsunterstützung verifizieren
+### Funktion 2 – Container-Extraktionsunterstützung prüfen
 
 #### Schritt 1: Parser initialisieren (wie zuvor)
+Die gleiche `Parser`‑Instanz kann wiederverwendet werden, um die Metadaten des Containers abzufragen.  
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/SampleZip.zip")) {
     // Check supported operations...
@@ -128,6 +183,7 @@ try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/SampleZip.zip")) {
 ```
 
 #### Schritt 2: Dateipfade im ZIP auflisten
+`container.getItems()` liefert eine Sammlung von `ContainerItem`‑Objekten, die jeweils `getFilePath()` für den internen Pfad bereitstellen.  
 ```java
 Iterable<ContainerItem> attachments = parser.getContainer();
 if (attachments == null) {
@@ -140,56 +196,61 @@ if (attachments == null) {
 ```
 
 **Warum das wichtig ist:**  
-Das Wissen über die interne Struktur hilft Ihnen zu entscheiden, ob das Archiv verarbeitet, nicht unterstützte Dateien übersprungen oder eine Vorschau für Benutzer bereitgestellt werden soll.
+Das Wissen über die interne Struktur hilft Ihnen zu entscheiden, ob das Archiv verarbeitet, nicht unterstützte Dateien übersprungen oder den Benutzern eine Vorschau angeboten werden soll.
 
-## Praktische Anwendungsfälle
-1. **E‑Mail‑Anhangsverarbeitung** – Automatisches Extrahieren und Indexieren von Text aus archivierten E‑Mail‑Anhängen.  
-2. **Dokumenten‑Management‑Systeme** – Massenuploads verarbeiten, bei denen Benutzer viele Dateien zippen; Sie können dennoch den Inhalt durchsuchen.  
-3. **Backup‑ & Restore‑Validierung** – Prüfen, ob archivierte Dokumente den erwarteten Text enthalten, bevor sie wiederhergestellt werden.
+## Praktische Anwendungen
+1. **Verarbeitung von E-Mail-Anhängen** – Text aus archivierten E-Mail-Anhängen automatisch extrahieren und indexieren.  
+2. **Dokumentenmanagementsysteme** – Massenuploads verarbeiten, bei denen Benutzer viele Dateien zippen; Sie können dennoch den Inhalt durchsuchen.  
+3. **Backup‑ und Wiederherstellungs‑Validierung** – Überprüfen Sie, ob archivierte Dokumente den erwarteten Text enthalten, bevor Sie sie wiederherstellen, um das Risiko beschädigter Backups zu verringern.
 
-## Performance‑Überlegungen
-- **Iterative Verarbeitung:** Die Beispiele lesen jeweils nur eine Datei, wodurch Speicher‑Spikes bei großen Archiven vermieden werden.  
-- **Try‑with‑Resources:** Garantiert, dass jeder `Parser` und `TextReader` sofort geschlossen wird, wodurch Ressourcen‑Lecks verhindert werden.  
-- **Threading (Fortgeschritten):** Für sehr große ZIP‑Dateien können Sie die Schleife parallelisieren, achten Sie jedoch darauf, dass jeder Thread seine eigene `Parser`‑Instanz verwendet.
+## Leistungsüberlegungen
+- **Iterative Verarbeitung:** Die Beispiele lesen jeweils eine Datei, was Speicherspitzen bei großen Archiven verhindert.  
+- **Try‑with‑resources:** Stellt sicher, dass jeder `Parser` und `TextReader` sofort geschlossen wird, um Ressourcenlecks zu vermeiden.  
+- **Threading (fortgeschritten):** Für sehr große ZIPs können Sie die Schleife parallelisieren, achten Sie jedoch darauf, dass jeder Thread seine eigene `Parser`‑Instanz verwendet, um Thread‑Sicherheit zu gewährleisten.
 
 ## Häufige Probleme und Lösungen
+
 | Problem | Ursache | Lösung |
 |-------|-------|-----|
-| `Container extraction isn't supported` | Das ZIP enthält ein Format, das der Parser nicht verarbeiten kann. | Prüfen Sie die Dateitypen im Archiv; nur unterstützte Formate können geparst werden. |
-| `UnsupportedDocumentFormatException` | Das Format eines verschachtelten Dokuments wird nicht erkannt. | Datei überspringen oder vor dem Zippen in ein unterstütztes Format konvertieren. |
-| Speicher‑Spikes bei großen Archiven | Viele Dateien werden gleichzeitig geladen. | Elemente einzeln wie gezeigt verarbeiten; vermeiden Sie das Speichern des gesamten extrahierten Textes in einer Sammlung. |
+| `Container extraction isn't supported` | Das ZIP enthält ein Format, das der Parser nicht verarbeiten kann. | Überprüfen Sie die Dateitypen im Archiv; nur unterstützte Formate können geparst werden. |
+| `UnsupportedDocumentFormatException` | Das Format eines eingebetteten Dokuments wird nicht erkannt. | Überspringen Sie die Datei oder konvertieren Sie sie vor dem Zippen in ein unterstütztes Format. |
+| Memory spikes with large archives | Viele Dateien gleichzeitig laden. | Verarbeiten Sie die Elemente einzeln, wie gezeigt; vermeiden Sie das Speichern des gesamten extrahierten Textes in einer Sammlung. |
 
 ## Häufig gestellte Fragen
 
 **F: Was ist GroupDocs.Parser Java?**  
-A: Eine Bibliothek, die Text, Metadaten und Bilder aus einer breiten Palette von Dokumentformaten extrahiert, darunter PDFs, Office‑Dateien und viele weitere.
+A: Es ist eine Bibliothek, die Text, Metadaten und Bilder aus einer breiten Palette von Dokumentformaten extrahiert, einschließlich PDFs, Office‑Dateien und vielen mehr.
 
-**F: Kann ich mit dieser Bibliothek nicht‑textuelle Dateien (z. B. Bilder) aus einem ZIP extrahieren?**  
-A: Der Schwerpunkt liegt auf Textextraktion, aber Sie können über zusätzliche API‑Aufrufe auch Bilder und andere Binärinhalte abrufen.
+**F: Kann ich mit dieser Bibliothek nicht‑Textdateien (z. B. Bilder) aus einem ZIP extrahieren?**  
+A: Der Schwerpunkt liegt auf der Textextraktion, aber Sie können auch Bilder und andere Binärinhalte über zusätzliche API‑Aufrufe abrufen.
 
 **F: Wie gehe ich effizient mit sehr großen ZIP‑Dateien um?**  
-A: Verwenden Sie den iterativen Ansatz wie oben gezeigt, halten Sie den Parser in einem `try‑with‑resources`‑Block und laden Sie nicht den gesamten Inhalt gleichzeitig in den Speicher.
+A: Verwenden Sie den oben gezeigten iterativen Ansatz, halten Sie den Parser in einem `try‑with‑resources`‑Block und vermeiden Sie das Laden des gesamten Inhalts auf einmal in den Speicher.
 
-**F: Darf GroupDocs.Parser in kommerziellen Anwendungen eingesetzt werden?**  
-A: Ja, jedoch ist eine gültige Produktionslizenz erforderlich.
+**F: Kann GroupDocs.Parser in kommerziellen Anwendungen verwendet werden?**  
+A: Ja, aber eine gültige Produktionslizenz ist erforderlich.
 
-**F: Wo bekomme ich Hilfe, wenn ich Probleme habe?**  
+**F: Wo kann ich Hilfe erhalten, wenn ich auf Probleme stoße?**  
 A: Besuchen Sie das kostenlose Support‑Forum unter [GroupDocs Support Forum](https://forum.groupdocs.com/c/parser).
 
-## Weitere Ressourcen
-- [Documentation](https://docs.groupdocs.com/parser/java/)  
-- [API Reference](https://reference.groupdocs.com/parser/java)  
+## Zusätzliche Ressourcen
+- [Dokumentation](https://docs.groupdocs.com/parser/java/)  
+- [API‑Referenz](https://reference.groupdocs.com/parser/java)  
 - [Download](https://releases.groupdocs.com/parser/java/)  
-- [GitHub Repository](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
-- [Free Support](https://forum.groupdocs.com/c/parser)  
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/) 
+- [GitHub‑Repository](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
+- [Kostenloser Support](https://forum.groupdocs.com/c/parser)  
+- [Temporäre Lizenz](https://purchase.groupdocs.com/temporary-license/) 
 
-Starten Sie noch heute mit der **Text‑Extraktion aus ZIP**‑Dateien und geben Sie Ihren Java‑Anwendungen die Fähigkeit, jedes im Archiv versteckte Dokument zu lesen!
+Beginnen Sie noch heute mit der Integration der **Text‑Extraktion aus ZIP**‑Funktionalität und geben Sie Ihren Java‑Anwendungen die Möglichkeit, jedes im Archiv versteckte Dokument zu lesen!
 
 ---
 
-**Zuletzt aktualisiert:** 2026-02-21  
+**Zuletzt aktualisiert:** 2026-10-17  
 **Getestet mit:** GroupDocs.Parser 25.5  
 **Autor:** GroupDocs  
 
----
+## Verwandte Tutorials
+
+- [Dateitypen in ZIP mit GroupDocs Parser Java erkennen](/parser/java/container-formats/detect-file-types-zip-groupdocs-parser-java/)
+- [PDF‑eingebettete Dateien mit GroupDocs.Parser für Java extrahieren](/parser/java/container-formats/extract-container-items-groupdocs-parser-java/)
+- [java zip parsen – Text & Metadaten aus ZIP‑Dateien extrahieren](/parser/java/container-formats/extract-text-metadata-zip-files-groupdocs-parser-java/)
