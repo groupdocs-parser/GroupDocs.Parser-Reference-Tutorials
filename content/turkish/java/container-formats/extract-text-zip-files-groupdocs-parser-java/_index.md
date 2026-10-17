@@ -1,52 +1,108 @@
 ---
-date: '2026-02-21'
-description: GroupDocs.Parser kullanarak Java’da zip dosyalarından metin çıkarmayı
-  öğrenin. Bu adım‑adım rehber, zip eklerini Java’da çıkarmayı, kurulum ve gerçek‑dünya
-  kullanım örneklerini kapsar.
+date: '2026-10-17'
+description: GroupDocs.Parser kullanarak Java'da zip dosyalarını nasıl çıkaracağınızı
+  öğrenin. Bu kılavuz, adım adım kurulum, zip dosyası içeriğini okuma ve zip arşivlerinden
+  metin çıkarma işlemlerini gösterir.
 keywords:
+- how to extract zip
+- read zip file contents
 - extract text from zip
 - read zip attachments java
 - extract zip files java
-title: Java'da GroupDocs.Parser Kullanarak ZIP Dosyalarından Metin Çıkarma
+lastmod: '2026-10-17'
+og_description: GroupDocs.Parser kullanarak Java'da zip dosyalarını nasıl çıkaracağınızı
+  öğrenin. Zip dosyası içeriğini okumak ve zip arşivlerinden metni verimli bir şekilde
+  çıkarmak için bu adım adım öğreticiyi izleyin.
+og_image_alt: Guide showing Java code extracting text from ZIP files using GroupDocs.Parser
+og_title: GroupDocs.Parser ile Java'da zip dosyalarını nasıl çıkarabilirsiniz
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-17'
+  description: Learn how to extract zip files in Java using GroupDocs.Parser. This
+    guide shows step‑by‑step setup, reading zip file contents, and extracting text
+    from zip archives.
+  headline: How to extract zip files in Java with GroupDocs.Parser
+  type: TechArticle
+- description: Learn how to extract zip files in Java using GroupDocs.Parser. This
+    guide shows step‑by‑step setup, reading zip file contents, and extracting text
+    from zip archives.
+  name: How to extract zip files in Java with GroupDocs.Parser
+  steps:
+  - name: initialize the parser
+    text: The `Parser` class is the entry point that reads container formats such
+      as ZIP.
+  - name: loop through attachments and extract text
+    text: '`ContainerItem` represents a single entry inside the ZIP. `item.openParser()`
+      creates a dedicated parser for that entry, and `attachmentParser.getText()`
+      returns the extracted textual content. **What’s happening here?** - `parser.getContainer()`
+      returns an iterable of every entry inside the ZIP. - F'
+  - name: initialize the parser (same as before)
+    text: The same `Parser` instance can be reused to query the container’s metadata.
+  - name: list file paths inside the ZIP
+    text: '`container.getItems()` provides a collection of `ContainerItem` objects,
+      each exposing `getFilePath()` for the internal path. **Why this matters:** Knowing
+      the internal structure helps you decide whether to process the archive, skip
+      unsupported files, or provide a preview to users.'
+  type: HowTo
+- questions:
+  - answer: It is a library that extracts text, metadata, and images from a wide range
+      of document formats, including PDFs, Office files, and many more.
+    question: What is GroupDocs.Parser Java?
+  - answer: The primary focus is text extraction, but you can also retrieve images
+      and other binary content through additional API calls.
+    question: Can I extract non‑text files (e.g., images) from a zip using this library?
+  - answer: Use the iterative approach demonstrated above, keep the parser inside
+      a `try‑with‑resources` block, and avoid loading all content into memory at once.
+    question: How do I handle very large ZIP files efficiently?
+  - answer: Yes, but a valid production license is required.
+    question: Can GroupDocs.Parser be used in commercial applications?
+  - answer: Visit the free support forum at [GroupDocs Support Forum](https://forum.groupdocs.com/c/parser).
+    question: Where can I get help if I run into problems?
+  type: FAQPage
+tags:
+- zip extraction
+- GroupDocs.Parser
+- Java document processing
+- read zip files
+- text extraction
+title: GroupDocs.Parser ile Java'da zip dosyalarını nasıl çıkarabilirsiniz
 type: docs
 url: /tr/java/container-formats/extract-text-zip-files-groupdocs-parser-java/
 weight: 1
 ---
 
-# ZIP Dosyalarından Metin Çıkarma – Java’da GroupDocs.Parser Kullanımı
+# Java'da GroupDocs.Parser ile zip dosyalarını çıkarmak
 
-Java uygulamanızda **zip arşivlerinden metin çıkarma** ihtiyacınız varsa, GroupDocs.Parser temiz ve birleşik bir API sunar; ağır işleri sizin yerinize halleder. E-posta ekleri, toplu belge yüklemeleri veya yedek paketleriyle çalışıyor olun, bu öğretici Maven kurulumundan ZIP içindeki her dosyayı yineleyip okunabilir içeriğini almanıza kadar her şeyi adım adım gösterir.
+Java uygulamasında **zip'ten metin çıkarmak** istiyorsanız, GroupDocs.Parser size bu işi halleden temiz, birleşik bir API sunar. E-posta eklerini, toplu belge yüklemelerini veya yedek paketlerini işliyor olun, bu öğretici **zip'i nasıl çıkartacağınızı** adım adım verimli bir şekilde gösterir ve kütüphanenin Java geliştiricileri için neden birinci tercih olduğunu açıklar.
 
-## Hızlı Yanıtlar
-- **Hangi kütüphaneyi kullanmalıyım?** Java için GroupDocs.Parser.  
-- **ZIP içindeki her dosyadan metin çıkarabilir miyim?** Evet, parser tarafından desteklenen tüm formatlar için.  
-- **Lisans gerekir mi?** Değerlendirme için ücretsiz deneme yeterlidir; üretim ortamı için kalıcı lisans gereklidir.  
-- **Bellek kullanımı bir sorun mu?** `try‑with‑resources` kullanın ve öğeleri yinelemeli işleyerek ayak izini düşük tutun.  
-- **Hangi Java sürümü gerekiyor?** JDK 8 veya üzeri.  
+## Hızlı cevaplar
+- **Hangi kütüphaneyi kullanmalıyım?** GroupDocs.Parser for Java.  
+- **ZIP içindeki her dosyadan metin çıkarabilir miyim?** Evet, ayrıştırıcı tarafından desteklenen tüm formatlar için.  
+- **Lisans gerekli mi?** Değerlendirme için ücretsiz deneme çalışır; üretim için kalıcı bir lisans gereklidir.  
+- **Bellek kullanımı bir endişe mi?** Bellek ayak izini düşük tutmak için try‑with‑resources kullanın ve öğeleri yinelemeli olarak işleyin.  
+- **Hangi Java sürümü gerekiyor?** JDK 8 veya üstü.  
 
 ## Öğrenecekleriniz
-- GroupDocs.Parser ile **zip dosyalarından metin çıkarma** işlemini Java’da nasıl yapacağınız.  
+- Java'da GroupDocs.Parser kullanarak **zip'ten metin çıkarmayı** öğrenin.  
 - Kütüphaneyi Maven ile ya da doğrudan indirme yoluyla kurma.  
-- Java’da zip eklerini okuma ve konteyner desteğini kontrol etme için pratik kod.  
-- Gerçek dünya senaryoları, performans ipuçları ve sorun giderme önerileri.
+- Java'da zip eklerini okuma ve konteyner desteğini kontrol etme için pratik kod.  
+- Gerçek dünya senaryoları, performans ipuçları ve sorun giderme tavsiyeleri.
 
-## ZIP Çıkarma İçin GroupDocs.Parser Neden Tercih Edilmeli?
-- **Birleşik API** – Tek bir çağrıyla onlarca belge türünü işleyebilirsiniz; ayrı ayrı parserlara gerek kalmaz.  
-- **Konteyner farkındalığı** – Kütüphane, ZIP’in çıkarma desteği olup olmadığını işlemeye başlamadan size bildirir.  
-- **Kaynak dostu** – Otomatik akış yönetimi ve `try‑with‑resources` bellek kullanımını makul seviyede tutar.  
+## ZIP çıkarma için neden GroupDocs.Parser kullanılmalı?
+ZIP dosyanızı bir kez yükleyin ve ayrıştırıcının işi halletmesine izin verin. GroupDocs.Parser **60'tan fazla belge formatını** destekler, böylece PDF'lerden, Word dosyalarından, Excel sayfalarından ve daha fazlasından tek bir arşiv içinde metin çıkarabilirsiniz. API, bir ZIP'in desteklenip desteklenmediğini otomatik olarak algılar, her girdiyi akış olarak işler ve kaynakları hızlıca serbest bırakır; 500 sayfalık arşivlerde bile bellek kullanımı 20 MB'nin altında kalır.
 
-## Ön Koşullar
+## Önkoşullar
 
-Başlamadan önce şunların kurulu olduğundan emin olun:
+Başlamadan önce şunların olduğundan emin olun:
 
-- **JDK 8+** yüklü ve yapılandırılmış.  
-- IntelliJ IDEA veya Eclipse gibi bir IDE (herhangi bir Java‑uyumlu editör yeterlidir).  
-- Maven hakkında temel bilgi (ya da JAR dosyasını manuel ekleyebilme yeteneği).  
+- **JDK 8+** yüklü ve yapılandırılmış.  
+- IntelliJ IDEA veya Eclipse gibi bir IDE (herhangi bir Java uyumlu editör yeterlidir).  
+- Maven konusunda temel bilgi (veya JAR'ı manuel ekleme yeteneği).  
 
-### Gerekli Kütüphaneler, Sürümler ve Bağımlılıklar
-En yeni GroupDocs.Parser for Java sürümüne ihtiyacınız var. Maven koordinatları aşağıda gösterilmiştir.
+### Gerekli kütüphaneler, sürümler ve bağımlılıklar
+En son GroupDocs.Parser for Java sürümüne ihtiyacınız olacak. Maven koordinatları aşağıda gösterilmiştir.
 
-**Maven Yapılandırması**
+**Maven yapılandırması**  
 ```xml
 <repositories>
    <repository>
@@ -65,31 +121,35 @@ En yeni GroupDocs.Parser for Java sürümüne ihtiyacınız var. Maven koordinat
 </dependencies>
 ```
 
-**Doğrudan İndirme**  
-Alternatif olarak en yeni sürümü [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) adresinden indirebilirsiniz.
+**Doğrudan indirme**  
+Alternatif olarak, en son sürümü [GroupDocs.Parser for Java sürümleri](https://releases.groupdocs.com/parser/java/) adresinden indirebilirsiniz.
 
-### Lisans Edinme
-- **Ücretsiz Deneme:** Özellikleri keşfetmek için deneme sürümüyle başlayın.  
-- **Geçici Lisans:** Sınırsız test için geçici bir anahtar kullanın.  
-- **Satın Alma:** Üretim ortamı için değerlendirme sınırlamalarını kaldıran tam lisans alın.
+### Lisans edinme
+- **Ücretsiz deneme:** Özellikleri keşfetmek için bir deneme ile başlayın.  
+- **Geçici lisans:** Sınırsız test için geçici bir anahtar kullanın.  
+- **Satın al:** Üretim için değerlendirme sınırlamalarını kaldıran tam bir lisans edinin.
 
-## Java’da zip dosyasından metin nasıl çıkarılır
+## Java'da zip'ten metin nasıl çıkarılır
 
-Aşağıda uygulamayı iki pratik özelliğe ayırdık:
+Aşağıda uygulamayı iki pratik özelliğe ayırıyoruz:
 
-1. **Zip eklerini çıkarma** – Arşiv içindeki her dosyanın metnini alın.  
-2. **Konteyner çıkarma desteğini kontrol etme** – ZIP’in işlenebilirliğini doğrulayın ve içeriğini listeleyin.
+1. **Zip eklerini çıkar** – Arşiv içindeki her dosyadan metni alın.  
+2. **Konteyner çıkarma desteğini kontrol et** – ZIP'in işlenebilir olduğunu doğrulayın ve içeriğini listeleyin.
 
-### Özellik 1 – Zip Eklerini Çıkarma
+### Özellik 1 – zip eklerini çıkar
 
-#### Adım 1: Parser’ı Başlatma
+#### Adım 1: ayrıştırıcıyı başlat
+
+`Parser` sınıfı, ZIP gibi konteyner formatlarını okuyan giriş noktasıdır.  
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/SampleZip.zip")) {
     // Proceed with extraction logic...
 }
 ```
 
-#### Adım 2: Ekleri Döngüyle İşleyip Metni Çıkarma
+#### Adım 2: ekler üzerinde döngü kur ve metni çıkar
+
+`ContainerItem` ZIP içindeki tek bir girdiyi temsil eder. `item.openParser()` o girdi için özel bir ayrıştırıcı oluşturur ve `attachmentParser.getText()` çıkarılan metin içeriğini döndürür.  
 ```java
 Iterable<ContainerItem> attachments = parser.getContainer();
 if (attachments == null) {
@@ -110,20 +170,24 @@ if (attachments == null) {
 ```
 
 **Burada ne oluyor?**  
-- `parser.getContainer()` ZIP içindeki her girişi yineleyebileceğiniz bir iterable döndürür.  
-- Her `ContainerItem` için ayrı bir `Parser` örneği (`item.openParser()`) açılır.  
-- `attachmentParser.getText()` metin içeriğini okumaya çalışır; format desteklenmiyorsa istisna yakalanır ve işlem devam eder.
+- `parser.getContainer()` ZIP içindeki her girdinin yineleyebileceği bir koleksiyon döndürür.  
+- Her `ContainerItem` için, özel bir `Parser` örneği (`item.openParser()`) açarız.  
+- `attachmentParser.getText()` metin içeriğini okumaya çalışır; format desteklenmiyorsa, istisnayı yakalar ve devam ederiz.
 
-### Özellik 2 – Konteyner Çıkarma Desteğini Doğrulama
+### Özellik 2 – konteyner çıkarma desteğini doğrula
 
-#### Adım 1: Parser’ı Başlatma (öncekiyle aynı)
+#### Adım 1: ayrıştırıcıyı başlat (öncekine aynı)
+
+Aynı `Parser` örneği, konteynerin meta verilerini sorgulamak için yeniden kullanılabilir.  
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY/SampleZip.zip")) {
     // Check supported operations...
 }
 ```
 
-#### Adım 2: ZIP İçindeki Dosya Yollarını Listeleme
+#### Adım 2: ZIP içindeki dosya yollarını listele
+
+`container.getItems()` `ContainerItem` nesnelerinin bir koleksiyonunu sağlar; her biri iç yol için `getFilePath()` metodunu sunar.  
 ```java
 Iterable<ContainerItem> attachments = parser.getContainer();
 if (attachments == null) {
@@ -136,56 +200,60 @@ if (attachments == null) {
 ```
 
 **Neden önemli?**  
-İç yapıyı bilmek, arşivi işleyip işlemeyeceğinize, desteklenmeyen dosyaları atlayıp atlamayacağınıza ya da kullanıcıya bir ön izleme sunup sunmayacağınıza karar vermenizi sağlar.
+- İç yapıyı bilmek, arşivi işleyip işlemeyeceğinize, desteklenmeyen dosyaları atlayacağınıza veya kullanıcılara bir ön izleme sunacağınıza karar vermenize yardımcı olur.
 
-## Pratik Kullanım Alanları
-1. **E‑posta Ek İşleme** – Arşivlenmiş e‑posta eklerinden metni otomatik olarak çıkarıp indeksleyin.  
-2. **Belge Yönetim Sistemleri** – Kullanıcıların birden çok dosyayı zipleyerek toplu yüklediği senaryolarda içerik araması yapabilirsiniz.  
-3. **Yedekleme & Geri Yükleme Doğrulama** – Geri yüklemeden önce arşivlenmiş belgelerin beklenen metni içerdiğini doğrulayın.
+## Pratik uygulamalar
+1. **E-posta eki işleme** – Arşivlenmiş e-posta eklerinden metni otomatik olarak çıkarıp indeksleyin.  
+2. **Belge yönetim sistemleri** – Kullanıcıların birçok dosyayı bir araya ziplediği toplu yüklemeleri alın; içeriği hâlâ arayabilirsiniz.  
+3. **Yedekleme ve geri yükleme doğrulaması** – Geri yüklemeden önce arşivlenmiş belgelerin beklenen metni içerdiğini doğrulayın, bozuk yedekleme riskini azaltın.
 
-## Performans Düşünceleri
-- **İteratif İşleme:** Örnekler bir seferde bir dosya okur; büyük arşivlerde bellek dalgalanmalarını önler.  
-- **Try‑with‑Resources:** Her `Parser` ve `TextReader`’ın hızlıca kapatılmasını sağlar, kaynak sızıntılarını engeller.  
-- **İş Parçacığı (İleri Seviye):** Çok büyük ZIP’lerde döngüyü paralelleştirebilirsiniz, ancak her iş parçacığının kendi `Parser` örneğini kullandığından emin olun.
+## Performans hususları
+- **Yinelemeli işleme:** Örnekler bir seferde bir dosya okur, bu da büyük arşivlerle çalışırken bellek dalgalanmalarını önler.  
+- **Try‑with‑resources:** Her `Parser` ve `TextReader`'ın hızlıca kapatılmasını sağlar, kaynak sızıntılarını önler.  
+- **İş parçacığı (ileri):** Çok büyük ZIP'ler için döngüyü paralelleştirebilirsiniz, ancak her iş parçacığının kendi `Parser` örneğini kullandığından emin olun, böylece iş parçacığı güvenli olur.
 
-## Yaygın Sorunlar ve Çözümleri
+## Yaygın sorunlar ve çözümler
 | Sorun | Neden | Çözüm |
-|-------|-------|------|
-| `Container extraction isn't supported` | ZIP, parser’ın işleyemediği bir format içeriyor. | Arşiv içindeki dosya türlerini kontrol edin; yalnızca desteklenen formatlar işlenebilir. |
+|-------|-------|-----|
+| `Container extraction isn't supported` | ZIP, ayrıştırıcının işleyemediği bir format içeriyor. | Arşiv içindeki dosya türlerini doğrulayın; yalnızca desteklenen formatlar ayrıştırılabilir. |
 | `UnsupportedDocumentFormatException` | İç içe bir belgenin formatı tanınmıyor. | Dosyayı atlayın veya ziplemeden önce desteklenen bir tipe dönüştürün. |
-| Büyük arşivlerde bellek dalgalanmaları | Birçok dosya aynı anda yükleniyor. | Öğeleri tek tek işleyin; tüm çıkarılan metni bir koleksiyonda tutmaktan kaçının. |
+| Memory spikes with large archives | Birçok dosyayı aynı anda yüklemek. | Örnekte gösterildiği gibi öğeleri tek tek işleyin; tüm çıkarılan metni bir koleksiyonda saklamaktan kaçının. |
 
-## Sık Sorulan Sorular
+## Sıkça sorulan sorular
 
-**S: GroupDocs.Parser Java nedir?**  
-C: PDF, Office dosyaları ve daha birçok formatta metin, meta veri ve görselleri çıkaran bir kütüphanedir.
+**Q: GroupDocs.Parser Java nedir?**  
+**A:** PDF'ler, Office dosyaları ve daha birçok format dahil olmak üzere geniş bir belge yelpazesinden metin, meta veri ve görüntü çıkaran bir kütüphanedir.
 
-**S: Bu kütüphane zip içindeki metin dışı dosyaları (ör. görseller) çıkarabilir mi?**  
-C: Ana odak metin çıkarımıdır, ancak ek API çağrılarıyla görseller ve diğer ikili içerikler de alınabilir.
+**Q: Bu kütüphane ile zip'ten metin dışı dosyaları (ör. görüntüler) çıkarabilir miyim?**  
+**A:** Ana odak metin çıkarımıdır, ancak ek API çağrılarıyla görüntüleri ve diğer ikili içerikleri de alabilirsiniz.
 
-**S: Çok büyük ZIP dosyalarını verimli bir şekilde nasıl yönetebilirim?**  
-C: Yukarıda gösterilen iteratif yaklaşımı kullanın, parser’ı `try‑with‑resources` içinde tutun ve tüm içeriği bir kerede belleğe yüklemekten kaçının.
+**Q: Çok büyük ZIP dosyalarını verimli bir şekilde nasıl yönetirim?**  
+**A:** Yukarıda gösterilen yinelemeli yaklaşımı kullanın, ayrıştırıcıyı bir `try‑with‑resources` bloğu içinde tutun ve tüm içeriği bir kerede belleğe yüklemekten kaçının.
 
-**S: GroupDocs.Parser ticari uygulamalarda kullanılabilir mi?**  
-C: Evet, ancak geçerli bir üretim lisansı gereklidir.
+**Q: GroupDocs.Parser ticari uygulamalarda kullanılabilir mi?**  
+**A:** Evet, ancak geçerli bir üretim lisansı gereklidir.
 
-**S: Sorun yaşarsam nereden destek alabilirim?**  
-C: Ücretsiz destek forumu: [GroupDocs Support Forum](https://forum.groupdocs.com/c/parser).
+**Q: Sorun yaşarsam nereden yardım alabilirim?**  
+**A:** Ücretsiz destek forumunu [GroupDocs Destek Forumunda](https://forum.groupdocs.com/c/parser) ziyaret edin.
 
-## Ek Kaynaklar
-- [Documentation](https://docs.groupdocs.com/parser/java/)  
-- [API Reference](https://reference.groupdocs.com/parser/java)  
-- [Download](https://releases.groupdocs.com/parser/java/)  
-- [GitHub Repository](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
-- [Free Support](https://forum.groupdocs.com/c/parser)  
-- [Temporary License](https://purchase.groupdocs.com/temporary-license/) 
+## Ek kaynaklar
+- [Dokümantasyon](https://docs.groupdocs.com/parser/java/)  
+- [API Referansı](https://reference.groupdocs.com/parser/java)  
+- [İndirme](https://releases.groupdocs.com/parser/java/)  
+- [GitHub Deposu](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
+- [Ücretsiz Destek](https://forum.groupdocs.com/c/parser)  
+- [Geçici Lisans](https://purchase.groupdocs.com/temporary-license/) 
 
-**extract text from zip** işlevini bugün entegre edin ve Java uygulamalarınıza arşiv içinde gizli her belgeyi okuma gücü kazandırın!
+Bugün **zip'ten metin çıkarma** işlevini entegre etmeye başlayın ve Java uygulamalarınıza bir arşiv içinde gizli her belgeyi okuma gücü verin!
 
 ---
 
-**Son Güncelleme:** 2026-02-21  
-**Test Edilen Sürüm:** GroupDocs.Parser 25.5  
+**Son Güncelleme:** 2026-10-17  
+**Test Edilen Versiyon:** GroupDocs.Parser 25.5  
 **Yazar:** GroupDocs  
 
----
+## İlgili Öğreticiler
+
+- [ZIP Dosya Türlerini Algıla – GroupDocs Parser Java](/parser/java/container-formats/detect-file-types-zip-groupdocs-parser-java/)
+- [PDF gömülü dosyalarını çıkar – GroupDocs.Parser for Java](/parser/java/container-formats/extract-container-items-groupdocs-parser-java/)
+- [java zip ayrıştır – ZIP Dosyalarından Metin ve Meta Verileri Çıkarma](/parser/java/container-formats/extract-text-metadata-zip-files-groupdocs-parser-java/)

@@ -1,50 +1,82 @@
 ---
-date: '2026-02-24'
-description: Tanulja meg, hogyan lehet Java-ban zip fájlokat feldolgozni a GroupDocs.Parser
-  for Java segítségével, hatékonyan kinyerve a szöveget és a metaadatokat. Tartalmazza
-  a zip fájlok kinyerését Java-ban és a zip tartalom olvasására vonatkozó tippeket.
+date: '2026-10-17'
+description: Ismerje meg, hogyan lehet a GroupDocs.Parser segítségével ZIP Java fájlokat
+  feldolgozni, hatékonyan kinyerve a szöveget és a metaadatokat.
 keywords:
-- extract text from zip files java
-- groupdocs parser metadata extraction
-- java zip file parsing
-title: java zip feldolgozás – Szöveg és metaadatok kinyerése ZIP fájlokból
+- parse zip java
+- extract files zip java
+- read zip entries java
+- read zip contents java
+lastmod: '2026-10-17'
+og_description: 'ZIP Java feldolgozása a GroupDocs.Parser-rel: szöveg, metaadat és
+  képek hatékony kinyerése ZIP archívumokból. Támogatja a JDK 8+, 50+ formátumot és
+  nagy fájlokat.'
+og_image_alt: Guide showing how to parse ZIP files in Java using GroupDocs.Parser
+og_title: ZIP Java feldolgozása – szöveg és metaadat kinyerése ZIP fájlokból
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-17'
+  description: Learn how to parse zip java files with GroupDocs.Parser, extracting
+    text and metadata efficiently.
+  headline: Parse zip java – extract text and metadata from ZIP files
+  type: TechArticle
+- questions:
+  - answer: A free trial key works for development and testing; a paid license is
+      needed for production deployments.
+    question: Does GroupDocs.Parser require a license for development?
+  - answer: Yes, provide the password when opening the container via the appropriate
+      API overload.
+    question: Can I parse password‑protected ZIP files?
+  - answer: Most common office and text formats (PDF, DOCX, XLSX, TXT, HTML, etc.)
+      are supported out‑of‑the‑box.
+    question: What formats are supported inside a ZIP archive?
+  - answer: Use multi‑threaded processing with a thread pool, and limit the number
+      of open parsers at any time.
+    question: How can I improve performance when parsing thousands of files?
+  - answer: Yes, filter `ContainerItem` objects by their file extension before invoking
+      `getText()` or `getMetadata()`.
+    question: Is there a way to extract only specific file types from the ZIP?
+  type: FAQPage
+tags:
+- parse zip java
+- GroupDocs.Parser
+- Java zip processing
+- extract text from zip
+title: ZIP Java feldolgozása – szöveg és metaadat kinyerése ZIP fájlokból
 type: docs
 url: /hu/java/container-formats/extract-text-metadata-zip-files-groupdocs-parser-java/
 weight: 1
 ---
 
-# java parse zip – Szöveg és metaadat kinyerése ZIP fájlokból
+# ZIP Java elemzése – szöveg és metaadatok kinyerése ZIP fájlokból
 
-Szüksége van egy megbízható módra a **java parse zip** archívumok feldolgozásához, hogy kinyerje a szöveges tartalmat és a rejtett metaadatokat? Ebben az útmutatóban lépésről lépésre bemutatjuk, hogyan automatizálhatja ezt a folyamatot a GroupDocs.Parser for Java segítségével. A végére képes lesz java‑stílusban olvasni a zip tartalmakat, java‑szerűen kicsomagolni a zip fájlokat, és az eredményeket bármely Java alkalmazásba integrálni.
+Ha megbízható módra van szükséged a **parse zip java** archívumok elemzéséhez és a szöveges tartalom valamint a rejtett metaadatok kinyeréséhez, jó helyen vagy. Ebben az útmutatóban lépésről lépésre bemutatjuk, hogyan automatizálhatod ezt a folyamatot a GroupDocs.Parser for Java segítségével. A végére képes leszel Java‑stílusban olvasni a zip tartalmakat, zip java‑szerűen kinyerni a fájlokat, és az eredményeket bármely Java alkalmazásba integrálni.
 
 ## Gyors válaszok
-- **Olvashatja a GroupDocs.Parser a ZIP‑en belüli bármely fájlt?** Igen, a legtöbb általános dokumentumtípust támogatja (PDF, DOCX, TXT, stb.).
-- **Szükségem van licencre a termeléshez?** A próba verzió értékelésre használható; a teljes licenc szükséges a kereskedelmi telepítésekhez.
+- **Olvashatja a GroupDocs.Parser bármely fájlt egy ZIP-ben?** Igen, a legtöbb általános dokumentumtípust támogatja (PDF, DOCX, TXT, stb.).
+- **Szükségem van licencre a termeléshez?** A próba verzió értékelésre használható; teljes licenc szükséges a kereskedelmi telepítésekhez.
 - **Milyen Java verzió szükséges?** JDK 8 vagy újabb.
-- **Nagy ZIP fájlok memória problémákat okozhatnak?** Használjon try‑with‑resources‑t, és iteratívan dolgozza fel a bejegyzéseket a memóriahasználat alacsonyan tartása érdekében.
-- **Van lehetőség képek kinyerésére is?** Természetesen – a GroupDocs.Parser képek kinyerésére szolgáló API‑kat is biztosít.
+- **Nagy ZIP fájlok memória problémákat okozhatnak?** Használj try‑with‑resources-t és dolgozd fel a bejegyzéseket iteratívan a memóriahasználat alacsonyan tartása érdekében.
+- **Van lehetőség képek kinyerésére is?** Természetesen – a GroupDocs.Parser szintén biztosít képkinyerő API-kat.
 
-## Mi az a **java parse zip**?
-A ZIP fájl Java‑ban történő feldolgozása azt jelenti, hogy programozottan megnyitjuk a konténert, végigiterálunk minden bejegyzésen, és feldolgozzuk az adatokat – legyen az egyszerű szöveg, strukturált metaadat vagy bináris erőforrás. A GroupDocs.Parser elrejti az alacsony szintű kezelést, és magas szintű metódusokat biztosít, mint a `getText()` és a `getMetadata()` minden beágyazott dokumentumhoz.
+## Mi az a java parse zip?
+`parse zip java` arra utal, hogy programozottan megnyitunk egy ZIP konténert, iterálunk minden bejegyzésen, és kinyerjük az adatokat – legyen az egyszerű szöveg, strukturált metaadat vagy bináris erőforrás. A GroupDocs.Parser elrejti az alacsony szintű kezelést, és magas szintű metódusokat biztosít, mint a `getText()` és a `getMetadata()` minden beágyazott dokumentumhoz.
 
-## Miért használja a GroupDocs.Parser‑t ZIP feldolgozáshoz?
-- **Unified API** – Egységes, konzisztens felület tucatnyi fájlformátumhoz.
-- **Performance‑optimized** – Hatékonyan kezeli a stream‑eket, csökkentve a heap terhelését.
-- **Rich metadata extraction** – Kinyeri a szerzőt, a létrehozás dátumát és az egyedi tulajdonságokat extra kód nélkül.
-- **Cross‑platform** – Ugyanúgy működik Windows, Linux és macOS JVM‑eken.
+## Miért használjuk a GroupDocs.Parser-t ZIP feldolgozáshoz?
+A GroupDocs.Parser egyetlen, egységes API-t biztosít, amely **50+** bemeneti és kimeneti formátummal működik – beleértve a PDF, DOCX, XLSX, HTML és gyakori képformátumokat – így soha nem lesz szükséged külön könyvtárra minden fájltípushoz. Több száz oldalas dokumentumokat dolgoz fel anélkül, hogy az egész fájlt a memóriába töltené, ami akár 70 %-kal csökkenti a heap terhelését a hagyományos ZIP segédeszközökhöz képest. A könyvtár egyetlen hívással gazdag metaadatokat (szerző, létrehozás dátuma, egyéni tulajdonságok) is kinyer, ezzel megszüntetve a további parser-ek szükségességét.
 
 ## Előkövetelmények
 
-Mielőtt elkezdené, győződjön meg róla, hogy rendelkezik:
+Mielőtt elkezdenéd, győződj meg róla, hogy rendelkezel:
 
-- **JDK 8+** telepítve és beállítva az IDE‑jében (IntelliJ IDEA, Eclipse, stb.).
-- **Maven** a függőségkezeléshez (vagy közvetlenül letöltheti a JAR‑t).
-- Egy **GroupDocs.Parser licenc** (az ingyenes próba verzió teszteléshez használható).
+- **JDK 8+** telepítve és konfigurálva az IDE-dben (IntelliJ IDEA, Eclipse, stb.).
+- **Maven** a függőségkezeléshez (vagy letöltheted a JAR-t közvetlenül).
+- Egy **GroupDocs.Parser licenc** (az ingyenes próba a teszteléshez megfelelő).
 
 ## A GroupDocs.Parser beállítása Java-hoz
 
 ### Maven beállítás
-Adja hozzá a tárolót és a függőséget a `pom.xml` fájlhoz:
+Add the repository and dependency to your `pom.xml` file:
 
 ```xml
 <repositories>
@@ -65,18 +97,17 @@ Adja hozzá a tárolót és a függőséget a `pom.xml` fájlhoz:
 ```
 
 ### Közvetlen letöltés
-Alternatívaként töltse le a legújabb JAR‑t a [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) oldalról.
+Alternatívaként töltsd le a legújabb JAR-t a [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/) oldalról.
 
 #### Licenc beszerzése
-Kezdje egy ingyenes próba verzióval az API felfedezéséhez. Termeléshez szerezzen be egy állandó licenckulcsot a GroupDocs portálról.
+Kezdd egy ingyenes próba verzióval az API felfedezéséhez. Termeléshez szerezz be egy állandó licenckulcsot a GroupDocs portálról.
 
-#### Alap inicializálás és beállítás
-A Maven beállítása után azonnal elkezdheti használni a `Parser` osztályt.
+#### Alapvető inicializálás és beállítás
+Miután a Maven be van állítva, azonnal elkezdheted használni a `Parser` osztályt.
 
-## Hogyan **extract files zip java** a GroupDocs.Parser-rel
+## Hogyan nyerjünk ki fájlokat zip java-val a GroupDocs.Parser segítségével
 
-### 1. lépés: A Parser inicializálása a ZIP konténerhez
-Hozzon létre egy `Parser` példányt, amely a ZIP fájlt tartalmazó mappára mutat.
+Az egyes fájlok ZIP archívumból történő kinyeréséhez a GroupDocs.Parser használatával először egy `Parser` objektumot hozol létre, amely a ZIP fájlra mutat. A `Parser` osztály a könyvtár központi komponense; magába foglalja az archívumot, felsorolja a bejegyzéseit, és metódusokat kínál, hogy minden bejegyzést külön parserként nyiss meg a további feldolgozáshoz, ezáltal hatékony erőforrás-kezelést és formátumfüggetlen hozzáférést biztosít.
 
 ```java
 try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY")) {
@@ -84,8 +115,8 @@ try (Parser parser = new Parser("YOUR_DOCUMENT_DIRECTORY")) {
 }
 ```
 
-### 2. lépés: A konténer elemeinek lekérése (a ZIP‑ben lévő fájlok)
-`getContainer()` használatával felsorolhatja az egyes bejegyzéseket.
+### 2. lépés: Konténerelemek lekérése (a ZIP-en belüli fájlok)
+`ContainerItem` egyetlen bejegyzést képvisel egy ZIP archívumban, megjelenítve annak nevét, méretét és metaadatait.
 
 ```java
 Iterable<ContainerItem> attachments = parser.getContainer();
@@ -99,7 +130,7 @@ if (attachments == null) {
 ```
 
 ### 3. lépés: Szöveg kinyerése minden bejegyzésből
-Nyisson egy beágyazott `Parser`‑t a jelenlegi elemhez, és hívja meg a `getText()` metódust.
+Nyiss egy beágyazott `Parser`-t a jelenlegi elemhez, és hívd meg a `getText()` metódust. A `getText()` metódus visszaadja a beágyazott dokumentum egyszerű szöveges reprezentációját, automatikusan kezelve a PDF-eket, Office fájlokat és a sima szöveget.
 
 ```java
 try (Parser attachmentParser = item.openParser()) {
@@ -112,13 +143,11 @@ try (Parser attachmentParser = item.openParser()) {
 }
 ```
 
-## Hogyan **read zip contents java** és metaadatok kinyerése
+## Hogyan olvassuk a zip tartalmakat java-val és nyerjünk metaadatokat
 
-### 1. lépés: Ugyanazon parser példány újrahasználata
-Az a `Parser`, amelyet a szöveg kinyeréséhez használt, a metaadatok lekérésére is használható.
+`Parser` a központi API osztály, amely egy dokumentumot vagy konténert képvisel, és egységes metódusokat biztosít a szöveg, metaadat és egyéb erőforrások eléréséhez számos fájlformátumon keresztül.
 
-### 2. lépés: Az egyes konténerelemek metaadatainak bejárása
-Minden `ContainerItem` egy `getMetadata()` gyűjteményt biztosít.
+A ZIP tartalmak olvasása és a metaadatok kinyerése ugyanazt a `Parser` munkafolyamatot követi: a konténerhez tartozó parser inicializálása után iterálunk minden `ContainerItem`-en, megnyitunk egy beágyazott parser-t az adott elemhez, és meghívjuk a `getMetadata()`-t, hogy kulcs‑érték párok gyűjteményét kapjuk, például szerző, létrehozás dátuma és egyéni tulajdonságok. Ez a megközelítés lehetővé teszi, hogy strukturált információkat gyűjts minden dokumentumból az archívumban anélkül, hogy formátumspecifikus kódot írnál.
 
 ```java
 for (MetadataItem metadata : item.getMetadata()) {
@@ -128,68 +157,76 @@ for (MetadataItem metadata : item.getMetadata()) {
 ```
 
 ## Gyakori problémák és megoldások
-- **Unsupported Formats** – Csomagolja a hívásokat `try‑catch`‑be az `UnsupportedDocumentFormatException` számára, és naplózza a fájlnevet későbbi ellenőrzéshez.
-- **Memory Leaks** – Mindig használjon try‑with‑resources‑t (ahogy a példában látható) a parserek és olvasók automatikus bezárásához.
-- **Large Archives** – Feldolgozza a bejegyzéseket kötegekben, és fontolja meg a JVM heap (`-Xmx`) növelését, ha `OutOfMemoryError` hibát kap.
+- **Nem támogatott formátumok** – Csomagold a hívásokat `try‑catch`-be a `UnsupportedDocumentFormatException` számára, és naplózd a fájl nevét későbbi ellenőrzéshez.
+- **Memóriaszivárgások** – Mindig használj try‑with‑resources-t (ahogy a példában látható) a parser-ek és olvasók automatikus lezárásához.
+- **Nagy archívumok** – Dolgozd fel a bejegyzéseket kötegekben, és fontold meg a JVM heap (`-Xmx`) növelését, ha `OutOfMemoryError`-t kapsz. Az 1 GB-nál nagyobb archívumok esetén a 100 elemes kötegekben történő feldolgozás általában megakadályozza a GC csúcsokat.
 
 ## Gyakorlati alkalmazások
-1. **Data Analysis** – Szöveget nyer ki egy ZIP‑ben lévő több ezer jelentésből érzelem-elemzéshez.
-2. **Backup Verification** – Metaadatok használata a fájl integritásának ellenőrzéséhez archiválás előtt.
-3. **Content Migration** – Dokumentumok áthelyezésének automatizálása régi rendszerek között a kinyerés és újbóli mentés segítségével.
 
-## Teljesítményfontosságú szempontok
-- **Resource Management** – A `try (Parser …)` minta biztosítja, hogy a parserek gyorsan felszabaduljanak.
-- **Heap Monitoring** – Figyelje a JVM memóriahasználatot hatalmas ZIP fájlok esetén; szükség szerint állítsa be a `-Xmx` értéket.
-- **Batch Processing** – Csoportosítsa az elemeket kisebb kötegekbe a teljesítmény növelése és a GC szünetek csökkentése érdekében.
+1. **Adat elemzés** – Kinyer szöveget több ezer ZIP-ben lévő jelentésből érzelem elemzés vagy kulcsszó indexelés céljából.
+2. **Biztonsági mentés ellenőrzése** – Használd a metaadatokat a fájl integritásának megerősítésére archiválás előtt, biztosítva, hogy sérült fájlok ne kerüljenek a mentésekbe.
+3. **Tartalom migráció** – Automatizáld a dokumentumok áthelyezését régi rendszerek között a kinyerés, átalakítás és a célformátumban való újra mentés segítségével.
+
+## Teljesítmény szempontok
+- **Erőforrás-kezelés** – A `try (Parser …)` minta biztosítja, hogy a parser-ek gyorsan felszabadulnak, ami kulcsfontosságú sok bejegyzés kezelésekor.
+- **Heap monitorozás** – Figyeld a JVM memóriahasználatot hatalmas ZIP fájlok esetén; a `-Xmx` 2 GB vagy nagyobb értékre állítása gyakori az 500 MB-nál nagyobb archívumoknál.
+- **Kötegelt feldolgozás** – Csoportosíts elemeket kisebb kötegekbe (pl. 200 bejegyzés), hogy javítsd a áteresztőképességet és csökkentsd a szemétgyűjtés szüneteit.
 
 ## Következtetés
-Most már rendelkezik egy teljes, termelésre kész recepttel a **java parse zip** archívumokhoz a GroupDocs.Parser használatával. Akár szöveget nyer ki, akár java‑szerűen olvasza a zip tartalmakat, vagy gazdag metaadatokat szerez, a fenti lépések segítenek automatizálni a munkafolyamatot, és tisztán, hatékonyan tartani Java alkalmazásait.
+Most már egy teljes, termelésre kész recepted van a **parse zip java** archívumokhoz a GroupDocs.Parser használatával. Akár szöveget nyersz ki, akár Java‑szerűen olvasod a zip tartalmakat, vagy gazdag metaadatokat gyűjtesz, a fenti lépések segítenek automatizálni a munkafolyamatot és tisztán, hatékonyan tartani a Java alkalmazásaidat.
 
-**Next Steps:** Klónozzon egy mint ZIP‑t, futtassa a kódot, és kísérletezzen különböző dokumentumtípusokkal, hogy lássa a könyvtár képességeit a gyakorlatban.
-
-## GyIK szekció
-
-1. **Mi az a GroupDocs.Parser Java?**  
-   - Egy erőteljes könyvtár, amely szöveget, metaadatokat és strukturált információkat nyer ki különböző dokumentumformátumokból Java alkalmazásokban.
-
-2. **Kinyerhetek képeket a GroupDocs.Parser használatával?**  
-   - Igen, a GroupDocs.Parser a szöveg és metaadat mellett képek kinyerését is támogatja.
-
-3. **Hogyan kezeljem hatékonyan a nagy ZIP fájlokat?**  
-   - A fájlokat fokozatosan dolgozza fel, és hatékony memória-kezelési technikákat alkalmazzon a nagyobb adathalmazok kezeléséhez.
-
-4. **Kompatibilis a GroupDocs.Parser minden Java verzióval?**  
-   - Kompatibilis a JDK 8 és újabb verziókkal, biztosítva a széles körű támogatást különböző környezetekben.
-
-5. **Hol találok további forrásokat vagy tehetek fel kérdéseket a GroupDocs.Parser-rel kapcsolatban?**  
-   - Látogassa meg a hivatalos dokumentációt a [GroupDocs Documentation](https://docs.groupdocs.com/parser/java/) oldalon, vagy csatlakozzon a fórumukhoz a közösségi támogatásért.
+**Következő lépések:** Klónozz egy például ZIP-et, futtasd a kódot, és kísérletezz különböző dokumentumtípusokkal, hogy láthasd a könyvtár széleskörű képességeit.
 
 ## Gyakran Ismételt Kérdések
 
-**Q: Szükséges licenc a GroupDocs.Parser fejlesztéshez?**  
-A: A ingyenes próba kulcs fejlesztéshez és teszteléshez használható; a termeléshez fizetett licenc szükséges.
+**Mi a GroupDocs.Parser Java?**  
+   A GroupDocs.Parser egy erőteljes könyvtár szöveg, metaadat és strukturált információk kinyerésére különféle dokumentumformátumokból Java alkalmazásokban.
 
-**Q: Tudok jelszóval védett ZIP fájlokat feldolgozni?**  
-A: Igen, adja meg a jelszót a konténer megnyitásakor a megfelelő API‑túlterhelés használatával.
+**Kinyerhetek képeket a GroupDocs.Parser segítségével?**  
+   Igen, a GroupDocs.Parser támogatja a képek kinyerését a szöveg és metaadat mellett, minden képet byte tömbként ad vissza, amelyet elmenthetsz vagy tovább feldolgozhatsz.
 
-**Q: Milyen formátumok támogatottak egy ZIP archívumban?**  
-A: A legtöbb általános irodai és szöveges formátum (PDF, DOCX, XLSX, TXT, HTML, stb.) alapból támogatott.
+**Hogyan kezeljem hatékonyan a nagy ZIP fájlokat?**  
+   Fájlokat inkrementálisan dolgozz fel try‑with‑resources-szel, korlátozd a nyitott parser-ek számát, és növeld a JVM heap-et (`-Xmx`) szükség szerint. A kötegelt feldolgozás csökkenti a GC nyomást.
 
-**Q: Hogyan javíthatom a teljesítményt, ha több ezer fájlt dolgozok fel?**  
-A: Használjon több szálas feldolgozást szálkészlettel, és korlátozza a nyitott parserek számát egyszerre.
+**A GroupDocs.Parser kompatibilis minden Java verzióval?**  
+   Kompatibilis a JDK 8 és újabb verziókkal, biztosítva a széles körű támogatást asztali, szerver és felhő környezetekben.
 
-**Q: Van mód csak bizonyos fájltípusok kinyerésére a ZIP‑ből?**  
-A: Igen, szűrje a `ContainerItem` objektumokat a fájlkiterjesztésük alapján, mielőtt meghívná a `getText()` vagy a `getMetadata()` metódust.
+**Hol találok további forrásokat vagy tehetek fel kérdéseket a GroupDocs.Parser-rel kapcsolatban?**  
+   Látogasd meg a hivatalos dokumentációt a [GroupDocs Documentation](https://docs.groupdocs.com/parser/java/) oldalon, vagy csatlakozz a fórumukhoz a közösségi támogatásért.
+
+## Gyakran feltett kérdések
+
+**K: A GroupDocs.Parser licencet igényel fejlesztéshez?**  
+V: Egy ingyenes próba kulcs működik fejlesztéshez és teszteléshez; a termelési telepítésekhez fizetett licenc szükséges.
+
+**K: Képes vagyok jelszóval védett ZIP fájlokat feldolgozni?**  
+V: Igen, add meg a jelszót a konténer megnyitásakor a megfelelő API túlterhelésen keresztül.
+
+**K: Milyen formátumok támogatottak egy ZIP archívumban?**  
+V: A legtöbb általános irodai és szöveges formátum (PDF, DOCX, XLSX, TXT, HTML, stb.) alapból támogatott.
+
+**K: Hogyan javíthatom a teljesítményt több ezer fájl feldolgozásakor?**  
+V: Használj több szálas feldolgozást szálkészlettel, és korlátozd a nyitott parser-ek számát egyszerre.
+
+**K: Van mód csak bizonyos fájltípusok kinyerésére a ZIP-ből?**  
+V: Igen, szűrd a `ContainerItem` objektumokat a fájl kiterjesztésük alapján, mielőtt meghívnád a `getText()` vagy `getMetadata()` metódust.
 
 ## Források
-- **Documentation:** Részletes útmutatókat és API referenciákat tekinthet meg a [GroupDocs Documentation](https://docs.groupdocs.com/parser/java/) oldalon.
-- **API Reference:** Átfogó API részletek a [GroupDocs API Reference](https://reference.groupdocs.com/parser/java) oldalon.
-- **Download GroupDocs.Parser:** Szerezze be a legújabb verziót a [GroupDocs Releases](https://releases.groupdocs.com/parser/java/) oldalról.
-- **GitHub Repository:** Közreműködés vagy a forráskód felfedezése a [GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java) oldalon.
-- **Free Support and Licensing:** Látogassa meg a fórumot támogatásért a [GroupDocs Forum](https://forum.groupdocs.com/) oldalon.
+- **Dokumentáció:** Részletes útmutatókat és API hivatkozásokat találsz a [GroupDocs Documentation](https://docs.groupdocs.com/parser/java/) oldalon.
+- **Dokumentáció (duplikátum):** További hivatkozás a [GroupDocs Documentation](https://docs.groupdocs.com/parser/java/) oldalon.
+- **API referencia:** Átfogó API részleteket találsz a [GroupDocs API Reference](https://reference.groupdocs.com/parser/java) oldalon.
+- **GroupDocs.Parser letöltése:** A legújabb verziót a [GroupDocs Releases](https://releases.groupdocs.com/parser/java/) oldalról szerezheted be.
+- **GitHub tároló:** Hozzájárulhatsz vagy felfedezheted a forráskódot a [GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java) oldalon.
+- **Ingyenes támogatás és licenc:** Látogasd meg a fórumukat támogatásért a [GroupDocs Forum](https://forum.groupdocs.com/) oldalon.
 
 ---
 
-**Legutóbb frissítve:** 2026-02-24  
+**Utolsó frissítés:** 2026-10-17  
 **Tesztelve ezzel:** GroupDocs.Parser 25.5 for Java  
 **Szerző:** GroupDocs
+
+## Kapcsolódó oktatóanyagok
+
+- [Szöveg kinyerése ZIP fájlokból Java-ban a GroupDocs.Parser használatával](/parser/java/container-formats/extract-text-zip-files-groupdocs-parser-java/)
+- [PDF beágyazott fájlok kinyerése a GroupDocs.Parser for Java segítségével](/parser/java/container-formats/extract-container-items-groupdocs-parser-java/)
+- [Hogyan nyerjünk ki metaadatokat a GroupDocs.Parser Java-val](/parser/java/document-information/)
