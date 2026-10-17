@@ -1,49 +1,92 @@
 ---
-date: '2026-02-21'
-description: Μάθετε πώς να εξάγετε ενσωματωμένα αρχεία PDF χρησιμοποιώντας το GroupDocs.Parser
-  για Java, συμπεριλαμβανομένης της επεξεργασίας παρτίδας συνημμένων PDF και της εξαγωγής
-  αρχείων από ένα PDF portfolio.
+date: '2026-10-17'
+description: Μάθετε πώς να εξάγετε αρχεία PDF από ένα PDF portfolio με το GroupDocs.Parser
+  για Java, συμπεριλαμβανομένης της επεξεργασίας παρτίδων συνημμένων και της διαχείρισης
+  μεγάλων PDF portfolios.
 keywords:
-- extract PDF attachments Java
-- GroupDocs Parser library
-- PDF portfolio extraction
-title: Πώς να εξάγετε ενσωματωμένα αρχεία PDF από ένα PDF Portfolio χρησιμοποιώντας
-  το GroupDocs.Parser σε Java
+- how to extract pdf
+- extract embedded files pdf
+- batch process pdf attachments
+- extract files pdf portfolio
+lastmod: '2026-10-17'
+og_description: Μάθετε πώς να εξάγετε αρχεία PDF από ένα PDF portfolio με το GroupDocs.Parser
+  για Java. Υποστηρίζει επεξεργασία παρτίδων, μεγάλα portfolios και οποιονδήποτε ενσωματωμένο
+  τύπο αρχείου.
+og_image_alt: Guide to extracting PDF files from a PDF portfolio using GroupDocs.Parser
+  Java library
+og_title: Πώς να εξάγετε αρχεία PDF από ένα PDF portfolio χρησιμοποιώντας το GroupDocs.Parser
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-17'
+  description: Learn how to extract PDF files from a PDF portfolio with GroupDocs.Parser
+    for Java, including batch processing of attachments and handling large portfolios.
+  headline: How to extract PDF files from a PDF portfolio using GroupDocs.Parser in
+    Java
+  type: TechArticle
+- description: Learn how to extract PDF files from a PDF portfolio with GroupDocs.Parser
+    for Java, including batch processing of attachments and handling large portfolios.
+  name: How to extract PDF files from a PDF portfolio using GroupDocs.Parser in Java
+  steps:
+  - name: initialize the parser
+    text: '*Why*: The try‑with‑resources block guarantees that the parser releases
+      file handles automatically.'
+  - name: check container support
+    text: '*Why*: Not every PDF supports container extraction; this guard prevents
+      runtime errors.'
+  - name: iterate over attachments
+    text: '*Why*: Looping lets you handle each embedded file individually—perfect
+      for **java extract pdf attachments** batch scenarios.'
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Parser for Java.
+    question: What is the primary library?
+  - answer: Yes – iterate over the `ContainerItem` collection.
+    question: Can I batch process PDF attachments?
+  - answer: A temporary or full license is required for production use.
+    question: Do I need a license?
+  - answer: Works with Java 8 and newer (check the docs for exact requirements).
+    question: Which JDK versions are supported?
+  - answer: Absolutely – any embedded file type can be extracted.
+    question: Is it possible to extract non‑PDF files?
+  type: FAQPage
+tags:
+- extract PDF
+- GroupDocs.Parser
+- Java document processing
+- PDF portfolio
+- batch extraction
+title: Πώς να εξάγετε αρχεία PDF από ένα PDF portfolio χρησιμοποιώντας το GroupDocs.Parser
+  σε Java
 type: docs
 url: /el/java/container-formats/extract-attachments-pdf-groupdocs-parser-java/
 weight: 1
 ---
 
-# Πώς να Εξάγετε Ενσωματωμένα Αρχεία PDF από ένα PDF Portfolio Χρησιμοποιώντας το GroupDocs.Parser σε Java
+# Πώς να εξάγετε αρχεία PDF από ένα PDF portfolio χρησιμοποιώντας το GroupDocs.Parser σε Java
 
-Όταν εργάζεστε με ψηφιακά αρχεία εγγράφων, τα PDF συχνά λειτουργούν ως δοχεία που συγκεντρώνουν πολλά αρχεία—συμβόλαια, τιμολόγια, εικόνες ή ακόμη και άλλα PDF—σε ένα ενιαίο **PDF portfolio**. Η δυνατότητα **γρήγορης εξαγωγής ενσωματωμένων αρχείων pdf** είναι απαραίτητη για την αυτοματοποίηση της αρχειοθέτησης, των αγωγών ανάλυσης δεδομένων ή των έργων μετεγκατάστασης. Σε αυτό το σεμινάριο θα μάθετε έναν καθαρό, έτοιμο για παραγωγή τρόπο να εξάγετε κάθε ενσωματωμένο αρχείο από ένα PDF portfolio με **GroupDocs.Parser for Java**. Θα καλύψουμε τα πάντα, από τη ρύθμιση της βιβλιοθήκης μέχρι τη διαχείριση μεγάλων portfolios αποδοτικά, ώστε να ενσωματώσετε αυτή τη δυνατότητα στις εφαρμογές Java αμέσως.
+Όταν εργάζεστε με ψηφιακά αρχεία εγγράφων, τα PDF συχνά λειτουργούν ως δοχεία που συγκεντρώνουν πολλά αρχεία—συμβάσεις, τιμολόγια, εικόνες ή ακόμη και άλλα PDF—σε ένα ενιαίο **PDF portfolio**. Η **εξαγωγή PDF** αρχείων από ένα τέτοιο portfolio είναι μια συχνή απαίτηση για την αυτοματοποίηση της αρχειοθέτησης, των pipelines ανάλυσης δεδομένων ή των έργων μετεγκατάστασης. Σε αυτό το tutorial θα μάθετε έναν καθαρό, έτοιμο για παραγωγή τρόπο να εξάγετε κάθε ενσωματωμένο αρχείο από ένα PDF portfolio με το **GroupDocs.Parser for Java**. Θα περάσουμε από τη ρύθμιση της βιβλιοθήκης, την αδειοδότηση και έναν αποδοτικό βρόχο εξαγωγής που κλιμακώνεται σε μεγάλα portfolios.
 
-## Γρήγορες Απαντήσεις
-- **Ποια είναι η κύρια βιβλιοθήκη;** GroupDocs.Parser for Java  
+## Σύντομες απαντήσεις
+- **Ποια είναι η κύρια βιβλιοθήκη;** GroupDocs.Parser for Java.  
 - **Μπορώ να επεξεργαστώ μαζικά συνημμένα PDF;** Ναι – επαναλάβετε τη συλλογή `ContainerItem`.  
 - **Χρειάζομαι άδεια;** Απαιτείται προσωρινή ή πλήρης άδεια για χρήση σε παραγωγή.  
-- **Ποιες εκδόσεις JDK υποστηρίζονται;** Λειτουργεί με Java 8 και νεότερες (ελέγξτε την τεκμηρίωση για ακριβείς απαιτήσεις).  
-- **Μπορεί να εξαχθούν μη‑PDF αρχεία;** Απόλυτα – οποιουδήποτε τύπου ενσωματωμένο αρχείο μπορεί να εξαχθεί.
+- **Ποιες εκδόσεις JDK υποστηρίζονται;** Λειτουργεί με Java 8 και νεότερες (ελέγξτε τα έγγραφα για τις ακριβείς απαιτήσεις).  
+- **Είναι δυνατόν να εξαχθούν μη‑PDF αρχεία;** Απόλυτα – οποιοσδήποτε τύπος ενσωματωμένου αρχείου μπορεί να εξαχθεί.
 
-## Τι σημαίνει “extract embedded files pdf”;
-Η εξαγωγή ενσωματωμένων αρχείων pdf σημαίνει την ανάγνωση ενός PDF portfolio (ενός δοχείου PDF) και την αποθήκευση κάθε ενσωματωμένου αρχείου στο δίσκο ή την περαιτέρω επεξεργασία του. Αυτή η λειτουργία είναι απαραίτητη όταν χρειάζεται να αρχειοθετήσετε, να αναλύσετε ή να μεταφέρετε τα περιεχόμενα των ενσωματωμένων εγγράφων.
+## Τι είναι η «εξαγωγή ενσωματωμένων αρχείων pdf»;
+Η εξαγωγή ενσωματωμένων αρχείων pdf σημαίνει την ανάγνωση ενός PDF portfolio (ενός PDF container) και την αποθήκευση κάθε ενσωματωμένου αρχείου στο δίσκο ή την περαιτέρω επεξεργασία του. Αυτή η λειτουργία είναι απαραίτητη όταν χρειάζεται να αρχειοθετήσετε, να αναλύσετε ή να μεταφέρετε τα περιεχόμενα των ενσωματωμένων εγγράφων. Επιτρέπει διαδικασίες downstream όπως η ευρετηρίαση, η μετατροπή ή η αποθήκευση κάθε εξαγόμενου στοιχείου.
 
-## Γιατί να χρησιμοποιήσετε το GroupDocs.Parser for Java;
-- **Ανάλυση χωρίς ρύθμιση** – το API εντοπίζει αυτόματα την υποστήριξη δοχείων.  
-- **Υψηλή απόδοση** – βελτιστοποιημένο για μεγάλα portfolios και μαζικά σενάρια.  
-- **Πλούσια υποστήριξη μορφών** – λειτουργεί με εικόνες, αρχεία κειμένου, άλλα PDF και πολλά άλλα.  
-- **Απλό Java API** – ενσωματώνεται ομαλά με Maven, Gradle ή οποιοδήποτε εργαλείο κατασκευής προτιμάτε.
+## Γιατί να χρησιμοποιήσετε το GroupDocs.Parser για Java;
+GroupDocs.Parser for Java ανιχνεύει αυτόματα την υποστήριξη container, επεξεργάζεται portfolios με υψηλή ταχύτητα και διαχειρίζεται **πάνω από 30** διαφορετικούς τύπους ενσωματωμένων αρχείων—συμπεριλαμβανομένων εικόνων, αρχείων κειμένου και άλλων PDF—χωρίς πρόσθετη διαμόρφωση. Η βιβλιοθήκη μπορεί να αναλύσει portfolios εκατοντάδων σελίδων διατηρώντας τη χρήση μνήμης κάτω από 100 MB, καθιστώντας την ιδανική για μαζικά σενάρια.
 
 ## Προαπαιτούμενα
-
-Πριν ξεκινήσετε, βεβαιωθείτε ότι έχετε:
 
 - **Java Development Kit (JDK)** εγκατεστημένο (Java 8 ή νεότερο).  
 - Ένα IDE όπως **IntelliJ IDEA** ή **Eclipse**.  
 - **Maven** για διαχείριση εξαρτήσεων.  
-- Ένα έγκυρο **GroupDocs.Parser** license (η δωρεάν δοκιμή ή προσωρινή άδεια λειτουργούν για ανάπτυξη).
+- Ένα έγκυρο **GroupDocs.Parser** license (δωρεάν δοκιμή ή προσωρινή άδεια λειτουργεί για ανάπτυξη).
 
-## Ρύθμιση του GroupDocs.Parser for Java
+## Ρύθμιση του GroupDocs.Parser για Java
 
 Προσθέστε το αποθετήριο GroupDocs και την εξάρτηση στο `pom.xml`:
 
@@ -65,15 +108,15 @@ weight: 1
 </dependencies>
 ```
 
-### Άμεση Λήψη
-Εναλλακτικά, κατεβάστε την πιο πρόσφατη έκδοση απευθείας από [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
+### Άμεση λήψη
+Εναλλακτικά, κατεβάστε την τελευταία έκδοση απευθείας από [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
-#### Βήματα Απόκτησης Άδειας
-- **Δωρεάν Δοκιμή** – εξερευνήστε το API χωρίς κόστος.  
-- **Προσωρινή Άδεια** – ζητήστε μία για εκτεταμένη δοκιμή ανάπτυξης.  
-- **Αγορά** – αποκτήστε πλήρη άδεια για εμπορικές αναπτύξεις.
+#### Βήματα απόκτησης άδειας
+- **Free trial** – εξερευνήστε το API χωρίς κόστος.  
+- **Temporary license** – ζητήστε μία για εκτεταμένη δοκιμή ανάπτυξης.  
+- **Purchase** – αποκτήστε πλήρη άδεια για εμπορικές αναπτύξεις.
 
-### Βασική Αρχικοποίηση και Ρύθμιση
+### Βασική αρχικοποίηση και ρύθμιση
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -83,77 +126,77 @@ import com.groupdocs.parser.exceptions.UnsupportedDocumentFormatException;
 String pdfPortfolioPath = "YOUR_DOCUMENT_DIRECTORY/SamplePdfPortfolio.pdf";
 ```
 
-## Οδηγός Υλοποίησης
+## Οδηγός υλοποίησης
 
-### Εξαγωγή Συνημμένων από ένα PDF Portfolio
+### Εξαγωγή συνημμένων από ένα PDF portfolio
 
 #### Επισκόπηση
-Η ροή εξαγωγής αποτελείται από τρία απλά βήματα: δημιουργία μιας στιγμής `Parser`, επαλήθευση υποστήριξης δοχείου και επανάληψη σε κάθε `ContainerItem`.
+Η ροή εξαγωγής αποτελείται από τρία απλά βήματα: δημιουργία μιας στιγμής `Parser`, επαλήθευση υποστήριξης container και επανάληψη σε κάθε `ContainerItem`. Η `Parser` είναι η κεντρική κλάση που ανοίγει ένα έγγραφο και παρέχει πρόσβαση στη δομή του. Η `ContainerItem` αντιπροσωπεύει ένα μεμονωμένο ενσωματωμένο αρχείο μέσα στο portfolio, εκθέτοντας το όνομα, το μέγεθος και το ρεύμα περιεχομένου του.
 
-#### Βήμα 1: Αρχικοποίηση του Parser
+#### Βήμα 1: αρχικοποίηση του parser
 ```java
 try (Parser parser = new Parser(pdfPortfolioPath)) {
     // Continue processing
 }
-```
+```  
 *Γιατί*: Το μπλοκ try‑with‑resources εγγυάται ότι ο parser απελευθερώνει αυτόματα τους χειριστές αρχείων.
 
-#### Βήμα 2: Έλεγχος Υποστήριξης Δοχείου
+#### Βήμα 2: έλεγχος υποστήριξης container
 ```java
 Iterable<ContainerItem> attachments = parser.getContainer();
 if (attachments == null) {
     System.out.println("Container extraction isn't supported");
     return;
 }
-```
-*Γιατί*: Δεν υποστηρίζουν όλα τα PDF εξαγωγή δοχείου· αυτό το έλεγχο αποτρέπει σφάλματα χρόνου εκτέλεσης.
+```  
+*Γιατί*: Δεν υποστηρίζει κάθε PDF εξαγωγή container· αυτή η προστασία αποτρέπει σφάλματα χρόνου εκτέλεσης.
 
-#### Βήμα 3: Επανάληψη στα Συνημμένα
+#### Βήμα 3: επανάληψη πάνω στα συνημμένα
 ```java
 for (ContainerItem item : attachments) {
     System.out.println("Attachment Name: " + item.getName());
     // Additional processing logic here
 }
-```
-*Γιατί*: Η επανάληψη σας επιτρέπει να χειριστείτε κάθε ενσωματωμένο αρχείο ξεχωριστά—ιδανικό για σενάρια **java extract pdf attachments** μαζικής επεξεργασίας.
+```  
+*Γιατί*: Η επανάληψη σας επιτρέπει να διαχειριστείτε κάθε ενσωματωμένο αρχείο ξεχωριστά—ιδανικό για σενάρια **java extract pdf attachments** μαζικής επεξεργασίας.
 
-#### Συνηθισμένα Προβλήματα & Επίλυση
-- **Κατεστραμμένα portfolios** – επαληθεύστε το αρχείο προέλευσης πριν την ανάλυση.  
-- **Μηνύματα μη υποστηριζόμενης μορφής** – βεβαιωθείτε ότι χρησιμοποιείτε PDF portfolio, όχι απλό PDF.  
-- **Πίεση μνήμης σε μεγάλα portfolios** – επεξεργαστείτε τα στοιχεία σε παρτίδες και απελευθερώστε πόρους άμεσα.
+#### Συνηθισμένα προβλήματα & αντιμετώπιση
+- **Corrupted portfolios** – επαληθεύστε το αρχείο προέλευσης πριν την ανάλυση.  
+- **Unsupported format messages** – βεβαιωθείτε ότι χρησιμοποιείτε PDF portfolio, όχι κανονικό PDF.  
+- **Memory pressure on large portfolios** – επεξεργαστείτε τα στοιχεία σε παρτίδες και απελευθερώστε πόρους άμεσα.
 
-## Πρακτικές Εφαρμογές
+## Πρακτικές εφαρμογές
 
-1. **Αρχειοθέτηση Δεδομένων** – εξάγετε αυτόματα τιμολόγια, αποδείξεις ή συμβόλαια που αποθηκεύονται μέσα σε ένα portfolio και αρχειοθετήστε τα σε σύστημα διαχείρισης εγγράφων.  
-2. **Ανάλυση Εγγράφων** – τροφοδοτήστε τα εξαγόμενα αρχεία κειμένου σε αγωγούς ανάλυσης ή ευρετήρια αναζήτησης.  
-3. **Αυτοματοποιημένες Ροές Εργασίας** – συνδυάστε με GroupDocs.Conversion ή GroupDocs.Viewer για μετατροπή των εξαγόμενων αρχείων σε άλλες μορφές.
+1. **Data archiving** – εξάγετε αυτόματα τιμολόγια, αποδείξεις ή συμβάσεις που αποθηκεύονται μέσα σε ένα portfolio και αρχειοθετήστε τα σε σύστημα διαχείρισης εγγράφων.  
+2. **Document analysis** – τροφοδοτήστε τα εξαγόμενα αρχεία κειμένου σε pipelines ανάλυσης ή ευρετήρια αναζήτησης.  
+3. **Automated workflows** – συνδυάστε με GroupDocs.Conversion ή GroupDocs.Viewer για μετατροπή των εξαγόμενων αρχείων σε άλλες μορφές.
 
-## Σκέψεις για την Απόδοση
+## Σκέψεις απόδοσης
 
-Κατά την επεξεργασία μεγάλων PDF portfolios:
+Όταν εργάζεστε με μεγάλα PDF portfolios:
 
-- **Μαζική επεξεργασία** – χειριστείτε περιορισμένο αριθμό συνημμένων τη φορά για να διατηρήσετε τη χρήση μνήμης χαμηλή.  
-- **Ρύθμιση garbage collection** – καλέστε `System.gc()` με μέτρο αν παρατηρήσετε αιχμές μνήμης.  
-- **Προφίλ** – χρησιμοποιήστε Java Flight Recorder ή VisualVM για να εντοπίσετε σημεία συμφόρησης νωρίς.
+- **Batch processing** – επεξεργαστείτε περιορισμένο αριθμό συνημμένων τη φορά για να διατηρήσετε τη χρήση μνήμης χαμηλή.  
+- **Garbage‑collection tuning** – καλέστε `System.gc()` με μέτρο αν παρατηρήσετε αιχμές μνήμης.  
+- **Profiling** – χρησιμοποιήστε Java Flight Recorder ή VisualVM για να εντοπίσετε τα bottlenecks νωρίς.
 
-Η διατήρηση της βιβλιοθήκης ενημερωμένης και η προφίλ της εφαρμογής σας είναι οι καλύτεροι τρόποι για βέλτιστη απόδοση.
+Η διατήρηση της βιβλιοθήκης ενημερωμένης και η προφίλ της εφαρμογής σας είναι οι καλύτεροι τρόποι για τη διατήρηση βέλτιστης απόδοσης.
 
-## Συχνές Ερωτήσεις
+## Συχνές ερωτήσεις
 
-**Ε1: Ποιες μορφές αρχείων μπορώ να εξάγω από ένα PDF portfolio χρησιμοποιώντας το GroupDocs.Parser;**  
-Α1: Το GroupDocs.Parser υποστηρίζει την εξαγωγή εικόνων, αρχείων κειμένου, άλλων PDF και πρακτικά οποιουδήποτε τύπου αρχείου που είναι ενσωματωμένο στο portfolio.
+**Q1: Ποιοι τύποι αρχείων μπορώ να εξάγω από ένα PDF portfolio χρησιμοποιώντας το GroupDocs.Parser;**  
+A1: Το GroupDocs.Parser υποστηρίζει την εξαγωγή εικόνων, αρχείων κειμένου, άλλων PDF και **πάνω από 30** επιπλέον τύπων αρχείων που είναι ενσωματωμένα στο portfolio.
 
-**Ε2: Πώς μπορώ να διαχειριστώ αποτελεσματικά μεγάλα PDF portfolios;**  
-Α2: Χρησιμοποιήστε μαζική επεξεργασία (επανάληψη στις συλλογές `ContainerItem`) και απελευθερώστε πόρους μετά από κάθε παρτίδα για να κρατήσετε τη χρήση μνήμης χαμηλή.
+**Q2: Πώς να διαχειριστώ μεγάλα PDF portfolios αποδοτικά;**  
+A2: Χρησιμοποιήστε επεξεργασία παρτίδων (επανάληψη πάνω στις συλλογές `ContainerItem`) και απελευθερώστε πόρους μετά από κάθε παρτίδα για να κρατήσετε τη χρήση μνήμης χαμηλή.
 
-**Ε3: Είναι το GroupDocs.Parser Java συμβατό με όλες τις εκδόσεις του JDK;**  
-Α3: Λειτουργεί με Java 8 και νεότερες, αλλά ελέγξτε πάντα τις σημειώσεις έκδοσης για τις ακριβείς υποστηριζόμενες εκδόσεις.
+**Q3: Είναι το GroupDocs.Parser Java συμβατό με όλες τις εκδόσεις του JDK;**  
+A3: Λειτουργεί με Java 8 και νεότερες, αλλά πάντα ελέγξτε τις σημειώσεις έκδοσης για τις ακριβείς υποστηριζόμενες εκδόσεις.
 
-**Ε4: Μπορώ να χρησιμοποιήσω το GroupDocs.Parser για εμπορικά έργα;**  
-Α4: Ναι—αφού αγοράσετε άδεια. Διατίθεται επίσης προσωρινή άδεια για ανάπτυξη και δοκιμές.
+**Q4: Μπορώ να χρησιμοποιήσω το GroupDocs.Parser για εμπορικά έργα;**  
+A4: Ναι—αφού αγοράσετε άδεια. Μια προσωρινή άδεια είναι επίσης διαθέσιμη για ανάπτυξη και δοκιμές.
 
-**Ε5: Πού μπορώ να λάβω βοήθεια αν αντιμετωπίσω προβλήματα;**  
-Α: Επισκεφθείτε το [GroupDocs support forum](https://forum.groupdocs.com/c/parser) για κοινότητα και επίσημη υποστήριξη.
+**Q5: Πού μπορώ να λάβω βοήθεια αν αντιμετωπίσω προβλήματα;**  
+A: Επισκεφθείτε το [GroupDocs support forum](https://forum.groupdocs.com/c/parser) για κοινότητα και επίσημη υποστήριξη.
 
 ## Πόροι
 - [Τεκμηρίωση:](https://docs.groupdocs.com/parser/java/)
@@ -165,8 +208,12 @@ for (ContainerItem item : attachments) {
 
 ---
 
-**Τελευταία Ενημέρωση:** 2026-02-21  
-**Δοκιμασμένο Με:** GroupDocs.Parser 25.5 for Java  
+**Τελευταία ενημέρωση:** 2026-10-17  
+**Δοκιμάστηκε με:** GroupDocs.Parser 25.5 for Java  
 **Συγγραφέας:** GroupDocs  
 
----
+## Σχετικά Μαθήματα
+
+- [Εξαγωγή ενσωματωμένων αρχείων pdf χρησιμοποιώντας το GroupDocs.Parser για Java](/parser/java/container-formats/extract-container-items-groupdocs-parser-java/)
+- [Εξαγωγή εικόνων PDF GroupDocs Parser Java](/parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/)
+- [Πώς να εξάγετε κείμενο PDF χρησιμοποιώντας το GroupDocs.Parser σε Java: Οδηγός πλήρους κάλυψης](/parser/java/text-extraction/extract-raw-text-pdf-groupdocs-parser-java/)

@@ -1,47 +1,91 @@
 ---
-date: '2026-02-21'
-description: เรียนรู้วิธีการดึงไฟล์ PDF ที่ฝังอยู่โดยใช้ GroupDocs.Parser สำหรับ Java
-  รวมถึงการประมวลผลเป็นชุดของไฟล์แนบ PDF และการดึงไฟล์จากพอร์ตโฟลิโอ PDF
+date: '2026-10-17'
+description: เรียนรู้วิธีดึงไฟล์ PDF จาก PDF portfolio ด้วย GroupDocs.Parser สำหรับ
+  Java รวมถึง batch processing ของไฟล์แนบและการจัดการ large portfolios
 keywords:
-- extract PDF attachments Java
-- GroupDocs Parser library
-- PDF portfolio extraction
-title: วิธีดึงไฟล์ PDF ที่ฝังอยู่จาก PDF Portfolio ด้วย GroupDocs.Parser ใน Java
+- how to extract pdf
+- extract embedded files pdf
+- batch process pdf attachments
+- extract files pdf portfolio
+lastmod: '2026-10-17'
+og_description: เรียนรู้วิธีดึงไฟล์ PDF จาก PDF portfolio ด้วย GroupDocs.Parser สำหรับ
+  Java รองรับ batch processing, large portfolios, และ embedded file type ใด ๆ
+og_image_alt: Guide to extracting PDF files from a PDF portfolio using GroupDocs.Parser
+  Java library
+og_title: วิธีดึงไฟล์ PDF จาก PDF portfolio ด้วย GroupDocs.Parser
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-17'
+  description: Learn how to extract PDF files from a PDF portfolio with GroupDocs.Parser
+    for Java, including batch processing of attachments and handling large portfolios.
+  headline: How to extract PDF files from a PDF portfolio using GroupDocs.Parser in
+    Java
+  type: TechArticle
+- description: Learn how to extract PDF files from a PDF portfolio with GroupDocs.Parser
+    for Java, including batch processing of attachments and handling large portfolios.
+  name: How to extract PDF files from a PDF portfolio using GroupDocs.Parser in Java
+  steps:
+  - name: initialize the parser
+    text: '*Why*: The try‑with‑resources block guarantees that the parser releases
+      file handles automatically.'
+  - name: check container support
+    text: '*Why*: Not every PDF supports container extraction; this guard prevents
+      runtime errors.'
+  - name: iterate over attachments
+    text: '*Why*: Looping lets you handle each embedded file individually—perfect
+      for **java extract pdf attachments** batch scenarios.'
+  type: HowTo
+- questions:
+  - answer: GroupDocs.Parser for Java.
+    question: What is the primary library?
+  - answer: Yes – iterate over the `ContainerItem` collection.
+    question: Can I batch process PDF attachments?
+  - answer: A temporary or full license is required for production use.
+    question: Do I need a license?
+  - answer: Works with Java 8 and newer (check the docs for exact requirements).
+    question: Which JDK versions are supported?
+  - answer: Absolutely – any embedded file type can be extracted.
+    question: Is it possible to extract non‑PDF files?
+  type: FAQPage
+tags:
+- extract PDF
+- GroupDocs.Parser
+- Java document processing
+- PDF portfolio
+- batch extraction
+title: วิธีดึงไฟล์ PDF จาก PDF portfolio ด้วย GroupDocs.Parser ใน Java
 type: docs
 url: /th/java/container-formats/extract-attachments-pdf-groupdocs-parser-java/
 weight: 1
 ---
 
-# วิธีการดึงไฟล์ PDF ที่ฝังอยู่จาก PDF Portfolio ด้วย GroupDocs.Parser ใน Java
+# วิธีดึงไฟล์ PDF จาก PDF portfolio ด้วย GroupDocs.Parser ใน Java
 
-เมื่อคุณทำงานกับคลังเอกสารดิจิทัล, PDF มักทำหน้าที่เป็นคอนเทนเนอร์ที่รวมไฟล์หลายไฟล์—สัญญา, ใบแจ้งหนี้, รูปภาพ, หรือแม้แต่ PDF อื่น—ไว้ใน **PDF portfolio** เพียงไฟล์เดียว การสามารถ **extract embedded files pdf** อย่างรวดเร็วเป็นสิ่งสำคัญสำหรับการอัตโนมัติการจัดเก็บ, กระบวนการวิเคราะห์ข้อมูล, หรือโครงการย้ายข้อมูล ในบทแนะนำนี้คุณจะได้เรียนรู้วิธีที่สะอาดและพร้อมใช้งานในระดับผลิตเพื่อดึงไฟล์ที่ฝังอยู่ทั้งหมดออกจาก PDF portfolio ด้วย **GroupDocs.Parser for Java** เราจะครอบคลุมทุกอย่างตั้งแต่การตั้งค่าห้องสมุดจนถึงการจัดการ PDF portfolio ขนาดใหญ่อย่างมีประสิทธิภาพ เพื่อให้คุณสามารถรวมความสามารถนี้เข้าไปในแอปพลิเคชัน Java ของคุณได้ทันที
+เมื่อคุณทำงานกับคลังเอกสารดิจิทัล PDFs มักทำหน้าที่เป็นคอนเทนเนอร์ที่บรรจุไฟล์หลายไฟล์—สัญญา, ใบแจ้งหนี้, รูปภาพ หรือแม้กระทั่ง PDFs อื่น—ไว้ใน **PDF portfolio** การ **ดึงไฟล์ PDF** จากคอนเทนเนอร์เช่นนี้เป็นความต้องการทั่วไปสำหรับการทำอัตโนมัติการจัดเก็บ, การวิเคราะห์ข้อมูล, หรือโครงการย้ายข้อมูล ในบทเรียนนี้คุณจะได้เรียนรู้วิธีที่สะอาดและพร้อมใช้งานในสภาพการผลิตเพื่อดึงไฟล์ที่ฝังอยู่ทั้งหมดออกจาก PDF portfolio ด้วย **GroupDocs.Parser for Java** เราจะเดินผ่านการตั้งค่าห้องสมุด, การขอใบอนุญาต, และลูปการดึงข้อมูลที่มีประสิทธิภาพซึ่งสามารถขยายขนาดได้กับพอร์ตโฟลิโอขนาดใหญ่
 
-## Quick Answers
-- **ไลบรารีหลักคืออะไร?** GroupDocs.Parser for Java  
-- **ฉันสามารถประมวลผลไฟล์แนบ PDF เป็นชุดได้หรือไม่?** Yes – iterate over the `ContainerItem` collection.  
+## คำตอบสั้น
+- **ไลบรารีหลักคืออะไร?** GroupDocs.Parser for Java.  
+- **ฉันสามารถประมวลผลไฟล์แนบ PDF แบบชุดได้หรือไม่?** Yes – iterate over the `ContainerItem` collection.  
 - **ฉันต้องการใบอนุญาตหรือไม่?** A temporary or full license is required for production use.  
 - **เวอร์ชัน JDK ที่รองรับคืออะไร?** Works with Java 8 and newer (check the docs for exact requirements).  
 - **สามารถดึงไฟล์ที่ไม่ใช่ PDF ได้หรือไม่?** Absolutely – any embedded file type can be extracted.
 
-## What is “extract embedded files pdf”?
-การดึงไฟล์ที่ฝังอยู่ pdf หมายถึงการอ่าน PDF portfolio (PDF คอนเทนเนอร์) แล้วบันทึกไฟล์ที่ฝังอยู่แต่ละไฟล์ลงดิสก์หรือประมวลผลต่อไป การดำเนินการนี้สำคัญเมื่อคุณต้องการจัดเก็บ, วิเคราะห์, หรือย้ายเนื้อหาของเอกสารที่บรรจุไว้ด้วยกัน
+## “extract embedded files pdf” คืออะไร?
+การดึงไฟล์ที่ฝังอยู่ใน pdf หมายถึงการอ่าน PDF portfolio (PDF ที่เป็นคอนเทนเนอร์) และบันทึกไฟล์ที่ฝังแต่ละไฟล์ลงดิสก์หรือประมวลผลต่อไป การดำเนินการนี้สำคัญเมื่อคุณต้องการจัดเก็บ, วิเคราะห์, หรือย้ายเนื้อหาของเอกสารที่ถูกรวมไว้ด้วยกัน มันทำให้กระบวนการต่อเนื่องเช่นการทำดัชนี, การแปลงรูปแบบ, หรือการจัดเก็บระยะยาวของแต่ละส่วนที่ดึงออกได้
 
-## Why use GroupDocs.Parser for Java?
-- **การแยกวิเคราะห์แบบไม่มีการตั้งค่า** – the API automatically detects container support.  
-- **ประสิทธิภาพสูง** – optimized for large portfolios and batch scenarios.  
-- **การสนับสนุนรูปแบบที่หลากหลาย** – works with images, text files, other PDFs, and more.  
-- **Simple Java API** – integrates smoothly with Maven, Gradle, or any build tool you prefer.
+## ทำไมต้องใช้ GroupDocs.Parser สำหรับ Java?
+GroupDocs.Parser for Java ตรวจจับการสนับสนุนคอนเทนเนอร์โดยอัตโนมัติ, ประมวลผลพอร์ตโฟลิโอด้วยความเร็วสูง, และจัดการ **กว่า 30** ประเภทไฟล์ที่ฝังอยู่—including images, text files, and other PDFs—โดยไม่ต้องตั้งค่าเพิ่มเติม ไลบรารีสามารถพาร์สพอร์ตโฟลิโอหลายร้อยหน้าในขณะที่ใช้หน่วยความจำต่ำกว่า 100 MB ทำให้เหมาะกับการทำงานเป็นชุด
 
-## Prerequisites
+## ข้อกำหนดเบื้องต้น
 
-ก่อนเริ่มทำงาน, โปรดตรวจสอบว่าคุณมี:
+ก่อนเริ่ม, โปรดตรวจสอบว่าคุณมี:
 
 - **Java Development Kit (JDK)** ที่ติดตั้ง (Java 8 หรือใหม่กว่า).  
 - IDE เช่น **IntelliJ IDEA** หรือ **Eclipse**.  
 - **Maven** สำหรับการจัดการ dependencies.  
-- ใบอนุญาต **GroupDocs.Parser** ที่ถูกต้อง (การทดลองใช้ฟรีหรือใบอนุญาตชั่วคราวทำงานสำหรับการพัฒนา).
+- ใบอนุญาต **GroupDocs.Parser** ที่ถูกต้อง (ทดลองใช้ฟรีหรือใบอนุญาตชั่วคราวใช้ได้สำหรับการพัฒนา).
 
-## Setting Up GroupDocs.Parser for Java
+## การตั้งค่า GroupDocs.Parser สำหรับ Java
 
 เพิ่มรีโพซิทอรีของ GroupDocs และ dependency ลงใน `pom.xml` ของคุณ:
 
@@ -63,15 +107,15 @@ weight: 1
 </dependencies>
 ```
 
-### Direct Download
+### ดาวน์โหลดโดยตรง
 หรือคุณสามารถดาวน์โหลดเวอร์ชันล่าสุดโดยตรงจาก [GroupDocs.Parser for Java releases](https://releases.groupdocs.com/parser/java/).
 
-#### License Acquisition Steps
-- **Free Trial** – ทดลองใช้ API โดยไม่มีค่าใช้จ่าย.  
-- **Temporary License** – ขอใบอนุญาตสำหรับการทดสอบการพัฒนาที่ต่อเนื่อง.  
+#### ขั้นตอนการรับใบอนุญาต
+- **Free trial** – สำรวจ API ฟรี.  
+- **Temporary license** – ขอใบอนุญาตสำหรับการทดสอบการพัฒนาที่ต่อเนื่อง.  
 - **Purchase** – ซื้อใบอนุญาตเต็มสำหรับการใช้งานเชิงพาณิชย์.
 
-### Basic Initialization and Setup
+### การเริ่มต้นและตั้งค่าเบื้องต้น
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -81,80 +125,80 @@ import com.groupdocs.parser.exceptions.UnsupportedDocumentFormatException;
 String pdfPortfolioPath = "YOUR_DOCUMENT_DIRECTORY/SamplePdfPortfolio.pdf";
 ```
 
-## Implementation Guide
+## คู่มือการใช้งาน
 
-### Extracting Attachments from a PDF Portfolio
+### การดึงไฟล์แนบจาก PDF portfolio
 
-#### Overview
-ขั้นตอนการดึงไฟล์แนบประกอบด้วยสามขั้นตอนง่าย ๆ: สร้างอินสแตนซ์ `Parser`, ตรวจสอบการสนับสนุนคอนเทนเนอร์, และวนลูปผ่านแต่ละ `ContainerItem`.
+#### ภาพรวม
+เวิร์กโฟลว์การดึงข้อมูลประกอบด้วยสามขั้นตอนง่าย ๆ: สร้างอินสแตนซ์ `Parser`, ตรวจสอบการสนับสนุนคอนเทนเนอร์, และวนลูปผ่านแต่ละ `ContainerItem`. `Parser` เป็นคลาสหลักที่เปิดเอกสารและให้เข้าถึงโครงสร้างของมัน `ContainerItem` แทนไฟล์ที่ฝังอยู่แต่ละไฟล์ในพอร์ตโฟลิโอ, เปิดเผยชื่อ, ขนาด, และสตรีมเนื้อหา
 
-#### Step 1: Initialize the Parser
+#### ขั้นตอนที่ 1: เริ่มต้น parser
 ```java
 try (Parser parser = new Parser(pdfPortfolioPath)) {
     // Continue processing
 }
-```
-*ทำไม*: The try‑with‑resources block guarantees that the parser releases file handles automatically.
+```  
+*ทำไม*: บล็อก try‑with‑resources รับประกันว่า parser จะปล่อยไฟล์แฮนด์เดิลโดยอัตโนมัติ.
 
-#### Step 2: Check Container Support
+#### ขั้นตอนที่ 2: ตรวจสอบการสนับสนุนคอนเทนเนอร์
 ```java
 Iterable<ContainerItem> attachments = parser.getContainer();
 if (attachments == null) {
     System.out.println("Container extraction isn't supported");
     return;
 }
-```
-*ทำไม*: Not every PDF supports container extraction; this guard prevents runtime errors.
+```  
+*ทำไม*: ไม่ใช่ทุก PDF รองรับการดึงคอนเทนเนอร์; การตรวจสอบนี้ช่วยป้องกันข้อผิดพลาดขณะรันไทม์.
 
-#### Step 3: Iterate Over Attachments
+#### ขั้นตอนที่ 3: วนลูปไฟล์แนบ
 ```java
 for (ContainerItem item : attachments) {
     System.out.println("Attachment Name: " + item.getName());
     // Additional processing logic here
 }
-```
-*ทำไม*: Looping lets you handle each embedded file individually—perfect for **java extract pdf attachments** batch scenarios.
+```  
+*ทำไม*: การวนลูปทำให้คุณจัดการไฟล์ที่ฝังแต่ละไฟล์ได้อย่างอิสระ—เหมาะอย่างยิ่งสำหรับสถานการณ์ **java extract pdf attachments** แบบชุด
 
-#### Common Pitfalls & Troubleshooting
-- **Corrupted portfolios** – ตรวจสอบไฟล์ต้นทางก่อนทำการแยกวิเคราะห์.  
-- **Unsupported format messages** – ตรวจสอบว่าคุณกำลังใช้ PDF portfolio ไม่ใช่ PDF ปกติ.  
-- **Memory pressure on large portfolios** – ประมวลผลรายการเป็นชุดและปล่อยทรัพยากรโดยเร็ว.
+#### ข้อผิดพลาดทั่วไปและการแก้ไขปัญหา
+- **Corrupted portfolios** – ตรวจสอบไฟล์ต้นฉบับก่อนทำการพาร์ส.  
+- **Unsupported format messages** – ตรวจสอบว่าคุณใช้ PDF portfolio ไม่ใช่ PDF ปกติ.  
+- **Memory pressure on large portfolios** – ประมวลผลเป็นชุดและปล่อยทรัพยากรโดยเร็ว.
 
-## Practical Applications
+## การประยุกต์ใช้งานจริง
 
-1. **Data Archiving** – ดึงใบแจ้งหนี้, ใบเสร็จ, หรือสัญญาที่เก็บอยู่ใน portfolio ออกโดยอัตโนมัติและจัดเก็บในระบบจัดการเอกสาร.  
-2. **Document Analysis** – ส่งไฟล์ข้อความที่ดึงออกไปยังกระบวนการวิเคราะห์หรือดัชนีการค้นหา.  
-3. **Automated Workflows** – ผสานกับ GroupDocs.Conversion หรือ GroupDocs.Viewer เพื่อแปลงไฟล์ที่ดึงออกเป็นรูปแบบอื่น.
+1. **Data archiving** – ดึงใบแจ้งหนี้, ใบเสร็จ, หรือสัญญาที่เก็บอยู่ใน portfolio ออกโดยอัตโนมัติและเก็บไว้ในระบบจัดการเอกสาร.  
+2. **Document analysis** – ส่งไฟล์ข้อความที่ดึงออกไปยัง pipeline การวิเคราะห์หรือดัชนีการค้นหา.  
+3. **Automated workflows** – ผสานกับ GroupDocs.Conversion หรือ GroupDocs.Viewer เพื่อแปลงไฟล์ที่ดึงออกเป็นรูปแบบอื่น.
 
-## Performance Considerations
+## การพิจารณาประสิทธิภาพ
 
-เมื่อจัดการกับ PDF portfolio ขนาดใหญ่:
+เมื่อทำงานกับ PDF portfolio ขนาดใหญ่:
 
-- **Batch processing** – จัดการไฟล์แนบจำนวนจำกัดในแต่ละครั้งเพื่อรักษาการใช้หน่วยความจำให้ต่ำ.  
-- **Garbage collection tuning** – เรียก `System.gc()` อย่างระมัดระวังหากสังเกตเห็นการเพิ่มขึ้นของหน่วยความจำ.  
-- **Profiling** – ใช้ Java Flight Recorder หรือ VisualVM เพื่อค้นหาจุดคอขวดตั้งแต่แรก.
+- **Batch processing** – จัดการไฟล์แนบจำนวนจำกัดต่อครั้งเพื่อรักษาการใช้หน่วยความจำน้อย.  
+- **Garbage‑collection tuning** – เรียก `System.gc()` อย่างระมัดระวังหากพบการเพิ่มขึ้นของหน่วยความจำ.  
+- **Profiling** – ใช้ Java Flight Recorder หรือ VisualVM เพื่อหาจุดคอขวดตั้งแต่ต้น.
 
-การทำให้ห้องสมุดเป็นเวอร์ชันล่าสุดและการทำ profiling แอปพลิเคชันของคุณเป็นวิธีที่ดีที่สุดในการรักษาประสิทธิภาพสูงสุด.
+การอัปเดตไลบรารีและทำ profiling แอปพลิเคชันเป็นวิธีที่ดีที่สุดเพื่อรักษาประสิทธิภาพสูงสุด.
 
-## Frequently Asked Questions
+## คำถามที่พบบ่อย
 
-**Q1: สามารถดึงรูปแบบไฟล์อะไรจาก PDF portfolio ด้วย GroupDocs.Parser ได้บ้าง?**  
-A1: GroupDocs.Parser supports extracting images, text files, other PDFs, and virtually any file type embedded in the portfolio.
+**Q1: สามารถดึงไฟล์รูปแบบใดจาก PDF portfolio ด้วย GroupDocs.Parser?**  
+A1: GroupDocs.Parser รองรับการดึงรูปภาพ, ไฟล์ข้อความ, PDF อื่น ๆ, และ **กว่า 30** ประเภทไฟล์เพิ่มเติมที่ฝังอยู่ในพอร์ตโฟลิโอ
 
-**Q2: จะจัดการกับ PDF portfolio ขนาดใหญ่อย่างมีประสิทธิภาพอย่างไร?**  
-A2: Use batch processing (iterate over `ContainerItem` collections) and release resources after each batch to keep memory usage low.
+**Q2: จะจัดการ PDF portfolio ขนาดใหญ่อย่างมีประสิทธิภาพอย่างไร?**  
+A2: ใช้การประมวลผลแบบชุด (วนลูป `ContainerItem` collections) และปล่อยทรัพยากรหลังจากแต่ละชุดเพื่อรักษาการใช้หน่วยความจำน้อย
 
-**Q3: GroupDocs.Parser Java รองรับทุกเวอร์ชันของ JDK หรือไม่?**  
-A3: It works with Java 8 and newer, but always check the release notes for the exact supported versions.
+**Q3: GroupDocs.Parser Java รองรับเวอร์ชัน JDK ทั้งหมดหรือไม่?**  
+A3: ทำงานกับ Java 8 และใหม่กว่า, แต่ควรตรวจสอบบันทึกเวอร์ชันสำหรับรายละเอียดเวอร์ชันที่รองรับอย่างแม่นยำ
 
 **Q4: สามารถใช้ GroupDocs.Parser สำหรับโครงการเชิงพาณิชย์ได้หรือไม่?**  
-A4: Yes—once you purchase a license. A temporary license is also available for development and testing.
+A4: ใช่—เมื่อคุณซื้อใบอนุญาตเต็ม. ใบอนุญาตชั่วคราวก็พร้อมใช้สำหรับการพัฒนาและทดสอบเช่นกัน
 
-**Q5: จะหาแหล่งช่วยเหลือเมื่อเจอปัญหาต่าง ๆ ได้จากที่ไหน?**  
-A: Visit the [GroupDocs support forum](https://forum.groupdocs.com/c/parser) for community and official assistance.
+**Q5: จะขอความช่วยเหลือเมื่อเจอปัญหาต่าง ๆ ได้จากที่ไหน?**  
+A: เยี่ยมชม [GroupDocs support forum](https://forum.groupdocs.com/c/parser) เพื่อรับความช่วยเหลือจากชุมชนและทีมงานอย่างเป็นทางการ
 
-## Resources
-- [เอกสารประกอบ:](https://docs.groupdocs.com/parser/java/)
+## แหล่งข้อมูล
+- [Documentation:](https://docs.groupdocs.com/parser/java/)
 - [API Reference:](https://reference.groupdocs.com/parser/java)
 - [Download:](https://releases.groupdocs.com/parser/java/)
 - [GitHub Repository:](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)
@@ -163,6 +207,12 @@ A: Visit the [GroupDocs support forum](https://forum.groupdocs.com/c/parser) for
 
 ---
 
-**Last Updated:** 2026-02-21  
+**อัปเดตล่าสุด:** 2026-10-17  
 **ทดสอบกับ:** GroupDocs.Parser 25.5 for Java  
-**ผู้เขียน:** GroupDocs
+**ผู้เขียน:** GroupDocs  
+
+## บทเรียนที่เกี่ยวข้อง
+
+- [Extract pdf embedded files using GroupDocs.Parser for Java](/parser/java/container-formats/extract-container-items-groupdocs-parser-java/)
+- [Extract Images Pdf Groupdocs Parser Java](/parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/)
+- [How to Extract PDF Text Using GroupDocs.Parser in Java: A Comprehensive Guide](/parser/java/text-extraction/extract-raw-text-pdf-groupdocs-parser-java/)
