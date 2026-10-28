@@ -1,54 +1,104 @@
 ---
-date: '2026-03-25'
-description: Naučte se, jak připojit SQLite v Javě pomocí GroupDocs.Parser. Tento
-  průvodce krok za krokem pokrývá nastavení, JDBC připojení a parsování dokumentů
-  pro robustní zpracování dat.
+date: '2026-10-28'
+description: Naučte se, jak extrahovat text z PDF v Javě pomocí GroupDocs.Parser a
+  připojit SQLite přes JDBC. Obsahuje nastavení, try‑with‑resources a vytvoření tabulky.
 keywords:
-- GroupDocs.Parser Java
-- SQLite JDBC Java
-- Java database connectivity
-title: 'Propojte SQLite Java s GroupDocs.Parser: Komplexní průvodce'
+- extract text from pdf java
+- how to connect sqlite java
+- create sqlite table java
+lastmod: '2026-10-28'
+og_description: Extrahujte text z PDF v Javě s GroupDocs.Parser a připojte SQLite
+  přes JDBC. Průvodce krok za krokem s nastavením, try‑with‑resources a vytvořením
+  tabulky.
+og_image_alt: Guide showing Java code to extract PDF text and store it in SQLite using
+  GroupDocs.Parser
+og_title: Extrahujte text z PDF v Javě, připojte SQLite pomocí GroupDocs
+schemas:
+- author: GroupDocs
+  dateModified: '2026-10-28'
+  description: Learn how to extract text from PDF Java using GroupDocs.Parser and
+    connect SQLite via JDBC. Includes setup, try‑with‑resources, and table creation.
+  headline: Extract text from PDF Java, connect SQLite via GroupDocs
+  type: TechArticle
+- description: Learn how to extract text from PDF Java using GroupDocs.Parser and
+    connect SQLite via JDBC. Includes setup, try‑with‑resources, and table creation.
+  name: Extract text from PDF Java, connect SQLite via GroupDocs
+  steps:
+  - name: Create the connection string
+    text: '**Explanation:** Replace `YOUR_DOCUMENT_DIRECTORY` with the absolute path
+      to your SQLite `.db` file. This string follows the standard JDBC format for
+      SQLite.'
+  - name: Open the connection (java try with resources)
+    text: '**Explanation:** `DriverManager` locates the SQLite driver and creates
+      a live connection. The try‑with‑resources block ensures the connection is closed
+      automatically.'
+  - name: Execute queries – java create sqlite table
+    text: '**Explanation:** The `Statement` object runs raw SQL. Here we **java create
+      sqlite table** named `users` that could later hold metadata extracted by GroupDocs.Parser.'
+  type: HowTo
+- questions:
+  - answer: Yes. Use a BLOB column and `PreparedStatement.setBytes()` to insert the
+      binary payload.
+    question: Can I store binary data (e.g., images) extracted by GroupDocs.Parser
+      in SQLite?
+  - answer: It does. Provide the password when creating the `Parser` instance via
+      the appropriate overload.
+    question: Does GroupDocs.Parser support encrypted PDFs?
+  - answer: Enable SQLite’s Write‑Ahead Logging (WAL) mode and consider streaming
+      results instead of loading everything into memory.
+    question: How do I handle very large SQLite files?
+  - answer: Each thread should obtain its own `Connection` (or use a pooled connection)
+      because SQLite connections are not thread‑safe by default.
+    question: Is it safe to run this in a multi‑threaded environment?
+  - answer: Version 25.5 and later are fully compatible with Java 8 – 17.
+    question: What version of GroupDocs.Parser is required for Java 17?
+  type: FAQPage
+tags:
+- sqlite java
+- groupdocs parser
+- java database integration
+- extract text from pdf java
+- jdbc sqlite
+title: Extrahujte text z PDF v Javě, připojte SQLite pomocí GroupDocs
 type: docs
 url: /cs/java/database-integration/connect-sqlite-groupdocs-parser-java/
 weight: 1
 ---
 
-# Připojení SQLite z Java pomocí GroupDocs.Parser
+# Extrahovat text z PDF Java a připojit SQLite pomocí GroupDocs.Parser
 
-Připojení databáze SQLite z Java je běžná potřeba, když potřebujete lehký, souborově‑založený úložný engine. V tomto tutoriálu **připojíte SQLite z Java** pomocí GroupDocs.Parser, naučíte se bezpečně spravovat JDBC připojení pomocí *java try with resources* a uvidíte, jak **java create SQLite table** struktury, které ukládají parsovaná data dokumentů.
+V tomto komplexním tutoriálu **extrahujete text z PDF Java** pomocí GroupDocs.Parser a poté **připojíte SQLite Java** k uložení extrahovaného obsahu. Uvidíte, jak nakonfigurovat JDBC driver, použít *java try with resources* pro udržení připojení v pořádku a vytvořit SQLite tabulku, která uchovává parsovaná data dokumentu — vše v jediné Java aplikaci.
 
 ## Rychlé odpovědi
 - **Jaká knihovna parsuje dokumenty?** GroupDocs.Parser for Java  
-- **Který ovladač se připojuje k SQLite?** Ovladač Xerial SQLite JDBC  
-- **Jak zajistit, aby se připojení uzavřelo?** Použijte *java try with resources* (try‑with‑resources)  
-- **Mohu ukládat parsovaný text do SQLite?** Ano – vytvořte tabulku a vložte extrahovaný obsah  
-- **Jaká verze Javy je vyžadována?** JDK 8 nebo vyšší  
+- **Který driver se připojuje k SQLite?** The Xerial SQLite JDBC driver  
+- **Jak zajistit, že se připojení zavře?** Use *java try with resources* (try‑with‑resources)  
+- **Mohu uložit parsovaný text do SQLite?** Yes – create a table and insert the extracted content  
+- **Jaká verze Javy je vyžadována?** JDK 8 or higher  
 
-## Co znamená „connect sqlite java“?
+## Co je “connect sqlite java”?
 
-Fráze „connect sqlite java“ jednoduše popisuje akci otevření JDBC připojení z Java aplikace k souboru databáze SQLite. To vám umožní spouštět SQL příkazy, ukládat extrahovaná data dokumentů a později je načíst – vše ze stejného Java procesu.
+“Connect sqlite java” odkazuje na otevření JDBC připojení z Java aplikace k SQLite databázovému souboru. To vám umožní spouštět SQL příkazy, ukládat extrahovaná data dokumentu a později je načítat — vše z jedné Java procesu. Použitím lehkého soubor‑založeného enginu se vyhnete režii samostatného databázového serveru a přesto získáte plnou funkčnost SQL.
 
 ## Proč používat GroupDocs.Parser s SQLite?
 
-- **Jednotný workflow** – Parsujte PDF, DOCX nebo jiné formáty a okamžitě uložte výsledky do lokálního úložiště SQLite.  
-- **Server bez konfigurace** – SQLite nevyžaduje samostatný databázový server, ideální pro desktopové nebo malé služby.  
-- **Výkon** – Rychlé čtení/zápis pro střední objemy dat, zejména v kombinaci s poolováním připojení.
+GroupDocs.Parser dokáže extrahovat text, obrázky, tabulky a metadata z více než 30 formátů souborů, včetně PDF až do 500 MB, aniž by načítal celý soubor do paměti. SQLite naopak zvládá databáze větší než 2 GB s pod‑milisekundovou latencí čtení na typických SSD discích. Kombinace obou poskytuje **vysoce výkonné, bezkonfigurační** řešení pro aplikace zaměřené na dokumenty.
 
-## Předpoklady
+## Požadavky
 
-- **GroupDocs.Parser pro Java** – verze 25.5 nebo novější.  
-- **Java Development Kit (JDK)** – 8 + (jakýkoli recentní JDK funguje).  
-- **SQLite JDBC Driver** – stáhněte z [sqlite-jdbc](https://github.com/xerial/sqlite-jdbc).  
-- IDE jako IntelliJ IDEA, Eclipse nebo NetBeans.  
+- **GroupDocs.Parser for Java** – version 25.5 or later (supports 30+ formats).  
+- **Java Development Kit (JDK)** – 8 + (any recent JDK works).  
+- **SQLite JDBC Driver** – download from [sqlite-jdbc](https://github.com/xerial/sqlite-jdbc).  
+- IDE, například IntelliJ IDEA, Eclipse nebo NetBeans.  
 - Maven pro správu závislostí.  
 
-Měli byste také být obeznámeni se základní syntaxí Javy a základy SQL.
+Měli byste být také obeznámeni se základní syntaxí Javy a základy SQL.
 
 ## Nastavení GroupDocs.Parser pro Java
 
 ### Maven závislost
 
-Přidejte repozitář GroupDocs a závislost parseru do vašeho `pom.xml`:
+Add the GroupDocs repository and the parser dependency to your `pom.xml`:
 
 ```xml
 <repositories>
@@ -74,11 +124,13 @@ Pokud raději nepoužíváte Maven, můžete stáhnout nejnovější JAR z [Grou
 
 ### Licence
 
-- **Bezplatná zkušební verze** – 30‑denní hodnocení.  
-- **Dočasná licence** – Pro rozšířené testování.  
-- **Plná licence** – Vyžadována pro produkční nasazení.
+- **Free trial** – 30‑day evaluation.  
+- **Temporary license** – For extended testing.  
+- **Full license** – Required for production use.  
 
 ### Základní inicializace (java try with resources)
+
+`Parser` is the core class that loads a document and provides extraction methods. Using *java try with resources* guarantees that the `Parser` instance is closed automatically, preventing memory leaks.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -94,16 +146,14 @@ public class Main {
 }
 ```
 
-Použití *java try with resources* zaručuje, že instance `Parser` je automaticky uzavřena, což zabraňuje únikům paměti.
-
 ## Průvodce implementací
 
-### Navázání spojení s databází SQLite
+### Navázání SQLite databázového připojení
 
-#### Přehled
-Vytvoříme řetězec pro JDBC připojení, bezpečně otevřeme spojení a poté spustíme SQL příkazy.
+#### Overview
+You’ll build a JDBC connection string, open the connection safely, and then run SQL commands to create a table and insert extracted text.
 
-#### Krok 1: Vytvoření řetězce připojení
+#### Krok 1: Vytvořit připojovací řetězec
 
 ```java
 String connectionString = String.format("jdbc:sqlite:%s", "YOUR_DOCUMENT_DIRECTORY");
@@ -111,7 +161,7 @@ String connectionString = String.format("jdbc:sqlite:%s", "YOUR_DOCUMENT_DIRECTO
 
 **Vysvětlení:** Nahraďte `YOUR_DOCUMENT_DIRECTORY` absolutní cestou k vašemu SQLite souboru `.db`. Tento řetězec odpovídá standardnímu formátu JDBC pro SQLite.
 
-#### Krok 2: Otevření spojení (java try with resources)
+#### Krok 2: Otevřít připojení (java try with resources)
 
 ```java
 import java.sql.Connection;
@@ -133,9 +183,9 @@ public class DatabaseConnector {
 }
 ```
 
-**Vysvětlení:** `DriverManager` najde ovladač SQLite a vytvoří aktivní spojení. Blok try‑with‑resources zajistí automatické uzavření spojení.
+**Vysvětlení:** `DriverManager` locates the SQLite driver and creates a live connection. The try‑with‑resources block ensures the connection is closed automatically.
 
-#### Krok 3: Spuštění dotazů – java create sqlite table
+#### Krok 3: Spustit dotazy – java create sqlite table
 
 ```java
 import java.sql.Statement;
@@ -162,71 +212,75 @@ public class DatabaseOperations {
 }
 ```
 
-**Vysvětlení:** Objekt `Statement` spouští čisté SQL. Zde **java create sqlite table** s názvem `users`, která může později obsahovat metadata extrahovaná pomocí GroupDocs.Parser.
+**Vysvětlení:** Objekt `Statement` spouští čisté SQL. Zde **java create sqlite table** nazvanou `users`, která může později uchovávat metadata extrahovaná pomocí GroupDocs.Parser.
 
-#### Tipy pro řešení problémů
-- Ověřte, že SQLite JDBC driver je na vašem classpath (Maven to zajistí, pokud jste přidali závislost).  
-- Dvakrát zkontrolujte cestu k souboru v řetězci připojení; musí ukazovat na existující soubor `.db` nebo na zapisovatelnou lokaci pro novou databázi.  
-- Pokud vidíte “SQLITE\_CANTOPEN”, aplikaci pravděpodobně chybí oprávnění pro čtení/zápis souboru.
+#### Troubleshooting tips
+- Ověřte, že SQLite JDBC driver je na vašem classpath (Maven to zařídí, pokud jste přidali závislost).  
+- Dvakrát zkontrolujte cestu k souboru v připojovacím řetězci; musí ukazovat na existující `.db` soubor nebo na zapisovatelnou lokaci pro novou databázi.  
+- Pokud vidíte “SQLITE_CANTOPEN”, aplikaci pravděpodobně chybí oprávnění pro čtení/zápis souboru.
 
 ## Praktické aplikace
 
-Integrace GroupDocs.Parser s SQLite otevírá mnoho možností:
-
-1. **Systémy pro správu dokumentů** – Parsujte PDF, extrahujte názvy/autory a uložte je do tabulky SQLite pro rychlé vyhledávání.  
-2. **Nástroje pro migraci dat** – Přesuňte strukturovaná data ze starých dokumentů do přenosné databáze SQLite.  
-3. **Reportingové dashboardy** – Načtěte parsovaný obsah z SQLite a generujte analytiku v reálném čase bez těžkopádného RDBMS.
+1. **Document management systems** – Parse PDFs, extract titles/authors, and store them in an SQLite table for quick lookup.  
+2. **Data migration tools** – Move structured data from legacy documents into a portable SQLite database.  
+3. **Reporting dashboards** – Pull parsed content from SQLite to generate real‑time analytics without a heavyweight RDBMS.
 
 ## Úvahy o výkonu
 
-### Optimalizace výkonu
-- **Poolování spojení** (např. HikariCP) snižuje režii opakovaného otevírání spojení.  
-- **Dávkové vkládání** umožňuje vložit mnoho řádků jedním požadavkem, což dramaticky zvyšuje propustnost.
+### Optimizing performance
+- **Connection pooling** (e.g., HikariCP) reduces the overhead of repeatedly opening connections.  
+- **Batch inserts** let you insert many rows with a single round‑trip, dramatically improving throughput.
 
-### Pokyny pro využití zdrojů
-- Sledujte využití haldy při parsování velkých souborů; parser streamuje data, ale velmi velké dokumenty mohou stále spotřebovávat paměť.  
-- Vždy uzavírejte objekty `Parser`, `Connection` a `Statement` – použití *java try with resources* to činí snadným.
+### Resource usage guidelines
+- Monitor heap usage when parsing large files; the parser streams data, but very large documents can still consume memory.  
+- Always close `Parser`, `Connection`, and `Statement` objects—using *java try with resources* makes this effortless.
 
-### Nejlepší postupy pro správu paměti v Javě
-- Upřednostňujte try‑with‑resources pro jakýkoli `AutoCloseable` (Parser, Connection, Statement).  
-- Profilujte pomocí nástrojů jako VisualVM nebo YourKit, abyste odhalili špičky paměti během hromadného parsování.
+### Best practices for Java memory management
+- Prefer try‑with‑resources for any `AutoCloseable` (Parser, Connection, Statement).  
+- Profile with tools like VisualVM or YourKit to spot memory spikes during bulk parsing.
 
-## Časté problémy a řešení
+## Common issues and solutions
 
-| Příznak | Pravděpodobná příčina | Řešení |
+| Symptom | Pravděpodobná příčina | Řešení |
 |---------|-----------------------|--------|
-| `ClassNotFoundException: org.sqlite.JDBC` | Ovladač není na classpath | Ujistěte se, že Maven zahrnuje závislost SQLite JDBC nebo přidejte JAR ručně. |
-| “database is locked” error | Jiný proces drží soubor | Uzavřete všechna spojení, nebo použijte režim WAL SQLite pro souběžné čtení. |
+| `ClassNotFoundException: org.sqlite.JDBC` | Driver není v classpath | Ujistěte se, že Maven zahrnuje SQLite JDBC závislost nebo přidejte JAR ručně. |
+| “database is locked” error | Jiný proces drží soubor | Zavřete všechna připojení, nebo použijte WAL režim SQLite pro souběžné čtení. |
 | Parser returns empty text | Typ dokumentu není podporován nebo je poškozen | Ověřte, že formát souboru je podporován GroupDocs.Parser a že cesta k souboru je správná. |
 
 ## Často kladené otázky
 
-**Q: Mohu ukládat binární data (např. obrázky) extrahovaná pomocí GroupDocs.Parser do SQLite?**  
-A: Ano. Použijte sloupec BLOB a `PreparedStatement.setBytes()` pro vložení binárního payloadu.
+**Q: Mohu uložit binární data (např. obrázky) extrahovaná GroupDocs.Parser v SQLite?**  
+A: Ano. Použijte sloupec BLOB a `PreparedStatement.setBytes()` k vložení binárního payloadu.
 
 **Q: Podporuje GroupDocs.Parser šifrované PDF?**  
-A: Ano. Zadejte heslo při vytváření instance `Parser` pomocí příslušného přetížení.
+A: Ano. Poskytněte heslo při vytváření instance `Parser` pomocí příslušného přetížení.
 
-**Q: Jak zacházet s velmi velkými soubory SQLite?**  
-A: Aktivujte režim Write‑Ahead Logging (WAL) SQLite a zvažte streamování výsledků místo načítání všeho do paměti.
+**Q: Jak zacházet s velmi velkými SQLite soubory?**  
+A: Aktivujte Write‑Ahead Logging (WAL) režim SQLite a zvažte streamování výsledků místo načítání všeho do paměti.
 
-**Q: Je bezpečné spouštět to v multithreadovaném prostředí?**  
-A: Každé vlákno by mělo získat vlastní `Connection` (nebo použít poolované spojení), protože spojení SQLite nejsou ve výchozím nastavení thread‑safe.
+**Q: Je bezpečné spouštět toto v multithreaded prostředí?**  
+A: Každé vlákno by mělo získat vlastní `Connection` (nebo použít poolované připojení), protože SQLite připojení nejsou ve výchozím nastavení thread‑safe.
 
-**Q: Jaká verze GroupDocs.Parser je vyžadována pro Java 17?**  
-A: Verze 25.5 a novější jsou plně kompatibilní s Java 8 – 17.
+**Q: Jaká verze GroupDocs.Parser je vyžadována pro Java 17?**  
+A: Version 25.5 and later are fully compatible with Java 8 – 17.
 
 ## Závěr
 
-Nyní jste zvládli, jak **připojit SQLite z Java** pomocí GroupDocs.Parser, vytvořili robustní schéma tabulky s **java create sqlite table** a použili *java try with resources* pro udržení zdrojů v pořádku. Tyto stavební bloky vám umožní vložit výkonné schopnosti parsování dokumentů do lehkých Java aplikací.
+Nyní ovládáte, jak **extrahovat text z PDF Java** pomocí GroupDocs.Parser, jak **připojit SQLite Java** s bezpečným vzorcem try‑with‑resources, a jak **java create sqlite table** struktury pro uchovávání parsovaných dat. Tyto stavební bloky vám umožní vkládat výkonné schopnosti parsování dokumentů do lehkých Java aplikací.
 
 **Další kroky**  
 - Experimentujte s extrahováním konkrétních polí (tabulky, obrázky, metadata) a jejich ukládáním.  
-- Přidejte poolování spojení pro scénáře s vysokou propustností.  
-- Prozkoumejte pokročilé funkce GroupDocs.Parser, jako OCR a vlastní pravidla extrakce.
+- Přidejte connection pooling pro scénáře s vysokým průtokem.  
+- Prozkoumejte pokročilé funkce GroupDocs.Parser, jako je OCR a vlastní pravidla extrakce.
 
 ---
 
-**Poslední aktualizace:** 2026-03-25  
+**Poslední aktualizace:** 2026-10-28  
 **Testováno s:** GroupDocs.Parser 25.5, SQLite JDBC 3.36.0.3  
 **Autor:** GroupDocs
+
+## Související tutoriály
+
+- [Jak načíst PDF z URL pomocí GroupDocs.Parser pro Java](/parser/java/document-loading/)
+- [Extrahovat PDF text v Javě – Extrahovat textové oblasti pomocí GroupDocs.Parser](/parser/java/text-extraction/extract-text-areas-groupdocs-parser-java/)
+- [Jak extrahovat data z PDF formulářů pomocí GroupDocs.Parser Java](/parser/java/form-extraction/)
