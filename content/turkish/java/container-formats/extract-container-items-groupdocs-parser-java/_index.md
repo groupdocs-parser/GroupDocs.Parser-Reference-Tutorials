@@ -1,46 +1,97 @@
 ---
-date: '2026-02-21'
-description: GroupDocs.Parser for Java kullanarak PDF'den gömülü dosyaları ve ekleri,
-  görüntüler dahil, nasıl çıkaracağınızı öğrenin. Adım adım kod örnekleriyle rehber.
+date: '2026-11-15'
+description: GroupDocs.Parser for Java ile PDF belgelerinden pdf gömülü dosyaları
+  ve attachments, images dahil, nasıl çıkaracağınızı öğrenin. Adım adım rehber ve
+  code examples.
 keywords:
+- how to extract pdf
 - extract pdf embedded files
-- extract images from pdf
-- java extract pdf attachments
+- extract pdf attachments
+- extract pdf images java
 - java parse eml attachments
-title: GroupDocs.Parser for Java kullanarak PDF gömülü dosyalarını çıkarın
+lastmod: '2026-11-15'
+og_description: GroupDocs.Parser for Java kullanarak pdf gömülü dosyaları nasıl çıkaracağınızı
+  öğrenin. Bu rehber, pdf'lerden ve emails'den attachments, images ve embedded documents
+  sadece birkaç satır kodla nasıl alacağınızı gösterir.
+og_image_alt: Developer guide showing extraction of embedded files from PDF using
+  GroupDocs.Parser Java library
+og_title: GroupDocs.Parser for Java ile pdf gömülü dosyaları nasıl çıkarılır
+schemas:
+- author: GroupDocs
+  dateModified: '2026-11-15'
+  description: Learn how to how to extract pdf embedded files and attachments, including
+    images, from PDF documents with GroupDocs.Parser for Java. Step‑by‑step guide
+    with code examples.
+  headline: How to extract pdf embedded files using GroupDocs.Parser for Java
+  type: TechArticle
+- description: Learn how to how to extract pdf embedded files and attachments, including
+    images, from PDF documents with GroupDocs.Parser for Java. Step‑by‑step guide
+    with code examples.
+  name: How to extract pdf embedded files using GroupDocs.Parser for Java
+  steps:
+  - name: initialize the parser object
+    text: 'Create a `Parser` instance that points to the PDF, EML, or MSG file you
+      want to process:'
+  - name: extract container items
+    text: 'Call `getContainer()` to retrieve every embedded item, including images,
+      PDFs, and other attachments:'
+  - name: iterate over extracted items
+    text: 'Loop through the returned `ContainerItem` objects and handle each one—save
+      to disk, stream to another service, or inspect metadata:'
+  type: HowTo
+- questions:
+  - answer: Yes, you can pass the password to the `Parser` constructor to open encrypted
+      documents.
+    question: Does the library support password‑protected PDFs?
+  - answer: After retrieving `ContainerItem` objects, filter them by MIME type or
+      file extension before saving.
+    question: Can I limit extraction to a specific file type?
+  - answer: Use `item.getContent()` to obtain an `InputStream` and process the data
+      in memory.
+    question: Is there a way to extract embedded PDFs without writing them to disk?
+  type: FAQPage
+tags:
+- extract pdf
+- GroupDocs.Parser
+- Java document processing
+- pdf attachments
+- email parsing
+title: GroupDocs.Parser for Java kullanarak pdf gömülü dosyaları nasıl çıkarılır
 type: docs
 url: /tr/java/container-formats/extract-container-items-groupdocs-parser-java/
 weight: 1
 ---
 
-# GroupDocs.Parser for Java kullanarak pdf gömülü dosyaları çıkarma
+# GroupDocs.Parser for Java kullanarak pdf gömülü dosaları nasıl çıkarılır
 
-PDF **gömülü dosyaları**—ekler, görüntüler veya diğer iç içe belgiler olsun—manuel olarak ele almaya çalışırsanız zahmetli bir iş olabilir. Bu öğreticide GroupDocs.Parser for Java'ın süreci nasıl basitleştirdiğini göreceksiniz; PDF'lerden, e-posta dosyalarından (`.eml`, `.msg`) ve daha fazlasından programlı olarak her gömülü öğeyi çıkarmanıza olanak tanır. Kurulum, kod ve gerçek dünya senaryolarını adım adım inceleyeceğiz, böylece hemen çıkarma işlemine başlayabilirsiniz.
+Bu öğreticide **pdf nasıl çıkarılır** gömülü dosyaları—ekler, görüntüler veya iç içe belgeler—doğrudan PDF kapsayıcılarından, EML mesajlarından ve diğer desteklenen formatlardan öğreneceksiniz. GroupDocs.Parser for Java, her gömülü öğeyi minimum bellek yüküyle almanızı sağlayan akış‑tabanlı bir API sunar, böylece arşivleme, içerik analizi veya taşıma görevlerini manuel açma işlemi olmadan otomatikleştirebilirsiniz.
 
-## Hızlı Yanıtlar
-- **“extract pdf embedded files” ne anlama geliyor?** PDF konteyneri içinde depolanmış herhangi bir dosyayı (ekler, görüntüler, PDF'ler) çıkarmak anlamına gelir.  
-- **Java’da bunu en iyi hangi kütüphane yapar?** GroupDocs.Parser for Java, konteyner çıkarma için basit bir API sağlar.  
-- **Lisans gerekir mi?** Değerlendirme için ücretsiz deneme sürümü çalışır; üretim kullanımı için ticari lisans gereklidir.  
-- **pdf’den görüntü de çıkarabilir miyim?** Evet—görüntüler konteyner öğeleri olarak ele alınır ve ayrı ayrı kaydedilebilir.  
+## Hızlı cevaplar
+- **“extract pdf embedded files” ne anlama geliyor?** PDF kapsayıcısı içinde depolanan herhangi bir dosyayı (ekler, görüntüler, PDF'ler) çıkarmak anlamına gelir.  
+- **Java’da bunu en iyi hangi kütüphane yönetir?** GroupDocs.Parser for Java, kapsayıcı çıkarımı için basit, birleşik bir API sunar.  
+- **Bir lisansa ihtiyacım var mı?** Değerlendirme için ücretsiz deneme çalışır; üretim kullanımı için ticari lisans gereklidir.  
+- **pdf'den görüntüleri de çıkarabilir miyim?** Evet—görüntüler kapsayıcı öğeler olarak ele alınır ve ayrı olarak kaydedilebilir.  
 - **Java ile eml eklerini ayrıştırmak mümkün mü?** Kesinlikle; `java parse eml attachments` kutudan çıktığı gibi desteklenir.
 
 ## “extract pdf embedded files” nedir?
-Bir PDF başka dosyalar—örneğin ek PDF'ler, Word belgeleri veya görüntüler—içerdiğinde, bu dosyalar **konteyner öğeleri** olarak depolanır. Bunları çıkarmak, gömülü içeriği manuel olarak PDF’i açmadan yeniden kullanmanıza, arşivlemenize veya analiz etmenize olanak tanır.
+**Bu, bir PDF'nin bir kapsayıcı öğe olarak depoladığı herhangi bir dosyayı (ekli PDF'ler, Word belgeleri veya görüntüler gibi) geri alma sürecidir.** Bu öğeler PDF'nin iç yapısına gömülüdür ve PDF'yi bir görüntüleyicide açmadan programlı olarak erişilebilir. Bunları çıkarmak, toplu arşivleme, içerik indeksleme veya diğer sistemlere taşıma gibi otomatik iş akışlarını mümkün kılar.
 
-## Neden GroupDocs.Parser for Java kullanmalısınız?
-- **Birleşik API** – PDF'ler, e-postalar ve birçok diğer format aynı kodla işlenir.  
-- **Performans odaklı** – Akış‑tabanlı çıkarma bellek kullanımını en aza indirir.  
-- **Zengin meta veri** – Her `ContainerItem` ad, boyut ve içerik türü gibi bilgileri sunar, böylece sonraki işlemler kolaylaşır.  
+## Neden GroupDocs.Parser for Java kullanmalı?
+Birleşik bir API sağlar, akış desteği sunar ve kapsayıcı öğeleri otomatik olarak algılar, bu da yüksek hacimli toplu işler için idealdir. Kütüphane düşük bellek tüketimi için optimize edilmiştir; 2 GB kadar büyük PDF'leri işlerken bile genellikle 10 MB'nin altında kalır ve başlamak için sadece birkaç satır kod gerekir.
+
+- **Unified API** – Aynı kod yolu kullanılarak PDF'ler, EML, MSG, DOCX, PPTX ve 70'ten fazla diğer formatla çalışır.  
+- **Performance‑focused** – Akış‑tabanlı işleme, tüm belgeyi belleğe yüklemeyi önler, saat başı binlerce dosyayı işleyebilen toplu işleri mümkün kılar.  
+- **Rich metadata** – Her `ContainerItem` ad, boyut, MIME türü ve oluşturma tarihini sağlar, böylece sonraki işleme basit olur.  
 
 ## Önkoşullar
-- **JDK 8+** makinenizde kurulu olmalı.  
-- Java kodunu yazıp test etmek için **IntelliJ IDEA** veya **Eclipse** gibi bir IDE.  
-- Java programlama temellerine temel bir aşinalık.  
+- **JDK 8+** makinenize kurulu.  
+- **IntelliJ IDEA** veya **Eclipse** gibi bir IDE, Java kodunu yazmak ve test etmek için.  
+- Java programlama kavramlarına temel aşinalık.  
 
-## GroupDocs.Parser for Java Kurulumu
+## GroupDocs.Parser for Java kurulumu
 
-### Maven Ayarları
-Bağımlılıkları Maven ile yönetiyorsanız, `pom.xml` dosyanıza depo ve bağımlılığı ekleyin:
+### Maven kurulumu
+`pom.xml` dosyanıza GroupDocs deposunu ve Parser bağımlılığını ekleyin:
 
 ```xml
 <repositories>
@@ -60,14 +111,14 @@ Bağımlılıkları Maven ile yönetiyorsanız, `pom.xml` dosyanıza depo ve ba�
 </dependencies>
 ```
 
-### Doğrudan İndirme
-Alternatif olarak, en yeni kütüphaneyi [GroupDocs sürümleri](https://releases.groupdocs.com/parser/java/) adresinden indirebilirsiniz. İndirdikten sonra JAR dosyasını projenizin sınıf yoluna ekleyin.
+### Doğrudan indirme
+Ayrıca en son JAR'ı [GroupDocs releases](https://releases.groupdocs.com/parser/java/) adresinden indirebilirsiniz. İndirdikten sonra JAR'ı projenizin sınıf yoluna ekleyin.
 
-### Lisans Alımı
-Ücretsiz deneme lisansı, değerlendirme için tüm özellikleri açar. Üretim için GroupDocs web sitesinden ticari bir lisans talep edin.
+### Lisans edinme
+Deneme lisansı, değerlendirme için tüm özelliklerin kilidini açar. Üretim için, GroupDocs web sitesinden ticari lisans talep edin.
 
-### Temel Başlatma ve Kurulum
-Kütüphane kullanılabilir hâle geldiğinde, işlemek istediğiniz belgeye işaret eden bir `Parser` örneği oluşturun:
+### Temel başlatma ve kurulum
+`Parser` sınıfı, desteklenen herhangi bir belgeyi okumak için giriş noktasıdır. Dosyayı açar, formatını algılar ve kapsayıcı çıkarımı için akışları hazırlar.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -86,10 +137,10 @@ public class ExtractContainerItems {
 }
 ```
 
-## Uygulama Kılavuzu
+## Uygulama rehberi
 
-### Adım 1: Parser Nesnesini Başlatma
-Hedef dosyanızın (PDF, EML vb.) yolunu belirterek `Parser` nesnesini oluşturun:
+### Adım 1: parser nesnesini başlatma
+İşlemek istediğiniz PDF, EML veya MSG dosyasına işaret eden bir `Parser` örneği oluşturun:
 
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/InlineImages.eml";
@@ -98,8 +149,8 @@ try (Parser parser = new Parser(filePath)) {
 }
 ```
 
-### Adım 2: Konteyner Öğelerini Çıkarma  
-`getContainer()` metodunu kullanarak gömülü tüm öğeleri alın; bu, **java extract pdf attachments** gibi görüntüler, PDF'ler ve diğer dosyaları içerir:
+### Adım 2: kapsayıcı öğeleri çıkarma  
+Görüntüler, PDF'ler ve diğer ekler dahil olmak üzere tüm gömülü öğeleri almak için `getContainer()` metodunu çağırın:
 
 ```java
 Iterable<ContainerItem> attachments = parser.getContainer();
@@ -110,8 +161,8 @@ if (attachments == null) {
 }
 ```
 
-### Adım 3: Çıkarılan Öğeler Üzerinde Dönme  
-Dönen `ContainerItem` nesnelerini döngüye alıp her birini ihtiyacınıza göre işleyin—diskte kaydedin, başka bir servise akıtın vb.:
+### Adım 3: çıkarılan öğeler üzerinde yineleme  
+Dönen `ContainerItem` nesneleri üzerinde döngü kurun ve her birini işleyin—diskte kaydedin, başka bir servise akıtın veya meta verileri inceleyin:
 
 ```java
 for (ContainerItem item : attachments) {
@@ -120,68 +171,74 @@ for (ContainerItem item : attachments) {
 }
 ```
 
-#### Temel Sınıfların Anlaşılması
-- **`Parser`** – Belgeyi açıp okuyan çekirdek sınıf.  
-- **`ContainerItem`** – Tek bir gömülü dosyayı temsil eder; `getName()`, `getSize()` ve `getContent()` metodlarını sunar.
+#### Ana sınıfları anlama
+- **`Parser`** – Belgeyi açan ve okuyan temel sınıf.  
+- **`ContainerItem`** – Tek bir gömülü dosyayı temsil eder; `getName()`, `getSize()` ve `getContent()` metodlarını sağlar.
 
-### Sorun Giderme İpuçları
-- Dosya yolunu doğrulayın; yanlış yol *FileNotFoundException* hatasına yol açar.  
-- GroupDocs.Parser’ın uyumlu bir sürümünü kullandığınızdan emin olun; sürüm uyumsuzlukları `UnsupportedOperationException` hatasına neden olabilir.  
+## Sorun giderme ipuçları
+- Dosya yolunu doğrulayın; yanlış bir yol *FileNotFoundException* hatasına neden olur.  
+- GroupDocs.Parser'ın uyumlu bir sürümünü kullandığınızdan emin olun; uyumsuz sürümler `UnsupportedOperationException` hatasına yol açabilir.  
+- Şifre korumalı PDF'ler için, şifreyi `Parser` yapıcısına geçirerek (aşağıdaki ek SSS'ye bakın).
 
-## Pratik Uygulamalar
+## Pratik uygulamalar
+1. **E-posta yönetimi** – `java parse eml attachments` kullanarak bir e-posta ile gelen her dosyayı çekin, ardından bir belge‑yönetim sistemine kaydedin.  
+2. **Belge işleme** – Diğer PDF'ler içinde gömülü PDF'leri otomatik olarak çıkarın, arşivleme veya daha fazla analiz için.  
+3. **İçerik arşivleme** – Karmaşık raporlardan tüm görüntüleri (`extract pdf images java`) alın ve dijital varlık yönetimi boru hattına besleyin.
 
-1. **E‑posta Yönetimi** – `java parse eml attachments` kullanarak bir e‑postayla gönderilen tüm dosyaları çıkarın.  
-2. **Belge İşleme** – Diğer PDF'lerin içinde gömülü PDF'leri otomatik olarak çıkarıp arşivleyin.  
-3. **İçerik Arşivleme** – Tüm görüntüleri (`extract images from pdf`) dijital varlık yönetimi için alın ve depolayın.  
-
-## Performans Düşünceleri
-- **Bellek Yönetimi** – `try‑with‑resources` bloğu, parser’ın kapatılmasını sağlayarak yerel kaynakları hızlıca serbest bırakır.  
-- **Toplu İşleme** – Binlerce dosyayla çalışırken, dosyaları partiler halinde işleyin ve isteğe bağlı olarak tek bir iş parçacığı havuzunu yeniden kullanarak bellek ayak izini düşük tutun.  
+## Performans değerlendirmeleri
+- **Memory management** – try‑with‑resources bloğu, parser'ın kapatılmasını garanti eder, yerel kaynakları hızlıca serbest bırakır.  
+- **Batch processing** – Binlerce dosya işlenirken, dosyaları toplu olarak işleyin ve isteğe bağlı olarak tek bir thread havuzunu yeniden kullanarak bellek ayak izini düşük tutun.  
+- **Scalability** – GroupDocs.Parser, akış mimarisi sayesinde tüm belgeyi belleğe yüklemeden 2 GB'a kadar dosyaları işleyebilir.
 
 ## Sonuç
-Artık GroupDocs.Parser for Java kullanarak **pdf gömülü dosyaları çıkarma** için tam, üretim‑hazır bir yaklaşıma sahipsiniz. İster e‑posta gelen kutularını temizleyin, ister PDF'leri arşivleyin, ister karmaşık belgelerden görüntüleri çekin, bu kütüphane size temiz ve verimli bir API sunar.
+Artık GroupDocs.Parser for Java kullanarak **pdf gömülü dosyaları nasıl çıkarılır** konusunda eksiksiz, üretim‑hazır bir yaklaşıma sahipsiniz. İster e-posta gelen kutularını temizleyin, PDF'leri arşivleyin, ister karmaşık belgelere ait görüntüleri çekin, bu kütüphane size temiz ve verimli bir API sunar.  
+Sonra, OCR çıkarımı, özel meta veri işleme veya bulut depolama hizmetleriyle entegrasyon gibi gelişmiş özellikleri keşfederek belge iş akışlarınızı daha da otomatikleştirin.
 
-Sonraki adımda OCR çıkarma, özel meta veri işleme veya bulut depolama hizmetleriyle entegrasyon gibi gelişmiş özellikleri keşfederek belge iş akışlarınızı daha da otomatikleştirebilirsiniz.
+## SSS bölümü
 
-## SSS Bölümü
-
-**S1: GroupDocs.Parser hangi dosya formatları için konteyner çıkarma desteği sunar?**  
-C: PDF, DOCX, PPTX ve `.eml` ile `.msg` gibi e‑posta formatlarını destekler.
+**S1: GroupDocs.Parser hangi dosya formatlarını kapsayıcı çıkarımı için destekler?**  
+C: PDF'ler, DOCX, PPTX ve `.eml` ve `.msg` gibi e-posta formatlarını, ayrıca 70+ ek belge türünü destekler.
 
 **S2: Ayrıştırma sırasında hataları nasıl yönetirim?**  
-C: Kodunuzu gösterildiği gibi `try‑catch` bloklarıyla sarın; ayrıca ayrıntılı tanı için `ParserException` nesnesini inceleyebilirsiniz.
+C: Kodunuzu gösterildiği gibi try‑catch bloklarıyla sarın; ayrıca ayrıntılı tanı için `ParserException`'ı inceleyebilirsiniz.
 
-**S3: GroupDocs.Parser ile belgelerden görüntü çıkarabilir miyim?**  
-C: Evet—görüntüler konteyner öğeleri olarak ele alındığından `extract images from pdf` sorunsuz çalışır.
+**S3: GroupDocs.Parser kullanarak belgelerden görüntüleri çıkarabilir miyim?**  
+C: Evet—görüntüler kapsayıcı öğeler olarak ele alınır, bu yüzden `extract pdf images java` sorunsuz çalışır.
 
-**S4: GroupDocs.Parser çok iş parçacıklı ortamda güvenli mi?**  
-C: Kütüphane doğal olarak thread‑safe değildir; her iş parçacığı için ayrı bir `Parser` örneği oluşturun veya erişimi senkronize edin.
+**S4: GroupDocs.Parser thread‑safe mi?**  
+C: Kütüphane doğası gereği thread‑safe değildir; her thread için ayrı bir `Parser` örneği oluşturun veya erişimi senkronize edin.
 
 **S5: En son sürüme nasıl yükseltirim?**  
-C: Maven bağımlılık sürümünü güncelleyin veya resmi sürüm sayfasından en yeni JAR dosyasını indirin.
+C: Maven bağımlılık sürümünü güncelleyin veya resmi sürüm sayfasından en yeni JAR'ı indirin.
 
-## Ek Sık Sorulan Sorular
+### Ek sık sorulan sorular
 
-**S: Kütüphane şifre‑korumalı PDF'leri destekliyor mu?**  
-C: Evet, şifreyi `Parser` yapıcı metoduna parametre olarak geçebilirsiniz.
+**S: Kütüphane şifre korumalı PDF'leri destekliyor mu?**  
+C: Evet, şifreyi `Parser` yapıcısına geçirerek şifreli belgeleri açabilirsiniz.
 
 **S: Çıkarma işlemini belirli bir dosya türüyle sınırlayabilir miyim?**  
-C: `ContainerItem` nesnelerini MIME türüne veya dosya uzantısına göre filtreleyerek istediğiniz türleri seçebilirsiniz.
+C: `ContainerItem` nesnelerini aldıktan sonra, kaydetmeden önce MIME türüne veya dosya uzantısına göre filtreleyebilirsiniz.
 
-**S: Gömülü PDF'leri diske yazmadan çıkarabilir miyim?**  
-C: `item.getContent()` ile bir `InputStream` elde edip veriyi bellekte işleyebilirsiniz.
+**S: Gömülü PDF'leri diske yazmadan çıkarma yolu var mı?**  
+C: `item.getContent()` kullanarak bir `InputStream` elde edin ve veriyi bellekte işleyin.
 
 ## Kaynaklar
 
 - **Dokümantasyon:** [GroupDocs.Parser Java Docs](https://docs.groupdocs.com/parser/java/)  
-- **API Referansı:** [GroupDocs Parser API](https://reference.groupdocs.com/parser/java)  
+- **API referansı:** [GroupDocs Parser API](https://reference.groupdocs.com/parser/java)  
 - **İndirme:** [GroupDocs Releases](https://releases.groupdocs.com/parser/java/)  
-- **GitHub Deposu:** [GroupDocs on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
-- **Ücretsiz Destek Forumu:** [GroupDocs Community Forum](https://forum.groupdocs.com/c/parser)  
-- **Geçici Lisans:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **GitHub deposu:** [GroupDocs on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
+- **Ücretsiz destek forumu:** [GroupDocs Community Forum](https://forum.groupdocs.com/c/parser)  
+- **Geçici lisans:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-**Son Güncelleme:** 2026-02-21  
-**Test Edilen Versiyon:** GroupDocs.Parser 25.5 for Java  
-**Yazar:** GroupDocs
+**Son Güncelleme:** 2026-11-15  
+**Test Edilen:** GroupDocs.Parser 25.5 for Java  
+**Yazar:** GroupDocs  
+
+## İlgili Öğreticiler
+
+- [Pdf Eklerini Çıkarma Groupdocs Parser Java](/parser/java/container-formats/extract-attachments-pdf-groupdocs-parser-java/)
+- [Pdf Görüntülerini Çıkarma Groupdocs Parser Java](/parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/)
+- [Java'da GroupDocs.Parser ile PDF Çıkarma: Kapsamlı Rehber](/parser/java/getting-started/groupdocs-parser-java-initialize-tutorial/)

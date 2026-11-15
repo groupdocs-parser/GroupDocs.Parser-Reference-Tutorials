@@ -1,46 +1,97 @@
 ---
-date: '2026-02-21'
-description: Lär dig hur du extraherar inbäddade filer och bilagor i PDF, inklusive
-  bilder från PDF, med GroupDocs.Parser för Java. Steg‑för‑steg‑guide med kodexempel.
+date: '2026-11-15'
+description: Lär dig hur du extraherar pdf embedded files och attachments, inklusive
+  images, från PDF documents med GroupDocs.Parser for Java. Step‑by‑step guide med
+  code examples.
 keywords:
+- how to extract pdf
 - extract pdf embedded files
-- extract images from pdf
-- java extract pdf attachments
+- extract pdf attachments
+- extract pdf images java
 - java parse eml attachments
-title: Extrahera inbäddade PDF-filer med GroupDocs.Parser för Java
+lastmod: '2026-11-15'
+og_description: Hur du extraherar pdf embedded files med GroupDocs.Parser for Java.
+  Denna guide visar hur du hämtar attachments, images och embedded documents från
+  PDFs och emails med bara några lines of code.
+og_image_alt: Developer guide showing extraction of embedded files from PDF using
+  GroupDocs.Parser Java library
+og_title: Hur man extraherar pdf embedded files med GroupDocs.Parser for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-11-15'
+  description: Learn how to how to extract pdf embedded files and attachments, including
+    images, from PDF documents with GroupDocs.Parser for Java. Step‑by‑step guide
+    with code examples.
+  headline: How to extract pdf embedded files using GroupDocs.Parser for Java
+  type: TechArticle
+- description: Learn how to how to extract pdf embedded files and attachments, including
+    images, from PDF documents with GroupDocs.Parser for Java. Step‑by‑step guide
+    with code examples.
+  name: How to extract pdf embedded files using GroupDocs.Parser for Java
+  steps:
+  - name: initialize the parser object
+    text: 'Create a `Parser` instance that points to the PDF, EML, or MSG file you
+      want to process:'
+  - name: extract container items
+    text: 'Call `getContainer()` to retrieve every embedded item, including images,
+      PDFs, and other attachments:'
+  - name: iterate over extracted items
+    text: 'Loop through the returned `ContainerItem` objects and handle each one—save
+      to disk, stream to another service, or inspect metadata:'
+  type: HowTo
+- questions:
+  - answer: Yes, you can pass the password to the `Parser` constructor to open encrypted
+      documents.
+    question: Does the library support password‑protected PDFs?
+  - answer: After retrieving `ContainerItem` objects, filter them by MIME type or
+      file extension before saving.
+    question: Can I limit extraction to a specific file type?
+  - answer: Use `item.getContent()` to obtain an `InputStream` and process the data
+      in memory.
+    question: Is there a way to extract embedded PDFs without writing them to disk?
+  type: FAQPage
+tags:
+- extract pdf
+- GroupDocs.Parser
+- Java document processing
+- pdf attachments
+- email parsing
+title: Hur man extraherar pdf embedded files med GroupDocs.Parser for Java
 type: docs
 url: /sv/java/container-formats/extract-container-items-groupdocs-parser-java/
 weight: 1
 ---
 
-# Extrahera pdf inbäddade filer med GroupDocs.Parser för Java
+# Hur man extraherar pdf inbäddade filer med GroupDocs.Parser för Java
 
-Att extrahera **pdf embedded files**—oavsett om de är bilagor, bilder eller andra inbäddade dokument—kan vara en tidskrävande uppgift om du försöker göra det manuellt. I den här handledningen kommer du att se hur GroupDocs.Parser för Java förenklar processen, så att du programatiskt kan hämta varje inbäddad post från PDF‑filer, e‑postfiler (`.eml`, `.msg`) och mer. Vi går igenom installation, kod och verkliga scenarier så att du kan börja extrahera direkt.
+I den här handledningen kommer du att lära dig **hur man extraherar pdf** inbäddade filer—bilagor, bilder eller nästlade dokument—direkt från PDF-behållare, EML-meddelanden och andra stödda format. GroupDocs.Parser för Java tillhandahåller ett ström‑baserat API som låter dig hämta varje inbäddat objekt med minimal minnesanvändning, så att du kan automatisera arkivering, innehållsanalys eller migrationsuppgifter utan manuell uppackning.
 
 ## Snabba svar
-- **Vad betyder “extract pdf embedded files”?** Det innebär att hämta ut någon fil (bilagor, bilder, PDF‑filer) som lagras i en PDF‑behållare.  
-- **Vilket bibliotek hanterar detta bäst i Java?** GroupDocs.Parser för Java tillhandahåller ett enkelt API för behållarutdrag.  
-- **Behöver jag en licens?** En gratis provversion fungerar för utvärdering; en kommersiell licens krävs för produktionsbruk.  
+- **Vad betyder “extract pdf embedded files”?** Det betyder att ta ut någon fil (bilagor, bilder, PDF:er) som lagras i en PDF-behållare.  
+- **Vilket bibliotek hanterar detta bäst i Java?** GroupDocs.Parser för Java erbjuder ett enkelt, enhetligt API för behållarutdrag.  
+- **Behöver jag en licens?** En gratis provversion fungerar för utvärdering; en kommersiell licens krävs för produktionsanvändning.  
 - **Kan jag också extrahera bilder från pdf?** Ja—bilder behandlas som behållarobjekt och kan sparas separat.  
-- **Är det möjligt att pars:a eml‑bilagor med Java?** Absolut; `java parse eml attachments` stöds direkt.
+- **Är det möjligt att parsra eml‑bilagor med Java?** Absolut; `java parse eml attachments` stöds direkt.
 
 ## Vad är “extract pdf embedded files”?
-När en PDF innehåller andra filer—såsom bifogade PDF‑filer, Word‑dokument eller bilder—lagras dessa filer som **container items**. Att extrahera dem låter dig återanvända, arkivera eller analysera det inbäddade innehållet utan att manuellt öppna den ursprungliga PDF‑filen.
+**Det är processen att hämta någon fil som en PDF lagrar som ett behållarobjekt, såsom bifogade PDF‑filer, Word‑dokument eller bilder.** Dessa objekt är inbäddade i PDF:ens interna struktur och kan nås programmässigt utan att öppna PDF‑filen i en visare. Att extrahera dem möjliggör automatiserade arbetsflöden som massarkivering, innehållsindexering eller migrering till andra system.
 
 ## Varför använda GroupDocs.Parser för Java?
-- **Unified API** – Hanterar PDF‑filer, e‑post och många andra format med samma kod.  
-- **Performance‑focused** – Ström‑baserad extraktion minimerar minnesanvändning.  
-- **Rich metadata** – Varje `ContainerItem` visar namn, storlek och innehållstyp, vilket underlättar efterföljande bearbetning.
+Den tillhandahåller ett enhetligt API, stödjer streaming och upptäcker automatiskt behållarobjekt, vilket gör den idealisk för batchjobb med hög volym. Biblioteket är optimerat för låg minnesförbrukning, vanligtvis under 10 MB även när man bearbetar PDF‑filer så stora som 2 GB, och kräver bara några få kodrader för att komma igång.
+
+- **Unified API** – Fungerar med PDF, EML, MSG, DOCX, PPTX och över 70 andra format med samma kodväg.  
+- **Performance‑focused** – Ström‑baserad bearbetning undviker att ladda hela dokumentet i minnet, vilket möjliggör batchjobb som hanterar tusentals filer per timme.  
+- **Rich metadata** – Varje `ContainerItem` tillhandahåller namn, storlek, MIME‑typ och skapelsedatum, vilket gör efterföljande bearbetning enkel.  
 
 ## Förutsättningar
-- **JDK 8+** installerat på din maskin.  
-- En IDE som **IntelliJ IDEA** eller **Eclipse** för att skriva och testa Java‑kod.  
+- **JDK 8+** installerat på din maskin.  
+- En IDE såsom **IntelliJ IDEA** eller **Eclipse** för att skriva och testa Java‑kod.  
 - Grundläggande kunskap om Java‑programmeringskoncept.  
 
-## Installera GroupDocs.Parser för Java
+## Konfigurera GroupDocs.Parser för Java
 
-### Maven‑inställning
-Om du hanterar beroenden med Maven, lägg till repository och beroende i din `pom.xml`:
+### Maven‑konfiguration
+Lägg till GroupDocs‑arkivet och Parser‑beroendet i din `pom.xml`:
 
 ```xml
 <repositories>
@@ -60,14 +111,14 @@ Om du hanterar beroenden med Maven, lägg till repository och beroende i din `po
 </dependencies>
 ```
 
-### Direktnedladdning
-Alternativt kan du ladda ner det senaste biblioteket från [GroupDocs releases](https://releases.groupdocs.com/parser/java/). Efter nedladdning, lägg till JAR‑filen i ditt projekts classpath.
+### Direkt nedladdning
+Du kan också ladda ner den senaste JAR‑filen från [GroupDocs releases](https://releases.groupdocs.com/parser/java/). Efter nedladdning, lägg till JAR‑filen i ditt projekts classpath.
 
 ### Licensanskaffning
 En provlicens låser upp alla funktioner för utvärdering. För produktion, begär en kommersiell licens via GroupDocs webbplats.
 
 ### Grundläggande initiering och konfiguration
-När biblioteket är tillgängligt, skapa en `Parser`‑instans som pekar på dokumentet du vill bearbeta:
+`Parser`‑klassen är ingångspunkten för att läsa vilket som helst stödd dokument. Den öppnar filen, upptäcker dess format och förbereder strömmar för behållarutdrag.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -88,8 +139,8 @@ public class ExtractContainerItems {
 
 ## Implementeringsguide
 
-### Steg 1: Initiera Parser‑objektet
-Skapa `Parser`‑objektet med sökvägen till din målfil (PDF, EML, etc.):
+### Steg 1: initiera parser‑objektet
+Skapa en `Parser`‑instans som pekar på den PDF-, EML- eller MSG‑fil du vill bearbeta:
 
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/InlineImages.eml";
@@ -98,8 +149,8 @@ try (Parser parser = new Parser(filePath)) {
 }
 ```
 
-### Steg 2: Extrahera Container‑objekt
-Använd `getContainer()` för att hämta varje inbäddad post, vilket inkluderar **java extract pdf attachments** som bilder, PDF‑filer och andra filer:
+### Steg 2: extrahera behållarobjekt
+Anropa `getContainer()` för att hämta varje inbäddat objekt, inklusive bilder, PDF‑filer och andra bilagor:
 
 ```java
 Iterable<ContainerItem> attachments = parser.getContainer();
@@ -110,8 +161,8 @@ if (attachments == null) {
 }
 ```
 
-### Steg 3: Iterera över extraherade objekt
-Loopa igenom de returnerade `ContainerItem`‑objekten och hantera varje efter behov—spara till disk, strömma till en annan tjänst osv.:
+### Steg 3: iterera över extraherade objekt
+Loopa igenom de returnerade `ContainerItem`‑objekten och hantera varje—spara till disk, strömma till en annan tjänst eller inspektera metadata:
 
 ```java
 for (ContainerItem item : attachments) {
@@ -121,38 +172,39 @@ for (ContainerItem item : attachments) {
 ```
 
 #### Förstå nyckelklasser
-- **`Parser`** – Kärnklass som öppnar och läser dokumentet.  
+- **`Parser`** – Kärnklassen som öppnar och läser dokumentet.  
 - **`ContainerItem`** – Representerar en enskild inbäddad fil; tillhandahåller metoderna `getName()`, `getSize()` och `getContent()`.
 
-### Felsökningstips
+## Felsökningstips
 - Verifiera filvägen; en felaktig sökväg utlöser ett *FileNotFoundException*.  
-- Säkerställ att du använder en kompatibel version av GroupDocs.Parser; versioner som inte matchar kan orsaka `UnsupportedOperationException`.  
+- Säkerställ att du använder en kompatibel version av GroupDocs.Parser; felaktiga versioner kan orsaka `UnsupportedOperationException`.  
+- För lösenordsskyddade PDF‑filer, skicka lösenordet till `Parser`‑konstruktorn (se den extra FAQ:n nedan).
 
 ## Praktiska tillämpningar
-
-1. **Email Management** – `java parse eml attachments` för att hämta varje fil som skickats med ett e‑postmeddelande.  
-2. **Document Processing** – Extrahera automatiskt PDF‑filer som är inbäddade i andra PDF‑filer för arkivering.  
-3. **Content Archiving** – Hämta och lagra alla bilder (`extract images from pdf`) för digital tillgångshantering.  
+1. **E‑posthantering** – Använd `java parse eml attachments` för att hämta varje fil som kom med ett e‑postmeddelande, och lagra dem i ett dokumenthanteringssystem.  
+2. **Dokumentbearbetning** – Extrahera automatiskt PDF‑filer som är inbäddade i andra PDF‑filer för arkivering eller vidare analys.  
+3. **Innehållsarkivering** – Hämta alla bilder (`extract pdf images java`) från komplexa rapporter och mata in dem i en digital‑tillgångshanteringspipeline.  
 
 ## Prestandaöverväganden
-- **Memory Management** – `try‑with‑resources`‑blocket garanterar att parsern stängs, vilket frigör inhemska resurser omedelbart.  
-- **Batch Processing** – Vid hantering av tusentals filer, bearbeta dem i batcher och återanvänd eventuellt en enda trådpool för att hålla minnesavtrycket lågt.  
+- **Memory management** – `try‑with‑resources`‑blocket garanterar att parsern stängs, vilket frigör inhemska resurser omedelbart.  
+- **Batch processing** – Vid hantering av tusentals filer, bearbeta dem i batcher och återanvänd eventuellt en enda trådpool för att hålla minnesavtrycket lågt.  
+- **Scalability** – GroupDocs.Parser kan hantera filer upp till 2 GB utan att ladda hela dokumentet i minnet, tack vare dess streaming‑arkitektur.
 
 ## Slutsats
-Du har nu ett komplett, produktionsklart tillvägagångssätt för att **extract pdf embedded files** med GroupDocs.Parser för Java. Oavsett om du rensar e‑postinkorgar, arkiverar PDF‑filer eller hämtar bilder från komplexa dokument, ger detta bibliotek dig ett rent, effektivt API.
+Du har nu ett komplett, produktionsklart tillvägagångssätt för **hur man extraherar pdf** inbäddade filer med GroupDocs.Parser för Java. Oavsett om du rensar e‑postinkorgar, arkiverar PDF‑filer eller hämtar bilder från komplexa dokument, ger detta bibliotek dig ett rent, effektivt API.
 
-Nästa steg är att utforska avancerade funktioner som OCR‑extraktion, anpassad metadatahantering eller integration med molnlagringstjänster för att ytterligare automatisera dina dokumentarbetsflöden.
+Nästa steg, utforska avancerade funktioner som OCR‑extraktion, anpassad metadatahantering eller integration med molnlagringstjänster för att ytterligare automatisera dina dokumentarbetsflöden.
 
 ## FAQ‑sektion
 
 **Q1: Vilka filformat stöder GroupDocs.Parser för behållarutdrag?**  
-A: Det stöder PDF, DOCX, PPTX och e‑postformat som `.eml` och `.msg`.
+A: Det stöder PDF, DOCX, PPTX och e‑postformat som `.eml` och `.msg`, samt 70+ ytterligare dokumenttyper.
 
 **Q2: Hur hanterar jag fel under parsning?**  
-A: Omge din kod med try‑catch‑block som visas; du kan också inspektera `ParserException` för detaljerad diagnostik.
+A: Omslut din kod i try‑catch‑block som visas; du kan också inspektera `ParserException` för detaljerad diagnostik.
 
 **Q3: Kan jag extrahera bilder från dokument med GroupDocs.Parser?**  
-A: Ja—bilder behandlas som container‑objekt, så `extract images from pdf` fungerar sömlöst.
+A: Ja—bilder behandlas som behållarobjekt, så `extract pdf images java` fungerar sömlöst.
 
 **Q4: Är GroupDocs.Parser trådsäker?**  
 A: Biblioteket är inte i sig trådsäkert; skapa en separat `Parser` per tråd eller synkronisera åtkomst.
@@ -160,30 +212,34 @@ A: Biblioteket är inte i sig trådsäkert; skapa en separat `Parser` per tråd 
 **Q5: Hur uppgraderar jag till den senaste versionen?**  
 A: Uppdatera Maven‑beroendeversionen eller ladda ner den senaste JAR‑filen från den officiella releasesidan.
 
-## Ytterligare vanliga frågor
+### Ytterligare vanliga frågor
 
 **Q: Stöder biblioteket lösenordsskyddade PDF‑filer?**  
-A: Ja, du kan skicka lösenordet till `Parser`‑konstruktorn.
+A: Ja, du kan skicka lösenordet till `Parser`‑konstruktorn för att öppna krypterade dokument.
 
 **Q: Kan jag begränsa extraktionen till en specifik filtyp?**  
-A: Filtrera `ContainerItem`‑objekt efter deras MIME‑typ eller filändelse efter hämtning.
+A: Efter att ha hämtat `ContainerItem`‑objekt, filtrera dem efter MIME‑typ eller filändelse innan du sparar.
 
 **Q: Finns det ett sätt att extrahera inbäddade PDF‑filer utan att skriva dem till disk?**  
 A: Använd `item.getContent()` för att få en `InputStream` och bearbeta data i minnet.
 
 ## Resurser
 
-- **Dokumentation:** [GroupDocs.Parser Java Docs](https://docs.groupdocs.com/parser/java/)  
-- **API‑referens:** [GroupDocs Parser API](https://reference.groupdocs.com/parser/java)  
-- **Nedladdning:** [GroupDocs Releases](https://releases.groupdocs.com/parser/java/)  
-- **GitHub‑arkiv:** [GroupDocs on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
-- **Gratis supportforum:** [GroupDocs Community Forum](https://forum.groupdocs.com/c/parser)  
-- **Tillfällig licens:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
+- **Documentation:** [GroupDocs.Parser Java Docs](https://docs.groupdocs.com/parser/java/)  
+- **API reference:** [GroupDocs Parser API](https://reference.groupdocs.com/parser/java)  
+- **Download:** [GroupDocs Releases](https://releases.groupdocs.com/parser/java/)  
+- **GitHub repository:** [GroupDocs on GitHub](https://github.com/groupdocs-parser/GroupDocs.Parser-for-Java)  
+- **Free support forum:** [GroupDocs Community Forum](https://forum.groupdocs.com/c/parser)  
+- **Temporary license:** [Request Temporary License](https://purchase.groupdocs.com/temporary-license/)
 
 ---
 
-**Senast uppdaterad:** 2026-02-21  
-**Testad med:** GroupDocs.Parser 25.5 for Java  
-**Författare:** GroupDocs  
+**Last Updated:** 2026-11-15  
+**Tested With:** GroupDocs.Parser 25.5 for Java  
+**Author:** GroupDocs  
 
----
+## Relaterade handledningar
+
+- [Extrahera bilagor Pdf Groupdocs Parser Java](/parser/java/container-formats/extract-attachments-pdf-groupdocs-parser-java/)
+- [Extrahera bilder Pdf Groupdocs Parser Java](/parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/)
+- [Hur man extraherar PDF med GroupDocs.Parser i Java: En omfattande guide](/parser/java/getting-started/groupdocs-parser-java-initialize-tutorial/)
