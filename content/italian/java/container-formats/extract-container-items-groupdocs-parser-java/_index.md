@@ -1,47 +1,97 @@
 ---
-date: '2026-02-21'
-description: Scopri come estrarre file incorporati e allegati PDF, incluse le immagini
-  dal PDF, utilizzando GroupDocs.Parser per Java. Guida passo‑passo con esempi di
+date: '2026-11-15'
+description: Scopri come estrarre file incorporati PDF e allegati, incluse le immagini,
+  dai documenti PDF con GroupDocs.Parser for Java. Guida step‑by‑step con esempi di
   codice.
 keywords:
+- how to extract pdf
 - extract pdf embedded files
-- extract images from pdf
-- java extract pdf attachments
+- extract pdf attachments
+- extract pdf images java
 - java parse eml attachments
-title: Estrai i file incorporati nei PDF con GroupDocs.Parser per Java
+lastmod: '2026-11-15'
+og_description: Come estrarre file incorporati PDF usando GroupDocs.Parser for Java.
+  Questa guida mostra come recuperare allegati, immagini e documenti incorporati da
+  PDF ed e‑mail in poche righe di codice.
+og_image_alt: Developer guide showing extraction of embedded files from PDF using
+  GroupDocs.Parser Java library
+og_title: Come estrarre file incorporati PDF con GroupDocs.Parser for Java
+schemas:
+- author: GroupDocs
+  dateModified: '2026-11-15'
+  description: Learn how to how to extract pdf embedded files and attachments, including
+    images, from PDF documents with GroupDocs.Parser for Java. Step‑by‑step guide
+    with code examples.
+  headline: How to extract pdf embedded files using GroupDocs.Parser for Java
+  type: TechArticle
+- description: Learn how to how to extract pdf embedded files and attachments, including
+    images, from PDF documents with GroupDocs.Parser for Java. Step‑by‑step guide
+    with code examples.
+  name: How to extract pdf embedded files using GroupDocs.Parser for Java
+  steps:
+  - name: initialize the parser object
+    text: 'Create a `Parser` instance that points to the PDF, EML, or MSG file you
+      want to process:'
+  - name: extract container items
+    text: 'Call `getContainer()` to retrieve every embedded item, including images,
+      PDFs, and other attachments:'
+  - name: iterate over extracted items
+    text: 'Loop through the returned `ContainerItem` objects and handle each one—save
+      to disk, stream to another service, or inspect metadata:'
+  type: HowTo
+- questions:
+  - answer: Yes, you can pass the password to the `Parser` constructor to open encrypted
+      documents.
+    question: Does the library support password‑protected PDFs?
+  - answer: After retrieving `ContainerItem` objects, filter them by MIME type or
+      file extension before saving.
+    question: Can I limit extraction to a specific file type?
+  - answer: Use `item.getContent()` to obtain an `InputStream` and process the data
+      in memory.
+    question: Is there a way to extract embedded PDFs without writing them to disk?
+  type: FAQPage
+tags:
+- extract pdf
+- GroupDocs.Parser
+- Java document processing
+- pdf attachments
+- email parsing
+title: Come estrarre file incorporati PDF usando GroupDocs.Parser for Java
 type: docs
 url: /it/java/container-formats/extract-container-items-groupdocs-parser-java/
 weight: 1
 ---
 
-# Estrai file incorporati PDF usando GroupDocs.Parser per Java
+# Come estrarre file incorporati PDF usando GroupDocs.Parser per Java
 
-Estrarre **pdf embedded files**—che siano allegati, immagini o altri documenti nidificati—può essere un compito tedioso se lo si tenta manualmente. In questo tutorial vedrai come GroupDocs.Parser per Java semplifica il processo, consentendoti di estrarre programmaticamente ogni elemento incorporato da PDF, file email (`.eml`, `.msg`) e altro. Cammineremo attraverso l'installazione, il codice e scenari reali così potrai iniziare a estrarre subito.
+In questo tutorial imparerai **come estrarre pdf** file incorporati—allegati, immagini o documenti nidificati—direttamente da contenitori PDF, messaggi EML e altri formati supportati. GroupDocs.Parser per Java fornisce un'API basata su stream che consente di recuperare ogni elemento incorporato con un minimo utilizzo di memoria, così da poter automatizzare l'archiviazione, l'analisi dei contenuti o le attività di migrazione senza doverli estrarre manualmente.
 
 ## Risposte rapide
-- **Cosa significa “extract pdf embedded files”?** Si riferisce all'estrazione di qualsiasi file (allegati, immagini, PDF) che è memorizzato all'interno di un contenitore PDF.  
-- **Quale libreria gestisce al meglio questo in Java?** GroupDocs.Parser per Java fornisce una semplice API per l'estrazione di contenitori.  
-- **Ho bisogno di una licenza?** Una licenza di prova funziona per la valutazione; è necessaria una licenza commerciale per l'uso in produzione.  
-- **Posso estrarre anche immagini da pdf?** Sì—le immagini sono trattate come elementi del contenitore e possono essere salvate separatamente.  
-- **È possibile analizzare gli allegati eml con Java?** Assolutamente; `java parse eml attachments` è supportato out of the box.
+- **Cosa significa “estrarre file PDF incorporati”?** Significa estrarre qualsiasi file (allegati, immagini, PDF) memorizzato all'interno di un contenitore PDF.  
+- **Quale libreria gestisce al meglio questo in Java?** GroupDocs.Parser per Java offre un'API semplice e unificata per l'estrazione dei contenitori.  
+- **Ho bisogno di una licenza?** Una prova gratuita è sufficiente per la valutazione; è necessaria una licenza commerciale per l'uso in produzione.  
+- **Posso estrarre anche le immagini da PDF?** Sì—le immagini sono trattate come elementi del contenitore e possono essere salvate separatamente.  
+- **È possibile analizzare gli allegati EML con Java?** Assolutamente; `java parse eml attachments` è supportato nativamente.
 
-## Cos'è “extract pdf embedded files”?
-Quando un PDF include altri file—come PDF allegati, documenti Word o immagini—quei file sono memorizzati come **container items**. Estrarli ti consente di riutilizzare, archiviare o analizzare il contenuto incorporato senza aprire manualmente il PDF originale.
+## Cos'è “estrarre file PDF incorporati”?
+**È il processo di recuperare qualsiasi file che un PDF memorizza come elemento del contenitore, come PDF allegati, documenti Word o immagini.** Questi elementi sono incorporati nella struttura interna del PDF e possono essere accessi programmaticamente senza aprire il PDF in un visualizzatore. L'estrazione consente flussi di lavoro automatizzati come l'archiviazione di massa, l'indicizzazione dei contenuti o la migrazione verso altri sistemi.
 
 ## Perché usare GroupDocs.Parser per Java?
-- **Unified API** – Gestisce PDF, email e molti altri formati con lo stesso codice.  
-- **Performance‑focused** – L'estrazione basata su stream minimizza l'uso della memoria.  
-- **Rich metadata** – Ogni `ContainerItem` rivela nome, dimensione e tipo di contenuto, facilitando l'elaborazione a valle.  
+Fornisce un'API unificata, supporta lo streaming e rileva automaticamente gli elementi del contenitore, rendendola ideale per lavori batch ad alto volume. La libreria è ottimizzata per un basso consumo di memoria, tipicamente inferiore a 10 MB anche durante l'elaborazione di PDF fino a 2 GB, e richiede solo poche righe di codice per iniziare.
+
+- **API unificata** – Funziona con PDF, EML, MSG, DOCX, PPTX e oltre 70 altri formati usando lo stesso percorso di codice.  
+- **Orientata alle prestazioni** – L'elaborazione basata su stream evita di caricare l'intero documento in memoria, consentendo lavori batch che gestiscono migliaia di file all'ora.  
+- **Metadati ricchi** – Ogni `ContainerItem` fornisce nome, dimensione, tipo MIME e data di creazione, rendendo l'elaborazione a valle semplice.  
 
 ## Prerequisiti
-- **JDK 8+** installato sulla tua macchina.  
+- **JDK 8+** installato sulla tua macchina.  
 - Un IDE come **IntelliJ IDEA** o **Eclipse** per scrivere e testare il codice Java.  
 - Familiarità di base con i concetti di programmazione Java.  
 
 ## Configurazione di GroupDocs.Parser per Java
 
 ### Configurazione Maven
-Se gestisci le dipendenze con Maven, aggiungi il repository e la dipendenza al tuo `pom.xml`:
+Aggiungi il repository GroupDocs e la dipendenza Parser al tuo `pom.xml`:
 
 ```xml
 <repositories>
@@ -62,13 +112,13 @@ Se gestisci le dipendenze con Maven, aggiungi il repository e la dipendenza al t
 ```
 
 ### Download diretto
-In alternativa, puoi scaricare l'ultima libreria da [GroupDocs releases](https://releases.groupdocs.com/parser/java/). Dopo il download, aggiungi il JAR al classpath del tuo progetto.
+Puoi anche scaricare l'ultimo JAR da [GroupDocs releases](https://releases.groupdocs.com/parser/java/). Dopo il download, aggiungi il JAR al classpath del tuo progetto.
 
 ### Acquisizione della licenza
 Una licenza di prova sblocca tutte le funzionalità per la valutazione. Per la produzione, richiedi una licenza commerciale tramite il sito web di GroupDocs.
 
 ### Inizializzazione e configurazione di base
-Una volta che la libreria è disponibile, crea un'istanza `Parser` che punti al documento che desideri elaborare:
+La classe `Parser` è il punto di ingresso per leggere qualsiasi documento supportato. Apre il file, ne rileva il formato e prepara gli stream per l'estrazione dei contenitori.
 
 ```java
 import com.groupdocs.parser.Parser;
@@ -89,8 +139,8 @@ public class ExtractContainerItems {
 
 ## Guida all'implementazione
 
-### Passo 1: Inizializzare l'oggetto Parser
-Crea l'oggetto `Parser` con il percorso del tuo file di destinazione (PDF, EML, ecc.):
+### Passo 1: inizializzare l'oggetto parser
+Crea un'istanza `Parser` che punti al file PDF, EML o MSG che desideri elaborare:
 
 ```java
 String filePath = "YOUR_DOCUMENT_DIRECTORY/InlineImages.eml";
@@ -99,8 +149,8 @@ try (Parser parser = new Parser(filePath)) {
 }
 ```
 
-### Passo 2: Estrarre gli elementi del contenitore
-Usa `getContainer()` per recuperare ogni elemento incorporato, che include **java extract pdf attachments** come immagini, PDF e altri file:
+### Passo 2: estrarre gli elementi del contenitore  
+Chiama `getContainer()` per recuperare ogni elemento incorporato, incluse immagini, PDF e altri allegati:
 
 ```java
 Iterable<ContainerItem> attachments = parser.getContainer();
@@ -111,8 +161,8 @@ if (attachments == null) {
 }
 ```
 
-### Passo 3: Iterare sugli elementi estratti
-Itera sugli oggetti `ContainerItem` restituiti e gestisci ciascuno secondo necessità—salva su disco, trasmetti a un altro servizio, ecc.:
+### Passo 3: iterare sugli elementi estratti  
+Itera sugli oggetti `ContainerItem` restituiti e gestisci ciascuno—salva su disco, invia in streaming a un altro servizio o ispeziona i metadati:
 
 ```java
 for (ContainerItem item : attachments) {
@@ -122,51 +172,51 @@ for (ContainerItem item : attachments) {
 ```
 
 #### Comprendere le classi chiave
-- **`Parser`** – Classe principale che apre e legge il documento.  
+- **`Parser`** – La classe principale che apre e legge il documento.  
 - **`ContainerItem`** – Rappresenta un singolo file incorporato; fornisce i metodi `getName()`, `getSize()` e `getContent()`.
 
-### Suggerimenti per la risoluzione dei problemi
+## Suggerimenti per la risoluzione dei problemi
 - Verifica il percorso del file; un percorso errato genera una *FileNotFoundException*.  
 - Assicurati di utilizzare una versione compatibile di GroupDocs.Parser; versioni non corrispondenti possono causare `UnsupportedOperationException`.  
+- Per PDF protetti da password, passa la password al costruttore `Parser` (vedi le FAQ aggiuntive di seguito).
 
 ## Applicazioni pratiche
-1. **Gestione email** – `java parse eml attachments` per estrarre ogni file inviato con un'email.  
-2. **Elaborazione documenti** – Estrarre automaticamente i PDF incorporati in altri PDF per l'archiviazione.  
-3. **Archiviazione contenuti** – Recuperare e memorizzare tutte le immagini (`extract images from pdf`) per la gestione delle risorse digitali.  
+1. **Gestione email** – Usa `java parse eml attachments` per estrarre ogni file arrivato con un'email, quindi archiviarli in un sistema di gestione documentale.  
+2. **Elaborazione documenti** – Estrai automaticamente i PDF incorporati all'interno di altri PDF per l'archiviazione o ulteriori analisi.  
+3. **Archiviazione dei contenuti** – Recupera tutte le immagini (`extract pdf images java`) da report complessi e inseriscile in una pipeline di gestione delle risorse digitali.  
 
 ## Considerazioni sulle prestazioni
 - **Gestione della memoria** – Il blocco try‑with‑resources garantisce che il parser venga chiuso, liberando rapidamente le risorse native.  
-- **Elaborazione batch** – Quando si gestiscono migliaia di file, elabora in batch e, facoltativamente, riutilizza un unico pool di thread per mantenere basso l'impatto di memoria.  
+- **Elaborazione batch** – Quando gestisci migliaia di file, elabora in batch e, facoltativamente, riutilizza un singolo pool di thread per mantenere basso l'utilizzo di memoria.  
+- **Scalabilità** – GroupDocs.Parser può gestire file fino a 2 GB senza caricare l'intero documento in memoria, grazie alla sua architettura di streaming.
 
 ## Conclusione
-Hai ora un approccio completo e pronto per la produzione per **extract pdf embedded files** usando GroupDocs.Parser per Java. Che tu stia pulendo le caselle di posta elettronica, archiviando PDF o estraendo immagini da documenti complessi, questa libreria ti offre un'API pulita ed efficiente.
-
-Successivamente, esplora funzionalità avanzate come l'estrazione OCR, la gestione di metadati personalizzati o l'integrazione con servizi di archiviazione cloud per automatizzare ulteriormente i tuoi flussi di lavoro documentali.
+Ora hai un approccio completo e pronto per la produzione a **come estrarre pdf** file incorporati usando GroupDocs.Parser per Java. Che tu stia pulendo le caselle di posta elettronica, archiviando PDF o estraendo immagini da documenti complessi, questa libreria ti offre un'API pulita ed efficiente. Successivamente, esplora funzionalità avanzate come l'estrazione OCR, la gestione di metadati personalizzati o l'integrazione con servizi di storage cloud per automatizzare ulteriormente i tuoi flussi di lavoro documentali.
 
 ## Sezione FAQ
 
-**Q1: Quali formati di file supporta GroupDocs.Parser per l'estrazione di contenitori?**  
-A: Supporta PDF, DOCX, PPTX e formati email come `.eml` e `.msg`.
+**Q1: Quali formati di file supporta GroupDocs.Parser per l'estrazione dei contenitori?**  
+A: Supporta PDF, DOCX, PPTX e formati email come `.eml` e `.msg`, oltre a oltre 70 tipi di documento aggiuntivi.
 
 **Q2: Come gestisco gli errori durante il parsing?**  
 A: Avvolgi il tuo codice in blocchi try‑catch come mostrato; puoi anche ispezionare `ParserException` per diagnosi dettagliate.
 
 **Q3: Posso estrarre immagini dai documenti usando GroupDocs.Parser?**  
-A: Sì—le immagini sono trattate come elementi del contenitore, quindi `extract images from pdf` funziona senza problemi.
+A: Sì—le immagini sono trattate come elementi del contenitore, quindi `extract pdf images java` funziona senza problemi.
 
 **Q4: GroupDocs.Parser è thread‑safe?**  
 A: La libreria non è intrinsecamente thread‑safe; istanzia un `Parser` separato per thread o sincronizza l'accesso.
 
 **Q5: Come aggiorno all'ultima versione?**  
-A: Aggiorna la versione della dipendenza Maven o scarica il JAR più recente dalla pagina di rilascio ufficiale.
+A: Aggiorna la versione della dipendenza Maven o scarica l'ultimo JAR dalla pagina di rilascio ufficiale.
 
-## Domande frequenti aggiuntive
+### Domande frequenti aggiuntive
 
 **Q: La libreria supporta PDF protetti da password?**  
-A: Sì, puoi passare la password al costruttore `Parser`.
+A: Sì, puoi passare la password al costruttore `Parser` per aprire documenti criptati.
 
 **Q: Posso limitare l'estrazione a un tipo di file specifico?**  
-A: Filtra gli oggetti `ContainerItem` per tipo MIME o estensione file dopo il recupero.
+A: Dopo aver recuperato gli oggetti `ContainerItem`, filtrali per tipo MIME o estensione file prima di salvarli.
 
 **Q: Esiste un modo per estrarre PDF incorporati senza scriverli su disco?**  
 A: Usa `item.getContent()` per ottenere un `InputStream` e processare i dati in memoria.
@@ -182,6 +232,12 @@ A: Usa `item.getContent()` per ottenere un `InputStream` e processare i dati in 
 
 ---
 
-**Ultimo aggiornamento:** 2026-02-21  
-**Testato con:** GroupDocs.Parser 25.5 for Java  
-**Autore:** GroupDocs
+**Ultimo aggiornamento:** 2026-11-15  
+**Testato con:** GroupDocs.Parser 25.5 per Java  
+**Autore:** GroupDocs  
+
+## Tutorial correlati
+
+- [Extract Attachments Pdf Groupdocs Parser Java](/parser/java/container-formats/extract-attachments-pdf-groupdocs-parser-java/)
+- [Extract Images Pdf Groupdocs Parser Java](/parser/java/image-extraction/extract-images-pdf-groupdocs-parser-java/)
+- [How to Extract PDF with GroupDocs.Parser in Java: A Comprehensive Guide](/parser/java/getting-started/groupdocs-parser-java-initialize-tutorial/)
